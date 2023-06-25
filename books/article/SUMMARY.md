@@ -18,6 +18,8 @@
 * [临江作](yi-fei-shi/lin-jiang-zuo.md)
 * [雨中醉书](yi-fei-shi/yu-zhong-zui-shu.md)
 * [五言律诗](yi-fei-shi/wu-yan-lv-shi.md)
+* [苏州行](yi-fei-shi/su-zhou-hang.md)
+* [游金陵有感](yi-fei-shi/you-jin-ling-you-gan.md)
 
 ## 逸飞词
 
