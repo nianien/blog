@@ -17,6 +17,7 @@
 * [天暮怀故人](yi-fei-shi/tian-mu-huai-gu-ren.md)
 * [临江作](yi-fei-shi/lin-jiang-zuo.md)
 * [雨中醉书](yi-fei-shi/yu-zhong-zui-shu.md)
+* [五言律诗](yi-fei-shi/wu-yan-lv-shi.md)
 
 ## 逸飞词
 
