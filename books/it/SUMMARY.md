@@ -6,7 +6,8 @@
   * [RabbitMQ、RocketMQ、Kafka区别](xi-tong-jia-gou/xiao-xi-dui-lie/rabbitmqrocketmqkafka-qu-bie.md)
 * [服务架构](xi-tong-jia-gou/fu-wu-jia-gou/README.md)
   * [从0开始做一个后台项目架构](xi-tong-jia-gou/fu-wu-jia-gou/cong-0-kai-shi-zuo-yi-ge-hou-tai-xiang-mu-jia-gou.md)
-  * [关于分布式事务、两阶段提交协议、三阶提交协议](xi-tong-jia-gou/fu-wu-jia-gou/guan-yu-fen-bu-shi-shi-wu-liang-jie-duan-ti-jiao-xie-yi-san-jie-ti-jiao-xie-yi.md)
+  * [分布式事务之两阶段、三阶提交协议](xi-tong-jia-gou/fu-wu-jia-gou/fen-bu-shi-shi-wu-zhi-liang-jie-duan-san-jie-ti-jiao-xie-yi.md)
+  * [微服务拆分的维度和策略](xi-tong-jia-gou/fu-wu-jia-gou/wei-fu-wu-chai-fen-de-wei-du-he-ce-lve.md)
 
 ## 业务架构
 
