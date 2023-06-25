@@ -59,6 +59,13 @@
 
 * [那不经意的一眼](san-wen-ji/na-bu-jing-yi-de-yi-yan.md)
 * [秋别](san-wen-ji/qiu-bie.md)
+* [家乡的雨季](san-wen-ji/jia-xiang-de-yu-ji.md)
+* [我的大学](san-wen-ji/wo-de-da-xue.md)
+* [夏日的落叶](san-wen-ji/xia-ri-de-la-ye.md)
+* [当爱已成伤往](san-wen-ji/dang-ai-yi-cheng-shang-wang.md)
+* [一个人的洒脱](san-wen-ji/yi-ge-ren-de-sa-tuo.md)
+* [对月](san-wen-ji/dui-yue.md)
+* [告别春天](san-wen-ji/gao-bie-chun-tian.md)
 
 ## 古文集
 
