@@ -168,6 +168,6 @@ RabbitMQ集群会始终同步四种类型的内部元数据：
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 </div>
