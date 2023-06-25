@@ -6,4 +6,8 @@
   * [RabbitMQ、RocketMQ、Kafka区别](xi-tong-jia-gou/xiao-xi-dui-lie/rabbitmqrocketmqkafka-qu-bie.md)
 * [服务架构](xi-tong-jia-gou/fu-wu-jia-gou/README.md)
   * [从0开始做一个后台项目架构](xi-tong-jia-gou/fu-wu-jia-gou/cong-0-kai-shi-zuo-yi-ge-hou-tai-xiang-mu-jia-gou.md)
-* [关于业务平台架构的思考](xi-tong-jia-gou/guan-yu-ye-wu-ping-tai-jia-gou-de-si-kao.md)
+
+## 业务架构
+
+* [业务架构](ye-wu-jia-gou/ye-wu-jia-gou/README.md)
+  * [关于业务平台架构的思考](ye-wu-jia-gou/ye-wu-jia-gou/guan-yu-ye-wu-ping-tai-jia-gou-de-si-kao.md)
