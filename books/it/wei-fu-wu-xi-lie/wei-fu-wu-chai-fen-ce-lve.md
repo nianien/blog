@@ -40,7 +40,7 @@
 
 因为职能不同，这些领域之间包含清晰的界限，所以我们可以按照这个方向将服务于不同领域（商品域和订单域）的子系统拆成独立的服务颗粒。如下图：
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **2.1.2 用户群体拆分**
 
@@ -55,7 +55,7 @@
 这个需要区分系统中变与不变的部分，不变的部分一般是成熟的、通用的服务功能，变的部分一般是改动比较多、满足业务迭代扩展性需要的功能，我们可以将不变的部分拆分出来，作为共用的服务，将变的部分独立出来满足个性化扩展需要。同时根据二八原则，系统中经常变动的部分大约只占 20%，而剩下的 80% 基本不变或极少变化，这样的拆分也解决了发布频率过多而影响成熟服务稳定性的问题。比如一个电商领域的系统，用户信息、基本商品信息、物流信息 等模块的管理能力和视图界面，一般是比较稳定的；而类似运营活动的功能和页面一般是经常变化的（520、618、双11），会有不同的活动策略和视图界面，需要经常迭代发布。如下图所示\
 
 
-<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.3 基于可靠性拆分 <a href="#scroller-7" id="scroller-7"></a>
 

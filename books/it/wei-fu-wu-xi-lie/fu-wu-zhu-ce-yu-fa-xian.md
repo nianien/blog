@@ -202,7 +202,7 @@ Zookeeper有如下特点：
 
 #### 2.2.2 整体架构 <a href="#scroller-12" id="scroller-12"></a>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
