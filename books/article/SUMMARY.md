@@ -50,6 +50,7 @@
 * [等你](san-wen-shi/deng-ni.md)
 * [夜行思](san-wen-shi/ye-hang-si.md)
 * [与生命对话](san-wen-shi/yu-sheng-ming-dui-hua.md)
+* [秋雨初凉](san-wen-shi/qiu-yu-chu-liang.md)
 
 ## 散文集
 
