@@ -43,12 +43,6 @@
 * [秋波媚](shi-ci-fu/qiu-bo-mei-1.md)
 * [断肠句.情殇](shi-ci-fu/duan-chang-ju-.-qing-shang.md)
 
-***
-
-* [Page 7](page-7.md)
-* [Page 4](page-4.md)
-* [Page 6](page-6.md)
-
 ## 散文诗
 
 * [风晨物语](san-wen-shi/feng-chen-wu-yu.md)
@@ -60,7 +54,6 @@
 * [夜行思](san-wen-shi/ye-hang-si.md)
 * [与生命对话](san-wen-shi/yu-sheng-ming-dui-hua.md)
 * [秋雨初凉](san-wen-shi/qiu-yu-chu-liang.md)
-* [Page 5](san-wen-shi/page-5.md)
 
 ## 散文集
 
