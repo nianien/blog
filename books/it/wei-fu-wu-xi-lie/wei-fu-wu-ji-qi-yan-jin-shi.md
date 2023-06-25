@@ -99,7 +99,7 @@ EUREKA的注册中心逐渐被ZooKeeper和Nacos等替代了。
 
 这是最初的模样，开发人员最开始的时候想象的两个服务间简单的通信模式，抽象表示如下，两个服务之间直接进行通信：
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 3.2 第二阶：原始通信时代
 
@@ -115,7 +115,7 @@ TCP协议的出现，避免了每个服务自己实现一套相似的网络传�
 
 这时候我们把处理网络传输的能力下沉，从服务的实现中抽离出来，成为操作系统网络层的一部分。
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 #### 3.4 第四阶：第一代微服务（Spring Cloud/RPC） <a href="#scroller-19" id="scroller-19"></a>
 
