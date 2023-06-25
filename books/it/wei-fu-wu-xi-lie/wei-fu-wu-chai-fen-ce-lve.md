@@ -40,7 +40,7 @@
 
 因为职能不同，这些领域之间包含清晰的界限，所以我们可以按照这个方向将服务于不同领域（商品域和订单域）的子系统拆成独立的服务颗粒。如下图：
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **2.1.2 用户群体拆分**
 

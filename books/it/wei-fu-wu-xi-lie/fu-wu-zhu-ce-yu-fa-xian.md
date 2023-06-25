@@ -202,7 +202,7 @@ Zookeeper有如下特点：
 
 #### 2.2.2 整体架构 <a href="#scroller-12" id="scroller-12"></a>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -262,7 +262,7 @@ Consul提供的关键功能如下：
 
 #### 2.3.2 整体架构 <a href="#scroller-16" id="scroller-16"></a>
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 如上图为Consul的架构，这边对技术点做一下说明：
 

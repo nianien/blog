@@ -164,7 +164,7 @@ Netflix zuul：Zuul是一种提供动态路由、监视、弹性、安全性等�
 
 #### 3.3 配置中心 <a href="#scroller-24" id="scroller-24"></a>
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 上面这个是携程的开源配置中心Apollo系统的架构设计，我们从下往上进行分析：
 
@@ -197,7 +197,7 @@ Netflix zuul：Zuul是一种提供动态路由、监视、弹性、安全性等�
 
 Remote Procedure Call Protocol，远程过程调用协议，一般使用在分布式业务或者微服务架构风格中。像调用本地函数一样，去调用一个远端服务。本质上是请求链的底层，维护同一个端口，进行socket通信。常见的RPC技术包含 gRPC、Dubbo、Thrift 等。
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 2、REST 访问模式
 
