@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 从0开始做一个后台项目架构
 
 [转载](https://baijiahao.baidu.com/s?id=1767938488419450782)
