@@ -20,6 +20,10 @@
 * [五言律诗](yi-fei-shi/wu-yan-lv-shi.md)
 * [苏州行](yi-fei-shi/su-zhou-hang.md)
 * [游金陵有感](yi-fei-shi/you-jin-ling-you-gan.md)
+* [清明留京不游](yi-fei-shi/qing-ming-liu-jing-bu-you.md)
+* [梦得四字诗](yi-fei-shi/meng-de-si-zi-shi.md)
+* [仲秋独酌](yi-fei-shi/zhong-qiu-du-zhuo.md)
+* [元宵.送别](yi-fei-shi/yuan-xiao-.-song-bie.md)
 
 ## 逸飞词
 
