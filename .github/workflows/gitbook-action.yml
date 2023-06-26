@@ -1,13 +1,35 @@
-name: 'Gitbook Action Build'
+name: 'Gitbook-Action'
+
 on:
   push:
     branches:
-      - master  # trigger branch
+      - master
+    paths-ignore:
+      - 'docs/**'  # To Avoid Loop
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout action
-      uses: actions/checkout@v1
-    - name: gitbook-publish
-      uses: bob1113/gitbook-publish@v1.0.0
+      uses: actions/checkout@v2
+
+    # books/it
+    - name: Gitbook Action
+      uses: ZanderZhao/gitbook-action@master
+      with:                                  
+        token: ${{ secrets.PERSONAL_TOKEN }}
+        source_branch: master
+        source_dir: books/it
+        publish_branch: gh-pages
+        publish_dir: books/it
+
+    # books/article
+    - name: Gitbook Action
+      uses: ZanderZhao/gitbook-action@master
+      with:
+        token: ${{ secrets.PERSONAL_TOKEN }}
+        source_branch: master
+        source_dir: books/article
+        publish_branch: gh-pages
+        publish_dir: books/article
