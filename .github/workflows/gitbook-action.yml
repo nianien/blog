@@ -50,9 +50,6 @@ jobs:
     steps:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload dir
-          path: 'books'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
