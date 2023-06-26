@@ -28,7 +28,7 @@ jobs:
         source_branch: master
         source_dir: books/it
         publish_branch: gh-pages
-        publish_dir: books/it
+        publish_dir: it
 
     # books/article
     - name: Gitbook Action
@@ -38,7 +38,7 @@ jobs:
         source_branch: master
         source_dir: books/article
         publish_branch: gh-pages
-        publish_dir: books/article
+        publish_dir: article
         
   # Deployment job
   deploy:
