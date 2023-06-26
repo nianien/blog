@@ -38,7 +38,7 @@ AKF扩展立方体（Scalability Cube）是一种可扩展模型，这个立方�
 
 绞杀者模式的示意图如下图所示，我们可以看到随着功能演进和时间的不断推移，老的遗留系统功能被逐步削弱，而采用微服务架构的新功能越积越多，最终会形成从量变到质变的过程。绞杀者模式在具体实施过程中，所需要把握的最主要一点原则就是对于任何需要开发的功能一定要完整的采用微服务架构，对于完全独立的新功能这点比较容易把握，而对于涉及到老业务变更的新功能则需要通过重构达到这一目标。
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 2\. 修缮者模式
 
