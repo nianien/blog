@@ -9,7 +9,5 @@ jobs:
     steps:
     - name: Checkout action
       uses: actions/checkout@v1
-    - name: Gitbook Action
-      uses: ZanderZhao/gitbook-action@v1.2.4
-      with:                                       
-        token: ${{ secrets.PERSONAL_TOKEN }}
+    - name: gitbook-publish
+      uses: bob1113/gitbook-publish@v1.0.0
