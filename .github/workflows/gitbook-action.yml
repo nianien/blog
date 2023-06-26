@@ -22,7 +22,7 @@ jobs:
 
     # books/it
     - name: Gitbook Action
-      uses: ZanderZhao/gitbook-action@master
+      uses: nianien/gitbook-action@master
       with:                                  
         token: ${{ secrets.PERSONAL_TOKEN }}
         source_branch: master
@@ -32,7 +32,7 @@ jobs:
 
     # books/article
     - name: Gitbook Action
-      uses: ZanderZhao/gitbook-action@master
+      uses: nianien/gitbook-action@master
       with:
         token: ${{ secrets.PERSONAL_TOKEN }}
         source_branch: master
