@@ -42,7 +42,7 @@
 * [鹤冲天](shi-ci-fu/he-chong-tian.md)
 * [秋波媚](shi-ci-fu/qiu-bo-mei-1.md)
 * [断肠句.情殇](shi-ci-fu/duan-chang-ju-.-qing-shang.md)
-* [洛神曲](shi-ci-fu/luo-shen-qu.md)
+* [霓裳曲](shi-ci-fu/ni-chang-qu.md)
 
 ## 散文诗
 
