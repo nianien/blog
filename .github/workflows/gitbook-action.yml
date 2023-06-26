@@ -10,6 +10,6 @@ jobs:
     - name: Checkout action
       uses: actions/checkout@v1
     - name: Gitbook Action
-      uses: nianien/gitbook-action@master
+      uses: ZanderZhao/gitbook-action@v1.2.4
       with:                                       
         token: ${{ secrets.PERSONAL_TOKEN }}
