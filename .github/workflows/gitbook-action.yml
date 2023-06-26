@@ -23,7 +23,6 @@ jobs:
         source_dir: books/it
         publish_branch: gh-pages
         publish_dir: books/it
-        publish_push_force: true
 
     # books/article
     - name: Gitbook Action
@@ -34,15 +33,4 @@ jobs:
         source_dir: books/article
         publish_branch: gh-pages
         publish_dir: books/article
-        publish_push_force: true
-    # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+   
