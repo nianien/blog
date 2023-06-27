@@ -16,3 +16,4 @@
     * [从0开始做一个后台架构](xi-tong-jia-gou/jia-gou-she-ji/cong-0-kai-shi-zuo-yi-ge-hou-tai-jia-gou.md)
 * [业务架构](ye-wu-jia-gou/README.md)
   * [关于业务平台架构的思考](ye-wu-jia-gou/guan-yu-ye-wu-ping-tai-jia-gou-de-si-kao.md)
+  * [用户系统设计:三户模型&三层身份模型](ye-wu-jia-gou/yong-hu-xi-tong-she-ji-san-hu-mo-xing-san-ceng-shen-fen-mo-xing.md)

@@ -184,7 +184,7 @@ Eureka Server可以运行多个实例来构建集群，解决单点问题，但�
 
 这些接口被用来实现服务的注册与发现功能。并实现一些高级功能，如数据同步、分布式锁、配置中心、集群选举、命名服务等。
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 在数据模型上，类似于传统的文件系统，节点类型分为：
 

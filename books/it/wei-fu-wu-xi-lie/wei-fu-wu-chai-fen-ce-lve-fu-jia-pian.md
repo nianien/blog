@@ -18,7 +18,7 @@ AKF扩展立方体（Scalability Cube）是一种可扩展模型，这个立方�
 
 关注服务和数据的优先级划分，如分地域划
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 以上X、Y和Z轴的划分可以概括为X 轴关注水平复制，Z 轴类似数据分区，而Y 轴则强调基于不同的业务拆分。理论上按照这三个扩展维度，可以将一个单体系统进行无限扩展。举例来说，比如用户预约挂号应用，一个集群撑不住时，分了多个集群，后来用户激增还是不够用，经过分析发现是用户和医生访问量很大，就将预约挂号应用拆成了患者服务、医生服务、支付服务等三个服务。三个服务的业务特点各不相同，独立维护，各自都可以再次按需扩展。
 
@@ -38,7 +38,7 @@ AKF扩展立方体（Scalability Cube）是一种可扩展模型，这个立方�
 
 绞杀者模式的示意图如下图所示，我们可以看到随着功能演进和时间的不断推移，老的遗留系统功能被逐步削弱，而采用微服务架构的新功能越积越多，最终会形成从量变到质变的过程。绞杀者模式在具体实施过程中，所需要把握的最主要一点原则就是对于任何需要开发的功能一定要完整的采用微服务架构，对于完全独立的新功能这点比较容易把握，而对于涉及到老业务变更的新功能则需要通过重构达到这一目标。
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 2\. 修缮者模式
 
