@@ -47,7 +47,7 @@
 
 EUREKA的注册中心逐渐被ZooKeeper和Nacos等替代了。
 
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 ### 2 关于微服务 <a href="#scroller-7" id="scroller-7"></a>
 
@@ -85,7 +85,7 @@ EUREKA的注册中心逐渐被ZooKeeper和Nacos等替代了。
 
 我们前面已经了解了微服务的概念，通过百度指数可以看出，从2012年之后，微服务的发展有显著的发展趋势。
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 目前业内的微服务相关开发平台和框架还是比较多的，比如较早的Spring Cloud（使用Eureke做服务注册与发现，Ribbon做服务间负载均衡，Hystrix做服务容错保护），
 
@@ -107,7 +107,7 @@ EUREKA的注册中心逐渐被ZooKeeper和Nacos等替代了。
 
 服务需要自己处理网络通信所面临的丢包、错误、乱序、重试等一系列流控问题，因此服务实现中，除了业务逻辑外，还包含对网络传输问题的处理逻辑。
 
-<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 #### 3.3 第三阶：TCP时代 <a href="#scroller-18" id="scroller-18"></a>
 
@@ -115,7 +115,7 @@ TCP协议的出现，避免了每个服务自己实现一套相似的网络传�
 
 这时候我们把处理网络传输的能力下沉，从服务的实现中抽离出来，成为操作系统网络层的一部分。
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 #### 3.4 第四阶：第一代微服务（Spring Cloud/RPC） <a href="#scroller-19" id="scroller-19"></a>
 
@@ -123,7 +123,7 @@ TCP出现之后，服务间的网络通信已经不是一个难题了，所以 G
 
 这时，分布式系统特有的通信语义又出现了，如服务注册与发现、负载均衡、熔断降级策略、认证和授权、端到端trace、日志与监控等，因此根据业务需求,完成一些通信语义的实现。
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 #### 3.5 第五阶：第二代微服务 <a href="#scroller-20" id="scroller-20"></a>
 
@@ -131,7 +131,7 @@ TCP出现之后，服务间的网络通信已经不是一个难题了，所以 G
 
 这些框架实现了分布式系统通信需要的各种通用语义功能：如负载均衡和服务发现等，因此一定程度上屏蔽了这些通信细节，使得开发人员使用较少的框架代码就能开发出健壮的分布式系统。
 
-<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 #### 3.6 第六阶：第一代Service Mesh <a href="#scroller-21" id="scroller-21"></a>
 
@@ -159,7 +159,7 @@ SideCar将分布式服务的通信抽象为单独一层，需要和服务部署�
 
 如果我们从一个全局视角来看，绿色的为应用服务，蓝色的为SideCar，就会得到如下部署图：
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 如果我们省略去服务，只看Service Mesh的代理边车的网格应该是这样的：
 

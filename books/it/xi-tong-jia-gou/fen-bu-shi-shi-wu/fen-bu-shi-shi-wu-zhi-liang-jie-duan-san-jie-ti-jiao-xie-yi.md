@@ -52,7 +52,7 @@ X/Open 组织（即现在的 Open Group ）定义了分布式事务处理模型�
 如果任一参与者节点在第一阶段返回的响应消息为”中止”，或者 协调者节点在第一阶段的询问超时之前无法获取所有参与者节点的响应消息时：\
 
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 > \
 > 1）协调者节点向所有参与者节点发出”回滚操作(rollback)”的请求。2）参与者节点利用之前写入的Undo信息执行回滚，并释放在整个事务期间内占用的资源。3）参与者节点向协调者节点发送”回滚完成”消息。4）协调者节点受到所有参与者节点反馈的”回滚完成”消息后，取消事务。
@@ -75,7 +75,7 @@ X/Open 组织（即现在的 Open Group ）定义了分布式事务处理模型�
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

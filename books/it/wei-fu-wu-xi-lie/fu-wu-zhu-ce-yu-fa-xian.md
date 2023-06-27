@@ -22,7 +22,7 @@
 
 而我们微服务架构中的服务注册与发现结构如下图所示：
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 图片中是一个典型的微服务架构，这个结构中主要涉及到三大角色：
 
@@ -54,7 +54,7 @@ register center - 注册中心
 
 如图中，为Register注册中心注册一个服务信息，会将服务的信息：ServiceName、IP、Port以及服务实例MetaData元数据信息写入到注册中心。当服务发生变化的时候，也可以更新到注册中心。
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 服务提供者（服务实例） 的服务注册模型是一种简单、容易理解、流行的服务注册模型，其在多种技术生态中都有所体现：
 
@@ -66,7 +66,7 @@ register center - 注册中心
 
 可以认为服务实例是一个真正的实体的载体，服务是对这些相同能力或者相同功能服务实例的一个抽象。
 
-<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 ### 1.2 服务发现 <a href="#scroller-3" id="scroller-3"></a>
 
@@ -134,7 +134,7 @@ Spring Cloud Netflix主要分为两个部分：
 
 2、Eureka Client：  微服务应用程序Client端，用以和Eureka Server进行通信。
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Eureka有比较友好的管理界面，如上图所示：
 
@@ -184,7 +184,7 @@ Eureka Server可以运行多个实例来构建集群，解决单点问题，但�
 
 这些接口被用来实现服务的注册与发现功能。并实现一些高级功能，如数据同步、分布式锁、配置中心、集群选举、命名服务等。
 
-<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 在数据模型上，类似于传统的文件系统，节点类型分为：
 
@@ -194,7 +194,7 @@ Eureka Server可以运行多个实例来构建集群，解决单点问题，但�
 
 在实际场景下，微服务启动的时候，会创建一个服务临时节点，等把服务停止，短时间后节点就没有了。
 
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 Zookeeper有如下特点：
 
@@ -216,7 +216,7 @@ Zookeeper有如下特点：
 
 #### 2.2.3 接入Dubbo生态 <a href="#scroller-13" id="scroller-13"></a>
 
-<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 上图中的角色如下：
 
@@ -262,7 +262,7 @@ Consul提供的关键功能如下：
 
 #### 2.3.2 整体架构 <a href="#scroller-16" id="scroller-16"></a>
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 如上图为Consul的架构，这边对技术点做一下说明：
 
@@ -288,7 +288,7 @@ Consul提供的关键功能如下：
 
 所以是典型的CP模式。
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 根据Consul 的选举机制和服务原理，我们有两个注意点 ：
 

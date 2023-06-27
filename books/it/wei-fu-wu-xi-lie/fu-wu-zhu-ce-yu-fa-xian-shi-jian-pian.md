@@ -121,7 +121,7 @@ eureka-service我们是作为注册中心来用的，所以在它的主类Applic
 
 文中的注释还是比较清楚的。 这边可以看到，端口号是1000，所以当工程启动之后，访问 [http://localhost:1000/](http://localhost:1000/) 是可以看到Eureka注册中心页面的。其中还没有发现任何服务。
 
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.1.2 创建客户端 <a href="#scroller-5" id="scroller-5"></a>
 
@@ -214,7 +214,7 @@ eureka-service我们是作为注册中心来用的，所以在它的主类Applic
 
 同样，我们可以调用上面的那个获取注册服务信息的接口，从服务发现的角度看看有多少个服务被注册到注册中心去。 [http://localhost:1001/eurekacenter/service](http://localhost:1001/eurekacenter/service)
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 如上图所示，方括号中的`eureka-client`通过Spring Cloud定义的 getServiceInfo 接口在eureka的实现中获取到的所有服务清单，他是一个String的List，如果注册了多个提供者，就会全部显示。
 
@@ -340,7 +340,7 @@ Consul 用于实现分布式系统的服务发现与配置。与其它分布式�
 
 修改完成之后，我们就可以把这个服务提供者启动了，然后再去注册中心查看服务的注册情况，就可以看到被注册进来的Provider（consul-producer）：
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ## 3 总结 <a href="#scroller-11" id="scroller-11"></a>
 
