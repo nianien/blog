@@ -75,7 +75,7 @@ X/Open 组织（即现在的 Open Group ）定义了分布式事务处理模型�
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
