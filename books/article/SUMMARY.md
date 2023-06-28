@@ -25,24 +25,21 @@
 * [仲秋独酌](yi-fei-shi/zhong-qiu-du-zhuo.md)
 * [元宵.送别](yi-fei-shi/yuan-xiao-.-song-bie.md)
 
-## 诗词赋
+## 逸飞词
 
-* [潇湘词](shi-ci-fu/xiao-xiang-ci.md)
-* [秋波媚](shi-ci-fu/qiu-bo-mei/README.md)
-  * [Page 1](shi-ci-fu/qiu-bo-mei/page-1.md)
-  * [Page 2](shi-ci-fu/qiu-bo-mei/page-2.md)
-  * [Page 3](shi-ci-fu/qiu-bo-mei/page-3.md)
-* [西江月](shi-ci-fu/xi-jiang-yue.md)
-* [蝶恋花](shi-ci-fu/die-lian-hua.md)
-* [忆秦娥](shi-ci-fu/yi-qin-e.md)
-* [六州歌头](shi-ci-fu/liu-zhou-ge-tou.md)
-* [沁园春.秋](shi-ci-fu/qin-yuan-chun-.-qiu.md)
-* [雨霖零](shi-ci-fu/yu-lin-ling.md)
-* [玉蝴蝶.临天涯](shi-ci-fu/yu-hu-die-.-lin-tian-ya.md)
-* [鹤冲天](shi-ci-fu/he-chong-tian.md)
-* [秋波媚](shi-ci-fu/qiu-bo-mei-1.md)
-* [断肠句.情殇](shi-ci-fu/duan-chang-ju-.-qing-shang.md)
-* [霓裳曲](shi-ci-fu/ni-chang-qu.md)
+* [潇湘词](yi-fei-ci/xiao-xiang-ci.md)
+* [秋波媚](yi-fei-ci/qiu-bo-mei.md)
+* [西江月](yi-fei-ci/xi-jiang-yue.md)
+* [蝶恋花](yi-fei-ci/die-lian-hua.md)
+* [忆秦娥](yi-fei-ci/yi-qin-e.md)
+* [六州歌头](yi-fei-ci/liu-zhou-ge-tou.md)
+* [沁园春.秋](yi-fei-ci/qin-yuan-chun-.-qiu.md)
+* [雨霖零](yi-fei-ci/yu-lin-ling.md)
+* [玉蝴蝶.临天涯](yi-fei-ci/yu-hu-die-.-lin-tian-ya.md)
+* [鹤冲天](yi-fei-ci/he-chong-tian.md)
+* [秋波媚](yi-fei-ci/qiu-bo-mei-1.md)
+* [断肠句.情殇](yi-fei-ci/duan-chang-ju-.-qing-shang.md)
+* [霓裳曲](yi-fei-ci/ni-chang-qu.md)
 
 ## 散文诗
 
