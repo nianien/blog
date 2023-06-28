@@ -164,7 +164,7 @@ Netflix zuul：Zuul是一种提供动态路由、监视、弹性、安全性等�
 
 #### 3.3 配置中心 <a href="#scroller-24" id="scroller-24"></a>
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 上面这个是携程的开源配置中心Apollo系统的架构设计，我们从下往上进行分析：
 
@@ -197,7 +197,7 @@ Netflix zuul：Zuul是一种提供动态路由、监视、弹性、安全性等�
 
 Remote Procedure Call Protocol，远程过程调用协议，一般使用在分布式业务或者微服务架构风格中。像调用本地函数一样，去调用一个远端服务。本质上是请求链的底层，维护同一个端口，进行socket通信。常见的RPC技术包含 gRPC、Dubbo、Thrift 等。
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 2、REST 访问模式
 
@@ -299,7 +299,7 @@ FailFast 快速失败。就是服务消费者调用一次失败后，不再重�
 
 通过记录开始 Span 和结束 Span 的时间戳，就能统计出该 Span 的时间延迟，除了时间戳记录之外，它还可以包含一些其他元数据，比如事件名称、请求信息等。
 
-<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 上图显示了Trace ID 和 Spand ID 在链路中的传输过程，它把服务调用的一个时序结构给展现出来了。
 

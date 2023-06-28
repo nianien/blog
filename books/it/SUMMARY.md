@@ -19,3 +19,7 @@
   * [用户模型](ye-wu-jia-gou/yong-hu-mo-xing/README.md)
     * [用户系统设计:三户模型&三层身份模型](ye-wu-jia-gou/yong-hu-mo-xing/yong-hu-xi-tong-she-ji-san-hu-mo-xing-san-ceng-shen-fen-mo-xing.md)
     * [解析「三户模型」及建立账户模型](ye-wu-jia-gou/yong-hu-mo-xing/jie-xi-san-hu-mo-xing-ji-jian-li-zhang-hu-mo-xing.md)
+  * [业务的三重视角](ye-wu-jia-gou/ye-wu-de-san-zhong-shi-jiao/README.md)
+    * [到底啥叫懂业务？业务的三重视角](ye-wu-jia-gou/ye-wu-de-san-zhong-shi-jiao/dao-di-sha-jiao-dong-ye-wu-ye-wu-de-san-zhong-shi-jiao.md)
+    * [业务三重视角——业务模型](ye-wu-jia-gou/ye-wu-de-san-zhong-shi-jiao/ye-wu-san-zhong-shi-jiao-ye-wu-mo-xing.md)
+    * [业务三重视角——商业模式](ye-wu-jia-gou/ye-wu-de-san-zhong-shi-jiao/ye-wu-san-zhong-shi-jiao-shang-ye-mo-shi.md)
