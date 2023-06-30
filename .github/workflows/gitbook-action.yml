@@ -1,11 +1,10 @@
 name: 'Gitbook-Action'
-
 on:
   push:
     branches:
       - master
     paths-ignore:
-      - 'docs/**'  # To Avoid Loop
+      - 'docs/**'  # To Avoid Loops
 permissions:
   contents: read
   pages: write
