@@ -20,7 +20,7 @@
 
 　　在一个平台体系中，通过系统给客户分配的唯一 ID 号客户 ID 来标识客户对像。这里面就有一个关键业务，既然相同证件都会识别成一个客户，那么当相同的证件号进入系统时，系统是如何处理的？当然是合成一个了，这个过程叫做客户归并，即：**将相同证件的客户合成同一个客户号的过程，我们称为归并**。归并是有风险的，所以需要一些鉴权手段来处理。在互联网应用中，一个系统中客户的生命周期如下：
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 注意在这个流程中没有销户的状态。这是为了支持历史业务的处理，客户一般不做销户。此外这个流程和支付账户的流程比较类似，这是为了方便在客户层面做账户控制。以司法协查为例，某个客户被协查以致账户冻结，需要冻结该客户下所有资金账户，这些账户都被止付。
 
@@ -45,7 +45,7 @@
 \
 
 
-<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 ### 3 用户和商户 <a href="#t6" id="t6"></a>
 
@@ -97,11 +97,11 @@
 
 在这些文件中，央行明确对账户实施分类管理的要求。 对这三类账户区别，总结如下：
 
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 #### 4.3 生命周期 <a href="#t12" id="t12"></a>
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 * **账户开立与绑卡**：同一个人在同一银行只能开立一个`Ⅰ`类户，`I`类户的设立需要面对面审核，电子渠道开立的`Ⅱ`类户和`Ⅲ`类户需绑定银行账户进行验证，不得绑定支付机构账户验证，`Ⅱ`类户需向绑定账户验证`5`要素（`4`要素：姓名、身份证号、手机号、银行卡号，额外增加账户等级），`Ⅲ`类户需验证`4`要素，银联支持支持`Ⅱ`、`Ⅲ`类账户跨行验证绑定账户信息。
 * **资金互转**：对非面对面开立的`Ⅱ`、`Ⅲ`类户，限制非绑定账户转入，允许`Ⅱ`、`Ⅲ`类户向绑定账户直接借记资金，银联支持`Ⅱ`、`Ⅲ`类账户与绑定账户间通过借记和贷记业务实现灵活便捷的资金划付。

@@ -156,14 +156,14 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 **能力划分的逻辑** \*\* **能力划分是**自顶向下的逻辑分解的过程\*\*。能力分析的出发点首先是角色分析，以满足角色的诉求为目的，因此，其顶层的划分都是以角色的诉求为划分基础，本质是场景（或流程）的划分。\*\*前端的能力是直接服务于客户需求的，所以其顶层可以按消费的逻辑进行划分。\*\*场景的细分本身可以构成能力细分的逻辑基础，但仍然需要找到场景细分的逻辑。\*\*后端支撑能力本质是服务于经营者，可以从经营者的诉求进行划分。\*\*但因为内部角色的分散，难以在顶层形成贯穿全局的流程主线，就会形成面向资源的分散流程。所以，其能力划分既可以按大的角色分类进行，也可以直接按资源分类进行。这里的资源，本质就是我们所说的域。这也代表了一类细分的思路，在场景细分的划分基础上，通过资源的分类完成下一级的细分。即便到了资源的分类层次，仍有可能进一步细分的必要，这又会回到场景划分的逻辑。所以，**业务能力建模的过程也是在不断寻找不同层次的能力切分逻辑的过程**。 从全局看，核心是以客户为中心进行能力的划分，其实质是按照直接满足客户需求到为满足客户需求进行间接准备来划分。实际上，每一部分能力都服务于生态中的某个特定角色，所以在能力的描述上，直接满足的是当前角色的价值要求，间接地通过客户为中心视角进行原则性校验。
 
-<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 > * 企业的能力围绕“客户、企业自身、合作伙伴” 的生态形成闭环。
 > * 前端围绕满足客户需求&#x20;
 > * 后端分为满足生产要素管理和满足企业自身管理&#x20;
 > * 企业管理暂不涉及
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **后端支撑能力与企业管理能力**
 
@@ -184,7 +184,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 **从概念性的能力到软件实现的层次**
 
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 **能力的表现形式**
 

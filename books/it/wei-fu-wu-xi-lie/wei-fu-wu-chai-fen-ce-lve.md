@@ -40,7 +40,7 @@
 
 因为职能不同，这些领域之间包含清晰的界限，所以我们可以按照这个方向将服务于不同领域（商品域和订单域）的子系统拆成独立的服务颗粒。如下图：
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 **2.1.2 用户群体拆分**
 
@@ -48,14 +48,14 @@
 
 比如教育信息化系统，教师的业务场景和学生的业务场景，基本比较独立，而且拆分后流量上有明显的削弱，这时候结合具体的业务分析，看是否有价值。如下图所示：
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.2 基于可扩展拆分  <a href="#scroller-6" id="scroller-6"></a>
 
 这个需要区分系统中变与不变的部分，不变的部分一般是成熟的、通用的服务功能，变的部分一般是改动比较多、满足业务迭代扩展性需要的功能，我们可以将不变的部分拆分出来，作为共用的服务，将变的部分独立出来满足个性化扩展需要。同时根据二八原则，系统中经常变动的部分大约只占 20%，而剩下的 80% 基本不变或极少变化，这样的拆分也解决了发布频率过多而影响成熟服务稳定性的问题。比如一个电商领域的系统，用户信息、基本商品信息、物流信息 等模块的管理能力和视图界面，一般是比较稳定的；而类似运营活动的功能和页面一般是经常变化的（520、618、双11），会有不同的活动策略和视图界面，需要经常迭代发布。如下图所示\
 
 
-<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.3 基于可靠性拆分 <a href="#scroller-7" id="scroller-7"></a>
 
@@ -65,7 +65,7 @@
 
 同要的道理，我们会将  账号信息、登录信息、服务中心等重要度最高的要害模块单独拆分在一个服务颗粒上（因为这类模块不可用之后，整个系统基本完全瘫痪），再做成服务集群，来保障它的高可用。 如下图所示：
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 **2.3.2 主次链路拆分**
 
@@ -89,7 +89,7 @@
 
 主链路是高频且核心的主业务模块，把主链路的服务与其他起辅助作用的业务服务隔离开来，避免次链路服务的异常情况影响到主链路服务。&#x20;
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.4 基于性能需求拆分 <a href="#scroller-10" id="scroller-10"></a>
 
@@ -101,7 +101,7 @@
 
 另外一个是如果多个业务耦合在一块，发布频率变高、服务扩缩容变难、维护复杂度变高。
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 ### 3 总结拆分原则 <a href="#scroller-11" id="scroller-11"></a>
 

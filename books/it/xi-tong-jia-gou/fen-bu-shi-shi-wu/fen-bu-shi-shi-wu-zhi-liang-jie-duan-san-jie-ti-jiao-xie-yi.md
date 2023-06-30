@@ -44,7 +44,7 @@ X/Open 组织（即现在的 Open Group ）定义了分布式事务处理模型�
 如果协调者收到了参与者的失败消息或者超时，直接给每个参与者发送回滚(Rollback)消息；否则，发送提交(Commit)消息；参与者根据协调者的指令执行提交或者回滚操作，释放所有事务处理过程中使用的锁资源。(注意:必须在最后阶段释放锁资源)接下来分两种情况分别讨论提交阶段的过程。当协调者节点从所有参与者节点获得的相应消息都为”同意”时:\
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 > \
 > 1）协调者节点向所有参与者节点发出”正式提交(commit)”的请求。2）参与者节点正式完成操作，并释放在整个事务期间内占用的资源。3）参与者节点向协调者节点发送”完成”消息。4）协调者节点受到所有参与者节点反馈的”完成”消息后，完成事务。
@@ -52,7 +52,7 @@ X/Open 组织（即现在的 Open Group ）定义了分布式事务处理模型�
 如果任一参与者节点在第一阶段返回的响应消息为”中止”，或者 协调者节点在第一阶段的询问超时之前无法获取所有参与者节点的响应消息时：\
 
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 > \
 > 1）协调者节点向所有参与者节点发出”回滚操作(rollback)”的请求。2）参与者节点利用之前写入的Undo信息执行回滚，并释放在整个事务期间内占用的资源。3）参与者节点向协调者节点发送”回滚完成”消息。4）协调者节点受到所有参与者节点反馈的”回滚完成”消息后，取消事务。
@@ -75,7 +75,7 @@ X/Open 组织（即现在的 Open Group ）定义了分布式事务处理模型�
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
