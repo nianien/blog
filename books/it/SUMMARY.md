@@ -13,6 +13,7 @@
   * [分布式事务](xi-tong-jia-gou/fen-bu-shi-shi-wu/README.md)
     * [分布式事务之两阶段、三阶提交协议](xi-tong-jia-gou/fen-bu-shi-shi-wu/fen-bu-shi-shi-wu-zhi-liang-jie-duan-san-jie-ti-jiao-xie-yi.md)
   * [架构设计](xi-tong-jia-gou/jia-gou-she-ji/README.md)
+    * [一个秒杀系统的设计思考](xi-tong-jia-gou/jia-gou-she-ji/yi-ge-miao-sha-xi-tong-de-she-ji-si-kao.md)
     * [从0开始做一个后台架构](xi-tong-jia-gou/jia-gou-she-ji/cong-0-kai-shi-zuo-yi-ge-hou-tai-jia-gou.md)
 * [业务架构](ye-wu-jia-gou/README.md)
   * [关于业务平台架构的思考](ye-wu-jia-gou/guan-yu-ye-wu-ping-tai-jia-gou-de-si-kao.md)

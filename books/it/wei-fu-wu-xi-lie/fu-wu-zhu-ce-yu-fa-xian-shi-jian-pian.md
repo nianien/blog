@@ -340,7 +340,7 @@ Consul 用于实现分布式系统的服务发现与配置。与其它分布式�
 
 修改完成之后，我们就可以把这个服务提供者启动了，然后再去注册中心查看服务的注册情况，就可以看到被注册进来的Provider（consul-producer）：
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 3 总结 <a href="#scroller-11" id="scroller-11"></a>
 

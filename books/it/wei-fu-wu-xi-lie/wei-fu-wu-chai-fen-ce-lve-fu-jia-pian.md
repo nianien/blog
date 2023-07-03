@@ -18,7 +18,7 @@ AKF扩展立方体（Scalability Cube）是一种可扩展模型，这个立方�
 
 关注服务和数据的优先级划分，如分地域划
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 以上X、Y和Z轴的划分可以概括为X 轴关注水平复制，Z 轴类似数据分区，而Y 轴则强调基于不同的业务拆分。理论上按照这三个扩展维度，可以将一个单体系统进行无限扩展。举例来说，比如用户预约挂号应用，一个集群撑不住时，分了多个集群，后来用户激增还是不够用，经过分析发现是用户和医生访问量很大，就将预约挂号应用拆成了患者服务、医生服务、支付服务等三个服务。三个服务的业务特点各不相同，独立维护，各自都可以再次按需扩展。
 

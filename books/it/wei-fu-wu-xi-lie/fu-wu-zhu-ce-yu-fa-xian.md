@@ -54,7 +54,7 @@ register center - 注册中心
 
 如图中，为Register注册中心注册一个服务信息，会将服务的信息：ServiceName、IP、Port以及服务实例MetaData元数据信息写入到注册中心。当服务发生变化的时候，也可以更新到注册中心。
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 服务提供者（服务实例） 的服务注册模型是一种简单、容易理解、流行的服务注册模型，其在多种技术生态中都有所体现：
 
@@ -202,7 +202,7 @@ Zookeeper有如下特点：
 
 #### 2.2.2 整体架构 <a href="#scroller-12" id="scroller-12"></a>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -302,7 +302,7 @@ Consul提供的关键功能如下：
 
 **对接Spring Cloud生态**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 Consul作为注册中心，集成在Spring Cloud生态。可以看出，跟Eureka对接到Spring Cloud 生态的过程很像。
 

@@ -159,7 +159,7 @@ SideCar将分布式服务的通信抽象为单独一层，需要和服务部署�
 
 如果我们从一个全局视角来看，绿色的为应用服务，蓝色的为SideCar，就会得到如下部署图：
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 如果我们省略去服务，只看Service Mesh的代理边车的网格应该是这样的：
 
@@ -173,11 +173,11 @@ SideCar将分布式服务的通信抽象为单独一层，需要和服务部署�
 
 控制面和所有的数据面（data plane，即代理边车）进行交互，比如策略下发、数据采集等。这就是以Istio为代表的第二代Service Mesh。
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 只包含控制面和数据面的 Service Mesh 服务网格全局结构图 如下：
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 从上面的结构图可以看出，Service Mesh 的基础设施层主要分为两部分：控制平面与数据平面。当前流行的开源服务网格 Istio 和 Linkerd 都是这种构造。
 

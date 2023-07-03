@@ -89,7 +89,7 @@
 
 主链路是高频且核心的主业务模块，把主链路的服务与其他起辅助作用的业务服务隔离开来，避免次链路服务的异常情况影响到主链路服务。&#x20;
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.4 基于性能需求拆分 <a href="#scroller-10" id="scroller-10"></a>
 
