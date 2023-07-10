@@ -44,7 +44,7 @@ AKF扩展立方体（Scalability Cube）是一种可扩展模型，这个立方�
 
 修缮者模式就如修房或修路一样，将老旧待修缮的部分进行隔离，用新的方式对其进行单独修复。修复的同时，需保证与其他部分仍能协同功能。从这种思路出发，修缮者模式更多表现为一种重构技术。修缮者模式在具体实现上可以参考Martine Fowler的BranchByAbstraction重构方法，该重构方法的示意图如下图所示。
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 从上图中，可以看到这种模式的实现方式可以分成三个主要步骤。
 

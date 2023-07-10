@@ -210,7 +210,7 @@ eureka-service我们是作为注册中心来用的，所以在它的主类Applic
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 同样，我们可以调用上面的那个获取注册服务信息的接口，从服务发现的角度看看有多少个服务被注册到注册中心去。 [http://localhost:1001/eurekacenter/service](http://localhost:1001/eurekacenter/service)
 

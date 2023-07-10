@@ -22,7 +22,7 @@
 
 而我们微服务架构中的服务注册与发现结构如下图所示：
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 图片中是一个典型的微服务架构，这个结构中主要涉及到三大角色：
 
@@ -216,7 +216,7 @@ Zookeeper有如下特点：
 
 #### 2.2.3 接入Dubbo生态 <a href="#scroller-13" id="scroller-13"></a>
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
 上图中的角色如下：
 
@@ -262,7 +262,7 @@ Consul提供的关键功能如下：
 
 #### 2.3.2 整体架构 <a href="#scroller-16" id="scroller-16"></a>
 
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 如上图为Consul的架构，这边对技术点做一下说明：
 

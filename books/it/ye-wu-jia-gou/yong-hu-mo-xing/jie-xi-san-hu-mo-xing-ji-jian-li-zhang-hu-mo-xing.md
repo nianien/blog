@@ -45,7 +45,7 @@
 \
 
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 3 用户和商户 <a href="#t6" id="t6"></a>
 

@@ -164,7 +164,7 @@ Netflix zuul：Zuul是一种提供动态路由、监视、弹性、安全性等�
 
 #### 3.3 配置中心 <a href="#scroller-24" id="scroller-24"></a>
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 上面这个是携程的开源配置中心Apollo系统的架构设计，我们从下往上进行分析：
 

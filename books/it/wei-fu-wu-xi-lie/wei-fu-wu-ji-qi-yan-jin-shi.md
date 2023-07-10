@@ -85,7 +85,7 @@ EUREKA的注册中心逐渐被ZooKeeper和Nacos等替代了。
 
 我们前面已经了解了微服务的概念，通过百度指数可以看出，从2012年之后，微服务的发展有显著的发展趋势。
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 目前业内的微服务相关开发平台和框架还是比较多的，比如较早的Spring Cloud（使用Eureke做服务注册与发现，Ribbon做服务间负载均衡，Hystrix做服务容错保护），
 
@@ -99,7 +99,7 @@ EUREKA的注册中心逐渐被ZooKeeper和Nacos等替代了。
 
 这是最初的模样，开发人员最开始的时候想象的两个服务间简单的通信模式，抽象表示如下，两个服务之间直接进行通信：
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.2 第二阶：原始通信时代
 
@@ -107,7 +107,7 @@ EUREKA的注册中心逐渐被ZooKeeper和Nacos等替代了。
 
 服务需要自己处理网络通信所面临的丢包、错误、乱序、重试等一系列流控问题，因此服务实现中，除了业务逻辑外，还包含对网络传输问题的处理逻辑。
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3.3 第三阶：TCP时代 <a href="#scroller-18" id="scroller-18"></a>
 
@@ -131,7 +131,7 @@ TCP出现之后，服务间的网络通信已经不是一个难题了，所以 G
 
 这些框架实现了分布式系统通信需要的各种通用语义功能：如负载均衡和服务发现等，因此一定程度上屏蔽了这些通信细节，使得开发人员使用较少的框架代码就能开发出健壮的分布式系统。
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3.6 第六阶：第一代Service Mesh <a href="#scroller-21" id="scroller-21"></a>
 
