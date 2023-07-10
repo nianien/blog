@@ -71,13 +71,13 @@
 
 ### 2 微服务全景架构 <a href="#scroller-17" id="scroller-17"></a>
 
-***
+
 
 <figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 ### 3 微服务核心组件 <a href="#scroller-19" id="scroller-19"></a>
 
-***
+
 
 微服务架构核心组件包括：
 
@@ -197,7 +197,7 @@ Netflix zuul：Zuul是一种提供动态路由、监视、弹性、安全性等�
 
 Remote Procedure Call Protocol，远程过程调用协议，一般使用在分布式业务或者微服务架构风格中。像调用本地函数一样，去调用一个远端服务。本质上是请求链的底层，维护同一个端口，进行socket通信。常见的RPC技术包含 gRPC、Dubbo、Thrift 等。
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 2、REST 访问模式
 
@@ -307,7 +307,7 @@ FailFast 快速失败。就是服务消费者调用一次失败后，不再重�
 
 ### 4 总结 <a href="#scroller-35" id="scroller-35"></a>
 
-***
+
 
 微服务架构提倡的单一应用程序划分成一组松散耦合的细粒度小型服务，辅助轻量级的协议，互相协调、互相配合，实现高效的应用价值，符合我们应用服务开发的发展趋势。
 

@@ -97,11 +97,11 @@
 
 在这些文件中，央行明确对账户实施分类管理的要求。 对这三类账户区别，总结如下：
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 4.3 生命周期 <a href="#t12" id="t12"></a>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **账户开立与绑卡**：同一个人在同一银行只能开立一个`Ⅰ`类户，`I`类户的设立需要面对面审核，电子渠道开立的`Ⅱ`类户和`Ⅲ`类户需绑定银行账户进行验证，不得绑定支付机构账户验证，`Ⅱ`类户需向绑定账户验证`5`要素（`4`要素：姓名、身份证号、手机号、银行卡号，额外增加账户等级），`Ⅲ`类户需验证`4`要素，银联支持支持`Ⅱ`、`Ⅲ`类账户跨行验证绑定账户信息。
 * **资金互转**：对非面对面开立的`Ⅱ`、`Ⅲ`类户，限制非绑定账户转入，允许`Ⅱ`、`Ⅲ`类户向绑定账户直接借记资金，银联支持`Ⅱ`、`Ⅲ`类账户与绑定账户间通过借记和贷记业务实现灵活便捷的资金划付。

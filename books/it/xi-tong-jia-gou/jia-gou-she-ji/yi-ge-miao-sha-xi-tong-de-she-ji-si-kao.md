@@ -76,7 +76,7 @@ description: >-
 基于以上因素，选择 CDN 的二级缓存比较合适，因为二级缓存数量偏少，容量也更大，访问量相对集中，这样就可以较好解决缓存的失效问题以及命中率问题，是当前比较理想的一种 CDN 化方案。部署方式如下图所示：\
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **1.3 数据整合**
 
@@ -329,5 +329,5 @@ UPDATE item SET inventory = CASE WHEN inventory >= xxx THEN inventory
 同时也在这里抽象、提炼一下，主要是个人对于秒杀设计的提纲式整理，方便各位同学进行参考——!\
 
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 

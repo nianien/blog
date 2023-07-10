@@ -121,7 +121,7 @@ eureka-service我们是作为注册中心来用的，所以在它的主类Applic
 
 文中的注释还是比较清楚的。 这边可以看到，端口号是1000，所以当工程启动之后，访问 [http://localhost:1000/](http://localhost:1000/) 是可以看到Eureka注册中心页面的。其中还没有发现任何服务。
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.1.2 创建客户端 <a href="#scroller-5" id="scroller-5"></a>
 

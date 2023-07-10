@@ -163,7 +163,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 > * 后端分为满足生产要素管理和满足企业自身管理&#x20;
 > * 企业管理暂不涉及
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 **后端支撑能力与企业管理能力**
 
