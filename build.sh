@@ -22,5 +22,5 @@ done
 
 git add .
 git commit -m"gitbook build"
-git push origin "$publish_branch"
+git push --force origin "$publish_branch"
 git checkout master
