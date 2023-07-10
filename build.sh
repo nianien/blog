@@ -6,6 +6,7 @@ publish_dir="docs"
 git branch -D "$publish_branch"
 git checkout --orphan  "$publish_branch"
 
+
 for file in "$publish_source"/*; do
   gitbook build "$file" docs/"${file##*/}"
 done
@@ -20,6 +21,8 @@ for file in "$publish_dir"/*; do
   fi
 done
 
+git rm -rf .github
+git rm -rf build.sh
 git add .
 git commit -m"gitbook build"
 git push --force origin "$publish_branch"
