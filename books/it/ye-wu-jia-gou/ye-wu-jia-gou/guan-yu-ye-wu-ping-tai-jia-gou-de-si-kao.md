@@ -6,7 +6,7 @@
 2. “业务”更白话一些来说，就是各行业中需要处理的事务，但通常偏向指销售的事务，因为任何公司单位最终仍然是以销售产品、销售服务、销售技术等等为主。“业务”最终的目的是“售出产品，换取利润”。——百度
 3. anything that relates to organizing the exchange of goods and services by a business, a governmental institution, or an agency”. ——OpenGroup Togaf—business architecture
 
-\
+
 
 
 **业务的定义**
@@ -17,7 +17,7 @@
 
 业务身份是现实业务在系统中给予的唯一编码标识，是基于“业务”差异性划分而形成的系统ID。业务身份的本质不是为了区分逻辑判断，而是区分需求来源以及规则的适用范围。因此，业务身份应该有全局的一致性。
 
-\
+
 
 
 **业务平台架构的定位是什么**
@@ -76,7 +76,7 @@
 * 通过提供开放的基础架构能力，支持创新和差异化经营；
 * 通过管理基础数据和基本流程节点，提供全局管控的手段和稳定性保障
 
-\
+
 
 
 **业务架构模型分析**
@@ -100,7 +100,7 @@ A set of structured activities or tasks with logical behaviors that produce a sp
 
 A sequence of activities an enterprise undertakes to deliver on a customer request（表示一组端到端增值活动集合，这些活动为客户、干系人或者最终用户获得一个总体结果）
 
-\
+
 
 
 在推动企业IT服务能力的持续演进，业界已经有丰富的参考，分析前述参考模型可以看到：
@@ -109,7 +109,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 * 从内容逻辑看，大多讨论都涉及组织、能力、过程的关系。
 * 虽然在不同的时期，不同的视角，强调的重点不同，但都是希望建立更易于为业务理解的视图，并成为构建IT系统的桥梁。
 
-\
+
 
 
 通常，企业架构包括业务架构、技术架构、应用架构、数据/信息架构，而业务平台最薄弱的环节在于业务架构：
@@ -132,12 +132,12 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 * 在业务沟通中，统一使用达成共识的业务语言而非技术术语
 * 系统被业务感知的部分要有明确的业务语义以及清晰的边界
 
-\
+
 
 
 业务平台架构是一个以流程为基础，以能力为表达的层次结构。第一层，明确语义和范围；第二层，构建完备、正交的业务模型；第三层，与交付形态相结合，提供服务SLA。无论从能力角度，还是从流程角度，都是对企业行为的一种描述方式。我们既可以通过满足的客户需求出发，构建能力的集合，也可以根据流程到企业能力的对应，建立起整体的能力框架或过程框架。
 
-\
+
 
 
 **关于域（domain）的思考：过程域、功能域、能力域、信息域**
@@ -149,12 +149,12 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 基于以上的认知，域的概念可以统一为“信息域”，数据是信息的载体，信息是对数据的语义解释。因此，领域建模就是找出问题范围内的对象及其关系，根据对象间关系的紧密程度，来确定是否属于一个域。
 
-\
+
 
 
 价值链把企业的能力划分为核心能力以及辅助能力的划分，实质是以客户为中心，区分客户与企业两个角色。根据TMF-eTom的划分方式，在核心流程进一步细分基础设施和战略、运营，和生产不直接相关的活动都定义为企业管理。
 
-\
+
 
 
 **能力的语义分析——5W1H的逻辑**
@@ -168,19 +168,19 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 当我们在较高层次谈能力，往往是在谈Why和What；在较低或细节的层次谈能力，则往往强调的是3W1H——即做的程度和特性。
 
-\
+
 
 
 能力的描述通常有两种形式：一是按照做什么和达到的目标来描述；二是按照特性来描述。而特性往往体现为两类：
 
-\
+
 
 
 一是对一个或多个对象属性值的组合的描述，值的组合往往体现为场景。比如担保交易是一个能力描述，那么担保本身是交易的分类特性，就是交易具有的特点。
 
 二是对一个过程执行的非功能特点的描述。如时间、空间等。比如秒杀，描述的是交易的时间特性，又比如店铺红包，描述的是红包使用的范围（也可以理解为空间特性）。
 
-\
+
 
 
 能力的特性描述实际是场景切分的方式。一旦进入场景，就是离散的结构，而按照流程的能力划分方式，则可以是逐步细化的方式，会形成树状的结构。如果我们把二者结合，并加以规范，就能形成既可以满足MECE，又能够把两种特点有效体现的描述方式。
@@ -191,7 +191,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 4. 找出关键的非功能性的特性
 5. 把流程各个环节较为固定的组合找出来
 
-\
+
 
 
 **能力分析 vs 流程分析**
@@ -202,21 +202,21 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 从划分的结果来看，能力划分和流程划分是一致的，但从思考的角度看，是不同的。从划分的确定性看，因为角色有限，能力从结果和目标的角度，避开路径的复杂性，有更强的确定性。
 
-\
+
 
 
 **业务建模 vs 业务架构**
 
 在独立讲述流程建模或者能力建模的论述中，都强调用业务的语言，构建符合业务习惯的成果。业务建模只强调逻辑的完整性，但是在以IT实现为目标的前提下，业务建模和IT实现之间必须建立简单的对应关系。无论是能力建模或者过程建模，最终要与信息模型建立映射关系。在业务分散而平台支撑要统一的情况下，也可以看作是IT在寻找和业务的共同语言。
 
-\
+
 
 
 **商业能力的划分**
 
 能力划分的核心是围绕客户，以是否与客户诉求直接相关作为基准划分。在顶层的视图，划分能力和流程的视角是一致的。因为无论流程视角还是能力视角，都要找出我们能为客户做什么。所以，我们仍然可以区分三类能力：1）客户销售与服务能力；2）支撑能力；3）企业管理能力。
 
-\
+
 
 
 #### 能力划分的逻辑
@@ -225,7 +225,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 从全局看，核心是以客户为中心进行能力的划分，其实质是按照直接满足客户需求到为满足客户需求进行间接准备来划分。实际上，每一部分能力都服务于生态中的某个特定角色，所以在能力的描述上，直接满足的是当前角色的价值要求，间接地通过客户为中心视角进行原则性校验。
 
-\
+
 
 
 ![](https://docs.corp.kuaishou.com/image/api/external/load/out?code=fcAATBsKDxkw2UoHnJVE7WzNp:-7300909054874433371fcAATBsKDxkw2UoHnJVE7WzNp:1687694949148)
@@ -237,7 +237,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 ![](https://docs.corp.kuaishou.com/image/api/external/load/out?code=fcAATBsKDxkw2UoHnJVE7WzNp:5616681425502981079fcAATBsKDxkw2UoHnJVE7WzNp:1687694949148)
 
-\
+
 
 
 **后端支撑能力与企业管理能力**
@@ -261,7 +261,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 ![](https://docs.corp.kuaishou.com/image/api/external/load/out?code=fcAATBsKDxkw2UoHnJVE7WzNp:7276378801607854376fcAATBsKDxkw2UoHnJVE7WzNp:1687694949149)
 
-\
+
 
 
 **能力的表现形式**
@@ -273,12 +273,12 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 能力是围绕以完成客户诉求为目标来划分的，完成一个能力可能需要多个领域对象的协作。能力的细分有横向和纵向的划分方式，未必代表软件实现的粒度细分，所以要建立能力和软件实现的映射关系。但在能力粒度上，一定需要和软件的交付物有一致并且明确的边界。
 
-\
+
 **再看能力、流程、域的关系**
 
 能力是按照完成目标来划分的，流程是按照执行过程划分的，域是按照实体聚合切分的。业务流程是业务感知结果的流程，系统流程是执行步骤的划分。域内可以有流程，域的多项能力可能对应细分流程的多个步骤，不一定有必然的先后顺序，也可能是离散的能力组合。域和能力之间也需要在一定的粒度上建立映射关系，否则会造成在域和能力都有很多层次，并在多个层次间建立复杂的映射。
 
-\
+
 **商业能力层和域内的关系**
 
 商业能力是客户可直接感知的能力，越是面向客户直接交互的层次，在技术上越难以限制其差异性，可能会与需求直接映射；越是趋近技术实现的层次，越是需要更高的抽象，以间接满足需求。
@@ -287,7 +287,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 商业能力团队应该首先是一个设计团队，其次才是一个实现团队。设计应该是和各域一起探讨的过程，商业能力要限制向下层过度延伸，也要迫使下层要更注重域内抽象。在设计过程中，逻辑分解应该尽量形成在各域的独立逻辑，然后组合成对外的交互逻辑。最外层交互所依赖的服务都在商业能力层实现封装，应该以业务设计结果为准，而不是技术设计，对外的扩展点，都在商业能力层定义和体现。
 
-\
+
 
 
 **商业能力在软件结构上的分层**
@@ -303,20 +303,20 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 * 如果考虑放大到所有提供中台能力的都和业务平台同等的地位，那么，整个中台就是内。但这样就要有整个中台的统一的对外组织和架构标准了。
 * 如果从企业内外来看，客户就是外，企业就是内。
 
-#### &#x20;商业能力和域的分层及域间关系
+#### 商业能力和域的分层及域间关系
 
 问题在于域间是否允许调用呢？如果允许，这样的域内调用和外部通过商业能力的调用差别是什么？对于依赖另一个域的实体对象信息的查询调用，都允许。对于依赖另一个域的判断的调用，或者嵌入另一个域的处理环节的调用，都禁止，交给上层去集成。也就是说，上层进行逻辑和控制结构的组装，不限制下层的信息查询，但限制下层的逻辑蔓延。
 
 对于下层能够独立完成的判断逻辑，或者处理环节，鼓励下层去做。但对象必须有属主域，判断应该是本域的关键对象的行为判断，而不能是跨越边界。判断什么是查询，只有直接被认为是对象的直接属性的内容，被认为是查询，所以对于一个域要有基本的概念模型。
 
-\
+
 
 
 #### 商业能力的表达
 
 对组织边界外的外部系统服务，都是商业能力封装，对于和客户直接交互的提供给界面的都是商业能力。商业能力本身可以分成两类：一类是领域内服务，一类是跨域服务。跨域服务，可以作为独立的分类。从上下级关系看，上级的逻辑必然覆盖下层的逻辑，建立能力树，是给用户导航的方式。
 
-\
+
 
 
 **基于企业架构，构建业务架构**
@@ -331,7 +331,7 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 
 ![](https://docs.corp.kuaishou.com/image/api/external/load/out?code=fcAATBsKDxkw2UoHnJVE7WzNp:1277395175609627734fcAATBsKDxkw2UoHnJVE7WzNp:1687694949150)
 
-\
+
 
 
 **构建架构体系**

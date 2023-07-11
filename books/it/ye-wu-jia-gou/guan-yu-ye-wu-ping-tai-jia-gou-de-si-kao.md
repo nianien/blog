@@ -159,8 +159,8 @@ A sequence of activities an enterprise undertakes to deliver on a customer reque
 <figure><img src="../.gitbook/assets/image (20) (2).png" alt=""><figcaption></figcaption></figure>
 
 > * 企业的能力围绕“客户、企业自身、合作伙伴” 的生态形成闭环。
-> * 前端围绕满足客户需求&#x20;
-> * 后端分为满足生产要素管理和满足企业自身管理&#x20;
+> * 前端围绕满足客户需求
+> * 后端分为满足生产要素管理和满足企业自身管理
 > * 企业管理暂不涉及
 
 <figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>

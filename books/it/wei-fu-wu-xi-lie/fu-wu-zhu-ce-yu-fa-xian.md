@@ -60,7 +60,7 @@ register center - 注册中心
 
 1、在K8S生态中，通过 K8S Service服务信息，和Pod的 endpoint（用来记录service对应的pod的访问地址）来进行注册。
 
-2、在Spring Cloud生态中，应用名 对应 服务Service，实例 IP + Port 对应 Instance实例。比较典型的就是A服务，后面对应有多个实例做负载均衡。&#x20;
+2、在Spring Cloud生态中，应用名 对应 服务Service，实例 IP + Port 对应 Instance实例。比较典型的就是A服务，后面对应有多个实例做负载均衡。
 
 3、在其他的注册组件中，比如 Eureka、Consul，服务模型也都是 服务→ 服务实例。
 
@@ -80,7 +80,7 @@ register center - 注册中心
 
 1、拉取的方式：服务消费方（Consumer）主动向注册中心发起服务查询的请求。
 
-2、推送的方式：服务订阅/通知变更（下发）：服务消费方（Consumer）主动向注册中心订阅某个服务，当注册中心中该服务信息发生变更时，注册中心主动通知消费者。&#x20;
+2、推送的方式：服务订阅/通知变更（下发）：服务消费方（Consumer）主动向注册中心订阅某个服务，当注册中心中该服务信息发生变更时，注册中心主动通知消费者。
 
 ### 1.3 注册中心 <a href="#scroller-4" id="scroller-4"></a>
 
@@ -114,7 +114,7 @@ register center - 注册中心
 
 5、服务注册推、拉能力
 
-这个前面说过了，微服务应用程序（服务的Consumer），能够快速感知到服务实例的变化情况，使用拉取或者注册中心下发的方式进行处理。&#x20;
+这个前面说过了，微服务应用程序（服务的Consumer），能够快速感知到服务实例的变化情况，使用拉取或者注册中心下发的方式进行处理。
 
 <figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
@@ -136,7 +136,7 @@ Spring Cloud Netflix主要分为两个部分：
 
 <figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;Eureka有比较友好的管理界面，如上图所示：
+Eureka有比较友好的管理界面，如上图所示：
 
 1、System Status：显示当前Eureka Server信息。
 
@@ -170,11 +170,11 @@ Eureka Server可以运行多个实例来构建集群，解决单点问题，但�
 
 1、Provider 服务提供者：服务向注册中心注册服务信息，即 服务 -> 服务实例 数据模型， 同时定时向注册中心汇报健康检查，如果一定时间内（一般90s）没有进行心跳汇报，则会被注册中心剔除。
 
-所以这边注意，注册中心感知到应用下线并进行剔除这个过程可能比较长。&#x20;
+所以这边注意，注册中心感知到应用下线并进行剔除这个过程可能比较长。
 
 2、Consumer 服务消费者：服务向注册中心获取所需服务对应的服务实例信息。这边需要注意，Eureka不支持订阅，因此在Spring Cloud生态中，通过定时拉取方式从注册中心中获取所需的服务实例信息。
 
-3、Remote Call 远程调用：Consumer从注册中心获取的Provider的实例信息，通过 Load Balance的策略，确定一个实际的实例，发起远程调用。&#x20;
+3、Remote Call 远程调用：Consumer从注册中心获取的Provider的实例信息，通过 Load Balance的策略，确定一个实际的实例，发起远程调用。
 
 ### 2.2 ZooKeeper <a href="#scroller-10" id="scroller-10"></a>
 
@@ -204,11 +204,11 @@ Zookeeper有如下特点：
 
 <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+
 
 上图是Zookeeper 的服务架构，他有如下流程：
 
-1、 多个节点组成分布式架构，每个Server在内存中存储一份数据；&#x20;
+1、 多个节点组成分布式架构，每个Server在内存中存储一份数据；
 
 2、通过选举产生leader，通过 Paxos(帕克索斯)强一致性算法 进行保证，是典型的CP结构。
 
@@ -294,7 +294,7 @@ Consul提供的关键功能如下：
 
 1、部署Consul Service 节点应该奇数为宜，因为+1的偶数节点和奇数节点可容忍的故障数是一样的，比如上图3和4，另一方面，偶数个节点在选主节点的时候可能会出现二分选票的情况，还得重新选举。
 
-2、Consul Service 节点数不是越多越好，虽然Server数量越多可容忍的故障数越多，但是Raft进行日志复制也是很耗时间的，而且Server数量越多，性能越低，所以结合实际场景，一般建议Server部署3个即可。&#x20;
+2、Consul Service 节点数不是越多越好，虽然Server数量越多可容忍的故障数越多，但是Raft进行日志复制也是很耗时间的，而且Server数量越多，性能越低，所以结合实际场景，一般建议Server部署3个即可。
 
 有兴趣的同学可以去Consul官网看看它的选举机制，还可以对比下Redis中Sentinel模式。
 
@@ -328,7 +328,7 @@ Consul作为注册中心，集成在Spring Cloud生态。可以看出，跟Eurek
 | Dubbo 集成           | 不支持               | 支持              | 支持                  | 不支持                 |
 | K8S 集成             | 不支持               | 不支持             | 支持                  | 支持                  |
 
-&#x20;&#x20;
+
 
 这边是对业内4种注册中心各纬度上的对比，Eureka是典型的AP类型，Zookeeper和Consul是典型的CP类型。如何选择取决你的业务是倾向A：高可用性 还是 C：强一致性。
 

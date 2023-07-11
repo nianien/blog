@@ -20,9 +20,9 @@
 
 ### 1. 需求介绍 <a href="#xu-qiu-jie-shao" id="xu-qiu-jie-shao"></a>
 
-需求介绍主要描述需求的背景、以及新系统想要达成的目标。\
-比如我在设计公司`用户动态与Websocet`业务时提到：旧动态系统延迟过高、进程池进程数量有限，有时会出现任务卡死的情况，需要手动重启系统才能暂时恢复（不能根治），导致用户动态推送业务极不稳定。新系统的目标是为了改善这一情况，保障动态业务稳定性。\
-再比如我在设计公司自动化部署在线文档时提到：旧文档由各个开发人员在本地生成，上传到 Git 时可能有冲突、且不方便人员查看，所以准备部署一个在线文档，开发人员编写好文档后自动生成在线文档，方便查阅。\
+需求介绍主要描述需求的背景、以及新系统想要达成的目标。
+比如我在设计公司`用户动态与Websocet`业务时提到：旧动态系统延迟过高、进程池进程数量有限，有时会出现任务卡死的情况，需要手动重启系统才能暂时恢复（不能根治），导致用户动态推送业务极不稳定。新系统的目标是为了改善这一情况，保障动态业务稳定性。
+再比如我在设计公司自动化部署在线文档时提到：旧文档由各个开发人员在本地生成，上传到 Git 时可能有冲突、且不方便人员查看，所以准备部署一个在线文档，开发人员编写好文档后自动生成在线文档，方便查阅。
 总结就是三个关键点：哪里有问题、想怎么解决问题、能达到什么效果。
 
 ### 2. 架构总览 <a href="#jia-gou-zong-lan" id="jia-gou-zong-lan"></a>
@@ -31,12 +31,12 @@
 
 > 架构图的画法没有严格要求，唯一的要求就是易懂。个人建议 Figma 和 ProcessOn 二者结合使用。
 
-可以给大家瞧瞧我当初做 Wordpress 站点 CDN 优化的架构图：\
+可以给大家瞧瞧我当初做 Wordpress 站点 CDN 优化的架构图：
 
 
 <figure><img src="https://www.kaolengmian7.com/app/imgs/architecture/architecture_design_template/1.png" alt=""><figcaption></figcaption></figure>
 
-再给大伙看看我利用 Github Action、DroneCI/CD、Docker、K8s 做的自动化在线文档：\
+再给大伙看看我利用 Github Action、DroneCI/CD、Docker、K8s 做的自动化在线文档：
 
 
 <figure><img src="https://www.kaolengmian7.com/app/imgs/architecture/architecture_design_template/2.png" alt=""><figcaption></figcaption></figure>
@@ -45,13 +45,13 @@
 
 ### 3. 核心流程 <a href="#he-xin-liu-cheng" id="he-xin-liu-cheng"></a>
 
-核心流程的主要任务是针对上面的架构图讲解各个关键组件是如何工作的、数据的流向与处理方式等等，复杂的业务最好给出**时序图。**\
+核心流程的主要任务是针对上面的架构图讲解各个关键组件是如何工作的、数据的流向与处理方式等等，复杂的业务最好给出**时序图。**
 **个人认为架构图和时序图是最重要的两个图，让整个系统结构和处理逻辑一目了然，配合口头讲解非常易懂。**
 
 ### 4. 详细设计 <a href="#xiang-xi-she-ji" id="xiang-xi-she-ji"></a>
 
-对于一些比较复杂的小组件 or 小设计，需要额外写一些详细设计文档，降低同事理解代码的成本。\
-比如我在设计分布式唯一 Id 生成器时详细介绍了`双Buffer优化`这个小设计：\
+对于一些比较复杂的小组件 or 小设计，需要额外写一些详细设计文档，降低同事理解代码的成本。
+比如我在设计分布式唯一 Id 生成器时详细介绍了`双Buffer优化`这个小设计：
 ![image.png](https://www.kaolengmian7.com/app/imgs/architecture/architecture\_design\_template/3.png)
 
 1. id 容器采用双 buffer 实现，目的是防止某一个请求进来恰巧桶内没数据需要请求 mysql 从而造成高延迟的情况。（buffer 容量可配置）
@@ -59,7 +59,7 @@
 
 ### 5. 高可用设计 <a href="#gao-ke-yong-she-ji" id="gao-ke-yong-she-ji"></a>
 
-讲解系统设计是怎样考虑高可用这个指标的。比如数据库宕机怎么办？数据一致性如何处理？数据丢失怎么办？缓存的方案？出Bug如何补救？如何 Debug、如何排查线上问题？性能指标、业务指标监控该怎么做？\
+讲解系统设计是怎样考虑高可用这个指标的。比如数据库宕机怎么办？数据一致性如何处理？数据丢失怎么办？缓存的方案？出Bug如何补救？如何 Debug、如何排查线上问题？性能指标、业务指标监控该怎么做？
 这块内容的要诀有两个：一是要结合具体情况，二是要多积累经验。
 
 ### 6. 高性能设计 <a href="#gao-xing-neng-she-ji" id="gao-xing-neng-she-ji"></a>
