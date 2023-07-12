@@ -37,7 +37,6 @@
 * [雨霖零](yi-fei-ci/yu-lin-ling.md)
 * [玉蝴蝶.临天涯](yi-fei-ci/yu-hu-die-.-lin-tian-ya.md)
 * [鹤冲天](yi-fei-ci/he-chong-tian.md)
-* [秋波媚](yi-fei-ci/qiu-bo-mei-1.md)
 * [断肠句.情殇](yi-fei-ci/duan-chang-ju-.-qing-shang.md)
 * [霓裳曲](yi-fei-ci/ni-chang-qu.md)
 
