@@ -17,6 +17,7 @@
     * [高并发系统设计的15个锦囊](xi-tong-jia-gou/jia-gou-she-ji/gao-bing-fa-xi-tong-she-ji-de-15-ge-jin-nang.md)
     * [架构设计模板](xi-tong-jia-gou/jia-gou-she-ji/jia-gou-she-ji-mo-ban.md)
     * [从0开始做一个后台架构](xi-tong-jia-gou/jia-gou-she-ji/cong-0-kai-shi-zuo-yi-ge-hou-tai-jia-gou.md)
+    * [领略SET化架构衍化与设计](xi-tong-jia-gou/jia-gou-she-ji/ling-lve-set-hua-jia-gou-yan-hua-yu-she-ji.md)
   * [大数据](xi-tong-jia-gou/da-shu-ju/README.md)
     * [大数据分析常用去重算法分析『Bitmap 篇』](xi-tong-jia-gou/da-shu-ju/da-shu-ju-fen-xi-chang-yong-qu-zhong-suan-fa-fen-xi-bitmap-pian.md)
     * [大数据分析常用去重算法分析『HyperLogLog 篇』](xi-tong-jia-gou/da-shu-ju/da-shu-ju-fen-xi-chang-yong-qu-zhong-suan-fa-fen-xi-hyperloglog-pian.md)
