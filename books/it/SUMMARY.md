@@ -34,3 +34,5 @@
   * [电商分析必懂的指标体系，引流、转化、留存，一文带你搞懂](ye-wu-jia-gou/dian-shang-fen-xi-bi-dong-de-zhi-biao-ti-xi-yin-liu-zhuan-hua-liu-cun-yi-wen-dai-ni-gao-dong.md)
 * [技术实战](ji-shu-shi-zhan/README.md)
   * [Java构件发布到中央仓库](ji-shu-shi-zhan/java-gou-jian-fa-bu-dao-zhong-yang-cang-ku.md)
+  * [Maven使用技巧](ji-shu-shi-zhan/maven-shi-yong-ji-qiao.md)
+  * [Git常用命名](ji-shu-shi-zhan/git-chang-yong-ming-ming.md)
