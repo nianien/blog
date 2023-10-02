@@ -35,4 +35,4 @@
 * [技术实战](ji-shu-shi-zhan/README.md)
   * [Java构件发布到中央仓库](ji-shu-shi-zhan/java-gou-jian-fa-bu-dao-zhong-yang-cang-ku.md)
   * [Maven使用技巧](ji-shu-shi-zhan/maven-shi-yong-ji-qiao.md)
-  * [Git常用命名](ji-shu-shi-zhan/git-chang-yong-ming-ming.md)
+  * [Git常用命令](ji-shu-shi-zhan/git-chang-yong-ming-ling.md)
