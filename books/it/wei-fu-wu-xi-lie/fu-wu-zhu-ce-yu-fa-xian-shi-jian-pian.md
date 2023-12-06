@@ -121,7 +121,7 @@ eureka-service我们是作为注册中心来用的，所以在它的主类Applic
 
 文中的注释还是比较清楚的。 这边可以看到，端口号是1000，所以当工程启动之后，访问 [http://localhost:1000/](http://localhost:1000/) 是可以看到Eureka注册中心页面的。其中还没有发现任何服务。
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.1.2 创建客户端 <a href="#scroller-5" id="scroller-5"></a>
 
@@ -208,9 +208,7 @@ eureka-service我们是作为注册中心来用的，所以在它的主类Applic
 
 这时候跑一下试试看，继续访问之前的地址：[http://localhost:1000/](http://localhost:1000/) ，可以看到Eureka注册中心页面已经包含一个我们定义的服务了，就是上面新建的 1001 端口的服务。
 
-
-
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 同样，我们可以调用上面的那个获取注册服务信息的接口，从服务发现的角度看看有多少个服务被注册到注册中心去。 [http://localhost:1001/eurekacenter/service](http://localhost:1001/eurekacenter/service)
 
@@ -276,7 +274,7 @@ Consul 用于实现分布式系统的服务发现与配置。与其它分布式�
 10            Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false, Auto-Encrypt-TLS: false 
 ```
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 我们可以看到，现在没有客户端注册上来，只有一个自身的实例。
 
@@ -340,7 +338,7 @@ Consul 用于实现分布式系统的服务发现与配置。与其它分布式�
 
 修改完成之后，我们就可以把这个服务提供者启动了，然后再去注册中心查看服务的注册情况，就可以看到被注册进来的Provider（consul-producer）：
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 3 总结 <a href="#scroller-11" id="scroller-11"></a>
 

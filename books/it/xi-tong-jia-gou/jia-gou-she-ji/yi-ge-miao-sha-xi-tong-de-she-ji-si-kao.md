@@ -75,8 +75,7 @@ description: >-
 
 基于以上因素，选择 CDN 的二级缓存比较合适，因为二级缓存数量偏少，容量也更大，访问量相对集中，这样就可以较好解决缓存的失效问题以及命中率问题，是当前比较理想的一种 CDN 化方案。部署方式如下图所示：
 
-
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1.3 数据整合**
 
@@ -280,10 +279,7 @@ UPDATE item SET inventory = CASE WHEN inventory >= xxx THEN inventory
 
 过滤的核心结构在于分层，通过在不同层次过滤掉无效请求，达到数据读写的精准触发。常见的过滤主要有以下几层：
 
-1、读限流：对读请求做限流保护，将超出系统承载能力的请求过滤掉
-2、读缓存：对读请求做数据缓存，将重复的请求过滤掉
-3、写限流：对写请求做限流保护，将超出系统承载能力的请求过滤掉
-4、写校验：对写请求做一致性校验，只保留最终的有效数据
+1、读限流：对读请求做限流保护，将超出系统承载能力的请求过滤掉 2、读缓存：对读请求做数据缓存，将重复的请求过滤掉 3、写限流：对写请求做限流保护，将超出系统承载能力的请求过滤掉 4、写校验：对写请求做一致性校验，只保留最终的有效数据
 
 过滤的核心目的是通过减少无效请求的数据IO保障有效请求的IO性能。
 
@@ -296,7 +292,6 @@ UPDATE item SET inventory = CASE WHEN inventory >= xxx THEN inventory
 当一个系统面临持续的高峰流量时，其实是很难单靠自身调整来恢复状态的，日常运维没有人能够预估所有情况，意外总是无法避免。尤其在秒杀这一场景下，为了保证系统的高可用，必须设计一个 Plan B 方案来进行兜底。
 
 高可用建设，其实是一个系统工程，贯穿在系统建设的整个生命周期。
-
 
 <figure><img src="../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -328,6 +323,4 @@ UPDATE item SET inventory = CASE WHEN inventory >= xxx THEN inventory
 
 同时也在这里抽象、提炼一下，主要是个人对于秒杀设计的提纲式整理，方便各位同学进行参考——!
 
-
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

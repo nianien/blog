@@ -2,7 +2,7 @@
 
 记得很久之前，去面试过**字节跳动**。被三面的面试官问了一道场景设计题目：**如何设计一个高并发系统**。当时我回答得比较粗糙，最近回想起来，所以整理了设计高并发系统的15个锦囊，相信大家看完会有帮助的。
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 如何理解高并发系统 <a href="#item-0-1" id="item-0-1"></a>
 
@@ -75,7 +75,7 @@
 
 我们搞一些双十一、双十二等运营活动时，需要**避免流量暴涨，打垮应用系统的风险**。因此一般会引入消息队列，来应对**高并发的场景**。
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 假设你的应用系统每秒最多可以处理`2k`个请求，每秒却有`5k`的请求过来，可以引入消息队列，应用系统每秒从消息队列拉`2k`请求处理得了。
 
@@ -96,7 +96,7 @@
 
 比如分布式调用链路`A->B->C....`，下图所示：
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 > 如果服务`C`出现问题，比如是因为慢`SQL`导致调用缓慢，那将导致`B`也会延迟，从而`A`也会延迟。堵住的`A`请求会消耗占用系统的线程、IO、CPU等资源。当请求`A`的服务越来越多，占用计算机的资源也越来越多，最终会导致系统瓶颈出现，造成其他的请求同样不可用，最后导致业务系统崩溃。
 

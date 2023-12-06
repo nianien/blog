@@ -54,7 +54,7 @@ register center - 注册中心
 
 如图中，为Register注册中心注册一个服务信息，会将服务的信息：ServiceName、IP、Port以及服务实例MetaData元数据信息写入到注册中心。当服务发生变化的时候，也可以更新到注册中心。
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 服务提供者（服务实例） 的服务注册模型是一种简单、容易理解、流行的服务注册模型，其在多种技术生态中都有所体现：
 
@@ -132,7 +132,7 @@ Spring Cloud Netflix主要分为两个部分：
 
 1、Eureka Server： 作为注册中心Server端，向微服务应用程序提供服务注册、发现、健康检查等能力。
 
-2、Eureka Client：  微服务应用程序Client端，用以和Eureka Server进行通信。
+2、Eureka Client： 微服务应用程序Client端，用以和Eureka Server进行通信。
 
 <figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
@@ -164,7 +164,7 @@ Eureka Server可以运行多个实例来构建集群，解决单点问题，但�
 
 #### 2.1.3 接入Spring Cloud <a href="#scroller-9" id="scroller-9"></a>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 如上图所示：
 
@@ -202,9 +202,7 @@ Zookeeper有如下特点：
 
 #### 2.2.2 整体架构 <a href="#scroller-12" id="scroller-12"></a>
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 上图是Zookeeper 的服务架构，他有如下流程：
 
@@ -302,7 +300,7 @@ Consul提供的关键功能如下：
 
 **对接Spring Cloud生态**
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 Consul作为注册中心，集成在Spring Cloud生态。可以看出，跟Eureka对接到Spring Cloud 生态的过程很像。
 
@@ -327,8 +325,6 @@ Consul作为注册中心，集成在Spring Cloud生态。可以看出，跟Eurek
 | Spring Cloud 集成    | 支持                | 支持              | 支持                  | 支持                  |
 | Dubbo 集成           | 不支持               | 支持              | 支持                  | 不支持                 |
 | K8S 集成             | 不支持               | 不支持             | 支持                  | 支持                  |
-
-
 
 这边是对业内4种注册中心各纬度上的对比，Eureka是典型的AP类型，Zookeeper和Consul是典型的CP类型。如何选择取决你的业务是倾向A：高可用性 还是 C：强一致性。
 
