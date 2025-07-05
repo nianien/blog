@@ -12,10 +12,10 @@ description: >-
 \
 
 
-```
+```sql
 select * from user 
 where id in (1001,1001, 1002, 1003, 1004, 1005, 1006, 1007) 
-and name in(
+and name in(sql
 select name from whitelist 
 where name in('a','b','c','d','e','f','g','h','i','j','k','l','m')
 )
@@ -26,7 +26,7 @@ where name in('a','b','c','d','e','f','g','h','i','j','k','l','m')
 \
 
 
-```
+```sql
 select * from user 
 where id in (1001,1001, 1002, 1003, 1004,...) 
 and name in(
@@ -66,7 +66,7 @@ _jdbc:log4jdbc:mysql://localhost:3306/test?useUnicode=true\&characterEncoding=ut
 
 * P6Spy：
 
-```
+```java
 @Bean
 @Primary
 public DataSource spyDataSource(@Autowired DataSource dataSource) {
@@ -77,7 +77,7 @@ public DataSource spyDataSource(@Autowired DataSource dataSource) {
 
 * log4jdbc
 
-```
+```java
 public DataSource spyDataSource(DataSource dataSource) {
     // wrap the provided dataSource
   ﻿return new DataSource() {
@@ -105,7 +105,7 @@ public DataSource spyDataSource(DataSource dataSource) {
 
 排除上述两种方式，剩下的只有第三种方案了，但是第三种方案有很大的挑战，原因在于需要兼容快手kuaishou-framework奇葩的JdbcTemplate使用方式，确切地说，在于使用了DataSourceConfig。
 
-```
+```java
 public interface DataSourceConfig extends HasBizDef, WarmupAble {
 
     /**
@@ -133,7 +133,7 @@ public interface DataSourceConfig extends HasBizDef, WarmupAble {
 
 DefaultDataSourceConfig是一个接口类，默认封装了NamedParameterJdbcTemplate的创建，业务方通过继承该接口来定义数据源:
 
-```
+```java
 public final enum class AdDataSources private constructor(forTest: AdDataSources? = COMPILED_CODE, usingNewZk: kotlin.Boolean = COMPILED_CODE, bizDef: BizDef = COMPILED_CODE) : kotlin.Enum<AdDataSources>, DataSourceConfig {
   adFansTopProfileDashboardTest,
 
@@ -174,7 +174,7 @@ public final enum class AdDataSources private constructor(forTest: AdDataSources
 
 具体扒代码的过程就不赘述了，直接说结果吧，kuaishou-framework的数据源最终是通过DataSourceFactory进行创建的，具体代码如下：
 
-```
+```java
 public static ListenableDataSource<Failover<Instance>> create(Instance i) {
    //...
    ﻿try {
@@ -194,7 +194,7 @@ public static ListenableDataSource<Failover<Instance>> create(Instance i) {
 
 ### **二、动态修改加载类**
 
-成本最低的方式就是直接修改这段代码，将其中的_new HikariDataSource(config)_修改成_new P6DataSource(new HikariDataSource(config))，_那么问题来了，这段代码属于基础组件包中的代码，基础架构组没有动力去修改，而我们又没有修改的权限，要想动这块代码，只能使用黑科技了。黑科技的手段有很多，那么问题又来了，哪种手段更合适呢？
+成本最低的方式就是直接修改这段代码，将其中&#x7684;_&#x6E;ew HikariDataSource(config)_&#x4FEE;改&#x6210;_&#x6E;ew P6DataSource(new HikariDataSource(config))，_&#x90A3;么问题来了，这段代码属于基础组件包中的代码，基础架构组没有动力去修改，而我们又没有修改的权限，要想动这块代码，只能使用黑科技了。黑科技的手段有很多，那么问题又来了，哪种手段更合适呢？
 
 首先我们来分析一下，有哪些手段可以修改Java字节码？
 
@@ -222,14 +222,9 @@ _下面是对动态启动Java Agent技术的解释_
 
 > However, recent JVMs forbid self-attaching unless -Djdk.attach.allowAttachSelf=true has been specified at startup, but I suppose, taking additional steps at startup time, is precisely what you don’t want to do. One way to circumvent this, is to use another process. All this process has to to, is to attach to your original process and tell the JVM to start the Agent. Then, it may already terminate and everything else works the same way as before the introduction of this restriction.
 
-> As mentioned in [this comment](https://stackoverflow.com/questions/56787777/?noredirect=1\&lq=1#comment100160373\_56787777), Byte-Buddy has already implemented those necessary steps and the stripped-down Byte-Buddy-Agent contains that logic only, so you can use it to build your own logic atop it.
+> As mentioned in [this comment](https://stackoverflow.com/questions/56787777/?noredirect=1\&lq=1#comment100160373_56787777), Byte-Buddy has already implemented those necessary steps and the stripped-down Byte-Buddy-Agent contains that logic only, so you can use it to build your own logic atop it.
 
-* 字节码工具对比
-
-\
-
-
-\
+* 字节码工具对比\
 
 
 ![](https://static.yximgs.com/udata/pkg/EE-KSTACK/4223630ea14c6367968188fd52cafa26.png)
@@ -245,10 +240,7 @@ _new ListenableDataSource<>(bizName, new HikariDataSource(config), ds -> i.toStr
 
 这里实际生成的数据源类型是ListenableDataSource，而ListenableDataSource刚好继承了DelegatingDataSource类，而DelegatingDataSource的构造方法如下：
 
-\
-
-
-```
+```java
 public class DelegatingDataSource implements DataSource {
    //...
   ﻿public DelegatingDataSource(DataSource targetDataSource) {
@@ -267,7 +259,7 @@ public class DelegatingDataSource implements DataSource {
 \
 
 
-```
+```java
 public void setTargetDataSource(@Nullable DataSource targetDataSource) {
         this.targetDataSource = new P6DataSource(targetDataSource;
 }
@@ -279,7 +271,7 @@ public void setTargetDataSource(@Nullable DataSource targetDataSource) {
 
 假设你已经通过Java代码编译了新的类，现在要替换JVM中类的定义，代码如下：
 
-```
+```java
 //
 new ByteBuddy()
   .redefine(NewDelegatingDataSource.class)
@@ -291,10 +283,7 @@ new ByteBuddy()
 
 #### **2、操作字节码：**
 
-\
-
-
-```
+```java
 new ByteBuddy()
     .redefine(DelegatingDataSource.class)
     //重写DelegatingDataSource#setTargetDataSource方法
@@ -351,25 +340,13 @@ INSTANCE; // singleton
 
 上述代码的核心思想是字节操作字节码，操作字节码是非常复杂和繁重的事情，且无法debug，那么有没有比较方便的方式呢？
 
-我们可以手动改写Java代码，然后利用插件生成对应的字节码，然后在其基础上进行修改，研发成本会低很多。这里推荐IDEA的一个插件：Byte-Code-Analyzer，使用该插件可以查看类对应的ASM字节码，
-
-\
-
-
-\
-
+我们可以手动改写Java代码，然后利用插件生成对应的字节码，然后在其基础上进行修改，研发成本会低很多。这里推荐IDEA的一个插件：Byte-Code-Analyzer，使用该插件可以查看类对应的ASM字节码:
 
 ![](https://static.yximgs.com/udata/pkg/EE-KSTACK/e31962a90f6598880e78d8254d6c74d9)
 
-\
-
-
 #### **3、利用byte-buddy的Advice**
 
-\
-
-
-```
+```java
  public static void redefine() {
    new ByteBuddy()
      .redefine(DelegatingDataSource.class)
@@ -392,10 +369,7 @@ static class Decorator {
 
 byte-buddy的Advisor和动态代理的原理不一样，他是直接修改方法体的字节码，上面的方法就是表示在方法开始插入一行，其效果如下：
 
-\
-
-
-```
+```java
 public void setTargetDataSource(@Nullable DataSource targetDataSource) {
   //插入的代码
   targetDataSource = new P6DataSource(targetDataSource);
@@ -412,10 +386,7 @@ public void setTargetDataSource(@Nullable DataSource targetDataSource) {
 
 前面我们讲了如何修改字节码，以提供SQL监控功能，那么如何让SQL监控自动生效呢？我们的目标是非侵入式解决方案：既不能修改业务代码，也不能更改系统配置。鉴于Java世界的事实标准，我们利用了SpringBoot-Starter功能，只需增加一个maven依赖，就自动提供了SQL监控能力。
 
-\
-
-
-```
+```xml
 <dependency>
   ﻿<groupId>com.kuaishou.ad</groupId>
   ﻿<artifactId>sqllog-spring-boot-starter</artifactId>
@@ -425,7 +396,7 @@ public void setTargetDataSource(@Nullable DataSource targetDataSource) {
 
 至于SpringBoot-Starter的实现原理，网上资料很多，核心思想就是提供默认配置，开箱即用。需要注意的是，Spring6.0自动配置的方案有了调整，原来基于spring.factories的配置改成了org.springframework.boot.autoconfigure.AutoConfiguration.imports，原有的方式还支持，这对应普通应用没有影响，但是在实现Spring多容器隔离的方案上有一定的影响，后面有时间会展开讲一下。
 
-```
+```java
 private static String[] getConfigurations(File file) {
   @EnableAutoConfiguration
   class NoScan {
@@ -441,23 +412,11 @@ private static String[] getConfigurations(File file) {
 }
 ```
 
-\
-
-
 ### **四、SQL打印效果**
 
 sqllog-spring-boot-starter默认基于p6spy，并对SQL输出提供了扩展，打印SQL日志如下：
 
-\
-
-
-\
-
-
 ![](https://static.yximgs.com/udata/pkg/EE-KSTACK/28cd44d1451c960cfb982773aab6ec44)
-
-\
-
 
 SQL的打印内容分为三部分：
 
