@@ -297,11 +297,13 @@ enum MyImplementation implements Implementation {
 
 INSTANCE; // singleton
 
-  @Overridepublic InstrumentedType prepare(InstrumentedType instrumentedType) {
+  @Override
+  public InstrumentedType prepare(InstrumentedType instrumentedType) {
   return instrumentedType;
   }
   
-  @Overridepublic ByteCodeAppender appender(Target implementationTarget) {
+  @Override
+  public ByteCodeAppender appender(Target implementationTarget) {
   return MyAppender.INSTANCE;
   }
   
