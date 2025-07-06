@@ -31,7 +31,7 @@ _首先强调一下，Maven中央仓库并不支持直接发布jar包。我们�
 
 #### 2.2、验证域名 <a href="#snbg0" id="snbg0"></a>
 
-我们需要使用域名作为Group Id，如果你拥有域名_example.com，则能够使用com.example开头作为Group Id，例如：com.example.myproject。其他一些栗子如下：_
+我们需要使用域名作为Group Id，如果你拥有域&#x540D;_&#x65;xample.com，则能够使用com.example开头作为Group Id，例如：com.example.myproject。其他一些栗子如下：_
 
 * _example.com -> com.example.domain_
 * [www.springframework.org](http://www.springframework.org/) -> org.springframework
@@ -65,7 +65,7 @@ _首先强调一下，Maven中央仓库并不支持直接发布jar包。我们�
 
 #### 3、安装GPG，创建密钥 <a href="#dcxco" id="dcxco"></a>
 
-安装GPG的方式有多种，这里推荐图形化安装，因为通过命令行安装，由于找不到合适的密钥服务器，发布密钥时会失败。这里给出Mac版本的下载地址：[https://releases.gpgtools.org/GPG\_Suite-2022.1.dmg](https://releases.gpgtools.org/GPG\_Suite-2022.1.dmg)
+安装GPG的方式有多种，这里推荐图形化安装，因为通过命令行安装，由于找不到合适的密钥服务器，发布密钥时会失败。这里给出Mac版本的下载地址：[https://releases.gpgtools.org/GPG\_Suite-2022.1.dmg](https://releases.gpgtools.org/GPG_Suite-2022.1.dmg)
 
 * 创建密钥
 
@@ -87,7 +87,7 @@ _首先强调一下，Maven中央仓库并不支持直接发布jar包。我们�
 
 * 第一步，配置setting.xml文件，添加server节点：
 
-{% code overflow="wrap" lineNumbers="true" fullWidth="false" %}
+{% code fullWidth="false" %}
 ```xml
 <servers>
 <server>
@@ -109,7 +109,7 @@ _首先强调一下，Maven中央仓库并不支持直接发布jar包。我们�
 
 * 第二步，配置pom.xml文件，添加必填项
 
-{% code overflow="wrap" lineNumbers="true" fullWidth="false" %}
+{% code fullWidth="false" %}
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
