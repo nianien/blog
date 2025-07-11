@@ -1,0 +1,20 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="16" cy="16" r="14" fill="#3B82F6" stroke="#1E40AF" stroke-width="1"/>
+  
+  <!-- 书本图标 -->
+  <path d="M10 12h12v8H10z" fill="white"/>
+  <path d="M10 12l3-1v10l-3-1V12z" fill="#E5E7EB"/>
+  <path d="M22 12l-3-1v10l3-1V12z" fill="#E5E7EB"/>
+  
+  <!-- 文字线条 -->
+  <rect x="11" y="13" width="6" height="0.5" fill="#6B7280"/>
+  <rect x="11" y="14" width="4" height="0.5" fill="#6B7280"/>
+  <rect x="11" y="15" width="5" height="0.5" fill="#6B7280"/>
+  <rect x="11" y="16" width="3" height="0.5" fill="#6B7280"/>
+  
+  <!-- 装饰点 -->
+  <circle cx="12" cy="18" r="0.5" fill="#3B82F6"/>
+  <circle cx="14" cy="18" r="0.5" fill="#3B82F6"/>
+  <circle cx="16" cy="18" r="0.5" fill="#3B82F6"/>
+</svg> 

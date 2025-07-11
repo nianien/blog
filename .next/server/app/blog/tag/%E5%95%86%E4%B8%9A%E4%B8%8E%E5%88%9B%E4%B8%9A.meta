@@ -1,0 +1,9 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/gitbook/blog/tag/%25E5%2595%2586%25E4%25B8%259A%25E4%25B8%258E%25E5%2588%259B%25E4%25B8%259A/page/1",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/blog/layout,_N_T_/blog/tag/layout,_N_T_/blog/tag/[tag]/layout,_N_T_/blog/tag/[tag]/page,_N_T_/blog/tag/%25E5%2595%2586%25E4%25B8%259A%25E4%25B8%258E%25E5%2588%259B%25E4%25B8%259A/"
+  }
+}
