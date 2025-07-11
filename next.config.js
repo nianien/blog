@@ -6,9 +6,9 @@ const nextConfig = {
     unoptimized: true
   },
   // 只在生产环境使用 basePath
-  basePath: process.env.NODE_ENV === 'production' ? '/gitbook' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '' : '',
   // 只在生产环境使用 assetPrefix
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/gitbook' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
 }
 
 module.exports = nextConfig 
