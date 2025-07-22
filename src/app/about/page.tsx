@@ -47,14 +47,14 @@ export default function AboutPage() {
           <div className="mt-6 space-y-4">
             <div className="flex items-center space-x-3">
               <span className="text-gray-500">邮箱：</span>
-              <a href="mailto:contact@skyfalling.com" className="text-blue-600 hover:text-blue-500">
-                contact@skyfalling.com
+              <a href="mailto:nianien@gmail.com" className="text-blue-600 hover:text-blue-500">
+              nianien@gmail.com
               </a>
             </div>
             <div className="flex items-center space-x-3">
               <span className="text-gray-500">GitHub：</span>
-              <a href="https://github.com/skyfalling" className="text-blue-600 hover:text-blue-500">
-                github.com/skyfalling
+              <a href="https://github.com/nianien" className="text-blue-600 hover:text-blue-500">
+                github.com/nianien
               </a>
             </div>
           </div>

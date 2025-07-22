@@ -1,0 +1,71 @@
+/* Giscus 评论区样式修复 */
+
+/* 确保 Giscus 容器有正确的样式和层级 */
+.giscus-container {
+  position: relative;
+  z-index: 5;
+  isolation: isolate;
+}
+
+/* 修复可能的点击事件问题 */
+.giscus-container iframe {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* 确保 Giscus 元素可以接收点击事件 */
+.giscus-container * {
+  pointer-events: auto !important;
+}
+
+/* 确保登录按钮可见和可点击 */
+.giscus-container .gsc-comment-box {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 2;
+}
+
+.giscus-container .gsc-comment-box button {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  position: relative;
+  z-index: 3;
+}
+
+/* 修复可能的样式冲突 */
+.giscus-container .gsc-comment-box input,
+.giscus-container .gsc-comment-box textarea {
+  pointer-events: auto !important;
+}
+
+/* 确保 GitHub 登录按钮正常工作 */
+.giscus-container .gsc-comment-box .gsc-comment-box-main {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* 修复可能的 iframe 交互问题 */
+.giscus-container iframe {
+  border: none !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 400px !important;
+}
+
+/* 确保评论区与其他元素不冲突 */
+.giscus-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 修复可能的弹出窗口层级问题 */
+.giscus-container iframe {
+  z-index: 1000 !important;
+}
+
+/* 确保登录弹窗在最顶层 */
+.giscus-container .gsc-comment-box .gsc-comment-box-main iframe {
+  z-index: 1001 !important;
+} 

@@ -19,10 +19,10 @@ export default function ContactPage() {
                 发送邮件到以下地址，我会尽快回复你。
               </p>
               <a
-                href="mailto:contact@skyfalling.com"
+                href="mailto:nianien@gmail.com"
                 className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-500"
               >
-                contact@skyfalling.com
+                nianien@gmail.com
               </a>
             </div>
 
@@ -32,12 +32,12 @@ export default function ContactPage() {
                 关注我的GitHub，查看开源项目和代码。
               </p>
               <a
-                href="https://github.com/skyfalling"
+                href="https://github.com/nianien"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-500"
               >
-                github.com/skyfalling
+                github.com/nianien
               </a>
             </div>
           </div>

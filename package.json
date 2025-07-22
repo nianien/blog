@@ -1,16 +1,24 @@
 {
-  "name": "next-tailwind-site",
-  "version": "0.1.0",
+  "name": "skyfalling-blog",
+  "version": "1.0.0",
+  "description": "Skyfalling's personal blog built with Next.js and Tailwind CSS",
   "private": true,
+  "author": "Skyfalling",
+  "license": "MIT",
+  "homepage": "https://skyfalling.cn",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next out .turbo",
     "export": "next build",
-    "deploy": "gh-pages -d out"
+    "help": "./scripts/npm-help.sh"
   },
   "dependencies": {
+    "@giscus/react": "^3.1.0",
     "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/typography": "^0.5.16",
@@ -33,5 +41,17 @@
     "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "blog",
+    "personal-website"
+  ]
 }
