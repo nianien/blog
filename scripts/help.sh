@@ -55,6 +55,10 @@ show_common_commands() {
     echo "   npm run export   - 导出静态文件"
     echo ""
     
+    echo -e "${YELLOW}🚀 部署命令:${NC}"
+    echo "   ./scripts/deploy.sh - 完整部署流程"
+    echo ""
+    
     echo -e "${YELLOW}📦 依赖管理:${NC}"
     echo "   npm install      - 安装依赖"
     echo "   npm update       - 更新依赖"
@@ -70,8 +74,9 @@ show_menu() {
     echo "   3) 代码检查"
     echo "   4) 清理缓存"
     echo "   5) 查看依赖信息"
-    echo "   6) 显示所有命令"
-    echo "   7) 退出"
+    echo "   6) 部署到 GitHub Pages"
+    echo "   7) 显示所有命令"
+    echo "   8) 退出"
     echo ""
 }
 
@@ -108,15 +113,21 @@ execute_action() {
             npm outdated
             ;;
         6)
+            echo -e "${GREEN}🚀 部署到 GitHub Pages...${NC}"
+            echo ""
+            echo -e "${GREEN}🔨 开始完整部署流程...${NC}"
+            ./scripts/deploy.sh
+            ;;
+        7)
             echo -e "${GREEN}📜 所有可用命令:${NC}"
             npm run
             ;;
-        7)
+        8)
             echo -e "${GREEN}👋 再见！${NC}"
             exit 0
             ;;
         *)
-            echo -e "${RED}❌ 无效选择，请输入 1-7${NC}"
+            echo -e "${RED}❌ 无效选择，请输入 1-8${NC}"
             ;;
     esac
 }
@@ -132,8 +143,8 @@ show_help() {
     echo "• 命令执行和状态反馈"
     echo ""
     echo "使用方法："
-    echo "  ./scripts/npm-help.sh     - 显示交互式菜单"
-    echo "  ./scripts/npm-help.sh -h  - 显示此帮助信息"
+    echo "  ./scripts/help.sh     - 显示交互式菜单"
+    echo "  ./scripts/help.sh -h  - 显示此帮助信息"
     echo ""
 }
 
@@ -158,7 +169,7 @@ main() {
     # 交互式菜单
     while true; do
         show_menu
-        read -p "请选择操作 (1-7): " choice
+        read -p "请选择操作 (1-8): " choice
         
         if [ -n "$choice" ]; then
             execute_action "$choice"

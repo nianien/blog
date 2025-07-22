@@ -15,7 +15,8 @@
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .next out .turbo",
     "export": "next build",
-    "help": "./scripts/npm-help.sh"
+    "deploy": "gh-pages -d out",
+    "help": "./scripts/help.sh"
   },
   "dependencies": {
     "@giscus/react": "^3.1.0",
