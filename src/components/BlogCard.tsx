@@ -5,9 +5,15 @@ import { BlogPost } from '@/types/blog';
 
 interface BlogCardProps {
   post: BlogPost;
+  currentTag?: string;
 }
 
-export default function BlogCard({ post }: BlogCardProps) {
+export default function BlogCard({ post, currentTag }: BlogCardProps) {
+  // 构建文章链接，如果提供了currentTag，则包含标签参数
+  const articleLink = currentTag 
+    ? `/blog/${post.slug}?tag=${encodeURIComponent(currentTag)}`
+    : `/blog/${post.slug}`;
+
   return (
     <article className="flex flex-col items-start">
       <div className="flex items-center gap-x-4 text-xs">
@@ -28,21 +34,26 @@ export default function BlogCard({ post }: BlogCardProps) {
               }
               
               return format(date, 'yyyy年MM月dd日', { locale: zhCN });
-            } catch {
-              // 如果日期解析失败，返回原始字符串或默认值
+            } catch (error) {
+              console.error('日期格式化错误:', error);
               return post.pubDate || '日期未知';
             }
           })()}
         </time>
-        {post.tags && post.tags.length > 0 && (
-          <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-            {post.tags[0]}
-          </span>
-        )}
+        <div className="flex gap-2">
+          {post.tags?.map((tag) => (
+            <span
+              key={tag}
+              className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
       <div className="group relative">
         <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-          <Link href={`/blog/${post.slug}`}>
+          <Link href={articleLink}>
             <span className="absolute inset-0" />
             {post.title}
           </Link>
@@ -53,8 +64,8 @@ export default function BlogCard({ post }: BlogCardProps) {
       </div>
       <div className="relative mt-8 flex items-center gap-x-4">
         <Link
-          href={`/blog/${post.slug}`}
-          className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600 transition-colors"
+          href={articleLink}
+          className="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-600"
         >
           阅读更多 <span aria-hidden="true">→</span>
         </Link>

@@ -60,6 +60,33 @@ const config: Config = {
             'code::after': {
               content: '""',
             },
+            table: {
+              width: '100%',
+              borderCollapse: 'collapse',
+              margin: '1.5rem 0',
+              fontSize: '0.875rem',
+              lineHeight: '1.5',
+            },
+            'table th': {
+              backgroundColor: '#f9fafb',
+              border: '1px solid #d1d5db',
+              padding: '0.75rem',
+              textAlign: 'left',
+              fontWeight: '600',
+              color: '#111827',
+            },
+            'table td': {
+              border: '1px solid #d1d5db',
+              padding: '0.75rem',
+              textAlign: 'left',
+              color: '#374151',
+            },
+            'table tr:nth-child(even)': {
+              backgroundColor: '#f9fafb',
+            },
+            'table tr:hover': {
+              backgroundColor: '#f3f4f6',
+            },
           },
         },
       },

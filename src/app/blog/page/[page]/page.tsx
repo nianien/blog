@@ -22,9 +22,9 @@ export default async function BlogPage({ params }: { params: Promise<{ page: str
   const posts = allPosts.slice(startIndex, endIndex);
 
   return (
-    <div className="bg-white pt-8 pb-24 sm:pt-12 sm:pb-32">
+    <div className="bg-[var(--background)] pt-8 pb-24 sm:pt-12 sm:pb-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             博客文章
           </h1>
@@ -36,7 +36,7 @@ export default async function BlogPage({ params }: { params: Promise<{ page: str
           </p>
         </div>
         {/* Tags */}
-        <div className="mx-auto mt-8 max-w-2xl">
+        <div className="mx-auto mt-8 max-w-4xl">
           <div className="flex flex-wrap gap-2 justify-center">
             <Link
               href="/blog/page/1"
@@ -63,7 +63,7 @@ export default async function BlogPage({ params }: { params: Promise<{ page: str
         </div>
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="mx-auto mt-16 max-w-2xl">
+          <div className="mx-auto mt-16 max-w-4xl">
             <div className="flex items-center justify-center space-x-2">
               {/* Previous page */}
               {currentPage > 1 && (

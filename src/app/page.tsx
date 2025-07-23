@@ -6,9 +6,9 @@ export default function Home() {
   const posts = getAllPosts().slice(0, 6); // 只显示最新的6篇文章
 
   return (
-    <div className="bg-white">
+    <div className="bg-[var(--background)]">
       {/* Hero section */}
-      <div className="bg-white pt-8 pb-24 sm:pt-12 sm:pb-32">
+      <div className="bg-[var(--background)] pt-8 pb-24 sm:pt-12 sm:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
