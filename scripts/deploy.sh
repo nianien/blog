@@ -86,6 +86,6 @@ fi
 
 echo ""
 echo "🎉 部署完成！"
-echo "🌍 网站地址: https://skyfalling.cn"
+echo "🌍 网站地址: https://www.skyfalling.cn"
 echo "⏱️  部署时间: $(date)"
 echo "" 
