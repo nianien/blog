@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-2:I[45651,["874","static/chunks/874-f2e46e41114bd221.js","177","static/chunks/app/layout-7eab3ba0f4da6de9.js"],"default"]
+2:I[10616,["874","static/chunks/874-f2e46e41114bd221.js","177","static/chunks/app/layout-44e0007b773e6bcb.js"],"default"]
 3:I[87555,[],""]
 4:I[31295,[],""]
-5:I[6874,["874","static/chunks/874-f2e46e41114bd221.js","456","static/chunks/456-f674d5499bb2cb66.js","909","static/chunks/app/blog/%5B...slug%5D/page-fa3a424ea94809b0.js"],""]
+5:I[6874,["874","static/chunks/874-f2e46e41114bd221.js","298","static/chunks/298-607ce701763bed5d.js","909","static/chunks/app/blog/%5B...slug%5D/page-323471bbc2194e46.js"],""]
 7:I[59665,[],"OutletBoundary"]
 a:I[74911,[],"AsyncMetadataOutlet"]
 c:I[59665,[],"ViewportBoundary"]
@@ -10,10 +10,11 @@ e:I[59665,[],"MetadataBoundary"]
 10:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/19a1c36b834c3306.css","style"]
-0:{"P":null,"b":"fzKjTfJLx8NdQ2vbL6cX7","p":"","c":["","blog","tech","practice","Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","tech/practice/Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/19a1c36b834c3306.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_e8ce0c","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","tech/practice/Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","MHdYdT8eLmoP9QUPdoO7gv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"W3ka0wa437BhDAG1_12Us","p":"","c":["","blog","tech","practice","Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","tech/practice/Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/19a1c36b834c3306.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_e8ce0c","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","tech/practice/Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","FCTJIwt8s-BgIXgR03_DOv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
 11:"$Sreact.suspense"
 12:I[74911,[],"AsyncMetadata"]
-14:I[32923,["874","static/chunks/874-f2e46e41114bd221.js","456","static/chunks/456-f674d5499bb2cb66.js","909","static/chunks/app/blog/%5B...slug%5D/page-fa3a424ea94809b0.js"],"default"]
+14:I[32923,["874","static/chunks/874-f2e46e41114bd221.js","298","static/chunks/298-607ce701763bed5d.js","909","static/chunks/app/blog/%5B...slug%5D/page-323471bbc2194e46.js"],"default"]
+16:I[40780,["874","static/chunks/874-f2e46e41114bd221.js","298","static/chunks/298-607ce701763bed5d.js","909","static/chunks/app/blog/%5B...slug%5D/page-323471bbc2194e46.js"],"default"]
 f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
 15:T454,<h1>Maven使用技巧</h1>
 <h3>1、使用maven.config定制化配置</h3>
@@ -35,7 +36,574 @@ f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"ch
 </code></pre>
 <p>There must not be a whitespace after <code>--settings,</code>With the introduction of <code>maven 3.9</code>, there was a BREAKING CHANGE that affects the parsing of the <code>maven.config</code> file:</p>
 <p>Each line in <code>.mvn/maven.config</code> is now interpreted as a single argument. That is, if the file contains multiple arguments, these must now be placed on separate lines.</p>
-6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-04-03","children":"2024年04月03日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Maven使用技巧"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","技术实战",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术实战"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","nav",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":["$","div",null,{"className":"flex justify-between items-center","children":[null,["$","div",null,{}],["$","$L5",null,{"href":"/blog/tech/practice/Java构件发布到中央仓库","className":"group flex items-center max-w-xs p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-200","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"text-xs text-gray-500 mb-1","children":"下一篇"}],["$","div",null,{"className":"text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors truncate","children":"Java构件发布到中央仓库"}]]}],["$","svg",null,{"className":"w-5 h-5 ml-3 text-gray-400 group-hover:text-blue-600 transition-colors","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M9 5l7 7-7 7"}]}]]}],false]}]}]]}]}]}]
+17:T4826,<h2>服务注册中心 <a href="#scroller-1" id="scroller-1"></a></h2>
+<p>前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。</p>
+<p>并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景下做正确的技术选型。</p>
+<table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>Eureka</strong></th>
+<th><strong>Zookeeper</strong></th>
+<th><strong>Consul</strong></th>
+<th><strong>Etcd</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>一致性协议</td>
+<td>AP</td>
+<td>CP（Paxos算法）</td>
+<td>CP（Raft算法）</td>
+<td>CP（Raft算法）</td>
+</tr>
+<tr>
+<td>健康检查</td>
+<td>TTL(Time To Live)</td>
+<td>TCP Keep Alive</td>
+<td>TTL\HTTP\TCP\Script</td>
+<td>Lease TTL KeepAlive</td>
+</tr>
+<tr>
+<td>watch/long polling</td>
+<td>不支持</td>
+<td>watch</td>
+<td>long polling</td>
+<td>watch</td>
+</tr>
+<tr>
+<td>雪崩保护</td>
+<td>支持</td>
+<td>不支持</td>
+<td>不支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>安全与权限</td>
+<td>不支持</td>
+<td>ACL</td>
+<td>ACL</td>
+<td>RBAC</td>
+</tr>
+<tr>
+<td>是否支持多数据中心</td>
+<td>是</td>
+<td>否</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否有管理界面</td>
+<td>是</td>
+<td>否（可用第三方ZkTools）</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>Spring Cloud 集成</td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>Dubbo 集成</td>
+<td>不支持</td>
+<td>支持</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>K8S 集成</td>
+<td>不支持</td>
+<td>不支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+</tbody></table>
+<p>我们可以看出，四种技术类型对Spring Cloud的支持度都很高。Spring Cloud是微服务架构的一站式解决方案，我们平时构建微服务的过程中需要做的的如 配置管理、服务发现、负载均衡、断路器、智能路由、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等操作。Spring Cloud 为我们提供了一套简易的编程模型，使我们能在 Spring Boot 的基础上轻松地实现微服务项目的构建。</p>
+<p>Spring Cloud包含了多个不同开源产品，来保证一站式的微服务解决方案，如：Spring Cloud Config、Spring Cloud Netflix、Spring Cloud Security、Spring Cloud Commons、Spring Cloud Zookeeper、Spring Cloud CLI等项目。</p>
+<h2>Spring Cloud 框架下实现 <a href="#scroller-2" id="scroller-2"></a></h2>
+<p>Spring Cloud为服务治理做了一层抽象，这样能够支持多种不同的服务治理框架，比如：Netflix Eureka、Consul。我们这边就以这两个为例子，看看服务治理是如何实现。</p>
+<blockquote>
+<p><em>在Spring Cloud服务治理抽象层的作用下，可以无缝地切换服务治理实现，且不影响任何其他的服务注册、发现、调用逻辑。</em></p>
+<p><em>所以，下面我们通过介绍这两种服务治理的实现来体会Spring Cloud这一层抽象所带来的好处。</em></p>
+</blockquote>
+<h3>2.Spring Cloud Eureka <a href="#scroller-3" id="scroller-3"></a></h3>
+<p>Spring Cloud Eureka是Spring Cloud Netflix项目下的服务治理模块。而Spring Cloud Netflix项目是Spring Cloud的子项目之一，主要内容是对Netflix公司一系列开源产品的包装，它为Spring Boot应用提供了自配置的Netflix OSS整合。</p>
+<p>通过一些简单的注解，开发者就可以快速的在应用中配置一下常用模块并构建庞大的分布式系统。它主要提供的模块包括：服务发现（Eureka），断路器（Hystrix），智能路由（Zuul），客户端负载均衡（Ribbon）等。</p>
+<p>下面，就来具体看看如何使用Spring Cloud Eureka实现服务治理。</p>
+<h4>2.1.创建注册中心 <a href="#scroller-4" id="scroller-4"></a></h4>
+<p>创建一个Spring Cloud项目，我们命名为micro-service-center，并在<code>pom.xml</code>中引入需要的依赖内容：</p>
+<pre><code class="language-xml"> &lt;packaging&gt;pom&lt;/packaging&gt;
+</code></pre>
+<p>表明这个项目中可以没有Java代码，也不执行任何代码，只是为了聚合工程或者传递依赖，所以可以把src文件夹删了。这是一个父级项目，因为我们还要在下面建立Eureka的注册中心、客户端等多个子项目 。</p>
+<p>在micro-service-center下，新建一个命名为 eureka-service 的Module，依旧是Spring Cloud 项目，建完之后，pom.xml做如下改动：</p>
+<pre><code class="language-xml">&lt;xml&gt;
+    &lt;!--在子工程中添加父工程名称--&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;com.microservice&lt;/groupId&gt;
+        &lt;artifactId&gt;center&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;dependencies&gt;
+        &lt;!--加入 eureka 服务 --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+&lt;/xml&gt;
+</code></pre>
+<p>改完之后，回到父项目micro-service-center，修改pom中的信息：</p>
+<pre><code class="language-xml">&lt;xml&gt;
+    &lt;groupId&gt;com.microservice&lt;/groupId&gt;
+    &lt;artifactId&gt;center&lt;/artifactId&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;name&gt;center&lt;/name&gt;
+    &lt;description&gt;Demo project for Spring Boot&lt;/description&gt;
+    &lt;!--在父工程添加子工程名称--&gt;
+    &lt;modules&gt;
+        &lt;module&gt;eureka-service&lt;/module&gt;
+        &lt;module&gt;eureka-client&lt;/module&gt;
+    &lt;/modules&gt;
+&lt;/xml&gt;
+</code></pre>
+<p>对两个项目进行clean + install，应该是成功的。</p>
+<p>eureka-service我们是作为注册中心来用的，所以在它的主类Application中加入<code>@EnableEurekaServer</code>注解，就能开启注册中心功能。</p>
+<pre><code class="language-java">@SpringBootApplication
+@EnableEurekaServer
+public class ServiceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ServiceApplication.class, args);
+        System.out.println(&quot;Start Eureka Service&quot;);
+    }
+}
+</code></pre>
+<p>但是默认情况下，该注册中心也会把自己当做客户端，那就变成自己注册自己了，这个是可以剔除的，我们看一下它的YAML中的详细配置，注释比较清楚：</p>
+<pre><code class="language-yaml">  server:
+    port: 1000
+  spring:
+    application:
+      name: eureka-server
+  eureka:
+    instance:
+      hostname: localhost
+    client:
+    register-with-eureka: false  # 不作为客户端进行注册
+    fetch-registry: false  # 不获取注册列表
+    service-url:  # 注册地址，客户端需要注册到该地址中
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+</code></pre>
+<p>文中的注释还是比较清楚的。 这边可以看到，端口号是1000，所以当工程启动之后，访问 <a href="http://localhost:1000/">http://localhost:1000/</a> 是可以看到Eureka注册中心页面的。其中还没有发现任何服务。</p>
+<p><img src="/images/blog/tech/microservice/image_7_1.png" alt="image_7_1.png"></p>
+<h4>2.1.创建客户端 <a href="#scroller-5" id="scroller-5"></a></h4>
+<p>目前服务中心还是空的，所以我们创建一个能够提供服务的客户端，并将其注册到注册中心去。</p>
+<p>同样的，我们创建一个Spring Cloud的子项目，命名为<code>eureka-client</code>，<code>pom.xml</code>中的配置如下：</p>
+<pre><code class="language-xml">  
+&lt;xml&gt;
+    &lt;!--在子工程中添加父工程名称--&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;com.microservice&lt;/groupId&gt;
+        &lt;artifactId&gt;center&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;dependencies&gt;
+        &lt;!--加入 eureka 服务 --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+            &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+&lt;/xml&gt;
+</code></pre>
+<p>在应用主类Application文件中通过加上<code>@EnableDiscoveryClient</code>注解，该注解保证当前服务被Eureka当成provider发现。</p>
+<pre><code class="language-java">@SpringBootApplication
+@EnableDiscoveryClient
+public class ClientApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ClientApplication.class, args);
+        System.out.println(&quot;start client!&quot;);
+    }
+}jC
+</code></pre>
+<p>在YAML文件上加上如下配置：</p>
+<pre><code class="language-yaml">server:
+  port: 1001
+spring:
+  application:
+    name: eureka-client
+eureka:
+  client:
+    service-url:  # 这边就保证了注册到 eureka-service 这个注册中心去
+      defaultZone: http://localhost:1000/eureka/
+</code></pre>
+<p><code>spring.application.name</code>属性，指定了微服务的名称，在调用的时候可以通过该名称进行服务访问。<code>eureka.client.serviceUrl.defaultZone</code>属性对应服务注册中心的配置内容，指定服务注册中心的位置。</p>
+<p>大家看到，这边端口设置为1001，那是因为要在本机上测试 服务提供方 和 服务注册中心，所以<code>server的port</code>属性需设置不同的端口。</p>
+<p>最后，我们再写一个接口，通过DiscoveryClient对象，在客户端中获取注册中心的所有服务信息。</p>
+<pre><code class="language-java">  @Controller
+  @RequestMapping(&quot;/eurekacenter&quot;)
+  public class EuServiceController {
+  
+    @Autowired
+    DiscoveryClient discoveryClient;
+    
+    @RequestMapping(value = &quot;/service&quot;, method = {RequestMethod.GET})
+    @ResponseBody
+    public String getServiceInfo() {
+       return  &quot;service:&quot;+discoveryClient.getServices()+&quot; , memo:&quot;+discoveryClient.description();
+    }
+}
+</code></pre>
+<p>这时候跑一下试试看，继续访问之前的地址：<a href="http://localhost:1000/">http://localhost:1000/</a> ，可以看到Eureka注册中心页面已经包含一个我们定义的服务了，就是上面新建的 100端口的服务。</p>
+<p><img src="/images/blog/tech/microservice/image_7_2.png" alt="image_7_2.png"></p>
+<p>同样，我们可以调用上面的那个获取注册服务信息的接口，从服务发现的角度看看有多少个服务被注册到注册中心去。 <a href="http://localhost:1001/eurekacenter/service">http://localhost:1001/eurekacenter/service</a></p>
+<p><img src="/images/blog/tech/microservice/image_7_3.png" alt="image_7_3.png"></p>
+<p>如上图所示，方括号中的<code>eureka-client</code>通过Spring Cloud定义的 getServiceInfo 接口在eureka的实现中获取到的所有服务清单，他是一个String的List，如果注册了多个提供者，就会全部显示。</p>
+<h3>2.Spring Cloud Consul <a href="#scroller-6" id="scroller-6"></a></h3>
+<p>Consul 用于实现分布式系统的服务发现与配置。与其它分布式服务注册与发现的方案，Consul 的方案更具“一站式”特征，内置了服务注册与发现框 架、分布一致性协议实现、健康检查、Key/Value 存储、多数据中心方案，不再需要依赖其它工具（比如 ZooKeeper 之类的）。</p>
+<p>而Spring Cloud Consul ，是将其作为一个整体，在微服务架构中为我们的基础设施提供服务发现和服务配置的工具。</p>
+<h4>2.2.Consul 的优势 <a href="#scroller-7" id="scroller-7"></a></h4>
+<p>1、使用 Raft 算法来保证一致性, 比复杂的 Paxos 算法更直接。</p>
+<p>2、支持多数据中心，内外网的服务采用不同的端口进行监听。 多数据中心集群可以避免单数据中心的单点故障,而其部署则需要考虑网络延迟, 分片等情况等。 zookeeper 和 etcd 均不提供多数据中心功能的支持，上面表格中有体现。</p>
+<p>3、支持健康检查。</p>
+<p>4、支持 http 和 dns 协议接口。 zookeeper 的集成较为复杂, etcd 只支持 http 协议。</p>
+<p>5、官方提供 web 管理界面, etcd 无此功能。</p>
+<h4>2.2.Consul的特性 <a href="#scroller-8" id="scroller-8"></a></h4>
+<p>1、服务发现</p>
+<p>2、健康检查</p>
+<p>3、Key/Value存储</p>
+<p>4、多数据中心</p>
+<h4>2.2.安装Consul注册中心 <a href="#scroller-9" id="scroller-9"></a></h4>
+<p>1、官方下载64版本 ：<a href="https://www.consul.io/downloads.html">https://www.consul.io/downloads.html</a></p>
+<p>2、解压后复制到目录 /usr/local/bin 下</p>
+<p>3、启动终端，先看下啥版本的</p>
+<pre><code class="language-sh">liyifei@MacPro ~ % consul --version
+Consul v1.10.4
+Revision 7bbad6fe
+Protocol spoken by default, understands to (agent will automatically use protocol &gt;when speaking to compatible agents)
+</code></pre>
+<p>4、执行安装命令，可以看到他的 Client Addr 的端口为8500。所以访问 8500端口站点，<a href="http://127.0.0.1:8500/ui/dc1/services">http://127.0.0.1:8500/ui/dc1/services</a></p>
+<pre><code class="language-sh">  liyifei@MacPro ~ % consul agent -dev
+  ==&gt; Starting Consul agent...
+             Version: &#39;1.10.4&#39;
+             Node ID: &#39;6db154b4-62ff-e67d-e745-1a7270fa1ce8&#39;
+           Node name: &#39;B000000147796DS&#39;
+          Datacenter: &#39;dc1&#39; (Segment: &#39;&lt;all&gt;&#39;)
+              Server: true (Bootstrap: false)
+         Client Addr: [127.0.0.1] (HTTP: 8500, HTTPS: -1, gRPC: 8502, DNS: 8600)
+        Cluster Addr: 127.0.0.(LAN: 8301, WAN: 8302)
+           Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false, Auto-Encrypt-TLS: false
+</code></pre>
+<p><img src="/images/blog/tech/microservice/image_7_4.png" alt="image_7_4.png"></p>
+<p>我们可以看到，现在没有客户端注册上来，只有一个自身的实例。</p>
+<h4>2.2.创建服务提供者 <a href="#scroller-10" id="scroller-10"></a></h4>
+<p>由于Spring Cloud Consul项目的实现，我们可以轻松的将基于Spring Boot的微服务应用注册到Consul上，并通过此实现微服务架构中的服务治理。</p>
+<p>我们在micro-service-center下新建一个cloud项目consul-client，该项目pom文件添加如下：</p>
+<pre><code class="language-xml">&lt;xml&gt;
+  &lt;!--    在子工程中添加父工程名称--&gt;
+  &lt;parent&gt;
+    &lt;groupId&gt;com.microservice&lt;/groupId&gt;
+    &lt;artifactId&gt;center&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+  &lt;/parent&gt;
+  
+  &lt;dependencies&gt;
+    &lt;!--        Consul服务发现--&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-cloud-starter-consul-discovery&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+    &lt;!--        Consul健康检查--&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+  &lt;/dependencies&gt;
+&lt;/xml&gt;
+</code></pre>
+<p>然后修改一下<code>application.yml的配置信息</code>，将consul配置写入，注释应该很清楚了，如下：</p>
+<pre><code class="language-yaml">spring:
+  application:
+    name: consul-producer # 当前服务的名称
+  cloud:
+    consul: # 以下为Consuk注册中心的地址，如果安装的不是这个host和port，这边可以调整
+      host: localhost
+      port: 8500
+server:
+  port: 850# 当前服务的端口
+</code></pre>
+<p>同样的，我们要在应用主类Application文件中通过加上<code>@EnableDiscoveryClient</code>注解，该注解保证当前服务被Consul当成provider发现。</p>
+<p>大家看到这个做法跟Eureka一样，因为Spring Cloud对服务治理做的一层抽象，所以可以屏蔽Eureka和Consul服务治理的实现细节，</p>
+<p>程序上不需要做改变，只需要引入不同的服务治理依赖，并配置相关的配置属性 就能轻松的将微服务纳入Spring Cloud的各个服务治理框架中。</p>
+<pre><code class="language-java">@SpringBootApplication
+@EnableDiscoveryClient
+public class ConsulClientApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ClientApplication.class, args);
+    }
+}
+</code></pre>
+<p>修改完成之后，我们就可以把这个服务提供者启动了，然后再去注册中心查看服务的注册情况，就可以看到被注册进来的Provider（consul-producer）：</p>
+<p><img src="/images/blog/tech/microservice/image_7_5.png" alt="image_7_5.png"></p>
+<h2>总结 <a href="#scroller-11" id="scroller-11"></a></h2>
+<p>除了 Eureka、Consul，还有其他的的注册中心技术，如Zookeeper、Nocas等。但无论何种注册中心技术，本质上都是为了解决微服务中的如下问题：</p>
+<p><strong>解耦服务之间相互依赖的细节</strong></p>
+<p>我们知道服务之间的远程调用必须要知道对方的IP、端口信息。我们可以在调用方直接配置被调用方的IP、端口，这种调用方直接依赖IP、端口的方式存在明显的问题，如被调用的IP、端口变化后，调用方法也要同步修改。</p>
+<p>通过服务发现，将服务之间IP与端口的依赖转化为服务名的依赖，服务名可以根据具微服务业务来做标识，因此，屏蔽、解耦服务之间的依赖细节是服务发现与注册解决的第一个问题。</p>
+<p><strong>对微服务进行动态管理</strong></p>
+<p>在微服务架构中，服务众多，服务之间的相互依赖也错综复杂，无论是服务主动停止，意外挂掉，还是因为流量增加对服务实现进行扩容，这些服务数据或状态上的动态变化，都需要尽快的通知到被调用方，被调用方才采取相应的措施。因此，对于服务注册与发现要实时管理者服务的数据与状态，包括服务的注册上线、服务主动下线，异常服务的剔除。</p>
+18:T3d59,<blockquote>
+<p><em>首先强调一下，Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过</em><a href="https://central.sonatype.org/pages/ossrh-guide.html">Sonatype OSSRH</a><em>仓库来发布jar包。所以，接下来主要介绍如何将jar包发布到Sonatype OSSRH。</em></p>
+</blockquote>
+<p>首先，先说一下大体的步骤：</p>
+<ul>
+<li>注册Sonatype账号</li>
+<li>创建Issue，验证域名</li>
+<li>安装GPG，发布密钥</li>
+<li>配置Maven，发布构件</li>
+</ul>
+<p>这里面比较重要和容易出错的是第二步和第三步，下面一一详细介绍。</p>
+<h4>1、注册Sonatype账号 <a href="#bojci" id="bojci"></a></h4>
+<p>第一步很简单，登录官网，注册账号就好了<a href="https://issues.sonatype.org/secure/Signup!default.jspa">Sign up for Jira - Sonatype JIRA</a></p>
+<p>注册完成，登陆后的界面如下：</p>
+<p><img src="/images/blog/tech/practice/image_60.png" alt="image_60.png"></p>
+<h4>2、创建Issue <a href="#omwqz" id="omwqz"></a></h4>
+<p>这里项目选择：Community Support - Open Source Project Repository Hosting (OSSRH)，问题 类型选择：New Project</p>
+<p><img src="/images/blog/tech/practice/image_67.png" alt="image_67.png"></p>
+<h4>2.1、补充项目信息</h4>
+<p><img src="/images/blog/tech/practice/image_62.png" alt="image_62.png"></p>
+<h4>2.2、验证域名 <a href="#snbg0" id="snbg0"></a></h4>
+<p>我们需要使用域名作为Group Id，如果你拥有域&#x540D;<em>&#x65;xample.com，则能够使用com.example开头作为Group Id，例如：com.example.myproject。其他一些栗子如下：</em></p>
+<ul>
+<li><em>example.com -&gt; com.example.domain</em></li>
+<li><a href="http://www.springframework.org/">www.springframework.org</a> -&gt; org.springframework</li>
+<li>subdomain.example.com -&gt; example.com</li>
+<li>github.com/yourusername -&gt; io.github.yourusername</li>
+<li>my-domain.com -&gt; com.my-domain</li>
+</ul>
+<p>要想使用某个域名作为Group Id，你需要证明拥有该域名，至于如何证明，详见官方文档：<a href="https://central.sonatype.org/faq/how-to-set-txt-record">https://central.sonatype.org/faq/how-to-set-txt-record/</a></p>
+<p>如果你没有自己的域名，则可以通过代码托管平台的账号关联子域名。假设你托管平台账户名为myusername，那么你可以通过以下托管平台验证Group Id ：</p>
+<p><img src="/images/blog/tech/practice/image_63.png" alt="image_63.png"></p>
+<p>由于我没有自己的域名，这里我选择使用github账号验证Group Id。点击“新建”按钮，完成提交，之后你的注册邮箱会收到一封邮件，显示创建项目信息：</p>
+<p><img src="/images/blog/tech/practice/image_65.png" alt="image_65.png"></p>
+<p>稍后还会收到一封审核邮件，提示你进行域名验证，时间延迟大概在十分钟以内。</p>
+<p><strong>2.3、人工审核及确认</strong></p>
+<p><img src="/images/blog/tech/practice/image_66.png" alt="image_66.png"></p>
+<p>我使用的是github账户，按邮件提示，需要在github平台上创建一个指定的临时工程。创建完成之后，可以在issue下面添加评论，触发验证。验证成功后，你会收到一份邮件：</p>
+<p><img src="/images/blog/tech/practice/image_68.png" alt="image_68.png"></p>
+<p>收到上述邮件，就表示完成了Group Id的验证，此时你就可以使用该Group Id或者子Group Id发布Maven构件了。如上，我填写的Group Id是 “io.github.nianien”，因此，我可以使用 “io.github.nianien”或者 “io.github.nianien.xxx” 作为项目的GroupId发布Maven构件。</p>
+<p>在通过Maven发布构件之前，我们需要进行Maven配置，这里还需要一些前置工作。</p>
+<h4>3、安装GPG，创建密钥 <a href="#dcxco" id="dcxco"></a></h4>
+<p>安装GPG的方式有多种，这里推荐图形化安装，因为通过命令行安装，由于找不到合适的密钥服务器，发布密钥时会失败。这里给出Mac版本的下载地址：<a href="https://releases.gpgtools.org/GPG_Suite-2022.1.dmg">https://releases.gpgtools.org/GPG_Suite-2022.1.dmg</a></p>
+<ul>
+<li>创建密钥</li>
+</ul>
+<p><img src="/images/blog/tech/practice/image_69.png" alt="image_69.png"></p>
+<p>3.1、发布密钥</p>
+<p><img src="/images/blog/tech/practice/image_70.png" alt="image_70.png"></p>
+<p>发布成功后，收到一份邮件：</p>
+<p><img src="/images/blog/tech/practice/image_71.png" alt="image_71.png"></p>
+<p>按照邮件指示操作，完成密钥发布。密钥发布成功之后，下一步就是配置maven settings.xml和工程pom.xml文件。</p>
+<h4>4、配置Maven，发布构件 <a href="#amad1" id="amad1"></a></h4>
+<ul>
+<li>第一步，配置setting.xml文件，添加server节点：</li>
+</ul>
+<pre><code class="language-xml">&lt;servers&gt;
+&lt;server&gt;
+    &lt;id&gt;ossrh&lt;/id&gt;
+    &lt;username&gt;sonatype账户名&lt;/username&gt;
+    &lt;password&gt;sonatype账户密码&lt;/password&gt;
+&lt;/server&gt;
+&lt;/servers&gt;
+&lt;profile&gt;
+  &lt;id&gt;ossrh&lt;/id&gt;
+  &lt;properties&gt;
+    &lt;gpg.executable&gt;gpg&lt;/gpg.executable&gt;
+    &lt;gpg.passphrase&gt;创建密钥时使用的密码&lt;/gpg.passphrase&gt;
+    &lt;gpg.homedir&gt;/Users/yourname/.gnupg&lt;/gpg.homedir&gt;
+   &lt;/properties&gt;
+&lt;/profile&gt;
+</code></pre>
+<ul>
+<li>第二步，配置pom.xml文件，添加必填项</li>
+</ul>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&lt;!--已经验证的Group Id--&gt;
+    &lt;groupId&gt;io.github.nianien&lt;/groupId&gt;
+    &lt;artifactId&gt;cudrania&lt;/artifactId&gt;
+    &lt;version&gt;1.0.1&lt;/version&gt;&lt;!--必填--&gt;
+    &lt;name&gt;io.github.nianien:cudrania&lt;/name&gt;&lt;!--必填--&gt;
+    &lt;description&gt;support tools for java development&lt;/description&gt;&lt;!--必填--&gt;
+    &lt;url&gt;https://github.com/nianien/cudrania&lt;/url&gt;
+    &lt;properties&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;java.version&gt;17&lt;/java.version&gt;
+    &lt;/properties&gt;&lt;!--必填--&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;The Apache Software License, Version 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;&lt;!--必填--&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;nianien&lt;/id&gt;
+            &lt;name&gt;nianien&lt;/name&gt;
+            &lt;email&gt;nianien@126.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;&lt;!--必填--&gt;
+    &lt;scm&gt;
+        &lt;connection&gt;https://github.com/nianien/cudrania.git&lt;/connection&gt;
+        &lt;developerConnection&gt;scm:git:ssh://git@github.com:nianien/cudrania.git
+        &lt;/developerConnection&gt;
+        &lt;url&gt;https://github.com/nianien/cudrania&lt;/url&gt;
+    &lt;/scm&gt;
+    &lt;build&gt;
+        &lt;pluginManagement&gt;
+            &lt;plugins&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.11.0&lt;/version&gt;
+                    &lt;configuration&gt;
+                        &lt;source&gt;${java.version}&lt;/source&gt;
+                        &lt;target&gt;${java.version}&lt;/target&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;&lt;!--必填--&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.3.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-sources&lt;/id&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar-no-fork&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;&lt;!--必填--&gt; 
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.5.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-javadocs&lt;/id&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;additionalparam&gt;
+                                    -Xdoclint:none
+                                &lt;/additionalparam&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;&lt;!--必填--&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.1.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;sign-artifacts&lt;/id&gt;
+                            &lt;phase&gt;verify&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;sign&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+            &lt;/plugins&gt;
+        &lt;/pluginManagement&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+
+    &lt;profiles&gt;&lt;!--必填--&gt;
+        &lt;profile&gt;
+            &lt;id&gt;ossrh&lt;/id&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;&lt;!--必填--&gt;
+                        &lt;groupId&gt;org.sonatype.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;nexus-staging-maven-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;1.6.13&lt;/version&gt;
+                        &lt;extensions&gt;true&lt;/extensions&gt;
+                        &lt;configuration&gt;
+                            &lt;serverId&gt;ossrh&lt;/serverId&gt;
+                            &lt;nexusUrl&gt;https://s01.oss.sonatype.org/&lt;/nexusUrl&gt; 
+                          &lt;autoReleaseAfterClose&gt;true&lt;/autoReleaseAfterClose&gt;
+                        &lt;/configuration&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;&lt;!--必填--&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;&lt;!--必填--&gt;
+            &lt;distributionManagement&gt;
+                &lt;snapshotRepository&gt;
+                    &lt;id&gt;ossrh&lt;/id&gt;
+                  &lt;url&gt;https://s01.oss.sonatype.org/content/repositories/snapshots
+                    &lt;/url&gt;
+                &lt;/snapshotRepository&gt;
+                &lt;repository&gt;
+                    &lt;id&gt;ossrh&lt;/id&gt;
+                    &lt;url&gt;https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
+                    &lt;/url&gt;
+                &lt;/repository&gt;
+            &lt;/distributionManagement&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+
+    &lt;dependencies&gt;&lt;!--maven依赖--&gt;&lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre>
+<p>上面已经是最精简的pom配置了，我已经把必选项标注好了。这里主要包含两部分内容，一部分是snoatype要求的必备信息，包括：证书、开发者信息、仓库地址和发布地址；另一部分是deploy需要的maven插件列表，大家可以根据实际情况酌情修改。</p>
+<p>需要说明的是，为了不用默认打包冲突，专门定义了用于发布中央仓库的profile：ossrh，这里只需要添加额外的两个插件：nexus-staging-maven-plugin和maven-gpg-plugin，前者用于jar上传，后者用于密钥签名。</p>
+<ul>
+<li>第三步，执行maven命令，发布构件</li>
+</ul>
+<p>配置好pom文件，可以执行maven命令：“mvn clean deploy -Possrh” 进行发布。如果版本号带SNAPSHOT后缀，会发布到snapshots仓库，否则发布到release仓库。</p>
+<p>这里nexus-staging-maven-plugin插件有一个配置项：autoReleaseAfterClose，如果设置为true的话，推送完成会自动release。第一次发布成功后，会收到一封邮件：</p>
+<p><img src="/images/blog/tech/practice/image_72.png" alt="image_72.png"></p>
+<ul>
+<li><em><strong>最后，让jar包更快的在中央仓库被搜索到</strong></em></li>
+</ul>
+<p>根据邮件提示，Jar包成功发布成功后，大约30分钟后会推到中央仓库，我们可以从仓库地址看到我们发布的Jar包：<a href="https://repo1.maven.org/maven2">https://repo1.maven.org/maven2/</a></p>
+<p><img src="/images/blog/tech/practice/image_73.png" alt="image_73.png"></p>
+<p>此时，其他项目就可以通过maven依赖引用我们的构件了，但是这时候通过中央仓库仍然搜不到我们的Maven构件。按照邮件提示可能会需要四小时，实际情况是我等了5个小时依然搜不到。如果遇到这种情况，我们可以通过在对issue添加评论反馈，会有人工回复进行解决：</p>
+<p><img src="/images/blog/tech/practice/image_74.png" alt="image_74.png"></p>
+<p>另外，关于mvnrepository与Maven Central的关系，有人咨询，官方也做了解答：</p>
+<p><img src="/images/blog/tech/practice/image_75.png" alt="image_75.png"></p>
+<p>根据我的实际经验判断，mvnrepository应该是定时同步的，我发布成功后，第二天才能搜到：</p>
+<p><img src="/images/blog/tech/practice/image_76.png" alt="image_76.png"></p>
+<p>下面是官方指导文档，介绍非常详细，基本上不用在网上搜索其他教程了。</p>
+<h4>官方参考文档 <a href="#dzquo" id="dzquo"></a></h4>
+<p><a href="https://central.sonatype.org/publish/publish-guide">https://central.sonatype.org/publish/publish-guide/</a></p>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-04-03","children":"2024年04月03日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Maven使用技巧"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","技术实战",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术实战"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"tech/microservice/服务注册与发现（实践篇）","title":"服务注册与发现（实践篇）","description":"前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。 并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景...","pubDate":"2024-03-24","tags":["微服务架构","技术专题"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"tech/practice/Java构件发布到中央仓库","title":"Java构件发布到中央仓库","description":"Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过...","pubDate":"2024-04-04","tags":["技术实战"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"技术实战":{"prev":null,"next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"}}}]}]]}]}]}]
 9:null
 d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 8:null

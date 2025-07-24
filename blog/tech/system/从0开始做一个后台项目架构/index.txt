@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-2:I[45651,["874","static/chunks/874-f2e46e41114bd221.js","177","static/chunks/app/layout-7eab3ba0f4da6de9.js"],"default"]
+2:I[10616,["874","static/chunks/874-f2e46e41114bd221.js","177","static/chunks/app/layout-44e0007b773e6bcb.js"],"default"]
 3:I[87555,[],""]
 4:I[31295,[],""]
-5:I[6874,["874","static/chunks/874-f2e46e41114bd221.js","456","static/chunks/456-f674d5499bb2cb66.js","909","static/chunks/app/blog/%5B...slug%5D/page-fa3a424ea94809b0.js"],""]
+5:I[6874,["874","static/chunks/874-f2e46e41114bd221.js","298","static/chunks/298-607ce701763bed5d.js","909","static/chunks/app/blog/%5B...slug%5D/page-323471bbc2194e46.js"],""]
 7:I[59665,[],"OutletBoundary"]
 a:I[74911,[],"AsyncMetadataOutlet"]
 c:I[59665,[],"ViewportBoundary"]
@@ -10,10 +10,11 @@ e:I[59665,[],"MetadataBoundary"]
 10:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/19a1c36b834c3306.css","style"]
-0:{"P":null,"b":"fzKjTfJLx8NdQ2vbL6cX7","p":"","c":["","blog","tech","system","%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","tech/system/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/19a1c36b834c3306.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_e8ce0c","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","tech/system/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","jpXxCcA7jLM2HRuc56JH4v",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"W3ka0wa437BhDAG1_12Us","p":"","c":["","blog","tech","system","%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","tech/system/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/19a1c36b834c3306.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_e8ce0c","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","tech/system/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","1xx1ileAocvvn3gfkoaR5v",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
 11:"$Sreact.suspense"
 12:I[74911,[],"AsyncMetadata"]
-14:I[32923,["874","static/chunks/874-f2e46e41114bd221.js","456","static/chunks/456-f674d5499bb2cb66.js","909","static/chunks/app/blog/%5B...slug%5D/page-fa3a424ea94809b0.js"],"default"]
+14:I[32923,["874","static/chunks/874-f2e46e41114bd221.js","298","static/chunks/298-607ce701763bed5d.js","909","static/chunks/app/blog/%5B...slug%5D/page-323471bbc2194e46.js"],"default"]
+16:I[40780,["874","static/chunks/874-f2e46e41114bd221.js","298","static/chunks/298-607ce701763bed5d.js","909","static/chunks/app/blog/%5B...slug%5D/page-323471bbc2194e46.js"],"default"]
 f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
 15:Ta3c4,<p><a href="https://baijiahao.baidu.com/s?id=1767938488419450782">转载</a></p>
 <p>作为一名架构师，老板要求你把公司的后端技术栈搞一下，那你该如何去做呢？对我而言我，我的答案是综合考虑下面的这些内容然后进行决定。</p>
@@ -357,7 +358,255 @@ f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"ch
 <h4>最后</h4>
 <p>好的架构不是一蹴而就的，而是演变出来的。对于一个问题，架构师需要做出正确的判断，而这个“正确”与否，在不同的场景下，也是不同的，也就是说答案是开放的。那么提高自己的技术能力、认知能力，就相当重要了。这就要求我们不断地学习，保持对技术的敏锐，才能做出正确的选择。</p>
 <p>路漫漫其修远兮，架构求索无止尽也。</p>
-6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-18","children":"2024年03月18日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"从0开始做一个后台项目架构"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","架构设计",{"href":"/blog/tag/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"架构设计"}],["$","$L5","技术专题",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术专题"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","nav",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":["$","div",null,{"className":"flex justify-between items-center","children":[["$","$L5",null,{"href":"/blog/tech/system/架构设计模板","className":"group flex items-center max-w-xs p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-200","children":[["$","svg",null,{"className":"w-5 h-5 mr-3 text-gray-400 group-hover:text-blue-600 transition-colors","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M15 19l-7-7 7-7"}]}],["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"text-xs text-gray-500 mb-1","children":"上一篇"}],["$","div",null,{"className":"text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors truncate","children":"架构设计模板"}]]}]]}],false,["$","$L5",null,{"href":"/blog/tech/microservice/微服务及其演进史","className":"group flex items-center max-w-xs p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-200","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"text-xs text-gray-500 mb-1","children":"下一篇"}],["$","div",null,{"className":"text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors truncate","children":"微服务及其演进史"}]]}],["$","svg",null,{"className":"w-5 h-5 ml-3 text-gray-400 group-hover:text-blue-600 transition-colors","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M9 5l7 7-7 7"}]}]]}],false]}]}]]}]}]}]
+17:T3726,<p>记得很久之前，去面试过<strong>字节跳动</strong>。被三面的面试官问了一道场景设计题目：<strong>如何设计一个高并发系统</strong>。当时我回答得比较粗糙，最近回想起来，所以整理了设计高并发系统的15个锦囊，相信大家看完会有帮助的。</p>
+<p><img src="/images/blog/tech/system/image_3_1.png" alt="image_3_1.png"></p>
+<h3>如何理解高并发系统 <a href="#item-0-1" id="item-0-1"></a></h3>
+<p>所谓设计<strong>高并发</strong>系统，就是设计一个系统，保证它<strong>整体可用</strong>的同时，能够<strong>处理很高的并发用户请求</strong>，能够承受<strong>很大的流量冲击</strong>。</p>
+<p>我们要设计高并发的系统，那就需要处理好一些常见的系统瓶颈问题，如<strong>内存不足、磁盘空间不足，连接数不够，网络宽带不够</strong>等等，以应对突发的流量洪峰。</p>
+<h3>1. 分而治之，横向扩展 <a href="#item-0-2" id="item-0-2"></a></h3>
+<p>如果你<strong>只部署一个应用，只部署一台服务器</strong>，那抗住的流量请求是非常有限的。并且，单体的应用，有单点的风险，如果它挂了，那服务就不可用了。</p>
+<p>因此，设计一个高并发系统，我们可以<strong>分而治之，横向扩展</strong>。也就是说，采用分布式部署的方式，部署多台服务器，把流量分流开，让每个服务器都承担一部分的并发和流量，提升<strong>整体系统的并发能力</strong>。</p>
+<h3>2. 微服务拆分（系统拆分） <a href="#item-0-3" id="item-0-3"></a></h3>
+<p>要提高系统的吞吐，提高系统的处理并发请求的能力。除了采用<strong>分布式部署的方式</strong>外，还可以做<strong>微服务拆分</strong>，这样就可以达到分摊请求流量的目的，提高了并发能力。</p>
+<p>所谓的<strong>微服务拆分</strong>，其实就是把一个单体的应用，按功能单一性，拆分为多个服务模块。<strong>比如一个电商系统，拆分为用户系统、订单系统、商品系统等等</strong>。</p>
+<p><img src="/images/blog/tech/system/image_3_2.png" alt="image_3_2.png"></p>
+<h3>3. 分库分表 <a href="#item-0-4" id="item-0-4"></a></h3>
+<p>当业务量暴增的话，MySQL单机<strong>磁盘容量会撑爆</strong>。并且，我们知道数据库连接数是有限的。<strong>在高并发的场景下</strong>，大量请求访问数据库，<code>MySQL</code>单机是扛不住的！高并发场景下，会出现<code>too many connections</code>报错。</p>
+<p>所以高并发的系统，<strong>需要考虑拆分为多个数据库，来抗住高并发的毒打</strong>。而假如你的单表数据量非常大，存储和查询的性能就会遇到瓶颈了，如果你做了很多优化之后还是无法提升效率的时候，就需要考虑做<strong>分表</strong>了。一般千万级别数据量，就需要<strong>分表</strong>，每个表的数据量少一点，提升SQL查询性能。</p>
+<p>当面试官问要求你设计一个高并发系统的时候，一般都要说到<strong>分库分表</strong>这个点。</p>
+<h3>4. 池化技术 <a href="#item-0-5" id="item-0-5"></a></h3>
+<p>在高并发的场景下，<strong>数据库连接数</strong>可能成为瓶颈，因为连接数是有限的。</p>
+<p>我们的请求调用数据库时，都会先获取数据库的连接，然后依靠这个连接来查询数据，搞完收工，最后关闭连接，释放资源。如果我们不用数据库连接池的话，每次执行<code>SQL</code>，都要创建连接和销毁连接，这就会导致每个查询请求都变得更慢了，相应的，系统处理用户请求的能力就降低了。</p>
+<p>因此，需要使用池化技术，即<strong>数据库连接池、HTTP 连接池、Redis 连接池</strong>等等。使用数据库连接池，可以避免每次查询都新建连接，减少不必要的资源开销，通过复用连接池，<strong>提高系统处理高并发请求的能力</strong>。</p>
+<p>同理，我们使用线程池，也能<strong>让任务并行处理，更高效地完成任务</strong>。</p>
+<h3>5. 主从分离 <a href="#item-0-6" id="item-0-6"></a></h3>
+<p>通常来说，一台单机的MySQL服务器，可以支持<code>500</code>左右的<code>TPS</code>和<code>10000</code>左右的<code>QPS</code>，即单机支撑的<strong>请求访问是有限</strong>的。因此你做了分布式部署，部署了多台机器，部署了主数据库、从数据库。</p>
+<p>但是，如果双十一搞活动，流量肯定会猛增的。如果所有的查询请求，都走主库的话，主库肯定扛不住，因为查询请求量是非常非常大的。因此一般都要求做<strong>主从分离</strong>，然后实时性要求不高的读请求，都去读从库，<strong>写的请求或者实时性要求高的请求，才走主库</strong>。这样就很好保护了主库，也提高了系统的吞吐。</p>
+<p>当然，如果回答了主从分离，面试官可能扩展开问你<strong>主从复制原理，问你主从延迟问题</strong>等等，这块大家需要<strong>全方位复习好</strong>哈。</p>
+<h3>6. 使用缓存 <a href="#item-0-7" id="item-0-7"></a></h3>
+<p>无论是操作系统，浏览器，还是一些复杂的中间件，你都可以看到缓存的影子。我们使用缓存，主要是提升系统接口的性能，这样高并发场景，你的系统就可以支持更多的用户同时访问。</p>
+<p>常用的缓存包括：<code>Redis</code>缓存，<code>JVM</code>本地缓存，<code>memcached</code>等等。就拿<code>Redis</code>来说，它单机就能轻轻松松应对几万的并发，你读场景的业务，可以用缓存来抗高并发。</p>
+<p>缓存虽然用得爽，但是要<strong>注意缓存使用的一些问题</strong>：</p>
+<ul>
+<li>缓存与数据库的一致性问题</li>
+<li>缓存雪崩</li>
+<li>缓存穿透</li>
+<li>缓存击穿</li>
+</ul>
+<h3>7. CDN，加速静态资源访问 <a href="#item-0-8" id="item-0-8"></a></h3>
+<p>商品图片，<code>icon</code>等等静态资源，可以对页面做<strong>静态化处理，减少访问服务端的请求</strong>。如果用户分布在全国各地，有的在上海，有的在深圳，地域相差很远，网速也各不相同。为了让用户最快访问到页面，可以使用<code>CDN</code>。<code>CDN</code>可以让用户就近获取所需内容。</p>
+<p>什么是CDN？</p>
+<blockquote>
+<p>Content Delivery Network/Content Distribution Network,翻译过来就是内容分发网络，它表示将静态资源分发到位于多个地理位置机房的服务器，可以做到数据就近访问，加速了静态资源的访问速度，因此让系统更好处理正常别的动态请求。</p>
+</blockquote>
+<h3>8. 消息队列，削锋 <a href="#item-0-9" id="item-0-9"></a></h3>
+<p>我们搞一些双十一、双十二等运营活动时，需要<strong>避免流量暴涨，打垮应用系统的风险</strong>。因此一般会引入消息队列，来应对<strong>高并发的场景</strong>。</p>
+<p><img src="/images/blog/tech/system/image_3_3.png" alt="image_3_3.png"></p>
+<p>假设你的应用系统每秒最多可以处理<code>2k</code>个请求，每秒却有<code>5k</code>的请求过来，可以引入消息队列，应用系统每秒从消息队列拉<code>2k</code>请求处理得了。</p>
+<p>有些伙伴担心这样可能会出现<strong>消息积压</strong>的问题：</p>
+<ul>
+<li>首先，搞一些运营活动，不会每时每刻都那么多请求过来你的系统（<strong>除非有人恶意攻击</strong>），高峰期过去后，积压的请求可以慢慢处理；</li>
+<li>其次，如果消息队列长度超过最大数量，可以直接抛弃用户请求或跳转到错误页面；</li>
+</ul>
+<h3>9. ElasticSearch <a href="#item-0-10" id="item-0-10"></a></h3>
+<p><code>Elasticsearch</code>，大家都使用得比较多了吧，<strong>一般搜索功能都会用到它</strong>。它是一个分布式、高扩展、高实时的搜索与数据分析引擎，简称为<code>ES</code>。</p>
+<p>我们在聊高并发，为啥聊到<code>ES</code>呢？因为<code>ES</code>可以扩容方便，天然支撑高并发。<strong>当数据量大的时候，不用动不动就加机器扩容，分库等等</strong>，可以考虑用<code>ES</code>来支持简单的查询搜索、统计类的操作。</p>
+<h3>10. 降级熔断 <a href="#item-0-11" id="item-0-11"></a></h3>
+<p><strong>熔断降级</strong>是保护系统的一种手段。当前互联网系统一般都是分布式部署的。而分布式系统中偶尔会出现某个基础服务不可用，最终导致整个系统不可用的情况, 这种现象被称为<strong>服务雪崩效应</strong>。</p>
+<p>比如分布式调用链路<code>A-&gt;B-&gt;C....</code>，下图所示：</p>
+<p><img src="/images/blog/tech/system/image_3_4.png" alt="image_3_4.png"></p>
+<blockquote>
+<p>如果服务<code>C</code>出现问题，比如是因为慢<code>SQL</code>导致调用缓慢，那将导致<code>B</code>也会延迟，从而<code>A</code>也会延迟。堵住的<code>A</code>请求会消耗占用系统的线程、IO、CPU等资源。当请求<code>A</code>的服务越来越多，占用计算机的资源也越来越多，最终会导致系统瓶颈出现，造成其他的请求同样不可用，最后导致业务系统崩溃。</p>
+</blockquote>
+<p>为了应对服务雪崩, 常见的做法是<strong>熔断和降级</strong>。最简单是加开关控制，当下游系统出问题时，开关打开降级，不再调用下游系统。还可以选用开源组件<code>Hystrix</code>来支持。</p>
+<p>你要保证设计的系统能应对<strong>高并发场景</strong>，那肯定要考虑<strong>熔断降级</strong>逻辑进来。</p>
+<h3>11. 限流 <a href="#item-0-12" id="item-0-12"></a></h3>
+<p>限流也是我们应对高并发的一种方案。我们当然希望，在高并发大流量过来时，系统能全部请求都正常处理。但是有时候没办法，系统的CPU、网络带宽、内存、线程等资源都是有限的。因此，我们要考虑限流。</p>
+<p>如果你的系统每秒扛住的请求是一千，<strong>如果一秒钟来了十万请求呢</strong>？换个角度就是说，高并发的时候，流量洪峰来了，超过系统的承载能力，怎么办呢？</p>
+<p>这时候，我们可以采取限流方案。就是为了保护系统，多余的请求，直接丢弃。</p>
+<blockquote>
+<p><strong>什么是限流</strong>：在计算机网络中，限流就是控制网络接口发送或接收请求的速率，它可防止DoS攻击和限制Web爬虫。限流，也称流量控制。是指系统在面临高并发，或者大流量请求的情况下，限制新的请求对系统的访问，从而保证系统的稳定性。</p>
+</blockquote>
+<p>可以使用<code>Guava</code>的<code>RateLimiter</code>单机版限流，也可以使用<code>Redis</code>分布式限流，还可以使用阿里开源组件<code>sentinel</code>限流。</p>
+<p>面试的时候，你说到限流这块的话？面试官很大概率会问你限流的算法，因此，大家在准备面试的时候，需要复习一下这几种经典的限流算法哈</p>
+<h3>12. 异步 <a href="#item-0-13" id="item-0-13"></a></h3>
+<blockquote>
+<p>回忆一下什么是同步，什么是异步呢？以<strong>方法调用</strong>为例，它代表<strong>调用方要阻塞等待被调用方法中的逻辑执行完成</strong>。这种方式下，当被调用方法响应时间较长时，会造成调用方长久的阻塞，在高并发下会造成整体系统性能下降甚至发生雪崩。异步调用恰恰相反，调用方不需要等待方法逻辑执行完成就可以返回执行其他的逻辑，在被调用方法执行完毕后再通过回调、事件通知等方式将结果反馈给调用方。</p>
+</blockquote>
+<p>因此，设计一个高并发的系统，<strong>需要在恰当的场景使用异步</strong>。如何使用异步呢？后端可以借用消息队列实现。比如在海量秒杀请求过来时，先放到消息队列中，快速响应用户，告诉用户请求正在处理中，这样就可以释放资源来处理更多的请求。秒杀请求处理完后，通知用户秒杀抢购成功或者失败。</p>
+<h3>13. 接口的常规优化 <a href="#item-0-14" id="item-0-14"></a></h3>
+<p>设计一个高并发的系统，需要设计接口的性能足够好，这样系统在相同时间，就可以处理更多的请求。当说到这里的话，可以跟面试官说说接口优化的一些方案了。</p>
+<p><img src="/images/blog/tech/system/image_3_5.png" alt="image_3_5.png"></p>
+<h3>14. 压力测试确定系统瓶颈 <a href="#item-0-15" id="item-0-15"></a></h3>
+<p>设计高并发系统，离不开最重要的一环，<strong>就是压力测试</strong>。就是在系统上线前，需要对系统进行压力测试，测清楚你的系统支撑的最大并发是多少，确定系统的瓶颈点，让自己心里有底，最好预防措施。</p>
+<p>压测完要分析整个调用链路，性能可能出现问题是网络层（如带宽）、Nginx层、服务层、还是数据路缓存等中间件等等。</p>
+<p><code>loadrunner</code>是一款不错的压力测试工具，<code>jmeter</code>则是接口性能测试工具，都可以来做下压测。</p>
+<h3>15. 应对突发流量峰值：扩容+切流量 <a href="#item-0-16" id="item-0-16"></a></h3>
+<p>如果是突发的流量高峰，除了降级、限流保证系统不跨，我们可以采用这两种方案，保证系统尽可能服务用户请求：</p>
+<ul>
+<li>扩容：<strong>比如增加从库、提升配置的方式</strong>，提升系统/组件的流量承载能力。比如增加<code>MySQL、Redis</code>从库来处理查询请求。</li>
+<li>切流量：<strong>服务多机房部署</strong>，如果高并发流量来了，把流量从一个机房切换到另一个机房。</li>
+</ul>
+18:T3b49,<h3>1 传统单体系统介绍 <a href="#scroller-1" id="scroller-1"></a></h3>
+<p>在很多项目的业务初期阶段，高速迭代上线是首要考虑的事情，对后期的容量预估、可扩展性和系统健壮性、高可用一般没有那么重视。但随着业务的发展，用户量、请求量的暴增，</p>
+<p>发现原来的单体系统已经远远不满足需求了，特别是随着互联网整体的高速发展，对系统的要求越来越高。</p>
+<p>但是物理服务器的CPU、内存、存储器、连接数等资源有限，单体系统能够承受的的QPS也是有限的，某个时段大量连接同时执行操作，会导致web服务和数据库服务在处理上遇到性能瓶颈。</p>
+<p>为了解决这个问题，伟大的前辈们发扬了分而治之的思想，对大数据库、大表进行分割，可以参考我的《<a href="https://www.cnblogs.com/wzh2010/p/15049878.html">分库分表</a>》，以便实施更好的控制和管理。</p>
+<p>同时创建多个服务实例，使用多台服务机进行CPU、内存、存储的分摊，提供更好的性能。</p>
+<h4>1.1 单体系统的问题 <a href="#scroller-2" id="scroller-2"></a></h4>
+<p>1、复杂性高：由于是一个单体的系统，所以整个系统的模块是耦合在一起的，模块的边界比较模糊、依赖关系错综复杂。功能的调整，容易带来不可知的影响和潜在的bug风险。</p>
+<p>2、服务性能问题：单体系统遇到性能瓶颈问题，只能横向扩展，增加服务实例，进行负载均衡分担压力。无法纵向扩展，做模块拆分。</p>
+<p>3、扩缩容能力受限：单体应用只能作为一个整体进行扩展，影响范围大，无法根据业务模块的需要进行单个模块的伸缩。</p>
+<p>4、无法做故障隔离：当所有的业务功能模块都聚集在一个程序集当中，如果其中的某一个小的功能模块出现问题（如某个请求堵塞），那么都有可能会造成整个系统的崩溃。</p>
+<p>5、发布的影响范围较大：每次发布都是整个系统进行发布，发布会导致整个系统的重启，对于大型的综合系统挑战比较大，如果将各个模块拆分，哪个部分做了修改，只发布哪个部分所在的模块即可。</p>
+<h4>&#x20;<a href="#scroller-3" id="scroller-3"></a></h4>
+<h4>1.2 单体系统的优点 <a href="#scroller-4" id="scroller-4"></a></h4>
+<p>1、系统的简易性：系统语言风格、业务结构，接口格式均具有一致性，服务都是耦合在一起的，不存在各个业务通信问题。</p>
+<p>2、易于测试：单体应用一旦部署，所有的服务或特性就都可以使用了，简化了测试过程，无需额外测试服务间的依赖，测试均可在部署完成后开始。</p>
+<p>3、易于部署与升级：相对于微服务架构中的每个服务独立部署，单体系统只需将单个目录下的服务程序统一部署和升级。</p>
+<p>4、较低的维护成本：只需维护单个系统即可。运维主要包括配置、部署、监控与告警和日志收集四大方面。相对于单体系统，微服务架构中的每个服务都需要独立地配置、部署、监控和日志收集，成本呈指数级增长。</p>
+<h4>&#x20;<a href="#scroller-5" id="scroller-5"></a></h4>
+<h4>1.3 单体服务到微服务的发展过程 <a href="#scroller-6" id="scroller-6"></a></h4>
+<p>EUREKA的注册中心逐渐被ZooKeeper和Nacos等替代了。</p>
+<p><img src="/images/blog/tech/microservice/image_2_1.png" alt="image_2_1.png"></p>
+<h3>2 关于微服务 <a href="#scroller-7" id="scroller-7"></a></h3>
+<p>微服务是一种架构模式，是面向服务的体系结构（SOA）软件架构模式的一种演变，它提倡将单一应用程序划分成一组松散耦合的细粒度小型服务，辅助轻量级的协议，互相协调、互相配合，为用户提供最终价值。所以，微服务（或微服务架构）是一种云原生架构方法，其中单个应用程序由许多松散耦合且可独立部署的较小组件或服务组成。这些服务通常包含如下特点：</p>
+<h4>2.1 单一职责 <a href="#scroller-8" id="scroller-8"></a></h4>
+<p>微服务架构中的每个节点高度服务化，都是具有业务逻辑的，符合高内聚、低耦合原则以及单一职责原则的单元，包括数据库和数据模型；不同的服务通过“管道”的方式灵活组合，从而构建出庞大的系统。</p>
+<h4>2.2 轻量级通信 <a href="#scroller-9" id="scroller-9"></a></h4>
+<p>通过REST API模式或者RPC框架，实现服务间互相协作的轻量级通信机制。</p>
+<h4>2.3 独立性 <a href="#scroller-10" id="scroller-10"></a></h4>
+<p>在微服务架构中，每个服务都是独立的业务单元，与其他服务高度解耦，只需要改变当前服务本身，就可以完成独立的开发、测试、部署、运维。</p>
+<h4>2.4 进程隔离 <a href="#scroller-11" id="scroller-11"></a></h4>
+<p>在微服务架构中，应用程序由多个服务组成，每个服务都是高度自治的独立业务实体，可以运行在独立的进程中，不同的服务能非常容易地部署到不同的主机上，实现高度自治和高度隔离。进程的隔离，还能保证服务达到动态扩缩容的能力，业务高峰期自动增加服务资源以提升并发能力，业务低谷期则可自动释放服务资源以节省开销。</p>
+<h4>2.5 混合技术栈和混合部署方式 <a href="#scroller-12" id="scroller-12"></a></h4>
+<p>团队可以为不同的服务组件使用不同的技术栈和不同的部署方式（公有云、私有云、混合云）。</p>
+<h4>2.6 简化治理 <a href="#scroller-13" id="scroller-13"></a></h4>
+<p>组件可以彼此独立地进行扩缩容和治理，从而减少了因必须缩放整个应用程序而产生的浪费和成本，因为单个功能可能面临过多的负载。</p>
+<h4>2.7 安全可靠，可维护。 <a href="#scroller-14" id="scroller-14"></a></h4>
+<p>从架构上对运维提供友好的支撑，在安全、可维护的基础上规范化发布流程，支持数据存储容灾、业务模块隔离、访问权限控制、编码安全检测等。</p>
+<h3>3 微服务演进史 <a href="#scroller-15" id="scroller-15"></a></h3>
+<p>我们前面已经了解了微服务的概念，通过百度指数可以看出，从2012年之后，微服务的发展有显著的发展趋势。</p>
+<p><img src="/images/blog/tech/microservice/image_2_2.png" alt="image_2_2.png"></p>
+<p>目前业内的微服务相关开发平台和框架还是比较多的，比如较早的Spring Cloud（使用Eureke做服务注册与发现，Ribbon做服务间负载均衡，Hystrix做服务容错保护），</p>
+<p>阿里的Dubbo，微软的.Net体系微服务框架 Service Fabric，再到后来进阶的服务网格(Service Mesh,如 Istio、Linkerd）。</p>
+<p>那从12年开始到现在，微服务到底发展到哪个阶段了，在各个阶段的进阶过程中，又有哪些的变化。所以我们需要了解微服务技术的历史发展脉络。</p>
+<p>下面的内容参考了 <a href="https://philcalcado.com/">Phil Calçado</a>的文章<a href="https://philcalcado.com/2017/08/03/pattern_service_mesh.html">《Pattern: Service Mesh》</a>，从开发者的视角，详细分析了从微服务到Service Mesh技术的演进过程，这边做了进一步的整理和总结。</p>
+<h4>3.1 第一阶：简单服务通信模块 <a href="#scroller-16" id="scroller-16"></a></h4>
+<p>这是最初的模样，开发人员最开始的时候想象的两个服务间简单的通信模式，抽象表示如下，两个服务之间直接进行通信：</p>
+<p><img src="/images/blog/tech/microservice/image_2_3.png" alt="image_2_3.png"></p>
+<p>3.2 第二阶：原始通信时代</p>
+<p>上面的方式非常简单，但实际情况远比想象的复杂很多，通信需要底层字节码传输和电子信号的物理层来完成，在TCP协议出现之前，</p>
+<p>服务需要自己处理网络通信所面临的丢包、错误、乱序、重试等一系列流控问题，因此服务实现中，除了业务逻辑外，还包含对网络传输问题的处理逻辑。</p>
+<p><img src="/images/blog/tech/microservice/image_2_4.png" alt="image_2_4.png"></p>
+<h4>3.3 第三阶：TCP时代 <a href="#scroller-18" id="scroller-18"></a></h4>
+<p>TCP协议的出现，避免了每个服务自己实现一套相似的网络传输处理逻辑，解决网络传输中通用的流量控制问题。</p>
+<p>这时候我们把处理网络传输的能力下沉，从服务的实现中抽离出来，成为操作系统网络层的一部分。</p>
+<p><img src="/images/blog/tech/microservice/image_2_5.png" alt="image_2_5.png"></p>
+<h4>3.4 第四阶：第一代微服务（Spring Cloud/RPC） <a href="#scroller-19" id="scroller-19"></a></h4>
+<p>TCP出现之后，服务间的网络通信已经不是一个难题了，所以 GFS/BigTable/MapReduce 为代表的分布式系统得到了蓬勃的发展。</p>
+<p>这时，分布式系统特有的通信语义又出现了，如服务注册与发现、负载均衡、熔断降级策略、认证和授权、端到端trace、日志与监控等，因此根据业务需求,完成一些通信语义的实现。</p>
+<p><img src="/images/blog/tech/microservice/image_2_6.png" alt="image_2_6.png"></p>
+<h4>3.5 第五阶：第二代微服务 <a href="#scroller-20" id="scroller-20"></a></h4>
+<p>为了避免每个服务都需要自己实现一套分布式系统通信的语义功能，随着技术的发展，一些面向微服务架构的通用开发框架出现了，如Twitter的<a href="https://finagle.github.io/">Finagle</a>、Facebook的<a href="https://code.facebook.com/posts/1503205539947302">Proxygen</a>以及Spring Cloud等，</p>
+<p>这些框架实现了分布式系统通信需要的各种通用语义功能：如负载均衡和服务发现等，因此一定程度上屏蔽了这些通信细节，使得开发人员使用较少的框架代码就能开发出健壮的分布式系统。</p>
+<p><img src="/images/blog/tech/microservice/image_2_7.png" alt="image_2_7.png"></p>
+<h4>3.6 第六阶：第一代Service Mesh <a href="#scroller-21" id="scroller-21"></a></h4>
+<p>上面的第二代微服务框架目前看着挺完美了，但整套微服务框架其实是很复杂的，比如Spring Cloud，聚合了很多组件。所以在实践过程中，会发现有如下诸多问题：</p>
+<ul>
+<li>**侵入性强。**想要集成SDK的能力，除了需要添加相关依赖，业务层中入侵的代码、注解、配置，与治理层界限不清晰。</li>
+<li>**升级成本高。**每次升级都需要业务应用修改SDK版本，重新进行功能回归测试，并对每一台服务进行部署上线，与快速迭代开发相悖。</li>
+<li>**版本碎片化严重。**由于升级成本高，而中间件版本更新快，导致线上不同服务引用的SDK版本不统一、能力参差不齐，造成很难统一治理。</li>
+<li>**中间件演变困难。**由于版本碎片化严重，导致中间件向前演进的过程中就需要在代码中兼容各种各样的老版本逻辑，带着&quot;枷锁”前行，无法实现快速迭代。</li>
+<li>**内容多、门槛高。**依赖组件多，学习成本高，即使通用分布式系统屏蔽了很多的实现细节，我们引入微服务框架并熟练使用也是要花费巨大的精力的。</li>
+<li>**治理功能不全。**不同于RPC框架，SpringCloud作为治理全家桶的典型，也不是万能的，诸如协议转换支持、多重授权机制、动态请求路由、故障注入、灰度发布等高级功能并没有覆盖到。</li>
+<li>**无法实现真正意义上的语言无关性。**提供的框架一般只支持一种或几种语言，要将框架不支持的语言研发的服务也纳入微服务架构中，是比较有难度的。</li>
+</ul>
+<p>所以，第一代微服务架构 Service Mesh就产生了，它作为一个基础设施层，能够与业务解耦，主要解决复杂网络拓扑下微服务与微服务之间的通信，其实现形态一般为轻量级网络代理，并与应用以边车代理（SideCar）模式部署，同时对业务应用透明。</p>
+<p><img src="/images/blog/tech/microservice/image_2_8.png" alt="image_2_8.png"></p>
+<p>SideCar将分布式服务的通信抽象为单独一层，需要和服务部署在一起，接管服务的流量，通过代理之间的通信间接完成服务之间的通信请求。</p>
+<p>所以在这一层中它能够实现负载均衡、服务发现、认证授权、监控追踪、流量控制等分布式系统所需要的功能。</p>
+<p><img src="/images/blog/tech/microservice/image_2_9.png" alt="image_2_9.png"></p>
+<p>如果我们从一个全局视角来看，绿色的为应用服务，蓝色的为SideCar，就会得到如下部署图：</p>
+<p><img src="/images/blog/tech/microservice/image_2_10.png" alt="image_2_10.png"></p>
+<p>如果我们省略去服务，只看Service Mesh的代理边车的网格应该是这样的：</p>
+<p><img src="/images/blog/tech/microservice/image_2_11.png" alt="image_2_11.png"></p>
+<p>流量经过的时候，会先被代理边车所劫持，然后再进入服务，所以它就是一个由若干服务代理所组成的错综复杂的网格。</p>
+<h4>3.7 第七阶：第二代Service Mesh <a href="#scroller-22" id="scroller-22"></a></h4>
+<p>第一代Service Mesh由一系列独立运行的单机代理服务构成，为了提供统一的上层运维入口，演化出了集中式的控制面板，我们称之为控制面（control plane）。</p>
+<p>控制面和所有的数据面（data plane，即代理边车）进行交互，比如策略下发、数据采集等。这就是以Istio为代表的第二代Service Mesh。</p>
+<p><img src="/images/blog/tech/microservice/image_2_12.png" alt="image_2_12.png"></p>
+<p>只包含控制面和数据面的 Service Mesh 服务网格全局结构图 如下：</p>
+<p><img src="/images/blog/tech/microservice/image_2_13.png" alt="image_2_13.png"></p>
+<p>从上面的结构图可以看出，Service Mesh 的基础设施层主要分为两部分：控制平面与数据平面。当前流行的开源服务网格 Istio 和 Linkerd 都是这种构造。</p>
+<p>控制平面的特点：</p>
+<ul>
+<li>不直接解析数据包。</li>
+<li>与控制平面中的代理通信，下发策略和配置。</li>
+<li>负责网络行为的可视化。</li>
+<li>通常提供 API 或者命令行工具可用于配置版本化管理，便于持续集成和部署。</li>
+</ul>
+<p>数据平面的特点：</p>
+<ul>
+<li>通常是按照无状态目标设计的，但实际上为了提高流量转发性能，需要缓存一些数据，因此无状态也是有争议的。</li>
+<li>直接处理入站和出站数据包，转发、路由、健康检查、负载均衡、认证、鉴权、产生监控数据等。</li>
+<li>对应用来说透明，即可以做到无感知部署。</li>
+</ul>
+<p>到这一步我们大概了解了微服务架构的演进过程，也初步了解Service Mesh技术比较于传统的微服务架构有哪些优势。</p>
+19:T173e,<h1>架构设计模板</h1>
+<p>最近一年的时间内，我参与了很多后端基础组件的设计、重构、重写、微服务化等工作，写了很多设计文档、与同事开了很多次技术研讨会，一直以来没有总结一套工作模板，以至于在开会时总有遗漏。今天我的朋友分享给了我一套架构设计模板，我针对文档做了一些总结，分享给大家：</p>
+<p>总体来说，一个完善的设计需要考虑一下 11 个方面：</p>
+<ol>
+<li>需求介绍</li>
+<li>架构总览</li>
+<li>核心流程</li>
+<li>详细设计</li>
+<li>高可用设计</li>
+<li>高性能设计</li>
+<li>可扩展设计</li>
+<li>安全设计</li>
+<li>其他设计</li>
+<li>部署方案</li>
+<li>架构演进规划</li>
+</ol>
+<p>这 11 条既可以作为我们写设计文档时的 CheckList，也可以直接用来做题纲，下面我们详细说说具体要做什么。</p>
+<h3>1. 需求介绍 <a href="#xu-qiu-jie-shao" id="xu-qiu-jie-shao"></a></h3>
+<p>需求介绍主要描述需求的背景、以及新系统想要达成的目标。<br>比如我在设计公司<code>用户动态与Websocet</code>业务时提到：旧动态系统延迟过高、进程池进程数量有限，有时会出现任务卡死的情况，需要手动重启系统才能暂时恢复（不能根治），导致用户动态推送业务极不稳定。新系统的目标是为了改善这一情况，保障动态业务稳定性。<br>再比如我在设计公司自动化部署在线文档时提到：旧文档由各个开发人员在本地生成，上传到 Git 时可能有冲突、且不方便人员查看，所以准备部署一个在线文档，开发人员编写好文档后自动生成在线文档，方便查阅。<br>总结就是三个关键点：哪里有问题、想怎么解决问题、能达到什么效果。</p>
+<h3>2. 架构总览 <a href="#jia-gou-zong-lan" id="jia-gou-zong-lan"></a></h3>
+<p>架构总览的<strong>核心内容是架构图</strong>，以及针对架构图的描述，包括模块或者子系统的职责描述、核心流程。</p>
+<blockquote>
+<p>架构图的画法没有严格要求，唯一的要求就是易懂。个人建议 Figma 和 ProcessOn 二者结合使用。</p>
+</blockquote>
+<p>可以给大家瞧瞧我当初做 Wordpress 站点 CDN 优化的架构图：</p>
+<figure><img src="https://www.kaolengmian7.com/app/imgs/architecture/architecture_design_template/1.png" alt=""><figcaption></figcaption></figure>
+
+<p>再给大伙看看我利用 Github Action、DroneCI/CD、Docker、K8s 做的自动化在线文档：</p>
+<figure><img src="https://www.kaolengmian7.com/app/imgs/architecture/architecture_design_template/2.png" alt=""><figcaption></figcaption></figure>
+
+<p>有了架构图的支撑，会大大降低技术研讨会讲解的难度，非常实用。</p>
+<h3>3. 核心流程 <a href="#he-xin-liu-cheng" id="he-xin-liu-cheng"></a></h3>
+<p>核心流程的主要任务是针对上面的架构图讲解各个关键组件是如何工作的、数据的流向与处理方式等等，复杂的业务最好给出<strong>时序图。</strong><br><strong>个人认为架构图和时序图是最重要的两个图，让整个系统结构和处理逻辑一目了然，配合口头讲解非常易懂。</strong></p>
+<h3>4. 详细设计 <a href="#xiang-xi-she-ji" id="xiang-xi-she-ji"></a></h3>
+<p>对于一些比较复杂的小组件 or 小设计，需要额外写一些详细设计文档，降低同事理解代码的成本。<br>比如我在设计分布式唯一 Id 生成器时详细介绍了<code>双Buffer优化</code>这个小设计：<br><img src="https://www.kaolengmian7.com/app/imgs/architecture/architecture_design_template/3.png" alt="image.png"></p>
+<ol>
+<li>id 容器采用双 buffer 实现，目的是防止某一个请求进来恰巧桶内没数据需要请求 mysql 从而造成高延迟的情况。（buffer 容量可配置）</li>
+<li>双 buffer 的切换逻辑为：当前承担发号任务的 buffer 余额 &lt; 20%，休息状态的 buffer 已经填充完毕（isReady）。</li>
+</ol>
+<h3>5. 高可用设计 <a href="#gao-ke-yong-she-ji" id="gao-ke-yong-she-ji"></a></h3>
+<p>讲解系统设计是怎样考虑高可用这个指标的。比如数据库宕机怎么办？数据一致性如何处理？数据丢失怎么办？缓存的方案？出Bug如何补救？如何 Debug、如何排查线上问题？性能指标、业务指标监控该怎么做？<br>这块内容的要诀有两个：一是要结合具体情况，二是要多积累经验。</p>
+<h3>6. 高性能设计 <a href="#gao-xing-neng-she-ji" id="gao-xing-neng-she-ji"></a></h3>
+<p>讲解系统设计是怎样考虑高性能这个指标的。此外还可以提一提压力测试计划、目标 QPS 等等。</p>
+<h3>7. 可扩展性设计 <a href="#ke-kuo-zhan-xing-she-ji" id="ke-kuo-zhan-xing-she-ji"></a></h3>
+<p>讲解系统设计是怎样考虑扩展性这个指标的。</p>
+<h3>8. 安全设计 <a href="#an-quan-she-ji" id="an-quan-she-ji"></a></h3>
+<p>比如权限控制。如果没有可以填“无”，但是不能不写，这表明我们是有考虑安全性的，在研讨会时说不定有同事会补充。</p>
+<h3>9. 其他设计 <a href="#qi-ta-she-ji" id="qi-ta-she-ji"></a></h3>
+<p>可以写一写使用的语言、框架、库等等。也可以是公司团队内部的一些规范。</p>
+<h3>10. 部署方案 <a href="#bu-shu-fang-an" id="bu-shu-fang-an"></a></h3>
+<p>现在基本上都是 K8s 部署，可以讲讲是用 Stateful 部署还是用 Deployment 部署。副本数量设计，生产环境多少个副本、灰度环境多少个、测试环境多少个。</p>
+<h3>11. 架构演进计划 <a href="#jia-gou-yan-jin-ji-hua" id="jia-gou-yan-jin-ji-hua"></a></h3>
+<p>如果是小项目不用写，如果是大型项目那大概率不能一下子全部完成。这时候就要分步骤、分期实现。可以写写第一期要实现 xxx、第二期要 xxx 类似这样的目标。</p>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-18","children":"2024年03月18日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"从0开始做一个后台项目架构"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","架构设计",{"href":"/blog/tag/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"架构设计"}],["$","$L5","技术专题",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术专题"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"tech/system/高并发系统设计的15个锦囊","title":"高并发系统设计的15个锦囊","description":"记得很久之前，去面试过**字节跳动**。被三面的面试官问了一道场景设计题目：**如何设计一个高并发系统**。当时我回答得比较粗糙，最近回想起来，所以整理了设计高并发系统的15个锦囊，相信大家看完会有帮助的。 所谓设计**高并发**系统，就是设计一个系统，保证它**整体可用**的同时，能够**处理很高...","pubDate":"2024-03-17","tags":["系统架构"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"tech/microservice/微服务及其演进史","title":"微服务及其演进史","description":"在很多项目的业务初期阶段，高速迭代上线是首要考虑的事情，对后期的容量预估、可扩展性和系统健壮性、高可用一般没有那么重视。但随着业务的发展，用户量、请求量的暴增， 发现原来的单体系统已经远远不满足需求了，特别是随着互联网整体的高速发展，对系统的要求越来越高。 但是物理服务器的CPU、内存、存储器、连接...","pubDate":"2024-03-19","tags":["微服务架构","技术专题"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"架构设计":{"prev":{"slug":"tech/system/架构设计模板","title":"架构设计模板","description":"最近一年的时间内，我参与了很多后端基础组件的设计、重构、重写、微服务化等工作，写了很多设计文档、与同事开了很多次技术研讨会，一直以来没有总结一套工作模板，以至于在开会时总有遗漏。今天我的朋友分享给了我一套架构设计模板，我针对文档做了一些总结，分享给大家...","pubDate":"2024-03-16","tags":["架构设计","技术专题"],"heroImage":"$undefined","content":"$19"},"next":null},"技术专题":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:tagNav:架构设计:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"}}}]}]]}]}]}]
 9:null
 d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 8:null
