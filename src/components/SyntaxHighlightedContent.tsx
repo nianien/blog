@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { createRoot } from 'react-dom/client';
 
 interface SyntaxHighlightedContentProps {
   content: string;
@@ -28,28 +29,30 @@ const SyntaxHighlightedContent: React.FC<SyntaxHighlightedContentProps> = ({ con
       const cleanCode = code.replace(/\n$/, '');
       
       // 创建 React 元素
-      const syntaxHighlighter = React.createElement(SyntaxHighlighter, {
-        language,
-        style: tomorrow,
-        customStyle: {
-          margin: 0,
-          borderRadius: '0.75rem',
-          fontSize: '0.875rem',
-          lineHeight: '1.6',
-          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-        },
-        showLineNumbers: true,
-        wrapLines: true,
-        children: cleanCode
-      });
+      const syntaxHighlighter = (
+        <SyntaxHighlighter
+          language={language}
+          style={tomorrow}
+          customStyle={{
+            margin: 0,
+            borderRadius: '0.75rem',
+            fontSize: '0.875rem',
+            lineHeight: '1.6',
+            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+          }}
+          showLineNumbers={true}
+          wrapLines={true}
+        >
+          {cleanCode}
+        </SyntaxHighlighter>
+      );
       
       // 使用 ReactDOM 渲染
       const wrapper = document.createElement('div');
       wrapper.className = 'my-6';
       
-      // 使用 ReactDOM.render 渲染组件
-      const ReactDOM = require('react-dom/client');
-      const root = ReactDOM.createRoot(wrapper);
+      // 使用 createRoot 渲染组件
+      const root = createRoot(wrapper);
       root.render(syntaxHighlighter);
       
       pre.parentNode?.replaceChild(wrapper, pre);

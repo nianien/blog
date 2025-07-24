@@ -80,7 +80,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     const markdownFiles = getAllMarkdownFiles(postsDirectory);
     
     // 尝试精确匹配
-    let foundFile = markdownFiles.find(file => file.slug === decodedSlug);
+    const foundFile = markdownFiles.find(file => file.slug === decodedSlug);
     
     if (!foundFile) {
       return null;
