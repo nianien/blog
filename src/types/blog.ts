@@ -14,4 +14,15 @@ export interface BlogMeta {
   pubDate: string;
   tags?: string[];
   heroImage?: string;
+}
+
+export interface NavigationInfo {
+  prev: BlogPost | null;
+  next: BlogPost | null;
+}
+
+export interface BlogPostWithNavigation {
+  post: BlogPost;
+  globalNav: NavigationInfo;
+  tagNav: Record<string, NavigationInfo>;
 } 

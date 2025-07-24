@@ -14,7 +14,7 @@ export async function generateStaticParams() {
     
     for (let page = 1; page <= totalPages; page++) {
       params.push({
-        tag: encodeURIComponent(tag),
+        tag: tag, // 不进行编码，让 Next.js 自己处理
         page: String(page),
       });
     }
