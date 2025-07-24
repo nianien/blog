@@ -5,7 +5,9 @@ import { zhCN } from 'date-fns/locale';
 import { getPostWithNavigation } from '@/lib/blog';
 import SyntaxHighlightedContent from '@/components/SyntaxHighlightedContent';
 import BlogPostNavigation from '@/components/BlogPostNavigation';
+import GiscusComments from '@/components/GiscusComments';
 import { Suspense } from 'react';
+import type { Metadata } from 'next';
 
 export async function generateStaticParams() {
   const { getAllPosts } = await import('@/lib/blog');
@@ -21,6 +23,37 @@ export async function generateStaticParams() {
   }
   
   return params;
+}
+
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ slug: string[] }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const slugString = slug.join('/');
+  
+  const postData = getPostWithNavigation(slugString);
+  if (!postData) {
+    return {
+      title: '页面未找到',
+      description: '请求的页面不存在',
+    };
+  }
+
+  const { post } = postData;
+
+  return {
+    title: `${post.title} - Skyfalling Blog`,
+    description: post.description || post.title,
+    openGraph: {
+      title: post.title,
+      description: post.description || post.title,
+      type: 'article',
+      publishedTime: post.pubDate,
+      authors: ['Skyfalling'],
+    },
+  };
 }
 
 export default async function BlogPostPage({ 
@@ -86,6 +119,9 @@ export default async function BlogPostPage({
               tagNav={tagNav}
             />
           </Suspense>
+
+          {/* 评论区域 */}
+          <GiscusComments />
         </div>
       </div>
     </article>

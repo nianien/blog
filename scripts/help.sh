@@ -75,8 +75,9 @@ show_menu() {
     echo "   4) 清理缓存"
     echo "   5) 查看依赖信息"
     echo "   6) 部署到 GitHub Pages"
-    echo "   7) 显示所有命令"
-    echo "   8) 退出"
+    echo "   7) 预览功能"
+    echo "   8) 显示所有命令"
+    echo "   9) 退出"
     echo ""
 }
 
@@ -119,15 +120,51 @@ execute_action() {
             ./scripts/deploy.sh
             ;;
         7)
+            echo -e "${GREEN}👀 预览功能:${NC}"
+            echo ""
+            echo "请选择预览方式："
+            echo "  a) 启动开发服务器预览"
+            echo "  b) 启动静态文件预览"
+            echo "  c) 构建并预览静态文件"
+            echo "  d) 清理构建文件"
+            echo "  e) 返回主菜单"
+            echo ""
+            read -p "请选择 (a-e): " preview_choice
+            case $preview_choice in
+                a)
+                    echo -e "${GREEN}🚀 启动开发服务器预览...${NC}"
+                    ./scripts/preview.sh dev
+                    ;;
+                b)
+                    echo -e "${GREEN}📄 启动静态文件预览...${NC}"
+                    ./scripts/preview.sh static
+                    ;;
+                c)
+                    echo -e "${GREEN}🔨 构建并预览静态文件...${NC}"
+                    ./scripts/preview.sh build
+                    ;;
+                d)
+                    echo -e "${GREEN}🧹 清理构建文件...${NC}"
+                    ./scripts/preview.sh clean
+                    ;;
+                e)
+                    echo -e "${GREEN}↩️ 返回主菜单${NC}"
+                    ;;
+                *)
+                    echo -e "${RED}❌ 无效选择${NC}"
+                    ;;
+            esac
+            ;;
+        8)
             echo -e "${GREEN}📜 所有可用命令:${NC}"
             npm run
             ;;
-        8)
+        9)
             echo -e "${GREEN}👋 再见！${NC}"
             exit 0
             ;;
         *)
-            echo -e "${RED}❌ 无效选择，请输入 1-8${NC}"
+            echo -e "${RED}❌ 无效选择，请输入 1-9${NC}"
             ;;
     esac
 }

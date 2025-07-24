@@ -9,12 +9,14 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build:export": "NEXT_EXPORT=true next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .next out .turbo",
-    "export": "next build",
+    "export": "NEXT_EXPORT=true next build",
+    "preview": "./scripts/preview.sh",
     "deploy": "gh-pages -d out",
     "help": "./scripts/help.sh"
   },

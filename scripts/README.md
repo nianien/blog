@@ -18,6 +18,7 @@
 ### 核心脚本
 - `install.sh` - 项目安装和初始化
 - `restart.sh` - 开发服务器管理
+- `preview.sh` - 本地预览服务器管理
 - `deploy.sh` - 部署到 GitHub Pages
 - `help.sh` - 交互式帮助工具
 
@@ -105,6 +106,31 @@ npm run restart
 - 日常开发启动
 - 修改文件后重启
 - 遇到缓存问题时重启
+
+### preview.sh
+**用途**: 静态文件预览启动脚本
+
+**功能**:
+- 专门用于预览构建后的静态文件
+- 自动停止现有服务器进程
+- 智能选择 HTTP 服务器（Python3 优先）
+- 检查静态文件是否存在
+- 显示文件统计信息
+
+**使用方法**:
+```bash
+# 预览静态文件
+./scripts/preview.sh
+# 或
+npm run preview
+```
+
+**适用场景**:
+- 预览构建后的静态文件
+- 测试生产环境效果
+- 验证静态文件完整性
+
+**注意**: 使用前需要先运行 `npm run build:export` 构建静态文件
 
 ### deploy.sh
 **用途**: 构建并部署到 GitHub Pages
