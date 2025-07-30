@@ -10,9 +10,11 @@ interface BlogCardProps {
 
 export default function BlogCard({ post, currentTag }: BlogCardProps) {
   // 构建文章链接，如果提供了currentTag，则包含标签参数
+  // 对slug进行URL编码以处理空格和特殊字符
+  const encodedSlug = encodeURIComponent(post.slug);
   const articleLink = currentTag 
-    ? `/blog/${post.slug}?tag=${encodeURIComponent(currentTag)}`
-    : `/blog/${post.slug}`;
+    ? `/blog/${encodedSlug}?tag=${encodeURIComponent(currentTag)}`
+    : `/blog/${encodedSlug}`;
 
   return (
     <article className="flex flex-col items-start">

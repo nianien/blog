@@ -26,7 +26,7 @@ export default function BlogPostNavigation({
       <div className="flex justify-between items-center">
         {nav.prev && (
           <Link
-            href={`/blog/${nav.prev.slug}${tagContext ? `?tag=${encodeURIComponent(tagContext)}` : ''}`}
+            href={`/blog/${encodeURIComponent(nav.prev.slug)}${tagContext ? `?tag=${encodeURIComponent(tagContext)}` : ''}`}
             className="group flex items-center max-w-xs p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-200"
           >
             <svg className="w-5 h-5 mr-3 text-gray-400 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ export default function BlogPostNavigation({
         
         {nav.next && (
           <Link
-            href={`/blog/${nav.next.slug}${tagContext ? `?tag=${encodeURIComponent(tagContext)}` : ''}`}
+            href={`/blog/${encodeURIComponent(nav.next.slug)}${tagContext ? `?tag=${encodeURIComponent(tagContext)}` : ''}`}
             className="group flex items-center max-w-xs p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-200"
           >
             <div className="min-w-0">
