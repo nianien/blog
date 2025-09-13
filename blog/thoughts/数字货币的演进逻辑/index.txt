@@ -1,0 +1,537 @@
+1:"$Sreact.fragment"
+2:I[10616,["874","static/chunks/874-f2e46e41114bd221.js","177","static/chunks/app/layout-c432974c723daafe.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/0a7d53676a1eb136.css","style"]
+0:{"P":null,"b":"Dji1dAUXI6iWSAuehWH2i","p":"","c":["","blog","thoughts","%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%9A%84%E6%BC%94%E8%BF%9B%E9%80%BB%E8%BE%91",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","thoughts/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%9A%84%E6%BC%94%E8%BF%9B%E9%80%BB%E8%BE%91","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0a7d53676a1eb136.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","thoughts/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81%E7%9A%84%E6%BC%94%E8%BF%9B%E9%80%BB%E8%BE%91","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","PMomiRCzR3mJm9-2xDASev",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+16:I[40780,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+18:I[85300,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:T1e1b,<h1>数字货币的演进逻辑：从比特币到稳定币、RWA、CBDC与未来格局</h1>
+<hr>
+<h2>第一章：比特币的起点与困境</h2>
+<h3>1.1 起源：去中心化与“电子现金”的理想</h3>
+<p>2008 年，中本聪（Satoshi Nakamoto）发表论文《Bitcoin: A Peer-to-Peer Electronic Cash System》，提出建立一个<strong>点对点的电子现金系统</strong>，无需银行即可完成价值转移。2009 年，比特币网络上线，创世区块中嵌入了《泰晤士报》标题，象征对传统金融体系的抗议。</p>
+<h3>1.2 技术创新：区块链与 PoW</h3>
+<ul>
+<li><strong>区块链</strong>：分布式、不可篡改账本。</li>
+<li><strong>PoW（Proof of Work）</strong>：通过算力竞争记账权，保障安全性。</li>
+<li><strong>总量限制</strong>：2100 万枚上限，模拟黄金稀缺性。</li>
+</ul>
+<h3>1.3 现实意义上的缺陷</h3>
+<ol>
+<li><strong>总量刚性，与经济扩张脱节</strong></li>
+<li><strong>PoW 高耗能，不创造现实价值</strong></li>
+<li><strong>分配不公：早期红利与后期风险</strong></li>
+<li><strong>纯量博弈：存量玩家的零和对抗</strong></li>
+<li><strong>沉睡/丢失币不可递补</strong></li>
+<li><strong>安全预算困境：最后一枚比特币之后，手续费难以维持网络安全</strong></li>
+</ol>
+<h3>1.4 阶段性定位</h3>
+<p>比特币是技术实验的开端，但难以承担现实货币职能，更接近“数字黄金”。</p>
+<h3>1.5 比特币作为“数字黄金”的合理性？</h3>
+<ul>
+<li><strong>相似点</strong>：稀缺性、获取成本高、全球流通。</li>
+<li><strong>差异点</strong>：缺乏非货币用途、波动过大、市场深度不足、共识尚不稳固。</li>
+<li><strong>结论</strong>：比特币的“数字黄金”属性是一种市场共识实验，而非历史沉淀。</li>
+</ul>
+<hr>
+<h2>第二章：稳定币的兴起与现实意义</h2>
+<h3>2.1 稳定币的提出</h3>
+<p>比特币波动过大，无法作为日常货币。稳定币因此出现，锚定法币资产，提供低波动的数字化现金。</p>
+<h3>2.2 类型</h3>
+<ol>
+<li><strong>法币储备型</strong>（USDT、USDC）</li>
+<li><strong>加密抵押型</strong>（DAI）</li>
+<li><strong>算法型</strong>（UST，失败案例）</li>
+</ol>
+<h3>2.3 现实意义</h3>
+<ul>
+<li>提供统一计价单位</li>
+<li>跨境支付与清算效率高</li>
+<li>桥接现实资产与区块链</li>
+<li>可编程性强，支持链上金融创新</li>
+</ul>
+<h3>2.4 风险与挑战</h3>
+<ul>
+<li>脱锚风险</li>
+<li>储备透明度不足</li>
+<li>监管压力</li>
+<li>集中化依赖银行与公司</li>
+</ul>
+<h3>2.5 与比特币的差异</h3>
+<ul>
+<li><strong>比特币</strong>：数字黄金，价值存储为主。</li>
+<li><strong>稳定币</strong>：数字现金，交易与结算为主。</li>
+</ul>
+<hr>
+<h2>第三章：RWA（现实世界资产代币化）</h2>
+<h3>3.1 定义</h3>
+<p>RWA 是把现实资产（国债、房地产、应收账款、碳配额等）代币化，实现确权、流动性增强和自动化分配。</p>
+<h3>3.2 投资闭环</h3>
+<ol>
+<li><strong>法币 → 稳定币</strong></li>
+<li><strong>稳定币 → RWA</strong></li>
+<li><strong>RWA → 稳定币</strong></li>
+<li><strong>稳定币 → 法币</strong></li>
+</ol>
+<h3>3.3 应用场景</h3>
+<ul>
+<li>国债与票据</li>
+<li>房地产收益权</li>
+<li>应收账款融资</li>
+<li>碳配额与绿色金融</li>
+</ul>
+<h3>3.4 风险与设计要点</h3>
+<ul>
+<li>法律结构（SPV、破产隔离）</li>
+<li>身份合规（KYC/AML）</li>
+<li>储备与审计（PoR）</li>
+<li>价格预言机与跨链安全</li>
+<li>流动性管理</li>
+</ul>
+<h3>3.5 稳定币与 RWA 的互补</h3>
+<ul>
+<li>稳定币：结算与流动性。</li>
+<li>RWA：资产与现金流。</li>
+</ul>
+<p>二者结合，形成完整的金融闭环。</p>
+<hr>
+<h2>第四章：CBDC（央行数字货币）</h2>
+<h3>4.1 概念</h3>
+<p>CBDC 是央行直接发行的法币数字化形态，如中国的数字人民币（e-CNY）、欧洲的数字欧元。</p>
+<h3>4.2 闭环升级</h3>
+<ul>
+<li><strong>传统闭环</strong>：法币 → 稳定币 → RWA → 稳定币 → 法币</li>
+<li><strong>CBDC 闭环</strong>：CBDC → RWA → CBDC</li>
+</ul>
+<p>消除了“稳定币 ↔ 法币”的转换环节。</p>
+<h3>4.3 政策价值</h3>
+<ul>
+<li>宏观调控（定向补贴、有效期货币）</li>
+<li>监管与反洗钱</li>
+<li>支付体系统一化</li>
+<li>跨境结算探索</li>
+</ul>
+<h3>4.4 挑战</h3>
+<ul>
+<li>隐私担忧</li>
+<li>商业银行角色弱化</li>
+<li>国际协同难题</li>
+</ul>
+<hr>
+<h2>第五章：中美数字货币发展路径对比</h2>
+<h3>5.1 美国路径</h3>
+<ul>
+<li>优势：金融体系成熟，美元全球化红利。</li>
+<li>策略：依赖合规稳定币（USDC、USDT）+ RWA。</li>
+<li>约束：国会分歧、隐私保护、银行游说。</li>
+<li>本质：<strong>守成，延伸美元霸权</strong>。</li>
+</ul>
+<h3>5.2 中国路径</h3>
+<ul>
+<li>背景：信用卡体系不足，支付被巨头主导。</li>
+<li>策略：央行主导 e-CNY，统一支付数据与监管。</li>
+<li>国际化：探索人民币跨境结算，谋求去美元化。</li>
+<li>本质：<strong>进取，用 CBDC 换道超车</strong>。</li>
+</ul>
+<h3>5.3 底仓逻辑</h3>
+<ul>
+<li>美国：美元储备 + 稳定币合规化。</li>
+<li>中国：CBDC 国家化推进，构建人民币竞争力。</li>
+</ul>
+<hr>
+<h2>第六章：未来展望</h2>
+<h3>6.1 各类数字货币的长期定位</h3>
+<ul>
+<li><strong>比特币</strong>：数字黄金，投机与储值资产。</li>
+<li><strong>稳定币</strong>：跨境结算与链上支付的核心中介。</li>
+<li><strong>RWA</strong>：数字金融与现实经济的连接器。</li>
+<li><strong>CBDC</strong>：国家主权货币的数字终局。</li>
+</ul>
+<h3>6.2 全球格局</h3>
+<ul>
+<li><strong>美国</strong>：稳定币与 RWA，维护美元主导。</li>
+<li><strong>中国</strong>：CBDC 与跨境支付，推动人民币国际化。</li>
+<li><strong>其他国家</strong>：区域 CBDC，平衡美元与人民币。</li>
+</ul>
+<h3>6.3 终局假设</h3>
+<ol>
+<li><strong>双轨并行</strong>：美元稳定币 vs 人民币 CBDC。</li>
+<li><strong>多极货币</strong>：区域 CBDC 并行，形成多极格局。</li>
+<li><strong>世界央行模式</strong>：<ul>
+<li>建立全球货币联盟或“世界央行”，基于 GDP 权重发行统一的数字货币。</li>
+<li>特点：<ul>
+<li>减少汇率风险，降低跨境成本；</li>
+<li>统一清算体系；</li>
+<li>弱化单一国家货币霸权。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3>6.4 小结</h3>
+<p>未来的数字货币演进路径：</p>
+<ul>
+<li>短期：稳定币与 CBDC 双轨竞争。</li>
+<li>中期：多极化格局，各国区域 CBDC 并行。</li>
+<li>长期：可能出现全球统一的数字货币，由国际机构按综合国力发行。</li>
+</ul>
+<hr>
+<h1>总结</h1>
+<ul>
+<li><strong>比特币</strong>：开启了数字货币实验，但局限明显。</li>
+<li><strong>稳定币</strong>：解决了计价与结算问题，是桥梁资产。</li>
+<li><strong>RWA</strong>：将现实资产数字化，链接实体经济。</li>
+<li><strong>CBDC</strong>：国家化的数字货币终局，提升政策工具。</li>
+<li><strong>中美路径</strong>：美国守成，中国进取。</li>
+<li><strong>未来趋势</strong>：从双轨竞争 → 多极格局 → 世界央行统一货币。</li>
+</ul>
+<p>数字货币的演进，不仅是技术进步的结果，更是<strong>制度选择与国际博弈的产物</strong>。它将深刻影响未来全球金融秩序。</p>
+17:T4029,<h2>1. Background</h2>
+<p>Protocol Buffers (Protobuf) is a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It was developed by Google to efficiently serialize data for use in a variety of applications, including network communication, data storage, and inter-process communication (IPC).  Protobuf messages are smaller and more efficient than text-based formats like JSON and XML ,and provides fast serialization and deserialization, which is crucial for high-performance systems. </p>
+<h2>2. Protobuf compiler</h2>
+<p>Protobuf allows you to define the structure of your data (messages) in a .proto file, and then use the Protobuf compiler (protoc) to generate source code in selected programming language that can serialize and deserialize data in the Protobuf format.  Protobuf adds overhead to the development process compared to formats like JSON, where you can directly parse or serialize data without needing code generation. Additionally, any changes to the schema may require re-compiling the code to handle new or modified message types.</p>
+<h2>3. Dynamic compilation(Dynamic Schema)</h2>
+<p>Typically, Protobuf schemas are compiled using the protoc compiler ahead of time, which generates source code in various programming languages (such as C++, Java, Python, etc.) for serialization and deserialization. However, in some scenarios, you might need to work with Protobuf messages dynamically without relying on pre-generated codes. </p>
+<p>This is especially useful when:</p>
+<ul>
+<li>You want to work with Protobuf messages dynamically at runtime, where the schema is not known in advance.</li>
+<li>You need to handle multiple or evolving Protobuf schemas at runtime without recompiling your code.</li>
+<li>You want to dynamically serialize or deserialize Protobuf messages in a generic way, perhaps for applications like plugins, dynamic API handling, or protocol-based communication where the schema might change often.</li>
+</ul>
+<h3>Key Concepts for Dynamic Compilation in Protobuf</h3>
+<ul>
+<li>Dynamic Message (Dynamic Parsing)</li>
+<li>Reflection API in Protobuf</li>
+<li>Dynamic Code Generation</li>
+</ul>
+<h3>3.1 Dynamic Message (Dynamic Parsing)</h3>
+<p>In Protobuf, a Dynamic Message is an object where you can manipulate the message’s fields dynamically, without needing a pre-generated class for the specific message type. This is enabled through Protobuf&#39;s Reflection API.<br>You can use dynamic messages when:</p>
+<ul>
+<li>The Protobuf schema is available at runtime, but you don&#39;t know the message types ahead of time.</li>
+<li>You want to work with messages whose types are determined dynamically (e.g., reading from a file or network stream that specifies the message type).<br>To use dynamic messages, you typically:</li>
+<li>Load the schema definition (e.g., .proto file) at runtime.</li>
+<li>Use the Protobuf Reflection API to create message types and set/get fields.</li>
+</ul>
+<h3>3.2 Reflection API</h3>
+<p>The Protobuf Reflection API allows you to inspect the structure of Protobuf messages at runtime, and dynamically access their fields. This is the core tool for implementing dynamic compilation because it lets you:</p>
+<ul>
+<li>Discover available fields.</li>
+<li>Inspect field types (e.g., int32, string, nested messages).</li>
+<li>Set and get field values dynamically.<br>The key components of the Reflection API in Protobuf are:</li>
+<li>Descriptors: These are metadata objects that describe the fields, types, and structure of messages.</li>
+<li>Dynamic Messages: These are messages created dynamically using descriptors, where you can set/get fields without needing a pre-compiled class.</li>
+</ul>
+<h3>3.3 Dynamic Code Generation with Protobuf Compiler</h3>
+<p>In some use cases, you may need to generate Protobuf code dynamically based on new or unknown schemas. This would involve invoking the Protobuf compiler (protoc) programmatically to generate the code at runtime, either directly from .proto files or from a descriptor or a set of schema definitions.<br>This process typically involves the following steps:</p>
+<ol>
+<li>Obtain the .proto files or schema descriptors.</li>
+<li>Run protoc programmatically to generate source code.</li>
+<li>Use the generated code within the application to work with dynamic messages.</li>
+</ol>
+<h2>4. Code Implementation</h2>
+<h3>4.1 Code Analysis</h3>
+<p>The above method is valid for languages that support dynamic loading such as java, but not for golang. Since golang doesn&#39;t support dynamic loading, we can&#39;t use the generated source code. However, through technical analysis, we know that the conversion path from a text file to a binary message is: file.proto --&gt; FileDescriptor --&gt; proto.message, and there are two key points: </p>
+<ol>
+<li>how to get FileDescriptor from a proto file at runtime?</li>
+<li>how to create a proto.message using FileDescriptor?</li>
+</ol>
+<p>For the second point, the solution is not complicated. We can use dynamicpb.message mentioned before. The following code demonstrates how to create a proto.message by dynamicpb.message:</p>
+<pre><code class="language-golang">func NeweMessages(fd protoreflect.FileDescriptor, msgName string)proto.Message{
+  fm := fd.Messages()
+  md = fm.ByName(protoreflect.Name(msgName))
+  return dynamicpb.NewMessage(md)
+}
+</code></pre>
+<p>Now let&#39;s look at the second question, how to get FileFescriptor from a proto file at runtime? To get the FileFescriptor dynamically in golang, we first need to know how the FileFescriptor is generated. Typically, we can not get FileFescriptor directly from proto file. But we analyzed the source code in google.golang.org/protobuf , and found that FileDescriptor is created from FileDescriptorProto as follows:</p>
+<pre><code class="language-golang">fdp := new(descriptorpb.FileDescriptorProto)
+//Unmarshal([]byte,fdp)
+fd, err := protodesc.NewFile(fdp, nil)
+</code></pre>
+<p>Thus, the conversion path from a text file to a binary message is changed to:  file.proto --&gt; FileDescriptorProto --&gt; FileDescriptor --&gt; proto.message,So the final question is, how do we get the FileDescriptorProto object?<br>FileDescriptorProto is a proto.message object, so it can be serialized to binary and deserialized from binary. In fact, we can use protoc to generate the binary data of FileDescriptorProto at the same time as the source code with option: --descriptor_set_out=your_file_descriptord_proto.pb.<br>Further analyzing the source code of protoc , there are plugins that receive the compiled binary streams from proto file for data processing, including code generation. </p>
+<p>The following is the source code analysis, and the highlighted part is the key code:</p>
+<pre><code class="language-golang">func main() {
+  //...
+  protogen.Options{
+     ParamFunc: flags.Set,
+  }.Run(func(gen *protogen.Plugin) error {
+     //...
+     for _, f := range gen.Files {
+        if f.Generate {
+           gengo.GenerateFile(gen, f)
+        }
+     }
+     //...
+     return nil
+  })
+}
+//It reads a [pluginpb.CodeGeneratorRequest] message from [os.Stdin], invokes the plugin function, and writes a [pluginpb.CodeGeneratorResponse] message to [os.Stdout].
+func (opts Options) Run(f func(*Plugin) error) {
+    if err := run(opts, f); err != nil {
+       fmt.Fprintf(os.Stderr, &quot;%s: %v\n&quot;, filepath.Base(os.Args[0]), err)
+       os.Exit(1)
+    }
+}
+
+func run(opts Options, f func(*Plugin) error) error {
+    if len(os.Args) &gt; 1 {
+       return fmt.Errorf(&quot;unknown argument %q (this program should be run by protoc, not directly)&quot;, os.Args[1])
+    }
+    //Here is the compiled binary stream from protoc
+    in, err := io.ReadAll(os.Stdin)
+    if err != nil {
+       return err
+    }
+    
+    req := &amp;pluginpb.CodeGeneratorRequest{}
+    if err := proto.Unmarshal(in, req); err != nil {
+       return err
+    }
+    gen, err := opts.New(req)
+    if err != nil {
+       return err
+    }
+    //This is the plugin&#39;s custom processing logic
+    if err := f(gen); err != nil {
+       gen.Error(err)
+    }
+    resp := gen.Response()
+    out, err := proto.Marshal(resp)
+    if err != nil {
+       return err
+    }
+    //Write the source code to a file
+    if _, err := os.Stdout.Write(out); err != nil {
+       return err
+    }
+    return nil
+}
+
+//CodeGeneratorRequest defines a FileDescriptorProto field
+type CodeGeneratorRequest struct {
+    state         protoimpl.MessageState
+    sizeCache     protoimpl.SizeCache
+    unknownFields protoimpl.UnknownFields
+
+    FileToGenerate []string 
+    Parameter *string 
+    ProtoFile []*desriptorpb.FileDescriptorProto
+    SourceFileDescriptors []*descriptorpb.FileDescriptorProto 
+    CompilerVersion *Version
+}
+</code></pre>
+<p>By analyzing the source code of protoc, we can also implement a custom plugin to output the text-format serialized data of FileDescriptorProto.<br>Actually, there are two text-format serialization schemes for FileDescriptorProto: json/proto-text.</p>
+<ul>
+<li>JSON</li>
+</ul>
+<p>For json format, we can serialize/deserialize FileDescriptorProto via protojson.Marshal/Unmarshal.<br>Example of json-format:</p>
+<pre><code class="language-json">{
+  &quot;name&quot;:  &quot;protobuf/tns_demo.proto&quot;,
+  &quot;package&quot;:  &quot;tns.search.proto&quot;,
+  &quot;messageType&quot;:  [
+    {
+      &quot;name&quot;:  &quot;TnsDemo&quot;,
+      &quot;field&quot;:  [
+        {
+          &quot;name&quot;:  &quot;id&quot;,
+          &quot;number&quot;:  1,
+          &quot;label&quot;:  &quot;LABEL_OPTIONAL&quot;,
+          &quot;type&quot;:  &quot;TYPE_INT64&quot;,
+          &quot;jsonName&quot;:  &quot;id&quot;
+        },
+        {
+          &quot;name&quot;:  &quot;status&quot;,
+          &quot;number&quot;:  2,
+          &quot;label&quot;:  &quot;LABEL_OPTIONAL&quot;,
+          &quot;type&quot;:  &quot;TYPE_INT32&quot;,
+          &quot;jsonName&quot;:  &quot;status&quot;
+        },
+        {
+          &quot;name&quot;:  &quot;result&quot;,
+          &quot;number&quot;:  3,
+          &quot;label&quot;:  &quot;LABEL_REPEATED&quot;,
+          &quot;type&quot;:  &quot;TYPE_MESSAGE&quot;,
+          &quot;typeName&quot;:  &quot;.tns.search.proto.TnsDemo.ResultEntry&quot;,
+          &quot;jsonName&quot;:  &quot;result&quot;
+        },
+        {
+          &quot;name&quot;:  &quot;reasons&quot;,
+          &quot;number&quot;:  4,
+          &quot;label&quot;:  &quot;LABEL_REPEATED&quot;,
+          &quot;type&quot;:  &quot;TYPE_INT32&quot;,
+          &quot;jsonName&quot;:  &quot;reasons&quot;
+        }
+      ],
+      &quot;nestedType&quot;:  [
+        {
+          &quot;name&quot;:  &quot;ResultEntry&quot;,
+          &quot;field&quot;:  [
+            {
+              &quot;name&quot;:  &quot;key&quot;,
+              &quot;number&quot;:  1,
+              &quot;label&quot;:  &quot;LABEL_OPTIONAL&quot;,
+              &quot;type&quot;:  &quot;TYPE_STRING&quot;,
+              &quot;jsonName&quot;:  &quot;key&quot;
+            },
+            {
+              &quot;name&quot;:  &quot;value&quot;,
+              &quot;number&quot;:  2,
+              &quot;label&quot;:  &quot;LABEL_OPTIONAL&quot;,
+              &quot;type&quot;:  &quot;TYPE_STRING&quot;,
+              &quot;jsonName&quot;:  &quot;value&quot;
+            }
+          ],
+          &quot;options&quot;:  {
+            &quot;mapEntry&quot;:  true
+          }
+        }
+      ]
+    }
+  ],
+  &quot;options&quot;:  {
+    &quot;goPackage&quot;:  &quot;./gen;protobuf&quot;
+  },
+  &quot;syntax&quot;:  &quot;proto3&quot;
+}
+</code></pre>
+<ul>
+<li>Proto-Text</li>
+</ul>
+<p>The Text Format  is a human-readable format used for serializing and displaying protobuf messages in text form. It is often used for debugging or configuration purposes when you want to quickly inspect the contents of a protobuf message.<br>In the text format, protobuf messages are represented in a straightforward key-value style, where each field in the message is written in a human-readable way, with the field name followed by the value. This format is defined in the Protocol Buffers specification.<br>For text-format, we can serialize/deserialize FileDescriptorProto via prototext.Marshal/Unmarshal<br>Example of text-format:</p>
+<pre><code class="language-protobuf">name:  &quot;protobuf/tns_demo.proto&quot;
+package:  &quot;tns.search.proto&quot;
+message_type:  {
+  name:  &quot;TnsDemo&quot;
+  field:  {
+    name:  &quot;id&quot;
+    number:  1
+    label:  LABEL_OPTIONAL
+    type:  TYPE_INT64
+    json_name:  &quot;id&quot;
+  }
+  field:  {
+    name:  &quot;status&quot;
+    number:  2
+    label:  LABEL_OPTIONAL
+    type:  TYPE_INT32
+    json_name:  &quot;status&quot;
+  }
+  field:  {
+    name:  &quot;result&quot;
+    number:  3
+    label:  LABEL_REPEATED
+    type:  TYPE_MESSAGE
+    type_name:  &quot;.tns.search.proto.TnsDemo.ResultEntry&quot;
+    json_name:  &quot;result&quot;
+  }
+  field:  {
+    name:  &quot;reasons&quot;
+    number:  4
+    label:  LABEL_REPEATED
+    type:  TYPE_INT32
+    json_name:  &quot;reasons&quot;
+  }
+  nested_type:  {
+    name:  &quot;ResultEntry&quot;
+    field:  {
+      name:  &quot;key&quot;
+      number:  1
+      label:  LABEL_OPTIONAL
+      type:  TYPE_STRING
+      json_name:  &quot;key&quot;
+    }
+    field:  {
+      name:  &quot;value&quot;
+      number:  2
+      label:  LABEL_OPTIONAL
+      type:  TYPE_STRING
+      json_name:  &quot;value&quot;
+    }
+    options:  {
+      map_entry:  true
+    }
+  }
+}
+options:  {
+  go_package:  &quot;./gen;protobuf&quot;
+}
+syntax:  &quot;proto3&quot;
+</code></pre>
+<h3>4.2 protoc-plugin</h3>
+<p>In order to keep the generality, we choose the json-format as the serialization solution. </p>
+<pre><code class="language-golang">func main() {
+    protogen.Options{}.Run(func(gen *protogen.Plugin) error {
+       gen.SupportedFeatures = SupportedFeatures
+       for _, file := range gen.Files {
+          // Skip files that are not part of the plugin&#39;s current output.
+          if !file.Generate {
+             continue
+          }
+          genJsonFile(file, gen)
+          genExtFile(file, gen)
+       }
+       return nil
+    })
+}
+func genJsonFile(file *protogen.File, gen *protogen.Plugin) {
+    fd := file.Proto
+    sci := fd.SourceCodeInfo
+    fd.SourceCodeInfo = nil
+    jsonFile := gen.NewGeneratedFile(file.GeneratedFilenamePrefix+&quot;.json&quot;, &quot;.&quot;)
+    jsonFile.P(protojson.Format(fd))
+    fd.SourceCodeInfo = sci
+}
+</code></pre>
+<p>Once we get serialized content in json format, the rest is easy. We can save the json to tcc and load it later at runtime to marshal/unmarshal proto.Message. If the proto file changes, we can manually compile it offline and then update the new json data in tcc to realize the hot update. </p>
+<h3>4.3 How to use dynamic schema</h3>
+<ul>
+<li>generate json schema with plugin</li>
+</ul>
+<pre><code class="language-shell">SRC_DIR=$(pwd)
+go build -o $SRC_DIR/protoc-gen-ext
+protoc --proto_path=$SRC_DIR \
+--plugin=protoc-gen-go=$(which protoc-gen-go) \
+--go_out=$SRC_DIR/protobuf \
+--fastpb_out=$SRC_DIR/protobuf \
+--plugin=protoc-gen-ext=$SRC_DIR/protoc-gen-ext \
+--ext_out=$SRC_DIR/protobuf \
+$SRC_DIR/protobuf/*.proto
+</code></pre>
+<ul>
+<li>manipulate dynamic schema</li>
+</ul>
+<pre><code class="language-golang">    //jsonData:=getJsonFromTcc(...)
+    fdp := new(descriptorpb.FileDescriptorProto)
+    //load schema from json
+    if err := protojson.Unmarshal([]byte(jsonData), fdp); err != nil {
+       panic(err)
+    }
+    //create FileDescriptorfrom FileDescriptorProto
+    fd, err := protodesc.NewFile(fdp, nil)
+    if err != nil {
+       panic(err)
+    }
+   // find the MessageDescriptor by name
+    md = fd.Messages().ByName(protoreflect.Name(msg))
+   // create dynamicpb message
+    dynamicpb.NewMessage(md)
+</code></pre>
+<h2>5. Conlusion</h2>
+<p>Dynamic compilation of Protobuf is a powerful technique for situations where the schema cannot be known ahead of time or needs to be handled at runtime. By using Protobuf’s Reflection API, Dynamic Messages, and Any fields, you can create, manipulate, and serialize Protobuf messages dynamically. This allows for greater flexibility in scenarios such as plugin-based architectures, evolving APIs, or systems that need to work with arbitrary message types at runtime. However, dynamic compilation is more complex than static compilation and may introduce performance overhead due to reflection and dynamic handling of schema data.</p>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-09-13","children":"2025年09月13日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"数字货币的演进逻辑：从比特币到稳定币、RWA、CBDC与未来格局"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","比特币",{"href":"/blog/tag/%E6%AF%94%E7%89%B9%E5%B8%81/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"比特币"}],["$","$L5","稳定币",{"href":"/blog/tag/%E7%A8%B3%E5%AE%9A%E5%B8%81/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"稳定币"}],["$","$L5","RWA",{"href":"/blog/tag/RWA/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"RWA"}],["$","$L5","CBDC",{"href":"/blog/tag/CBDC/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"CBDC"}],["$","$L5","数字货币",{"href":"/blog/tag/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"数字货币"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"tech/practice/How to implement dynamic protobuf in Golang","title":"How to implement dynamic protobuf in Golang?","description":"Protocol Buffers (Protobuf) is a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It was developed by Google to efficiently serialize data for use in a variety of applications, including network communication, data storage, and inter-process communication (IPC).  Protobuf messages are smaller and more efficient than text-based formats like JSON and XML, and provides fast serialization and deserialization, which is crucial for high-performance systems.","pubDate":"2025-07-29","tags":["技术实战","Protobuf","Dynamic"],"heroImage":"$undefined","content":"$17"},"next":null},"tagNav":{"比特币":{"prev":null,"next":null},"稳定币":{"prev":null,"next":null},"RWA":{"prev":null,"next":null},"CBDC":{"prev":null,"next":null},"数字货币":{"prev":null,"next":null}}}]}],["$","$L18",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"数字货币的演进逻辑：从比特币到稳定币、RWA、CBDC与未来格局 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"文章系统梳理了数字货币的发展逻辑：比特币以区块链和 PoW 开创去中心化金融实验，却因总量刚性和缺乏现实锚定更像“数字黄金”；稳定币通过锚定法币成为数字世界的现金，解决了计价与结算问题；RWA 将现实资产代币化，把真实经济价值带上链，形成“法币—稳定币—RWA—法币”的投资闭环；CBDC 则代表国家化终局，省去兑换环节并增强宏观调控能力；在此基础上，美国依靠稳定币和 RWA 延续美元霸权，中国通过数字人民币探索换道超车，未来全球格局可能从双轨竞争走向多极化，甚至演化为由世界央行统一发行的数字货币体系。"}],["$","meta","2",{"property":"og:title","content":"数字货币的演进逻辑：从比特币到稳定币、RWA、CBDC与未来格局"}],["$","meta","3",{"property":"og:description","content":"文章系统梳理了数字货币的发展逻辑：比特币以区块链和 PoW 开创去中心化金融实验，却因总量刚性和缺乏现实锚定更像“数字黄金”；稳定币通过锚定法币成为数字世界的现金，解决了计价与结算问题；RWA 将现实资产代币化，把真实经济价值带上链，形成“法币—稳定币—RWA—法币”的投资闭环；CBDC 则代表国家化终局，省去兑换环节并增强宏观调控能力；在此基础上，美国依靠稳定币和 RWA 延续美元霸权，中国通过数字人民币探索换道超车，未来全球格局可能从双轨竞争走向多极化，甚至演化为由世界央行统一发行的数字货币体系。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-09-13"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"数字货币的演进逻辑：从比特币到稳定币、RWA、CBDC与未来格局"}],["$","meta","9",{"name":"twitter:description","content":"文章系统梳理了数字货币的发展逻辑：比特币以区块链和 PoW 开创去中心化金融实验，却因总量刚性和缺乏现实锚定更像“数字黄金”；稳定币通过锚定法币成为数字世界的现金，解决了计价与结算问题；RWA 将现实资产代币化，把真实经济价值带上链，形成“法币—稳定币—RWA—法币”的投资闭环；CBDC 则代表国家化终局，省去兑换环节并增强宏观调控能力；在此基础上，美国依靠稳定币和 RWA 延续美元霸权，中国通过数字人民币探索换道超车，未来全球格局可能从双轨竞争走向多极化，甚至演化为由世界央行统一发行的数字货币体系。"}],["$","link","10",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","11",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}
