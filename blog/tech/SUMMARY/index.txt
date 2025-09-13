@@ -1,0 +1,532 @@
+1:"$Sreact.fragment"
+2:I[10616,["874","static/chunks/874-f2e46e41114bd221.js","177","static/chunks/app/layout-c432974c723daafe.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/0a7d53676a1eb136.css","style"]
+0:{"P":null,"b":"fEmHZchMN56N6zbkBdACr","p":"","c":["","blog","tech","SUMMARY",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","tech/SUMMARY","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0a7d53676a1eb136.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","tech/SUMMARY","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","GTseEb7X5HRKGCFSgptZqv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+16:I[40780,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+1a:I[85300,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:T1245,<h2>微服务系列</h2>
+<ul>
+<li><a href="../microservice/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%8F%8A%E5%85%B6%E6%BC%94%E8%BF%9B%E5%8F%B2/">微服务及其演进史</a></li>
+<li><a href="../microservice/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A8%E6%99%AF%E6%9E%B6%E6%9E%84/">微服务全景架构</a></li>
+<li><a href="../microservice/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%8B%86%E5%88%86%E7%AD%96%E7%95%A5/">微服务拆分策略</a></li>
+<li><a href="../microservice/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%8B%86%E5%88%86%E7%AD%96%E7%95%A5%EF%BC%88%E9%99%84%E5%8A%A0%E7%AF%87%EF%BC%89/">微服务拆分策略（附加篇）</a></li>
+<li><a href="../microservice/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/">服务注册与发现</a></li>
+<li><a href="../microservice/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%EF%BC%88%E5%AE%9E%E8%B7%B5%E7%AF%87%EF%BC%89/">服务注册与发现（实践篇）</a></li>
+</ul>
+<h2>中间件</h2>
+<h3>消息队列</h3>
+<ul>
+<li><a href="../middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB/">RabbitMQ、RocketMQ、Kafka区别</a></li>
+<li><a href="../middleware/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E4%B9%8B%E4%B8%A4%E9%98%B6%E6%AE%B5%E3%80%81%E4%B8%89%E9%98%B6%E6%8F%90%E4%BA%A4%E5%8D%8F%E8%AE%AE/">分布式事务之两阶段、三阶提交协议</a></li>
+</ul>
+<h3>架构设计</h3>
+<ul>
+<li><a href="../system/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E6%9D%BF/">架构设计模板</a></li>
+<li><a href="../system/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%81%9A%E4%B8%80%E4%B8%AA%E5%90%8E%E5%8F%B0%E6%9E%B6%E6%9E%84/">从0开始做一个后台架构</a></li>
+<li><a href="../system/%E4%B8%80%E4%B8%AA%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83/">一个秒杀系统的设计思考</a></li>
+<li><a href="../system/%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E7%9A%8415%E4%B8%AA%E9%94%A6%E5%9B%8A/">高并发系统设计的15个锦囊</a></li>
+<li><a href="../system/%E9%A2%86%E7%95%A5SET%E5%8C%96%E6%9E%B6%E6%9E%84%E8%A1%8D%E5%8C%96%E4%B8%8E%E8%AE%BE%E8%AE%A1/">领略SET化架构衍化与设计</a></li>
+</ul>
+<h3>大数据</h3>
+<ul>
+<li><a href="../bigdata/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%B8%E7%94%A8%E5%8E%BB%E9%87%8D%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B9%8BBitmap%E7%AF%87/">大数据分析常用去重算法分析之Bitmap篇</a></li>
+<li><a href="../bigdata/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%B8%E7%94%A8%E5%8E%BB%E9%87%8D%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B9%8BHyperLogLog%E7%AF%87/">大数据分析常用去重算法分析之HyperLogLog篇</a></li>
+</ul>
+<h2>业务架构</h2>
+<ul>
+<li><a href="../business/%E5%85%B3%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83/">关于业务平台架构的思考</a></li>
+<li><a href="../business/%E8%A7%A3%E6%9E%90%E4%B8%89%E6%88%B7%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%BB%BA%E7%AB%8B%E8%B4%A6%E6%88%B7%E6%A8%A1%E5%9E%8B/">解析三户模型及建立账户模型</a></li>
+<li><a href="../business/%E4%B8%9A%E5%8A%A1%E7%9A%84%E4%B8%89%E9%87%8D%E8%A7%86%E8%A7%92%E2%80%94%E2%80%94%E6%80%8E%E6%A0%B7%E7%AE%97%E6%87%82%E4%B8%9A%E5%8A%A1/">业务的三重视角——怎样算懂业务</a></li>
+<li><a href="../business/%E4%B8%9A%E5%8A%A1%E4%B8%89%E9%87%8D%E8%A7%86%E8%A7%92%E2%80%94%E2%80%94%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9E%8B/">业务三重视角——业务模型</a></li>
+<li><a href="../business/%E4%B8%9A%E5%8A%A1%E4%B8%89%E9%87%8D%E8%A7%86%E8%A7%92%E2%80%94%E2%80%94%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/">业务三重视角——商业模式</a></li>
+<li><a href="../business/%E7%94%A8%E6%88%B7%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E2%80%94%E2%80%94%E4%B8%89%E6%88%B7%E6%A8%A1%E5%9E%8B%E5%8F%8A%E4%B8%89%E5%B1%82%E8%BA%AB%E4%BB%BD%E6%A8%A1%E5%9E%8B/">用户系统设计——三户模型及三层身份模型</a></li>
+<li><a href="../business/%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E6%96%B9%E6%A1%88%E8%AE%BE%E8%AE%A1/">权限系统方案设计</a></li>
+<li><a href="../business/%E7%94%B5%E5%95%86%E5%88%86%E6%9E%90%E5%BF%85%E6%87%82%E7%9A%84%E6%8C%87%E6%A0%87%E4%BD%93%E7%B3%BB/">电商分析必懂的指标体系</a></li>
+</ul>
+<h2>技术实战</h2>
+<ul>
+<li><a href="../practice/%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8FSQL%E7%9B%91%E6%8E%A7/">非侵入式SQL监控</a></li>
+<li><a href="../practice/Java%E6%9E%84%E4%BB%B6%E5%8F%91%E5%B8%83%E5%88%B0%E4%B8%AD%E5%A4%AE%E4%BB%93%E5%BA%93/">Java构件发布到中央仓库</a></li>
+<li><a href="../practice/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Git常用命令</a></li>
+<li><a href="../practice/Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">Maven使用技巧</a></li>
+</ul>
+17:T4fc0,<p>你有没有遇到过因为没有打印SQL导致问题排查困难？如果你使用了成熟ORM框架，那么很容易支撑SQL的拦截和监控，例如Mybatis的Interceptor或JOOQ的Listener都支持SQL执行过程的跟踪监控，但是，如果你的ORM框架不支持SQL监控，那么很不幸，你就只能在代码中手动打印日志了。然而，为了防SQL注入，应用中的SQL语句都是参数化的，直接打印的话，SQL语句未绑定参数，ORM框架一般都提供了SQL参数绑定的功能，原生的JDBC这样就失去了一定的监控价值。</p>
+<p>另外，在TOB的业务中，有些场景SQL参数超长，如大IN查询，SQL语句会长达到几万甚至十几万，此时，我们又需要对SQL语句进行缩略打印。注意，这里的SQL缩略打印不是简单的对SQL语句进行截断，而是对SQL语句中的参数列表进行截断，例如下面的SQL</p>
+<pre><code class="language-sql">select * from user 
+where id in (1001,1001, 1002, 1003, 1004, 1005, 1006, 1007) 
+and name in(sql
+select name from whitelist 
+where name in(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;,&#39;g&#39;,&#39;h&#39;,&#39;i&#39;,&#39;j&#39;,&#39;k&#39;,&#39;l&#39;,&#39;m&#39;)
+)
+</code></pre>
+<p>缩略下印如下：</p>
+<pre><code class="language-sql">select * from user 
+where id in (1001,1001, 1002, 1003, 1004,...) 
+and name in(
+select name from whitelist 
+where name in(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,...)
+)
+</code></pre>
+<p>既然SQL 监控很重要，那么对于应用层的SQL监控都有哪些手段呢？一个SQL请求的执行链路，一般从DAO层开始：DAO -&gt; ORM -&gt; DataSource  -&gt; Connection -&gt; Driver -&gt; DB，那么在这个链路上有哪些环节可以切入监控呢？ DAO层是数据访问层的入口，而我们的目标是应用层监控，因此，能够实现SQL监控的环节只有：ORM -&gt; DataSource  -&gt; Connection -&gt; Driver，而要实现通用的非侵入式监控，则应该独立于ORM，因此我们可以从<strong>DataSource  -&gt; Connection -&gt; Driver</strong>三个环节进行入手：</p>
+<h3><strong>一、SQL Profile监控</strong></h3>
+<h4><strong>1、驱动层监控</strong></h4>
+<p>如果Driver层支持日志监控，则最方便，例如MySQL，可以在jdbc url中添加logger：</p>
+<pre><code class="language-properties">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;logger=Slf4JLogger&amp;profileSQL=true
+</code></pre>
+<p>基于Driver监控的问题在于：一方面强依赖于DB，和ORM层面临一样的问题，不具有通用性上述的问题，且需要厂商的支持，例如Oracle Driver就不支持日志监控；另一方面SQL格式固定，无法进行定制化输出。</p>
+<h4><strong>2、连接层监控</strong></h4>
+<p>如果厂商驱动不支持SQL日志，可以Driver进行代理实现SQL监控功能，常用的开源组件如<a href="https://p6spy.readthedocs.io/en/latest/">P6Spy</a>、<a href="https://github.com/arthurblake/log4jdbc">log4jdbc</a> 等，其原理都是代理了厂商的驱动，因此只需要修改jdbc url：</p>
+<ul>
+<li>pyspy</li>
+</ul>
+<pre><code class="language-properties">jdbc:p6spy:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC
+</code></pre>
+<ul>
+<li>log4jdbc</li>
+</ul>
+<pre><code class="language-properties">jdbc:log4jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC
+</code></pre>
+<h4><strong>3、数据源层监控</strong></h4>
+<p>可以通过对DataSource进行代理实现SQL监控</p>
+<ul>
+<li>P6Spy：</li>
+</ul>
+<pre><code class="language-java">@Bean
+@Primary
+public DataSource spyDataSource(@Autowired DataSource dataSource) {
+  // wrap a datasource using P6SpyDataSource
+  return new P6DataSource(dataSource);
+}
+</code></pre>
+<ul>
+<li>log4jdbc</li>
+</ul>
+<pre><code class="language-java">public DataSource spyDataSource(DataSource dataSource) {
+    // wrap the provided dataSource
+  return new DataSource() {
+    @Override
+    public Connection getConnection() throws SQLException {
+      // wrap the connection with log4jdbc
+      return new ConnectionSpy(dataSource.getConnection());
+    }
+      
+    @Override
+    public Connection getConnection(String username, String password) throws SQLException {
+       // wrap the connection with log4jdbc
+      return new ConnectionSpy(dataSource.getConnection(username, password));
+     }
+      //...
+  };
+}
+</code></pre>
+<p>上述三种方案都可以实现SQL监控，那么在实际应用场景中选择哪种方式更好呢？这和实际的生产方式有关。在我手，数据库是基于KDB的，Java应用是基于KsBoot，其中，数据库连接是在KDB平台配置的，底层的数据源是使用ShardingSphere+HikariDataSource进行魔改的。</p>
+<p>第一种方案，由于数据库连接是由DBA维护的，升级需求修改数据库连接，因此不建议。</p>
+<p>第二种方案，同理需要修改数据库连接，且比第一种更容易配错，因此也不建议。</p>
+<p>排除上述两种方式，剩下的只有第三种方案了，但是第三种方案有很大的挑战，原因在于需要兼容快手kuaishou-framework奇葩的JdbcTemplate使用方式。确切地说，在于使用了DataSourceConfig。</p>
+<pre><code class="language-java">public interface DataSourceConfig extends HasBizDef {
+
+    /**
+     * 数据源名称，必须与KDB申请时填写的一致
+     */String bizName();
+
+    /**
+     * 获取当前可用区单库只读的JdbcTemplate
+     */
+    default NamedParameterJdbcTemplate read() {
+        return InternalDatasourceConfig.readForceAz(this, currentAz(), currentPaz(), &quot;read&quot;);
+    }   
+
+    /**
+     * 获取当前可用区单库读写的JdbcTemplate
+     */
+    default NamedParameterJdbcTemplate write() {
+        return InternalDatasourceConfig.writeForceAz(this, currentAz(), currentPaz(), &quot;write&quot;);
+    }	
+  //....
+}
+</code></pre>
+<p>DefaultDataSourceConfig是一个接口类，默认封装了NamedParameterJdbcTemplate的创建，业务方通过继承该接口来定义数据源:</p>
+<pre><code class="language-kotlin">enum class AdDataSources(
+    private val bizDef: BizDef,
+    private val forTest: AdDataSources? = null,
+    private val usingNewZk: Boolean = false
+) : DataSourceConfig{
+    adFansTopProfileDashboardTest,
+    adFansTopProfileDashboard,
+    adChargeTest,
+    adCharge,
+    adChargeReadOnly,
+    adDspReadOnlyTest,
+    adDspReadOnly;
+    public open fun bizName(): String {
+        return bizDef.bizName
+    }
+}
+</code></pre>
+<p>如果在业务中直接使用了DataSourceConfig创建的NamedParameterJdbcTemplate，那么我们就需要修改过程中创建的DataSource对象。那么，这里的DataSource究竟是怎么创建的呢？</p>
+<p>具体扒代码的过程就不赘述了，直接说结果吧，kuaishou-framework的数据源最终是通过DataSourceFactory进行创建的，具体代码如下：</p>
+<pre><code class="language-java">public static ListenableDataSource&lt;Failover&lt;Instance&gt;&gt; create(Instance i) {
+   //...
+   try {
+       return supplyWithRetry(
+        DATA_SOURCE_BUILD_RETRY,
+        DATA_SOURCE_BUILD_RETRY_DELAY,
+        () -&gt; new ListenableDataSource&lt;&gt;(
+              bizName, 
+              new HikariDataSource(config), ds -&gt; i.toString(), i),
+              DataSourceFactory::needRetry);
+                               
+  } catch (Throwable e) {/**/}
+}
+</code></pre>
+<p>由代码可以看到，这里的数据源实际上是通过new HikariDataSource(config)手动创建的，而DataSourceConfig又没有对外暴露创建的数据源，所以，我们该如何对DataSource代理呢?</p>
+<h3><strong>二、动态修改加载类</strong></h3>
+<p>成本最低的方式就是直接修改这段代码，将其中&#x7684;<em>&#x6E;ew HikariDataSource(config)</em>&#x4FEE;改&#x6210;<em>&#x6E;ew P6DataSource(new HikariDataSource(config))，</em>&#x90A3;么问题来了，这段代码属于基础组件包中的代码，基础架构组没有动力去修改，而我们又没有修改的权限，要想动这块代码，只能使用黑科技了。黑科技的手段有很多，那么问题又来了，哪种手段更合适呢？</p>
+<p>首先我们来分析一下，有哪些手段可以修改Java字节码？</p>
+<ul>
+<li>方案一、编译时修改，需要开发maven插件</li>
+</ul>
+<p>（不使用maven插件的同学咋办？）</p>
+<ul>
+<li>方案二、加载时修改，重写类加载器</li>
+</ul>
+<p>需要在代码中指定特定的类加载器，用有一定的侵入式</p>
+<ul>
+<li>方案三、运行时修改，使用JavaAgent</li>
+</ul>
+<p>需要修改应用启动参数，运维成本有点高</p>
+<p>首先要说明的是，这里不是对类方法进行增强，所以想使用cglib动态代理的想法是不可行的。前面三种方案都有一定的局限性：方案一比较麻烦，方案二侵入性强，方案三则需要使用JavaAgent技术，那有没有方案不使用Agent就可以动态修改已经加载的字节码呢？答案是没有，至少理论上没有。不过，好在天无绝人之路，JDK9之后，可以动态启动JavaAgent，这样就不用修改启动参数了。这里，我们选择使用byte-buddy进行字节码重写。</p>
+<p><em>下面是对动态启动Java Agent技术的解释</em></p>
+<blockquote>
+<p>Note that starting with Java 9, there is the Launcher-Agent-Class manifest attribute for jar files that can specify the class of a Java Agent to start before the class specified with the Main-Class is launched. That way, you can easily have your Agent collaborating with your application code in your JVM, without the need for any additional command line options. The Agent can be as simple as having an agentmain method in your main class storing the Instrumentation reference in a static variable.</p>
+</blockquote>
+<blockquote>
+<p>See <a href="https://docs.oracle.com/en/java/javase/15/docs/api/java.instrument/java/lang/instrument/package-summary.html#package.description">the java.lang.instrument package documentation</a>…</p>
+</blockquote>
+<blockquote>
+<p>Getting hands on an Instrumentation instance when the JVM has not been started with Agents is trickier. It must support launching Agents after startup in general, e.g. via the Attach API. <a href="https://stackoverflow.com/a/19912148/2711488">This answer</a> demonstrates at its end such a self-attach to get hands on the Instrumentation. When you have the necessary manifest attribute in your application jar file, you could even use that as agent jar and omit the creation of a temporary stub file.</p>
+</blockquote>
+<blockquote>
+<p>However, recent JVMs forbid self-attaching unless -Djdk.attach.allowAttachSelf=true has been specified at startup, but I suppose, taking additional steps at startup time, is precisely what you don’t want to do. One way to circumvent this, is to use another process. All this process has to to, is to attach to your original process and tell the JVM to start the Agent. Then, it may already terminate and everything else works the same way as before the introduction of this restriction.</p>
+</blockquote>
+<blockquote>
+<p>As mentioned in <a href="https://stackoverflow.com/questions/56787777/?noredirect=1&lq=1#comment100160373_56787777">this comment</a>, Byte-Buddy has already implemented those necessary steps and the stripped-down Byte-Buddy-Agent contains that logic only, so you can use it to build your own logic atop it.</p>
+</blockquote>
+<ul>
+<li>字节码工具对比</li>
+</ul>
+<p><img src="https://static.yximgs.com/udata/pkg/EE-KSTACK/4223630ea14c6367968188fd52cafa26.png" alt="图片"></p>
+<ul>
+<li>使用bytebuddy修改字节码</li>
+</ul>
+<p>在实现代码之前，我们回过头来再看一下快手的数据源生成：</p>
+<pre><code class="language-java">new ListenableDataSource&lt;&gt;(bizName, new HikariDataSource(config), ds -&gt; i.toString());
+</code></pre>
+<p>这里实际生成的数据源类型是ListenableDataSource，而ListenableDataSource刚好继承了DelegatingDataSource类，而DelegatingDataSource的构造方法如下：</p>
+<pre><code class="language-java">public class DelegatingDataSource implements DataSource {
+   //...
+  public DelegatingDataSource(DataSource targetDataSource) {
+    this.setTargetDataSource(targetDataSource);
+   }
+
+  public void setTargetDataSource(@Nullable DataSource targetDataSource) {
+      this.targetDataSource = targetDataSource;
+  }
+  //...
+}
+</code></pre>
+<p>因此，我们可以通过改写DelegatingDataSource#setTargetDataSource方法，实现同样的效果，修改后的方法应该如下：</p>
+<pre><code class="language-java">public void setTargetDataSource(@Nullable DataSource targetDataSource) {
+        this.targetDataSource = new P6DataSource(targetDataSource;
+}
+</code></pre>
+<p>那么具体如何修改字节码呢？这里是<a href="https://bytebuddy.net/#/tutorial">官方文档</a>，原理我们不做赘述，直接介绍实现了。实现方式有三种：</p>
+<h4><strong>1、类文件替换</strong></h4>
+<p>假设你已经通过Java代码编译了新的类，现在要替换JVM中类的定义，代码如下：</p>
+<pre><code class="language-java">new ByteBuddy()
+  .redefine(NewDelegatingDataSource.class)
+  .name(DelegatingDataSource.class.getName())
+  .make()
+  .load(Thread.currentThread().getContextClassLoader(), 
+        ClassReloadingStrategy.fromInstalledAgent());
+</code></pre>
+<h4><strong>2、操作字节码：</strong></h4>
+<pre><code class="language-java">new ByteBuddy()
+    .redefine(DelegatingDataSource.class)
+    //重写DelegatingDataSource#setTargetDataSource方法
+    .method(named(&quot;setTargetDataSource&quot;))
+    .intercept(MyImplementation.INSTANCE)
+    .make()
+    .load(Thread.currentThread().getContextClassLoader(),
+          ClassReloadingStrategy.fromInstalledAgent());
+
+enum MyImplementation implements Implementation {
+
+INSTANCE; // singleton
+
+  @Override
+  public InstrumentedType prepare(InstrumentedType instrumentedType) {
+  return instrumentedType;
+  }
+  
+  @Override
+  public ByteCodeAppender appender(Target implementationTarget) {
+  return MyAppender.INSTANCE;
+  }
+  
+}
+//字节码定义
+enum MyAppender implements ByteCodeAppender {
+
+INSTANCE; // singleton
+
+@Override
+public Size apply(MethodVisitor methodVisitor,
+        Implementation.Context implementationContext,
+        MethodDescription instrumentedMethod) {
+  Label label0 = new Label();
+  methodVisitor.visitLabel(label0);
+  methodVisitor.visitLineNumber(70, label0);
+  methodVisitor.visitVarInsn(ALOAD, 0);
+  methodVisitor.visitTypeInsn(NEW, &quot;com/p6spy/engine/spy/P6DataSource&quot;);
+  methodVisitor.visitInsn(DUP);
+  methodVisitor.visitVarInsn(ALOAD, 1);
+  methodVisitor.visitMethodInsn(INVOKESPECIAL, &quot;com/p6spy/engine/spy/P6DataSource&quot;, &quot;&lt;init&gt;&quot;, &quot;(Ljavax/sql/DataSource;)V&quot;, false);
+  methodVisitor.visitFieldInsn(PUTFIELD, &quot;org/springframework/jdbc/datasource/DelegatingDataSource&quot;, &quot;targetDataSource&quot;, &quot;Ljavax/sql/DataSource;&quot;);
+  Label label1 = new Label();
+  methodVisitor.visitLabel(label1);
+  methodVisitor.visitLineNumber(71, label1);
+  methodVisitor.visitInsn(RETURN);
+  Label label2 = new Label();
+  methodVisitor.visitLabel(label2);
+  methodVisitor.visitLocalVariable(&quot;this&quot;, &quot;Lorg/springframework/jdbc/datasource/DelegatingDataSource;&quot;, null, label0, label2, 0);
+  methodVisitor.visitLocalVariable(&quot;targetDataSource&quot;, &quot;Ljavax/sql/DataSource;&quot;, null, label0, label2, 1);
+  methodVisitor.visitMaxs(4, 2);
+  return new Size(4, 2);
+  }
+}
+</code></pre>
+<p>上述代码的核心思想是字节操作字节码，操作字节码是非常复杂和繁重的事情，且无法debug，那么有没有比较方便的方式呢？</p>
+<p>我们可以手动改写Java代码，然后利用插件生成对应的字节码，然后在其基础上进行修改，研发成本会低很多。这里推荐IDEA的一个插件：Byte-Code-Analyzer，使用该插件可以查看类对应的ASM字节码:</p>
+<p><img src="https://static.yximgs.com/udata/pkg/EE-KSTACK/e31962a90f6598880e78d8254d6c74d9" alt="图片"></p>
+<h4><strong>3、利用byte-buddy的Advice</strong></h4>
+<pre><code class="language-java"> public static void redefine() {
+   new ByteBuddy()
+     .redefine(DelegatingDataSource.class)
+     .visit(Advice.to(Decorator.class)
+            .on(ElementMatchers.named(&quot;setTargetDataSource&quot;)))
+     .make()
+     .load(Thread.currentThread().getContextClassLoader(),
+           ClassReloadingStrategy.fromInstalledAgent()).getLoaded();
+ }
+
+static class Decorator {
+
+  //在方法开始插入代码
+  @Advice.OnMethodEnter
+    public static void enter(@Advice.Argument(value = 0, readOnly = false) DataSource dataSource) {
+    dataSource = new P6DataSource(dataSource);
+  }
+}
+</code></pre>
+<p>byte-buddy的Advisor和动态代理的原理不一样，他是直接修改方法体的字节码，上面的方法就是表示在方法开始插入一行，其效果如下：</p>
+<pre><code class="language-java">public void setTargetDataSource(@Nullable DataSource targetDataSource) {
+  //插入的代码
+  targetDataSource = new P6DataSource(targetDataSource);
+  this.targetDataSource = targetDataSource;
+}
+</code></pre>
+<p>注：</p>
+<ol>
+<li>动态修改已加载的类，是有限制条件的，不能添加方法或者字段，因此通过byte-buddy的Methoddelegation方法修改字节码是不可行的。</li>
+<li>使用byte-buddy的Advice，可以对非Spring托管的类进行动态增强，因为是直接修改字节码，性能更好。</li>
+</ol>
+<h3><strong>三、自动生效</strong></h3>
+<p>前面我们讲了如何修改字节码，以提供SQL监控功能，那么如何让SQL监控自动生效呢？我们的目标是非侵入式解决方案：既不能修改业务代码，也不能更改系统配置。鉴于Java世界的事实标准，我们利用了SpringBoot-Starter功能，只需增加一个maven依赖，就自动提供了SQL监控能力。</p>
+<pre><code class="language-xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.kuaishou.ad&lt;/groupId&gt;
+  &lt;artifactId&gt;sqllog-spring-boot-starter&lt;/artifactId&gt;
+  &lt;version&gt;制品库查询最新版&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<p>至于SpringBoot-Starter的实现原理，网上资料很多，核心思想就是提供默认配置，开箱即用。需要注意的是，Spring6.0自动配置的方案有了调整，原来基于spring.factories的配置改成了org.springframework.boot.autoconfigure.AutoConfiguration.imports，原有的方式还支持，这对应普通应用没有影响，但是在实现Spring多容器隔离的方案上有一定的影响，后面有时间会展开讲一下。</p>
+<pre><code class="language-java">private static String[] getConfigurations(File file) {
+  @EnableAutoConfiguration
+  class NoScan {
+    //用于扫描META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports,该类定义在方法中,是为了避免扫描当前类时被加载
+  }
+  FileClassLoader classLoader = new FileClassLoader(file);
+  AutoConfigurationImportSelector selector = new AutoConfigurationImportSelector();
+  selector.setBeanClassLoader(classLoader);
+  selector.setResourceLoader(new ClassLoaderResourcePatternResolver(classLoader));
+  selector.setEnvironment(new StandardEnvironment());
+  String[] configurations = selector.selectImports(new StandardAnnotationMetadata(NoScan.class));
+  return configurations;
+}
+</code></pre>
+<h3><strong>四、SQL打印效果</strong></h3>
+<p>sqllog-spring-boot-starter默认基于p6spy，并对SQL输出提供了扩展，打印SQL日志如下：</p>
+<p><img src="https://static.yximgs.com/udata/pkg/EE-KSTACK/28cd44d1451c960cfb982773aab6ec44" alt=""></p>
+<p>SQL的打印内容分为三部分：</p>
+<p>第一行，显示执行时间、耗时、SQL操作、数据库连接等信息</p>
+<p>第二行，显示参数化SQL</p>
+<p>第三行，显示绑定参数后的实际执行的SQL</p>
+<p>通过日志看到，当SQL语句超长时，系统会对参数化SQL进行个性化缩略，而对实际执行的SQL，则保持原样输出，这样可以检索关键信息。</p>
+18:T1ca2,<p>上篇介绍了利用 Roaring Bitmap 来进行精确去重。虽然这种算法能大大地减少存储开销，但是随着数据量的增大，它依然面临着存储上的压力。在本篇推送中将要介绍的 HyperLogLog（下称 HLL）是一种非精确的去重算法，它的特点是具有非常优异的空间复杂度（几乎可以达到常数级别）。</p>
+<p><img src="/images/blog/tech/bigdata/image_2_1.png" alt="image_2_1.png"></p>
+<p>HLL 算法需要完整遍历所有元素一次，而非多次或采样；该算法只能计算集合中有多少个不重复的元素，不能给出每个元素的出现次数或是判断一个元素是否之前出现过；多个使用 HLL 统计出的基数值可以融合。</p>
+<p><img src="/images/blog/tech/bigdata/image_2_2.png" alt="image_2_2.png"></p>
+<p><img src="/images/blog/tech/bigdata/image_2_3.png" alt="image_2_3.png"></p>
+<p>HLL 算法有着非常优异的空间复杂度，可以看到它的空间占用随着基数值的增长并没有变化。HLL 后面不同的数字代表着不同的精度，数字越大，精度越高，占用的空间也越大，可以认为 HLL 的空间占用只和精度成正相关。</p>
+<p><strong>HLL算法原理感性认知</strong></p>
+<p><img src="/images/blog/tech/bigdata/image_2_4.png" alt="image_2_4.png"></p>
+<p>HLL 算法的原理会涉及到比较多的数学知识，这边对这些数学原理和证明不会展开。举一个生活中的例子来帮助大家理解HLL算法的原理：比如你在进行一个实验，内容是不停地抛硬币，记录你连续抛到正面的次数（这是数学中的伯努利过程，感兴趣同学可以自行研究下）；如果你最多的连抛正面记录是3次，那可以想象你并没有做这个实验太多次，如果你最长的连抛正面记录是 20 次，那你可能进行了这个实验上千次。</p>
+<p>一种理论上存在的情况是，你非常幸运，第一次进行这个实验就连抛了 20 次正面，我们也会认为你进行了很多次这个实验才得到了这个记录，这就会导致错误的预估；改进的方式是请 10 位同学进行这项实验，这样就可以观察到更多的样本数据，降低出现上述情况的概率。这就是 HLL 算法的核心思想。</p>
+<p><strong>HLL算法具体实现</strong></p>
+<p><img src="/images/blog/tech/bigdata/image_2_5.png" alt="image_2_5.png"></p>
+<p>HLL 会通过一个 hash 函数来求出集合中所有元素的 hash 值（二进制表示的 hash 值，就可以理解为一串抛硬币正反面结果的序列），得到一个 hash 值的集合，然后找出该 hash 值集合中，第一个 1 出现的最晚的位置。例如有集合为 [010, 100, 001], 集合中元素的第一个 1 出现的位置分别为 2, 1, 3，可以得到里面最大的值为 3，故该集合中第一个1出现的最晚的位置为 3。因为每个位置上出现1的概率都是 1/2，所以我们可以做一个简单的推断，该集合中有 8 个不重复的元素。</p>
+<p>可以看到这种简单的推断计算出来集合的基数值是有较大的偏差的，那如何来减少偏差呢？正如我上面的例子里说的一样，HLL 通过多次的进行试验来减少误差。那它是如何进行多次的实验的呢？这里 HLL 使用了分桶的思想，上文中我们一直有提到一个精度的概念，比如说 HLL(10)，这个 10 代表的就是取该元素对应 Hash 值二进制的后 10 位，计算出记录对应的桶，桶中会记录一个数字，代表对应到该桶的 hash 值的第一个 1 出现的最晚的位置。如上图，该 hash 值的后 10 位的 hash 值是 0000001001，转成 10 进制是 9，对应第 9 号桶，而该 hash 值第一个 1 出现的位置是第 6 位，比原先 9 号桶中的数字大，故把 9 号桶中的数字更新为 6。可以看到桶的个数越多，HLL 算法的精度就越高，HLL(10) 有 1024(210) 个桶，HLL(16)有 65536(216) 个桶。同样的，桶的个数越多，所占用的空间也会越大。</p>
+<p><img src="/images/blog/tech/bigdata/image_2_6.png" alt="image_2_6.png"></p>
+<p>刚才的例子我们省略了一些细节，为了让大家不至于迷失在细节中而忽视了重点，真实的 HLL 算法的完整描述见上图，这边的重点是计算桶中平均数时使用调和平均数。调和平均数的优点是可以过滤掉不健康的统计值，使用算术平均值容易受到极值的影响（想想你和马云的平均工资），而调和平均数的结果会倾向于集合中比较小的元素。HLL 论文中还有更多的细节和参数，这边就不一一细举，感兴趣的同学可以自己阅读下论文。</p>
+<p><strong>HLL评估</strong></p>
+<p><img src="/images/blog/tech/bigdata/image_2_7.png" alt="image_2_7.png"></p>
+<p>HLL 的误差分布服从正态分布，它的空间复杂度: O(m log2log2N), Ｎ 为基数, m 为桶个数。这边给大家推导一下它的空间复杂度，我有 264 个的不重复元素(Long. MAX_VALUE)，表达为二进制一个数是 64 位，这是第一重 log2, 那么第一个1最晚可能出现在第 64 位。64 需要 6 个 bit (26=64) 就可以存储，这是第二重 log2。如果精度为 10，则会有 1024 个桶，所以最外面还要乘以桶的个数。由于需要完整的遍历元素一遍，所以它的时间复杂度是一个线性的时间复杂度。</p>
+<p><strong>在Kylin中的应用</strong></p>
+<p><img src="/images/blog/tech/bigdata/image_2_8.png" alt="image_2_8.png"></p>
+<p>在 Kylin 中使用 HLL 非常简单，在编辑度量的页面选择 COUNT DISTINCT，Return Type 选为非 Precisely 的其他选项，大家根据自己的需求选择不同的精度就可以愉快地使用了。</p>
+<p><strong>总结</strong></p>
+<p><img src="/images/blog/tech/bigdata/image_2_9.png" alt="image_2_9.png"></p>
+<p>我们回到最开始的去重场景，看看使用了 Bitmap 和 HLL 会给我们带来什么增益：无优化 case 下，每个 item 对应的 user_id 就可以看成存储原始值的一个集合；在使用 Bitmap 优化的case 下，每个 item 对应的 user_id 就可以看成一个 Bitmap 实例，同理 HLL就是一个 HLL 的实例，Bitmap/HLL 实例占用的空间都会比直接存储原始值的集合要小，这就达到了我们开始提的减少 shuffle 数据量的需求。</p>
+<p><strong>Q&amp;A</strong></p>
+<p>Q：您好，问一下关于精确去重的问题， 我选择了非精确去重，最后的误差率有时候会比界面上提示的值要高一些，这是为什么？</p>
+<p>A：首先 HLL 的误差分布服从正态分布，也就是说是在99%的情况下是这个误差，同时 HLL 对于基数比较低的情况，误差会偏高。如果你的基数比较低的话，我推荐使用精确去重。</p>
+<p>Q：我想要了解一下 Bitmap 在 Kylin 中，它最终落盘在 HBase 里面是什么样子的？</p>
+<p>A：在 HBase 中存储的当然都是 Bytes。这个问题其实就是 Bitmap 的序列化的形式，Roaring Bitmap提供了序列化和反序列化的实现，你也可以写自己的序列化/反序列化的实现。</p>
+<p>Q：Roaring Bitmap 里这些 container 要我们自己手动的指定吗。</p>
+<p>A：不需要，Roaring Bitmap 会自动选择使用哪个 Container。</p>
+19:T2b19,<p><a href="https://baijiahao.baidu.com/s?id=1769207484615537227">转载</a></p>
+<h4>引言</h4>
+<h4>1、队列应用场景：</h4>
+<p>MQ（Message Queue，消息队列）<br><strong>消息队列在实际应用中常用的使用场景（优点）</strong>：<code>异步处理</code>，<code>应用解耦</code>，<code>流量削锋</code>和<code>消息通讯</code>四个场景。</p>
+<h4>2、目前使用较多的消息队列：</h4>
+<p>有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ。</p>
+<h4>3、如何选型（目前现状）：</h4>
+<p>ActiveMQ，性能不是很好，因此在高并发的场景下，直接被pass掉了。它的Api很完善，在中小型互联网公司可以去使用。最早大家都用 ActiveMQ，但是现在确实大家用的不多了，社区也不是很活跃，不推荐用这个了；</p>
+<p>后来大家开始用 RabbitMQ，但是确实 erlang 语言阻止了大量的 Java 工程师去深入研究和掌控它，对公司而言，几乎处于不可控的状态，但是确实人家是开源的，比较稳定的支持，活跃度也高，可视化的管理界面比较友好；</p>
+<p>不过现在确实越来越多的公司，会去用 RocketMQ，确实很不错（阿里出品），它是纯Java开发，它高性能、满足可靠性、分布式事物、支持水平扩展、上亿级别的消息堆积、主从之间的切换等等。MQ的所有优点它基本都满足。但是它最大的缺点：商业版收费。但社区可能有突然黄掉的风险，对自己公司技术实力有绝对自信的，推荐用 RocketMQ，否则老老实实用 RabbitMQ 吧，毕竟RabbitMQ有活跃的开源社区，绝对不会黄。</p>
+<p>所以中小型公司，技术实力较为一般，技术挑战不是特别高，用 RabbitMQ 是不错的选择；大型公司，基础架构研发实力较强，用 RocketMQ 是很好的选择。</p>
+<p>如果是大数据领域的实时计算、日志采集等场景，用 Kafka 是业内标准的，绝对没问题，适合产生大量数据的互联网服务的数据收集业务等。社区活跃度很高，何况几乎是全世界这个领域的事实性规范。kafka，主要强调高性能，如果对业务需要可靠性消息的投递的时候。那么就不能够选择kafka了。</p>
+<h4>4、使用消息队列缺点：</h4>
+<ul>
+<li>系统可用性降低：系统引入的外部依赖越多，越容易挂掉，万一MQ挂了，整套系统崩溃了。</li>
+<li>系统复杂性提高：加MQ进来，怎么保证消息没有重复消费？怎么处理消息丢失的情况？怎么保证消息传递的顺序性？</li>
+<li>一致性问题：A系统处理完了直接返回成功了，后面的如果失败了，这数据就不一致了。</li>
+</ul>
+<h4>一、RabbitMQ</h4>
+<h4>1、RabbitMQ概述</h4>
+<p><code>AMQP</code>，即Advanced Message Queuing Protocol，一个提供统一消息服务的应用层<strong>标准高级消息队列协议</strong>，是应用层协议的一个开放标准，为面向消息的中间件设计。AMQP的主要特征是面向消息、队列、路由（包括点对点和发布/订阅）、可靠性、安全。<br>AMQP协议更多用在企业系统内，对数据一致性、稳定性和可靠性要求很高的场景，对性能和吞吐量的要求还在其次。</p>
+<p><code>RabbitMQ</code>是实现了高级消息队列协议（AMQP）的开源消息代理软件（亦称面向消息的中间件）。RabbitMQ服务器是用Erlang语言编写的。</p>
+<p>RabbitMQ 是比较有代表性的，因为是<code>基于主从（非分布式）做高可用性</code>的。</p>
+<h4>2、RabbitMQ原理图</h4>
+<p>RabbitMQ通过<code>信道</code>的方式传输数据，将消息发布到交换机上，消息拥有一个路邮键，由消息创建时设定，通过队列路由键，可以把队列绑定到交换机上，消息到达交换机后，RabbitMQ将消息的路由键与队列的路由键进行匹配（不同的交换机有不同的路由规则），匹配到相应的队列，消息投递到队列的队列中供消费者消费。</p>
+<blockquote>
+<p>多个消费者可以订阅同一个Queue，消息将以<code>循环（round-robin）</code>的方式发送给消费者，每条消息只会发给一个订阅的消费者，而不是每个消费者都收到所有的消息并处理。</p>
+</blockquote>
+<blockquote>
+<p>每个Channel运行在独立的线程上，多个线程共享同一个socket。</p>
+</blockquote>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/dfde605794cc90a31ce1223c54218372.jpeg@c_1,w_901,h_315,x_0,y_0" alt=""><br><strong>相关概念：</strong></p>
+<ul>
+<li>ConnectionFactory（连接管理器）：应用程序与Rabbit之间建立连接的管理器，程序代码中使用；</li>
+<li>Broker：简单来说就是消息队列服务器实体。</li>
+<li>Channel（信道）：消息推送使用的通道；</li>
+<li>Exchange（交换器）：用于接受、分配消息；</li>
+<li>Queue（队列）：用于存储生产者的消息；</li>
+<li>RoutingKey（路由键）：用于把生成者的数据分配到交换器上；【最大255个字节】</li>
+<li>BindingKey（绑定键）：用于把交换器的消息绑定到队列上；【最大255个字节】</li>
+<li>vhost（虚拟主机）每个Rabbit都能创建很多vhost，每个虚拟主机其实都是mini版的RabbitMQ，拥有自己的队列，交换器和绑定，拥有自己的权限机制。</li>
+</ul>
+<h4>3、RabbitMQ常用的三种交换机</h4>
+<p><strong>RabbitMQ常用的三种Exchange</strong>：fanout,direct,topic</p>
+<h4>（1）Direct Exchange ：</h4>
+<p>直连型交换机，根据消息携带的路由键将消息投递给对应队列。<br>　　大致流程，有一个队列绑定到一个直连交换机上，同时赋予一个路由键 routing key。　然后当一个消息携带着路由值为X，这个消息通过生产者发送给交换机时，交换机就会根据这个路由值X去寻找绑定值也是X的队列。</p>
+<h4>（2）Fanout Exchange：</h4>
+<p>扇型交换机，这个交换机没有路由键概念，就算你绑了路由键也是无视的。 这个交换机在接收到消息后，会直接转发到绑定到它上面的所有队列。</p>
+<h4>（3）Topic Exchange：</h4>
+<p>主题交换机，这个交换机其实跟直连交换机流程差不多，但是它的特点就是在它的路由键和绑定键之间是有规则的。<br>　　<br><strong>性能排序</strong>：fanout &gt; direct &gt;&gt; topic。</p>
+<h4>4、 RabbitMQ集群元数据</h4>
+<p>RabbitMQ集群会始终同步四种类型的内部元数据：</p>
+<ul>
+<li>a. 队列元数据：队列名称和它的属性</li>
+<li>b. 交换器元数据：交换器名称、类型和属性</li>
+<li>c. 绑定元数据：一张简单的表格展示了如何将消息路由到队列</li>
+<li>d. vhost元数据：为vhost内的队列、交换器和绑定提供命名空间和安全属性</li>
+</ul>
+<h4>5、RabbitMQ镜像集群</h4>
+<p><strong>RabbitMQ 有三种模式</strong>：单机模式、普通集群模式（无高可用性）、<code>镜像集群模式</code>（高可用性）。</p>
+<p><code>镜像队列</code>将需要消费的队列变成镜像队列，存在于多个节点，实现RabbitMQ的高可用，保证 100% 数据不丢失。作用就是消息实体会主动在镜像节点之间实现同步，而不是像普通模式那样，在消费者消费数据时临时拉取，缺点就是集群内部的<code>同步通讯</code>会占去大量的网络带宽。<br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/53a92fdedade9355420e866bbdb51be1.jpeg@c_1,w_613,h_390,x_0,y_0" alt=""></p>
+<h4>二、RocketMQ</h4>
+<p><code>RocketMQ</code>是阿里开源的消息中间件，目前也已经孵化为Apache顶级项目。用Java语言实现，在设计时参考了Kafka，并做出了自己的一些改进，消息可靠性上比Kafka更好。RocketMQ在阿里内部被广泛应用在订单，交易，充值，流计算，消息推送，日志流式处理，binglog分发等场景。</p>
+<p><strong>RocketMQ缺点：</strong></p>
+<ul>
+<li>单机支持1万以上持久化队列；</li>
+<li>RocketMQ的所有消息都是持久化的，先写入系统PAGECACHE，然后刷盘，可以保证内存与磁盘都有一份数据，而访问时，直接从内存读取。</li>
+<li>模型简单，接口易用（JMS的接口很多场合并不太实用）；</li>
+<li>性能非常好，可以允许大量堆积消息在Broker中；</li>
+<li>支持多种消费模式，包括集群消费、广播消费等；</li>
+<li>各个环节分布式扩展设计，支持主从和高可用；</li>
+<li>开发度较活跃，版本更新很快。</li>
+</ul>
+<p><strong>RocketMQ缺点：</strong></p>
+<ul>
+<li>支持的 客户端语言不多，目前是Java及C++，其中C++还不成熟</li>
+<li>维护RocketMQ需要专业的团队</li>
+<li>商业版收费，有许多功能是不对外提供的。</li>
+<li>没有在MQ核心里实现JMS等接口</li>
+</ul>
+<h4>三、kafka</h4>
+<h4>1、kafka概述</h4>
+<p><code>kafka</code>是Linkedin于2010年12月份开源的<code>消息发布订阅</code>系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。作为hadoop生态系统的一部分，被各种商业公司广泛应用。</p>
+<p><strong>kafka优点：</strong></p>
+<ul>
+<li>高吞吐量、低延迟：kafka每秒可以处理几十万条消息，它的延迟最低只有几毫秒</li>
+<li>可扩展性：kafka集群支持热扩展</li>
+<li>持久性、可靠性：消息被持久化到本地磁盘，并且支持数据备份防止数据丢失</li>
+<li>容错性：允许集群中节点失败（若副本数量为n,则允许n-1个节点失败）</li>
+<li>高并发：支持数千个客户端同时读写</li>
+</ul>
+<p><strong>kafka缺点：</strong></p>
+<ul>
+<li>快速持久化：可以在O(1)的系统开销下进行消息持久化；</li>
+<li>高吞吐：在一台普通的服务器上既可以达到10W/s的吞吐速率；</li>
+<li>完全的分布式系统：Broker、Producer和Consumer都原生自动支持分布式，自动实现负载均衡；</li>
+<li>支持同步和异步复制两种高可用机制；</li>
+<li>支持数据批量发送和拉取；</li>
+<li>零拷贝技术(zero-copy)：减少IO操作步骤，提高系统吞吐量；</li>
+<li>数据迁移、扩容对用户透明；</li>
+<li>无需停机即可扩展机器；</li>
+<li>其他特性：丰富的消息拉取模型、高效订阅者水平扩展、实时的消息订阅、亿级的消息堆积能力、定期删除机制</li>
+</ul>
+<h4>2、kafka原理图</h4>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/3d90e1705de49c669f22628af2f6004a.jpeg@c_1,w_1010,h_651,x_0,y_0" alt=""><br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/a5531d658050ce7abecb5ad4242d92ab.jpeg@c_1,w_1002,h_300,x_0,y_0" alt=""></p>
+<h4>四、总结</h4>
+<p><img src="/images/blog/tech/middleware/img_20250723_04.png" alt="img_20250723_04.png">{: .full-width}</p>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-04-10","children":"2024年04月10日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"技术专题"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","技术专题",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术专题"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"tech/practice/非侵入式SQL监控","title":"非侵入式SQL监控","description":"你有没有因为应用程序没有打印SQL而导致问题排查困难？有没有因为SQL没有显示参数而导致日志毫无意义？有没有因为SQL超长而导致查看痛苦？有没有因为缺少SQL性能监控而导致无法报警？...","pubDate":"2024-04-07","tags":["技术实战"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"tech/bigdata/大数据分析常用去重算法分析之HyperLogLog篇","title":"大数据分析常用去重算法分析之HyperLogLog篇","description":"上篇介绍了利用 Roaring Bitmap 来进行精确去重。虽然这种算法能大大地减少存储开销，但是随着数据量的增大，它依然面临着存储上的压力。在本篇推送中将要介绍的 HyperLogLog（下称 HLL）是一种非精确的去重算法，它的特点是具有非常优异的空间复杂度（几乎可以达到常数级别）。 ","pubDate":"2025-03-25","tags":["大数据","技术专题","去重算法","HyperLogLog"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"技术专题":{"prev":{"slug":"tech/middleware/RabbitMQ、RocketMQ、Kafka区别","title":"RabbitMQ、RocketMQ、Kafka区别","description":"MQ（Message Queue，消息队列） 在实际应用中常用的使用场景：异步处理，应用解耦，流量削锋和消息通讯四个场景。目前使用较多的消息队列有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ","pubDate":"2024-03-31","tags":["消息队列","技术专题"],"heroImage":"$undefined","content":"$19"},"next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"}}}]}],["$","$L1a",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"技术专题 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"* [微服务系列].[系统架构].[业务架构].[技术实战]"}],["$","meta","2",{"property":"og:title","content":"技术专题"}],["$","meta","3",{"property":"og:description","content":"* [微服务系列].[系统架构].[业务架构].[技术实战]"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-04-10"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"技术专题"}],["$","meta","9",{"name":"twitter:description","content":"* [微服务系列].[系统架构].[业务架构].[技术实战]"}],["$","link","10",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","11",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}

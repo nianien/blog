@@ -1,0 +1,697 @@
+1:"$Sreact.fragment"
+2:I[10616,["874","static/chunks/874-f2e46e41114bd221.js","177","static/chunks/app/layout-c432974c723daafe.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/0a7d53676a1eb136.css","style"]
+0:{"P":null,"b":"fEmHZchMN56N6zbkBdACr","p":"","c":["","blog","tech","microservice","%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%EF%BC%88%E5%AE%9E%E8%B7%B5%E7%AF%87%EF%BC%89",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","tech/microservice/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%EF%BC%88%E5%AE%9E%E8%B7%B5%E7%AF%87%EF%BC%89","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0a7d53676a1eb136.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","tech/microservice/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0%EF%BC%88%E5%AE%9E%E8%B7%B5%E7%AF%87%EF%BC%89","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","XvvCIqj9NR9bGIGTtn6P3v",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+16:I[40780,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+19:I[85300,["874","static/chunks/874-f2e46e41114bd221.js","968","static/chunks/968-bf93abe4de13a5fc.js","909","static/chunks/app/blog/%5B...slug%5D/page-26cc6d1a0064a78b.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:T4826,<h2>服务注册中心 <a href="#scroller-1" id="scroller-1"></a></h2>
+<p>前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。</p>
+<p>并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景下做正确的技术选型。</p>
+<table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>Eureka</strong></th>
+<th><strong>Zookeeper</strong></th>
+<th><strong>Consul</strong></th>
+<th><strong>Etcd</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>一致性协议</td>
+<td>AP</td>
+<td>CP（Paxos算法）</td>
+<td>CP（Raft算法）</td>
+<td>CP（Raft算法）</td>
+</tr>
+<tr>
+<td>健康检查</td>
+<td>TTL(Time To Live)</td>
+<td>TCP Keep Alive</td>
+<td>TTL\HTTP\TCP\Script</td>
+<td>Lease TTL KeepAlive</td>
+</tr>
+<tr>
+<td>watch/long polling</td>
+<td>不支持</td>
+<td>watch</td>
+<td>long polling</td>
+<td>watch</td>
+</tr>
+<tr>
+<td>雪崩保护</td>
+<td>支持</td>
+<td>不支持</td>
+<td>不支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>安全与权限</td>
+<td>不支持</td>
+<td>ACL</td>
+<td>ACL</td>
+<td>RBAC</td>
+</tr>
+<tr>
+<td>是否支持多数据中心</td>
+<td>是</td>
+<td>否</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否有管理界面</td>
+<td>是</td>
+<td>否（可用第三方ZkTools）</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>Spring Cloud 集成</td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>Dubbo 集成</td>
+<td>不支持</td>
+<td>支持</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>K8S 集成</td>
+<td>不支持</td>
+<td>不支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+</tbody></table>
+<p>我们可以看出，四种技术类型对Spring Cloud的支持度都很高。Spring Cloud是微服务架构的一站式解决方案，我们平时构建微服务的过程中需要做的的如 配置管理、服务发现、负载均衡、断路器、智能路由、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等操作。Spring Cloud 为我们提供了一套简易的编程模型，使我们能在 Spring Boot 的基础上轻松地实现微服务项目的构建。</p>
+<p>Spring Cloud包含了多个不同开源产品，来保证一站式的微服务解决方案，如：Spring Cloud Config、Spring Cloud Netflix、Spring Cloud Security、Spring Cloud Commons、Spring Cloud Zookeeper、Spring Cloud CLI等项目。</p>
+<h2>Spring Cloud 框架下实现 <a href="#scroller-2" id="scroller-2"></a></h2>
+<p>Spring Cloud为服务治理做了一层抽象，这样能够支持多种不同的服务治理框架，比如：Netflix Eureka、Consul。我们这边就以这两个为例子，看看服务治理是如何实现。</p>
+<blockquote>
+<p><em>在Spring Cloud服务治理抽象层的作用下，可以无缝地切换服务治理实现，且不影响任何其他的服务注册、发现、调用逻辑。</em></p>
+<p><em>所以，下面我们通过介绍这两种服务治理的实现来体会Spring Cloud这一层抽象所带来的好处。</em></p>
+</blockquote>
+<h3>2.Spring Cloud Eureka <a href="#scroller-3" id="scroller-3"></a></h3>
+<p>Spring Cloud Eureka是Spring Cloud Netflix项目下的服务治理模块。而Spring Cloud Netflix项目是Spring Cloud的子项目之一，主要内容是对Netflix公司一系列开源产品的包装，它为Spring Boot应用提供了自配置的Netflix OSS整合。</p>
+<p>通过一些简单的注解，开发者就可以快速的在应用中配置一下常用模块并构建庞大的分布式系统。它主要提供的模块包括：服务发现（Eureka），断路器（Hystrix），智能路由（Zuul），客户端负载均衡（Ribbon）等。</p>
+<p>下面，就来具体看看如何使用Spring Cloud Eureka实现服务治理。</p>
+<h4>2.1.创建注册中心 <a href="#scroller-4" id="scroller-4"></a></h4>
+<p>创建一个Spring Cloud项目，我们命名为micro-service-center，并在<code>pom.xml</code>中引入需要的依赖内容：</p>
+<pre><code class="language-xml"> &lt;packaging&gt;pom&lt;/packaging&gt;
+</code></pre>
+<p>表明这个项目中可以没有Java代码，也不执行任何代码，只是为了聚合工程或者传递依赖，所以可以把src文件夹删了。这是一个父级项目，因为我们还要在下面建立Eureka的注册中心、客户端等多个子项目 。</p>
+<p>在micro-service-center下，新建一个命名为 eureka-service 的Module，依旧是Spring Cloud 项目，建完之后，pom.xml做如下改动：</p>
+<pre><code class="language-xml">&lt;xml&gt;
+    &lt;!--在子工程中添加父工程名称--&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;com.microservice&lt;/groupId&gt;
+        &lt;artifactId&gt;center&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;dependencies&gt;
+        &lt;!--加入 eureka 服务 --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+&lt;/xml&gt;
+</code></pre>
+<p>改完之后，回到父项目micro-service-center，修改pom中的信息：</p>
+<pre><code class="language-xml">&lt;xml&gt;
+    &lt;groupId&gt;com.microservice&lt;/groupId&gt;
+    &lt;artifactId&gt;center&lt;/artifactId&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;name&gt;center&lt;/name&gt;
+    &lt;description&gt;Demo project for Spring Boot&lt;/description&gt;
+    &lt;!--在父工程添加子工程名称--&gt;
+    &lt;modules&gt;
+        &lt;module&gt;eureka-service&lt;/module&gt;
+        &lt;module&gt;eureka-client&lt;/module&gt;
+    &lt;/modules&gt;
+&lt;/xml&gt;
+</code></pre>
+<p>对两个项目进行clean + install，应该是成功的。</p>
+<p>eureka-service我们是作为注册中心来用的，所以在它的主类Application中加入<code>@EnableEurekaServer</code>注解，就能开启注册中心功能。</p>
+<pre><code class="language-java">@SpringBootApplication
+@EnableEurekaServer
+public class ServiceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ServiceApplication.class, args);
+        System.out.println(&quot;Start Eureka Service&quot;);
+    }
+}
+</code></pre>
+<p>但是默认情况下，该注册中心也会把自己当做客户端，那就变成自己注册自己了，这个是可以剔除的，我们看一下它的YAML中的详细配置，注释比较清楚：</p>
+<pre><code class="language-yaml">  server:
+    port: 1000
+  spring:
+    application:
+      name: eureka-server
+  eureka:
+    instance:
+      hostname: localhost
+    client:
+    register-with-eureka: false  # 不作为客户端进行注册
+    fetch-registry: false  # 不获取注册列表
+    service-url:  # 注册地址，客户端需要注册到该地址中
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+</code></pre>
+<p>文中的注释还是比较清楚的。 这边可以看到，端口号是1000，所以当工程启动之后，访问 <a href="http://localhost:1000/">http://localhost:1000/</a> 是可以看到Eureka注册中心页面的。其中还没有发现任何服务。</p>
+<p><img src="/images/blog/tech/microservice/image_7_1.png" alt="image_7_1.png"></p>
+<h4>2.1.创建客户端 <a href="#scroller-5" id="scroller-5"></a></h4>
+<p>目前服务中心还是空的，所以我们创建一个能够提供服务的客户端，并将其注册到注册中心去。</p>
+<p>同样的，我们创建一个Spring Cloud的子项目，命名为<code>eureka-client</code>，<code>pom.xml</code>中的配置如下：</p>
+<pre><code class="language-xml">  
+&lt;xml&gt;
+    &lt;!--在子工程中添加父工程名称--&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;com.microservice&lt;/groupId&gt;
+        &lt;artifactId&gt;center&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;dependencies&gt;
+        &lt;!--加入 eureka 服务 --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-cloud-netflix-eureka-server&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+            &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+&lt;/xml&gt;
+</code></pre>
+<p>在应用主类Application文件中通过加上<code>@EnableDiscoveryClient</code>注解，该注解保证当前服务被Eureka当成provider发现。</p>
+<pre><code class="language-java">@SpringBootApplication
+@EnableDiscoveryClient
+public class ClientApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ClientApplication.class, args);
+        System.out.println(&quot;start client!&quot;);
+    }
+}jC
+</code></pre>
+<p>在YAML文件上加上如下配置：</p>
+<pre><code class="language-yaml">server:
+  port: 1001
+spring:
+  application:
+    name: eureka-client
+eureka:
+  client:
+    service-url:  # 这边就保证了注册到 eureka-service 这个注册中心去
+      defaultZone: http://localhost:1000/eureka/
+</code></pre>
+<p><code>spring.application.name</code>属性，指定了微服务的名称，在调用的时候可以通过该名称进行服务访问。<code>eureka.client.serviceUrl.defaultZone</code>属性对应服务注册中心的配置内容，指定服务注册中心的位置。</p>
+<p>大家看到，这边端口设置为1001，那是因为要在本机上测试 服务提供方 和 服务注册中心，所以<code>server的port</code>属性需设置不同的端口。</p>
+<p>最后，我们再写一个接口，通过DiscoveryClient对象，在客户端中获取注册中心的所有服务信息。</p>
+<pre><code class="language-java">  @Controller
+  @RequestMapping(&quot;/eurekacenter&quot;)
+  public class EuServiceController {
+  
+    @Autowired
+    DiscoveryClient discoveryClient;
+    
+    @RequestMapping(value = &quot;/service&quot;, method = {RequestMethod.GET})
+    @ResponseBody
+    public String getServiceInfo() {
+       return  &quot;service:&quot;+discoveryClient.getServices()+&quot; , memo:&quot;+discoveryClient.description();
+    }
+}
+</code></pre>
+<p>这时候跑一下试试看，继续访问之前的地址：<a href="http://localhost:1000/">http://localhost:1000/</a> ，可以看到Eureka注册中心页面已经包含一个我们定义的服务了，就是上面新建的 100端口的服务。</p>
+<p><img src="/images/blog/tech/microservice/image_7_2.png" alt="image_7_2.png"></p>
+<p>同样，我们可以调用上面的那个获取注册服务信息的接口，从服务发现的角度看看有多少个服务被注册到注册中心去。 <a href="http://localhost:1001/eurekacenter/service">http://localhost:1001/eurekacenter/service</a></p>
+<p><img src="/images/blog/tech/microservice/image_7_3.png" alt="image_7_3.png"></p>
+<p>如上图所示，方括号中的<code>eureka-client</code>通过Spring Cloud定义的 getServiceInfo 接口在eureka的实现中获取到的所有服务清单，他是一个String的List，如果注册了多个提供者，就会全部显示。</p>
+<h3>2.Spring Cloud Consul <a href="#scroller-6" id="scroller-6"></a></h3>
+<p>Consul 用于实现分布式系统的服务发现与配置。与其它分布式服务注册与发现的方案，Consul 的方案更具“一站式”特征，内置了服务注册与发现框 架、分布一致性协议实现、健康检查、Key/Value 存储、多数据中心方案，不再需要依赖其它工具（比如 ZooKeeper 之类的）。</p>
+<p>而Spring Cloud Consul ，是将其作为一个整体，在微服务架构中为我们的基础设施提供服务发现和服务配置的工具。</p>
+<h4>2.2.Consul 的优势 <a href="#scroller-7" id="scroller-7"></a></h4>
+<p>1、使用 Raft 算法来保证一致性, 比复杂的 Paxos 算法更直接。</p>
+<p>2、支持多数据中心，内外网的服务采用不同的端口进行监听。 多数据中心集群可以避免单数据中心的单点故障,而其部署则需要考虑网络延迟, 分片等情况等。 zookeeper 和 etcd 均不提供多数据中心功能的支持，上面表格中有体现。</p>
+<p>3、支持健康检查。</p>
+<p>4、支持 http 和 dns 协议接口。 zookeeper 的集成较为复杂, etcd 只支持 http 协议。</p>
+<p>5、官方提供 web 管理界面, etcd 无此功能。</p>
+<h4>2.2.Consul的特性 <a href="#scroller-8" id="scroller-8"></a></h4>
+<p>1、服务发现</p>
+<p>2、健康检查</p>
+<p>3、Key/Value存储</p>
+<p>4、多数据中心</p>
+<h4>2.2.安装Consul注册中心 <a href="#scroller-9" id="scroller-9"></a></h4>
+<p>1、官方下载64版本 ：<a href="https://www.consul.io/downloads.html">https://www.consul.io/downloads.html</a></p>
+<p>2、解压后复制到目录 /usr/local/bin 下</p>
+<p>3、启动终端，先看下啥版本的</p>
+<pre><code class="language-sh">liyifei@MacPro ~ % consul --version
+Consul v1.10.4
+Revision 7bbad6fe
+Protocol spoken by default, understands to (agent will automatically use protocol &gt;when speaking to compatible agents)
+</code></pre>
+<p>4、执行安装命令，可以看到他的 Client Addr 的端口为8500。所以访问 8500端口站点，<a href="http://127.0.0.1:8500/ui/dc1/services">http://127.0.0.1:8500/ui/dc1/services</a></p>
+<pre><code class="language-sh">  liyifei@MacPro ~ % consul agent -dev
+  ==&gt; Starting Consul agent...
+             Version: &#39;1.10.4&#39;
+             Node ID: &#39;6db154b4-62ff-e67d-e745-1a7270fa1ce8&#39;
+           Node name: &#39;B000000147796DS&#39;
+          Datacenter: &#39;dc1&#39; (Segment: &#39;&lt;all&gt;&#39;)
+              Server: true (Bootstrap: false)
+         Client Addr: [127.0.0.1] (HTTP: 8500, HTTPS: -1, gRPC: 8502, DNS: 8600)
+        Cluster Addr: 127.0.0.(LAN: 8301, WAN: 8302)
+           Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false, Auto-Encrypt-TLS: false
+</code></pre>
+<p><img src="/images/blog/tech/microservice/image_7_4.png" alt="image_7_4.png"></p>
+<p>我们可以看到，现在没有客户端注册上来，只有一个自身的实例。</p>
+<h4>2.2.创建服务提供者 <a href="#scroller-10" id="scroller-10"></a></h4>
+<p>由于Spring Cloud Consul项目的实现，我们可以轻松的将基于Spring Boot的微服务应用注册到Consul上，并通过此实现微服务架构中的服务治理。</p>
+<p>我们在micro-service-center下新建一个cloud项目consul-client，该项目pom文件添加如下：</p>
+<pre><code class="language-xml">&lt;xml&gt;
+  &lt;!--    在子工程中添加父工程名称--&gt;
+  &lt;parent&gt;
+    &lt;groupId&gt;com.microservice&lt;/groupId&gt;
+    &lt;artifactId&gt;center&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+  &lt;/parent&gt;
+  
+  &lt;dependencies&gt;
+    &lt;!--        Consul服务发现--&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-cloud-starter-consul-discovery&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+    &lt;!--        Consul健康检查--&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+  &lt;/dependencies&gt;
+&lt;/xml&gt;
+</code></pre>
+<p>然后修改一下<code>application.yml的配置信息</code>，将consul配置写入，注释应该很清楚了，如下：</p>
+<pre><code class="language-yaml">spring:
+  application:
+    name: consul-producer # 当前服务的名称
+  cloud:
+    consul: # 以下为Consuk注册中心的地址，如果安装的不是这个host和port，这边可以调整
+      host: localhost
+      port: 8500
+server:
+  port: 850# 当前服务的端口
+</code></pre>
+<p>同样的，我们要在应用主类Application文件中通过加上<code>@EnableDiscoveryClient</code>注解，该注解保证当前服务被Consul当成provider发现。</p>
+<p>大家看到这个做法跟Eureka一样，因为Spring Cloud对服务治理做的一层抽象，所以可以屏蔽Eureka和Consul服务治理的实现细节，</p>
+<p>程序上不需要做改变，只需要引入不同的服务治理依赖，并配置相关的配置属性 就能轻松的将微服务纳入Spring Cloud的各个服务治理框架中。</p>
+<pre><code class="language-java">@SpringBootApplication
+@EnableDiscoveryClient
+public class ConsulClientApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ClientApplication.class, args);
+    }
+}
+</code></pre>
+<p>修改完成之后，我们就可以把这个服务提供者启动了，然后再去注册中心查看服务的注册情况，就可以看到被注册进来的Provider（consul-producer）：</p>
+<p><img src="/images/blog/tech/microservice/image_7_5.png" alt="image_7_5.png"></p>
+<h2>总结 <a href="#scroller-11" id="scroller-11"></a></h2>
+<p>除了 Eureka、Consul，还有其他的的注册中心技术，如Zookeeper、Nocas等。但无论何种注册中心技术，本质上都是为了解决微服务中的如下问题：</p>
+<p><strong>解耦服务之间相互依赖的细节</strong></p>
+<p>我们知道服务之间的远程调用必须要知道对方的IP、端口信息。我们可以在调用方直接配置被调用方的IP、端口，这种调用方直接依赖IP、端口的方式存在明显的问题，如被调用的IP、端口变化后，调用方法也要同步修改。</p>
+<p>通过服务发现，将服务之间IP与端口的依赖转化为服务名的依赖，服务名可以根据具微服务业务来做标识，因此，屏蔽、解耦服务之间的依赖细节是服务发现与注册解决的第一个问题。</p>
+<p><strong>对微服务进行动态管理</strong></p>
+<p>在微服务架构中，服务众多，服务之间的相互依赖也错综复杂，无论是服务主动停止，意外挂掉，还是因为流量增加对服务实现进行扩容，这些服务数据或状态上的动态变化，都需要尽快的通知到被调用方，被调用方才采取相应的措施。因此，对于服务注册与发现要实时管理者服务的数据与状态，包括服务的注册上线、服务主动下线，异常服务的剔除。</p>
+17:T500e,<h2>1 微服务的注册与发现 <a href="#scroller-1" id="scroller-1"></a></h2>
+<p>我们前面在全景架构中对服务注册与发现做了大致的说明，本章我们着重详细说明微服务下注册与发现的这个能力。</p>
+<p>微服务注册与发现类似于生活中的&quot;电话通讯录&quot;的概念，它记录了通讯录服务和电话的映射关系。在分布式架构中，服务会注册进去，当服务需要调用其它服务时，就这里找到服务的地址，进行调用。</p>
+<p>步骤如下：</p>
+<p>1、你先要把&quot;好友某某&quot;记录在通讯录中。</p>
+<p>2、拨打电话的时候通过通讯录中找到&quot;好友某某&quot;，并拨通回电话。</p>
+<p>3、当好友某某电话号码更新的时候，需要通知到你，并修改通讯录服务中的号码。</p>
+<p>从这个过程中我们看到了一些特点：</p>
+<p>1、把 &quot;好友某某&quot; 的电话号码写入通讯录中，统一在通讯录中维护，后续号码变更也是更新到通讯录中，这个过程就是服务注册的过程。</p>
+<p>2、后续我们通过&quot;好友某某&quot;就可以定位到通讯录中的电话号码，并拨通电话，这个过程理解为服务发现的过程。</p>
+<p>而我们微服务架构中的服务注册与发现结构如下图所示：</p>
+<p><img src="/images/blog/tech/microservice/image_6_1.png" alt="image_6_1.png"></p>
+<p>图片中是一个典型的微服务架构，这个结构中主要涉及到三大角色：</p>
+<p>provider - 服务提供者</p>
+<p>consumer - 服务消费者</p>
+<p>register center - 注册中心</p>
+<p>它们之间的关系大致如下：</p>
+<p>1、每个微服务在启动时，将自己的网络地址等信息（微服务的ServiceName、IP、Port、MetaData等）注册到注册中心，注册中心存储这些数据。</p>
+<p>2、服务消费者从注册中心查询服务提供者的地址，并通过该地址调用服务提供者的接口。</p>
+<p>3、各个微服务与注册中心使用一定机制（例如心跳）通信。如果注册中心与某微服务长时间无法通信，就会注销该实例。</p>
+<p>优点如下：</p>
+<p>1、解耦：服务消费者跟服务提供者解耦，各自变化，不互相影响</p>
+<p>2、扩展：服务消费者和服务提供者增加和删除新的服务，对于双方没有任何影响</p>
+<p>3、中介者设计模式：用一个中介对象来封装一系列的对象交互，这是一种多对多关系的中介者模式。</p>
+<p>从功能上拆开主要有三块：服务注册、服务发现，和注册中心。我们一个一个来看。</p>
+<h3>1.1 服务注册 <a href="#scroller-2" id="scroller-2"></a></h3>
+<p>如图中，为Register注册中心注册一个服务信息，会将服务的信息：ServiceName、IP、Port以及服务实例MetaData元数据信息写入到注册中心。当服务发生变化的时候，也可以更新到注册中心。</p>
+<p><img src="/images/blog/tech/microservice/image_6_2.png" alt="image_6_2.png"></p>
+<p>服务提供者（服务实例） 的服务注册模型是一种简单、容易理解、流行的服务注册模型，其在多种技术生态中都有所体现：</p>
+<p>1、在K8S生态中，通过 K8S Service服务信息，和Pod的 endpoint（用来记录service对应的pod的访问地址）来进行注册。</p>
+<p>2、在Spring Cloud生态中，应用名 对应 服务Service，实例 IP + Port 对应 Instance实例。比较典型的就是A服务，后面对应有多个实例做负载均衡。</p>
+<p>3、在其他的注册组件中，比如 Eureka、Consul，服务模型也都是 服务→ 服务实例。</p>
+<p>可以认为服务实例是一个真正的实体的载体，服务是对这些相同能力或者相同功能服务实例的一个抽象。</p>
+<p><img src="/images/blog/tech/microservice/image_6_3.png" alt="image_6_3.png"></p>
+<h3>1.2 服务发现 <a href="#scroller-3" id="scroller-3"></a></h3>
+<p>服务发现实际就是我们查询已经注册好的服务提供者，比如 p-&gt;p.queryService(serviceName)，通过服务名称查询某个服务是否存在，如果存在，</p>
+<p>返回它的所有实例信息，即一组包含ip 、 port 、metadata元数据信息的endpoints信息。</p>
+<p>这一组endpoints信息一般会被缓存在本地，如果注册中心挂掉，可保证段时间内依旧可用，这是去中心化的做法。对于单个 Service 后面有多个 Instance的情况（如上图），做 load balance。</p>
+<p>服务发现的方式一般有两种：</p>
+<p>1、拉取的方式：服务消费方（Consumer）主动向注册中心发起服务查询的请求。</p>
+<p>2、推送的方式：服务订阅/通知变更（下发）：服务消费方（Consumer）主动向注册中心订阅某个服务，当注册中心中该服务信息发生变更时，注册中心主动通知消费者。</p>
+<h3>1.3 注册中心 <a href="#scroller-4" id="scroller-4"></a></h3>
+<p>注册中心提供的基本能力包括：提供服务注册、服务发现 以及 健康检查。</p>
+<p>服务注册跟服务发现上面已经详细介绍了， 健康检查指的是指注册中心能够感知到微服务实例的健康状况，便于上游微服务实例及时发现下游微服务实例的健康状况。采取必备的访问措施，如避免访问不健康的实例。</p>
+<p>主要的检查方式包括：</p>
+<p>1、服务Provider 进行 TTL 健康汇报（Time To Live，微服务Provider定期向注册中心汇报健康状态）。</p>
+<p>2、注册中心主动检查服务Provider接口。</p>
+<p>综合我们前面的内容，可以总结下注册中心有如下几种能力：</p>
+<p>1、高可用</p>
+<p>这个主要体现在两个方面。一个方面是，注册中心本身作为基础设施层，具备高可用；第二种是就是前面我们说到的去中心化，极端情况下的故障，短时间内是不影响微服务应用的调用的</p>
+<p>2、可视化操作</p>
+<p>常用的注册中心，类似 Eureka、Consul 都有比较丰富的管理界面，对配置、服务注册、服务发现进行可视化管理。</p>
+<p>3、高效运维</p>
+<p>注册中心的文档丰富，对运维的支持比较好，并且对于服务的注册是动态感知获取的，方便动态扩容。</p>
+<p>4、权限控制</p>
+<p>数据是具有敏感性，无论是服务信息注册或服务是调用，需要具备权限控制能力，避免侵入或越权请求</p>
+<p>5、服务注册推、拉能力</p>
+<p>这个前面说过了，微服务应用程序（服务的Consumer），能够快速感知到服务实例的变化情况，使用拉取或者注册中心下发的方式进行处理。</p>
+<p><img src="/images/blog/tech/microservice/image_6_4.png" alt="image_6_4.png"></p>
+<h2>2 现下的主流注册中心 <a href="#scroller-5" id="scroller-5"></a></h2>
+<h3>2.1 Eureka <a href="#scroller-6" id="scroller-6"></a></h3>
+<h4>2.1.1 介绍 <a href="#scroller-7" id="scroller-7"></a></h4>
+<p>Eureka是Netflix OSS套件中关于服务注册和发现的解决方案。因为Spring Cloud 在它的微服务解决方案中对Eureka进行了集成，并作为优先推荐方案进行宣传，所以早期有用 Spring Cloud 来建设微服务系统的同学会比较熟悉。</p>
+<p>目前大量公司的微服务系统中依旧使用Eureka作为注册中心，它的核心设计思想也被后续大量注册中心产品借鉴。但目前 <a href="https://github.com/Netflix/eureka/wiki">Eureka 2.0已经停止维护</a>，所以新的微服务架构设计中，不再建议使用。</p>
+<p>Spring Cloud Netflix主要分为两个部分：</p>
+<p>1、Eureka Server： 作为注册中心Server端，向微服务应用程序提供服务注册、发现、健康检查等能力。</p>
+<p>2、Eureka Client： 微服务应用程序Client端，用以和Eureka Server进行通信。</p>
+<p><img src="/images/blog/tech/microservice/image_6_5.png" alt="image_6_5.png"></p>
+<p>Eureka有比较友好的管理界面，如上图所示：</p>
+<p>1、System Status：显示当前Eureka Server信息。</p>
+<p>2、Instances Current registered with Eureka：在Eureka Server当前注册的数据，在Spring Cloud生态中，被注册的服务可以呗发现并罗列在这个地方。</p>
+<p>3、General Info：基本信息，如cpu、内存、环境等。</p>
+<h4>2.1.2 整体架构 <a href="#scroller-8" id="scroller-8"></a></h4>
+<p><img src="/images/blog/tech/microservice/image_6_6.png" alt="image_6_6.png"></p>
+<p>Eureka Server可以运行多个实例来构建集群，解决单点问题，但不同于ZooKeeper的选举leader的过程，Eureka Server采用的是Peer to Peer对等通信。</p>
+<p>所以他有如下特点：</p>
+<p>1、去中心化的架构：无master/slave区分，每一个Peer都是对等的。在这种架构中，节点通过彼此互相注册来提高可用性，每个节点需要添加一个或多个有效的serviceUrl指向其他节点。每个节点都可被视为其他节点的副本。</p>
+<p>2、故障转移/故障恢复：如果某台Eureka Server宕机，Eureka Client的请求会自动切换到新的Eureka Server节点，当宕机的服务器重新恢复后，Eureka会再次将其纳入到服务器集群管理之中。</p>
+<p>3、节点复制：当节点开始接受客户端请求时，所有的操作都会进行replicateToPeer（节点间复制）操作，将请求复制到其他Eureka Server当前所知的所有节点中。</p>
+<p>同理，一个新的Eureka Server节点启动后，会首先尝试从邻近节点获取所有实例注册表信息，完成初始化。</p>
+<p>4、CAP模式：复制算法非强一致性算法，而是当有数据写入时，Eureka Server将数据同步给其他的节点，因此Eureka在CAP提系统（一致性、可用性、分区容错性）是典型的AP系统。</p>
+<h4>2.1.3 接入Spring Cloud <a href="#scroller-9" id="scroller-9"></a></h4>
+<p><img src="/images/blog/tech/microservice/image_6_7.png" alt="image_6_7.png"></p>
+<p>如上图所示：</p>
+<p>1、Provider 服务提供者：服务向注册中心注册服务信息，即 服务 -&gt; 服务实例 数据模型， 同时定时向注册中心汇报健康检查，如果一定时间内（一般90s）没有进行心跳汇报，则会被注册中心剔除。</p>
+<p>所以这边注意，注册中心感知到应用下线并进行剔除这个过程可能比较长。</p>
+<p>2、Consumer 服务消费者：服务向注册中心获取所需服务对应的服务实例信息。这边需要注意，Eureka不支持订阅，因此在Spring Cloud生态中，通过定时拉取方式从注册中心中获取所需的服务实例信息。</p>
+<p>3、Remote Call 远程调用：Consumer从注册中心获取的Provider的实例信息，通过 Load Balance的策略，确定一个实际的实例，发起远程调用。</p>
+<h3>2.2 ZooKeeper <a href="#scroller-10" id="scroller-10"></a></h3>
+<h4>2.2.1 介绍 <a href="#scroller-11" id="scroller-11"></a></h4>
+<p>作为一个分布式的、开源的协调服务，ZooKeeper实现了一系列基础功能，包括简单易用的接口。</p>
+<p>这些接口被用来实现服务的注册与发现功能。并实现一些高级功能，如数据同步、分布式锁、配置中心、集群选举、命名服务等。</p>
+<p><img src="/images/blog/tech/microservice/image_6_8.png" alt="image_6_8.png"></p>
+<p>在数据模型上，类似于传统的文件系统，节点类型分为：</p>
+<p>1、持久节点：节点创建后，就一直存在，除非执行删除操作，主动删掉这个节点。</p>
+<p>2、临时节点（注册中心场景下的主要实现机制）：临时节点的生命周期和客户端会话绑定。也就是说，如果客户端会话失效，那么这个节点就会自动被清除掉。</p>
+<p>在实际场景下，微服务启动的时候，会创建一个服务临时节点，等把服务停止，短时间后节点就没有了。</p>
+<p><img src="/images/blog/tech/microservice/image_6_9.png" alt="image_6_9.png"></p>
+<p>Zookeeper有如下特点：</p>
+<p>1、最终一致性：为客户端展示同一视图，这是zookeeper最重要的功能。2、可靠性：如果消息被到一台服务器接受，那么它将被所有的服务器接受。3、实时性：Zookeeper不能保证两个客户端能同时得到刚更新的数据，如果需要最新数据，应该在读数据之前调用sync()接口。4、等待无关（wait-free）：慢的或者失效的client不干预快速的client的请求。5、原子性：更新只能成功或者失败，没有中间状态。6、顺序性：所有Server，同一消息发布顺序一致。</p>
+<h4>2.2.2 整体架构 <a href="#scroller-12" id="scroller-12"></a></h4>
+<p><img src="/images/blog/tech/microservice/image_6_10.png" alt="image_6_10.png"></p>
+<p>上图是Zookeeper 的服务架构，他有如下流程：</p>
+<p>1、 多个节点组成分布式架构，每个Server在内存中存储一份数据；</p>
+<p>2、通过选举产生leader，通过 Paxos(帕克索斯)强一致性算法 进行保证，是典型的CP结构。</p>
+<p>3、Leader负责处理数据更新等操作（Zab协议）；</p>
+<h4>2.2.3 接入Dubbo生态 <a href="#scroller-13" id="scroller-13"></a></h4>
+<p><img src="/images/blog/tech/microservice/image_6_11.png" alt="image_6_11.png"></p>
+<p>上图中的角色如下：</p>
+<p>Provider：提供者,服务发布方</p>
+<p>Consumer：消费者, 调用服务方</p>
+<p>Container：Dubbo容器.依赖于Spring容器</p>
+<p>Registry：注册中心，当Container启动时把所有可以提供的服务列表上Registry中进行注册，告诉Consumer提供了什么服务，以及服务方的位置</p>
+<p>Monitor:监听器</p>
+<p>说明：ZooKeeper在注册中心方面对Dubbo生态支持的比较好。服务提供者Providerzai Container启动时主动向注册中心Registry ZooKeeper中注册信息。</p>
+<p>服务消费者Consumer启动时向注册中心Registry ZooKeeper中订阅注册中心，当Provider的信息发生变化时，注册中心ZooKeeper会主动向Consumer进行推送通知变更。</p>
+<p>这边注意与Eureka的区别，这是主动推送通知，是注册中心下发的操作。</p>
+<h3>2.3 Consul <a href="#scroller-14" id="scroller-14"></a></h3>
+<h4>2.3.1 介绍 <a href="#scroller-15" id="scroller-15"></a></h4>
+<p>Consul是HashiCorp推出的一款软件，是一个Service Mesh解决方案，提供了功能丰富的控制面功能：</p>
+<p>1、Service Discovery（服务发现）</p>
+<p>2、Configuration（配置化）</p>
+<p>3、Segmentation Functionality</p>
+<p>这些功能可以根据需要独立使用，或者将它们一起使用用来构建完整的Service Mesh。</p>
+<p>Consul提供的关键功能如下：</p>
+<p>1、Service Discovery：服务注册/发现功能。</p>
+<p>2、Health Checking：健康检查，丰富的健康检查方式；</p>
+<p>3、KV Store：KV存储功能，可应用多种场景，如动态配置存储，分布式协调、leader选举等。</p>
+<p>4、Multi DataCenter：多数据中心。</p>
+<h4>2.3.2 整体架构 <a href="#scroller-16" id="scroller-16"></a></h4>
+<p><img src="/images/blog/tech/microservice/image_6_12.png" alt="image_6_12.png"></p>
+<p>如上图为Consul的架构，这边对技术点做一下说明：</p>
+<p>1、Raft: 一种分布式一致性算法，Consul使用该算法保持强一致性，所以也是典型的CP模式</p>
+<p>2、Client：Client是一种agent，其将会重定向所有的RPC 请求到Server。Client是无状态的，其主要参与LAN Gossip协议池。其占用很少的资源，并且消耗很少的网络带宽。</p>
+<p>3、Server：Server是一种agent，其包含了一系列的责任包括：参与Raft协议写半数（Raft Quorum）、维护集群状态、响应RPC响应、和其他Datacenter通过WAN gossip交换信息和重定向查询请求至leader或者远端Datacenter。</p>
+<p>4、Datacenter: Datacenter其是私有的、低延迟、高带宽的网络环境，去除了在公共网络上的网络交互。</p>
+<p>5、Consensus: Consensus一致性在leader 选举、顺序执行transaction 上。当这些事务已经提交至有限状态机（finite-state machine）中，Consul定义consensus作为复制状态机的一致性。本质上使用实现了Raft协议，对于具体实现细节可参考 Consensus Protocol。</p>
+<p>6、Gossip：Consul使用了Serf，其提供了Gossip协议多种用途，Serf提供成员关系、失败检查和事件广播。</p>
+<p>7、LAN Gossip: Local Area Network Gossip其包含在同一个网络环境或Datacenter的节点。</p>
+<p>8、WAN Gossip: Wide Area Network Gossip 其只包含Server节点，这些server分布在不同的datacenter中，其主要通过因特网或广域网相互交流。</p>
+<p>9、RPC: 远程过程调用，用于服务之间的通信。</p>
+<p>10、CAP抉择：在高可用方面，Consul使用Raft协议作为其分布式一致性协议，本身对故障节点有一定的容忍性，在单个DataCenter中Consul集群中节点的数量控制在2*n + 1个节点，其中n为可容忍的宕机个数，通常为3个节点。</p>
+<p>所以是典型的CP模式。</p>
+<p><img src="/images/blog/tech/microservice/image_6_13.png" alt="image_6_13.png"></p>
+<p>根据Consul 的选举机制和服务原理，我们有两个注意点 ：</p>
+<p>1、部署Consul Service 节点应该奇数为宜，因为+1的偶数节点和奇数节点可容忍的故障数是一样的，比如上图3和4，另一方面，偶数个节点在选主节点的时候可能会出现二分选票的情况，还得重新选举。</p>
+<p>2、Consul Service 节点数不是越多越好，虽然Server数量越多可容忍的故障数越多，但是Raft进行日志复制也是很耗时间的，而且Server数量越多，性能越低，所以结合实际场景，一般建议Server部署3个即可。</p>
+<p>有兴趣的同学可以去Consul官网看看它的选举机制，还可以对比下Redis中Sentinel模式。</p>
+<h4>2.3.3 生态对接 <a href="#scroller-17" id="scroller-17"></a></h4>
+<p><strong>对接Spring Cloud生态</strong></p>
+<p><img src="/images/blog/tech/microservice/image_6_14.png" alt="image_6_14.png"></p>
+<p>Consul作为注册中心，集成在Spring Cloud生态。可以看出，跟Eureka对接到Spring Cloud 生态的过程很像。</p>
+<p>但是这边的健康检查更丰富，可以有多种不同的的Check方式：</p>
+<ul>
+<li>Script check（Script+ Interval）</li>
+<li>基于HTTP请求</li>
+<li>基于tcp请求</li>
+<li>基于grpc请求</li>
+</ul>
+<h3>2.4 总结对比 <a href="#scroller-19" id="scroller-19"></a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>Eureka</strong></th>
+<th><strong>Zookeeper</strong></th>
+<th><strong>Consul</strong></th>
+<th><strong>Etcd</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>一致性协议</td>
+<td>AP</td>
+<td>CP（Paxos算法）</td>
+<td>CP（Raft算法）</td>
+<td>CP（Raft算法）</td>
+</tr>
+<tr>
+<td>健康检查</td>
+<td>TTL(Time To Live)</td>
+<td>TCP Keep Alive</td>
+<td>TTL\HTTP\TCP\Script</td>
+<td>Lease TTL KeepAlive</td>
+</tr>
+<tr>
+<td>watch/long polling</td>
+<td>不支持</td>
+<td>watch</td>
+<td>long polling</td>
+<td>watch</td>
+</tr>
+<tr>
+<td>雪崩保护</td>
+<td>支持</td>
+<td>不支持</td>
+<td>不支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>安全与权限</td>
+<td>不支持</td>
+<td>ACL</td>
+<td>ACL</td>
+<td>RBAC</td>
+</tr>
+<tr>
+<td>是否支持多数据中心</td>
+<td>是</td>
+<td>否</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>是否有管理界面</td>
+<td>是</td>
+<td>否（可用第三方ZkTools）</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>Spring Cloud 集成</td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>Dubbo 集成</td>
+<td>不支持</td>
+<td>支持</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>K8S 集成</td>
+<td>不支持</td>
+<td>不支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+</tbody></table>
+<p>这边是对业内4种注册中心各纬度上的对比，Eureka是典型的AP类型，Zookeeper和Consul是典型的CP类型。如何选择取决你的业务是倾向A：高可用性 还是 C：强一致性。</p>
+<p>当然，业务是复杂的，在真正的技术选型时，还是要根据自己的实际业务现状来判断。有一些倾向，比如你的系统是Spring Cloud体系下，那优先选择Eureka、Consul。</p>
+<p>如果业务会更多向云原生对齐，则Consul、Etcd会是比较优先的选择。</p>
+18:T2b19,<p><a href="https://baijiahao.baidu.com/s?id=1769207484615537227">转载</a></p>
+<h4>引言</h4>
+<h4>1、队列应用场景：</h4>
+<p>MQ（Message Queue，消息队列）<br><strong>消息队列在实际应用中常用的使用场景（优点）</strong>：<code>异步处理</code>，<code>应用解耦</code>，<code>流量削锋</code>和<code>消息通讯</code>四个场景。</p>
+<h4>2、目前使用较多的消息队列：</h4>
+<p>有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ。</p>
+<h4>3、如何选型（目前现状）：</h4>
+<p>ActiveMQ，性能不是很好，因此在高并发的场景下，直接被pass掉了。它的Api很完善，在中小型互联网公司可以去使用。最早大家都用 ActiveMQ，但是现在确实大家用的不多了，社区也不是很活跃，不推荐用这个了；</p>
+<p>后来大家开始用 RabbitMQ，但是确实 erlang 语言阻止了大量的 Java 工程师去深入研究和掌控它，对公司而言，几乎处于不可控的状态，但是确实人家是开源的，比较稳定的支持，活跃度也高，可视化的管理界面比较友好；</p>
+<p>不过现在确实越来越多的公司，会去用 RocketMQ，确实很不错（阿里出品），它是纯Java开发，它高性能、满足可靠性、分布式事物、支持水平扩展、上亿级别的消息堆积、主从之间的切换等等。MQ的所有优点它基本都满足。但是它最大的缺点：商业版收费。但社区可能有突然黄掉的风险，对自己公司技术实力有绝对自信的，推荐用 RocketMQ，否则老老实实用 RabbitMQ 吧，毕竟RabbitMQ有活跃的开源社区，绝对不会黄。</p>
+<p>所以中小型公司，技术实力较为一般，技术挑战不是特别高，用 RabbitMQ 是不错的选择；大型公司，基础架构研发实力较强，用 RocketMQ 是很好的选择。</p>
+<p>如果是大数据领域的实时计算、日志采集等场景，用 Kafka 是业内标准的，绝对没问题，适合产生大量数据的互联网服务的数据收集业务等。社区活跃度很高，何况几乎是全世界这个领域的事实性规范。kafka，主要强调高性能，如果对业务需要可靠性消息的投递的时候。那么就不能够选择kafka了。</p>
+<h4>4、使用消息队列缺点：</h4>
+<ul>
+<li>系统可用性降低：系统引入的外部依赖越多，越容易挂掉，万一MQ挂了，整套系统崩溃了。</li>
+<li>系统复杂性提高：加MQ进来，怎么保证消息没有重复消费？怎么处理消息丢失的情况？怎么保证消息传递的顺序性？</li>
+<li>一致性问题：A系统处理完了直接返回成功了，后面的如果失败了，这数据就不一致了。</li>
+</ul>
+<h4>一、RabbitMQ</h4>
+<h4>1、RabbitMQ概述</h4>
+<p><code>AMQP</code>，即Advanced Message Queuing Protocol，一个提供统一消息服务的应用层<strong>标准高级消息队列协议</strong>，是应用层协议的一个开放标准，为面向消息的中间件设计。AMQP的主要特征是面向消息、队列、路由（包括点对点和发布/订阅）、可靠性、安全。<br>AMQP协议更多用在企业系统内，对数据一致性、稳定性和可靠性要求很高的场景，对性能和吞吐量的要求还在其次。</p>
+<p><code>RabbitMQ</code>是实现了高级消息队列协议（AMQP）的开源消息代理软件（亦称面向消息的中间件）。RabbitMQ服务器是用Erlang语言编写的。</p>
+<p>RabbitMQ 是比较有代表性的，因为是<code>基于主从（非分布式）做高可用性</code>的。</p>
+<h4>2、RabbitMQ原理图</h4>
+<p>RabbitMQ通过<code>信道</code>的方式传输数据，将消息发布到交换机上，消息拥有一个路邮键，由消息创建时设定，通过队列路由键，可以把队列绑定到交换机上，消息到达交换机后，RabbitMQ将消息的路由键与队列的路由键进行匹配（不同的交换机有不同的路由规则），匹配到相应的队列，消息投递到队列的队列中供消费者消费。</p>
+<blockquote>
+<p>多个消费者可以订阅同一个Queue，消息将以<code>循环（round-robin）</code>的方式发送给消费者，每条消息只会发给一个订阅的消费者，而不是每个消费者都收到所有的消息并处理。</p>
+</blockquote>
+<blockquote>
+<p>每个Channel运行在独立的线程上，多个线程共享同一个socket。</p>
+</blockquote>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/dfde605794cc90a31ce1223c54218372.jpeg@c_1,w_901,h_315,x_0,y_0" alt=""><br><strong>相关概念：</strong></p>
+<ul>
+<li>ConnectionFactory（连接管理器）：应用程序与Rabbit之间建立连接的管理器，程序代码中使用；</li>
+<li>Broker：简单来说就是消息队列服务器实体。</li>
+<li>Channel（信道）：消息推送使用的通道；</li>
+<li>Exchange（交换器）：用于接受、分配消息；</li>
+<li>Queue（队列）：用于存储生产者的消息；</li>
+<li>RoutingKey（路由键）：用于把生成者的数据分配到交换器上；【最大255个字节】</li>
+<li>BindingKey（绑定键）：用于把交换器的消息绑定到队列上；【最大255个字节】</li>
+<li>vhost（虚拟主机）每个Rabbit都能创建很多vhost，每个虚拟主机其实都是mini版的RabbitMQ，拥有自己的队列，交换器和绑定，拥有自己的权限机制。</li>
+</ul>
+<h4>3、RabbitMQ常用的三种交换机</h4>
+<p><strong>RabbitMQ常用的三种Exchange</strong>：fanout,direct,topic</p>
+<h4>（1）Direct Exchange ：</h4>
+<p>直连型交换机，根据消息携带的路由键将消息投递给对应队列。<br>　　大致流程，有一个队列绑定到一个直连交换机上，同时赋予一个路由键 routing key。　然后当一个消息携带着路由值为X，这个消息通过生产者发送给交换机时，交换机就会根据这个路由值X去寻找绑定值也是X的队列。</p>
+<h4>（2）Fanout Exchange：</h4>
+<p>扇型交换机，这个交换机没有路由键概念，就算你绑了路由键也是无视的。 这个交换机在接收到消息后，会直接转发到绑定到它上面的所有队列。</p>
+<h4>（3）Topic Exchange：</h4>
+<p>主题交换机，这个交换机其实跟直连交换机流程差不多，但是它的特点就是在它的路由键和绑定键之间是有规则的。<br>　　<br><strong>性能排序</strong>：fanout &gt; direct &gt;&gt; topic。</p>
+<h4>4、 RabbitMQ集群元数据</h4>
+<p>RabbitMQ集群会始终同步四种类型的内部元数据：</p>
+<ul>
+<li>a. 队列元数据：队列名称和它的属性</li>
+<li>b. 交换器元数据：交换器名称、类型和属性</li>
+<li>c. 绑定元数据：一张简单的表格展示了如何将消息路由到队列</li>
+<li>d. vhost元数据：为vhost内的队列、交换器和绑定提供命名空间和安全属性</li>
+</ul>
+<h4>5、RabbitMQ镜像集群</h4>
+<p><strong>RabbitMQ 有三种模式</strong>：单机模式、普通集群模式（无高可用性）、<code>镜像集群模式</code>（高可用性）。</p>
+<p><code>镜像队列</code>将需要消费的队列变成镜像队列，存在于多个节点，实现RabbitMQ的高可用，保证 100% 数据不丢失。作用就是消息实体会主动在镜像节点之间实现同步，而不是像普通模式那样，在消费者消费数据时临时拉取，缺点就是集群内部的<code>同步通讯</code>会占去大量的网络带宽。<br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/53a92fdedade9355420e866bbdb51be1.jpeg@c_1,w_613,h_390,x_0,y_0" alt=""></p>
+<h4>二、RocketMQ</h4>
+<p><code>RocketMQ</code>是阿里开源的消息中间件，目前也已经孵化为Apache顶级项目。用Java语言实现，在设计时参考了Kafka，并做出了自己的一些改进，消息可靠性上比Kafka更好。RocketMQ在阿里内部被广泛应用在订单，交易，充值，流计算，消息推送，日志流式处理，binglog分发等场景。</p>
+<p><strong>RocketMQ缺点：</strong></p>
+<ul>
+<li>单机支持1万以上持久化队列；</li>
+<li>RocketMQ的所有消息都是持久化的，先写入系统PAGECACHE，然后刷盘，可以保证内存与磁盘都有一份数据，而访问时，直接从内存读取。</li>
+<li>模型简单，接口易用（JMS的接口很多场合并不太实用）；</li>
+<li>性能非常好，可以允许大量堆积消息在Broker中；</li>
+<li>支持多种消费模式，包括集群消费、广播消费等；</li>
+<li>各个环节分布式扩展设计，支持主从和高可用；</li>
+<li>开发度较活跃，版本更新很快。</li>
+</ul>
+<p><strong>RocketMQ缺点：</strong></p>
+<ul>
+<li>支持的 客户端语言不多，目前是Java及C++，其中C++还不成熟</li>
+<li>维护RocketMQ需要专业的团队</li>
+<li>商业版收费，有许多功能是不对外提供的。</li>
+<li>没有在MQ核心里实现JMS等接口</li>
+</ul>
+<h4>三、kafka</h4>
+<h4>1、kafka概述</h4>
+<p><code>kafka</code>是Linkedin于2010年12月份开源的<code>消息发布订阅</code>系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。作为hadoop生态系统的一部分，被各种商业公司广泛应用。</p>
+<p><strong>kafka优点：</strong></p>
+<ul>
+<li>高吞吐量、低延迟：kafka每秒可以处理几十万条消息，它的延迟最低只有几毫秒</li>
+<li>可扩展性：kafka集群支持热扩展</li>
+<li>持久性、可靠性：消息被持久化到本地磁盘，并且支持数据备份防止数据丢失</li>
+<li>容错性：允许集群中节点失败（若副本数量为n,则允许n-1个节点失败）</li>
+<li>高并发：支持数千个客户端同时读写</li>
+</ul>
+<p><strong>kafka缺点：</strong></p>
+<ul>
+<li>快速持久化：可以在O(1)的系统开销下进行消息持久化；</li>
+<li>高吞吐：在一台普通的服务器上既可以达到10W/s的吞吐速率；</li>
+<li>完全的分布式系统：Broker、Producer和Consumer都原生自动支持分布式，自动实现负载均衡；</li>
+<li>支持同步和异步复制两种高可用机制；</li>
+<li>支持数据批量发送和拉取；</li>
+<li>零拷贝技术(zero-copy)：减少IO操作步骤，提高系统吞吐量；</li>
+<li>数据迁移、扩容对用户透明；</li>
+<li>无需停机即可扩展机器；</li>
+<li>其他特性：丰富的消息拉取模型、高效订阅者水平扩展、实时的消息订阅、亿级的消息堆积能力、定期删除机制</li>
+</ul>
+<h4>2、kafka原理图</h4>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/3d90e1705de49c669f22628af2f6004a.jpeg@c_1,w_1010,h_651,x_0,y_0" alt=""><br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/a5531d658050ce7abecb5ad4242d92ab.jpeg@c_1,w_1002,h_300,x_0,y_0" alt=""></p>
+<h4>四、总结</h4>
+<p><img src="/images/blog/tech/middleware/img_20250723_04.png" alt="img_20250723_04.png">{: .full-width}</p>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-24","children":"2024年03月24日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"服务注册与发现（实践篇）"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","微服务架构",{"href":"/blog/tag/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"微服务架构"}],["$","$L5","技术专题",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术专题"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"tech/microservice/服务注册与发现","title":"服务注册与发现","description":"我们前面在全景架构中对服务注册与发现做了大致的说明，本章我们着重详细说明微服务下注册与发现的这个能力。微服务注册与发现类似于生活中的电话通讯录的概念，它记录了通讯录服务和电话的映射关系。","pubDate":"2024-03-23","tags":["微服务架构","技术专题"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"tech/middleware/RabbitMQ、RocketMQ、Kafka区别","title":"RabbitMQ、RocketMQ、Kafka区别","description":"MQ（Message Queue，消息队列） 在实际应用中常用的使用场景：异步处理，应用解耦，流量削锋和消息通讯四个场景。目前使用较多的消息队列有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ","pubDate":"2024-03-31","tags":["消息队列","技术专题"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"微服务架构":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":null},"技术专题":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"}}}]}],["$","$L19",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"服务注册与发现（实践篇） - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。 并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景..."}],["$","meta","2",{"property":"og:title","content":"服务注册与发现（实践篇）"}],["$","meta","3",{"property":"og:description","content":"前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。 并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景..."}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-03-24"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"服务注册与发现（实践篇）"}],["$","meta","9",{"name":"twitter:description","content":"前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。 并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景..."}],["$","link","10",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","11",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}
