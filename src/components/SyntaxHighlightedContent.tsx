@@ -15,8 +15,39 @@ const SyntaxHighlightedContent: React.FC<SyntaxHighlightedContentProps> = ({ con
   useEffect(() => {
     if (!contentRef.current) return;
 
-    // 查找所有的 pre > code 元素
-    const codeBlocks = contentRef.current.querySelectorAll('pre > code');
+    // 先处理 Mermaid：将 ```mermaid 包裹的代码块替换为 <div class="mermaid">，随后初始化渲染
+    const allCodeBlocks = contentRef.current.querySelectorAll('pre > code');
+    allCodeBlocks.forEach((codeBlock) => {
+      const pre = codeBlock.parentElement;
+      if (!pre) return;
+
+      const isMermaid = codeBlock.classList.contains('language-mermaid') || codeBlock.getAttribute('data-language') === 'mermaid';
+      if (isMermaid) {
+        const diagramDefinition = (codeBlock.textContent || '').replace(/\n$/, '');
+        const mermaidContainer = document.createElement('div');
+        mermaidContainer.className = 'mermaid my-6';
+        mermaidContainer.textContent = diagramDefinition;
+        pre.parentNode?.replaceChild(mermaidContainer, pre);
+      }
+    });
+
+    // 动态加载 mermaid 并初始化（如果页面上存在 mermaid 容器）
+    const mermaidContainers = contentRef.current.querySelectorAll('.mermaid');
+    if (mermaidContainers.length > 0) {
+      import('mermaid').then((mermaid) => {
+        // 关闭安全级别限制以支持内联样式（可按需调整）
+        mermaid.default.initialize({ startOnLoad: false, securityLevel: 'loose', theme: 'default' });
+        // 逐个渲染，避免与 SSR/rehydration 冲突
+        mermaidContainers.forEach((container) => {
+          mermaid.default.init(undefined, container as any);
+        });
+      }).catch(() => {
+        // 忽略加载失败以保证页面不崩溃
+      });
+    }
+
+    // 查找除 Mermaid 以外的 pre > code 元素用于 Prism 高亮
+    const codeBlocks = contentRef.current.querySelectorAll('pre > code:not(.language-mermaid)');
     
     codeBlocks.forEach((codeBlock) => {
       const pre = codeBlock.parentElement;
