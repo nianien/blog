@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   title: 'Skyfalling',
   description: '分享技术、生活和思考的个人博客',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+    shortcut: '/favicon.png',
   },
 };
 
