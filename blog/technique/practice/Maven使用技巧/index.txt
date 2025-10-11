@@ -1,0 +1,398 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-51baccc14cf1da9e.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1a068657a275b968.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/0a7d53676a1eb136.css","style"]
+0:{"P":null,"b":"RNFPgb6eHhPfgJsFHyMjd","p":"","c":["","blog","technique","practice","Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","technique/practice/Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0a7d53676a1eb136.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","technique/practice/Maven%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","dGFm090gff8atu0nGaNE1v",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1a068657a275b968.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1a068657a275b968.js"],"default"]
+19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1a068657a275b968.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:T454,<h1>Maven使用技巧</h1>
+<h3>1、使用maven.config定制化配置</h3>
+<p>Located within the project&#39;s <strong>top level directory</strong>, the files</p>
+<ul>
+<li><code>maven.config</code></li>
+<li><code>jvm.config</code></li>
+<li><code>extensions.xml</code></li>
+</ul>
+<p>contain project specific configuration for running Maven.</p>
+<p>This directory is part of the project and may be checked in into your version control.</p>
+<blockquote>
+<p>ref：<a href="https://maven.apache.org/configure.html">https://maven.apache.org/configure.html</a></p>
+</blockquote>
+<p>常见配置如：</p>
+<pre><code class="language-bash">-Dmaven.test.skip=true
+--settings
+/Users/skyfalling/.m2/settings.xml
+</code></pre>
+<p>There must not be a whitespace after <code>--settings,</code>With the introduction of <code>maven 3.9</code>, there was a BREAKING CHANGE that affects the parsing of the <code>maven.config</code> file:</p>
+<p>Each line in <code>.mvn/maven.config</code> is now interpreted as a single argument. That is, if the file contains multiple arguments, these must now be placed on separate lines.</p>
+17:T2b19,<p><a href="https://baijiahao.baidu.com/s?id=1769207484615537227">转载</a></p>
+<h4>引言</h4>
+<h4>1、队列应用场景：</h4>
+<p>MQ（Message Queue，消息队列）<br><strong>消息队列在实际应用中常用的使用场景（优点）</strong>：<code>异步处理</code>，<code>应用解耦</code>，<code>流量削锋</code>和<code>消息通讯</code>四个场景。</p>
+<h4>2、目前使用较多的消息队列：</h4>
+<p>有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ。</p>
+<h4>3、如何选型（目前现状）：</h4>
+<p>ActiveMQ，性能不是很好，因此在高并发的场景下，直接被pass掉了。它的Api很完善，在中小型互联网公司可以去使用。最早大家都用 ActiveMQ，但是现在确实大家用的不多了，社区也不是很活跃，不推荐用这个了；</p>
+<p>后来大家开始用 RabbitMQ，但是确实 erlang 语言阻止了大量的 Java 工程师去深入研究和掌控它，对公司而言，几乎处于不可控的状态，但是确实人家是开源的，比较稳定的支持，活跃度也高，可视化的管理界面比较友好；</p>
+<p>不过现在确实越来越多的公司，会去用 RocketMQ，确实很不错（阿里出品），它是纯Java开发，它高性能、满足可靠性、分布式事物、支持水平扩展、上亿级别的消息堆积、主从之间的切换等等。MQ的所有优点它基本都满足。但是它最大的缺点：商业版收费。但社区可能有突然黄掉的风险，对自己公司技术实力有绝对自信的，推荐用 RocketMQ，否则老老实实用 RabbitMQ 吧，毕竟RabbitMQ有活跃的开源社区，绝对不会黄。</p>
+<p>所以中小型公司，技术实力较为一般，技术挑战不是特别高，用 RabbitMQ 是不错的选择；大型公司，基础架构研发实力较强，用 RocketMQ 是很好的选择。</p>
+<p>如果是大数据领域的实时计算、日志采集等场景，用 Kafka 是业内标准的，绝对没问题，适合产生大量数据的互联网服务的数据收集业务等。社区活跃度很高，何况几乎是全世界这个领域的事实性规范。kafka，主要强调高性能，如果对业务需要可靠性消息的投递的时候。那么就不能够选择kafka了。</p>
+<h4>4、使用消息队列缺点：</h4>
+<ul>
+<li>系统可用性降低：系统引入的外部依赖越多，越容易挂掉，万一MQ挂了，整套系统崩溃了。</li>
+<li>系统复杂性提高：加MQ进来，怎么保证消息没有重复消费？怎么处理消息丢失的情况？怎么保证消息传递的顺序性？</li>
+<li>一致性问题：A系统处理完了直接返回成功了，后面的如果失败了，这数据就不一致了。</li>
+</ul>
+<h4>一、RabbitMQ</h4>
+<h4>1、RabbitMQ概述</h4>
+<p><code>AMQP</code>，即Advanced Message Queuing Protocol，一个提供统一消息服务的应用层<strong>标准高级消息队列协议</strong>，是应用层协议的一个开放标准，为面向消息的中间件设计。AMQP的主要特征是面向消息、队列、路由（包括点对点和发布/订阅）、可靠性、安全。<br>AMQP协议更多用在企业系统内，对数据一致性、稳定性和可靠性要求很高的场景，对性能和吞吐量的要求还在其次。</p>
+<p><code>RabbitMQ</code>是实现了高级消息队列协议（AMQP）的开源消息代理软件（亦称面向消息的中间件）。RabbitMQ服务器是用Erlang语言编写的。</p>
+<p>RabbitMQ 是比较有代表性的，因为是<code>基于主从（非分布式）做高可用性</code>的。</p>
+<h4>2、RabbitMQ原理图</h4>
+<p>RabbitMQ通过<code>信道</code>的方式传输数据，将消息发布到交换机上，消息拥有一个路邮键，由消息创建时设定，通过队列路由键，可以把队列绑定到交换机上，消息到达交换机后，RabbitMQ将消息的路由键与队列的路由键进行匹配（不同的交换机有不同的路由规则），匹配到相应的队列，消息投递到队列的队列中供消费者消费。</p>
+<blockquote>
+<p>多个消费者可以订阅同一个Queue，消息将以<code>循环（round-robin）</code>的方式发送给消费者，每条消息只会发给一个订阅的消费者，而不是每个消费者都收到所有的消息并处理。</p>
+</blockquote>
+<blockquote>
+<p>每个Channel运行在独立的线程上，多个线程共享同一个socket。</p>
+</blockquote>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/dfde605794cc90a31ce1223c54218372.jpeg@c_1,w_901,h_315,x_0,y_0" alt=""><br><strong>相关概念：</strong></p>
+<ul>
+<li>ConnectionFactory（连接管理器）：应用程序与Rabbit之间建立连接的管理器，程序代码中使用；</li>
+<li>Broker：简单来说就是消息队列服务器实体。</li>
+<li>Channel（信道）：消息推送使用的通道；</li>
+<li>Exchange（交换器）：用于接受、分配消息；</li>
+<li>Queue（队列）：用于存储生产者的消息；</li>
+<li>RoutingKey（路由键）：用于把生成者的数据分配到交换器上；【最大255个字节】</li>
+<li>BindingKey（绑定键）：用于把交换器的消息绑定到队列上；【最大255个字节】</li>
+<li>vhost（虚拟主机）每个Rabbit都能创建很多vhost，每个虚拟主机其实都是mini版的RabbitMQ，拥有自己的队列，交换器和绑定，拥有自己的权限机制。</li>
+</ul>
+<h4>3、RabbitMQ常用的三种交换机</h4>
+<p><strong>RabbitMQ常用的三种Exchange</strong>：fanout,direct,topic</p>
+<h4>（1）Direct Exchange ：</h4>
+<p>直连型交换机，根据消息携带的路由键将消息投递给对应队列。<br>　　大致流程，有一个队列绑定到一个直连交换机上，同时赋予一个路由键 routing key。　然后当一个消息携带着路由值为X，这个消息通过生产者发送给交换机时，交换机就会根据这个路由值X去寻找绑定值也是X的队列。</p>
+<h4>（2）Fanout Exchange：</h4>
+<p>扇型交换机，这个交换机没有路由键概念，就算你绑了路由键也是无视的。 这个交换机在接收到消息后，会直接转发到绑定到它上面的所有队列。</p>
+<h4>（3）Topic Exchange：</h4>
+<p>主题交换机，这个交换机其实跟直连交换机流程差不多，但是它的特点就是在它的路由键和绑定键之间是有规则的。<br>　　<br><strong>性能排序</strong>：fanout &gt; direct &gt;&gt; topic。</p>
+<h4>4、 RabbitMQ集群元数据</h4>
+<p>RabbitMQ集群会始终同步四种类型的内部元数据：</p>
+<ul>
+<li>a. 队列元数据：队列名称和它的属性</li>
+<li>b. 交换器元数据：交换器名称、类型和属性</li>
+<li>c. 绑定元数据：一张简单的表格展示了如何将消息路由到队列</li>
+<li>d. vhost元数据：为vhost内的队列、交换器和绑定提供命名空间和安全属性</li>
+</ul>
+<h4>5、RabbitMQ镜像集群</h4>
+<p><strong>RabbitMQ 有三种模式</strong>：单机模式、普通集群模式（无高可用性）、<code>镜像集群模式</code>（高可用性）。</p>
+<p><code>镜像队列</code>将需要消费的队列变成镜像队列，存在于多个节点，实现RabbitMQ的高可用，保证 100% 数据不丢失。作用就是消息实体会主动在镜像节点之间实现同步，而不是像普通模式那样，在消费者消费数据时临时拉取，缺点就是集群内部的<code>同步通讯</code>会占去大量的网络带宽。<br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/53a92fdedade9355420e866bbdb51be1.jpeg@c_1,w_613,h_390,x_0,y_0" alt=""></p>
+<h4>二、RocketMQ</h4>
+<p><code>RocketMQ</code>是阿里开源的消息中间件，目前也已经孵化为Apache顶级项目。用Java语言实现，在设计时参考了Kafka，并做出了自己的一些改进，消息可靠性上比Kafka更好。RocketMQ在阿里内部被广泛应用在订单，交易，充值，流计算，消息推送，日志流式处理，binglog分发等场景。</p>
+<p><strong>RocketMQ缺点：</strong></p>
+<ul>
+<li>单机支持1万以上持久化队列；</li>
+<li>RocketMQ的所有消息都是持久化的，先写入系统PAGECACHE，然后刷盘，可以保证内存与磁盘都有一份数据，而访问时，直接从内存读取。</li>
+<li>模型简单，接口易用（JMS的接口很多场合并不太实用）；</li>
+<li>性能非常好，可以允许大量堆积消息在Broker中；</li>
+<li>支持多种消费模式，包括集群消费、广播消费等；</li>
+<li>各个环节分布式扩展设计，支持主从和高可用；</li>
+<li>开发度较活跃，版本更新很快。</li>
+</ul>
+<p><strong>RocketMQ缺点：</strong></p>
+<ul>
+<li>支持的 客户端语言不多，目前是Java及C++，其中C++还不成熟</li>
+<li>维护RocketMQ需要专业的团队</li>
+<li>商业版收费，有许多功能是不对外提供的。</li>
+<li>没有在MQ核心里实现JMS等接口</li>
+</ul>
+<h4>三、kafka</h4>
+<h4>1、kafka概述</h4>
+<p><code>kafka</code>是Linkedin于2010年12月份开源的<code>消息发布订阅</code>系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。作为hadoop生态系统的一部分，被各种商业公司广泛应用。</p>
+<p><strong>kafka优点：</strong></p>
+<ul>
+<li>高吞吐量、低延迟：kafka每秒可以处理几十万条消息，它的延迟最低只有几毫秒</li>
+<li>可扩展性：kafka集群支持热扩展</li>
+<li>持久性、可靠性：消息被持久化到本地磁盘，并且支持数据备份防止数据丢失</li>
+<li>容错性：允许集群中节点失败（若副本数量为n,则允许n-1个节点失败）</li>
+<li>高并发：支持数千个客户端同时读写</li>
+</ul>
+<p><strong>kafka缺点：</strong></p>
+<ul>
+<li>快速持久化：可以在O(1)的系统开销下进行消息持久化；</li>
+<li>高吞吐：在一台普通的服务器上既可以达到10W/s的吞吐速率；</li>
+<li>完全的分布式系统：Broker、Producer和Consumer都原生自动支持分布式，自动实现负载均衡；</li>
+<li>支持同步和异步复制两种高可用机制；</li>
+<li>支持数据批量发送和拉取；</li>
+<li>零拷贝技术(zero-copy)：减少IO操作步骤，提高系统吞吐量；</li>
+<li>数据迁移、扩容对用户透明；</li>
+<li>无需停机即可扩展机器；</li>
+<li>其他特性：丰富的消息拉取模型、高效订阅者水平扩展、实时的消息订阅、亿级的消息堆积能力、定期删除机制</li>
+</ul>
+<h4>2、kafka原理图</h4>
+<p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/3d90e1705de49c669f22628af2f6004a.jpeg@c_1,w_1010,h_651,x_0,y_0" alt=""><br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/a5531d658050ce7abecb5ad4242d92ab.jpeg@c_1,w_1002,h_300,x_0,y_0" alt=""></p>
+<h4>四、总结</h4>
+<p><img src="/images/blog/tech/middleware/img_20250723_04.png" alt="img_20250723_04.png">{: .full-width}</p>
+18:T3d59,<blockquote>
+<p><em>首先强调一下，Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过</em><a href="https://central.sonatype.org/pages/ossrh-guide.html">Sonatype OSSRH</a><em>仓库来发布jar包。所以，接下来主要介绍如何将jar包发布到Sonatype OSSRH。</em></p>
+</blockquote>
+<p>首先，先说一下大体的步骤：</p>
+<ul>
+<li>注册Sonatype账号</li>
+<li>创建Issue，验证域名</li>
+<li>安装GPG，发布密钥</li>
+<li>配置Maven，发布构件</li>
+</ul>
+<p>这里面比较重要和容易出错的是第二步和第三步，下面一一详细介绍。</p>
+<h4>1、注册Sonatype账号 <a href="#bojci" id="bojci"></a></h4>
+<p>第一步很简单，登录官网，注册账号就好了<a href="https://issues.sonatype.org/secure/Signup!default.jspa">Sign up for Jira - Sonatype JIRA</a></p>
+<p>注册完成，登陆后的界面如下：</p>
+<p><img src="/images/blog/tech/practice/image_60.png" alt="image_60.png"></p>
+<h4>2、创建Issue <a href="#omwqz" id="omwqz"></a></h4>
+<p>这里项目选择：Community Support - Open Source Project Repository Hosting (OSSRH)，问题 类型选择：New Project</p>
+<p><img src="/images/blog/tech/practice/image_67.png" alt="image_67.png"></p>
+<h4>2.1、补充项目信息</h4>
+<p><img src="/images/blog/tech/practice/image_62.png" alt="image_62.png"></p>
+<h4>2.2、验证域名 <a href="#snbg0" id="snbg0"></a></h4>
+<p>我们需要使用域名作为Group Id，如果你拥有域&#x540D;<em>&#x65;xample.com，则能够使用com.example开头作为Group Id，例如：com.example.myproject。其他一些栗子如下：</em></p>
+<ul>
+<li><em>example.com -&gt; com.example.domain</em></li>
+<li><a href="http://www.springframework.org/">www.springframework.org</a> -&gt; org.springframework</li>
+<li>subdomain.example.com -&gt; example.com</li>
+<li>github.com/yourusername -&gt; io.github.yourusername</li>
+<li>my-domain.com -&gt; com.my-domain</li>
+</ul>
+<p>要想使用某个域名作为Group Id，你需要证明拥有该域名，至于如何证明，详见官方文档：<a href="https://central.sonatype.org/faq/how-to-set-txt-record">https://central.sonatype.org/faq/how-to-set-txt-record/</a></p>
+<p>如果你没有自己的域名，则可以通过代码托管平台的账号关联子域名。假设你托管平台账户名为myusername，那么你可以通过以下托管平台验证Group Id ：</p>
+<p><img src="/images/blog/tech/practice/image_63.png" alt="image_63.png"></p>
+<p>由于我没有自己的域名，这里我选择使用github账号验证Group Id。点击“新建”按钮，完成提交，之后你的注册邮箱会收到一封邮件，显示创建项目信息：</p>
+<p><img src="/images/blog/tech/practice/image_65.png" alt="image_65.png"></p>
+<p>稍后还会收到一封审核邮件，提示你进行域名验证，时间延迟大概在十分钟以内。</p>
+<p><strong>2.3、人工审核及确认</strong></p>
+<p><img src="/images/blog/tech/practice/image_66.png" alt="image_66.png"></p>
+<p>我使用的是github账户，按邮件提示，需要在github平台上创建一个指定的临时工程。创建完成之后，可以在issue下面添加评论，触发验证。验证成功后，你会收到一份邮件：</p>
+<p><img src="/images/blog/tech/practice/image_68.png" alt="image_68.png"></p>
+<p>收到上述邮件，就表示完成了Group Id的验证，此时你就可以使用该Group Id或者子Group Id发布Maven构件了。如上，我填写的Group Id是 “io.github.nianien”，因此，我可以使用 “io.github.nianien”或者 “io.github.nianien.xxx” 作为项目的GroupId发布Maven构件。</p>
+<p>在通过Maven发布构件之前，我们需要进行Maven配置，这里还需要一些前置工作。</p>
+<h4>3、安装GPG，创建密钥 <a href="#dcxco" id="dcxco"></a></h4>
+<p>安装GPG的方式有多种，这里推荐图形化安装，因为通过命令行安装，由于找不到合适的密钥服务器，发布密钥时会失败。这里给出Mac版本的下载地址：<a href="https://releases.gpgtools.org/GPG_Suite-2022.1.dmg">https://releases.gpgtools.org/GPG_Suite-2022.1.dmg</a></p>
+<ul>
+<li>创建密钥</li>
+</ul>
+<p><img src="/images/blog/tech/practice/image_69.png" alt="image_69.png"></p>
+<p>3.1、发布密钥</p>
+<p><img src="/images/blog/tech/practice/image_70.png" alt="image_70.png"></p>
+<p>发布成功后，收到一份邮件：</p>
+<p><img src="/images/blog/tech/practice/image_71.png" alt="image_71.png"></p>
+<p>按照邮件指示操作，完成密钥发布。密钥发布成功之后，下一步就是配置maven settings.xml和工程pom.xml文件。</p>
+<h4>4、配置Maven，发布构件 <a href="#amad1" id="amad1"></a></h4>
+<ul>
+<li>第一步，配置setting.xml文件，添加server节点：</li>
+</ul>
+<pre><code class="language-xml">&lt;servers&gt;
+&lt;server&gt;
+    &lt;id&gt;ossrh&lt;/id&gt;
+    &lt;username&gt;sonatype账户名&lt;/username&gt;
+    &lt;password&gt;sonatype账户密码&lt;/password&gt;
+&lt;/server&gt;
+&lt;/servers&gt;
+&lt;profile&gt;
+  &lt;id&gt;ossrh&lt;/id&gt;
+  &lt;properties&gt;
+    &lt;gpg.executable&gt;gpg&lt;/gpg.executable&gt;
+    &lt;gpg.passphrase&gt;创建密钥时使用的密码&lt;/gpg.passphrase&gt;
+    &lt;gpg.homedir&gt;/Users/yourname/.gnupg&lt;/gpg.homedir&gt;
+   &lt;/properties&gt;
+&lt;/profile&gt;
+</code></pre>
+<ul>
+<li>第二步，配置pom.xml文件，添加必填项</li>
+</ul>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&lt;!--已经验证的Group Id--&gt;
+    &lt;groupId&gt;io.github.nianien&lt;/groupId&gt;
+    &lt;artifactId&gt;cudrania&lt;/artifactId&gt;
+    &lt;version&gt;1.0.1&lt;/version&gt;&lt;!--必填--&gt;
+    &lt;name&gt;io.github.nianien:cudrania&lt;/name&gt;&lt;!--必填--&gt;
+    &lt;description&gt;support tools for java development&lt;/description&gt;&lt;!--必填--&gt;
+    &lt;url&gt;https://github.com/nianien/cudrania&lt;/url&gt;
+    &lt;properties&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;java.version&gt;17&lt;/java.version&gt;
+    &lt;/properties&gt;&lt;!--必填--&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;The Apache Software License, Version 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;&lt;!--必填--&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;nianien&lt;/id&gt;
+            &lt;name&gt;nianien&lt;/name&gt;
+            &lt;email&gt;nianien@126.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;&lt;!--必填--&gt;
+    &lt;scm&gt;
+        &lt;connection&gt;https://github.com/nianien/cudrania.git&lt;/connection&gt;
+        &lt;developerConnection&gt;scm:git:ssh://git@github.com:nianien/cudrania.git
+        &lt;/developerConnection&gt;
+        &lt;url&gt;https://github.com/nianien/cudrania&lt;/url&gt;
+    &lt;/scm&gt;
+    &lt;build&gt;
+        &lt;pluginManagement&gt;
+            &lt;plugins&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.11.0&lt;/version&gt;
+                    &lt;configuration&gt;
+                        &lt;source&gt;${java.version}&lt;/source&gt;
+                        &lt;target&gt;${java.version}&lt;/target&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;&lt;!--必填--&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.3.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-sources&lt;/id&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar-no-fork&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;&lt;!--必填--&gt; 
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.5.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-javadocs&lt;/id&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;additionalparam&gt;
+                                    -Xdoclint:none
+                                &lt;/additionalparam&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;&lt;!--必填--&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.1.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;sign-artifacts&lt;/id&gt;
+                            &lt;phase&gt;verify&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;sign&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+            &lt;/plugins&gt;
+        &lt;/pluginManagement&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+
+    &lt;profiles&gt;&lt;!--必填--&gt;
+        &lt;profile&gt;
+            &lt;id&gt;ossrh&lt;/id&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;&lt;!--必填--&gt;
+                        &lt;groupId&gt;org.sonatype.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;nexus-staging-maven-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;1.6.13&lt;/version&gt;
+                        &lt;extensions&gt;true&lt;/extensions&gt;
+                        &lt;configuration&gt;
+                            &lt;serverId&gt;ossrh&lt;/serverId&gt;
+                            &lt;nexusUrl&gt;https://s01.oss.sonatype.org/&lt;/nexusUrl&gt; 
+                          &lt;autoReleaseAfterClose&gt;true&lt;/autoReleaseAfterClose&gt;
+                        &lt;/configuration&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;&lt;!--必填--&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;&lt;!--必填--&gt;
+            &lt;distributionManagement&gt;
+                &lt;snapshotRepository&gt;
+                    &lt;id&gt;ossrh&lt;/id&gt;
+                  &lt;url&gt;https://s01.oss.sonatype.org/content/repositories/snapshots
+                    &lt;/url&gt;
+                &lt;/snapshotRepository&gt;
+                &lt;repository&gt;
+                    &lt;id&gt;ossrh&lt;/id&gt;
+                    &lt;url&gt;https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
+                    &lt;/url&gt;
+                &lt;/repository&gt;
+            &lt;/distributionManagement&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+
+    &lt;dependencies&gt;&lt;!--maven依赖--&gt;&lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre>
+<p>上面已经是最精简的pom配置了，我已经把必选项标注好了。这里主要包含两部分内容，一部分是snoatype要求的必备信息，包括：证书、开发者信息、仓库地址和发布地址；另一部分是deploy需要的maven插件列表，大家可以根据实际情况酌情修改。</p>
+<p>需要说明的是，为了不用默认打包冲突，专门定义了用于发布中央仓库的profile：ossrh，这里只需要添加额外的两个插件：nexus-staging-maven-plugin和maven-gpg-plugin，前者用于jar上传，后者用于密钥签名。</p>
+<ul>
+<li>第三步，执行maven命令，发布构件</li>
+</ul>
+<p>配置好pom文件，可以执行maven命令：“mvn clean deploy -Possrh” 进行发布。如果版本号带SNAPSHOT后缀，会发布到snapshots仓库，否则发布到release仓库。</p>
+<p>这里nexus-staging-maven-plugin插件有一个配置项：autoReleaseAfterClose，如果设置为true的话，推送完成会自动release。第一次发布成功后，会收到一封邮件：</p>
+<p><img src="/images/blog/tech/practice/image_72.png" alt="image_72.png"></p>
+<ul>
+<li><em><strong>最后，让jar包更快的在中央仓库被搜索到</strong></em></li>
+</ul>
+<p>根据邮件提示，Jar包成功发布成功后，大约30分钟后会推到中央仓库，我们可以从仓库地址看到我们发布的Jar包：<a href="https://repo1.maven.org/maven2">https://repo1.maven.org/maven2/</a></p>
+<p><img src="/images/blog/tech/practice/image_73.png" alt="image_73.png"></p>
+<p>此时，其他项目就可以通过maven依赖引用我们的构件了，但是这时候通过中央仓库仍然搜不到我们的Maven构件。按照邮件提示可能会需要四小时，实际情况是我等了5个小时依然搜不到。如果遇到这种情况，我们可以通过在对issue添加评论反馈，会有人工回复进行解决：</p>
+<p><img src="/images/blog/tech/practice/image_74.png" alt="image_74.png"></p>
+<p>另外，关于mvnrepository与Maven Central的关系，有人咨询，官方也做了解答：</p>
+<p><img src="/images/blog/tech/practice/image_75.png" alt="image_75.png"></p>
+<p>根据我的实际经验判断，mvnrepository应该是定时同步的，我发布成功后，第二天才能搜到：</p>
+<p><img src="/images/blog/tech/practice/image_76.png" alt="image_76.png"></p>
+<p>下面是官方指导文档，介绍非常详细，基本上不用在网上搜索其他教程了。</p>
+<h4>官方参考文档 <a href="#dzquo" id="dzquo"></a></h4>
+<p><a href="https://central.sonatype.org/publish/publish-guide">https://central.sonatype.org/publish/publish-guide/</a></p>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-04-03","children":"2024年04月03日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Maven使用技巧"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","技术实战",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术实战"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"technique/middleware/RabbitMQ、RocketMQ、Kafka区别","title":"RabbitMQ、RocketMQ、Kafka区别","description":"MQ（Message Queue，消息队列） 在实际应用中常用的使用场景：异步处理，应用解耦，流量削锋和消息通讯四个场景。目前使用较多的消息队列有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ","pubDate":"2024-03-31","tags":["消息队列","技术专题"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"technique/practice/Java构件发布到中央仓库","title":"Java构件发布到中央仓库","description":"Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过...","pubDate":"2024-04-04","tags":["技术实战"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"技术实战":{"prev":null,"next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"}}}]}],["$","$L19",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"Maven使用技巧 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"手把手教你如何在工作中巧妙使用Maven，提升开发效率。"}],["$","meta","2",{"property":"og:title","content":"Maven使用技巧"}],["$","meta","3",{"property":"og:description","content":"手把手教你如何在工作中巧妙使用Maven，提升开发效率。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-04-03"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"Maven使用技巧"}],["$","meta","9",{"name":"twitter:description","content":"手把手教你如何在工作中巧妙使用Maven，提升开发效率。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}
