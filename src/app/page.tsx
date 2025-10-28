@@ -12,8 +12,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-              欢迎来到
-              <span className="text-blue-600"> Skyfalling</span>
+              <span className="text-blue-600">Think ahead, see beyond</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               分享技术见解、生活感悟和深度思考的个人博客。在这里，我们探讨技术趋势、远程工作、个人成长等话题。
