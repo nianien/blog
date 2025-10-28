@@ -85,7 +85,7 @@ flowchart TB
 
 整个体系的设计核心是三个关键词：**双仓、分层、泳道（Lane）**。
 
-### 1. 双仓架构：逻辑分治
+### 双仓架构：逻辑分治
 
 | 仓库类型       | 内容职责                                 | 示例                                                     |
 |------------|--------------------------------------|--------------------------------------------------------|
@@ -107,7 +107,7 @@ CodeBuild 会自动挂载环境变量：
 
 这样，所有服务共用一套 CI/CD 模板，DevOps 团队统一维护，App 团队只关注业务逻辑。
 
-### 2. 三层 Pipeline 架构：职责分层 + 无锁部署
+### 三层 Pipeline 架构：职责分层 + 无锁部署
 
 整个系统通过 **三层 Pipeline 架构** 实现部署解耦与并行化：
 
@@ -121,139 +121,73 @@ CodeBuild 会自动挂载环境变量：
 | 服务级 | boot-{env}      | ALB、LogGroup、Cloud Map Service              | `ENV=dev,SERVICE=user-api`           | 新服务接入 | 按服务并行 |
 | 应用级 | {service}-{env} | TaskDefinition、ECS Service、TG、ListenerRule  | `ENV=dev,SERVICE=user-api,LANE=gray` | 高频发布  | 按泳道并行 |
 
-其中，`bootstrap-{env}` 是**按环境聚合的通用服务层**，而非按服务拆分。它本身不绑定单一服务，而是通过 **Pipeline
-变量 `SERVICE`**
-动态生成服务相关资源。
+其中，`bootstrap-{env}` 是**按环境聚合的通用服务层**，而非按服务拆分。它本身不绑定单一服务，而是通过 **Pipeline 变量 `SERVICE`**动态生成服务相关资源。
 
 系统分层设计的最大优势在于：**部署互不加锁、并发天然安全。**
 
-#### 🔹 栈级并行的核心逻辑
+### 栈级并行与 Lane 架构：高并发部署的核心
+
+#### 1. 栈级并行的核心逻辑
 
 CloudFormation 的锁粒度是 **Stack 级别**。  
-系统通过“分层 + 多栈 + 命名隔离”的方式实现以下特性：
+系统通过“**分层 + 多栈 + 命名隔离**”实现了既能并行部署、又无资源冲突的持续交付能力。
 
-1. **同层可并行**
-    - 每个环境（infra）、服务（boot）、泳道（app-lane）都对应独立的 Stack。
-    - 不同 Stack 的资源命名与写集完全隔离，因此可以**同时执行更新**，互不加锁。
-    - 例如多个泳道（gray、blue、default）在同一服务下可并行部署，各自占用自己的 Stack 锁。
+- **同层可并行**  
+  每个环境（infra）、服务（boot）、泳道（app-lane）都对应独立 Stack，资源命名与写集完全隔离，可同时执行更新、互不加锁。  
+  例如多个泳道（gray、blue、default）可在同一服务下并行部署。
 
-2. **跨层有序**
-    - 上层 Pipeline 仅**依赖下层的导出值（Outputs/ImportValue）**，不会修改下层资源。
-    - 这意味着：
-        - `infra` 栈先创建网络与集群并导出；
-        - `boot` 栈读取导出创建 ALB、Service；
-        - `app` 栈读取 ListenerArn、TargetGroup 等信息完成发布。
-    - **依赖有序但无写冲突**，下层更新完即可被上层安全引用。
+- **跨层有序**  
+  上层 Pipeline 仅读取下层导出值（Outputs/ImportValue），不修改下层资源。  
+  `infra` 栈创建网络 → `boot` 栈创建接入资源 → `app` 栈完成版本发布。  
+  依赖有序但无写冲突，下层更新完即可被上层安全引用。
 
-3. **整体效果：并行 + 无锁 + 可控依赖**
-    - 同层之间可并发部署（服务与泳道互不干扰）；
-    - 跨层之间按依赖顺序执行（无资源竞争）；
-    - 实现了从底层网络到业务服务的**全链路高并发、零锁冲突的交付体系**。
+- **整体效果：并行 + 无锁 + 可控依赖**  
+  同层可并发，跨层有序执行，形成从网络到业务的高并发、零锁冲突交付体系。
 
-> 简而言之：**同层多栈并行，跨层只读依赖。**  
-> 这正是实现高并发、零冲突持续交付的关键机制。
+> **简而言之：** 同层多栈并行，跨层只读依赖。  
+> 这是实现高并发、零冲突持续交付的核心机制。
 
-# 3. Lane 栈：并发部署的关键
 
-在传统的 ECS 部署模型中，一个服务通常绑定到单个 **ECS Service**。  
-这意味着任意时刻只能存在一个“活动版本”——更新时只能通过滚动更新或替换任务的方式发布新版本。  
-这种模型虽然简单，但存在明显瓶颈：
+#### 2. Lane 栈：多版本共存的关键
 
-- 无法在同一时间维护多个版本共存（例如灰度、蓝绿或 A/B 测试）。
-- 每次部署会锁定整个 Service 资源，无法并发执行。
-- 流量控制、回滚、实验发布都需要额外逻辑或外部流量网关。
+在传统 ECS 模型中，一个服务通常只对应一个 **ECS Service**，意味着任意时刻只能存在一个活动版本。这种设计的局限是显而易见的：
+- 无法同时维护多个版本（灰度 / 蓝绿 / A/B 测试不具备原生支持）；
+- 每次更新都需锁定整个 Service，阻塞并发发布；
+- 流量切换、回滚、实验策略往往依赖外部网关或人工操作。
 
-为了解决这些问题，系统引入了 **Lane（泳道）栈模型**。
+为解决这些痛点，系统引入了 **Lane（泳道）栈模型**，其设计核心：Lane = 独立生命周期的版本栈。
 
-## 🧩 设计核心：Lane = 独立生命周期的“版本栈”
+**Lane（泳道）栈模型** 为每个版本创建独立 Stack，每个 Lane 拥有自己的 ECS Service、TargetGroup、ListenerRule，并通过请求 Header（如 `tracestate=ctx=lane:gray`）实现智能路由与流量隔离。
 
-Lane 栈的设计思想是：
-> **一个 Lane 表示一个版本上下文（Version Context）**，  
-> 包含该版本的 ECS Service、TargetGroup、ListenerRule 等资源，  
-> 并通过 Header 或 Context 选择性路由流量。
+Lane 栈具有四大特性：
 
-因此：
+1. **完全隔离**：每个 Lane 拥有独立资源，更新与回滚互不影响。
+2. **天然并发**：栈级锁粒度允许多个 Lane 同时部署，无互斥冲突。
+3. **动态扩展**：新增泳道无需改动主栈，删除 Lane 自动清理资源。
+4. **架构原生灰度**：灰度、蓝绿、A/B 测试由架构层原生支持，无需业务侵入。
 
-- 每个 Lane 就像一个“并行世界”的独立 Service 实例；
-- 各个 Lane 拥有独立的资源、独立的生命周期；
-- 流量通过路由规则（如 tracestate header）智能分发。
 
-例如：
+#### 3. Lane 驱动的交付模式
 
-| Lane    | 栈名                       | Service 名称           | TargetGroup  | 路由条件                     |
-|---------|--------------------------|----------------------|--------------|--------------------------|
-| default | app-user-api-dev-default | user-api-dev-default | *-default-tg | 默认                       |
-| gray    | app-user-api-dev-gray    | user-api-dev-gray    | *-gray-tg    | tracestate=ctx=lane:gray |
-| blue    | app-user-api-dev-blue    | user-api-dev-blue    | *-blue-tg    | tracestate=ctx=lane:blue |
+| 模式                        | 描述                      |
+|---------------------------|-------------------------|
+| **灰度发布（Gray Release）**    | 在新版本泳道 gray 中发布小流量验证稳定性 |
+| **蓝绿发布（Blue/Green）**      | 两个版本并行，流量平滑切换           |
+| **A/B 测试（Traffic Split）** | 按 Header、Cookie 或用户维度分流 |
 
-每个泳道的 CloudFormation Stack 定义为：
 
-```yaml
-StackName: !Sub 'app-${Service}-${Env}-${Lane}'
-Resources:
-  Service:
-    Type: AWS::ECS::Service
-    Properties:
-      ServiceName: !Sub '${Service}-${Env}-${Lane}'
-  TargetGroup:
-    Type: AWS::ElasticLoadBalancingV2::TargetGroup
-    Properties:
-      Name: !Sub '${Service}-${Env}-${Lane}-tg'
-  ListenerRule:
-    Type: AWS::ElasticLoadBalancingV2::ListenerRule
-    Properties:
-      Conditions:
-        - Field: http-header
-          HttpHeaderConfig:
-            HttpHeaderName: tracestate
-            Values: [ !Sub 'ctx=lane:${Lane}' ]
-      Actions:
-        - Type: forward
-          TargetGroupArn: !Ref TargetGroup
-```
-
-## ⚙️ Lane 栈的四个核心特性
-
-1. **完全隔离的栈级资源**
-    - 每个 Lane 拥有独立的 ECS Service、TargetGroup、ListenerRule。
-    - 任何一个 Lane 的更新、失败或回滚都不会影响其他泳道。
-    - 删除 Lane 栈即可完成资源自动清理，无需手动回收 TG 或 ListenerRule。
-
-2. **天然支持并发部署**
-    - 因为每个 Lane 是独立的 CloudFormation 栈（Stack 级锁粒度），  
-      所以不同 Lane 的部署可**并行执行**，互不阻塞。
-    - 这也是实现“高并发无锁部署”的关键基础。
-
-3. **动态可扩展的路由结构**
-    - ALB Listener 只需配置一次；
-    - 每个 Lane 栈在创建时向 Listener 动态注册一条规则；
-    - 新增泳道无需修改主栈结构，只需部署新 Lane 栈；
-    - 删除泳道时自动删除对应规则与 TG，保持路由整洁。
-
-4. **从工程到业务的统一抽象**
-    - 工程层面，Lane 栈解决了**部署并发与模板复用**问题；
-    - 业务层面，Lane 栈提供了**流量分层与发布控制**能力；
-    - 从架构设计上，让**灰度、蓝绿、A/B 测试成为原生特性**，而不是附加逻辑。
-
-## 🚀 Lane 驱动的发布模式
-
-| 模式                        | 描述                              | 实现方式                             |
-|---------------------------|---------------------------------|----------------------------------|
-| **灰度发布（Gray Release）**    | 在新版本泳道 gray 中发布少量流量进行验证         | 新建 gray Lane 栈并部分流量注入（header/比例） |
-| **蓝绿发布（Blue/Green）**      | 两个版本（blue / default）并行，流量逐步切换   | 部署 blue Lane 栈 → 切换流量 → 删除旧栈     |
-| **A/B 测试（Traffic Split）** | 按 header、cookie 或用户 ID 维度路由不同版本 | 多个 Lane 并行存在，ALB 或应用层控制 header   |
-
-Lane 机制使得部署逻辑、流量策略、回滚策略都在架构层可编排，而不是由业务代码实现。它本质上是一种基于 **CloudFormation
-Stack 粒度的多版本并行架构**，通过「多栈并行 + 独立路由 + 参数化部署」实现：
-
+Lane 机制让**部署、流量与回滚逻辑全部架构化**，实现：
 - 高并发发布（无锁冲突）
 - 多版本共存（灰度、蓝绿、A/B）
 - 一键清理与回滚
 - 模板级治理与可审计性
 
+> **一句话概括：**  
+> Lane 栈通过“多栈并行 + 独立路由 + 参数化部署”，实现真正意义上的高并发、零冲突持续交付体系。
+
 ## 三、技术实现：从模板到执行
 
-### 1. BuildSpec：统一入口，逻辑外移
+### BuildSpec：统一入口，逻辑外移
 
 所有服务共用统一构建描述文件 `ci/buildspec.yaml`：
 
@@ -305,9 +239,9 @@ postbuild() {
 
 这种“轻 buildspec + 重脚本”的结构极大增强了模板复用性与可审计性。
 
-### 2. 栈设计：Infra → Boot → App
+### 栈设计：Infra → Boot → App
 
-#### (1) Infra 栈（环境级共享）
+#### Infra 栈（环境级共享）
 
 ```yaml
 Parameters:
@@ -335,7 +269,7 @@ Outputs:
 
 若已存在网络，可设置 `CreateNetwork=false` 进入 Wrap 模式：仅包装已有 VPC/Subnets 并导出 ID。
 
-#### (2) Boot 栈（服务级）
+#### Boot 栈（服务级）
 
 负责创建：
 
@@ -352,7 +286,7 @@ boot-user-api-dev-LogGroupName
 boot-user-api-dev-user-api-service-arn
 ```
 
-#### (3) App 栈（泳道级）
+#### App 栈（泳道级）
 
 创建：
 
@@ -381,7 +315,7 @@ LaneRule:
 
 ## 四、参数与权限：闭环与最小授权
 
-### 1. 参数闭环
+### 参数闭环
 
 ```bash
 # Pipeline 触发变量
@@ -401,7 +335,7 @@ SERVICE_NAME=user-api APP_ENV=dev
 }
 ```
 
-### 2. 权限边界
+### 权限边界
 
 App Pipeline 的 IAM 策略：
 
@@ -430,7 +364,7 @@ Stack Policy 保护：
 
 ## 五、流量路由与灰度策略
 
-### 1. Trace Context 驱动的智能路由
+### Trace Context 驱动的智能路由
 
 系统遵循 W3C Trace Context 标准，在 tracestate 中注入 lane 信息：
 
@@ -443,7 +377,7 @@ ALB 按 Header 匹配：
 - 命中 → 转发到对应 TG；
 - 未命中 → 回退至 default TG。
 
-### 2. 典型灰度流程
+### 典型灰度流程
 
 1. 触发新 Lane：`LANE=gray`
 2. 发布 `app-user-api-dev-gray`
@@ -455,19 +389,19 @@ ALB 按 Header 匹配：
 
 ## 六、可观测性与回滚机制
 
-### 1. 日志聚合
+### 日志聚合
 
 每个服务在 Boot 栈创建 `/ecs/{env}/{service}` LogGroup；  
 每 Lane 使用独立 `stream-prefix={lane}`，实现多维检索。
 
-### 2. 自动回滚
+### 自动回滚
 
 ECS Deployment Circuit Breaker 自动检测：
 
 - 部署失败时回滚至上个 TaskRevision；
 - 发布脚本支持一键重发上个镜像标签。
 
-### 3. 监控指标
+### 监控指标
 
 | 类别  | 指标                          | 告警条件   |
 |-----|-----------------------------|--------|
@@ -479,7 +413,7 @@ ECS Deployment Circuit Breaker 自动检测：
 
 下面展示如何基于 AWS CloudFormation 和 CodePipeline 部署多层持续交付体系， 并通过 JSON 文件定义模板参数，实现模板集中治理与参数可审计。
 
-### 1. 部署pipeline（一次性）
+### 部署 pipeline（一次性）
 
 ```bash
 # 环境级（一次性部署）
@@ -501,7 +435,7 @@ aws cloudformation deploy \
   --parameter-overrides file://params/user-api-dev.json
 ```
 
-### 2. 参数文件
+### 参数文件
 
 每个阶段都在 params/ 目录下定义独立 JSON 参数文件，按规范区分环境、服务与泳道：
 
@@ -514,7 +448,7 @@ aws cloudformation deploy \
 > 这种命名约定便于版本化与审计，也可在 CodePipeline 中动态选择。所有参数文件统一存放在 `params/` 目录中，并纳入 Git 版本管理，
 > 便于在不同环境间复用、审计、回滚与自动化生成。
 
-### 3. 服务引导（服务级共享资源）
+### 服务引导（服务级共享资源）
 
 在部署 **应用层 pipeline**（如 `user-api-dev`）之前，必须先触发一次**boot 层通用 pipeline（boot-{env}）**，以创建该服务的共享接入资源：
 
@@ -532,7 +466,7 @@ aws codepipeline start-pipeline-execution \
   --variables name=SERVICE,value=user-api
 ```
 
-### 4. 发布与泳道管理（app 层）
+### 发布与泳道管理（app 层）
 
 ```bash
 # 发布到 gray 泳道
@@ -547,7 +481,7 @@ aws cloudformation delete-stack \
   --stack-name app-user-api-dev-gray
 ```
 
-### 3. 价值总结
+### 价值总结
 
 - 使用 `params/` 目录集中存放模板参数，配合 Git 版本管理。
 - 参数文件与模板解耦，方便在不同环境间复用相同模板。
