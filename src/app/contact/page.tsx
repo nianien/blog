@@ -12,7 +12,7 @@ export default function ContactPage() {
         </div>
 
         <div className="mx-auto mt-16 max-w-2xl">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
             <div className="rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900">邮箱联系</h3>
               <p className="mt-2 text-sm text-gray-600">
@@ -39,6 +39,16 @@ export default function ContactPage() {
               >
                 github.com/nianien
               </a>
+            </div>
+
+            <div className="rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-gray-900">微信公众号</h3>
+              <p className="mt-2 text-sm text-gray-600">
+                关注我的公众号，获取更多技术分享。
+              </p>
+              <div className="mt-4 text-gray-700 font-medium">
+                xijianghuanyue
+              </div>
             </div>
           </div>
 
