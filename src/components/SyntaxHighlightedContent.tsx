@@ -93,7 +93,7 @@ const SyntaxHighlightedContent: React.FC<SyntaxHighlightedContentProps> = ({ con
   return (
     <div 
       ref={contentRef}
-      className="prose prose-lg prose-gray mx-auto max-w-none prose-headings:text-gray-900 prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700 prose-strong:text-gray-900 prose-strong:font-semibold prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:bg-blue-50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg prose-ul:list-disc prose-ol:list-decimal prose-li:text-gray-700 prose-hr:border-gray-300"
+      className="prose prose-lg prose-gray mx-auto max-w-none prose-headings:text-gray-900 prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700 prose-strong:text-gray-900 prose-strong:font-semibold prose-li:text-gray-700 prose-hr:border-gray-300"
       dangerouslySetInnerHTML={{ __html: content }} 
     />
   );

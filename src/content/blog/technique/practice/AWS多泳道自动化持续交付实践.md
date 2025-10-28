@@ -255,7 +255,7 @@ Stack 粒度的多版本并行架构**，通过「多栈并行 + 独立路由 + 
 
 ### 1. BuildSpec：统一入口，逻辑外移
 
-所有服务共用的 `ci/buildspec.yaml`：
+所有服务共用统一构建描述文件 `ci/buildspec.yaml`：
 
 ```yaml
 version: 0.2
@@ -567,8 +567,7 @@ aws cloudformation delete-stack \
 
 ## 结语：从流程到体系
 
-该架构的核心思想是“让 CI/CD 自治，而非依赖人治”。
-通过：
+该架构的核心思想是“让 CI/CD 自治，而非依赖人治”，通过：
 
 - 模板集中治理（Infra Repo）
 - 业务仓独立演进（App Repo）
