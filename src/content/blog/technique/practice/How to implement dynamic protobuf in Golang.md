@@ -2,7 +2,7 @@
 title: "How to implement dynamic protobuf in Golang?"
 pubDate: "2025-07-29"
 description: "Protocol Buffers (Protobuf) is a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It was developed by Google to efficiently serialize data for use in a variety of applications, including network communication, data storage, and inter-process communication (IPC).  Protobuf messages are smaller and more efficient than text-based formats like JSON and XML, and provides fast serialization and deserialization, which is crucial for high-performance systems."
-tags: ["技术实战","Protobuf","Dynamic"]
+tags: ["Golang","Protobuf","DynamicPb"]
 ---
 
 ## 1. Background 
