@@ -47,9 +47,8 @@ tags: [ "AI Agent", "LLM" ]
 
 ## 五、主流框架详解
 
-下面逐一剖析当前最具代表性的范式与框架：*
-*ReAct、Plan-and-Execute、LLMCompiler、LangChain、LangGraph、LlamaIndex、CrewAI/AutoGen**。每节都覆盖“背景 → 解决的问题 →
-核心机制/特征 → 现状与生态 → 典型应用 → 优缺点 → 示例 → 学习建议”。
+当前最具代表性的范式与框架：
+**ReAct、Plan-and-Execute、LLMCompiler、LangChain、LangGraph、LlamaIndex、CrewAI/AutoGen**。
 
 ### 5.1 ReAct（Reason + Act）
 
