@@ -9,345 +9,463 @@ c:I[59665,[],"ViewportBoundary"]
 e:I[59665,[],"MetadataBoundary"]
 10:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/css/9e71a912f7c3be7c.css","style"]
-0:{"P":null,"b":"LmttYsQUoAxeI4NsOM72X","p":"","c":["","blog","technique","practice","How%20to%20implement%20dynamic%20protobuf%20in%20Golang",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","technique/practice/How%20to%20implement%20dynamic%20protobuf%20in%20Golang","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9e71a912f7c3be7c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","technique/practice/How%20to%20implement%20dynamic%20protobuf%20in%20Golang","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","rgTrL5DmJk-0_TMJaS27Ov",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+:HL["/_next/static/css/a2b4a60000c93b46.css","style"]
+0:{"P":null,"b":"MdEohOycZ49cpzE3FwCpA","p":"","c":["","blog","technique","practice","How%20to%20implement%20dynamic%20protobuf%20in%20Golang",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","technique/practice/How%20to%20implement%20dynamic%20protobuf%20in%20Golang","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a2b4a60000c93b46.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","technique/practice/How%20to%20implement%20dynamic%20protobuf%20in%20Golang","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","5wzzyAJ1IbRQo15infWmBv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
 11:"$Sreact.suspense"
 12:I[74911,[],"AsyncMetadata"]
 14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
-15:T4029,<h2>1. Background</h2>
-<p>Protocol Buffers (Protobuf) is a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It was developed by Google to efficiently serialize data for use in a variety of applications, including network communication, data storage, and inter-process communication (IPC).  Protobuf messages are smaller and more efficient than text-based formats like JSON and XML ,and provides fast serialization and deserialization, which is crucial for high-performance systems. </p>
-<h2>2. Protobuf compiler</h2>
-<p>Protobuf allows you to define the structure of your data (messages) in a .proto file, and then use the Protobuf compiler (protoc) to generate source code in selected programming language that can serialize and deserialize data in the Protobuf format.  Protobuf adds overhead to the development process compared to formats like JSON, where you can directly parse or serialize data without needing code generation. Additionally, any changes to the schema may require re-compiling the code to handle new or modified message types.</p>
-<h2>3. Dynamic compilation(Dynamic Schema)</h2>
-<p>Typically, Protobuf schemas are compiled using the protoc compiler ahead of time, which generates source code in various programming languages (such as C++, Java, Python, etc.) for serialization and deserialization. However, in some scenarios, you might need to work with Protobuf messages dynamically without relying on pre-generated codes. </p>
-<p>This is especially useful when:</p>
+15:T51bb,<h1>How to Implement Dynamic Protobuf in Golang</h1>
+<blockquote>
+<p>In most Go projects, Protobuf schemas are compiled ahead of time by <code>protoc</code>, producing static Go structs. But what if the schema isn&#39;t known until runtime — or changes frequently and you can&#39;t afford to redeploy?</p>
+<p>This article walks through a practical approach to <strong>dynamic Protobuf in Go</strong>: loading schemas at runtime, creating messages without generated code, and building a custom protoc plugin that makes it all work.</p>
+</blockquote>
+<h3>Reading Guide</h3>
 <ul>
-<li>You want to work with Protobuf messages dynamically at runtime, where the schema is not known in advance.</li>
-<li>You need to handle multiple or evolving Protobuf schemas at runtime without recompiling your code.</li>
-<li>You want to dynamically serialize or deserialize Protobuf messages in a generic way, perhaps for applications like plugins, dynamic API handling, or protocol-based communication where the schema might change often.</li>
+<li><strong>Conceptual overview</strong>: Sections 1–3 (about 5 minutes)</li>
+<li><strong>Implementation deep-dive</strong>: Section 4 (about 15 minutes)</li>
+<li><strong>Quick start</strong>: Jump to Section 4.3 for usage examples</li>
 </ul>
-<h3>Key Concepts for Dynamic Compilation in Protobuf</h3>
+<hr>
+<h2>1. Background: Why Protobuf</h2>
+<p>Protocol Buffers (Protobuf) is a language-neutral, platform-neutral serialization mechanism developed by Google. Compared to text-based formats like JSON and XML, Protobuf offers:</p>
 <ul>
-<li>Dynamic Message (Dynamic Parsing)</li>
-<li>Reflection API in Protobuf</li>
-<li>Dynamic Code Generation</li>
+<li><strong>Compact binary encoding</strong> — significantly smaller payloads</li>
+<li><strong>Fast serialization / deserialization</strong> — critical for high-throughput systems</li>
+<li><strong>Strong schema contracts</strong> — <code>.proto</code> files serve as the single source of truth for data structures</li>
+<li><strong>Cross-language support</strong> — generated code available for Go, Java, Python, C++, etc.</li>
 </ul>
-<h3>3.1 Dynamic Message (Dynamic Parsing)</h3>
-<p>In Protobuf, a Dynamic Message is an object where you can manipulate the message’s fields dynamically, without needing a pre-generated class for the specific message type. This is enabled through Protobuf&#39;s Reflection API.<br>You can use dynamic messages when:</p>
+<p>These properties make Protobuf the de facto choice for gRPC services, inter-process communication, and high-performance data pipelines.</p>
+<hr>
+<h2>2. The Static Compilation Model and Its Limitations</h2>
+<h3>2.1 How Static Compilation Works</h3>
+<p>The standard Protobuf workflow is straightforward:</p>
+<pre><code>.proto file  →  protoc compiler  →  generated Go code  →  compile into binary
+</code></pre>
+<p>You define message types in <code>.proto</code> files, run <code>protoc</code> with a language-specific plugin (e.g., <code>protoc-gen-go</code>), and get type-safe structs with built-in <code>Marshal</code> / <code>Unmarshal</code> methods.</p>
+<h3>2.2 Where Static Compilation Falls Short</h3>
+<p>This model works well when schemas are stable and known at compile time. But it introduces friction in several real-world scenarios:</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Pain Point</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Multi-tenant platforms</strong></td>
+<td>Each tenant may have a different schema; you can&#39;t generate code for all of them ahead of time</td>
+</tr>
+<tr>
+<td><strong>Plugin architectures</strong></td>
+<td>Plugins define their own message types that the host application doesn&#39;t know at compile time</td>
+</tr>
+<tr>
+<td><strong>Evolving APIs</strong></td>
+<td>Frequent schema changes require re-compilation and redeployment for every update</td>
+</tr>
+<tr>
+<td><strong>Generic middleware</strong></td>
+<td>Message routers, loggers, or transformers need to handle arbitrary Protobuf messages</td>
+</tr>
+<tr>
+<td><strong>Configuration-driven systems</strong></td>
+<td>Schema is loaded from a registry or config center at runtime</td>
+</tr>
+</tbody></table>
+<p>In all these cases, you need a way to work with Protobuf messages <strong>dynamically</strong> — without pre-generated Go structs.</p>
+<hr>
+<h2>3. Dynamic Compilation: Key Concepts</h2>
+<p>Before diving into the Go implementation, let&#39;s establish the three foundational concepts that make dynamic Protobuf possible.</p>
+<h3>3.1 Dynamic Message</h3>
+<p>A Dynamic Message is a Protobuf message object whose fields can be accessed and manipulated at runtime, without a pre-generated struct. In Go, this is provided by the <code>dynamicpb</code> package.</p>
+<p>You use dynamic messages when:</p>
 <ul>
-<li>The Protobuf schema is available at runtime, but you don&#39;t know the message types ahead of time.</li>
-<li>You want to work with messages whose types are determined dynamically (e.g., reading from a file or network stream that specifies the message type).<br>To use dynamic messages, you typically:</li>
-<li>Load the schema definition (e.g., .proto file) at runtime.</li>
-<li>Use the Protobuf Reflection API to create message types and set/get fields.</li>
+<li>The schema is loaded at runtime (e.g., from a file, database, or config center)</li>
+<li>The message type is determined by external input (e.g., a message name in a request header)</li>
 </ul>
 <h3>3.2 Reflection API</h3>
-<p>The Protobuf Reflection API allows you to inspect the structure of Protobuf messages at runtime, and dynamically access their fields. This is the core tool for implementing dynamic compilation because it lets you:</p>
+<p>The Protobuf Reflection API allows you to inspect message structure at runtime:</p>
 <ul>
-<li>Discover available fields.</li>
-<li>Inspect field types (e.g., int32, string, nested messages).</li>
-<li>Set and get field values dynamically.<br>The key components of the Reflection API in Protobuf are:</li>
-<li>Descriptors: These are metadata objects that describe the fields, types, and structure of messages.</li>
-<li>Dynamic Messages: These are messages created dynamically using descriptors, where you can set/get fields without needing a pre-compiled class.</li>
+<li><strong>Descriptors</strong> — metadata objects describing fields, types, and the overall structure of messages</li>
+<li><strong><code>protoreflect</code> package</strong> — Go&#39;s implementation of the reflection API, providing <code>FileDescriptor</code>, <code>MessageDescriptor</code>, <code>FieldDescriptor</code>, etc.</li>
 </ul>
-<h3>3.3 Dynamic Code Generation with Protobuf Compiler</h3>
-<p>In some use cases, you may need to generate Protobuf code dynamically based on new or unknown schemas. This would involve invoking the Protobuf compiler (protoc) programmatically to generate the code at runtime, either directly from .proto files or from a descriptor or a set of schema definitions.<br>This process typically involves the following steps:</p>
+<p>The key components form a hierarchy:</p>
+<pre><code>FileDescriptor
+  └── MessageDescriptor
+        └── FieldDescriptor (name, number, type, label, etc.)
+</code></pre>
+<h3>3.3 Dynamic Code Generation via protoc Plugin</h3>
+<p>In some cases, you need to extract schema metadata from <code>.proto</code> files programmatically. The <code>protoc</code> compiler supports a plugin architecture: it compiles <code>.proto</code> files into <code>FileDescriptorProto</code> objects and streams them to plugins via stdin. Plugins can then process this metadata however they need — including serializing it to JSON for runtime consumption.</p>
+<hr>
+<h2>4. Implementation in Go</h2>
+<h3>4.1 The Core Challenge</h3>
+<p>In languages like Java, dynamic class loading makes runtime Protobuf relatively straightforward. <strong>Go doesn&#39;t support dynamic class loading.</strong> So we need a different approach.</p>
+<p>The key insight comes from analyzing the Protobuf library&#39;s internals. The conversion path from a <code>.proto</code> file to a usable <code>proto.Message</code> is:</p>
+<pre><code>.proto file  →  FileDescriptorProto  →  FileDescriptor  →  proto.Message
+</code></pre>
+<p>This gives us two concrete questions to solve:</p>
 <ol>
-<li>Obtain the .proto files or schema descriptors.</li>
-<li>Run protoc programmatically to generate source code.</li>
-<li>Use the generated code within the application to work with dynamic messages.</li>
+<li><strong>How to obtain a <code>FileDescriptor</code> at runtime</strong> (without running <code>protoc</code> at runtime)</li>
+<li><strong>How to create a <code>proto.Message</code> from a <code>FileDescriptor</code></strong> (without generated structs)</li>
 </ol>
-<h2>4. Code Implementation</h2>
-<h3>4.1 Code Analysis</h3>
-<p>The above method is valid for languages that support dynamic loading such as java, but not for golang. Since golang doesn&#39;t support dynamic loading, we can&#39;t use the generated source code. However, through technical analysis, we know that the conversion path from a text file to a binary message is: file.proto --&gt; FileDescriptor --&gt; proto.message, and there are two key points: </p>
-<ol>
-<li>how to get FileDescriptor from a proto file at runtime?</li>
-<li>how to create a proto.message using FileDescriptor?</li>
-</ol>
-<p>For the second point, the solution is not complicated. We can use dynamicpb.message mentioned before. The following code demonstrates how to create a proto.message by dynamicpb.message:</p>
-<pre><code class="language-golang">func NeweMessages(fd protoreflect.FileDescriptor, msgName string)proto.Message{
-  fm := fd.Messages()
-  md = fm.ByName(protoreflect.Name(msgName))
-  return dynamicpb.NewMessage(md)
+<h4>Question 2: Creating Messages from FileDescriptor</h4>
+<p>The second question is straightforward — <code>dynamicpb</code> handles it directly:</p>
+<pre><code class="language-go">func NewMessages(fd protoreflect.FileDescriptor, msgName string) proto.Message {
+    md := fd.Messages().ByName(protoreflect.Name(msgName))
+    if md == nil {
+        return nil
+    }
+    return dynamicpb.NewMessage(md)
 }
 </code></pre>
-<p>Now let&#39;s look at the second question, how to get FileFescriptor from a proto file at runtime? To get the FileFescriptor dynamically in golang, we first need to know how the FileFescriptor is generated. Typically, we can not get FileFescriptor directly from proto file. But we analyzed the source code in google.golang.org/protobuf , and found that FileDescriptor is created from FileDescriptorProto as follows:</p>
-<pre><code class="language-golang">fdp := new(descriptorpb.FileDescriptorProto)
-//Unmarshal([]byte,fdp)
+<h4>Question 1: Obtaining FileDescriptor at Runtime</h4>
+<p>This is the harder problem. You can&#39;t get a <code>FileDescriptor</code> directly from a <code>.proto</code> text file in Go. But analyzing the source code in <code>google.golang.org/protobuf</code>, we find that <code>FileDescriptor</code> is created from <code>FileDescriptorProto</code>:</p>
+<pre><code class="language-go">fdp := new(descriptorpb.FileDescriptorProto)
+// Unmarshal from binary or text format...
 fd, err := protodesc.NewFile(fdp, nil)
 </code></pre>
-<p>Thus, the conversion path from a text file to a binary message is changed to:  file.proto --&gt; FileDescriptorProto --&gt; FileDescriptor --&gt; proto.message,So the final question is, how do we get the FileDescriptorProto object?<br>FileDescriptorProto is a proto.message object, so it can be serialized to binary and deserialized from binary. In fact, we can use protoc to generate the binary data of FileDescriptorProto at the same time as the source code with option: --descriptor_set_out=your_file_descriptord_proto.pb.<br>Further analyzing the source code of protoc , there are plugins that receive the compiled binary streams from proto file for data processing, including code generation. </p>
-<p>The following is the source code analysis, and the highlighted part is the key code:</p>
-<pre><code class="language-golang">func main() {
-  //...
-  protogen.Options{
-     ParamFunc: flags.Set,
-  }.Run(func(gen *protogen.Plugin) error {
-     //...
-     for _, f := range gen.Files {
-        if f.Generate {
-           gengo.GenerateFile(gen, f)
-        }
-     }
-     //...
-     return nil
-  })
-}
-//It reads a [pluginpb.CodeGeneratorRequest] message from [os.Stdin], invokes the plugin function, and writes a [pluginpb.CodeGeneratorResponse] message to [os.Stdout].
-func (opts Options) Run(f func(*Plugin) error) {
-    if err := run(opts, f); err != nil {
-       fmt.Fprintf(os.Stderr, &quot;%s: %v\n&quot;, filepath.Base(os.Args[0]), err)
-       os.Exit(1)
-    }
-}
-
+<p>So the refined conversion path becomes:</p>
+<pre><code>.proto file  →  FileDescriptorProto (serializable!)  →  FileDescriptor  →  proto.Message
+</code></pre>
+<p>Since <code>FileDescriptorProto</code> is itself a <code>proto.Message</code>, it can be serialized to binary, JSON, or text format — and deserialized at runtime. The question now is: <strong>how do we produce the serialized <code>FileDescriptorProto</code> from a <code>.proto</code> file?</strong></p>
+<h3>4.2 How protoc Plugins Work</h3>
+<p>The answer lies in the <code>protoc</code> plugin architecture. When <code>protoc</code> invokes a plugin, it sends a <code>CodeGeneratorRequest</code> via stdin containing the compiled <code>FileDescriptorProto</code> objects. Here&#39;s the relevant source code from <code>google.golang.org/protobuf/compiler/protogen</code>:</p>
+<pre><code class="language-go">// protoc invokes the plugin and streams a CodeGeneratorRequest via stdin.
 func run(opts Options, f func(*Plugin) error) error {
     if len(os.Args) &gt; 1 {
-       return fmt.Errorf(&quot;unknown argument %q (this program should be run by protoc, not directly)&quot;, os.Args[1])
+        return fmt.Errorf(&quot;unknown argument %q (this program should be run by protoc, not directly)&quot;, os.Args[1])
     }
-    //Here is the compiled binary stream from protoc
+    // Read the compiled binary stream from protoc
     in, err := io.ReadAll(os.Stdin)
     if err != nil {
-       return err
+        return err
     }
-    
+
     req := &amp;pluginpb.CodeGeneratorRequest{}
     if err := proto.Unmarshal(in, req); err != nil {
-       return err
+        return err
     }
     gen, err := opts.New(req)
     if err != nil {
-       return err
+        return err
     }
-    //This is the plugin&#39;s custom processing logic
+    // Execute the plugin&#39;s custom processing logic
     if err := f(gen); err != nil {
-       gen.Error(err)
+        gen.Error(err)
     }
     resp := gen.Response()
     out, err := proto.Marshal(resp)
     if err != nil {
-       return err
+        return err
     }
-    //Write the source code to a file
+    // Write the response (generated files) to stdout
     if _, err := os.Stdout.Write(out); err != nil {
-       return err
+        return err
     }
     return nil
 }
-
-//CodeGeneratorRequest defines a FileDescriptorProto field
-type CodeGeneratorRequest struct {
-    state         protoimpl.MessageState
-    sizeCache     protoimpl.SizeCache
-    unknownFields protoimpl.UnknownFields
-
-    FileToGenerate []string 
-    Parameter *string 
-    ProtoFile []*desriptorpb.FileDescriptorProto
-    SourceFileDescriptors []*descriptorpb.FileDescriptorProto 
-    CompilerVersion *Version
+</code></pre>
+<p>The <code>CodeGeneratorRequest</code> contains the <code>FileDescriptorProto</code> we need:</p>
+<pre><code class="language-go">type CodeGeneratorRequest struct {
+    FileToGenerate        []string
+    Parameter             *string
+    ProtoFile             []*descriptorpb.FileDescriptorProto
+    SourceFileDescriptors []*descriptorpb.FileDescriptorProto
+    CompilerVersion       *Version
+    // ...
 }
 </code></pre>
-<p>By analyzing the source code of protoc, we can also implement a custom plugin to output the text-format serialized data of FileDescriptorProto.<br>Actually, there are two text-format serialization schemes for FileDescriptorProto: json/proto-text.</p>
-<ul>
-<li>JSON</li>
-</ul>
-<p>For json format, we can serialize/deserialize FileDescriptorProto via protojson.Marshal/Unmarshal.<br>Example of json-format:</p>
+<p>This means we can <strong>build a custom protoc plugin</strong> that, instead of generating Go source code, outputs the serialized <code>FileDescriptorProto</code> in a runtime-friendly format.</p>
+<h3>4.3 Building the Custom Plugin</h3>
+<p>We choose JSON as the serialization format for <code>FileDescriptorProto</code> because it&#39;s human-readable, easy to store in configuration centers, and widely supported.</p>
+<pre><code class="language-go">package main
+
+import (
+    &quot;google.golang.org/protobuf/compiler/protogen&quot;
+    &quot;google.golang.org/protobuf/encoding/protojson&quot;
+)
+
+func main() {
+    protogen.Options{}.Run(func(gen *protogen.Plugin) error {
+        gen.SupportedFeatures = SupportedFeatures
+        for _, file := range gen.Files {
+            if !file.Generate {
+                continue
+            }
+            genJsonFile(file, gen)
+        }
+        return nil
+    })
+}
+
+func genJsonFile(file *protogen.File, gen *protogen.Plugin) {
+    fd := file.Proto
+    // Temporarily strip SourceCodeInfo to reduce output size
+    sci := fd.SourceCodeInfo
+    fd.SourceCodeInfo = nil
+    defer func() { fd.SourceCodeInfo = sci }()
+
+    jsonFile := gen.NewGeneratedFile(file.GeneratedFilenamePrefix+&quot;.json&quot;, &quot;.&quot;)
+    jsonFile.P(protojson.Format(fd))
+}
+</code></pre>
+<p><strong>Why JSON over binary or proto-text?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Binary</strong> (<code>.pb</code>)</td>
+<td>Smallest size, fastest parsing</td>
+<td>Not human-readable, hard to debug</td>
+</tr>
+<tr>
+<td><strong>Proto-text</strong></td>
+<td>Human-readable, canonical format</td>
+<td>Verbose, less tooling support</td>
+</tr>
+<tr>
+<td><strong>JSON</strong></td>
+<td>Human-readable, universal tooling, easy to store in config centers</td>
+<td>Slightly larger than binary</td>
+</tr>
+</tbody></table>
+<p>For systems that prioritize hot-reload via a configuration center, JSON strikes the best balance between readability and practicality.</p>
+<h4>JSON Output Example</h4>
+<p>For a <code>.proto</code> file like:</p>
+<pre><code class="language-protobuf">syntax = &quot;proto3&quot;;
+package tns.search.proto;
+option go_package = &quot;./gen;protobuf&quot;;
+
+message TnsDemo {
+  int64 id = 1;
+  int32 status = 2;
+  map&lt;string, string&gt; result = 3;
+  repeated int32 reasons = 4;
+}
+</code></pre>
+<p>The plugin produces:</p>
 <pre><code class="language-json">{
-  &quot;name&quot;:  &quot;protobuf/tns_demo.proto&quot;,
-  &quot;package&quot;:  &quot;tns.search.proto&quot;,
-  &quot;messageType&quot;:  [
+  &quot;name&quot;: &quot;protobuf/tns_demo.proto&quot;,
+  &quot;package&quot;: &quot;tns.search.proto&quot;,
+  &quot;messageType&quot;: [
     {
-      &quot;name&quot;:  &quot;TnsDemo&quot;,
-      &quot;field&quot;:  [
+      &quot;name&quot;: &quot;TnsDemo&quot;,
+      &quot;field&quot;: [
         {
-          &quot;name&quot;:  &quot;id&quot;,
-          &quot;number&quot;:  1,
-          &quot;label&quot;:  &quot;LABEL_OPTIONAL&quot;,
-          &quot;type&quot;:  &quot;TYPE_INT64&quot;,
-          &quot;jsonName&quot;:  &quot;id&quot;
+          &quot;name&quot;: &quot;id&quot;,
+          &quot;number&quot;: 1,
+          &quot;label&quot;: &quot;LABEL_OPTIONAL&quot;,
+          &quot;type&quot;: &quot;TYPE_INT64&quot;,
+          &quot;jsonName&quot;: &quot;id&quot;
         },
         {
-          &quot;name&quot;:  &quot;status&quot;,
-          &quot;number&quot;:  2,
-          &quot;label&quot;:  &quot;LABEL_OPTIONAL&quot;,
-          &quot;type&quot;:  &quot;TYPE_INT32&quot;,
-          &quot;jsonName&quot;:  &quot;status&quot;
+          &quot;name&quot;: &quot;status&quot;,
+          &quot;number&quot;: 2,
+          &quot;label&quot;: &quot;LABEL_OPTIONAL&quot;,
+          &quot;type&quot;: &quot;TYPE_INT32&quot;,
+          &quot;jsonName&quot;: &quot;status&quot;
         },
         {
-          &quot;name&quot;:  &quot;result&quot;,
-          &quot;number&quot;:  3,
-          &quot;label&quot;:  &quot;LABEL_REPEATED&quot;,
-          &quot;type&quot;:  &quot;TYPE_MESSAGE&quot;,
-          &quot;typeName&quot;:  &quot;.tns.search.proto.TnsDemo.ResultEntry&quot;,
-          &quot;jsonName&quot;:  &quot;result&quot;
+          &quot;name&quot;: &quot;result&quot;,
+          &quot;number&quot;: 3,
+          &quot;label&quot;: &quot;LABEL_REPEATED&quot;,
+          &quot;type&quot;: &quot;TYPE_MESSAGE&quot;,
+          &quot;typeName&quot;: &quot;.tns.search.proto.TnsDemo.ResultEntry&quot;,
+          &quot;jsonName&quot;: &quot;result&quot;
         },
         {
-          &quot;name&quot;:  &quot;reasons&quot;,
-          &quot;number&quot;:  4,
-          &quot;label&quot;:  &quot;LABEL_REPEATED&quot;,
-          &quot;type&quot;:  &quot;TYPE_INT32&quot;,
-          &quot;jsonName&quot;:  &quot;reasons&quot;
+          &quot;name&quot;: &quot;reasons&quot;,
+          &quot;number&quot;: 4,
+          &quot;label&quot;: &quot;LABEL_REPEATED&quot;,
+          &quot;type&quot;: &quot;TYPE_INT32&quot;,
+          &quot;jsonName&quot;: &quot;reasons&quot;
         }
       ],
-      &quot;nestedType&quot;:  [
+      &quot;nestedType&quot;: [
         {
-          &quot;name&quot;:  &quot;ResultEntry&quot;,
-          &quot;field&quot;:  [
+          &quot;name&quot;: &quot;ResultEntry&quot;,
+          &quot;field&quot;: [
             {
-              &quot;name&quot;:  &quot;key&quot;,
-              &quot;number&quot;:  1,
-              &quot;label&quot;:  &quot;LABEL_OPTIONAL&quot;,
-              &quot;type&quot;:  &quot;TYPE_STRING&quot;,
-              &quot;jsonName&quot;:  &quot;key&quot;
+              &quot;name&quot;: &quot;key&quot;,
+              &quot;number&quot;: 1,
+              &quot;label&quot;: &quot;LABEL_OPTIONAL&quot;,
+              &quot;type&quot;: &quot;TYPE_STRING&quot;,
+              &quot;jsonName&quot;: &quot;key&quot;
             },
             {
-              &quot;name&quot;:  &quot;value&quot;,
-              &quot;number&quot;:  2,
-              &quot;label&quot;:  &quot;LABEL_OPTIONAL&quot;,
-              &quot;type&quot;:  &quot;TYPE_STRING&quot;,
-              &quot;jsonName&quot;:  &quot;value&quot;
+              &quot;name&quot;: &quot;value&quot;,
+              &quot;number&quot;: 2,
+              &quot;label&quot;: &quot;LABEL_OPTIONAL&quot;,
+              &quot;type&quot;: &quot;TYPE_STRING&quot;,
+              &quot;jsonName&quot;: &quot;value&quot;
             }
           ],
-          &quot;options&quot;:  {
-            &quot;mapEntry&quot;:  true
+          &quot;options&quot;: {
+            &quot;mapEntry&quot;: true
           }
         }
       ]
     }
   ],
-  &quot;options&quot;:  {
-    &quot;goPackage&quot;:  &quot;./gen;protobuf&quot;
+  &quot;options&quot;: {
+    &quot;goPackage&quot;: &quot;./gen;protobuf&quot;
   },
-  &quot;syntax&quot;:  &quot;proto3&quot;
+  &quot;syntax&quot;: &quot;proto3&quot;
 }
 </code></pre>
-<ul>
-<li>Proto-Text</li>
-</ul>
-<p>The Text Format  is a human-readable format used for serializing and displaying protobuf messages in text form. It is often used for debugging or configuration purposes when you want to quickly inspect the contents of a protobuf message.<br>In the text format, protobuf messages are represented in a straightforward key-value style, where each field in the message is written in a human-readable way, with the field name followed by the value. This format is defined in the Protocol Buffers specification.<br>For text-format, we can serialize/deserialize FileDescriptorProto via prototext.Marshal/Unmarshal<br>Example of text-format:</p>
-<pre><code class="language-protobuf">name:  &quot;protobuf/tns_demo.proto&quot;
-package:  &quot;tns.search.proto&quot;
-message_type:  {
-  name:  &quot;TnsDemo&quot;
-  field:  {
-    name:  &quot;id&quot;
-    number:  1
-    label:  LABEL_OPTIONAL
-    type:  TYPE_INT64
-    json_name:  &quot;id&quot;
-  }
-  field:  {
-    name:  &quot;status&quot;
-    number:  2
-    label:  LABEL_OPTIONAL
-    type:  TYPE_INT32
-    json_name:  &quot;status&quot;
-  }
-  field:  {
-    name:  &quot;result&quot;
-    number:  3
-    label:  LABEL_REPEATED
-    type:  TYPE_MESSAGE
-    type_name:  &quot;.tns.search.proto.TnsDemo.ResultEntry&quot;
-    json_name:  &quot;result&quot;
-  }
-  field:  {
-    name:  &quot;reasons&quot;
-    number:  4
-    label:  LABEL_REPEATED
-    type:  TYPE_INT32
-    json_name:  &quot;reasons&quot;
-  }
-  nested_type:  {
-    name:  &quot;ResultEntry&quot;
-    field:  {
-      name:  &quot;key&quot;
-      number:  1
-      label:  LABEL_OPTIONAL
-      type:  TYPE_STRING
-      json_name:  &quot;key&quot;
-    }
-    field:  {
-      name:  &quot;value&quot;
-      number:  2
-      label:  LABEL_OPTIONAL
-      type:  TYPE_STRING
-      json_name:  &quot;value&quot;
-    }
-    options:  {
-      map_entry:  true
-    }
-  }
-}
-options:  {
-  go_package:  &quot;./gen;protobuf&quot;
-}
-syntax:  &quot;proto3&quot;
-</code></pre>
-<h3>4.2 protoc-plugin</h3>
-<p>In order to keep the generality, we choose the json-format as the serialization solution. </p>
-<pre><code class="language-golang">func main() {
-    protogen.Options{}.Run(func(gen *protogen.Plugin) error {
-       gen.SupportedFeatures = SupportedFeatures
-       for _, file := range gen.Files {
-          // Skip files that are not part of the plugin&#39;s current output.
-          if !file.Generate {
-             continue
-          }
-          genJsonFile(file, gen)
-          genExtFile(file, gen)
-       }
-       return nil
-    })
-}
-func genJsonFile(file *protogen.File, gen *protogen.Plugin) {
-    fd := file.Proto
-    sci := fd.SourceCodeInfo
-    fd.SourceCodeInfo = nil
-    jsonFile := gen.NewGeneratedFile(file.GeneratedFilenamePrefix+&quot;.json&quot;, &quot;.&quot;)
-    jsonFile.P(protojson.Format(fd))
-    fd.SourceCodeInfo = sci
-}
-</code></pre>
-<p>Once we get serialized content in json format, the rest is easy. We can save the json to tcc and load it later at runtime to marshal/unmarshal proto.Message. If the proto file changes, we can manually compile it offline and then update the new json data in tcc to realize the hot update. </p>
-<h3>4.3 How to use dynamic schema</h3>
-<ul>
-<li>generate json schema with plugin</li>
-</ul>
-<pre><code class="language-shell">SRC_DIR=$(pwd)
+<h3>4.4 Generating the JSON Schema</h3>
+<p>Build the plugin and run it alongside <code>protoc</code>:</p>
+<pre><code class="language-bash">SRC_DIR=$(pwd)
+
+# Build the custom plugin
 go build -o $SRC_DIR/protoc-gen-ext
+
+# Run protoc with both the standard Go plugin and our custom plugin
 protoc --proto_path=$SRC_DIR \
---plugin=protoc-gen-go=$(which protoc-gen-go) \
---go_out=$SRC_DIR/protobuf \
---fastpb_out=$SRC_DIR/protobuf \
---plugin=protoc-gen-ext=$SRC_DIR/protoc-gen-ext \
---ext_out=$SRC_DIR/protobuf \
-$SRC_DIR/protobuf/*.proto
+  --plugin=protoc-gen-go=$(which protoc-gen-go) \
+  --go_out=$SRC_DIR/protobuf \
+  --plugin=protoc-gen-ext=$SRC_DIR/protoc-gen-ext \
+  --ext_out=$SRC_DIR/protobuf \
+  $SRC_DIR/protobuf/*.proto
 </code></pre>
-<ul>
-<li>manipulate dynamic schema</li>
-</ul>
-<pre><code class="language-golang">    //jsonData:=getJsonFromTcc(...)
+<p>This produces both the standard Go generated code <strong>and</strong> the JSON schema files side by side. Store the JSON in your configuration center for runtime access.</p>
+<h3>4.5 Using Dynamic Schema at Runtime</h3>
+<p>With the JSON schema available (e.g., from a config center, database, or file), the runtime usage is straightforward:</p>
+<pre><code class="language-go">package main
+
+import (
+    &quot;google.golang.org/protobuf/encoding/protojson&quot;
+    &quot;google.golang.org/protobuf/reflect/protodesc&quot;
+    &quot;google.golang.org/protobuf/reflect/protoreflect&quot;
+    &quot;google.golang.org/protobuf/types/descriptorpb&quot;
+    &quot;google.golang.org/protobuf/types/dynamicpb&quot;
+)
+
+func LoadDynamicMessage(jsonSchema []byte, messageName string) (*dynamicpb.Message, error) {
+    // Step 1: Deserialize JSON into FileDescriptorProto
     fdp := new(descriptorpb.FileDescriptorProto)
-    //load schema from json
-    if err := protojson.Unmarshal([]byte(jsonData), fdp); err != nil {
-       panic(err)
+    if err := protojson.Unmarshal(jsonSchema, fdp); err != nil {
+        return nil, fmt.Errorf(&quot;unmarshal schema: %w&quot;, err)
     }
-    //create FileDescriptorfrom FileDescriptorProto
+
+    // Step 2: Create FileDescriptor from FileDescriptorProto
     fd, err := protodesc.NewFile(fdp, nil)
     if err != nil {
-       panic(err)
+        return nil, fmt.Errorf(&quot;create file descriptor: %w&quot;, err)
     }
-   // find the MessageDescriptor by name
-    md = fd.Messages().ByName(protoreflect.Name(msg))
-   // create dynamicpb message
-    dynamicpb.NewMessage(md)
+
+    // Step 3: Find the target MessageDescriptor
+    md := fd.Messages().ByName(protoreflect.Name(messageName))
+    if md == nil {
+        return nil, fmt.Errorf(&quot;message %q not found in schema&quot;, messageName)
+    }
+
+    // Step 4: Create a dynamic message instance
+    return dynamicpb.NewMessage(md), nil
+}
 </code></pre>
-<h2>5. Conlusion</h2>
-<p>Dynamic compilation of Protobuf is a powerful technique for situations where the schema cannot be known ahead of time or needs to be handled at runtime. By using Protobuf’s Reflection API, Dynamic Messages, and Any fields, you can create, manipulate, and serialize Protobuf messages dynamically. This allows for greater flexibility in scenarios such as plugin-based architectures, evolving APIs, or systems that need to work with arbitrary message types at runtime. However, dynamic compilation is more complex than static compilation and may introduce performance overhead due to reflection and dynamic handling of schema data.</p>
+<p>Once you have the <code>dynamicpb.Message</code>, you can use it like any other <code>proto.Message</code>:</p>
+<pre><code class="language-go">// Unmarshal binary Protobuf data into the dynamic message
+msg, _ := LoadDynamicMessage(jsonSchema, &quot;TnsDemo&quot;)
+if err := proto.Unmarshal(binaryData, msg); err != nil {
+    log.Fatal(err)
+}
+
+// Access fields via reflection
+idField := msg.Descriptor().Fields().ByName(&quot;id&quot;)
+fmt.Println(&quot;id:&quot;, msg.Get(idField).Int())
+
+// Marshal back to binary or JSON
+jsonBytes, _ := protojson.Marshal(msg)
+fmt.Println(string(jsonBytes))
+</code></pre>
+<h3>4.6 Hot-Reload Architecture</h3>
+<p>The complete runtime architecture for schema hot-reload looks like this:</p>
+<pre><code>┌─────────────┐     ┌──────────────────┐     ┌──────────────────────┐
+│  .proto file │────→│  protoc + plugin │────→│  JSON schema (stored │
+│  (offline)   │     │  (offline build) │     │  in config center)   │
+└─────────────┘     └──────────────────┘     └──────────┬───────────┘
+                                                        │ watch / poll
+                                                        ▼
+                                              ┌──────────────────────┐
+                                              │  Application         │
+                                              │                      │
+                                              │  JSON → FDProto      │
+                                              │  FDProto → FD        │
+                                              │  FD → dynamicpb.Msg  │
+                                              │                      │
+                                              │  Marshal / Unmarshal  │
+                                              └──────────────────────┘
+</code></pre>
+<p>When the <code>.proto</code> schema changes:</p>
+<ol>
+<li>Re-run <code>protoc</code> with the custom plugin (offline)</li>
+<li>Update the JSON in your config center</li>
+<li>The application detects the change and reloads the schema — <strong>no redeployment required</strong></li>
+</ol>
+<hr>
+<h2>5. Considerations and Trade-offs</h2>
+<p>Dynamic Protobuf is powerful but comes with trade-offs you should be aware of:</p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Static Compilation</th>
+<th>Dynamic Schema</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Type safety</strong></td>
+<td>Compile-time checks</td>
+<td>Runtime checks only</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>Direct struct access</td>
+<td>Reflection overhead</td>
+</tr>
+<tr>
+<td><strong>Developer experience</strong></td>
+<td>IDE autocomplete, type hints</td>
+<td>Generic field access by name</td>
+</tr>
+<tr>
+<td><strong>Schema evolution</strong></td>
+<td>Requires re-compilation</td>
+<td>Hot-reload via config update</td>
+</tr>
+<tr>
+<td><strong>Deployment</strong></td>
+<td>Redeploy on schema change</td>
+<td>No redeploy needed</td>
+</tr>
+</tbody></table>
+<p><strong>When to use dynamic Protobuf:</strong></p>
+<ul>
+<li>Schema changes frequently and redeployment is costly</li>
+<li>You&#39;re building a generic platform that handles arbitrary message types</li>
+<li>You need to decouple schema evolution from application deployment</li>
+</ul>
+<p><strong>When to stick with static compilation:</strong></p>
+<ul>
+<li>Schema is stable and known at compile time</li>
+<li>Performance is critical and reflection overhead is unacceptable</li>
+<li>Type safety and developer experience are priorities</li>
+</ul>
+<hr>
+<h2>6. Conclusion</h2>
+<p>Dynamic Protobuf in Go is not natively supported in the way it is in Java or Python, but it&#39;s entirely achievable by understanding the internal compilation pipeline. The key insight is the conversion path:</p>
+<pre><code>.proto  →  FileDescriptorProto (serializable)  →  FileDescriptor  →  dynamicpb.Message
+</code></pre>
+<p>By building a lightweight <code>protoc</code> plugin that exports <code>FileDescriptorProto</code> as JSON, we bridge the gap between offline schema compilation and runtime message handling. Combined with a configuration center for storage and distribution, this approach enables <strong>schema hot-reload without application redeployment</strong> — a capability that&#39;s essential for multi-tenant platforms, plugin architectures, and rapidly evolving API systems.</p>
 17:T3dd1,<blockquote>
 <p>在分布式一致性一文中主要介绍了分布式系统中存在的一致性问题。本文将简单介绍如何有效的解决分布式的一致性问题,其中包括什么是分布式事务，二阶段提交和三阶段提交。</p>
 </blockquote>
@@ -872,9 +990,9 @@ $SRC_DIR/protobuf/*.proto
 <li><strong>国际协调工具</strong>或将出现，用来解决跨境支付和清算的碎片化问题。</li>
 </ul>
 <p>最终，数字货币的演化方向取决于技术突破、监管合作以及国际博弈。它不仅是金融的升级，更是全球秩序重构的一部分。  </p>
-6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-07-29","children":"2025年07月29日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"How to implement dynamic protobuf in Golang?"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","Golang",{"href":"/blog/tag/Golang/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Golang"}],["$","$L5","Protobuf",{"href":"/blog/tag/Protobuf/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Protobuf"}],["$","$L5","DynamicPb",{"href":"/blog/tag/DynamicPb/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"DynamicPb"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"technique/middleware/分布式事务之两阶段提交和三阶提交","title":"分布式事务之两阶段提交和三阶提交","description":"在分布式一致性一文中主要介绍了分布式系统中存在的一致性问题。本文将简单介绍如何有效的解决分布式的一致性问题,其中包括什么是分布式事务，二阶段提交和三阶段提交。","pubDate":"2025-07-23","tags":["分布式事务","技术专题"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"finance/数字货币的演进逻辑","title":"数字货币的演进逻辑：从比特币到稳定币、RWA、CBDC与未来格局","description":"文章系统梳理了数字货币的发展逻辑：比特币以区块链和 PoW 开创去中心化金融实验，却因总量刚性和缺乏现实锚定更像“数字黄金”；稳定币通过锚定法币成为数字世界的现金，解决了计价与结算问题；RWA 将现实资产代币化，把真实经济价值带上链，形成“法币—稳定币—RWA—法币”的投资闭环；CBDC 则代表国家化终局，省去兑换环节并增强宏观调控能力；在此基础上，美国依靠稳定币和 RWA 延续美元霸权，中国通过数字人民币探索换道超车，未来全球格局可能从双轨竞争走向多极化，甚至演化为由世界央行统一发行的数字货币体系。","pubDate":"2025-09-13","tags":["比特币","稳定币","RWA"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Golang":{"prev":null,"next":null},"Protobuf":{"prev":null,"next":null},"DynamicPb":{"prev":null,"next":null}}}]}],["$","$L19",null,{}]]}]}]}]
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-07-29","children":"2025年07月29日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"How to Implement Dynamic Protobuf in Golang"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","Golang",{"href":"/blog/tag/Golang/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Golang"}],["$","$L5","Protobuf",{"href":"/blog/tag/Protobuf/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Protobuf"}],["$","$L5","DynamicPb",{"href":"/blog/tag/DynamicPb/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"DynamicPb"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"technique/middleware/分布式事务之两阶段提交和三阶提交","title":"分布式事务之两阶段提交和三阶提交","description":"在分布式一致性一文中主要介绍了分布式系统中存在的一致性问题。本文将简单介绍如何有效的解决分布式的一致性问题,其中包括什么是分布式事务，二阶段提交和三阶段提交。","pubDate":"2025-07-23","tags":["分布式事务","技术专题"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"finance/数字货币的演进逻辑","title":"数字货币的演进逻辑：从比特币到稳定币、RWA、CBDC与未来格局","description":"文章系统梳理了数字货币的发展逻辑：比特币以区块链和 PoW 开创去中心化金融实验，却因总量刚性和缺乏现实锚定更像“数字黄金”；稳定币通过锚定法币成为数字世界的现金，解决了计价与结算问题；RWA 将现实资产代币化，把真实经济价值带上链，形成“法币—稳定币—RWA—法币”的投资闭环；CBDC 则代表国家化终局，省去兑换环节并增强宏观调控能力；在此基础上，美国依靠稳定币和 RWA 延续美元霸权，中国通过数字人民币探索换道超车，未来全球格局可能从双轨竞争走向多极化，甚至演化为由世界央行统一发行的数字货币体系。","pubDate":"2025-09-13","tags":["比特币","稳定币","RWA"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Golang":{"prev":null,"next":null},"Protobuf":{"prev":null,"next":null},"DynamicPb":{"prev":null,"next":null}}}]}],["$","$L19",null,{}]]}]}]}]
 9:null
 d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 8:null
-b:{"metadata":[["$","title","0",{"children":"How to implement dynamic protobuf in Golang? - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"Protocol Buffers (Protobuf) is a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It was developed by Google to efficiently serialize data for use in a variety of applications, including network communication, data storage, and inter-process communication (IPC).  Protobuf messages are smaller and more efficient than text-based formats like JSON and XML, and provides fast serialization and deserialization, which is crucial for high-performance systems."}],["$","meta","2",{"property":"og:title","content":"How to implement dynamic protobuf in Golang?"}],["$","meta","3",{"property":"og:description","content":"Protocol Buffers (Protobuf) is a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It was developed by Google to efficiently serialize data for use in a variety of applications, including network communication, data storage, and inter-process communication (IPC).  Protobuf messages are smaller and more efficient than text-based formats like JSON and XML, and provides fast serialization and deserialization, which is crucial for high-performance systems."}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-07-29"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"How to implement dynamic protobuf in Golang?"}],["$","meta","9",{"name":"twitter:description","content":"Protocol Buffers (Protobuf) is a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It was developed by Google to efficiently serialize data for use in a variety of applications, including network communication, data storage, and inter-process communication (IPC).  Protobuf messages are smaller and more efficient than text-based formats like JSON and XML, and provides fast serialization and deserialization, which is crucial for high-performance systems."}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+b:{"metadata":[["$","title","0",{"children":"How to Implement Dynamic Protobuf in Golang - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"This article explores how to dynamically compile and manipulate Protocol Buffers messages at runtime in Go — without relying on pre-generated code. It walks through the full path from .proto file to runtime proto.Message via FileDescriptorProto, and presents a practical protoc plugin solution for hot-reloadable schema management."}],["$","meta","2",{"property":"og:title","content":"How to Implement Dynamic Protobuf in Golang"}],["$","meta","3",{"property":"og:description","content":"This article explores how to dynamically compile and manipulate Protocol Buffers messages at runtime in Go — without relying on pre-generated code. It walks through the full path from .proto file to runtime proto.Message via FileDescriptorProto, and presents a practical protoc plugin solution for hot-reloadable schema management."}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-07-29"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"How to Implement Dynamic Protobuf in Golang"}],["$","meta","9",{"name":"twitter:description","content":"This article explores how to dynamically compile and manipulate Protocol Buffers messages at runtime in Go — without relying on pre-generated code. It walks through the full path from .proto file to runtime proto.Message via FileDescriptorProto, and presents a practical protoc plugin solution for hot-reloadable schema management."}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
 13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}
