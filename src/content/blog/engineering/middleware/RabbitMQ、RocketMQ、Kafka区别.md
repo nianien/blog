@@ -157,5 +157,5 @@ RabbitMQ集群会始终同步四种类型的内部元数据：
 #### 四、总结
 
 
-![img_20250723_04.png](/images/blog/tech/middleware/img_20250723_04.png){: .full-width}
+![img_20250723_04.png](/images/blog/engineering/middleware-img_20250723_04.png){: .full-width}
 

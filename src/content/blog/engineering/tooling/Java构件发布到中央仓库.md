@@ -23,17 +23,17 @@ tags: ["技术实战"]
 
 注册完成，登陆后的界面如下：
 
-![image_60.png](/images/blog/tech/practice/image_60.png)
+![image_60.png](/images/blog/engineering/practice-image_60.png)
 
 #### 2、创建Issue <a href="#omwqz" id="omwqz"></a>
 
 这里项目选择：Community Support - Open Source Project Repository Hosting (OSSRH)，问题 类型选择：New Project
 
-![image_67.png](/images/blog/tech/practice/image_67.png)
+![image_67.png](/images/blog/engineering/practice-image_67.png)
 
 #### 2.1、补充项目信息
 
-![image_62.png](/images/blog/tech/practice/image_62.png)
+![image_62.png](/images/blog/engineering/practice-image_62.png)
 
 #### 2.2、验证域名 <a href="#snbg0" id="snbg0"></a>
 
@@ -49,21 +49,21 @@ tags: ["技术实战"]
 
 如果你没有自己的域名，则可以通过代码托管平台的账号关联子域名。假设你托管平台账户名为myusername，那么你可以通过以下托管平台验证Group Id ：
 
-![image_63.png](/images/blog/tech/practice/image_63.png)
+![image_63.png](/images/blog/engineering/practice-image_63.png)
 
 由于我没有自己的域名，这里我选择使用github账号验证Group Id。点击“新建”按钮，完成提交，之后你的注册邮箱会收到一封邮件，显示创建项目信息：
 
-![image_65.png](/images/blog/tech/practice/image_65.png)
+![image_65.png](/images/blog/engineering/practice-image_65.png)
 
 稍后还会收到一封审核邮件，提示你进行域名验证，时间延迟大概在十分钟以内。
 
 **2.3、人工审核及确认**
 
-![image_66.png](/images/blog/tech/practice/image_66.png)
+![image_66.png](/images/blog/engineering/practice-image_66.png)
 
 我使用的是github账户，按邮件提示，需要在github平台上创建一个指定的临时工程。创建完成之后，可以在issue下面添加评论，触发验证。验证成功后，你会收到一份邮件：
 
-![image_68.png](/images/blog/tech/practice/image_68.png)
+![image_68.png](/images/blog/engineering/practice-image_68.png)
 
 收到上述邮件，就表示完成了Group Id的验证，此时你就可以使用该Group Id或者子Group Id发布Maven构件了。如上，我填写的Group Id是 “io.github.nianien”，因此，我可以使用 “io.github.nianien”或者 “io.github.nianien.xxx” 作为项目的GroupId发布Maven构件。
 
@@ -75,15 +75,15 @@ tags: ["技术实战"]
 
 * 创建密钥
 
-![image_69.png](/images/blog/tech/practice/image_69.png)
+![image_69.png](/images/blog/engineering/practice-image_69.png)
 
 3.1、发布密钥
 
-![image_70.png](/images/blog/tech/practice/image_70.png)
+![image_70.png](/images/blog/engineering/practice-image_70.png)
 
 发布成功后，收到一份邮件：
 
-![image_71.png](/images/blog/tech/practice/image_71.png)
+![image_71.png](/images/blog/engineering/practice-image_71.png)
 
 按照邮件指示操作，完成密钥发布。密钥发布成功之后，下一步就是配置maven settings.xml和工程pom.xml文件。
 
@@ -274,25 +274,25 @@ tags: ["技术实战"]
 
 这里nexus-staging-maven-plugin插件有一个配置项：autoReleaseAfterClose，如果设置为true的话，推送完成会自动release。第一次发布成功后，会收到一封邮件：
 
-![image_72.png](/images/blog/tech/practice/image_72.png)
+![image_72.png](/images/blog/engineering/practice-image_72.png)
 
 * _**最后，让jar包更快的在中央仓库被搜索到**_
 
 根据邮件提示，Jar包成功发布成功后，大约30分钟后会推到中央仓库，我们可以从仓库地址看到我们发布的Jar包：[https://repo1.maven.org/maven2/](https://repo1.maven.org/maven2)
 
-![image_73.png](/images/blog/tech/practice/image_73.png)
+![image_73.png](/images/blog/engineering/practice-image_73.png)
 
 此时，其他项目就可以通过maven依赖引用我们的构件了，但是这时候通过中央仓库仍然搜不到我们的Maven构件。按照邮件提示可能会需要四小时，实际情况是我等了5个小时依然搜不到。如果遇到这种情况，我们可以通过在对issue添加评论反馈，会有人工回复进行解决：
 
-![image_74.png](/images/blog/tech/practice/image_74.png)
+![image_74.png](/images/blog/engineering/practice-image_74.png)
 
 另外，关于mvnrepository与Maven Central的关系，有人咨询，官方也做了解答：
 
-![image_75.png](/images/blog/tech/practice/image_75.png)
+![image_75.png](/images/blog/engineering/practice-image_75.png)
 
 根据我的实际经验判断，mvnrepository应该是定时同步的，我发布成功后，第二天才能搜到：
 
-![image_76.png](/images/blog/tech/practice/image_76.png)
+![image_76.png](/images/blog/engineering/practice-image_76.png)
 
 下面是官方指导文档，介绍非常详细，基本上不用在网上搜索其他教程了。
 
