@@ -42,9 +42,17 @@ function processMarkdownContent(content: string): string {
     breaks: true,
     gfm: true,
   });
-  
+
   const result = marked(content);
-  return typeof result === 'string' ? result : String(result);
+  let html = typeof result === 'string' ? result : String(result);
+
+  // 若配置了 basePath（如部署在子路径），给文章内绝对路径的图片加上前缀，否则请求会 404
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  if (basePath) {
+    html = html.replace(/<img([^>]*)\ssrc="\/([^"]*)"/g, `<img$1 src="${basePath.replace(/\/$/, '')}/$2"`);
+  }
+
+  return html;
 }
 
 // 按日期和标题排序的辅助函数
