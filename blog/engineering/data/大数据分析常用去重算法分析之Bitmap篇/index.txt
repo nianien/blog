@@ -1,0 +1,1025 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-51baccc14cf1da9e.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/a2b4a60000c93b46.css","style"]
+0:{"P":null,"b":"JtWUCh8A6I4Pz8PJ8Ueme","p":"","c":["","blog","engineering","data","%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%B8%E7%94%A8%E5%8E%BB%E9%87%8D%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B9%8BBitmap%E7%AF%87",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/data/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%B8%E7%94%A8%E5%8E%BB%E9%87%8D%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B9%8BBitmap%E7%AF%87","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a2b4a60000c93b46.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/data/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%B8%E7%94%A8%E5%8E%BB%E9%87%8D%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90%E4%B9%8BBitmap%E7%AF%87","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","MGQAdCVMBC0JAXHBSKp2Dv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:T2bf1,<p>去重分析在企业日常分析中的使用频率非常高，如何在大数据场景下快速地进行去重分析一直是一大难点。在近期的 Apache Kylin Meetup 北京站上，我们邀请到 Kyligence 大数据研发工程师陶加涛为大家揭开了大数据分析常用去重算法的神秘面纱。</p>
+<p>Apache Kylin 作为目前唯一一个同时支持精确与非精确去重查询的 OLAP 引擎，非常好地覆盖了大数据上的去重需求。本次分享讲解了 Kylin 这两种去重方式背后用到的算法，希望能让大家从源头上理解为什么 Kylin 的去重查询有着如此优异的性能。此次分享的回顾将分为两期，本篇首先为大家介绍精确去重算法 Bitmap 。</p>
+<p>首先，请大家思考一个问题：在大数据处理领域中，什么环节是你最不希望见到的？以我的观点来看，shuffle 是我最不愿意见到的环节，因为一旦出现了非常多的 shuffle，就会占用大量的磁盘和网络 IO，从而导致任务进行得非常缓慢。而今天我们所讨论的去重分析，就是一个会产生非常多 shuffle 的场景，先来看以下场景：</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_1.png" alt="image_1_1.png"></p>
+<p>我们有一张商品访问表，表上有 item 和 user_id 两个列，我们希望求商品的 UV，这是去重非常典型的一个场景。我们的数据是存储在分布式平台上的，分别在数据节点 1 和 2 上。</p>
+<p>我们从物理执行层面上想一下这句 SQL 背后会发生什么故事：首先分布式计算框架启动任务, 从两个节点上去拿数据, 因为 SQL group by 了 item 列, 所以需要以 item 为 key 对两个表中的原始数据进行一次 shuffle。我们来看看需要 shuffle 哪些数据：因为 select/group by了 item，所以 item 需要 shuffle 。但是，user_id 我们只需要它的一个统计值，能不能不 shuffle 整个 user_id 的原始值呢？</p>
+<p>如果只是简单的求 count 的话, 每个数据节点分别求出对应 item 的 user_id 的 count, 然后只要 shuffle 这个 count 就行了，因为count 只是一个数字, 所以 shuffle 的量非常小。但是由于分析的指标是 count distinct，我们不能简单相加两个节点user_id 的 count distinct 值，我们只有得到一个 key 对应的所有 user_id 才能统计出正确的 count distinct值，而这些值原先可能分布在不同的节点上，所以我们只能通过 shuffle 把这些值收集到同一个节点上再做去重。而当 user_id 这一列的数据量非常大的时候，需要 shuffle 的数据量也会非常大。我们其实最后只需要一个 count 值，那么有办法可以不 shuffle 整个列的原始值吗？我下面要介绍的两种算法就提供了这样的一种思路，使用更少的信息位，同样能够求出该列不重复元素的个数（基数）。</p>
+<p><strong>精确算法: Bitmap</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_1_2.png" alt="image_1_2.png"></p>
+<p>第一种要介绍的算法是一种精确的去重算法，主要利用了 Bitmap 的原理。Bitmap 也称之为 Bitset，它本质上是定义了一个很大的 bit 数组，每个元素对应到 bit 数组的其中一位。例如有一个集合［2，3，5，8］对应的 Bitmap 数组是［001101001］，集合中的 2 对应到数组 index 为 2 的位置，3 对应到 index 为 3 的位置，下同，得到的这样一个数组，我们就称之为 Bitmap。很直观的，数组中 1 的数量就是集合的基数。追本溯源，我们的目的是用更小的存储去表示更多的信息，而在计算机最小的信息单位是 bit，如果能够用一个 bit 来表示集合中的一个元素，比起原始元素，可以节省非常多的存储。</p>
+<p>这就是最基础的 Bitmap，我们可以把 Bitmap 想象成一个容器，我们知道一个 Integer 是32位的，如果一个 Bitmap 可以存放最多 Integer.MAX_VALUE 个值，那么这个 Bitmap 最少需要 32 的长度。一个 32 位长度的 Bitmap 占用的空间是512 M （2^32/8/1024/1024），这种 Bitmap 存在着非常明显的问题：这种 Bitmap 中不论只有 1 个元素或者有 40 亿个元素，它都需要占据 512 M 的空间。回到刚才求 UV 的场景，不是每一个商品都会有那么多的访问，一些爆款可能会有上亿的访问，但是一些比较冷门的商品可能只有几个用户浏览，如果都用这种 Bitmap，它们占用的空间都是一样大的，这显然是不可接受的。</p>
+<p><strong>升级版 Bitmap: Roaring Bitmap</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_1_3.png" alt="image_1_3.png"></p>
+<p>对于上节说的问题，有一种设计的非常的精巧 Bitmap，叫做 Roaring Bitmap，能够很好地解决上面说的这个问题。我们还是以存放 Integer 值的 Bitmap 来举例，Roaring Bitmap 把一个 32 位的 Integer 划分为高 16 位和低 16 位，取高 16 位找到该条数据所对应的 key，每个 key 都有自己的一个 Container。我们把剩余的低 16 位放入该 Container 中。依据不同的场景，有 3 种不同的 Container，分别是 Array Container、Bitmap Container 和 Run Container，下文将一一介绍。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_4.png" alt="image_1_4.png"></p>
+<p>首先第一种，是 Roaring Bitmap 初始化时默认的 Container，叫做 Array Container。Array Container 适合存放稀疏的数据，Array Container 内部的数据结构是一个 short array，这个 array 是有序的，方便查找。数组初始容量为 4，数组最大容量为 4096。超过最大容量 4096 时，会转换为 Bitmap Container。这边举例来说明数据放入一个 Array Container 的过程：有 0xFFFF0000 和 0xFFFF0001 两个数需要放到 Bitmap 中, 它们的前 16 位都是 FFFF，所以他们是同一个 key，它们的后 16 位存放在同一个 Container 中; 它们的后 16 位分别是 0 和 1, 在 Array Container 的数组中分别保存 0 和 1 就可以了，相较于原始的 Bitmap 需要占用 512M 内存来存储这两个数，这种存放实际只占用了 2+4=6 个字节（key 占 2 Bytes，两个 value 占 4 Bytes，不考虑数组的初始容量）。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_5.png" alt="image_1_5.png"></p>
+<p>第二种 Container 是 Bitmap Container，其原理就是上文说的 Bitmap。它的数据结构是一个 long 的数组，数组容量固定为 1024，和上文的 Array Container 不同，Array Container 是一个动态扩容的数组。这边推导下 1024 这个值：由于每个 Container 还需处理剩余的后 16 位数据，使用 Bitmap 来存储需要 8192 Bytes（2^16/8）, 而一个 long 值占 8 个 Bytes，所以一共需要 1024（8192/8）个 long 值。所以一个 Bitmap container 固定占用内存 8 KB（1024 * 8 Byte）。当 Array Container 中元素到 4096 个时，也恰好占用 8 k（4096*2Bytes）的空间，正好等于 Bitmap 所占用的 8 KB。而当你存放的元素个数超过 4096 的时候，Array Container 的大小占用还是会线性的增长，但是 Bitmap Container 的内存空间并不会增长，始终还是占用 8 K，所以当 Array Container 超过最大容量（DEFAULT_MAX_SIZE）会转换为 Bitmap Container。</p>
+<p>我们自己在 Kylin 中实践使用 Roaring Bitmap 时，我们发现 Array Container 随着数据量的增加会不停地 resize 自己的数组，而 Java 数组的 resize 其实非常消耗性能，因为它会不停地申请新的内存，同时老的内存在复制完成前也不会释放，导致内存占用变高，所以我们建议把 DEFAULT_MAX_SIZE 调得低一点，调成 1024 或者 2048，减少 Array Container 后期 reszie 数组的次数和开销。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_6.png" alt="image_1_6.png"></p>
+<p>最后一种 Container 叫做Run Container，这种 Container 适用于存放连续的数据。比如说 1 到 100，一共 100 个数，这种类型的数据称为连续的数据。这边的Run指的是Run Length Encoding（RLE），它对连续数据有比较好的压缩效果。原理是对于连续出现的数字, 只记录初始数字和后续数量。例如: 对于 [11, 12, 13, 14, 15, 21, 22]，会被记录为 11, 4, 21, 1。很显然，该 Container 的存储占用与数据的分布紧密相关。最好情况是如果数据是连续分布的，就算是存放 65536 个元素，也只会占用 2 个 short。而最坏的情况就是当数据全部不连续的时候，会占用 128 KB 内存。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_7.png" alt="image_1_7.png"></p>
+<p>总结：用一张图来总结3种 Container 所占的存储空间，可以看到元素个数达到 4096 之前，选用 Array Container 的收益是最好的，当元素个数超过了 4096 时，Array Container 所占用的空间还是线性的增长，而 Bitmap Container 的存储占用则与数据量无关，这个时候 Bitmap Container 的收益就会更好。而 Run Container 占用的存储大小完全看数据的连续性, 因此只能画出一个上下限范围 [4 Bytes, 128 KB]。</p>
+<p><strong>在 Kylin 中的应用</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_1_8.png" alt="image_1_8.png"></p>
+<p>我们再来看一下Bitmap 在 Kylin 中的应用，Kylin 中编辑 measure 的时候，可以选择 Count Distinct，且Return Type 选为 Precisely，点保存就可以了。但是事情没有那么简单，刚才上文在讲 Bitmap 时，一直都有一个前提，放入的值都是数值类型，但是如果不是数值类型的值，它们不能够直接放入 Bitmap，这时需要构建一个全区字典，做一个值到数值的映射，然后再放入 Bitmap 中。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_9.png" alt="image_1_9.png"></p>
+<p>在 Kylin 中构建全局字典，当列的基数非常高的时候，全局字典会成为一个性能的瓶颈。针对这种情况，社区也一直在努力做优化，这边简单介绍几种优化的策略，更详细的优化策略可以见文末的参考链接。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_10.png" alt="image_1_10.png"></p>
+<p>1）当一个列的值完全被另外一个列包含，而另一个列有全局字典，可以复用另一个列的全局字典。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_11.png" alt="image_1_11.png"></p>
+<p>2）当精确去重指标不需要跨 Segment 聚合的时候，可以使用这个列的 Segment 字典代替（这个列需要字典编码）。在 Kylin 中，Segment 就相当于时间分片的概念。当不会发生跨 Segments 的分析时，这个列的 Segment 字典就可以代替这个全局字典。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_12.png" alt="image_1_12.png"></p>
+<p>3）如果你的 cube 包含很多的精确去重指标，可以考虑将这些指标放到不同的列族上。不止是精确去重，像一些复杂 measure，我们都建议使用多个列族去存储，可以提升查询的性能。</p>
+17:T1ce1,<p>上篇介绍了利用 Roaring Bitmap 来进行精确去重。虽然这种算法能大大地减少存储开销，但是随着数据量的增大，它依然面临着存储上的压力。在本篇推送中将要介绍的 HyperLogLog（下称 HLL）是一种非精确的去重算法，它的特点是具有非常优异的空间复杂度（几乎可以达到常数级别）。</p>
+<p><img src="/images/blog/engineering/bigdata-image_2_1.png" alt="image_2_1.png"></p>
+<p>HLL 算法需要完整遍历所有元素一次，而非多次或采样；该算法只能计算集合中有多少个不重复的元素，不能给出每个元素的出现次数或是判断一个元素是否之前出现过；多个使用 HLL 统计出的基数值可以融合。</p>
+<p><img src="/images/blog/engineering/bigdata-image_2_2.png" alt="image_2_2.png"></p>
+<p><img src="/images/blog/engineering/bigdata-image_2_3.png" alt="image_2_3.png"></p>
+<p>HLL 算法有着非常优异的空间复杂度，可以看到它的空间占用随着基数值的增长并没有变化。HLL 后面不同的数字代表着不同的精度，数字越大，精度越高，占用的空间也越大，可以认为 HLL 的空间占用只和精度成正相关。</p>
+<p><strong>HLL算法原理感性认知</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_2_4.png" alt="image_2_4.png"></p>
+<p>HLL 算法的原理会涉及到比较多的数学知识，这边对这些数学原理和证明不会展开。举一个生活中的例子来帮助大家理解HLL算法的原理：比如你在进行一个实验，内容是不停地抛硬币，记录你连续抛到正面的次数（这是数学中的伯努利过程，感兴趣同学可以自行研究下）；如果你最多的连抛正面记录是3次，那可以想象你并没有做这个实验太多次，如果你最长的连抛正面记录是 20 次，那你可能进行了这个实验上千次。</p>
+<p>一种理论上存在的情况是，你非常幸运，第一次进行这个实验就连抛了 20 次正面，我们也会认为你进行了很多次这个实验才得到了这个记录，这就会导致错误的预估；改进的方式是请 10 位同学进行这项实验，这样就可以观察到更多的样本数据，降低出现上述情况的概率。这就是 HLL 算法的核心思想。</p>
+<p><strong>HLL算法具体实现</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_2_5.png" alt="image_2_5.png"></p>
+<p>HLL 会通过一个 hash 函数来求出集合中所有元素的 hash 值（二进制表示的 hash 值，就可以理解为一串抛硬币正反面结果的序列），得到一个 hash 值的集合，然后找出该 hash 值集合中，第一个 1 出现的最晚的位置。例如有集合为 [010, 100, 001], 集合中元素的第一个 1 出现的位置分别为 2, 1, 3，可以得到里面最大的值为 3，故该集合中第一个1出现的最晚的位置为 3。因为每个位置上出现1的概率都是 1/2，所以我们可以做一个简单的推断，该集合中有 8 个不重复的元素。</p>
+<p>可以看到这种简单的推断计算出来集合的基数值是有较大的偏差的，那如何来减少偏差呢？正如我上面的例子里说的一样，HLL 通过多次的进行试验来减少误差。那它是如何进行多次的实验的呢？这里 HLL 使用了分桶的思想，上文中我们一直有提到一个精度的概念，比如说 HLL(10)，这个 10 代表的就是取该元素对应 Hash 值二进制的后 10 位，计算出记录对应的桶，桶中会记录一个数字，代表对应到该桶的 hash 值的第一个 1 出现的最晚的位置。如上图，该 hash 值的后 10 位的 hash 值是 0000001001，转成 10 进制是 9，对应第 9 号桶，而该 hash 值第一个 1 出现的位置是第 6 位，比原先 9 号桶中的数字大，故把 9 号桶中的数字更新为 6。可以看到桶的个数越多，HLL 算法的精度就越高，HLL(10) 有 1024(210) 个桶，HLL(16)有 65536(216) 个桶。同样的，桶的个数越多，所占用的空间也会越大。</p>
+<p><img src="/images/blog/engineering/bigdata-image_2_6.png" alt="image_2_6.png"></p>
+<p>刚才的例子我们省略了一些细节，为了让大家不至于迷失在细节中而忽视了重点，真实的 HLL 算法的完整描述见上图，这边的重点是计算桶中平均数时使用调和平均数。调和平均数的优点是可以过滤掉不健康的统计值，使用算术平均值容易受到极值的影响（想想你和马云的平均工资），而调和平均数的结果会倾向于集合中比较小的元素。HLL 论文中还有更多的细节和参数，这边就不一一细举，感兴趣的同学可以自己阅读下论文。</p>
+<p><strong>HLL评估</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_2_7.png" alt="image_2_7.png"></p>
+<p>HLL 的误差分布服从正态分布，它的空间复杂度: O(m log2log2N), Ｎ 为基数, m 为桶个数。这边给大家推导一下它的空间复杂度，我有 264 个的不重复元素(Long. MAX_VALUE)，表达为二进制一个数是 64 位，这是第一重 log2, 那么第一个1最晚可能出现在第 64 位。64 需要 6 个 bit (26=64) 就可以存储，这是第二重 log2。如果精度为 10，则会有 1024 个桶，所以最外面还要乘以桶的个数。由于需要完整的遍历元素一遍，所以它的时间复杂度是一个线性的时间复杂度。</p>
+<p><strong>在Kylin中的应用</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_2_8.png" alt="image_2_8.png"></p>
+<p>在 Kylin 中使用 HLL 非常简单，在编辑度量的页面选择 COUNT DISTINCT，Return Type 选为非 Precisely 的其他选项，大家根据自己的需求选择不同的精度就可以愉快地使用了。</p>
+<p><strong>总结</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_2_9.png" alt="image_2_9.png"></p>
+<p>我们回到最开始的去重场景，看看使用了 Bitmap 和 HLL 会给我们带来什么增益：无优化 case 下，每个 item 对应的 user_id 就可以看成存储原始值的一个集合；在使用 Bitmap 优化的case 下，每个 item 对应的 user_id 就可以看成一个 Bitmap 实例，同理 HLL就是一个 HLL 的实例，Bitmap/HLL 实例占用的空间都会比直接存储原始值的集合要小，这就达到了我们开始提的减少 shuffle 数据量的需求。</p>
+<p><strong>Q&amp;A</strong></p>
+<p>Q：您好，问一下关于精确去重的问题， 我选择了非精确去重，最后的误差率有时候会比界面上提示的值要高一些，这是为什么？</p>
+<p>A：首先 HLL 的误差分布服从正态分布，也就是说是在99%的情况下是这个误差，同时 HLL 对于基数比较低的情况，误差会偏高。如果你的基数比较低的话，我推荐使用精确去重。</p>
+<p>Q：我想要了解一下 Bitmap 在 Kylin 中，它最终落盘在 HBase 里面是什么样子的？</p>
+<p>A：在 HBase 中存储的当然都是 Bytes。这个问题其实就是 Bitmap 的序列化的形式，Roaring Bitmap提供了序列化和反序列化的实现，你也可以写自己的序列化/反序列化的实现。</p>
+<p>Q：Roaring Bitmap 里这些 container 要我们自己手动的指定吗。</p>
+<p>A：不需要，Roaring Bitmap 会自动选择使用哪个 Container。</p>
+18:Td71a,<h1>分布式系统与事务：从基础到实践</h1>
+<blockquote>
+<p>当一个操作需要跨越多个服务、多个数据库才能完成时，如何保证&quot;要么全部成功，要么全部回滚&quot;？这就是分布式事务要解决的核心问题。</p>
+<p>本文从分布式系统的基本概念出发，逐步深入到一致性理论和事务解决方案，力求构建一个完整的知识框架：<strong>为什么需要分布式 → 分布式带来了什么问题 → 理论上如何权衡 → 工程上如何解决</strong>。</p>
+</blockquote>
+<h3>阅读指南</h3>
+<ul>
+<li><strong>建立基础概念</strong>：第 1–2 章（约 5 分钟）</li>
+<li><strong>理解理论框架</strong>：第 3–4 章（约 10 分钟）</li>
+<li><strong>掌握事务方案</strong>：第 5–8 章（约 25 分钟）</li>
+<li><strong>方案选型参考</strong>：第 9 章（约 5 分钟）</li>
+</ul>
+<hr>
+<h2>1. 从集中式到分布式</h2>
+<h3>1.1 集中式系统</h3>
+<p>集中式系统的特点是：<strong>一个主机承担所有计算和存储</strong>，终端仅负责数据的输入和输出。早期的银行系统、大型企业的核心业务系统大多采用这种架构——从 IBM、HP 等厂商购买昂贵的大型主机，所有业务逻辑集中部署。</p>
+<p>优点是部署简单，无需考虑节点间协调。但问题也很明显：</p>
+<ul>
+<li><strong>单点故障</strong>：主机宕机 = 整个系统瘫痪</li>
+<li><strong>扩展性差</strong>：纵向扩展（加 CPU/内存）有物理上限，且成本指数增长</li>
+<li><strong>维护困难</strong>：系统越来越大，所有逻辑耦合在一起</li>
+</ul>
+<h3>1.2 分布式系统</h3>
+<p>《分布式系统概念与设计》中的定义：</p>
+<blockquote>
+<p>分布式系统是一个硬件或软件组件分布在不同的网络计算机上，彼此之间仅仅通过消息传递进行通信和协调的系统。</p>
+</blockquote>
+<p>简单说就是：<strong>多台普通计算机通过网络协作，对外表现得像一台计算机</strong>。分布式意味着可以采用更多的普通计算机（相对于昂贵的大型主机）组成集群对外提供服务。计算机越多，CPU、内存、存储资源也就越多，能够处理的并发访问量也就越大。</p>
+<p>分布式系统的四个基本特征：</p>
+<table>
+<thead>
+<tr>
+<th>特征</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>分布性</strong></td>
+<td>多台计算机在空间上可以随意分布——同一机柜、不同机房甚至不同城市。系统中没有控制整个系统的主机，也没有受控的从机</td>
+</tr>
+<tr>
+<td><strong>透明性</strong></td>
+<td>系统资源被所有计算机共享，每台计算机的用户不仅可以使用本机的资源，还可以使用系统中其他计算机的资源（包括 CPU、文件、存储等）。用户感知不到背后有多少台机器在提供服务</td>
+</tr>
+<tr>
+<td><strong>协同性</strong></td>
+<td>多台计算机可以互相协作来完成一个共同的任务，一个程序可以分布在几台计算机上并行运行</td>
+</tr>
+<tr>
+<td><strong>通信性</strong></td>
+<td>系统中任意两台计算机都可以通过网络通信来交换信息</td>
+</tr>
+</tbody></table>
+<h3>1.3 常见的分布式方案</h3>
+<p>分布式不是一种单一的技术，而是一种架构理念。在实际应用中，分布式思想体现在多个层面：</p>
+<table>
+<thead>
+<tr>
+<th>分布式方案</th>
+<th>说明</th>
+<th>典型技术</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>分布式应用和服务</strong></td>
+<td>将应用进行分层和分割，各模块独立部署。提高并发能力，减少资源竞争，使业务易于扩展</td>
+<td>微服务架构、Spring Cloud、Dubbo</td>
+</tr>
+<tr>
+<td><strong>分布式静态资源</strong></td>
+<td>将 JS、CSS、图片等静态资源分布式部署，减轻应用服务器负载</td>
+<td>CDN、对象存储（OSS/S3）</td>
+</tr>
+<tr>
+<td><strong>分布式数据和存储</strong></td>
+<td>海量数据单机无法容纳，分布到多台机器存储</td>
+<td>分库分表（ShardingSphere）、HBase、Cassandra</td>
+</tr>
+<tr>
+<td><strong>分布式计算</strong></td>
+<td>将大型计算任务拆分为多个子任务，分配给多台机器并行处理</td>
+<td>MapReduce、Spark、Flink</td>
+</tr>
+<tr>
+<td><strong>分布式锁</strong></td>
+<td>跨进程的互斥访问控制</td>
+<td>Redis（RedLock）、ZooKeeper、etcd</td>
+</tr>
+<tr>
+<td><strong>分布式缓存</strong></td>
+<td>数据缓存分布在多个节点上，提高读取性能</td>
+<td>Redis Cluster、Memcached</td>
+</tr>
+</tbody></table>
+<h3>1.4 分布式 vs 集群</h3>
+<p>这两个概念经常混淆，区别其实很简单：</p>
+<pre><code>分布式（Distributed）：不同的服务器部署不同的服务模块，协作对外提供服务
+    ┌──────────┐   ┌──────────┐   ┌──────────┐
+    │ 用户服务  │   │ 订单服务  │   │ 支付服务  │
+    └──────────┘   └──────────┘   └──────────┘
+
+集群（Cluster）：不同的服务器部署相同的服务，通过负载均衡对外提供服务
+    ┌──────────┐   ┌──────────┐   ┌──────────┐
+    │ 订单服务A │   │ 订单服务B │   │ 订单服务C │
+    └──────────┘   └──────────┘   └──────────┘
+          │              │              │
+          └──────────────┼──────────────┘
+                   负载均衡器
+</code></pre>
+<p>实际系统往往是两者结合：每个分布式服务都以集群方式部署。</p>
+<h3>1.5 分布式带来的新问题</h3>
+<p>和集中式系统相比，分布式系统的性价比更高、处理能力更强、可靠性更高、也有更好的扩展性。但是，分布式在解决高并发问题的同时也带来了一些其他问题：</p>
+<ul>
+<li><strong>网络不可靠</strong>：分布式的必要条件是网络。延迟、丢包、分区随时可能发生，这对性能甚至服务能力都会造成影响</li>
+<li><strong>时钟不同步</strong>：不同机器的系统时钟存在偏差（时钟漂移），无法依赖本地时间戳判定分布式事件的全局先后顺序</li>
+<li><strong>节点故障</strong>：集群中的服务器数量越多，某台服务器宕机的概率也就越大</li>
+<li><strong>数据一致性</strong>：由于服务分布式部署，用户的请求只会落到其中一台机器上。一旦处理不好就很容易产生数据一致性问题。这是分布式系统中最核心也最困难的问题</li>
+</ul>
+<blockquote>
+<p>Leslie Lamport（Paxos 算法发明者，2013 年图灵奖得主）对分布式系统有一个著名的定义：&quot;A distributed system is one in which the failure of a computer you didn&#39;t even know existed can render your own computer unusable.&quot;——<strong>在分布式系统中，一台你甚至不知道其存在的计算机的故障，就可能让你自己的计算机变得不可用。</strong> 这句话精确地概括了分布式系统的根本复杂性。</p>
+</blockquote>
+<hr>
+<h2>2. 数据一致性问题</h2>
+<h3>2.1 从 ACID 说起</h3>
+<p>在理解分布式一致性之前，先回顾单机数据库是如何保证一致性的。数据库通过<strong>事务</strong>（Transaction）机制来保证数据的 ACID 特性：</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>含义</th>
+<th>保障手段</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>A</strong>tomicity（原子性）</td>
+<td>事务中的操作要么全部成功，要么全部回滚</td>
+<td>undo log</td>
+</tr>
+<tr>
+<td><strong>C</strong>onsistency（一致性）</td>
+<td>事务执行前后，数据从一个一致状态转到另一个一致状态</td>
+<td>由 A、I、D 共同保证</td>
+</tr>
+<tr>
+<td><strong>I</strong>solation（隔离性）</td>
+<td>并发事务之间互不干扰</td>
+<td>锁 + MVCC</td>
+</tr>
+<tr>
+<td><strong>D</strong>urability（持久性）</td>
+<td>事务提交后数据不会丢失</td>
+<td>redo log + WAL</td>
+</tr>
+</tbody></table>
+<p>在集中式系统中，所有数据在一台机器上，一个数据库事务就能保证多个操作的原子性。但在分布式系统中，数据分散在多台机器上，<strong>本地事务的边界无法跨越网络</strong>——这就是分布式一致性问题的根源。</p>
+<h3>2.2 分布式中的两种一致性</h3>
+<p>在分布式系统中，&quot;一致性&quot;有两层含义，对应两类不同的问题：</p>
+<p><strong>副本一致性</strong>（Replica Consistency）：同一份数据的多个副本之间是否相同。例如数据库主从复制中，主库写入后从库是否能立即读到最新值。再如配置中心的配置信息如何保证所有节点保持同步。</p>
+<p><strong>事务一致性</strong>（Transactional Consistency）：一个跨多个服务的业务操作，所有步骤要么全部成功，要么全部回滚。例如电商下单需要同时扣库存、扣红包、扣优惠券——任何一步失败，已执行的步骤都应该回滚。</p>
+<h3>2.3 为什么会出现一致性问题</h3>
+<p>分布式系统的数据复制需求主要来源于两个原因：</p>
+<p><strong>可用性</strong>：将数据复制到多台机器上，可以消除单点故障。当某台机器宕机时，其他机器上的副本仍然可以提供服务。</p>
+<p><strong>性能</strong>：通过负载均衡技术，让分布在不同地方的数据副本都对外提供读服务，有效提高系统的吞吐量和响应速度。</p>
+<p>但数据复制面临的主要难题就是<strong>如何保证多个副本之间的数据一致性</strong>。在引入复制机制后，不同数据节点之间由于网络延迟、节点故障等原因很容易产生数据不一致。</p>
+<p>根源在于<strong>数据复制</strong>和<strong>服务拆分</strong>两个场景：</p>
+<pre><code>场景一：数据副本同步延迟
+
+  客户端写入 → 主库（成功）→ 同步 → 从库（延迟）
+  客户端读取 → 从库 → 读到旧数据 ❌
+
+场景二：跨服务调用部分失败
+
+  下单服务
+    ├── 调用库存服务：扣减库存 ✅
+    ├── 调用红包服务：扣减红包 ✅
+    └── 调用优惠券服务：扣减优惠券 ❌（超时）
+
+  此时库存和红包已扣减，但优惠券未知 → 数据不一致
+</code></pre>
+<p>用一个具体的代码场景说明：</p>
+<pre><code class="language-java">// 电商下单伪代码 —— 跨三个服务的操作
+public OrderResult createOrder(OrderRequest request) {
+    // 步骤1：扣减库存（调用库存服务）
+    inventoryService.deduct(request.getSkuId(), request.getQuantity());
+
+    // 步骤2：扣减红包（调用营销服务）
+    couponService.deduct(request.getUserId(), request.getCouponId());
+
+    // 步骤3：创建订单（本地数据库）
+    orderDao.insert(request.toOrder());
+
+    return OrderResult.success();
+}
+</code></pre>
+<p>如果步骤 2 执行成功但步骤 3 失败了怎么办？库存和红包已经扣了，但订单没有创建——用户扣了钱却看不到订单。这就是分布式事务要解决的问题。</p>
+<hr>
+<h2>3. 理论基础：CAP 与 BASE</h2>
+<h3>3.1 CAP 定理</h3>
+<p>2000 年，Eric Brewer 在 ACM PODC 会议上提出了 CAP 猜想，2002 年由 Seth Gilbert 和 Nancy Lynch 正式证明为定理：<strong>一个分布式系统最多只能同时满足以下三项中的两项</strong>——</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>含义</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>C</strong>onsistency（一致性）</td>
+<td>所有节点在同一时刻看到相同的数据。更准确地说，对于任何读操作，要么返回最近一次写操作的结果，要么返回错误</td>
+<td>写入主库后，所有从库立即可读到新值</td>
+</tr>
+<tr>
+<td><strong>A</strong>vailability（可用性）</td>
+<td>每个请求都能在合理时间内收到<strong>非错误</strong>响应（注意：不保证是最新数据）</td>
+<td>任意时刻发送请求，系统都能正常响应</td>
+</tr>
+<tr>
+<td><strong>P</strong>artition tolerance（分区容错性）</td>
+<td>网络分区（节点之间的通信中断或延迟）发生时，系统仍能继续运作</td>
+<td>机房之间的网络断了，各机房仍能独立提供服务</td>
+</tr>
+</tbody></table>
+<h4>为什么 P 不可放弃</h4>
+<p>在实际的分布式系统中，网络分区（P）是不可避免的——网络硬件会故障、光纤会被挖断、交换机会宕机。你不能假设网络永远不会出问题。正如 2012 年 Coda Hale 在其文章中论证的：&quot;you cannot choose CA&quot;——一旦系统部署在多台机器上，网络分区就是物理现实而非可选项。</p>
+<p>因此，<strong>CAP 的核心不是&quot;三选二&quot;，而是在发生网络分区时，你选择一致性还是可用性</strong>：</p>
+<pre><code>                        CAP 三角
+                          C
+                         / \
+                        /   \
+                       /     \
+                   CP /       \ CA（理论上存在，
+                     /         \   实际不可行，
+                    /           \  因为 P 不可避免）
+                   P ─────────── A
+                        AP
+</code></pre>
+<h4>CP 与 AP 的工程实践</h4>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>取舍</th>
+<th>典型系统</th>
+<th>工程表现</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>CP</strong></td>
+<td>保证一致性，牺牲部分可用性</td>
+<td>ZooKeeper、etcd、HBase</td>
+<td>网络分区时，少数派节点拒绝服务（返回错误），直到分区恢复后才重新提供服务。适用于对数据正确性要求极高的场景：分布式锁、配置管理、leader 选举</td>
+</tr>
+<tr>
+<td><strong>AP</strong></td>
+<td>保证可用性，允许短暂不一致</td>
+<td>Cassandra、DynamoDB、DNS、Eureka</td>
+<td>网络分区时，所有节点继续提供服务，但不同节点可能返回不同版本的数据。分区恢复后通过反熵协议（anti-entropy）或读修复（read repair）等机制达到一致。适用于对可用性要求极高的场景：用户信息缓存、社交动态</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>重要澄清</strong>：CAP 中的&quot;放弃一致性&quot;不是说数据可以永远不一致，而是放弃<strong>强一致性</strong>，允许数据在短时间内不一致，但最终会达到一致。分布式系统无论在 CAP 三者之间如何权衡，都<strong>无法彻底放弃一致性</strong>——如果真的放弃一致性，系统中的数据就不可信，那么这个系统也就没有任何价值可言。所以，我们常说的&quot;放弃一致性&quot;实际指的是放弃<strong>强一致性</strong>，而不是完全不保证一致性。这就引出了 BASE 理论。</p>
+</blockquote>
+<h3>3.2 BASE 理论</h3>
+<p>BASE 是对 CAP 中 AP 策略的延伸，它的核心思想是：<strong>即使无法做到强一致性，也可以通过适当的方式达到最终一致性</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>缩写</th>
+<th>全称</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>BA</strong></td>
+<td>Basically Available</td>
+<td>基本可用——出现故障时允许损失<strong>部分非核心功能</strong>（如降级、限流），但核心功能可用</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>Soft State</td>
+<td>软状态——允许系统中的数据存在中间状态，即允许不同节点之间的数据副本在同步过程中暂时不一致</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td>Eventually Consistent</td>
+<td>最终一致——软状态不会一直持续，经过一段时间后，所有副本最终会达到一致状态</td>
+</tr>
+</tbody></table>
+<h4>&quot;基本可用&quot;的两种典型表现</h4>
+<ul>
+<li><strong>响应时间上的损失</strong>：正常情况下搜索引擎在 0.5 秒内返回结果，故障时可以延长到 1-2 秒</li>
+<li><strong>功能上的损失</strong>：电商大促时，为了保护核心的购买流程，暂时关闭评论、推荐等非核心功能</li>
+</ul>
+<h4>BASE vs ACID</h4>
+<p>BASE 理论是对 ACID 的妥协和补充。ACID 追求强一致性模型，BASE 追求的则是通过牺牲强一致性来获得可用性：</p>
+<pre><code>ACID（强一致性，悲观策略）      BASE（最终一致性，乐观策略）
+──────────────────────        ──────────────────────────
+Atomicity   原子性             Basically Available  基本可用
+Consistency 一致性             Soft State           软状态
+Isolation   隔离性             Eventually Consistent 最终一致
+Durability  持久性
+
+ACID 适用于：银行转账、库存扣减等对一致性要求极高的场景
+BASE 适用于：社交动态、搜索索引等可以容忍短暂不一致的场景
+</code></pre>
+<p>在实际系统中，ACID 和 BASE 不是非此即彼的选择，很多系统会<strong>混合使用</strong>——核心链路用 ACID，非核心链路用 BASE。</p>
+<hr>
+<h2>4. 一致性模型</h2>
+<p>一致性模型定义了&quot;数据写入后，读取方能看到什么&quot;的约定。不同的模型在<strong>一致性强度</strong>和<strong>系统性能</strong>之间做出不同的取舍。如何能既保证数据一致性，又保证系统的性能，是每一个分布式系统都需要重点考虑和权衡的。一致性模型可以在做这些权衡的时候给我们很多借鉴和思考。</p>
+<h3>4.1 强一致性（Linearizability）</h3>
+<p>当更新操作完成之后，任何多个后续进程或线程的访问都会返回最新的更新过的值。这种是对用户最友好的——用户上一次写什么，下一次就保证能读到什么。</p>
+<pre><code>时间线 →
+
+Writer:     Write(x=1) ──── 完成
+Reader A:                         Read(x) → 1 ✅
+Reader B:                         Read(x) → 1 ✅
+</code></pre>
+<p>但这种实现对性能影响较大，因为这意味着<strong>只要上次的操作没有处理完，就不能让用户读取数据</strong>。所有读取都必须等待写入完成并同步到所有副本。单机数据库的事务就是强一致性的典型实现；在分布式环境中，Raft/Paxos 等共识算法可以实现强一致性，但代价是更高的延迟和更低的吞吐量。</p>
+<h3>4.2 弱一致性</h3>
+<p>系统并不保证后续进程或线程的访问都会返回最新的更新过的值。系统在数据写入成功之后，<strong>不承诺立即可以读到最新写入的值，也不会具体地承诺多久之后可以读到</strong>。但会尽可能保证在某个时间级别（比如秒级别）之后，可以让数据达到一致性状态。</p>
+<p>从写入到最终所有读取都能看到新值的这段时间，被称为**&quot;不一致窗口&quot;（inconsistency window）**。弱一致性不对这个窗口的大小做任何承诺。</p>
+<h3>4.3 最终一致性</h3>
+<p>弱一致性的特定形式。系统保证：<strong>在没有后续更新的前提下，系统最终返回上一次更新操作的值</strong>。在没有故障发生的前提下，不一致窗口的时间主要受<strong>通信延迟</strong>、<strong>系统负载</strong>和<strong>复制副本的个数</strong>影响。</p>
+<p>DNS 是最典型的最终一致性系统——你修改了域名解析记录，全球各地的 DNS 服务器不会立即更新，但经过 TTL 时间后，所有节点都会拿到新值。</p>
+<h3>4.4 最终一致性的变体</h3>
+<p>最终一致性有几种重要的变体，它们在&quot;最终一致&quot;的基础上提供了更具体的保证：</p>
+<p><strong>因果一致性（Causal Consistency）</strong></p>
+<p>如果进程 A 在更新之后通知了进程 B，那么进程 B 的后续访问将返回更新后的值。与进程 A 没有因果关系的进程 C，则遵循最终一致性的规则。例如：A 发了一条微博，B 对该微博进行了评论。其他用户看到 B 的评论时，一定能看到 A 的原始微博——因为评论和原微博之间存在因果关系。</p>
+<p><strong>读己所写一致性（Read-your-writes Consistency）</strong></p>
+<p>因果一致性的特定形式。一个进程总可以读到自己更新的数据。例如：用户更新了头像后刷新页面，一定能看到新头像——即使这个更新还没有同步到所有从库。</p>
+<p><strong>会话一致性（Session Consistency）</strong></p>
+<p>读己所写一致性的特定形式。进程在访问存储系统的同一个会话内，系统保证该进程读己之所写。会话结束后，新的会话可能读到旧值。实现方式通常是将同一会话的读写请求路由到同一个节点（session stickiness）。</p>
+<p><strong>单调读一致性（Monotonic Read Consistency）</strong></p>
+<p>如果一个进程已经读取到一个特定值，那么该进程不会再读取到该值以前的任何值。也就是说，读到的数据版本只会前进，不会后退。例如：用户刷新页面看到了 10 条评论，再次刷新不应该看到只有 8 条——这在请求被负载均衡到不同从库时容易出现。</p>
+<p><strong>单调写一致性（Monotonic Write Consistency）</strong></p>
+<p>系统保证来自同一个进程的写操作被串行化执行。例如：用户先修改了用户名，再修改了头像，系统不会出现头像先于用户名更新的情况。</p>
+<h4>变体的组合</h4>
+<p>上述最终一致性的不同变体可以进行<strong>组合</strong>使用。从实践的角度来看，<strong>读己所写 + 单调读</strong>的组合是最实用的——用户总能读取到自己更新的数据，并且一旦读取到最新的版本就不会再读取到旧版本。这个组合对于分布式架构上的程序开发来说，会减少很多额外的复杂性。大部分互联网应用的最终一致性方案都在追求这个组合。</p>
+<pre><code>一致性模型强度排序（由强到弱）：
+
+强一致性 &gt; 因果一致性 &gt; 读己所写 &gt; 会话一致性 &gt; 单调读/单调写 &gt; 最终一致性 &gt; 弱一致性
+   ↑                                                                    ↑
+   │                                                                    │
+ 性能最差，一致性最强                                            性能最好，一致性最弱
+</code></pre>
+<hr>
+<h2>5. 分布式事务：2PC</h2>
+<h3>5.1 什么是分布式事务</h3>
+<p>分布式事务是将单库事务的概念扩展到多库/多服务——<strong>跨越多个独立节点的操作，要么全部提交，要么全部回滚</strong>。</p>
+<p>核心困难在于：每个节点只知道自己的事务执行结果，不知道其他节点的情况。因此需要引入一个**协调者（Coordinator）**来统一决策。</p>
+<h3>5.2 XA 规范</h3>
+<p>X/Open 组织定义的分布式事务处理模型（DTP），包含四个角色：</p>
+<pre><code>┌──────────────────────────────────────────────────────┐
+│                    应用程序（AP）                       │
+│                  发起全局事务                           │
+└──────────┬───────────────────────────┬───────────────┘
+           │                           │
+           ▼                           ▼
+┌──────────────────┐        ┌──────────────────┐
+│  事务管理器（TM）  │        │ 通信资源管理器(CRM)│
+│  协调全局事务      │        │  消息中间件        │
+│  （交易中间件）    │        │                   │
+└────────┬─────────┘        └──────────────────┘
+         │
+    ┌────┴────┐
+    ▼         ▼
+┌───────┐ ┌───────┐
+│RM（DB1）│ │RM（DB2）│
+│资源管理器│ │资源管理器│
+└───────┘ └───────┘
+</code></pre>
+<p>XA 是 TM 与 RM 之间的接口规范——定义了 <code>xa_start</code>、<code>xa_end</code>、<code>xa_prepare</code>、<code>xa_commit</code>、<code>xa_rollback</code> 等接口函数，由数据库厂商实现。<strong>2PC 和 3PC 就是基于 XA 规范的具体协议实现</strong>。</p>
+<h3>5.3 两阶段提交（2PC）</h3>
+<p>2PC 是最经典的分布式事务协议，核心思想：<strong>先投票，再执行</strong>。</p>
+<h4>第一阶段：准备（Prepare / Vote）</h4>
+<pre><code>          协调者（TM）
+            │
+    ┌───────┼───────┐
+    │ Prepare       │ Prepare
+    ▼               ▼
+ 参与者A          参与者B
+ 执行本地事务      执行本地事务
+ 写 redo/undo     写 redo/undo
+ 但不提交         但不提交
+    │               │
+    │  Yes/No       │  Yes/No
+    └───────┬───────┘
+            ▼
+          协调者
+</code></pre>
+<p>每个参与者执行本地事务，写入 redo 和 undo 日志，但<strong>不提交</strong>，然后向协调者报告&quot;我准备好了（Yes）&quot;或&quot;我执行失败了（No）&quot;。</p>
+<h4>第二阶段：提交 / 回滚（Commit / Rollback）</h4>
+<p><strong>情况一：所有参与者都返回 Yes → 提交</strong></p>
+<pre><code>          协调者
+            │
+    ┌───────┼───────┐
+    │ Commit        │ Commit
+    ▼               ▼
+ 参与者A          参与者B
+ 正式提交事务      正式提交事务
+ 释放锁资源        释放锁资源
+    │               │
+    │  ACK          │  ACK
+    └───────┬───────┘
+            ▼
+       事务完成 ✅
+</code></pre>
+<p><strong>情况二：任一参与者返回 No 或超时 → 回滚</strong></p>
+<pre><code>          协调者
+            │
+    ┌───────┼───────┐
+    │ Rollback      │ Rollback
+    ▼               ▼
+ 参与者A          参与者B
+ 利用 undo 回滚   利用 undo 回滚
+ 释放锁资源        释放锁资源
+    │               │
+    │  ACK          │  ACK
+    └───────┬───────┘
+            ▼
+       事务回滚 ❌
+</code></pre>
+<h4>Java 中的 XA 事务示例</h4>
+<pre><code class="language-java">// 使用 JTA（Java Transaction API）实现 2PC
+import javax.transaction.UserTransaction;
+import javax.sql.XADataSource;
+
+public class XATransactionExample {
+
+    public void transfer(BigDecimal amount) throws Exception {
+        UserTransaction utx = (UserTransaction) ctx.lookup(&quot;java:comp/UserTransaction&quot;);
+
+        // XA 数据源（两个不同的数据库）
+        Connection connA = xaDataSourceA.getConnection();  // 账户库
+        Connection connB = xaDataSourceB.getConnection();  // 积分库
+
+        try {
+            utx.begin();  // 开启全局事务
+
+            // 操作数据库 A：扣减账户余额
+            PreparedStatement psA = connA.prepareStatement(
+                &quot;UPDATE account SET balance = balance - ? WHERE user_id = ?&quot;);
+            psA.setBigDecimal(1, amount);
+            psA.setLong(2, userId);
+            psA.executeUpdate();
+
+            // 操作数据库 B：增加积分
+            PreparedStatement psB = connB.prepareStatement(
+                &quot;UPDATE points SET total = total + ? WHERE user_id = ?&quot;);
+            psB.setInt(1, amount.intValue());
+            psB.setLong(2, userId);
+            psB.executeUpdate();
+
+            utx.commit();  // 两阶段提交：TM 协调两个 RM 一起提交
+        } catch (Exception e) {
+            utx.rollback();  // 两个数据库一起回滚
+            throw e;
+        }
+    }
+}
+</code></pre>
+<h4>2PC 的问题</h4>
+<p>二阶段提交看起来确实能够提供原子性的操作，但不幸的是，它存在几个严重的缺陷：</p>
+<p><strong>问题一：同步阻塞</strong></p>
+<p>执行过程中，所有参与节点都是事务阻塞型的。当参与者占有公共资源时，其他第三方节点访问这些公共资源将不得不处于阻塞状态。从准备阶段开始，参与者就持有了锁资源（写入了 redo/undo 日志，锁定了相关行），这些锁一直要到提交阶段完成才能释放。在高并发场景下，这种长时间持锁会严重影响系统吞吐量。</p>
+<p><strong>问题二：单点故障</strong></p>
+<p>由于协调者的重要性，一旦协调者发生故障，参与者会一直阻塞下去。尤其在第二阶段，如果协调者发生故障，那么所有的参与者还都处于锁定事务资源的状态中，而无法继续完成事务操作。虽然可以通过选举协议重新选出一个协调者，但这<strong>无法解决因为协调者宕机导致的参与者已经处于阻塞状态的问题</strong>——新协调者并不知道上一个协调者在宕机前做出了什么决定。</p>
+<p><strong>问题三：数据不一致</strong></p>
+<p>在二阶段提交的第二阶段中，当协调者向参与者发送 Commit 请求之后，发生了局部网络异常，或者在发送 Commit 请求过程中协调者发生了故障，这会导致<strong>只有一部分参与者接收到了 Commit 请求</strong>。收到 Commit 请求的参与者会执行提交操作，而其他未收到的参与者则无法执行事务提交。于是整个分布式系统便出现了数据不一致的现象。</p>
+<pre><code>协调者发送 Commit 后宕机：
+
+协调者 ──→ Commit ──→ 参与者A（收到，执行提交 ✅）
+       ──→ Commit ──✗  参与者B（未收到，仍在等待 ⏳）
+       ──→ Commit ──✗  参与者C（未收到，仍在等待 ⏳）
+
+结果：A 已提交，B 和 C 仍在阻塞 → 数据不一致
+</code></pre>
+<p><strong>问题四：二阶段无法解决的问题</strong></p>
+<p>协调者在发出 Commit 消息之后宕机，而<strong>唯一接收到这条消息的参与者同时也宕机了</strong>。那么即使通过选举协议产生了新的协调者，这条事务的状态也是不确定的——没有人知道事务是否已经被提交。新协调者无法从其他存活的参与者那里获取足够信息来做出正确的决定。</p>
+<hr>
+<h2>6. 分布式事务：3PC</h2>
+<h3>6.1 3PC 对 2PC 的改进</h3>
+<p>由于二阶段提交存在着同步阻塞、单点故障、数据不一致等缺陷，研究者们在二阶段提交的基础上做了改进，提出了三阶段提交。与两阶段提交不同的是，三阶段提交有两个核心改动：</p>
+<ol>
+<li><strong>引入超时机制</strong>：同时在协调者和参与者中都引入超时机制。2PC 中只有协调者有超时机制，参与者在等待协调者指令时会无限阻塞。3PC 的参与者在超时后可以自行做出决定，避免了无限阻塞</li>
+<li><strong>增加预提交阶段</strong>：在第一阶段和第二阶段之间插入一个准备阶段（将 2PC 的准备阶段一分为二），保证了在最后提交阶段之前各参与节点的状态是一致的</li>
+</ol>
+<h3>6.2 三个阶段</h3>
+<pre><code>阶段1: CanCommit         阶段2: PreCommit         阶段3: DoCommit
+(轻量级询问)             (预执行 + 写日志)         (正式提交)
+
+  协调者 ──→ 参与者       协调者 ──→ 参与者        协调者 ──→ 参与者
+  &quot;能提交吗?&quot;            &quot;预提交&quot;                 &quot;正式提交&quot;
+  参与者 ──→ 协调者       参与者 ──→ 协调者        参与者 ──→ 协调者
+  &quot;Yes / No&quot;            &quot;ACK&quot;(执行事务,写日志)    &quot;ACK&quot;(提交,释放锁)
+</code></pre>
+<h4>阶段一：CanCommit（询问）</h4>
+<p>协调者向参与者发送 CanCommit 请求，询问是否可以执行事务提交操作，然后开始等待参与者的响应。参与者接到请求后，评估自身能否顺利执行事务（检查资源、权限等），如果认为可以则返回 Yes 响应并进入预备状态，否则返回 No。</p>
+<p><strong>注意：此阶段参与者不执行任何事务操作</strong>——这是与 2PC 准备阶段的关键区别。2PC 的第一阶段参与者就要执行事务并持有锁，而 3PC 的 CanCommit 只是一个轻量级的&quot;询问&quot;，不占用任何资源。</p>
+<h4>阶段二：PreCommit（预执行）</h4>
+<p>协调者根据参与者的反应来决定是否可以进行事务的预执行。根据响应情况，有两种可能：</p>
+<p><strong>所有参与者返回 Yes → 预执行事务</strong></p>
+<ol>
+<li>协调者向参与者发送 PreCommit 请求，并进入 Prepared 阶段</li>
+<li>参与者接收到 PreCommit 请求后，执行事务操作，将 undo 和 redo 信息记录到事务日志中（但不提交）</li>
+<li>如果参与者成功执行了事务操作，则返回 ACK 响应，同时开始等待最终指令</li>
+</ol>
+<p><strong>任一参与者返回 No 或超时 → 中断事务</strong></p>
+<ol>
+<li>协调者向所有参与者发送 Abort 请求</li>
+<li>参与者收到 Abort 请求之后（或超时之后仍未收到协调者请求），执行事务中断</li>
+</ol>
+<h4>阶段三：DoCommit（正式提交）</h4>
+<p>该阶段进行真正的事务提交，同样分为两种情况：</p>
+<p><strong>正常提交</strong></p>
+<ol>
+<li>协调者接收到所有参与者发送的 ACK 响应，从预提交状态进入提交状态，向所有参与者发送 DoCommit 请求</li>
+<li>参与者接收到 DoCommit 请求后，执行正式的事务提交，并在完成后释放所有事务资源</li>
+<li>参与者向协调者发送 ACK 响应</li>
+<li>协调者接收到所有参与者的 ACK 后，完成事务</li>
+</ol>
+<p><strong>中断事务</strong></p>
+<ol>
+<li>协调者没有接收到参与者发送的 ACK 响应（可能参与者发送的不是 ACK，也可能响应超时），向所有参与者发送 Abort 请求</li>
+<li>参与者接收到 Abort 请求后，利用阶段二记录的 undo 信息执行事务回滚，并在完成后释放所有事务资源</li>
+<li>参与者完成回滚后，向协调者发送 ACK 消息</li>
+<li>协调者接收到参与者反馈的 ACK 消息后，中断事务</li>
+</ol>
+<h4>超时默认提交的设计推理</h4>
+<p><strong>关键设计</strong>：如果参与者在阶段三等待超时（没收到 DoCommit 也没收到 Abort），它会<strong>默认提交</strong>。</p>
+<p>这个设计是基于概率推理的：当进入第三阶段时，说明参与者在第二阶段已经收到了 PreCommit 请求。而协调者产生 PreCommit 请求的前提条件是——它在第二阶段开始之前，收到了<strong>所有参与者</strong>的 CanCommit 响应都是 Yes。换句话说，<strong>一旦参与者收到了 PreCommit，就意味着它知道大家其实都同意修改了</strong>。所以，当进入第三阶段时，虽然参与者由于网络超时没有收到 Commit 或 Abort 响应，但它有理由相信：成功提交的概率远大于需要回滚的概率。</p>
+<h3>6.3 2PC vs 3PC 对比</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>2PC</th>
+<th>3PC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>阶段数</td>
+<td>2（准备 + 提交）</td>
+<td>3（询问 + 预提交 + 提交）</td>
+</tr>
+<tr>
+<td>超时机制</td>
+<td>仅协调者有</td>
+<td>协调者和参与者都有</td>
+</tr>
+<tr>
+<td>阻塞风险</td>
+<td>高（协调者宕机 → 参与者永久阻塞）</td>
+<td>低（参与者超时后默认提交）</td>
+</tr>
+<tr>
+<td>一致性</td>
+<td>可能不一致（部分提交）</td>
+<td>仍可能不一致（见下文）</td>
+</tr>
+<tr>
+<td>网络开销</td>
+<td>较低</td>
+<td>多一轮通信</td>
+</tr>
+</tbody></table>
+<p>相对于 2PC，3PC 主要解决的是单点故障问题，并减少了阻塞——因为一旦参与者无法及时收到来自协调者的信息之后，它会默认执行 Commit，而不会一直持有事务资源并处于阻塞状态。</p>
+<p>但是这种机制也会导致数据一致性问题：由于网络原因，协调者发送的 Abort 响应没有及时被参与者接收到，那么参与者在等待超时之后执行了 Commit 操作。这样就和其他接到 Abort 命令并执行了回滚的参与者之间存在数据不一致。</p>
+<blockquote>
+<p>无论 2PC 还是 3PC 都无法彻底解决分布式一致性问题。Google Chubby 的作者 Mike Burrows 说过：&quot;there is only one consensus protocol, and that&#39;s Paxos&quot; — all other approaches are just broken versions of Paxos. 意即<strong>世上只有一种一致性算法，那就是 Paxos</strong>，所有其他一致性算法都是 Paxos 算法的不完整版。但在工程实践中，我们更多使用的是下面介绍的几种<strong>柔性事务</strong>方案。</p>
+</blockquote>
+<hr>
+<h2>7. 柔性事务方案</h2>
+<p>2PC/3PC 是<strong>刚性事务</strong>——追求强一致性，代价是性能和可用性。在互联网业务中，更常用的是<strong>柔性事务</strong>——基于 BASE 理论，接受短暂的不一致，保证最终一致性。</p>
+<h3>7.1 TCC（Try-Confirm-Cancel）</h3>
+<p>TCC 将每个业务操作拆分为三个步骤：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>职责</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Try</strong></td>
+<td>资源预留</td>
+<td>冻结库存、冻结余额，但不真正扣减</td>
+</tr>
+<tr>
+<td><strong>Confirm</strong></td>
+<td>确认执行</td>
+<td>将冻结的资源正式扣减（幂等）</td>
+</tr>
+<tr>
+<td><strong>Cancel</strong></td>
+<td>取消释放</td>
+<td>将冻结的资源释放回去（幂等）</td>
+</tr>
+</tbody></table>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                    TCC 执行流程                           │
+│                                                          │
+│  业务发起方                                               │
+│    │                                                     │
+│    ├── Try(库存服务): 冻结 10 件库存                       │
+│    ├── Try(余额服务): 冻结 100 元                          │
+│    ├── Try(优惠券服务): 冻结优惠券                          │
+│    │                                                     │
+│    ├─ 全部 Try 成功 ──→ Confirm 所有服务 ──→ 事务完成 ✅    │
+│    │                                                     │
+│    └─ 任一 Try 失败 ──→ Cancel 已 Try 的服务 ──→ 事务回滚 ❌│
+└─────────────────────────────────────────────────────────┘
+</code></pre>
+<h4>代码示例</h4>
+<pre><code class="language-java">// 库存服务的 TCC 实现
+public class InventoryTccService {
+
+    // Try：冻结库存（不真正扣减）
+    public boolean tryDeduct(String skuId, int quantity) {
+        int updated = jdbcTemplate.update(
+            &quot;UPDATE inventory SET available = available - ?, frozen = frozen + ? &quot; +
+            &quot;WHERE sku_id = ? AND available &gt;= ?&quot;,
+            quantity, quantity, skuId, quantity);
+        return updated &gt; 0;
+    }
+
+    // Confirm：将冻结的库存正式扣减
+    public boolean confirm(String skuId, int quantity) {
+        jdbcTemplate.update(
+            &quot;UPDATE inventory SET frozen = frozen - ? WHERE sku_id = ? AND frozen &gt;= ?&quot;,
+            quantity, skuId, quantity);
+        return true;
+    }
+
+    // Cancel：释放冻结的库存
+    public boolean cancel(String skuId, int quantity) {
+        jdbcTemplate.update(
+            &quot;UPDATE inventory SET available = available + ?, frozen = frozen - ? &quot; +
+            &quot;WHERE sku_id = ? AND frozen &gt;= ?&quot;,
+            quantity, quantity, skuId, quantity);
+        return true;
+    }
+}
+</code></pre>
+<h4>TCC 的关键要求</h4>
+<ul>
+<li><strong>Confirm 和 Cancel 必须幂等</strong>：网络重试可能导致重复调用</li>
+<li><strong>Cancel 必须能处理 Try 未执行的情况</strong>（空回滚）：如果 Try 因为超时未到达，TCC 框架可能直接调 Cancel</li>
+<li><strong>防悬挂</strong>：Cancel 执行后，迟到的 Try 不能再执行</li>
+</ul>
+<h4>适用场景</h4>
+<p>适合对一致性要求较高、资源可以预留的场景：资金转账、库存预扣、票务预订等。</p>
+<h3>7.2 Saga 模式</h3>
+<p>Saga 将一个长事务拆分为一系列<strong>本地事务</strong>，每个本地事务都有对应的<strong>补偿操作</strong>。如果某个步骤失败，按反方向依次执行补偿操作。</p>
+<pre><code>正向执行：T1 → T2 → T3 → T4 → 完成 ✅
+
+异常回滚：T1 → T2 → T3(失败) → C2 → C1 → 回滚完成 ❌
+                                 ↑补偿T2  ↑补偿T1
+</code></pre>
+<p>Saga 有两种实现方式：</p>
+<p><strong>编排式（Choreography）</strong>：每个服务完成本地事务后发布事件，下游服务监听事件执行自己的操作。去中心化，但流程难以追踪。</p>
+<pre><code>订单服务         库存服务         支付服务
+  │                │                │
+  ├─ 创建订单 ────→│                │
+  │  发布事件       ├─ 扣减库存 ────→│
+  │               │  发布事件       ├─ 执行支付
+  │               │               │  发布事件
+  │←───────────── │←───────────── │
+  │  （如果失败，反向发布补偿事件）     │
+</code></pre>
+<p><strong>协调式（Orchestration）</strong>：引入一个 Saga 协调器，集中控制每个步骤的执行和补偿。流程清晰，便于监控。</p>
+<pre><code class="language-java">// Saga 协调器伪代码
+public class OrderSagaOrchestrator {
+
+    public void execute(OrderRequest request) {
+        SagaContext context = new SagaContext(request);
+
+        try {
+            // 正向执行
+            context.execute(&quot;创建订单&quot;,
+                () -&gt; orderService.create(request),
+                () -&gt; orderService.cancel(request));       // 补偿操作
+
+            context.execute(&quot;扣减库存&quot;,
+                () -&gt; inventoryService.deduct(request),
+                () -&gt; inventoryService.restore(request));   // 补偿操作
+
+            context.execute(&quot;执行支付&quot;,
+                () -&gt; paymentService.charge(request),
+                () -&gt; paymentService.refund(request));      // 补偿操作
+
+        } catch (Exception e) {
+            // 任一步骤失败 → 反向执行已完成步骤的补偿操作
+            context.compensate();
+        }
+    }
+}
+</code></pre>
+<h4>TCC vs Saga 对比</h4>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>TCC</th>
+<th>Saga</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>隔离性</td>
+<td>较强（Try 阶段锁定资源）</td>
+<td>较弱（无资源预留，中间状态可见）</td>
+</tr>
+<tr>
+<td>业务侵入</td>
+<td>高（需实现 Try/Confirm/Cancel 三个接口）</td>
+<td>中（需实现业务操作 + 补偿操作）</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>短事务、需要资源预留</td>
+<td>长事务、跨多个服务的业务流程</td>
+</tr>
+<tr>
+<td>实现复杂度</td>
+<td>高（空回滚、悬挂、幂等）</td>
+<td>中等（补偿逻辑、幂等）</td>
+</tr>
+</tbody></table>
+<h3>7.3 本地消息表</h3>
+<p>通过<strong>本地数据库事务</strong>保证业务操作和消息写入的原子性，再通过<strong>异步消息</strong>驱动下游操作，最终达到一致。</p>
+<pre><code>┌────────────────────────────────────────────────────────────┐
+│                    本地消息表流程                             │
+│                                                             │
+│  上游服务（同一个数据库事务内）                                │
+│    ├── 执行业务操作（如创建订单）                              │
+│    └── 写入消息表（status = PENDING）                        │
+│         │                                                   │
+│  定时任务 ──→ 扫描 PENDING 消息 ──→ 发送到 MQ               │
+│         │                                                   │
+│  发送成功 ──→ 更新 status = SENT                            │
+│         │                                                   │
+│  下游服务 ←── 消费 MQ 消息 ──→ 执行业务操作（幂等）           │
+│         │                                                   │
+│  消费成功 ──→ 回调上游 ──→ 更新 status = DONE               │
+└────────────────────────────────────────────────────────────┘
+</code></pre>
+<h4>代码示例</h4>
+<pre><code class="language-java">// 上游服务：业务操作 + 消息写入在同一个本地事务中
+@Transactional
+public void createOrder(OrderRequest request) {
+    // 1. 执行业务操作
+    orderDao.insert(request.toOrder());
+
+    // 2. 写入消息表（同一个数据库，同一个事务）
+    localMessageDao.insert(new LocalMessage(
+        UUID.randomUUID().toString(),
+        &quot;ORDER_CREATED&quot;,
+        JsonUtils.toJson(request),
+        &quot;PENDING&quot;
+    ));
+    // 事务提交后，两条记录要么都写入，要么都不写入
+}
+
+// 定时任务：扫描并发送未处理的消息
+@Scheduled(fixedDelay = 5000)
+public void sendPendingMessages() {
+    List&lt;LocalMessage&gt; messages = localMessageDao.queryByStatus(&quot;PENDING&quot;);
+    for (LocalMessage msg : messages) {
+        try {
+            mqProducer.send(msg.getTopic(), msg.getBody());
+            localMessageDao.updateStatus(msg.getId(), &quot;SENT&quot;);
+        } catch (Exception e) {
+            // 发送失败不更新状态，下次定时任务重试
+            log.warn(&quot;send message failed, will retry: {}&quot;, msg.getId());
+        }
+    }
+}
+</code></pre>
+<p>优点是实现简单、不依赖特殊中间件。缺点是需要定时轮询，实时性取决于轮询间隔。</p>
+<h3>7.4 事务消息（RocketMQ）</h3>
+<p>RocketMQ 原生支持事务消息，相当于<strong>中间件级别的本地消息表</strong>——将&quot;本地事务 + 消息发送&quot;的原子性保证从应用层下沉到了消息中间件。</p>
+<pre><code>┌──────────────────────────────────────────────────────────┐
+│                  RocketMQ 事务消息流程                      │
+│                                                           │
+│  Producer                  RocketMQ               Consumer│
+│    │                          │                       │   │
+│    ├── 1.发送半消息(Half) ────→│                       │   │
+│    │                          ├── 半消息对消费者不可见   │   │
+│    │←── 2.半消息发送成功 ──────┤                       │   │
+│    │                          │                       │   │
+│    ├── 3.执行本地事务          │                       │   │
+│    │    (如写数据库)           │                       │   │
+│    │                          │                       │   │
+│    ├── 4a.本地事务成功         │                       │   │
+│    │   发送 Commit ──────────→├── 消息对消费者可见 ───→│   │
+│    │                          │                       │   │
+│    ├── 4b.本地事务失败         │                       │   │
+│    │   发送 Rollback ────────→├── 删除半消息           │   │
+│    │                          │                       │   │
+│    │── 4c.超时未响应           │                       │   │
+│    │                          ├── 5.回查本地事务状态    │   │
+│    │←─────────────────────────┤                       │   │
+│    ├── 返回 Commit/Rollback ─→│                       │   │
+└──────────────────────────────────────────────────────────┘
+</code></pre>
+<h4>代码示例</h4>
+<pre><code class="language-java">// RocketMQ 事务消息 Producer
+public class OrderTransactionProducer {
+
+    private TransactionMQProducer producer;
+
+    public void sendOrderMessage(OrderRequest request) {
+        Message msg = new Message(&quot;ORDER_TOPIC&quot;, JsonUtils.toJson(request).getBytes());
+
+        // 发送事务消息
+        producer.sendMessageInTransaction(msg, new TransactionListener() {
+
+            @Override
+            public LocalTransactionState executeLocalTransaction(Message msg, Object arg) {
+                try {
+                    // 执行本地事务（如写数据库）
+                    orderService.createOrder(request);
+                    return LocalTransactionState.COMMIT_MESSAGE;
+                } catch (Exception e) {
+                    return LocalTransactionState.ROLLBACK_MESSAGE;
+                }
+            }
+
+            @Override
+            public LocalTransactionState checkLocalTransaction(MessageExt msg) {
+                // 回查：检查本地事务是否已执行成功
+                Order order = orderDao.queryByOrderId(request.getOrderId());
+                if (order != null) {
+                    return LocalTransactionState.COMMIT_MESSAGE;
+                }
+                return LocalTransactionState.UNKNOW;  // 继续等待回查
+            }
+        }, null);
+    }
+}
+</code></pre>
+<p>事务消息的优势在于：<strong>半消息 + 回查机制</strong>天然解决了&quot;本地事务成功但消息发送失败&quot;和&quot;消息发送成功但本地事务失败&quot;两种不一致场景。</p>
+<hr>
+<h2>8. 最大努力通知</h2>
+<p>最大努力通知是最简单的最终一致性方案：上游系统<strong>尽最大努力</strong>通知下游系统，如果通知失败则重试若干次，最终仍然失败则需要人工介入或下游主动查询。</p>
+<pre><code>上游系统 ──→ 通知下游（第1次）──→ 失败
+         ──→ 通知下游（第2次）──→ 失败（间隔递增）
+         ──→ 通知下游（第3次）──→ 成功 ✅
+         ──→ ...
+         ──→ 通知下游（第N次）──→ 仍然失败 → 放弃，记录日志，等待人工处理
+                                              或下游主动查询上游接口
+</code></pre>
+<p>典型应用场景：<strong>支付回调</strong>。支付宝、微信支付完成扣款后，会多次回调商户的通知地址。如果商户系统一直没有返回成功，支付平台会按递增间隔重试（如 1s、5s、30s、5min、30min），超过最大次数后停止。商户可以通过主动调用支付查询接口来获取最终结果。</p>
+<hr>
+<h2>9. 方案选型</h2>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>一致性</th>
+<th>性能</th>
+<th>复杂度</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>2PC/XA</strong></td>
+<td>强一致</td>
+<td>低（同步阻塞）</td>
+<td>低（数据库/中间件原生支持）</td>
+<td>数据库层面的跨库事务，对一致性要求极高的场景</td>
+</tr>
+<tr>
+<td><strong>3PC</strong></td>
+<td>强一致（仍有缺陷）</td>
+<td>低（多一轮通信）</td>
+<td>中</td>
+<td>理论意义大于实践，工程中较少直接使用</td>
+</tr>
+<tr>
+<td><strong>TCC</strong></td>
+<td>最终一致</td>
+<td>高</td>
+<td>高（三个接口 + 幂等 + 空回滚 + 防悬挂）</td>
+<td>资金交易、库存预扣等需要资源预留的场景</td>
+</tr>
+<tr>
+<td><strong>Saga</strong></td>
+<td>最终一致</td>
+<td>高</td>
+<td>中</td>
+<td>长事务、跨多服务的业务编排</td>
+</tr>
+<tr>
+<td><strong>本地消息表</strong></td>
+<td>最终一致</td>
+<td>中（依赖轮询间隔）</td>
+<td>低</td>
+<td>对实时性要求不高的异步场景</td>
+</tr>
+<tr>
+<td><strong>事务消息</strong></td>
+<td>最终一致</td>
+<td>高</td>
+<td>低（中间件原生支持）</td>
+<td>基于消息驱动的异步业务，如订单 → 物流 → 通知</td>
+</tr>
+<tr>
+<td><strong>最大努力通知</strong></td>
+<td>最终一致（弱保证）</td>
+<td>高</td>
+<td>最低</td>
+<td>跨平台/跨企业的通知场景，如支付回调</td>
+</tr>
+</tbody></table>
+<h3>选型建议</h3>
+<pre><code>                    一致性要求高？
+                    ┌── 是 ──→ 能接受性能损失？
+                    │          ├── 是 ──→ 2PC/XA
+                    │          └── 否 ──→ TCC
+                    │
+                    └── 否 ──→ 涉及多步骤编排？
+                               ├── 是 ──→ Saga
+                               └── 否 ──→ 事务消息 / 本地消息表
+</code></pre>
+<p>实际项目中的经验法则：</p>
+<ul>
+<li><strong>能用单库事务解决就不要用分布式事务</strong>——分布式事务的复杂度远超想象</li>
+<li><strong>大部分互联网业务用最终一致性就够了</strong>——用户能接受几秒的延迟</li>
+<li><strong>资金相关用 TCC</strong>，<strong>业务流程编排用 Saga</strong>，<strong>异步通知用事务消息</strong></li>
+<li>无论哪种方案，<strong>幂等性设计</strong>都是基础——网络重试无处不在</li>
+</ul>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-03-26","children":"2025年03月26日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"大数据分析常用去重算法分析之Bitmap篇"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","大数据",{"href":"/blog/tag/%E5%A4%A7%E6%95%B0%E6%8D%AE/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"大数据"}],["$","$L5","技术专题",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术专题"}],["$","$L5","去重算法",{"href":"/blog/tag/%E5%8E%BB%E9%87%8D%E7%AE%97%E6%B3%95/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"去重算法"}],["$","$L5","Bitmap",{"href":"/blog/tag/Bitmap/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Bitmap"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/data/大数据分析常用去重算法分析之HyperLogLog篇","title":"大数据分析常用去重算法分析之HyperLogLog篇","description":"上篇介绍了利用 Roaring Bitmap 来进行精确去重。虽然这种算法能大大地减少存储开销，但是随着数据量的增大，它依然面临着存储上的压力。在本篇推送中将要介绍的 HyperLogLog（下称 HLL）是一种非精确的去重算法，它的特点是具有非常优异的空间复杂度（几乎可以达到常数级别）。 ","pubDate":"2025-03-25","tags":["大数据","技术专题","去重算法","HyperLogLog"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/middleware/分布式系统与事务：从基础到实践","title":"分布式系统与事务：从基础到实践","description":"本文系统梳理分布式系统的核心问题与解决方案：从集中式到分布式的演进动机，CAP/BASE 理论的工程权衡，一致性模型的层次划分，到 2PC、3PC、TCC、Saga、本地消息表、事务消息等分布式事务方案的原理、流程与代码示例。适合希望建立分布式事务知识体系的工程师阅读。","pubDate":"2025-07-23","tags":["分布式事务","技术专题"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"大数据":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":null},"技术专题":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"去重算法":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":null},"Bitmap":{"prev":null,"next":null}}}]}],["$","$L19",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"大数据分析常用去重算法分析之Bitmap篇 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"去重分析在企业日常分析中的使用频率非常高，如何在大数据场景下快速地进行去重分析一直是一大难点。在近期的 Apache Kylin Meetup 北京站上，我们邀请到 Kyligence 大数据研发工程师陶加涛为大家揭开了大数据分析常用去重算法的神秘面纱。 Apache Kylin 作为目前唯一一个同..."}],["$","meta","2",{"property":"og:title","content":"大数据分析常用去重算法分析之Bitmap篇"}],["$","meta","3",{"property":"og:description","content":"去重分析在企业日常分析中的使用频率非常高，如何在大数据场景下快速地进行去重分析一直是一大难点。在近期的 Apache Kylin Meetup 北京站上，我们邀请到 Kyligence 大数据研发工程师陶加涛为大家揭开了大数据分析常用去重算法的神秘面纱。 Apache Kylin 作为目前唯一一个同..."}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-03-26"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"大数据分析常用去重算法分析之Bitmap篇"}],["$","meta","9",{"name":"twitter:description","content":"去重分析在企业日常分析中的使用频率非常高，如何在大数据场景下快速地进行去重分析一直是一大难点。在近期的 Apache Kylin Meetup 北京站上，我们邀请到 Kyligence 大数据研发工程师陶加涛为大家揭开了大数据分析常用去重算法的神秘面纱。 Apache Kylin 作为目前唯一一个同..."}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}

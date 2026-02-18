@@ -1,0 +1,1142 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-51baccc14cf1da9e.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/a2b4a60000c93b46.css","style"]
+0:{"P":null,"b":"JtWUCh8A6I4Pz8PJ8Ueme","p":"","c":["","blog","engineering","tooling","Java%E6%9E%84%E4%BB%B6%E5%8F%91%E5%B8%83%E5%88%B0%E4%B8%AD%E5%A4%AE%E4%BB%93%E5%BA%93",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/tooling/Java%E6%9E%84%E4%BB%B6%E5%8F%91%E5%B8%83%E5%88%B0%E4%B8%AD%E5%A4%AE%E4%BB%93%E5%BA%93","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a2b4a60000c93b46.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/tooling/Java%E6%9E%84%E4%BB%B6%E5%8F%91%E5%B8%83%E5%88%B0%E4%B8%AD%E5%A4%AE%E4%BB%93%E5%BA%93","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","MZx48msMbb4Am_sePjCxWv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:T3dc2,<blockquote>
+<p><em>首先强调一下，Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过</em><a href="https://central.sonatype.org/pages/ossrh-guide.html">Sonatype OSSRH</a><em>仓库来发布jar包。所以，接下来主要介绍如何将jar包发布到Sonatype OSSRH。</em></p>
+</blockquote>
+<p>首先，先说一下大体的步骤：</p>
+<ul>
+<li>注册Sonatype账号</li>
+<li>创建Issue，验证域名</li>
+<li>安装GPG，发布密钥</li>
+<li>配置Maven，发布构件</li>
+</ul>
+<p>这里面比较重要和容易出错的是第二步和第三步，下面一一详细介绍。</p>
+<h4>1、注册Sonatype账号 <a href="#bojci" id="bojci"></a></h4>
+<p>第一步很简单，登录官网，注册账号就好了<a href="https://issues.sonatype.org/secure/Signup!default.jspa">Sign up for Jira - Sonatype JIRA</a></p>
+<p>注册完成，登陆后的界面如下：</p>
+<p><img src="/images/blog/engineering/practice-image_60.png" alt="image_60.png"></p>
+<h4>2、创建Issue <a href="#omwqz" id="omwqz"></a></h4>
+<p>这里项目选择：Community Support - Open Source Project Repository Hosting (OSSRH)，问题 类型选择：New Project</p>
+<p><img src="/images/blog/engineering/practice-image_67.png" alt="image_67.png"></p>
+<h4>2.1、补充项目信息</h4>
+<p><img src="/images/blog/engineering/practice-image_62.png" alt="image_62.png"></p>
+<h4>2.2、验证域名 <a href="#snbg0" id="snbg0"></a></h4>
+<p>我们需要使用域名作为Group Id，如果你拥有域&#x540D;<em>&#x65;xample.com，则能够使用com.example开头作为Group Id，例如：com.example.myproject。其他一些栗子如下：</em></p>
+<ul>
+<li><em>example.com -&gt; com.example.domain</em></li>
+<li><a href="http://www.springframework.org/">www.springframework.org</a> -&gt; org.springframework</li>
+<li>subdomain.example.com -&gt; example.com</li>
+<li>github.com/yourusername -&gt; io.github.yourusername</li>
+<li>my-domain.com -&gt; com.my-domain</li>
+</ul>
+<p>要想使用某个域名作为Group Id，你需要证明拥有该域名，至于如何证明，详见官方文档：<a href="https://central.sonatype.org/faq/how-to-set-txt-record">https://central.sonatype.org/faq/how-to-set-txt-record/</a></p>
+<p>如果你没有自己的域名，则可以通过代码托管平台的账号关联子域名。假设你托管平台账户名为myusername，那么你可以通过以下托管平台验证Group Id ：</p>
+<p><img src="/images/blog/engineering/practice-image_63.png" alt="image_63.png"></p>
+<p>由于我没有自己的域名，这里我选择使用github账号验证Group Id。点击“新建”按钮，完成提交，之后你的注册邮箱会收到一封邮件，显示创建项目信息：</p>
+<p><img src="/images/blog/engineering/practice-image_65.png" alt="image_65.png"></p>
+<p>稍后还会收到一封审核邮件，提示你进行域名验证，时间延迟大概在十分钟以内。</p>
+<p><strong>2.3、人工审核及确认</strong></p>
+<p><img src="/images/blog/engineering/practice-image_66.png" alt="image_66.png"></p>
+<p>我使用的是github账户，按邮件提示，需要在github平台上创建一个指定的临时工程。创建完成之后，可以在issue下面添加评论，触发验证。验证成功后，你会收到一份邮件：</p>
+<p><img src="/images/blog/engineering/practice-image_68.png" alt="image_68.png"></p>
+<p>收到上述邮件，就表示完成了Group Id的验证，此时你就可以使用该Group Id或者子Group Id发布Maven构件了。如上，我填写的Group Id是 “io.github.nianien”，因此，我可以使用 “io.github.nianien”或者 “io.github.nianien.xxx” 作为项目的GroupId发布Maven构件。</p>
+<p>在通过Maven发布构件之前，我们需要进行Maven配置，这里还需要一些前置工作。</p>
+<h4>3、安装GPG，创建密钥 <a href="#dcxco" id="dcxco"></a></h4>
+<p>安装GPG的方式有多种，这里推荐图形化安装，因为通过命令行安装，由于找不到合适的密钥服务器，发布密钥时会失败。这里给出Mac版本的下载地址：<a href="https://releases.gpgtools.org/GPG_Suite-2022.1.dmg">https://releases.gpgtools.org/GPG_Suite-2022.1.dmg</a></p>
+<ul>
+<li>创建密钥</li>
+</ul>
+<p><img src="/images/blog/engineering/practice-image_69.png" alt="image_69.png"></p>
+<p>3.1、发布密钥</p>
+<p><img src="/images/blog/engineering/practice-image_70.png" alt="image_70.png"></p>
+<p>发布成功后，收到一份邮件：</p>
+<p><img src="/images/blog/engineering/practice-image_71.png" alt="image_71.png"></p>
+<p>按照邮件指示操作，完成密钥发布。密钥发布成功之后，下一步就是配置maven settings.xml和工程pom.xml文件。</p>
+<h4>4、配置Maven，发布构件 <a href="#amad1" id="amad1"></a></h4>
+<ul>
+<li>第一步，配置setting.xml文件，添加server节点：</li>
+</ul>
+<pre><code class="language-xml">&lt;servers&gt;
+&lt;server&gt;
+    &lt;id&gt;ossrh&lt;/id&gt;
+    &lt;username&gt;sonatype账户名&lt;/username&gt;
+    &lt;password&gt;sonatype账户密码&lt;/password&gt;
+&lt;/server&gt;
+&lt;/servers&gt;
+&lt;profile&gt;
+  &lt;id&gt;ossrh&lt;/id&gt;
+  &lt;properties&gt;
+    &lt;gpg.executable&gt;gpg&lt;/gpg.executable&gt;
+    &lt;gpg.passphrase&gt;创建密钥时使用的密码&lt;/gpg.passphrase&gt;
+    &lt;gpg.homedir&gt;/Users/yourname/.gnupg&lt;/gpg.homedir&gt;
+   &lt;/properties&gt;
+&lt;/profile&gt;
+</code></pre>
+<ul>
+<li>第二步，配置pom.xml文件，添加必填项</li>
+</ul>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&lt;!--已经验证的Group Id--&gt;
+    &lt;groupId&gt;io.github.nianien&lt;/groupId&gt;
+    &lt;artifactId&gt;cudrania&lt;/artifactId&gt;
+    &lt;version&gt;1.0.1&lt;/version&gt;&lt;!--必填--&gt;
+    &lt;name&gt;io.github.nianien:cudrania&lt;/name&gt;&lt;!--必填--&gt;
+    &lt;description&gt;support tools for java development&lt;/description&gt;&lt;!--必填--&gt;
+    &lt;url&gt;https://github.com/nianien/cudrania&lt;/url&gt;
+    &lt;properties&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;java.version&gt;17&lt;/java.version&gt;
+    &lt;/properties&gt;&lt;!--必填--&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;The Apache Software License, Version 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;&lt;!--必填--&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;nianien&lt;/id&gt;
+            &lt;name&gt;nianien&lt;/name&gt;
+            &lt;email&gt;nianien@126.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;&lt;!--必填--&gt;
+    &lt;scm&gt;
+        &lt;connection&gt;https://github.com/nianien/cudrania.git&lt;/connection&gt;
+        &lt;developerConnection&gt;scm:git:ssh://git@github.com:nianien/cudrania.git
+        &lt;/developerConnection&gt;
+        &lt;url&gt;https://github.com/nianien/cudrania&lt;/url&gt;
+    &lt;/scm&gt;
+    &lt;build&gt;
+        &lt;pluginManagement&gt;
+            &lt;plugins&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.11.0&lt;/version&gt;
+                    &lt;configuration&gt;
+                        &lt;source&gt;${java.version}&lt;/source&gt;
+                        &lt;target&gt;${java.version}&lt;/target&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;&lt;!--必填--&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.3.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-sources&lt;/id&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar-no-fork&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;&lt;!--必填--&gt; 
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.5.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-javadocs&lt;/id&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;additionalparam&gt;
+                                    -Xdoclint:none
+                                &lt;/additionalparam&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;&lt;!--必填--&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.1.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;sign-artifacts&lt;/id&gt;
+                            &lt;phase&gt;verify&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;sign&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+            &lt;/plugins&gt;
+        &lt;/pluginManagement&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+
+    &lt;profiles&gt;&lt;!--必填--&gt;
+        &lt;profile&gt;
+            &lt;id&gt;ossrh&lt;/id&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;&lt;!--必填--&gt;
+                        &lt;groupId&gt;org.sonatype.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;nexus-staging-maven-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;1.6.13&lt;/version&gt;
+                        &lt;extensions&gt;true&lt;/extensions&gt;
+                        &lt;configuration&gt;
+                            &lt;serverId&gt;ossrh&lt;/serverId&gt;
+                            &lt;nexusUrl&gt;https://s01.oss.sonatype.org/&lt;/nexusUrl&gt; 
+                          &lt;autoReleaseAfterClose&gt;true&lt;/autoReleaseAfterClose&gt;
+                        &lt;/configuration&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;&lt;!--必填--&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;&lt;!--必填--&gt;
+            &lt;distributionManagement&gt;
+                &lt;snapshotRepository&gt;
+                    &lt;id&gt;ossrh&lt;/id&gt;
+                  &lt;url&gt;https://s01.oss.sonatype.org/content/repositories/snapshots
+                    &lt;/url&gt;
+                &lt;/snapshotRepository&gt;
+                &lt;repository&gt;
+                    &lt;id&gt;ossrh&lt;/id&gt;
+                    &lt;url&gt;https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
+                    &lt;/url&gt;
+                &lt;/repository&gt;
+            &lt;/distributionManagement&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+
+    &lt;dependencies&gt;&lt;!--maven依赖--&gt;&lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre>
+<p>上面已经是最精简的pom配置了，我已经把必选项标注好了。这里主要包含两部分内容，一部分是snoatype要求的必备信息，包括：证书、开发者信息、仓库地址和发布地址；另一部分是deploy需要的maven插件列表，大家可以根据实际情况酌情修改。</p>
+<p>需要说明的是，为了不用默认打包冲突，专门定义了用于发布中央仓库的profile：ossrh，这里只需要添加额外的两个插件：nexus-staging-maven-plugin和maven-gpg-plugin，前者用于jar上传，后者用于密钥签名。</p>
+<ul>
+<li>第三步，执行maven命令，发布构件</li>
+</ul>
+<p>配置好pom文件，可以执行maven命令：“mvn clean deploy -Possrh” 进行发布。如果版本号带SNAPSHOT后缀，会发布到snapshots仓库，否则发布到release仓库。</p>
+<p>这里nexus-staging-maven-plugin插件有一个配置项：autoReleaseAfterClose，如果设置为true的话，推送完成会自动release。第一次发布成功后，会收到一封邮件：</p>
+<p><img src="/images/blog/engineering/practice-image_72.png" alt="image_72.png"></p>
+<ul>
+<li><em><strong>最后，让jar包更快的在中央仓库被搜索到</strong></em></li>
+</ul>
+<p>根据邮件提示，Jar包成功发布成功后，大约30分钟后会推到中央仓库，我们可以从仓库地址看到我们发布的Jar包：<a href="https://repo1.maven.org/maven2">https://repo1.maven.org/maven2/</a></p>
+<p><img src="/images/blog/engineering/practice-image_73.png" alt="image_73.png"></p>
+<p>此时，其他项目就可以通过maven依赖引用我们的构件了，但是这时候通过中央仓库仍然搜不到我们的Maven构件。按照邮件提示可能会需要四小时，实际情况是我等了5个小时依然搜不到。如果遇到这种情况，我们可以通过在对issue添加评论反馈，会有人工回复进行解决：</p>
+<p><img src="/images/blog/engineering/practice-image_74.png" alt="image_74.png"></p>
+<p>另外，关于mvnrepository与Maven Central的关系，有人咨询，官方也做了解答：</p>
+<p><img src="/images/blog/engineering/practice-image_75.png" alt="image_75.png"></p>
+<p>根据我的实际经验判断，mvnrepository应该是定时同步的，我发布成功后，第二天才能搜到：</p>
+<p><img src="/images/blog/engineering/practice-image_76.png" alt="image_76.png"></p>
+<p>下面是官方指导文档，介绍非常详细，基本上不用在网上搜索其他教程了。</p>
+<h4>官方参考文档 <a href="#dzquo" id="dzquo"></a></h4>
+<p><a href="https://central.sonatype.org/publish/publish-guide">https://central.sonatype.org/publish/publish-guide/</a></p>
+17:T454,<h1>Maven使用技巧</h1>
+<h3>1、使用maven.config定制化配置</h3>
+<p>Located within the project&#39;s <strong>top level directory</strong>, the files</p>
+<ul>
+<li><code>maven.config</code></li>
+<li><code>jvm.config</code></li>
+<li><code>extensions.xml</code></li>
+</ul>
+<p>contain project specific configuration for running Maven.</p>
+<p>This directory is part of the project and may be checked in into your version control.</p>
+<blockquote>
+<p>ref：<a href="https://maven.apache.org/configure.html">https://maven.apache.org/configure.html</a></p>
+</blockquote>
+<p>常见配置如：</p>
+<pre><code class="language-bash">-Dmaven.test.skip=true
+--settings
+/Users/skyfalling/.m2/settings.xml
+</code></pre>
+<p>There must not be a whitespace after <code>--settings,</code>With the introduction of <code>maven 3.9</code>, there was a BREAKING CHANGE that affects the parsing of the <code>maven.config</code> file:</p>
+<p>Each line in <code>.mvn/maven.config</code> is now interpreted as a single argument. That is, if the file contains multiple arguments, these must now be placed on separate lines.</p>
+18:T59f6,<h1>Git 常用命令速查手册</h1>
+<blockquote>
+<p>本文按使用场景组织，覆盖日常开发中最常用的 Git 操作。每条命令附带简要说明，部分附有使用示例。</p>
+</blockquote>
+<hr>
+<h2>1. 配置</h2>
+<pre><code class="language-bash"># 查看当前配置
+git config --list
+
+# 设置用户信息（全局）
+git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;your@email.com&quot;
+
+# 仅对当前仓库设置（去掉 --global）
+git config user.name &quot;Your Name&quot;
+
+# 设置默认编辑器
+git config --global core.editor &quot;vim&quot;
+
+# 设置默认分支名
+git config --global init.defaultBranch main
+
+# 配置命令别名
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.lg &quot;log --oneline --graph --all&quot;
+</code></pre>
+<hr>
+<h2>2. 仓库初始化与克隆</h2>
+<pre><code class="language-bash"># 初始化新仓库
+git init
+
+# 克隆远程仓库
+git clone &lt;url&gt;
+
+# 克隆指定分支
+git clone -b &lt;branch&gt; &lt;url&gt;
+
+# 浅克隆（只拉最近 1 次提交，适合大仓库）
+git clone --depth 1 &lt;url&gt;
+
+# 克隆并指定本地目录名
+git clone &lt;url&gt; my-project
+</code></pre>
+<hr>
+<h2>3. 文件追踪与暂存</h2>
+<pre><code class="language-bash"># 查看工作区状态
+git status
+
+# 简洁模式
+git status -s
+
+# 添加文件到暂存区
+git add &lt;file&gt;
+git add .                    # 当前目录所有变更
+git add -A                   # 整个仓库所有变更
+git add -p                   # 交互式选择要暂存的代码块
+
+# 取消暂存（保留工作区修改）
+git restore --staged &lt;file&gt;
+git reset HEAD &lt;file&gt;        # 旧写法，效果相同
+
+# 丢弃工作区修改（危险操作，不可恢复）
+git restore &lt;file&gt;
+git checkout -- &lt;file&gt;       # 旧写法
+</code></pre>
+<h3>取消跟踪已版本控制的文件</h3>
+<pre><code class="language-bash"># 不再追踪文件改动（文件保留在仓库中，但本地修改不再显示为 dirty）
+git update-index --assume-unchanged &lt;filePath&gt;
+
+# 恢复追踪
+git update-index --no-assume-unchanged &lt;filePath&gt;
+
+# 查看所有被 assume-unchanged 的文件
+git ls-files -v | grep &#39;^h&#39;
+
+# 从版本控制中删除文件（但保留本地文件）
+git rm --cached &lt;filePath&gt;
+
+# 从版本控制中删除文件夹
+git rm -r -f --cached &lt;dirPath&gt;
+</code></pre>
+<blockquote>
+<p><strong><code>--assume-unchanged</code> vs <code>--skip-worktree</code></strong>：两者都能让 Git 忽略本地修改，但语义不同。<code>--assume-unchanged</code> 是性能优化提示（告诉 Git &quot;这个文件不会变&quot;），<code>--skip-worktree</code> 是明确的意图声明（&quot;我故意修改了这个文件，但不想提交&quot;）。对于本地配置文件的修改，推荐使用 <code>--skip-worktree</code>。</p>
+</blockquote>
+<pre><code class="language-bash">git update-index --skip-worktree &lt;filePath&gt;
+git update-index --no-skip-worktree &lt;filePath&gt;
+git ls-files -v | grep &#39;^S&#39;    # 查看所有 skip-worktree 文件
+</code></pre>
+<hr>
+<h2>4. 提交</h2>
+<pre><code class="language-bash"># 提交暂存区内容
+git commit -m &quot;commit message&quot;
+
+# 添加并提交所有已跟踪文件的修改（不含新文件）
+git commit -am &quot;commit message&quot;
+
+# 修改最近一次提交的信息（未推送到远程时使用）
+git commit --amend -m &quot;new message&quot;
+
+# 修改最近一次提交，追加文件但不改消息
+git commit --amend --no-edit
+
+# 创建空提交（可用于触发 CI）
+git commit --allow-empty -m &quot;trigger build&quot;
+</code></pre>
+<hr>
+<h2>5. 分支管理</h2>
+<pre><code class="language-bash"># 查看本地分支
+git branch
+
+# 查看所有分支（含远程）
+git branch -a
+
+# 查看分支及最后一次提交
+git branch -v
+
+# 创建分支
+git branch &lt;name&gt;
+
+# 创建并切换
+git checkout -b &lt;name&gt;
+git switch -c &lt;name&gt;         # 推荐新写法
+
+# 切换分支
+git checkout &lt;name&gt;
+git switch &lt;name&gt;            # 推荐新写法
+
+# 重命名当前分支
+git branch -m &lt;new-name&gt;
+
+# 删除本地分支（已合并）
+git branch -d &lt;name&gt;
+
+# 强制删除本地分支（未合并也删）
+git branch -D &lt;name&gt;
+
+# 删除远程分支
+git push origin --delete &lt;name&gt;
+
+# 查看已合并到当前分支的分支
+git branch --merged
+
+# 查看未合并到当前分支的分支
+git branch --no-merged
+</code></pre>
+<hr>
+<h2>6. 合并与变基</h2>
+<pre><code class="language-bash"># 合并指定分支到当前分支
+git merge &lt;branch&gt;
+
+# 合并时不使用 fast-forward（保留合并提交记录）
+git merge --no-ff &lt;branch&gt;
+
+# 只生成一个合并提交（压缩对方所有提交）
+git merge --squash &lt;branch&gt;
+
+# 变基（将当前分支的提交移到目标分支的最新提交之后）
+git rebase &lt;branch&gt;
+
+# 交互式变基（修改/合并/删除/排序最近 N 次提交）
+git rebase -i HEAD~N
+
+# 变基冲突后继续 / 跳过 / 终止
+git rebase --continue
+git rebase --skip
+git rebase --abort
+
+# 合并冲突后终止合并
+git merge --abort
+</code></pre>
+<h3>Cherry-pick</h3>
+<pre><code class="language-bash"># 将某个提交应用到当前分支
+git cherry-pick &lt;commit-hash&gt;
+
+# 连续多个提交
+git cherry-pick &lt;hash1&gt; &lt;hash2&gt;
+
+# 只暂存不提交
+git cherry-pick &lt;hash&gt; --no-commit
+</code></pre>
+<hr>
+<h2>7. 远程协作</h2>
+<pre><code class="language-bash"># 查看远程仓库
+git remote -v
+
+# 添加远程仓库
+git remote add origin &lt;url&gt;
+
+# 修改远程仓库地址
+git remote set-url origin &lt;new-url&gt;
+
+# 拉取远程更新（不合并）
+git fetch
+git fetch --all              # 拉取所有远程
+git fetch --prune            # 同时清理已删除的远程分支引用
+
+# 拉取并合并（= fetch + merge）
+git pull
+
+# 拉取并变基（= fetch + rebase，保持线性历史）
+git pull --rebase
+
+# 推送
+git push
+git push origin &lt;branch&gt;
+
+# 首次推送并建立追踪关系
+git push -u origin &lt;branch&gt;
+
+# 强制推送（覆盖远程历史，团队协作慎用）
+git push --force
+
+# 安全的强制推送（远程有新提交时会拒绝）
+git push --force-with-lease
+
+# 推送所有分支
+git push --all
+
+# 推送所有标签
+git push --tags
+</code></pre>
+<hr>
+<h2>8. 暂存工作区（Stash）</h2>
+<pre><code class="language-bash"># 暂存当前工作区和暂存区的修改
+git stash
+
+# 带描述信息
+git stash save &quot;work in progress: feature X&quot;
+git stash push -m &quot;description&quot;   # 推荐新写法
+
+# 暂存时包含未跟踪的文件
+git stash -u
+
+# 暂存时包含所有文件（含 .gitignore 忽略的）
+git stash -a
+
+# 查看 stash 列表
+git stash list
+
+# 恢复最近的 stash（保留 stash 记录）
+git stash apply
+
+# 恢复并删除最近的 stash
+git stash pop
+
+# 恢复指定的 stash
+git stash apply stash@{2}
+
+# 删除指定 stash
+git stash drop stash@{0}
+
+# 清空所有 stash
+git stash clear
+
+# 查看某个 stash 的内容
+git stash show -p stash@{0}
+</code></pre>
+<hr>
+<h2>9. 日志与差异</h2>
+<pre><code class="language-bash"># 查看提交日志
+git log
+
+# 简洁单行显示
+git log --oneline
+
+# 图形化显示分支合并历史
+git log --oneline --graph --all
+
+# 显示每次提交的文件变更统计
+git log --stat
+
+# 显示每次提交的具体修改
+git log -p
+
+# 最近 N 次提交
+git log -n 5
+
+# 按作者过滤
+git log --author=&quot;name&quot;
+
+# 按时间范围过滤
+git log --since=&quot;2024-01-01&quot; --until=&quot;2024-06-30&quot;
+
+# 按提交信息关键字搜索
+git log --grep=&quot;fix bug&quot;
+
+# 搜索某段代码的变更历史
+git log -S &quot;functionName&quot;
+
+# 查看某个文件的提交历史
+git log -- &lt;file&gt;
+git log --follow -- &lt;file&gt;   # 包含重命名前的历史
+</code></pre>
+<h3>差异对比</h3>
+<pre><code class="language-bash"># 工作区 vs 暂存区
+git diff
+
+# 暂存区 vs 最新提交
+git diff --staged
+git diff --cached            # 同义
+
+# 两个分支之间的差异
+git diff &lt;branch1&gt;..&lt;branch2&gt;
+
+# 两个提交之间的差异
+git diff &lt;commit1&gt;..&lt;commit2&gt;
+
+# 只看文件名列表
+git diff --name-only
+
+# 查看文件改动统计
+git diff --stat
+</code></pre>
+<hr>
+<h2>10. 撤销与回退</h2>
+<pre><code class="language-bash"># 撤销工作区修改（未暂存）
+git restore &lt;file&gt;
+
+# 撤销暂存（保留工作区修改）
+git restore --staged &lt;file&gt;
+
+# 回退到某个提交（保留修改在工作区）
+git reset --soft &lt;commit&gt;
+
+# 回退到某个提交（保留修改在暂存区）
+git reset --mixed &lt;commit&gt;     # 默认模式
+
+# 回退到某个提交（丢弃所有修改，危险操作）
+git reset --hard &lt;commit&gt;
+
+# 回退最近 N 次提交
+git reset --soft HEAD~N
+
+# 创建一个新提交来撤销指定提交（安全的回退方式，不改写历史）
+git revert &lt;commit&gt;
+
+# 撤销多个连续提交
+git revert &lt;older-commit&gt;..&lt;newer-commit&gt;
+
+# 只修改工作区不自动提交
+git revert --no-commit &lt;commit&gt;
+</code></pre>
+<blockquote>
+<p><strong><code>reset</code> vs <code>revert</code></strong>：<code>reset</code> 改写提交历史（适合未推送的本地提交），<code>revert</code> 创建新提交来撤销（适合已推送的公共分支）。在多人协作的分支上，永远优先使用 <code>revert</code>。</p>
+</blockquote>
+<hr>
+<h2>11. 标签</h2>
+<pre><code class="language-bash"># 查看所有标签
+git tag
+
+# 按模式过滤
+git tag -l &quot;v1.*&quot;
+
+# 创建轻量标签
+git tag &lt;tag-name&gt;
+
+# 创建附注标签（推荐）
+git tag -a &lt;tag-name&gt; -m &quot;description&quot;
+
+# 给历史提交打标签
+git tag -a &lt;tag-name&gt; &lt;commit-hash&gt;
+
+# 查看标签详情
+git show &lt;tag-name&gt;
+
+# 推送单个标签到远程
+git push origin &lt;tag-name&gt;
+
+# 推送所有标签
+git push origin --tags
+
+# 删除本地标签
+git tag -d &lt;tag-name&gt;
+
+# 删除远程标签
+git push origin --delete &lt;tag-name&gt;
+</code></pre>
+<hr>
+<h2>12. 子模块</h2>
+<pre><code class="language-bash"># 添加子模块
+git submodule add &lt;url&gt; &lt;path&gt;
+
+# 克隆含子模块的仓库
+git clone --recurse-submodules &lt;url&gt;
+
+# 已克隆后初始化子模块
+git submodule init
+git submodule update
+
+# 一步到位
+git submodule update --init --recursive
+
+# 更新所有子模块到最新
+git submodule update --remote
+
+# 删除子模块
+git submodule deinit &lt;path&gt;
+git rm &lt;path&gt;
+rm -rf .git/modules/&lt;path&gt;
+</code></pre>
+<hr>
+<h2>13. Worktree（多工作目录）</h2>
+<pre><code class="language-bash"># 为指定分支创建一个独立的工作目录（无需 stash 即可同时处理多个分支）
+git worktree add &lt;path&gt; &lt;branch&gt;
+
+# 创建新分支并建立 worktree
+git worktree add -b &lt;new-branch&gt; &lt;path&gt;
+
+# 查看所有 worktree
+git worktree list
+
+# 删除 worktree
+git worktree remove &lt;path&gt;
+
+# 清理无效的 worktree 引用
+git worktree prune
+</code></pre>
+<hr>
+<h2>14. 查找与定位</h2>
+<pre><code class="language-bash"># 查找引入 bug 的提交（二分法）
+git bisect start
+git bisect bad                # 当前版本有 bug
+git bisect good &lt;commit&gt;      # 某个已知正常的版本
+# Git 自动切换到中间版本，测试后标记 good/bad，直到定位到具体提交
+git bisect reset              # 结束 bisect
+
+# 查看某行代码的最后修改人和提交
+git blame &lt;file&gt;
+git blame -L 10,20 &lt;file&gt;    # 只看第 10-20 行
+
+# 在所有提交中搜索内容
+git grep &quot;pattern&quot;
+git grep &quot;pattern&quot; &lt;branch&gt;
+</code></pre>
+<hr>
+<h2>15. 清理</h2>
+<pre><code class="language-bash"># 预览将被清理的未跟踪文件
+git clean -n
+
+# 删除未跟踪的文件
+git clean -f
+
+# 删除未跟踪的文件和目录
+git clean -fd
+
+# 删除未跟踪的文件（含 .gitignore 忽略的文件）
+git clean -fdx
+
+# 垃圾回收（压缩历史，清理悬空对象）
+git gc
+
+# 清理远程已删除的分支引用
+git remote prune origin
+git fetch --prune             # 等价
+</code></pre>
+<hr>
+<h2>16. 常见场景速查</h2>
+<h3>撤销最近一次提交但保留代码</h3>
+<pre><code class="language-bash">git reset --soft HEAD~1
+</code></pre>
+<h3>合并多次提交为一个</h3>
+<pre><code class="language-bash">git rebase -i HEAD~3
+# 编辑器中将后两个 pick 改为 squash (或 s)，保存退出
+</code></pre>
+<h3>从其他分支拿一个文件</h3>
+<pre><code class="language-bash">git checkout &lt;branch&gt; -- &lt;file&gt;
+git restore --source &lt;branch&gt; -- &lt;file&gt;   # 推荐新写法
+</code></pre>
+<h3>找回误删的分支或提交</h3>
+<pre><code class="language-bash"># 查看所有引用变更记录（包括已删除的）
+git reflog
+
+# 基于 reflog 中的哈希恢复
+git checkout -b recovered-branch &lt;hash&gt;
+</code></pre>
+<h3>修改历史提交的作者信息</h3>
+<pre><code class="language-bash">git rebase -i &lt;commit&gt;^
+# 将目标提交标记为 edit，保存退出
+git commit --amend --author=&quot;Name &lt;email&gt;&quot; --no-edit
+git rebase --continue
+</code></pre>
+<h3>统计代码贡献</h3>
+<pre><code class="language-bash"># 按作者统计提交数
+git shortlog -sn
+
+# 统计某人的代码行数增删
+git log --author=&quot;name&quot; --numstat --pretty=&quot;%H&quot; | awk &#39;NF==3 {add+=$1; del+=$2} END {print &quot;+&quot;add, &quot;-&quot;del}&#39;
+</code></pre>
+<h3>临时切到其他分支修 bug，不想 stash</h3>
+<pre><code class="language-bash"># 用 worktree 在另一个目录打开 hotfix 分支，互不干扰
+git worktree add ../hotfix-dir hotfix/issue-123
+
+# 修完后删除
+git worktree remove ../hotfix-dir
+</code></pre>
+<h3>只克隆仓库的某个子目录（Sparse Checkout）</h3>
+<pre><code class="language-bash">git clone --filter=blob:none --sparse &lt;url&gt;
+cd &lt;repo&gt;
+git sparse-checkout set path/to/subdir
+</code></pre>
+<h3>把未提交的修改生成补丁发给别人</h3>
+<pre><code class="language-bash"># 生成补丁文件
+git diff &gt; my-changes.patch
+
+# 对方应用补丁
+git apply my-changes.patch
+</code></pre>
+<h3>把已提交的 commit 生成补丁</h3>
+<pre><code class="language-bash"># 生成最近 3 次提交的补丁文件（每个提交一个 .patch 文件）
+git format-patch -3
+
+# 对方应用
+git am *.patch
+</code></pre>
+<hr>
+<h2>17. .gitignore</h2>
+<pre><code class="language-bash"># .gitignore 文件常用模式
+
+# 忽略所有 .log 文件
+*.log
+
+# 但保留 important.log
+!important.log
+
+# 忽略根目录下的 build 文件夹（不影响子目录中的 build）
+/build/
+
+# 忽略所有目录下的 node_modules
+node_modules/
+
+# 忽略所有 .env 文件（防止泄露密钥）
+.env
+.env.*
+
+# 忽略 IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 忽略操作系统文件
+.DS_Store
+Thumbs.db
+</code></pre>
+<pre><code class="language-bash"># .gitignore 已经添加规则，但文件之前已被跟踪？需要先从缓存中移除
+git rm --cached &lt;file&gt;
+git commit -m &quot;stop tracking &lt;file&gt;&quot;
+
+# 检查某个文件为什么被忽略
+git check-ignore -v &lt;file&gt;
+
+# 列出所有被忽略的文件
+git status --ignored
+
+# 全局 gitignore（对所有仓库生效）
+git config --global core.excludesfile ~/.gitignore_global
+</code></pre>
+<hr>
+<h2>18. Git Hooks</h2>
+<p>Git Hooks 是在特定事件（提交、推送等）发生时自动执行的脚本，存放在 <code>.git/hooks/</code> 目录下。</p>
+<h3>常用 Hook 类型</h3>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>触发时机</th>
+<th>典型用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pre-commit</code></td>
+<td><code>git commit</code> 执行前</td>
+<td>代码格式检查、lint、单元测试</td>
+</tr>
+<tr>
+<td><code>commit-msg</code></td>
+<td>提交信息写入后</td>
+<td>校验 commit message 格式</td>
+</tr>
+<tr>
+<td><code>pre-push</code></td>
+<td><code>git push</code> 执行前</td>
+<td>运行测试、阻止推送到 main</td>
+</tr>
+<tr>
+<td><code>post-merge</code></td>
+<td><code>git merge</code> 完成后</td>
+<td>自动安装依赖</td>
+</tr>
+<tr>
+<td><code>pre-rebase</code></td>
+<td><code>git rebase</code> 执行前</td>
+<td>阻止对公共分支变基</td>
+</tr>
+<tr>
+<td><code>post-checkout</code></td>
+<td><code>git checkout</code> 完成后</td>
+<td>环境初始化</td>
+</tr>
+</tbody></table>
+<h3>示例：pre-commit 检查是否有 console.log</h3>
+<pre><code class="language-bash">#!/bin/sh
+# .git/hooks/pre-commit
+
+if git diff --cached --name-only | grep -E &#39;\.(js|ts|tsx)$&#39; | xargs grep -l &#39;console\.log&#39; 2&gt;/dev/null; then
+    echo &quot;Error: console.log found in staged files&quot;
+    exit 1
+fi
+</code></pre>
+<h3>使用 Husky 管理 Hooks（推荐）</h3>
+<p><code>.git/hooks/</code> 不会被提交到仓库，团队共享不方便。<a href="https://typicode.github.io/husky/">Husky</a> 解决了这个问题：</p>
+<pre><code class="language-bash"># 安装
+npm install husky -D
+npx husky init
+
+# 添加 pre-commit hook
+echo &quot;npm run lint&quot; &gt; .husky/pre-commit
+</code></pre>
+<hr>
+<h2>19. Git LFS（大文件存储）</h2>
+<p>Git 不擅长处理大文件（二进制、模型文件、设计稿等），Git LFS 用指针文件替代大文件，实际内容存储在单独的 LFS 服务器上。</p>
+<pre><code class="language-bash"># 安装（macOS）
+brew install git-lfs
+
+# 在仓库中启用
+git lfs install
+
+# 追踪特定类型的大文件
+git lfs track &quot;*.psd&quot;
+git lfs track &quot;*.zip&quot;
+git lfs track &quot;models/**&quot;
+
+# 追踪规则保存在 .gitattributes 中，需要提交
+git add .gitattributes
+git commit -m &quot;track large files with LFS&quot;
+
+# 后续正常 add/commit/push，LFS 文件会自动走 LFS 通道
+git add large-file.psd
+git commit -m &quot;add design file&quot;
+git push
+
+# 查看当前 LFS 追踪的文件模式
+git lfs track
+
+# 查看 LFS 管理的文件列表
+git lfs ls-files
+
+# 拉取所有 LFS 文件（克隆后可能需要）
+git lfs pull
+</code></pre>
+<hr>
+<h2>20. Git Archive（导出代码）</h2>
+<pre><code class="language-bash"># 导出当前 HEAD 为 zip
+git archive --format=zip HEAD -o project.zip
+
+# 导出指定分支
+git archive --format=tar.gz release/v1.0 -o release-v1.0.tar.gz
+
+# 只导出某个子目录
+git archive HEAD --prefix=src/ -- src/ -o src-only.zip
+
+# 导出两个版本之间的差异文件
+git diff --name-only v1.0 v2.0 | xargs git archive HEAD -o diff-files.zip --
+</code></pre>
+<hr>
+<h2>21. 交互式变基详解</h2>
+<p><code>git rebase -i</code> 是最强大的提交历史编辑工具，编辑器中每行一个提交，支持以下操作：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>缩写</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pick</code></td>
+<td><code>p</code></td>
+<td>保留该提交（默认）</td>
+</tr>
+<tr>
+<td><code>reword</code></td>
+<td><code>r</code></td>
+<td>保留提交但修改提交信息</td>
+</tr>
+<tr>
+<td><code>edit</code></td>
+<td><code>e</code></td>
+<td>暂停在该提交，允许修改内容</td>
+</tr>
+<tr>
+<td><code>squash</code></td>
+<td><code>s</code></td>
+<td>合并到上一个提交，合并提交信息</td>
+</tr>
+<tr>
+<td><code>fixup</code></td>
+<td><code>f</code></td>
+<td>合并到上一个提交，丢弃本条提交信息</td>
+</tr>
+<tr>
+<td><code>drop</code></td>
+<td><code>d</code></td>
+<td>删除该提交</td>
+</tr>
+</tbody></table>
+<h3>典型场景</h3>
+<pre><code class="language-bash"># 合并最近 4 次提交为 1 个
+git rebase -i HEAD~4
+# 编辑器中：第一个保持 pick，其余改为 squash 或 fixup
+
+# 调整提交顺序：直接在编辑器中拖动行的位置
+
+# 拆分一个提交为多个
+git rebase -i HEAD~3
+# 将目标提交标记为 edit，保存退出
+git reset HEAD~1              # 撤回提交但保留文件修改
+git add file1 &amp;&amp; git commit -m &quot;part 1&quot;
+git add file2 &amp;&amp; git commit -m &quot;part 2&quot;
+git rebase --continue
+</code></pre>
+<hr>
+<h2>22. 签名与验证</h2>
+<pre><code class="language-bash"># 配置 GPG 签名
+git config --global user.signingkey &lt;GPG-KEY-ID&gt;
+git config --global commit.gpgsign true    # 默认对所有提交签名
+
+# 签名提交
+git commit -S -m &quot;signed commit&quot;
+
+# 签名标签
+git tag -s v1.0 -m &quot;signed release&quot;
+
+# 验证提交签名
+git log --show-signature
+
+# 验证标签签名
+git tag -v v1.0
+</code></pre>
+<hr>
+<h2>23. 高级配置技巧</h2>
+<pre><code class="language-bash"># 自动纠正拼写错误的命令（如 git stauts → git status）
+git config --global help.autocorrect 10   # 1 秒后自动执行
+
+# 启用 rerere（记住冲突解决方式，下次自动应用）
+git config --global rerere.enabled true
+
+# diff 时使用更好的算法（对函数移动更友好）
+git config --global diff.algorithm histogram
+
+# 全局忽略文件权限变更（在 macOS/Windows 上避免无意义的 diff）
+git config --global core.fileMode false
+
+# 设置 pull 默认使用 rebase（保持线性历史）
+git config --global pull.rebase true
+
+# 推送时自动设置上游分支
+git config --global push.autoSetupRemote true
+
+# 多行 commit message 使用 heredoc
+git commit -m &quot;$(cat &lt;&lt;&#39;EOF&#39;
+feat: add user authentication
+
+- Add JWT token generation
+- Add login/logout endpoints
+- Add middleware for protected routes
+EOF
+)&quot;
+</code></pre>
+<hr>
+<h2>24. 速查表</h2>
+<table>
+<thead>
+<tr>
+<th>想做什么</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>查看状态</td>
+<td><code>git status</code></td>
+</tr>
+<tr>
+<td>添加所有修改</td>
+<td><code>git add -A</code></td>
+</tr>
+<tr>
+<td>提交</td>
+<td><code>git commit -m &quot;msg&quot;</code></td>
+</tr>
+<tr>
+<td>拉取 + 变基</td>
+<td><code>git pull --rebase</code></td>
+</tr>
+<tr>
+<td>推送</td>
+<td><code>git push</code></td>
+</tr>
+<tr>
+<td>新建分支并切换</td>
+<td><code>git switch -c feat/xxx</code></td>
+</tr>
+<tr>
+<td>合并分支</td>
+<td><code>git merge --no-ff feat/xxx</code></td>
+</tr>
+<tr>
+<td>暂存工作区</td>
+<td><code>git stash -u</code></td>
+</tr>
+<tr>
+<td>恢复暂存</td>
+<td><code>git stash pop</code></td>
+</tr>
+<tr>
+<td>查看简洁日志</td>
+<td><code>git log --oneline --graph</code></td>
+</tr>
+<tr>
+<td>撤销最近提交</td>
+<td><code>git reset --soft HEAD~1</code></td>
+</tr>
+<tr>
+<td>安全回退已推送的提交</td>
+<td><code>git revert &lt;hash&gt;</code></td>
+</tr>
+<tr>
+<td>找回误删内容</td>
+<td><code>git reflog</code></td>
+</tr>
+<tr>
+<td>查看某行代码作者</td>
+<td><code>git blame &lt;file&gt;</code></td>
+</tr>
+<tr>
+<td>二分法查 bug</td>
+<td><code>git bisect start</code></td>
+</tr>
+<tr>
+<td>只拿某个提交</td>
+<td><code>git cherry-pick &lt;hash&gt;</code></td>
+</tr>
+<tr>
+<td>导出代码压缩包</td>
+<td><code>git archive HEAD -o out.zip</code></td>
+</tr>
+</tbody></table>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-04-04","children":"2024年04月04日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Java构件发布到中央仓库"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","技术实战",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E5%AE%9E%E6%88%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术实战"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/tooling/Maven使用技巧","title":"Maven使用技巧","description":"手把手教你如何在工作中巧妙使用Maven，提升开发效率。","pubDate":"2024-04-03","tags":["技术实战"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/tooling/Git常用命令","title":"Git 常用命令速查手册","description":"一份面向日常开发的 Git 命令速查手册，覆盖分支管理、暂存与恢复、提交操作、远程协作、文件追踪控制、子模块、日志查询与常见问题处理等场景，适合收藏备用。","pubDate":"2024-04-05","tags":["Git","技术实战"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"技术实战":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"}}}]}],["$","$L19",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"Java构件发布到中央仓库 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过..."}],["$","meta","2",{"property":"og:title","content":"Java构件发布到中央仓库"}],["$","meta","3",{"property":"og:description","content":"Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过..."}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-04-04"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"Java构件发布到中央仓库"}],["$","meta","9",{"name":"twitter:description","content":"Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过..."}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}
