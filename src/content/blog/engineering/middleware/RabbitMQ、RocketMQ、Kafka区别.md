@@ -2,7 +2,7 @@
 title: "RabbitMQ、RocketMQ、Kafka区别"
 pubDate: "2024-03-31"
 description: "MQ（Message Queue，消息队列） 在实际应用中常用的使用场景：异步处理，应用解耦，流量削锋和消息通讯四个场景。目前使用较多的消息队列有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ"
-tags: ["消息队列","技术专题"]
+tags: ["消息队列", "中间件", "技术选型"]
 ---
 
 [转载](https://baijiahao.baidu.com/s?id=1769207484615537227)

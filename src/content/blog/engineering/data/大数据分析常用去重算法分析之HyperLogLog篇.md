@@ -2,7 +2,7 @@
 title: "大数据分析常用去重算法分析之HyperLogLog篇"
 pubDate: "2025-03-25"
 description: "上篇介绍了利用 Roaring Bitmap 来进行精确去重。虽然这种算法能大大地减少存储开销，但是随着数据量的增大，它依然面临着存储上的压力。在本篇推送中将要介绍的 HyperLogLog（下称 HLL）是一种非精确的去重算法，它的特点是具有非常优异的空间复杂度（几乎可以达到常数级别）。 "
-tags: [ "大数据","技术专题","去重算法","HyperLogLog" ]
+tags: ["大数据", "去重算法", "HyperLogLog"]
 ---
 
 

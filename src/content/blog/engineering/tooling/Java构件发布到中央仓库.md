@@ -2,7 +2,7 @@
 title: "Java构件发布到中央仓库"
 pubDate: "2024-04-04"
 description: "Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过..."
-tags: ["技术实战"]
+tags: ["Maven", "Java", "开源发布"]
 ---
 
 >

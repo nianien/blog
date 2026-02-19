@@ -2,7 +2,7 @@
 title: "MCP and Tool Protocol: Agent 工具的协议化未来"
 pubDate: "2026-01-27"
 description: "当前 Agent 工具集成面临 N×M 问题：每个框架、每个应用都在重复造轮子。MCP（Model Context Protocol）正在尝试成为 Agent 工具世界的 HTTP——一个标准化的通信协议。本文深入剖析 MCP 的架构设计、通信机制与安全模型，探讨工具协议化的趋势、trade-off 与未来走向。"
-tags: ["Agentic", "AI Engineering", "MCP", "Protocol"]
+tags: ["Agentic", "AI Engineering", "MCP"]
 ---
 
 # MCP and Tool Protocol: Agent 工具的协议化未来

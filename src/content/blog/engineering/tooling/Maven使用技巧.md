@@ -2,7 +2,7 @@
 title: "Maven使用技巧"
 pubDate: "2024-04-03"
 description: "手把手教你如何在工作中巧妙使用Maven，提升开发效率。"
-tags: ["技术实战"]
+tags: ["Maven", "Java", "构建工具"]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "AWS多泳道自动化持续交付实践"
 description: "本文面向 DevOps 架构师与云原生工程师，介绍如何基于 AWS CodePipeline + CloudFormation 构建一套支持多泳道（Multi-Lane）并行部署的 ECS 持续交付体系。该方案不仅解决并发部署的资源锁冲突问题，还实现模板集中治理与业务仓库完全解耦。"
 pubDate: 2025-10-29
-tags: [ "AWS", "Devops", " 泳道部署" ]
+tags: ["AWS", "DevOps", "泳道部署"]
 ---
 
 
