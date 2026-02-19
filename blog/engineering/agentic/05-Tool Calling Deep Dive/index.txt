@@ -1,0 +1,3208 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-51baccc14cf1da9e.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/0458d6941a120cde.css","style"]
+0:{"P":null,"b":"8CSEQRRrJyhjI8sSOwcIy","p":"","c":["","blog","engineering","agentic","05-Tool%20Calling%20Deep%20Dive",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/05-Tool%20Calling%20Deep%20Dive","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0458d6941a120cde.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/05-Tool%20Calling%20Deep%20Dive","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","kFdB6A3LdJE_Lx-jRvjmnv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:Td4a2,<h1>Tool Calling Deep Dive: 让 LLM 成为可编程接口</h1>
+<blockquote>
+<p>这是 Agentic 系列的第 05 篇。在前几篇中我们建立了 Agent 的概念模型、控制循环、以及 Agent 与 Workflow 的边界。本篇聚焦于 Agent 能力的核心支点——Tool Calling。</p>
+<p>Tool Calling 不是&quot;让 AI 调 API&quot;这么简单。它是 LLM 从 <strong>Text-in/Text-out 的生成模型</strong> 变成 <strong>可编程接口</strong> 的关键转折点。理解它的工作原理、设计约束和工程实践，是构建任何 Agentic 系统的前提。</p>
+</blockquote>
+<hr>
+<h2>1. 为什么 Tool Calling 是关键转折点</h2>
+<p>一个纯粹的 LLM 只能做一件事：接受文本，生成文本。它无法查询数据库、无法读取文件、无法发送邮件、无法获取实时天气。它的知识冻结在训练数据的截止日期，它的能力边界就是 token 序列的排列组合。</p>
+<p>Tool Calling 改变了这一切。</p>
+<p>它的本质不是&quot;让 LLM 调用工具&quot;，而是 <strong>让 LLM 生成结构化的调用意图，由外部运行时代为执行</strong>。这个区分至关重要——LLM 从未真正&quot;执行&quot;过任何工具，它只是学会了在恰当的时机，输出一段符合约定格式的 JSON，表达&quot;我需要调用某个工具，参数是这些&quot;。</p>
+<p>这意味着：</p>
+<ul>
+<li>LLM 变成了一个 <strong>决策引擎</strong>：决定调用什么、传什么参数</li>
+<li>Runtime 变成了一个 <strong>执行引擎</strong>：负责真正的 I/O 操作</li>
+<li>两者之间的契约是 <strong>JSON Schema</strong></li>
+</ul>
+<p>这种分离，让 LLM 从一个封闭的文本生成器，变成了一个可以与外部世界交互的可编程接口。</p>
+<hr>
+<h2>2. Tool Calling 的工作原理</h2>
+<h3>2.1 完整流程</h3>
+<pre><code>┌──────────────────────────────────────────────────────────────────────┐
+│                    Tool Calling 完整序列图                            │
+└──────────────────────────────────────────────────────────────────────┘
+
+  User            LLM (API)          Runtime           Tool (Function)
+   │                 │                  │                     │
+   │  &quot;北京今天天气&quot;  │                  │                     │
+   ├────────────────&gt;│                  │                     │
+   │                 │                  │                     │
+   │                 │  ┌─────────────┐ │                     │
+   │                 │  │ 推理:       │ │                     │
+   │                 │  │ 用户想查天气 │ │                     │
+   │                 │  │ 需要调用    │ │                     │
+   │                 │  │ get_weather │ │                     │
+   │                 │  └─────────────┘ │                     │
+   │                 │                  │                     │
+   │                 │  Tool Call JSON  │                     │
+   │                 │ ────────────────&gt;│                     │
+   │                 │  {               │                     │
+   │                 │   &quot;name&quot;:        │                     │
+   │                 │    &quot;get_weather&quot; │                     │
+   │                 │   &quot;arguments&quot;:   │                     │
+   │                 │    {&quot;city&quot;:      │                     │
+   │                 │     &quot;北京&quot;}      │                     │
+   │                 │  }               │                     │
+   │                 │                  │  get_weather(&quot;北京&quot;) │
+   │                 │                  ├────────────────────&gt;│
+   │                 │                  │                     │
+   │                 │                  │  {&quot;temp&quot;: 28,       │
+   │                 │                  │   &quot;condition&quot;:      │
+   │                 │                  │   &quot;晴&quot;}              │
+   │                 │                  │&lt;────────────────────┤
+   │                 │                  │                     │
+   │                 │  Tool Result     │                     │
+   │                 │ &lt;────────────────│                     │
+   │                 │                  │                     │
+   │                 │  ┌─────────────┐ │                     │
+   │                 │  │ 推理:       │ │                     │
+   │                 │  │ 根据工具返回 │ │                     │
+   │                 │  │ 组织回答    │ │                     │
+   │                 │  └─────────────┘ │                     │
+   │                 │                  │                     │
+   │ &quot;北京今天28°C,晴&quot;│                  │                     │
+   │&lt;────────────────│                  │                     │
+   │                 │                  │                     │
+</code></pre>
+<h3>2.2 关键洞察</h3>
+<p>从上面的序列图中，可以提炼出几个核心事实：</p>
+<ol>
+<li><p><strong>LLM 发起两次推理</strong>。第一次决定是否调用工具、调用哪个、传什么参数；第二次基于工具返回的结果生成最终回答。这意味着每次 Tool Calling 至少消耗两轮 LLM 调用的 token。</p>
+</li>
+<li><p><strong>LLM 的输出不是自然语言，而是结构化 JSON</strong>。这是模型经过专门训练（fine-tuning）才获得的能力。并非所有 LLM 都支持 Tool Calling——它需要模型在训练阶段就学会&quot;在特定上下文下输出 JSON 而非自然语言&quot;。</p>
+</li>
+<li><p><strong>Runtime 是不可或缺的中间层</strong>。它负责：解析 LLM 返回的 Tool Call、校验参数、路由到正确的函数、执行函数、收集结果、将结果注入下一轮对话。没有 Runtime，Tool Calling 就是一段无人执行的 JSON。</p>
+</li>
+<li><p><strong>整个过程对用户透明</strong>。用户看到的只是&quot;问了一个问题，得到了回答&quot;。中间的 Tool Call 调度过程完全由系统内部完成。</p>
+</li>
+</ol>
+<hr>
+<h2>3. JSON Schema 作为契约</h2>
+<h3>3.1 工具定义的结构</h3>
+<p>每个工具的定义由三部分组成：</p>
+<pre><code class="language-python">tool_definition = {
+    &quot;type&quot;: &quot;function&quot;,
+    &quot;function&quot;: {
+        &quot;name&quot;: &quot;get_weather&quot;,          # 工具的唯一标识
+        &quot;description&quot;: &quot;...&quot;,           # 给 LLM 看的&quot;接口文档&quot;
+        &quot;parameters&quot;: {                 # JSON Schema 格式的参数约束
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;properties&quot;: {
+                &quot;city&quot;: {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;description&quot;: &quot;城市名称，如 &#39;北京&#39;、&#39;上海&#39;&quot;
+                }
+            },
+            &quot;required&quot;: [&quot;city&quot;]
+        }
+    }
+}
+</code></pre>
+<p>这里的 <code>parameters</code> 遵循 JSON Schema 规范（Draft 2020-12 子集），它不仅定义了参数的类型，还定义了参数的约束、默认值、枚举范围等。JSON Schema 就是 LLM 与 Runtime 之间的 <strong>契约</strong>。</p>
+<h3>3.2 好的描述 vs 差的描述</h3>
+<p><code>description</code> 是整个工具定义中最容易被低估的字段。它不是给人类看的注释，而是 <strong>给 LLM 看的接口文档</strong>。LLM 完全依赖 description 来决定是否调用这个工具、以及如何填充参数。</p>
+<p><strong>差的描述：</strong></p>
+<pre><code class="language-python">{
+    &quot;name&quot;: &quot;query_db&quot;,
+    &quot;description&quot;: &quot;查询数据库&quot;,          # 太模糊：查什么数据库？返回什么？
+    &quot;parameters&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;q&quot;: {                        # 参数名不直观
+                &quot;type&quot;: &quot;string&quot;
+            }
+        }
+    }
+}
+</code></pre>
+<p><strong>好的描述：</strong></p>
+<pre><code class="language-python">{
+    &quot;name&quot;: &quot;query_user_orders&quot;,
+    &quot;description&quot;: (
+        &quot;根据用户 ID 查询该用户的历史订单列表。&quot;
+        &quot;返回最近 30 天内的订单，包含订单号、金额、状态。&quot;
+        &quot;如果用户不存在，返回空列表。&quot;
+        &quot;不支持模糊查询，user_id 必须精确匹配。&quot;
+    ),
+    &quot;parameters&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;user_id&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;用户的唯一标识符，格式为 &#39;U&#39; + 8位数字，如 &#39;U00012345&#39;&quot;
+            },
+            &quot;status_filter&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [&quot;all&quot;, &quot;pending&quot;, &quot;completed&quot;, &quot;cancelled&quot;],
+                &quot;description&quot;: &quot;按订单状态过滤，默认返回所有状态的订单&quot;
+            }
+        },
+        &quot;required&quot;: [&quot;user_id&quot;]
+    }
+}
+</code></pre>
+<p>两者之间的差异在于：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>差的描述</th>
+<th>好的描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>功能边界</td>
+<td>不清楚能做什么</td>
+<td>明确说明查询范围和返回内容</td>
+</tr>
+<tr>
+<td>参数语义</td>
+<td><code>q</code> 是什么？</td>
+<td><code>user_id</code> 含义清晰，且给出格式示例</td>
+</tr>
+<tr>
+<td>约束条件</td>
+<td>无</td>
+<td>明确说明不支持模糊查询</td>
+</tr>
+<tr>
+<td>异常行为</td>
+<td>未提及</td>
+<td>说明了用户不存在时的返回</td>
+</tr>
+<tr>
+<td>枚举约束</td>
+<td>无</td>
+<td>用 <code>enum</code> 限定合法值</td>
+</tr>
+</tbody></table>
+<h3>3.3 参数设计原则</h3>
+<ol>
+<li><strong>简单优先</strong>：参数数量尽量少。一个工具如果需要 10 个参数，说明它的职责太大，应该拆分。</li>
+<li><strong>类型明确</strong>：用 <code>enum</code> 约束离散值，用 <code>pattern</code> 约束格式，用 <code>minimum</code>/<code>maximum</code> 约束数值范围。</li>
+<li><strong>必选与可选分明</strong>：<code>required</code> 字段只放真正必须的参数，可选参数给默认值。</li>
+<li><strong>命名即文档</strong>：<code>user_id</code> 比 <code>uid</code> 好，<code>start_date</code> 比 <code>sd</code> 好。LLM 会从参数名推断语义。</li>
+<li><strong>避免嵌套过深</strong>：LLM 生成深层嵌套 JSON 的准确率会显著下降。尽量用扁平结构。</li>
+</ol>
+<hr>
+<h2>4. Structured Output vs Free-form Output</h2>
+<h3>4.1 为什么结构化输出更可靠</h3>
+<p>在 Tool Calling 出现之前，让 LLM 调用工具的常见做法是：在 Prompt 中要求 LLM &quot;用特定格式输出&quot;，然后用正则或字符串解析提取调用意图。</p>
+<pre><code># 旧做法（Prompt Hacking）
+请用以下格式回答：
+Action: &lt;工具名&gt;
+Action Input: &lt;参数 JSON&gt;
+
+# LLM 可能的输出（不可靠）
+&quot;我觉得应该查一下天气。Action: get_weather Action Input: {&quot;city&quot;: &quot;北京&quot;}&quot;
+                       ^^ 前面混入了自然语言，解析会出错
+</code></pre>
+<p>这种方式的根本问题是：LLM 的输出是 <strong>非确定性的自由文本</strong>，它可能在格式中混入自然语言、遗漏字段、搞错 JSON 语法。</p>
+<p>Structured Output（结构化输出）通过 <strong>约束解码（Constrained Decoding）</strong> 从根本上解决了这个问题。模型在生成 token 时，解码器会强制输出符合预定义 JSON Schema 的 token 序列，从而保证输出 100% 可解析。</p>
+<h3>4.2 三种机制的区别</h3>
+<table>
+<thead>
+<tr>
+<th>机制</th>
+<th>原理</th>
+<th>可靠性</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>JSON Mode</strong></td>
+<td>告诉模型&quot;输出必须是合法 JSON&quot;，但不约束 schema</td>
+<td>中等。JSON 语法正确，但字段可能不对</td>
+<td>简单的数据提取</td>
+</tr>
+<tr>
+<td><strong>Function Calling / Tool Use</strong></td>
+<td>模型经过 fine-tuning，能在特定上下文下输出 tool call 结构</td>
+<td>高。模型专门训练过</td>
+<td>Agent 工具调用</td>
+</tr>
+<tr>
+<td><strong>Structured Output</strong></td>
+<td>约束解码 + JSON Schema 验证，输出严格匹配 schema</td>
+<td>极高。解码层面保证</td>
+<td>需要严格 schema 的场景</td>
+</tr>
+</tbody></table>
+<h3>4.3 各大模型的实现差异</h3>
+<p>不同模型提供商对 Tool Calling 的 API 设计不尽相同，但核心思想一致：</p>
+<p><strong>OpenAI</strong>（GPT-4 系列）：</p>
+<ul>
+<li>使用 <code>tools</code> 参数传递工具定义</li>
+<li>返回 <code>tool_calls</code> 数组，支持并行调用</li>
+<li>支持 <code>strict: true</code> 开启 Structured Output 模式</li>
+</ul>
+<p><strong>Anthropic</strong>（Claude 系列）：</p>
+<ul>
+<li>使用 <code>tools</code> 参数传递工具定义</li>
+<li>Tool Call 以 <code>tool_use</code> content block 返回</li>
+<li>Tool 结果以 <code>tool_result</code> content block 传回</li>
+<li>原生支持并行工具调用</li>
+</ul>
+<p><strong>Google</strong>（Gemini 系列）：</p>
+<ul>
+<li>使用 <code>tools</code> + <code>function_declarations</code> 结构</li>
+<li>支持 <code>function_calling_config</code> 控制调用模式（AUTO / ANY / NONE）</li>
+<li>返回 <code>function_call</code> part</li>
+</ul>
+<p>虽然 API 格式不同，但抽象层面是一致的：<strong>定义工具 → LLM 决定调用 → 返回结构化调用请求 → 外部执行 → 结果回传</strong>。这也是为什么我们强调框架无关的原理理解——API 会变，原理不会。</p>
+<hr>
+<h2>5. 工具注册与发现（Tool Registry）</h2>
+<h3>5.1 静态注册</h3>
+<p>最简单的方式是在代码中硬编码工具列表：</p>
+<pre><code class="language-python">TOOLS = [
+    get_weather_tool,
+    query_db_tool,
+    send_email_tool,
+]
+
+response = client.chat.completions.create(
+    model=&quot;gpt-4&quot;,
+    messages=messages,
+    tools=TOOLS,
+)
+</code></pre>
+<p>优点是简单直接，缺点是每次新增或修改工具都需要改代码、重新部署。适合工具数量少且稳定的场景。</p>
+<h3>5.2 动态注册</h3>
+<p>当工具数量增多或需要根据上下文动态调整时，需要一个 Tool Registry：</p>
+<pre><code>┌────────────────────────────────────────────────┐
+│                Tool Registry                    │
+│                                                │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐     │
+│  │ weather  │  │ database │  │  email   │     │
+│  │  tool    │  │  tool    │  │  tool    │     │
+│  └──────────┘  └──────────┘  └──────────┘     │
+│  ┌──────────┐  ┌──────────┐                    │
+│  │  calc    │  │   file   │                    │
+│  │  tool    │  │  tool    │                    │
+│  └──────────┘  └──────────┘                    │
+│                                                │
+│  register(tool) / unregister(name)             │
+│  get_tools(filter?) -&gt; List[Tool]              │
+│  get_tool(name) -&gt; Tool                        │
+│  get_definitions() -&gt; List[Dict]               │
+└────────────────────────────────────────────────┘
+         │
+         │  get_definitions()
+         ▼
+   ┌───────────┐     tools=[...]     ┌───────────┐
+   │  Runtime   │ ──────────────────&gt; │  LLM API  │
+   └───────────┘                     └───────────┘
+</code></pre>
+<h3>5.3 工具选择问题</h3>
+<p>当工具数量超过一定阈值（经验值：15-20 个），LLM 的工具选择准确率会明显下降。原因有两个：</p>
+<ol>
+<li><strong>Context 膨胀</strong>：每个工具定义占用数百 token，20 个工具就是数千 token 的 system prompt，挤占了有效上下文空间。</li>
+<li><strong>选择困难</strong>：工具越多，语义越可能重叠，LLM 越难区分应该调用哪个。</li>
+</ol>
+<h3>5.4 Tool Selection 策略</h3>
+<p><strong>策略一：全量传递</strong></p>
+<pre><code>所有工具 ──全部传递──&gt; LLM
+</code></pre>
+<p>适用场景：工具少于 10 个。简单暴力，无额外开销。</p>
+<p><strong>策略二：语义过滤</strong></p>
+<pre><code>用户输入 ──Embedding──&gt; 向量
+                          │
+工具描述 ──Embedding──&gt; 向量库 ──Top-K 相似──&gt; 候选工具 ──&gt; LLM
+</code></pre>
+<p>用 Embedding 计算用户输入与工具描述的语义相似度，只传递 Top-K 最相关的工具。缺点是可能漏掉正确工具。</p>
+<p><strong>策略三：两阶段选择</strong></p>
+<pre><code>阶段 1：所有工具名 + 简短描述 ──&gt; LLM ──&gt; 选出候选工具 (3-5 个)
+阶段 2：候选工具的完整定义     ──&gt; LLM ──&gt; 执行 Tool Call
+</code></pre>
+<p>第一阶段只传递工具名和一行描述（token 消耗少），让 LLM 先做粗筛；第二阶段只传递选中工具的完整定义。这种方式在工具数量 50+ 的场景下效果最好，代价是多一轮 LLM 调用。</p>
+<hr>
+<h2>6. 完整代码示例</h2>
+<h3>6.1 工具定义</h3>
+<pre><code class="language-python">from dataclasses import dataclass, field
+from typing import Any, Callable
+
+@dataclass
+class Tool:
+    &quot;&quot;&quot;工具的统一抽象&quot;&quot;&quot;
+    name: str
+    description: str
+    parameters: dict          # JSON Schema
+    function: Callable        # 实际执行的函数
+    requires_confirmation: bool = False  # 是否需要用户确认
+
+    def to_openai_schema(self) -&gt; dict:
+        &quot;&quot;&quot;转换为 OpenAI API 格式&quot;&quot;&quot;
+        return {
+            &quot;type&quot;: &quot;function&quot;,
+            &quot;function&quot;: {
+                &quot;name&quot;: self.name,
+                &quot;description&quot;: self.description,
+                &quot;parameters&quot;: self.parameters,
+            }
+        }
+
+# ── 工具实现 ──────────────────────────────────────────────
+
+def get_weather(city: str, unit: str = &quot;celsius&quot;) -&gt; dict:
+    &quot;&quot;&quot;模拟天气查询&quot;&quot;&quot;
+    # 实际场景中调用天气 API
+    mock_data = {
+        &quot;北京&quot;: {&quot;temp&quot;: 28, &quot;condition&quot;: &quot;晴&quot;, &quot;humidity&quot;: 45},
+        &quot;上海&quot;: {&quot;temp&quot;: 32, &quot;condition&quot;: &quot;多云&quot;, &quot;humidity&quot;: 78},
+    }
+    data = mock_data.get(city, {&quot;temp&quot;: 20, &quot;condition&quot;: &quot;未知&quot;, &quot;humidity&quot;: 50})
+    if unit == &quot;fahrenheit&quot;:
+        data[&quot;temp&quot;] = data[&quot;temp&quot;] * 9 / 5 + 32
+    return {&quot;city&quot;: city, **data}
+
+
+def query_database(sql: str, database: str = &quot;default&quot;) -&gt; dict:
+    &quot;&quot;&quot;模拟数据库查询&quot;&quot;&quot;
+    # 实际场景中执行 SQL
+    return {
+        &quot;database&quot;: database,
+        &quot;query&quot;: sql,
+        &quot;rows&quot;: [
+            {&quot;id&quot;: 1, &quot;name&quot;: &quot;Alice&quot;, &quot;amount&quot;: 100.0},
+            {&quot;id&quot;: 2, &quot;name&quot;: &quot;Bob&quot;, &quot;amount&quot;: 200.0},
+        ],
+        &quot;row_count&quot;: 2,
+    }
+
+
+def calculate(expression: str) -&gt; dict:
+    &quot;&quot;&quot;安全的数学计算&quot;&quot;&quot;
+    allowed_chars = set(&quot;0123456789+-*/.() &quot;)
+    if not all(c in allowed_chars for c in expression):
+        return {&quot;error&quot;: &quot;表达式包含非法字符&quot;}
+    try:
+        result = eval(expression)  # 生产环境应使用 ast.literal_eval 或专用解析器
+        return {&quot;expression&quot;: expression, &quot;result&quot;: result}
+    except Exception as e:
+        return {&quot;error&quot;: str(e)}
+
+
+def read_file(file_path: str, encoding: str = &quot;utf-8&quot;) -&gt; dict:
+    &quot;&quot;&quot;读取文件内容&quot;&quot;&quot;
+    try:
+        with open(file_path, &quot;r&quot;, encoding=encoding) as f:
+            content = f.read(10000)  # 限制读取大小
+        return {&quot;path&quot;: file_path, &quot;content&quot;: content, &quot;size&quot;: len(content)}
+    except FileNotFoundError:
+        return {&quot;error&quot;: f&quot;文件不存在: {file_path}&quot;}
+    except Exception as e:
+        return {&quot;error&quot;: str(e)}
+
+
+def send_email(to: str, subject: str, body: str) -&gt; dict:
+    &quot;&quot;&quot;模拟发送邮件&quot;&quot;&quot;
+    # 实际场景中调用邮件服务
+    return {&quot;status&quot;: &quot;sent&quot;, &quot;to&quot;: to, &quot;subject&quot;: subject}
+
+
+# ── 工具注册 ──────────────────────────────────────────────
+
+weather_tool = Tool(
+    name=&quot;get_weather&quot;,
+    description=(
+        &quot;查询指定城市的当前天气信息，包括温度、天气状况和湿度。&quot;
+        &quot;支持国内主要城市。如果城市不在数据库中，返回默认值。&quot;
+    ),
+    parameters={
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;city&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;要查询的城市名称，如 &#39;北京&#39;、&#39;上海&#39;&quot;
+            },
+            &quot;unit&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [&quot;celsius&quot;, &quot;fahrenheit&quot;],
+                &quot;description&quot;: &quot;温度单位，默认摄氏度&quot;
+            }
+        },
+        &quot;required&quot;: [&quot;city&quot;],
+    },
+    function=get_weather,
+)
+
+database_tool = Tool(
+    name=&quot;query_database&quot;,
+    description=(
+        &quot;执行 SQL 查询并返回结果。仅支持 SELECT 语句，&quot;
+        &quot;不允许执行 INSERT/UPDATE/DELETE 等写操作。&quot;
+        &quot;返回结果包含行数据和总行数。&quot;
+    ),
+    parameters={
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;sql&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;要执行的 SQL SELECT 语句&quot;
+            },
+            &quot;database&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [&quot;default&quot;, &quot;analytics&quot;, &quot;users&quot;],
+                &quot;description&quot;: &quot;目标数据库名称，默认为 &#39;default&#39;&quot;
+            }
+        },
+        &quot;required&quot;: [&quot;sql&quot;],
+    },
+    function=query_database,
+)
+
+calculator_tool = Tool(
+    name=&quot;calculate&quot;,
+    description=(
+        &quot;执行数学计算。支持加减乘除和括号。&quot;
+        &quot;输入为数学表达式字符串，如 &#39;(3 + 5) * 2&#39;。&quot;
+        &quot;不支持变量和函数调用，仅限纯数值运算。&quot;
+    ),
+    parameters={
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;expression&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;数学表达式，如 &#39;(3 + 5) * 2&#39;&quot;
+            }
+        },
+        &quot;required&quot;: [&quot;expression&quot;],
+    },
+    function=calculate,
+)
+
+file_tool = Tool(
+    name=&quot;read_file&quot;,
+    description=(
+        &quot;读取指定路径的文本文件内容。最多读取 10000 字符。&quot;
+        &quot;仅支持文本文件，不支持二进制文件。&quot;
+        &quot;如果文件不存在，返回错误信息。&quot;
+    ),
+    parameters={
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;file_path&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;文件的绝对路径或相对路径&quot;
+            },
+            &quot;encoding&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;文件编码，默认 utf-8&quot;
+            }
+        },
+        &quot;required&quot;: [&quot;file_path&quot;],
+    },
+    function=read_file,
+)
+
+email_tool = Tool(
+    name=&quot;send_email&quot;,
+    description=(
+        &quot;向指定收件人发送一封电子邮件。&quot;
+        &quot;需要提供收件人地址、邮件主题和正文。&quot;
+        &quot;正文支持纯文本格式。&quot;
+    ),
+    parameters={
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;to&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;收件人邮箱地址&quot;
+            },
+            &quot;subject&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;邮件主题&quot;
+            },
+            &quot;body&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;description&quot;: &quot;邮件正文，纯文本格式&quot;
+            }
+        },
+        &quot;required&quot;: [&quot;to&quot;, &quot;subject&quot;, &quot;body&quot;],
+    },
+    function=send_email,
+    requires_confirmation=True,  # 发邮件需要用户确认
+)
+</code></pre>
+<h3>6.2 Tool Registry 实现</h3>
+<pre><code class="language-python">import json
+from typing import Optional
+
+class ToolRegistry:
+    &quot;&quot;&quot;工具注册中心&quot;&quot;&quot;
+
+    def __init__(self):
+        self._tools: dict[str, Tool] = {}
+
+    def register(self, tool: Tool) -&gt; None:
+        if tool.name in self._tools:
+            raise ValueError(f&quot;工具 &#39;{tool.name}&#39; 已注册&quot;)
+        self._tools[tool.name] = tool
+
+    def unregister(self, name: str) -&gt; None:
+        self._tools.pop(name, None)
+
+    def get_tool(self, name: str) -&gt; Optional[Tool]:
+        return self._tools.get(name)
+
+    def get_all_tools(self) -&gt; list[Tool]:
+        return list(self._tools.values())
+
+    def get_definitions(self, names: list[str] | None = None) -&gt; list[dict]:
+        &quot;&quot;&quot;获取工具定义列表（用于传递给 LLM API）&quot;&quot;&quot;
+        tools = self._tools.values()
+        if names:
+            tools = [t for t in tools if t.name in names]
+        return [t.to_openai_schema() for t in tools]
+
+    def get_summary(self) -&gt; str:
+        &quot;&quot;&quot;获取工具摘要（用于两阶段选择的第一阶段）&quot;&quot;&quot;
+        lines = []
+        for tool in self._tools.values():
+            # 只取 description 的第一句
+            short_desc = tool.description.split(&quot;。&quot;)[0] + &quot;。&quot;
+            lines.append(f&quot;- {tool.name}: {short_desc}&quot;)
+        return &quot;\n&quot;.join(lines)
+
+
+# 初始化 Registry
+registry = ToolRegistry()
+for tool in [weather_tool, database_tool, calculator_tool, file_tool, email_tool]:
+    registry.register(tool)
+</code></pre>
+<h3>6.3 Tool Dispatcher 实现</h3>
+<pre><code class="language-python">import json
+import traceback
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+class ToolDispatcher:
+    &quot;&quot;&quot;
+    工具调度器：解析 LLM 返回的 tool calls，执行对应工具，收集结果。
+    &quot;&quot;&quot;
+
+    def __init__(self, registry: ToolRegistry, max_parallel: int = 5):
+        self.registry = registry
+        self.max_parallel = max_parallel
+
+    def validate_arguments(self, tool: Tool, arguments: dict) -&gt; list[str]:
+        &quot;&quot;&quot;基础参数验证（生产环境建议使用 jsonschema 库）&quot;&quot;&quot;
+        errors = []
+        schema = tool.parameters
+        required = schema.get(&quot;required&quot;, [])
+        properties = schema.get(&quot;properties&quot;, {})
+
+        # 检查必填参数
+        for param in required:
+            if param not in arguments:
+                errors.append(f&quot;缺少必填参数: {param}&quot;)
+
+        # 检查参数类型和枚举
+        for param, value in arguments.items():
+            if param not in properties:
+                errors.append(f&quot;未知参数: {param}&quot;)
+                continue
+            prop_schema = properties[param]
+            if &quot;enum&quot; in prop_schema and value not in prop_schema[&quot;enum&quot;]:
+                errors.append(
+                    f&quot;参数 &#39;{param}&#39; 的值 &#39;{value}&#39; &quot;
+                    f&quot;不在允许范围内: {prop_schema[&#39;enum&#39;]}&quot;
+                )
+
+        return errors
+
+    def execute_single(self, tool_call: dict) -&gt; dict:
+        &quot;&quot;&quot;执行单个工具调用&quot;&quot;&quot;
+        name = tool_call[&quot;function&quot;][&quot;name&quot;]
+        raw_args = tool_call[&quot;function&quot;][&quot;arguments&quot;]
+        call_id = tool_call.get(&quot;id&quot;, &quot;unknown&quot;)
+
+        # 1. 查找工具
+        tool = self.registry.get_tool(name)
+        if not tool:
+            return {
+                &quot;tool_call_id&quot;: call_id,
+                &quot;role&quot;: &quot;tool&quot;,
+                &quot;content&quot;: json.dumps({&quot;error&quot;: f&quot;工具 &#39;{name}&#39; 不存在&quot;}),
+            }
+
+        # 2. 解析参数
+        try:
+            arguments = json.loads(raw_args) if isinstance(raw_args, str) else raw_args
+        except json.JSONDecodeError as e:
+            return {
+                &quot;tool_call_id&quot;: call_id,
+                &quot;role&quot;: &quot;tool&quot;,
+                &quot;content&quot;: json.dumps({&quot;error&quot;: f&quot;参数 JSON 解析失败: {e}&quot;}),
+            }
+
+        # 3. 验证参数
+        errors = self.validate_arguments(tool, arguments)
+        if errors:
+            return {
+                &quot;tool_call_id&quot;: call_id,
+                &quot;role&quot;: &quot;tool&quot;,
+                &quot;content&quot;: json.dumps({&quot;error&quot;: &quot;参数验证失败&quot;, &quot;details&quot;: errors}),
+            }
+
+        # 4. 执行工具
+        try:
+            result = tool.function(**arguments)
+            return {
+                &quot;tool_call_id&quot;: call_id,
+                &quot;role&quot;: &quot;tool&quot;,
+                &quot;content&quot;: json.dumps(result, ensure_ascii=False),
+            }
+        except Exception as e:
+            return {
+                &quot;tool_call_id&quot;: call_id,
+                &quot;role&quot;: &quot;tool&quot;,
+                &quot;content&quot;: json.dumps({
+                    &quot;error&quot;: f&quot;工具执行失败: {type(e).__name__}: {e}&quot;,
+                    &quot;traceback&quot;: traceback.format_exc()[-500:],  # 截断过长的堆栈
+                }),
+            }
+
+    def execute_parallel(self, tool_calls: list[dict]) -&gt; list[dict]:
+        &quot;&quot;&quot;并行执行多个工具调用&quot;&quot;&quot;
+        if len(tool_calls) == 1:
+            return [self.execute_single(tool_calls[0])]
+
+        results = []
+        with ThreadPoolExecutor(max_workers=self.max_parallel) as executor:
+            future_to_call = {
+                executor.submit(self.execute_single, tc): tc
+                for tc in tool_calls
+            }
+            for future in as_completed(future_to_call):
+                results.append(future.result())
+
+        # 按原始顺序排列结果
+        id_to_result = {r[&quot;tool_call_id&quot;]: r for r in results}
+        ordered = []
+        for tc in tool_calls:
+            call_id = tc.get(&quot;id&quot;, &quot;unknown&quot;)
+            ordered.append(id_to_result.get(call_id, results.pop(0)))
+        return ordered
+
+
+dispatcher = ToolDispatcher(registry)
+</code></pre>
+<h3>6.4 完整对话循环</h3>
+<pre><code class="language-python">from openai import OpenAI
+
+def run_agent_loop(
+    client: OpenAI,
+    user_message: str,
+    registry: ToolRegistry,
+    dispatcher: ToolDispatcher,
+    max_iterations: int = 10,
+) -&gt; str:
+    &quot;&quot;&quot;
+    完整的 Agent 对话循环，支持多轮 Tool Calling。
+    &quot;&quot;&quot;
+    messages = [
+        {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;你是一个有用的助手，可以使用工具来回答用户的问题。&quot;},
+        {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_message},
+    ]
+    tools = registry.get_definitions()
+
+    for i in range(max_iterations):
+        response = client.chat.completions.create(
+            model=&quot;gpt-4&quot;,
+            messages=messages,
+            tools=tools if tools else None,
+        )
+        choice = response.choices[0]
+        message = choice.message
+
+        # 如果 LLM 没有调用工具，直接返回文本回答
+        if not message.tool_calls:
+            return message.content
+
+        # 将 LLM 的回复（含 tool_calls）加入消息历史
+        messages.append(message.model_dump())
+
+        # 执行所有工具调用（支持并行）
+        tool_calls = [tc.model_dump() for tc in message.tool_calls]
+        results = dispatcher.execute_parallel(tool_calls)
+
+        # 将工具执行结果加入消息历史
+        for result in results:
+            messages.append(result)
+
+        # 继续循环，让 LLM 基于工具结果做下一步决策
+
+    return &quot;达到最大迭代次数，对话终止。&quot;
+
+
+# 使用示例
+# client = OpenAI()
+# answer = run_agent_loop(client, &quot;北京今天天气怎么样？然后帮我算一下 28 * 9/5 + 32&quot;, registry, dispatcher)
+# print(answer)
+</code></pre>
+<hr>
+<h2>7. 错误处理与验证</h2>
+<p>Tool Calling 中的错误来源比常规 API 调用更多，因为链条更长：用户输入 → LLM 推理 → 参数生成 → 参数验证 → 工具执行 → 结果回传 → LLM 再推理。每一环都可能出错。</p>
+<h3>7.1 参数验证</h3>
+<p>LLM 生成的参数并不总是合法的。常见问题：</p>
+<pre><code class="language-python"># LLM 可能生成的&quot;有问题&quot;的参数
+
+# 1. 类型错误：期望 string，给了 number
+{&quot;city&quot;: 123}
+
+# 2. 枚举越界：给了不在 enum 中的值
+{&quot;unit&quot;: &quot;kelvin&quot;}      # enum 里只有 celsius / fahrenheit
+
+# 3. 格式错误：JSON 语法不对
+&#39;{&quot;city&quot;: &quot;北京&quot;,}&#39;      # 尾部多余逗号（严格 JSON 不允许）
+
+# 4. 幻觉参数：编造了不存在的参数
+{&quot;city&quot;: &quot;北京&quot;, &quot;forecast_days&quot;: 7}  # 工具根本没有这个参数
+
+# 5. 语义错误：参数值表面合法但语义错误
+{&quot;sql&quot;: &quot;DROP TABLE users&quot;}  # 传了一条 DELETE 语句给 SELECT-only 工具
+</code></pre>
+<p>应对策略是 <strong>分层验证</strong>：</p>
+<pre><code class="language-python">def validate_and_execute(tool: Tool, raw_arguments: str) -&gt; dict:
+    # 第一层：JSON 语法
+    try:
+        args = json.loads(raw_arguments)
+    except json.JSONDecodeError:
+        return {&quot;error&quot;: &quot;参数不是合法的 JSON&quot;}
+
+    # 第二层：Schema 验证（使用 jsonschema 库）
+    from jsonschema import validate, ValidationError
+    try:
+        validate(instance=args, schema=tool.parameters)
+    except ValidationError as e:
+        return {&quot;error&quot;: f&quot;参数验证失败: {e.message}&quot;}
+
+    # 第三层：业务规则验证
+    if tool.name == &quot;query_database&quot;:
+        sql = args.get(&quot;sql&quot;, &quot;&quot;).strip().upper()
+        if not sql.startswith(&quot;SELECT&quot;):
+            return {&quot;error&quot;: &quot;仅支持 SELECT 查询&quot;}
+
+    # 执行
+    return tool.function(**args)
+</code></pre>
+<h3>7.2 工具执行失败的反馈</h3>
+<p>当工具执行失败时，最重要的原则是：<strong>将错误信息回传给 LLM，让它决定下一步</strong>。</p>
+<pre><code class="language-python"># 不要这样做 —— 对用户抛出原始异常
+raise RuntimeError(&quot;Connection timeout to weather API&quot;)
+
+# 应该这样做 —— 将错误包装为工具结果，回传给 LLM
+{
+    &quot;tool_call_id&quot;: &quot;call_abc123&quot;,
+    &quot;role&quot;: &quot;tool&quot;,
+    &quot;content&quot;: json.dumps({
+        &quot;error&quot;: &quot;天气 API 连接超时，请稍后重试或尝试查询其他城市&quot;,
+        &quot;error_type&quot;: &quot;timeout&quot;,
+        &quot;retryable&quot;: True
+    })
+}
+</code></pre>
+<p>LLM 拿到这个错误信息后，可能会：</p>
+<ul>
+<li>换一种方式重试（比如换个参数）</li>
+<li>告知用户当前无法完成</li>
+<li>尝试用其他工具达成目标</li>
+</ul>
+<h3>7.3 重试策略</h3>
+<pre><code>                  ┌──────────────────────────┐
+                  │    Tool Call 失败         │
+                  └──────────┬───────────────┘
+                             │
+                   ┌─────────▼─────────┐
+                   │  错误类型判断       │
+                   └─────────┬─────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              │              │              │
+        ┌─────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
+        │ 可重试     │ │ 参数错误   │ │ 不可恢复   │
+        │(超时/限流) │ │(类型/格式) │ │(权限/404) │
+        └─────┬─────┘ └─────┬─────┘ └─────┬─────┘
+              │              │              │
+        ┌─────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
+        │ Runtime    │ │ 回传 LLM  │ │ 回传 LLM  │
+        │ 自动重试   │ │ 让它修正   │ │ 让它放弃   │
+        │ (指数退避) │ │ 参数       │ │ 或换方案   │
+        └───────────┘ └───────────┘ └───────────┘
+</code></pre>
+<p>核心原则：<strong>可重试的错误由 Runtime 处理，不可重试的错误交给 LLM 决策</strong>。</p>
+<ul>
+<li><strong>瞬时错误</strong>（网络超时、限流）：Runtime 自动重试，设置退避策略和最大重试次数，不需要浪费 LLM 的 token。</li>
+<li><strong>参数错误</strong>：回传给 LLM，它可能会修正参数重新调用。</li>
+<li><strong>永久错误</strong>（权限不足、资源不存在）：回传给 LLM，让它换一种方案或如实告知用户。</li>
+</ul>
+<h3>7.4 幂等性考量</h3>
+<p>当重试机制存在时，幂等性就变得至关重要。</p>
+<pre><code class="language-python"># 幂等操作 —— 重试安全
+get_weather(&quot;北京&quot;)           # 多次调用结果相同
+query_database(&quot;SELECT ...&quot;)  # 只读查询，天然幂等
+
+# 非幂等操作 —— 重试危险
+send_email(to=&quot;a@b.com&quot;, ...)  # 重试 = 发两封邮件
+create_order(item=&quot;iPhone&quot;)    # 重试 = 创建两个订单
+</code></pre>
+<p>对于非幂等操作，要么禁止自动重试，要么引入幂等 key：</p>
+<pre><code class="language-python">def send_email_idempotent(to: str, subject: str, body: str, idempotency_key: str) -&gt; dict:
+    &quot;&quot;&quot;带幂等 key 的邮件发送&quot;&quot;&quot;
+    if is_already_sent(idempotency_key):
+        return {&quot;status&quot;: &quot;already_sent&quot;, &quot;message&quot;: &quot;该请求已处理，跳过重复发送&quot;}
+    result = _do_send_email(to, subject, body)
+    mark_as_sent(idempotency_key)
+    return result
+</code></pre>
+<hr>
+<h2>8. 安全性</h2>
+<p>Tool Calling 打开了 LLM 与外部世界的通道，也同时打开了攻击面。</p>
+<h3>8.1 工具权限控制</h3>
+<p>不是所有工具都应该对所有用户开放。一个合理的权限模型：</p>
+<pre><code class="language-python">from enum import Enum
+
+class ToolPermission(Enum):
+    READ = &quot;read&quot;        # 只读操作：查询天气、读文件
+    WRITE = &quot;write&quot;      # 写操作：发邮件、创建记录
+    ADMIN = &quot;admin&quot;      # 管理操作：删除数据、修改配置
+
+class SecureToolRegistry(ToolRegistry):
+    &quot;&quot;&quot;带权限控制的工具注册中心&quot;&quot;&quot;
+
+    def __init__(self):
+        super().__init__()
+        self._permissions: dict[str, ToolPermission] = {}
+
+    def register(self, tool: Tool, permission: ToolPermission = ToolPermission.READ):
+        super().register(tool)
+        self._permissions[tool.name] = permission
+
+    def get_definitions(
+        self,
+        names: list[str] | None = None,
+        max_permission: ToolPermission = ToolPermission.READ,
+    ) -&gt; list[dict]:
+        &quot;&quot;&quot;只返回用户权限范围内的工具&quot;&quot;&quot;
+        permission_levels = {
+            ToolPermission.READ: 0,
+            ToolPermission.WRITE: 1,
+            ToolPermission.ADMIN: 2,
+        }
+        max_level = permission_levels[max_permission]
+        allowed = [
+            t for t in self._tools.values()
+            if permission_levels[self._permissions.get(t.name, ToolPermission.ADMIN)] &lt;= max_level
+        ]
+        if names:
+            allowed = [t for t in allowed if t.name in names]
+        return [t.to_openai_schema() for t in allowed]
+</code></pre>
+<h3>8.2 参数注入风险</h3>
+<p>LLM 的参数生成可以被 Prompt Injection 操纵。考虑以下场景：</p>
+<pre><code>用户输入: &quot;帮我查一下订单，user_id 是 U00012345; DROP TABLE orders; --&quot;
+</code></pre>
+<p>如果 <code>query_database</code> 工具直接拼接 SQL，这就变成了一次经典的 SQL 注入。防护措施：</p>
+<ol>
+<li><strong>参数化查询</strong>：工具内部必须使用参数化 SQL，绝不拼接。</li>
+<li><strong>白名单校验</strong>：用正则或枚举限制参数值的格式。</li>
+<li><strong>最小权限原则</strong>：数据库连接使用只读账号。</li>
+</ol>
+<h3>8.3 Sandbox 执行</h3>
+<p>对于高风险工具（如代码执行、文件操作），应在隔离环境中执行：</p>
+<pre><code>┌──────────────────────────────────────────────┐
+│  Host Runtime                                 │
+│                                              │
+│   ┌─────────────┐     ┌──────────────────┐   │
+│   │  Safe Tools  │     │    Sandbox       │   │
+│   │  (天气/计算) │     │  ┌────────────┐  │   │
+│   │  直接执行    │     │  │ Risky Tools│  │   │
+│   └─────────────┘     │  │ (代码/文件) │  │   │
+│                       │  │ 隔离执行    │  │   │
+│                       │  └────────────┘  │   │
+│                       │  - 网络受限      │   │
+│                       │  - 文件系统隔离  │   │
+│                       │  - 执行时间限制  │   │
+│                       │  - 资源配额      │   │
+│                       └──────────────────┘   │
+└──────────────────────────────────────────────┘
+</code></pre>
+<p>Sandbox 的实现方式取决于部署环境：</p>
+<ul>
+<li><strong>Docker 容器</strong>：最常见，隔离性好</li>
+<li><strong>gVisor / Firecracker</strong>：更强的隔离，适合多租户</li>
+<li><strong>WASM</strong>：轻量级沙箱，启动快</li>
+<li><strong>子进程 + seccomp</strong>：Linux 下的轻量方案</li>
+</ul>
+<hr>
+<h2>9. Trade-off 分析</h2>
+<h3>9.1 工具数量 vs 选择准确率</h3>
+<pre><code>选择准确率
+  100% │ ****
+       │     ****
+   90% │         ****
+       │             ****
+   80% │                 ****
+       │                     ****
+   70% │                         ****
+       │                             ****
+   60% │                                 ****
+       ├───┬───┬───┬───┬───┬───┬───┬───┬───── 工具数量
+       0   5  10  15  20  25  30  35  40
+
+       |&lt;-- 全量传递 --&gt;|&lt;- 需要过滤策略 -&gt;|
+</code></pre>
+<ul>
+<li><strong>&lt; 10 个工具</strong>：全量传递，不需要过滤。</li>
+<li><strong>10-20 个工具</strong>：准确率开始下降，可通过优化 description 缓解。</li>
+<li><strong>&gt; 20 个工具</strong>：必须引入 Tool Selection 策略（语义过滤或两阶段选择）。</li>
+<li><strong>&gt; 50 个工具</strong>：两阶段选择几乎是唯一可行方案，或者按领域拆分为多个 Agent。</li>
+</ul>
+<h3>9.2 工具描述详细度 vs Token 消耗</h3>
+<p>每个工具定义大约占用 100-500 token（取决于描述长度和参数数量）。20 个工具就是 2000-10000 token 的系统开销，这是每次 API 调用都要付出的 <strong>固定成本</strong>。</p>
+<pre><code>                        描述详细度
+                  低 ◄──────────────► 高
+                  │                    │
+  Token 消耗   低 │  ⚡ 省钱但模糊     │
+                  │  LLM 可能误选工具  │
+                  │                    │
+              高 │                    │  📖 精确但昂贵
+                  │                    │  LLM 选择更准确
+                  │                    │
+</code></pre>
+<p>实践建议：</p>
+<ul>
+<li>工具 <code>name</code> 起好名字（零额外 token 成本，但信息量大）</li>
+<li><code>description</code> 控制在 2-3 句话</li>
+<li>参数的 <code>description</code> 控制在 1 句话 + 1 个示例</li>
+<li>用 <code>enum</code> 和 <code>required</code> 代替冗长的文字约束</li>
+</ul>
+<h3>9.3 确定性执行 vs LLM 灵活性</h3>
+<pre><code>确定性                                          灵活性
+  │                                              │
+  │  硬编码工作流           Agent Tool Calling     │
+  │  if/else 分支            LLM 自由选择工具     │
+  │  规则引擎                自动组合工具链        │
+  │                                              │
+  │  ✅ 可预测              ✅ 处理模糊意图        │
+  │  ✅ 可审计              ✅ 适应新场景          │
+  │  ✅ 低延迟              ✅ 用户体验自然        │
+  │  ❌ 不灵活              ❌ 不可预测            │
+  │  ❌ 维护成本高          ❌ 调试困难            │
+  │  ❌ 无法处理长尾        ❌ 成本高              │
+</code></pre>
+<p>决策框架：</p>
+<table>
+<thead>
+<tr>
+<th>场景特征</th>
+<th>推荐方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>流程固定、合规要求高</td>
+<td>硬编码工作流 + Tool Calling 作为执行层</td>
+</tr>
+<tr>
+<td>意图模糊、工具组合多变</td>
+<td>完全由 LLM 驱动的 Tool Calling</td>
+</tr>
+<tr>
+<td>核心路径固定、边缘场景多</td>
+<td>混合方案：主流程硬编码，长尾交给 LLM</td>
+</tr>
+</tbody></table>
+<p>关键洞察：Tool Calling 不是非此即彼的选择。你可以让 LLM 决定 <strong>是否</strong> 调用工具，但用代码控制 <strong>调用后的流程</strong>。比如 LLM 决定&quot;需要查天气&quot;，但查完天气后的处理逻辑是确定性的代码。</p>
+<hr>
+<h2>10. 常见陷阱</h2>
+<p>在实际工程中，以下几个坑值得提前规避：</p>
+<p><strong>1. 工具描述与实际行为不一致</strong></p>
+<p>工具描述说&quot;返回最近 30 天的订单&quot;，但实际实现返回所有订单。LLM 会基于描述做出错误假设，导致下游逻辑出错。<strong>描述就是契约，必须与实现严格一致</strong>。</p>
+<p><strong>2. 忽略工具结果的 Token 消耗</strong></p>
+<p>工具返回的结果会作为下一轮消息传给 LLM。如果一个数据库查询返回了 1000 行数据，这些数据全部变成 input token。务必在工具层面限制返回数据量。</p>
+<pre><code class="language-python">def query_database(sql: str, database: str = &quot;default&quot;) -&gt; dict:
+    results = _execute_query(sql, database)
+    # 限制返回行数，避免 token 爆炸
+    if len(results) &gt; 50:
+        return {
+            &quot;rows&quot;: results[:50],
+            &quot;total_count&quot;: len(results),
+            &quot;truncated&quot;: True,
+            &quot;message&quot;: f&quot;结果共 {len(results)} 行，仅返回前 50 行&quot;
+        }
+    return {&quot;rows&quot;: results, &quot;total_count&quot;: len(results)}
+</code></pre>
+<p><strong>3. 缺少 stop condition</strong></p>
+<p>如果 LLM 反复调用同一个工具（比如因为错误一直重试），而没有最大迭代次数限制，系统会陷入无限循环。前面代码中的 <code>max_iterations</code> 参数就是为此设计的。</p>
+<p><strong>4. 并行调用的顺序依赖</strong></p>
+<p>LLM 可能在一次回复中请求并行调用两个工具，但这两个工具之间有隐含的顺序依赖（比如先查用户 ID，再用这个 ID 查订单）。Runtime 需要能识别这种情况，或者在工具描述中引导 LLM 分步调用。</p>
+<hr>
+<h2>11. 总结与展望</h2>
+<p>Tool Calling 的本质是一个精心设计的 <strong>协议</strong>：</p>
+<pre><code>┌───────────┐    JSON Schema    ┌───────────┐    Function    ┌───────────┐
+│           │    (契约)          │           │    (执行)      │           │
+│    LLM    │ ◄───────────────► │  Runtime  │ ◄────────────► │   Tools   │
+│  (决策层) │   Tool Call JSON   │  (调度层) │   Function     │  (能力层) │
+│           │   Tool Result      │           │   Call/Return  │           │
+└───────────┘                   └───────────┘                └───────────┘
+</code></pre>
+<ul>
+<li><strong>LLM</strong> 负责理解意图、选择工具、生成参数——它是决策者。</li>
+<li><strong>Runtime</strong> 负责验证、路由、执行、错误处理——它是执行者。</li>
+<li><strong>Tools</strong> 是具体的能力——它们是能力的载体。</li>
+<li><strong>JSON Schema</strong> 是三者之间的契约——它定义了什么可以做、怎么做。</li>
+</ul>
+<p>理解了这个架构，你就能在任何框架（LangChain、LlamaIndex、Semantic Kernel，或者自己写的 Runtime）上实现 Tool Calling，因为底层原理是相同的。</p>
+<p>但 Tool Calling 只是让 Agent 有了&quot;手&quot;。要让 Agent 真正好用，还需要精心设计的 Prompt 来引导 LLM 的决策——什么时候该调工具、什么时候该直接回答、遇到错误该怎么处理、多个工具之间如何协调。这就是下一篇 <strong>Prompt Engineering for Agents</strong> 要深入讨论的主题。</p>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 05 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/04-The%20Agent%20Control%20Loop">04 | The Agent Control Loop</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/06-Prompt%20Engineering%20for%20Agents">06 | Prompt Engineering for Agents</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+17:Tc7d3,<h1>The Agent Control Loop: Agent 运行时的核心抽象</h1>
+<blockquote>
+<p>如果说 LLM 是 Agent 的大脑，那么 Control Loop 就是 Agent 的心跳。</p>
+<p>大多数教程在讲 Agent 时，上来就接框架、调 API、跑 demo。但如果你不理解 Agent 运行时的核心抽象——控制循环——你永远只是在用别人的黑盒。</p>
+<p>本文是 Agentic 系列第 04 篇，整个系列的技术基石。我们会从状态机模型出发，逐层拆解 Agent Control Loop 的每一个阶段，给出完整的 Python 实现，并深入分析实际工程中的 trade-off。</p>
+</blockquote>
+<hr>
+<h2>1. Agent 的本质：可中断的控制循环</h2>
+<p>一个常见的误解是把 Agent 等同于&quot;一次 LLM 调用&quot;。实际上，Agent 和 LLM 的关系，类似于操作系统和 CPU 的关系——LLM 是执行推理的计算单元，而 Agent 是管理整个执行生命周期的运行时系统。</p>
+<p><strong>LLM 是一个函数：</strong> <code>f(prompt) -&gt; completion</code>，输入文本，输出文本，调用一次就结束。</p>
+<p><strong>Agent 是一个循环：</strong> 它持续运行，在每一轮中观察环境、调用 LLM 进行推理、执行动作、评估结果，然后决定是否继续。</p>
+<pre><code>LLM:    Input ──→ Output            (一次调用)
+
+Agent:  Input ──→ [Observe → Think → Act → Reflect] ──→ ... ──→ Output
+                  └──────── 循环 N 次 ────────────┘     (多轮控制)
+</code></pre>
+<p>这个循环有几个关键特性：</p>
+<ul>
+<li><strong>可中断</strong>：循环可以在任何阶段暂停，等待外部输入（用户确认、异步工具返回）后恢复</li>
+<li><strong>有状态</strong>：循环维护上下文信息，每一轮的输出影响下一轮的输入</li>
+<li><strong>有终止条件</strong>：循环不会无限运行，它在满足特定条件时停止</li>
+<li><strong>可观测</strong>：循环的每一步都应该是可追踪、可回溯的</li>
+</ul>
+<p>理解了这一点，Agent 编程的核心问题就变成了：<strong>如何设计和实现这个控制循环？</strong></p>
+<hr>
+<h2>2. 状态机模型：形式化定义</h2>
+<p>要严谨地描述 Control Loop，最自然的方式是用<strong>有限状态机（FSM）</strong>。</p>
+<h3>2.1 状态定义</h3>
+<p>一个 Agent Control Loop 可以用以下状态集合描述：</p>
+<pre><code class="language-python">from enum import Enum
+
+class AgentState(Enum):
+    OBSERVE  = &quot;observe&quot;   # 接收并归一化输入
+    THINK    = &quot;think&quot;     # LLM 推理，决定下一步行动
+    ACT      = &quot;act&quot;       # 执行工具调用或产出结果
+    REFLECT  = &quot;reflect&quot;   # 评估执行结果，决定是否继续
+    DONE     = &quot;done&quot;      # 终止：任务完成
+    ERROR    = &quot;error&quot;     # 终止：不可恢复错误
+</code></pre>
+<h3>2.2 状态转移图</h3>
+<pre><code>                    ┌─────────────────────────────────────────┐
+                    │                                         │
+                    ▼                                         │
+              ┌──────────┐                                    │
+   Input ───→│ OBSERVE  │                                    │
+              └────┬─────┘                                    │
+                   │                                         │
+                   ▼                                         │
+              ┌──────────┐    need_action    ┌──────────┐    │
+              │  THINK   │ ───────────────→ │   ACT    │    │
+              └────┬─────┘                   └────┬─────┘    │
+                   │                              │          │
+                   │ has_answer                   │          │
+                   │                              ▼          │
+                   │                        ┌──────────┐     │
+                   │                        │ REFLECT  │ ────┘
+                   │                        └────┬─────┘  continue
+                   │                             │
+                   ▼                             ▼
+              ┌──────────┐                  ┌──────────┐
+              │   DONE   │                  │  ERROR   │
+              └──────────┘                  └──────────┘
+                                       (max_retries exceeded
+                                        / unrecoverable)
+</code></pre>
+<p>状态转移规则：</p>
+<table>
+<thead>
+<tr>
+<th>当前状态</th>
+<th>条件</th>
+<th>下一状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OBSERVE</td>
+<td>输入就绪</td>
+<td>THINK</td>
+</tr>
+<tr>
+<td>THINK</td>
+<td>LLM 返回 tool_call</td>
+<td>ACT</td>
+</tr>
+<tr>
+<td>THINK</td>
+<td>LLM 返回最终回答</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>THINK</td>
+<td>LLM 调用异常</td>
+<td>ERROR</td>
+</tr>
+<tr>
+<td>ACT</td>
+<td>工具执行完成</td>
+<td>REFLECT</td>
+</tr>
+<tr>
+<td>ACT</td>
+<td>工具执行失败</td>
+<td>REFLECT (带错误信息)</td>
+</tr>
+<tr>
+<td>REFLECT</td>
+<td>需要继续</td>
+<td>OBSERVE (将结果作为新输入)</td>
+</tr>
+<tr>
+<td>REFLECT</td>
+<td>任务完成</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>REFLECT</td>
+<td>超过重试上限</td>
+<td>ERROR</td>
+</tr>
+</tbody></table>
+<h3>2.3 与 OODA Loop 的对比</h3>
+<p>Agent Control Loop 并不是凭空发明的，它和军事决策理论中的 <strong>OODA Loop（Observe-Orient-Decide-Act）</strong> 有深层的结构对应：</p>
+<pre><code>OODA Loop:          Agent Control Loop:
+┌─────────┐         ┌─────────┐
+│ Observe │ ──────→ │ OBSERVE │  感知环境
+├─────────┤         ├─────────┤
+│ Orient  │ ──────→ │ THINK   │  理解上下文，形成判断
+├─────────┤         │         │
+│ Decide  │ ──────→ │         │  (LLM 在 THINK 中同时完成 Orient+Decide)
+├─────────┤         ├─────────┤
+│  Act    │ ──────→ │  ACT    │  执行行动
+└─────────┘         ├─────────┤
+                    │ REFLECT │  OODA 中没有显式的反思阶段
+                    └─────────┘
+</code></pre>
+<p>关键区别在于 <strong>REFLECT 阶段</strong>。传统 OODA Loop 假设决策者能实时感知行动效果并自然融入下一轮 Observe。但 LLM Agent 不具备这种连续感知能力——它需要一个显式的反思步骤来评估工具返回值、判断是否需要修正。这是 Agent Control Loop 相对于经典决策循环的重要改进。</p>
+<hr>
+<h2>3. 循环中每个阶段的深入分析</h2>
+<h3>3.1 OBSERVE：输入归一化</h3>
+<p>OBSERVE 阶段的职责是<strong>收集并归一化各种来源的输入</strong>，将它们统一为 LLM 可理解的格式。</p>
+<p>输入来源远不止&quot;用户消息&quot;一种：</p>
+<pre><code>输入来源                    归一化后
+┌─────────────────┐       ┌──────────────────────┐
+│ 用户消息         │ ────→ │ {&quot;role&quot;: &quot;user&quot;,     │
+│ 工具返回值       │ ────→ │  &quot;content&quot;: &quot;...&quot;}   │
+│ 系统事件         │ ────→ │                      │
+│ 定时触发         │ ────→ │ {&quot;role&quot;: &quot;system&quot;,   │
+│ 外部 Webhook    │ ────→ │  &quot;content&quot;: &quot;...&quot;}   │
+│ 上一轮反思结果   │ ────→ │                      │
+└─────────────────┘       └──────────────────────┘
+</code></pre>
+<p><strong>输入归一化的核心原则：</strong></p>
+<ol>
+<li><p><strong>所有输入都必须序列化为 message 格式</strong>。不管来源是什么，最终都要变成 <code>{&quot;role&quot;: ..., &quot;content&quot;: ...}</code> 的形式，因为 LLM 只理解 message 序列。</p>
+</li>
+<li><p><strong>工具返回值需要结构化包装</strong>。不要直接把原始 JSON 甩给 LLM，要附上工具名称、执行状态和必要的摘要信息。</p>
+</li>
+<li><p><strong>输入需要截断和优先级排序</strong>。当多个输入同时到达时，需要决定哪些放进当前轮次的 Context Window，哪些缓存到下一轮。</p>
+</li>
+</ol>
+<pre><code class="language-python">def observe(self, raw_inputs: list[dict]) -&gt; list[dict]:
+    &quot;&quot;&quot;将原始输入归一化为 LLM message 格式&quot;&quot;&quot;
+    messages = []
+    for inp in raw_inputs:
+        match inp[&quot;type&quot;]:
+            case &quot;user_message&quot;:
+                messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: inp[&quot;text&quot;]})
+            case &quot;tool_result&quot;:
+                messages.append({
+                    &quot;role&quot;: &quot;tool&quot;,
+                    &quot;tool_call_id&quot;: inp[&quot;call_id&quot;],
+                    &quot;content&quot;: self._format_tool_result(inp),
+                })
+            case &quot;system_event&quot;:
+                messages.append({
+                    &quot;role&quot;: &quot;system&quot;,
+                    &quot;content&quot;: f&quot;[System Event] {inp[&#39;event&#39;]}&quot;,
+                })
+    return messages
+</code></pre>
+<h3>3.2 THINK：LLM 推理</h3>
+<p>THINK 阶段是控制循环中最核心的一环——调用 LLM，让它基于当前上下文做出决策。</p>
+<p>这个阶段要解决三个问题：</p>
+<p><strong>问题一：Context Window 构建</strong></p>
+<p>LLM 的输入不是当前轮次的消息，而是<strong>从任务开始到现在的完整上下文</strong>。构建 Context Window 的典型结构：</p>
+<pre><code>┌─────────────────────────────────────────────┐
+│ System Prompt                               │  固定不变
+│ (角色定义 + 能力边界 + 输出格式要求)           │
+├─────────────────────────────────────────────┤
+│ Tool Definitions                            │  固定不变
+│ (可用工具的 JSON Schema 定义)                │
+├─────────────────────────────────────────────┤
+│ Message History                             │  随轮次增长
+│ (user → assistant → tool → assistant → ...) │
+├─────────────────────────────────────────────┤
+│ Current Turn Input                          │  当前轮次
+│ (本轮 OBSERVE 阶段归一化的输入)              │
+└─────────────────────────────────────────────┘
+</code></pre>
+<p><strong>问题二：Token 预算控制</strong></p>
+<p>Context Window 有上限（4K / 8K / 128K / 200K），而每一轮循环都会增加 message history。如果不加控制，几轮之后就会超限。</p>
+<p>常见的预算控制策略：</p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>实现方式</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>硬截断</td>
+<td>只保留最近 N 条消息</td>
+<td>简单场景</td>
+</tr>
+<tr>
+<td>滑动窗口</td>
+<td>System Prompt 固定 + 最近 K 轮对话</td>
+<td>工具调用场景</td>
+</tr>
+<tr>
+<td>摘要压缩</td>
+<td>将早期对话用 LLM 生成摘要后替换</td>
+<td>长对话场景</td>
+</tr>
+<tr>
+<td>优先级保留</td>
+<td>按消息重要性排序，低优先级先丢弃</td>
+<td>复杂多步任务</td>
+</tr>
+</tbody></table>
+<pre><code class="language-python">def _build_context(self, new_messages: list[dict]) -&gt; list[dict]:
+    &quot;&quot;&quot;构建符合 Token 预算的 Context Window&quot;&quot;&quot;
+    self.message_history.extend(new_messages)
+
+    context = [self.system_prompt] + self.tool_definitions
+    remaining_budget = self.max_tokens - self._count_tokens(context)
+
+    # 从最新消息开始向前填充，直到预算耗尽
+    selected = []
+    for msg in reversed(self.message_history):
+        msg_tokens = self._count_tokens([msg])
+        if msg_tokens &gt; remaining_budget:
+            break
+        selected.insert(0, msg)
+        remaining_budget -= msg_tokens
+
+    return context + selected
+</code></pre>
+<p><strong>问题三：LLM 输出解析</strong></p>
+<p>LLM 的返回可能是纯文本回答（任务完成），也可能是工具调用请求。需要根据返回类型决定下一步状态转移：</p>
+<pre><code class="language-python">def think(self, context: list[dict]) -&gt; ThinkResult:
+    &quot;&quot;&quot;调用 LLM 进行推理&quot;&quot;&quot;
+    response = self.client.chat.completions.create(
+        model=self.model,
+        messages=context,
+        tools=self.tool_schemas,
+    )
+    choice = response.choices[0]
+
+    if choice.finish_reason == &quot;tool_calls&quot;:
+        return ThinkResult(
+            action=&quot;tool_call&quot;,
+            tool_calls=choice.message.tool_calls,
+            raw_message=choice.message,
+        )
+    else:
+        return ThinkResult(
+            action=&quot;answer&quot;,
+            content=choice.message.content,
+            raw_message=choice.message,
+        )
+</code></pre>
+<h3>3.3 ACT：执行层</h3>
+<p>ACT 阶段负责<strong>执行 THINK 阶段决定的动作</strong>——通常是调用工具（Tool Calling）。</p>
+<p>执行层的核心挑战不是&quot;调用工具&quot;本身，而是以下几个工程问题：</p>
+<p><strong>同步 vs 异步执行</strong></p>
+<pre><code>同步执行（Simple）：
+  think → call_tool_1 → wait → call_tool_2 → wait → reflect
+  延迟 = T1 + T2
+
+异步 / 并行执行（Optimized）：
+  think → call_tool_1 ─┬─→ reflect
+        → call_tool_2 ─┘
+  延迟 = max(T1, T2)
+</code></pre>
+<p>当 LLM 在一次返回中请求多个工具调用（parallel tool calling）时，应该并行执行以降低延迟：</p>
+<pre><code class="language-python">import asyncio
+
+async def act(self, tool_calls: list[ToolCall]) -&gt; list[dict]:
+    &quot;&quot;&quot;并行执行多个工具调用&quot;&quot;&quot;
+    tasks = [self._execute_tool(tc) for tc in tool_calls]
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+    tool_results = []
+    for tc, result in zip(tool_calls, results):
+        if isinstance(result, Exception):
+            tool_results.append({
+                &quot;type&quot;: &quot;tool_result&quot;,
+                &quot;call_id&quot;: tc.id,
+                &quot;status&quot;: &quot;error&quot;,
+                &quot;content&quot;: f&quot;Tool &#39;{tc.function.name}&#39; failed: {result}&quot;,
+            })
+        else:
+            tool_results.append({
+                &quot;type&quot;: &quot;tool_result&quot;,
+                &quot;call_id&quot;: tc.id,
+                &quot;status&quot;: &quot;success&quot;,
+                &quot;content&quot;: str(result),
+            })
+    return tool_results
+</code></pre>
+<p><strong>执行安全</strong></p>
+<p>工具执行不是无条件信任的。需要考虑：</p>
+<ul>
+<li><strong>超时控制</strong>：每个工具调用必须有 timeout，防止阻塞整个循环</li>
+<li><strong>结果大小限制</strong>：工具返回值可能非常大（比如查数据库返回 10 万行），需要截断</li>
+<li><strong>权限校验</strong>：某些工具（文件写入、网络请求、代码执行）需要额外的权限检查</li>
+<li><strong>沙箱执行</strong>：代码执行类工具应该在沙箱中运行</li>
+</ul>
+<h3>3.4 REFLECT：输出质量评估</h3>
+<p>REFLECT 阶段回答一个关键问题：<strong>上一步的执行结果是否满意？是继续、重试还是停止？</strong></p>
+<p>这个阶段有两种实现方式：</p>
+<p><strong>方式一：隐式反思——让 LLM 在下一轮 THINK 中自行判断</strong></p>
+<p>这是最简单的方式。把工具返回值直接送进下一轮 THINK，让 LLM 自己决定是否需要修正。大多数框架（如 OpenAI Assistants API）默认采用这种方式。</p>
+<p>优点：实现简单，不增加额外的 LLM 调用。</p>
+<p>缺点：LLM 可能&quot;自信地&quot;忽略错误，特别是在返回值看起来合理但语义错误的情况下。</p>
+<p><strong>方式二：显式反思——用独立的 LLM 调用进行自我评估</strong></p>
+<pre><code class="language-python">def reflect(self, action_result: dict, task_goal: str) -&gt; ReflectResult:
+    &quot;&quot;&quot;显式反思：评估执行结果&quot;&quot;&quot;
+    prompt = f&quot;&quot;&quot;评估以下工具执行结果是否达成了任务目标。
+
+任务目标: {task_goal}
+执行结果: {json.dumps(action_result, ensure_ascii=False)}
+
+请回答：
+1. 结果是否正确？(yes/no)
+2. 是否需要进一步行动？(yes/no)
+3. 如果需要，下一步应该做什么？
+&quot;&quot;&quot;
+    response = self.client.chat.completions.create(
+        model=self.model,
+        messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}],
+    )
+    # 解析反思结果...
+    return ReflectResult(
+        is_correct=...,
+        needs_more_action=...,
+        next_step_hint=...,
+    )
+</code></pre>
+<p><strong>Trade-off 分析：</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>隐式反思</th>
+<th>显式反思</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Token 消耗</td>
+<td>低</td>
+<td>高（额外一次 LLM 调用）</td>
+</tr>
+<tr>
+<td>质量把控</td>
+<td>依赖 LLM 自觉</td>
+<td>有独立的质量评估</td>
+</tr>
+<tr>
+<td>延迟</td>
+<td>低</td>
+<td>增加一轮 LLM 延迟</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>简单工具调用</td>
+<td>复杂推理链、高准确性要求</td>
+</tr>
+</tbody></table>
+<p>实际工程中，常用的折中方案是：<strong>对关键步骤用显式反思，对常规步骤用隐式反思</strong>。</p>
+<h3>3.5 终止条件：什么时候停下来？</h3>
+<p>一个 Agent 如果不知道什么时候停，就是一个烧钱的死循环。终止条件的设计是 Control Loop 中最容易被忽视、但对生产环境最重要的部分。</p>
+<pre><code class="language-python">def should_stop(self, state: LoopState) -&gt; tuple[bool, str]:
+    &quot;&quot;&quot;判断是否应该终止循环&quot;&quot;&quot;
+    # 1. LLM 认为任务完成
+    if state.last_think_result.action == &quot;answer&quot;:
+        return True, &quot;task_completed&quot;
+
+    # 2. 达到最大轮次
+    if state.turn_count &gt;= self.max_turns:
+        return True, &quot;max_turns_exceeded&quot;
+
+    # 3. Token 预算耗尽
+    if state.total_tokens &gt;= self.token_budget:
+        return True, &quot;token_budget_exceeded&quot;
+
+    # 4. 连续错误过多
+    if state.consecutive_errors &gt;= self.max_consecutive_errors:
+        return True, &quot;too_many_errors&quot;
+
+    # 5. 死循环检测（重复输出相同内容）
+    if self._detect_loop(state.recent_outputs):
+        return True, &quot;loop_detected&quot;
+
+    return False, &quot;&quot;
+</code></pre>
+<p>各终止条件的设计考量：</p>
+<ul>
+<li><strong>max_turns</strong>：硬上限，防止失控。一般设 10-30 轮。过小会导致复杂任务被截断，过大会导致 Token 浪费</li>
+<li><strong>token_budget</strong>：成本控制。根据业务场景设定每次交互的 Token 上限</li>
+<li><strong>consecutive_errors</strong>：容错阈值。工具偶尔失败是正常的，但连续 3 次以上通常意味着系统性问题</li>
+<li><strong>loop_detected</strong>：死循环检测。如果 Agent 连续 N 轮输出相同或高度相似的内容，说明它陷入了无效循环</li>
+</ul>
+<hr>
+<h2>4. 两种主流 Loop 模式对比</h2>
+<h3>4.1 ReAct 模式</h3>
+<p><strong>ReAct（Reason + Act）</strong> 是目前最主流的 Agent Loop 模式，由 Yao et al. 2022 提出。其核心思想是让 LLM 交替进行推理和行动：</p>
+<pre><code>┌──────────────────────────────────────────────────────┐
+│                   ReAct Loop                         │
+│                                                      │
+│  ┌─────────┐    ┌─────────┐    ┌─────────────────┐  │
+│  │ Thought │ →  │ Action  │ →  │  Observation    │  │
+│  │(LLM推理)│    │(工具调用)│    │(工具返回值)      │  │
+│  └─────────┘    └─────────┘    └────────┬────────┘  │
+│       ▲                                  │          │
+│       └──────────────────────────────────┘          │
+│                  循环直到完成                         │
+└──────────────────────────────────────────────────────┘
+</code></pre>
+<p>一个典型的 ReAct 执行轨迹（Trace）：</p>
+<pre><code>Thought: 用户想知道北京今天的天气。我需要调用天气 API。
+Action:  get_weather(city=&quot;北京&quot;)
+Observation: {&quot;temp&quot;: 28, &quot;condition&quot;: &quot;晴&quot;, &quot;humidity&quot;: 45}
+
+Thought: 已经获取到天气数据，我可以直接回答用户。
+Answer:  北京今天晴天，气温 28°C，湿度 45%。
+</code></pre>
+<p><strong>ReAct 的优势：</strong></p>
+<ul>
+<li>每一步都基于最新的观察结果做决策，<strong>适应性强</strong></li>
+<li>Thought 过程可见，<strong>可解释性好</strong></li>
+<li>实现简单，与 Tool Calling API 天然契合</li>
+</ul>
+<p><strong>ReAct 的劣势：</strong></p>
+<ul>
+<li>逐步决策，无法全局优化执行顺序</li>
+<li>每一步都需要一次 LLM 调用，<strong>延迟累积</strong></li>
+<li>对于需要协调多个子任务的复杂场景，容易陷入局部最优</li>
+</ul>
+<h3>4.2 Plan-then-Execute 模式</h3>
+<p>与 ReAct 的&quot;走一步看一步&quot;不同，Plan-then-Execute 先生成一个<strong>完整的执行计划</strong>，然后按计划依次执行：</p>
+<pre><code>┌──────────────────────────────────────────────────────────┐
+│              Plan-then-Execute Loop                       │
+│                                                          │
+│  ┌──────────────────────────────────────┐                │
+│  │           Planning Phase             │                │
+│  │  Input → LLM → [Step1, Step2, ...]   │                │
+│  └───────────────┬──────────────────────┘                │
+│                  │                                        │
+│                  ▼                                        │
+│  ┌──────────────────────────────────────┐                │
+│  │         Execution Phase              │                │
+│  │  Step1 → Execute → Result1           │                │
+│  │  Step2 → Execute → Result2           │                │
+│  │  ...                                 │                │
+│  └───────────────┬──────────────────────┘                │
+│                  │                                        │
+│                  ▼                                        │
+│  ┌──────────────────────────────────────┐                │
+│  │    Replan (if needed)                │                │
+│  │  检查是否需要调整计划                   │                │
+│  └──────────────────────────────────────┘                │
+└──────────────────────────────────────────────────────────┘
+</code></pre>
+<p>执行轨迹示例：</p>
+<pre><code>Plan:
+  1. 查询北京天气
+  2. 查询上海天气
+  3. 对比两地天气差异
+  4. 生成出行建议
+
+Execute Step 1: get_weather(city=&quot;北京&quot;) → {&quot;temp&quot;: 28, &quot;condition&quot;: &quot;晴&quot;}
+Execute Step 2: get_weather(city=&quot;上海&quot;) → {&quot;temp&quot;: 32, &quot;condition&quot;: &quot;多云&quot;}
+Execute Step 3: (LLM 对比分析)
+Execute Step 4: (LLM 生成建议)
+
+Answer: ...
+</code></pre>
+<h3>4.3 Trade-off 分析</h3>
+<pre><code>                        灵活性
+                          ▲
+                          │
+                 ReAct ●  │
+                          │
+                          │        ● Hybrid
+                          │          (ReAct + Plan)
+                          │
+              Plan-then   │
+              -Execute ●  │
+                          │
+                          └──────────────────→ 效率
+                                          (LLM 调用次数)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>ReAct</th>
+<th>Plan-then-Execute</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>灵活性</td>
+<td>高。每步实时调整</td>
+<td>低。偏离计划时需要 Replan</td>
+</tr>
+<tr>
+<td>LLM 调用次数</td>
+<td>多（每步一次推理）</td>
+<td>少（规划一次 + 执行时可能不需要 LLM）</td>
+</tr>
+<tr>
+<td>可控性</td>
+<td>低。难以预测执行路径</td>
+<td>高。计划可审核、可修改</td>
+</tr>
+<tr>
+<td>适合场景</td>
+<td>工具调用为主、步骤不确定</td>
+<td>多步骤、有依赖关系、需要全局协调</td>
+</tr>
+<tr>
+<td>错误恢复</td>
+<td>自然。下一步可以直接修正</td>
+<td>需要 Replan 机制</td>
+</tr>
+<tr>
+<td>人类干预</td>
+<td>难以在中途插入</td>
+<td>容易。可以审核和修改计划</td>
+</tr>
+</tbody></table>
+<p><strong>实际工程建议：</strong> 大多数场景从 ReAct 开始。当你发现 Agent 频繁在多步任务中&quot;迷路&quot;或做出低效的工具调用序列时，再考虑引入 Plan-then-Execute 或混合模式。</p>
+<hr>
+<h2>5. 状态管理</h2>
+<p>Control Loop 的状态管理决定了 Agent 的<strong>持久性</strong>和<strong>可恢复性</strong>。</p>
+<h3>5.1 Stateless Agent</h3>
+<p>Stateless Agent 不维护执行状态，所有上下文通过 <strong>message history</strong> 传递。</p>
+<pre><code>Request 1:  [system, user_msg_1]                     → response_1
+Request 2:  [system, user_msg_1, response_1, user_2] → response_2
+Request 3:  [system, user_msg_1, response_1, user_2, response_2, user_3] → response_3
+</code></pre>
+<p><strong>特点：</strong></p>
+<ul>
+<li>实现最简单，无需持久化</li>
+<li>每次请求都是自包含的</li>
+<li>message history 不断膨胀，最终超过 Context Window</li>
+<li>不支持暂停/恢复</li>
+</ul>
+<p>这是大多数 &quot;chat completion&quot; 应用的工作方式。适合单轮或短对话场景。</p>
+<h3>5.2 Stateful Agent</h3>
+<p>Stateful Agent 维护一个独立的 <strong>execution state</strong>，它不仅包含 message history，还包含任务进度、中间结果、工具状态等信息。</p>
+<pre><code class="language-python">@dataclass
+class ExecutionState:
+    &quot;&quot;&quot;Agent 执行状态&quot;&quot;&quot;
+    session_id: str
+    status: AgentState
+    turn_count: int
+    message_history: list[dict]
+
+    # 任务状态
+    task_goal: str
+    current_plan: list[str] | None
+    completed_steps: list[str]
+
+    # 资源消耗
+    total_input_tokens: int
+    total_output_tokens: int
+
+    # 错误追踪
+    consecutive_errors: int
+    error_log: list[dict]
+
+    # 时间戳
+    created_at: float
+    updated_at: float
+</code></pre>
+<h3>5.3 状态持久化方案</h3>
+<p>当 Agent 需要支持暂停/恢复、跨进程执行、或长时间运行时，执行状态必须持久化。</p>
+<pre><code>┌─────────────┐     ┌──────────────┐     ┌──────────────┐
+│   In-Memory  │     │    Redis     │     │   Database   │
+│  (dict/obj)  │     │  (KV Store)  │     │ (PostgreSQL) │
+├─────────────┤     ├──────────────┤     ├──────────────┤
+│ 最快         │     │ 快，支持 TTL  │     │ 持久可靠     │
+│ 进程重启丢失  │     │ 跨进程共享    │     │ 支持查询分析  │
+│ 单进程使用    │     │ 重启后可保留  │     │ 适合生产环境  │
+│ 适合开发/测试 │     │ 适合 session  │     │ 适合审计追溯  │
+└─────────────┘     └──────────────┘     └──────────────┘
+</code></pre>
+<p><strong>Checkpoint 与恢复</strong> 是 Stateful Agent 的核心能力。思路很直接：在每轮循环的关键节点保存一次快照，异常恢复时从最近的快照重新开始。</p>
+<pre><code class="language-python">class CheckpointManager:
+    def save(self, state: ExecutionState) -&gt; str:
+        &quot;&quot;&quot;保存 checkpoint，返回 checkpoint_id&quot;&quot;&quot;
+        snapshot = {
+            &quot;state&quot;: asdict(state),
+            &quot;timestamp&quot;: time.time(),
+        }
+        checkpoint_id = f&quot;{state.session_id}:{state.turn_count}&quot;
+        self.store.set(checkpoint_id, json.dumps(snapshot))
+        return checkpoint_id
+
+    def restore(self, checkpoint_id: str) -&gt; ExecutionState:
+        &quot;&quot;&quot;从 checkpoint 恢复执行状态&quot;&quot;&quot;
+        snapshot = json.loads(self.store.get(checkpoint_id))
+        return ExecutionState(**snapshot[&quot;state&quot;])
+</code></pre>
+<p>实际系统中，checkpoint 的保存频率需要权衡：</p>
+<ul>
+<li><strong>每轮都保存</strong>：恢复粒度最细，但写入开销大</li>
+<li><strong>关键节点保存</strong>（如每次工具调用前后）：开销适中，覆盖最重要的故障场景</li>
+<li><strong>定时保存</strong>：实现简单，但可能丢失最近几轮的状态</li>
+</ul>
+<hr>
+<h2>6. 完整代码实现</h2>
+<p>下面是一个最小但完整的 Agent Control Loop 实现。不依赖任何框架，仅使用 Python 标准库 + OpenAI SDK。</p>
+<pre><code class="language-python">&quot;&quot;&quot;
+Minimal Agent Control Loop
+不依赖任何框架，纯 Python + OpenAI SDK
+&quot;&quot;&quot;
+import json
+import time
+from enum import Enum
+from dataclasses import dataclass, field
+from openai import OpenAI
+
+
+class State(Enum):
+    OBSERVE = &quot;observe&quot;
+    THINK = &quot;think&quot;
+    ACT = &quot;act&quot;
+    REFLECT = &quot;reflect&quot;
+    DONE = &quot;done&quot;
+    ERROR = &quot;error&quot;
+
+
+@dataclass
+class LoopContext:
+    messages: list[dict] = field(default_factory=list)
+    turn: int = 0
+    total_tokens: int = 0
+    consecutive_errors: int = 0
+    recent_outputs: list[str] = field(default_factory=list)
+
+
+# ── Tool Registry ────────────────────────────────────
+
+TOOL_FUNCTIONS = {}
+
+def register_tool(name: str, description: str, parameters: dict):
+    &quot;&quot;&quot;装饰器：注册工具函数及其 schema&quot;&quot;&quot;
+    def decorator(fn):
+        TOOL_FUNCTIONS[name] = {
+            &quot;fn&quot;: fn,
+            &quot;schema&quot;: {
+                &quot;type&quot;: &quot;function&quot;,
+                &quot;function&quot;: {
+                    &quot;name&quot;: name,
+                    &quot;description&quot;: description,
+                    &quot;parameters&quot;: parameters,
+                },
+            },
+        }
+        return fn
+    return decorator
+
+
+@register_tool(
+    name=&quot;get_weather&quot;,
+    description=&quot;获取指定城市的当前天气&quot;,
+    parameters={
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;city&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;城市名称&quot;},
+        },
+        &quot;required&quot;: [&quot;city&quot;],
+    },
+)
+def get_weather(city: str) -&gt; str:
+    # 示例实现，实际中调用真实 API
+    return json.dumps({&quot;city&quot;: city, &quot;temp&quot;: 28, &quot;condition&quot;: &quot;晴&quot;})
+
+
+# ── Agent Control Loop ───────────────────────────────
+
+class Agent:
+    def __init__(
+        self,
+        system_prompt: str,
+        model: str = &quot;gpt-4o&quot;,
+        max_turns: int = 15,
+        token_budget: int = 50_000,
+        max_consecutive_errors: int = 3,
+    ):
+        self.client = OpenAI()
+        self.model = model
+        self.system_prompt = system_prompt
+        self.max_turns = max_turns
+        self.token_budget = token_budget
+        self.max_errors = max_consecutive_errors
+        self.tool_schemas = [t[&quot;schema&quot;] for t in TOOL_FUNCTIONS.values()]
+
+    def run(self, user_input: str) -&gt; str:
+        ctx = LoopContext()
+        ctx.messages = [
+            {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: self.system_prompt},
+            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_input},
+        ]
+        state = State.THINK  # 首轮输入已就绪，直接进入 THINK
+
+        while state not in (State.DONE, State.ERROR):
+            match state:
+                case State.THINK:
+                    state, ctx = self._think(ctx)
+                case State.ACT:
+                    state, ctx = self._act(ctx)
+                case State.REFLECT:
+                    state, ctx = self._reflect(ctx)
+            ctx.turn += 1
+
+        # 提取最终回答
+        for msg in reversed(ctx.messages):
+            if msg[&quot;role&quot;] == &quot;assistant&quot; and msg.get(&quot;content&quot;):
+                return msg[&quot;content&quot;]
+        return &quot;[Agent finished without a final answer]&quot;
+
+    def _think(self, ctx: LoopContext) -&gt; tuple[State, LoopContext]:
+        &quot;&quot;&quot;调用 LLM 推理&quot;&quot;&quot;
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=ctx.messages,
+                tools=self.tool_schemas or None,
+            )
+        except Exception as e:
+            ctx.consecutive_errors += 1
+            ctx.messages.append({
+                &quot;role&quot;: &quot;assistant&quot;,
+                &quot;content&quot;: f&quot;[LLM Error] {e}&quot;,
+            })
+            if ctx.consecutive_errors &gt;= self.max_errors:
+                return State.ERROR, ctx
+            return State.THINK, ctx  # 重试
+
+        # 记录 token 消耗
+        usage = response.usage
+        ctx.total_tokens += (usage.prompt_tokens + usage.completion_tokens)
+        ctx.consecutive_errors = 0
+
+        choice = response.choices[0]
+        assistant_msg = choice.message.model_dump()
+        ctx.messages.append(assistant_msg)
+
+        # 决定下一状态
+        if choice.message.tool_calls:
+            return State.ACT, ctx
+        else:
+            return State.DONE, ctx
+
+    def _act(self, ctx: LoopContext) -&gt; tuple[State, LoopContext]:
+        &quot;&quot;&quot;执行工具调用&quot;&quot;&quot;
+        assistant_msg = ctx.messages[-1]
+        tool_calls = assistant_msg.get(&quot;tool_calls&quot;, [])
+
+        for tc in tool_calls:
+            fn_name = tc[&quot;function&quot;][&quot;name&quot;]
+            fn_args = json.loads(tc[&quot;function&quot;][&quot;arguments&quot;])
+
+            tool_entry = TOOL_FUNCTIONS.get(fn_name)
+            if not tool_entry:
+                result = f&quot;Error: unknown tool &#39;{fn_name}&#39;&quot;
+            else:
+                try:
+                    result = tool_entry[&quot;fn&quot;](**fn_args)
+                except Exception as e:
+                    result = f&quot;Error: tool &#39;{fn_name}&#39; raised {type(e).__name__}: {e}&quot;
+                    ctx.consecutive_errors += 1
+
+            ctx.messages.append({
+                &quot;role&quot;: &quot;tool&quot;,
+                &quot;tool_call_id&quot;: tc[&quot;id&quot;],
+                &quot;content&quot;: str(result),
+            })
+
+        return State.REFLECT, ctx
+
+    def _reflect(self, ctx: LoopContext) -&gt; tuple[State, LoopContext]:
+        &quot;&quot;&quot;反思：检查终止条件&quot;&quot;&quot;
+        # 最大轮次
+        if ctx.turn &gt;= self.max_turns:
+            ctx.messages.append({
+                &quot;role&quot;: &quot;assistant&quot;,
+                &quot;content&quot;: &quot;[Agent stopped: max turns exceeded]&quot;,
+            })
+            return State.ERROR, ctx
+
+        # Token 预算
+        if ctx.total_tokens &gt;= self.token_budget:
+            ctx.messages.append({
+                &quot;role&quot;: &quot;assistant&quot;,
+                &quot;content&quot;: &quot;[Agent stopped: token budget exceeded]&quot;,
+            })
+            return State.ERROR, ctx
+
+        # 连续错误
+        if ctx.consecutive_errors &gt;= self.max_errors:
+            return State.ERROR, ctx
+
+        # 死循环检测：最近 3 次输出相同
+        tool_results = [
+            m[&quot;content&quot;] for m in ctx.messages[-6:]
+            if m.get(&quot;role&quot;) == &quot;tool&quot;
+        ]
+        if len(tool_results) &gt;= 3 and len(set(tool_results[-3:])) == 1:
+            ctx.messages.append({
+                &quot;role&quot;: &quot;assistant&quot;,
+                &quot;content&quot;: &quot;[Agent stopped: loop detected]&quot;,
+            })
+            return State.ERROR, ctx
+
+        # 继续下一轮推理
+        return State.THINK, ctx
+
+
+# ── 使用示例 ─────────────────────────────────────────
+
+if __name__ == &quot;__main__&quot;:
+    agent = Agent(
+        system_prompt=&quot;你是一个天气助手。使用 get_weather 工具回答天气问题。&quot;,
+        max_turns=10,
+    )
+    answer = agent.run(&quot;北京今天天气怎么样？&quot;)
+    print(answer)
+</code></pre>
+<p>这段代码约 130 行，涵盖了 Control Loop 的所有核心要素：</p>
+<ul>
+<li>状态机驱动的循环控制</li>
+<li>工具注册与动态调用</li>
+<li>LLM 异常重试</li>
+<li>Token 消耗追踪</li>
+<li>多种终止条件（max_turns / token_budget / consecutive_errors / loop_detected）</li>
+<li>工具执行错误处理</li>
+</ul>
+<p>它不是生产级代码，但足以说明 Control Loop 的核心机制。在此基础上增加异步执行、状态持久化、日志追踪，就能逐步演进为生产级实现。</p>
+<hr>
+<h2>7. 错误处理策略</h2>
+<p>生产环境中，Agent Control Loop 最常遇到的四类错误：</p>
+<h3>7.1 Tool 调用失败</h3>
+<p>工具调用失败是最高频的错误。正确的处理方式不是抛异常终止，而是<strong>将错误信息作为 Observation 返回给 LLM</strong>，让它决定如何应对。</p>
+<pre><code class="language-python"># 错误的做法：直接终止
+try:
+    result = call_tool(name, args)
+except Exception:
+    raise  # Agent 直接崩溃
+
+# 正确的做法：将错误反馈给 LLM
+try:
+    result = call_tool(name, args)
+except TimeoutError:
+    result = &quot;Tool timed out after 30s. Consider using different parameters.&quot;
+except ValueError as e:
+    result = f&quot;Invalid arguments: {e}. Please check parameter types.&quot;
+except Exception as e:
+    result = f&quot;Tool failed: {type(e).__name__}: {e}&quot;
+</code></pre>
+<p>LLM 在收到错误信息后，通常能自主修正——换一组参数重试、换一个工具、或者告知用户当前无法完成任务。</p>
+<h3>7.2 LLM 返回格式异常</h3>
+<p>LLM 偶尔会返回不符合预期的格式：JSON 不合法、tool_call 参数缺失、content 为空等。</p>
+<pre><code class="language-python">def _parse_tool_call_safe(self, tool_call) -&gt; tuple[str, dict]:
+    &quot;&quot;&quot;安全解析工具调用参数&quot;&quot;&quot;
+    name = tool_call.function.name
+    try:
+        args = json.loads(tool_call.function.arguments)
+    except json.JSONDecodeError:
+        # LLM 返回了非法 JSON，尝试修复或跳过
+        args = {}
+        self.logger.warning(
+            f&quot;Invalid JSON in tool_call arguments: &quot;
+            f&quot;{tool_call.function.arguments}&quot;
+        )
+    return name, args
+</code></pre>
+<h3>7.3 超时处理</h3>
+<p>整个 Agent 执行需要有全局超时，防止无限挂起：</p>
+<pre><code class="language-python">import signal
+
+class TimeoutError(Exception):
+    pass
+
+def run_with_timeout(fn, timeout_seconds: int, *args, **kwargs):
+    &quot;&quot;&quot;为函数执行添加超时限制&quot;&quot;&quot;
+    def handler(signum, frame):
+        raise TimeoutError(f&quot;Execution timed out after {timeout_seconds}s&quot;)
+
+    old_handler = signal.signal(signal.SIGALRM, handler)
+    signal.alarm(timeout_seconds)
+    try:
+        return fn(*args, **kwargs)
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old_handler)
+</code></pre>
+<h3>7.4 死循环检测</h3>
+<p>当 Agent 陷入死循环时，它会反复执行相同的操作序列。检测策略：</p>
+<pre><code class="language-python">def _detect_loop(self, messages: list[dict], window: int = 6) -&gt; bool:
+    &quot;&quot;&quot;检测 Agent 是否陷入重复循环&quot;&quot;&quot;
+    recent = messages[-window:]
+
+    # 策略 1：完全重复检测
+    contents = [m.get(&quot;content&quot;, &quot;&quot;) for m in recent if m[&quot;role&quot;] == &quot;assistant&quot;]
+    if len(contents) &gt;= 3 and len(set(contents[-3:])) == 1:
+        return True
+
+    # 策略 2：工具调用序列重复检测
+    tool_calls = []
+    for m in recent:
+        if m.get(&quot;tool_calls&quot;):
+            for tc in m[&quot;tool_calls&quot;]:
+                tool_calls.append(f&quot;{tc[&#39;function&#39;][&#39;name&#39;]}:{tc[&#39;function&#39;][&#39;arguments&#39;]}&quot;)
+
+    if len(tool_calls) &gt;= 4:
+        half = len(tool_calls) // 2
+        if tool_calls[:half] == tool_calls[half:2*half]:
+            return True
+
+    return False
+</code></pre>
+<hr>
+<h2>8. 性能考量</h2>
+<h3>8.1 Token 消耗与循环次数的关系</h3>
+<p>Agent Control Loop 的 Token 消耗不是线性增长，而是<strong>二次增长</strong>——因为每一轮都要携带之前所有轮次的 message history。</p>
+<pre><code>轮次    新增消息 Token    累计 Context Token    本轮总消耗
+1       T               S + T                S + T
+2       T               S + 2T               S + 2T
+3       T               S + 3T               S + 3T
+...
+N       T               S + NT               S + NT
+
+总消耗 = N*S + T*(1+2+...+N) = N*S + T*N*(N+1)/2
+
+其中 S = System Prompt Token 数，T = 平均每轮消息 Token 数
+</code></pre>
+<p>这意味着 <strong>10 轮的 Agent 消耗的 Token 不是 1 轮的 10 倍，而可能是 55 倍</strong>。这对成本控制至关重要。</p>
+<h3>8.2 Context Window 膨胀问题</h3>
+<p>随着轮次增加，Context Window 持续膨胀，导致：</p>
+<ol>
+<li><strong>延迟增加</strong>：LLM 推理时间与输入 Token 数正相关</li>
+<li><strong>成本增加</strong>：按 Token 计费，输入越长越贵</li>
+<li><strong>质量下降</strong>：过长的 Context 会导致 LLM &quot;注意力分散&quot;，关键信息被淹没（lost in the middle 问题）</li>
+</ol>
+<h3>8.3 消息压缩/摘要策略</h3>
+<p>应对 Context Window 膨胀的核心策略：</p>
+<p><strong>策略一：滑动窗口</strong></p>
+<p>只保留最近 K 轮对话，丢弃更早的历史。简单粗暴但有效。</p>
+<pre><code class="language-python">def _sliding_window(self, messages: list[dict], keep_last: int = 10) -&gt; list[dict]:
+    system_msgs = [m for m in messages if m[&quot;role&quot;] == &quot;system&quot;]
+    non_system = [m for m in messages if m[&quot;role&quot;] != &quot;system&quot;]
+    return system_msgs + non_system[-keep_last:]
+</code></pre>
+<p><strong>策略二：摘要压缩</strong></p>
+<p>当 message history 超过阈值时，用 LLM 对早期对话生成摘要，替换原始消息。</p>
+<pre><code class="language-python">def _compress_history(self, messages: list[dict], threshold: int = 20) -&gt; list[dict]:
+    if len(messages) &lt;= threshold:
+        return messages
+
+    # 将早期消息压缩为摘要
+    early = messages[1:-threshold]  # 跳过 system prompt，保留最近的
+    summary_prompt = (
+        &quot;请用 3-5 句话总结以下对话的关键信息和已完成的操作：\n&quot;
+        + &quot;\n&quot;.join(m.get(&quot;content&quot;, &quot;&quot;) for m in early if m.get(&quot;content&quot;))
+    )
+
+    summary = self.client.chat.completions.create(
+        model=&quot;gpt-4o-mini&quot;,  # 用小模型做摘要，节省成本
+        messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: summary_prompt}],
+    ).choices[0].message.content
+
+    return (
+        [messages[0]]  # system prompt
+        + [{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: f&quot;[Earlier conversation summary] {summary}&quot;}]
+        + messages[-threshold:]
+    )
+</code></pre>
+<p><strong>策略三：选择性保留</strong></p>
+<p>不是所有消息都同等重要。工具的原始返回值（可能非常长）通常可以只保留摘要：</p>
+<pre><code class="language-python">def _trim_tool_results(self, messages: list[dict], max_len: int = 500) -&gt; list[dict]:
+    &quot;&quot;&quot;截断过长的工具返回值&quot;&quot;&quot;
+    trimmed = []
+    for m in messages:
+        if m[&quot;role&quot;] == &quot;tool&quot; and len(m.get(&quot;content&quot;, &quot;&quot;)) &gt; max_len:
+            m = {**m, &quot;content&quot;: m[&quot;content&quot;][:max_len] + &quot;\n...[truncated]&quot;}
+        trimmed.append(m)
+    return trimmed
+</code></pre>
+<p><strong>三种策略的对比：</strong></p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>信息保留</th>
+<th>实现成本</th>
+<th>Token 节省</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>滑动窗口</td>
+<td>低</td>
+<td>极低</td>
+<td>高</td>
+<td>短对话、工具调用为主</td>
+</tr>
+<tr>
+<td>摘要压缩</td>
+<td>中</td>
+<td>中（需要额外 LLM 调用）</td>
+<td>高</td>
+<td>长对话、需要历史上下文</td>
+</tr>
+<tr>
+<td>选择性保留</td>
+<td>高</td>
+<td>低</td>
+<td>中</td>
+<td>工具返回值较大的场景</td>
+</tr>
+</tbody></table>
+<p>实际工程中，通常<strong>组合使用</strong>：先用选择性保留截断大结果，再用滑动窗口控制总长度，在关键节点用摘要压缩保留全局上下文。</p>
+<hr>
+<h2>9. 小结与进一步思考</h2>
+<p>本文从状态机模型出发，完整地拆解了 Agent Control Loop 的核心抽象：</p>
+<ul>
+<li><strong>OBSERVE</strong> 负责输入归一化——将各种来源的信息统一为 LLM 可理解的 message 格式</li>
+<li><strong>THINK</strong> 是核心推理阶段——管理 Context Window、控制 Token 预算、解析 LLM 输出</li>
+<li><strong>ACT</strong> 是执行层——处理工具调用的同步/异步执行、超时控制、安全隔离</li>
+<li><strong>REFLECT</strong> 负责质量评估——决定是继续、重试还是终止</li>
+<li><strong>终止条件</strong>是成本和安全的兜底——max_turns、token_budget、error_threshold、loop_detection</li>
+</ul>
+<p>我们对比了 ReAct 和 Plan-then-Execute 两种主流模式，分析了 Stateless 与 Stateful 两种状态管理策略，并实现了一个不依赖任何框架的完整 Control Loop。</p>
+<p>但控制循环只是 Agent 运行时的骨架。它的灵魂在于 <strong>Tool Calling</strong>——正是工具让 Agent 从&quot;能说会道的语言模型&quot;变成&quot;能做事的智能体&quot;。</p>
+<p>在下一篇 <strong>《Tool Calling Deep Dive: 让 LLM 成为可编程接口》</strong> 中，我们会深入工具调用的设计哲学：JSON Schema 作为契约、Tool Registry 的实现、参数校验、错误传播，以及 Structured Output 为什么优于自由文本。</p>
+<p>留几个值得进一步思考的问题：</p>
+<ol>
+<li><strong>Control Loop 的嵌套</strong>：当一个 Agent 的工具是另一个 Agent 时，控制循环如何嵌套？外层循环和内层循环的终止条件如何协调？</li>
+<li><strong>人机协作中的循环</strong>：如何在 Control Loop 中优雅地插入人类审批节点？这和 Stateful Agent 的 checkpoint 机制有什么关系？</li>
+<li><strong>流式输出与控制循环</strong>：当 Agent 需要边思考边输出（streaming）时，状态机模型还适用吗？需要做哪些调整？</li>
+<li><strong>多模态输入的归一化</strong>：当 OBSERVE 阶段接收的不只是文本，还有图片、音频、视频时，输入归一化策略如何演化？</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 04 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/03-Agent%20vs%20Workflow%20vs%20Automation">03 | Agent vs Workflow vs Automation</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/05-Tool%20Calling%20Deep%20Dive">05 | Tool Calling Deep Dive</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+18:Td28a,<h1>Prompt Engineering for Agents: 面向 Agent 的提示词工程</h1>
+<blockquote>
+<p>Agentic 系列第 06 篇。前文我们讨论了 Tool Calling 的设计哲学与工程实践，LLM 已经具备了&quot;使用工具&quot;的能力。但工具只是 Agent 的四肢，Prompt 才是 Agent 的大脑皮层——它定义了 Agent 如何感知、如何推理、如何决策、如何行动。</p>
+<p>本文的核心观点：<strong>Agent 的 Prompt 不是&quot;聊天提示词&quot;，而是&quot;系统接口规范&quot;。</strong> Chatbot 的 Prompt 追求对话自然，Agent 的 Prompt 追求行为可控。这两者的设计哲学截然不同。</p>
+</blockquote>
+<hr>
+<h2>1. 从&quot;对话技巧&quot;到&quot;接口规范&quot;</h2>
+<p>大多数人对 Prompt Engineering 的印象停留在&quot;写好提示词让 AI 回答更好&quot;的阶段。这在 Chatbot 场景下基本成立——你调整措辞、给几个例子、加一句&quot;请一步一步思考&quot;，模型输出的质量就会改善。</p>
+<p>但 Agent 场景完全不同。</p>
+<p>Agent 的 Prompt 不是写给&quot;一个聊天助手&quot;的，而是写给&quot;一个程序运行时&quot;的。它的目的不是让输出&quot;看起来更好&quot;，而是让输出<strong>可解析、可路由、可执行</strong>。一个 Agent Prompt 的失败，不是&quot;回答不够好&quot;，而是<strong>系统崩溃</strong>——JSON 解析失败、工具调用参数错误、无限循环、状态机卡死。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Chatbot Prompt</th>
+<th>Agent Prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>目标</td>
+<td>自然、有帮助的回复</td>
+<td>可解析、可执行的结构化输出</td>
+</tr>
+<tr>
+<td>消费者</td>
+<td>人类用户</td>
+<td>程序代码（Parser / Router / Executor）</td>
+</tr>
+<tr>
+<td>失败模式</td>
+<td>回答质量下降</td>
+<td>系统崩溃、无限循环、安全漏洞</td>
+</tr>
+<tr>
+<td>格式要求</td>
+<td>宽松，Markdown 即可</td>
+<td>严格，JSON / XML / 特定 Schema</td>
+</tr>
+<tr>
+<td>可测试性</td>
+<td>主观评估</td>
+<td>可自动化断言</td>
+</tr>
+<tr>
+<td>版本管理</td>
+<td>通常不管理</td>
+<td>必须版本控制，等同于代码</td>
+</tr>
+</tbody></table>
+<p>这意味着，<strong>Agent 的 Prompt Engineering 本质上是一种接口设计（Interface Design）</strong>，而不是文案写作。</p>
+<hr>
+<h2>2. Agent Prompt 的分层架构</h2>
+<p>一个成熟的 Agent 系统，发送给 LLM 的 Prompt 不是一坨字符串，而是多个层次动态组装的结果。</p>
+<h3>2.1 四层结构</h3>
+<pre><code>┌─────────────────────────────────────────────────────┐
+│                   Final Prompt                       │
+│  ┌───────────────────────────────────────────────┐  │
+│  │  Layer 1: System Prompt (静态)                 │  │
+│  │  - 身份定义（你是谁，你的职责是什么）            │  │
+│  │  - 行为约束（必须做什么，禁止做什么）            │  │
+│  │  - 输出格式规范（JSON Schema / XML 模板）       │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 2: Context Injection (动态)             │  │
+│  │  - 可用工具列表及其描述                         │  │
+│  │  - 历史对话摘要 / 关键事实                      │  │
+│  │  - 当前系统状态（已完成步骤、中间结果）           │  │
+│  │  - 检索到的外部知识（RAG 结果）                  │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 3: User Input (外部)                    │  │
+│  │  - 用户的原始请求                               │  │
+│  │  - 或上一步 Agent 的输出（在 Multi-Agent 中）    │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 4: Constraints &amp; Guardrails (静态+动态)  │  │
+│  │  - 安全边界（禁止调用的工具、禁止访问的数据）     │  │
+│  │  - 输出限制（最大步骤数、Token 预算）            │  │
+│  │  - 当前 Turn 的特殊指令                         │  │
+│  └───────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────┘
+</code></pre>
+<h3>2.2 组装过程</h3>
+<p>Prompt 组装不是简单的字符串拼接，而是一个有优先级、有裁剪策略的构建过程：</p>
+<pre><code>                  Token Budget: 8000
+                       │
+      ┌────────────────┼────────────────┐
+      │                │                │
+      ▼                ▼                ▼
+ System Prompt    Context Injection   User Input
+ (固定预算:2000)  (弹性预算:4500)    (固定预算:1500)
+      │                │                │
+      │          ┌─────┴─────┐          │
+      │          │           │          │
+      │      Tool Descs   History       │
+      │      (1500 max)  (3000 max)     │
+      │          │           │          │
+      │          │     [若超预算]        │
+      │          │     → 压缩/截断      │
+      │          │           │          │
+      ▼          ▼           ▼          ▼
+     ┌──────────────────────────────────┐
+     │      Prompt Assembler            │
+     │  1. 拼装各层                      │
+     │  2. 计算总 Token                  │
+     │  3. 若超预算 → 压缩 Context 层    │
+     │  4. 注入 Constraints              │
+     └──────────────────────────────────┘
+                    │
+                    ▼
+              Final Prompt
+</code></pre>
+<p>关键设计决策：<strong>System Prompt 和 User Input 的预算是固定的，Context Injection 的预算是弹性的。</strong> 当总 Token 超出预算时，优先压缩 Context 层（截断历史、精简工具描述），而非删减 System Prompt 中的行为约束。因为行为约束一旦丢失，Agent 的行为就不可控了。</p>
+<h3>2.3 Python 示例：Prompt 组装器</h3>
+<pre><code class="language-python">from dataclasses import dataclass, field
+
+@dataclass
+class PromptLayer:
+    content: str
+    priority: int        # 越高越不容易被裁剪
+    max_tokens: int
+    compressible: bool   # 是否允许被压缩
+
+@dataclass
+class PromptAssembler:
+    total_budget: int = 8000
+    layers: list[PromptLayer] = field(default_factory=list)
+
+    def add_layer(self, layer: PromptLayer):
+        self.layers.append(layer)
+
+    def assemble(self) -&gt; str:
+        # 按优先级排序：高优先级最后处理（最不容易被裁剪）
+        sorted_layers = sorted(self.layers, key=lambda l: l.priority)
+
+        total_used = sum(estimate_tokens(l.content) for l in self.layers)
+
+        if total_used &gt; self.total_budget:
+            overflow = total_used - self.total_budget
+            # 从低优先级开始压缩
+            for layer in sorted_layers:
+                if not layer.compressible:
+                    continue
+                available_cut = estimate_tokens(layer.content) - 100  # 至少保留 100 token
+                cut = min(overflow, available_cut)
+                layer.content = truncate_to_tokens(layer.content,
+                                                    estimate_tokens(layer.content) - cut)
+                overflow -= cut
+                if overflow &lt;= 0:
+                    break
+
+        # 按原始顺序拼装
+        return &quot;\n\n&quot;.join(l.content for l in self.layers)
+</code></pre>
+<hr>
+<h2>3. 四种关键 Agent Prompt 设计模式</h2>
+<p>Agent 系统中，不同角色的 Agent 需要不同风格的 Prompt。以下是四种最核心的设计模式，每种都给出完整可用的 Prompt 示例。</p>
+<h3>3.1 Router Prompt：意图路由</h3>
+<p>Router 的职责是根据用户输入<strong>选择正确的工具或子流程</strong>，而不是自己去执行任务。它是 Agent 系统的&quot;交通警察&quot;。</p>
+<pre><code class="language-python">ROUTER_PROMPT = &quot;&quot;&quot;You are a request router. Your ONLY job is to analyze the user&#39;s
+request and select the appropriate tool. Do NOT attempt to answer the question yourself.
+
+## Available Tools
+{tool_descriptions}
+
+## Routing Rules
+1. If the request involves real-time data (weather, stock prices, news) → use `web_search`
+2. If the request involves the user&#39;s own data (files, emails, calendar) → use `data_query`
+3. If the request involves code generation or debugging → use `code_assistant`
+4. If the request involves image generation or editing → use `image_tool`
+5. If the request is ambiguous, ask a clarifying question instead of guessing.
+6. If NO tool matches, respond with tool_name: &quot;none&quot; and explain why.
+
+## Output Format (strict JSON, no markdown fence)
+{{
+  &quot;reasoning&quot;: &quot;&lt;one sentence explaining your routing decision&gt;&quot;,
+  &quot;tool_name&quot;: &quot;&lt;exact tool name from the list above, or &#39;none&#39;&gt;&quot;,
+  &quot;tool_input&quot;: {{&lt;parameters to pass to the selected tool&gt;}},
+  &quot;confidence&quot;: &lt;float between 0.0 and 1.0&gt;
+}}
+
+## Critical Constraints
+- NEVER fabricate a tool name not in the list.
+- NEVER return free-form text. ALWAYS return valid JSON.
+- If confidence &lt; 0.6, set tool_name to &quot;none&quot; and ask for clarification.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>明确告诉 LLM &quot;你不负责回答问题&quot;，避免它自作主张直接回答</li>
+<li>提供确定性的路由规则（if-then），减少 LLM 的自由裁量空间</li>
+<li>要求输出 confidence 分数，让调用方可以做二次判断</li>
+<li>兜底规则：没有匹配的工具时，显式输出 &quot;none&quot;</li>
+</ul>
+<h3>3.2 Planner Prompt：任务规划</h3>
+<p>Planner 的职责是将一个复杂请求<strong>分解为可执行的子任务列表</strong>。它是 Agent 的&quot;项目经理&quot;。</p>
+<pre><code class="language-python">PLANNER_PROMPT = &quot;&quot;&quot;You are a task planner. Given a complex user request, decompose it
+into a sequence of concrete, executable sub-tasks.
+
+## Planning Principles
+1. Each sub-task must be independently executable by a single tool call.
+2. Sub-tasks should be ordered by dependency — a task can only depend on tasks before it.
+3. Minimize the number of steps. Do NOT over-decompose simple requests.
+4. If a request can be done in ONE tool call, return a plan with ONE step.
+
+## Available Tools
+{tool_descriptions}
+
+## Output Format (strict JSON)
+{{
+  &quot;analysis&quot;: &quot;&lt;brief analysis of the request&#39;s complexity and required resources&gt;&quot;,
+  &quot;plan&quot;: [
+    {{
+      &quot;step_id&quot;: 1,
+      &quot;description&quot;: &quot;&lt;what this step does&gt;&quot;,
+      &quot;tool_name&quot;: &quot;&lt;tool to use&gt;&quot;,
+      &quot;tool_input&quot;: {{&lt;parameters&gt;}},
+      &quot;depends_on&quot;: []
+    }},
+    {{
+      &quot;step_id&quot;: 2,
+      &quot;description&quot;: &quot;&lt;what this step does&gt;&quot;,
+      &quot;tool_name&quot;: &quot;&lt;tool to use&gt;&quot;,
+      &quot;tool_input&quot;: {{&lt;parameters, can reference $step_1_result&gt;}},
+      &quot;depends_on&quot;: [1]
+    }}
+  ],
+  &quot;estimated_steps&quot;: &lt;int&gt;,
+  &quot;can_parallelize&quot;: [&lt;list of step_id groups that can run concurrently&gt;]
+}}
+
+## Constraints
+- Maximum 8 steps. If the task seems to need more, simplify or ask the user to narrow scope.
+- NEVER include steps like &quot;verify result&quot; or &quot;report to user&quot; — those are handled by the system.
+- Use $step_N_result to reference the output of a previous step.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>&quot;最小化步骤数&quot;原则防止 LLM 过度分解（这是规划器最常见的问题）</li>
+<li><code>depends_on</code> 字段使得执行引擎可以识别并行机会</li>
+<li>明确设置步骤上限（8 步），避免 LLM 生成无休止的计划</li>
+<li>禁止 LLM 添加&quot;元步骤&quot;（验证、汇报），这些是系统层的职责</li>
+</ul>
+<h3>3.3 Executor Prompt：执行操作</h3>
+<p>Executor 的职责是<strong>执行单个具体操作</strong>，并以严格的格式返回结果。它是 Agent 的&quot;操作工&quot;。</p>
+<pre><code class="language-python">EXECUTOR_PROMPT = &quot;&quot;&quot;You are a task executor. You will receive a specific sub-task and
+must execute it using the provided tool.
+
+## Current Task
+{task_description}
+
+## Tool to Use
+Name: {tool_name}
+Schema: {tool_schema}
+
+## Context from Previous Steps
+{previous_results}
+
+## Execution Rules
+1. Call the tool EXACTLY ONCE with the correct parameters.
+2. Do NOT deviate from the task description.
+3. Do NOT call tools not specified for this task.
+4. If the tool call fails, report the error — do NOT retry or improvise.
+
+## Output Format (strict JSON)
+{{
+  &quot;tool_call&quot;: {{
+    &quot;name&quot;: &quot;{tool_name}&quot;,
+    &quot;arguments&quot;: {{&lt;filled parameters&gt;}}
+  }},
+  &quot;explanation&quot;: &quot;&lt;one sentence on why these parameters were chosen&gt;&quot;
+}}
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>Executor 的设计哲学是&quot;最小权限&quot;——只做被告知的事</li>
+<li>严禁 Executor 自主决策，发现错误只能上报，不能自行重试</li>
+<li>这种设计让 Executor 成为一个确定性单元，便于测试和审计</li>
+</ul>
+<h3>3.4 Reflector Prompt：结果反思</h3>
+<p>Reflector 的职责是<strong>评估执行结果</strong>，判断是否达成目标，如果未达成则提出修正方案。它是 Agent 的&quot;质量检查员&quot;。</p>
+<pre><code class="language-python">REFLECTOR_PROMPT = &quot;&quot;&quot;You are a result evaluator. Given the original user request and the
+execution result, determine whether the task has been completed successfully.
+
+## Original Request
+{user_request}
+
+## Execution Plan
+{plan}
+
+## Execution Results
+{results}
+
+## Evaluation Criteria
+1. Completeness: Does the result fully address the user&#39;s request?
+2. Correctness: Is the result factually and logically correct?
+3. Format: Is the result in the expected format?
+
+## Output Format (strict JSON)
+{{
+  &quot;evaluation&quot;: {{
+    &quot;completeness&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}},
+    &quot;correctness&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}},
+    &quot;format&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}}
+  }},
+  &quot;overall_pass&quot;: &lt;true|false&gt;,
+  &quot;action&quot;: &quot;&lt;one of: &#39;accept&#39;, &#39;retry_step&#39;, &#39;replan&#39;, &#39;escalate&#39;&gt;&quot;,
+  &quot;retry_details&quot;: {{
+    &quot;step_id&quot;: &lt;which step to retry, if applicable&gt;,
+    &quot;modification&quot;: &quot;&lt;what to change in the retry&gt;&quot;
+  }}
+}}
+
+## Decision Rules
+- If all scores &gt;= 4: action = &quot;accept&quot;
+- If any score &lt;= 2 and retry_count &lt; 3: action = &quot;retry_step&quot; or &quot;replan&quot;
+- If retry_count &gt;= 3: action = &quot;escalate&quot; (ask user for help)
+- NEVER accept a result with correctness score &lt;= 2.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>多维度评估（完整性、正确性、格式）而非简单的 pass/fail</li>
+<li>明确的决策规则，减少 LLM 判断的主观性</li>
+<li>retry_count 上限防止无限重试循环</li>
+<li>&quot;escalate&quot; 作为最终兜底——承认失败比无限循环好得多</li>
+</ul>
+<h3>3.5 四种模式的协作</h3>
+<pre><code>User Request
+     │
+     ▼
+ ┌────────┐     tool_name + input     ┌──────────┐
+ │ Router │ ──── (简单请求直接执行) ───→│ Executor │──→ Result
+ └────┬───┘                           └──────────┘
+      │ (复杂请求)                          ▲
+      ▼                                    │
+ ┌─────────┐    plan[step_1..N]     ┌──────┴───┐
+ │ Planner │ ─────────────────────→│ Executor  │
+ └─────────┘                       │ (per step)│
+                                   └──────┬───┘
+                                          │ results
+                                          ▼
+                                   ┌───────────┐
+                                   │ Reflector  │
+                                   └─────┬─────┘
+                                         │
+                              ┌──────────┼──────────┐
+                              │          │          │
+                           accept    retry_step   replan
+                              │          │          │
+                              ▼          ▼          ▼
+                           Return    Executor    Planner
+                           to User  (重试该步)   (重新规划)
+</code></pre>
+<hr>
+<h2>4. Chain-of-Thought 在 Agent 中的应用</h2>
+<h3>4.1 标准 CoT vs Agent CoT</h3>
+<p>标准的 Chain-of-Thought（CoT）是一种推理增强技术——&quot;Let&#39;s think step by step&quot;。但在 Agent 中，CoT 的用途和形式有本质不同：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>标准 CoT</th>
+<th>Agent CoT</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>目的</td>
+<td>提高推理准确性</td>
+<td>让中间推理过程可审计、可路由</td>
+</tr>
+<tr>
+<td>消费者</td>
+<td>最终输出的一部分</td>
+<td>Agent Runtime 的中间状态</td>
+</tr>
+<tr>
+<td>格式</td>
+<td>自然语言</td>
+<td>结构化（通常嵌入 JSON 的某个字段）</td>
+</tr>
+<tr>
+<td>是否返回用户</td>
+<td>通常是</td>
+<td>通常不是（内部消费）</td>
+</tr>
+</tbody></table>
+<p>Agent 的 CoT 更像是一个<strong>内部日志</strong>，而非用户可见的推理过程。它的首要目标是让系统（而非人类）能够理解和利用中间推理。</p>
+<h3>4.2 Scratchpad 模式</h3>
+<p>Scratchpad 模式是 Agent CoT 的典型实现——在 Prompt 中显式开辟一个&quot;草稿区&quot;，让 LLM 在其中进行中间推理，然后输出最终决策。</p>
+<pre><code class="language-python">SCRATCHPAD_PROMPT = &quot;&quot;&quot;Analyze the user&#39;s request and decide on an action.
+
+## User Request
+{user_request}
+
+## Available Tools
+{tools}
+
+## Instructions
+Use the &lt;scratchpad&gt; section to think through your decision. This section will NOT be
+shown to the user. Then provide your final action in the &lt;action&gt; section.
+
+&lt;scratchpad&gt;
+Think through:
+1. What is the user actually asking for?
+2. Which tools could help? What are the pros/cons of each?
+3. What information am I missing?
+4. What&#39;s the simplest approach that works?
+&lt;/scratchpad&gt;
+
+&lt;action&gt;
+Return strict JSON here:
+{{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}, &quot;reasoning_summary&quot;: &quot;...&quot;}}
+&lt;/action&gt;
+&quot;&quot;&quot;
+</code></pre>
+<p>Runtime 解析时，只提取 <code>&lt;action&gt;</code> 标签中的内容作为执行指令，<code>&lt;scratchpad&gt;</code> 的内容记录到日志中用于调试和审计。</p>
+<h3>4.3 显式推理 vs 隐式推理的 Trade-off</h3>
+<p><strong>显式推理（Explicit Reasoning）：</strong> 在 Prompt 中要求 LLM 输出推理过程。</p>
+<p>优势：</p>
+<ul>
+<li>可审计，出了问题能追溯&quot;为什么做了这个决策&quot;</li>
+<li>推理质量通常更高（CoT 效应）</li>
+<li>便于调试</li>
+</ul>
+<p>劣势：</p>
+<ul>
+<li>消耗更多 Token（推理内容可能占输出的 50%+）</li>
+<li>增加延迟</li>
+<li>推理内容可能包含敏感的内部逻辑</li>
+</ul>
+<p><strong>隐式推理（Implicit Reasoning）：</strong> 直接要求 LLM 输出最终决策，不要求中间过程。</p>
+<p>优势：</p>
+<ul>
+<li>Token 用量更低，延迟更短</li>
+<li>输出更简洁，解析更简单</li>
+</ul>
+<p>劣势：</p>
+<ul>
+<li>黑盒，无法理解决策过程</li>
+<li>在复杂场景下准确率下降明显</li>
+</ul>
+<p><strong>工程决策建议：</strong></p>
+<ul>
+<li>Router 和 Executor（简单、确定性高）：倾向隐式推理，追求速度</li>
+<li>Planner 和 Reflector（复杂、需要判断）：必须显式推理，追求准确性和可审计性</li>
+<li>在系统稳定后，可以通过 A/B 测试逐步将显式推理切换为隐式推理以降低成本</li>
+</ul>
+<hr>
+<h2>5. Few-shot vs Zero-shot 在 Agent 场景的选择</h2>
+<p>这是 Agent Prompt 设计中一个重要但常被忽视的决策点。</p>
+<h3>5.1 决策矩阵</h3>
+<pre><code>                    输出结构化程度
+                 低 ◄──────────► 高
+                 │                │
+  任务复杂度  高  │  Few-shot      │  Zero-shot + Schema
+                 │  (复杂规划)     │  (结构化反思)
+                 │                │
+              低  │  Zero-shot     │  Zero-shot + Schema
+                 │  (简单对话)     │  (工具调用)
+                 │                │
+</code></pre>
+<h3>5.2 工具调用：Zero-shot 优先</h3>
+<p>工具调用场景天然适合 Zero-shot。原因是 <strong>JSON Schema 本身就是最好的&quot;示例&quot;</strong>——它精确定义了每个参数的名称、类型、描述和约束，比任何 Few-shot 示例都更完整。</p>
+<pre><code class="language-python"># 工具调用不需要 few-shot，Schema 就是最好的约束
+tool_schema = {
+    &quot;name&quot;: &quot;search_database&quot;,
+    &quot;description&quot;: &quot;Search the product database with filters&quot;,
+    &quot;parameters&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;query&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;Search keywords&quot;},
+            &quot;category&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [&quot;electronics&quot;, &quot;clothing&quot;, &quot;books&quot;],
+                &quot;description&quot;: &quot;Product category filter&quot;
+            },
+            &quot;max_results&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;default&quot;: 10,
+                &quot;minimum&quot;: 1,
+                &quot;maximum&quot;: 100
+            }
+        },
+        &quot;required&quot;: [&quot;query&quot;]
+    }
+}
+</code></pre>
+<p>加 Few-shot 反而可能引入问题：LLM 可能过度拟合示例中的具体值，而不是理解 Schema 的通用约束。</p>
+<h3>5.3 复杂规划：Few-shot 有价值</h3>
+<p>规划场景是 Few-shot 真正发挥价值的地方。因为&quot;好的计划&quot;是一个模糊的概念——仅凭输出格式定义不足以引导 LLM 产出高质量的计划。</p>
+<pre><code class="language-python">PLANNER_WITH_EXAMPLES = &quot;&quot;&quot;You are a task planner.
+
+## Example 1: Multi-step data analysis
+User: &quot;Compare last month&#39;s sales with the same period last year and visualize the trend&quot;
+Plan:
+[
+  {{&quot;step_id&quot;: 1, &quot;tool&quot;: &quot;data_query&quot;, &quot;input&quot;: &quot;sales data for 2025-07&quot;, &quot;depends_on&quot;: []}},
+  {{&quot;step_id&quot;: 2, &quot;tool&quot;: &quot;data_query&quot;, &quot;input&quot;: &quot;sales data for 2024-07&quot;, &quot;depends_on&quot;: []}},
+  {{&quot;step_id&quot;: 3, &quot;tool&quot;: &quot;data_compare&quot;, &quot;input&quot;: &quot;$step_1_result, $step_2_result&quot;, &quot;depends_on&quot;: [1, 2]}},
+  {{&quot;step_id&quot;: 4, &quot;tool&quot;: &quot;chart_gen&quot;, &quot;input&quot;: &quot;$step_3_result, type=line&quot;, &quot;depends_on&quot;: [3]}}
+]
+Note: Steps 1 and 2 can run in parallel since they have no dependencies.
+
+## Example 2: Simple single-step task
+User: &quot;What&#39;s the weather in Tokyo?&quot;
+Plan:
+[
+  {{&quot;step_id&quot;: 1, &quot;tool&quot;: &quot;weather_api&quot;, &quot;input&quot;: &quot;Tokyo&quot;, &quot;depends_on&quot;: []}}
+]
+Note: Simple requests should NOT be over-decomposed.
+
+## Now plan for:
+User: &quot;{user_request}&quot;
+&quot;&quot;&quot;
+</code></pre>
+<p>Few-shot 示例在这里传递了两个关键信息：</p>
+<ol>
+<li><strong>粒度标准</strong>——什么程度的分解是合适的</li>
+<li><strong>并行意识</strong>——独立步骤应该标记为可并行</li>
+</ol>
+<h3>5.4 反思评估：Zero-shot + 结构化输出</h3>
+<p>反思（Reflection）场景适合 Zero-shot + 结构化输出。原因是反思本质上是&quot;评判&quot;，而评判标准已经通过评估维度（completeness / correctness / format）和评分规则完整定义了。给出 Few-shot 示例反而可能让 LLM 锚定在示例的评分上，而不是独立评估当前结果。</p>
+<p><strong>总结决策原则：</strong></p>
+<ul>
+<li>格式约束充分（JSON Schema / 评分规则）→ Zero-shot</li>
+<li>需要传递&quot;风格&quot;或&quot;粒度标准&quot; → Few-shot</li>
+<li>两者都可以时 → 优先 Zero-shot（更省 Token，更不容易过拟合）</li>
+</ul>
+<hr>
+<h2>6. Prompt 工程化实践</h2>
+<p>当 Agent 系统超过原型阶段，Prompt 管理就变成了一个严肃的工程问题。</p>
+<h3>6.1 Prompt 模板化</h3>
+<p>核心思想：<strong>分离静态结构和动态内容</strong>。静态部分（身份定义、行为规则、输出格式）是模板，动态部分（工具列表、历史消息、当前状态）通过变量注入。</p>
+<pre><code class="language-python">from typing import Any
+from string import Template
+import hashlib
+import json
+from datetime import datetime
+
+
+class PromptTemplate:
+    &quot;&quot;&quot;可管理、可版本化、可测试的 Prompt 模板&quot;&quot;&quot;
+
+    def __init__(self, name: str, template: str, version: str,
+                 required_vars: list[str], metadata: dict | None = None):
+        self.name = name
+        self.template = template
+        self.version = version
+        self.required_vars = required_vars
+        self.metadata = metadata or {}
+        self._hash = hashlib.sha256(template.encode()).hexdigest()[:12]
+
+    def render(self, **kwargs) -&gt; str:
+        # 校验所有必需变量都已提供
+        missing = set(self.required_vars) - set(kwargs.keys())
+        if missing:
+            raise ValueError(f&quot;Missing required variables: {missing}&quot;)
+
+        # 渲染模板
+        rendered = self.template
+        for key, value in kwargs.items():
+            placeholder = &quot;{&quot; + key + &quot;}&quot;
+            if isinstance(value, (dict, list)):
+                value = json.dumps(value, indent=2, ensure_ascii=False)
+            rendered = rendered.replace(placeholder, str(value))
+
+        return rendered
+
+    def fingerprint(self) -&gt; str:
+        &quot;&quot;&quot;返回模板内容的哈希指纹，用于版本追踪&quot;&quot;&quot;
+        return f&quot;{self.name}@{self.version}#{self._hash}&quot;
+
+
+class PromptRegistry:
+    &quot;&quot;&quot;Prompt 模板注册中心：集中管理所有 Agent 使用的 Prompt&quot;&quot;&quot;
+
+    def __init__(self):
+        self._templates: dict[str, dict[str, PromptTemplate]] = {}  # name -&gt; {version -&gt; template}
+
+    def register(self, template: PromptTemplate):
+        if template.name not in self._templates:
+            self._templates[template.name] = {}
+        self._templates[template.name][template.version] = template
+
+    def get(self, name: str, version: str = &quot;latest&quot;) -&gt; PromptTemplate:
+        if name not in self._templates:
+            raise KeyError(f&quot;Template &#39;{name}&#39; not found&quot;)
+
+        versions = self._templates[name]
+        if version == &quot;latest&quot;:
+            latest_version = sorted(versions.keys())[-1]
+            return versions[latest_version]
+
+        if version not in versions:
+            raise KeyError(f&quot;Version &#39;{version}&#39; not found for template &#39;{name}&#39;&quot;)
+        return versions[version]
+
+    def list_all(self) -&gt; dict[str, list[str]]:
+        return {name: sorted(vers.keys()) for name, vers in self._templates.items()}
+
+
+# ── 使用示例 ──
+
+registry = PromptRegistry()
+
+# 注册 Router Prompt v1
+registry.register(PromptTemplate(
+    name=&quot;router&quot;,
+    version=&quot;1.0&quot;,
+    template=&quot;&quot;&quot;You are a request router.
+Available tools: {tool_descriptions}
+Route the following request: {user_input}
+Output JSON: {{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}}}&quot;&quot;&quot;,
+    required_vars=[&quot;tool_descriptions&quot;, &quot;user_input&quot;],
+    metadata={&quot;author&quot;: &quot;agent-team&quot;, &quot;last_tested&quot;: &quot;2025-08-10&quot;}
+))
+
+# 注册 Router Prompt v2（增加了 confidence 字段）
+registry.register(PromptTemplate(
+    name=&quot;router&quot;,
+    version=&quot;2.0&quot;,
+    template=&quot;&quot;&quot;You are a request router. Your ONLY job is to route, not to answer.
+Available tools: {tool_descriptions}
+Route the following request: {user_input}
+Output JSON: {{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}, &quot;confidence&quot;: &lt;0.0-1.0&gt;}}&quot;&quot;&quot;,
+    required_vars=[&quot;tool_descriptions&quot;, &quot;user_input&quot;],
+    metadata={&quot;author&quot;: &quot;agent-team&quot;, &quot;last_tested&quot;: &quot;2025-08-13&quot;}
+))
+
+# 获取并渲染
+router_prompt = registry.get(&quot;router&quot;, version=&quot;2.0&quot;)
+final_prompt = router_prompt.render(
+    tool_descriptions=&quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+    user_input=&quot;What is 42 * 17?&quot;
+)
+</code></pre>
+<h3>6.2 Prompt 版本控制</h3>
+<p>为什么 Prompt 需要版本控制？因为 <strong>Prompt 是 Agent 行为的源代码</strong>。改一个词可能导致 Agent 行为的巨大变化——从正确路由变成错误路由，从结构化输出变成自由文本。</p>
+<p>版本控制策略：</p>
+<pre><code>prompts/
+├── router/
+│   ├── v1.0.txt          # 初始版本
+│   ├── v1.1.txt          # 修复：低 confidence 时的行为
+│   ├── v2.0.txt          # 重大变更：新增 confidence 字段
+│   └── changelog.md      # 变更记录
+├── planner/
+│   ├── v1.0.txt
+│   └── v1.1.txt
+├── executor/
+│   └── v1.0.txt
+└── reflector/
+    └── v1.0.txt
+</code></pre>
+<p>关键实践：</p>
+<ul>
+<li><strong>每次 Prompt 变更都有对应的测试结果</strong>（下面会详述）</li>
+<li><strong>生产环境使用固定版本号</strong>，而非 &quot;latest&quot;</li>
+<li><strong>支持灰度发布</strong>：新版 Prompt 可以先对 10% 的流量生效</li>
+<li><strong>保留回滚能力</strong>：发现新版 Prompt 导致问题时，立即切回旧版</li>
+</ul>
+<h3>6.3 Prompt 测试</h3>
+<p>Prompt 测试的核心挑战是 LLM 输出的非确定性。我们不能像测试普通函数那样做精确断言，但可以做<strong>结构化断言</strong>和<strong>统计性断言</strong>。</p>
+<pre><code class="language-python">from dataclasses import dataclass
+
+@dataclass
+class PromptTestCase:
+    name: str
+    input_vars: dict[str, Any]       # 模板变量
+    assertions: list[dict]            # 断言列表
+
+    # 断言类型：
+    # {&quot;type&quot;: &quot;json_valid&quot;}                           → 输出是合法 JSON
+    # {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;}      → JSON 中包含指定字段
+    # {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;a&quot;, &quot;b&quot;]} → 字段值在范围内
+    # {&quot;type&quot;: &quot;no_field&quot;, &quot;field&quot;: &quot;apology&quot;}         → 不包含某字段（防止 LLM 废话）
+    # {&quot;type&quot;: &quot;max_tokens&quot;, &quot;limit&quot;: 200}             → 输出长度不超过限制
+
+
+class PromptTestRunner:
+    def __init__(self, llm_client, template: PromptTemplate):
+        self.llm = llm_client
+        self.template = template
+
+    def run_test(self, test_case: PromptTestCase, n_runs: int = 5) -&gt; dict:
+        &quot;&quot;&quot;对同一个测试用例运行 N 次，统计通过率&quot;&quot;&quot;
+        prompt = self.template.render(**test_case.input_vars)
+        results = []
+
+        for _ in range(n_runs):
+            output = self.llm.generate(prompt)
+            pass_all = True
+            details = []
+
+            for assertion in test_case.assertions:
+                passed = self._check_assertion(output, assertion)
+                details.append({&quot;assertion&quot;: assertion, &quot;passed&quot;: passed})
+                if not passed:
+                    pass_all = False
+
+            results.append({&quot;output&quot;: output, &quot;passed&quot;: pass_all, &quot;details&quot;: details})
+
+        pass_rate = sum(1 for r in results if r[&quot;passed&quot;]) / n_runs
+        return {
+            &quot;test_case&quot;: test_case.name,
+            &quot;template&quot;: self.template.fingerprint(),
+            &quot;n_runs&quot;: n_runs,
+            &quot;pass_rate&quot;: pass_rate,
+            &quot;results&quot;: results
+        }
+
+    def _check_assertion(self, output: str, assertion: dict) -&gt; bool:
+        if assertion[&quot;type&quot;] == &quot;json_valid&quot;:
+            try:
+                json.loads(output)
+                return True
+            except json.JSONDecodeError:
+                return False
+
+        if assertion[&quot;type&quot;] == &quot;has_field&quot;:
+            try:
+                data = json.loads(output)
+                return assertion[&quot;field&quot;] in data
+            except (json.JSONDecodeError, TypeError):
+                return False
+
+        if assertion[&quot;type&quot;] == &quot;field_in&quot;:
+            try:
+                data = json.loads(output)
+                return data.get(assertion[&quot;field&quot;]) in assertion[&quot;values&quot;]
+            except (json.JSONDecodeError, TypeError):
+                return False
+
+        return False  # 未知断言类型
+
+
+# ── 测试用例示例 ──
+
+test_cases = [
+    PromptTestCase(
+        name=&quot;math_request_should_route_to_calculator&quot;,
+        input_vars={
+            &quot;tool_descriptions&quot;: &quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+            &quot;user_input&quot;: &quot;What is 1024 * 768?&quot;
+        },
+        assertions=[
+            {&quot;type&quot;: &quot;json_valid&quot;},
+            {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;},
+            {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;calculator&quot;]},
+        ]
+    ),
+    PromptTestCase(
+        name=&quot;ambiguous_request_should_not_guess&quot;,
+        input_vars={
+            &quot;tool_descriptions&quot;: &quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+            &quot;user_input&quot;: &quot;Help me with my project&quot;
+        },
+        assertions=[
+            {&quot;type&quot;: &quot;json_valid&quot;},
+            {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;},
+            {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;none&quot;]},
+        ]
+    ),
+]
+</code></pre>
+<p><strong>测试策略建议：</strong></p>
+<ul>
+<li>每个 Prompt 版本至少 10 个测试用例，覆盖正常路径、边界情况和对抗输入</li>
+<li>每个测试用例运行 5-10 次，要求通过率 &gt;= 90%（而非 100%，因为 LLM 输出非确定性）</li>
+<li>将测试集纳入 CI，每次 Prompt 变更触发回归测试</li>
+</ul>
+<h3>6.4 Prompt 组合：模块化拼装</h3>
+<p>复杂 Agent 的 Prompt 往往由多个模块组合而成。与其维护一个巨大的单体 Prompt，不如将其拆分为可复用的模块：</p>
+<pre><code class="language-python">class PromptComposer:
+    &quot;&quot;&quot;将多个 Prompt 模块按顺序组合&quot;&quot;&quot;
+
+    def __init__(self):
+        self._modules: list[tuple[str, PromptTemplate]] = []
+
+    def add(self, section_name: str, template: PromptTemplate):
+        self._modules.append((section_name, template))
+        return self  # 支持链式调用
+
+    def compose(self, **all_vars) -&gt; str:
+        sections = []
+        for section_name, template in self._modules:
+            # 每个模块只取自己需要的变量
+            relevant_vars = {k: v for k, v in all_vars.items()
+                           if k in template.required_vars}
+            rendered = template.render(**relevant_vars)
+            sections.append(f&quot;## {section_name}\n{rendered}&quot;)
+        return &quot;\n\n&quot;.join(sections)
+
+
+# 使用方式
+identity_module = PromptTemplate(
+    name=&quot;identity&quot;, version=&quot;1.0&quot;,
+    template=&quot;You are {agent_role}. {agent_description}&quot;,
+    required_vars=[&quot;agent_role&quot;, &quot;agent_description&quot;]
+)
+
+tools_module = PromptTemplate(
+    name=&quot;tools&quot;, version=&quot;1.0&quot;,
+    template=&quot;Available tools:\n{tool_descriptions}&quot;,
+    required_vars=[&quot;tool_descriptions&quot;]
+)
+
+output_format_module = PromptTemplate(
+    name=&quot;output_format&quot;, version=&quot;1.0&quot;,
+    template=&quot;You MUST respond in the following JSON format:\n{json_schema}&quot;,
+    required_vars=[&quot;json_schema&quot;]
+)
+
+constraints_module = PromptTemplate(
+    name=&quot;constraints&quot;, version=&quot;1.0&quot;,
+    template=&quot;Constraints:\n{constraint_list}&quot;,
+    required_vars=[&quot;constraint_list&quot;]
+)
+
+# 组合
+composer = PromptComposer()
+composer.add(&quot;Identity&quot;, identity_module) \
+        .add(&quot;Tools&quot;, tools_module) \
+        .add(&quot;Output Format&quot;, output_format_module) \
+        .add(&quot;Constraints&quot;, constraints_module)
+
+final_prompt = composer.compose(
+    agent_role=&quot;a task router&quot;,
+    agent_description=&quot;You route user requests to the appropriate tool.&quot;,
+    tool_descriptions=&quot;1. search: web search\n2. calc: calculator&quot;,
+    json_schema=&#39;{&quot;tool_name&quot;: &quot;string&quot;, &quot;tool_input&quot;: &quot;object&quot;}&#39;,
+    constraint_list=&quot;- Never fabricate tool names\n- Always return valid JSON&quot;
+)
+</code></pre>
+<p>模块化的好处：</p>
+<ul>
+<li>同一个 <code>output_format_module</code> 可以被 Router、Planner、Executor 共享</li>
+<li>修改 constraints 不需要触碰 identity 和 tools 部分</li>
+<li>每个模块可以独立测试和版本控制</li>
+</ul>
+<hr>
+<h2>7. Context Window 管理</h2>
+<p>Agent 的 Context Window 管理是一个独特且关键的工程挑战。与 Chatbot 的&quot;对话越长体验越差&quot;不同，Agent 的 context 膨胀会直接导致<strong>系统性故障</strong>。</p>
+<h3>7.1 Agent 的 Context 膨胀问题</h3>
+<p>Agent 的 context 会从三个维度快速膨胀：</p>
+<pre><code>Turn 1:  System(2000) + User(200) + Response(500)              = 2,700 tokens
+Turn 2:  + Tool_Result(3000) + Response(800)                   = 6,500 tokens
+Turn 3:  + Tool_Result(5000) + Error_Msg(1000) + Response(600) = 13,100 tokens
+Turn 4:  + Tool_Result(2000) + Response(400)                   = 15,500 tokens
+Turn 5:  + RAG_Context(4000) + Response(1000)                  = 20,500 tokens
+  ...
+Turn 10: 很容易突破 50,000 tokens
+</code></pre>
+<p>三大膨胀源：</p>
+<ol>
+<li><strong>工具返回值</strong>：一次数据库查询可能返回几千 token 的 JSON，一次网页抓取可能返回上万 token</li>
+<li><strong>历史消息积累</strong>：每一轮的 user message + assistant response + tool calls 都在累积</li>
+<li><strong>错误信息</strong>：工具调用失败的 traceback、重试过程中的冗余信息</li>
+</ol>
+<h3>7.2 消息压缩策略</h3>
+<p><strong>策略 1：摘要压缩（Summarization）</strong></p>
+<p>将早期的对话历史压缩为摘要，只保留关键事实和决策结果。</p>
+<pre><code class="language-python">def compress_history(messages: list[dict], llm_client,
+                     keep_recent: int = 4) -&gt; list[dict]:
+    &quot;&quot;&quot;将早期历史压缩为摘要，保留最近 N 轮完整消息&quot;&quot;&quot;
+    if len(messages) &lt;= keep_recent:
+        return messages
+
+    old_messages = messages[:-keep_recent]
+    recent_messages = messages[-keep_recent:]
+
+    # 用 LLM 生成摘要
+    summary_prompt = f&quot;&quot;&quot;Summarize the following conversation history into key facts
+and decisions. Keep only information that might be needed for future steps.
+Be concise — maximum 200 words.
+
+{format_messages(old_messages)}&quot;&quot;&quot;
+
+    summary = llm_client.generate(summary_prompt)
+
+    # 将摘要作为一条 system message 注入
+    summary_message = {
+        &quot;role&quot;: &quot;system&quot;,
+        &quot;content&quot;: f&quot;[Conversation Summary]\n{summary}&quot;
+    }
+
+    return [summary_message] + recent_messages
+</code></pre>
+<p><strong>策略 2：滑动窗口（Sliding Window）</strong></p>
+<p>更简单粗暴——只保留最近 N 条消息，丢弃更早的消息。</p>
+<pre><code class="language-python">def sliding_window(messages: list[dict], max_messages: int = 10) -&gt; list[dict]:
+    &quot;&quot;&quot;保留 system message + 最近 N 条消息&quot;&quot;&quot;
+    system_msgs = [m for m in messages if m[&quot;role&quot;] == &quot;system&quot;]
+    non_system = [m for m in messages if m[&quot;role&quot;] != &quot;system&quot;]
+    return system_msgs + non_system[-max_messages:]
+</code></pre>
+<p><strong>策略 3：选择性保留（Selective Retention）</strong></p>
+<p>根据消息的&quot;重要性&quot;决定保留还是丢弃。</p>
+<pre><code class="language-python">def selective_retain(messages: list[dict], token_budget: int) -&gt; list[dict]:
+    &quot;&quot;&quot;按重要性保留消息，直到填满 token 预算&quot;&quot;&quot;
+
+    def importance_score(msg: dict) -&gt; int:
+        if msg[&quot;role&quot;] == &quot;system&quot;:
+            return 100  # 永远保留
+        if msg.get(&quot;is_final_result&quot;):
+            return 90   # 最终结果必须保留
+        if msg[&quot;role&quot;] == &quot;user&quot;:
+            return 80   # 用户输入高优先
+        if msg.get(&quot;tool_error&quot;):
+            return 20   # 错误信息低优先（已经被处理过了）
+        if msg.get(&quot;tool_result&quot;):
+            return 40   # 工具结果中等优先
+        return 50
+
+    scored = [(importance_score(m), i, m) for i, m in enumerate(messages)]
+    scored.sort(key=lambda x: (-x[0], x[1]))  # 按重要性降序，原始顺序升序
+
+    retained = []
+    used_tokens = 0
+    for score, idx, msg in scored:
+        msg_tokens = estimate_tokens(msg[&quot;content&quot;])
+        if used_tokens + msg_tokens &lt;= token_budget:
+            retained.append((idx, msg))
+            used_tokens += msg_tokens
+
+    # 恢复原始顺序
+    retained.sort(key=lambda x: x[0])
+    return [msg for _, msg in retained]
+</code></pre>
+<h3>7.3 Token 预算分配</h3>
+<p>一个经验性的 Token 预算分配方案（以 8K context window 为例）：</p>
+<pre><code>Total Context Window: 8,192 tokens
+                    │
+    ┌───────────────┼───────────────┐
+    │               │               │
+System Prompt    Working Area     Reserved for
+  ~25%            ~60%            Output ~15%
+ (2,048)         (4,915)          (1,229)
+    │               │
+    │         ┌─────┴──────┐
+    │         │            │
+    │    Tool Descs    History + State
+    │     ~15%          ~45%
+    │    (1,229)       (3,686)
+    │
+    ├── Identity &amp; Role: 500
+    ├── Behavior Rules: 800
+    ├── Output Format: 500
+    └── Constraints: 248
+</code></pre>
+<p>关键原则：</p>
+<ul>
+<li><strong>Output Reserved 不能省</strong>：如果留给输出的空间不足，LLM 会输出截断的 JSON，导致解析失败</li>
+<li><strong>System Prompt 预算固定</strong>：行为约束不能因为 context 紧张而被裁剪</li>
+<li><strong>History 是最大的压缩空间</strong>：优先在这里节省 Token</li>
+<li><strong>工具描述可以按需加载</strong>：如果 Router 已经选定了工具，后续 Executor 只需要注入被选中工具的描述，而非全部工具</li>
+</ul>
+<h3>7.4 工具返回值的处理</h3>
+<p>工具返回值是 context 膨胀的最大单点源头。以下是几种处理策略：</p>
+<pre><code class="language-python">def process_tool_result(result: str, max_tokens: int = 1500) -&gt; str:
+    &quot;&quot;&quot;处理工具返回值，防止 context 爆炸&quot;&quot;&quot;
+
+    result_tokens = estimate_tokens(result)
+
+    if result_tokens &lt;= max_tokens:
+        return result
+
+    # 策略 1：截断（适用于文本类结果）
+    if is_text(result):
+        return truncate_to_tokens(result, max_tokens) + &quot;\n[... truncated]&quot;
+
+    # 策略 2：提取摘要（适用于 JSON 类结果）
+    if is_json(result):
+        data = json.loads(result)
+        if isinstance(data, list):
+            # 只保留前 N 条记录 + 总数信息
+            summary = {
+                &quot;total_count&quot;: len(data),
+                &quot;showing_first&quot;: 5,
+                &quot;records&quot;: data[:5],
+                &quot;note&quot;: f&quot;Truncated from {len(data)} records. Request specific filters for more.&quot;
+            }
+            return json.dumps(summary, ensure_ascii=False, indent=2)
+
+    # 策略 3：兜底截断
+    return truncate_to_tokens(result, max_tokens) + &quot;\n[... truncated]&quot;
+</code></pre>
+<hr>
+<h2>8. 常见陷阱</h2>
+<h3>8.1 Prompt 太长导致 LLM &quot;忘记&quot;关键指令</h3>
+<p><strong>现象：</strong> System Prompt 有 3000 token，其中包含 20 条行为规则。LLM 在前几轮严格遵守，但随着 context 变长，开始&quot;遗忘&quot;中间的规则——尤其是第 8-15 条。</p>
+<p><strong>原因：</strong> LLM 对 prompt 中不同位置内容的&quot;注意力&quot;不均匀。开头和结尾的内容通常被更好地遵循（primacy effect 和 recency effect），中间的内容最容易被忽略。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>将最关键的规则放在 System Prompt 的开头和结尾</li>
+<li>将规则数量控制在 7 条以内（与人类工作记忆容量一致，也利于 LLM）</li>
+<li>在消息末尾添加 reminder：&quot;Remember: always output valid JSON. Never fabricate tool names.&quot;</li>
+<li>按当前 Turn 的需要动态注入最相关的规则子集，而非每次都注入全部规则</li>
+</ul>
+<h3>8.2 工具描述和 System Prompt 冲突</h3>
+<p><strong>现象：</strong> System Prompt 说&quot;不要执行任何数据删除操作&quot;，但某个工具的 description 中包含&quot;Deletes records matching the query&quot;。LLM 收到删除请求时，行为不确定——有时遵循 System Prompt 的禁令，有时遵循工具描述的能力。</p>
+<p><strong>原因：</strong> LLM 看到的是拼装后的完整 prompt，它不理解&quot;System Prompt 优先级高于工具描述&quot;这个层级关系。两段相互矛盾的文本让 LLM 陷入冲突。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>在 Prompt 组装阶段做<strong>一致性检查</strong>：扫描工具描述中的关键词，与 System Prompt 的禁止列表做匹配</li>
+<li>如果某个工具被禁用，<strong>直接不注入它的描述</strong>，而不是注入描述然后在 System Prompt 中禁止</li>
+<li>在 System Prompt 中明确声明优先级：&quot;If any tool description conflicts with these rules, these rules take priority.&quot;</li>
+</ul>
+<h3>8.3 过度约束导致 LLM 无法灵活应对</h3>
+<p><strong>现象：</strong> 为了保证安全，System Prompt 中加了大量限制：&quot;只能调用列表中的工具&quot;、&quot;只能输出 JSON&quot;、&quot;不能包含任何解释&quot;、&quot;不能问用户问题&quot;、&quot;必须在一次调用中完成&quot;......结果 LLM 在遇到无法处理的请求时，输出空 JSON 或无意义的工具调用，而不是合理地拒绝或请求澄清。</p>
+<p><strong>原因：</strong> 过度约束堵死了 LLM 所有的&quot;逃生通道&quot;。它没有被允许说&quot;我不知道&quot;或&quot;我需要更多信息&quot;，所以只能在约束框架内硬凑一个输出。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>永远为 LLM 保留一个&quot;安全出口&quot;：允许它输出 <code>{&quot;action&quot;: &quot;clarify&quot;, &quot;question&quot;: &quot;...&quot;}</code> 或 <code>{&quot;action&quot;: &quot;refuse&quot;, &quot;reason&quot;: &quot;...&quot;}</code></li>
+<li>区分&quot;硬约束&quot;和&quot;软约束&quot;：硬约束（安全规则）不可违反，软约束（输出偏好）在特殊情况下可以放松</li>
+<li>将约束从&quot;禁止列表&quot;改为&quot;优先级列表&quot;：先尝试 X，如果不行可以 Y，最后可以 Z</li>
+</ul>
+<h3>8.4 Prompt Injection 在 Agent 中的放大效应</h3>
+<p>在 Chatbot 中，Prompt Injection 最多让模型输出不当内容。但在 Agent 中，Prompt Injection 可能触发<strong>真实的工具调用</strong>——删除数据、发送邮件、调用 API。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>用户输入和系统指令之间必须有明确的分隔标记</li>
+<li>工具调用前做参数校验（schema validation），而非完全信任 LLM 输出</li>
+<li>高危操作（删除、支付、发送）增加人工确认步骤</li>
+<li>将用户输入视为&quot;不可信数据&quot;，在 Prompt 中明确标注：<code>[USER INPUT - UNTRUSTED]: {user_message}</code></li>
+</ul>
+<hr>
+<h2>9. 结语：从 Prompt 到 Runtime</h2>
+<p>Prompt Engineering for Agents 的本质是<strong>为 LLM 定义一套可编程的行为接口</strong>。我们在本文中讨论了分层架构、设计模式、推理策略、测试方法和 context 管理——这些都是让 Agent &quot;可控&quot;的基础设施。</p>
+<p>但 Prompt 本身只是 Agent 系统的一个组件。再好的 Prompt 也需要一个可靠的 Runtime 来驱动——处理 LLM 的响应、管理状态机的转换、执行工具调用、处理错误和重试。</p>
+<p>下一篇文章《Agent Runtime from Scratch: 不依赖框架构建 Agent》将从零开始实现一个完整的 Agent 运行时。我们会把本文设计的 Prompt 模式，放进一个真实可运行的控制循环中，展示 Prompt、工具、状态管理和错误处理如何在代码层面协同工作。</p>
+<p><strong>进一步思考：</strong></p>
+<ol>
+<li><p><strong>Prompt 的自动优化</strong>：如果我们有了 Prompt 测试框架和评估指标，是否可以用搜索算法（DSPy 的思路）自动优化 Prompt？这和手工调优的 trade-off 在哪里？</p>
+</li>
+<li><p><strong>Multi-Model Prompt 策略</strong>：Router 用小模型（快、便宜），Planner 用大模型（准、贵），Executor 用中等模型。不同模型对 Prompt 的响应特性不同，如何为不同模型定制 Prompt？</p>
+</li>
+<li><p><strong>Prompt 的可解释性</strong>：当 Agent 做出错误决策时，我们如何从 Prompt 和输出中定位问题根因？这需要什么样的 observability 基础设施？</p>
+</li>
+<li><p><strong>动态 Prompt 生成</strong>：是否可以让一个 &quot;Meta-Agent&quot; 根据当前任务特征，动态生成最合适的 Prompt？这会引入什么样的复杂性和风险？</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 06 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/05-Tool%20Calling%20Deep%20Dive">05 | Tool Calling Deep Dive</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/07-Agent%20Runtime%20from%20Scratch">07 | Agent Runtime from Scratch</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-18","children":"2025年12月18日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Tool Calling Deep Dive: 让 LLM 成为可编程接口"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L5","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L5","Tool Calling",{"href":"/blog/tag/Tool%20Calling/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Tool Calling"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/04-The Agent Control Loop","title":"The Agent Control Loop: Agent 运行时的核心抽象","description":"Agent 的本质不是一次函数调用，而是一个可中断的控制循环。本文从状态机模型出发，深入剖析 Agent Control Loop 的每个阶段——OBSERVE、THINK、ACT、REFLECT，对比 ReAct 与 Plan-then-Execute 两种主流模式，讨论状态管理、错误处理与性能优化策略，并给出一个不依赖任何框架的完整 Python 实现。","pubDate":"2025-12-14","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/06-Prompt Engineering for Agents","title":"Prompt Engineering for Agents: 面向 Agent 的提示词工程","description":"Agent 的 Prompt 不是聊天提示词，而是系统接口规范。本文系统拆解 Agent Prompt 的分层架构、四种关键设计模式（Router / Planner / Executor / Reflector）、Chain-of-Thought 的 Agent 化应用、Few-shot vs Zero-shot 的场景选择、Prompt 工程化实践（模板化 / 版本控制 / 测试 / 组合），以及 Context Window 管理策略。","pubDate":"2025-12-23","tags":["Agentic","AI Engineering","Prompt Engineering"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"AI Engineering":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"Tool Calling":{"prev":null,"next":null}}}]}],["$","$L19",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"Tool Calling Deep Dive: 让 LLM 成为可编程接口 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"Tool Calling 是 LLM 从「对话机器」变成「可编程接口」的关键转折点。本文从底层原理出发，系统拆解 Tool Calling 的工作机制、JSON Schema 契约设计、工具注册与发现策略、错误处理、安全性考量及关键 Trade-off，附带完整可运行代码。"}],["$","meta","2",{"property":"og:title","content":"Tool Calling Deep Dive: 让 LLM 成为可编程接口"}],["$","meta","3",{"property":"og:description","content":"Tool Calling 是 LLM 从「对话机器」变成「可编程接口」的关键转折点。本文从底层原理出发，系统拆解 Tool Calling 的工作机制、JSON Schema 契约设计、工具注册与发现策略、错误处理、安全性考量及关键 Trade-off，附带完整可运行代码。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-12-18"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"Tool Calling Deep Dive: 让 LLM 成为可编程接口"}],["$","meta","9",{"name":"twitter:description","content":"Tool Calling 是 LLM 从「对话机器」变成「可编程接口」的关键转折点。本文从底层原理出发，系统拆解 Tool Calling 的工作机制、JSON Schema 契约设计、工具注册与发现策略、错误处理、安全性考量及关键 Trade-off，附带完整可运行代码。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}

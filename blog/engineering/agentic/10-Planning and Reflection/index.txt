@@ -1,0 +1,3254 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-51baccc14cf1da9e.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/0458d6941a120cde.css","style"]
+0:{"P":null,"b":"8CSEQRRrJyhjI8sSOwcIy","p":"","c":["","blog","engineering","agentic","10-Planning%20and%20Reflection",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/10-Planning%20and%20Reflection","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0458d6941a120cde.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/10-Planning%20and%20Reflection","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","j1JIzHnhN5lqzFD3LCVzBv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:T9ed3,<h1>Planning and Reflection: 从 ReAct 到分层规划与自我纠错</h1>
+<blockquote>
+<p>LLM 的 next-token prediction 天生是&quot;短视&quot;的——它只看到当前 token 的概率分布，不会思考十步之后的结局。规划（Planning）让 Agent 具备&quot;远视&quot;能力，反思（Reflection）让 Agent 具备&quot;纠错&quot;能力。二者结合，是 Agent 从&quot;工具调用器&quot;进化为&quot;问题解决者&quot;的关键。</p>
+<p>本文是 Agentic 系列的第 10 篇。我们将从规划范式的演进出发，深入分析 ReAct、Plan-and-Execute、Tree-of-Thought、Hierarchical Planning 四种规划模式，再系统探讨 Reflection 机制的设计与陷阱。</p>
+</blockquote>
+<hr>
+<h2>1. 为什么 Agent 需要规划和反思</h2>
+<p>LLM 的核心训练目标是 next-token prediction：给定前文，预测最可能的下一个 token。这种机制天然缺乏两种能力：</p>
+<ul>
+<li><strong>前瞻（Lookahead）</strong>：生成第一步时不会考虑&quot;这个决定在第五步会导致什么后果&quot;——每一步都选局部最优，但局部最优的叠加不等于全局最优。</li>
+<li><strong>回溯（Backtrack）</strong>：一旦生成了一段文本就不会主动回头修正，即使中间步骤出了错，后续 token 也会基于错误的前提继续生成。</li>
+</ul>
+<p><strong>规划（Planning）</strong> 弥补前瞻缺陷——在执行前把大目标拆成子目标，考虑步骤间的依赖和顺序。<strong>反思（Reflection）</strong> 弥补回溯缺陷——在执行后检查结果、分析错误、决定重试或调整。</p>
+<pre><code>没有规划的 Agent：走一步看一步（Greedy, Reactive）
+有规划的 Agent：先想好路线再出发（Deliberate, Proactive）
+有反思的 Agent：走错了能发现、能纠正（Self-correcting）
+</code></pre>
+<p>二者结合，Agent 才能从&quot;工具调用器&quot;进化为&quot;问题解决者&quot;。</p>
+<hr>
+<h2>2. 规划范式的演进</h2>
+<pre><code>   2022              2023 early         2023 mid            2023+ now
+    │                    │                  │                    │
+    ▼                    ▼                  ▼                    ▼
+┌────────┐      ┌──────────────┐    ┌──────────────┐   ┌────────────────┐
+│No Plan │─────▶│    ReAct     │───▶│Plan-and-Exec │──▶│ Hierarchical   │
+│直接回答 │      │Thought-Act-  │    │先规划再执行   │   │  Planning      │
+└────────┘      │Observation   │    └──────────────┘   │ 多层级分解     │
+                └──────┬───────┘                       └────────────────┘
+                       │           ┌──────────────┐           ▲
+                       └──────────▶│Tree-of-Thought│──────────┘
+                                   │多路径搜索     │
+                                   └──────────────┘
+
+能力维度：单步回答 ──▶ 逐步推理 ──▶ 全局规划 ──▶ 多路径探索 ──▶ 递归分解
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>范式</th>
+<th>核心思想</th>
+<th>解决了什么</th>
+<th>新的问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>No Planning</td>
+<td>LLM 直接回答</td>
+<td>—</td>
+<td>无法处理多步任务</td>
+</tr>
+<tr>
+<td>ReAct</td>
+<td>交替 Thought-Action-Observation</td>
+<td>多步推理+行动</td>
+<td>Greedy，缺乏全局视野</td>
+</tr>
+<tr>
+<td>Plan-and-Execute</td>
+<td>先规划再逐步执行</td>
+<td>全局视野，可追踪</td>
+<td>计划可能过时，修正成本高</td>
+</tr>
+<tr>
+<td>Tree-of-Thought</td>
+<td>多条路径搜索选优</td>
+<td>探索多种可能性</td>
+<td>成本倍增</td>
+</tr>
+<tr>
+<td>Hierarchical</td>
+<td>多层级递归分解</td>
+<td>处理真正复杂的任务</td>
+<td>架构复杂，调试困难</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>3. ReAct 深入分析</h2>
+<h3>3.1 原理：Reason + Act 交替进行</h3>
+<p>ReAct（Yao et al., 2022）让 LLM 在推理（Thought）和行动（Action）之间交替，每次行动后观察结果（Observation），再基于观察继续推理。</p>
+<pre><code>User Question
+     │
+     ▼
+┌──────────┐     ┌──────────┐     ┌──────────────┐
+│ Thought  │────▶│  Action  │────▶│ Observation  │
+│ (推理)   │     │ (行动)   │     │ (观察结果)    │
+└──────────┘     └──────────┘     └──────┬───────┘
+     ▲                                    │
+     └────────────────────────────────────┘
+</code></pre>
+<h3>3.2 ReAct Prompt 模板</h3>
+<pre><code class="language-python">REACT_SYSTEM_PROMPT = &quot;&quot;&quot;You operate in a loop of Thought, Action, Observation.
+
+- Thought: Analyze the situation and decide the next step.
+- Action: Call a tool. Format: Action: tool_name({&quot;param&quot;: &quot;value&quot;})
+- Observation: Review the tool&#39;s result.
+
+When ready, respond: Final Answer: &lt;your answer&gt;
+
+Available tools:
+{tool_descriptions}
+
+Rules:
+1. Always think before acting.
+2. If a tool fails, analyze why and try differently.
+3. Do not fabricate information — use only tool results.
+&quot;&quot;&quot;
+</code></pre>
+<h3>3.3 优点与缺点</h3>
+<p><strong>优点</strong>：灵活自适应（每步可根据 Observation 调整）、实现简单（while 循环 + prompt）、可解释性强（Thought 暴露推理过程）、容错好（失败后下一步可换策略）。</p>
+<p><strong>缺点</strong>：Greedy / 短视（不考虑长期后果）、效率低（每步完整 LLM 调用）、上下文膨胀（步骤越多 token 越多）、容易循环（重复同一失败策略）。</p>
+<h3>3.4 Python 实现</h3>
+<pre><code class="language-python">import json
+from dataclasses import dataclass
+from typing import Callable
+import openai
+
+@dataclass
+class Tool:
+    name: str
+    description: str
+    parameters: dict
+    function: Callable
+
+class ReActAgent:
+    def __init__(self, model: str = &quot;gpt-4o&quot;, tools: list[Tool] | None = None,
+                 max_iterations: int = 10):
+        self.model = model
+        self.tools = {t.name: t for t in (tools or [])}
+        self.max_iterations = max_iterations
+        self.client = openai.OpenAI()
+
+    def _build_system_prompt(self) -&gt; str:
+        tool_desc = &quot;\n&quot;.join(
+            f&quot;- {t.name}: {t.description}&quot; for t in self.tools.values()
+        )
+        return REACT_SYSTEM_PROMPT.format(tool_descriptions=tool_desc)
+
+    def _parse_action(self, text: str) -&gt; tuple[str, dict] | None:
+        for line in text.split(&quot;\n&quot;):
+            if line.strip().startswith(&quot;Action:&quot;):
+                action_str = line.strip()[len(&quot;Action:&quot;):].strip()
+                paren = action_str.find(&quot;(&quot;)
+                if paren == -1:
+                    return None
+                name = action_str[:paren].strip()
+                params_str = action_str[paren + 1:].rstrip(&quot;)&quot;)
+                params = json.loads(params_str) if params_str else {}
+                return name, params
+        return None
+
+    def _execute_tool(self, name: str, params: dict) -&gt; str:
+        if name not in self.tools:
+            return f&quot;Error: Unknown tool &#39;{name}&#39;&quot;
+        try:
+            return str(self.tools[name].function(**params))
+        except Exception as e:
+            return f&quot;Error: {e}&quot;
+
+    def run(self, query: str) -&gt; str:
+        messages = [
+            {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: self._build_system_prompt()},
+            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: query},
+        ]
+        for _ in range(self.max_iterations):
+            resp = self.client.chat.completions.create(
+                model=self.model, messages=messages, temperature=0.0,
+            )
+            text = resp.choices[0].message.content
+            messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: text})
+
+            if &quot;Final Answer:&quot; in text:
+                return text.split(&quot;Final Answer:&quot;)[-1].strip()
+
+            action = self._parse_action(text)
+            if action is None:
+                messages.append({&quot;role&quot;: &quot;user&quot;,
+                                 &quot;content&quot;: &quot;Provide a valid Action or Final Answer.&quot;})
+                continue
+
+            observation = self._execute_tool(*action)
+            messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: f&quot;Observation: {observation}&quot;})
+
+        return &quot;Reached max iterations without final answer.&quot;
+</code></pre>
+<p>注意：随着迭代增加 <code>messages</code> 不断膨胀，token 消耗呈线性增长。超过 5-6 步的任务需要考虑上下文压缩（如摘要历史步骤）。</p>
+<hr>
+<h2>4. Plan-and-Execute 模式</h2>
+<h3>4.1 原理：先规划再执行</h3>
+<p>Plan-and-Execute 将规划与执行分离：先用一次 LLM 调用生成完整计划，再逐个执行子任务，必要时触发 Replanning。</p>
+<pre><code>┌────────────┐       Plan: [S1, S2, S3]      ┌────────────┐
+│  Planner   │──────────────────────────────▶│  Executor  │
+│ (全局规划)  │                                │ (逐步执行)  │
+└────────────┘                                └─────┬──────┘
+      ▲                                             │ 执行失败
+      │            ┌─────────────┐                  │
+      └────────────│  Replanner  │◀─────────────────┘
+                   │ (动态修正)   │
+                   └─────────────┘
+</code></pre>
+<h3>4.2 Planner / Executor 分离的优势</h3>
+<ol>
+<li><strong>关注点分离</strong>：Planner 负责&quot;做什么&quot;，Executor 负责&quot;怎么做&quot;，可以分别用不同模型优化</li>
+<li><strong>可并行</strong>：无依赖的步骤可以并行执行</li>
+<li><strong>可追踪</strong>：计划本身是结构化数据，便于监控和审计</li>
+<li><strong>可中断恢复</strong>：执行到一半中断后可从某一步重启</li>
+</ol>
+<h3>4.3 计划的动态修正</h3>
+<p>三种 Replan 策略：<strong>完全重新规划</strong>（全局优化但可能丢弃已有成果）、<strong>局部修正</strong>（成本低但可能保留错误前提）、<strong>条件触发</strong>（仅在步骤失败或偏差超阈值时 Replan）。生产中通常用条件触发 + 局部修正的组合。</p>
+<h3>4.4 Python 实现</h3>
+<pre><code class="language-python">from dataclasses import dataclass, field
+
+@dataclass
+class PlanStep:
+    id: int
+    description: str
+    tool: str | None = None
+    depends_on: list[int] = field(default_factory=list)
+    status: str = &quot;pending&quot;   # pending / completed / failed
+    result: str | None = None
+
+PLANNER_PROMPT = &quot;&quot;&quot;Decompose the goal into concrete steps (max 7).
+Available tools: {tool_names}
+Output JSON: {{&quot;goal&quot;: &quot;...&quot;, &quot;steps&quot;: [{{&quot;id&quot;: 1, &quot;description&quot;: &quot;...&quot;,
+&quot;tool&quot;: &quot;tool_name or null&quot;, &quot;depends_on&quot;: []}}]}}&quot;&quot;&quot;
+
+class PlanAndExecuteAgent:
+    def __init__(self, tools: dict[str, Tool],
+                 planner_model: str = &quot;gpt-4o&quot;,
+                 executor_model: str = &quot;gpt-4o-mini&quot;,
+                 max_replans: int = 3):
+        self.tools = tools
+        self.planner_model = planner_model
+        self.executor_model = executor_model
+        self.max_replans = max_replans
+        self.client = openai.OpenAI()
+
+    def _create_plan(self, goal: str) -&gt; list[PlanStep]:
+        resp = self.client.chat.completions.create(
+            model=self.planner_model,
+            messages=[
+                {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: PLANNER_PROMPT.format(
+                    tool_names=&quot;, &quot;.join(self.tools.keys()))},
+                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: goal},
+            ],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        data = json.loads(resp.choices[0].message.content)
+        return [PlanStep(**s) for s in data[&quot;steps&quot;]]
+
+    def _execute_step(self, step: PlanStep, context: dict) -&gt; str:
+        if step.tool and step.tool in self.tools:
+            param_resp = self.client.chat.completions.create(
+                model=self.executor_model,
+                messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                    f&quot;Call tool &#39;{step.tool}&#39; for: {step.description}\n&quot;
+                    f&quot;Context: {json.dumps(context)}\nReturn JSON params only.&quot;}],
+                response_format={&quot;type&quot;: &quot;json_object&quot;},
+            )
+            params = json.loads(param_resp.choices[0].message.content)
+            return str(self.tools[step.tool].function(**params))
+        resp = self.client.chat.completions.create(
+            model=self.executor_model,
+            messages=[{&quot;role&quot;: &quot;user&quot;,
+                       &quot;content&quot;: f&quot;Task: {step.description}\nContext: {json.dumps(context)}&quot;}],
+        )
+        return resp.choices[0].message.content
+
+    def run(self, goal: str) -&gt; str:
+        steps = self._create_plan(goal)
+        context = {}
+        for replan in range(self.max_replans + 1):
+            for step in steps:
+                if step.status == &quot;completed&quot;:
+                    continue
+                deps_met = all(
+                    any(s.id == d and s.status == &quot;completed&quot; for s in steps)
+                    for d in step.depends_on
+                )
+                if not deps_met:
+                    continue
+                try:
+                    step.result = self._execute_step(step, context)
+                    step.status = &quot;completed&quot;
+                    context[f&quot;step_{step.id}&quot;] = step.result
+                except Exception as e:
+                    step.status = &quot;failed&quot;
+                    step.result = str(e)
+                    steps = self._replan(goal, steps, step)
+                    break
+            if all(s.status == &quot;completed&quot; for s in steps):
+                return self._synthesize(goal, context)
+        return &quot;Exceeded max replans.&quot;
+
+    def _replan(self, goal, steps, failed) -&gt; list[PlanStep]:
+        # 将已完成步骤 + 失败信息交给 Planner 重新规划
+        completed = [{&quot;id&quot;: s.id, &quot;result&quot;: s.result}
+                     for s in steps if s.status == &quot;completed&quot;]
+        resp = self.client.chat.completions.create(
+            model=self.planner_model,
+            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;:
+                f&quot;Replan. Goal: {goal}\nCompleted: {json.dumps(completed)}\n&quot;
+                f&quot;Failed step: {failed.description} -&gt; {failed.result}&quot;}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        data = json.loads(resp.choices[0].message.content)
+        return [PlanStep(**s) for s in data[&quot;steps&quot;]]
+
+    def _synthesize(self, goal, context):
+        resp = self.client.chat.completions.create(
+            model=self.planner_model,
+            messages=[{&quot;role&quot;: &quot;user&quot;,
+                       &quot;content&quot;: f&quot;Goal: {goal}\nResults: {json.dumps(context)}\n&quot;
+                       &quot;Synthesize a final answer.&quot;}],
+        )
+        return resp.choices[0].message.content
+</code></pre>
+<p>Planner 用 <code>gpt-4o</code>（强规划），Executor 用 <code>gpt-4o-mini</code>（快执行）——这是生产中常见的成本优化手段。</p>
+<hr>
+<h2>5. Tree-of-Thought</h2>
+<h3>5.1 原理</h3>
+<p>Tree-of-Thought（ToT，Yao et al. 2023）模拟人类&quot;深思熟虑&quot;：同时考虑多条推理路径，评估每条的前景，选择最优的继续深入。</p>
+<pre><code>                       Root (问题)
+                      /     |     \
+                   Th1     Th2    Th3      ← 生成多个候选 Thought
+                  /   \     |    /   \
+               T1a   T1b  T2a  T3a  T3b   ← 继续展开
+                ✗      ✓    ✗    ✓    ✗    ← 评估函数打分，剪枝
+</code></pre>
+<p>三个核心组件：<strong>Thought Generator</strong>（每步生成 k 个候选）、<strong>State Evaluator</strong>（对候选打分）、<strong>Search Algorithm</strong>（BFS 或 DFS）。</p>
+<h3>5.2 BFS vs DFS</h3>
+<ul>
+<li><strong>BFS</strong>：每层展开 k 个，评估后保留 top-k 进入下一层。适合步骤少、每步选择多的问题。总调用 ≈ k x depth x 2（生成+评估）。</li>
+<li><strong>DFS</strong>：选当前最优一路深入，死胡同时回溯。适合步骤多、每步选择少的问题。最好 O(depth)，最坏 O(k^depth)。</li>
+</ul>
+<h3>5.3 评估函数设计</h3>
+<ol>
+<li><strong>LLM 自评</strong>：让 LLM 对每个 Thought 打分。简单但可能有系统性偏见。</li>
+<li><strong>投票法</strong>：多次评估取多数。更稳健但成本更高。</li>
+<li><strong>外部验证</strong>：可验证的问题（数学/代码）用外部工具检查。最可靠但适用范围有限。</li>
+</ol>
+<h3>5.4 Trade-off：质量 vs 成本</h3>
+<pre><code>方法           LLM 调用次数      质量    适用场景
+─────────────  ──────────────   ─────   ──────────
+ReAct(单路径)   O(steps)         基准    大多数任务
+ToT-BFS        O(k * d * 2)     高      创意/数学/方案选型
+ToT-DFS        O(k^d) 最坏      中-高   深度推理
+</code></pre>
+<p>k=3, d=3 时 ToT 可能需要 40+ 次 LLM 调用，ReAct 只需 5-6 次——<strong>8-10 倍成本差距</strong>。只有当正确性要求高且存在多条有意义的推理路径时，ToT 的投入才有回报。</p>
+<h3>5.5 Python 实现</h3>
+<pre><code class="language-python">import json
+from dataclasses import dataclass, field
+import openai
+
+@dataclass
+class ThoughtNode:
+    &quot;&quot;&quot;搜索树中的节点，每个节点代表一条推理路径的当前状态&quot;&quot;&quot;
+    state: str                           # 当前推理状态（累积的 thought 文本）
+    score: float = 0.0                   # 评估函数打分
+    depth: int = 0
+    children: list[&quot;ThoughtNode&quot;] = field(default_factory=list)
+
+class TreeOfThought:
+    def __init__(self, model: str = &quot;gpt-4o&quot;, k: int = 3, max_depth: int = 3):
+        &quot;&quot;&quot;
+        k: 每层生成的候选 thought 数量（BFS 宽度）
+        max_depth: 搜索树最大深度
+        &quot;&quot;&quot;
+        self.model = model
+        self.k = k
+        self.max_depth = max_depth
+        self.client = openai.OpenAI()
+
+    def generate_thoughts(self, problem: str, current_state: str) -&gt; list[str]:
+        &quot;&quot;&quot;生成 k 个候选 thought&quot;&quot;&quot;
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                f&quot;Given the problem and current reasoning state, &quot;
+                f&quot;generate exactly {self.k} distinct next-step thoughts.\n&quot;
+                f&#39;Return JSON: {{&quot;thoughts&quot;: [&quot;thought1&quot;, &quot;thought2&quot;, ...]}}&#39;},
+                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;:
+                f&quot;Problem: {problem}\nCurrent state: {current_state or &#39;(start)&#39;}&quot;}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        data = json.loads(resp.choices[0].message.content)
+        return data[&quot;thoughts&quot;][:self.k]
+
+    def evaluate_thought(self, problem: str, state: str) -&gt; float:
+        &quot;&quot;&quot;评估当前推理状态的前景，返回 0-1 分数&quot;&quot;&quot;
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                &quot;Evaluate how promising this reasoning state is for solving the problem.\n&quot;
+                &#39;Return JSON: {&quot;score&quot;: 0.0-1.0, &quot;reason&quot;: &quot;...&quot;}&#39;},
+                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;:
+                f&quot;Problem: {problem}\nReasoning so far: {state}&quot;}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        data = json.loads(resp.choices[0].message.content)
+        return float(data[&quot;score&quot;])
+
+    def solve(self, problem: str) -&gt; str:
+        &quot;&quot;&quot;BFS 搜索：每层生成 k 个候选，评估后保留 top-k 进入下一层&quot;&quot;&quot;
+        # 初始化：根节点
+        current_level = [ThoughtNode(state=&quot;&quot;, depth=0)]
+
+        for depth in range(self.max_depth):
+            candidates: list[ThoughtNode] = []
+
+            for node in current_level:
+                # 为每个节点生成 k 个候选 thought
+                thoughts = self.generate_thoughts(problem, node.state)
+                for thought in thoughts:
+                    new_state = f&quot;{node.state}\nStep {depth+1}: {thought}&quot;.strip()
+                    score = self.evaluate_thought(problem, new_state)
+                    child = ThoughtNode(state=new_state, score=score, depth=depth+1)
+                    node.children.append(child)
+                    candidates.append(child)
+
+            # 保留 top-k 进入下一层（BFS 剪枝）
+            candidates.sort(key=lambda n: n.score, reverse=True)
+            current_level = candidates[:self.k]
+
+        # 返回最终得分最高的推理路径
+        best = max(current_level, key=lambda n: n.score)
+        return best.state
+</code></pre>
+<p>核心观察：BFS 宽度 <code>k</code> 和搜索深度 <code>max_depth</code> 共同控制质量-成本的 trade-off。<code>k</code> 越大，每层探索的候选越多，找到好路径的概率越高，但 LLM 调用次数以 O(k² × d) 增长（每层 k 个节点各生成 k 个候选 + k 次评估）。实践中 k=2<del>3、depth=2</del>3 是较好的起点，可根据任务复杂度动态调整。</p>
+<hr>
+<h2>6. 分层规划（Hierarchical Planning）</h2>
+<p>当任务复杂到&quot;设计并实现用户权限系统&quot;这种级别时，一层计划无法覆盖从架构到实现的所有粒度。分层规划通过<strong>递归分解</strong>解决：高层拆子目标，低层拆具体动作。</p>
+<pre><code>高层规划器 (Strategic)
+├─ 子目标1: 设计数据模型
+│   └─ 低层规划器 (Tactical)
+│       ├─ Action: 分析需求
+│       ├─ Action: 设计 ER 图
+│       └─ Action: 定义 API Schema
+├─ 子目标2: 实现认证模块
+│   └─ 低层规划器
+│       ├─ Action: 实现 JWT 签发
+│       └─ Action: 编写测试
+└─ 子目标3: 实现授权模块
+    └─ 低层规划器
+        ├─ Action: 实现 RBAC
+        └─ Action: 集成测试
+</code></pre>
+<h3>6.1 递归分解的终止条件</h3>
+<ol>
+<li><strong>原子性</strong>：任务可用单次工具调用完成 → 停止分解</li>
+<li><strong>深度限制</strong>：最大 2-3 层，防止过度分解</li>
+<li><strong>预算约束</strong>：剩余 token 预算不足以继续分解 → 当前粒度直接执行</li>
+</ol>
+<pre><code class="language-python">class HierarchicalPlanner:
+    def __init__(self, client: openai.OpenAI, model=&quot;gpt-4o&quot;, max_depth=3):
+        self.client, self.model, self.max_depth = client, model, max_depth
+
+    def decompose(self, goal: str, depth: int = 0) -&gt; dict:
+        if depth &gt;= self.max_depth:
+            return {&quot;type&quot;: &quot;action&quot;, &quot;description&quot;: goal}
+
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                &quot;Decide if this goal is atomic or compound.\n&quot;
+                &#39;Atomic: {&quot;type&quot;:&quot;action&quot;,&quot;description&quot;:&quot;...&quot;}\n&#39;
+                &#39;Compound: {&quot;type&quot;:&quot;goal&quot;,&quot;description&quot;:&quot;...&quot;,&quot;subgoals&quot;:[&quot;...&quot;,]}&#39;},
+                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: goal}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        node = json.loads(resp.choices[0].message.content)
+        if node[&quot;type&quot;] == &quot;action&quot;:
+            return node
+        node[&quot;children&quot;] = [self.decompose(sg, depth+1) for sg in node.get(&quot;subgoals&quot;,[])]
+        return node
+</code></pre>
+<p>实践中 2 层（Strategic + Tactical）通常够用。3 层以上的调试成本会快速失控。</p>
+<h3>6.2 执行层：递归执行分解后的计划</h3>
+<p><code>HierarchicalPlanner</code> 只负责分解，执行需要单独的 Executor。核心逻辑：叶节点（type=&quot;action&quot;）直接调用 LLM 或工具执行，分支节点（type=&quot;goal&quot;）递归执行所有子节点并聚合结果。</p>
+<pre><code class="language-python">@dataclass
+class ExecutionResult:
+    description: str
+    output: str
+    success: bool
+    children: list[&quot;ExecutionResult&quot;] = field(default_factory=list)
+
+class HierarchicalExecutor:
+    def __init__(self, client: openai.OpenAI, model: str = &quot;gpt-4o-mini&quot;,
+                 tools: dict[str, Callable] | None = None):
+        self.client = client
+        self.model = model
+        self.tools = tools or {}
+
+    def execute(self, node: dict) -&gt; ExecutionResult:
+        &quot;&quot;&quot;递归执行分解后的计划树&quot;&quot;&quot;
+        desc = node.get(&quot;description&quot;, &quot;&quot;)
+
+        # 叶节点：直接执行
+        if node[&quot;type&quot;] == &quot;action&quot;:
+            output = self._execute_action(desc)
+            return ExecutionResult(description=desc, output=output, success=True)
+
+        # 分支节点：递归执行所有子节点
+        child_results = [self.execute(child) for child in node.get(&quot;children&quot;, [])]
+        all_success = all(r.success for r in child_results)
+
+        # 聚合子节点结果
+        summary = self._aggregate(desc, child_results)
+        return ExecutionResult(
+            description=desc, output=summary,
+            success=all_success, children=child_results,
+        )
+
+    def _execute_action(self, action: str) -&gt; str:
+        &quot;&quot;&quot;执行单个原子动作——优先使用工具，否则 fallback 到 LLM&quot;&quot;&quot;
+        for tool_name, tool_fn in self.tools.items():
+            if tool_name.lower() in action.lower():
+                return str(tool_fn(action))
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: f&quot;Execute this task: {action}&quot;}],
+        )
+        return resp.choices[0].message.content
+
+    def _aggregate(self, goal: str, results: list[ExecutionResult]) -&gt; str:
+        &quot;&quot;&quot;将子节点执行结果聚合为父目标的总结&quot;&quot;&quot;
+        parts = &quot;\n&quot;.join(f&quot;- {r.description}: {r.output[:200]}&quot; for r in results)
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;:
+                f&quot;Goal: {goal}\nSub-results:\n{parts}\nSummarize the overall outcome.&quot;}],
+        )
+        return resp.choices[0].message.content
+</code></pre>
+<p>分解与执行分离的好处：<code>HierarchicalPlanner</code> 可以用强模型（gpt-4o）做规划，<code>HierarchicalExecutor</code> 用快模型（gpt-4o-mini）做执行，兼顾规划质量和执行成本。同时，执行层可以独立替换——例如将 <code>_execute_action</code> 改为调用真实 API 或 Code Interpreter，而不影响规划逻辑。</p>
+<hr>
+<h2>7. Reflection（反思）机制</h2>
+<h3>7.1 为什么需要反思</h3>
+<p>Agent 有三类常见失败：LLM 输出错误（幻觉/逻辑错误）、工具执行失败（超时/参数错误）、计划不可行（前提假设不成立）。没有反思，错误会<strong>无意识地传播</strong>——第 2 步的错成为第 3 步的输入，错误不断累积。</p>
+<h3>7.2 Self-Critique</h3>
+<p>用同一个 LLM 评估自己的输出。理论支持：LLM 在<strong>验证</strong>上通常比<strong>生成</strong>更强（就像检查别人的代码比自己写更容易）。但盲区在于：LLM 的系统性偏见在生成和评估中是一致的。</p>
+<h3>7.3 结构化反思</h3>
+<pre><code class="language-python">@dataclass
+class ReflectionResult:
+    what_went_well: list[str]
+    what_went_wrong: list[str]
+    root_cause: str
+    what_to_do_next: str
+    should_retry: bool
+    confidence: float  # 0-1
+
+REFLECTION_PROMPT = &quot;&quot;&quot;Analyze this execution result.
+Goal: {goal} | Steps: {steps} | Result: {result}
+Return JSON: {{&quot;what_went_well&quot;:[], &quot;what_went_wrong&quot;:[], &quot;root_cause&quot;:&quot;&quot;,
+&quot;what_to_do_next&quot;:&quot;&quot;, &quot;should_retry&quot;: bool, &quot;confidence&quot;: 0.0-1.0}}&quot;&quot;&quot;
+</code></pre>
+<h3>7.4 Retry Budget 与 Stop Condition</h3>
+<p>反思不能无限循环。必须有 Stop Condition：</p>
+<pre><code>                  反思完成
+                     │
+          ┌──────────▼──────────┐   是
+          │ 质量 &gt;= 阈值？       │─────▶ 返回结果
+          └──────────┬──────────┘
+                     │ 否
+          ┌──────────▼──────────┐   是
+          │ 达到最大重试？       │─────▶ 返回最好的结果
+          └──────────┬──────────┘
+                     │ 否
+          ┌──────────▼──────────┐   是
+          │ 改进幅度 &lt; 阈值？    │─────▶ 停止（再试也没用）
+          └──────────┬──────────┘
+                     │ 否
+          ┌──────────▼──────────┐   是
+          │ 成本超出预算？       │─────▶ 返回当前结果
+          └──────────┬──────────┘
+                     │ 否
+                  继续重试
+</code></pre>
+<p>四个条件形成<strong>多层安全网</strong>：质量达标是正常退出，最大重试和成本预算是硬性保底，改进幅度检测是&quot;聪明的&quot;提前退出。</p>
+<h3>7.5 代码实现</h3>
+<pre><code class="language-python">@dataclass
+class ReflectionPolicy:
+    max_retries: int = 3
+    quality_threshold: float = 0.7
+    improvement_threshold: float = 0.1
+    cost_limit_tokens: int = 10000
+
+class ReflectiveAgent:
+    def __init__(self, base_agent: ReActAgent, policy: ReflectionPolicy,
+                 model: str = &quot;gpt-4o-mini&quot;):
+        self.base_agent = base_agent
+        self.policy = policy
+        self.model = model
+        self.client = openai.OpenAI()
+
+    def _reflect(self, goal, steps, result) -&gt; ReflectionResult:
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: REFLECTION_PROMPT.format(
+                goal=goal, steps=json.dumps(steps), result=result)}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        return ReflectionResult(**json.loads(resp.choices[0].message.content))
+
+    def run(self, goal: str) -&gt; str:
+        best_result, best_score = None, 0.0
+        history = []
+
+        for attempt in range(self.policy.max_retries + 1):
+            # 执行（重试时注入反思结论）
+            if attempt == 0:
+                result = self.base_agent.run(goal)
+            else:
+                enhanced = (f&quot;{goal}\n\nPrevious issues: {reflection.what_went_wrong}&quot;
+                           f&quot;\nRoot cause: {reflection.root_cause}&quot;
+                           f&quot;\nSuggestion: {reflection.what_to_do_next}&quot;)
+                result = self.base_agent.run(enhanced)
+
+            reflection = self._reflect(goal, history, result)
+
+            # Stop conditions
+            if reflection.confidence &gt;= self.policy.quality_threshold:
+                best_result, best_score = result, reflection.confidence
+                break
+            if not reflection.should_retry:
+                break
+            if attempt &gt; 0 and (reflection.confidence - best_score) &lt; self.policy.improvement_threshold:
+                break  # 改进幅度不足，再试也没用
+
+            # 更新最优结果（放在 stop condition 之后，避免 improvement 检查失效）
+            if reflection.confidence &gt; best_score:
+                best_result, best_score = result, reflection.confidence
+
+            history.append({&quot;attempt&quot;: attempt, &quot;issues&quot;: reflection.what_went_wrong})
+
+        return best_result or result
+</code></pre>
+<hr>
+<h2>8. Reflection 的陷阱</h2>
+<h3>8.1 无限循环</h3>
+<p>Agent 不断反思但不改进——反思发现了问题却没有提供有效的改进方向。解法：<code>improvement_threshold</code> 检测，连续两轮质量差距 &lt; 0.1 直接停止。</p>
+<h3>8.2 过度反思</h3>
+<p>简单任务（&quot;今天天气怎么样&quot;）也要三轮反思，浪费 3-4 倍 token。解法：引入复杂度判断，简单任务跳过反思。</p>
+<pre><code class="language-python">def needs_reflection(task: str, result: str) -&gt; bool:
+    &quot;&quot;&quot;简单任务不值得反思&quot;&quot;&quot;
+    if len(result) &lt; 100:  # 结果很短 → 可能是简单查询
+        return False
+    simple_patterns = [&quot;什么是&quot;, &quot;查一下&quot;, &quot;告诉我&quot;]
+    return not any(p in task for p in simple_patterns)
+</code></pre>
+<h3>8.3 成本爆炸</h3>
+<p>每次反思是完整 LLM 调用，包含完整上下文。对策：(1) 反思用小模型（GPT-4o-mini）；(2) 压缩上下文传摘要版本；(3) 采样反思（30% 的执行触发反思而非 100%）。</p>
+<h3>8.4 合理的 Reflection 策略</h3>
+<pre><code>Q1: 任务的错误成本高吗？
+  高 → 启用反思    低 → 跳过
+
+Q2: 错误可自动检测吗？
+  是（代码可测试） → 外部验证（更可靠更便宜）
+  否（文案质量）   → LLM Self-Critique
+
+Q3: 预算够吗？
+  够   → 结构化反思 + 多轮重试
+  不够 → 单轮 Self-Critique
+
+Q4: 延迟敏感吗？
+  是 → 最多一轮，超时直接返回
+  否 → 多轮直到质量达标
+</code></pre>
+<hr>
+<h2>9. 规划模式选型指南</h2>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>推荐模式</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>简单工具调用（查天气、算术）</td>
+<td><strong>ReAct</strong></td>
+<td>1-2 步完成，规划是过度设计</td>
+</tr>
+<tr>
+<td>多步研究（竞品分析、技术调研）</td>
+<td><strong>Plan-and-Execute</strong></td>
+<td>需要全局视野和步骤追踪</td>
+</tr>
+<tr>
+<td>创意/数学/代码</td>
+<td><strong>Tree-of-Thought</strong></td>
+<td>需探索多条路径并选最优</td>
+</tr>
+<tr>
+<td>复杂项目（系统设计）</td>
+<td><strong>Hierarchical</strong></td>
+<td>粒度跨度大，需递归分解</td>
+</tr>
+<tr>
+<td>高可靠（金融/法律）</td>
+<td><strong>Plan-and-Execute + Reflection</strong></td>
+<td>全局规划 + 结果验证</td>
+</tr>
+<tr>
+<td>实时交互（客服/对话）</td>
+<td><strong>ReAct</strong></td>
+<td>延迟敏感，逐步响应</td>
+</tr>
+<tr>
+<td>长时任务（数据管道）</td>
+<td><strong>Hierarchical + Plan-Exec</strong></td>
+<td>可中断、可恢复、可并行</td>
+</tr>
+</tbody></table>
+<p><strong>二维决策矩阵：</strong></p>
+<pre><code>                  任务步骤少            任务步骤多
+             ┌──────────────────┬──────────────────┐
+ 确定性高    │  ReAct            │  Plan-and-Exec   │
+ (路径清晰)  │ (甚至不需要Agent)  │                  │
+             ├──────────────────┼──────────────────┤
+ 确定性低    │  Tree-of-Thought  │  Hierarchical    │
+ (需要探索)  │                   │  + Reflection    │
+             └──────────────────┴──────────────────┘
+</code></pre>
+<p><strong>模式组合</strong>在生产中很常见：Hierarchical + Plan-and-Execute（高层分解子目标，内部用 Plan-Exec 执行）；ReAct + Reflection（逐步执行，每 N 步检查方向）。关键原则：<strong>从 ReAct 开始，只有当它的局限性确实成为瓶颈时再升级。</strong></p>
+<hr>
+<h2>10. 结语：规划的边界与 Multi-Agent 的必要性</h2>
+<p>规划和反思让单个 Agent 从&quot;走一步看一步&quot;进化到&quot;先想后做再检查&quot;。但单 Agent 的规划能力终有上限：</p>
+<ul>
+<li><strong>上下文窗口限制</strong>：任务涉及的知识和状态超出 context window 时，单 Agent 力不从心</li>
+<li><strong>专业性限制</strong>：一个 Agent 很难同时擅长编码、写作和数据分析——就像一个人很难同时是程序员、设计师和产品经理</li>
+<li><strong>执行效率限制</strong>：单 Agent 串行执行，即使计划中的步骤可以并行</li>
+</ul>
+<p>当这些限制成为瓶颈，你需要的不是更好的规划算法，而是<strong>多个 Agent 的协作</strong>——每个 Agent 专注于擅长领域，由 Orchestrator 协调。这正是下一篇的主题：<strong>Multi-Agent Collaboration: 多 Agent 协作模式与架构。</strong></p>
+<hr>
+<blockquote>
+<p><strong>进一步思考：</strong></p>
+<ol>
+<li>规划质量高度依赖 LLM 对任务域的理解。如果 LLM 从未见过某类任务，能否通过 few-shot examples 注入领域知识来提升规划质量？</li>
+<li>&quot;LLM 评估 LLM&quot; 的反思机制在多大程度上可靠？是否能引入外部验证信号（代码测试、人类反馈）来补强？</li>
+<li>Tree-of-Thought 的搜索空间是指数级的。能否借鉴 AlphaGo 的 MCTS 来更高效搜索？Reasoning model（如 o1、o3）是否已在内部做了类似的事情？</li>
+<li>规划和反思的 token 成本显著。能否缓存和复用已有的计划，为相似任务跳过规划阶段？</li>
+</ol>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 10 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/09-RAG%20as%20Cognitive%20Memory">09 | RAG as Cognitive Memory</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/11-Multi-Agent%20Collaboration">11 | Multi-Agent Collaboration</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+17:Td4c4,<h1>RAG as Cognitive Memory: 检索增强生成的工程实践</h1>
+<blockquote>
+<p>系列第 9 篇。上一篇我们讨论了 Agent 的记忆架构——会话状态、短期记忆与长期记忆。本篇聚焦长期记忆中最核心的工程问题：如何让 Agent 在海量知识中精准找到它需要的信息。</p>
+<p>核心命题：<strong>检索质量 &gt; 模型大小。</strong> 一个用 GPT-3.5 + 优秀 RAG 的系统，往往比 GPT-4 + 粗糙检索的系统表现更好。RAG 是工程问题，不是模型问题。</p>
+</blockquote>
+<hr>
+<h2>1. RAG 不是&quot;搜索+拼接&quot;</h2>
+<p>很多团队对 RAG 的理解停留在&quot;把搜索结果塞进 prompt&quot;这一层。这种理解会导致系统质量的天花板极低。</p>
+<p>RAG 的本质是 <strong>Agent 的认知记忆系统</strong>。人类回答问题时，不是把大脑里所有信息倒出来再筛选——而是根据问题的语义，精准地从记忆中提取相关片段，重新组织后输出回答。RAG 做的事情完全一样：理解 Query 的意图，从知识库中检索最相关的上下文，以最优的方式组织给 LLM，让它生成有据可依的回答。</p>
+<p>这个过程中，每一个环节都会影响最终质量：</p>
+<ul>
+<li><strong>Chunking 策略</strong>决定了知识的粒度——切得不好，语义被割裂，检索再准也没用</li>
+<li><strong>Embedding 质量</strong>决定了语义理解的上限——模型选错了，同义词都搜不到</li>
+<li><strong>检索策略</strong>决定了召回的完整性——只用向量搜索，专有名词和 ID 就会丢失</li>
+<li><strong>Reranking</strong>决定了精排的准确性——Top 100 召回可能很好，但 Top 5 的排序决定了 LLM 看到什么</li>
+<li><strong>Context Packing</strong>决定了 LLM 的信息利用率——塞太多噪声，LLM 反而会被干扰</li>
+</ul>
+<p>一个工程事实：在大多数 RAG 系统中，<strong>80% 的质量问题出在检索侧，而非生成侧。</strong> 换一个更贵的模型不如把检索做好。</p>
+<hr>
+<h2>2. RAG Pipeline 全景图</h2>
+<p>一个生产级 RAG 系统的完整数据流如下：</p>
+<pre><code>┌─────────────────────────────────────────────────────────────────────┐
+│                        OFFLINE (Indexing)                           │
+│                                                                     │
+│  ┌──────────┐   ┌───────────┐   ┌──────────┐   ┌────────────────┐  │
+│  │ Document │──→│ Ingestion │──→│ Chunking │──→│   Embedding    │  │
+│  │  Sources │   │ &amp; Cleaning│   │ Strategy │   │ (Text → Vec)   │  │
+│  └──────────┘   └───────────┘   └──────────┘   └───────┬────────┘  │
+│   PDF/HTML/MD    格式归一化       语义切分              │           │
+│   Code/DB        元数据提取       重叠策略         ┌────┴─────┐    │
+│                                                   │ Indexing  │    │
+│                                                   │ (Vector + │    │
+│                                                   │  BM25 DB) │    │
+│                                                   └────┬─────┘    │
+└────────────────────────────────────────────────────────┼──────────┘
+                                                         │
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┼ ─ ─ ─ ─ ─
+                                                         │
+┌────────────────────────────────────────────────────────┼──────────┐
+│                        ONLINE (Retrieval)              │           │
+│                                                        ▼           │
+│  ┌───────┐   ┌──────────┐   ┌───────────┐   ┌────────────────┐   │
+│  │ User  │──→│  Query   │──→│  Hybrid   │──→│   Reranking    │   │
+│  │ Query │   │ Expansion│   │  Search   │   │ (Cross-Encoder)│   │
+│  └───────┘   └──────────┘   │ BM25+Vec  │   └───────┬────────┘   │
+│               HyDE/扩写      └───────────┘           │            │
+│                              RRF 融合                 ▼            │
+│                                              ┌────────────────┐   │
+│                                              │Context Packing │   │
+│                                              │ (排序/截断/组织) │   │
+│                                              └───────┬────────┘   │
+│                                                      ▼            │
+│                                              ┌────────────────┐   │
+│                                              │   LLM Generate │   │
+│                                              │  (+ Citation)  │   │
+│                                              └───────┬────────┘   │
+│                                                      ▼            │
+│                                              ┌────────────────┐   │
+│                                              │   Response     │   │
+│                                              └────────────────┘   │
+└───────────────────────────────────────────────────────────────────┘
+</code></pre>
+<p>整个 Pipeline 分为两个阶段：<strong>离线索引（Offline Indexing）</strong> 和 <strong>在线检索（Online Retrieval）</strong>。离线阶段处理和索引文档，在线阶段处理用户查询并生成回答。接下来逐一拆解每个环节。</p>
+<hr>
+<h2>3. Ingestion：数据进入系统的第一关</h2>
+<h3>3.1 数据源多样性</h3>
+<p>真实世界的知识不会以整洁的纯文本出现。一个企业级 RAG 系统通常需要处理：</p>
+<table>
+<thead>
+<tr>
+<th>数据源</th>
+<th>挑战</th>
+<th>处理策略</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PDF</td>
+<td>布局复杂、表格、图片、双栏</td>
+<td>使用专用解析器（如 PyMuPDF、Unstructured）</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td>导航栏、广告、模板噪声</td>
+<td>内容提取 + boilerplate 去除</td>
+</tr>
+<tr>
+<td>Markdown</td>
+<td>相对规范，但嵌套结构多</td>
+<td>按标题层级保留结构信息</td>
+</tr>
+<tr>
+<td>代码文件</td>
+<td>函数、类、注释的语义边界</td>
+<td>AST 解析或按函数/类切分</td>
+</tr>
+<tr>
+<td>数据库</td>
+<td>结构化数据需转换为文本</td>
+<td>Schema 描述 + 行级文本化</td>
+</tr>
+</tbody></table>
+<h3>3.2 文档预处理</h3>
+<p>原始文档进入系统前，必须经过清洗和归一化：</p>
+<pre><code class="language-python">from dataclasses import dataclass, field
+from typing import Optional
+import hashlib
+import re
+
+@dataclass
+class Document:
+    &quot;&quot;&quot;归一化后的文档表示&quot;&quot;&quot;
+    content: str
+    source: str                           # 来源标识（URL、文件路径等）
+    doc_type: str                         # pdf, html, markdown, code
+    metadata: dict = field(default_factory=dict)  # 标题、作者、日期等
+    content_hash: str = &quot;&quot;                # 用于增量更新的去重
+
+    def __post_init__(self):
+        if not self.content_hash:
+            self.content_hash = hashlib.sha256(
+                self.content.encode()
+            ).hexdigest()
+
+
+def preprocess(raw_text: str) -&gt; str:
+    &quot;&quot;&quot;文档预处理：清洗 + 归一化&quot;&quot;&quot;
+    # 1. 去除多余空白
+    text = re.sub(r&#39;\n{3,}&#39;, &#39;\n\n&#39;, raw_text)
+    text = re.sub(r&#39; {2,}&#39;, &#39; &#39;, text)
+
+    # 2. 去除特殊控制字符
+    text = re.sub(r&#39;[\x00-\x08\x0b\x0c\x0e-\x1f]&#39;, &#39;&#39;, text)
+
+    # 3. 归一化 Unicode（统一全角/半角等）
+    import unicodedata
+    text = unicodedata.normalize(&#39;NFKC&#39;, text)
+
+    return text.strip()
+</code></pre>
+<h3>3.3 增量 vs 全量更新</h3>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>适用场景</th>
+<th>实现复杂度</th>
+<th>一致性保证</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>全量重建</strong></td>
+<td>文档量小、更新不频繁</td>
+<td>低</td>
+<td>强（每次全量保证一致）</td>
+</tr>
+<tr>
+<td><strong>增量更新</strong></td>
+<td>文档量大、频繁变更</td>
+<td>高</td>
+<td>需额外机制保证</td>
+</tr>
+</tbody></table>
+<p>增量更新的关键是 <strong>content hash 去重</strong>：对每个文档计算内容哈希，只有哈希变化时才重新处理。还需要处理文档删除——被删除的文档对应的 chunk 和向量必须从索引中清除，否则会产生&quot;幽灵知识&quot;。</p>
+<hr>
+<h2>4. Chunking：RAG 质量的胜负手</h2>
+<p>Chunking 是 RAG 中最容易被低估、但对质量影响最大的环节。切分策略直接决定了：</p>
+<ul>
+<li>检索时能否命中相关内容</li>
+<li>命中的内容是否包含足够上下文</li>
+<li>LLM 拿到的信息是否有噪声</li>
+</ul>
+<h3>4.1 固定长度切分</h3>
+<p>最简单的策略：按字符数或 token 数等间隔切分。</p>
+<pre><code class="language-python">def fixed_size_chunk(text: str, chunk_size: int = 512, overlap: int = 64) -&gt; list[str]:
+    &quot;&quot;&quot;固定长度切分，带重叠&quot;&quot;&quot;
+    chunks = []
+    start = 0
+    while start &lt; len(text):
+        end = start + chunk_size
+        chunks.append(text[start:end])
+        start = end - overlap  # 重叠区域
+    return chunks
+</code></pre>
+<p><strong>优点</strong>：实现简单，chunk 大小均匀，token 预算可控。<br><strong>缺点</strong>：完全不考虑语义边界。一个段落可能被从中间切开，一个完整的论述被分到两个 chunk 中，检索时只能命中半句话。</p>
+<p><strong>适用场景</strong>：对内容结构不了解、无法解析的纯文本；快速原型验证。</p>
+<h3>4.2 语义切分</h3>
+<p>按文档的天然结构（段落、标题、代码块）切分：</p>
+<pre><code class="language-python">import re
+
+def semantic_chunk(text: str, max_chunk_size: int = 1024) -&gt; list[str]:
+    &quot;&quot;&quot;基于语义边界的切分&quot;&quot;&quot;
+    # 按标题分割（Markdown）
+    sections = re.split(r&#39;\n(?=#{1,3}\s)&#39;, text)
+
+    chunks = []
+    for section in sections:
+        if len(section) &lt;= max_chunk_size:
+            chunks.append(section.strip())
+        else:
+            # 如果单个 section 太大，按段落再分
+            paragraphs = section.split(&#39;\n\n&#39;)
+            current_chunk = &quot;&quot;
+            for para in paragraphs:
+                if len(current_chunk) + len(para) &gt; max_chunk_size:
+                    if current_chunk:
+                        chunks.append(current_chunk.strip())
+                    current_chunk = para
+                else:
+                    current_chunk += &quot;\n\n&quot; + para
+            if current_chunk:
+                chunks.append(current_chunk.strip())
+
+    return [c for c in chunks if c]  # 过滤空 chunk
+</code></pre>
+<p><strong>优点</strong>：保留语义完整性，每个 chunk 是一个有意义的信息单元。<br><strong>缺点</strong>：chunk 大小不均匀；依赖文档格式的规范性。</p>
+<h3>4.3 递归切分</h3>
+<p>分层递归：先按最大的结构边界切，切不动再用更小的边界：</p>
+<pre><code class="language-python">def recursive_chunk(
+    text: str,
+    chunk_size: int = 512,
+    separators: list[str] = None
+) -&gt; list[str]:
+    &quot;&quot;&quot;递归切分：先按大结构，再按小结构&quot;&quot;&quot;
+    if separators is None:
+        separators = [
+            &quot;\n\n\n&quot;,   # 章节间空行
+            &quot;\n\n&quot;,      # 段落
+            &quot;\n&quot;,        # 行
+            &quot;. &quot;,        # 句子
+            &quot; &quot;,         # 单词
+        ]
+
+    if len(text) &lt;= chunk_size:
+        return [text]
+
+    # 找到当前层级能用的分隔符
+    for i, sep in enumerate(separators):
+        if sep in text:
+            parts = text.split(sep)
+            chunks = []
+            current = &quot;&quot;
+            for part in parts:
+                candidate = current + sep + part if current else part
+                if len(candidate) &lt;= chunk_size:
+                    current = candidate
+                else:
+                    if current:
+                        chunks.append(current)
+                    # 如果单个 part 仍然超限，用更细的分隔符递归
+                    if len(part) &gt; chunk_size:
+                        chunks.extend(
+                            recursive_chunk(part, chunk_size, separators[i+1:])
+                        )
+                    else:
+                        current = part
+            if current:
+                chunks.append(current)
+            return chunks
+
+    # 最后兜底：硬切
+    return fixed_size_chunk(text, chunk_size)
+</code></pre>
+<p>这是 LangChain 的 <code>RecursiveCharacterTextSplitter</code> 采用的核心思路——先试大分隔符，不行再试小的，层层递归。</p>
+<h3>4.4 Overlap 策略</h3>
+<p>为什么需要重叠？考虑这段文本被切成两个 chunk：</p>
+<pre><code>Chunk 1: &quot;...Transformer 模型的核心是 Self-Attention 机制，它允许模型在&quot;
+Chunk 2: &quot;处理每个 token 时参考序列中所有其他 token 的信息...&quot;
+</code></pre>
+<p>如果用户问&quot;Self-Attention 机制有什么作用&quot;，Chunk 1 命中了关键词但答案不完整，Chunk 2 有答案但没有关键词匹配不上。加入重叠区域后：</p>
+<pre><code>Chunk 1: &quot;...Transformer 模型的核心是 Self-Attention 机制，它允许模型在处理每个 token 时&quot;
+Chunk 2: &quot;Self-Attention 机制，它允许模型在处理每个 token 时参考序列中所有其他 token 的信息...&quot;
+</code></pre>
+<p>两个 chunk 都包含了完整的语义。</p>
+<p><strong>重叠多少合适？</strong> 经验值是 chunk 大小的 10%-20%。太少起不到作用，太多则增加存储和检索冗余。对于 512 token 的 chunk，50-100 token 的 overlap 是合理的起点。</p>
+<h3>4.5 Chunking 策略选择 Trade-off</h3>
+<pre><code>                    Chunk 大小 Trade-off
+
+      太小 (&lt; 256 tokens)              太大 (&gt; 2048 tokens)
+      ┌─────────────────┐              ┌─────────────────┐
+      │ + 检索精确        │              │ + 上下文完整     │
+      │ + 噪声少          │              │ + 语义连贯       │
+      │ - 上下文不足       │              │ - 引入噪声       │
+      │ - 需要检索更多 chunk│              │ - 检索不精确     │
+      │ - 容易丢失关联信息  │              │ - token 预算浪费 │
+      └─────────────────┘              └─────────────────┘
+                        │              │
+                        ▼              ▼
+                   ┌─────────────────────┐
+                   │  Sweet Spot         │
+                   │  512 - 1024 tokens  │
+                   │  根据文档类型调整     │
+                   └─────────────────────┘
+</code></pre>
+<p>实际选择建议：</p>
+<table>
+<thead>
+<tr>
+<th>文档类型</th>
+<th>推荐 Chunk 大小</th>
+<th>推荐策略</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术文档</td>
+<td>512-768 tokens</td>
+<td>递归（按标题+段落）</td>
+<td>结构清晰，段落边界明确</td>
+</tr>
+<tr>
+<td>法律/合同</td>
+<td>768-1024 tokens</td>
+<td>语义（按条款）</td>
+<td>条款不可割裂</td>
+</tr>
+<tr>
+<td>代码</td>
+<td>按函数/类</td>
+<td>语义（AST 辅助）</td>
+<td>函数是最小可理解单元</td>
+</tr>
+<tr>
+<td>FAQ</td>
+<td>每个 QA 一个 chunk</td>
+<td>自然边界</td>
+<td>问答对不可拆分</td>
+</tr>
+<tr>
+<td>聊天记录</td>
+<td>256-512 tokens</td>
+<td>按对话轮次</td>
+<td>保持对话上下文</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>5. Embedding：将语义映射到向量空间</h2>
+<h3>5.1 Embedding 模型选择</h3>
+<p>Embedding 模型将文本转换为高维向量，使语义相似的文本在向量空间中距离更近。选择合适的模型是基础。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>考量</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>通用 vs 领域</strong></td>
+<td>通用模型覆盖面广但特定领域可能不够精确</td>
+<td>先用通用模型验证，数据足够后考虑微调</td>
+</tr>
+<tr>
+<td><strong>向量维度</strong></td>
+<td>768 / 1024 / 1536 / 3072</td>
+<td>768-1024 是性价比最高的区间</td>
+</tr>
+<tr>
+<td><strong>多语言</strong></td>
+<td>中英混合场景极其常见</td>
+<td>必须选支持多语言的模型</td>
+</tr>
+<tr>
+<td><strong>推理成本</strong></td>
+<td>高维模型索引和检索更慢</td>
+<td>生产环境需要 benchmark 延迟</td>
+</tr>
+</tbody></table>
+<p>关于维度选择的 Trade-off：维度越高，理论上能表示的语义越丰富——但实际收益递减明显。从 768 到 1536 的提升远小于从 384 到 768。同时，维度翻倍意味着存储翻倍、检索延迟增加。对大多数场景，<strong>1024 维是一个好的默认选择</strong>。</p>
+<h3>5.2 MTEB Benchmark</h3>
+<p>选择 Embedding 模型时，<a href="https://huggingface.co/spaces/mteb/leaderboard">MTEB（Massive Text Embedding Benchmark）</a> 是最权威的参考。它从 Retrieval、Classification、Clustering 等多个维度评估模型能力。</p>
+<p>但请注意：<strong>MTEB 排名第一的模型不一定适合你。</strong> 你需要关注：</p>
+<ul>
+<li>你的数据语言在 benchmark 中是否有代表性</li>
+<li>模型大小是否符合你的延迟和成本要求</li>
+<li>Retrieval 子任务的分数（而非总分）才是 RAG 场景最相关的</li>
+</ul>
+<h3>5.3 Embedding 实现</h3>
+<pre><code class="language-python">from typing import Protocol
+
+class EmbeddingModel(Protocol):
+    &quot;&quot;&quot;Embedding 模型接口抽象&quot;&quot;&quot;
+    def embed(self, texts: list[str]) -&gt; list[list[float]]:
+        ...
+
+    @property
+    def dimension(self) -&gt; int:
+        ...
+
+
+class OpenAIEmbedding:
+    &quot;&quot;&quot;OpenAI Embedding 实现示例&quot;&quot;&quot;
+    def __init__(self, model: str = &quot;text-embedding-3-small&quot;):
+        from openai import OpenAI
+        self.client = OpenAI()
+        self.model = model
+        self._dimension = 1536  # text-embedding-3-small 默认维度
+
+    def embed(self, texts: list[str]) -&gt; list[list[float]]:
+        # 批量请求，减少 API 调用次数
+        response = self.client.embeddings.create(
+            model=self.model,
+            input=texts
+        )
+        return [item.embedding for item in response.data]
+
+    @property
+    def dimension(self) -&gt; int:
+        return self._dimension
+</code></pre>
+<p>关键工程实践：</p>
+<ol>
+<li><strong>批量 Embedding</strong>：不要逐条调用 API，而是批量发送（通常 API 限制 2048 条/次）</li>
+<li><strong>缓存</strong>：相同内容不要重复 Embed，用 content hash 做缓存 key</li>
+<li><strong>归一化</strong>：部分模型输出未归一化的向量，需要显式 L2 归一化后再入库，否则 cosine similarity 计算不准</li>
+</ol>
+<hr>
+<h2>6. 检索策略：Hybrid Search</h2>
+<p>检索是 RAG 的核心。单一检索策略各有盲区，生产系统几乎都采用混合检索。</p>
+<h3>6.1 稀疏检索（BM25）</h3>
+<p>BM25 是经典的基于词频的检索算法。它的核心思想：一个词在某篇文档中出现频率高（TF），同时在所有文档中出现频率低（IDF），则该词对该文档的重要性高。</p>
+<pre><code class="language-python">import math
+from collections import Counter
+
+class BM25:
+    &quot;&quot;&quot;简化版 BM25 实现，展示核心原理&quot;&quot;&quot;
+    def __init__(self, documents: list[str], k1: float = 1.5, b: float = 0.75):
+        self.k1 = k1
+        self.b = b
+        self.docs = documents
+        self.doc_count = len(documents)
+
+        # 预处理：分词 + 词频统计
+        self.doc_tokens = [doc.lower().split() for doc in documents]
+        self.doc_lengths = [len(tokens) for tokens in self.doc_tokens]
+        self.avg_dl = sum(self.doc_lengths) / self.doc_count
+
+        # IDF 预计算
+        self.idf = {}
+        df = Counter()  # 包含某词的文档数
+        for tokens in self.doc_tokens:
+            for token in set(tokens):
+                df[token] += 1
+        for token, freq in df.items():
+            self.idf[token] = math.log(
+                (self.doc_count - freq + 0.5) / (freq + 0.5) + 1
+            )
+
+    def score(self, query: str, doc_idx: int) -&gt; float:
+        &quot;&quot;&quot;计算 query 与某文档的 BM25 分数&quot;&quot;&quot;
+        query_tokens = query.lower().split()
+        doc_tokens = self.doc_tokens[doc_idx]
+        doc_len = self.doc_lengths[doc_idx]
+        tf = Counter(doc_tokens)
+
+        score = 0.0
+        for qt in query_tokens:
+            if qt not in self.idf:
+                continue
+            term_freq = tf.get(qt, 0)
+            numerator = term_freq * (self.k1 + 1)
+            denominator = term_freq + self.k1 * (
+                1 - self.b + self.b * doc_len / self.avg_dl
+            )
+            score += self.idf[qt] * numerator / denominator
+        return score
+
+    def search(self, query: str, top_k: int = 10) -&gt; list[tuple[int, float]]:
+        &quot;&quot;&quot;返回 Top-K 结果：(文档索引, 分数)&quot;&quot;&quot;
+        scores = [(i, self.score(query, i)) for i in range(self.doc_count)]
+        scores.sort(key=lambda x: x[1], reverse=True)
+        return scores[:top_k]
+</code></pre>
+<p><strong>BM25 的优势</strong>：精确的关键词匹配。用户搜&quot;error code 4012&quot;，BM25 能精确命中包含&quot;4012&quot;的文档，而 Embedding 模型可能完全无法区分&quot;4012&quot;和&quot;4013&quot;。</p>
+<p><strong>BM25 的劣势</strong>：不理解语义。用户问&quot;如何提升系统吞吐量&quot;，包含&quot;提高 QPS&quot;的文档不会被召回，因为没有词汇重叠。</p>
+<h3>6.2 稠密检索（Vector Search）</h3>
+<p>基于 Embedding 的向量检索，通过语义相似度匹配：</p>
+<pre><code class="language-python">import numpy as np
+
+class VectorSearch:
+    &quot;&quot;&quot;基于向量的语义检索&quot;&quot;&quot;
+    def __init__(self, embedder: EmbeddingModel):
+        self.embedder = embedder
+        self.vectors: np.ndarray | None = None
+        self.documents: list[str] = []
+
+    def index(self, documents: list[str]):
+        &quot;&quot;&quot;构建索引&quot;&quot;&quot;
+        self.documents = documents
+        embeddings = self.embedder.embed(documents)
+        self.vectors = np.array(embeddings)
+        # L2 归一化，使 dot product = cosine similarity
+        norms = np.linalg.norm(self.vectors, axis=1, keepdims=True)
+        self.vectors = self.vectors / norms
+
+    def search(self, query: str, top_k: int = 10) -&gt; list[tuple[int, float]]:
+        &quot;&quot;&quot;语义检索&quot;&quot;&quot;
+        query_vec = np.array(self.embedder.embed([query])[0])
+        query_vec = query_vec / np.linalg.norm(query_vec)
+
+        # Cosine Similarity（归一化后等价于点积）
+        similarities = self.vectors @ query_vec
+        top_indices = np.argsort(similarities)[::-1][:top_k]
+        return [(int(i), float(similarities[i])) for i in top_indices]
+</code></pre>
+<p><strong>Vector Search 的优势</strong>：语义理解。&quot;提升吞吐量&quot;和&quot;提高 QPS&quot;会被映射到相近的向量空间位置。</p>
+<p><strong>Vector Search 的劣势</strong>：对精确匹配不敏感（ID、错误码、专有名词）；向量索引的存储和计算成本较高。</p>
+<h3>6.3 混合检索与 RRF</h3>
+<p>混合检索结合 BM25 和 Vector Search 的结果。关键问题是：两路检索返回的分数不在同一尺度上，如何融合？</p>
+<p><strong>Reciprocal Rank Fusion（RRF）</strong> 是最常用的融合算法。它不关心分数的绝对值，只关心排名：</p>
+<p>$$RRF(d) = \sum_{r \in R} \frac{1}{k + rank_r(d)}$$</p>
+<p>其中 $k$ 是常数（通常取 60），$rank_r(d)$ 是文档 $d$ 在检索源 $r$ 中的排名。</p>
+<pre><code class="language-python">def reciprocal_rank_fusion(
+    *result_lists: list[tuple[int, float]],
+    k: int = 60
+) -&gt; list[tuple[int, float]]:
+    &quot;&quot;&quot;
+    RRF 融合多路检索结果
+
+    参数:
+        result_lists: 多路检索结果，每路是 (doc_id, score) 列表（已按 score 降序）
+        k: 平滑常数，默认 60
+
+    返回:
+        融合后的 (doc_id, rrf_score) 列表，按 rrf_score 降序
+    &quot;&quot;&quot;
+    rrf_scores: dict[int, float] = {}
+
+    for results in result_lists:
+        for rank, (doc_id, _score) in enumerate(results):
+            # RRF 公式：只关心排名，不关心原始分数
+            rrf_scores[doc_id] = rrf_scores.get(doc_id, 0.0) + 1.0 / (k + rank + 1)
+
+    # 按 RRF 分数降序排列
+    fused = sorted(rrf_scores.items(), key=lambda x: x[1], reverse=True)
+    return fused
+
+
+class HybridSearch:
+    &quot;&quot;&quot;混合检索：BM25 + Vector + RRF&quot;&quot;&quot;
+    def __init__(self, bm25: BM25, vector_search: VectorSearch):
+        self.bm25 = bm25
+        self.vector_search = vector_search
+
+    def search(self, query: str, top_k: int = 10, retrieve_k: int = 50) -&gt; list[tuple[int, float]]:
+        &quot;&quot;&quot;
+        混合检索
+
+        retrieve_k: 每路检索的召回数量（远大于最终 top_k，保证融合质量）
+        &quot;&quot;&quot;
+        bm25_results = self.bm25.search(query, top_k=retrieve_k)
+        vector_results = self.vector_search.search(query, top_k=retrieve_k)
+
+        fused = reciprocal_rank_fusion(bm25_results, vector_results)
+        return fused[:top_k]
+</code></pre>
+<h3>6.4 检索策略对比</h3>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>精确匹配</th>
+<th>语义理解</th>
+<th>专有名词/ID</th>
+<th>同义词/意图</th>
+<th>延迟</th>
+<th>存储成本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>BM25</strong></td>
+<td>强</td>
+<td>弱</td>
+<td>强</td>
+<td>弱</td>
+<td>低</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>Vector</strong></td>
+<td>弱</td>
+<td>强</td>
+<td>弱</td>
+<td>强</td>
+<td>中</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>Hybrid (RRF)</strong></td>
+<td>强</td>
+<td>强</td>
+<td>强</td>
+<td>强</td>
+<td>中</td>
+<td>高</td>
+</tr>
+</tbody></table>
+<p><strong>工程建议</strong>：除非你非常确定场景只需要语义搜索（比如纯自然语言文档、没有 ID 和代码），否则<strong>默认使用 Hybrid Search</strong>。BM25 的实现成本极低，加上它获得的互补收益是巨大的。</p>
+<hr>
+<h2>7. Reranking：从召回到精排</h2>
+<h3>7.1 为什么需要 Reranking</h3>
+<p>初步检索（BM25 + Vector）的目标是 <strong>高召回率（Recall）</strong>——尽量把相关文档都捞出来。但排在前面的不一定最相关。</p>
+<p>这就像搜索引擎的两阶段架构：第一阶段用轻量算法从亿级文档中召回 1000 条，第二阶段用重模型对 1000 条做精排，选出最终展示的 10 条。</p>
+<p>RAG 中同样如此：</p>
+<ul>
+<li><strong>阶段一（Retrieval）</strong>：从整个知识库中召回 Top-50 或 Top-100</li>
+<li><strong>阶段二（Reranking）</strong>：对这 50-100 条用更强的模型精排，选出 Top-5 送给 LLM</li>
+</ul>
+<h3>7.2 Bi-encoder vs Cross-encoder</h3>
+<pre><code>Bi-encoder（初步检索阶段）:
+┌───────────┐     ┌───────────┐
+│  Query    │     │ Document  │
+└─────┬─────┘     └─────┬─────┘
+      │                 │
+      ▼                 ▼
+┌───────────┐     ┌───────────┐
+│ Encoder   │     │ Encoder   │     独立编码
+└─────┬─────┘     └─────┬─────┘     ↓ 可以预计算
+      │                 │           ↓ 速度快
+      ▼                 ▼           ↓ 精度有限
+   vec_q            vec_d
+      │                 │
+      └───────┬─────────┘
+              ▼
+        cosine(q, d)  →  score
+
+
+Cross-encoder（Reranking 阶段）:
+┌───────────────────────────────┐
+│     [CLS] Query [SEP] Doc    │    拼接在一起
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│       Transformer Encoder      │    联合编码
+│      (交叉注意力)               │    ↓ 不可预计算
+└───────────────┬───────────────┘    ↓ 速度慢
+                │                    ↓ 精度高
+                ▼
+             score
+</code></pre>
+<p>核心区别：</p>
+<ul>
+<li><strong>Bi-encoder</strong>：Query 和 Document 独立编码，Document 可以离线预计算向量。速度快，适合海量候选。但无法捕捉 Query 和 Document 之间的深层交互。</li>
+<li><strong>Cross-encoder</strong>：Query 和 Document 拼接后一起送入 Transformer，模型能看到两者的每个 token 之间的注意力。精度高，但每对 (Query, Document) 都需要实时计算，速度慢。</li>
+</ul>
+<p>因此，Cross-encoder 只适合对少量候选做精排——这正是 Reranking 的定位。</p>
+<h3>7.3 Reranking 实现</h3>
+<pre><code class="language-python">from dataclasses import dataclass
+
+@dataclass
+class RerankResult:
+    doc_id: int
+    content: str
+    score: float
+
+class Reranker:
+    &quot;&quot;&quot;基于 Cross-encoder 的重排序&quot;&quot;&quot;
+
+    def __init__(self, model_name: str = &quot;BAAI/bge-reranker-v2-m3&quot;):
+        # 实际使用时可以接入任意 Rerank 服务
+        # 这里展示 API 调用模式
+        self.model_name = model_name
+
+    def rerank(
+        self,
+        query: str,
+        documents: list[str],
+        doc_ids: list[int],
+        top_k: int = 5
+    ) -&gt; list[RerankResult]:
+        &quot;&quot;&quot;
+        对候选文档重排序
+
+        生产环境中通常调用 Rerank API（如 Cohere Rerank、Jina Rerank）
+        或本地部署 Cross-encoder 模型
+        &quot;&quot;&quot;
+        scores = self._compute_relevance(query, documents)
+
+        # 按相关性得分降序排列
+        ranked = sorted(
+            zip(doc_ids, documents, scores),
+            key=lambda x: x[2],
+            reverse=True
+        )
+
+        return [
+            RerankResult(doc_id=did, content=doc, score=s)
+            for did, doc, s in ranked[:top_k]
+        ]
+
+    def _compute_relevance(self, query: str, documents: list[str]) -&gt; list[float]:
+        &quot;&quot;&quot;
+        计算 query 与每个 document 的相关性分数
+        实际实现会调用 Cross-encoder 模型
+        &quot;&quot;&quot;
+        # 伪代码：真实场景替换为模型推理
+        # from sentence_transformers import CrossEncoder
+        # model = CrossEncoder(self.model_name)
+        # pairs = [(query, doc) for doc in documents]
+        # scores = model.predict(pairs)
+        # return scores.tolist()
+        raise NotImplementedError(&quot;替换为实际模型调用&quot;)
+</code></pre>
+<p><strong>Reranker 选择建议</strong>：</p>
+<ul>
+<li><strong>精度优先</strong>：Cohere Rerank、BGE Reranker v2 等专用模型</li>
+<li><strong>成本优先</strong>：可以用小参数量的 Cross-encoder（如 MiniLM 系列）</li>
+<li><strong>延迟敏感</strong>：控制候选数量（50 条以内），或使用量化版模型</li>
+</ul>
+<hr>
+<h2>8. Context Packing：信息如何送达 LLM</h2>
+<p>检索和重排序完成后，拿到了 Top-K 个最相关的 chunk。接下来的问题是：如何把这些 chunk 组织到 prompt 中，让 LLM 最大化利用？</p>
+<h3>8.1 &quot;Lost in the Middle&quot; 问题</h3>
+<p>Stanford 的研究（<a href="https://arxiv.org/abs/2307.03172">Liu et al., 2023</a>）发现了一个关键现象：LLM 对 prompt 中间位置的信息利用率显著低于开头和结尾。</p>
+<pre><code>LLM 对不同位置信息的利用率（示意）:
+
+利用率
+  ▲
+  │ █                                              █ █
+  │ █ █                                          █ █ █
+  │ █ █ █                                      █ █ █ █
+  │ █ █ █ █                                  █ █ █ █ █
+  │ █ █ █ █ █                              █ █ █ █ █ █
+  │ █ █ █ █ █ █ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ █ █ █ █ █ █
+  │ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █
+  └───────────────────────────────────────────────────→ 位置
+    开头                  中间                  结尾
+</code></pre>
+<p>这意味着：<strong>最相关的文档应该放在 prompt 的开头或结尾，而非中间。</strong></p>
+<h3>8.2 Context Packing 策略</h3>
+<pre><code class="language-python">def pack_context(
+    ranked_results: list[RerankResult],
+    max_tokens: int = 3000,
+    strategy: str = &quot;relevance_first&quot;
+) -&gt; str:
+    &quot;&quot;&quot;
+    将检索结果组织为 LLM 的上下文
+
+    策略:
+        relevance_first: 最相关的放在最前面（默认）
+        edges_first: 最相关的放开头和结尾，次相关的放中间
+    &quot;&quot;&quot;
+    # 1. Token 预算下的截断
+    selected = []
+    current_tokens = 0
+    for result in ranked_results:
+        # 粗略估算 token 数（实际应用 tiktoken）
+        estimated_tokens = len(result.content) // 3
+        if current_tokens + estimated_tokens &gt; max_tokens:
+            break
+        selected.append(result)
+        current_tokens += estimated_tokens
+
+    if not selected:
+        return &quot;&quot;
+
+    # 2. 根据策略决定顺序
+    if strategy == &quot;edges_first&quot; and len(selected) &gt;= 3:
+        # 交替放置：最相关 → 最不相关 → 次相关 → 次不相关 ...
+        reordered = []
+        left, right = 0, len(selected) - 1
+        toggle = True
+        while left &lt;= right:
+            if toggle:
+                reordered.append(selected[left])
+                left += 1
+            else:
+                reordered.append(selected[right])
+                right -= 1
+            toggle = not toggle
+        selected = reordered
+
+    # 3. 格式化
+    context_parts = []
+    for i, result in enumerate(selected):
+        context_parts.append(
+            f&quot;[Document {i+1}] (relevance: {result.score:.3f})\n{result.content}&quot;
+        )
+
+    return &quot;\n\n---\n\n&quot;.join(context_parts)
+</code></pre>
+<h3>8.3 Token 预算管理</h3>
+<p>LLM 的 context window 是有限的。一个典型的 prompt 结构：</p>
+<pre><code>┌─────────────────────────────────────────┐
+│  System Prompt        ~500 tokens       │
+├─────────────────────────────────────────┤
+│  Retrieved Context    ~3000 tokens      │  ← 这里是 Context Packing 的空间
+├─────────────────────────────────────────┤
+│  Conversation History ~1000 tokens      │
+├─────────────────────────────────────────┤
+│  User Query           ~200 tokens       │
+├─────────────────────────────────────────┤
+│  Output Reserve       ~2000 tokens      │  ← 留给模型生成
+└─────────────────────────────────────────┘
+  Total Budget:         ~6700 tokens
+</code></pre>
+<p>Context 部分的 token 预算 = 总 context window - system prompt - conversation history - user query - output reserve。在这个预算内，优先放入 Reranking 得分最高的 chunk，直到预算用完。</p>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>宁可少放几个 chunk、每个 chunk 完整，也不要截断 chunk 送进去——被截断的信息比没有信息更糟糕</li>
+<li>为每个 chunk 附加来源标识（文档名、URL），方便 LLM 生成 citation</li>
+<li>如果多个 chunk 来自同一文档的相邻位置，考虑合并后再送入，减少碎片化</li>
+</ul>
+<hr>
+<h2>9. RAG 评估体系</h2>
+<p>&quot;不可度量则不可改进。&quot; RAG 系统的评估需要覆盖检索和生成两个维度。</p>
+<h3>9.1 Retrieval 评估</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>公式/含义</th>
+<th>衡量什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Recall@K</strong></td>
+<td>在 Top-K 结果中，相关文档被召回的比例</td>
+<td>检索的完整性</td>
+</tr>
+<tr>
+<td><strong>MRR</strong></td>
+<td>第一个相关文档的排名的倒数，取平均</td>
+<td>用户需要翻多远才能看到答案</td>
+</tr>
+<tr>
+<td><strong>NDCG@K</strong></td>
+<td>考虑位置权重的相关性评分（越靠前权重越高）</td>
+<td>排序质量</td>
+</tr>
+</tbody></table>
+<pre><code class="language-python">def recall_at_k(relevant_ids: set[int], retrieved_ids: list[int], k: int) -&gt; float:
+    &quot;&quot;&quot;Recall@K: Top-K 中召回了多少相关文档&quot;&quot;&quot;
+    retrieved_set = set(retrieved_ids[:k])
+    if not relevant_ids:
+        return 0.0
+    return len(relevant_ids &amp; retrieved_set) / len(relevant_ids)
+
+
+def mrr(relevant_ids: set[int], retrieved_ids: list[int]) -&gt; float:
+    &quot;&quot;&quot;MRR: 第一个相关结果的排名倒数&quot;&quot;&quot;
+    for rank, doc_id in enumerate(retrieved_ids, start=1):
+        if doc_id in relevant_ids:
+            return 1.0 / rank
+    return 0.0
+
+
+def ndcg_at_k(relevance_scores: list[int], k: int) -&gt; float:
+    &quot;&quot;&quot;
+    NDCG@K: 归一化折损累积增益
+
+    relevance_scores: 按检索排序的相关性评分列表（如 0/1/2/3）
+    &quot;&quot;&quot;
+    import math
+
+    def dcg(scores: list[int], k: int) -&gt; float:
+        return sum(
+            score / math.log2(rank + 2)  # rank 从 0 开始，log2(1) = 0 所以 +2
+            for rank, score in enumerate(scores[:k])
+        )
+
+    actual_dcg = dcg(relevance_scores, k)
+    ideal_dcg = dcg(sorted(relevance_scores, reverse=True), k)
+
+    return actual_dcg / ideal_dcg if ideal_dcg &gt; 0 else 0.0
+</code></pre>
+<h3>9.2 Generation 评估</h3>
+<p>检索质量好不意味着生成质量好。Generation 阶段需要评估：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>衡量什么</th>
+<th>检测方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Faithfulness</strong></td>
+<td>回答是否忠于检索到的上下文（不编造）</td>
+<td>检查回答中的每个声明是否有 context 支撑</td>
+</tr>
+<tr>
+<td><strong>Answer Relevancy</strong></td>
+<td>回答是否与用户问题相关</td>
+<td>生成反向问题，比较与原问题的相似度</td>
+</tr>
+<tr>
+<td><strong>Context Relevancy</strong></td>
+<td>检索到的上下文是否与问题相关</td>
+<td>评估 context 中有多少内容是回答问题所需的</td>
+</tr>
+</tbody></table>
+<p>这三个指标构成了 RAG 质量的 &quot;Triad&quot;：</p>
+<pre><code>                    ┌─────────────┐
+                    │   Query     │
+                    └──────┬──────┘
+                           │
+              ┌────────────┼────────────┐
+              │                         │
+              ▼                         ▼
+     ┌────────────────┐       ┌────────────────┐
+     │   Context      │       │   Answer       │
+     │  (Retrieved)   │       │  (Generated)   │
+     └────────┬───────┘       └────────┬───────┘
+              │                        │
+              │    ┌──────────────┐    │
+              └───→│ Faithfulness │←───┘
+                   └──────────────┘
+
+     Query ↔ Context  = Context Relevancy
+     Query ↔ Answer   = Answer Relevancy
+     Context ↔ Answer = Faithfulness
+</code></pre>
+<h3>9.3 RAGAS 框架</h3>
+<p><a href="https://docs.ragas.io/">RAGAS（Retrieval Augmented Generation Assessment）</a> 是目前最流行的端到端 RAG 评估框架，它自动化评估上述指标：</p>
+<pre><code class="language-python"># RAGAS 评估示意（伪代码）
+def evaluate_rag_pipeline(test_cases: list[dict]) -&gt; dict:
+    &quot;&quot;&quot;
+    每个 test_case 包含:
+        - question: 用户问题
+        - ground_truth: 标准答案（人工标注）
+        - retrieved_contexts: 检索到的上下文
+        - generated_answer: RAG 系统生成的答案
+    &quot;&quot;&quot;
+    metrics = {
+        &quot;faithfulness&quot;: [],       # 回答是否忠于 context
+        &quot;answer_relevancy&quot;: [],   # 回答是否切题
+        &quot;context_relevancy&quot;: [],  # context 是否相关
+        &quot;context_recall&quot;: [],     # context 是否覆盖了 ground truth 的信息
+    }
+
+    for case in test_cases:
+        # Faithfulness: 把 answer 拆成多个 statement，
+        # 逐一检查每个 statement 是否能从 context 中推导出来
+        metrics[&quot;faithfulness&quot;].append(
+            check_faithfulness(case[&quot;generated_answer&quot;], case[&quot;retrieved_contexts&quot;])
+        )
+
+        # Answer Relevancy: 从 answer 反向生成问题，
+        # 计算生成的问题与原始 question 的语义相似度
+        metrics[&quot;answer_relevancy&quot;].append(
+            check_answer_relevancy(case[&quot;question&quot;], case[&quot;generated_answer&quot;])
+        )
+
+        # Context Relevancy: 评估 context 中有多少句子是回答问题所需的
+        metrics[&quot;context_relevancy&quot;].append(
+            check_context_relevancy(case[&quot;question&quot;], case[&quot;retrieved_contexts&quot;])
+        )
+
+        # Context Recall: 对照 ground truth，检查 context 是否包含了必要的信息
+        metrics[&quot;context_recall&quot;].append(
+            check_context_recall(case[&quot;ground_truth&quot;], case[&quot;retrieved_contexts&quot;])
+        )
+
+    return {k: sum(v) / len(v) for k, v in metrics.items()}
+</code></pre>
+<p><strong>实际操作建议</strong>：</p>
+<ol>
+<li>构建 50-100 条高质量的评估数据集（question + ground_truth），这是最值得投入的工作</li>
+<li>每次修改 Pipeline（换 Embedding、调 Chunking、加 Reranker）后跑一轮评估</li>
+<li>关注指标的变化方向，而非绝对数值——不同数据集上的绝对分数不可比</li>
+</ol>
+<hr>
+<h2>10. 常见问题与优化</h2>
+<h3>10.1 检索不到相关内容</h3>
+<p><strong>症状</strong>：知识库中明明有答案，但检索结果中找不到。</p>
+<p><strong>原因分析</strong>：用户的 Query 和知识库中的表述方式差异太大。</p>
+<p><strong>优化手段</strong>：</p>
+<p><strong>Query Expansion（查询扩展）</strong>：将用户的短 Query 扩展为多个变体，增加召回率：</p>
+<pre><code class="language-python">def expand_query(query: str, llm_call) -&gt; list[str]:
+    &quot;&quot;&quot;用 LLM 扩展查询，生成多个语义等价的变体&quot;&quot;&quot;
+    prompt = f&quot;&quot;&quot;Given the search query: &quot;{query}&quot;
+
+Generate 3 alternative phrasings that express the same intent but use different words.
+Return each variant on a new line, without numbering.&quot;&quot;&quot;
+
+    variants = llm_call(prompt).strip().split(&quot;\n&quot;)
+    return [query] + [v.strip() for v in variants if v.strip()]
+</code></pre>
+<p><strong>HyDE（Hypothetical Document Embeddings）</strong>：先让 LLM 生成一个&quot;假想答案&quot;，用这个答案的 Embedding 去检索，而不是用 Query 的 Embedding。直觉上，答案和知识库中的文档更&quot;长得像&quot;：</p>
+<pre><code class="language-python">def hyde_search(query: str, llm_call, vector_search: VectorSearch, top_k: int = 10):
+    &quot;&quot;&quot;HyDE: 用假想答案的 Embedding 检索&quot;&quot;&quot;
+    # 1. 让 LLM 生成假想答案（不需要准确，只需要&quot;像&quot;真正的文档）
+    hypothetical_doc = llm_call(
+        f&quot;Please write a short passage that answers the following question: {query}&quot;
+    )
+
+    # 2. 用假想答案的 Embedding 检索（而非 Query 的 Embedding）
+    results = vector_search.search(hypothetical_doc, top_k=top_k)
+    return results
+</code></pre>
+<p>HyDE 的 trade-off：增加了一次 LLM 调用的延迟和成本，但对检索质量的提升在某些场景下非常显著（尤其是短 Query 场景）。</p>
+<h3>10.2 检索到了但 LLM 没用上</h3>
+<p><strong>症状</strong>：检索结果中包含正确答案，但 LLM 的回答忽略了它或回答错误。</p>
+<p><strong>原因分析</strong>：</p>
+<ul>
+<li>Context 太长，答案被&quot;淹没&quot;在噪声中（Lost in the Middle）</li>
+<li>多个 chunk 包含矛盾信息，LLM 困惑了</li>
+<li>Prompt 没有明确指示 LLM &quot;基于以下上下文回答&quot;</li>
+</ul>
+<p><strong>优化手段</strong>：</p>
+<ul>
+<li>减少送入的 chunk 数量，只保留 Top-3 而非 Top-10</li>
+<li>使用 Reranker 提高 Top-K 的精度</li>
+<li>在 System Prompt 中明确要求：只基于提供的上下文回答，如果上下文不足以回答则明确说明</li>
+<li>应用 &quot;edges_first&quot; 排布策略（见 8.2 节）</li>
+</ul>
+<h3>10.3 幻觉问题</h3>
+<p><strong>症状</strong>：LLM 编造了上下文中不存在的信息。</p>
+<p><strong>优化手段</strong>：</p>
+<p><strong>Citation（引用标注）</strong>：要求 LLM 在回答中标注每个声明的来源：</p>
+<pre><code class="language-python">CITATION_PROMPT = &quot;&quot;&quot;Based on the provided context, answer the user&#39;s question.
+
+Rules:
+1. Only use information from the provided context
+2. For each statement in your answer, add a citation like [Doc 1], [Doc 2]
+3. If the context does not contain enough information, say &quot;I don&#39;t have enough information to answer this&quot;
+4. Never make up information not present in the context
+
+Context:
+{context}
+
+Question: {question}
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>Grounding Check（落地检查）</strong>：生成回答后，用另一次 LLM 调用验证回答中的每个声明是否有上下文支撑。成本高，但在高可靠性场景（医疗、法律、金融）中是必要的。</p>
+<hr>
+<h2>11. 完整 Pipeline 集成</h2>
+<p>将上述所有模块串联起来：</p>
+<pre><code class="language-python">class RAGPipeline:
+    &quot;&quot;&quot;完整的 RAG Pipeline&quot;&quot;&quot;
+
+    def __init__(
+        self,
+        embedder: EmbeddingModel,
+        reranker: Reranker,
+        llm_call,  # (prompt: str) -&gt; str
+        chunk_size: int = 512,
+        chunk_overlap: int = 64,
+        retrieve_k: int = 50,
+        rerank_k: int = 5,
+        max_context_tokens: int = 3000,
+    ):
+        self.embedder = embedder
+        self.reranker = reranker
+        self.llm_call = llm_call
+        self.chunk_size = chunk_size
+        self.chunk_overlap = chunk_overlap
+        self.retrieve_k = retrieve_k
+        self.rerank_k = rerank_k
+        self.max_context_tokens = max_context_tokens
+
+        self.bm25: BM25 | None = None
+        self.vector_search = VectorSearch(embedder)
+        self.chunks: list[str] = []
+
+    # ─── Offline: Indexing ───
+
+    def ingest(self, documents: list[Document]):
+        &quot;&quot;&quot;离线索引：文档 → Chunk → Embedding → 索引&quot;&quot;&quot;
+        # 1. Chunking
+        self.chunks = []
+        for doc in documents:
+            cleaned = preprocess(doc.content)
+            doc_chunks = recursive_chunk(cleaned, self.chunk_size)
+            self.chunks.extend(doc_chunks)
+
+        # 2. 构建双路索引
+        self.bm25 = BM25(self.chunks)
+        self.vector_search.index(self.chunks)
+
+        print(f&quot;Indexed {len(documents)} documents → {len(self.chunks)} chunks&quot;)
+
+    # ─── Online: Query ───
+
+    def query(self, question: str) -&gt; str:
+        &quot;&quot;&quot;在线查询：Query → 检索 → 重排 → 生成&quot;&quot;&quot;
+        assert self.bm25 is not None, &quot;Must call ingest() first&quot;
+
+        # 1. Hybrid Search
+        hybrid = HybridSearch(self.bm25, self.vector_search)
+        retrieval_results = hybrid.search(question, top_k=self.retrieve_k)
+
+        # 2. Reranking
+        candidate_ids = [doc_id for doc_id, _ in retrieval_results]
+        candidate_docs = [self.chunks[doc_id] for doc_id in candidate_ids]
+        reranked = self.reranker.rerank(
+            query=question,
+            documents=candidate_docs,
+            doc_ids=candidate_ids,
+            top_k=self.rerank_k,
+        )
+
+        # 3. Context Packing
+        context = pack_context(reranked, max_tokens=self.max_context_tokens)
+
+        # 4. LLM Generation
+        prompt = CITATION_PROMPT.format(context=context, question=question)
+        answer = self.llm_call(prompt)
+
+        return answer
+</code></pre>
+<p>这段代码不到 50 行，但串联了 RAG 的所有核心环节。每个环节都可以独立替换和优化——这就是模块化设计的价值。</p>
+<hr>
+<h2>12. 工程决策速查表</h2>
+<p>最后，总结 RAG 系统中的关键工程决策：</p>
+<table>
+<thead>
+<tr>
+<th>决策点</th>
+<th>推荐默认值</th>
+<th>何时调整</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chunk 大小</td>
+<td>512 tokens</td>
+<td>法律/长文档增大；FAQ 减小</td>
+</tr>
+<tr>
+<td>Chunk 重叠</td>
+<td>10-20% of chunk size</td>
+<td>语义边界切分时可减少</td>
+</tr>
+<tr>
+<td>Embedding 维度</td>
+<td>1024</td>
+<td>存储/延迟敏感时降低</td>
+</tr>
+<tr>
+<td>检索策略</td>
+<td>Hybrid (BM25 + Vector)</td>
+<td>纯自然语言场景可只用 Vector</td>
+</tr>
+<tr>
+<td>初步召回数量</td>
+<td>50</td>
+<td>知识库很大时增加</td>
+</tr>
+<tr>
+<td>Rerank Top-K</td>
+<td>5</td>
+<td>LLM context window 大时可增加</td>
+</tr>
+<tr>
+<td>Context 排布</td>
+<td>relevance_first</td>
+<td>上下文很长时用 edges_first</td>
+</tr>
+<tr>
+<td>融合算法</td>
+<td>RRF (k=60)</td>
+<td>需要调权时切换加权融合</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>13. 结语与下一步</h2>
+<p>RAG 给 Agent 提供了 <strong>&quot;知识&quot;维度的能力</strong>——让 Agent 不再局限于训练数据，能够接入外部的、实时的、私有的信息。但回过头来看，RAG 本质上是一个<strong>信息检索工程问题</strong>：</p>
+<ul>
+<li>不是模型越大越好，而是<strong>检索越准越好</strong></li>
+<li>不是 chunk 越多越好，而是<strong>信噪比越高越好</strong></li>
+<li>不是 pipeline 越复杂越好，而是<strong>每个环节都要可度量、可调优</strong></li>
+</ul>
+<p>在 Agent 架构中，RAG 是 Memory 子系统的核心组件。它回答的是&quot;Agent 知道什么&quot;的问题。但 Agent 光有知识不够——它还需要知道 <strong>&quot;怎么做&quot;</strong>（Planning）和 <strong>&quot;做得对不对&quot;</strong>（Reflection）。</p>
+<p>下一篇，我们将进入 Agent 智能的另一个关键维度：<strong>Planning and Reflection——从 ReAct 到分层规划与自我纠错。</strong> 一个能规划、能反思的 Agent，才是真正有&quot;智能&quot;的 Agent。</p>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 09 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/08-Memory%20Architecture">08 | Memory Architecture</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/10-Planning%20and%20Reflection">10 | Planning and Reflection</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+18:Tf833,<h1>Multi-Agent Collaboration: 多 Agent 协作模式与架构</h1>
+<blockquote>
+<p>一个人可以走得很快，但一群人才能走得很远。Agent 也是如此。</p>
+<p>本文是 Agentic 系列第 11 篇。前 10 篇我们一直在讨论单个 Agent 如何更聪明——更好的记忆、更强的工具、更深的规划。这一篇，我们把视角从&quot;个体智能&quot;拉升到&quot;集体智能&quot;：当一个 Agent 不够用时，多个 Agent 如何协作？</p>
+</blockquote>
+<hr>
+<h2>1. 为什么单 Agent 不够</h2>
+<h3>1.1 一个类比：从独立开发者到工程团队</h3>
+<p>想象你是一个全栈工程师，独自完成一个项目。前端、后端、数据库、DevOps、测试、文档——全部一个人扛。小项目可以，但当系统规模增长到一定程度，你会发现：</p>
+<ul>
+<li><strong>注意力是瓶颈</strong>：你不可能同时想着 CSS 布局和数据库索引优化</li>
+<li><strong>专业化有上限</strong>：一个人很难同时成为安全专家、性能专家和 UX 专家</li>
+<li><strong>效率有天花板</strong>：就算你是 10x 工程师，你的时间也是串行的</li>
+<li><strong>单点风险</strong>：你生病了，整个项目就停了</li>
+</ul>
+<p>这就是人类发明&quot;团队协作&quot;的原因。Agent 面临完全相同的结构性限制。</p>
+<h3>1.2 Single-Agent 的四个天花板</h3>
+<p><strong>天花板一：Context Window 限制</strong></p>
+<p>一个 Agent 的 System Prompt 需要包含：角色定义、工具描述、输出格式约束、领域知识、示例。当你试图让一个 Agent 同时承担搜索、分析、写作、代码生成、数据可视化等多个职能时，光是工具描述就可能占据数万 token。留给实际任务执行的上下文空间被严重压缩。</p>
+<pre><code>一个&quot;全能&quot; Agent 的 Context 分配：
+
+┌─────────────────────────────────────────────────┐
+│ System Prompt (角色 + 规则)         ~2,000 tokens │
+│ Tool Schemas (15 个工具)            ~6,000 tokens │
+│ 领域知识 (RAG 检索结果)             ~4,000 tokens │
+│ 对话历史                            ~8,000 tokens │
+│ 当前任务 + 中间状态                 ~3,000 tokens │
+├─────────────────────────────────────────────────┤
+│ 剩余可用空间                        ~9,000 tokens │ ← 越来越捉襟见肘
+│ (128K 窗口下比例更好，但工具越多问题越突出)         │
+└─────────────────────────────────────────────────┘
+</code></pre>
+<p>更关键的是，研究表明 LLM 在超长上下文中存在&quot;Lost in the Middle&quot;问题——中间位置的信息检索准确率显著下降。塞得越多，每条信息被有效利用的概率越低。</p>
+<p><strong>天花板二：专业化限制</strong></p>
+<p>一个 System Prompt 很难让 LLM 同时扮演好多个角色。你告诉它&quot;你是一个严谨的数据分析师&quot;，它分析数据时很好；但同一个 prompt 里你又说&quot;你也是一个有创意的文案写手&quot;，这两种人格的行为模式是矛盾的。严谨和创意在同一个 prompt 中互相干扰，最终两个角色都做不好。</p>
+<p>这不是 prompt engineering 的技巧问题，而是注意力分配的结构性问题——一个 LLM 调用只有一个 attention 分布，强调了分析的严谨性，就必然削弱了文案的创造性。</p>
+<p><strong>天花板三：可靠性限制</strong></p>
+<p>单 Agent 是一个 Single Point of Failure。如果它在第 5 步推理出错（比如工具调用参数写错），整个任务链路都会受到污染。虽然我们在第 10 篇讨论了 Reflection 和自我纠错，但自我纠错的前提是&quot;能发现自己错了&quot;——而 LLM 对自身错误的检测能力是有限的。</p>
+<p><strong>天花板四：并行度限制</strong></p>
+<p>单 Agent 的执行是串行的——一次 LLM 调用，等待结果，再进行下一次。如果一个任务可以分解为三个独立子任务（比如同时搜索三个数据源），单 Agent 只能顺序执行，浪费了大量时间。</p>
+<pre><code>Single-Agent 串行执行：
+
+  Task ──→ [Search A] ──→ [Search B] ──→ [Search C] ──→ [Synthesize]
+                                                         Total: ~40s
+
+Multi-Agent 并行执行：
+
+           ┌─→ [Search A] ─┐
+  Task ──→ ├─→ [Search B] ─┼──→ [Synthesize]
+           └─→ [Search C] ─┘
+                              Total: ~15s
+</code></pre>
+<hr>
+<h2>2. Multi-Agent 的四种协作模式</h2>
+<p>当我们决定使用多个 Agent 时，第一个架构问题是：<strong>它们之间的协作关系是什么？</strong> 不同的关系模式适用于不同的场景，选错模式比用错框架更致命。</p>
+<h3>2.1 模式一：Supervisor-Worker（上级分配型）</h3>
+<pre><code>                    ┌──────────────────┐
+                    │    Supervisor    │
+                    │   (任务分解 +    │
+                    │    结果合成)     │
+                    └──────┬───────────┘
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+              ▼            ▼            ▼
+       ┌──────────┐ ┌──────────┐ ┌──────────┐
+       │ Worker A │ │ Worker B │ │ Worker C │
+       │ (搜索)   │ │ (分析)   │ │ (写作)   │
+       └──────────┘ └──────────┘ └──────────┘
+              │            │            │
+              └────────────┼────────────┘
+                           │
+                           ▼
+                    ┌──────────────────┐
+                    │    Supervisor    │
+                    │   (收集 + 合成   │
+                    │    最终输出)     │
+                    └──────────────────┘
+</code></pre>
+<p><strong>工作流程</strong>：</p>
+<ol>
+<li>Supervisor Agent 接收用户任务</li>
+<li>Supervisor 将任务分解为子任务，分配给不同的 Worker Agent</li>
+<li>每个 Worker 独立执行各自的子任务</li>
+<li>Supervisor 收集所有 Worker 的结果，合成最终输出</li>
+</ol>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>有一个明确的中央协调者</li>
+<li>Worker 之间不直接通信，只与 Supervisor 交互</li>
+<li>Supervisor 负责全局决策，Worker 负责局部执行</li>
+</ul>
+<p><strong>适用场景</strong>：任务可以明确分解的场景。比如撰写一篇技术调研报告：Search Agent 负责信息搜集，Analyze Agent 负责数据分析，Write Agent 负责报告撰写。Supervisor 负责协调整个流程。</p>
+<p><strong>Trade-off</strong>：Supervisor 是单点——如果 Supervisor 对任务的分解不合理，所有 Worker 的努力都会被浪费。此外，Supervisor 本身也是一个 LLM 调用，它对任务的理解能力决定了整个系统的上限。</p>
+<h3>2.2 模式二：Peer-to-Peer（平等协商型）</h3>
+<pre><code>       ┌──────────┐          ┌──────────┐
+       │ Agent A  │◀────────▶│ Agent B  │
+       │ (作者)   │          │ (审稿人) │
+       └────┬─────┘          └────┬─────┘
+            │                     │
+            │    ┌──────────┐     │
+            └───▶│ Agent C  │◀────┘
+                 │ (编辑)   │
+                 └──────────┘
+
+       消息流是双向的，没有固定的上下级关系
+       每个 Agent 都可以发起对话、提出意见、做出决策
+</code></pre>
+<p><strong>工作流程</strong>：</p>
+<ol>
+<li>多个 Agent 地位平等，通过消息传递进行协商</li>
+<li>没有中央协调者——Agent 之间直接通信</li>
+<li>通过多轮对话达成共识或完成任务</li>
+</ol>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>去中心化</li>
+<li>Agent 之间直接消息传递</li>
+<li>适合需要多视角碰撞的任务</li>
+</ul>
+<p><strong>适用场景</strong>：辩论式分析（多个 Agent 从不同立场论证）、代码审查（Author Agent 写代码，Reviewer Agent 审查，双方来回沟通直到代码质量达标）、多角度决策（乐观分析师 + 悲观分析师 + 风险评估师共同评估一个投资决策）。</p>
+<p><strong>Trade-off</strong>：没有中央协调意味着可能出现无限循环（两个 Agent 互相不同意，永远达不成共识）。需要额外的终止机制——最大轮次限制、外部仲裁者、投票制度等。调试也更困难，因为没有一个中心节点可以观察全局状态。</p>
+<h3>2.3 模式三：Pipeline（流水线型）</h3>
+<pre><code>  Input                                                          Output
+    │                                                              ▲
+    ▼                                                              │
+┌────────┐    ┌────────┐    ┌────────┐    ┌────────┐    ┌────────┐
+│ Draft  │───▶│ Review │───▶│  Edit  │───▶│  Fact  │───▶│ Format │
+│ Agent  │    │ Agent  │    │ Agent  │    │ Check  │    │ Agent  │
+│        │    │        │    │        │    │ Agent  │    │        │
+└────────┘    └────────┘    └────────┘    └────────┘    └────────┘
+
+  Stage 1       Stage 2       Stage 3       Stage 4       Stage 5
+  生成初稿      审查质量       修改完善      事实核查       格式化输出
+</code></pre>
+<p><strong>工作流程</strong>：</p>
+<ol>
+<li>Agent 按顺序串联，形成流水线</li>
+<li>上游 Agent 的输出是下游 Agent 的输入</li>
+<li>每个 Agent 专注于一个处理阶段</li>
+</ol>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>类似 Unix 管道：<code>cmd1 | cmd2 | cmd3</code></li>
+<li>数据单向流动</li>
+<li>每个阶段的 Agent 有明确、单一的职责</li>
+</ul>
+<p><strong>适用场景</strong>：内容生产流水线（起草 -&gt; 审查 -&gt; 编辑 -&gt; 排版）、数据处理管道（提取 -&gt; 清洗 -&gt; 转换 -&gt; 加载）、多阶段审批（初审 -&gt; 复审 -&gt; 终审）。</p>
+<p><strong>Trade-off</strong>：流水线是严格串行的——上游不完成，下游无法开始。如果中间某个 Agent 输出质量差，后续所有阶段都会受影响（错误传播）。但好处是架构简单、易于理解和调试、每个阶段可以独立优化。</p>
+<h3>2.4 模式四：Dynamic Routing（动态路由型）</h3>
+<pre><code>                    ┌──────────────────┐
+                    │   Router Agent   │
+                    │ (意图识别 + 路由) │
+                    └──────┬───────────┘
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+              ▼            ▼            ▼
+       ┌──────────┐ ┌──────────┐ ┌──────────┐
+       │ 技术支持  │ │ 售后服务  │ │ 销售咨询  │
+       │ Agent    │ │ Agent    │ │ Agent    │
+       │          │ │          │ │          │
+       │ 处理技术  │ │ 处理退款  │ │ 处理购买  │
+       │ 故障排查  │ │ 换货投诉  │ │ 产品推荐  │
+       └──────────┘ └──────────┘ └──────────┘
+
+  路由依据：用户输入的意图分类
+  每个专家 Agent 有独立的 System Prompt、Tools、知识库
+</code></pre>
+<p><strong>工作流程</strong>：</p>
+<ol>
+<li>Router Agent 接收用户输入</li>
+<li>根据意图分类，将请求路由到对应的专家 Agent</li>
+<li>专家 Agent 处理请求并返回结果</li>
+<li>必要时 Router 可以在专家之间进行二次路由</li>
+</ol>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>一个轻量级的 Router 做决策</li>
+<li>多个重量级的专家 Agent 做执行</li>
+<li>Router 可以用简单模型（快速、便宜），专家用强大模型（准确、深入）</li>
+</ul>
+<p><strong>适用场景</strong>：客服系统（技术问题 -&gt; 技术 Agent，退款问题 -&gt; 售后 Agent）、多领域知识问答（医疗问题 -&gt; 医疗 Agent，法律问题 -&gt; 法律 Agent）、代码助手（Python 问题 -&gt; Python 专家，Rust 问题 -&gt; Rust 专家）。</p>
+<p><strong>Trade-off</strong>：路由准确率是整个系统的瓶颈——路由错了，后面再专业也没用。模糊意图（&quot;我买的东西有技术问题&quot;——这是技术支持还是售后？）需要特殊处理。一种常见策略是允许 Router 在不确定时同时咨询多个专家，再综合判断。</p>
+<h3>2.5 四种模式的对比决策</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Supervisor-Worker</th>
+<th>Peer-to-Peer</th>
+<th>Pipeline</th>
+<th>Dynamic Routing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>控制结构</td>
+<td>中心化</td>
+<td>去中心化</td>
+<td>线性</td>
+<td>分发型</td>
+</tr>
+<tr>
+<td>通信模式</td>
+<td>星形</td>
+<td>网状</td>
+<td>链式</td>
+<td>扇出</td>
+</tr>
+<tr>
+<td>并行度</td>
+<td>高（Worker 并行）</td>
+<td>中</td>
+<td>低（严格串行）</td>
+<td>高（请求级并行）</td>
+</tr>
+<tr>
+<td>适用复杂度</td>
+<td>高</td>
+<td>中</td>
+<td>中</td>
+<td>低-中</td>
+</tr>
+<tr>
+<td>调试难度</td>
+<td>中</td>
+<td>高</td>
+<td>低</td>
+<td>低</td>
+</tr>
+<tr>
+<td>典型场景</td>
+<td>报告生成、项目规划</td>
+<td>辩论、审查</td>
+<td>内容流水线</td>
+<td>客服、问答路由</td>
+</tr>
+</tbody></table>
+<p><strong>决策原则</strong>：</p>
+<ul>
+<li>任务可以并行分解 -&gt; Supervisor-Worker</li>
+<li>需要多视角碰撞 -&gt; Peer-to-Peer</li>
+<li>处理有明确阶段 -&gt; Pipeline</li>
+<li>请求类型多样，专家各有擅长 -&gt; Dynamic Routing</li>
+<li>不确定？先从最简单的 Pipeline 开始，逐步演进</li>
+</ul>
+<hr>
+<h2>3. Agent 间通信机制</h2>
+<p>多个 Agent 之间需要交换信息，通信机制的选择直接影响系统的可扩展性、耦合度和调试难度。</p>
+<h3>3.1 共享内存（Blackboard Pattern）</h3>
+<p>所有 Agent 读写同一个共享状态存储。这是最简单直接的通信方式。</p>
+<pre><code>       ┌──────────┐   ┌──────────┐   ┌──────────┐
+       │ Agent A  │   │ Agent B  │   │ Agent C  │
+       └────┬─────┘   └────┬─────┘   └────┬─────┘
+            │  read/write   │  read/write   │
+            ▼              ▼              ▼
+       ┌──────────────────────────────────────────┐
+       │           Shared Blackboard              │
+       │                                          │
+       │  { &quot;search_results&quot;: [...],              │
+       │    &quot;analysis&quot;: {...},                    │
+       │    &quot;draft&quot;: &quot;...&quot;,                       │
+       │    &quot;status&quot;: {&quot;search&quot;: &quot;done&quot;, ...} }   │
+       └──────────────────────────────────────────┘
+</code></pre>
+<pre><code class="language-python">from dataclasses import dataclass, field
+from typing import Any
+import threading
+
+
+@dataclass
+class Blackboard:
+    &quot;&quot;&quot;共享黑板：所有 Agent 的公共状态空间&quot;&quot;&quot;
+    _state: dict[str, Any] = field(default_factory=dict)
+    _lock: threading.Lock = field(default_factory=threading.Lock)
+    _history: list[dict] = field(default_factory=list)
+
+    def read(self, key: str) -&gt; Any:
+        with self._lock:
+            return self._state.get(key)
+
+    def write(self, key: str, value: Any, author: str = &quot;unknown&quot;):
+        with self._lock:
+            self._history.append({
+                &quot;action&quot;: &quot;write&quot;,
+                &quot;key&quot;: key,
+                &quot;author&quot;: author,
+                &quot;old_value&quot;: self._state.get(key),
+                &quot;new_value&quot;: value,
+            })
+            self._state[key] = value
+
+    def read_all(self) -&gt; dict[str, Any]:
+        with self._lock:
+            return dict(self._state)
+</code></pre>
+<p><strong>优点</strong>：实现简单，Agent 之间完全解耦（不需要知道彼此的存在），天然支持任意读写模式。</p>
+<p><strong>缺点</strong>：共享状态意味着潜在的竞争条件——两个 Agent 同时写同一个 key 怎么办？需要锁机制或更复杂的冲突解决策略。随着 Agent 数量增加，Blackboard 可能成为瓶颈。</p>
+<h3>3.2 消息传递（Message Passing）</h3>
+<p>Agent 之间通过显式的消息进行通信。每个 Agent 有自己的收件箱。</p>
+<pre><code>       ┌──────────┐         ┌──────────┐
+       │ Agent A  │──msg───▶│ Agent B  │
+       │          │◀──msg───│          │
+       └──────────┘         └──────────┘
+            │                     ▲
+            │         msg         │
+            ▼                     │
+       ┌──────────┐              │
+       │ Agent C  │──────msg─────┘
+       └──────────┘
+</code></pre>
+<pre><code class="language-python">from dataclasses import dataclass, field
+from collections import defaultdict
+from queue import Queue
+
+
+@dataclass
+class Message:
+    sender: str
+    receiver: str
+    content: Any
+    msg_type: str = &quot;default&quot;  # &quot;task&quot;, &quot;result&quot;, &quot;feedback&quot;, &quot;error&quot;
+
+
+class MessageBus:
+    &quot;&quot;&quot;点对点消息传递&quot;&quot;&quot;
+
+    def __init__(self):
+        self._queues: dict[str, Queue] = defaultdict(Queue)
+
+    def send(self, message: Message):
+        self._queues[message.receiver].put(message)
+
+    def receive(self, agent_id: str, timeout: float = None) -&gt; Message | None:
+        try:
+            return self._queues[agent_id].get(timeout=timeout)
+        except Exception:
+            return None
+
+    def has_messages(self, agent_id: str) -&gt; bool:
+        return not self._queues[agent_id].empty()
+</code></pre>
+<p><strong>优点</strong>：通信关系显式、可追踪、可审计。每条消息都有明确的发送者和接收者。</p>
+<p><strong>缺点</strong>：Agent 需要知道其他 Agent 的存在（至少知道 ID），耦合度比 Blackboard 高。如果通信拓扑复杂（多对多），消息管理会变得困难。</p>
+<h3>3.3 事件驱动（Event Bus）</h3>
+<p>Agent 通过发布/订阅事件进行间接通信。Agent 不需要知道谁会消费它的事件。</p>
+<pre><code>       ┌──────────┐   ┌──────────┐   ┌──────────┐
+       │ Agent A  │   │ Agent B  │   │ Agent C  │
+       │ pub: X   │   │ sub: X   │   │ sub: X,Y │
+       └────┬─────┘   └────┬─────┘   └────┬─────┘
+            │  publish      │  subscribe   │
+            ▼              ▼              ▼
+       ┌──────────────────────────────────────────┐
+       │              Event Bus                    │
+       │                                          │
+       │  topic &quot;search_done&quot;  → [Agent B, C]     │
+       │  topic &quot;analysis_done&quot; → [Agent C]        │
+       │  topic &quot;error&quot;        → [Supervisor]      │
+       └──────────────────────────────────────────┘
+</code></pre>
+<pre><code class="language-python">from collections import defaultdict
+from typing import Callable
+
+
+class EventBus:
+    &quot;&quot;&quot;发布/订阅事件总线&quot;&quot;&quot;
+
+    def __init__(self):
+        self._subscribers: dict[str, list[Callable]] = defaultdict(list)
+        self._event_log: list[dict] = []
+
+    def subscribe(self, topic: str, handler: Callable):
+        self._subscribers[topic].append(handler)
+
+    def publish(self, topic: str, data: Any, publisher: str = &quot;unknown&quot;):
+        event = {&quot;topic&quot;: topic, &quot;data&quot;: data, &quot;publisher&quot;: publisher}
+        self._event_log.append(event)
+        for handler in self._subscribers.get(topic, []):
+            handler(event)
+
+    def get_event_log(self) -&gt; list[dict]:
+        return list(self._event_log)
+</code></pre>
+<p><strong>优点</strong>：Agent 之间完全解耦——发布者不知道有谁在监听，订阅者不知道事件从哪里来。扩展性好，新增 Agent 只需订阅相关事件。</p>
+<p><strong>缺点</strong>：事件流难以追踪——&quot;这个事件是谁发的？谁处理了？处理结果在哪里？&quot;调试时需要完整的事件日志。事件顺序可能不确定，需要额外的排序机制。</p>
+<h3>3.4 通信机制对比</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Blackboard</th>
+<th>Message Passing</th>
+<th>Event Bus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>耦合度</td>
+<td>低（通过 key 间接通信）</td>
+<td>中（需要知道目标 Agent）</td>
+<td>低（通过 topic 间接通信）</td>
+</tr>
+<tr>
+<td>实现复杂度</td>
+<td>低</td>
+<td>中</td>
+<td>中</td>
+</tr>
+<tr>
+<td>调试友好度</td>
+<td>中（看状态快照）</td>
+<td>高（消息链路清晰）</td>
+<td>低（事件流分散）</td>
+</tr>
+<tr>
+<td>并发安全</td>
+<td>需要锁/MVCC</td>
+<td>天然安全（队列隔离）</td>
+<td>需要考虑处理顺序</td>
+</tr>
+<tr>
+<td>适用模式</td>
+<td>Supervisor-Worker</td>
+<td>Peer-to-Peer</td>
+<td>Pipeline, 事件驱动架构</td>
+</tr>
+<tr>
+<td>可观测性</td>
+<td>状态快照</td>
+<td>消息轨迹</td>
+<td>事件日志</td>
+</tr>
+</tbody></table>
+<p><strong>实践建议</strong>：大多数 Multi-Agent 系统可以从 Blackboard 开始——它最简单，且对 Supervisor-Worker 模式特别友好。当系统复杂度增长到需要解耦 Agent 间关系时，再考虑 Event Bus。Message Passing 适合 Agent 之间有明确的、频繁的双向交互的场景。</p>
+<hr>
+<h2>4. 完整实现：Supervisor-Worker 协作框架</h2>
+<p>下面用 Python 从零实现一个 Supervisor-Worker 框架。这不依赖任何 Agent 框架，完全基于第一性原理构建。</p>
+<h3>4.1 基础抽象</h3>
+<pre><code class="language-python">import json
+import asyncio
+from abc import ABC, abstractmethod
+from dataclasses import dataclass, field
+from typing import Any
+
+
+# ---- LLM 调用抽象（与具体 SDK 解耦）----
+
+async def call_llm(
+    messages: list[dict],
+    model: str = &quot;gpt-4o&quot;,
+    response_format: dict | None = None,
+) -&gt; str:
+    &quot;&quot;&quot;LLM 调用的统一接口（简化版，生产中替换为真实 SDK 调用）&quot;&quot;&quot;
+    import openai
+    client = openai.AsyncOpenAI()
+    kwargs = {&quot;model&quot;: model, &quot;messages&quot;: messages}
+    if response_format:
+        kwargs[&quot;response_format&quot;] = response_format
+    response = await client.chat.completions.create(**kwargs)
+    return response.choices[0].message.content
+
+
+# ---- 任务与结果的数据结构 ----
+
+@dataclass
+class Task:
+    &quot;&quot;&quot;一个可执行的子任务&quot;&quot;&quot;
+    task_id: str
+    description: str
+    assigned_to: str = &quot;&quot;          # Worker Agent 名称
+    context: dict = field(default_factory=dict)  # 来自上游的上下文
+    status: str = &quot;pending&quot;        # pending | running | done | failed
+    result: str = &quot;&quot;
+    error: str = &quot;&quot;
+
+
+@dataclass
+class TeamResult:
+    &quot;&quot;&quot;团队执行的最终结果&quot;&quot;&quot;
+    success: bool
+    output: str
+    tasks: list[Task]
+    total_tokens: int = 0
+    total_llm_calls: int = 0
+</code></pre>
+<h3>4.2 Worker Agent</h3>
+<p>每个 Worker 是一个专注于特定领域的 Agent，拥有独立的 System Prompt 和能力边界。</p>
+<pre><code class="language-python">class WorkerAgent:
+    &quot;&quot;&quot;Worker Agent：接收子任务，独立执行，返回结果&quot;&quot;&quot;
+
+    def __init__(self, name: str, system_prompt: str, model: str = &quot;gpt-4o&quot;):
+        self.name = name
+        self.system_prompt = system_prompt
+        self.model = model
+        self._call_count = 0
+
+    async def execute(self, task: Task) -&gt; Task:
+        &quot;&quot;&quot;执行一个子任务&quot;&quot;&quot;
+        task.status = &quot;running&quot;
+        task.assigned_to = self.name
+
+        messages = [
+            {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: self.system_prompt},
+            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: self._build_prompt(task)},
+        ]
+
+        try:
+            result = await call_llm(messages, model=self.model)
+            self._call_count += 1
+            task.result = result
+            task.status = &quot;done&quot;
+        except Exception as e:
+            task.error = str(e)
+            task.status = &quot;failed&quot;
+
+        return task
+
+    def _build_prompt(self, task: Task) -&gt; str:
+        prompt = f&quot;## 任务\n{task.description}\n&quot;
+        if task.context:
+            prompt += f&quot;\n## 上下文信息\n{json.dumps(task.context, ensure_ascii=False, indent=2)}\n&quot;
+        prompt += &quot;\n请完成上述任务，直接输出结果。&quot;
+        return prompt
+</code></pre>
+<h3>4.3 Supervisor Agent</h3>
+<p>Supervisor 负责三件事：任务分解、任务分配、结果合成。</p>
+<pre><code class="language-python">DECOMPOSE_PROMPT = &quot;&quot;&quot;你是一个任务分解专家。给定一个复杂任务，将其分解为可以独立执行的子任务。
+
+可用的 Worker 及其能力：
+{workers_description}
+
+请将任务分解为子任务，并指定每个子任务应该分配给哪个 Worker。
+输出 JSON 格式：
+{{
+  &quot;subtasks&quot;: [
+    {{
+      &quot;task_id&quot;: &quot;task_1&quot;,
+      &quot;description&quot;: &quot;具体的子任务描述&quot;,
+      &quot;assigned_to&quot;: &quot;worker 名称&quot;,
+      &quot;depends_on&quot;: []
+    }}
+  ]
+}}
+
+注意：
+- 每个子任务应该足够具体，让 Worker 能独立完成
+- depends_on 标明依赖关系（某个子任务需要等另一个完成后才能开始）
+- 尽可能让子任务并行执行以提高效率
+&quot;&quot;&quot;
+
+SYNTHESIZE_PROMPT = &quot;&quot;&quot;你是一个结果合成专家。多个专业 Agent 已经分别完成了子任务。
+请根据它们的结果，合成一个完整、连贯、高质量的最终输出。
+
+原始任务：{original_task}
+
+各子任务的执行结果：
+{subtask_results}
+
+请整合以上信息，生成最终的完整输出。确保：
+1. 信息完整，没有遗漏
+2. 逻辑连贯，前后一致
+3. 去除重复内容
+4. 保持专业质量
+&quot;&quot;&quot;
+
+
+class SupervisorAgent:
+    &quot;&quot;&quot;Supervisor Agent：任务分解、分配、合成&quot;&quot;&quot;
+
+    def __init__(self, model: str = &quot;gpt-4o&quot;):
+        self.model = model
+        self._call_count = 0
+
+    async def decompose(
+        self, task: str, workers: dict[str, WorkerAgent]
+    ) -&gt; list[Task]:
+        &quot;&quot;&quot;将复杂任务分解为子任务&quot;&quot;&quot;
+        workers_desc = &quot;\n&quot;.join(
+            f&quot;- {name}: {w.system_prompt[:200]}&quot;
+            for name, w in workers.items()
+        )
+
+        messages = [
+            {
+                &quot;role&quot;: &quot;system&quot;,
+                &quot;content&quot;: DECOMPOSE_PROMPT.format(
+                    workers_description=workers_desc
+                ),
+            },
+            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: task},
+        ]
+
+        result = await call_llm(
+            messages,
+            model=self.model,
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        self._call_count += 1
+
+        parsed = json.loads(result)
+        tasks = []
+        for st in parsed.get(&quot;subtasks&quot;, []):
+            tasks.append(Task(
+                task_id=st[&quot;task_id&quot;],
+                description=st[&quot;description&quot;],
+                assigned_to=st.get(&quot;assigned_to&quot;, &quot;&quot;),
+            ))
+        return tasks
+
+    async def synthesize(
+        self, original_task: str, completed_tasks: list[Task]
+    ) -&gt; str:
+        &quot;&quot;&quot;合成所有 Worker 的结果&quot;&quot;&quot;
+        results_text = &quot;\n\n&quot;.join(
+            f&quot;### {t.task_id} ({t.assigned_to})\n{t.result}&quot;
+            for t in completed_tasks
+            if t.status == &quot;done&quot;
+        )
+
+        messages = [
+            {
+                &quot;role&quot;: &quot;system&quot;,
+                &quot;content&quot;: SYNTHESIZE_PROMPT.format(
+                    original_task=original_task,
+                    subtask_results=results_text,
+                ),
+            },
+            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;请合成最终结果。&quot;},
+        ]
+
+        result = await call_llm(messages, model=self.model)
+        self._call_count += 1
+        return result
+</code></pre>
+<h3>4.4 AgentTeam：编排层</h3>
+<p>AgentTeam 管理多个 Agent 的生命周期、通信和执行流程。</p>
+<pre><code class="language-python">class AgentTeam:
+    &quot;&quot;&quot;Agent 团队：管理 Supervisor + Workers 的协作&quot;&quot;&quot;
+
+    def __init__(self, supervisor: SupervisorAgent):
+        self.supervisor = supervisor
+        self.workers: dict[str, WorkerAgent] = {}
+        self.blackboard = Blackboard()
+        self.execution_log: list[dict] = []
+
+    def add_worker(self, worker: WorkerAgent):
+        self.workers[worker.name] = worker
+
+    async def run(self, task: str, max_retries: int = 2) -&gt; TeamResult:
+        &quot;&quot;&quot;执行完整的 Multi-Agent 协作流程&quot;&quot;&quot;
+        self._log(&quot;team&quot;, f&quot;接收任务: {task[:100]}...&quot;)
+
+        # Phase 1: Supervisor 分解任务
+        self._log(&quot;supervisor&quot;, &quot;开始任务分解&quot;)
+        subtasks = await self.supervisor.decompose(task, self.workers)
+        self._log(&quot;supervisor&quot;, f&quot;分解为 {len(subtasks)} 个子任务&quot;)
+
+        for st in subtasks:
+            self._log(&quot;supervisor&quot;, f&quot;  {st.task_id} -&gt; {st.assigned_to}: {st.description[:80]}&quot;)
+
+        # Phase 2: Workers 并行执行（考虑依赖关系）
+        completed = await self._execute_tasks(subtasks, max_retries)
+
+        # Phase 3: Supervisor 合成结果
+        self._log(&quot;supervisor&quot;, &quot;开始合成结果&quot;)
+        final_output = await self.supervisor.synthesize(task, completed)
+        self._log(&quot;supervisor&quot;, &quot;合成完成&quot;)
+
+        # 汇总统计
+        total_calls = self.supervisor._call_count + sum(
+            w._call_count for w in self.workers.values()
+        )
+
+        return TeamResult(
+            success=all(t.status == &quot;done&quot; for t in completed),
+            output=final_output,
+            tasks=completed,
+            total_llm_calls=total_calls,
+        )
+
+    async def _execute_tasks(
+        self, tasks: list[Task], max_retries: int
+    ) -&gt; list[Task]:
+        &quot;&quot;&quot;执行子任务，支持并行和重试&quot;&quot;&quot;
+        completed = []
+        pending = list(tasks)
+
+        while pending:
+            # 找出当前可以执行的任务（依赖已满足）
+            ready = []
+            still_pending = []
+            completed_ids = {t.task_id for t in completed}
+
+            for task in pending:
+                deps = task.context.get(&quot;depends_on&quot;, [])
+                if all(d in completed_ids for d in deps):
+                    ready.append(task)
+                else:
+                    still_pending.append(task)
+
+            if not ready:
+                # 没有可执行的任务但还有待处理的 -&gt; 可能存在循环依赖
+                self._log(&quot;team&quot;, &quot;警告: 检测到无法满足的依赖关系&quot;)
+                break
+
+            # 并行执行所有就绪的任务
+            results = await asyncio.gather(*[
+                self._execute_single(task, max_retries)
+                for task in ready
+            ])
+
+            for task in results:
+                completed.append(task)
+                # 将结果写入 Blackboard，供后续任务使用
+                if task.status == &quot;done&quot;:
+                    self.blackboard.write(
+                        task.task_id, task.result, author=task.assigned_to
+                    )
+
+            pending = still_pending
+
+        return completed
+
+    async def _execute_single(
+        self, task: Task, max_retries: int
+    ) -&gt; Task:
+        &quot;&quot;&quot;执行单个任务，带重试&quot;&quot;&quot;
+        worker = self.workers.get(task.assigned_to)
+        if not worker:
+            task.status = &quot;failed&quot;
+            task.error = f&quot;未找到 Worker: {task.assigned_to}&quot;
+            return task
+
+        # 将 Blackboard 上的相关信息注入任务上下文
+        task.context[&quot;blackboard&quot;] = self.blackboard.read_all()
+
+        for attempt in range(max_retries + 1):
+            self._log(worker.name, f&quot;执行 {task.task_id} (尝试 {attempt + 1})&quot;)
+            result = await worker.execute(task)
+
+            if result.status == &quot;done&quot;:
+                self._log(worker.name, f&quot;{task.task_id} 完成&quot;)
+                return result
+
+            self._log(worker.name, f&quot;{task.task_id} 失败: {result.error}&quot;)
+
+            if attempt &lt; max_retries:
+                self._log(worker.name, f&quot;准备重试 {task.task_id}&quot;)
+
+        return result
+
+    def _log(self, source: str, message: str):
+        entry = {&quot;source&quot;: source, &quot;message&quot;: message}
+        self.execution_log.append(entry)
+</code></pre>
+<h3>4.5 组装示例：技术调研报告</h3>
+<pre><code class="language-python">async def main():
+    &quot;&quot;&quot;示例：用 Multi-Agent 团队撰写一篇技术调研报告&quot;&quot;&quot;
+
+    # 创建 Supervisor
+    supervisor = SupervisorAgent(model=&quot;gpt-4o&quot;)
+
+    # 创建专业化的 Worker Agent
+    search_agent = WorkerAgent(
+        name=&quot;searcher&quot;,
+        system_prompt=(
+            &quot;你是一个信息搜索专家。你的任务是根据给定的主题，&quot;
+            &quot;整理出全面的信息摘要，包括关键事实、数据、案例。&quot;
+            &quot;输出结构化的搜索结果，标注来源和可信度。&quot;
+        ),
+    )
+
+    analyze_agent = WorkerAgent(
+        name=&quot;analyst&quot;,
+        system_prompt=(
+            &quot;你是一个技术分析专家。你的任务是根据搜索结果和原始数据，&quot;
+            &quot;进行深度分析，提炼洞察，识别趋势、风险和机会。&quot;
+            &quot;输出包含数据支撑的分析报告。&quot;
+        ),
+    )
+
+    write_agent = WorkerAgent(
+        name=&quot;writer&quot;,
+        system_prompt=(
+            &quot;你是一个技术写作专家。你的任务是根据分析结果，&quot;
+            &quot;撰写结构清晰、逻辑严谨、可读性强的技术报告。&quot;
+            &quot;确保使用专业术语，并配有合适的章节结构。&quot;
+        ),
+    )
+
+    # 组建团队
+    team = AgentTeam(supervisor=supervisor)
+    team.add_worker(search_agent)
+    team.add_worker(analyze_agent)
+    team.add_worker(write_agent)
+
+    # 执行任务
+    result = await team.run(
+        &quot;撰写一篇关于 LLM Agent 在企业客服场景落地的技术调研报告，&quot;
+        &quot;包括行业现状、主流技术方案对比、落地挑战和建议。&quot;
+    )
+
+    print(f&quot;成功: {result.success}&quot;)
+    print(f&quot;LLM 调用次数: {result.total_llm_calls}&quot;)
+    print(f&quot;\n最终输出:\n{result.output[:500]}...&quot;)
+
+    # 查看执行日志
+    print(&quot;\n执行链路:&quot;)
+    for entry in team.execution_log:
+        print(f&quot;  [{entry[&#39;source&#39;]}] {entry[&#39;message&#39;]}&quot;)
+
+
+# asyncio.run(main())
+</code></pre>
+<p>这段代码展示了核心的协作模式。生产系统中还需要补充：Token 用量追踪、超时控制、Worker 健康检查、结果缓存等。但架构骨架已经清晰——Supervisor 负责全局调度，Worker 负责局部执行，Blackboard 负责状态共享，AgentTeam 负责生命周期管理。</p>
+<hr>
+<h2>5. 状态管理的复杂性</h2>
+<p>Multi-Agent 系统的状态管理比 Single-Agent 复杂一个数量级。核心难题在于：多个 Agent 同时操作状态，如何保证一致性。</p>
+<h3>5.1 共享状态 vs 独立状态</h3>
+<pre><code>方案 A：共享状态                     方案 B：独立状态
+┌─────────────────┐                ┌──────────┐  ┌──────────┐  ┌──────────┐
+│  Global State   │                │ State A  │  │ State B  │  │ State C  │
+│                 │                │ (Agent A │  │ (Agent B │  │ (Agent C │
+│ Agent A ──write │                │  独占)   │  │  独占)   │  │  独占)   │
+│ Agent B ──write │                └──────────┘  └──────────┘  └──────────┘
+│ Agent C ──write │                      │              │              │
+└─────────────────┘                      └──────────────┼──────────────┘
+                                                        ▼
+                                                  合并/同步层
+</code></pre>
+<p><strong>共享状态</strong>的优点是 Agent 之间信息同步即时，任何 Agent 都能看到最新全局状态。缺点是需要处理并发冲突。适合 Supervisor-Worker 模式——Supervisor 需要看到所有 Worker 的进度。</p>
+<p><strong>独立状态</strong>的优点是无并发问题，每个 Agent 完全自主。缺点是 Agent 之间信息同步有延迟，需要显式的合并机制。适合 Pipeline 模式——每个阶段独立处理，只在交接时传递状态。</p>
+<h3>5.2 冲突解决策略</h3>
+<p>当两个 Agent 同时修改同一个状态时，需要冲突解决。常见策略：</p>
+<pre><code class="language-python">class ConflictResolver:
+    &quot;&quot;&quot;状态冲突解决器&quot;&quot;&quot;
+
+    @staticmethod
+    def last_writer_wins(old_value, new_value_a, new_value_b, timestamp_a, timestamp_b):
+        &quot;&quot;&quot;最后写入者胜出——简单但可能丢失数据&quot;&quot;&quot;
+        return new_value_a if timestamp_a &gt; timestamp_b else new_value_b
+
+    @staticmethod
+    def merge_append(old_value, new_value_a, new_value_b):
+        &quot;&quot;&quot;合并追加——适用于列表类型的状态&quot;&quot;&quot;
+        if isinstance(old_value, list):
+            merged = list(old_value)
+            if isinstance(new_value_a, list):
+                merged.extend(new_value_a)
+            if isinstance(new_value_b, list):
+                merged.extend(new_value_b)
+            return merged
+        return new_value_b  # fallback
+
+    @staticmethod
+    async def llm_resolve(old_value, new_value_a, new_value_b, context: str):
+        &quot;&quot;&quot;用 LLM 判断如何合并冲突——最灵活但最贵&quot;&quot;&quot;
+        prompt = (
+            f&quot;两个 Agent 同时修改了同一个状态。\n&quot;
+            f&quot;原始值: {old_value}\n&quot;
+            f&quot;Agent A 的修改: {new_value_a}\n&quot;
+            f&quot;Agent B 的修改: {new_value_b}\n&quot;
+            f&quot;上下文: {context}\n&quot;
+            f&quot;请决定最终值应该是什么，并解释原因。&quot;
+        )
+        return await call_llm([{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}])
+</code></pre>
+<p>实践中，大多数 Multi-Agent 系统通过架构设计来避免冲突，而不是在运行时解决冲突。最有效的方法是<strong>状态分区</strong>——每个 Agent 只写自己负责的状态区域，避免多 Agent 写同一个 key。这也是 Supervisor-Worker 模式天然的优势：每个 Worker 写自己的结果 key，只有 Supervisor 读所有 key。</p>
+<hr>
+<h2>6. 错误处理与容错</h2>
+<p>Multi-Agent 系统的错误处理比 Single-Agent 更复杂，因为错误的传播路径更多。</p>
+<h3>6.1 Worker 失败</h3>
+<p>Worker 失败是最常见的情况。处理策略按优先级：</p>
+<pre><code>Worker 失败处理决策树：
+
+  Worker 执行失败
+       │
+       ▼
+  ┌─ 是否可重试？ ─── 是 ──→ 重试（最多 N 次）──→ 成功？──→ 继续
+  │      │                                          │
+  │     否                                         否
+  │      │                                          │
+  │      ▼                                          ▼
+  │  ┌─ 有替代 Worker？ ─── 是 ──→ 分配给替代 Worker
+  │  │      │
+  │  │     否
+  │  │      │
+  │  │      ▼
+  │  │  ┌─ 该子任务是关键路径？
+  │  │  │      │            │
+  │  │  │     是           否
+  │  │  │      │            │
+  │  │  │      ▼            ▼
+  │  │  │  整体任务失败   降级处理（跳过该子任务，
+  │  │  │                 标记结果为不完整）
+</code></pre>
+<pre><code class="language-python">class ResilientAgentTeam(AgentTeam):
+    &quot;&quot;&quot;增强容错能力的 Agent 团队&quot;&quot;&quot;
+
+    def __init__(self, supervisor: SupervisorAgent):
+        super().__init__(supervisor)
+        self.fallback_workers: dict[str, list[str]] = {}  # Worker 降级链
+
+    def set_fallback(self, worker_name: str, fallbacks: list[str]):
+        &quot;&quot;&quot;设置 Worker 的降级替代链&quot;&quot;&quot;
+        self.fallback_workers[worker_name] = fallbacks
+
+    async def _execute_single(self, task: Task, max_retries: int) -&gt; Task:
+        &quot;&quot;&quot;增强版：支持 Worker 降级&quot;&quot;&quot;
+        # 尝试主 Worker
+        result = await super()._execute_single(task, max_retries)
+        if result.status == &quot;done&quot;:
+            return result
+
+        # 主 Worker 失败，尝试降级 Worker
+        fallbacks = self.fallback_workers.get(task.assigned_to, [])
+        for fb_name in fallbacks:
+            self._log(&quot;team&quot;, f&quot;降级: {task.assigned_to} -&gt; {fb_name}&quot;)
+            task.assigned_to = fb_name
+            task.status = &quot;pending&quot;
+            task.error = &quot;&quot;
+            result = await super()._execute_single(task, max_retries=1)
+            if result.status == &quot;done&quot;:
+                return result
+
+        return result
+</code></pre>
+<h3>6.2 Supervisor 失败</h3>
+<p>Supervisor 失败更严重——它是中央协调者，失败意味着整个任务无法继续。处理策略：</p>
+<ul>
+<li><strong>外部监控</strong>：在 AgentTeam 之上设置一个非 LLM 的监控层，检测 Supervisor 的健康状态</li>
+<li><strong>Supervisor 冗余</strong>：准备一个备用 Supervisor（可以用不同的模型），主 Supervisor 失败时切换</li>
+<li><strong>Checkpoint 机制</strong>：Supervisor 在每个决策点保存状态快照，失败后从最近的 Checkpoint 恢复</li>
+</ul>
+<pre><code class="language-python">async def run_with_checkpoint(self, task: str) -&gt; TeamResult:
+    &quot;&quot;&quot;带 Checkpoint 的执行流程&quot;&quot;&quot;
+    checkpoint = {&quot;phase&quot;: &quot;init&quot;, &quot;subtasks&quot;: [], &quot;completed&quot;: []}
+
+    try:
+        # Phase 1: 分解
+        checkpoint[&quot;phase&quot;] = &quot;decompose&quot;
+        subtasks = await self.supervisor.decompose(task, self.workers)
+        checkpoint[&quot;subtasks&quot;] = subtasks
+
+        # Phase 2: 执行
+        checkpoint[&quot;phase&quot;] = &quot;execute&quot;
+        completed = await self._execute_tasks(subtasks, max_retries=2)
+        checkpoint[&quot;completed&quot;] = completed
+
+        # Phase 3: 合成
+        checkpoint[&quot;phase&quot;] = &quot;synthesize&quot;
+        output = await self.supervisor.synthesize(task, completed)
+
+        return TeamResult(success=True, output=output, tasks=completed)
+
+    except Exception as e:
+        self._log(&quot;team&quot;, f&quot;失败于阶段 {checkpoint[&#39;phase&#39;]}: {e}&quot;)
+        # 可以从 checkpoint 恢复，跳过已完成的阶段
+        return TeamResult(
+            success=False,
+            output=f&quot;任务在 {checkpoint[&#39;phase&#39;]} 阶段失败: {e}&quot;,
+            tasks=checkpoint.get(&quot;completed&quot;, []),
+        )
+</code></pre>
+<h3>6.3 死锁检测</h3>
+<p>在 Peer-to-Peer 模式中，两个 Agent 可能互相等待对方的回复，形成死锁。</p>
+<pre><code>死锁场景：
+
+  Agent A: &quot;请 Agent B 先确认方案&quot;
+           ↓ 等待 B
+  Agent B: &quot;请 Agent A 先提供数据&quot;
+           ↓ 等待 A
+  → 无限等待
+</code></pre>
+<p>解决方案：</p>
+<pre><code class="language-python">class DeadlockDetector:
+    &quot;&quot;&quot;简单的死锁检测器&quot;&quot;&quot;
+
+    def __init__(self, timeout_seconds: float = 60):
+        self.timeout = timeout_seconds
+        self._waiting: dict[str, str] = {}  # agent_id -&gt; waiting_for_agent_id
+
+    def register_wait(self, agent_id: str, waiting_for: str):
+        self._waiting[agent_id] = waiting_for
+        # 检测环形等待
+        if self._has_cycle(agent_id):
+            raise DeadlockError(
+                f&quot;检测到死锁: {self._trace_cycle(agent_id)}&quot;
+            )
+
+    def _has_cycle(self, start: str) -&gt; bool:
+        visited = set()
+        current = start
+        while current in self._waiting:
+            if current in visited:
+                return True
+            visited.add(current)
+            current = self._waiting[current]
+        return False
+
+    def _trace_cycle(self, start: str) -&gt; str:
+        chain = [start]
+        current = self._waiting.get(start, &quot;&quot;)
+        while current != start and current:
+            chain.append(current)
+            current = self._waiting.get(current, &quot;&quot;)
+        chain.append(start)
+        return &quot; -&gt; &quot;.join(chain)
+
+
+class DeadlockError(Exception):
+    pass
+</code></pre>
+<hr>
+<h2>7. Multi-Agent 的成本问题</h2>
+<p>成本是 Multi-Agent 系统必须正视的问题。它不只是&quot;贵一点&quot;的问题——可能是&quot;贵一个数量级&quot;的问题。</p>
+<h3>7.1 成本模型</h3>
+<pre><code>Single-Agent 执行一个任务的 Token 消耗：
+
+  1 x System Prompt   +  N x (Context + Response)
+  ~1,000 tokens          ~3,000 tokens x 5 iterations
+                         = ~16,000 tokens
+
+
+Multi-Agent (Supervisor + 3 Workers) 的 Token 消耗：
+
+  Supervisor 分解:   ~4,000 tokens   (System Prompt + 任务分解)
+  Worker A 执行:     ~8,000 tokens   (System Prompt + 执行)
+  Worker B 执行:     ~8,000 tokens   (System Prompt + 执行)
+  Worker C 执行:     ~8,000 tokens   (System Prompt + 执行)
+  Supervisor 合成:   ~6,000 tokens   (收集所有结果 + 合成)
+                     ──────────────
+  Total:             ~34,000 tokens   ← 约 2x Single-Agent
+
+  如果 Worker 内部也有多轮迭代，消耗会更高。
+</code></pre>
+<h3>7.2 什么时候 Multi-Agent 的收益大于成本</h3>
+<p>不是所有场景都值得用 Multi-Agent。一个简单的决策框架：</p>
+<pre><code>                        任务复杂度
+                    低 ─────────── 高
+                    │               │
+  专业化需求  低    │  Single-Agent │  Single-Agent
+              │    │  (够用)       │  + Better Prompt
+              │    │               │
+              高    │  Single-Agent │  Multi-Agent ✓
+                    │  + Tools      │  (值得投入)
+                    │               │
+</code></pre>
+<p>Multi-Agent 在以下条件下收益最大：</p>
+<ol>
+<li><strong>任务天然可并行</strong>：子任务之间独立性高，Multi-Agent 通过并行执行缩短总耗时，即使 token 消耗增加，时间成本下降</li>
+<li><strong>专业化收益显著</strong>：专家 Agent 在自己的领域比通用 Agent 的输出质量显著更高，质量提升值得额外成本</li>
+<li><strong>Single-Agent 已经到达能力瓶颈</strong>：Context Window 不够、单个 prompt 角色冲突、输出质量不稳定</li>
+<li><strong>任务的商业价值足够高</strong>：生成一份价值数万元的分析报告，多花几美元的 API 费用是可以接受的</li>
+</ol>
+<h3>7.3 成本优化策略</h3>
+<pre><code class="language-python">class CostAwareTeam(AgentTeam):
+    &quot;&quot;&quot;成本感知的 Agent 团队&quot;&quot;&quot;
+
+    def __init__(self, supervisor, token_budget: int = 100_000):
+        super().__init__(supervisor)
+        self.token_budget = token_budget
+        self.token_used = 0
+
+    def _select_model_for_task(self, task: Task) -&gt; str:
+        &quot;&quot;&quot;根据任务复杂度选择模型——不是所有子任务都需要最强模型&quot;&quot;&quot;
+        if task.context.get(&quot;complexity&quot;) == &quot;low&quot;:
+            return &quot;gpt-4o-mini&quot;     # 简单任务用小模型
+        elif task.context.get(&quot;complexity&quot;) == &quot;high&quot;:
+            return &quot;gpt-4o&quot;          # 复杂任务用大模型
+        else:
+            return &quot;gpt-4o-mini&quot;     # 默认用小模型，够用即可
+
+    def _should_continue(self) -&gt; bool:
+        &quot;&quot;&quot;预算检查&quot;&quot;&quot;
+        if self.token_used &gt;= self.token_budget:
+            self._log(&quot;team&quot;, f&quot;Token 预算耗尽 ({self.token_used}/{self.token_budget})&quot;)
+            return False
+        return True
+</code></pre>
+<p>关键原则：<strong>Router 和 Supervisor 可以用轻量模型，只有需要深度推理的 Worker 才用重量级模型。</strong> 这类似人类组织中，项目经理不需要是技术最强的人，但专家必须在各自领域足够专业。</p>
+<hr>
+<h2>8. Multi-Agent 的调试挑战</h2>
+<p>Multi-Agent 系统的调试难度是 Single-Agent 的平方级增长——不仅每个 Agent 内部可能出错，Agent 之间的交互也可能出错。</p>
+<h3>8.1 执行链路追踪</h3>
+<p>每次 Multi-Agent 执行都应该生成一个完整的 Trace，记录每个 Agent 的每次 LLM 调用、输入、输出和耗时。</p>
+<pre><code class="language-python">import time
+import uuid
+from dataclasses import dataclass, field
+
+
+@dataclass
+class Span:
+    &quot;&quot;&quot;一个执行跨度（对应一次 Agent 操作）&quot;&quot;&quot;
+    span_id: str = field(default_factory=lambda: str(uuid.uuid4())[:8])
+    parent_id: str = &quot;&quot;
+    agent_name: str = &quot;&quot;
+    operation: str = &quot;&quot;          # &quot;decompose&quot;, &quot;execute&quot;, &quot;synthesize&quot;
+    input_summary: str = &quot;&quot;
+    output_summary: str = &quot;&quot;
+    start_time: float = 0.0
+    end_time: float = 0.0
+    token_count: int = 0
+    status: str = &quot;running&quot;      # running | done | failed
+    children: list = field(default_factory=list)
+
+    @property
+    def duration_ms(self) -&gt; float:
+        return (self.end_time - self.start_time) * 1000
+
+
+class Tracer:
+    &quot;&quot;&quot;Multi-Agent 执行链路追踪器&quot;&quot;&quot;
+
+    def __init__(self):
+        self.root_span: Span | None = None
+        self._span_stack: list[Span] = []
+
+    def start_span(self, agent_name: str, operation: str, input_summary: str = &quot;&quot;) -&gt; Span:
+        span = Span(
+            agent_name=agent_name,
+            operation=operation,
+            input_summary=input_summary[:200],
+            start_time=time.time(),
+        )
+        if self._span_stack:
+            parent = self._span_stack[-1]
+            span.parent_id = parent.span_id
+            parent.children.append(span)
+        else:
+            self.root_span = span
+
+        self._span_stack.append(span)
+        return span
+
+    def end_span(self, output_summary: str = &quot;&quot;, status: str = &quot;done&quot;):
+        if self._span_stack:
+            span = self._span_stack.pop()
+            span.end_time = time.time()
+            span.output_summary = output_summary[:200]
+            span.status = status
+
+    def print_trace(self, span: Span = None, indent: int = 0):
+        &quot;&quot;&quot;打印可视化的执行链路&quot;&quot;&quot;
+        span = span or self.root_span
+        if not span:
+            return
+
+        prefix = &quot;  &quot; * indent
+        status_icon = &quot;OK&quot; if span.status == &quot;done&quot; else &quot;FAIL&quot;
+        print(
+            f&quot;{prefix}[{status_icon}] {span.agent_name}.{span.operation} &quot;
+            f&quot;({span.duration_ms:.0f}ms)&quot;
+        )
+        if span.input_summary:
+            print(f&quot;{prefix}  IN:  {span.input_summary[:80]}&quot;)
+        if span.output_summary:
+            print(f&quot;{prefix}  OUT: {span.output_summary[:80]}&quot;)
+
+        for child in span.children:
+            self.print_trace(child, indent + 1)
+</code></pre>
+<p>输出示例：</p>
+<pre><code>[OK] supervisor.decompose (2340ms)
+  IN:  撰写一篇关于 LLM Agent 在企业客服场景落地的技术调研报告...
+  OUT: {&quot;subtasks&quot;: [{&quot;task_id&quot;: &quot;task_1&quot;, ...}, ...]}
+  [OK] searcher.execute (5120ms)
+    IN:  搜索 LLM Agent 客服场景的行业现状和主流方案...
+    OUT: ## 行业现状\n1. 2024 年全球智能客服市场规模...
+  [OK] analyst.execute (4800ms)
+    IN:  分析搜索结果，提炼关键洞察和趋势...
+    OUT: ## 分析结论\n1. 技术成熟度：LLM 客服处于...
+  [OK] writer.execute (6200ms)
+    IN:  根据分析结果撰写完整的技术调研报告...
+    OUT: # LLM Agent 企业客服落地技术调研报告\n\n## 1. 执行摘要...
+[OK] supervisor.synthesize (3100ms)
+  IN:  请合成最终结果。
+  OUT: # LLM Agent 企业客服落地技术调研报告（终稿）...
+</code></pre>
+<h3>8.2 Bug 复现</h3>
+<p>Multi-Agent 场景的 bug 复现特别困难，因为：</p>
+<ul>
+<li>LLM 输出是非确定性的——相同输入可能产生不同输出</li>
+<li>Agent 之间的交互是动态的——执行路径取决于中间结果</li>
+<li>并发执行的时序不确定——Worker A 和 B 谁先完成可能影响最终结果</li>
+</ul>
+<p>应对策略：</p>
+<ol>
+<li><strong>记录完整的 LLM 输入/输出</strong>：在 Trace 中保存每次 LLM 调用的完整 messages 和 response，不只是摘要</li>
+<li><strong>Deterministic Replay</strong>：用固定的 seed 和 temperature=0 复现执行，或者直接 mock LLM 响应</li>
+<li><strong>快照式调试</strong>：在每个 Agent 决策点保存完整的 Blackboard 状态快照，出问题时可以回溯到任意时间点</li>
+</ol>
+<pre><code class="language-python">class ReplayableTeam(AgentTeam):
+    &quot;&quot;&quot;可回放的 Agent 团队——记录完整的 LLM 交互供复现&quot;&quot;&quot;
+
+    def __init__(self, supervisor):
+        super().__init__(supervisor)
+        self._llm_recordings: list[dict] = []
+
+    def record_llm_call(self, agent_name: str, messages: list[dict], response: str):
+        self._llm_recordings.append({
+            &quot;agent&quot;: agent_name,
+            &quot;messages&quot;: messages,
+            &quot;response&quot;: response,
+            &quot;timestamp&quot;: time.time(),
+        })
+
+    def save_recording(self, path: str):
+        &quot;&quot;&quot;保存录制数据，用于后续回放和调试&quot;&quot;&quot;
+        with open(path, &quot;w&quot;) as f:
+            json.dump(self._llm_recordings, f, ensure_ascii=False, indent=2)
+</code></pre>
+<h3>8.3 可观测性设计</h3>
+<p>一个生产级 Multi-Agent 系统至少需要以下可观测性指标：</p>
+<table>
+<thead>
+<tr>
+<th>指标类别</th>
+<th>具体指标</th>
+<th>目的</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>延迟</strong></td>
+<td>每个 Agent 的执行时间、端到端总时间</td>
+<td>定位性能瓶颈</td>
+</tr>
+<tr>
+<td><strong>成本</strong></td>
+<td>每个 Agent 的 Token 消耗、总消耗</td>
+<td>成本监控和预算控制</td>
+</tr>
+<tr>
+<td><strong>质量</strong></td>
+<td>任务成功率、重试次数、降级次数</td>
+<td>评估系统可靠性</td>
+</tr>
+<tr>
+<td><strong>链路</strong></td>
+<td>完整的 Trace（Agent、操作、输入、输出）</td>
+<td>问题排查</td>
+</tr>
+<tr>
+<td><strong>状态</strong></td>
+<td>Blackboard 的状态变更历史</td>
+<td>数据流追踪</td>
+</tr>
+<tr>
+<td><strong>通信</strong></td>
+<td>Agent 间消息数量、消息大小</td>
+<td>通信效率分析</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>9. 设计 Multi-Agent 系统的决策清单</h2>
+<p>在你决定构建 Multi-Agent 系统之前，逐一回答以下问题：</p>
+<p><strong>必要性验证</strong>：</p>
+<ul>
+<li>单个 Agent 真的不够吗？是否尝试过优化 prompt、增加工具、使用更强的模型？</li>
+<li>任务是否天然需要多角色/多视角？还是只是因为你觉得&quot;多 Agent 更酷&quot;？</li>
+<li>团队的 LLM API 预算能否支撑多 Agent 的额外消耗？</li>
+</ul>
+<p><strong>架构选择</strong>：</p>
+<ul>
+<li>任务结构更接近哪种模式？Supervisor-Worker / Peer-to-Peer / Pipeline / Dynamic Routing？</li>
+<li>Agent 之间需要什么样的通信？单向传递 / 双向协商 / 广播通知？</li>
+<li>状态应该共享还是独立？冲突解决策略是什么？</li>
+</ul>
+<p><strong>工程保障</strong>：</p>
+<ul>
+<li>每个 Agent 的失败影响范围是什么？有降级方案吗？</li>
+<li>如何追踪一个请求在多个 Agent 之间的完整执行链路？</li>
+<li>如何测试多 Agent 协作的正确性——单元测试（单个 Agent）+ 集成测试（Agent 交互）？</li>
+</ul>
+<hr>
+<h2>10. 结语与展望</h2>
+<p>本文是 Phase 3（How to Scale Agent Intelligence）的最后一篇。在 Phase 3 的四篇文章中，我们从单个 Agent 的四个维度进行了升级：</p>
+<pre><code>Phase 3 知识路线：
+
+  第 08 篇 Memory       → Agent 有了&quot;记忆&quot;
+  第 09 篇 RAG          → Agent 有了&quot;外部知识&quot;
+  第 10 篇 Planning     → Agent 有了&quot;规划和反思&quot;
+  第 11 篇 Multi-Agent  → Agent 有了&quot;团队协作&quot;（本文）
+</code></pre>
+<p>至此，我们已经拥有构建一个&quot;聪明的&quot; Agent 系统所需的全部核心概念。但&quot;聪明&quot;不等于&quot;可用&quot;。一个在本地跑通 demo 的 Multi-Agent 系统，距离生产环境还有巨大的鸿沟——框架选型、协议标准化、可观测性、安全性、成本控制、评估体系。</p>
+<p>这正是 Phase 4（How to Ship Agents to Production）要解决的问题：</p>
+<ul>
+<li><strong>下一篇（12）</strong>：LangChain vs LangGraph —— 你应该用框架还是自己写？框架的价值边界在哪里？我们会从 Chain 和 Graph 两种抽象出发，讨论框架在什么时候是加速器，什么时候是束缚。</li>
+<li><strong>第 13 篇</strong>：MCP and Tool Protocol —— Agent 的工具需要标准化。MCP 协议如何让不同 Agent 共享工具？工具的发现、声明、权限控制。</li>
+<li><strong>第 14 篇</strong>：Production-Grade Agent Systems —— 最后一篇，打通最后一公里：评估、安全、成本、灰度、监控。</li>
+</ul>
+<h3>进一步思考</h3>
+<p><strong>关于协作模式的演化</strong>：本文介绍的四种模式是&quot;纯模式&quot;。真实系统中，你很可能需要混合模式——比如 Supervisor-Worker 的 Worker 内部用 Pipeline，或者 Dynamic Routing 的专家 Agent 内部用 Peer-to-Peer 辩论。如何设计这种嵌套的多层协作结构，是一个值得深入探索的方向。</p>
+<p><strong>关于 Agent 的涌现行为</strong>：当多个 Agent 协作时，是否会出现超越单个 Agent 能力的&quot;涌现行为&quot;？还是说 Multi-Agent 的上限永远被最强的那个 Agent 决定？这个问题在学术界尚无定论，但从实践角度看，好的协作架构确实能产出超越任何单个 Agent 的结果——正如一个好的工程团队能完成任何个人都无法独自完成的项目。</p>
+<p><strong>关于 Human-in-the-Loop</strong>：本文讨论的全是 Agent-to-Agent 的协作。但在生产环境中，最重要的&quot;Agent&quot;可能是人类。如何设计一个 Multi-Agent 系统，让人类能在关键节点介入、审核和纠正？Human-Agent 协作可能比 Agent-Agent 协作更有实用价值，也更有挑战性。</p>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 11 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/10-Planning%20and%20Reflection">10 | Planning and Reflection</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/12-LangChain%20vs%20LangGraph">12 | LangChain vs LangGraph</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2026-01-12","children":"2026年01月12日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Planning and Reflection: 从 ReAct 到分层规划与自我纠错"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L5","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L5","Planning",{"href":"/blog/tag/Planning/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Planning"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/09-RAG as Cognitive Memory","title":"RAG as Cognitive Memory: 检索增强生成的工程实践","description":"RAG 不是搜索+拼接，而是 Agent 的认知记忆系统。本文从 Ingestion、Chunking、Embedding、Hybrid Retrieval、Reranking 到 Context Packing，逐层拆解 RAG Pipeline 的工程实践与决策 Trade-off。核心观点：检索质量 > 模型大小。","pubDate":"2026-01-07","tags":["Agentic","AI Engineering","RAG"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/11-Multi-Agent Collaboration","title":"Multi-Agent Collaboration: 多 Agent 协作模式与架构","description":"单个 Agent 的能力有天花板——Context Window 有限、专业化受限、单点故障、串行瓶颈。本文系统拆解多 Agent 协作的四种核心模式（Supervisor-Worker、Peer-to-Peer、Pipeline、Dynamic Routing），深入 Agent 间通信机制、状态管理、错误处理与成本控制，并用 Python 从零实现一个 Supervisor-Worker 协作框架。","pubDate":"2026-01-17","tags":["Agentic","AI Engineering","Multi-Agent"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"AI Engineering":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"Planning":{"prev":null,"next":null}}}]}],["$","$L19",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"Planning and Reflection: 从 ReAct 到分层规划与自我纠错 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"Agentic 系列第 10 篇。深入剖析 Agent 规划（Planning）与反思（Reflection）的核心机制——从 ReAct 的交替推理、Plan-and-Execute 的全局视野、Tree-of-Thought 的多路径搜索，到分层规划的递归分解，再到结构化反思与自我纠错。包含完整 Python 实现、决策分析与 trade-off 讨论。"}],["$","meta","2",{"property":"og:title","content":"Planning and Reflection: 从 ReAct 到分层规划与自我纠错"}],["$","meta","3",{"property":"og:description","content":"Agentic 系列第 10 篇。深入剖析 Agent 规划（Planning）与反思（Reflection）的核心机制——从 ReAct 的交替推理、Plan-and-Execute 的全局视野、Tree-of-Thought 的多路径搜索，到分层规划的递归分解，再到结构化反思与自我纠错。包含完整 Python 实现、决策分析与 trade-off 讨论。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-01-12"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"Planning and Reflection: 从 ReAct 到分层规划与自我纠错"}],["$","meta","9",{"name":"twitter:description","content":"Agentic 系列第 10 篇。深入剖析 Agent 规划（Planning）与反思（Reflection）的核心机制——从 ReAct 的交替推理、Plan-and-Execute 的全局视野、Tree-of-Thought 的多路径搜索，到分层规划的递归分解，再到结构化反思与自我纠错。包含完整 Python 实现、决策分析与 trade-off 讨论。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}

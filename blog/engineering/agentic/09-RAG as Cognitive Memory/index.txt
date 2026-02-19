@@ -1,0 +1,3277 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-51baccc14cf1da9e.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/0458d6941a120cde.css","style"]
+0:{"P":null,"b":"8CSEQRRrJyhjI8sSOwcIy","p":"","c":["","blog","engineering","agentic","09-RAG%20as%20Cognitive%20Memory",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/09-RAG%20as%20Cognitive%20Memory","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0458d6941a120cde.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/09-RAG%20as%20Cognitive%20Memory","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","kHMuz78mFluTWV_E0yiDUv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:Td4c4,<h1>RAG as Cognitive Memory: 检索增强生成的工程实践</h1>
+<blockquote>
+<p>系列第 9 篇。上一篇我们讨论了 Agent 的记忆架构——会话状态、短期记忆与长期记忆。本篇聚焦长期记忆中最核心的工程问题：如何让 Agent 在海量知识中精准找到它需要的信息。</p>
+<p>核心命题：<strong>检索质量 &gt; 模型大小。</strong> 一个用 GPT-3.5 + 优秀 RAG 的系统，往往比 GPT-4 + 粗糙检索的系统表现更好。RAG 是工程问题，不是模型问题。</p>
+</blockquote>
+<hr>
+<h2>1. RAG 不是&quot;搜索+拼接&quot;</h2>
+<p>很多团队对 RAG 的理解停留在&quot;把搜索结果塞进 prompt&quot;这一层。这种理解会导致系统质量的天花板极低。</p>
+<p>RAG 的本质是 <strong>Agent 的认知记忆系统</strong>。人类回答问题时，不是把大脑里所有信息倒出来再筛选——而是根据问题的语义，精准地从记忆中提取相关片段，重新组织后输出回答。RAG 做的事情完全一样：理解 Query 的意图，从知识库中检索最相关的上下文，以最优的方式组织给 LLM，让它生成有据可依的回答。</p>
+<p>这个过程中，每一个环节都会影响最终质量：</p>
+<ul>
+<li><strong>Chunking 策略</strong>决定了知识的粒度——切得不好，语义被割裂，检索再准也没用</li>
+<li><strong>Embedding 质量</strong>决定了语义理解的上限——模型选错了，同义词都搜不到</li>
+<li><strong>检索策略</strong>决定了召回的完整性——只用向量搜索，专有名词和 ID 就会丢失</li>
+<li><strong>Reranking</strong>决定了精排的准确性——Top 100 召回可能很好，但 Top 5 的排序决定了 LLM 看到什么</li>
+<li><strong>Context Packing</strong>决定了 LLM 的信息利用率——塞太多噪声，LLM 反而会被干扰</li>
+</ul>
+<p>一个工程事实：在大多数 RAG 系统中，<strong>80% 的质量问题出在检索侧，而非生成侧。</strong> 换一个更贵的模型不如把检索做好。</p>
+<hr>
+<h2>2. RAG Pipeline 全景图</h2>
+<p>一个生产级 RAG 系统的完整数据流如下：</p>
+<pre><code>┌─────────────────────────────────────────────────────────────────────┐
+│                        OFFLINE (Indexing)                           │
+│                                                                     │
+│  ┌──────────┐   ┌───────────┐   ┌──────────┐   ┌────────────────┐  │
+│  │ Document │──→│ Ingestion │──→│ Chunking │──→│   Embedding    │  │
+│  │  Sources │   │ &amp; Cleaning│   │ Strategy │   │ (Text → Vec)   │  │
+│  └──────────┘   └───────────┘   └──────────┘   └───────┬────────┘  │
+│   PDF/HTML/MD    格式归一化       语义切分              │           │
+│   Code/DB        元数据提取       重叠策略         ┌────┴─────┐    │
+│                                                   │ Indexing  │    │
+│                                                   │ (Vector + │    │
+│                                                   │  BM25 DB) │    │
+│                                                   └────┬─────┘    │
+└────────────────────────────────────────────────────────┼──────────┘
+                                                         │
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┼ ─ ─ ─ ─ ─
+                                                         │
+┌────────────────────────────────────────────────────────┼──────────┐
+│                        ONLINE (Retrieval)              │           │
+│                                                        ▼           │
+│  ┌───────┐   ┌──────────┐   ┌───────────┐   ┌────────────────┐   │
+│  │ User  │──→│  Query   │──→│  Hybrid   │──→│   Reranking    │   │
+│  │ Query │   │ Expansion│   │  Search   │   │ (Cross-Encoder)│   │
+│  └───────┘   └──────────┘   │ BM25+Vec  │   └───────┬────────┘   │
+│               HyDE/扩写      └───────────┘           │            │
+│                              RRF 融合                 ▼            │
+│                                              ┌────────────────┐   │
+│                                              │Context Packing │   │
+│                                              │ (排序/截断/组织) │   │
+│                                              └───────┬────────┘   │
+│                                                      ▼            │
+│                                              ┌────────────────┐   │
+│                                              │   LLM Generate │   │
+│                                              │  (+ Citation)  │   │
+│                                              └───────┬────────┘   │
+│                                                      ▼            │
+│                                              ┌────────────────┐   │
+│                                              │   Response     │   │
+│                                              └────────────────┘   │
+└───────────────────────────────────────────────────────────────────┘
+</code></pre>
+<p>整个 Pipeline 分为两个阶段：<strong>离线索引（Offline Indexing）</strong> 和 <strong>在线检索（Online Retrieval）</strong>。离线阶段处理和索引文档，在线阶段处理用户查询并生成回答。接下来逐一拆解每个环节。</p>
+<hr>
+<h2>3. Ingestion：数据进入系统的第一关</h2>
+<h3>3.1 数据源多样性</h3>
+<p>真实世界的知识不会以整洁的纯文本出现。一个企业级 RAG 系统通常需要处理：</p>
+<table>
+<thead>
+<tr>
+<th>数据源</th>
+<th>挑战</th>
+<th>处理策略</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PDF</td>
+<td>布局复杂、表格、图片、双栏</td>
+<td>使用专用解析器（如 PyMuPDF、Unstructured）</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td>导航栏、广告、模板噪声</td>
+<td>内容提取 + boilerplate 去除</td>
+</tr>
+<tr>
+<td>Markdown</td>
+<td>相对规范，但嵌套结构多</td>
+<td>按标题层级保留结构信息</td>
+</tr>
+<tr>
+<td>代码文件</td>
+<td>函数、类、注释的语义边界</td>
+<td>AST 解析或按函数/类切分</td>
+</tr>
+<tr>
+<td>数据库</td>
+<td>结构化数据需转换为文本</td>
+<td>Schema 描述 + 行级文本化</td>
+</tr>
+</tbody></table>
+<h3>3.2 文档预处理</h3>
+<p>原始文档进入系统前，必须经过清洗和归一化：</p>
+<pre><code class="language-python">from dataclasses import dataclass, field
+from typing import Optional
+import hashlib
+import re
+
+@dataclass
+class Document:
+    &quot;&quot;&quot;归一化后的文档表示&quot;&quot;&quot;
+    content: str
+    source: str                           # 来源标识（URL、文件路径等）
+    doc_type: str                         # pdf, html, markdown, code
+    metadata: dict = field(default_factory=dict)  # 标题、作者、日期等
+    content_hash: str = &quot;&quot;                # 用于增量更新的去重
+
+    def __post_init__(self):
+        if not self.content_hash:
+            self.content_hash = hashlib.sha256(
+                self.content.encode()
+            ).hexdigest()
+
+
+def preprocess(raw_text: str) -&gt; str:
+    &quot;&quot;&quot;文档预处理：清洗 + 归一化&quot;&quot;&quot;
+    # 1. 去除多余空白
+    text = re.sub(r&#39;\n{3,}&#39;, &#39;\n\n&#39;, raw_text)
+    text = re.sub(r&#39; {2,}&#39;, &#39; &#39;, text)
+
+    # 2. 去除特殊控制字符
+    text = re.sub(r&#39;[\x00-\x08\x0b\x0c\x0e-\x1f]&#39;, &#39;&#39;, text)
+
+    # 3. 归一化 Unicode（统一全角/半角等）
+    import unicodedata
+    text = unicodedata.normalize(&#39;NFKC&#39;, text)
+
+    return text.strip()
+</code></pre>
+<h3>3.3 增量 vs 全量更新</h3>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>适用场景</th>
+<th>实现复杂度</th>
+<th>一致性保证</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>全量重建</strong></td>
+<td>文档量小、更新不频繁</td>
+<td>低</td>
+<td>强（每次全量保证一致）</td>
+</tr>
+<tr>
+<td><strong>增量更新</strong></td>
+<td>文档量大、频繁变更</td>
+<td>高</td>
+<td>需额外机制保证</td>
+</tr>
+</tbody></table>
+<p>增量更新的关键是 <strong>content hash 去重</strong>：对每个文档计算内容哈希，只有哈希变化时才重新处理。还需要处理文档删除——被删除的文档对应的 chunk 和向量必须从索引中清除，否则会产生&quot;幽灵知识&quot;。</p>
+<hr>
+<h2>4. Chunking：RAG 质量的胜负手</h2>
+<p>Chunking 是 RAG 中最容易被低估、但对质量影响最大的环节。切分策略直接决定了：</p>
+<ul>
+<li>检索时能否命中相关内容</li>
+<li>命中的内容是否包含足够上下文</li>
+<li>LLM 拿到的信息是否有噪声</li>
+</ul>
+<h3>4.1 固定长度切分</h3>
+<p>最简单的策略：按字符数或 token 数等间隔切分。</p>
+<pre><code class="language-python">def fixed_size_chunk(text: str, chunk_size: int = 512, overlap: int = 64) -&gt; list[str]:
+    &quot;&quot;&quot;固定长度切分，带重叠&quot;&quot;&quot;
+    chunks = []
+    start = 0
+    while start &lt; len(text):
+        end = start + chunk_size
+        chunks.append(text[start:end])
+        start = end - overlap  # 重叠区域
+    return chunks
+</code></pre>
+<p><strong>优点</strong>：实现简单，chunk 大小均匀，token 预算可控。<br><strong>缺点</strong>：完全不考虑语义边界。一个段落可能被从中间切开，一个完整的论述被分到两个 chunk 中，检索时只能命中半句话。</p>
+<p><strong>适用场景</strong>：对内容结构不了解、无法解析的纯文本；快速原型验证。</p>
+<h3>4.2 语义切分</h3>
+<p>按文档的天然结构（段落、标题、代码块）切分：</p>
+<pre><code class="language-python">import re
+
+def semantic_chunk(text: str, max_chunk_size: int = 1024) -&gt; list[str]:
+    &quot;&quot;&quot;基于语义边界的切分&quot;&quot;&quot;
+    # 按标题分割（Markdown）
+    sections = re.split(r&#39;\n(?=#{1,3}\s)&#39;, text)
+
+    chunks = []
+    for section in sections:
+        if len(section) &lt;= max_chunk_size:
+            chunks.append(section.strip())
+        else:
+            # 如果单个 section 太大，按段落再分
+            paragraphs = section.split(&#39;\n\n&#39;)
+            current_chunk = &quot;&quot;
+            for para in paragraphs:
+                if len(current_chunk) + len(para) &gt; max_chunk_size:
+                    if current_chunk:
+                        chunks.append(current_chunk.strip())
+                    current_chunk = para
+                else:
+                    current_chunk += &quot;\n\n&quot; + para
+            if current_chunk:
+                chunks.append(current_chunk.strip())
+
+    return [c for c in chunks if c]  # 过滤空 chunk
+</code></pre>
+<p><strong>优点</strong>：保留语义完整性，每个 chunk 是一个有意义的信息单元。<br><strong>缺点</strong>：chunk 大小不均匀；依赖文档格式的规范性。</p>
+<h3>4.3 递归切分</h3>
+<p>分层递归：先按最大的结构边界切，切不动再用更小的边界：</p>
+<pre><code class="language-python">def recursive_chunk(
+    text: str,
+    chunk_size: int = 512,
+    separators: list[str] = None
+) -&gt; list[str]:
+    &quot;&quot;&quot;递归切分：先按大结构，再按小结构&quot;&quot;&quot;
+    if separators is None:
+        separators = [
+            &quot;\n\n\n&quot;,   # 章节间空行
+            &quot;\n\n&quot;,      # 段落
+            &quot;\n&quot;,        # 行
+            &quot;. &quot;,        # 句子
+            &quot; &quot;,         # 单词
+        ]
+
+    if len(text) &lt;= chunk_size:
+        return [text]
+
+    # 找到当前层级能用的分隔符
+    for i, sep in enumerate(separators):
+        if sep in text:
+            parts = text.split(sep)
+            chunks = []
+            current = &quot;&quot;
+            for part in parts:
+                candidate = current + sep + part if current else part
+                if len(candidate) &lt;= chunk_size:
+                    current = candidate
+                else:
+                    if current:
+                        chunks.append(current)
+                    # 如果单个 part 仍然超限，用更细的分隔符递归
+                    if len(part) &gt; chunk_size:
+                        chunks.extend(
+                            recursive_chunk(part, chunk_size, separators[i+1:])
+                        )
+                    else:
+                        current = part
+            if current:
+                chunks.append(current)
+            return chunks
+
+    # 最后兜底：硬切
+    return fixed_size_chunk(text, chunk_size)
+</code></pre>
+<p>这是 LangChain 的 <code>RecursiveCharacterTextSplitter</code> 采用的核心思路——先试大分隔符，不行再试小的，层层递归。</p>
+<h3>4.4 Overlap 策略</h3>
+<p>为什么需要重叠？考虑这段文本被切成两个 chunk：</p>
+<pre><code>Chunk 1: &quot;...Transformer 模型的核心是 Self-Attention 机制，它允许模型在&quot;
+Chunk 2: &quot;处理每个 token 时参考序列中所有其他 token 的信息...&quot;
+</code></pre>
+<p>如果用户问&quot;Self-Attention 机制有什么作用&quot;，Chunk 1 命中了关键词但答案不完整，Chunk 2 有答案但没有关键词匹配不上。加入重叠区域后：</p>
+<pre><code>Chunk 1: &quot;...Transformer 模型的核心是 Self-Attention 机制，它允许模型在处理每个 token 时&quot;
+Chunk 2: &quot;Self-Attention 机制，它允许模型在处理每个 token 时参考序列中所有其他 token 的信息...&quot;
+</code></pre>
+<p>两个 chunk 都包含了完整的语义。</p>
+<p><strong>重叠多少合适？</strong> 经验值是 chunk 大小的 10%-20%。太少起不到作用，太多则增加存储和检索冗余。对于 512 token 的 chunk，50-100 token 的 overlap 是合理的起点。</p>
+<h3>4.5 Chunking 策略选择 Trade-off</h3>
+<pre><code>                    Chunk 大小 Trade-off
+
+      太小 (&lt; 256 tokens)              太大 (&gt; 2048 tokens)
+      ┌─────────────────┐              ┌─────────────────┐
+      │ + 检索精确        │              │ + 上下文完整     │
+      │ + 噪声少          │              │ + 语义连贯       │
+      │ - 上下文不足       │              │ - 引入噪声       │
+      │ - 需要检索更多 chunk│              │ - 检索不精确     │
+      │ - 容易丢失关联信息  │              │ - token 预算浪费 │
+      └─────────────────┘              └─────────────────┘
+                        │              │
+                        ▼              ▼
+                   ┌─────────────────────┐
+                   │  Sweet Spot         │
+                   │  512 - 1024 tokens  │
+                   │  根据文档类型调整     │
+                   └─────────────────────┘
+</code></pre>
+<p>实际选择建议：</p>
+<table>
+<thead>
+<tr>
+<th>文档类型</th>
+<th>推荐 Chunk 大小</th>
+<th>推荐策略</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>技术文档</td>
+<td>512-768 tokens</td>
+<td>递归（按标题+段落）</td>
+<td>结构清晰，段落边界明确</td>
+</tr>
+<tr>
+<td>法律/合同</td>
+<td>768-1024 tokens</td>
+<td>语义（按条款）</td>
+<td>条款不可割裂</td>
+</tr>
+<tr>
+<td>代码</td>
+<td>按函数/类</td>
+<td>语义（AST 辅助）</td>
+<td>函数是最小可理解单元</td>
+</tr>
+<tr>
+<td>FAQ</td>
+<td>每个 QA 一个 chunk</td>
+<td>自然边界</td>
+<td>问答对不可拆分</td>
+</tr>
+<tr>
+<td>聊天记录</td>
+<td>256-512 tokens</td>
+<td>按对话轮次</td>
+<td>保持对话上下文</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>5. Embedding：将语义映射到向量空间</h2>
+<h3>5.1 Embedding 模型选择</h3>
+<p>Embedding 模型将文本转换为高维向量，使语义相似的文本在向量空间中距离更近。选择合适的模型是基础。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>考量</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>通用 vs 领域</strong></td>
+<td>通用模型覆盖面广但特定领域可能不够精确</td>
+<td>先用通用模型验证，数据足够后考虑微调</td>
+</tr>
+<tr>
+<td><strong>向量维度</strong></td>
+<td>768 / 1024 / 1536 / 3072</td>
+<td>768-1024 是性价比最高的区间</td>
+</tr>
+<tr>
+<td><strong>多语言</strong></td>
+<td>中英混合场景极其常见</td>
+<td>必须选支持多语言的模型</td>
+</tr>
+<tr>
+<td><strong>推理成本</strong></td>
+<td>高维模型索引和检索更慢</td>
+<td>生产环境需要 benchmark 延迟</td>
+</tr>
+</tbody></table>
+<p>关于维度选择的 Trade-off：维度越高，理论上能表示的语义越丰富——但实际收益递减明显。从 768 到 1536 的提升远小于从 384 到 768。同时，维度翻倍意味着存储翻倍、检索延迟增加。对大多数场景，<strong>1024 维是一个好的默认选择</strong>。</p>
+<h3>5.2 MTEB Benchmark</h3>
+<p>选择 Embedding 模型时，<a href="https://huggingface.co/spaces/mteb/leaderboard">MTEB（Massive Text Embedding Benchmark）</a> 是最权威的参考。它从 Retrieval、Classification、Clustering 等多个维度评估模型能力。</p>
+<p>但请注意：<strong>MTEB 排名第一的模型不一定适合你。</strong> 你需要关注：</p>
+<ul>
+<li>你的数据语言在 benchmark 中是否有代表性</li>
+<li>模型大小是否符合你的延迟和成本要求</li>
+<li>Retrieval 子任务的分数（而非总分）才是 RAG 场景最相关的</li>
+</ul>
+<h3>5.3 Embedding 实现</h3>
+<pre><code class="language-python">from typing import Protocol
+
+class EmbeddingModel(Protocol):
+    &quot;&quot;&quot;Embedding 模型接口抽象&quot;&quot;&quot;
+    def embed(self, texts: list[str]) -&gt; list[list[float]]:
+        ...
+
+    @property
+    def dimension(self) -&gt; int:
+        ...
+
+
+class OpenAIEmbedding:
+    &quot;&quot;&quot;OpenAI Embedding 实现示例&quot;&quot;&quot;
+    def __init__(self, model: str = &quot;text-embedding-3-small&quot;):
+        from openai import OpenAI
+        self.client = OpenAI()
+        self.model = model
+        self._dimension = 1536  # text-embedding-3-small 默认维度
+
+    def embed(self, texts: list[str]) -&gt; list[list[float]]:
+        # 批量请求，减少 API 调用次数
+        response = self.client.embeddings.create(
+            model=self.model,
+            input=texts
+        )
+        return [item.embedding for item in response.data]
+
+    @property
+    def dimension(self) -&gt; int:
+        return self._dimension
+</code></pre>
+<p>关键工程实践：</p>
+<ol>
+<li><strong>批量 Embedding</strong>：不要逐条调用 API，而是批量发送（通常 API 限制 2048 条/次）</li>
+<li><strong>缓存</strong>：相同内容不要重复 Embed，用 content hash 做缓存 key</li>
+<li><strong>归一化</strong>：部分模型输出未归一化的向量，需要显式 L2 归一化后再入库，否则 cosine similarity 计算不准</li>
+</ol>
+<hr>
+<h2>6. 检索策略：Hybrid Search</h2>
+<p>检索是 RAG 的核心。单一检索策略各有盲区，生产系统几乎都采用混合检索。</p>
+<h3>6.1 稀疏检索（BM25）</h3>
+<p>BM25 是经典的基于词频的检索算法。它的核心思想：一个词在某篇文档中出现频率高（TF），同时在所有文档中出现频率低（IDF），则该词对该文档的重要性高。</p>
+<pre><code class="language-python">import math
+from collections import Counter
+
+class BM25:
+    &quot;&quot;&quot;简化版 BM25 实现，展示核心原理&quot;&quot;&quot;
+    def __init__(self, documents: list[str], k1: float = 1.5, b: float = 0.75):
+        self.k1 = k1
+        self.b = b
+        self.docs = documents
+        self.doc_count = len(documents)
+
+        # 预处理：分词 + 词频统计
+        self.doc_tokens = [doc.lower().split() for doc in documents]
+        self.doc_lengths = [len(tokens) for tokens in self.doc_tokens]
+        self.avg_dl = sum(self.doc_lengths) / self.doc_count
+
+        # IDF 预计算
+        self.idf = {}
+        df = Counter()  # 包含某词的文档数
+        for tokens in self.doc_tokens:
+            for token in set(tokens):
+                df[token] += 1
+        for token, freq in df.items():
+            self.idf[token] = math.log(
+                (self.doc_count - freq + 0.5) / (freq + 0.5) + 1
+            )
+
+    def score(self, query: str, doc_idx: int) -&gt; float:
+        &quot;&quot;&quot;计算 query 与某文档的 BM25 分数&quot;&quot;&quot;
+        query_tokens = query.lower().split()
+        doc_tokens = self.doc_tokens[doc_idx]
+        doc_len = self.doc_lengths[doc_idx]
+        tf = Counter(doc_tokens)
+
+        score = 0.0
+        for qt in query_tokens:
+            if qt not in self.idf:
+                continue
+            term_freq = tf.get(qt, 0)
+            numerator = term_freq * (self.k1 + 1)
+            denominator = term_freq + self.k1 * (
+                1 - self.b + self.b * doc_len / self.avg_dl
+            )
+            score += self.idf[qt] * numerator / denominator
+        return score
+
+    def search(self, query: str, top_k: int = 10) -&gt; list[tuple[int, float]]:
+        &quot;&quot;&quot;返回 Top-K 结果：(文档索引, 分数)&quot;&quot;&quot;
+        scores = [(i, self.score(query, i)) for i in range(self.doc_count)]
+        scores.sort(key=lambda x: x[1], reverse=True)
+        return scores[:top_k]
+</code></pre>
+<p><strong>BM25 的优势</strong>：精确的关键词匹配。用户搜&quot;error code 4012&quot;，BM25 能精确命中包含&quot;4012&quot;的文档，而 Embedding 模型可能完全无法区分&quot;4012&quot;和&quot;4013&quot;。</p>
+<p><strong>BM25 的劣势</strong>：不理解语义。用户问&quot;如何提升系统吞吐量&quot;，包含&quot;提高 QPS&quot;的文档不会被召回，因为没有词汇重叠。</p>
+<h3>6.2 稠密检索（Vector Search）</h3>
+<p>基于 Embedding 的向量检索，通过语义相似度匹配：</p>
+<pre><code class="language-python">import numpy as np
+
+class VectorSearch:
+    &quot;&quot;&quot;基于向量的语义检索&quot;&quot;&quot;
+    def __init__(self, embedder: EmbeddingModel):
+        self.embedder = embedder
+        self.vectors: np.ndarray | None = None
+        self.documents: list[str] = []
+
+    def index(self, documents: list[str]):
+        &quot;&quot;&quot;构建索引&quot;&quot;&quot;
+        self.documents = documents
+        embeddings = self.embedder.embed(documents)
+        self.vectors = np.array(embeddings)
+        # L2 归一化，使 dot product = cosine similarity
+        norms = np.linalg.norm(self.vectors, axis=1, keepdims=True)
+        self.vectors = self.vectors / norms
+
+    def search(self, query: str, top_k: int = 10) -&gt; list[tuple[int, float]]:
+        &quot;&quot;&quot;语义检索&quot;&quot;&quot;
+        query_vec = np.array(self.embedder.embed([query])[0])
+        query_vec = query_vec / np.linalg.norm(query_vec)
+
+        # Cosine Similarity（归一化后等价于点积）
+        similarities = self.vectors @ query_vec
+        top_indices = np.argsort(similarities)[::-1][:top_k]
+        return [(int(i), float(similarities[i])) for i in top_indices]
+</code></pre>
+<p><strong>Vector Search 的优势</strong>：语义理解。&quot;提升吞吐量&quot;和&quot;提高 QPS&quot;会被映射到相近的向量空间位置。</p>
+<p><strong>Vector Search 的劣势</strong>：对精确匹配不敏感（ID、错误码、专有名词）；向量索引的存储和计算成本较高。</p>
+<h3>6.3 混合检索与 RRF</h3>
+<p>混合检索结合 BM25 和 Vector Search 的结果。关键问题是：两路检索返回的分数不在同一尺度上，如何融合？</p>
+<p><strong>Reciprocal Rank Fusion（RRF）</strong> 是最常用的融合算法。它不关心分数的绝对值，只关心排名：</p>
+<p>$$RRF(d) = \sum_{r \in R} \frac{1}{k + rank_r(d)}$$</p>
+<p>其中 $k$ 是常数（通常取 60），$rank_r(d)$ 是文档 $d$ 在检索源 $r$ 中的排名。</p>
+<pre><code class="language-python">def reciprocal_rank_fusion(
+    *result_lists: list[tuple[int, float]],
+    k: int = 60
+) -&gt; list[tuple[int, float]]:
+    &quot;&quot;&quot;
+    RRF 融合多路检索结果
+
+    参数:
+        result_lists: 多路检索结果，每路是 (doc_id, score) 列表（已按 score 降序）
+        k: 平滑常数，默认 60
+
+    返回:
+        融合后的 (doc_id, rrf_score) 列表，按 rrf_score 降序
+    &quot;&quot;&quot;
+    rrf_scores: dict[int, float] = {}
+
+    for results in result_lists:
+        for rank, (doc_id, _score) in enumerate(results):
+            # RRF 公式：只关心排名，不关心原始分数
+            rrf_scores[doc_id] = rrf_scores.get(doc_id, 0.0) + 1.0 / (k + rank + 1)
+
+    # 按 RRF 分数降序排列
+    fused = sorted(rrf_scores.items(), key=lambda x: x[1], reverse=True)
+    return fused
+
+
+class HybridSearch:
+    &quot;&quot;&quot;混合检索：BM25 + Vector + RRF&quot;&quot;&quot;
+    def __init__(self, bm25: BM25, vector_search: VectorSearch):
+        self.bm25 = bm25
+        self.vector_search = vector_search
+
+    def search(self, query: str, top_k: int = 10, retrieve_k: int = 50) -&gt; list[tuple[int, float]]:
+        &quot;&quot;&quot;
+        混合检索
+
+        retrieve_k: 每路检索的召回数量（远大于最终 top_k，保证融合质量）
+        &quot;&quot;&quot;
+        bm25_results = self.bm25.search(query, top_k=retrieve_k)
+        vector_results = self.vector_search.search(query, top_k=retrieve_k)
+
+        fused = reciprocal_rank_fusion(bm25_results, vector_results)
+        return fused[:top_k]
+</code></pre>
+<h3>6.4 检索策略对比</h3>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>精确匹配</th>
+<th>语义理解</th>
+<th>专有名词/ID</th>
+<th>同义词/意图</th>
+<th>延迟</th>
+<th>存储成本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>BM25</strong></td>
+<td>强</td>
+<td>弱</td>
+<td>强</td>
+<td>弱</td>
+<td>低</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>Vector</strong></td>
+<td>弱</td>
+<td>强</td>
+<td>弱</td>
+<td>强</td>
+<td>中</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>Hybrid (RRF)</strong></td>
+<td>强</td>
+<td>强</td>
+<td>强</td>
+<td>强</td>
+<td>中</td>
+<td>高</td>
+</tr>
+</tbody></table>
+<p><strong>工程建议</strong>：除非你非常确定场景只需要语义搜索（比如纯自然语言文档、没有 ID 和代码），否则<strong>默认使用 Hybrid Search</strong>。BM25 的实现成本极低，加上它获得的互补收益是巨大的。</p>
+<hr>
+<h2>7. Reranking：从召回到精排</h2>
+<h3>7.1 为什么需要 Reranking</h3>
+<p>初步检索（BM25 + Vector）的目标是 <strong>高召回率（Recall）</strong>——尽量把相关文档都捞出来。但排在前面的不一定最相关。</p>
+<p>这就像搜索引擎的两阶段架构：第一阶段用轻量算法从亿级文档中召回 1000 条，第二阶段用重模型对 1000 条做精排，选出最终展示的 10 条。</p>
+<p>RAG 中同样如此：</p>
+<ul>
+<li><strong>阶段一（Retrieval）</strong>：从整个知识库中召回 Top-50 或 Top-100</li>
+<li><strong>阶段二（Reranking）</strong>：对这 50-100 条用更强的模型精排，选出 Top-5 送给 LLM</li>
+</ul>
+<h3>7.2 Bi-encoder vs Cross-encoder</h3>
+<pre><code>Bi-encoder（初步检索阶段）:
+┌───────────┐     ┌───────────┐
+│  Query    │     │ Document  │
+└─────┬─────┘     └─────┬─────┘
+      │                 │
+      ▼                 ▼
+┌───────────┐     ┌───────────┐
+│ Encoder   │     │ Encoder   │     独立编码
+└─────┬─────┘     └─────┬─────┘     ↓ 可以预计算
+      │                 │           ↓ 速度快
+      ▼                 ▼           ↓ 精度有限
+   vec_q            vec_d
+      │                 │
+      └───────┬─────────┘
+              ▼
+        cosine(q, d)  →  score
+
+
+Cross-encoder（Reranking 阶段）:
+┌───────────────────────────────┐
+│     [CLS] Query [SEP] Doc    │    拼接在一起
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│       Transformer Encoder      │    联合编码
+│      (交叉注意力)               │    ↓ 不可预计算
+└───────────────┬───────────────┘    ↓ 速度慢
+                │                    ↓ 精度高
+                ▼
+             score
+</code></pre>
+<p>核心区别：</p>
+<ul>
+<li><strong>Bi-encoder</strong>：Query 和 Document 独立编码，Document 可以离线预计算向量。速度快，适合海量候选。但无法捕捉 Query 和 Document 之间的深层交互。</li>
+<li><strong>Cross-encoder</strong>：Query 和 Document 拼接后一起送入 Transformer，模型能看到两者的每个 token 之间的注意力。精度高，但每对 (Query, Document) 都需要实时计算，速度慢。</li>
+</ul>
+<p>因此，Cross-encoder 只适合对少量候选做精排——这正是 Reranking 的定位。</p>
+<h3>7.3 Reranking 实现</h3>
+<pre><code class="language-python">from dataclasses import dataclass
+
+@dataclass
+class RerankResult:
+    doc_id: int
+    content: str
+    score: float
+
+class Reranker:
+    &quot;&quot;&quot;基于 Cross-encoder 的重排序&quot;&quot;&quot;
+
+    def __init__(self, model_name: str = &quot;BAAI/bge-reranker-v2-m3&quot;):
+        # 实际使用时可以接入任意 Rerank 服务
+        # 这里展示 API 调用模式
+        self.model_name = model_name
+
+    def rerank(
+        self,
+        query: str,
+        documents: list[str],
+        doc_ids: list[int],
+        top_k: int = 5
+    ) -&gt; list[RerankResult]:
+        &quot;&quot;&quot;
+        对候选文档重排序
+
+        生产环境中通常调用 Rerank API（如 Cohere Rerank、Jina Rerank）
+        或本地部署 Cross-encoder 模型
+        &quot;&quot;&quot;
+        scores = self._compute_relevance(query, documents)
+
+        # 按相关性得分降序排列
+        ranked = sorted(
+            zip(doc_ids, documents, scores),
+            key=lambda x: x[2],
+            reverse=True
+        )
+
+        return [
+            RerankResult(doc_id=did, content=doc, score=s)
+            for did, doc, s in ranked[:top_k]
+        ]
+
+    def _compute_relevance(self, query: str, documents: list[str]) -&gt; list[float]:
+        &quot;&quot;&quot;
+        计算 query 与每个 document 的相关性分数
+        实际实现会调用 Cross-encoder 模型
+        &quot;&quot;&quot;
+        # 伪代码：真实场景替换为模型推理
+        # from sentence_transformers import CrossEncoder
+        # model = CrossEncoder(self.model_name)
+        # pairs = [(query, doc) for doc in documents]
+        # scores = model.predict(pairs)
+        # return scores.tolist()
+        raise NotImplementedError(&quot;替换为实际模型调用&quot;)
+</code></pre>
+<p><strong>Reranker 选择建议</strong>：</p>
+<ul>
+<li><strong>精度优先</strong>：Cohere Rerank、BGE Reranker v2 等专用模型</li>
+<li><strong>成本优先</strong>：可以用小参数量的 Cross-encoder（如 MiniLM 系列）</li>
+<li><strong>延迟敏感</strong>：控制候选数量（50 条以内），或使用量化版模型</li>
+</ul>
+<hr>
+<h2>8. Context Packing：信息如何送达 LLM</h2>
+<p>检索和重排序完成后，拿到了 Top-K 个最相关的 chunk。接下来的问题是：如何把这些 chunk 组织到 prompt 中，让 LLM 最大化利用？</p>
+<h3>8.1 &quot;Lost in the Middle&quot; 问题</h3>
+<p>Stanford 的研究（<a href="https://arxiv.org/abs/2307.03172">Liu et al., 2023</a>）发现了一个关键现象：LLM 对 prompt 中间位置的信息利用率显著低于开头和结尾。</p>
+<pre><code>LLM 对不同位置信息的利用率（示意）:
+
+利用率
+  ▲
+  │ █                                              █ █
+  │ █ █                                          █ █ █
+  │ █ █ █                                      █ █ █ █
+  │ █ █ █ █                                  █ █ █ █ █
+  │ █ █ █ █ █                              █ █ █ █ █ █
+  │ █ █ █ █ █ █ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ ▄ █ █ █ █ █ █
+  │ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █
+  └───────────────────────────────────────────────────→ 位置
+    开头                  中间                  结尾
+</code></pre>
+<p>这意味着：<strong>最相关的文档应该放在 prompt 的开头或结尾，而非中间。</strong></p>
+<h3>8.2 Context Packing 策略</h3>
+<pre><code class="language-python">def pack_context(
+    ranked_results: list[RerankResult],
+    max_tokens: int = 3000,
+    strategy: str = &quot;relevance_first&quot;
+) -&gt; str:
+    &quot;&quot;&quot;
+    将检索结果组织为 LLM 的上下文
+
+    策略:
+        relevance_first: 最相关的放在最前面（默认）
+        edges_first: 最相关的放开头和结尾，次相关的放中间
+    &quot;&quot;&quot;
+    # 1. Token 预算下的截断
+    selected = []
+    current_tokens = 0
+    for result in ranked_results:
+        # 粗略估算 token 数（实际应用 tiktoken）
+        estimated_tokens = len(result.content) // 3
+        if current_tokens + estimated_tokens &gt; max_tokens:
+            break
+        selected.append(result)
+        current_tokens += estimated_tokens
+
+    if not selected:
+        return &quot;&quot;
+
+    # 2. 根据策略决定顺序
+    if strategy == &quot;edges_first&quot; and len(selected) &gt;= 3:
+        # 交替放置：最相关 → 最不相关 → 次相关 → 次不相关 ...
+        reordered = []
+        left, right = 0, len(selected) - 1
+        toggle = True
+        while left &lt;= right:
+            if toggle:
+                reordered.append(selected[left])
+                left += 1
+            else:
+                reordered.append(selected[right])
+                right -= 1
+            toggle = not toggle
+        selected = reordered
+
+    # 3. 格式化
+    context_parts = []
+    for i, result in enumerate(selected):
+        context_parts.append(
+            f&quot;[Document {i+1}] (relevance: {result.score:.3f})\n{result.content}&quot;
+        )
+
+    return &quot;\n\n---\n\n&quot;.join(context_parts)
+</code></pre>
+<h3>8.3 Token 预算管理</h3>
+<p>LLM 的 context window 是有限的。一个典型的 prompt 结构：</p>
+<pre><code>┌─────────────────────────────────────────┐
+│  System Prompt        ~500 tokens       │
+├─────────────────────────────────────────┤
+│  Retrieved Context    ~3000 tokens      │  ← 这里是 Context Packing 的空间
+├─────────────────────────────────────────┤
+│  Conversation History ~1000 tokens      │
+├─────────────────────────────────────────┤
+│  User Query           ~200 tokens       │
+├─────────────────────────────────────────┤
+│  Output Reserve       ~2000 tokens      │  ← 留给模型生成
+└─────────────────────────────────────────┘
+  Total Budget:         ~6700 tokens
+</code></pre>
+<p>Context 部分的 token 预算 = 总 context window - system prompt - conversation history - user query - output reserve。在这个预算内，优先放入 Reranking 得分最高的 chunk，直到预算用完。</p>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>宁可少放几个 chunk、每个 chunk 完整，也不要截断 chunk 送进去——被截断的信息比没有信息更糟糕</li>
+<li>为每个 chunk 附加来源标识（文档名、URL），方便 LLM 生成 citation</li>
+<li>如果多个 chunk 来自同一文档的相邻位置，考虑合并后再送入，减少碎片化</li>
+</ul>
+<hr>
+<h2>9. RAG 评估体系</h2>
+<p>&quot;不可度量则不可改进。&quot; RAG 系统的评估需要覆盖检索和生成两个维度。</p>
+<h3>9.1 Retrieval 评估</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>公式/含义</th>
+<th>衡量什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Recall@K</strong></td>
+<td>在 Top-K 结果中，相关文档被召回的比例</td>
+<td>检索的完整性</td>
+</tr>
+<tr>
+<td><strong>MRR</strong></td>
+<td>第一个相关文档的排名的倒数，取平均</td>
+<td>用户需要翻多远才能看到答案</td>
+</tr>
+<tr>
+<td><strong>NDCG@K</strong></td>
+<td>考虑位置权重的相关性评分（越靠前权重越高）</td>
+<td>排序质量</td>
+</tr>
+</tbody></table>
+<pre><code class="language-python">def recall_at_k(relevant_ids: set[int], retrieved_ids: list[int], k: int) -&gt; float:
+    &quot;&quot;&quot;Recall@K: Top-K 中召回了多少相关文档&quot;&quot;&quot;
+    retrieved_set = set(retrieved_ids[:k])
+    if not relevant_ids:
+        return 0.0
+    return len(relevant_ids &amp; retrieved_set) / len(relevant_ids)
+
+
+def mrr(relevant_ids: set[int], retrieved_ids: list[int]) -&gt; float:
+    &quot;&quot;&quot;MRR: 第一个相关结果的排名倒数&quot;&quot;&quot;
+    for rank, doc_id in enumerate(retrieved_ids, start=1):
+        if doc_id in relevant_ids:
+            return 1.0 / rank
+    return 0.0
+
+
+def ndcg_at_k(relevance_scores: list[int], k: int) -&gt; float:
+    &quot;&quot;&quot;
+    NDCG@K: 归一化折损累积增益
+
+    relevance_scores: 按检索排序的相关性评分列表（如 0/1/2/3）
+    &quot;&quot;&quot;
+    import math
+
+    def dcg(scores: list[int], k: int) -&gt; float:
+        return sum(
+            score / math.log2(rank + 2)  # rank 从 0 开始，log2(1) = 0 所以 +2
+            for rank, score in enumerate(scores[:k])
+        )
+
+    actual_dcg = dcg(relevance_scores, k)
+    ideal_dcg = dcg(sorted(relevance_scores, reverse=True), k)
+
+    return actual_dcg / ideal_dcg if ideal_dcg &gt; 0 else 0.0
+</code></pre>
+<h3>9.2 Generation 评估</h3>
+<p>检索质量好不意味着生成质量好。Generation 阶段需要评估：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>衡量什么</th>
+<th>检测方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Faithfulness</strong></td>
+<td>回答是否忠于检索到的上下文（不编造）</td>
+<td>检查回答中的每个声明是否有 context 支撑</td>
+</tr>
+<tr>
+<td><strong>Answer Relevancy</strong></td>
+<td>回答是否与用户问题相关</td>
+<td>生成反向问题，比较与原问题的相似度</td>
+</tr>
+<tr>
+<td><strong>Context Relevancy</strong></td>
+<td>检索到的上下文是否与问题相关</td>
+<td>评估 context 中有多少内容是回答问题所需的</td>
+</tr>
+</tbody></table>
+<p>这三个指标构成了 RAG 质量的 &quot;Triad&quot;：</p>
+<pre><code>                    ┌─────────────┐
+                    │   Query     │
+                    └──────┬──────┘
+                           │
+              ┌────────────┼────────────┐
+              │                         │
+              ▼                         ▼
+     ┌────────────────┐       ┌────────────────┐
+     │   Context      │       │   Answer       │
+     │  (Retrieved)   │       │  (Generated)   │
+     └────────┬───────┘       └────────┬───────┘
+              │                        │
+              │    ┌──────────────┐    │
+              └───→│ Faithfulness │←───┘
+                   └──────────────┘
+
+     Query ↔ Context  = Context Relevancy
+     Query ↔ Answer   = Answer Relevancy
+     Context ↔ Answer = Faithfulness
+</code></pre>
+<h3>9.3 RAGAS 框架</h3>
+<p><a href="https://docs.ragas.io/">RAGAS（Retrieval Augmented Generation Assessment）</a> 是目前最流行的端到端 RAG 评估框架，它自动化评估上述指标：</p>
+<pre><code class="language-python"># RAGAS 评估示意（伪代码）
+def evaluate_rag_pipeline(test_cases: list[dict]) -&gt; dict:
+    &quot;&quot;&quot;
+    每个 test_case 包含:
+        - question: 用户问题
+        - ground_truth: 标准答案（人工标注）
+        - retrieved_contexts: 检索到的上下文
+        - generated_answer: RAG 系统生成的答案
+    &quot;&quot;&quot;
+    metrics = {
+        &quot;faithfulness&quot;: [],       # 回答是否忠于 context
+        &quot;answer_relevancy&quot;: [],   # 回答是否切题
+        &quot;context_relevancy&quot;: [],  # context 是否相关
+        &quot;context_recall&quot;: [],     # context 是否覆盖了 ground truth 的信息
+    }
+
+    for case in test_cases:
+        # Faithfulness: 把 answer 拆成多个 statement，
+        # 逐一检查每个 statement 是否能从 context 中推导出来
+        metrics[&quot;faithfulness&quot;].append(
+            check_faithfulness(case[&quot;generated_answer&quot;], case[&quot;retrieved_contexts&quot;])
+        )
+
+        # Answer Relevancy: 从 answer 反向生成问题，
+        # 计算生成的问题与原始 question 的语义相似度
+        metrics[&quot;answer_relevancy&quot;].append(
+            check_answer_relevancy(case[&quot;question&quot;], case[&quot;generated_answer&quot;])
+        )
+
+        # Context Relevancy: 评估 context 中有多少句子是回答问题所需的
+        metrics[&quot;context_relevancy&quot;].append(
+            check_context_relevancy(case[&quot;question&quot;], case[&quot;retrieved_contexts&quot;])
+        )
+
+        # Context Recall: 对照 ground truth，检查 context 是否包含了必要的信息
+        metrics[&quot;context_recall&quot;].append(
+            check_context_recall(case[&quot;ground_truth&quot;], case[&quot;retrieved_contexts&quot;])
+        )
+
+    return {k: sum(v) / len(v) for k, v in metrics.items()}
+</code></pre>
+<p><strong>实际操作建议</strong>：</p>
+<ol>
+<li>构建 50-100 条高质量的评估数据集（question + ground_truth），这是最值得投入的工作</li>
+<li>每次修改 Pipeline（换 Embedding、调 Chunking、加 Reranker）后跑一轮评估</li>
+<li>关注指标的变化方向，而非绝对数值——不同数据集上的绝对分数不可比</li>
+</ol>
+<hr>
+<h2>10. 常见问题与优化</h2>
+<h3>10.1 检索不到相关内容</h3>
+<p><strong>症状</strong>：知识库中明明有答案，但检索结果中找不到。</p>
+<p><strong>原因分析</strong>：用户的 Query 和知识库中的表述方式差异太大。</p>
+<p><strong>优化手段</strong>：</p>
+<p><strong>Query Expansion（查询扩展）</strong>：将用户的短 Query 扩展为多个变体，增加召回率：</p>
+<pre><code class="language-python">def expand_query(query: str, llm_call) -&gt; list[str]:
+    &quot;&quot;&quot;用 LLM 扩展查询，生成多个语义等价的变体&quot;&quot;&quot;
+    prompt = f&quot;&quot;&quot;Given the search query: &quot;{query}&quot;
+
+Generate 3 alternative phrasings that express the same intent but use different words.
+Return each variant on a new line, without numbering.&quot;&quot;&quot;
+
+    variants = llm_call(prompt).strip().split(&quot;\n&quot;)
+    return [query] + [v.strip() for v in variants if v.strip()]
+</code></pre>
+<p><strong>HyDE（Hypothetical Document Embeddings）</strong>：先让 LLM 生成一个&quot;假想答案&quot;，用这个答案的 Embedding 去检索，而不是用 Query 的 Embedding。直觉上，答案和知识库中的文档更&quot;长得像&quot;：</p>
+<pre><code class="language-python">def hyde_search(query: str, llm_call, vector_search: VectorSearch, top_k: int = 10):
+    &quot;&quot;&quot;HyDE: 用假想答案的 Embedding 检索&quot;&quot;&quot;
+    # 1. 让 LLM 生成假想答案（不需要准确，只需要&quot;像&quot;真正的文档）
+    hypothetical_doc = llm_call(
+        f&quot;Please write a short passage that answers the following question: {query}&quot;
+    )
+
+    # 2. 用假想答案的 Embedding 检索（而非 Query 的 Embedding）
+    results = vector_search.search(hypothetical_doc, top_k=top_k)
+    return results
+</code></pre>
+<p>HyDE 的 trade-off：增加了一次 LLM 调用的延迟和成本，但对检索质量的提升在某些场景下非常显著（尤其是短 Query 场景）。</p>
+<h3>10.2 检索到了但 LLM 没用上</h3>
+<p><strong>症状</strong>：检索结果中包含正确答案，但 LLM 的回答忽略了它或回答错误。</p>
+<p><strong>原因分析</strong>：</p>
+<ul>
+<li>Context 太长，答案被&quot;淹没&quot;在噪声中（Lost in the Middle）</li>
+<li>多个 chunk 包含矛盾信息，LLM 困惑了</li>
+<li>Prompt 没有明确指示 LLM &quot;基于以下上下文回答&quot;</li>
+</ul>
+<p><strong>优化手段</strong>：</p>
+<ul>
+<li>减少送入的 chunk 数量，只保留 Top-3 而非 Top-10</li>
+<li>使用 Reranker 提高 Top-K 的精度</li>
+<li>在 System Prompt 中明确要求：只基于提供的上下文回答，如果上下文不足以回答则明确说明</li>
+<li>应用 &quot;edges_first&quot; 排布策略（见 8.2 节）</li>
+</ul>
+<h3>10.3 幻觉问题</h3>
+<p><strong>症状</strong>：LLM 编造了上下文中不存在的信息。</p>
+<p><strong>优化手段</strong>：</p>
+<p><strong>Citation（引用标注）</strong>：要求 LLM 在回答中标注每个声明的来源：</p>
+<pre><code class="language-python">CITATION_PROMPT = &quot;&quot;&quot;Based on the provided context, answer the user&#39;s question.
+
+Rules:
+1. Only use information from the provided context
+2. For each statement in your answer, add a citation like [Doc 1], [Doc 2]
+3. If the context does not contain enough information, say &quot;I don&#39;t have enough information to answer this&quot;
+4. Never make up information not present in the context
+
+Context:
+{context}
+
+Question: {question}
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>Grounding Check（落地检查）</strong>：生成回答后，用另一次 LLM 调用验证回答中的每个声明是否有上下文支撑。成本高，但在高可靠性场景（医疗、法律、金融）中是必要的。</p>
+<hr>
+<h2>11. 完整 Pipeline 集成</h2>
+<p>将上述所有模块串联起来：</p>
+<pre><code class="language-python">class RAGPipeline:
+    &quot;&quot;&quot;完整的 RAG Pipeline&quot;&quot;&quot;
+
+    def __init__(
+        self,
+        embedder: EmbeddingModel,
+        reranker: Reranker,
+        llm_call,  # (prompt: str) -&gt; str
+        chunk_size: int = 512,
+        chunk_overlap: int = 64,
+        retrieve_k: int = 50,
+        rerank_k: int = 5,
+        max_context_tokens: int = 3000,
+    ):
+        self.embedder = embedder
+        self.reranker = reranker
+        self.llm_call = llm_call
+        self.chunk_size = chunk_size
+        self.chunk_overlap = chunk_overlap
+        self.retrieve_k = retrieve_k
+        self.rerank_k = rerank_k
+        self.max_context_tokens = max_context_tokens
+
+        self.bm25: BM25 | None = None
+        self.vector_search = VectorSearch(embedder)
+        self.chunks: list[str] = []
+
+    # ─── Offline: Indexing ───
+
+    def ingest(self, documents: list[Document]):
+        &quot;&quot;&quot;离线索引：文档 → Chunk → Embedding → 索引&quot;&quot;&quot;
+        # 1. Chunking
+        self.chunks = []
+        for doc in documents:
+            cleaned = preprocess(doc.content)
+            doc_chunks = recursive_chunk(cleaned, self.chunk_size)
+            self.chunks.extend(doc_chunks)
+
+        # 2. 构建双路索引
+        self.bm25 = BM25(self.chunks)
+        self.vector_search.index(self.chunks)
+
+        print(f&quot;Indexed {len(documents)} documents → {len(self.chunks)} chunks&quot;)
+
+    # ─── Online: Query ───
+
+    def query(self, question: str) -&gt; str:
+        &quot;&quot;&quot;在线查询：Query → 检索 → 重排 → 生成&quot;&quot;&quot;
+        assert self.bm25 is not None, &quot;Must call ingest() first&quot;
+
+        # 1. Hybrid Search
+        hybrid = HybridSearch(self.bm25, self.vector_search)
+        retrieval_results = hybrid.search(question, top_k=self.retrieve_k)
+
+        # 2. Reranking
+        candidate_ids = [doc_id for doc_id, _ in retrieval_results]
+        candidate_docs = [self.chunks[doc_id] for doc_id in candidate_ids]
+        reranked = self.reranker.rerank(
+            query=question,
+            documents=candidate_docs,
+            doc_ids=candidate_ids,
+            top_k=self.rerank_k,
+        )
+
+        # 3. Context Packing
+        context = pack_context(reranked, max_tokens=self.max_context_tokens)
+
+        # 4. LLM Generation
+        prompt = CITATION_PROMPT.format(context=context, question=question)
+        answer = self.llm_call(prompt)
+
+        return answer
+</code></pre>
+<p>这段代码不到 50 行，但串联了 RAG 的所有核心环节。每个环节都可以独立替换和优化——这就是模块化设计的价值。</p>
+<hr>
+<h2>12. 工程决策速查表</h2>
+<p>最后，总结 RAG 系统中的关键工程决策：</p>
+<table>
+<thead>
+<tr>
+<th>决策点</th>
+<th>推荐默认值</th>
+<th>何时调整</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chunk 大小</td>
+<td>512 tokens</td>
+<td>法律/长文档增大；FAQ 减小</td>
+</tr>
+<tr>
+<td>Chunk 重叠</td>
+<td>10-20% of chunk size</td>
+<td>语义边界切分时可减少</td>
+</tr>
+<tr>
+<td>Embedding 维度</td>
+<td>1024</td>
+<td>存储/延迟敏感时降低</td>
+</tr>
+<tr>
+<td>检索策略</td>
+<td>Hybrid (BM25 + Vector)</td>
+<td>纯自然语言场景可只用 Vector</td>
+</tr>
+<tr>
+<td>初步召回数量</td>
+<td>50</td>
+<td>知识库很大时增加</td>
+</tr>
+<tr>
+<td>Rerank Top-K</td>
+<td>5</td>
+<td>LLM context window 大时可增加</td>
+</tr>
+<tr>
+<td>Context 排布</td>
+<td>relevance_first</td>
+<td>上下文很长时用 edges_first</td>
+</tr>
+<tr>
+<td>融合算法</td>
+<td>RRF (k=60)</td>
+<td>需要调权时切换加权融合</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>13. 结语与下一步</h2>
+<p>RAG 给 Agent 提供了 <strong>&quot;知识&quot;维度的能力</strong>——让 Agent 不再局限于训练数据，能够接入外部的、实时的、私有的信息。但回过头来看，RAG 本质上是一个<strong>信息检索工程问题</strong>：</p>
+<ul>
+<li>不是模型越大越好，而是<strong>检索越准越好</strong></li>
+<li>不是 chunk 越多越好，而是<strong>信噪比越高越好</strong></li>
+<li>不是 pipeline 越复杂越好，而是<strong>每个环节都要可度量、可调优</strong></li>
+</ul>
+<p>在 Agent 架构中，RAG 是 Memory 子系统的核心组件。它回答的是&quot;Agent 知道什么&quot;的问题。但 Agent 光有知识不够——它还需要知道 <strong>&quot;怎么做&quot;</strong>（Planning）和 <strong>&quot;做得对不对&quot;</strong>（Reflection）。</p>
+<p>下一篇，我们将进入 Agent 智能的另一个关键维度：<strong>Planning and Reflection——从 ReAct 到分层规划与自我纠错。</strong> 一个能规划、能反思的 Agent，才是真正有&quot;智能&quot;的 Agent。</p>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 09 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/08-Memory%20Architecture">08 | Memory Architecture</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/10-Planning%20and%20Reflection">10 | Planning and Reflection</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+17:Tfd22,<h1>Memory Architecture: Agent 的状态与记忆体系</h1>
+<blockquote>
+<p>LLM 是一个纯函数：给定相同的 prompt，产生相同的输出。它没有&quot;昨天&quot;，没有&quot;上次&quot;，没有&quot;你之前说过&quot;。</p>
+<p>但一个合格的 Agent 必须记得：用户的偏好、上一步的结果、三天前那个失败的任务、以及从知识库中检索到的关键事实。</p>
+<p>记忆，是 Agent 从&quot;单轮工具&quot;变成&quot;持续助手&quot;的分水岭。本文是 Agentic 系列第 08 篇，将系统拆解 Agent 记忆的四层架构，从认知科学类比到工程实现，给出完整的设计方案。</p>
+</blockquote>
+<hr>
+<h2>1. 为什么 Agent 需要记忆</h2>
+<p>LLM 的本质是一个 <strong>stateless function</strong>：<code>response = llm(prompt)</code>。每次调用都是一个全新的开始，模型不知道上一次调用发生了什么。</p>
+<p>这在单轮问答场景下没有问题。但当我们把 LLM 嵌入 Agent 系统后，<strong>无状态</strong>就成了致命缺陷：</p>
+<ul>
+<li><strong>多轮对话</strong>：用户说&quot;把上面那个改成蓝色&quot;——&quot;上面那个&quot;在哪里？</li>
+<li><strong>长任务执行</strong>：Agent 执行到第 5 步，需要回顾第 2 步的输出来做决策</li>
+<li><strong>跨会话连续性</strong>：用户昨天让 Agent 分析了一份报告，今天问&quot;上次那份报告的结论是什么？&quot;</li>
+<li><strong>个性化服务</strong>：Agent 需要记住用户偏好（&quot;我喜欢简洁的回答&quot;、&quot;输出用 Markdown 表格&quot;）</li>
+</ul>
+<p>没有记忆的 Agent，每次对话都是一个&quot;失忆症患者&quot;——它可能很聪明，但永远无法建立连续的工作关系。</p>
+<p><strong>核心命题：如何为一个 stateless 的 LLM 构建一套 stateful 的记忆体系，使 Agent 在有限的 Context Window 内，获得&quot;无限&quot;的记忆能力？</strong></p>
+<hr>
+<h2>2. 从认知科学看 Agent 记忆</h2>
+<p>在设计 Agent 记忆架构之前，先看看人类大脑是怎么处理记忆的。认知心理学中 Atkinson-Shiffrin 模型把人类记忆分为多个层级，这个分层对 Agent 设计有极强的指导意义。</p>
+<pre><code>┌─────────────────────────────────────────────────────────────────────┐
+│                    人类记忆 vs Agent 记忆                            │
+├─────────────────┬──────────────────┬────────────────────────────────┤
+│   人类记忆层级    │   Agent 对应       │   特征                        │
+├─────────────────┼──────────────────┼────────────────────────────────┤
+│ 感觉记忆         │ 当前输入           │ 极短暂，未经处理的原始信息        │
+│ (Sensory)       │ (User msg/Tool)  │ 持续 &lt; 1秒 / 单次请求           │
+├─────────────────┼──────────────────┼────────────────────────────────┤
+│ 工作记忆         │ Context Window   │ 容量有限，正在处理的信息           │
+│ (Working)       │ (~128K tokens)   │ 持续几秒 / 单次 LLM 调用         │
+├─────────────────┼──────────────────┼────────────────────────────────┤
+│ 短期记忆         │ 会话状态           │ 当前任务上下文，可被覆写          │
+│ (Short-term)    │ (Session state)  │ 持续分钟~小时 / 单次会话          │
+├─────────────────┼──────────────────┼────────────────────────────────┤
+│ 长期记忆-情景     │ 历史交互记录        │ 过去的经验，可被检索              │
+│ (Episodic)      │ (Task history)   │ 持续天~月 / 跨会话               │
+├─────────────────┼──────────────────┼────────────────────────────────┤
+│ 长期记忆-语义     │ 知识库             │ 结构化知识，相对稳定              │
+│ (Semantic)      │ (Knowledge/RAG)  │ 持续月~年 / 持久化               │
+└─────────────────┴──────────────────┴────────────────────────────────┘
+</code></pre>
+<p>这个类比的价值在于：</p>
+<ol>
+<li><strong>分层处理</strong>：不是所有信息都需要&quot;记住&quot;，大部分感觉输入会被丢弃</li>
+<li><strong>容量约束</strong>：工作记忆（Context Window）的容量是硬性限制，必须在这个限制内做信息的取舍</li>
+<li><strong>编码与检索</strong>：信息从短期记忆进入长期记忆需要&quot;编码&quot;（写入），使用时需要&quot;检索&quot;（读取）</li>
+<li><strong>遗忘是特性</strong>：遗忘不是 bug，而是一种必要的信息过滤机制</li>
+</ol>
+<p>基于这个认知框架，我们设计 Agent 的四层记忆架构。</p>
+<hr>
+<h2>3. Agent 记忆的四层架构</h2>
+<pre><code>                         ┌──────────────────────┐
+                         │     LLM Context       │
+                         │      Window           │
+                         │  ┌────────────────┐   │
+                         │  │ System Prompt  │   │
+                         │  ├────────────────┤   │
+    ┌─────────────┐      │  │ Memory Inject  │◄──┼──── Layer 3: Episodic Memory
+    │  User Input  │─────►│  ├────────────────┤   │     (向量数据库 / 关系数据库)
+    │  Tool Output │      │  │ Working Memory │◄──┼──── Layer 2: Working Memory
+    └─────────────┘      │  ├────────────────┤   │     (任务状态 / Scratchpad)
+                         │  │ Conv. History  │◄──┼──── Layer 1: Conversation Buffer
+                         │  ├────────────────┤   │     (消息历史 / 滑动窗口)
+                         │  │ Tool Schemas   │   │
+                         │  └────────────────┘   │        Layer 4: Semantic Memory
+                         └──────────┬───────────┘        (知识库 / RAG)
+                                    │                          │
+                                    │    ┌────────────────┐    │
+                                    └───►│  LLM Response   │◄───┘
+                                         └────────────────┘
+</code></pre>
+<h3>Layer 1: Conversation Buffer — 对话历史</h3>
+<p><strong>本质</strong>：保存完整的 message history，让 LLM 能&quot;看到&quot;之前的对话。</p>
+<p>这是最直觉的记忆形式：把所有 <code>user</code> 和 <code>assistant</code> 消息按顺序存起来，每次调用 LLM 时全量传入。</p>
+<pre><code class="language-python">class ConversationBuffer:
+    &quot;&quot;&quot;最简单的对话记忆：完整保存消息历史&quot;&quot;&quot;
+
+    def __init__(self, max_tokens: int = 8000):
+        self.messages: list[dict] = []
+        self.max_tokens = max_tokens
+
+    def add(self, role: str, content: str):
+        self.messages.append({&quot;role&quot;: role, &quot;content&quot;: content})
+        self._enforce_limit()
+
+    def get_messages(self) -&gt; list[dict]:
+        return list(self.messages)
+
+    def _enforce_limit(self):
+        &quot;&quot;&quot;当超出 token 限制时，从最旧的消息开始裁剪&quot;&quot;&quot;
+        while self._estimate_tokens() &gt; self.max_tokens and len(self.messages) &gt; 2:
+            # 保留第一条（通常包含重要上下文）和最后一条
+            self.messages.pop(1)
+
+    def _estimate_tokens(self) -&gt; int:
+        # 粗略估算：1 token ≈ 4 chars (英文) 或 1.5 chars (中文)
+        return sum(len(m[&quot;content&quot;]) // 3 for m in self.messages)
+</code></pre>
+<p><strong>问题与解决方案</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>影响</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Context Window 有限</td>
+<td>消息多了装不下</td>
+<td>滑动窗口：只保留最近 N 条</td>
+</tr>
+<tr>
+<td>旧消息价值不均</td>
+<td>早期关键信息被丢弃</td>
+<td>消息摘要：用 LLM 压缩旧消息</td>
+</tr>
+<tr>
+<td>Token 成本线性增长</td>
+<td>每轮调用的 token 越来越多</td>
+<td>选择性保留：只保留有工具调用或关键决策的消息</td>
+</tr>
+</tbody></table>
+<p><strong>滑动窗口 + 摘要</strong>是最常见的策略：</p>
+<pre><code class="language-python">class SummarizingBuffer:
+    &quot;&quot;&quot;带摘要能力的对话缓冲区&quot;&quot;&quot;
+
+    def __init__(self, llm_client, window_size: int = 20, max_tokens: int = 8000):
+        self.llm_client = llm_client
+        self.window_size = window_size
+        self.max_tokens = max_tokens
+        self.messages: list[dict] = []
+        self.summary: str = &quot;&quot;  # 旧消息的压缩摘要
+
+    def add(self, role: str, content: str):
+        self.messages.append({&quot;role&quot;: role, &quot;content&quot;: content})
+        if len(self.messages) &gt; self.window_size:
+            self._compress()
+
+    def get_messages(self) -&gt; list[dict]:
+        result = []
+        if self.summary:
+            result.append({
+                &quot;role&quot;: &quot;system&quot;,
+                &quot;content&quot;: f&quot;[Previous conversation summary]\n{self.summary}&quot;
+            })
+        result.extend(self.messages)
+        return result
+
+    def _compress(self):
+        &quot;&quot;&quot;将窗口外的消息压缩为摘要&quot;&quot;&quot;
+        # 取出要压缩的消息（保留最近 window_size 条）
+        to_compress = self.messages[:-self.window_size]
+        self.messages = self.messages[-self.window_size:]
+
+        # 用 LLM 生成摘要
+        old_context = &quot;\n&quot;.join(
+            f&quot;{m[&#39;role&#39;]}: {m[&#39;content&#39;]}&quot; for m in to_compress
+        )
+        prompt = (
+            f&quot;Summarize this conversation history concisely, &quot;
+            f&quot;preserving key decisions, facts, and user preferences:\n\n&quot;
+            f&quot;Previous summary: {self.summary}\n\n&quot;
+            f&quot;New messages:\n{old_context}&quot;
+        )
+        self.summary = self.llm_client.complete(prompt)
+</code></pre>
+<p><strong>关键决策点</strong>：摘要的质量直接决定 Agent 的&quot;记忆保真度&quot;。摘要太短会丢失关键信息，太长又失去压缩的意义。实践中，摘要长度控制在原文的 20%-30% 是比较好的平衡点。</p>
+<hr>
+<h3>Layer 2: Working Memory — 任务执行状态</h3>
+<p><strong>本质</strong>：当前任务的&quot;草稿纸&quot;，记录正在进行的工作的结构化状态。</p>
+<p>Conversation Buffer 保存的是&quot;说了什么&quot;，Working Memory 保存的是&quot;正在做什么&quot;。两者的核心区别：</p>
+<pre><code>Conversation Buffer:                Working Memory:
+┌─────────────────────┐            ┌─────────────────────────────┐
+│ user: 帮我分析这份数据 │            │ current_goal: 分析销售数据      │
+│ assistant: 好的...   │            │ completed_steps:               │
+│ user: 用柱状图展示    │            │   - 读取 CSV ✓                │
+│ assistant: ...       │            │   - 清洗缺失值 ✓               │
+│ tool: [read_csv...]  │            │ next_step: 生成柱状图           │
+│ ...                  │            │ scratchpad:                    │
+│ (线性的消息流)         │            │   - 数据有 1000 行, 15 列       │
+└─────────────────────┘            │   - 销售额列有 3% 空值          │
+                                   │   - 日期范围: 2024-01 ~ 2024-12 │
+                                   └─────────────────────────────┘
+</code></pre>
+<p>Working Memory 的价值在长任务中尤为明显。当 Agent 执行一个需要 10+ 步的任务时，把所有中间结果都塞在对话历史里是低效的。Working Memory 提供了一个结构化的&quot;任务视图&quot;。</p>
+<pre><code class="language-python">from dataclasses import dataclass, field
+from typing import Any
+from enum import Enum
+
+class StepStatus(Enum):
+    PENDING = &quot;pending&quot;
+    IN_PROGRESS = &quot;in_progress&quot;
+    COMPLETED = &quot;completed&quot;
+    FAILED = &quot;failed&quot;
+
+@dataclass
+class TaskStep:
+    description: str
+    status: StepStatus = StepStatus.PENDING
+    result: Any = None
+    error: str | None = None
+
+@dataclass
+class WorkingMemory:
+    &quot;&quot;&quot;当前任务的执行状态&quot;&quot;&quot;
+
+    goal: str = &quot;&quot;
+    plan: list[TaskStep] = field(default_factory=list)
+    scratchpad: dict[str, Any] = field(default_factory=dict)
+    iteration: int = 0
+    max_iterations: int = 20
+
+    def set_goal(self, goal: str):
+        self.goal = goal
+        self.plan = []
+        self.scratchpad = {}
+        self.iteration = 0
+
+    def add_step(self, description: str) -&gt; int:
+        self.plan.append(TaskStep(description=description))
+        return len(self.plan) - 1
+
+    def complete_step(self, index: int, result: Any):
+        self.plan[index].status = StepStatus.COMPLETED
+        self.plan[index].result = result
+
+    def fail_step(self, index: int, error: str):
+        self.plan[index].status = StepStatus.FAILED
+        self.plan[index].error = error
+
+    def note(self, key: str, value: Any):
+        &quot;&quot;&quot;在 scratchpad 上记录中间发现&quot;&quot;&quot;
+        self.scratchpad[key] = value
+
+    def to_context_string(self) -&gt; str:
+        &quot;&quot;&quot;序列化为可注入 prompt 的文本&quot;&quot;&quot;
+        lines = [f&quot;## Current Task State&quot;]
+        lines.append(f&quot;**Goal**: {self.goal}&quot;)
+        lines.append(f&quot;**Progress**: Step {self.iteration}/{self.max_iterations}&quot;)
+        lines.append(&quot;&quot;)
+        lines.append(&quot;### Plan:&quot;)
+        for i, step in enumerate(self.plan):
+            status_icon = {
+                StepStatus.PENDING: &quot;[ ]&quot;,
+                StepStatus.IN_PROGRESS: &quot;[&gt;]&quot;,
+                StepStatus.COMPLETED: &quot;[x]&quot;,
+                StepStatus.FAILED: &quot;[!]&quot;,
+            }[step.status]
+            lines.append(f&quot;  {status_icon} {i+1}. {step.description}&quot;)
+            if step.result:
+                lines.append(f&quot;       Result: {str(step.result)[:200]}&quot;)
+            if step.error:
+                lines.append(f&quot;       Error: {step.error}&quot;)
+
+        if self.scratchpad:
+            lines.append(&quot;&quot;)
+            lines.append(&quot;### Scratchpad:&quot;)
+            for k, v in self.scratchpad.items():
+                lines.append(f&quot;  - {k}: {str(v)[:300]}&quot;)
+
+        return &quot;\n&quot;.join(lines)
+</code></pre>
+<p><strong>Working Memory 什么时候更新？</strong></p>
+<ul>
+<li><strong>Plan 阶段</strong>：Agent 制定计划后，写入 <code>plan</code></li>
+<li><strong>每步执行后</strong>：更新 step 状态和结果</li>
+<li><strong>发现新信息时</strong>：写入 <code>scratchpad</code>（例如发现数据有异常值）</li>
+<li><strong>任务完成/失败时</strong>：清空或归档到 Episodic Memory</li>
+</ul>
+<hr>
+<h3>Layer 3: Episodic Memory — 历史经验</h3>
+<p><strong>本质</strong>：过去交互的结构化记录，用于跨会话的经验积累。</p>
+<p>如果说 Working Memory 是&quot;今天的笔记&quot;，Episodic Memory 就是&quot;过去的日记&quot;。它回答的问题是：</p>
+<ul>
+<li>&quot;上次用户让我处理类似的任务，我是怎么做的？&quot;</li>
+<li>&quot;用户偏好什么样的输出格式？&quot;</li>
+<li>&quot;上次这个工具调用失败了，原因是什么？&quot;</li>
+</ul>
+<pre><code class="language-python">import time
+import json
+import hashlib
+from dataclasses import dataclass, asdict
+
+@dataclass
+class Episode:
+    &quot;&quot;&quot;一次交互的结构化记录&quot;&quot;&quot;
+
+    episode_id: str
+    timestamp: float
+    task_description: str
+    approach: str              # Agent 采用的方法
+    outcome: str               # 成功/失败/部分成功
+    key_decisions: list[str]   # 关键决策点
+    user_feedback: str | None  # 用户反馈（如果有）
+    tools_used: list[str]      # 使用了哪些工具
+    lessons: list[str]         # 经验教训
+    importance: float          # 重要性评分 0-1
+    embedding: list[float] | None = None  # 向量表示
+
+    def to_context_string(self) -&gt; str:
+        return (
+            f&quot;[Past experience - {self.task_description}]\n&quot;
+            f&quot;Approach: {self.approach}\n&quot;
+            f&quot;Outcome: {self.outcome}\n&quot;
+            f&quot;Lessons: {&#39;; &#39;.join(self.lessons)}&quot;
+        )
+
+
+class EpisodicMemory:
+    &quot;&quot;&quot;基于向量检索的情景记忆&quot;&quot;&quot;
+
+    def __init__(self, embedding_fn, vector_store):
+        self.embedding_fn = embedding_fn   # text -&gt; vector
+        self.vector_store = vector_store   # 向量数据库客户端
+        self.decay_factor = 0.95           # 时间衰减因子
+
+    def store(self, episode: Episode):
+        &quot;&quot;&quot;写入一条记忆&quot;&quot;&quot;
+        # 生成向量表示
+        text_for_embedding = (
+            f&quot;{episode.task_description} {episode.approach} &quot;
+            f&quot;{&#39; &#39;.join(episode.lessons)}&quot;
+        )
+        episode.embedding = self.embedding_fn(text_for_embedding)
+
+        # 写入向量数据库
+        self.vector_store.upsert(
+            id=episode.episode_id,
+            vector=episode.embedding,
+            metadata=asdict(episode)
+        )
+
+    def recall(self, query: str, top_k: int = 5) -&gt; list[Episode]:
+        &quot;&quot;&quot;根据当前任务检索相关记忆&quot;&quot;&quot;
+        query_embedding = self.embedding_fn(query)
+
+        # 向量相似度检索
+        results = self.vector_store.query(
+            vector=query_embedding,
+            top_k=top_k * 2  # 多检索一些，后面再过滤
+        )
+
+        # 综合评分：相似度 × 时间衰减 × 重要性
+        scored_episodes = []
+        now = time.time()
+        for result in results:
+            episode = Episode(**result.metadata)
+            age_days = (now - episode.timestamp) / 86400
+
+            # 综合评分公式
+            time_decay = self.decay_factor ** age_days
+            final_score = (
+                result.similarity * 0.5 +    # 语义相似度
+                time_decay * 0.3 +            # 时间新鲜度
+                episode.importance * 0.2      # 重要性
+            )
+            scored_episodes.append((episode, final_score))
+
+        # 按综合分排序，取 top_k
+        scored_episodes.sort(key=lambda x: x[1], reverse=True)
+        return [ep for ep, _ in scored_episodes[:top_k]]
+</code></pre>
+<p><strong>Episodic Memory 的检索策略</strong>：</p>
+<pre><code>                    Query: &quot;用户要分析 Q3 销售数据&quot;
+                              │
+                    ┌─────────▼──────────┐
+                    │   Embedding Model   │
+                    └─────────┬──────────┘
+                              │ query_vector
+                    ┌─────────▼──────────┐
+                    │   Vector Search     │──── 语义相似度 (0.5)
+                    │   (Top 10)          │
+                    └─────────┬──────────┘
+                              │ candidates
+                    ┌─────────▼──────────┐
+                    │   Scoring &amp; Rank    │
+                    │  ├─ time_decay (0.3)│──── 新消息 &gt; 旧消息
+                    │  └─ importance (0.2)│──── 成功经验 &gt; 普通记录
+                    └─────────┬──────────┘
+                              │ top_k
+                    ┌─────────▼──────────┐
+                    │ Format &amp; Inject     │──── 注入 Context Window
+                    │ into Prompt         │
+                    └────────────────────┘
+</code></pre>
+<p><strong>关键决策：什么时候写入 Episodic Memory？</strong></p>
+<p>不是每轮对话都值得记住。过度记忆会导致检索噪声。实践中推荐以下策略：</p>
+<table>
+<thead>
+<tr>
+<th>触发条件</th>
+<th>写入内容</th>
+<th>重要性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>任务成功完成</td>
+<td>完整的任务描述、方法、结果</td>
+<td>0.7-0.9</td>
+</tr>
+<tr>
+<td>任务失败</td>
+<td>失败原因、错误信息、教训</td>
+<td>0.8-1.0</td>
+</tr>
+<tr>
+<td>用户显式反馈</td>
+<td>用户的表扬/批评/修正</td>
+<td>0.9-1.0</td>
+</tr>
+<tr>
+<td>发现新的用户偏好</td>
+<td>偏好描述</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>使用了新的工具/方法</td>
+<td>工具使用经验</td>
+<td>0.5-0.7</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>Layer 4: Semantic Memory — 知识库</h3>
+<p><strong>本质</strong>：相对稳定的事实性知识，通常通过 RAG (Retrieval-Augmented Generation) 接入。</p>
+<p>Semantic Memory 与 Episodic Memory 的区别：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Episodic Memory</th>
+<th>Semantic Memory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>存储内容</td>
+<td>Agent 的经验（做过什么）</td>
+<td>外部知识（世界是什么样）</td>
+</tr>
+<tr>
+<td>更新频率</td>
+<td>每次任务后可能更新</td>
+<td>相对稳定，定期更新</td>
+</tr>
+<tr>
+<td>来源</td>
+<td>Agent 自身的交互历史</td>
+<td>文档、数据库、API</td>
+</tr>
+<tr>
+<td>检索触发</td>
+<td>遇到类似任务时</td>
+<td>需要事实性知识时</td>
+</tr>
+</tbody></table>
+<p>在本篇中，我们只关注 Agent 如何&quot;使用&quot;Semantic Memory。知识如何构建、如何切分、如何检索——这些 RAG 工程问题留给下一篇文章。</p>
+<pre><code class="language-python">class SemanticMemory:
+    &quot;&quot;&quot;知识库接口（RAG 的消费侧）&quot;&quot;&quot;
+
+    def __init__(self, retriever):
+        self.retriever = retriever  # RAG 检索器
+
+    def query(self, question: str, top_k: int = 3) -&gt; list[dict]:
+        &quot;&quot;&quot;检索相关知识片段&quot;&quot;&quot;
+        results = self.retriever.search(question, top_k=top_k)
+        return [
+            {
+                &quot;content&quot;: r.text,
+                &quot;source&quot;: r.metadata.get(&quot;source&quot;, &quot;unknown&quot;),
+                &quot;relevance&quot;: r.score,
+            }
+            for r in results
+        ]
+
+    def format_for_context(self, results: list[dict]) -&gt; str:
+        &quot;&quot;&quot;格式化为可注入 prompt 的文本&quot;&quot;&quot;
+        if not results:
+            return &quot;&quot;
+        lines = [&quot;## Relevant Knowledge:&quot;]
+        for i, r in enumerate(results, 1):
+            lines.append(f&quot;\n### [{i}] (source: {r[&#39;source&#39;]})&quot;)
+            lines.append(r[&quot;content&quot;])
+        return &quot;\n&quot;.join(lines)
+</code></pre>
+<hr>
+<h2>4. 记忆的读写操作</h2>
+<p>记忆系统的核心操作可以概括为四个：<strong>Write、Read、Update、Forget</strong>。每个操作都有其触发时机和策略选择。</p>
+<h3>Write：写入记忆</h3>
+<pre><code class="language-python">class MemoryWriter:
+    &quot;&quot;&quot;决定什么信息、在什么时候写入哪层记忆&quot;&quot;&quot;
+
+    def __init__(self, working_memory, episodic_memory, llm_client):
+        self.working = working_memory
+        self.episodic = episodic_memory
+        self.llm = llm_client
+
+    def on_step_complete(self, step_index: int, result: Any):
+        &quot;&quot;&quot;每步执行完成后的写入&quot;&quot;&quot;
+        # 更新 Working Memory
+        self.working.complete_step(step_index, result)
+
+        # 重要发现写入 scratchpad
+        if self._is_notable(result):
+            key = f&quot;step_{step_index}_finding&quot;
+            self.working.note(key, self._extract_key_info(result))
+
+    def on_task_complete(self, task_description: str, success: bool):
+        &quot;&quot;&quot;任务完成后的写入&quot;&quot;&quot;
+        # 用 LLM 提取经验教训
+        reflection_prompt = (
+            f&quot;Task: {task_description}\n&quot;
+            f&quot;Working Memory:\n{self.working.to_context_string()}\n\n&quot;
+            f&quot;Extract key lessons learned from this task. &quot;
+            f&quot;Output as JSON with keys: approach, lessons, importance (0-1)&quot;
+        )
+        reflection = self.llm.complete(reflection_prompt, json_mode=True)
+        parsed = json.loads(reflection)
+
+        # 写入 Episodic Memory
+        episode = Episode(
+            episode_id=hashlib.md5(
+                f&quot;{task_description}{time.time()}&quot;.encode()
+            ).hexdigest(),
+            timestamp=time.time(),
+            task_description=task_description,
+            approach=parsed.get(&quot;approach&quot;, &quot;&quot;),
+            outcome=&quot;success&quot; if success else &quot;failure&quot;,
+            key_decisions=[],
+            user_feedback=None,
+            tools_used=[],
+            lessons=parsed.get(&quot;lessons&quot;, []),
+            importance=parsed.get(&quot;importance&quot;, 0.5),
+        )
+        self.episodic.store(episode)
+
+    def on_user_feedback(self, feedback: str, task_description: str):
+        &quot;&quot;&quot;用户反馈时的写入——高优先级&quot;&quot;&quot;
+        episode = Episode(
+            episode_id=hashlib.md5(
+                f&quot;feedback_{time.time()}&quot;.encode()
+            ).hexdigest(),
+            timestamp=time.time(),
+            task_description=task_description,
+            approach=&quot;&quot;,
+            outcome=&quot;user_feedback&quot;,
+            key_decisions=[],
+            user_feedback=feedback,
+            tools_used=[],
+            lessons=[f&quot;User feedback: {feedback}&quot;],
+            importance=0.9,  # 用户反馈总是高重要性
+        )
+        self.episodic.store(episode)
+
+    def _is_notable(self, result: Any) -&gt; bool:
+        &quot;&quot;&quot;判断结果是否值得特别记录&quot;&quot;&quot;
+        # 简单启发式：结果较长或包含数字时可能重要
+        text = str(result)
+        return len(text) &gt; 200 or any(c.isdigit() for c in text)
+
+    def _extract_key_info(self, result: Any) -&gt; str:
+        &quot;&quot;&quot;提取关键信息（可以用 LLM，也可以用规则）&quot;&quot;&quot;
+        text = str(result)
+        if len(text) &lt;= 300:
+            return text
+        return text[:300] + &quot;...&quot;
+</code></pre>
+<h3>Read：读取记忆</h3>
+<p>读取操作发生在每次 LLM 调用之前——我们需要从各层记忆中组装 context。</p>
+<pre><code class="language-python">class MemoryReader:
+    &quot;&quot;&quot;从各层记忆中组装 LLM 调用的上下文&quot;&quot;&quot;
+
+    def __init__(
+        self,
+        conversation_buffer,
+        working_memory,
+        episodic_memory,
+        semantic_memory,
+    ):
+        self.conversation = conversation_buffer
+        self.working = working_memory
+        self.episodic = episodic_memory
+        self.semantic = semantic_memory
+
+    def assemble_context(
+        self,
+        user_query: str,
+        system_prompt: str,
+        token_budget: int = 16000,
+    ) -&gt; list[dict]:
+        &quot;&quot;&quot;组装完整的消息列表&quot;&quot;&quot;
+        messages = []
+
+        # 1. System Prompt（固定分配）
+        messages.append({&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: system_prompt})
+
+        # 2. 检索 Episodic Memory（相关历史经验）
+        relevant_episodes = self.episodic.recall(user_query, top_k=3)
+        if relevant_episodes:
+            episode_text = &quot;\n\n&quot;.join(
+                ep.to_context_string() for ep in relevant_episodes
+            )
+            messages.append({
+                &quot;role&quot;: &quot;system&quot;,
+                &quot;content&quot;: f&quot;## Relevant Past Experience:\n{episode_text}&quot;
+            })
+
+        # 3. 检索 Semantic Memory（相关知识）
+        knowledge_results = self.semantic.query(user_query, top_k=3)
+        if knowledge_results:
+            knowledge_text = self.semantic.format_for_context(knowledge_results)
+            messages.append({
+                &quot;role&quot;: &quot;system&quot;,
+                &quot;content&quot;: knowledge_text
+            })
+
+        # 4. Working Memory（当前任务状态）
+        if self.working.goal:
+            messages.append({
+                &quot;role&quot;: &quot;system&quot;,
+                &quot;content&quot;: self.working.to_context_string()
+            })
+
+        # 5. Conversation History（对话历史）
+        messages.extend(self.conversation.get_messages())
+
+        # 6. Token 预算检查与裁剪
+        messages = self._fit_to_budget(messages, token_budget)
+
+        return messages
+
+    def _fit_to_budget(
+        self, messages: list[dict], budget: int
+    ) -&gt; list[dict]:
+        &quot;&quot;&quot;确保总 token 数不超过预算&quot;&quot;&quot;
+        total = sum(len(m[&quot;content&quot;]) // 3 for m in messages)
+        if total &lt;= budget:
+            return messages
+
+        # 裁剪策略：优先裁减对话历史中间部分
+        # 保留: system prompts + 最早2条 + 最近5条
+        system_msgs = [m for m in messages if m[&quot;role&quot;] == &quot;system&quot;]
+        non_system = [m for m in messages if m[&quot;role&quot;] != &quot;system&quot;]
+
+        if len(non_system) &gt; 7:
+            kept = non_system[:2] + non_system[-5:]
+            messages = system_msgs + kept
+
+        return messages
+</code></pre>
+<h3>Update：记忆更新</h3>
+<p>记忆更新有三种模式，适用于不同场景：</p>
+<pre><code class="language-python">class MemoryUpdateStrategy:
+    &quot;&quot;&quot;记忆更新策略&quot;&quot;&quot;
+
+    @staticmethod
+    def overwrite(store: dict, key: str, value: Any):
+        &quot;&quot;&quot;覆盖：新值完全替换旧值
+        适用于：用户偏好（用户说&quot;我改主意了，用英文回复&quot;）
+        &quot;&quot;&quot;
+        store[key] = value
+
+    @staticmethod
+    def append(store: dict, key: str, value: Any):
+        &quot;&quot;&quot;追加：保留历史，添加新记录
+        适用于：任务历史（每次任务都是新记录）
+        &quot;&quot;&quot;
+        if key not in store:
+            store[key] = []
+        store[key].append(value)
+
+    @staticmethod
+    def merge(store: dict, key: str, value: dict, llm_client=None):
+        &quot;&quot;&quot;合并：智能融合旧信息和新信息
+        适用于：用户画像（逐步积累，可能有矛盾需要解决）
+        &quot;&quot;&quot;
+        if key not in store:
+            store[key] = value
+            return
+
+        old = store[key]
+        if llm_client:
+            # 用 LLM 智能合并
+            prompt = (
+                f&quot;Merge these two user profiles, resolving conflicts &quot;
+                f&quot;by preferring newer information:\n&quot;
+                f&quot;Old: {json.dumps(old)}\nNew: {json.dumps(value)}&quot;
+            )
+            merged = json.loads(llm_client.complete(prompt, json_mode=True))
+            store[key] = merged
+        else:
+            # 简单合并：新值覆盖旧值中的同名字段
+            if isinstance(old, dict) and isinstance(value, dict):
+                store[key] = {**old, **value}
+</code></pre>
+<h3>Forget：记忆遗忘</h3>
+<p>遗忘是记忆系统的必要组成部分。没有遗忘，记忆库会无限膨胀，检索质量会持续下降。</p>
+<pre><code class="language-python">class MemoryForgetting:
+    &quot;&quot;&quot;记忆遗忘策略&quot;&quot;&quot;
+
+    def __init__(self, episodic_memory, decay_rate: float = 0.01):
+        self.episodic = episodic_memory
+        self.decay_rate = decay_rate
+
+    def time_based_decay(self, max_age_days: int = 90):
+        &quot;&quot;&quot;基于时间的遗忘：超过 N 天且重要性低的记忆被清除&quot;&quot;&quot;
+        cutoff = time.time() - (max_age_days * 86400)
+        all_episodes = self.episodic.vector_store.list_all()
+
+        for episode_data in all_episodes:
+            if (
+                episode_data[&quot;timestamp&quot;] &lt; cutoff
+                and episode_data[&quot;importance&quot;] &lt; 0.7
+            ):
+                self.episodic.vector_store.delete(episode_data[&quot;episode_id&quot;])
+
+    def capacity_based_eviction(self, max_episodes: int = 1000):
+        &quot;&quot;&quot;基于容量的驱逐：保留最重要的 N 条记忆&quot;&quot;&quot;
+        all_episodes = self.episodic.vector_store.list_all()
+
+        if len(all_episodes) &lt;= max_episodes:
+            return
+
+        # 按综合分排序（重要性 × 时间衰减）
+        now = time.time()
+        scored = []
+        for ep in all_episodes:
+            age_days = (now - ep[&quot;timestamp&quot;]) / 86400
+            score = ep[&quot;importance&quot;] * (0.95 ** age_days)
+            scored.append((ep[&quot;episode_id&quot;], score))
+
+        scored.sort(key=lambda x: x[1])
+
+        # 删除分数最低的
+        to_remove = len(all_episodes) - max_episodes
+        for episode_id, _ in scored[:to_remove]:
+            self.episodic.vector_store.delete(episode_id)
+
+    def explicit_forget(self, episode_id: str):
+        &quot;&quot;&quot;主动遗忘：用户要求或隐私合规&quot;&quot;&quot;
+        self.episodic.vector_store.delete(episode_id)
+</code></pre>
+<hr>
+<h2>5. 记忆存储方案对比</h2>
+<p>不同的记忆层适合不同的存储后端。选择存储方案时需要考虑：数据结构、访问模式、持久化需求和查询能力。</p>
+<pre><code>┌──────────────┬──────────────────┬──────────────────┬──────────────────┐
+│   存储方案     │   适用记忆层        │   优点             │   缺点            │
+├──────────────┼──────────────────┼──────────────────┼──────────────────┤
+│ 内存          │ Conversation     │ 零延迟            │ 重启丢失          │
+│ (dict/list)  │ Buffer,          │ 实现简单           │ 不可跨进程        │
+│              │ Working Memory   │ 无外部依赖         │ 容量受限          │
+├──────────────┼──────────────────┼──────────────────┼──────────────────┤
+│ Redis        │ 会话状态,          │ 亚毫秒读写         │ 无语义检索        │
+│              │ Working Memory,  │ 支持 TTL 自动过期   │ 数据结构较简单     │
+│              │ 短期缓存          │ 可跨进程           │ 需要额外运维       │
+├──────────────┼──────────────────┼──────────────────┼──────────────────┤
+│ 向量数据库     │ Episodic Memory, │ 语义相似度检索      │ 写入有延迟        │
+│ (Chroma /    │ Semantic Memory  │ 适合非结构化数据     │ 精确查询弱        │
+│  Pinecone)   │                  │ 可扩展             │ 需要 Embedding    │
+├──────────────┼──────────────────┼──────────────────┼──────────────────┤
+│ 关系数据库     │ 用户偏好,          │ 结构化查询强        │ 无语义检索        │
+│ (PostgreSQL) │ 任务历史,         │ 事务保证            │ Schema 需设计     │
+│              │ 审计日志          │ 成熟稳定            │ 向量支持有限       │
+├──────────────┼──────────────────┼──────────────────┼──────────────────┤
+│ 混合方案       │ 生产环境          │ 各取所长            │ 复杂度高          │
+│ PG + Vector  │ 全层级            │ 一个系统解决多需求    │ 需要编排层        │
+│ + Redis      │                  │                   │                  │
+└──────────────┴──────────────────┴──────────────────┴──────────────────┘
+</code></pre>
+<p><strong>实践建议</strong>：</p>
+<ul>
+<li><strong>原型阶段</strong>：全部用内存（dict + list），快速验证</li>
+<li><strong>单用户产品</strong>：SQLite + ChromaDB（本地向量库），零运维</li>
+<li><strong>多用户产品</strong>：PostgreSQL（结构化数据 + pgvector 扩展）+ Redis（会话缓存）</li>
+<li><strong>大规模系统</strong>：PostgreSQL + 专用向量数据库（Pinecone/Qdrant）+ Redis Cluster</li>
+</ul>
+<hr>
+<h2>6. 完整实现：MemoryManager</h2>
+<p>将四层记忆整合到一个统一的管理器中，在 Agent Loop 中使用。</p>
+<pre><code class="language-python">import time
+import json
+import hashlib
+from dataclasses import dataclass, field, asdict
+from typing import Any, Protocol
+
+
+class LLMClient(Protocol):
+    &quot;&quot;&quot;LLM 客户端接口&quot;&quot;&quot;
+    def complete(self, prompt: str, json_mode: bool = False) -&gt; str: ...
+
+
+class VectorStore(Protocol):
+    &quot;&quot;&quot;向量存储接口&quot;&quot;&quot;
+    def upsert(self, id: str, vector: list[float], metadata: dict): ...
+    def query(self, vector: list[float], top_k: int) -&gt; list: ...
+    def delete(self, id: str): ...
+    def list_all(self) -&gt; list[dict]: ...
+
+
+class Retriever(Protocol):
+    &quot;&quot;&quot;RAG 检索器接口&quot;&quot;&quot;
+    def search(self, query: str, top_k: int) -&gt; list: ...
+
+
+class MemoryManager:
+    &quot;&quot;&quot;
+    统一记忆管理器，整合四层记忆架构。
+
+    职责：
+    1. 管理四层记忆的生命周期
+    2. 在 Agent Loop 中提供 read/write 接口
+    3. 处理 Context Window 的 token 预算分配
+    &quot;&quot;&quot;
+
+    def __init__(
+        self,
+        llm_client: LLMClient,
+        embedding_fn,
+        vector_store: VectorStore,
+        retriever: Retriever,
+        config: dict | None = None,
+    ):
+        self.llm = llm_client
+        self.config = config or {}
+
+        # Layer 1: Conversation Buffer
+        self.conversation = SummarizingBuffer(
+            llm_client=llm_client,
+            window_size=self.config.get(&quot;conversation_window&quot;, 20),
+            max_tokens=self.config.get(&quot;conversation_max_tokens&quot;, 8000),
+        )
+
+        # Layer 2: Working Memory
+        self.working = WorkingMemory(
+            max_iterations=self.config.get(&quot;max_iterations&quot;, 20)
+        )
+
+        # Layer 3: Episodic Memory
+        self.episodic = EpisodicMemory(
+            embedding_fn=embedding_fn,
+            vector_store=vector_store,
+        )
+
+        # Layer 4: Semantic Memory
+        self.semantic = SemanticMemory(retriever=retriever)
+
+        # Token budget config
+        self.total_budget = self.config.get(&quot;total_token_budget&quot;, 16000)
+        self.budget_allocation = self.config.get(&quot;budget_allocation&quot;, {
+            &quot;system_prompt&quot;: 0.20,  # 20% for system prompt
+            &quot;memory&quot;: 0.30,         # 30% for episodic + semantic memory
+            &quot;history&quot;: 0.30,        # 30% for conversation history
+            &quot;reserve&quot;: 0.20,        # 20% for tool schemas + response
+        })
+
+    # ── Read: 组装 LLM 上下文 ──────────────────────────────────
+
+    def build_context(
+        self, user_query: str, system_prompt: str
+    ) -&gt; list[dict]:
+        &quot;&quot;&quot;在每次 LLM 调用前，组装完整的消息列表&quot;&quot;&quot;
+        messages = []
+        budget = self.total_budget
+
+        # 1. System Prompt
+        sp_budget = int(budget * self.budget_allocation[&quot;system_prompt&quot;])
+        system_content = self._truncate(system_prompt, sp_budget)
+        messages.append({&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: system_content})
+
+        # 2. Memory injection (Episodic + Semantic + Working)
+        mem_budget = int(budget * self.budget_allocation[&quot;memory&quot;])
+        memory_parts = []
+
+        # 2a. Working Memory
+        if self.working.goal:
+            memory_parts.append(self.working.to_context_string())
+
+        # 2b. Episodic Memory
+        episodes = self.episodic.recall(user_query, top_k=3)
+        if episodes:
+            ep_text = &quot;\n\n&quot;.join(ep.to_context_string() for ep in episodes)
+            memory_parts.append(f&quot;## Past Experience:\n{ep_text}&quot;)
+
+        # 2c. Semantic Memory
+        knowledge = self.semantic.query(user_query, top_k=3)
+        if knowledge:
+            memory_parts.append(self.semantic.format_for_context(knowledge))
+
+        if memory_parts:
+            combined = &quot;\n\n---\n\n&quot;.join(memory_parts)
+            combined = self._truncate(combined, mem_budget)
+            messages.append({&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: combined})
+
+        # 3. Conversation History
+        hist_budget = int(budget * self.budget_allocation[&quot;history&quot;])
+        history = self.conversation.get_messages()
+        history = self._truncate_messages(history, hist_budget)
+        messages.extend(history)
+
+        return messages
+
+    # ── Write: 记忆写入 ─────────────────────────────────────
+
+    def on_user_message(self, content: str):
+        &quot;&quot;&quot;用户消息到来时&quot;&quot;&quot;
+        self.conversation.add(&quot;user&quot;, content)
+
+    def on_assistant_message(self, content: str):
+        &quot;&quot;&quot;Agent 回复时&quot;&quot;&quot;
+        self.conversation.add(&quot;assistant&quot;, content)
+
+    def on_tool_result(self, tool_name: str, result: str):
+        &quot;&quot;&quot;工具返回结果时&quot;&quot;&quot;
+        self.conversation.add(
+            &quot;tool&quot;, f&quot;[{tool_name}] {result}&quot;
+        )
+
+    def on_step_complete(self, step_index: int, result: Any):
+        &quot;&quot;&quot;单步完成时更新 Working Memory&quot;&quot;&quot;
+        self.working.complete_step(step_index, result)
+
+    def on_task_start(self, goal: str, plan: list[str]):
+        &quot;&quot;&quot;任务开始时初始化 Working Memory&quot;&quot;&quot;
+        self.working.set_goal(goal)
+        for step_desc in plan:
+            self.working.add_step(step_desc)
+
+    def on_task_complete(self, task_description: str, success: bool):
+        &quot;&quot;&quot;任务完成时归档到 Episodic Memory&quot;&quot;&quot;
+        # 用 LLM 从 Working Memory 中提取经验
+        reflection_prompt = (
+            f&quot;Reflect on this completed task.\n&quot;
+            f&quot;Task: {task_description}\n&quot;
+            f&quot;State:\n{self.working.to_context_string()}\n\n&quot;
+            f&quot;Extract: approach (string), lessons (list of strings), &quot;
+            f&quot;importance (float 0-1). Output JSON.&quot;
+        )
+        try:
+            raw = self.llm.complete(reflection_prompt, json_mode=True)
+            parsed = json.loads(raw)
+        except (json.JSONDecodeError, Exception):
+            parsed = {
+                &quot;approach&quot;: &quot;unknown&quot;,
+                &quot;lessons&quot;: [],
+                &quot;importance&quot;: 0.5,
+            }
+
+        episode = Episode(
+            episode_id=hashlib.md5(
+                f&quot;{task_description}{time.time()}&quot;.encode()
+            ).hexdigest(),
+            timestamp=time.time(),
+            task_description=task_description,
+            approach=parsed.get(&quot;approach&quot;, &quot;&quot;),
+            outcome=&quot;success&quot; if success else &quot;failure&quot;,
+            key_decisions=[],
+            user_feedback=None,
+            tools_used=[],
+            lessons=parsed.get(&quot;lessons&quot;, []),
+            importance=parsed.get(&quot;importance&quot;, 0.5),
+        )
+        self.episodic.store(episode)
+
+        # 清空 Working Memory
+        self.working = WorkingMemory(
+            max_iterations=self.config.get(&quot;max_iterations&quot;, 20)
+        )
+
+    # ── Forget: 定期维护 ────────────────────────────────────
+
+    def maintenance(self, max_age_days: int = 90, max_episodes: int = 1000):
+        &quot;&quot;&quot;定期执行的记忆维护&quot;&quot;&quot;
+        forgetting = MemoryForgetting(self.episodic)
+        forgetting.time_based_decay(max_age_days)
+        forgetting.capacity_based_eviction(max_episodes)
+
+    # ── 辅助方法 ─────────────────────────────────────────
+
+    def _truncate(self, text: str, max_tokens: int) -&gt; str:
+        max_chars = max_tokens * 3  # 粗略估算
+        if len(text) &lt;= max_chars:
+            return text
+        return text[:max_chars] + &quot;\n...[truncated]&quot;
+
+    def _truncate_messages(
+        self, messages: list[dict], max_tokens: int
+    ) -&gt; list[dict]:
+        total = sum(len(m[&quot;content&quot;]) // 3 for m in messages)
+        if total &lt;= max_tokens:
+            return messages
+        # 保留最早 1 条 + 最近 N 条
+        if len(messages) &gt; 6:
+            return messages[:1] + messages[-5:]
+        return messages[-5:]
+</code></pre>
+<h3>在 Agent Loop 中集成</h3>
+<pre><code class="language-python">def agent_loop(
+    user_input: str,
+    memory: MemoryManager,
+    llm_client: LLMClient,
+    tools: dict,
+    system_prompt: str,
+    max_steps: int = 10,
+):
+    &quot;&quot;&quot;带记忆管理的 Agent 主循环&quot;&quot;&quot;
+
+    # 记录用户输入
+    memory.on_user_message(user_input)
+
+    for step in range(max_steps):
+        # ── Read: 从记忆中组装上下文 ──
+        messages = memory.build_context(user_input, system_prompt)
+
+        # ── Think: 调用 LLM ──
+        response = llm_client.chat(messages, tools=tools)
+
+        # ── 判断是否需要调用工具 ──
+        if response.tool_calls:
+            for tool_call in response.tool_calls:
+                tool_name = tool_call.function.name
+                tool_args = json.loads(tool_call.function.arguments)
+
+                # ── Act: 执行工具 ──
+                result = tools[tool_name](**tool_args)
+
+                # ── Write: 记录工具结果 ──
+                memory.on_tool_result(tool_name, str(result))
+                memory.on_step_complete(step, result)
+        else:
+            # 没有工具调用，Agent 给出了最终回答
+            final_answer = response.content
+            memory.on_assistant_message(final_answer)
+
+            # 任务完成，归档到 Episodic Memory
+            memory.on_task_complete(user_input, success=True)
+
+            return final_answer
+
+    # 超过最大步数
+    memory.on_task_complete(user_input, success=False)
+    return &quot;Task exceeded maximum steps.&quot;
+</code></pre>
+<hr>
+<h2>7. Context Window 管理策略</h2>
+<p>Context Window 是 Agent 记忆系统中最关键的瓶颈。所有层级的记忆最终都要&quot;挤进&quot;这个有限的空间。</p>
+<h3>Token 预算分配</h3>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                Context Window (128K tokens)               │
+│                                                          │
+│  ┌──────────────────┐  ← System Prompt: ~20%             │
+│  │  角色定义、指令集    │    稳定不变，每次都一样              │
+│  │  输出格式要求       │                                   │
+│  ├──────────────────┤  ← Memory Injection: ~30%          │
+│  │  Working Memory   │    动态变化，按相关性选取             │
+│  │  Episodic Recall  │                                   │
+│  │  Semantic Recall  │                                   │
+│  ├──────────────────┤  ← Conversation History: ~30%      │
+│  │  历史消息          │    滑动窗口 + 摘要                  │
+│  │  (含摘要)         │                                    │
+│  ├──────────────────┤  ← Tool Schemas + Reserve: ~20%    │
+│  │  工具定义          │    为 response 预留空间              │
+│  │  Response 空间     │                                   │
+│  └──────────────────┘                                    │
+└─────────────────────────────────────────────────────────┘
+</code></pre>
+<p>这个比例不是固定的。关键在于<strong>动态调整</strong>：</p>
+<pre><code class="language-python">class TokenBudgetAllocator:
+    &quot;&quot;&quot;根据任务特征动态分配 token 预算&quot;&quot;&quot;
+
+    def __init__(self, total_budget: int = 16000):
+        self.total = total_budget
+
+    def allocate(
+        self,
+        task_complexity: str = &quot;medium&quot;,
+        has_knowledge_need: bool = False,
+        conversation_length: int = 0,
+    ) -&gt; dict[str, int]:
+        &quot;&quot;&quot;
+        根据任务特征动态调整各部分预算。
+
+        - 简单任务：减少 memory，增加 history（对话上下文更重要）
+        - 复杂任务：增加 memory，减少 history（需要更多参考信息）
+        - 知识密集：增加 semantic memory 的比重
+        &quot;&quot;&quot;
+        if task_complexity == &quot;simple&quot;:
+            allocation = {
+                &quot;system_prompt&quot;: 0.15,
+                &quot;memory&quot;: 0.15,
+                &quot;history&quot;: 0.45,
+                &quot;reserve&quot;: 0.25,
+            }
+        elif task_complexity == &quot;complex&quot;:
+            allocation = {
+                &quot;system_prompt&quot;: 0.15,
+                &quot;memory&quot;: 0.40,
+                &quot;history&quot;: 0.25,
+                &quot;reserve&quot;: 0.20,
+            }
+        else:  # medium
+            allocation = {
+                &quot;system_prompt&quot;: 0.20,
+                &quot;memory&quot;: 0.30,
+                &quot;history&quot;: 0.30,
+                &quot;reserve&quot;: 0.20,
+            }
+
+        # 如果需要知识检索，从 history 匀一些给 memory
+        if has_knowledge_need:
+            allocation[&quot;memory&quot;] += 0.10
+            allocation[&quot;history&quot;] -= 0.10
+
+        # 对话很长时，给 history 更多空间
+        if conversation_length &gt; 30:
+            allocation[&quot;history&quot;] += 0.05
+            allocation[&quot;reserve&quot;] -= 0.05
+
+        return {
+            k: int(v * self.total) for k, v in allocation.items()
+        }
+</code></pre>
+<h3>消息压缩策略</h3>
+<p>当对话历史超出预算时，需要压缩。两种主要方案：</p>
+<p><strong>方案 A：LLM 摘要压缩</strong></p>
+<pre><code class="language-python">def llm_summarize(messages: list[dict], llm_client) -&gt; str:
+    &quot;&quot;&quot;用 LLM 压缩对话历史&quot;&quot;&quot;
+    conversation_text = &quot;\n&quot;.join(
+        f&quot;{m[&#39;role&#39;]}: {m[&#39;content&#39;][:500]}&quot; for m in messages
+    )
+    prompt = (
+        &quot;Summarize this conversation, preserving:\n&quot;
+        &quot;1. Key decisions and their rationale\n&quot;
+        &quot;2. Important facts and data points\n&quot;
+        &quot;3. User preferences and corrections\n&quot;
+        &quot;4. Current task status\n\n&quot;
+        &quot;Be concise but complete. Do not lose critical information.\n\n&quot;
+        f&quot;Conversation:\n{conversation_text}&quot;
+    )
+    return llm_client.complete(prompt)
+</code></pre>
+<p><strong>方案 B：规则压缩（零成本）</strong></p>
+<pre><code class="language-python">def rule_based_compress(messages: list[dict]) -&gt; list[dict]:
+    &quot;&quot;&quot;基于规则的消息压缩，不需要额外 LLM 调用&quot;&quot;&quot;
+    compressed = []
+    for msg in messages:
+        content = msg[&quot;content&quot;]
+
+        # 规则 1: 截断超长的工具输出
+        if msg[&quot;role&quot;] == &quot;tool&quot; and len(content) &gt; 500:
+            content = content[:500] + &quot;\n...[output truncated]&quot;
+
+        # 规则 2: 移除纯确认消息（&quot;好的&quot;、&quot;明白了&quot;）
+        if msg[&quot;role&quot;] == &quot;assistant&quot; and len(content) &lt; 20:
+            continue
+
+        # 规则 3: 移除重复的错误消息
+        if &quot;error&quot; in content.lower() and any(
+            content == m[&quot;content&quot;] for m in compressed
+        ):
+            continue
+
+        compressed.append({&quot;role&quot;: msg[&quot;role&quot;], &quot;content&quot;: content})
+    return compressed
+</code></pre>
+<p><strong>方案对比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>LLM 摘要</th>
+<th>规则压缩</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>压缩质量</td>
+<td>高，能理解语义</td>
+<td>中，可能丢失隐含信息</td>
+</tr>
+<tr>
+<td>额外成本</td>
+<td>需要一次 LLM 调用</td>
+<td>零</td>
+</tr>
+<tr>
+<td>延迟</td>
+<td>增加 1-3 秒</td>
+<td>毫秒级</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>长对话、复杂任务</td>
+<td>短对话、实时场景</td>
+</tr>
+</tbody></table>
+<p><strong>实践建议</strong>：先用规则压缩兜底（保证不超 budget），当压缩比 &gt; 50% 时再触发 LLM 摘要。两种方案可以组合使用：先规则裁剪，再 LLM 摘要。</p>
+<hr>
+<h2>8. Trade-off 分析</h2>
+<p>记忆系统的设计充满权衡。没有银弹，只有适合你场景的平衡点。</p>
+<h3>Trade-off 1: 记忆丰富度 vs 成本</h3>
+<pre><code>                    记忆注入量
+                        │
+     Token 成本 ────────┤──────────── 上下文质量
+     (线性增长)          │              (边际递减)
+                        │
+        $$$  ──────── ┐ │ ┌ ──────── 很好
+                      │ │ │
+         $$  ──────── ┤ │ ├ ──────── 好
+                      │ │ │
+          $  ──────── ┤ │ ├ ──────── 一般
+                      │ │ │
+          0  ──────── ┘ │ └ ──────── 差
+                        │
+                        └─── 最佳区间通常在中间偏左
+</code></pre>
+<ul>
+<li><strong>记忆越多</strong> → 上下文越丰富 → 回答质量越高 → <strong>但 Token 成本线性增长，延迟线性增长</strong></li>
+<li><strong>记忆太少</strong> → Agent &quot;健忘&quot; → 重复劳动、答非所问 → <strong>用户体验差</strong></li>
+</ul>
+<p><strong>实践经验</strong>：对于大多数 Agent，将 memory injection 控制在 Context Window 的 25-35% 是比较好的区间。超过 40% 时，边际收益急剧下降，但成本继续线性增长。</p>
+<h3>Trade-off 2: 检索精度 vs 检索召回</h3>
+<pre><code>  精确检索 (top_k=1)                模糊检索 (top_k=10)
+  ┌──────────────┐                 ┌──────────────┐
+  │ 命中：很准      │                 │ 命中：可能包含     │
+  │ 遗漏：可能大    │                 │ 遗漏：很少        │
+  │ Token 消耗：少  │                 │ Token 消耗：多    │
+  │ 噪声：几乎没有  │                 │ 噪声：可能较多     │
+  └──────────────┘                 └──────────────┘
+</code></pre>
+<p>不同记忆层的最佳 top_k：</p>
+<ul>
+<li><strong>Episodic Memory</strong>：<code>top_k=3</code>（过去经验不需要太多，2-3 条最相关的就够）</li>
+<li><strong>Semantic Memory</strong>：<code>top_k=5</code>（知识检索需要更全面，特别是当问题模糊时）</li>
+</ul>
+<h3>Trade-off 3: 实时性 vs 一致性</h3>
+<p>写入记忆的时机也有权衡：</p>
+<table>
+<thead>
+<tr>
+<th>写入时机</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>同步写入</strong>（每步结束立即写）</td>
+<td>记忆总是最新的</td>
+<td>增加每步延迟</td>
+</tr>
+<tr>
+<td><strong>异步写入</strong>（后台批量写）</td>
+<td>不影响主循环延迟</td>
+<td>可能丢失最近的记忆</td>
+</tr>
+<tr>
+<td><strong>任务结束后写入</strong></td>
+<td>只写入&quot;完整&quot;的经验</td>
+<td>任务中途中断会丢失</td>
+</tr>
+</tbody></table>
+<p><strong>建议</strong>：Working Memory 同步更新（它在 Agent Loop 的关键路径上），Episodic Memory 任务结束后异步写入（不在关键路径上）。</p>
+<h3>Trade-off 4: 通用记忆 vs 专用记忆</h3>
+<table>
+<thead>
+<tr>
+<th>设计方向</th>
+<th>场景</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>通用记忆系统</td>
+<td>平台型 Agent</td>
+<td>一套代码支撑多场景</td>
+<td>每个场景都不够深入</td>
+</tr>
+<tr>
+<td>专用记忆系统</td>
+<td>垂直领域 Agent</td>
+<td>为特定任务深度优化</td>
+<td>迁移成本高</td>
+</tr>
+</tbody></table>
+<p><strong>建议</strong>：先用通用方案（本文的四层架构），在验证了产品方向后，对核心场景做专用优化。</p>
+<hr>
+<h2>9. 小结与下一步</h2>
+<p>本文建立了 Agent 记忆的四层架构：</p>
+<pre><code>┌─────────────────────────────────────────────────────┐
+│                  Agent Memory Stack                  │
+├─────────────┬──────────────┬────────────────────────┤
+│   Layer     │  存储        │  生命周期               │
+├─────────────┼──────────────┼────────────────────────┤
+│ L1 Conv.    │ 内存 / Redis │ 单次会话               │
+│ L2 Working  │ 内存 / Redis │ 单次任务               │
+│ L3 Episodic │ 向量数据库    │ 跨会话（天~月）         │
+│ L4 Semantic │ RAG 系统     │ 持久化（月~年）         │
+└─────────────┴──────────────┴────────────────────────┘
+</code></pre>
+<p>核心 takeaway：</p>
+<ol>
+<li><strong>记忆是分层的</strong>：不同信息有不同的生命周期和存储需求，不能&quot;一刀切&quot;</li>
+<li><strong>Context Window 是硬约束</strong>：所有记忆最终都要在有限的 token 预算内竞争，需要精细的预算分配</li>
+<li><strong>遗忘是特性</strong>：没有遗忘机制的记忆系统最终会被噪声淹没</li>
+<li><strong>读写时机很关键</strong>：什么时候写入、什么时候检索、检索多少条——这些决策直接影响 Agent 的表现</li>
+<li><strong>从简单开始</strong>：先用内存 + 滑动窗口跑通，再逐步引入向量检索和 LLM 摘要</li>
+</ol>
+<p>在四层记忆中，Layer 4 Semantic Memory 的&quot;读取&quot;操作——即如何从大规模知识库中高效检索相关信息——是一个足够深的话题。它涉及 Ingestion、Chunking、Embedding、Hybrid Retrieval、Reranking 等一系列工程决策。</p>
+<p>这正是下一篇文章的主题：<strong>RAG as Cognitive Memory: 检索增强生成的工程实践</strong>。我们将深入 RAG 管线的每一个环节，探讨如何为 Agent 构建高质量的&quot;外部大脑&quot;。</p>
+<hr>
+<h2>进一步思考</h2>
+<ol>
+<li><strong>Memory Consolidation</strong>：人类在睡眠中会将短期记忆&quot;固化&quot;为长期记忆。Agent 能否也有类似的机制——在空闲时对 Episodic Memory 做去重、聚合、抽象化？</li>
+<li><strong>Shared Memory</strong>：多 Agent 协作场景下，如何设计共享记忆？一个 Agent 的发现如何高效传递给另一个 Agent？</li>
+<li><strong>Memory as Skill</strong>：能否让 Agent 从记忆中&quot;学会&quot;新技能，而非仅仅&quot;记住&quot;过去的经验？比如从 10 次类似任务的记录中归纳出一个通用策略。</li>
+<li><strong>Privacy-Aware Memory</strong>：用户说&quot;忘记我刚才说的&quot;，记忆系统能否真正做到选择性遗忘？在向量数据库中，删除一条记录是否真的消除了它对其他向量的影响？</li>
+<li><strong>Memory Hallucination</strong>：当 Episodic Memory 中存储了不准确的信息（比如一次错误的推理结论），它会不会在后续检索中&quot;污染&quot;Agent 的决策？如何设计记忆的&quot;自校正&quot;机制？</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 08 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/07-Agent%20Runtime%20from%20Scratch">07 | Agent Runtime from Scratch</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/09-RAG%20as%20Cognitive%20Memory">09 | RAG as Cognitive Memory</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+18:T9ed3,<h1>Planning and Reflection: 从 ReAct 到分层规划与自我纠错</h1>
+<blockquote>
+<p>LLM 的 next-token prediction 天生是&quot;短视&quot;的——它只看到当前 token 的概率分布，不会思考十步之后的结局。规划（Planning）让 Agent 具备&quot;远视&quot;能力，反思（Reflection）让 Agent 具备&quot;纠错&quot;能力。二者结合，是 Agent 从&quot;工具调用器&quot;进化为&quot;问题解决者&quot;的关键。</p>
+<p>本文是 Agentic 系列的第 10 篇。我们将从规划范式的演进出发，深入分析 ReAct、Plan-and-Execute、Tree-of-Thought、Hierarchical Planning 四种规划模式，再系统探讨 Reflection 机制的设计与陷阱。</p>
+</blockquote>
+<hr>
+<h2>1. 为什么 Agent 需要规划和反思</h2>
+<p>LLM 的核心训练目标是 next-token prediction：给定前文，预测最可能的下一个 token。这种机制天然缺乏两种能力：</p>
+<ul>
+<li><strong>前瞻（Lookahead）</strong>：生成第一步时不会考虑&quot;这个决定在第五步会导致什么后果&quot;——每一步都选局部最优，但局部最优的叠加不等于全局最优。</li>
+<li><strong>回溯（Backtrack）</strong>：一旦生成了一段文本就不会主动回头修正，即使中间步骤出了错，后续 token 也会基于错误的前提继续生成。</li>
+</ul>
+<p><strong>规划（Planning）</strong> 弥补前瞻缺陷——在执行前把大目标拆成子目标，考虑步骤间的依赖和顺序。<strong>反思（Reflection）</strong> 弥补回溯缺陷——在执行后检查结果、分析错误、决定重试或调整。</p>
+<pre><code>没有规划的 Agent：走一步看一步（Greedy, Reactive）
+有规划的 Agent：先想好路线再出发（Deliberate, Proactive）
+有反思的 Agent：走错了能发现、能纠正（Self-correcting）
+</code></pre>
+<p>二者结合，Agent 才能从&quot;工具调用器&quot;进化为&quot;问题解决者&quot;。</p>
+<hr>
+<h2>2. 规划范式的演进</h2>
+<pre><code>   2022              2023 early         2023 mid            2023+ now
+    │                    │                  │                    │
+    ▼                    ▼                  ▼                    ▼
+┌────────┐      ┌──────────────┐    ┌──────────────┐   ┌────────────────┐
+│No Plan │─────▶│    ReAct     │───▶│Plan-and-Exec │──▶│ Hierarchical   │
+│直接回答 │      │Thought-Act-  │    │先规划再执行   │   │  Planning      │
+└────────┘      │Observation   │    └──────────────┘   │ 多层级分解     │
+                └──────┬───────┘                       └────────────────┘
+                       │           ┌──────────────┐           ▲
+                       └──────────▶│Tree-of-Thought│──────────┘
+                                   │多路径搜索     │
+                                   └──────────────┘
+
+能力维度：单步回答 ──▶ 逐步推理 ──▶ 全局规划 ──▶ 多路径探索 ──▶ 递归分解
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>范式</th>
+<th>核心思想</th>
+<th>解决了什么</th>
+<th>新的问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>No Planning</td>
+<td>LLM 直接回答</td>
+<td>—</td>
+<td>无法处理多步任务</td>
+</tr>
+<tr>
+<td>ReAct</td>
+<td>交替 Thought-Action-Observation</td>
+<td>多步推理+行动</td>
+<td>Greedy，缺乏全局视野</td>
+</tr>
+<tr>
+<td>Plan-and-Execute</td>
+<td>先规划再逐步执行</td>
+<td>全局视野，可追踪</td>
+<td>计划可能过时，修正成本高</td>
+</tr>
+<tr>
+<td>Tree-of-Thought</td>
+<td>多条路径搜索选优</td>
+<td>探索多种可能性</td>
+<td>成本倍增</td>
+</tr>
+<tr>
+<td>Hierarchical</td>
+<td>多层级递归分解</td>
+<td>处理真正复杂的任务</td>
+<td>架构复杂，调试困难</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>3. ReAct 深入分析</h2>
+<h3>3.1 原理：Reason + Act 交替进行</h3>
+<p>ReAct（Yao et al., 2022）让 LLM 在推理（Thought）和行动（Action）之间交替，每次行动后观察结果（Observation），再基于观察继续推理。</p>
+<pre><code>User Question
+     │
+     ▼
+┌──────────┐     ┌──────────┐     ┌──────────────┐
+│ Thought  │────▶│  Action  │────▶│ Observation  │
+│ (推理)   │     │ (行动)   │     │ (观察结果)    │
+└──────────┘     └──────────┘     └──────┬───────┘
+     ▲                                    │
+     └────────────────────────────────────┘
+</code></pre>
+<h3>3.2 ReAct Prompt 模板</h3>
+<pre><code class="language-python">REACT_SYSTEM_PROMPT = &quot;&quot;&quot;You operate in a loop of Thought, Action, Observation.
+
+- Thought: Analyze the situation and decide the next step.
+- Action: Call a tool. Format: Action: tool_name({&quot;param&quot;: &quot;value&quot;})
+- Observation: Review the tool&#39;s result.
+
+When ready, respond: Final Answer: &lt;your answer&gt;
+
+Available tools:
+{tool_descriptions}
+
+Rules:
+1. Always think before acting.
+2. If a tool fails, analyze why and try differently.
+3. Do not fabricate information — use only tool results.
+&quot;&quot;&quot;
+</code></pre>
+<h3>3.3 优点与缺点</h3>
+<p><strong>优点</strong>：灵活自适应（每步可根据 Observation 调整）、实现简单（while 循环 + prompt）、可解释性强（Thought 暴露推理过程）、容错好（失败后下一步可换策略）。</p>
+<p><strong>缺点</strong>：Greedy / 短视（不考虑长期后果）、效率低（每步完整 LLM 调用）、上下文膨胀（步骤越多 token 越多）、容易循环（重复同一失败策略）。</p>
+<h3>3.4 Python 实现</h3>
+<pre><code class="language-python">import json
+from dataclasses import dataclass
+from typing import Callable
+import openai
+
+@dataclass
+class Tool:
+    name: str
+    description: str
+    parameters: dict
+    function: Callable
+
+class ReActAgent:
+    def __init__(self, model: str = &quot;gpt-4o&quot;, tools: list[Tool] | None = None,
+                 max_iterations: int = 10):
+        self.model = model
+        self.tools = {t.name: t for t in (tools or [])}
+        self.max_iterations = max_iterations
+        self.client = openai.OpenAI()
+
+    def _build_system_prompt(self) -&gt; str:
+        tool_desc = &quot;\n&quot;.join(
+            f&quot;- {t.name}: {t.description}&quot; for t in self.tools.values()
+        )
+        return REACT_SYSTEM_PROMPT.format(tool_descriptions=tool_desc)
+
+    def _parse_action(self, text: str) -&gt; tuple[str, dict] | None:
+        for line in text.split(&quot;\n&quot;):
+            if line.strip().startswith(&quot;Action:&quot;):
+                action_str = line.strip()[len(&quot;Action:&quot;):].strip()
+                paren = action_str.find(&quot;(&quot;)
+                if paren == -1:
+                    return None
+                name = action_str[:paren].strip()
+                params_str = action_str[paren + 1:].rstrip(&quot;)&quot;)
+                params = json.loads(params_str) if params_str else {}
+                return name, params
+        return None
+
+    def _execute_tool(self, name: str, params: dict) -&gt; str:
+        if name not in self.tools:
+            return f&quot;Error: Unknown tool &#39;{name}&#39;&quot;
+        try:
+            return str(self.tools[name].function(**params))
+        except Exception as e:
+            return f&quot;Error: {e}&quot;
+
+    def run(self, query: str) -&gt; str:
+        messages = [
+            {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: self._build_system_prompt()},
+            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: query},
+        ]
+        for _ in range(self.max_iterations):
+            resp = self.client.chat.completions.create(
+                model=self.model, messages=messages, temperature=0.0,
+            )
+            text = resp.choices[0].message.content
+            messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: text})
+
+            if &quot;Final Answer:&quot; in text:
+                return text.split(&quot;Final Answer:&quot;)[-1].strip()
+
+            action = self._parse_action(text)
+            if action is None:
+                messages.append({&quot;role&quot;: &quot;user&quot;,
+                                 &quot;content&quot;: &quot;Provide a valid Action or Final Answer.&quot;})
+                continue
+
+            observation = self._execute_tool(*action)
+            messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: f&quot;Observation: {observation}&quot;})
+
+        return &quot;Reached max iterations without final answer.&quot;
+</code></pre>
+<p>注意：随着迭代增加 <code>messages</code> 不断膨胀，token 消耗呈线性增长。超过 5-6 步的任务需要考虑上下文压缩（如摘要历史步骤）。</p>
+<hr>
+<h2>4. Plan-and-Execute 模式</h2>
+<h3>4.1 原理：先规划再执行</h3>
+<p>Plan-and-Execute 将规划与执行分离：先用一次 LLM 调用生成完整计划，再逐个执行子任务，必要时触发 Replanning。</p>
+<pre><code>┌────────────┐       Plan: [S1, S2, S3]      ┌────────────┐
+│  Planner   │──────────────────────────────▶│  Executor  │
+│ (全局规划)  │                                │ (逐步执行)  │
+└────────────┘                                └─────┬──────┘
+      ▲                                             │ 执行失败
+      │            ┌─────────────┐                  │
+      └────────────│  Replanner  │◀─────────────────┘
+                   │ (动态修正)   │
+                   └─────────────┘
+</code></pre>
+<h3>4.2 Planner / Executor 分离的优势</h3>
+<ol>
+<li><strong>关注点分离</strong>：Planner 负责&quot;做什么&quot;，Executor 负责&quot;怎么做&quot;，可以分别用不同模型优化</li>
+<li><strong>可并行</strong>：无依赖的步骤可以并行执行</li>
+<li><strong>可追踪</strong>：计划本身是结构化数据，便于监控和审计</li>
+<li><strong>可中断恢复</strong>：执行到一半中断后可从某一步重启</li>
+</ol>
+<h3>4.3 计划的动态修正</h3>
+<p>三种 Replan 策略：<strong>完全重新规划</strong>（全局优化但可能丢弃已有成果）、<strong>局部修正</strong>（成本低但可能保留错误前提）、<strong>条件触发</strong>（仅在步骤失败或偏差超阈值时 Replan）。生产中通常用条件触发 + 局部修正的组合。</p>
+<h3>4.4 Python 实现</h3>
+<pre><code class="language-python">from dataclasses import dataclass, field
+
+@dataclass
+class PlanStep:
+    id: int
+    description: str
+    tool: str | None = None
+    depends_on: list[int] = field(default_factory=list)
+    status: str = &quot;pending&quot;   # pending / completed / failed
+    result: str | None = None
+
+PLANNER_PROMPT = &quot;&quot;&quot;Decompose the goal into concrete steps (max 7).
+Available tools: {tool_names}
+Output JSON: {{&quot;goal&quot;: &quot;...&quot;, &quot;steps&quot;: [{{&quot;id&quot;: 1, &quot;description&quot;: &quot;...&quot;,
+&quot;tool&quot;: &quot;tool_name or null&quot;, &quot;depends_on&quot;: []}}]}}&quot;&quot;&quot;
+
+class PlanAndExecuteAgent:
+    def __init__(self, tools: dict[str, Tool],
+                 planner_model: str = &quot;gpt-4o&quot;,
+                 executor_model: str = &quot;gpt-4o-mini&quot;,
+                 max_replans: int = 3):
+        self.tools = tools
+        self.planner_model = planner_model
+        self.executor_model = executor_model
+        self.max_replans = max_replans
+        self.client = openai.OpenAI()
+
+    def _create_plan(self, goal: str) -&gt; list[PlanStep]:
+        resp = self.client.chat.completions.create(
+            model=self.planner_model,
+            messages=[
+                {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: PLANNER_PROMPT.format(
+                    tool_names=&quot;, &quot;.join(self.tools.keys()))},
+                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: goal},
+            ],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        data = json.loads(resp.choices[0].message.content)
+        return [PlanStep(**s) for s in data[&quot;steps&quot;]]
+
+    def _execute_step(self, step: PlanStep, context: dict) -&gt; str:
+        if step.tool and step.tool in self.tools:
+            param_resp = self.client.chat.completions.create(
+                model=self.executor_model,
+                messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                    f&quot;Call tool &#39;{step.tool}&#39; for: {step.description}\n&quot;
+                    f&quot;Context: {json.dumps(context)}\nReturn JSON params only.&quot;}],
+                response_format={&quot;type&quot;: &quot;json_object&quot;},
+            )
+            params = json.loads(param_resp.choices[0].message.content)
+            return str(self.tools[step.tool].function(**params))
+        resp = self.client.chat.completions.create(
+            model=self.executor_model,
+            messages=[{&quot;role&quot;: &quot;user&quot;,
+                       &quot;content&quot;: f&quot;Task: {step.description}\nContext: {json.dumps(context)}&quot;}],
+        )
+        return resp.choices[0].message.content
+
+    def run(self, goal: str) -&gt; str:
+        steps = self._create_plan(goal)
+        context = {}
+        for replan in range(self.max_replans + 1):
+            for step in steps:
+                if step.status == &quot;completed&quot;:
+                    continue
+                deps_met = all(
+                    any(s.id == d and s.status == &quot;completed&quot; for s in steps)
+                    for d in step.depends_on
+                )
+                if not deps_met:
+                    continue
+                try:
+                    step.result = self._execute_step(step, context)
+                    step.status = &quot;completed&quot;
+                    context[f&quot;step_{step.id}&quot;] = step.result
+                except Exception as e:
+                    step.status = &quot;failed&quot;
+                    step.result = str(e)
+                    steps = self._replan(goal, steps, step)
+                    break
+            if all(s.status == &quot;completed&quot; for s in steps):
+                return self._synthesize(goal, context)
+        return &quot;Exceeded max replans.&quot;
+
+    def _replan(self, goal, steps, failed) -&gt; list[PlanStep]:
+        # 将已完成步骤 + 失败信息交给 Planner 重新规划
+        completed = [{&quot;id&quot;: s.id, &quot;result&quot;: s.result}
+                     for s in steps if s.status == &quot;completed&quot;]
+        resp = self.client.chat.completions.create(
+            model=self.planner_model,
+            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;:
+                f&quot;Replan. Goal: {goal}\nCompleted: {json.dumps(completed)}\n&quot;
+                f&quot;Failed step: {failed.description} -&gt; {failed.result}&quot;}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        data = json.loads(resp.choices[0].message.content)
+        return [PlanStep(**s) for s in data[&quot;steps&quot;]]
+
+    def _synthesize(self, goal, context):
+        resp = self.client.chat.completions.create(
+            model=self.planner_model,
+            messages=[{&quot;role&quot;: &quot;user&quot;,
+                       &quot;content&quot;: f&quot;Goal: {goal}\nResults: {json.dumps(context)}\n&quot;
+                       &quot;Synthesize a final answer.&quot;}],
+        )
+        return resp.choices[0].message.content
+</code></pre>
+<p>Planner 用 <code>gpt-4o</code>（强规划），Executor 用 <code>gpt-4o-mini</code>（快执行）——这是生产中常见的成本优化手段。</p>
+<hr>
+<h2>5. Tree-of-Thought</h2>
+<h3>5.1 原理</h3>
+<p>Tree-of-Thought（ToT，Yao et al. 2023）模拟人类&quot;深思熟虑&quot;：同时考虑多条推理路径，评估每条的前景，选择最优的继续深入。</p>
+<pre><code>                       Root (问题)
+                      /     |     \
+                   Th1     Th2    Th3      ← 生成多个候选 Thought
+                  /   \     |    /   \
+               T1a   T1b  T2a  T3a  T3b   ← 继续展开
+                ✗      ✓    ✗    ✓    ✗    ← 评估函数打分，剪枝
+</code></pre>
+<p>三个核心组件：<strong>Thought Generator</strong>（每步生成 k 个候选）、<strong>State Evaluator</strong>（对候选打分）、<strong>Search Algorithm</strong>（BFS 或 DFS）。</p>
+<h3>5.2 BFS vs DFS</h3>
+<ul>
+<li><strong>BFS</strong>：每层展开 k 个，评估后保留 top-k 进入下一层。适合步骤少、每步选择多的问题。总调用 ≈ k x depth x 2（生成+评估）。</li>
+<li><strong>DFS</strong>：选当前最优一路深入，死胡同时回溯。适合步骤多、每步选择少的问题。最好 O(depth)，最坏 O(k^depth)。</li>
+</ul>
+<h3>5.3 评估函数设计</h3>
+<ol>
+<li><strong>LLM 自评</strong>：让 LLM 对每个 Thought 打分。简单但可能有系统性偏见。</li>
+<li><strong>投票法</strong>：多次评估取多数。更稳健但成本更高。</li>
+<li><strong>外部验证</strong>：可验证的问题（数学/代码）用外部工具检查。最可靠但适用范围有限。</li>
+</ol>
+<h3>5.4 Trade-off：质量 vs 成本</h3>
+<pre><code>方法           LLM 调用次数      质量    适用场景
+─────────────  ──────────────   ─────   ──────────
+ReAct(单路径)   O(steps)         基准    大多数任务
+ToT-BFS        O(k * d * 2)     高      创意/数学/方案选型
+ToT-DFS        O(k^d) 最坏      中-高   深度推理
+</code></pre>
+<p>k=3, d=3 时 ToT 可能需要 40+ 次 LLM 调用，ReAct 只需 5-6 次——<strong>8-10 倍成本差距</strong>。只有当正确性要求高且存在多条有意义的推理路径时，ToT 的投入才有回报。</p>
+<h3>5.5 Python 实现</h3>
+<pre><code class="language-python">import json
+from dataclasses import dataclass, field
+import openai
+
+@dataclass
+class ThoughtNode:
+    &quot;&quot;&quot;搜索树中的节点，每个节点代表一条推理路径的当前状态&quot;&quot;&quot;
+    state: str                           # 当前推理状态（累积的 thought 文本）
+    score: float = 0.0                   # 评估函数打分
+    depth: int = 0
+    children: list[&quot;ThoughtNode&quot;] = field(default_factory=list)
+
+class TreeOfThought:
+    def __init__(self, model: str = &quot;gpt-4o&quot;, k: int = 3, max_depth: int = 3):
+        &quot;&quot;&quot;
+        k: 每层生成的候选 thought 数量（BFS 宽度）
+        max_depth: 搜索树最大深度
+        &quot;&quot;&quot;
+        self.model = model
+        self.k = k
+        self.max_depth = max_depth
+        self.client = openai.OpenAI()
+
+    def generate_thoughts(self, problem: str, current_state: str) -&gt; list[str]:
+        &quot;&quot;&quot;生成 k 个候选 thought&quot;&quot;&quot;
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                f&quot;Given the problem and current reasoning state, &quot;
+                f&quot;generate exactly {self.k} distinct next-step thoughts.\n&quot;
+                f&#39;Return JSON: {{&quot;thoughts&quot;: [&quot;thought1&quot;, &quot;thought2&quot;, ...]}}&#39;},
+                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;:
+                f&quot;Problem: {problem}\nCurrent state: {current_state or &#39;(start)&#39;}&quot;}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        data = json.loads(resp.choices[0].message.content)
+        return data[&quot;thoughts&quot;][:self.k]
+
+    def evaluate_thought(self, problem: str, state: str) -&gt; float:
+        &quot;&quot;&quot;评估当前推理状态的前景，返回 0-1 分数&quot;&quot;&quot;
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                &quot;Evaluate how promising this reasoning state is for solving the problem.\n&quot;
+                &#39;Return JSON: {&quot;score&quot;: 0.0-1.0, &quot;reason&quot;: &quot;...&quot;}&#39;},
+                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;:
+                f&quot;Problem: {problem}\nReasoning so far: {state}&quot;}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        data = json.loads(resp.choices[0].message.content)
+        return float(data[&quot;score&quot;])
+
+    def solve(self, problem: str) -&gt; str:
+        &quot;&quot;&quot;BFS 搜索：每层生成 k 个候选，评估后保留 top-k 进入下一层&quot;&quot;&quot;
+        # 初始化：根节点
+        current_level = [ThoughtNode(state=&quot;&quot;, depth=0)]
+
+        for depth in range(self.max_depth):
+            candidates: list[ThoughtNode] = []
+
+            for node in current_level:
+                # 为每个节点生成 k 个候选 thought
+                thoughts = self.generate_thoughts(problem, node.state)
+                for thought in thoughts:
+                    new_state = f&quot;{node.state}\nStep {depth+1}: {thought}&quot;.strip()
+                    score = self.evaluate_thought(problem, new_state)
+                    child = ThoughtNode(state=new_state, score=score, depth=depth+1)
+                    node.children.append(child)
+                    candidates.append(child)
+
+            # 保留 top-k 进入下一层（BFS 剪枝）
+            candidates.sort(key=lambda n: n.score, reverse=True)
+            current_level = candidates[:self.k]
+
+        # 返回最终得分最高的推理路径
+        best = max(current_level, key=lambda n: n.score)
+        return best.state
+</code></pre>
+<p>核心观察：BFS 宽度 <code>k</code> 和搜索深度 <code>max_depth</code> 共同控制质量-成本的 trade-off。<code>k</code> 越大，每层探索的候选越多，找到好路径的概率越高，但 LLM 调用次数以 O(k² × d) 增长（每层 k 个节点各生成 k 个候选 + k 次评估）。实践中 k=2<del>3、depth=2</del>3 是较好的起点，可根据任务复杂度动态调整。</p>
+<hr>
+<h2>6. 分层规划（Hierarchical Planning）</h2>
+<p>当任务复杂到&quot;设计并实现用户权限系统&quot;这种级别时，一层计划无法覆盖从架构到实现的所有粒度。分层规划通过<strong>递归分解</strong>解决：高层拆子目标，低层拆具体动作。</p>
+<pre><code>高层规划器 (Strategic)
+├─ 子目标1: 设计数据模型
+│   └─ 低层规划器 (Tactical)
+│       ├─ Action: 分析需求
+│       ├─ Action: 设计 ER 图
+│       └─ Action: 定义 API Schema
+├─ 子目标2: 实现认证模块
+│   └─ 低层规划器
+│       ├─ Action: 实现 JWT 签发
+│       └─ Action: 编写测试
+└─ 子目标3: 实现授权模块
+    └─ 低层规划器
+        ├─ Action: 实现 RBAC
+        └─ Action: 集成测试
+</code></pre>
+<h3>6.1 递归分解的终止条件</h3>
+<ol>
+<li><strong>原子性</strong>：任务可用单次工具调用完成 → 停止分解</li>
+<li><strong>深度限制</strong>：最大 2-3 层，防止过度分解</li>
+<li><strong>预算约束</strong>：剩余 token 预算不足以继续分解 → 当前粒度直接执行</li>
+</ol>
+<pre><code class="language-python">class HierarchicalPlanner:
+    def __init__(self, client: openai.OpenAI, model=&quot;gpt-4o&quot;, max_depth=3):
+        self.client, self.model, self.max_depth = client, model, max_depth
+
+    def decompose(self, goal: str, depth: int = 0) -&gt; dict:
+        if depth &gt;= self.max_depth:
+            return {&quot;type&quot;: &quot;action&quot;, &quot;description&quot;: goal}
+
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                &quot;Decide if this goal is atomic or compound.\n&quot;
+                &#39;Atomic: {&quot;type&quot;:&quot;action&quot;,&quot;description&quot;:&quot;...&quot;}\n&#39;
+                &#39;Compound: {&quot;type&quot;:&quot;goal&quot;,&quot;description&quot;:&quot;...&quot;,&quot;subgoals&quot;:[&quot;...&quot;,]}&#39;},
+                {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: goal}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        node = json.loads(resp.choices[0].message.content)
+        if node[&quot;type&quot;] == &quot;action&quot;:
+            return node
+        node[&quot;children&quot;] = [self.decompose(sg, depth+1) for sg in node.get(&quot;subgoals&quot;,[])]
+        return node
+</code></pre>
+<p>实践中 2 层（Strategic + Tactical）通常够用。3 层以上的调试成本会快速失控。</p>
+<h3>6.2 执行层：递归执行分解后的计划</h3>
+<p><code>HierarchicalPlanner</code> 只负责分解，执行需要单独的 Executor。核心逻辑：叶节点（type=&quot;action&quot;）直接调用 LLM 或工具执行，分支节点（type=&quot;goal&quot;）递归执行所有子节点并聚合结果。</p>
+<pre><code class="language-python">@dataclass
+class ExecutionResult:
+    description: str
+    output: str
+    success: bool
+    children: list[&quot;ExecutionResult&quot;] = field(default_factory=list)
+
+class HierarchicalExecutor:
+    def __init__(self, client: openai.OpenAI, model: str = &quot;gpt-4o-mini&quot;,
+                 tools: dict[str, Callable] | None = None):
+        self.client = client
+        self.model = model
+        self.tools = tools or {}
+
+    def execute(self, node: dict) -&gt; ExecutionResult:
+        &quot;&quot;&quot;递归执行分解后的计划树&quot;&quot;&quot;
+        desc = node.get(&quot;description&quot;, &quot;&quot;)
+
+        # 叶节点：直接执行
+        if node[&quot;type&quot;] == &quot;action&quot;:
+            output = self._execute_action(desc)
+            return ExecutionResult(description=desc, output=output, success=True)
+
+        # 分支节点：递归执行所有子节点
+        child_results = [self.execute(child) for child in node.get(&quot;children&quot;, [])]
+        all_success = all(r.success for r in child_results)
+
+        # 聚合子节点结果
+        summary = self._aggregate(desc, child_results)
+        return ExecutionResult(
+            description=desc, output=summary,
+            success=all_success, children=child_results,
+        )
+
+    def _execute_action(self, action: str) -&gt; str:
+        &quot;&quot;&quot;执行单个原子动作——优先使用工具，否则 fallback 到 LLM&quot;&quot;&quot;
+        for tool_name, tool_fn in self.tools.items():
+            if tool_name.lower() in action.lower():
+                return str(tool_fn(action))
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: f&quot;Execute this task: {action}&quot;}],
+        )
+        return resp.choices[0].message.content
+
+    def _aggregate(self, goal: str, results: list[ExecutionResult]) -&gt; str:
+        &quot;&quot;&quot;将子节点执行结果聚合为父目标的总结&quot;&quot;&quot;
+        parts = &quot;\n&quot;.join(f&quot;- {r.description}: {r.output[:200]}&quot; for r in results)
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;:
+                f&quot;Goal: {goal}\nSub-results:\n{parts}\nSummarize the overall outcome.&quot;}],
+        )
+        return resp.choices[0].message.content
+</code></pre>
+<p>分解与执行分离的好处：<code>HierarchicalPlanner</code> 可以用强模型（gpt-4o）做规划，<code>HierarchicalExecutor</code> 用快模型（gpt-4o-mini）做执行，兼顾规划质量和执行成本。同时，执行层可以独立替换——例如将 <code>_execute_action</code> 改为调用真实 API 或 Code Interpreter，而不影响规划逻辑。</p>
+<hr>
+<h2>7. Reflection（反思）机制</h2>
+<h3>7.1 为什么需要反思</h3>
+<p>Agent 有三类常见失败：LLM 输出错误（幻觉/逻辑错误）、工具执行失败（超时/参数错误）、计划不可行（前提假设不成立）。没有反思，错误会<strong>无意识地传播</strong>——第 2 步的错成为第 3 步的输入，错误不断累积。</p>
+<h3>7.2 Self-Critique</h3>
+<p>用同一个 LLM 评估自己的输出。理论支持：LLM 在<strong>验证</strong>上通常比<strong>生成</strong>更强（就像检查别人的代码比自己写更容易）。但盲区在于：LLM 的系统性偏见在生成和评估中是一致的。</p>
+<h3>7.3 结构化反思</h3>
+<pre><code class="language-python">@dataclass
+class ReflectionResult:
+    what_went_well: list[str]
+    what_went_wrong: list[str]
+    root_cause: str
+    what_to_do_next: str
+    should_retry: bool
+    confidence: float  # 0-1
+
+REFLECTION_PROMPT = &quot;&quot;&quot;Analyze this execution result.
+Goal: {goal} | Steps: {steps} | Result: {result}
+Return JSON: {{&quot;what_went_well&quot;:[], &quot;what_went_wrong&quot;:[], &quot;root_cause&quot;:&quot;&quot;,
+&quot;what_to_do_next&quot;:&quot;&quot;, &quot;should_retry&quot;: bool, &quot;confidence&quot;: 0.0-1.0}}&quot;&quot;&quot;
+</code></pre>
+<h3>7.4 Retry Budget 与 Stop Condition</h3>
+<p>反思不能无限循环。必须有 Stop Condition：</p>
+<pre><code>                  反思完成
+                     │
+          ┌──────────▼──────────┐   是
+          │ 质量 &gt;= 阈值？       │─────▶ 返回结果
+          └──────────┬──────────┘
+                     │ 否
+          ┌──────────▼──────────┐   是
+          │ 达到最大重试？       │─────▶ 返回最好的结果
+          └──────────┬──────────┘
+                     │ 否
+          ┌──────────▼──────────┐   是
+          │ 改进幅度 &lt; 阈值？    │─────▶ 停止（再试也没用）
+          └──────────┬──────────┘
+                     │ 否
+          ┌──────────▼──────────┐   是
+          │ 成本超出预算？       │─────▶ 返回当前结果
+          └──────────┬──────────┘
+                     │ 否
+                  继续重试
+</code></pre>
+<p>四个条件形成<strong>多层安全网</strong>：质量达标是正常退出，最大重试和成本预算是硬性保底，改进幅度检测是&quot;聪明的&quot;提前退出。</p>
+<h3>7.5 代码实现</h3>
+<pre><code class="language-python">@dataclass
+class ReflectionPolicy:
+    max_retries: int = 3
+    quality_threshold: float = 0.7
+    improvement_threshold: float = 0.1
+    cost_limit_tokens: int = 10000
+
+class ReflectiveAgent:
+    def __init__(self, base_agent: ReActAgent, policy: ReflectionPolicy,
+                 model: str = &quot;gpt-4o-mini&quot;):
+        self.base_agent = base_agent
+        self.policy = policy
+        self.model = model
+        self.client = openai.OpenAI()
+
+    def _reflect(self, goal, steps, result) -&gt; ReflectionResult:
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: REFLECTION_PROMPT.format(
+                goal=goal, steps=json.dumps(steps), result=result)}],
+            response_format={&quot;type&quot;: &quot;json_object&quot;},
+        )
+        return ReflectionResult(**json.loads(resp.choices[0].message.content))
+
+    def run(self, goal: str) -&gt; str:
+        best_result, best_score = None, 0.0
+        history = []
+
+        for attempt in range(self.policy.max_retries + 1):
+            # 执行（重试时注入反思结论）
+            if attempt == 0:
+                result = self.base_agent.run(goal)
+            else:
+                enhanced = (f&quot;{goal}\n\nPrevious issues: {reflection.what_went_wrong}&quot;
+                           f&quot;\nRoot cause: {reflection.root_cause}&quot;
+                           f&quot;\nSuggestion: {reflection.what_to_do_next}&quot;)
+                result = self.base_agent.run(enhanced)
+
+            reflection = self._reflect(goal, history, result)
+
+            # Stop conditions
+            if reflection.confidence &gt;= self.policy.quality_threshold:
+                best_result, best_score = result, reflection.confidence
+                break
+            if not reflection.should_retry:
+                break
+            if attempt &gt; 0 and (reflection.confidence - best_score) &lt; self.policy.improvement_threshold:
+                break  # 改进幅度不足，再试也没用
+
+            # 更新最优结果（放在 stop condition 之后，避免 improvement 检查失效）
+            if reflection.confidence &gt; best_score:
+                best_result, best_score = result, reflection.confidence
+
+            history.append({&quot;attempt&quot;: attempt, &quot;issues&quot;: reflection.what_went_wrong})
+
+        return best_result or result
+</code></pre>
+<hr>
+<h2>8. Reflection 的陷阱</h2>
+<h3>8.1 无限循环</h3>
+<p>Agent 不断反思但不改进——反思发现了问题却没有提供有效的改进方向。解法：<code>improvement_threshold</code> 检测，连续两轮质量差距 &lt; 0.1 直接停止。</p>
+<h3>8.2 过度反思</h3>
+<p>简单任务（&quot;今天天气怎么样&quot;）也要三轮反思，浪费 3-4 倍 token。解法：引入复杂度判断，简单任务跳过反思。</p>
+<pre><code class="language-python">def needs_reflection(task: str, result: str) -&gt; bool:
+    &quot;&quot;&quot;简单任务不值得反思&quot;&quot;&quot;
+    if len(result) &lt; 100:  # 结果很短 → 可能是简单查询
+        return False
+    simple_patterns = [&quot;什么是&quot;, &quot;查一下&quot;, &quot;告诉我&quot;]
+    return not any(p in task for p in simple_patterns)
+</code></pre>
+<h3>8.3 成本爆炸</h3>
+<p>每次反思是完整 LLM 调用，包含完整上下文。对策：(1) 反思用小模型（GPT-4o-mini）；(2) 压缩上下文传摘要版本；(3) 采样反思（30% 的执行触发反思而非 100%）。</p>
+<h3>8.4 合理的 Reflection 策略</h3>
+<pre><code>Q1: 任务的错误成本高吗？
+  高 → 启用反思    低 → 跳过
+
+Q2: 错误可自动检测吗？
+  是（代码可测试） → 外部验证（更可靠更便宜）
+  否（文案质量）   → LLM Self-Critique
+
+Q3: 预算够吗？
+  够   → 结构化反思 + 多轮重试
+  不够 → 单轮 Self-Critique
+
+Q4: 延迟敏感吗？
+  是 → 最多一轮，超时直接返回
+  否 → 多轮直到质量达标
+</code></pre>
+<hr>
+<h2>9. 规划模式选型指南</h2>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>推荐模式</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>简单工具调用（查天气、算术）</td>
+<td><strong>ReAct</strong></td>
+<td>1-2 步完成，规划是过度设计</td>
+</tr>
+<tr>
+<td>多步研究（竞品分析、技术调研）</td>
+<td><strong>Plan-and-Execute</strong></td>
+<td>需要全局视野和步骤追踪</td>
+</tr>
+<tr>
+<td>创意/数学/代码</td>
+<td><strong>Tree-of-Thought</strong></td>
+<td>需探索多条路径并选最优</td>
+</tr>
+<tr>
+<td>复杂项目（系统设计）</td>
+<td><strong>Hierarchical</strong></td>
+<td>粒度跨度大，需递归分解</td>
+</tr>
+<tr>
+<td>高可靠（金融/法律）</td>
+<td><strong>Plan-and-Execute + Reflection</strong></td>
+<td>全局规划 + 结果验证</td>
+</tr>
+<tr>
+<td>实时交互（客服/对话）</td>
+<td><strong>ReAct</strong></td>
+<td>延迟敏感，逐步响应</td>
+</tr>
+<tr>
+<td>长时任务（数据管道）</td>
+<td><strong>Hierarchical + Plan-Exec</strong></td>
+<td>可中断、可恢复、可并行</td>
+</tr>
+</tbody></table>
+<p><strong>二维决策矩阵：</strong></p>
+<pre><code>                  任务步骤少            任务步骤多
+             ┌──────────────────┬──────────────────┐
+ 确定性高    │  ReAct            │  Plan-and-Exec   │
+ (路径清晰)  │ (甚至不需要Agent)  │                  │
+             ├──────────────────┼──────────────────┤
+ 确定性低    │  Tree-of-Thought  │  Hierarchical    │
+ (需要探索)  │                   │  + Reflection    │
+             └──────────────────┴──────────────────┘
+</code></pre>
+<p><strong>模式组合</strong>在生产中很常见：Hierarchical + Plan-and-Execute（高层分解子目标，内部用 Plan-Exec 执行）；ReAct + Reflection（逐步执行，每 N 步检查方向）。关键原则：<strong>从 ReAct 开始，只有当它的局限性确实成为瓶颈时再升级。</strong></p>
+<hr>
+<h2>10. 结语：规划的边界与 Multi-Agent 的必要性</h2>
+<p>规划和反思让单个 Agent 从&quot;走一步看一步&quot;进化到&quot;先想后做再检查&quot;。但单 Agent 的规划能力终有上限：</p>
+<ul>
+<li><strong>上下文窗口限制</strong>：任务涉及的知识和状态超出 context window 时，单 Agent 力不从心</li>
+<li><strong>专业性限制</strong>：一个 Agent 很难同时擅长编码、写作和数据分析——就像一个人很难同时是程序员、设计师和产品经理</li>
+<li><strong>执行效率限制</strong>：单 Agent 串行执行，即使计划中的步骤可以并行</li>
+</ul>
+<p>当这些限制成为瓶颈，你需要的不是更好的规划算法，而是<strong>多个 Agent 的协作</strong>——每个 Agent 专注于擅长领域，由 Orchestrator 协调。这正是下一篇的主题：<strong>Multi-Agent Collaboration: 多 Agent 协作模式与架构。</strong></p>
+<hr>
+<blockquote>
+<p><strong>进一步思考：</strong></p>
+<ol>
+<li>规划质量高度依赖 LLM 对任务域的理解。如果 LLM 从未见过某类任务，能否通过 few-shot examples 注入领域知识来提升规划质量？</li>
+<li>&quot;LLM 评估 LLM&quot; 的反思机制在多大程度上可靠？是否能引入外部验证信号（代码测试、人类反馈）来补强？</li>
+<li>Tree-of-Thought 的搜索空间是指数级的。能否借鉴 AlphaGo 的 MCTS 来更高效搜索？Reasoning model（如 o1、o3）是否已在内部做了类似的事情？</li>
+<li>规划和反思的 token 成本显著。能否缓存和复用已有的计划，为相似任务跳过规划阶段？</li>
+</ol>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 10 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/09-RAG%20as%20Cognitive%20Memory">09 | RAG as Cognitive Memory</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/11-Multi-Agent%20Collaboration">11 | Multi-Agent Collaboration</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2026-01-07","children":"2026年01月07日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"RAG as Cognitive Memory: 检索增强生成的工程实践"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L5","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L5","RAG",{"href":"/blog/tag/RAG/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"RAG"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/08-Memory Architecture","title":"Memory Architecture: Agent 的状态与记忆体系","description":"LLM 是无状态的，但 Agent 必须有状态。本文系统拆解 Agent 记忆的四层架构——Conversation Buffer、Working Memory、Episodic Memory、Semantic Memory，从认知科学类比出发，深入每一层的设计原理、存储方案、读写策略与 Context Window 管理，附完整 Python 实现。","pubDate":"2026-01-02","tags":["Agentic","AI Engineering","Memory"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/10-Planning and Reflection","title":"Planning and Reflection: 从 ReAct 到分层规划与自我纠错","description":"Agentic 系列第 10 篇。深入剖析 Agent 规划（Planning）与反思（Reflection）的核心机制——从 ReAct 的交替推理、Plan-and-Execute 的全局视野、Tree-of-Thought 的多路径搜索，到分层规划的递归分解，再到结构化反思与自我纠错。包含完整 Python 实现、决策分析与 trade-off 讨论。","pubDate":"2026-01-12","tags":["Agentic","AI Engineering","Planning"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"AI Engineering":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"RAG":{"prev":null,"next":null}}}]}],["$","$L19",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"RAG as Cognitive Memory: 检索增强生成的工程实践 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"RAG 不是搜索+拼接，而是 Agent 的认知记忆系统。本文从 Ingestion、Chunking、Embedding、Hybrid Retrieval、Reranking 到 Context Packing，逐层拆解 RAG Pipeline 的工程实践与决策 Trade-off。核心观点：检索质量 > 模型大小。"}],["$","meta","2",{"property":"og:title","content":"RAG as Cognitive Memory: 检索增强生成的工程实践"}],["$","meta","3",{"property":"og:description","content":"RAG 不是搜索+拼接，而是 Agent 的认知记忆系统。本文从 Ingestion、Chunking、Embedding、Hybrid Retrieval、Reranking 到 Context Packing，逐层拆解 RAG Pipeline 的工程实践与决策 Trade-off。核心观点：检索质量 > 模型大小。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-01-07"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"RAG as Cognitive Memory: 检索增强生成的工程实践"}],["$","meta","9",{"name":"twitter:description","content":"RAG 不是搜索+拼接，而是 Agent 的认知记忆系统。本文从 Ingestion、Chunking、Embedding、Hybrid Retrieval、Reranking 到 Context Packing，逐层拆解 RAG Pipeline 的工程实践与决策 Trade-off。核心观点：检索质量 > 模型大小。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}

@@ -1,0 +1,2308 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-51baccc14cf1da9e.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+5:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
+7:I[59665,[],"OutletBoundary"]
+a:I[74911,[],"AsyncMetadataOutlet"]
+c:I[59665,[],"ViewportBoundary"]
+e:I[59665,[],"MetadataBoundary"]
+10:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/0458d6941a120cde.css","style"]
+0:{"P":null,"b":"8CSEQRRrJyhjI8sSOwcIy","p":"","c":["","blog","engineering","agentic","03-Agent%20vs%20Workflow%20vs%20Automation",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/03-Agent%20vs%20Workflow%20vs%20Automation","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0458d6941a120cde.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8","children":[["$","div",null,{"className":"flex justify-center space-x-6 md:order-2","children":[["$","$L5",null,{"href":"/about","className":"text-gray-600 hover:text-gray-800","children":"关于"}],["$","$L5",null,{"href":"/blog","className":"text-gray-600 hover:text-gray-800","children":"博客"}],["$","$L5",null,{"href":"/contact","className":"text-gray-600 hover:text-gray-800","children":"联系"}]]}],["$","div",null,{"className":"mt-8 md:order-1 md:mt-0","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-600","children":"© 2024 Skyfalling Blog. All rights reserved."}]}]]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/03-Agent%20vs%20Workflow%20vs%20Automation","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8","$L9",["$","$La",null,{"promise":"$@b"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","kRnuY8rjp0XVif7LYBjVlv",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Le",null,{"children":"$Lf"}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[74911,[],"AsyncMetadata"]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+f:["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]}]
+15:T9547,<h1>Agent vs Workflow vs Automation: 选对抽象才是关键</h1>
+<blockquote>
+<p>系列第 03 篇。上一篇我们讲了&quot;LLM 本身不是 Agent&quot;，这一篇要回答一个更实际的问题：<strong>你的问题，真的需要 Agent 吗？</strong></p>
+</blockquote>
+<hr>
+<h2>1. 开篇：Agent 万能论的陷阱</h2>
+<p>2024 年以来，&quot;Agent&quot; 这个词已经被严重滥用。打开任何一篇技术文章，似乎所有系统都应该被重写为 Agent——客服要 Agent、ETL 要 Agent、运维要 Agent、审批要 Agent。</p>
+<p>但现实是：<strong>大部分生产系统中，80% 的任务用 if/else 和 DAG 就能解决，且解决得更好。</strong></p>
+<p>Agent 不是银弹。它是一种特定的执行范式，适用于特定的问题空间。盲目使用 Agent 的代价是：更高的 Token 成本、更长的延迟、更难的调试、更差的可预测性。</p>
+<p>这篇文章的目标很简单：帮你建立一个清晰的选型框架。面对一个具体问题，你应该能在 30 秒内判断——<strong>用 Automation、用 Workflow、还是用 Agent。</strong></p>
+<hr>
+<h2>2. 三种执行范式</h2>
+<h3>2.1 Rule-based Automation</h3>
+<p><strong>定义</strong>：用预定义规则驱动的全自动执行。输入确定，规则确定，输出确定。</p>
+<p>典型实现：if/else 逻辑、Rule Engine（Drools、Rete）、Cron Job、Event Trigger。</p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                 Rule-based Automation                    │
+│                                                         │
+│   Input ──→ [Rule Match] ──→ Action A                   │
+│                  │                                      │
+│                  ├──→ Action B                           │
+│                  │                                      │
+│                  └──→ Action C                           │
+│                                                         │
+│   特征：路径在编写时完全确定，运行时无决策               │
+│   类比：铁轨上的火车，轨道已铺好                         │
+└─────────────────────────────────────────────────────────┘
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>零运行时决策——所有分支在代码 / 规则编写时就已确定</li>
+<li>确定性：相同输入永远产生相同输出</li>
+<li>延迟极低（微秒到毫秒级）</li>
+<li>可解释性最强——每一步都可以追溯到具体规则</li>
+</ul>
+<pre><code class="language-python"># 典型的 Rule-based Automation
+class AlertRule:
+    def __init__(self, metric: str, threshold: float, action: str):
+        self.metric = metric
+        self.threshold = threshold
+        self.action = action
+
+class RuleEngine:
+    def __init__(self):
+        self.rules: list[AlertRule] = []
+
+    def add_rule(self, rule: AlertRule):
+        self.rules.append(rule)
+
+    def evaluate(self, metrics: dict[str, float]) -&gt; list[str]:
+        &quot;&quot;&quot;对每条指标做规则匹配，返回触发的动作列表&quot;&quot;&quot;
+        actions = []
+        for rule in self.rules:
+            value = metrics.get(rule.metric)
+            if value is not None and value &gt; rule.threshold:
+                actions.append(rule.action)
+        return actions
+
+# 使用
+engine = RuleEngine()
+engine.add_rule(AlertRule(&quot;cpu_usage&quot;, 90.0, &quot;scale_up&quot;))
+engine.add_rule(AlertRule(&quot;error_rate&quot;, 5.0, &quot;page_oncall&quot;))
+engine.add_rule(AlertRule(&quot;disk_usage&quot;, 85.0, &quot;cleanup_logs&quot;))
+
+triggered = engine.evaluate({&quot;cpu_usage&quot;: 95.0, &quot;error_rate&quot;: 2.0})
+# → [&quot;scale_up&quot;]   — 完全确定，完全可预测
+</code></pre>
+<h3>2.2 Workflow / DAG</h3>
+<p><strong>定义</strong>：预定义步骤的有序编排。步骤之间有依赖关系，可以有条件分支，但所有可能的路径在设计时已知。</p>
+<p>典型实现：Airflow、Temporal、Prefect、Step Functions、BPMN Engine。</p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                    Workflow / DAG                        │
+│                                                         │
+│   Start ──→ [Step A] ──→ [Step B] ──┬──→ [Step C]      │
+│                                     │                   │
+│                                     └──→ [Step D]      │
+│                          │                    │         │
+│                          └────────┬───────────┘         │
+│                                   ▼                     │
+│                              [Step E] ──→ End           │
+│                                                         │
+│   特征：路径在设计时确定，运行时按条件选择分支           │
+│   类比：地铁线路图，站点和换乘规则预先设定               │
+└─────────────────────────────────────────────────────────┘
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>步骤预定义，依赖关系显式声明</li>
+<li>有条件分支，但分支的数量和逻辑在设计时确定</li>
+<li>支持重试、超时、补偿（Compensation）</li>
+<li>可视化程度高——DAG 本身就是文档</li>
+</ul>
+<pre><code class="language-python"># 典型的 Workflow / DAG 定义（伪代码，框架无关）
+from dataclasses import dataclass, field
+from enum import Enum
+from typing import Any, Callable
+
+class StepStatus(Enum):
+    PENDING = &quot;pending&quot;
+    RUNNING = &quot;running&quot;
+    SUCCESS = &quot;success&quot;
+    FAILED = &quot;failed&quot;
+    SKIPPED = &quot;skipped&quot;
+
+@dataclass
+class Step:
+    name: str
+    fn: Callable
+    depends_on: list[str] = field(default_factory=list)
+    condition: Callable | None = None  # 条件分支
+    retry_count: int = 3
+    timeout_seconds: int = 300
+
+class DAGExecutor:
+    def __init__(self):
+        self.steps: dict[str, Step] = {}
+        self.results: dict[str, Any] = {}
+        self.status: dict[str, StepStatus] = {}
+
+    def add_step(self, step: Step):
+        self.steps[step.name] = step
+        self.status[step.name] = StepStatus.PENDING
+
+    def _can_run(self, step: Step) -&gt; bool:
+        &quot;&quot;&quot;检查依赖是否全部完成&quot;&quot;&quot;
+        for dep in step.depends_on:
+            if self.status.get(dep) != StepStatus.SUCCESS:
+                return False
+        return True
+
+    def _should_run(self, step: Step) -&gt; bool:
+        &quot;&quot;&quot;检查条件分支&quot;&quot;&quot;
+        if step.condition is None:
+            return True
+        return step.condition(self.results)
+
+    def run(self, initial_context: dict):
+        self.results.update(initial_context)
+        # 简化的拓扑排序执行（生产实现应支持并行）
+        remaining = set(self.steps.keys())
+        while remaining:
+            runnable = [
+                name for name in remaining
+                if self._can_run(self.steps[name])
+            ]
+            if not runnable:
+                raise RuntimeError(&quot;DAG has unresolvable dependencies&quot;)
+            for name in runnable:
+                step = self.steps[name]
+                remaining.remove(name)
+                if not self._should_run(step):
+                    self.status[name] = StepStatus.SKIPPED
+                    continue
+                self.status[name] = StepStatus.RUNNING
+                try:
+                    self.results[name] = step.fn(self.results)
+                    self.status[name] = StepStatus.SUCCESS
+                except Exception:
+                    self.status[name] = StepStatus.FAILED
+                    raise
+</code></pre>
+<h3>2.3 Agent</h3>
+<p><strong>定义</strong>：LLM 驱动的动态决策执行。每一步做什么，由 LLM 在运行时根据当前状态决定。路径不确定，在执行前无法预知。</p>
+<p>典型实现：ReAct Loop、LangGraph Agent、AutoGPT、自研 Agent Runtime。</p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                       Agent                             │
+│                                                         │
+│   Input ──→ [LLM: 观察+思考] ──→ [Tool A] ──┐          │
+│                     ▲                        │          │
+│                     │                        ▼          │
+│                     │            [LLM: 观察+思考]       │
+│                     │                  │     │          │
+│                     │         ┌────────┘     │          │
+│                     │         ▼              ▼          │
+│                     ├──── [Tool C]      [Tool B]        │
+│                     │         │              │          │
+│                     │         ▼              ▼          │
+│                     └── [LLM: 够了吗？] ──→ Output      │
+│                                                         │
+│   特征：路径在运行时动态生成，每一步由 LLM 决定         │
+│   类比：出租车司机，根据实时路况随时调整路线             │
+└─────────────────────────────────────────────────────────┘
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>运行时决策——下一步做什么由 LLM 在当前上下文中推理得出</li>
+<li>非确定性：相同输入可能走不同路径（temperature &gt; 0 时尤为明显）</li>
+<li>能处理模糊、开放、未预见的输入</li>
+<li>每一步决策都需要 LLM 推理，延迟和成本显著高于前两者</li>
+</ul>
+<pre><code class="language-python"># 典型的 Agent Loop（极简实现）
+from typing import Any
+
+class Tool:
+    def __init__(self, name: str, description: str, fn: callable):
+        self.name = name
+        self.description = description
+        self.fn = fn
+
+class Agent:
+    def __init__(self, llm_client, tools: list[Tool], max_steps: int = 10):
+        self.llm = llm_client
+        self.tools = {t.name: t for t in tools}
+        self.max_steps = max_steps
+
+    def run(self, user_input: str) -&gt; str:
+        messages = [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_input}]
+        tool_descriptions = [
+            {&quot;name&quot;: t.name, &quot;description&quot;: t.description}
+            for t in self.tools.values()
+        ]
+
+        for step in range(self.max_steps):
+            # LLM 决定下一步：调用工具，还是直接回答
+            response = self.llm.chat(
+                messages=messages,
+                tools=tool_descriptions,
+            )
+
+            if response.is_final_answer:
+                return response.content
+
+            # LLM 选择了一个工具
+            tool_name = response.tool_call.name
+            tool_args = response.tool_call.arguments
+            tool_result = self.tools[tool_name].fn(**tool_args)
+
+            # 将工具结果加入上下文，进入下一轮循环
+            messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: response.raw})
+            messages.append({&quot;role&quot;: &quot;tool&quot;, &quot;content&quot;: str(tool_result)})
+
+        return &quot;达到最大步数限制，未能完成任务。&quot;
+</code></pre>
+<p>注意上面代码的关键区别：<strong>Automation 和 Workflow 的控制流是代码写死的，Agent 的控制流是 LLM 在运行时生成的。</strong> 这是三者的本质差异。</p>
+<hr>
+<h2>3. 决策维度分析</h2>
+<h3>3.1 对比总览</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Rule-based Automation</th>
+<th>Workflow / DAG</th>
+<th>Agent</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>确定性</strong></td>
+<td>完全确定</td>
+<td>路径确定，结果依赖外部</td>
+<td>不确定</td>
+</tr>
+<tr>
+<td><strong>可解释性</strong></td>
+<td>极强（规则可追溯）</td>
+<td>强（DAG 可视化）</td>
+<td>弱（LLM 是黑盒）</td>
+</tr>
+<tr>
+<td><strong>延迟</strong></td>
+<td>μs - ms</td>
+<td>ms - min（取决于步骤）</td>
+<td>s - min（LLM 推理）</td>
+</tr>
+<tr>
+<td><strong>单次成本</strong></td>
+<td>几乎为零</td>
+<td>低（计算资源）</td>
+<td>高（Token 费用）</td>
+</tr>
+<tr>
+<td><strong>可靠性</strong></td>
+<td>极高</td>
+<td>高（有重试/补偿）</td>
+<td>中等（LLM 可能幻觉）</td>
+</tr>
+<tr>
+<td><strong>可观测性</strong></td>
+<td>高（日志即文档）</td>
+<td>高（DAG 天然可视化）</td>
+<td>低（需要额外 Trace）</td>
+</tr>
+<tr>
+<td><strong>灵活性</strong></td>
+<td>低（新规则需改代码）</td>
+<td>中（新步骤需改 DAG）</td>
+<td>高（Prompt 即可调整）</td>
+</tr>
+<tr>
+<td><strong>处理模糊输入</strong></td>
+<td>不支持</td>
+<td>有限支持</td>
+<td>原生支持</td>
+</tr>
+<tr>
+<td><strong>开发复杂度</strong></td>
+<td>低</td>
+<td>中</td>
+<td>高</td>
+</tr>
+</tbody></table>
+<h3>3.2 逐维度展开</h3>
+<p><strong>确定性 vs 不确定性</strong></p>
+<p>这是最重要的选型维度。问自己一个问题：<strong>给定相同的输入，系统是否必须产生相同的输出？</strong></p>
+<ul>
+<li>如果答案是&quot;必须&quot;——不要用 Agent。Rule-based Automation 或 Workflow 是正确选择。</li>
+<li>如果答案是&quot;不一定，但结果需要在合理范围内&quot;——Agent 可以考虑，但要加 Guardrail。</li>
+<li>如果答案是&quot;每次可以不同，只要合理就行&quot;——Agent 是自然选择。</li>
+</ul>
+<p>金融交易、订单状态流转、计费逻辑——这些场景如果引入 Agent 的非确定性，后果不堪设想。</p>
+<p><strong>可解释性</strong></p>
+<p>生产系统出了问题，你需要回答&quot;为什么系统做了这个决策&quot;。</p>
+<ul>
+<li>Rule Engine：直接查看匹配了哪条规则，一目了然。</li>
+<li>Workflow：查看 DAG 执行日志，哪个步骤走了哪个分支，完全透明。</li>
+<li>Agent：LLM 的推理过程是一段自然语言（Chain of Thought），但它可能是事后合理化，并不一定反映真实的&quot;推理过程&quot;。</li>
+</ul>
+<p>在合规要求高的领域（金融、医疗、法律），可解释性不是 nice-to-have，而是硬性要求。</p>
+<p><strong>成本</strong></p>
+<p>这一点经常被低估。以一个中等复杂度的任务为例：</p>
+<pre><code>Rule Engine:  ~0 成本（CPU 时间可忽略）
+Workflow:     ~$0.001（计算资源 + 存储）
+Agent:        ~$0.01 - $0.50（取决于步骤数和模型选择）
+              3 步 Agent × GPT-4 级别 ≈ 每次 $0.03-0.10
+              如果日调用量 100K，月成本 = $3,000 - $10,000
+</code></pre>
+<p>当你把 Agent 用在本该用 Rule Engine 解决的问题上，你是在用 100 倍的成本获得更差的可靠性。</p>
+<p><strong>可靠性</strong></p>
+<ul>
+<li>Rule Engine：只要规则正确，就永远正确。故障模式是规则覆盖不全。</li>
+<li>Workflow：支持重试、幂等、补偿事务。成熟的 Workflow Engine 可以做到 99.99% 可靠。</li>
+<li>Agent：LLM 可能幻觉、可能选错工具、可能陷入循环。即使加了 Guardrail，端到端成功率通常在 85%-95%（复杂任务更低）。</li>
+</ul>
+<p><strong>可观测性</strong></p>
+<ul>
+<li>Rule Engine：每次执行记录匹配规则和动作，日志本身就是完整的审计轨迹。</li>
+<li>Workflow：DAG 执行引擎天然提供步骤级别的状态、耗时、输入输出。Airflow 的 UI 就是最好的例子。</li>
+<li>Agent：你需要自己构建 Trace 系统——记录每一轮 LLM 的输入、输出、选择的工具、工具的返回值、Token 消耗。没有这些，Agent 在生产环境中就是一个黑盒。</li>
+</ul>
+<hr>
+<h2>4. 场景分析</h2>
+<p>抽象的对比不如具体场景有说服力。下面逐个分析。</p>
+<h3>4.1 数据 ETL Pipeline → Workflow</h3>
+<p><strong>场景</strong>：每天从 3 个数据源抽取数据，清洗、转换、加载到数据仓库。</p>
+<p><strong>选 Workflow 的理由</strong>：</p>
+<ul>
+<li>步骤完全确定：Extract → Transform → Load，不需要运行时决策</li>
+<li>步骤间有明确的依赖关系：Transform 必须在 Extract 之后</li>
+<li>需要精确的重试和失败补偿：某个数据源失败了，只重跑那个分支</li>
+<li>需要调度：每天凌晨 3 点执行</li>
+<li>需要回填（Backfill）：补跑历史数据</li>
+</ul>
+<p><strong>为什么不用 Agent</strong>：</p>
+<p>ETL 不需要&quot;思考下一步做什么&quot;——步骤是固定的。用 Agent 意味着每次运行都要花 Token 让 LLM &quot;重新发现&quot;这些固定步骤，纯属浪费。更危险的是，LLM 可能在某次运行中&quot;创造性地&quot;跳过某个步骤或改变转换逻辑。</p>
+<h3>4.2 客服问答 → Agent</h3>
+<p><strong>场景</strong>：用户通过聊天窗口提问，系统需要理解意图、查询知识库、可能需要查订单、可能需要转人工。</p>
+<p><strong>选 Agent 的理由</strong>：</p>
+<ul>
+<li>输入是自然语言，意图不确定，无法枚举所有可能</li>
+<li>处理路径取决于用户说了什么——可能一步就能回答，也可能需要查 3 个系统</li>
+<li>需要上下文理解和多轮对话能力</li>
+<li>&quot;足够好&quot;的回答即可，不需要 100% 确定性</li>
+</ul>
+<p><strong>为什么不用 Workflow</strong>：</p>
+<p>你无法预定义所有可能的对话路径。用户可能问&quot;我的订单到哪了&quot;，也可能问&quot;你们支持退款吗&quot;，也可能在同一轮对话中先问订单再问退款政策。Workflow 的路径是编译期确定的，处理不了这种运行时的动态性。</p>
+<h3>4.3 定时报表生成 → Automation</h3>
+<p><strong>场景</strong>：每周一早上 9 点，从数据库查询上周的销售数据，生成 Excel 报表，发送到指定邮箱。</p>
+<p><strong>选 Automation 的理由</strong>：</p>
+<ul>
+<li>触发条件确定：Cron 定时</li>
+<li>逻辑确定：SQL 查询 → 格式化 → 发送</li>
+<li>不需要编排复杂依赖</li>
+<li>不需要任何&quot;智能&quot;——SQL 和模板都是写死的</li>
+</ul>
+<p><strong>为什么不用 Workflow 或 Agent</strong>：</p>
+<p>Workflow 是大炮打蚊子——这里没有复杂的步骤依赖和分支。Agent 更是离谱——你不需要 LLM 来执行 <code>SELECT SUM(amount) FROM orders WHERE date &gt;= &#39;2025-07-28&#39;</code>。</p>
+<h3>4.4 代码审查助手 → Agent</h3>
+<p><strong>场景</strong>：PR 提交后，自动分析代码变更，给出审查意见：安全隐患、性能问题、风格建议。</p>
+<p><strong>选 Agent 的理由</strong>：</p>
+<ul>
+<li>代码变更是非结构化的，无法穷举所有模式</li>
+<li>需要&quot;理解&quot;代码语义，而非简单的模式匹配（静态分析工具已经覆盖了模式匹配的部分）</li>
+<li>审查意见需要结合上下文（这个函数在项目中是怎么用的？改动会影响什么？）</li>
+<li>Agent 可以调用多种工具：读取文件、运行测试、查看 Git 历史</li>
+</ul>
+<p><strong>为什么不用 Rule Engine</strong>：</p>
+<p>Rule Engine 只能匹配预定义模式（如&quot;函数超过 100 行&quot;），无法理解语义层面的问题（如&quot;这个 API 调用没有处理超时&quot;）。实际上，最好的方案是 <strong>Rule Engine + Agent</strong>——先用 Linter/SAST 做确定性检查，再用 Agent 做语义级审查。</p>
+<h3>4.5 订单状态流转 → Workflow</h3>
+<p><strong>场景</strong>：电商订单从创建到完成的状态机——待支付 → 已支付 → 拣货中 → 已发货 → 已签收 → 已完成。</p>
+<p><strong>选 Workflow 的理由</strong>：</p>
+<ul>
+<li>状态和转换规则完全确定：已支付才能拣货，已发货才能签收</li>
+<li>每个状态转换都有明确的触发条件（支付回调、物流推送）</li>
+<li>需要事务保证：状态转换必须原子性，不能出现&quot;钱扣了但订单还是待支付&quot;</li>
+<li>需要补偿机制：支付超时需要自动取消</li>
+<li>0 容忍非确定性——用户的钱不能有任何模糊</li>
+</ul>
+<p><strong>为什么不用 Agent</strong>：</p>
+<p>这个问题需要反复强调：<strong>涉及金钱和状态一致性的流程，绝对不能用 Agent。</strong> LLM 的幻觉在这里不是&quot;回答不太准确&quot;，而是&quot;用户的钱没了但订单没更新&quot;。</p>
+<h3>4.6 智能运维（AIOps）→ 混合架构</h3>
+<p><strong>场景</strong>：监控告警触发后，自动诊断根因并执行修复。</p>
+<p><strong>为什么需要混合</strong>：</p>
+<p>这个场景天然分为确定性部分和不确定性部分——</p>
+<ul>
+<li>确定性部分（Automation）：告警规则匹配、阈值判断、常见故障的自动修复（CPU 高 → 扩容，磁盘满 → 清理日志）</li>
+<li>不确定性部分（Agent）：复杂故障的根因分析——Agent 可以查看日志、查询指标、检查最近的部署变更，综合判断根因</li>
+<li>编排部分（Workflow）：整个处理流程的骨架——告警接收 → 去重 → 分级 → 自动修复 / 智能诊断 → 通知</li>
+</ul>
+<pre><code>告警触发
+   │
+   ▼
+[Automation: 告警去重 + 分级]
+   │
+   ├──→ P4/P3 已知模式 ──→ [Automation: 自动修复]
+   │                              │
+   │                              ▼
+   │                         [通知 Oncall]
+   │
+   └──→ P2/P1 或未知模式 ──→ [Agent: 根因分析]
+                                   │
+                                   ├──→ 找到根因 ──→ [Automation: 执行修复]
+                                   │
+                                   └──→ 无法确定 ──→ [升级到人工]
+</code></pre>
+<p>这才是 Agent 的正确用法——<strong>只在真正需要&quot;智能&quot;的环节使用 Agent，其余部分用更可靠、更便宜的范式处理。</strong></p>
+<hr>
+<h2>5. 混合架构：三者如何共存</h2>
+<p>真实的生产系统很少只用一种范式。更常见的模式是：</p>
+<pre><code>┌──────────────────────────────────────────────────────────────┐
+│                    混合架构全景                                │
+│                                                              │
+│  ┌──────────────────────────────────────────────────┐        │
+│  │              Workflow / DAG（骨架层）              │        │
+│  │                                                  │        │
+│  │  Step 1          Step 2          Step 3          │        │
+│  │  ┌──────────┐   ┌──────────┐   ┌──────────┐     │        │
+│  │  │Automation│──→│  Agent   │──→│Automation│     │        │
+│  │  │数据预处理│   │语义分析  │   │结果写入  │     │        │
+│  │  └──────────┘   └──────────┘   └──────────┘     │        │
+│  │       │              │              │            │        │
+│  │       ▼              ▼              ▼            │        │
+│  │  确定性操作     LLM 推理       确定性操作        │        │
+│  │  延迟: 10ms    延迟: 2-5s     延迟: 50ms        │        │
+│  │  成本: ~0      成本: $0.02    成本: ~0           │        │
+│  └──────────────────────────────────────────────────┘        │
+│                                                              │
+│  设计原则：                                                  │
+│  1. Workflow 负责编排和容错（重试、超时、补偿）              │
+│  2. Automation 处理所有确定性步骤                            │
+│  3. Agent 只出现在需要&quot;理解&quot;和&quot;推理&quot;的节点                  │
+│  4. Agent 的输出经过验证后才进入下一步                       │
+└──────────────────────────────────────────────────────────────┘
+</code></pre>
+<h3>5.1 设计原则</h3>
+<p><strong>原则一：Agent 是 Workflow 的节点，不是整个 Workflow</strong></p>
+<p>一个常见的错误是让 Agent 控制整个流程——从数据获取到处理到存储全部由 Agent 决定。正确的做法是：Workflow 定义骨架（步骤顺序、依赖关系、容错策略），Agent 只负责其中需要推理的那一步。</p>
+<pre><code class="language-python"># 错误做法：让 Agent 控制整个流程
+agent.run(&quot;从数据库读取用户评论，分析情感，把结果写回数据库&quot;)
+# Agent 可能：用错 SQL、忘记写回、写入格式错误...
+
+# 正确做法：Workflow 控制流程，Agent 只做推理
+def step_1_extract(ctx):
+    &quot;&quot;&quot;确定性步骤：用固定 SQL 读取数据&quot;&quot;&quot;
+    return db.query(&quot;SELECT id, comment FROM reviews WHERE date = %s&quot;, ctx[&quot;date&quot;])
+
+def step_2_analyze(ctx):
+    &quot;&quot;&quot;Agent 步骤：对每条评论做情感分析&quot;&quot;&quot;
+    results = []
+    for review in ctx[&quot;step_1_extract&quot;]:
+        sentiment = agent.run(
+            f&quot;分析以下评论的情感倾向(positive/negative/neutral):\n{review[&#39;comment&#39;]}&quot;
+        )
+        results.append({&quot;id&quot;: review[&quot;id&quot;], &quot;sentiment&quot;: sentiment})
+    return results
+
+def step_3_load(ctx):
+    &quot;&quot;&quot;确定性步骤：用固定逻辑写回数据库&quot;&quot;&quot;
+    for item in ctx[&quot;step_2_analyze&quot;]:
+        db.execute(
+            &quot;UPDATE reviews SET sentiment = %s WHERE id = %s&quot;,
+            (item[&quot;sentiment&quot;], item[&quot;id&quot;])
+        )
+
+# Workflow 定义
+workflow.add_step(Step(&quot;extract&quot;, step_1_extract))
+workflow.add_step(Step(&quot;analyze&quot;, step_2_analyze, depends_on=[&quot;extract&quot;]))
+workflow.add_step(Step(&quot;load&quot;, step_3_load, depends_on=[&quot;analyze&quot;]))
+</code></pre>
+<p><strong>原则二：Agent 的输出必须经过验证</strong></p>
+<p>Agent 的输出是非确定性的。在混合架构中，Agent 节点和下游确定性节点之间，必须有一个验证层。</p>
+<pre><code class="language-python">def step_2_analyze_with_validation(ctx):
+    &quot;&quot;&quot;Agent 步骤 + 输出验证&quot;&quot;&quot;
+    VALID_SENTIMENTS = {&quot;positive&quot;, &quot;negative&quot;, &quot;neutral&quot;}
+    results = []
+    for review in ctx[&quot;step_1_extract&quot;]:
+        sentiment = agent.run(f&quot;分析情感倾向: {review[&#39;comment&#39;]}&quot;)
+        # 验证 Agent 输出
+        sentiment = sentiment.strip().lower()
+        if sentiment not in VALID_SENTIMENTS:
+            sentiment = &quot;neutral&quot;  # fallback
+            log.warning(f&quot;Agent 返回了无效的情感值，已 fallback: review_id={review[&#39;id&#39;]}&quot;)
+        results.append({&quot;id&quot;: review[&quot;id&quot;], &quot;sentiment&quot;: sentiment})
+    return results
+</code></pre>
+<p><strong>原则三：确定性部分永远优先用 Automation</strong></p>
+<p>如果一个步骤的输入输出可以完全预定义，就不要用 Agent。这不是技术保守，而是工程理性——用最简单的工具解决问题，把复杂性预算留给真正需要的地方。</p>
+<hr>
+<h2>6. Agent 的隐性成本</h2>
+<p>这一节讲的是大部分&quot;Agent 教程&quot;不会告诉你的东西。</p>
+<h3>6.1 Token 成本</h3>
+<p>Agent 的每一步决策都需要调用 LLM。一个 5 步 Agent 执行一次任务的 Token 消耗：</p>
+<pre><code>第 1 步: System Prompt (500) + User Input (200) + Response (300)    = 1,000 tokens
+第 2 步: 上一轮上下文 (1,000) + Tool Result (500) + Response (400)  = 1,900 tokens
+第 3 步: 上一轮上下文 (1,900) + Tool Result (300) + Response (350)  = 2,550 tokens
+第 4 步: 上一轮上下文 (2,550) + Tool Result (800) + Response (400)  = 3,750 tokens
+第 5 步: 上一轮上下文 (3,750) + Tool Result (200) + Response (500)  = 4,450 tokens
+                                                          ─────────────────────
+                                                          总计: ~13,650 tokens
+</code></pre>
+<p>注意上下文是累积的——每一步都要重新发送之前所有的对话历史。这意味着 <strong>Token 消耗是超线性增长的</strong>。步骤越多，后期每一步的成本越高。</p>
+<p>以 GPT-4o 为例（$2.5/1M input, $10/1M output），上面这个 5 步 Agent 单次执行成本约 $0.03-0.05。看似不多，但如果日调用量 10 万次，月成本就是 $90,000-$150,000。</p>
+<p><strong>优化策略</strong>：</p>
+<ul>
+<li>上下文压缩：每 N 步对历史做一次摘要</li>
+<li>选择合适的模型：简单决策用小模型，关键决策用大模型</li>
+<li>缓存：对相同输入的 Agent 结果做缓存（注意非确定性问题）</li>
+<li>减少 Agent 步骤：通过更好的 Prompt 和工具设计，减少所需的推理轮次</li>
+</ul>
+<h3>6.2 延迟</h3>
+<p>LLM 的推理延迟通常在 500ms-5s 之间（取决于模型和输出长度）。一个 5 步 Agent 的端到端延迟：</p>
+<pre><code>5 步 × 平均 1.5s/步 = 7.5s
+
+加上工具调用时间（网络请求、数据库查询等），实际延迟可能在 10-15s。
+</code></pre>
+<p>对比：</p>
+<ul>
+<li>Rule Engine 处理同样的逻辑：&lt; 10ms</li>
+<li>Workflow 执行 5 个确定性步骤：&lt; 500ms</li>
+</ul>
+<p><strong>在延迟敏感的场景（如支付、交易、实时推荐），Agent 的延迟是不可接受的。</strong></p>
+<h3>6.3 不可预测性</h3>
+<p>这是 Agent 最被低估的问题。</p>
+<pre><code class="language-python"># 同样的输入，Agent 可能走出完全不同的路径
+
+# 第一次运行
+# Step 1: 调用 search_database → 找到 3 条记录
+# Step 2: 调用 analyze_data → 生成分析
+# Step 3: 返回结果
+# 总计: 3 步, 耗时 4s, 成本 $0.02
+
+# 第二次运行（完全相同的输入）
+# Step 1: 调用 search_database → 找到 3 条记录
+# Step 2: 调用 search_web → 想找更多信息（为什么？LLM 这次觉得不够）
+# Step 3: 调用 search_database → 用新的关键词再查一次
+# Step 4: 调用 analyze_data → 生成分析
+# Step 5: 觉得分析不够好，调用 analyze_data → 重新生成
+# Step 6: 返回结果
+# 总计: 6 步, 耗时 10s, 成本 $0.06
+</code></pre>
+<p>这意味着你<strong>无法预测 Agent 的执行时间和成本</strong>。在需要做容量规划和 SLA 承诺的生产系统中，这是一个严重的问题。</p>
+<h3>6.4 调试困难</h3>
+<p>确定性系统的 Bug 可以精确复现：相同的输入 + 相同的代码 = 相同的 Bug。</p>
+<p>Agent 不行。因为：</p>
+<ol>
+<li>LLM 的输出本身带有随机性（即使 temperature=0，不同批次推理也可能有微小差异）</li>
+<li>工具调用的结果可能随时间变化（数据库内容变了、API 返回变了）</li>
+<li>上下文窗口中的信息累积，前几步的微小差异会被放大</li>
+</ol>
+<p><strong>调试 Agent 的正确做法</strong>：</p>
+<ul>
+<li>完整记录每一步的输入（包括完整的 messages 列表）和输出</li>
+<li>记录每次工具调用的参数和返回值</li>
+<li>记录 Token 使用量和延迟</li>
+<li>支持&quot;回放&quot;——用记录的数据重新走一遍流程（但要注意，即使相同输入，LLM 也可能给出不同输出）</li>
+</ul>
+<hr>
+<h2>7. 选型决策树</h2>
+<p>面对一个具体需求，按以下流程判断：</p>
+<pre><code>                    你的任务需要&quot;理解&quot;自然语言
+                    或处理模糊/开放式输入吗？
+                           │
+                    ┌──────┴──────┐
+                    │             │
+                   Yes           No
+                    │             │
+                    ▼             ▼
+             结果需要 100%     任务步骤之间有
+             确定性吗？        复杂依赖关系吗？
+                │                    │
+          ┌─────┴─────┐        ┌─────┴─────┐
+          │           │        │           │
+         Yes         No       Yes         No
+          │           │        │           │
+          ▼           ▼        ▼           ▼
+      先用规则     ┌──────┐  Workflow    Automation
+      处理能处     │Agent │  / DAG      (Rule/Cron)
+      理的部分     └──┬───┘
+      用 Agent        │
+      处理剩余        ▼
+      (混合架构)   可以接受 $0.01-0.10/次
+                   的成本和 2-10s 的延迟吗？
+                          │
+                    ┌─────┴─────┐
+                    │           │
+                   Yes         No
+                    │           │
+                    ▼           ▼
+                  Agent     重新审视需求：
+                            能否拆分为
+                            确定性 + 模糊性部分？
+                            → 混合架构
+</code></pre>
+<p><strong>速查表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>如果你的任务是...</th>
+<th>推荐范式</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>固定逻辑 + 定时触发</td>
+<td>Automation</td>
+<td>无需编排，无需推理</td>
+</tr>
+<tr>
+<td>多步骤 + 有依赖 + 确定性</td>
+<td>Workflow</td>
+<td>需要编排，不需要推理</td>
+</tr>
+<tr>
+<td>理解自然语言 + 动态决策</td>
+<td>Agent</td>
+<td>需要推理</td>
+</tr>
+<tr>
+<td>大部分确定 + 少量模糊</td>
+<td>Workflow + Agent 节点</td>
+<td>编排确定部分，推理模糊部分</td>
+</tr>
+<tr>
+<td>简单触发 + 复杂诊断</td>
+<td>Automation + Agent</td>
+<td>触发用规则，诊断用推理</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>8. 常见误区</h2>
+<p>在结束之前，总结几个我在实际项目中反复见到的选型错误。</p>
+<p><strong>误区一：因为&quot;想用 AI&quot;而选 Agent</strong></p>
+<p>技术选型应该从问题出发，不是从解决方案出发。&quot;我们想用 AI&quot; 不是选 Agent 的理由，&quot;用户输入是自然语言且意图不可穷举&quot; 才是。</p>
+<p><strong>误区二：用 Agent 替代状态机</strong></p>
+<p>订单流转、审批流程、工单生命周期——这些有限状态机（FSM）问题有成熟的解决方案。把它们交给 Agent 不会让系统更智能，只会让它更不可靠。</p>
+<p><strong>误区三：Agent 做完所有事</strong></p>
+<p>让 Agent 既负责决策又负责执行。正确做法是：Agent 只负责&quot;决定做什么&quot;（What），具体的执行（How）交给确定性系统。例如 Agent 决定&quot;需要给用户退款&quot;，但实际调用退款 API 的逻辑是固定的代码，不是 Agent 自己拼 HTTP 请求。</p>
+<p><strong>误区四：忽视 Agent 的失败模式</strong></p>
+<p>Agent 会失败。它会幻觉、会陷入循环、会选错工具、会超时。你的系统设计必须考虑：Agent 失败了怎么办？有没有 Fallback？有没有人工兜底？最大重试次数是多少？</p>
+<hr>
+<h2>9. 总结</h2>
+<p>回到开篇的问题：你的问题，真的需要 Agent 吗？</p>
+<p>三条准则：</p>
+<ol>
+<li><strong>能用规则解决的，不要用 Workflow；能用 Workflow 解决的，不要用 Agent。</strong> 选择复杂度最低的范式，降低的是长期维护成本。</li>
+<li><strong>Agent 的正确位置是&quot;最后一英里的模糊性&quot;。</strong> 在混合架构中，让确定性系统处理 80% 的工作，Agent 只处理那 20% 需要&quot;理解&quot;和&quot;推理&quot;的部分。</li>
+<li><strong>Agent 是有代价的，而且代价比你想象的高。</strong> Token 成本、延迟、不可预测性、调试难度——这些隐性成本在规模化后会成为真实的痛点。</li>
+</ol>
+<p>选对抽象，才是真正的技术判断力。</p>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 03 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/02-From%20Prompt%20to%20Agent">02 | From Prompt to Agent</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/04-The%20Agent%20Control%20Loop">04 | The Agent Control Loop</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+17:T8130,<h1>From Prompt to Agent: 为什么 LLM 本身不是 Agent</h1>
+<blockquote>
+<p>当我们说&quot;让 AI 帮我完成这件事&quot;时，我们期望的不是一次文本生成，而是一次<strong>有目标、有规划、有执行、有反馈</strong>的任务完成过程。这正是 LLM 和 Agent 的根本区别。</p>
+<p>本文是 Agentic 系列第 02 篇。上一篇我们绘制了全景地图，这一篇我们回到原点：为什么一个再强大的 LLM，本身也不是 Agent？从&quot;不是什么&quot;出发，才能精确定义&quot;是什么&quot;。</p>
+</blockquote>
+<hr>
+<h2>1. LLM 的本质：一个文本到文本的函数</h2>
+<p>把所有复杂性剥离，LLM 的数学本质极其简洁：</p>
+<pre><code>f(prompt) → response
+</code></pre>
+<p>给定一段输入文本（prompt），经过前向推理，输出一段文本（response）。就这样。</p>
+<p>更严格地说，LLM 做的是<strong>条件概率采样</strong>：给定已有 token 序列 <code>[t₁, t₂, ..., tₙ]</code>，逐个预测下一个 token 的概率分布 <code>P(tₙ₊₁ | t₁, ..., tₙ)</code>，然后按某种策略（greedy、top-k、top-p）从分布中采样。</p>
+<p>这意味着三个关键性质：</p>
+<ul>
+<li><strong>无状态（Stateless）</strong>：模型权重在推理时不变，两次相同输入产生的概率分布相同（忽略采样随机性）。模型本身不存储任何关于&quot;之前发生了什么&quot;的信息。</li>
+<li><strong>无副作用（Side-effect Free）</strong>：模型不会改变外部世界的任何状态——不会写文件、不会调 API、不会修改数据库。它只输出文本。</li>
+<li><strong>无记忆（Memoryless）</strong>：每次调用都是独立的函数调用。上一次对话的内容，除非你手动拼接进 prompt，否则模型完全不知道。</li>
+</ul>
+<p>用一个 Python 类比，LLM 就是一个纯函数：</p>
+<pre><code class="language-python">def llm(prompt: str) -&gt; str:
+    &quot;&quot;&quot;
+    纯函数：相同输入 → 相同输出分布
+    无副作用：不修改任何外部状态
+    无记忆：不保留任何调用历史
+    &quot;&quot;&quot;
+    tokens = tokenize(prompt)
+    output_tokens = []
+    for _ in range(max_tokens):
+        next_token_probs = model.forward(tokens + output_tokens)
+        next_token = sample(next_token_probs, temperature=0.7)
+        output_tokens.append(next_token)
+        if next_token == EOS:
+            break
+    return detokenize(output_tokens)
+</code></pre>
+<p>这是一个非常优雅的抽象。但正是这个抽象的简洁性，决定了它的局限性。</p>
+<hr>
+<h2>2. LLM 的五大局限</h2>
+<h3>2.1 无记忆：每次对话都是独立宇宙</h3>
+<p><strong>场景</strong>：你让 LLM 帮你写一个项目方案。第一轮你说了需求，第二轮你补充了约束，第三轮你修改了目标。LLM 怎么&quot;记住&quot;前两轮？</p>
+<p>答案是：它不记。所谓的&quot;多轮对话&quot;，本质上是<strong>客户端把历史消息全部拼接进 prompt</strong> 重新发送。每一轮调用，LLM 都在从零开始阅读整个对话历史。</p>
+<pre><code class="language-python"># 所谓&quot;多轮对话&quot;的真相
+messages = [
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;帮我写个项目方案&quot;},          # 第一轮
+    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;好的，请问项目目标是什么？&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;做一个推荐系统&quot;},            # 第二轮
+    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;了解，技术栈偏好？&quot;},
+    {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;用 Python，预算 50 万&quot;},     # 第三轮
+]
+# 每次都是把 *全部* messages 发给 LLM，它并不&quot;记得&quot;前两轮
+response = llm.chat(messages)
+</code></pre>
+<p>这带来两个工程问题：一是 <strong>context window 有限</strong>，对话太长会被截断，早期关键信息丢失；二是 <strong>token 成本线性增长</strong>，每一轮都在为重复传输历史对话付费。</p>
+<h3>2.2 无工具：只能生成文本，不能执行操作</h3>
+<p><strong>场景</strong>：你问 LLM&quot;现在北京气温多少度？&quot;它会给你一个看起来很自信的答案——但这个答案是从训练数据中&quot;编&quot;出来的，不是实时查询的结果。</p>
+<p>LLM 不能发 HTTP 请求，不能查数据库，不能读文件系统，不能调用任何外部服务。它唯一的&quot;输出通道&quot;就是文本。</p>
+<pre><code>用户：帮我创建一个 GitHub 仓库叫 my-project
+LLM：好的，已经为您创建了 GitHub 仓库 my-project！  ← 这是幻觉，什么都没发生
+</code></pre>
+<p>LLM 的&quot;执行&quot;是一种语言层面的模拟——它可以生成看起来像执行结果的文本，但实际上没有任何副作用发生。这是 hallucination 问题在工具层面的体现。</p>
+<h3>2.3 无规划：只有 next-token prediction，没有 multi-step reasoning</h3>
+<p><strong>场景</strong>：你让 LLM&quot;规划一次三天的日本旅行&quot;。它会一口气输出一个看起来完整的方案。但这不是&quot;规划&quot;——这是&quot;自回归生成&quot;。它不会先列出约束（预算、时间、兴趣），再枚举可能的方案，再比较 trade-off，再做决策。它只是在逐 token 地预测&quot;下一个最可能的词&quot;。</p>
+<p>真正的规划需要：</p>
+<ol>
+<li><strong>目标分解</strong>：把大目标拆成子目标</li>
+<li><strong>约束满足</strong>：在多个维度上满足约束条件</li>
+<li><strong>方案评估</strong>：对多个候选方案进行比较</li>
+<li><strong>回溯修正</strong>：发现某条路不通时能回退</li>
+</ol>
+<p>LLM 的自回归生成是单向的、线性的，没有回溯机制。它无法在生成第 50 个 token 时&quot;回头修改&quot;第 10 个 token。所有看起来像&quot;规划&quot;的输出，都是语言模式匹配的结果，不是搜索与优化的结果。</p>
+<h3>2.4 无状态：不知道自己之前做了什么</h3>
+<p><strong>场景</strong>：你让 LLM 执行一个多步骤任务——先查数据，再分析，再写报告。即使它能生成每一步的文本描述，它也不知道&quot;第一步的结果是什么&quot;，因为它没有一个持久化的状态空间来记录执行进度。</p>
+<p>无状态和无记忆不同：</p>
+<ul>
+<li><strong>无记忆</strong>强调的是跨调用的信息丢失</li>
+<li><strong>无状态</strong>强调的是在一次任务中，没有结构化的执行状态追踪</li>
+</ul>
+<p>一个 Agent 需要知道：&quot;我已经完成了步骤 1 和 2，步骤 3 失败了，我需要重试步骤 3&quot;。LLM 没有这个能力。</p>
+<h3>2.5 无反思：无法评估自己的输出质量</h3>
+<p><strong>场景</strong>：你让 LLM 写一段代码。它写完了。这段代码是否正确？LLM 不知道。它不会自动运行代码验证，不会检查边界条件，不会评估时间复杂度是否满足要求。</p>
+<p>更深层的问题是：LLM 无法区分&quot;我确信这是对的&quot;和&quot;我在瞎猜&quot;。它的 confidence 不等于 correctness。一个 softmax 输出 0.95 的概率，并不意味着答案有 95% 的概率是正确的。</p>
+<pre><code>                    LLM 的五大局限
+
+    +----------+----------+----------+----------+----------+
+    |          |          |          |          |          |
+    | 无记忆    | 无工具    | 无规划    | 无状态    | 无反思    |
+    | Memoryless| Toolless | Planless | Stateless| Reflectless|
+    |          |          |          |          |          |
+    | 跨调用    | 只输出    | 单向生成  | 无执行    | 无法自我  |
+    | 信息丢失  | 文本     | 无回溯    | 进度追踪  | 评估质量  |
+    |          |          |          |          |          |
+    +----------+----------+----------+----------+----------+
+                          |
+                          v
+              LLM 需要一个&quot;外壳&quot;来弥补这些局限
+              这个外壳，就是 Agent Runtime
+</code></pre>
+<hr>
+<h2>3. Agent 的精确定义</h2>
+<h3>3.1 定义</h3>
+<p><strong>Agent = LLM + Memory + Tools + Planner + Runtime</strong></p>
+<p>这不是一个松散的隐喻，而是一个精确的组件模型。每个组件有明确的职责边界：</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>职责</th>
+<th>类比</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>LLM</strong></td>
+<td>语义理解、推理、生成</td>
+<td>大脑的语言区</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>存储对话历史、任务状态、长期知识</td>
+<td>海马体 + 笔记本</td>
+</tr>
+<tr>
+<td><strong>Tools</strong></td>
+<td>与外部世界交互的能力集合</td>
+<td>双手 + 工具箱</td>
+</tr>
+<tr>
+<td><strong>Planner</strong></td>
+<td>目标分解、行动排序、策略选择</td>
+<td>前额叶皮层</td>
+</tr>
+<tr>
+<td><strong>Runtime</strong></td>
+<td>控制循环、状态管理、错误处理、生命周期</td>
+<td>自主神经系统</td>
+</tr>
+</tbody></table>
+<h3>3.2 组件交互模型</h3>
+<pre><code>    +---------------------------------------------------------+
+    |                     Agent Runtime                        |
+    |                                                         |
+    |   +----------+     +----------+     +----------+        |
+    |   |          |     |          |     |          |        |
+    |   |  Memory  |&lt;---&gt;|   LLM    |&lt;---&gt;| Planner  |        |
+    |   |          |     |          |     |          |        |
+    |   +----+-----+     +----+-----+     +----+-----+        |
+    |        |                |                 |              |
+    |        |           +----v-----+           |              |
+    |        +----------&gt;|          |&lt;----------+              |
+    |                    |  Tools   |                          |
+    |                    |          |                          |
+    |                    +----+-----+                          |
+    |                         |                                |
+    +---------------------------------------------------------+
+                              |
+                              v
+                     External World
+                  (APIs, DBs, Files, Users)
+</code></pre>
+<p><strong>交互流程</strong>：</p>
+<ol>
+<li><strong>Runtime</strong> 接收外部输入（用户消息、系统事件）</li>
+<li><strong>Runtime</strong> 从 <strong>Memory</strong> 加载相关上下文</li>
+<li><strong>LLM</strong> 基于输入 + 上下文进行推理</li>
+<li><strong>Planner</strong>（通常由 LLM 驱动）决定下一步行动</li>
+<li>如果需要执行操作，<strong>Runtime</strong> 调度 <strong>Tools</strong> 执行</li>
+<li>工具执行结果写回 <strong>Memory</strong>，进入下一轮循环</li>
+</ol>
+<p>关键设计决策：<strong>Planner 是一个独立组件，还是 LLM 的一部分？</strong> 这取决于你对确定性的需求。如果 Planner 由 LLM 驱动（如 ReAct 模式），灵活但不可控；如果 Planner 是硬编码的状态机，可控但不灵活。这个 trade-off 贯穿整个 Agent 架构设计，我们会在第 03 篇深入讨论。</p>
+<hr>
+<h2>4. Agent 的核心循环详解</h2>
+<p>Agent 的运行可以抽象为六个阶段的循环：</p>
+<pre><code>    +-------+     +-------+     +------+
+    |       |     |       |     |      |
+    |Observe+----&gt;| Think +----&gt;| Plan |
+    |       |     |       |     |      |
+    +---^---+     +-------+     +--+---+
+        |                          |
+        |                          v
+    +---+----+                 +---+---+
+    |        |                 |       |
+    | Update |&lt;----+ Reflect  &lt;+ Act   |
+    |        |     |          ||       |
+    +--------+     +----------++-------+
+</code></pre>
+<h3>4.1 各阶段详解</h3>
+<p><strong>Observe（感知）</strong>：收集当前环境信息。这包括用户的最新输入、上一步工具的返回结果、系统级事件（如超时、异常）、从 Memory 中检索的相关上下文。感知阶段的核心问题是<strong>信息筛选</strong>——不是所有信息都应该进入 LLM 的上下文，context window 是稀缺资源。</p>
+<p><strong>Think（推理）</strong>：基于感知到的信息，理解当前处境。这是 LLM 最擅长的部分——语义理解、意图识别、情境分析。Think 阶段的输出是对当前状态的结构化理解，而不是最终答案。</p>
+<p><strong>Plan（规划）</strong>：基于对当前状态的理解，决定下一步做什么。Plan 可以是单步的（&quot;调用天气 API&quot;），也可以是多步的（&quot;先查天气，再根据天气决定穿什么，再创建提醒&quot;）。规划的粒度直接影响系统的可控性和灵活性。</p>
+<p><strong>Act（执行）</strong>：执行规划中的动作。可能是调用工具（Tool Calling）、生成文本回复、更新内部状态，或者向用户提问以获取更多信息。执行是唯一产生副作用的阶段。</p>
+<p><strong>Reflect（反思）</strong>：评估执行结果。工具调用成功了吗？返回的数据符合预期吗？是否需要重试或换一个方案？反思是 Agent 与简单 Chain 的关键区别——它引入了<strong>自我纠错</strong>的能力。</p>
+<p><strong>Update（更新）</strong>：将本轮循环中产生的信息写入 Memory。包括更新对话历史、记录执行结果、修改任务状态。Update 确保下一轮循环有最新的上下文可用。</p>
+<h3>4.2 最简实现</h3>
+<p>下面是这个控制循环的 Python 伪代码实现。注意，这不是生产代码，而是用于精确表达架构意图的最简抽象：</p>
+<pre><code class="language-python">from dataclasses import dataclass, field
+from typing import Any
+
+@dataclass
+class AgentState:
+    &quot;&quot;&quot;Agent 的可序列化状态&quot;&quot;&quot;
+    messages: list[dict] = field(default_factory=list)       # 对话历史
+    task_status: str = &quot;pending&quot;                              # 任务状态
+    plan: list[str] = field(default_factory=list)             # 当前计划
+    step_index: int = 0                                       # 执行进度
+    observations: list[Any] = field(default_factory=list)     # 感知缓冲
+
+class Agent:
+    def __init__(self, llm, tools: dict, max_iterations: int = 10):
+        self.llm = llm
+        self.tools = tools           # {&quot;tool_name&quot;: callable}
+        self.max_iterations = max_iterations
+        self.state = AgentState()
+
+    def run(self, user_input: str) -&gt; str:
+        self.state.messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_input})
+
+        for i in range(self.max_iterations):
+            # --- Observe ---
+            context = self._observe()
+
+            # --- Think ---
+            thought = self.llm.generate(
+                system_prompt=THINK_PROMPT,
+                messages=context,
+            )
+
+            # --- Plan ---
+            plan = self.llm.generate(
+                system_prompt=PLAN_PROMPT,
+                messages=context + [{&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: thought}],
+                response_format={&quot;type&quot;: &quot;json&quot;, &quot;schema&quot;: PlanSchema},
+            )
+
+            if plan.action == &quot;finish&quot;:
+                return plan.final_answer
+
+            # --- Act ---
+            tool_name = plan.tool_name
+            tool_args = plan.tool_args
+            try:
+                result = self.tools[tool_name](**tool_args)
+            except Exception as e:
+                result = f&quot;Error: {e}&quot;
+
+            # --- Reflect ---
+            reflection = self.llm.generate(
+                system_prompt=REFLECT_PROMPT,
+                messages=context + [
+                    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: f&quot;Action: {tool_name}({tool_args})&quot;},
+                    {&quot;role&quot;: &quot;tool&quot;, &quot;content&quot;: str(result)},
+                ],
+            )
+
+            # --- Update ---
+            self.state.messages.append({&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: thought})
+            self.state.messages.append({&quot;role&quot;: &quot;tool&quot;, &quot;content&quot;: str(result)})
+            self.state.observations.append({
+                &quot;step&quot;: i,
+                &quot;action&quot;: tool_name,
+                &quot;result&quot;: result,
+                &quot;reflection&quot;: reflection,
+            })
+
+            if reflection.should_retry:
+                continue  # 重试当前步骤
+            self.state.step_index += 1
+
+        return &quot;达到最大迭代次数，任务未完成。&quot;
+
+    def _observe(self) -&gt; list[dict]:
+        &quot;&quot;&quot;从 Memory 中组装当前上下文&quot;&quot;&quot;
+        # 实际系统中这里会有复杂的上下文压缩、检索等逻辑
+        return self.state.messages[-20:]  # 简化：取最近 20 条消息
+</code></pre>
+<p>这段代码中有几个值得关注的设计决策：</p>
+<ol>
+<li><strong>Think 和 Plan 分两次 LLM 调用</strong>：可以使用不同的 system prompt 引导不同的思维模式，也便于独立观测和调试。代价是额外的 latency 和 token 成本。</li>
+<li><strong>Plan 使用 Structured Output</strong>：规划结果以 JSON Schema 约束，确保输出可解析、可校验。这是将 LLM 的非确定性输出转化为确定性执行的关键桥梁。</li>
+<li><strong>Reflect 独立成阶段</strong>：而不是合并到下一轮的 Think 中。这使得反思的 prompt 可以专注于&quot;评估&quot;而不是&quot;理解+评估&quot;，通常能得到更准确的自我评价。</li>
+<li><strong>max_iterations 作为安全阀</strong>：防止 Agent 陷入无限循环。这是生产系统中必须有的机制，没有它，一个错误的 Reflect 判断就可能导致无限重试。</li>
+</ol>
+<hr>
+<h2>5. 从 Chatbot 到 Agent 的光谱</h2>
+<p>Agent 不是一个二元概念——&quot;是 Agent&quot;或&quot;不是 Agent&quot;。从最简单的 LLM 调用到完整的 Agent 系统，中间存在一个连续的光谱，每向右移动一步，都在引入新的复杂性来换取新的能力。</p>
+<pre><code>确定性 ←─────────────────────────────────────────────────→ 自主性
+
+Pure LLM    System     RAG       Tool       ReAct       Full
+            Prompt               Calling    Agent       Agent
+
+  f(x)→y   定制化     知识增强   函数调用   推理+执行    完整系统
+            对话                            循环
+</code></pre>
+<p>下表从六个维度对比这个光谱的各个阶段：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>记忆</th>
+<th>工具</th>
+<th>规划</th>
+<th>状态</th>
+<th>反思</th>
+<th>典型产品/模式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pure LLM</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>单次 API 调用</td>
+</tr>
+<tr>
+<td>+ System Prompt</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>定制化 Chatbot</td>
+</tr>
+<tr>
+<td>+ RAG</td>
+<td>外部知识</td>
+<td>检索</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>知识问答系统</td>
+</tr>
+<tr>
+<td>+ Tool Calling</td>
+<td>会话级</td>
+<td>有</td>
+<td>单步</td>
+<td>无</td>
+<td>无</td>
+<td>Function Calling</td>
+</tr>
+<tr>
+<td>+ Loop（ReAct）</td>
+<td>会话级</td>
+<td>有</td>
+<td>多步</td>
+<td>运行时</td>
+<td>隐式</td>
+<td>ReAct Agent</td>
+</tr>
+<tr>
+<td>Full Agent</td>
+<td>长期</td>
+<td>有</td>
+<td>多步</td>
+<td>持久化</td>
+<td>显式</td>
+<td>自主 Agent 系统</td>
+</tr>
+</tbody></table>
+<p>每个阶段的跃迁都有明确的 trade-off：</p>
+<ul>
+<li><strong>Pure LLM → + System Prompt</strong>：几乎零成本，但能显著改变模型的行为风格和专业度。Trade-off：prompt 越长，留给用户输入的 context window 越少。</li>
+<li><strong>+ System Prompt → + RAG</strong>：引入外部知识源，解决知识时效性和专业性问题。Trade-off：检索质量直接决定回答质量（garbage in, garbage out），且增加了 latency 和基础设施成本。</li>
+<li><strong>+ RAG → + Tool Calling</strong>：从&quot;只读&quot;变成&quot;可写&quot;，LLM 可以触发外部操作。Trade-off：引入了安全风险（LLM 可能调用不该调用的工具）和确定性问题（工具调用可能失败）。</li>
+<li><strong>+ Tool Calling → + Loop</strong>：从单次推理变成多步推理-执行循环。这是质变。Trade-off：循环次数不可预测，token 成本不可预测，调试复杂度指数级上升。</li>
+<li><strong>+ Loop → Full Agent</strong>：引入持久化记忆和显式反思。Trade-off：系统复杂度大幅提升，需要处理记忆一致性、状态持久化、长时间运行等问题。</li>
+</ul>
+<hr>
+<h2>6. 一个完整的例子</h2>
+<p>用同一个任务——&quot;帮我查看明天北京的天气并创建日程提醒&quot;——展示不同阶段的实现差异。</p>
+<h3>6.1 Pure LLM</h3>
+<pre><code class="language-python">response = llm.generate(&quot;帮我查看明天北京的天气并创建日程提醒&quot;)
+# 输出：好的，明天北京的天气大约是 25°C，晴转多云...（纯幻觉，没有真实数据）
+# 日程提醒也不会真的被创建
+</code></pre>
+<p>问题：没有真实数据，没有真实执行，一切都是生成的&quot;假&quot;内容。</p>
+<h3>6.2 LLM + RAG</h3>
+<pre><code class="language-python"># 预先检索天气相关知识
+weather_docs = retriever.search(&quot;北京天气预报&quot;)
+context = format_docs(weather_docs)
+
+response = llm.generate(
+    f&quot;根据以下信息回答用户问题：\n{context}\n\n用户：帮我查看明天北京的天气并创建日程提醒&quot;
+)
+# 输出基于检索到的文档，但如果文档不包含明天的天气（高概率），仍然无法回答
+# 日程提醒依然无法创建
+</code></pre>
+<p>问题：RAG 提供了知识，但无法获取实时数据，更无法执行&quot;创建日程&quot;这个写操作。</p>
+<h3>6.3 LLM + Tool Calling（单步）</h3>
+<pre><code class="language-python">tools = [
+    {
+        &quot;name&quot;: &quot;get_weather&quot;,
+        &quot;description&quot;: &quot;获取指定城市的天气预报&quot;,
+        &quot;parameters&quot;: {&quot;city&quot;: &quot;string&quot;, &quot;date&quot;: &quot;string&quot;}
+    },
+    {
+        &quot;name&quot;: &quot;create_reminder&quot;,
+        &quot;description&quot;: &quot;创建日程提醒&quot;,
+        &quot;parameters&quot;: {&quot;title&quot;: &quot;string&quot;, &quot;time&quot;: &quot;string&quot;, &quot;note&quot;: &quot;string&quot;}
+    }
+]
+
+response = llm.generate(
+    &quot;帮我查看明天北京的天气并创建日程提醒&quot;,
+    tools=tools,
+)
+# LLM 返回一个 tool_call：get_weather(city=&quot;北京&quot;, date=&quot;2025-08-04&quot;)
+# 但只能调用一个工具——它选了查天气，日程提醒怎么办？
+# 需要第二轮调用，但谁来发起？没有循环机制。
+</code></pre>
+<p>问题：单步 Tool Calling 只能执行一个动作。多步任务需要外部编排。</p>
+<h3>6.4 LLM + Tools + Loop（ReAct Agent）</h3>
+<pre><code class="language-python">agent = Agent(llm=llm, tools={&quot;get_weather&quot;: get_weather, &quot;create_reminder&quot;: create_reminder})
+result = agent.run(&quot;帮我查看明天北京的天气并创建日程提醒&quot;)
+
+# Agent 内部执行过程：
+#
+# [Iteration 1]
+# Think:  用户想查天气并创建提醒，我需要先查天气，再用天气信息创建提醒。
+# Plan:   调用 get_weather(city=&quot;北京&quot;, date=&quot;2025-08-04&quot;)
+# Act:    → {&quot;temp&quot;: 31, &quot;condition&quot;: &quot;多云转雷阵雨&quot;, &quot;humidity&quot;: 78}
+# Reflect: 成功获取天气数据，接下来需要创建日程提醒。
+# Update:  记录天气数据到 state。
+#
+# [Iteration 2]
+# Think:  已获取天气信息（31°C，多云转雷阵雨），需要创建提醒。
+# Plan:   调用 create_reminder(
+#             title=&quot;明天北京天气提醒&quot;,
+#             time=&quot;2025-08-04T07:00:00&quot;,
+#             note=&quot;31°C，多云转雷阵雨，湿度 78%，建议带伞&quot;
+#         )
+# Act:    → {&quot;status&quot;: &quot;created&quot;, &quot;id&quot;: &quot;rem_abc123&quot;}
+# Reflect: 提醒创建成功。两个子任务都已完成，可以返回最终结果。
+# Plan:   finish
+#
+# 最终输出：
+# &quot;明天北京天气：31°C，多云转雷阵雨，湿度 78%。
+#  已为您创建早上 7:00 的天气提醒，建议带伞。&quot;
+</code></pre>
+<p>这才是我们期望的行为：<strong>理解意图 → 分解任务 → 逐步执行 → 组合结果</strong>。注意 Agent 做了几件 Pure LLM 做不到的事：</p>
+<ol>
+<li><strong>任务分解</strong>：识别出&quot;查天气&quot;和&quot;创建提醒&quot;是两个子任务，且有依赖关系</li>
+<li><strong>信息传递</strong>：把第一步的天气数据作为第二步的输入（note 字段）</li>
+<li><strong>智能补全</strong>：用户没说提醒时间，Agent 推断了一个合理的时间（早上 7 点）</li>
+<li><strong>结果整合</strong>：把多步执行的结果组合成一个连贯的自然语言回复</li>
+</ol>
+<h3>6.5 Full Agent（增加长期记忆与反思）</h3>
+<pre><code class="language-python"># Full Agent 在 ReAct 基础上增加：
+
+# 1. 长期记忆：记住用户偏好
+user_profile = memory.recall(user_id=&quot;u_001&quot;)
+# → {&quot;preferred_reminder_time&quot;: &quot;06:30&quot;, &quot;weather_sensitivity&quot;: &quot;rain&quot;}
+
+# 2. 个性化决策：基于用户历史偏好
+# Agent 不再推断 7:00，而是使用用户偏好的 6:30
+# Agent 知道用户对雨天敏感，会强调带伞建议
+
+# 3. 显式反思：执行后回顾
+reflection = agent.reflect(
+    task=&quot;查天气并创建提醒&quot;,
+    result=result,
+    criteria=[&quot;信息完整性&quot;, &quot;时间合理性&quot;, &quot;个性化程度&quot;]
+)
+# → &quot;时间使用了用户偏好，天气包含了降雨提醒。但缺少穿衣建议，下次可以补充。&quot;
+
+# 4. 记忆更新：学习本次交互
+memory.store(
+    user_id=&quot;u_001&quot;,
+    fact=&quot;用户关注北京天气，可能是北京居民或近期有出行计划&quot;,
+    source=&quot;interaction_20250803&quot;
+)
+</code></pre>
+<p>Full Agent 的核心区别在于：<strong>它在跨会话的时间尺度上持续学习和个性化</strong>。这需要一个完整的 Memory 架构来支撑——短期会话记忆、长期用户画像、事实知识库——我们将在第 08 篇详细展开。</p>
+<hr>
+<h2>7. Agent 的设计哲学</h2>
+<h3>7.1 LLM as the Reasoning Engine, Not the Entire System</h3>
+<p>这是 Agent 架构最核心的设计原则。LLM 是推理引擎，不是整个系统。就像汽车的发动机不是汽车本身——你还需要变速箱（Planner）、方向盘（Tools）、仪表盘（Memory）和底盘（Runtime）。</p>
+<p>这个原则的工程含义是：<strong>不要让 LLM 做所有事情。</strong> 让它做它擅长的——语义理解、推理、决策——然后用确定性代码处理其余部分。</p>
+<h3>7.2 确定性 vs 非确定性的边界</h3>
+<p>Agent 系统的核心设计问题之一是：<strong>哪些部分让 LLM 做（非确定性），哪些部分用代码做（确定性）？</strong></p>
+<pre><code>    确定性 (代码)                        非确定性 (LLM)
+    +-----------------------+          +-----------------------+
+    | 输入校验              |          | 意图理解              |
+    | 工具调度              |          | 工具选择              |
+    | 参数类型检查          |          | 参数填充              |
+    | 权限控制              |          | 上下文摘要            |
+    | 错误重试逻辑          |          | 结果解释              |
+    | 速率限制              |          | 对话策略              |
+    | 日志记录              |          | 异常情况判断          |
+    | 状态持久化            |          | 任务分解              |
+    +-----------------------+          +-----------------------+
+            |                                    |
+            v                                    v
+    可预测、可审计、可测试            灵活、自适应、但不可控
+</code></pre>
+<p>决策原则：</p>
+<ol>
+<li><strong>如果逻辑可以穷举，用代码</strong>。比如&quot;用户必须先登录才能创建日程&quot;——这是业务规则，不需要 LLM 判断。</li>
+<li><strong>如果需要理解自然语言语义，用 LLM</strong>。比如&quot;用户说&#39;帮我约个会&#39;是什么意思&quot;——这需要语义理解。</li>
+<li><strong>如果错误的代价很高，用代码兜底</strong>。比如转账操作的金额校验，无论 LLM 怎么说，都必须用代码做最终确认。</li>
+<li><strong>如果需要处理开放域输入，用 LLM</strong>。比如用户可能用任何方式描述他们的需求，只有 LLM 能处理这种多样性。</li>
+</ol>
+<h3>7.3 何时不需要 Agent</h3>
+<p>并非所有问题都需要 Agent。以下场景用更简单的方案更好：</p>
+<ul>
+<li><strong>固定流程的自动化</strong>：发票处理、数据同步——用 Workflow（DAG）更可靠</li>
+<li><strong>单轮问答</strong>：FAQ、知识检索——LLM + RAG 就够了</li>
+<li><strong>确定性决策</strong>：基于规则的审批——规则引擎更合适</li>
+<li><strong>高吞吐低延迟</strong>：实时推荐——Agent 的多轮调用延迟太高</li>
+</ul>
+<p>Agent 的最佳应用场景是：<strong>任务需要多步推理、工具组合使用、且执行路径在运行时才能确定</strong>。如果执行路径在编译时就能确定，你需要的是 Workflow，不是 Agent。这正是我们下一篇要深入讨论的主题。</p>
+<hr>
+<h2>8. 总结与思考</h2>
+<p>本文从 LLM 的本质出发，论证了为什么 <code>f(prompt) → response</code> 不等于 Agent。核心论点可以压缩为一句话：</p>
+<blockquote>
+<p><strong>LLM 是推理能力的来源，Agent 是将推理能力转化为行动能力的系统。</strong></p>
+</blockquote>
+<p>我们建立了三个关键的心智模型：</p>
+<ol>
+<li><strong>组件模型</strong>：Agent = LLM + Memory + Tools + Planner + Runtime，五个组件各有职责，协作运行。</li>
+<li><strong>循环模型</strong>：Observe → Think → Plan → Act → Reflect → Update，Agent 通过控制循环将单次推理扩展为多步执行。</li>
+<li><strong>光谱模型</strong>：从 Pure LLM 到 Full Agent 是一个连续光谱，每一步都有明确的能力增益和复杂性代价。</li>
+</ol>
+<h3>进一步思考</h3>
+<p>在进入下一篇之前，留几个值得深入思考的问题：</p>
+<p><strong>关于 Agent 的边界</strong>：如果 Planner 是硬编码的（比如一个固定的 DAG），这还算 Agent 吗？如果所有工具都是预定义的、参数是模板化的，LLM 只负责填参数，这算 Agent 还是 Workflow？这个边界在哪里，决定了你在工程实践中应该选择什么样的架构。</p>
+<p><strong>关于 LLM 的演进</strong>：随着模型能力的增强（更长的 context window、更强的 reasoning、内置的 tool use），LLM 和 Agent 之间的边界是否会逐渐模糊？OpenAI 的 o1/o3 系列通过 chain-of-thought 在模型内部实现了某种程度的&quot;规划&quot;，这是否意味着 Agent Runtime 的部分功能会被吸收进模型本身？</p>
+<p><strong>关于成本和延迟</strong>：Agent 的每一轮循环都包含至少一次 LLM 调用。如果一个任务需要 5 轮循环，每轮 3 次 LLM 调用（Think + Plan + Reflect），就是 15 次调用。这个成本和延迟在生产环境中是否可接受？如何在 Agent 的灵活性和系统的性能之间找到平衡点？</p>
+<p>这些问题没有标准答案，但它们定义了 Agentic 系统设计的核心张力。</p>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 02 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/03-Agent%20vs%20Workflow%20vs%20Automation">03 | Agent vs Workflow vs Automation</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+18:Tc7d3,<h1>The Agent Control Loop: Agent 运行时的核心抽象</h1>
+<blockquote>
+<p>如果说 LLM 是 Agent 的大脑，那么 Control Loop 就是 Agent 的心跳。</p>
+<p>大多数教程在讲 Agent 时，上来就接框架、调 API、跑 demo。但如果你不理解 Agent 运行时的核心抽象——控制循环——你永远只是在用别人的黑盒。</p>
+<p>本文是 Agentic 系列第 04 篇，整个系列的技术基石。我们会从状态机模型出发，逐层拆解 Agent Control Loop 的每一个阶段，给出完整的 Python 实现，并深入分析实际工程中的 trade-off。</p>
+</blockquote>
+<hr>
+<h2>1. Agent 的本质：可中断的控制循环</h2>
+<p>一个常见的误解是把 Agent 等同于&quot;一次 LLM 调用&quot;。实际上，Agent 和 LLM 的关系，类似于操作系统和 CPU 的关系——LLM 是执行推理的计算单元，而 Agent 是管理整个执行生命周期的运行时系统。</p>
+<p><strong>LLM 是一个函数：</strong> <code>f(prompt) -&gt; completion</code>，输入文本，输出文本，调用一次就结束。</p>
+<p><strong>Agent 是一个循环：</strong> 它持续运行，在每一轮中观察环境、调用 LLM 进行推理、执行动作、评估结果，然后决定是否继续。</p>
+<pre><code>LLM:    Input ──→ Output            (一次调用)
+
+Agent:  Input ──→ [Observe → Think → Act → Reflect] ──→ ... ──→ Output
+                  └──────── 循环 N 次 ────────────┘     (多轮控制)
+</code></pre>
+<p>这个循环有几个关键特性：</p>
+<ul>
+<li><strong>可中断</strong>：循环可以在任何阶段暂停，等待外部输入（用户确认、异步工具返回）后恢复</li>
+<li><strong>有状态</strong>：循环维护上下文信息，每一轮的输出影响下一轮的输入</li>
+<li><strong>有终止条件</strong>：循环不会无限运行，它在满足特定条件时停止</li>
+<li><strong>可观测</strong>：循环的每一步都应该是可追踪、可回溯的</li>
+</ul>
+<p>理解了这一点，Agent 编程的核心问题就变成了：<strong>如何设计和实现这个控制循环？</strong></p>
+<hr>
+<h2>2. 状态机模型：形式化定义</h2>
+<p>要严谨地描述 Control Loop，最自然的方式是用<strong>有限状态机（FSM）</strong>。</p>
+<h3>2.1 状态定义</h3>
+<p>一个 Agent Control Loop 可以用以下状态集合描述：</p>
+<pre><code class="language-python">from enum import Enum
+
+class AgentState(Enum):
+    OBSERVE  = &quot;observe&quot;   # 接收并归一化输入
+    THINK    = &quot;think&quot;     # LLM 推理，决定下一步行动
+    ACT      = &quot;act&quot;       # 执行工具调用或产出结果
+    REFLECT  = &quot;reflect&quot;   # 评估执行结果，决定是否继续
+    DONE     = &quot;done&quot;      # 终止：任务完成
+    ERROR    = &quot;error&quot;     # 终止：不可恢复错误
+</code></pre>
+<h3>2.2 状态转移图</h3>
+<pre><code>                    ┌─────────────────────────────────────────┐
+                    │                                         │
+                    ▼                                         │
+              ┌──────────┐                                    │
+   Input ───→│ OBSERVE  │                                    │
+              └────┬─────┘                                    │
+                   │                                         │
+                   ▼                                         │
+              ┌──────────┐    need_action    ┌──────────┐    │
+              │  THINK   │ ───────────────→ │   ACT    │    │
+              └────┬─────┘                   └────┬─────┘    │
+                   │                              │          │
+                   │ has_answer                   │          │
+                   │                              ▼          │
+                   │                        ┌──────────┐     │
+                   │                        │ REFLECT  │ ────┘
+                   │                        └────┬─────┘  continue
+                   │                             │
+                   ▼                             ▼
+              ┌──────────┐                  ┌──────────┐
+              │   DONE   │                  │  ERROR   │
+              └──────────┘                  └──────────┘
+                                       (max_retries exceeded
+                                        / unrecoverable)
+</code></pre>
+<p>状态转移规则：</p>
+<table>
+<thead>
+<tr>
+<th>当前状态</th>
+<th>条件</th>
+<th>下一状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OBSERVE</td>
+<td>输入就绪</td>
+<td>THINK</td>
+</tr>
+<tr>
+<td>THINK</td>
+<td>LLM 返回 tool_call</td>
+<td>ACT</td>
+</tr>
+<tr>
+<td>THINK</td>
+<td>LLM 返回最终回答</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>THINK</td>
+<td>LLM 调用异常</td>
+<td>ERROR</td>
+</tr>
+<tr>
+<td>ACT</td>
+<td>工具执行完成</td>
+<td>REFLECT</td>
+</tr>
+<tr>
+<td>ACT</td>
+<td>工具执行失败</td>
+<td>REFLECT (带错误信息)</td>
+</tr>
+<tr>
+<td>REFLECT</td>
+<td>需要继续</td>
+<td>OBSERVE (将结果作为新输入)</td>
+</tr>
+<tr>
+<td>REFLECT</td>
+<td>任务完成</td>
+<td>DONE</td>
+</tr>
+<tr>
+<td>REFLECT</td>
+<td>超过重试上限</td>
+<td>ERROR</td>
+</tr>
+</tbody></table>
+<h3>2.3 与 OODA Loop 的对比</h3>
+<p>Agent Control Loop 并不是凭空发明的，它和军事决策理论中的 <strong>OODA Loop（Observe-Orient-Decide-Act）</strong> 有深层的结构对应：</p>
+<pre><code>OODA Loop:          Agent Control Loop:
+┌─────────┐         ┌─────────┐
+│ Observe │ ──────→ │ OBSERVE │  感知环境
+├─────────┤         ├─────────┤
+│ Orient  │ ──────→ │ THINK   │  理解上下文，形成判断
+├─────────┤         │         │
+│ Decide  │ ──────→ │         │  (LLM 在 THINK 中同时完成 Orient+Decide)
+├─────────┤         ├─────────┤
+│  Act    │ ──────→ │  ACT    │  执行行动
+└─────────┘         ├─────────┤
+                    │ REFLECT │  OODA 中没有显式的反思阶段
+                    └─────────┘
+</code></pre>
+<p>关键区别在于 <strong>REFLECT 阶段</strong>。传统 OODA Loop 假设决策者能实时感知行动效果并自然融入下一轮 Observe。但 LLM Agent 不具备这种连续感知能力——它需要一个显式的反思步骤来评估工具返回值、判断是否需要修正。这是 Agent Control Loop 相对于经典决策循环的重要改进。</p>
+<hr>
+<h2>3. 循环中每个阶段的深入分析</h2>
+<h3>3.1 OBSERVE：输入归一化</h3>
+<p>OBSERVE 阶段的职责是<strong>收集并归一化各种来源的输入</strong>，将它们统一为 LLM 可理解的格式。</p>
+<p>输入来源远不止&quot;用户消息&quot;一种：</p>
+<pre><code>输入来源                    归一化后
+┌─────────────────┐       ┌──────────────────────┐
+│ 用户消息         │ ────→ │ {&quot;role&quot;: &quot;user&quot;,     │
+│ 工具返回值       │ ────→ │  &quot;content&quot;: &quot;...&quot;}   │
+│ 系统事件         │ ────→ │                      │
+│ 定时触发         │ ────→ │ {&quot;role&quot;: &quot;system&quot;,   │
+│ 外部 Webhook    │ ────→ │  &quot;content&quot;: &quot;...&quot;}   │
+│ 上一轮反思结果   │ ────→ │                      │
+└─────────────────┘       └──────────────────────┘
+</code></pre>
+<p><strong>输入归一化的核心原则：</strong></p>
+<ol>
+<li><p><strong>所有输入都必须序列化为 message 格式</strong>。不管来源是什么，最终都要变成 <code>{&quot;role&quot;: ..., &quot;content&quot;: ...}</code> 的形式，因为 LLM 只理解 message 序列。</p>
+</li>
+<li><p><strong>工具返回值需要结构化包装</strong>。不要直接把原始 JSON 甩给 LLM，要附上工具名称、执行状态和必要的摘要信息。</p>
+</li>
+<li><p><strong>输入需要截断和优先级排序</strong>。当多个输入同时到达时，需要决定哪些放进当前轮次的 Context Window，哪些缓存到下一轮。</p>
+</li>
+</ol>
+<pre><code class="language-python">def observe(self, raw_inputs: list[dict]) -&gt; list[dict]:
+    &quot;&quot;&quot;将原始输入归一化为 LLM message 格式&quot;&quot;&quot;
+    messages = []
+    for inp in raw_inputs:
+        match inp[&quot;type&quot;]:
+            case &quot;user_message&quot;:
+                messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: inp[&quot;text&quot;]})
+            case &quot;tool_result&quot;:
+                messages.append({
+                    &quot;role&quot;: &quot;tool&quot;,
+                    &quot;tool_call_id&quot;: inp[&quot;call_id&quot;],
+                    &quot;content&quot;: self._format_tool_result(inp),
+                })
+            case &quot;system_event&quot;:
+                messages.append({
+                    &quot;role&quot;: &quot;system&quot;,
+                    &quot;content&quot;: f&quot;[System Event] {inp[&#39;event&#39;]}&quot;,
+                })
+    return messages
+</code></pre>
+<h3>3.2 THINK：LLM 推理</h3>
+<p>THINK 阶段是控制循环中最核心的一环——调用 LLM，让它基于当前上下文做出决策。</p>
+<p>这个阶段要解决三个问题：</p>
+<p><strong>问题一：Context Window 构建</strong></p>
+<p>LLM 的输入不是当前轮次的消息，而是<strong>从任务开始到现在的完整上下文</strong>。构建 Context Window 的典型结构：</p>
+<pre><code>┌─────────────────────────────────────────────┐
+│ System Prompt                               │  固定不变
+│ (角色定义 + 能力边界 + 输出格式要求)           │
+├─────────────────────────────────────────────┤
+│ Tool Definitions                            │  固定不变
+│ (可用工具的 JSON Schema 定义)                │
+├─────────────────────────────────────────────┤
+│ Message History                             │  随轮次增长
+│ (user → assistant → tool → assistant → ...) │
+├─────────────────────────────────────────────┤
+│ Current Turn Input                          │  当前轮次
+│ (本轮 OBSERVE 阶段归一化的输入)              │
+└─────────────────────────────────────────────┘
+</code></pre>
+<p><strong>问题二：Token 预算控制</strong></p>
+<p>Context Window 有上限（4K / 8K / 128K / 200K），而每一轮循环都会增加 message history。如果不加控制，几轮之后就会超限。</p>
+<p>常见的预算控制策略：</p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>实现方式</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>硬截断</td>
+<td>只保留最近 N 条消息</td>
+<td>简单场景</td>
+</tr>
+<tr>
+<td>滑动窗口</td>
+<td>System Prompt 固定 + 最近 K 轮对话</td>
+<td>工具调用场景</td>
+</tr>
+<tr>
+<td>摘要压缩</td>
+<td>将早期对话用 LLM 生成摘要后替换</td>
+<td>长对话场景</td>
+</tr>
+<tr>
+<td>优先级保留</td>
+<td>按消息重要性排序，低优先级先丢弃</td>
+<td>复杂多步任务</td>
+</tr>
+</tbody></table>
+<pre><code class="language-python">def _build_context(self, new_messages: list[dict]) -&gt; list[dict]:
+    &quot;&quot;&quot;构建符合 Token 预算的 Context Window&quot;&quot;&quot;
+    self.message_history.extend(new_messages)
+
+    context = [self.system_prompt] + self.tool_definitions
+    remaining_budget = self.max_tokens - self._count_tokens(context)
+
+    # 从最新消息开始向前填充，直到预算耗尽
+    selected = []
+    for msg in reversed(self.message_history):
+        msg_tokens = self._count_tokens([msg])
+        if msg_tokens &gt; remaining_budget:
+            break
+        selected.insert(0, msg)
+        remaining_budget -= msg_tokens
+
+    return context + selected
+</code></pre>
+<p><strong>问题三：LLM 输出解析</strong></p>
+<p>LLM 的返回可能是纯文本回答（任务完成），也可能是工具调用请求。需要根据返回类型决定下一步状态转移：</p>
+<pre><code class="language-python">def think(self, context: list[dict]) -&gt; ThinkResult:
+    &quot;&quot;&quot;调用 LLM 进行推理&quot;&quot;&quot;
+    response = self.client.chat.completions.create(
+        model=self.model,
+        messages=context,
+        tools=self.tool_schemas,
+    )
+    choice = response.choices[0]
+
+    if choice.finish_reason == &quot;tool_calls&quot;:
+        return ThinkResult(
+            action=&quot;tool_call&quot;,
+            tool_calls=choice.message.tool_calls,
+            raw_message=choice.message,
+        )
+    else:
+        return ThinkResult(
+            action=&quot;answer&quot;,
+            content=choice.message.content,
+            raw_message=choice.message,
+        )
+</code></pre>
+<h3>3.3 ACT：执行层</h3>
+<p>ACT 阶段负责<strong>执行 THINK 阶段决定的动作</strong>——通常是调用工具（Tool Calling）。</p>
+<p>执行层的核心挑战不是&quot;调用工具&quot;本身，而是以下几个工程问题：</p>
+<p><strong>同步 vs 异步执行</strong></p>
+<pre><code>同步执行（Simple）：
+  think → call_tool_1 → wait → call_tool_2 → wait → reflect
+  延迟 = T1 + T2
+
+异步 / 并行执行（Optimized）：
+  think → call_tool_1 ─┬─→ reflect
+        → call_tool_2 ─┘
+  延迟 = max(T1, T2)
+</code></pre>
+<p>当 LLM 在一次返回中请求多个工具调用（parallel tool calling）时，应该并行执行以降低延迟：</p>
+<pre><code class="language-python">import asyncio
+
+async def act(self, tool_calls: list[ToolCall]) -&gt; list[dict]:
+    &quot;&quot;&quot;并行执行多个工具调用&quot;&quot;&quot;
+    tasks = [self._execute_tool(tc) for tc in tool_calls]
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+    tool_results = []
+    for tc, result in zip(tool_calls, results):
+        if isinstance(result, Exception):
+            tool_results.append({
+                &quot;type&quot;: &quot;tool_result&quot;,
+                &quot;call_id&quot;: tc.id,
+                &quot;status&quot;: &quot;error&quot;,
+                &quot;content&quot;: f&quot;Tool &#39;{tc.function.name}&#39; failed: {result}&quot;,
+            })
+        else:
+            tool_results.append({
+                &quot;type&quot;: &quot;tool_result&quot;,
+                &quot;call_id&quot;: tc.id,
+                &quot;status&quot;: &quot;success&quot;,
+                &quot;content&quot;: str(result),
+            })
+    return tool_results
+</code></pre>
+<p><strong>执行安全</strong></p>
+<p>工具执行不是无条件信任的。需要考虑：</p>
+<ul>
+<li><strong>超时控制</strong>：每个工具调用必须有 timeout，防止阻塞整个循环</li>
+<li><strong>结果大小限制</strong>：工具返回值可能非常大（比如查数据库返回 10 万行），需要截断</li>
+<li><strong>权限校验</strong>：某些工具（文件写入、网络请求、代码执行）需要额外的权限检查</li>
+<li><strong>沙箱执行</strong>：代码执行类工具应该在沙箱中运行</li>
+</ul>
+<h3>3.4 REFLECT：输出质量评估</h3>
+<p>REFLECT 阶段回答一个关键问题：<strong>上一步的执行结果是否满意？是继续、重试还是停止？</strong></p>
+<p>这个阶段有两种实现方式：</p>
+<p><strong>方式一：隐式反思——让 LLM 在下一轮 THINK 中自行判断</strong></p>
+<p>这是最简单的方式。把工具返回值直接送进下一轮 THINK，让 LLM 自己决定是否需要修正。大多数框架（如 OpenAI Assistants API）默认采用这种方式。</p>
+<p>优点：实现简单，不增加额外的 LLM 调用。</p>
+<p>缺点：LLM 可能&quot;自信地&quot;忽略错误，特别是在返回值看起来合理但语义错误的情况下。</p>
+<p><strong>方式二：显式反思——用独立的 LLM 调用进行自我评估</strong></p>
+<pre><code class="language-python">def reflect(self, action_result: dict, task_goal: str) -&gt; ReflectResult:
+    &quot;&quot;&quot;显式反思：评估执行结果&quot;&quot;&quot;
+    prompt = f&quot;&quot;&quot;评估以下工具执行结果是否达成了任务目标。
+
+任务目标: {task_goal}
+执行结果: {json.dumps(action_result, ensure_ascii=False)}
+
+请回答：
+1. 结果是否正确？(yes/no)
+2. 是否需要进一步行动？(yes/no)
+3. 如果需要，下一步应该做什么？
+&quot;&quot;&quot;
+    response = self.client.chat.completions.create(
+        model=self.model,
+        messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: prompt}],
+    )
+    # 解析反思结果...
+    return ReflectResult(
+        is_correct=...,
+        needs_more_action=...,
+        next_step_hint=...,
+    )
+</code></pre>
+<p><strong>Trade-off 分析：</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>隐式反思</th>
+<th>显式反思</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Token 消耗</td>
+<td>低</td>
+<td>高（额外一次 LLM 调用）</td>
+</tr>
+<tr>
+<td>质量把控</td>
+<td>依赖 LLM 自觉</td>
+<td>有独立的质量评估</td>
+</tr>
+<tr>
+<td>延迟</td>
+<td>低</td>
+<td>增加一轮 LLM 延迟</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>简单工具调用</td>
+<td>复杂推理链、高准确性要求</td>
+</tr>
+</tbody></table>
+<p>实际工程中，常用的折中方案是：<strong>对关键步骤用显式反思，对常规步骤用隐式反思</strong>。</p>
+<h3>3.5 终止条件：什么时候停下来？</h3>
+<p>一个 Agent 如果不知道什么时候停，就是一个烧钱的死循环。终止条件的设计是 Control Loop 中最容易被忽视、但对生产环境最重要的部分。</p>
+<pre><code class="language-python">def should_stop(self, state: LoopState) -&gt; tuple[bool, str]:
+    &quot;&quot;&quot;判断是否应该终止循环&quot;&quot;&quot;
+    # 1. LLM 认为任务完成
+    if state.last_think_result.action == &quot;answer&quot;:
+        return True, &quot;task_completed&quot;
+
+    # 2. 达到最大轮次
+    if state.turn_count &gt;= self.max_turns:
+        return True, &quot;max_turns_exceeded&quot;
+
+    # 3. Token 预算耗尽
+    if state.total_tokens &gt;= self.token_budget:
+        return True, &quot;token_budget_exceeded&quot;
+
+    # 4. 连续错误过多
+    if state.consecutive_errors &gt;= self.max_consecutive_errors:
+        return True, &quot;too_many_errors&quot;
+
+    # 5. 死循环检测（重复输出相同内容）
+    if self._detect_loop(state.recent_outputs):
+        return True, &quot;loop_detected&quot;
+
+    return False, &quot;&quot;
+</code></pre>
+<p>各终止条件的设计考量：</p>
+<ul>
+<li><strong>max_turns</strong>：硬上限，防止失控。一般设 10-30 轮。过小会导致复杂任务被截断，过大会导致 Token 浪费</li>
+<li><strong>token_budget</strong>：成本控制。根据业务场景设定每次交互的 Token 上限</li>
+<li><strong>consecutive_errors</strong>：容错阈值。工具偶尔失败是正常的，但连续 3 次以上通常意味着系统性问题</li>
+<li><strong>loop_detected</strong>：死循环检测。如果 Agent 连续 N 轮输出相同或高度相似的内容，说明它陷入了无效循环</li>
+</ul>
+<hr>
+<h2>4. 两种主流 Loop 模式对比</h2>
+<h3>4.1 ReAct 模式</h3>
+<p><strong>ReAct（Reason + Act）</strong> 是目前最主流的 Agent Loop 模式，由 Yao et al. 2022 提出。其核心思想是让 LLM 交替进行推理和行动：</p>
+<pre><code>┌──────────────────────────────────────────────────────┐
+│                   ReAct Loop                         │
+│                                                      │
+│  ┌─────────┐    ┌─────────┐    ┌─────────────────┐  │
+│  │ Thought │ →  │ Action  │ →  │  Observation    │  │
+│  │(LLM推理)│    │(工具调用)│    │(工具返回值)      │  │
+│  └─────────┘    └─────────┘    └────────┬────────┘  │
+│       ▲                                  │          │
+│       └──────────────────────────────────┘          │
+│                  循环直到完成                         │
+└──────────────────────────────────────────────────────┘
+</code></pre>
+<p>一个典型的 ReAct 执行轨迹（Trace）：</p>
+<pre><code>Thought: 用户想知道北京今天的天气。我需要调用天气 API。
+Action:  get_weather(city=&quot;北京&quot;)
+Observation: {&quot;temp&quot;: 28, &quot;condition&quot;: &quot;晴&quot;, &quot;humidity&quot;: 45}
+
+Thought: 已经获取到天气数据，我可以直接回答用户。
+Answer:  北京今天晴天，气温 28°C，湿度 45%。
+</code></pre>
+<p><strong>ReAct 的优势：</strong></p>
+<ul>
+<li>每一步都基于最新的观察结果做决策，<strong>适应性强</strong></li>
+<li>Thought 过程可见，<strong>可解释性好</strong></li>
+<li>实现简单，与 Tool Calling API 天然契合</li>
+</ul>
+<p><strong>ReAct 的劣势：</strong></p>
+<ul>
+<li>逐步决策，无法全局优化执行顺序</li>
+<li>每一步都需要一次 LLM 调用，<strong>延迟累积</strong></li>
+<li>对于需要协调多个子任务的复杂场景，容易陷入局部最优</li>
+</ul>
+<h3>4.2 Plan-then-Execute 模式</h3>
+<p>与 ReAct 的&quot;走一步看一步&quot;不同，Plan-then-Execute 先生成一个<strong>完整的执行计划</strong>，然后按计划依次执行：</p>
+<pre><code>┌──────────────────────────────────────────────────────────┐
+│              Plan-then-Execute Loop                       │
+│                                                          │
+│  ┌──────────────────────────────────────┐                │
+│  │           Planning Phase             │                │
+│  │  Input → LLM → [Step1, Step2, ...]   │                │
+│  └───────────────┬──────────────────────┘                │
+│                  │                                        │
+│                  ▼                                        │
+│  ┌──────────────────────────────────────┐                │
+│  │         Execution Phase              │                │
+│  │  Step1 → Execute → Result1           │                │
+│  │  Step2 → Execute → Result2           │                │
+│  │  ...                                 │                │
+│  └───────────────┬──────────────────────┘                │
+│                  │                                        │
+│                  ▼                                        │
+│  ┌──────────────────────────────────────┐                │
+│  │    Replan (if needed)                │                │
+│  │  检查是否需要调整计划                   │                │
+│  └──────────────────────────────────────┘                │
+└──────────────────────────────────────────────────────────┘
+</code></pre>
+<p>执行轨迹示例：</p>
+<pre><code>Plan:
+  1. 查询北京天气
+  2. 查询上海天气
+  3. 对比两地天气差异
+  4. 生成出行建议
+
+Execute Step 1: get_weather(city=&quot;北京&quot;) → {&quot;temp&quot;: 28, &quot;condition&quot;: &quot;晴&quot;}
+Execute Step 2: get_weather(city=&quot;上海&quot;) → {&quot;temp&quot;: 32, &quot;condition&quot;: &quot;多云&quot;}
+Execute Step 3: (LLM 对比分析)
+Execute Step 4: (LLM 生成建议)
+
+Answer: ...
+</code></pre>
+<h3>4.3 Trade-off 分析</h3>
+<pre><code>                        灵活性
+                          ▲
+                          │
+                 ReAct ●  │
+                          │
+                          │        ● Hybrid
+                          │          (ReAct + Plan)
+                          │
+              Plan-then   │
+              -Execute ●  │
+                          │
+                          └──────────────────→ 效率
+                                          (LLM 调用次数)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>ReAct</th>
+<th>Plan-then-Execute</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>灵活性</td>
+<td>高。每步实时调整</td>
+<td>低。偏离计划时需要 Replan</td>
+</tr>
+<tr>
+<td>LLM 调用次数</td>
+<td>多（每步一次推理）</td>
+<td>少（规划一次 + 执行时可能不需要 LLM）</td>
+</tr>
+<tr>
+<td>可控性</td>
+<td>低。难以预测执行路径</td>
+<td>高。计划可审核、可修改</td>
+</tr>
+<tr>
+<td>适合场景</td>
+<td>工具调用为主、步骤不确定</td>
+<td>多步骤、有依赖关系、需要全局协调</td>
+</tr>
+<tr>
+<td>错误恢复</td>
+<td>自然。下一步可以直接修正</td>
+<td>需要 Replan 机制</td>
+</tr>
+<tr>
+<td>人类干预</td>
+<td>难以在中途插入</td>
+<td>容易。可以审核和修改计划</td>
+</tr>
+</tbody></table>
+<p><strong>实际工程建议：</strong> 大多数场景从 ReAct 开始。当你发现 Agent 频繁在多步任务中&quot;迷路&quot;或做出低效的工具调用序列时，再考虑引入 Plan-then-Execute 或混合模式。</p>
+<hr>
+<h2>5. 状态管理</h2>
+<p>Control Loop 的状态管理决定了 Agent 的<strong>持久性</strong>和<strong>可恢复性</strong>。</p>
+<h3>5.1 Stateless Agent</h3>
+<p>Stateless Agent 不维护执行状态，所有上下文通过 <strong>message history</strong> 传递。</p>
+<pre><code>Request 1:  [system, user_msg_1]                     → response_1
+Request 2:  [system, user_msg_1, response_1, user_2] → response_2
+Request 3:  [system, user_msg_1, response_1, user_2, response_2, user_3] → response_3
+</code></pre>
+<p><strong>特点：</strong></p>
+<ul>
+<li>实现最简单，无需持久化</li>
+<li>每次请求都是自包含的</li>
+<li>message history 不断膨胀，最终超过 Context Window</li>
+<li>不支持暂停/恢复</li>
+</ul>
+<p>这是大多数 &quot;chat completion&quot; 应用的工作方式。适合单轮或短对话场景。</p>
+<h3>5.2 Stateful Agent</h3>
+<p>Stateful Agent 维护一个独立的 <strong>execution state</strong>，它不仅包含 message history，还包含任务进度、中间结果、工具状态等信息。</p>
+<pre><code class="language-python">@dataclass
+class ExecutionState:
+    &quot;&quot;&quot;Agent 执行状态&quot;&quot;&quot;
+    session_id: str
+    status: AgentState
+    turn_count: int
+    message_history: list[dict]
+
+    # 任务状态
+    task_goal: str
+    current_plan: list[str] | None
+    completed_steps: list[str]
+
+    # 资源消耗
+    total_input_tokens: int
+    total_output_tokens: int
+
+    # 错误追踪
+    consecutive_errors: int
+    error_log: list[dict]
+
+    # 时间戳
+    created_at: float
+    updated_at: float
+</code></pre>
+<h3>5.3 状态持久化方案</h3>
+<p>当 Agent 需要支持暂停/恢复、跨进程执行、或长时间运行时，执行状态必须持久化。</p>
+<pre><code>┌─────────────┐     ┌──────────────┐     ┌──────────────┐
+│   In-Memory  │     │    Redis     │     │   Database   │
+│  (dict/obj)  │     │  (KV Store)  │     │ (PostgreSQL) │
+├─────────────┤     ├──────────────┤     ├──────────────┤
+│ 最快         │     │ 快，支持 TTL  │     │ 持久可靠     │
+│ 进程重启丢失  │     │ 跨进程共享    │     │ 支持查询分析  │
+│ 单进程使用    │     │ 重启后可保留  │     │ 适合生产环境  │
+│ 适合开发/测试 │     │ 适合 session  │     │ 适合审计追溯  │
+└─────────────┘     └──────────────┘     └──────────────┘
+</code></pre>
+<p><strong>Checkpoint 与恢复</strong> 是 Stateful Agent 的核心能力。思路很直接：在每轮循环的关键节点保存一次快照，异常恢复时从最近的快照重新开始。</p>
+<pre><code class="language-python">class CheckpointManager:
+    def save(self, state: ExecutionState) -&gt; str:
+        &quot;&quot;&quot;保存 checkpoint，返回 checkpoint_id&quot;&quot;&quot;
+        snapshot = {
+            &quot;state&quot;: asdict(state),
+            &quot;timestamp&quot;: time.time(),
+        }
+        checkpoint_id = f&quot;{state.session_id}:{state.turn_count}&quot;
+        self.store.set(checkpoint_id, json.dumps(snapshot))
+        return checkpoint_id
+
+    def restore(self, checkpoint_id: str) -&gt; ExecutionState:
+        &quot;&quot;&quot;从 checkpoint 恢复执行状态&quot;&quot;&quot;
+        snapshot = json.loads(self.store.get(checkpoint_id))
+        return ExecutionState(**snapshot[&quot;state&quot;])
+</code></pre>
+<p>实际系统中，checkpoint 的保存频率需要权衡：</p>
+<ul>
+<li><strong>每轮都保存</strong>：恢复粒度最细，但写入开销大</li>
+<li><strong>关键节点保存</strong>（如每次工具调用前后）：开销适中，覆盖最重要的故障场景</li>
+<li><strong>定时保存</strong>：实现简单，但可能丢失最近几轮的状态</li>
+</ul>
+<hr>
+<h2>6. 完整代码实现</h2>
+<p>下面是一个最小但完整的 Agent Control Loop 实现。不依赖任何框架，仅使用 Python 标准库 + OpenAI SDK。</p>
+<pre><code class="language-python">&quot;&quot;&quot;
+Minimal Agent Control Loop
+不依赖任何框架，纯 Python + OpenAI SDK
+&quot;&quot;&quot;
+import json
+import time
+from enum import Enum
+from dataclasses import dataclass, field
+from openai import OpenAI
+
+
+class State(Enum):
+    OBSERVE = &quot;observe&quot;
+    THINK = &quot;think&quot;
+    ACT = &quot;act&quot;
+    REFLECT = &quot;reflect&quot;
+    DONE = &quot;done&quot;
+    ERROR = &quot;error&quot;
+
+
+@dataclass
+class LoopContext:
+    messages: list[dict] = field(default_factory=list)
+    turn: int = 0
+    total_tokens: int = 0
+    consecutive_errors: int = 0
+    recent_outputs: list[str] = field(default_factory=list)
+
+
+# ── Tool Registry ────────────────────────────────────
+
+TOOL_FUNCTIONS = {}
+
+def register_tool(name: str, description: str, parameters: dict):
+    &quot;&quot;&quot;装饰器：注册工具函数及其 schema&quot;&quot;&quot;
+    def decorator(fn):
+        TOOL_FUNCTIONS[name] = {
+            &quot;fn&quot;: fn,
+            &quot;schema&quot;: {
+                &quot;type&quot;: &quot;function&quot;,
+                &quot;function&quot;: {
+                    &quot;name&quot;: name,
+                    &quot;description&quot;: description,
+                    &quot;parameters&quot;: parameters,
+                },
+            },
+        }
+        return fn
+    return decorator
+
+
+@register_tool(
+    name=&quot;get_weather&quot;,
+    description=&quot;获取指定城市的当前天气&quot;,
+    parameters={
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;city&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;城市名称&quot;},
+        },
+        &quot;required&quot;: [&quot;city&quot;],
+    },
+)
+def get_weather(city: str) -&gt; str:
+    # 示例实现，实际中调用真实 API
+    return json.dumps({&quot;city&quot;: city, &quot;temp&quot;: 28, &quot;condition&quot;: &quot;晴&quot;})
+
+
+# ── Agent Control Loop ───────────────────────────────
+
+class Agent:
+    def __init__(
+        self,
+        system_prompt: str,
+        model: str = &quot;gpt-4o&quot;,
+        max_turns: int = 15,
+        token_budget: int = 50_000,
+        max_consecutive_errors: int = 3,
+    ):
+        self.client = OpenAI()
+        self.model = model
+        self.system_prompt = system_prompt
+        self.max_turns = max_turns
+        self.token_budget = token_budget
+        self.max_errors = max_consecutive_errors
+        self.tool_schemas = [t[&quot;schema&quot;] for t in TOOL_FUNCTIONS.values()]
+
+    def run(self, user_input: str) -&gt; str:
+        ctx = LoopContext()
+        ctx.messages = [
+            {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: self.system_prompt},
+            {&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_input},
+        ]
+        state = State.THINK  # 首轮输入已就绪，直接进入 THINK
+
+        while state not in (State.DONE, State.ERROR):
+            match state:
+                case State.THINK:
+                    state, ctx = self._think(ctx)
+                case State.ACT:
+                    state, ctx = self._act(ctx)
+                case State.REFLECT:
+                    state, ctx = self._reflect(ctx)
+            ctx.turn += 1
+
+        # 提取最终回答
+        for msg in reversed(ctx.messages):
+            if msg[&quot;role&quot;] == &quot;assistant&quot; and msg.get(&quot;content&quot;):
+                return msg[&quot;content&quot;]
+        return &quot;[Agent finished without a final answer]&quot;
+
+    def _think(self, ctx: LoopContext) -&gt; tuple[State, LoopContext]:
+        &quot;&quot;&quot;调用 LLM 推理&quot;&quot;&quot;
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=ctx.messages,
+                tools=self.tool_schemas or None,
+            )
+        except Exception as e:
+            ctx.consecutive_errors += 1
+            ctx.messages.append({
+                &quot;role&quot;: &quot;assistant&quot;,
+                &quot;content&quot;: f&quot;[LLM Error] {e}&quot;,
+            })
+            if ctx.consecutive_errors &gt;= self.max_errors:
+                return State.ERROR, ctx
+            return State.THINK, ctx  # 重试
+
+        # 记录 token 消耗
+        usage = response.usage
+        ctx.total_tokens += (usage.prompt_tokens + usage.completion_tokens)
+        ctx.consecutive_errors = 0
+
+        choice = response.choices[0]
+        assistant_msg = choice.message.model_dump()
+        ctx.messages.append(assistant_msg)
+
+        # 决定下一状态
+        if choice.message.tool_calls:
+            return State.ACT, ctx
+        else:
+            return State.DONE, ctx
+
+    def _act(self, ctx: LoopContext) -&gt; tuple[State, LoopContext]:
+        &quot;&quot;&quot;执行工具调用&quot;&quot;&quot;
+        assistant_msg = ctx.messages[-1]
+        tool_calls = assistant_msg.get(&quot;tool_calls&quot;, [])
+
+        for tc in tool_calls:
+            fn_name = tc[&quot;function&quot;][&quot;name&quot;]
+            fn_args = json.loads(tc[&quot;function&quot;][&quot;arguments&quot;])
+
+            tool_entry = TOOL_FUNCTIONS.get(fn_name)
+            if not tool_entry:
+                result = f&quot;Error: unknown tool &#39;{fn_name}&#39;&quot;
+            else:
+                try:
+                    result = tool_entry[&quot;fn&quot;](**fn_args)
+                except Exception as e:
+                    result = f&quot;Error: tool &#39;{fn_name}&#39; raised {type(e).__name__}: {e}&quot;
+                    ctx.consecutive_errors += 1
+
+            ctx.messages.append({
+                &quot;role&quot;: &quot;tool&quot;,
+                &quot;tool_call_id&quot;: tc[&quot;id&quot;],
+                &quot;content&quot;: str(result),
+            })
+
+        return State.REFLECT, ctx
+
+    def _reflect(self, ctx: LoopContext) -&gt; tuple[State, LoopContext]:
+        &quot;&quot;&quot;反思：检查终止条件&quot;&quot;&quot;
+        # 最大轮次
+        if ctx.turn &gt;= self.max_turns:
+            ctx.messages.append({
+                &quot;role&quot;: &quot;assistant&quot;,
+                &quot;content&quot;: &quot;[Agent stopped: max turns exceeded]&quot;,
+            })
+            return State.ERROR, ctx
+
+        # Token 预算
+        if ctx.total_tokens &gt;= self.token_budget:
+            ctx.messages.append({
+                &quot;role&quot;: &quot;assistant&quot;,
+                &quot;content&quot;: &quot;[Agent stopped: token budget exceeded]&quot;,
+            })
+            return State.ERROR, ctx
+
+        # 连续错误
+        if ctx.consecutive_errors &gt;= self.max_errors:
+            return State.ERROR, ctx
+
+        # 死循环检测：最近 3 次输出相同
+        tool_results = [
+            m[&quot;content&quot;] for m in ctx.messages[-6:]
+            if m.get(&quot;role&quot;) == &quot;tool&quot;
+        ]
+        if len(tool_results) &gt;= 3 and len(set(tool_results[-3:])) == 1:
+            ctx.messages.append({
+                &quot;role&quot;: &quot;assistant&quot;,
+                &quot;content&quot;: &quot;[Agent stopped: loop detected]&quot;,
+            })
+            return State.ERROR, ctx
+
+        # 继续下一轮推理
+        return State.THINK, ctx
+
+
+# ── 使用示例 ─────────────────────────────────────────
+
+if __name__ == &quot;__main__&quot;:
+    agent = Agent(
+        system_prompt=&quot;你是一个天气助手。使用 get_weather 工具回答天气问题。&quot;,
+        max_turns=10,
+    )
+    answer = agent.run(&quot;北京今天天气怎么样？&quot;)
+    print(answer)
+</code></pre>
+<p>这段代码约 130 行，涵盖了 Control Loop 的所有核心要素：</p>
+<ul>
+<li>状态机驱动的循环控制</li>
+<li>工具注册与动态调用</li>
+<li>LLM 异常重试</li>
+<li>Token 消耗追踪</li>
+<li>多种终止条件（max_turns / token_budget / consecutive_errors / loop_detected）</li>
+<li>工具执行错误处理</li>
+</ul>
+<p>它不是生产级代码，但足以说明 Control Loop 的核心机制。在此基础上增加异步执行、状态持久化、日志追踪，就能逐步演进为生产级实现。</p>
+<hr>
+<h2>7. 错误处理策略</h2>
+<p>生产环境中，Agent Control Loop 最常遇到的四类错误：</p>
+<h3>7.1 Tool 调用失败</h3>
+<p>工具调用失败是最高频的错误。正确的处理方式不是抛异常终止，而是<strong>将错误信息作为 Observation 返回给 LLM</strong>，让它决定如何应对。</p>
+<pre><code class="language-python"># 错误的做法：直接终止
+try:
+    result = call_tool(name, args)
+except Exception:
+    raise  # Agent 直接崩溃
+
+# 正确的做法：将错误反馈给 LLM
+try:
+    result = call_tool(name, args)
+except TimeoutError:
+    result = &quot;Tool timed out after 30s. Consider using different parameters.&quot;
+except ValueError as e:
+    result = f&quot;Invalid arguments: {e}. Please check parameter types.&quot;
+except Exception as e:
+    result = f&quot;Tool failed: {type(e).__name__}: {e}&quot;
+</code></pre>
+<p>LLM 在收到错误信息后，通常能自主修正——换一组参数重试、换一个工具、或者告知用户当前无法完成任务。</p>
+<h3>7.2 LLM 返回格式异常</h3>
+<p>LLM 偶尔会返回不符合预期的格式：JSON 不合法、tool_call 参数缺失、content 为空等。</p>
+<pre><code class="language-python">def _parse_tool_call_safe(self, tool_call) -&gt; tuple[str, dict]:
+    &quot;&quot;&quot;安全解析工具调用参数&quot;&quot;&quot;
+    name = tool_call.function.name
+    try:
+        args = json.loads(tool_call.function.arguments)
+    except json.JSONDecodeError:
+        # LLM 返回了非法 JSON，尝试修复或跳过
+        args = {}
+        self.logger.warning(
+            f&quot;Invalid JSON in tool_call arguments: &quot;
+            f&quot;{tool_call.function.arguments}&quot;
+        )
+    return name, args
+</code></pre>
+<h3>7.3 超时处理</h3>
+<p>整个 Agent 执行需要有全局超时，防止无限挂起：</p>
+<pre><code class="language-python">import signal
+
+class TimeoutError(Exception):
+    pass
+
+def run_with_timeout(fn, timeout_seconds: int, *args, **kwargs):
+    &quot;&quot;&quot;为函数执行添加超时限制&quot;&quot;&quot;
+    def handler(signum, frame):
+        raise TimeoutError(f&quot;Execution timed out after {timeout_seconds}s&quot;)
+
+    old_handler = signal.signal(signal.SIGALRM, handler)
+    signal.alarm(timeout_seconds)
+    try:
+        return fn(*args, **kwargs)
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old_handler)
+</code></pre>
+<h3>7.4 死循环检测</h3>
+<p>当 Agent 陷入死循环时，它会反复执行相同的操作序列。检测策略：</p>
+<pre><code class="language-python">def _detect_loop(self, messages: list[dict], window: int = 6) -&gt; bool:
+    &quot;&quot;&quot;检测 Agent 是否陷入重复循环&quot;&quot;&quot;
+    recent = messages[-window:]
+
+    # 策略 1：完全重复检测
+    contents = [m.get(&quot;content&quot;, &quot;&quot;) for m in recent if m[&quot;role&quot;] == &quot;assistant&quot;]
+    if len(contents) &gt;= 3 and len(set(contents[-3:])) == 1:
+        return True
+
+    # 策略 2：工具调用序列重复检测
+    tool_calls = []
+    for m in recent:
+        if m.get(&quot;tool_calls&quot;):
+            for tc in m[&quot;tool_calls&quot;]:
+                tool_calls.append(f&quot;{tc[&#39;function&#39;][&#39;name&#39;]}:{tc[&#39;function&#39;][&#39;arguments&#39;]}&quot;)
+
+    if len(tool_calls) &gt;= 4:
+        half = len(tool_calls) // 2
+        if tool_calls[:half] == tool_calls[half:2*half]:
+            return True
+
+    return False
+</code></pre>
+<hr>
+<h2>8. 性能考量</h2>
+<h3>8.1 Token 消耗与循环次数的关系</h3>
+<p>Agent Control Loop 的 Token 消耗不是线性增长，而是<strong>二次增长</strong>——因为每一轮都要携带之前所有轮次的 message history。</p>
+<pre><code>轮次    新增消息 Token    累计 Context Token    本轮总消耗
+1       T               S + T                S + T
+2       T               S + 2T               S + 2T
+3       T               S + 3T               S + 3T
+...
+N       T               S + NT               S + NT
+
+总消耗 = N*S + T*(1+2+...+N) = N*S + T*N*(N+1)/2
+
+其中 S = System Prompt Token 数，T = 平均每轮消息 Token 数
+</code></pre>
+<p>这意味着 <strong>10 轮的 Agent 消耗的 Token 不是 1 轮的 10 倍，而可能是 55 倍</strong>。这对成本控制至关重要。</p>
+<h3>8.2 Context Window 膨胀问题</h3>
+<p>随着轮次增加，Context Window 持续膨胀，导致：</p>
+<ol>
+<li><strong>延迟增加</strong>：LLM 推理时间与输入 Token 数正相关</li>
+<li><strong>成本增加</strong>：按 Token 计费，输入越长越贵</li>
+<li><strong>质量下降</strong>：过长的 Context 会导致 LLM &quot;注意力分散&quot;，关键信息被淹没（lost in the middle 问题）</li>
+</ol>
+<h3>8.3 消息压缩/摘要策略</h3>
+<p>应对 Context Window 膨胀的核心策略：</p>
+<p><strong>策略一：滑动窗口</strong></p>
+<p>只保留最近 K 轮对话，丢弃更早的历史。简单粗暴但有效。</p>
+<pre><code class="language-python">def _sliding_window(self, messages: list[dict], keep_last: int = 10) -&gt; list[dict]:
+    system_msgs = [m for m in messages if m[&quot;role&quot;] == &quot;system&quot;]
+    non_system = [m for m in messages if m[&quot;role&quot;] != &quot;system&quot;]
+    return system_msgs + non_system[-keep_last:]
+</code></pre>
+<p><strong>策略二：摘要压缩</strong></p>
+<p>当 message history 超过阈值时，用 LLM 对早期对话生成摘要，替换原始消息。</p>
+<pre><code class="language-python">def _compress_history(self, messages: list[dict], threshold: int = 20) -&gt; list[dict]:
+    if len(messages) &lt;= threshold:
+        return messages
+
+    # 将早期消息压缩为摘要
+    early = messages[1:-threshold]  # 跳过 system prompt，保留最近的
+    summary_prompt = (
+        &quot;请用 3-5 句话总结以下对话的关键信息和已完成的操作：\n&quot;
+        + &quot;\n&quot;.join(m.get(&quot;content&quot;, &quot;&quot;) for m in early if m.get(&quot;content&quot;))
+    )
+
+    summary = self.client.chat.completions.create(
+        model=&quot;gpt-4o-mini&quot;,  # 用小模型做摘要，节省成本
+        messages=[{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: summary_prompt}],
+    ).choices[0].message.content
+
+    return (
+        [messages[0]]  # system prompt
+        + [{&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: f&quot;[Earlier conversation summary] {summary}&quot;}]
+        + messages[-threshold:]
+    )
+</code></pre>
+<p><strong>策略三：选择性保留</strong></p>
+<p>不是所有消息都同等重要。工具的原始返回值（可能非常长）通常可以只保留摘要：</p>
+<pre><code class="language-python">def _trim_tool_results(self, messages: list[dict], max_len: int = 500) -&gt; list[dict]:
+    &quot;&quot;&quot;截断过长的工具返回值&quot;&quot;&quot;
+    trimmed = []
+    for m in messages:
+        if m[&quot;role&quot;] == &quot;tool&quot; and len(m.get(&quot;content&quot;, &quot;&quot;)) &gt; max_len:
+            m = {**m, &quot;content&quot;: m[&quot;content&quot;][:max_len] + &quot;\n...[truncated]&quot;}
+        trimmed.append(m)
+    return trimmed
+</code></pre>
+<p><strong>三种策略的对比：</strong></p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>信息保留</th>
+<th>实现成本</th>
+<th>Token 节省</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>滑动窗口</td>
+<td>低</td>
+<td>极低</td>
+<td>高</td>
+<td>短对话、工具调用为主</td>
+</tr>
+<tr>
+<td>摘要压缩</td>
+<td>中</td>
+<td>中（需要额外 LLM 调用）</td>
+<td>高</td>
+<td>长对话、需要历史上下文</td>
+</tr>
+<tr>
+<td>选择性保留</td>
+<td>高</td>
+<td>低</td>
+<td>中</td>
+<td>工具返回值较大的场景</td>
+</tr>
+</tbody></table>
+<p>实际工程中，通常<strong>组合使用</strong>：先用选择性保留截断大结果，再用滑动窗口控制总长度，在关键节点用摘要压缩保留全局上下文。</p>
+<hr>
+<h2>9. 小结与进一步思考</h2>
+<p>本文从状态机模型出发，完整地拆解了 Agent Control Loop 的核心抽象：</p>
+<ul>
+<li><strong>OBSERVE</strong> 负责输入归一化——将各种来源的信息统一为 LLM 可理解的 message 格式</li>
+<li><strong>THINK</strong> 是核心推理阶段——管理 Context Window、控制 Token 预算、解析 LLM 输出</li>
+<li><strong>ACT</strong> 是执行层——处理工具调用的同步/异步执行、超时控制、安全隔离</li>
+<li><strong>REFLECT</strong> 负责质量评估——决定是继续、重试还是终止</li>
+<li><strong>终止条件</strong>是成本和安全的兜底——max_turns、token_budget、error_threshold、loop_detection</li>
+</ul>
+<p>我们对比了 ReAct 和 Plan-then-Execute 两种主流模式，分析了 Stateless 与 Stateful 两种状态管理策略，并实现了一个不依赖任何框架的完整 Control Loop。</p>
+<p>但控制循环只是 Agent 运行时的骨架。它的灵魂在于 <strong>Tool Calling</strong>——正是工具让 Agent 从&quot;能说会道的语言模型&quot;变成&quot;能做事的智能体&quot;。</p>
+<p>在下一篇 <strong>《Tool Calling Deep Dive: 让 LLM 成为可编程接口》</strong> 中，我们会深入工具调用的设计哲学：JSON Schema 作为契约、Tool Registry 的实现、参数校验、错误传播，以及 Structured Output 为什么优于自由文本。</p>
+<p>留几个值得进一步思考的问题：</p>
+<ol>
+<li><strong>Control Loop 的嵌套</strong>：当一个 Agent 的工具是另一个 Agent 时，控制循环如何嵌套？外层循环和内层循环的终止条件如何协调？</li>
+<li><strong>人机协作中的循环</strong>：如何在 Control Loop 中优雅地插入人类审批节点？这和 Stateful Agent 的 checkpoint 机制有什么关系？</li>
+<li><strong>流式输出与控制循环</strong>：当 Agent 需要边思考边输出（streaming）时，状态机模型还适用吗？需要做哪些调整？</li>
+<li><strong>多模态输入的归一化</strong>：当 OBSERVE 阶段接收的不只是文本，还有图片、音频、视频时，输入归一化策略如何演化？</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 04 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/03-Agent%20vs%20Workflow%20vs%20Automation">03 | Agent vs Workflow vs Automation</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/05-Tool%20Calling%20Deep%20Dive">05 | Tool Calling Deep Dive</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+6:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-09","children":"2025年12月09日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Agent vs Workflow vs Automation: 选对抽象才是关键"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L5","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L5","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L5","Architecture",{"href":"/blog/tag/Architecture/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Architecture"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$11",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/02-From Prompt to Agent","title":"From Prompt to Agent: 为什么 LLM 本身不是 Agent","description":"LLM 是一个无状态的文本函数，Agent 是一个有状态的推理系统。本文从 LLM 的五大局限出发，精确定义 Agent 的组件模型与控制循环，并沿 Chatbot → Agent 的光谱逐级拆解，帮助你建立从 Prompt 到 Agent 的完整认知框架。","pubDate":"2025-12-05","tags":["Agentic","AI Engineering","LLM"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/04-The Agent Control Loop","title":"The Agent Control Loop: Agent 运行时的核心抽象","description":"Agent 的本质不是一次函数调用，而是一个可中断的控制循环。本文从状态机模型出发，深入剖析 Agent Control Loop 的每个阶段——OBSERVE、THINK、ACT、REFLECT，对比 ReAct 与 Plan-then-Execute 两种主流模式，讨论状态管理、错误处理与性能优化策略，并给出一个不依赖任何框架的完整 Python 实现。","pubDate":"2025-12-14","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"AI Engineering":{"prev":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$6:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"Architecture":{"prev":null,"next":null}}}]}],["$","$L19",null,{}]]}]}]}]
+9:null
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+b:{"metadata":[["$","title","0",{"children":"Agent vs Workflow vs Automation: 选对抽象才是关键 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"不是所有问题都需要 Agent。本文系统比较 Rule-based Automation、Workflow/DAG、Agent 三种执行范式，从确定性、成本、可观测性等维度给出选型框架，帮助工程师在真实场景中选对抽象层次。"}],["$","meta","2",{"property":"og:title","content":"Agent vs Workflow vs Automation: 选对抽象才是关键"}],["$","meta","3",{"property":"og:description","content":"不是所有问题都需要 Agent。本文系统比较 Rule-based Automation、Workflow/DAG、Agent 三种执行范式，从确定性、成本、可观测性等维度给出选型框架，帮助工程师在真实场景中选对抽象层次。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-12-09"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"Agent vs Workflow vs Automation: 选对抽象才是关键"}],["$","meta","9",{"name":"twitter:description","content":"不是所有问题都需要 Agent。本文系统比较 Rule-based Automation、Workflow/DAG、Agent 三种执行范式，从确定性、成本、可观测性等维度给出选型框架，帮助工程师在真实场景中选对抽象层次。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+13:{"metadata":"$b:metadata","error":null,"digest":"$undefined"}
