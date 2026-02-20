@@ -12,7 +12,11 @@ export const DIR_TO_VIRTUAL: Record<string, string> = {
   'insights/business':        'industry/business',
   'insights/finance':         'industry/finance',
   'insights/science':         'science/science',
+  'science/cognition':        'science/cognition',
+  'science/complexity':       'science/complexity',
   'life/digital':             'life/digital',
+  'life/growth':              'life/growth',
+  'life/reading':             'life/reading',
 };
 
 // 所有分类的元数据（使用虚拟路径作为 key）
@@ -35,9 +39,13 @@ export const CATEGORY_META: Record<string, { name: string; description: string }
   'industry/business':   { name: '商业思考', description: '创业、品牌与商业模式' },
   'industry/finance':    { name: '金融分析', description: '投资、数字货币与产业分析' },
   // 二级 — Science
-  'science/science': { name: '科学探索', description: '语言学、认知科学等' },
+  'science/science':    { name: '科学探索', description: '语言学、认知科学等' },
+  'science/cognition':  { name: '认知科学', description: '思维模型与决策心理学' },
+  'science/complexity': { name: '复杂系统', description: '涌现、混沌与网络科学' },
   // 二级 — Life
   'life/digital': { name: '数字生活', description: '数字游民、AI 生活与赛博现实' },
+  'life/growth':  { name: '个体成长', description: '学习方法与职业思考' },
+  'life/reading': { name: '阅读笔记', description: '书评与深度阅读' },
 };
 
 export const MAIN_CATEGORIES = ['engineering', 'industry', 'science', 'life'] as const;

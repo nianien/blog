@@ -61,7 +61,6 @@ echo ""
 # 启动开发服务器
 echo "🌐 启动开发服务器..."
 echo "📱 本地地址: http://localhost:3000"
-echo "🌐 网络地址: http://192.168.0.218:3000"
 echo "🛑 停止服务器: Ctrl+C"
 echo ""
 

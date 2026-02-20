@@ -14,8 +14,10 @@ export default function CategoryNav({ currentCategory }: CategoryNavProps) {
 
   // 计算主分类文章总数
   const mainCounts: Record<string, number> = {};
+  let totalCount = 0;
   for (const cat of categories) {
     mainCounts[cat.main] = (mainCounts[cat.main] || 0) + cat.count;
+    totalCount += cat.count;
   }
 
   // 当前主分类下的子分类
@@ -36,6 +38,7 @@ export default function CategoryNav({ currentCategory }: CategoryNavProps) {
           }`}
         >
           全部
+          <span className="ml-1 text-xs opacity-70">({totalCount})</span>
         </Link>
         {MAIN_CATEGORIES.map((key) => {
           const meta = CATEGORY_META[key];

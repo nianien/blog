@@ -124,30 +124,25 @@ execute_action() {
             echo ""
             echo "请选择预览方式："
             echo "  a) 启动开发服务器预览"
-            echo "  b) 启动静态文件预览"
-            echo "  c) 构建并预览静态文件"
-            echo "  d) 清理构建文件"
-            echo "  e) 返回主菜单"
+            echo "  b) 预览已有静态文件"
+            echo "  c) 强制构建并预览静态文件"
+            echo "  d) 返回主菜单"
             echo ""
-            read -p "请选择 (a-e): " preview_choice
+            read -p "请选择 (a-d): " preview_choice
             case $preview_choice in
                 a)
                     echo -e "${GREEN}🚀 启动开发服务器预览...${NC}"
-                    ./scripts/preview.sh dev
+                    ./scripts/restart.sh
                     ;;
                 b)
-                    echo -e "${GREEN}📄 启动静态文件预览...${NC}"
-                    ./scripts/preview.sh static
+                    echo -e "${GREEN}📄 预览已有静态文件...${NC}"
+                    ./scripts/preview.sh --skip-build
                     ;;
                 c)
                     echo -e "${GREEN}🔨 构建并预览静态文件...${NC}"
-                    ./scripts/preview.sh build
+                    ./scripts/preview.sh --build
                     ;;
                 d)
-                    echo -e "${GREEN}🧹 清理构建文件...${NC}"
-                    ./scripts/preview.sh clean
-                    ;;
-                e)
                     echo -e "${GREEN}↩️ 返回主菜单${NC}"
                     ;;
                 *)

@@ -92,26 +92,9 @@ export default async function CategoryPage({
   const endIndex = startIndex + POSTS_PER_PAGE;
   const posts = allPostsForCategory.slice(startIndex, endIndex);
 
-  const meta = CATEGORY_META[categoryPath];
-  const categoryName = meta?.name || categoryPath;
-  const categoryDescription = meta?.description || '';
-
   return (
     <div className="bg-[var(--background)] pt-8 pb-24 sm:pt-12 sm:pb-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {categoryName}
-          </h1>
-          {categoryDescription && (
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              {categoryDescription}
-            </p>
-          )}
-          <p className="mt-4 text-sm text-gray-500">
-            共 {totalPosts} 篇文章
-          </p>
-        </div>
         {/* Category Navigation */}
         <CategoryNav currentCategory={categoryPath} />
         {/* Posts grid */}

@@ -32,9 +32,9 @@ echo "   Node.js 版本: $(node --version)"
 echo "   npm 版本: $(npm --version)"
 echo ""
 
-# 清理旧文件
+# 清理旧文件（保留 package-lock.json 确保依赖版本一致）
 echo "🧹 清理旧文件..."
-rm -rf node_modules package-lock.json .next out .turbo
+rm -rf node_modules .next out .turbo
 
 # 安装依赖
 echo "📦 安装依赖包..."

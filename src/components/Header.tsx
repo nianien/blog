@@ -56,14 +56,7 @@ export default function Header() {
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link
-            className="text-base font-semibold leading-6 transition-colors text-gray-900 hover:text-blue-600"
-            href="/contact"
-          >
-            联系 <span aria-hidden="true">→</span>
-          </Link>
-        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end" />
       </nav>
       {/* Mobile menu */}
       {mobileMenuOpen && (
@@ -101,13 +94,6 @@ export default function Header() {
                       {item.name}
                     </Link>
                   ))}
-                  <Link
-                    href="/contact"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    联系
-                  </Link>
                 </div>
               </div>
             </div>
