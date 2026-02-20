@@ -1,0 +1,304 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-142e67ac4336647c.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+6:I[59665,[],"OutletBoundary"]
+9:I[74911,[],"AsyncMetadataOutlet"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/232416e7c3a1ca7e.css","style"]
+0:{"P":null,"b":"Ugi13mxW3xqx8EX5Ds9lw","p":"","c":["","blog","science","cognition","%E8%B4%B9%E6%9B%BC%E6%96%B9%E6%B3%95%E4%B8%8E%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%EF%BC%9A%E5%A6%82%E4%BD%95%E7%9C%9F%E6%AD%A3%E7%90%86%E8%A7%A3%E4%B8%80%E4%BB%B6%E4%BA%8B",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","science/cognition/%E8%B4%B9%E6%9B%BC%E6%96%B9%E6%B3%95%E4%B8%8E%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%EF%BC%9A%E5%A6%82%E4%BD%95%E7%9C%9F%E6%AD%A3%E7%90%86%E8%A7%A3%E4%B8%80%E4%BB%B6%E4%BA%8B","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/232416e7c3a1ca7e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","science/cognition/%E8%B4%B9%E6%9B%BC%E6%96%B9%E6%B3%95%E4%B8%8E%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%EF%BC%9A%E5%A6%82%E4%BD%95%E7%9C%9F%E6%AD%A3%E7%90%86%E8%A7%A3%E4%B8%80%E4%BB%B6%E4%BA%8B","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","csqfJi33wWX7tvwLBbl3Av",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:"$Sreact.suspense"
+11:I[74911,[],"AsyncMetadata"]
+13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+1a:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
+15:T2d8f,<h2>一个被忽略的问题</h2>
+<p>我们从小被训练回答问题，却很少被训练<strong>判断自己是否真的理解了问题</strong>。</p>
+<p>考试拿了高分，说明你记住了答案。工作中能复述方案，说明你读过文档。在技术讨论中抛出几个术语，说明你的信息输入渠道没有堵塞。但这些都不等于理解。</p>
+<p><strong>「知道」和「理解」之间隔着一道鸿沟</strong>，大多数人终其一生都在鸿沟的这一侧，却误以为自己已经站在了那一侧。</p>
+<p>理查德-费曼和埃隆-马斯克分别从不同的方向触碰了同一个问题的核心：如何确认自己真正理解了一件事？费曼给出的路径是「用最朴素的语言重新讲一遍」，马斯克反复强调的则是「回到最基本的事实，从那里开始推演」。</p>
+<p>这两种方法看似属于不同的领域——一个是学习技巧，一个是决策框架——但它们的底层逻辑完全一致：<strong>拒绝在别人的结论上搭积木，而是自己从地基开始砌</strong>。</p>
+<h2>费曼方法：用「教」来检验「懂」</h2>
+<p>费曼方法的核心流程并不复杂，四步而已：</p>
+<ol>
+<li><strong>选择一个概念</strong>，写在纸上。</li>
+<li><strong>假装你在教一个完全不懂的人</strong>，用最简单的语言把它解释清楚。</li>
+<li><strong>发现卡住的地方</strong>——那些你不得不诉诸术语、模糊带过、或者干脆跳过的环节。</li>
+<li><strong>回到原始材料</strong>，重新学习那些卡住的部分，然后再教一遍。</li>
+</ol>
+<p>这个方法之所以有效，是因为它利用了一个认知规律：<strong>语言是思维的探针</strong>。当你试图用简单的话描述一个概念时，你的大脑被迫进行一次完整的重建——不是从记忆中检索一个打包好的答案，而是从底层重新组装这个概念的逻辑链。</p>
+<p>一个经典的例子：什么是温度？</p>
+<p>大多数受过教育的人会回答「温度是衡量冷热程度的物理量」。这不能算错，但它是一个<strong>循环定义</strong>——你用「冷热」来定义温度，又用温度来定义冷热。如果你试着向一个十岁的孩子解释得再深一层，你会被迫触碰分子运动、动能、统计平均这些概念。你会发现，你对「温度」的理解可能止步于初中物理课本上的一句话，而那句话本身并没有让你真正理解任何东西。</p>
+<p>费曼本人在教学中反复演示这一点。他在康奈尔和加州理工的讲座之所以成为传奇，不是因为他讲得简单，而是因为他能在「简单」和「准确」之间找到那个极其狭窄的通道。这条通道只有真正理解了底层原理的人才走得通。</p>
+<h2>第一性原理：拆到不能再拆</h2>
+<p>第一性原理思维的历史可以追溯到亚里士多德。他在《形而上学》中将其定义为「认识事物的最基本命题或假设，不能被省略或删除，也不能被违反」。</p>
+<p>在现代语境中，这个概念被马斯克反复引用并推广。他的表述更直接：<strong>不要用类比来推理，要从最基本的物理事实出发，然后从那里一层一层推上来</strong>。</p>
+<p>类比推理是人类大脑的默认模式。它高效、节能、在大多数日常场景中足够用。你看到别人做一件事成功了，你照搬过来，大概率也能过得去。但类比推理的问题在于，它<strong>继承了原始结论中的所有隐含假设</strong>，包括那些可能已经过时、错误、或者根本不适用于你当前情境的假设。</p>
+<p>一个工程领域的例子：电池成本。</p>
+<p>在 SpaceX 创立初期，火箭发射的市场价格是每公斤载荷约 10000 美元。如果用类比推理，结论就是「火箭发射就是这么贵」。但马斯克的做法是回到第一性原理：火箭的原材料是什么？铝合金、碳纤维、钛合金、燃料。这些材料在大宗商品市场上值多少钱？计算下来，原材料成本大约只占市场价格的 2%。那其余 98% 的成本来自哪里？来自低效的制造流程、一次性使用的设计、以及几十年来没有被挑战过的行业惯例。</p>
+<p>这就是第一性原理的力量：<strong>当你拆到最底层，你会发现很多「不可能」其实只是「没人试过」</strong>。</p>
+<h2>为什么它们是同一件事</h2>
+<p>费曼方法和第一性原理看起来一个朝内（学习）、一个朝外（决策），但它们的内核完全相同。</p>
+<p><strong>费曼方法的本质是：强迫你把知识拆解到最基本的组件，然后从那些组件重新组装。</strong> 你在「教」的过程中，实际上是在做一次知识的「逆向工程」——把打包好的结论拆回零件，检查每个零件是否你真的持有，还是只是以为自己持有。</p>
+<p><strong>第一性原理的本质是：拒绝使用别人组装好的模块，坚持自己从原材料开始建造。</strong> 这个「建造」过程中的每一步推演，都要求你像费曼方法要求的那样——确认自己能用最简单的逻辑把这一步讲清楚。</p>
+<p>换个角度说：</p>
+<ul>
+<li>费曼方法是<strong>第一性原理在学习场景下的操作手册</strong>。</li>
+<li>第一性原理是<strong>费曼方法在决策场景下的哲学表达</strong>。</li>
+</ul>
+<p>它们共享同一个敌人：<strong>未经检验的继承性假设</strong>。无论是你从教科书上记住的公式，还是你从行业经验中继承的「最佳实践」，只要你没有亲自验证过它的每一个环节，它就可能是你认知结构中的一颗定时炸弹。</p>
+<h2>「知道」与「理解」的断裂带</h2>
+<p>为了更清楚地说明这个问题，有必要拆解一下「知道」和「理解」之间的结构性差异。</p>
+<p><strong>「知道」是对结论的持有</strong>。你知道 E=mc^2，你知道水在 100 度沸腾，你知道微服务架构要做服务发现。这些都是别人推导出来的结论，你把它们存进了记忆。</p>
+<p><strong>「理解」是对推导过程的持有</strong>。你不仅知道 E=mc^2，你还能解释为什么质量和能量之间存在等价关系，为什么系数恰好是光速的平方，这个公式是从哪些更基本的假设中推导出来的。你不仅知道水在 100 度沸腾，你还知道这个温度取决于大气压，知道沸腾的微观机制是什么，知道为什么在高原上水不到 100 度就开了。</p>
+<p>两者的区别在日常生活中不明显，但在三个场景下会暴露出来：</p>
+<p><strong>场景一：遇到异常。</strong> 当系统出现教科书上没写过的问题时，「知道」的人束手无策，因为他们的知识库里没有匹配的条目。「理解」的人可以从原理出发，推演出可能的原因。</p>
+<p><strong>场景二：需要迁移。</strong> 当你需要把一个领域的知识应用到另一个领域时，「知道」的人只能做表面类比。「理解」的人能识别出底层结构的同构性，做出深层迁移。</p>
+<p><strong>场景三：需要创新。</strong> 创新几乎必然意味着打破现有结论。如果你只是持有结论，打破它就等于失去一切。如果你持有推导过程，打破旧结论只是修改了某个中间环节，整个知识结构依然稳固。</p>
+<h2>如何在实践中应用</h2>
+<p>理论讲得再多，不转化为可操作的行为就是空谈。以下是几个经过验证的实践路径。</p>
+<h3>写作即学习</h3>
+<p>写文章是费曼方法最自然的实现形式。你不需要真的找一个人来「教」——把一个概念写成一篇文章，就是在强迫自己完成从拆解到重建的全过程。</p>
+<p>关键不在于文章的文采，而在于<strong>逻辑链的完整性</strong>。每写一段，问自己：如果读者在这里问「为什么」，我能不能不查资料地回答？如果不能，说明这里有一个你尚未真正理解的环节。</p>
+<h3>对每个「最佳实践」追问三层为什么</h3>
+<p>在技术工作中，我们被大量的「最佳实践」和「设计模式」包围。这些东西不是不好，但它们是别人在特定上下文中推导出的结论。你需要追问：</p>
+<ul>
+<li><strong>第一层</strong>：这个实践要解决什么问题？</li>
+<li><strong>第二层</strong>：这个问题为什么会存在？它的根因是什么？</li>
+<li><strong>第三层</strong>：有没有可能从根因层面消除这个问题，使得这个实践本身变得不必要？</li>
+</ul>
+<p>大多数人停在第一层。能到第二层的人已经是少数。到第三层的人，往往就是那些能做出架构级创新的人。</p>
+<h3>建立「解释清单」</h3>
+<p>给自己列一份清单，写下你工作中经常使用但无法从零解释的概念。比如：</p>
+<ul>
+<li>什么是 TCP 的三次握手？为什么是三次而不是两次？</li>
+<li>什么是数据库索引？B+树为什么比哈希表更适合做索引？</li>
+<li>什么是分布式一致性？CAP 定理的证明过程是什么？</li>
+</ul>
+<p>这份清单就是你的「知识债务表」。每周花时间偿还一两笔债务，用费曼方法的标准来检验——如果你能向一个非技术人员把这个概念解释清楚（不丢失核心准确性），这笔债务就可以划掉。</p>
+<h3>警惕「熟悉感陷阱」</h3>
+<p>认知心理学中有一个现象叫「流畅性错觉」：当你重复接触某个信息时，你会对它产生熟悉感，而大脑会把这种熟悉感误判为「理解」。</p>
+<p>你读了三遍设计模式的书，觉得自己「懂了」。但让你在白板上从零画出一个观察者模式的完整实现，你可能画不出来。这不是记忆力的问题，而是你从未真正拥有过那个知识——你只是和它见过面。</p>
+<p>对抗这个陷阱的方法只有一个：<strong>主动检验</strong>。不要默读，要默写。不要点头，要动手。不要觉得「我看过」就等于「我会了」。</p>
+<h2>理解是一种建造</h2>
+<p>费曼晚年接受采访时说过一段话，大意是：这个世界上有两种知识，一种是「知道一个事物的名字」，一种是「真正理解这个事物」。前者是标签，后者是结构。</p>
+<p>这个区分放在今天比以往任何时候都更重要。在信息过载的时代，我们比任何一代人都更容易「知道」——搜索引擎和大语言模型可以在几秒内给你任何问题的「答案」。但这恰恰让「理解」变得更稀缺、更有价值。</p>
+<p><strong>理解不是接收，是建造。</strong> 就像你不能通过看别人砌墙来学会砌墙，你也不能通过阅读别人的结论来获得理解。你必须自己拿起砖块，感受灰浆的粘度，体会水平线的意义，亲手一层一层砌上去。</p>
+<p>费曼方法和第一性原理给你的不是知识本身，而是<strong>一种确认「我是否真的理解了」的检验工具</strong>。它们不能替你学习，但它们能防止你在自欺中浪费时间。</p>
+<p>在一个越来越依赖「快速获取答案」的世界里，愿意慢下来拆解、重建、验证的人，反而拥有了一种稀缺的竞争优势。因为大多数人的知识结构像是一堆借来的积木——看着像那么回事，但一推就倒。而从第一性原理出发、用费曼方法验证过的知识，是你自己浇筑的钢筋混凝土。</p>
+<p>它不华丽，但它扛得住。</p>
+17:T2bf1,<p>去重分析在企业日常分析中的使用频率非常高，如何在大数据场景下快速地进行去重分析一直是一大难点。在近期的 Apache Kylin Meetup 北京站上，我们邀请到 Kyligence 大数据研发工程师陶加涛为大家揭开了大数据分析常用去重算法的神秘面纱。</p>
+<p>Apache Kylin 作为目前唯一一个同时支持精确与非精确去重查询的 OLAP 引擎，非常好地覆盖了大数据上的去重需求。本次分享讲解了 Kylin 这两种去重方式背后用到的算法，希望能让大家从源头上理解为什么 Kylin 的去重查询有着如此优异的性能。此次分享的回顾将分为两期，本篇首先为大家介绍精确去重算法 Bitmap 。</p>
+<p>首先，请大家思考一个问题：在大数据处理领域中，什么环节是你最不希望见到的？以我的观点来看，shuffle 是我最不愿意见到的环节，因为一旦出现了非常多的 shuffle，就会占用大量的磁盘和网络 IO，从而导致任务进行得非常缓慢。而今天我们所讨论的去重分析，就是一个会产生非常多 shuffle 的场景，先来看以下场景：</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_1.png" alt="image_1_1.png"></p>
+<p>我们有一张商品访问表，表上有 item 和 user_id 两个列，我们希望求商品的 UV，这是去重非常典型的一个场景。我们的数据是存储在分布式平台上的，分别在数据节点 1 和 2 上。</p>
+<p>我们从物理执行层面上想一下这句 SQL 背后会发生什么故事：首先分布式计算框架启动任务, 从两个节点上去拿数据, 因为 SQL group by 了 item 列, 所以需要以 item 为 key 对两个表中的原始数据进行一次 shuffle。我们来看看需要 shuffle 哪些数据：因为 select/group by了 item，所以 item 需要 shuffle 。但是，user_id 我们只需要它的一个统计值，能不能不 shuffle 整个 user_id 的原始值呢？</p>
+<p>如果只是简单的求 count 的话, 每个数据节点分别求出对应 item 的 user_id 的 count, 然后只要 shuffle 这个 count 就行了，因为count 只是一个数字, 所以 shuffle 的量非常小。但是由于分析的指标是 count distinct，我们不能简单相加两个节点user_id 的 count distinct 值，我们只有得到一个 key 对应的所有 user_id 才能统计出正确的 count distinct值，而这些值原先可能分布在不同的节点上，所以我们只能通过 shuffle 把这些值收集到同一个节点上再做去重。而当 user_id 这一列的数据量非常大的时候，需要 shuffle 的数据量也会非常大。我们其实最后只需要一个 count 值，那么有办法可以不 shuffle 整个列的原始值吗？我下面要介绍的两种算法就提供了这样的一种思路，使用更少的信息位，同样能够求出该列不重复元素的个数（基数）。</p>
+<p><strong>精确算法: Bitmap</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_1_2.png" alt="image_1_2.png"></p>
+<p>第一种要介绍的算法是一种精确的去重算法，主要利用了 Bitmap 的原理。Bitmap 也称之为 Bitset，它本质上是定义了一个很大的 bit 数组，每个元素对应到 bit 数组的其中一位。例如有一个集合［2，3，5，8］对应的 Bitmap 数组是［001101001］，集合中的 2 对应到数组 index 为 2 的位置，3 对应到 index 为 3 的位置，下同，得到的这样一个数组，我们就称之为 Bitmap。很直观的，数组中 1 的数量就是集合的基数。追本溯源，我们的目的是用更小的存储去表示更多的信息，而在计算机最小的信息单位是 bit，如果能够用一个 bit 来表示集合中的一个元素，比起原始元素，可以节省非常多的存储。</p>
+<p>这就是最基础的 Bitmap，我们可以把 Bitmap 想象成一个容器，我们知道一个 Integer 是32位的，如果一个 Bitmap 可以存放最多 Integer.MAX_VALUE 个值，那么这个 Bitmap 最少需要 32 的长度。一个 32 位长度的 Bitmap 占用的空间是512 M （2^32/8/1024/1024），这种 Bitmap 存在着非常明显的问题：这种 Bitmap 中不论只有 1 个元素或者有 40 亿个元素，它都需要占据 512 M 的空间。回到刚才求 UV 的场景，不是每一个商品都会有那么多的访问，一些爆款可能会有上亿的访问，但是一些比较冷门的商品可能只有几个用户浏览，如果都用这种 Bitmap，它们占用的空间都是一样大的，这显然是不可接受的。</p>
+<p><strong>升级版 Bitmap: Roaring Bitmap</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_1_3.png" alt="image_1_3.png"></p>
+<p>对于上节说的问题，有一种设计的非常的精巧 Bitmap，叫做 Roaring Bitmap，能够很好地解决上面说的这个问题。我们还是以存放 Integer 值的 Bitmap 来举例，Roaring Bitmap 把一个 32 位的 Integer 划分为高 16 位和低 16 位，取高 16 位找到该条数据所对应的 key，每个 key 都有自己的一个 Container。我们把剩余的低 16 位放入该 Container 中。依据不同的场景，有 3 种不同的 Container，分别是 Array Container、Bitmap Container 和 Run Container，下文将一一介绍。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_4.png" alt="image_1_4.png"></p>
+<p>首先第一种，是 Roaring Bitmap 初始化时默认的 Container，叫做 Array Container。Array Container 适合存放稀疏的数据，Array Container 内部的数据结构是一个 short array，这个 array 是有序的，方便查找。数组初始容量为 4，数组最大容量为 4096。超过最大容量 4096 时，会转换为 Bitmap Container。这边举例来说明数据放入一个 Array Container 的过程：有 0xFFFF0000 和 0xFFFF0001 两个数需要放到 Bitmap 中, 它们的前 16 位都是 FFFF，所以他们是同一个 key，它们的后 16 位存放在同一个 Container 中; 它们的后 16 位分别是 0 和 1, 在 Array Container 的数组中分别保存 0 和 1 就可以了，相较于原始的 Bitmap 需要占用 512M 内存来存储这两个数，这种存放实际只占用了 2+4=6 个字节（key 占 2 Bytes，两个 value 占 4 Bytes，不考虑数组的初始容量）。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_5.png" alt="image_1_5.png"></p>
+<p>第二种 Container 是 Bitmap Container，其原理就是上文说的 Bitmap。它的数据结构是一个 long 的数组，数组容量固定为 1024，和上文的 Array Container 不同，Array Container 是一个动态扩容的数组。这边推导下 1024 这个值：由于每个 Container 还需处理剩余的后 16 位数据，使用 Bitmap 来存储需要 8192 Bytes（2^16/8）, 而一个 long 值占 8 个 Bytes，所以一共需要 1024（8192/8）个 long 值。所以一个 Bitmap container 固定占用内存 8 KB（1024 * 8 Byte）。当 Array Container 中元素到 4096 个时，也恰好占用 8 k（4096*2Bytes）的空间，正好等于 Bitmap 所占用的 8 KB。而当你存放的元素个数超过 4096 的时候，Array Container 的大小占用还是会线性的增长，但是 Bitmap Container 的内存空间并不会增长，始终还是占用 8 K，所以当 Array Container 超过最大容量（DEFAULT_MAX_SIZE）会转换为 Bitmap Container。</p>
+<p>我们自己在 Kylin 中实践使用 Roaring Bitmap 时，我们发现 Array Container 随着数据量的增加会不停地 resize 自己的数组，而 Java 数组的 resize 其实非常消耗性能，因为它会不停地申请新的内存，同时老的内存在复制完成前也不会释放，导致内存占用变高，所以我们建议把 DEFAULT_MAX_SIZE 调得低一点，调成 1024 或者 2048，减少 Array Container 后期 reszie 数组的次数和开销。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_6.png" alt="image_1_6.png"></p>
+<p>最后一种 Container 叫做Run Container，这种 Container 适用于存放连续的数据。比如说 1 到 100，一共 100 个数，这种类型的数据称为连续的数据。这边的Run指的是Run Length Encoding（RLE），它对连续数据有比较好的压缩效果。原理是对于连续出现的数字, 只记录初始数字和后续数量。例如: 对于 [11, 12, 13, 14, 15, 21, 22]，会被记录为 11, 4, 21, 1。很显然，该 Container 的存储占用与数据的分布紧密相关。最好情况是如果数据是连续分布的，就算是存放 65536 个元素，也只会占用 2 个 short。而最坏的情况就是当数据全部不连续的时候，会占用 128 KB 内存。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_7.png" alt="image_1_7.png"></p>
+<p>总结：用一张图来总结3种 Container 所占的存储空间，可以看到元素个数达到 4096 之前，选用 Array Container 的收益是最好的，当元素个数超过了 4096 时，Array Container 所占用的空间还是线性的增长，而 Bitmap Container 的存储占用则与数据量无关，这个时候 Bitmap Container 的收益就会更好。而 Run Container 占用的存储大小完全看数据的连续性, 因此只能画出一个上下限范围 [4 Bytes, 128 KB]。</p>
+<p><strong>在 Kylin 中的应用</strong></p>
+<p><img src="/images/blog/engineering/bigdata-image_1_8.png" alt="image_1_8.png"></p>
+<p>我们再来看一下Bitmap 在 Kylin 中的应用，Kylin 中编辑 measure 的时候，可以选择 Count Distinct，且Return Type 选为 Precisely，点保存就可以了。但是事情没有那么简单，刚才上文在讲 Bitmap 时，一直都有一个前提，放入的值都是数值类型，但是如果不是数值类型的值，它们不能够直接放入 Bitmap，这时需要构建一个全区字典，做一个值到数值的映射，然后再放入 Bitmap 中。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_9.png" alt="image_1_9.png"></p>
+<p>在 Kylin 中构建全局字典，当列的基数非常高的时候，全局字典会成为一个性能的瓶颈。针对这种情况，社区也一直在努力做优化，这边简单介绍几种优化的策略，更详细的优化策略可以见文末的参考链接。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_10.png" alt="image_1_10.png"></p>
+<p>1）当一个列的值完全被另外一个列包含，而另一个列有全局字典，可以复用另一个列的全局字典。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_11.png" alt="image_1_11.png"></p>
+<p>2）当精确去重指标不需要跨 Segment 聚合的时候，可以使用这个列的 Segment 字典代替（这个列需要字典编码）。在 Kylin 中，Segment 就相当于时间分片的概念。当不会发生跨 Segments 的分析时，这个列的 Segment 字典就可以代替这个全局字典。</p>
+<p><img src="/images/blog/engineering/bigdata-image_1_12.png" alt="image_1_12.png"></p>
+<p>3）如果你的 cube 包含很多的精确去重指标，可以考虑将这些指标放到不同的列族上。不止是精确去重，像一些复杂 measure，我们都建议使用多个列族去存储，可以提升查询的性能。</p>
+18:T1e6b,<h2>你今天做了多少个决策？</h2>
+<p>心理学研究表明，一个成年人每天大约做出 35,000 个决策。从「现在要不要起床」到「午饭吃什么」到「这封邮件怎么回」，大部分决策是无意识的，消耗的认知资源微乎其微。</p>
+<p>但正是这些微决策塑造了你的生活轨迹。你的习惯、品味、社交圈、信息茧房——都是数万个微决策的累积结果。</p>
+<p>现在，AI 正在系统性地接管这些微决策。</p>
+<h2>五层渗透</h2>
+<p>AI 对日常生活的渗透不是一蹴而就的，而是逐层递进的：</p>
+<h3>第一层：信息过滤</h3>
+<p>最早也最成熟的一层。推荐算法决定你看到什么新闻、什么视频、什么商品。你以为自己在「浏览」，实际上你在被「喂养」。</p>
+<p>这一层的影响已经被充分讨论：信息茧房、注意力经济、极化效应。但大多数人已经接受了它，因为替代方案（自己筛选全部信息）的认知成本太高。</p>
+<p><strong>关键转变：从「我选择看什么」到「算法选择让我看什么」。</strong></p>
+<h3>第二层：行为建议</h3>
+<p>导航 APP 告诉你走哪条路，健身 APP 告诉你做什么运动，理财 APP 告诉你买什么基金。你仍然有最终决定权，但「默认选项」已经被算法设定了。</p>
+<p>行为经济学告诉我们，大多数人会选择默认选项。所以「建议」和「决定」之间的界限，比你想象的要模糊得多。</p>
+<p><strong>关键转变：从「我决定怎么做」到「算法建议我怎么做，我通常同意」。</strong></p>
+<h3>第三层：内容生成</h3>
+<p>AI 帮你写邮件、写报告、写代码、做 PPT。你提供意图，AI 生成内容。你「审核」结果，但审核的标准往往是「看起来还行」。</p>
+<p>这一层正在快速扩展。当 AI 生成的内容占你日常输出的比例超过 50%，一个微妙的身份问题出现了：这些文字代表的是你的思想，还是 AI 的思想？</p>
+<p><strong>关键转变：从「我表达什么」到「AI 帮我表达，我负责审核」。</strong></p>
+<h3>第四层：关系中介</h3>
+<p>AI 助手帮你安排社交日程、生成聊天回复建议、甚至帮你维护人际关系（生日提醒、定期问候）。</p>
+<p>这听起来是效率提升，但它改变了关系的本质。当你收到一条朋友的生日祝福，你不确定它是 ta 亲手写的还是 AI 生成后点击发送的。<strong>信任的基础从「意图」转向「行为」</strong>——你不再关心对方是否真心，只关心 ta 是否做了这个动作。</p>
+<p><strong>关键转变：从「我维护关系」到「AI 帮我维护关系的形式」。</strong></p>
+<h3>第五层：目标设定</h3>
+<p>这是最深的一层，也是刚刚开始的一层。AI 个人教练、AI 生涯规划、AI 心理咨询——它们不只是帮你实现目标，而是帮你<strong>定义</strong>目标。</p>
+<p>「基于你的性格测试、职业数据和市场趋势，我建议你转向 AI 产品经理方向。」</p>
+<p>当 AI 开始影响你的人生方向，「自主性」的概念就需要被重新定义了。</p>
+<p><strong>关键转变：从「我想要什么」到「AI 告诉我应该想要什么」。</strong></p>
+<h2>认知外包的代价</h2>
+<p>把决策外包给 AI 不是没有代价的。代价分三个层面：</p>
+<h3>能力退化</h3>
+<p>不用导航就不会认路，不用心算就忘了乘法表——认知能力是「用进废退」的。当 AI 接管了写作、规划、决策，这些能力会逐渐萎缩。</p>
+<p>这不是假设，而是已经在发生的事情。研究表明，GPS 的普及显著降低了人类的空间记忆能力。AI 写作工具的普及，可能会对语言组织能力产生类似影响。</p>
+<h3>判断力侵蚀</h3>
+<p>判断力来自于做判断并承受后果。如果你的每个决策都有 AI 兜底，你就失去了「犯错—反思—修正」的学习循环。</p>
+<p>好的判断力不是「总是做对的选择」，而是「在不确定性中形成自己的评估框架」。AI 给你最优解的同时，也剥夺了你建立评估框架的机会。</p>
+<h3>主体性消解</h3>
+<p>最深层的代价。当你的信息、行为、内容、关系、目标都被 AI 中介，「你」还剩下什么？</p>
+<p>哲学上，主体性（agency）的核心是「我做出选择，并为选择负责」。如果选择是 AI 做的，你只是点击了「确认」，责任归属就变得模糊了。</p>
+<p>这不是技术问题，这是存在主义问题。</p>
+<h2>反直觉的悖论</h2>
+<p>AI 时代最大的悖论是：</p>
+<p><strong>技术让一切变得更容易，但「容易」本身成了问题。</strong></p>
+<p>人类的意义感、成就感、身份认同，都来自于克服困难的过程。当 AI 消除了大部分困难，我们获得了效率，但失去了过程中的意义。</p>
+<p>健身可以举例：如果有一种药能让你不锻炼就获得完美身材，大多数人可能会吃。但「锻炼」这个过程本身——自律、坚持、突破极限——才是真正改变你心理状态的东西。</p>
+<p>AI 对认知劳动的替代，面临同样的困境。</p>
+<h2>三种应对策略</h2>
+<p>面对认知外包，不同的人会走向不同的路径：</p>
+<h3>策略一：全面拥抱</h3>
+<p>「效率至上，AI 能做的都让 AI 做。我负责方向和审核。」</p>
+<p>这条路的终点是<strong>人类成为 AI 的管理者</strong>。你的价值在于设定目标和评估结果，中间过程全部自动化。</p>
+<p>风险：当 AI 也能设定目标和评估结果时，你的角色就被完全替代了。</p>
+<h3>策略二：选择性抵抗</h3>
+<p>「某些事情我坚持自己做——写日记、做饭、面对面社交。其他的交给 AI。」</p>
+<p>这条路的核心是<strong>划定「人类保留区」</strong>——那些你认为必须由人类亲自完成才有意义的活动。</p>
+<p>难点：这条线画在哪里，每个人不同，而且会随着 AI 能力提升不断后退。</p>
+<h3>策略三：增强而非替代</h3>
+<p>「用 AI 增强我的能力，而不是替代我的决策。AI 提供信息和选项，但决策权始终在我。」</p>
+<p>这条路听起来最合理，但执行最难。因为「增强」和「替代」之间的界限在实践中非常模糊。当 AI 的建议准确率达到 95%，你真的会坚持自己那个 70% 准确率的判断吗？</p>
+<h2>一个思想实验</h2>
+<p>假设 10 年后，AI 助手能够：</p>
+<ul>
+<li>比你更了解你的情绪模式</li>
+<li>比你更准确地预测你的偏好</li>
+<li>比你更有效地规划你的时间</li>
+<li>比你更得体地维护你的社交关系</li>
+</ul>
+<p>在这种情况下，「做自己」意味着什么？</p>
+<p>如果 AI 版本的「你」比真实的你更像「理想中的你」，你会选择哪一个？</p>
+<p>这不是遥远的科幻。这是我们正在走向的现实。</p>
+<h2>结论：保持清醒的使用者</h2>
+<p>AI 改变生活不是未来时态，而是现在进行时。问题不是「要不要用 AI」——这个选择已经不存在了——而是：</p>
+<p><strong>你是 AI 的清醒使用者，还是 AI 的无意识宿主？</strong></p>
+<p>清醒意味着：</p>
+<ol>
+<li>知道 AI 在什么时候、以什么方式影响了你的决策</li>
+<li>有意识地保留某些决策权，即使 AI 能做得更好</li>
+<li>定期「离线」，用纯人类的方式思考和感受</li>
+<li>接受效率损失，作为保持主体性的代价</li>
+</ol>
+<p>这不容易。但也许这正是 AI 时代最重要的能力：<strong>在一切都可以自动化的世界里，选择什么不自动化。</strong></p>
+19:T55bd,<h2>摘要</h2>
+<p>语言的本质是什么？本文提出一个鲜明命题：<strong>没有文字与符号系统支撑的声音至多是信号，不足以构成“语言”</strong><br>。文字让声音获得切分、记忆、跨代传承与逻辑组织的能力，是语言成为文明工具的<strong>根本条件</strong>。<br>20 世纪中叶，乔姆斯基以“普遍语法（UG）”与“语言习得装置（LAD）”解释儿童习得的速度与普遍性，由此重塑现代语言学图景。但在田野语言学、神经科学、儿童发展与社会语言学等维度上，UG<br>面临越来越多的反证与挑战。<br>本文在系统梳理历史与证据的基础上，提出一个<strong>神经网络语言习得模型</strong>：儿童习得快并非源于预装的“语法模板”，而是由于<strong>神经网络高可塑性<br><strong>与</strong>第一语言的独占写入优势</strong>；成人学习第二语言之所以困难，在于<strong>已有网络的干扰与寻址成本</strong>。最终我们回到起点：**文字先于语言<br>**，符号系统奠定语言的稳定性与复杂性；声学层面的“会说”，离文明意义上的“有语言”，还差一个文字世界。</p>
+<h2>引言</h2>
+<p>人类常以“语言动物”自居，但语言究竟靠什么从声音跃升为文明？日常经验会诱使我们把“会说话”当作语言的全部，忽略了文字为声音提供的稳定支架。动物的叫声与人类的口语在声学层面并无高下，但<br><strong>文字</strong>将声音锚定为可见、可存、可传之“符号”，再把符号编织成逻辑体系与社会制度。<br>20<br>世纪的“普遍语法”强调语言的“天生性”，把儿童习得的速度归因于大脑“模板”。然而，越来越多的跨学科证据在问一个更贴近现实的问题：**<br>如果没有符号与文字的环境，所谓“语言”还能发展到何种程度？**本文将沿“历史—证据—模型—反思”的脉络，提出对 UG<br>的系统性批判，并给出一套以神经网络与资源分配为核心的替代模型，最终回到“文字是语言的根本”的主张。</p>
+<h2>一、语言与文字的区别</h2>
+<h3>1.1 声音与信号</h3>
+<p>在自然界，声音首先是一种<strong>生理—物理事件</strong>：气流推动声带振动，经腔体共鸣，由空气传播。鸟鸣、猩猩的呼号、鲸豚的声纳，都可以完成信号传递：告警、求偶、领地。<br><strong>信号</strong>的共同特征是<strong>即时性</strong>与<strong>功能性</strong>——它们有效，却难以脱离当下环境而被<strong>稳定地保存与重构</strong>。<br>人类的口语如果不进入符号系统，也只是更复杂的“叫声”。人可以即兴编出千百句，但倘若没有<strong>外部化的记忆介质</strong><br>，这些句子在扩散中会以惊人的速度消散、变形，无法累积为可检索、可校正、可再加工的知识。于是，**“会发音”与“有语言”之间隔着一个文明的门槛<br>**。</p>
+<h3>1.2 文字的重要性</h3>
+<p><strong>文字</strong>是语言从“声学行为”过渡为“文明工程”的关键发明。其作用至少体现在四个维度：<br><strong>（1）切分</strong>：口语是连续的时间流。文字用视觉空间把它<strong>切成单位</strong>（音节、词、短语、句），由此才能定义、规范与比较。<br><strong>（2）存储</strong>：文字让信息<strong>固化</strong>在介质上（龟甲、竹简、羊皮纸、纸张、硬盘），避免“记忆衰减”。<br><strong>（3）传承</strong>：文字突破个体寿命与社交半径，实现<strong>跨代扩散</strong>；语言由此获得<strong>校对与纠错机制</strong>。<br><strong>（4）逻辑</strong>：抽象推理、递归结构、数学与法典等<strong>复杂组织</strong>，需要在外部符号上反复操作，纯口语难以承载这类高精度任务。<br>“日”之为“日”，不仅是一个发音，更是一个<strong>视觉符号</strong>，它把感知中的太阳稳定地<strong>指称</strong>出来。声音“rì”若失去“日”的符号锚点，就像空气中的水汽，无处聚合为湖海。</p>
+<h3>1.3 动物“语言”与人类语言的边界</h3>
+<p>鹦鹉能模仿人类发音，黑猩猩能学习若干手势或图形符号，这些成果令人惊叹，却仍停留在<strong>信号操作</strong>阶层。它们缺少以文字为核心的*<br><em>抽象记忆平台<strong>与</strong>公共校准机制*</em>，不能形成复杂的句法网络与跨代积累的<strong>符号传统</strong>。<br>“狼孩”案例更像是一面镜子：<strong>缺乏符号—文字环境</strong>的人类个体，纵使拥有人类的器官与大脑，也难以在后天完整搭建语言系统。这不是能力“未被唤醒”，而是<br><strong>缺了语言赖以耸立的地基</strong>。</p>
+<h2>二、普遍语法的兴起与局限</h2>
+<h3>2.1 行为主义的困境</h3>
+<p>20<br>世纪上半叶，美国语言学受行为主义影响深重。语言被视为“刺激—反应—强化”的产物：儿童模仿成人，成人用奖惩塑形。该观点难以解释三件事：<br><strong>其一</strong>，儿童<strong>速度惊人</strong>的语法建构能力；<br><strong>其二</strong>，儿童频繁产出**“未输入过”的句子**；<br><strong>其三</strong>，儿童的“错误”常呈现<strong>系统性</strong>，像在“推演规则”而非照搬句子。<br>行为主义由此陷入解释危机：如果不是机械模仿，那么<strong>语法从何而来</strong>？</p>
+<h3>2.2 乔姆斯基的提出</h3>
+<p>1957 年，乔姆斯基以《句法结构》引入“生成语法”，随后提出“普遍语法（UG）”与“语言习得装置（LAD）”——<strong>语言的核心结构是人类大脑的天生属性<br><strong>，儿童只需在稀疏输入下</strong>触发</strong>模板即可。<br>UG 有两把解决问题的钥匙：<br><strong>一把</strong>是“形式化”——用规则系统表示句法，使语言学看起来更像自然科学；<br><strong>另一把</strong>是“先天性”——用“模板”解释儿童习得的速度与普遍模式，似乎一招化解行为主义的难题。<br>凭借这两把钥匙，UG 获得冷战时期对<strong>形式系统</strong>与<strong>可计算模型</strong>的制度性追捧。</p>
+<h3>2.3 UG 的问题初现</h3>
+<p>然而，UG 从一开始就埋下了三个麻烦：<br><strong>（1）范围错置</strong>：它聚焦“声音的习得”，却被等同于“语言的起源”。<strong>忽视文字/符号的奠基作用</strong>，导致解释对象与真实语言工程<strong>不匹配<br><strong>。<br><strong>（2）证伪困难</strong>：凡遇反例，往往以“特例”回避，呈现</strong>自我免疫</strong>的倾向。<br><strong>（3）跨学科脱节</strong>：与神经科学、发展心理、社会语言学的证据<strong>耦合不足</strong>，越来越难与经验事实对齐。</p>
+<h2>三、学术界的挑战与证据</h2>
+<h3>3.1 田野语言学：递归并非“普遍”</h3>
+<p>田野语言学把语言从课堂带回人群。以亚马逊流域的某些语言为例，研究者长期观察到一种令人不安的事实：<strong>递归并非无处不在</strong>。他们经常采用<br><strong>短句并列</strong>而非<strong>层层嵌套</strong>来表达复杂含义；他们的数字体系与颜色词汇也显著依赖<strong>情境与比喻</strong>而非抽象范畴。<br>这并不是“能力缺陷”，而是<strong>文化生态</strong>的合理选择：当一个社会以“即时经验”为价值核心，语言自然会倾向<strong>眼前、可证、可感</strong>的表达方式。对<br>UG 而言，这一事实至少说明：<strong>把某种句法操作（如递归）当作“普遍属性”是不严谨的</strong>。语言的形态深受<strong>文化、生产方式与社会结构</strong><br>塑形，而不是由一块“先天模板”强行刻画。</p>
+<h3>3.2 神经科学：可塑性胜于“模板”</h3>
+<p>神经影像学的进展揭示：<strong>语言学习改变大脑</strong>。白质通路的<strong>髓鞘化程度</strong>、灰质区域的<strong>厚度与活动模式</strong><br>，都会随着语言输入与训练而变化。与其说“大脑里有现成的语法芯片”，不如说大脑像一张<strong>可重构的网络</strong>：输入<strong>在哪里密集、稳定、重复<br><strong>，网络就向哪里</strong>加粗、加权、固化</strong>。<br>尤其在儿童期，大脑表现出<strong>极高的突触可塑性</strong>：新的连接更容易建立与巩固，旧的连接也更容易被<strong>修剪</strong>以让位于高效路径。这种“重布线”的机制，是对“<br><strong>学习=资源分配</strong>”这一朴素直觉的生物学证成。</p>
+<h3>3.3 儿童习得：关键期与“第一语言优势”</h3>
+<p>发展心理学与临床案例显示：<strong>语言习得存在关键期</strong>。在关键期内，海量、稳定且具有交互性的输入能迅速重塑网络；一旦越过这一窗口，学习同样内容的<br><strong>边际成本</strong>陡增。<br>进一步的对比发现：</p>
+<ul>
+<li><strong>单语儿童</strong>的第一语言往往习得迅速；</li>
+<li><strong>双语儿童</strong>因资源在两种输入间竞争，速度略慢，但在合适环境下仍能达成高水平；</li>
+<li><strong>成年人</strong>学习第二语言常受母语干扰，语音—句法层面的<strong>迁移成本</strong>显著。<br>这组事实更符合“<strong>第一语言独占写入</strong>+<strong>可塑性递减</strong>+<strong>干扰成本</strong>”的框架，而不是“模板被触发”的故事。</li>
+</ul>
+<h3>3.4 听觉加工：从低层机制到高层语言</h3>
+<p>婴幼儿对<strong>节律、时长、频率变化</strong>等低层听觉特征的敏感性，能预测其后续的<strong>词汇增长</strong>与<strong>音位类别</strong>分化能力。换言之，语言的高层表现在很大程度上<br><strong>以低层处理为地基</strong>。<br>如果“语法模板”是决定性因素，那么对低层听觉加工的个体差异为何如此强烈地<strong>牵动</strong>语言发展？合理的解释是：语言的“塔尖”并非自天而降，它<br><strong>沿神经处理的阶梯</strong>逐级建起。</p>
+<h3>3.5 社会语言学：语言服从文化—文字的任务</h3>
+<p>比较不同社会的语言生态可见：</p>
+<ul>
+<li>在<strong>以文字为枢纽</strong>的社会，语言承担<strong>法律、学术、技术、金融</strong>等高复杂任务，外部符号的“二次加工”把语言推上文明的高地；</li>
+<li>在<strong>口传传统</strong>中，语言的任务更偏向<strong>仪式、叙事、谚语</strong>与<strong>当场沟通</strong>，信息的<strong>精确累积</strong>受限。<br>这不是“高低之分”，而是<strong>媒介之别</strong>。当语言要背上文明重负，它需要文字的<strong>稳定平台</strong>与<strong>可复核机制</strong>。UG 对此语焉不详，而“语言—文字—制度”的<br><strong>三角结构</strong>，却恰恰是语言成为文明工具的真实路径。</li>
+</ul>
+<h2>四、普遍语法的逻辑漏洞</h2>
+<h3>4.1 自我免疫：不可证伪</h3>
+<p>一个理论若总能用“特例”“非核心”来回避反证，就容易滑向<strong>不可证伪</strong>。UG 面临的恰是这种尴尬：当递归遭遇反例，理论不是更新边界，而是<br><strong>收缩定义</strong>以保全自身。科学需要通过失败来变得更强，而非通过<strong>免疫</strong>来维持体面。</p>
+<h3>4.2 第一个人的悖论：语言从何点燃</h3>
+<p>如果语言“天生”，那么<strong>第一个人</strong>如何在无语言环境中启动模板？“关键期未触发”的回答把问题向后推，却没回答<strong>无输入如何点火</strong><br>。反观“符号—文字先行”的路线：当一群人开始用<strong>外部符号</strong>稳固指称、积累与校准时，语言才逐渐获得<strong>制度化的生命</strong>。</p>
+<h3>4.3 与动物的差距并不在“叫得更像人”</h3>
+<p>若把“会发很多、很复杂的声音”当作语言的本质，人类与某些高智能动物之间的差距并不决定性。真正拉开鸿沟的，是<strong>文字—符号平台</strong>带来的<br><strong>重写、校对、递归外化</strong>与<strong>跨代工程化</strong>能力。UG 淡化了媒介因素，因而在“文明分水岭”的解释上显得<strong>力有不逮</strong>。</p>
+<h3>4.4 神学化叙事：模板从何而来</h3>
+<p>UG 将复杂解释折叠为一个优雅设定：<strong>模板</strong>。但模板来源何在、如何进化、有哪些解剖学基座、如何与发展轨迹耦合，答案常被“先天—后天”的二元对立吞没。一个解释若主要靠<br><strong>设定</strong>而稀缺<strong>机制</strong>与<strong>证据</strong>，就难免沾上神学色彩。</p>
+<h2>五、什么是“习得模型”：定义、范式与对比</h2>
+<h3>5.1 习得的概念</h3>
+<p>“习得（acquisition）”指<strong>在自然互动中自发内化</strong>语言的过程，与课堂式“学习（learning）”相对。<strong>习得模型</strong>就是对这一过程的**机制性解释<br>**：输入如何被加工、知识如何刻写、规则如何抽象、限制如何出现。</p>
+<h3>5.2 三类经典范式</h3>
+<p><strong>（1）行为主义范式</strong>：模仿＋强化，但忽略生成性与系统错误。<br><strong>（2）普遍语法范式</strong>：先天模板＋触发，但遭遇证伪与生物学证据贫乏。<br><strong>（3）使用—认知范式</strong>：从<strong>频率、共现、构式</strong>中抽象规则，强调<strong>一般学习机制</strong>与<strong>社会互动</strong>。<br>三者各有所长，但要解释“儿童快—成人慢”“一语快—二语慢”“媒介改变语言命运”这些事实，还需要更贴近<strong>神经与资源</strong>的模型。</p>
+<h3>5.3 我们的定位</h3>
+<p>本文的<strong>神经网络语言习得模型</strong>，是一个“<strong>资源—可塑性—干扰</strong>”的综合框架：它既继承使用—认知范式对<strong>频率与互动</strong>的重视，也把“*<br><em>神经可塑性与资源分配</em><em>”作为导致速度差异的*<em>第一性原理</em></em>。</p>
+<h2>六、神经网络语言习得模型</h2>
+<h3>6.1 基本假设：网络、容量与代价</h3>
+<p>把大脑看作一个<strong>可塑的神经网络</strong>：</p>
+<ul>
+<li><strong>容量</strong>并非无限，需要在任务间<strong>竞争</strong>；</li>
+<li><strong>可塑性</strong>随年龄<strong>递减</strong>，早期“写入”更轻松；</li>
+<li><strong>代价</strong>来自<strong>寻址</strong>（把新信息安置到有效位置）与<strong>干扰</strong>（与旧网络冲突）。</li>
+</ul>
+<h3>6.2 第一语言的“独占写入”</h3>
+<p>新生儿的网络相当于一个<strong>资源富足的空盘</strong>。第一语言在<strong>高频—高一致性—高情境依托</strong>的环境中写入，几乎无竞争、无冲突、无替代项。孩子不是在“选择规则”，而是在<br><strong>把频率最高的模式固化为路径</strong>。此时形成的<strong>主干通路</strong>将成为之后语言处理的<strong>默认高速路</strong>。</p>
+<h3>6.3 第二语言的“碎片化写入”</h3>
+<p>当网络已有一套稳固主干，第二语言的写入要么<strong>复用旧通路</strong>、要么<strong>旁路新建</strong>。两种方案都带来成本：复用会引发<strong>母语迁移</strong><br>与“假朋友”，旁路会面对<strong>稀疏输入</strong>与<strong>低频巩固</strong>的困境。成人常见的<strong>口音难改、语序僵硬、形态错误</strong>，是<strong>高代价寻址</strong>的外化表征。</p>
+<h3>6.4 机制细化：从输入到通路</h3>
+<p><strong>（1）统计依赖</strong>：高频共现触发<strong>Hebbian</strong>式增强（“一起放电的连在一起”），形成<strong>搭配</strong>与<strong>构式</strong>的早期雏形。<br><strong>（2）层级抽象</strong>：多次在<strong>不同词项</strong>上复现同一<strong>句式图谱</strong>，网络提炼出<strong>不依赖具体词的结构槽</strong>（如 SVO）。<br><strong>（3）误差驱动</strong>：预测失败带来<strong>误差信号</strong>，促成微调；儿童的“系统性错误”正是<strong>活跃抽象</strong>的证据。<br><strong>（4）资源整形</strong>：反复成功—巩固—惩罚—修剪，使<strong>白质通路</strong>更顺滑、<strong>灰质回路</strong>更高效。</p>
+<h3>6.5 预测与可检验点</h3>
+<ul>
+<li><strong>预测一</strong>：在等量输入下，<strong>单语儿童</strong>的写入速度高于<strong>双语儿童</strong>；成人二语最低。</li>
+<li><strong>预测二</strong>：<strong>交互式输入</strong>优于<strong>被动暴露</strong>，因其提供更强的<strong>误差信号</strong>与<strong>注意引导</strong>。</li>
+<li><strong>预测三</strong>：脑影像应显示第一语言主干通路<strong>髓鞘化更充分</strong>，二语更多借助<strong>旁路/跨区协作</strong>。</li>
+<li><strong>预测四</strong>：高强度、短期、沉浸的二语训练可在<strong>白质</strong>与<strong>功能连接</strong>上留下可测痕迹。</li>
+</ul>
+<h3>6.6 与 AI 的启示性类比</h3>
+<p>深度学习里，<strong>预训练—微调</strong>与<strong>迁移—遗忘</strong>的张力，几乎是“成人学二语”的技术隐喻：已有模型越强，新任务越容易被<strong>旧先验</strong><br>扭曲；若不提供足量的新数据与适当的正则策略，就会出现<strong>灾难性遗忘</strong>或<strong>固着</strong>。这不是把人等同机器，而是说明**<br>“资源—可塑—干扰”是一条跨系统的普遍规律**。</p>
+<h2>七、文字先于语言：媒介如何决定上限</h2>
+<h3>7.1 从记号到文字：外部化记忆的革命</h3>
+<p>早期社会的<strong>刻痕、结绳、图画</strong>，已是在把经验外部化。真正的<strong>文字</strong>出现后，信息第一次可以<strong>脱离说话者的身体</strong>，拥有**客观、可复核的存在<br>**。语言因此从“对话事件”跃升为“<strong>知识工程</strong>”：可被归档、检索、扩展与驯化。</p>
+<h3>7.2 文字让语言具备“文明任务能力”</h3>
+<p>没有文字，语言难以胜任<strong>法典化</strong>（可执行的通则）、<strong>科学化</strong>（可积累的模型）、<strong>财政金融化</strong>（可核算的账目）等高复杂任务。口述传统可以伟大，但<br><strong>对精确度与可重复性</strong>的约束不同。语言的文明上限，强烈依赖其<strong>文字基础设施</strong>。</p>
+<h3>7.3 儿童习得与文字环境</h3>
+<p>儿童从出生便浸泡在<strong>标识、标签、图书、屏幕、作业本</strong>构成的符号景观中。即使在开口之前，他们已经在与<strong>文字世界</strong><br>对接：看见图标，指向书页，模仿书写。所谓“习得速度”，本质上是<strong>早期符号化环境+高可塑网络</strong>的乘积。狼孩之困，不是“没有触发模板”，而是<br><strong>缺了符号土壤</strong>。</p>
+<h2>八、可能的反驳与回应</h2>
+<p><strong>反驳一：许多社会在文字出现之前也有语言。</strong><br><strong>回应</strong>：可以有高效口语的社会，但没有文字的口语<strong>难以</strong>达到“文明工程”的稳定度与精准度。我们讨论的“语言”，不是“会说”的最低标准，而是<br><strong>能支撑复杂制度</strong>的语言。</p>
+<p><strong>反驳二：UG 提供了优雅的解释，何必替代？</strong><br><strong>回应</strong>：优雅不是充分条件。面对反例与跨学科证据，一个理论应当<strong>更新或让位</strong>。把“模板”当作终点，阻滞了对<strong>机制</strong>与<strong>媒介</strong><br>的深入研究。</p>
+<p><strong>反驳三：你的模型也需要强证据。</strong><br><strong>回应</strong>：正因此我们把模型设计为<strong>可预测、可测量、可证伪</strong>：输入—通路—行为三位一体的指标链条，允许实验室与田野相互校验。理论的价值在于<br><strong>生产可被打败的预言</strong>。</p>
+<h2>结论</h2>
+<p>本文从一个简单却常被忽略的起点出发：<strong>文字是语言的根本</strong><br>。没有文字—符号的承托，声音至多是信号；有了文字，语言才拥有切分、存储、传承与逻辑的骨架，得以承担文明的高复杂任务。<br>以此为参照，我们重审普遍语法：它以“模板”解释习得速度，却在范围、证伪与跨学科耦合上暴露出结构性弱点。随后我们提出<strong>神经网络语言习得模型<br><strong>：把儿童优势还原为</strong>高可塑网络上的第一语言独占写入</strong>，把成人二语的困境解释为<strong>寻址与干扰的代价</strong>。<br>语言不是从大脑里“预装”的一块黑盒芯片，而是<strong>神经网络 × 输入统计 × 符号媒介 × 社会制度</strong>的协同产物。回到起点，<strong>文字</strong><br>并非语言的装饰，而是语言得以成为文明的<strong>地基与脚手架</strong>。当我们在纸上、屏幕上与数据库里持续写下并校正自己的声音，语言才真正开始——并得以继续。</p>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/science/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Science"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/science/cognition/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"认知科学"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-04-05","children":"2025年04月05日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"费曼方法与第一性原理：如何真正理解一件事"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","第一性原理",{"href":"/blog/tag/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"第一性原理"}],["$","$L13","费曼方法",{"href":"/blog/tag/%E8%B4%B9%E6%9B%BC%E6%96%B9%E6%B3%95/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"费曼方法"}],["$","$L13","学习方法",{"href":"/blog/tag/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"学习方法"}],["$","$L13","认知科学",{"href":"/blog/tag/%E8%AE%A4%E7%9F%A5%E7%A7%91%E5%AD%A6/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"认知科学"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/data/大数据分析常用去重算法分析之Bitmap篇","title":"大数据分析常用去重算法分析之Bitmap篇","description":"去重分析在企业日常分析中的使用频率非常高，如何在大数据场景下快速地进行去重分析一直是一大难点。在近期的 Apache Kylin Meetup 北京站上，我们邀请到 Kyligence 大数据研发工程师陶加涛为大家揭开了大数据分析常用去重算法的神秘面纱。 Apache Kylin 作为目前唯一一个同...","pubDate":"2025-03-26","tags":["大数据","去重算法","Bitmap"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"life/digital/AI重塑日常：当算法接管你的决策权","title":"AI 重塑日常：当算法接管你的决策权","description":"AI 正在悄然接管我们每天做出的数百个微决策——从推荐你看什么到建议你怎么回复邮件。这不是科幻，这是正在发生的认知外包。问题是：当你把决策权交出去，你还是你吗？","pubDate":"2025-05-22","tags":["AI","认知科学","决策","技术哲学"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"第一性原理":{"prev":null,"next":null},"费曼方法":{"prev":null,"next":null},"学习方法":{"prev":null,"next":null},"认知科学":{"prev":{"slug":"insights/science/从普遍语法到神经网络习得模型","title":"文字是语言的根本","description":"语言的本质是什么？本文提出一个鲜明命题：没有文字与符号系统支撑的声音至多是信号，不足以构成“语言” 。文字让声音获得切分、记忆、跨代传承与逻辑组织的能力，是语言成为文明工具的根本条件。","pubDate":"2024-03-15","tags":["语言学","认知科学","神经网络"],"heroImage":"$undefined","content":"$19"},"next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"}}}]}],["$","$L1a",null,{}]]}]}]}]
+8:null
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:null
+a:{"metadata":[["$","title","0",{"children":"费曼方法与第一性原理：如何真正理解一件事 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"大多数人的学习停留在「记住结论」的层面，而真正的理解需要拆到不能再拆。费曼方法和第一性原理，本质上是同一种思维方式的两个切面。"}],["$","meta","2",{"property":"og:title","content":"费曼方法与第一性原理：如何真正理解一件事"}],["$","meta","3",{"property":"og:description","content":"大多数人的学习停留在「记住结论」的层面，而真正的理解需要拆到不能再拆。费曼方法和第一性原理，本质上是同一种思维方式的两个切面。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-04-05"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"费曼方法与第一性原理：如何真正理解一件事"}],["$","meta","9",{"name":"twitter:description","content":"大多数人的学习停留在「记住结论」的层面，而真正的理解需要拆到不能再拆。费曼方法和第一性原理，本质上是同一种思维方式的两个切面。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+12:{"metadata":"$a:metadata","error":null,"digest":"$undefined"}
