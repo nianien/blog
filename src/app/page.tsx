@@ -1,67 +1,58 @@
 import Link from 'next/link';
-import { getAllPosts, getPostsByCategory, getAllCategories } from '@/lib/blog';
-import { CATEGORY_META, MAIN_CATEGORIES } from '@/lib/categories';
+import { getAllPosts, getFeaturedPosts } from '@/lib/blog';
 import BlogCard from '@/components/BlogCard';
 
 export default function Home() {
-  const latestPosts = getAllPosts().slice(0, 6);
-  const categories = getAllCategories();
+  const featuredPosts = getFeaturedPosts();
+  const hasFeatured = featuredPosts.length > 0;
 
-  // 计算每个主分类的文章数
-  const mainCounts: Record<string, number> = {};
-  for (const cat of categories) {
-    mainCounts[cat.main] = (mainCounts[cat.main] || 0) + cat.count;
-  }
+  const featuredSlugs = new Set(featuredPosts.map(p => p.slug));
+  const allLatest = getAllPosts().filter(p => !featuredSlugs.has(p.slug));
+
+  const heroPost = !hasFeatured ? allLatest[0] : null;
+  const gridPosts = hasFeatured
+    ? allLatest.slice(0, 6)
+    : allLatest.slice(1, 9);
 
   return (
     <div className="bg-[var(--background)]">
-      {/* Four quadrants section */}
+      {/* Hero title */}
       <div className="mx-auto max-w-7xl px-6 pt-8 sm:pt-12 lg:px-8">
         <h1 className="text-center text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-10">
           Think ahead, see beyond
         </h1>
-        <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-          {MAIN_CATEGORIES.map((key) => {
-            const meta = CATEGORY_META[key];
-            const count = mainCounts[key] || 0;
-            // 每个板块取最新 1 篇文章作为预览
-            const preview = count > 0 ? getPostsByCategory(key).slice(0, 1) : [];
-            return (
-              <Link
-                key={key}
-                href={`/blog/category/${key}/page/1`}
-                className="group relative flex flex-col rounded-2xl border border-gray-200 p-6 hover:border-blue-300 hover:shadow-lg transition-all duration-200"
-              >
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                  {meta?.name || key}
-                </h3>
-                <p className="mt-2 text-sm text-gray-500 flex-auto">
-                  {meta?.description || ''}
-                </p>
-                {preview.length > 0 && (
-                  <p className="mt-4 text-xs text-gray-400 line-clamp-2 border-t border-gray-100 pt-3">
-                    最新: {preview[0].title}
-                  </p>
-                )}
-                <div className="mt-3 flex items-center justify-between">
-                  <span className="text-xs text-gray-400">{count} 篇文章</span>
-                  <span className="text-sm text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
-                    &rarr;
-                  </span>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
       </div>
 
-      {/* Latest posts section */}
-      <div className="mx-auto mt-24 max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">最新文章</h2>
+      {/* Featured posts (only when configured) */}
+      {hasFeatured && (
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="rounded-2xl bg-gray-50 px-8 py-10">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900">精选文章</h2>
+            <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-3">
+              {featuredPosts.map((post) => (
+                <BlogCard key={post.slug} post={post} />
+              ))}
+            </div>
+          </div>
         </div>
-        <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {latestPosts.map((post) => (
+      )}
+
+      {/* Hero card (time-flow fallback) */}
+      {heroPost && (
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <BlogCard post={heroPost} />
+          </div>
+        </div>
+      )}
+
+      {/* Latest posts */}
+      <div className="mx-auto mt-20 max-w-7xl px-6 lg:px-8">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+          {hasFeatured ? '最新发布' : '更多文章'}
+        </h2>
+        <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-3">
+          {gridPosts.map((post) => (
             <BlogCard key={post.slug} post={post} />
           ))}
         </div>
@@ -70,7 +61,7 @@ export default function Home() {
             href="/blog"
             className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
           >
-            查看所有文章
+            查看全部文章 &rarr;
           </Link>
         </div>
       </div>

@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 import { BlogPost, NavigationInfo, BlogPostWithNavigation, Category } from '@/types/blog';
 import { CATEGORY_META, DIR_TO_VIRTUAL } from '@/lib/categories';
+import { FEATURED_SLUGS } from '@/lib/featured';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/blog');
 
@@ -86,6 +87,18 @@ export function getAllPosts(): BlogPost[] {
   });
 
   return allPostsData.sort(sortByDateAndTitle);
+}
+
+// 根据集中配置返回精选文章；配置为空时返回空数组，由首页回退到时间流
+export function getFeaturedPosts(): BlogPost[] {
+  if (FEATURED_SLUGS.length === 0) return [];
+
+  const allPosts = getAllPosts();
+  const postMap = new Map(allPosts.map(p => [p.slug, p]));
+
+  return FEATURED_SLUGS
+    .map(slug => postMap.get(slug))
+    .filter((p): p is BlogPost => p != null);
 }
 
 export function getPostBySlug(slug: string): BlogPost | null {
