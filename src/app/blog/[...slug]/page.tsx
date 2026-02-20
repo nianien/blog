@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
 import { zhCN } from 'date-fns/locale';
-import { getPostWithNavigation } from '@/lib/blog';
+import { getPostWithNavigation, getCategoryFromSlug } from '@/lib/blog';
+import { CATEGORY_META } from '@/lib/categories';
 import SyntaxHighlightedContent from '@/components/SyntaxHighlightedContent';
 import BlogPostNavigation from '@/components/BlogPostNavigation';
 import GiscusComments from '@/components/GiscusComments';
@@ -71,12 +72,43 @@ export default async function BlogPostPage({
 
   const { post, globalNav, tagNav } = postData;
 
+  // 分类面包屑
+  const categoryPath = getCategoryFromSlug(post.slug);
+  const categoryParts = categoryPath.split('/');
+  const mainCategory = categoryParts[0];
+  const mainMeta = CATEGORY_META[mainCategory];
+  const subMeta = CATEGORY_META[categoryPath];
+
   return (
     <article className="min-h-screen">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
         <div className="rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12">
           {/* 文章头部信息 */}
           <header className="mb-8">
+            {/* 分类面包屑 */}
+            <nav className="flex items-center gap-1 text-sm mb-4">
+              <Link href="/blog/page/1" className="text-gray-500 hover:text-blue-600 transition-colors">
+                博客
+              </Link>
+              <span className="text-gray-300">/</span>
+              <Link
+                href={`/blog/category/${mainCategory}/page/1`}
+                className="text-gray-500 hover:text-blue-600 transition-colors"
+              >
+                {mainMeta?.name || mainCategory}
+              </Link>
+              {categoryParts.length > 1 && subMeta && (
+                <>
+                  <span className="text-gray-300">/</span>
+                  <Link
+                    href={`/blog/category/${categoryPath}/page/1`}
+                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    {subMeta.name}
+                  </Link>
+                </>
+              )}
+            </nav>
             <div className="flex items-center mb-6">
               <div className="inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal">
                 <svg className="w-4 h-4 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

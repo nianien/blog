@@ -1,5 +1,6 @@
-import { getAllPosts, getAllTags } from '@/lib/blog';
+import { getAllPosts } from '@/lib/blog';
 import BlogCard from '@/components/BlogCard';
+import CategoryNav from '@/components/CategoryNav';
 import Link from 'next/link';
 
 const POSTS_PER_PAGE = 18;
@@ -14,7 +15,6 @@ export default async function BlogPage({ params }: { params: Promise<{ page: str
   const resolvedParams = await params;
   const currentPage = resolvedParams.page ? parseInt(resolvedParams.page) : 1;
   const allPosts = getAllPosts();
-  const tags = getAllTags();
   const totalPosts = allPosts.length;
   const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE);
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
@@ -35,26 +35,8 @@ export default async function BlogPage({ params }: { params: Promise<{ page: str
             共 {totalPosts} 篇文章
           </p>
         </div>
-        {/* Tags */}
-        <div className="mx-auto mt-8 max-w-4xl">
-          <div className="flex flex-wrap gap-2 justify-center">
-            <Link
-              href="/blog/page/1"
-              className="rounded-full bg-blue-600 px-3 py-1 text-sm font-medium text-white"
-            >
-              全部
-            </Link>
-            {tags.map((tag) => (
-              <Link
-                key={tag}
-                href={`/blog/tag/${encodeURIComponent(tag)}/page/1`}
-                className="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-700 hover:bg-gray-200"
-              >
-                {tag}
-              </Link>
-            ))}
-          </div>
-        </div>
+        {/* Category Navigation */}
+        <CategoryNav />
         {/* Posts grid */}
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
@@ -105,4 +87,4 @@ export default async function BlogPage({ params }: { params: Promise<{ page: str
       </div>
     </div>
   );
-} 
+}

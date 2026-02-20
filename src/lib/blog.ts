@@ -2,7 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import { BlogPost, NavigationInfo, BlogPostWithNavigation } from '@/types/blog';
+import { BlogPost, NavigationInfo, BlogPostWithNavigation, Category } from '@/types/blog';
+import { CATEGORY_META, DIR_TO_VIRTUAL } from '@/lib/categories';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/blog');
 
@@ -176,6 +177,59 @@ export function getPostWithNavigation(slug: string): BlogPostWithNavigation | nu
     globalNav,
     tagNav,
   };
+}
+
+// 从 slug 提取物理目录路径（前两段）
+function getPhysicalDir(slug: string): string {
+  const parts = slug.split('/');
+  if (parts.length >= 2) {
+    return `${parts[0]}/${parts[1]}`;
+  }
+  return parts[0];
+}
+
+// 从 slug 提取虚拟分类路径（经过 DIR_TO_VIRTUAL 映射）
+export function getCategoryFromSlug(slug: string): string {
+  const physicalDir = getPhysicalDir(slug);
+  return DIR_TO_VIRTUAL[physicalDir] || physicalDir;
+}
+
+// 返回所有分类及文章计数
+export function getAllCategories(): Category[] {
+  const posts = getAllPosts();
+  const countMap: Record<string, number> = {};
+
+  for (const post of posts) {
+    const categoryPath = getCategoryFromSlug(post.slug);
+    countMap[categoryPath] = (countMap[categoryPath] || 0) + 1;
+  }
+
+  return Object.entries(countMap).map(([path, count]) => {
+    const parts = path.split('/');
+    const main = parts[0];
+    const sub = parts[1] || '';
+    const meta = CATEGORY_META[path];
+    const mainMeta = CATEGORY_META[main];
+
+    return {
+      path,
+      main,
+      sub,
+      name: meta?.name || sub || main,
+      mainName: mainMeta?.name || main,
+      count,
+    };
+  });
+}
+
+// 按分类路径过滤文章（支持主分类和子分类）
+export function getPostsByCategory(categoryPath: string): BlogPost[] {
+  const posts = getAllPosts();
+  return posts.filter((post) => {
+    const postCategory = getCategoryFromSlug(post.slug);
+    // 精确匹配子分类，或前缀匹配主分类
+    return postCategory === categoryPath || postCategory.startsWith(categoryPath + '/');
+  });
 }
 
 // 保持向后兼容的旧函数

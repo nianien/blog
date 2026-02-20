@@ -7,40 +7,38 @@ const POSTS_PER_PAGE = 18;
 export async function generateStaticParams() {
   const tags = getAllTags();
   const params = [];
-  
+
   for (const tag of tags) {
     const posts = getPostsByTag(tag);
     const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
-    
+
     for (let page = 1; page <= totalPages; page++) {
       params.push({
-        tag: tag, // 不进行编码，让 Next.js 自己处理
+        tag: tag,
         page: String(page),
       });
     }
   }
-  
+
   return params;
 }
 
-export default async function TagPageWithPagination({ 
-  params 
-}: { 
-  params: Promise<{ tag: string; page: string }> 
+export default async function TagPageWithPagination({
+  params
+}: {
+  params: Promise<{ tag: string; page: string }>
 }) {
   const resolvedParams = await params;
   const { tag, page } = resolvedParams;
   const decodedTag = decodeURIComponent(tag);
   const currentPage = parseInt(page) || 1;
-  
+
   const allPostsForTag = getPostsByTag(decodedTag);
   const totalPosts = allPostsForTag.length;
   const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE);
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
   const posts = allPostsForTag.slice(startIndex, endIndex);
-  
-  const allTags = getAllTags();
 
   return (
     <div className="bg-[var(--background)] pt-8 pb-24 sm:pt-12 sm:pb-32">
@@ -52,31 +50,12 @@ export default async function TagPageWithPagination({
           <p className="mt-2 text-lg leading-8 text-gray-600">
             共 {totalPosts} 篇文章
           </p>
-        </div>
-
-        {/* Tags */}
-        <div className="mx-auto mt-8 max-w-2xl">
-          <div className="flex flex-wrap gap-2 justify-center">
-            <Link
-              href="/blog"
-              className="rounded-full bg-gray-100 px-3 py-1 text-sm font-medium text-gray-700 hover:bg-gray-200"
-            >
-              全部
-            </Link>
-            {allTags.map((tagName) => (
-              <Link
-                key={tagName}
-                href={`/blog/tag/${encodeURIComponent(tagName)}/page/1`}
-                className={`rounded-full px-3 py-1 text-sm font-medium ${
-                  tagName === decodedTag
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {tagName}
-              </Link>
-            ))}
-          </div>
+          <Link
+            href="/blog/page/1"
+            className="mt-4 inline-flex items-center text-sm text-blue-600 hover:text-blue-500"
+          >
+            &larr; 返回所有文章
+          </Link>
         </div>
 
         {/* Posts grid */}
@@ -104,7 +83,6 @@ export default async function TagPageWithPagination({
         {totalPages > 1 && (
           <div className="mx-auto mt-16 max-w-2xl">
             <div className="flex items-center justify-center space-x-2">
-              {/* Previous page */}
               {currentPage > 1 && (
                 <Link
                   href={`/blog/tag/${encodeURIComponent(decodedTag)}/page/${currentPage - 1}`}
@@ -113,8 +91,6 @@ export default async function TagPageWithPagination({
                   上一页
                 </Link>
               )}
-              
-              {/* Page numbers */}
               <div className="flex space-x-1">
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
                   <Link
@@ -130,8 +106,6 @@ export default async function TagPageWithPagination({
                   </Link>
                 ))}
               </div>
-              
-              {/* Next page */}
               {currentPage < totalPages && (
                 <Link
                   href={`/blog/tag/${encodeURIComponent(decodedTag)}/page/${currentPage + 1}`}
@@ -146,4 +120,4 @@ export default async function TagPageWithPagination({
       </div>
     </div>
   );
-} 
+}
