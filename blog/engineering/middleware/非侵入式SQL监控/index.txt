@@ -9,7 +9,7 @@ d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/fffdcdb4fb651185.css","style"]
-0:{"P":null,"b":"4aRcYmzY73SZxx_H909yZ","p":"","c":["","blog","engineering","middleware","%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8FSQL%E7%9B%91%E6%8E%A7",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8FSQL%E7%9B%91%E6%8E%A7","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8FSQL%E7%9B%91%E6%8E%A7","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","vCt6rvVzZIdljGpXHpIqnv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"wlOkUxTzHfxl8sQA11M8Z","p":"","c":["","blog","engineering","middleware","%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8FSQL%E7%9B%91%E6%8E%A7",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8FSQL%E7%9B%91%E6%8E%A7","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8FSQL%E7%9B%91%E6%8E%A7","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","kaZpW97F2j6Lecon0URhrv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
@@ -1190,74 +1190,590 @@ EOF
 <td><code>git archive HEAD -o out.zip</code></td>
 </tr>
 </tbody></table>
-18:T2144,<h2>一个缺失的词</h2>
-<p>在读这本书之前，我和大多数人一样，把世界分成两类：脆弱的和坚固的。系统要么经不起冲击，要么扛得住冲击。风险管理的目标就是把脆弱的东西变得坚固。</p>
-<p>塔勒布指出，这个二分法缺了最关键的一类。有些东西不仅扛得住冲击，而且<strong>在冲击中变得更强</strong>。他找遍了所有语言，发现没有现成的词来描述这种特性，于是造了一个：Antifragile，反脆弱。</p>
-<p>脆弱的反义词不是坚固，就像消极的反义词不是中性。坚固只是光谱的中间位置——它抵抗冲击但不从中获益。反脆弱在坚固的另一端，它需要波动、需要压力、需要混乱，才能保持活力。</p>
-<p>人体就是最典型的反脆弱系统。骨骼在承受压力后变得更致密，肌肉在撕裂后变得更强壮，免疫系统在接触病原体后变得更高效。如果你把一个人关在无菌、无重力、无压力的环境中「保护」起来，你会得到一个极度脆弱的人。</p>
-<p>这个框架一旦建立，你会发现它无处不在。作为一个长期做系统架构的人，我发现它对我的专业领域和个人生活都产生了深刻影响。</p>
-<h2>三元组：脆弱、坚固、反脆弱</h2>
-<p>塔勒布用一个三元组来分析几乎所有事物：</p>
+18:T5b1d,<blockquote>
+<p>多地多机房部署是互联网系统的必然发展方向。一个系统要走到这一步，必然要面对流量调配、数据拆分、网络延时、架构升级等一系列问题。本文从最简单的单机架构出发，沿着可用性不断提升的脉络，逐步推演出异地多活架构的完整面貌，并结合阿里单元化方案解析工业级落地实践。</p>
+</blockquote>
+<h2>为什么需要异地多活？</h2>
+<p>一个好的软件架构应当遵循三个核心原则：<strong>高性能、高可用、易扩展</strong>。其中，高可用通常用两个指标来衡量：</p>
 <table>
 <thead>
 <tr>
-<th>脆弱</th>
-<th>坚固</th>
-<th>反脆弱</th>
+<th>指标</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>大型集中式系统</td>
-<td>冗余备份系统</td>
-<td>分布式自适应系统</td>
+<td><strong>MTBF</strong>（Mean Time Between Failure）</td>
+<td>两次故障的间隔时间，越长说明系统越稳定</td>
 </tr>
 <tr>
-<td>单一收入来源</td>
-<td>稳定的工资</td>
-<td>杠铃式收入结构</td>
-</tr>
-<tr>
-<td>精确预测</td>
-<td>保险对冲</td>
-<td>从错误中学习的机制</td>
-</tr>
-<tr>
-<td>优化效率</td>
-<td>增加冗余</td>
-<td>保留可选择性</td>
+<td><strong>MTTR</strong>（Mean Time To Repair）</td>
+<td>故障恢复时间，越短说明对用户影响越小</td>
 </tr>
 </tbody></table>
-<p>这个三元组的价值在于，它让你<strong>诊断自己的系统处于光谱的哪个位置</strong>，然后有意识地向反脆弱方向移动。</p>
-<p>更深的洞见是：我们的文化几乎总在推动我们走向脆弱端。追求效率最大化、消除所有冗余、精确预测未来——这些看似理性的行为，恰恰是脆弱性的来源。</p>
-<h2>可选择性：反脆弱的核心机制</h2>
-<p>反脆弱的底层机制是什么？塔勒布给出了一个精炼的答案：<strong>可选择性（Optionality）</strong>。</p>
-<p>可选择性意味着：你的下行风险有限，但上行收益没有上限。这不是赌博——赌博是下行风险无限。可选择性是一种精心设计的不对称结构：坏的情况损失很小，好的情况获益很大。用金融术语说，你拥有的不是期货合约（被锁定），而是期权（有权利但没有义务）。</p>
-<p>这个概念改变了我看待技术决策的方式。过去做架构设计，我习惯性地追求「最优方案」。现在我意识到，<strong>最优方案往往是最脆弱的方案</strong>，因为它对初始假设的依赖最大。一旦环境变化，优化过的系统最先崩溃。</p>
-<p>更好的策略是保留可选择性：不要过早锁定技术栈，不要把所有逻辑耦合在一起，不要为了当前的效率牺牲未来的灵活性。软件工程中很多最佳实践——接口抽象、松耦合、插件化——本质上都是在创造可选择性，只是我们通常不用这个词来描述。</p>
-<h2>杠铃策略：极端保守 + 极端冒险</h2>
-<p>塔勒布最具操作性的建议是<strong>杠铃策略（Barbell Strategy）</strong>：不要走中间路线，而是同时做两个极端。</p>
-<p>把 85-90% 的资源放在极端保守的位置（零风险或近似零风险），然后把 10-15% 放在极端冒险的位置（高风险高回报）。完全跳过中间地带。</p>
-<p>为什么中间地带反而危险？因为中等风险给你一种虚假的安全感——你既没有真正的安全，也没有获得不对称收益的机会。</p>
-<p>这个思路映射到分布式系统设计非常直接。与其对所有服务采用统一的「中等容错」方案，不如对核心链路做到极端可靠（多机房多活、强一致性），对非核心链路采用极端简化（允许失败、最终一致性、快速降级）。在关键点做到极致，在其余点保持轻量。</p>
-<p>混沌工程（Chaos Engineering）也是杠铃策略的体现。Netflix 的 Chaos Monkey 在生产环境中随机杀死服务实例，看似制造了风险，实际上是在用可控的小压力来训练系统的反脆弱能力——主动引入波动，让系统在小规模失败中学习。</p>
-<p>在职业规划上，杠铃策略同样适用。与其追求「还不错」的中间态路径，不如让收入结构变成杠铃形：一端是极度稳定的基本收入（技术咨询、稳定合同），另一端是极度不确定但上行空间巨大的探索（开源项目、技术创业、内容创作）。即使探索端全部失败，稳定端保证你不会陷入困境；但只要有一个成功，回报可能远超预期。</p>
-<h2>切身利害：系统纠错的前提条件</h2>
-<p>塔勒布在后续的著作中进一步发展了一个概念：<strong>Skin in the Game（切身利害）</strong>。这个概念在《反脆弱》中已有雏形——他认为，一个系统要具备反脆弱性，决策者必须承担自己决策的后果。</p>
-<p>没有切身利害的决策系统是危险的。银行家用别人的钱冒险，成功了自己拿奖金，失败了纳税人买单——这就是结构性脆弱。决策者和风险承担者之间的分离，是脆弱性最深层的来源之一。</p>
-<p>这个观察对技术团队的启示很深。当架构师不需要参与运维，当产品经理不需要处理线上故障，当管理者不需要为技术债务付出代价时，系统就自然地滑向脆弱端。「谁设计，谁运维」不仅仅是 DevOps 的口号，它的深层逻辑是通过切身利害来驱动反脆弱性。亚马逊的「You build it, you run it」原则，本质上就在解决这个问题：让做决策的人承担决策的后果。</p>
-<h2>对个人生活的重新审视</h2>
-<p>读完这本书后，我开始重新审视自己的生活结构。</p>
-<p>我发现自己在很多方面都不自觉地追求「坚固」：稳定的工作、固定的收入、可预测的日程、熟悉的技术栈。这些不是坏事，但当所有的稳定性都依赖外部环境不变，我实际上是在和时间对赌。</p>
-<p>真正改变我思维的是塔勒布关于「压力源」的态度翻转。反脆弱思维认为，<strong>适度的压力源是系统保持活力的必要条件</strong>。没有压力的系统不是健康的，而是一个正在慢慢退化的系统。</p>
-<p>我开始有意识地给自己引入「可控的不确定性」：每年学一门新的编程语言或技术范式，定期换一种工作方式，尝试自己不擅长的领域。这不是为了「充电」或「自我提升」这种鸡汤式的理由，而是一种刻意的系统维护——通过小剂量的波动来避免大规模的脆弱性积累。</p>
-<h2>反脆弱的局限</h2>
-<p>公允地说，反脆弱框架在分析层面极其强大，但在操作层面有时过于模糊。「保留可选择性」说起来容易，具体到每一个决策点，什么算可选择性、代价多大才值得、什么时候该锁定而不是继续保留灵活性——这些塔勒布没有给出足够精确的回答。</p>
-<p>另外，并非所有系统都需要反脆弱——有些场景（核电站的安全系统、航天器的关键组件）需要的就是极致的坚固，而不是在波动中进化。</p>
-<h2>结语</h2>
-<p>《反脆弱》给我最大的收获不是一套方法论，而是一种<strong>认知框架的升级</strong>——从「如何避免风险」的防御性思维，转向「如何让风险为我所用」的设计性思维。</p>
-<p>作为一个做系统设计的人，我现在评估架构方案时会多问一个问题：<strong>这个系统在遇到意外冲击时，是会崩溃、仅仅存活、还是变得更强？</strong></p>
-<p>这也许就是塔勒布最核心的洞见：在一个根本无法预测的世界中，比预测更重要的是<strong>体质</strong>。不是你能不能预见下一场风暴，而是你的系统是否能在风暴中进化。</p>
-<p>风会熄灭蜡烛，却能使火越烧越旺。你要做的不是预测风的方向，而是把自己变成火。</p>
+<p>可用性的计算公式为：</p>
+<pre><code>可用性（Availability）= MTBF / (MTBF + MTTR) × 100%
+</code></pre>
+<p>通常用&quot;N 个 9&quot;来描述系统的可用性等级：</p>
+<table>
+<thead>
+<tr>
+<th>可用性</th>
+<th>年故障时间</th>
+<th>日均故障时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>99%（2 个 9）</td>
+<td>3.65 天</td>
+<td>~14.4 分钟</td>
+</tr>
+<tr>
+<td>99.9%（3 个 9）</td>
+<td>8.76 小时</td>
+<td>~86.4 秒</td>
+</tr>
+<tr>
+<td>99.99%（4 个 9）</td>
+<td>52.6 分钟</td>
+<td>~8.6 秒</td>
+</tr>
+<tr>
+<td>99.999%（5 个 9）</td>
+<td>5.26 分钟</td>
+<td>~0.86 秒</td>
+</tr>
+</tbody></table>
+<p>要达到 4 个 9 以上的可用性，平均每天的故障时间必须控制在 10 秒以内。每提升 1 个 9，都对系统设计提出更高的要求。</p>
+<p>然而故障是不可避免的，主要来自三个方面：</p>
+<ul>
+<li><strong>硬件故障</strong>：交换机、路由器、磁盘等硬件损坏</li>
+<li><strong>软件问题</strong>：代码 Bug、配置错误、依赖服务异常</li>
+<li><strong>不可抗力</strong>：地震、水灾、火灾、停电、光缆被挖断</li>
+</ul>
+<p>历史上不乏惨痛的教训：</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>事件</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2013.07</td>
+<td>微信因市政施工导致光缆被挖断</td>
+<td>宕机数小时</td>
+</tr>
+<tr>
+<td>2015.05</td>
+<td>杭州光纤被挖断</td>
+<td>近 3 亿用户约 5 小时无法访问支付宝</td>
+</tr>
+<tr>
+<td>2021.07</td>
+<td>B站部分服务器机房故障</td>
+<td>整站持续 3 小时无法访问</td>
+</tr>
+<tr>
+<td>2021.10</td>
+<td>富途证券机房电力闪断</td>
+<td>用户 2 小时无法登录和交易</td>
+</tr>
+</tbody></table>
+<p><strong>不同体量的系统关注的重点不同</strong>：体量小时关注用户增长，体量上来后关注性能体验，体量再大到一定规模后，可用性就变得尤为重要。对于全民级应用而言，再小概率的风险也不能忽视——这就是异地多活存在的根本原因。</p>
+<h2>部署架构的演进历程</h2>
+<h3>第一阶段：单机架构</h3>
+<p>最简单的模型：客户端请求 → 业务应用 → 单机数据库 → 返回结果。</p>
+<p>数据库单机部署，一旦遭遇意外，所有数据全部丢失。即使做了定期备份，也存在两个问题：</p>
+<ul>
+<li><strong>恢复需要时间</strong>：停机恢复，时间取决于数据量</li>
+<li><strong>数据不完整</strong>：备份存在时间差，不是最新数据</li>
+</ul>
+<p>数据库越大，故障恢复时间越长，这种方案可能连 1 个 9 都达不到。</p>
+<h3>第二阶段：主从副本</h3>
+<p>在另一台机器上部署数据库从库（slave），与主库（master）保持实时同步。</p>
+<table>
+<thead>
+<tr>
+<th>优势</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据完整性高</td>
+<td>主从实时同步，数据差异极小</td>
+</tr>
+<tr>
+<td>抗故障能力提升</td>
+<td>主库异常时从库可切换为主库</td>
+</tr>
+<tr>
+<td>读性能提升</td>
+<td>业务可直接读从库，分担主库压力</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>提升系统可用性的关键就是<strong>冗余</strong>——担心一个实例故障就部署多个实例，担心一台机器宕机就部署多台机器。</p>
+</blockquote>
+<h3>第三阶段：同城灾备</h3>
+<p>机房级别的风险虽然概率小，但一旦发生影响巨大。应对方案就不能局限在一个机房内了——需要在同城再搭建一个机房，用专线网络连通。</p>
+<h4>冷备</h4>
+<p>B 机房只做数据备份，不提供实时服务，只在 A 机房故障时才启用。</p>
+<ul>
+<li>优点：数据有异地备份</li>
+<li>缺点：数据不完整、恢复期间业务不可用</li>
+</ul>
+<h4>热备</h4>
+<p>B 机房完整镜像 A 机房：接入层、业务应用、数据存储（从库）全部部署就位，处于待命状态。</p>
+<p>A 机房故障时只需做两件事：</p>
+<ol>
+<li>B 机房所有从库提升为主库</li>
+<li>DNS 指向 B 机房，接入流量</li>
+</ol>
+<p><strong>热备相比冷备最大的优点是：随时可切换。</strong></p>
+<p>无论冷备还是热备，B 机房都处于备用状态，统称为<strong>同城灾备</strong>。它解决了机房级别的故障问题，可用性再次提升，但有一个隐患——B 机房从未经历过真实流量的考验，切换时不敢百分百保证能正常工作。</p>
+<h3>第四阶段：同城双活</h3>
+<p>让 B 机房也接入流量、实时提供服务，好处有二：</p>
+<ol>
+<li><strong>实时训练后备军</strong>：让 B 机房达到与 A 机房相同的&quot;作战水平&quot;，随时可切换</li>
+<li><strong>分担流量压力</strong>：B 机房接入流量后，减轻 A 机房的负载</li>
+</ol>
+<p>但 B 机房的存储是 A 机房的从库，默认不可写。解决方案是在<strong>业务应用层做读写分离改造</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>路由策略</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>读请求</td>
+<td>可读任意机房的存储</td>
+</tr>
+<tr>
+<td>写请求</td>
+<td>只允许写 A 机房（主库所在）</td>
+</tr>
+</tbody></table>
+<p>所有存储（MySQL、Redis 等）都需要区分读写请求，有一定的业务改造成本。A 机房为<strong>主机房</strong>，B 机房为<strong>从机房</strong>。</p>
+<p>两个机房部署在同城，物理距离近，专线网络延迟可接受。B 机房可以从 10% → 30% → 50% → 100% 逐步接入流量，持续验证其工作能力。</p>
+<p><strong>同城双活</strong>比灾备更进一步：B 机房实时接入流量，且能应对随时的故障切换，系统弹性大大增强。</p>
+<blockquote>
+<p>但两个机房在物理上仍处于同一城市。如果整个城市发生自然灾害（如 2021 年河南水灾），两个机房依旧存在全局覆没的风险。</p>
+</blockquote>
+<h3>第五阶段：两地三中心</h3>
+<p>为了应对城市级别的灾难，需要在<strong>异地</strong>（通常建议距离 1000 公里以上）再部署一个机房。</p>
+<ul>
+<li>A、B 机房在同一城市，同时提供服务（同城双活）</li>
+<li>C 机房部署在异地，只做数据灾备</li>
+</ul>
+<p>这就是<strong>两地三中心</strong>架构，常用于银行、金融、政企项目。但问题依旧：启用灾备机房需要时间，且启用后的服务不确定能否如期工作。</p>
+<h2>异地双活：跨越延迟的鸿沟</h2>
+<h3>为什么&quot;简单异地部署&quot;行不通？</h3>
+<p>如果把同城双活的架构直接搬到异地（例如 A 在北京、B 在上海），会遇到一个致命问题——<strong>网络延迟</strong>。</p>
+<p>北京到上海约 1300 公里，即使光纤以光速传输，一个来回也需要近 10ms。加上路由器、交换机等设备，实际延迟可达 <strong>30ms 左右</strong>。更关键的是，远距离专线的质量远不如机房内网——延迟波动、丢包、甚至中断都是常态。</p>
+<p>一个页面可能访问后端几十个 API，如果每次都跨机房访问，整个页面的响应延迟可能达到<strong>秒级</strong>——这是不可接受的。</p>
+<blockquote>
+<p>虽然机房按同城双活的模型部署在了异地，但这本质上是一种<strong>伪异地双活</strong>。</p>
+</blockquote>
+<h3>真正的异地双活：机房内闭环</h3>
+<p>既然跨机房延迟是客观存在的物理限制，核心思路就是<strong>尽量避免跨机房调用</strong>——每个机房的请求在本机房内完成闭环。</p>
+<p>这意味着每个机房都需要拥有独立的读写能力：</p>
+<table>
+<thead>
+<tr>
+<th>改造项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>数据库双主</strong></td>
+<td>两个机房的数据库都是主库，支持本地读写</td>
+</tr>
+<tr>
+<td><strong>双向数据同步</strong></td>
+<td>任一机房写入的数据，自动同步到另一个机房</td>
+</tr>
+<tr>
+<td><strong>全量数据</strong></td>
+<td>两个机房都拥有全量数据，支持任意切换</td>
+</tr>
+</tbody></table>
+<h4>数据双向同步</h4>
+<p>MySQL 本身支持双主架构和双向复制。但 Redis、消息队列（Kafka、RocketMQ 等）这些有状态服务并不原生支持，需要<strong>开发专用的数据同步中间件</strong>。</p>
+<p>数据同步中间件的核心作用：</p>
+<pre><code>北京机房写入 order=AAAAA → 中间件同步到上海
+上海机房写入 order=BBBBB → 中间件同步到北京
+最终：两个机房都有 order=AAAAA 和 order=BBBBB
+</code></pre>
+<p>使用中间件同步数据可以容忍专线的不稳定——专线出问题时中间件自动重试直到成功，达到<strong>数据最终一致性</strong>。</p>
+<h4>数据冲突问题</h4>
+<p>两个机房都可写，如果修改的是<strong>同一条数据</strong>，就会发生冲突：</p>
+<pre><code>用户短时间内发起两个修改请求：
+  → 请求 A 落在北京机房，修改 order=AAAAA（尚未同步到上海）
+  → 请求 B 落在上海机房，修改 order=BBBBB（尚未同步到北京）
+  → 两个机房以谁为准？
+</code></pre>
+<blockquote>
+<p>系统发生故障并不可怕，可怕的是<strong>数据发生错误</strong>，因为修正数据的成本极高。</p>
+</blockquote>
+<h3>解决数据冲突：路由分片</h3>
+<p>核心思想是：<strong>同一个用户的所有请求，只在一个机房内完成业务闭环</strong>，从根源上避免冲突。</p>
+<p>需要在接入层之上部署<strong>路由层</strong>，根据规则将用户分流到不同机房。常见的分片策略有两种：</p>
+<h4>策略一：哈希分片</h4>
+<p>根据用户 userId 计算哈希值取模，从路由表中找到对应机房。</p>
+<pre><code>用户 0~700   → 北京机房
+用户 701~999 → 上海机房
+</code></pre>
+<p>对于未登录用户：</p>
+<ul>
+<li>方案 A：全部路由到固定机房</li>
+<li>方案 B：根据设备 ID 进行哈希取模</li>
+</ul>
+<h4>策略二：地理位置分片</h4>
+<p>非常适合与地理位置密切相关的业务（打车、外卖等）。</p>
+<pre><code>北京、河北、内蒙古 → 北京机房
+上海、浙江、江苏   → 上海机房
+</code></pre>
+<p>以外卖为例，商家、用户、骑手都在相同的地理范围内，天然适合按地域分片。</p>
+<h4>全局数据的特殊处理</h4>
+<p>有一类数据无法做分片——<strong>全局强一致数据</strong>，典型如商品库存。这类数据只能采用&quot;写主机房、读从机房&quot;的方案，无法真正双活。</p>
+<p>这意味着在交易链路中，虽然全链路都做了机房内闭环，到了库存扣减这一步又回到了中心机房，单元化闭环被打破了。</p>
+<p><strong>一种解决思路是库存分摊</strong>：将一个商品的库存拆分到不同机房，每个机房独立扣减本地库存，再通过<strong>库存调拨程序</strong>在机房间进行库存共享和再平衡。</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>普通交易</td>
+<td>库存分摊 + 库存调拨程序保证机房间库存共享</td>
+</tr>
+<tr>
+<td>秒杀场景</td>
+<td>各机房独立扣减，无需调拨（库存本就要被快速消耗完）</td>
+</tr>
+</tbody></table>
+<h2>异地多活：从双活到 N 活</h2>
+<p>按照单元化的方式，每个机房可以部署在任意地区，随时扩展新机房，只需在最上层定义好分片规则。但随着机房数量增多，数据同步的复杂度急剧上升——每个机房写入数据后需要同步到所有其他机房，网状拓扑的复杂度为 O(N²)。</p>
+<h3>从网状到星状</h3>
+<p>业界的优化方案是将<strong>网状架构升级为星状</strong>：确立一个<strong>中心机房</strong>，所有数据同步都以中心机房为枢纽。</p>
+<pre><code>   ┌──────────┐
+   │ 单元机房A │──┐
+   └──────────┘  │
+   ┌──────────┐  │  ┌──────────┐
+   │ 单元机房B │──┼──│ 中心机房  │
+   └──────────┘  │  └──────────┘
+   ┌──────────┐  │
+   │ 单元机房C │──┘
+   └──────────┘
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>网状同步</th>
+<th>星状同步</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>同步复杂度</td>
+<td>O(N²)，每增一个机房所有机房都需改造</td>
+<td>O(N)，只需同步到中心机房</td>
+</tr>
+<tr>
+<td>扩展性</td>
+<td>差</td>
+<td>好，新机房只需和中心建立同步关系</td>
+</tr>
+<tr>
+<td>中心依赖</td>
+<td>无</td>
+<td>中心机房稳定性要求高</td>
+</tr>
+<tr>
+<td>容灾</td>
+<td>任一机房可接管</td>
+<td>中心故障时可提升任一机房为新中心</td>
+</tr>
+</tbody></table>
+<p><strong>星状架构的优势</strong>：</p>
+<ul>
+<li>一个机房写入数据只需同步到中心机房，中心再同步至其他机房</li>
+<li>不需要关心一共部署了多少机房，扩展新机房的成本极低</li>
+<li>中心机房故障时，可将任一单元机房提升为新中心，继续服务</li>
+</ul>
+<p>至此，系统真正实现了<strong>异地多活</strong>——多个机房同时对外提供服务，任意机房故障可快速切换，系统具备极强的扩展能力。</p>
+<h2>阿里单元化实践</h2>
+<p>阿里在实施单元化时，根据业务特点采用了两种模式：</p>
+<h3>交易单元化 vs 导购单元化</h3>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>交易单元化</th>
+<th>导购单元化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>入口流量</td>
+<td>入口清晰（商品详情→购物车→下单→支付）</td>
+<td>入口分散，大促时增加各种场景和玩法</td>
+</tr>
+<tr>
+<td>链路特征</td>
+<td>以<strong>写</strong>为主</td>
+<td>大部分是<strong>读</strong></td>
+</tr>
+<tr>
+<td>数据库模式</td>
+<td><strong>WRITE 模式</strong>（本地读写，双向同步）</td>
+<td><strong>COPY 模式</strong>（中心写入，单元只读）</td>
+</tr>
+<tr>
+<td>单元化范围</td>
+<td>全链路必须做单元化（对用户下单有直接影响）</td>
+<td>仅 C 端服务做单元化，商家后台中心化部署</td>
+</tr>
+<tr>
+<td>资源成本</td>
+<td>较高（每个单元完整部署）</td>
+<td>较低（商家后台等只部署在中心）</td>
+</tr>
+</tbody></table>
+<p>导购单元化采用 COPY 模式的原因：商家后台服务的可用性要求相对较低，故障恢复后继续操作即可，对大盘交易影响不大。中心化部署能<strong>大幅节省资源成本和维护成本</strong>，也能降低开发人员的开发成本。</p>
+<h3>单元化路由透传机制</h3>
+<p>单元化的核心在于路由信息的全链路透传——从接入层到最底层的数据层，每一层都需要能够正确识别和传递路由参数。</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>路由机制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>接入层</strong></td>
+<td>解析 HTTP 请求中的路由参数（cookie/header/body），路由到正确的应用 SLB</td>
+</tr>
+<tr>
+<td><strong>应用层</strong></td>
+<td>中间件从 HTTP 请求中提取路由参数保存到上下文，供后续 RPC 和消息使用</td>
+</tr>
+<tr>
+<td><strong>RPC 层</strong></td>
+<td>RPC 客户端从上下文取出路由参数，随 RPC 请求传递到远程 Provider</td>
+</tr>
+<tr>
+<td><strong>消息层</strong></td>
+<td>MQ 客户端发送消息时从上下文获取路由参数添加到消息属性，消费时还原到上下文</td>
+</tr>
+<tr>
+<td><strong>数据层</strong></td>
+<td>保证数据落库到正确单元的 DB，防止数据脏写</td>
+</tr>
+</tbody></table>
+<h3>单元协同与单元保护</h3>
+<p>在单元化演进过程中，有两个关键问题需要解决：</p>
+<p><strong>单元协同</strong>：某些特定业务场景需要保证数据强一致性（如库存扣减），这类服务只能在中心单元提供服务。所有对中心服务的调用都会直接路由到中心单元完成。</p>
+<p><strong>单元保护</strong>：系统自上而下各层都要具备<strong>纠错保护能力</strong>，保证业务按单元化规则正确流转：</p>
+<table>
+<thead>
+<tr>
+<th>保护层</th>
+<th>纠错机制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>接入层纠偏</td>
+<td>流量进入接入层后，通过路由参数判断归属单元，非本单元流量代理到正确的目标单元</td>
+</tr>
+<tr>
+<td>RPC 纠偏</td>
+<td>RPC Consumer 端根据请求的单元信息进行路由选址，错误流量会被重定向到正确单元</td>
+</tr>
+<tr>
+<td>数据层保护</td>
+<td>数据库层面的最后防线，防止数据写入错误的单元</td>
+</tr>
+</tbody></table>
+<h2>异地多活落地的关键挑战</h2>
+<p>落地异地多活远不止架构设计，还需要在多个维度做好准备：</p>
+<h3>数据一致性保障</h3>
+<table>
+<thead>
+<tr>
+<th>挑战</th>
+<th>应对策略</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>同步延迟导致的数据不一致</td>
+<td>接受最终一致性，业务层做好容错设计</td>
+</tr>
+<tr>
+<td>数据冲突（双写同一条数据）</td>
+<td>通过路由分片从源头避免，辅以冲突检测和仲裁机制</td>
+</tr>
+<tr>
+<td>同步中断（专线故障）</td>
+<td>中间件自动重试 + 断点续传，恢复后自动追数据</td>
+</tr>
+<tr>
+<td>数据校验</td>
+<td>定期对账程序比对两地数据，发现差异自动修复</td>
+</tr>
+</tbody></table>
+<h3>机房切换策略</h3>
+<table>
+<thead>
+<tr>
+<th>切换类型</th>
+<th>触发条件</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计划内切换</td>
+<td>机房维护、演练</td>
+<td>逐步调整路由权重，平滑迁移流量</td>
+</tr>
+<tr>
+<td>故障切换</td>
+<td>机房故障</td>
+<td>DNS 切换 + 路由规则调整，将故障机房流量转移到其他机房</td>
+</tr>
+<tr>
+<td>回切</td>
+<td>故障恢复</td>
+<td>先同步恢复期间的增量数据，再逐步回切流量</td>
+</tr>
+</tbody></table>
+<h3>业务分级与取舍</h3>
+<p>并非所有业务都需要做异地多活，需要根据业务重要程度进行分级：</p>
+<table>
+<thead>
+<tr>
+<th>级别</th>
+<th>业务类型</th>
+<th>多活策略</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>P0</td>
+<td>核心交易链路（下单、支付）</td>
+<td>必须做单元化，机房内完全闭环</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>重要辅助（购物车、搜索）</td>
+<td>做单元化部署，允许短时降级</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>一般功能（商家后台、运营工具）</td>
+<td>中心化部署，故障时暂时不可用</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>非核心（日志、统计）</td>
+<td>不做多活，故障后补数据</td>
+</tr>
+</tbody></table>
+<h3>配套基础设施</h3>
+<p>异地多活的落地还依赖一系列配套设施：</p>
+<ul>
+<li><strong>全局流量调度</strong>：DNS + HTTP DNS + 接入层路由，支持按规则精细分流</li>
+<li><strong>数据同步中间件</strong>：覆盖 MySQL、Redis、MQ 等所有有状态服务</li>
+<li><strong>统一配置中心</strong>：支持多机房配置的统一管理和快速下发</li>
+<li><strong>全链路监控</strong>：跨机房的调用链追踪、数据同步延迟监控、一致性校验报告</li>
+<li><strong>演练平台</strong>：定期进行故障演练，验证切换流程的有效性</li>
+</ul>
+<h2>架构演进全景对比</h2>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>方案</th>
+<th>机房数</th>
+<th>可用性</th>
+<th>核心特点</th>
+<th>主要局限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>单机架构</td>
+<td>1</td>
+<td>&lt; 99%</td>
+<td>最简单</td>
+<td>单点故障，数据丢失</td>
+</tr>
+<tr>
+<td>2</td>
+<td>主从副本</td>
+<td>1</td>
+<td>~99.9%</td>
+<td>数据冗余</td>
+<td>机房级故障无法应对</td>
+</tr>
+<tr>
+<td>3</td>
+<td>同城灾备</td>
+<td>2（同城）</td>
+<td>~99.95%</td>
+<td>机房级冗余</td>
+<td>备用机房未经验证</td>
+</tr>
+<tr>
+<td>4</td>
+<td>同城双活</td>
+<td>2（同城）</td>
+<td>~99.99%</td>
+<td>双机房实时服务</td>
+<td>无法应对城市级灾难</td>
+</tr>
+<tr>
+<td>5</td>
+<td>两地三中心</td>
+<td>3（两城）</td>
+<td>~99.99%</td>
+<td>异地数据备份</td>
+<td>灾备机房启用慢</td>
+</tr>
+<tr>
+<td>6</td>
+<td>异地双活</td>
+<td>2（异地）</td>
+<td>~99.99%+</td>
+<td>机房内闭环，双主同步</td>
+<td>需要大量中间件和业务改造</td>
+</tr>
+<tr>
+<td>7</td>
+<td>异地多活</td>
+<td>N（多地）</td>
+<td>~99.999%</td>
+<td>星状同步，任意扩展</td>
+<td>实施复杂度高，需要强大的基础设施支撑</td>
+</tr>
+</tbody></table>
+<h2>总结</h2>
+<p>异地多活的演进，本质上是一部<strong>用冗余换可用性</strong>的发展史。从中可以提炼出以下核心认知：</p>
+<ol>
+<li><strong>冗余是高可用的基石</strong>：从主从副本到多机房部署，每一次演进都是在更大的维度上做冗余</li>
+<li><strong>延迟是异地部署的核心矛盾</strong>：跨城网络延迟是客观物理限制，必须通过&quot;机房内闭环&quot;来规避</li>
+<li><strong>数据一致性是最大的技术挑战</strong>：双向同步、冲突避免、最终一致性保障，每一环都需要精心设计</li>
+<li><strong>路由分片是解决冲突的根本手段</strong>：通过哈希分片或地理分片，确保同一用户的请求在同一机房内闭环</li>
+<li><strong>星状拓扑是多活扩展的最优解</strong>：相比网状同步的 O(N²) 复杂度，星状拓扑将复杂度降为 O(N)</li>
+<li><strong>不是所有业务都需要多活</strong>：根据业务重要程度分级，P0 核心链路做完整单元化，非核心业务中心化部署节省成本</li>
+<li><strong>架构设计是技术与成本的平衡</strong>：异地多活需要路由层、数据同步中间件、监控体系、演练平台等大量基础设施支撑，没有足够的人力物力很难落地</li>
+</ol>
+<blockquote>
+<p>好的架构不是一步到位的，而是随着业务体量的增长逐步演进的。理解每一步演进背后的驱动力和技术挑战，比直接套用某个方案更加重要。</p>
+</blockquote>
 19:T3dc2,<blockquote>
 <p><em>首先强调一下，Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过</em><a href="https://central.sonatype.org/pages/ossrh-guide.html">Sonatype OSSRH</a><em>仓库来发布jar包。所以，接下来主要介绍如何将jar包发布到Sonatype OSSRH。</em></p>
 </blockquote>
@@ -1504,7 +2020,7 @@ EOF
 <p>下面是官方指导文档，介绍非常详细，基本上不用在网上搜索其他教程了。</p>
 <h4>官方参考文档 <a href="#dzquo" id="dzquo"></a></h4>
 <p><a href="https://central.sonatype.org/publish/publish-guide">https://central.sonatype.org/publish/publish-guide/</a></p>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-04-07","children":"2024年04月07日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"非侵入式SQL监控"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","SQL监控",{"href":"/blog/tag/SQL%E7%9B%91%E6%8E%A7/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"SQL监控"}],["$","$L13","Java",{"href":"/blog/tag/Java/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Java"}],["$","$L13","非侵入式",{"href":"/blog/tag/%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"非侵入式"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/tooling/Git常用命令","title":"Git 常用命令速查手册","description":"一份面向日常开发的 Git 命令速查手册，覆盖分支管理、暂存与恢复、提交操作、远程协作、文件追踪控制、子模块、日志查询与常见问题处理等场景，适合收藏备用。","pubDate":"2024-04-05","tags":["Git","版本控制","开发工具"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"life/reading/反脆弱：从不确定性中获益的系统设计","title":"《反脆弱》：从不确定性中获益的系统设计","description":"塔勒布的核心洞见不是「如何抵抗风险」，而是「如何让波动成为养分」。反脆弱不是坚固，而是在压力下变得更强。这个框架对系统架构、职业规划和个人生活都有深刻启示。","pubDate":"2024-05-10","tags":["读书笔记","反脆弱","塔勒布","系统设计","风险管理"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"SQL监控":{"prev":null,"next":null},"Java":{"prev":{"slug":"engineering/tooling/Java构件发布到中央仓库","title":"Java构件发布到中央仓库","description":"Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过...","pubDate":"2024-04-04","tags":["Maven","Java","开源发布"],"heroImage":"$undefined","content":"$19"},"next":null},"非侵入式":{"prev":null,"next":null}}}]}],["$","$L1a",null,{}]]}]}]}]
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-04-07","children":"2024年04月07日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"非侵入式SQL监控"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","SQL监控",{"href":"/blog/tag/SQL%E7%9B%91%E6%8E%A7/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"SQL监控"}],["$","$L13","Java",{"href":"/blog/tag/Java/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Java"}],["$","$L13","非侵入式",{"href":"/blog/tag/%E9%9D%9E%E4%BE%B5%E5%85%A5%E5%BC%8F/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"非侵入式"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/tooling/Git常用命令","title":"Git 常用命令速查手册","description":"一份面向日常开发的 Git 命令速查手册，覆盖分支管理、暂存与恢复、提交操作、远程协作、文件追踪控制、子模块、日志查询与常见问题处理等场景，适合收藏备用。","pubDate":"2024-04-05","tags":["Git","版本控制","开发工具"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/architecture/异地多活架构：从原理到实践的演进之路","title":"异地多活架构：从原理到实践的演进之路","description":"从单机架构到异地多活，系统性梳理多机房部署架构的演进历程。深入剖析同城灾备、同城双活、异地双活、异地多活的核心原理与技术挑战，并结合阿里单元化方案解析工业级落地实践。","pubDate":"2024-04-08","tags":["架构设计","异地多活","高可用","容灾","单元化"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"SQL监控":{"prev":null,"next":null},"Java":{"prev":{"slug":"engineering/tooling/Java构件发布到中央仓库","title":"Java构件发布到中央仓库","description":"Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过...","pubDate":"2024-04-04","tags":["Maven","Java","开源发布"],"heroImage":"$undefined","content":"$19"},"next":null},"非侵入式":{"prev":null,"next":null}}}]}],["$","$L1a",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null

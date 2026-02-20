@@ -9,13 +9,13 @@ d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/fffdcdb4fb651185.css","style"]
-0:{"P":null,"b":"4aRcYmzY73SZxx_H909yZ","p":"","c":["","blog","engineering","middleware","RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","G89Vd7iawj2jbWvzR2_4Jv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"wlOkUxTzHfxl8sQA11M8Z","p":"","c":["","blog","engineering","middleware","RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","1gQcqDtGHE1c9Y4VXDzqiv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
 14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-19:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+1a:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
 15:T2b20,<p><a href="https://baijiahao.baidu.com/s?id=1769207484615537227">转载</a></p>
 <h4>引言</h4>
@@ -124,327 +124,615 @@ e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"ch
 <p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/3d90e1705de49c669f22628af2f6004a.jpeg@c_1,w_1010,h_651,x_0,y_0" alt=""><br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/a5531d658050ce7abecb5ad4242d92ab.jpeg@c_1,w_1002,h_300,x_0,y_0" alt=""></p>
 <h4>四、总结</h4>
 <p><img src="/images/blog/engineering/middleware-img_20250723_04.png" alt="img_20250723_04.png">{: .full-width}</p>
-17:T4849,<h2>服务注册中心 <a href="#scroller-1" id="scroller-1"></a></h2>
-<p>前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。</p>
-<p>并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景下做正确的技术选型。</p>
+17:T5870,<blockquote>
+<p>Java 中的大部分同步工具（ReentrantLock、Semaphore、CountDownLatch、ReentrantReadWriteLock 等）都基于 AbstractQueuedSynchronizer（AQS）实现。理解 AQS，就等于掌握了 Java 并发编程的底层脉络。本文从设计思想出发，逐层深入 AQS 的数据结构、核心流程和源码实现，并通过 ReentrantLock 串联全局，最后梳理 AQS 在 JUC 中的应用全景。</p>
+</blockquote>
+<h2>AQS 是什么？</h2>
+<p>AQS（AbstractQueuedSynchronizer）是 <code>java.util.concurrent.locks</code> 包中的一个<strong>抽象类</strong>，是构建锁和同步器的基础框架。Doug Lea 设计 AQS 的核心目标是：</p>
+<ul>
+<li>降低构建锁和同步器的工作量</li>
+<li>避免在多个位置处理竞争问题</li>
+<li>在基于 AQS 的同步器中，阻塞只可能在一个时刻发生，降低上下文切换开销，提高吞吐量</li>
+</ul>
+<p>AQS 支持两种工作模式：</p>
 <table>
 <thead>
 <tr>
-<th><strong>指标</strong></th>
-<th><strong>Eureka</strong></th>
-<th><strong>Zookeeper</strong></th>
-<th><strong>Consul</strong></th>
-<th><strong>Etcd</strong></th>
+<th>模式</th>
+<th>含义</th>
+<th>典型实现</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>一致性协议</td>
-<td>AP</td>
-<td>CP（Paxos算法）</td>
-<td>CP（Raft算法）</td>
-<td>CP（Raft算法）</td>
+<td><strong>独占模式（Exclusive）</strong></td>
+<td>同一时刻只能有一个线程获取到锁</td>
+<td>ReentrantLock</td>
 </tr>
 <tr>
-<td>健康检查</td>
-<td>TTL(Time To Live)</td>
-<td>TCP Keep Alive</td>
-<td>TTL\HTTP\TCP\Script</td>
-<td>Lease TTL KeepAlive</td>
-</tr>
-<tr>
-<td>watch/long polling</td>
-<td>不支持</td>
-<td>watch</td>
-<td>long polling</td>
-<td>watch</td>
-</tr>
-<tr>
-<td>雪崩保护</td>
-<td>支持</td>
-<td>不支持</td>
-<td>不支持</td>
-<td>不支持</td>
-</tr>
-<tr>
-<td>安全与权限</td>
-<td>不支持</td>
-<td>ACL</td>
-<td>ACL</td>
-<td>RBAC</td>
-</tr>
-<tr>
-<td>是否支持多数据中心</td>
-<td>是</td>
-<td>否</td>
-<td>是</td>
-<td>否</td>
-</tr>
-<tr>
-<td>是否有管理界面</td>
-<td>是</td>
-<td>否（可用第三方ZkTools）</td>
-<td>是</td>
-<td>否</td>
-</tr>
-<tr>
-<td>Spring Cloud 集成</td>
-<td>支持</td>
-<td>支持</td>
-<td>支持</td>
-<td>支持</td>
-</tr>
-<tr>
-<td>Dubbo 集成</td>
-<td>不支持</td>
-<td>支持</td>
-<td>支持</td>
-<td>不支持</td>
-</tr>
-<tr>
-<td>K8S 集成</td>
-<td>不支持</td>
-<td>不支持</td>
-<td>支持</td>
-<td>支持</td>
+<td><strong>共享模式（Shared）</strong></td>
+<td>同一时刻可以有多个线程同时获取</td>
+<td>CountDownLatch、ReadWriteLock、Semaphore</td>
 </tr>
 </tbody></table>
-<p>我们可以看出，四种技术类型对Spring Cloud的支持度都很高。Spring Cloud是微服务架构的一站式解决方案，我们平时构建微服务的过程中需要做的的如 配置管理、服务发现、负载均衡、断路器、智能路由、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等操作。Spring Cloud 为我们提供了一套简易的编程模型，使我们能在 Spring Boot 的基础上轻松地实现微服务项目的构建。</p>
-<p>Spring Cloud包含了多个不同开源产品，来保证一站式的微服务解决方案，如：Spring Cloud Config、Spring Cloud Netflix、Spring Cloud Security、Spring Cloud Commons、Spring Cloud Zookeeper、Spring Cloud CLI等项目。</p>
-<h2>Spring Cloud 框架下实现 <a href="#scroller-2" id="scroller-2"></a></h2>
-<p>Spring Cloud为服务治理做了一层抽象，这样能够支持多种不同的服务治理框架，比如：Netflix Eureka、Consul。我们这边就以这两个为例子，看看服务治理是如何实现。</p>
+<p>无论哪种模式，本质上都是对 AQS 内部一个 <strong><code>state</code> 变量</strong>的获取和释放。</p>
+<h2>AQS 的整体架构</h2>
+<p>AQS 框架共分为<strong>五层</strong>，自上而下由浅入深：</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>内容</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第一层</td>
+<td>API 层</td>
+<td>自定义同步器需重写的方法（tryAcquire、tryRelease 等）</td>
+</tr>
+<tr>
+<td>第二层</td>
+<td>获取/释放方法</td>
+<td>acquire、release、acquireShared、releaseShared</td>
+</tr>
+<tr>
+<td>第三层</td>
+<td>队列操作</td>
+<td>addWaiter、acquireQueued、shouldParkAfterFailedAcquire</td>
+</tr>
+<tr>
+<td>第四层</td>
+<td>线程阻塞/唤醒</td>
+<td>LockSupport.park / unpark</td>
+</tr>
+<tr>
+<td>第五层</td>
+<td>基础数据</td>
+<td>state、Node、CLH 变体队列</td>
+</tr>
+</tbody></table>
+<p>当接入自定义同步器时，<strong>只需重写第一层的部分方法即可</strong>，不需要关注底层实现。当加锁或解锁操作触发时，沿着第一层到第五层逐层深入。</p>
+<h2>核心数据结构</h2>
+<h3>同步状态 State</h3>
+<p>AQS 使用一个 <code>volatile int</code> 类型的成员变量 <code>state</code> 来表示同步状态：</p>
+<pre><code class="language-java">private volatile int state;
+</code></pre>
+<p>State 的含义由具体的同步器定义，例如：</p>
+<ul>
+<li><strong>ReentrantLock</strong>：state 表示锁被重入的次数，0 表示未被持有</li>
+<li><strong>Semaphore</strong>：state 表示可用许可的数量</li>
+<li><strong>CountDownLatch</strong>：state 表示计数器的值</li>
+</ul>
+<p>AQS 提供三个方法操作 state，均为 <code>final</code> 修饰，子类不可重写：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>getState()</code></td>
+<td>获取当前 state 值</td>
+</tr>
+<tr>
+<td><code>setState(int)</code></td>
+<td>设置 state 值</td>
+</tr>
+<tr>
+<td><code>compareAndSetState(int, int)</code></td>
+<td>CAS 方式更新 state</td>
+</tr>
+</tbody></table>
+<h3>CLH 变体队列与 Node 节点</h3>
+<p>AQS 的核心思想是：如果请求的共享资源空闲，就将当前线程设置为有效的工作线程，并将资源设置为锁定状态；<strong>如果资源被占用，就通过一个 CLH 变体的 FIFO 双向队列来管理等待线程</strong>。</p>
 <blockquote>
-<p><em>在Spring Cloud服务治理抽象层的作用下，可以无缝地切换服务治理实现，且不影响任何其他的服务注册、发现、调用逻辑。</em></p>
-<p><em>所以，下面我们通过介绍这两种服务治理的实现来体会Spring Cloud这一层抽象所带来的好处。</em></p>
+<p>CLH 队列以其发明者 Craig、Landin 和 Hagersten 命名，原始 CLH 是单向链表。AQS 中的变体是虚拟双向队列，通过将每条请求线程封装成 Node 节点来实现锁的分配。</p>
 </blockquote>
-<h3>2.Spring Cloud Eureka <a href="#scroller-3" id="scroller-3"></a></h3>
-<p>Spring Cloud Eureka是Spring Cloud Netflix项目下的服务治理模块。而Spring Cloud Netflix项目是Spring Cloud的子项目之一，主要内容是对Netflix公司一系列开源产品的包装，它为Spring Boot应用提供了自配置的Netflix OSS整合。</p>
-<p>通过一些简单的注解，开发者就可以快速的在应用中配置一下常用模块并构建庞大的分布式系统。它主要提供的模块包括：服务发现（Eureka），断路器（Hystrix），智能路由（Zuul），客户端负载均衡（Ribbon）等。</p>
-<p>下面，就来具体看看如何使用Spring Cloud Eureka实现服务治理。</p>
-<h4>2.1.创建注册中心 <a href="#scroller-4" id="scroller-4"></a></h4>
-<p>创建一个Spring Cloud项目，我们命名为micro-service-center，并在<code>pom.xml</code>中引入需要的依赖内容：</p>
-<pre><code class="language-xml"> &lt;packaging&gt;pom&lt;/packaging&gt;
+<p>Node 节点的关键属性：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>thread</code></td>
+<td>该节点代表的线程</td>
+</tr>
+<tr>
+<td><code>waitStatus</code></td>
+<td>当前节点在队列中的等待状态</td>
+</tr>
+<tr>
+<td><code>prev</code></td>
+<td>前驱指针</td>
+</tr>
+<tr>
+<td><code>next</code></td>
+<td>后继指针</td>
+</tr>
+<tr>
+<td><code>nextWaiter</code></td>
+<td>指向下一个处于 CONDITION 状态的节点</td>
+</tr>
+</tbody></table>
+<p><code>waitStatus</code> 的枚举值：</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>名称</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>默认值</td>
+<td>Node 初始化时的状态</td>
+</tr>
+<tr>
+<td>1</td>
+<td>CANCELLED</td>
+<td>线程获取锁的请求已取消</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>SIGNAL</td>
+<td>后继节点的线程需要被唤醒</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>CONDITION</td>
+<td>节点在条件队列中，等待 Condition 唤醒</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>PROPAGATE</td>
+<td>共享模式下，释放操作需要向后传播</td>
+</tr>
+</tbody></table>
+<p>AQS 内部还维护了<strong>两种队列</strong>：</p>
+<ul>
+<li><strong>同步队列（Sync Queue）</strong>：获取资源失败的线程进入此队列自旋等待，当前驱节点是头节点时尝试获取资源</li>
+<li><strong>条件队列（Condition Queue）</strong>：基于 <code>Condition</code> 实现，调用 <code>await()</code> 时线程进入条件队列，调用 <code>signal()</code> 时转移到同步队列</li>
+</ul>
+<blockquote>
+<p>注意：双向链表的<strong>头节点是一个虚节点</strong>（不存储实际线程信息），真正的第一个有效节点从第二个开始。</p>
+</blockquote>
+<h2>自定义同步器需要重写的方法</h2>
+<p>AQS 采用<strong>模板方法模式</strong>，自定义同步器只需根据需要重写以下方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>模式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>tryAcquire(int)</code></td>
+<td>独占</td>
+<td>尝试获取资源，成功返回 true</td>
+</tr>
+<tr>
+<td><code>tryRelease(int)</code></td>
+<td>独占</td>
+<td>尝试释放资源，成功返回 true</td>
+</tr>
+<tr>
+<td><code>tryAcquireShared(int)</code></td>
+<td>共享</td>
+<td>尝试获取资源，负数=失败，0=成功但无剩余，正数=成功且有剩余</td>
+</tr>
+<tr>
+<td><code>tryReleaseShared(int)</code></td>
+<td>共享</td>
+<td>尝试释放资源，如果释放后允许唤醒后续节点返回 true</td>
+</tr>
+<tr>
+<td><code>isHeldExclusively()</code></td>
+<td>独占</td>
+<td>当前线程是否独占资源，用到 Condition 时需实现</td>
+</tr>
+</tbody></table>
+<p>独占模式实现 <code>tryAcquire-tryRelease</code>，共享模式实现 <code>tryAcquireShared-tryReleaseShared</code>。AQS 也支持同时实现两种模式，如 <code>ReentrantReadWriteLock</code>。</p>
+<h2>通过 ReentrantLock 理解加锁流程</h2>
+<p>ReentrantLock 是 AQS 独占模式最典型的实现。我们以<strong>非公平锁</strong>为例，完整追踪加锁流程。</p>
+<h3>第一步：lock()</h3>
+<pre><code class="language-java">// ReentrantLock.NonfairSync
+final void lock() {
+    if (compareAndSetState(0, 1))           // 直接 CAS 尝试获取锁
+        setExclusiveOwnerThread(Thread.currentThread());
+    else
+        acquire(1);                          // 失败则进入 AQS 框架流程
+}
 </code></pre>
-<p>表明这个项目中可以没有Java代码，也不执行任何代码，只是为了聚合工程或者传递依赖，所以可以把src文件夹删了。这是一个父级项目，因为我们还要在下面建立Eureka的注册中心、客户端等多个子项目 。</p>
-<p>在micro-service-center下，新建一个命名为 eureka-service 的Module，依旧是Spring Cloud 项目，建完之后，pom.xml做如下改动：</p>
-<pre><code class="language-xml">&lt;xml&gt;
-    &lt;!--在子工程中添加父工程名称--&gt;
-    &lt;parent&gt;
-        &lt;groupId&gt;com.microservice&lt;/groupId&gt;
-        &lt;artifactId&gt;center&lt;/artifactId&gt;
-        &lt;version&gt;1.0.0&lt;/version&gt;
-    &lt;/parent&gt;
-    &lt;dependencies&gt;
-        &lt;!--加入 eureka 服务 --&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-cloud-netflix-eureka-server&lt;/artifactId&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
-&lt;/xml&gt;
+<p>非公平锁上来就尝试 CAS 抢锁（不管队列中有没有等待线程），这是它&quot;非公平&quot;的体现。</p>
+<h3>第二步：acquire()</h3>
+<pre><code class="language-java">// AbstractQueuedSynchronizer
+public final void acquire(int arg) {
+    if (!tryAcquire(arg) &amp;&amp;
+        acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
+        selfInterrupt();
+}
 </code></pre>
-<p>改完之后，回到父项目micro-service-center，修改pom中的信息：</p>
-<pre><code class="language-xml">&lt;xml&gt;
-    &lt;groupId&gt;com.microservice&lt;/groupId&gt;
-    &lt;artifactId&gt;center&lt;/artifactId&gt;
-    &lt;packaging&gt;pom&lt;/packaging&gt;
-    &lt;version&gt;1.0.0&lt;/version&gt;
-    &lt;name&gt;center&lt;/name&gt;
-    &lt;description&gt;Demo project for Spring Boot&lt;/description&gt;
-    &lt;!--在父工程添加子工程名称--&gt;
-    &lt;modules&gt;
-        &lt;module&gt;eureka-service&lt;/module&gt;
-        &lt;module&gt;eureka-client&lt;/module&gt;
-    &lt;/modules&gt;
-&lt;/xml&gt;
+<p>这一行代码浓缩了整个加锁流程的四个步骤：</p>
+<pre><code>tryAcquire → addWaiter → acquireQueued → selfInterrupt
 </code></pre>
-<p>对两个项目进行clean + install，应该是成功的。</p>
-<p>eureka-service我们是作为注册中心来用的，所以在它的主类Application中加入<code>@EnableEurekaServer</code>注解，就能开启注册中心功能。</p>
-<pre><code class="language-java">@SpringBootApplication
-@EnableEurekaServer
-public class ServiceApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ServiceApplication.class, args);
-        System.out.println(&quot;Start Eureka Service&quot;);
+<ol>
+<li><strong>tryAcquire</strong>：尝试获取锁（由子类实现）</li>
+<li><strong>addWaiter</strong>：获取失败，将当前线程封装为 Node 加入队列尾部</li>
+<li><strong>acquireQueued</strong>：在队列中自旋等待，直到获取到锁</li>
+<li><strong>selfInterrupt</strong>：如果等待过程中被中断过，补上中断</li>
+</ol>
+<h3>第三步：tryAcquire（公平 vs 非公平）</h3>
+<p><strong>非公平锁</strong>的实现：</p>
+<pre><code class="language-java">final boolean nonfairTryAcquire(int acquires) {
+    final Thread current = Thread.currentThread();
+    int c = getState();
+    if (c == 0) {
+        if (compareAndSetState(0, acquires)) {   // 直接 CAS，不检查队列
+            setExclusiveOwnerThread(current);
+            return true;
+        }
+    }
+    else if (current == getExclusiveOwnerThread()) {  // 可重入逻辑
+        int nextc = c + acquires;
+        if (nextc &lt; 0) throw new Error(&quot;Maximum lock count exceeded&quot;);
+        setState(nextc);
+        return true;
+    }
+    return false;
+}
+</code></pre>
+<p><strong>公平锁</strong>的区别仅在于多了一个 <code>hasQueuedPredecessors()</code> 检查：</p>
+<pre><code class="language-java">if (c == 0) {
+    if (!hasQueuedPredecessors() &amp;&amp;   // 公平锁：先检查队列中是否有等待线程
+        compareAndSetState(0, acquires)) {
+        setExclusiveOwnerThread(current);
+        return true;
     }
 }
 </code></pre>
-<p>但是默认情况下，该注册中心也会把自己当做客户端，那就变成自己注册自己了，这个是可以剔除的，我们看一下它的YAML中的详细配置，注释比较清楚：</p>
-<pre><code class="language-yaml">  server:
-    port: 1000
-  spring:
-    application:
-      name: eureka-server
-  eureka:
-    instance:
-      hostname: localhost
-    client:
-    register-with-eureka: false  # 不作为客户端进行注册
-    fetch-registry: false  # 不获取注册列表
-    service-url:  # 注册地址，客户端需要注册到该地址中
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-</code></pre>
-<p>文中的注释还是比较清楚的。 这边可以看到，端口号是1000，所以当工程启动之后，访问 <a href="http://localhost:1000/">http://localhost:1000/</a> 是可以看到Eureka注册中心页面的。其中还没有发现任何服务。</p>
-<p><img src="/images/blog/engineering/microservice-image_7_1.png" alt="image_7_1.png"></p>
-<h4>2.1.创建客户端 <a href="#scroller-5" id="scroller-5"></a></h4>
-<p>目前服务中心还是空的，所以我们创建一个能够提供服务的客户端，并将其注册到注册中心去。</p>
-<p>同样的，我们创建一个Spring Cloud的子项目，命名为<code>eureka-client</code>，<code>pom.xml</code>中的配置如下：</p>
-<pre><code class="language-xml">  
-&lt;xml&gt;
-    &lt;!--在子工程中添加父工程名称--&gt;
-    &lt;parent&gt;
-        &lt;groupId&gt;com.microservice&lt;/groupId&gt;
-        &lt;artifactId&gt;center&lt;/artifactId&gt;
-        &lt;version&gt;1.0.0&lt;/version&gt;
-    &lt;/parent&gt;
-    &lt;dependencies&gt;
-        &lt;!--加入 eureka 服务 --&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-cloud-netflix-eureka-server&lt;/artifactId&gt;
-        &lt;/dependency&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
-            &lt;artifactId&gt;lombok&lt;/artifactId&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
-&lt;/xml&gt;
-</code></pre>
-<p>在应用主类Application文件中通过加上<code>@EnableDiscoveryClient</code>注解，该注解保证当前服务被Eureka当成provider发现。</p>
-<pre><code class="language-java">@SpringBootApplication
-@EnableDiscoveryClient
-public class ClientApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class, args);
-        System.out.println(&quot;start client!&quot;);
+<table>
+<thead>
+<tr>
+<th>锁类型</th>
+<th>state == 0 时的行为</th>
+<th>可重入逻辑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>非公平锁</td>
+<td>直接 CAS 抢锁</td>
+<td>相同：state + 1</td>
+</tr>
+<tr>
+<td>公平锁</td>
+<td>先检查队列再 CAS</td>
+<td>相同：state + 1</td>
+</tr>
+</tbody></table>
+<h3>第四步：addWaiter — 入队</h3>
+<pre><code class="language-java">private Node addWaiter(Node mode) {
+    Node node = new Node(Thread.currentThread(), mode);
+    Node pred = tail;
+    if (pred != null) {            // 队列已初始化，尝试快速入队
+        node.prev = pred;
+        if (compareAndSetTail(pred, node)) {
+            pred.next = node;
+            return node;
+        }
     }
-}jC
+    enq(node);                     // 快速入队失败或队列未初始化
+    return node;
+}
 </code></pre>
-<p>在YAML文件上加上如下配置：</p>
-<pre><code class="language-yaml">server:
-  port: 1001
-spring:
-  application:
-    name: eureka-client
-eureka:
-  client:
-    service-url:  # 这边就保证了注册到 eureka-service 这个注册中心去
-      defaultZone: http://localhost:1000/eureka/
-</code></pre>
-<p><code>spring.application.name</code>属性，指定了微服务的名称，在调用的时候可以通过该名称进行服务访问。<code>eureka.client.serviceUrl.defaultZone</code>属性对应服务注册中心的配置内容，指定服务注册中心的位置。</p>
-<p>大家看到，这边端口设置为1001，那是因为要在本机上测试 服务提供方 和 服务注册中心，所以<code>server的port</code>属性需设置不同的端口。</p>
-<p>最后，我们再写一个接口，通过DiscoveryClient对象，在客户端中获取注册中心的所有服务信息。</p>
-<pre><code class="language-java">  @Controller
-  @RequestMapping(&quot;/eurekacenter&quot;)
-  public class EuServiceController {
-  
-    @Autowired
-    DiscoveryClient discoveryClient;
-    
-    @RequestMapping(value = &quot;/service&quot;, method = {RequestMethod.GET})
-    @ResponseBody
-    public String getServiceInfo() {
-       return  &quot;service:&quot;+discoveryClient.getServices()+&quot; , memo:&quot;+discoveryClient.description();
+<p><code>enq()</code> 方法通过<strong>自旋 + CAS</strong> 确保入队成功：</p>
+<pre><code class="language-java">private Node enq(final Node node) {
+    for (;;) {
+        Node t = tail;
+        if (t == null) {                         // 队列为空，初始化
+            if (compareAndSetHead(new Node()))    // 创建虚拟头节点
+                tail = head;
+        } else {
+            node.prev = t;
+            if (compareAndSetTail(t, node)) {
+                t.next = node;
+                return t;
+            }
+        }
     }
 }
 </code></pre>
-<p>这时候跑一下试试看，继续访问之前的地址：<a href="http://localhost:1000/">http://localhost:1000/</a> ，可以看到Eureka注册中心页面已经包含一个我们定义的服务了，就是上面新建的 100端口的服务。</p>
-<p><img src="/images/blog/engineering/microservice-image_7_2.png" alt="image_7_2.png"></p>
-<p>同样，我们可以调用上面的那个获取注册服务信息的接口，从服务发现的角度看看有多少个服务被注册到注册中心去。 <a href="http://localhost:1001/eurekacenter/service">http://localhost:1001/eurekacenter/service</a></p>
-<p><img src="/images/blog/engineering/microservice-image_7_3.png" alt="image_7_3.png"></p>
-<p>如上图所示，方括号中的<code>eureka-client</code>通过Spring Cloud定义的 getServiceInfo 接口在eureka的实现中获取到的所有服务清单，他是一个String的List，如果注册了多个提供者，就会全部显示。</p>
-<h3>2.Spring Cloud Consul <a href="#scroller-6" id="scroller-6"></a></h3>
-<p>Consul 用于实现分布式系统的服务发现与配置。与其它分布式服务注册与发现的方案，Consul 的方案更具“一站式”特征，内置了服务注册与发现框 架、分布一致性协议实现、健康检查、Key/Value 存储、多数据中心方案，不再需要依赖其它工具（比如 ZooKeeper 之类的）。</p>
-<p>而Spring Cloud Consul ，是将其作为一个整体，在微服务架构中为我们的基础设施提供服务发现和服务配置的工具。</p>
-<h4>2.2.Consul 的优势 <a href="#scroller-7" id="scroller-7"></a></h4>
-<p>1、使用 Raft 算法来保证一致性, 比复杂的 Paxos 算法更直接。</p>
-<p>2、支持多数据中心，内外网的服务采用不同的端口进行监听。 多数据中心集群可以避免单数据中心的单点故障,而其部署则需要考虑网络延迟, 分片等情况等。 zookeeper 和 etcd 均不提供多数据中心功能的支持，上面表格中有体现。</p>
-<p>3、支持健康检查。</p>
-<p>4、支持 http 和 dns 协议接口。 zookeeper 的集成较为复杂, etcd 只支持 http 协议。</p>
-<p>5、官方提供 web 管理界面, etcd 无此功能。</p>
-<h4>2.2.Consul的特性 <a href="#scroller-8" id="scroller-8"></a></h4>
-<p>1、服务发现</p>
-<p>2、健康检查</p>
-<p>3、Key/Value存储</p>
-<p>4、多数据中心</p>
-<h4>2.2.安装Consul注册中心 <a href="#scroller-9" id="scroller-9"></a></h4>
-<p>1、官方下载64版本 ：<a href="https://www.consul.io/downloads.html">https://www.consul.io/downloads.html</a></p>
-<p>2、解压后复制到目录 /usr/local/bin 下</p>
-<p>3、启动终端，先看下啥版本的</p>
-<pre><code class="language-sh">liyifei@MacPro ~ % consul --version
-Consul v1.10.4
-Revision 7bbad6fe
-Protocol spoken by default, understands to (agent will automatically use protocol &gt;when speaking to compatible agents)
+<p>线程获取锁的过程可以形象理解为：</p>
+<pre><code>线程1获取锁成功 → 线程2申请锁失败 → 线程2入队等待 → 线程3申请失败 → 线程3排在线程2后面 → ...
 </code></pre>
-<p>4、执行安装命令，可以看到他的 Client Addr 的端口为8500。所以访问 8500端口站点，<a href="http://127.0.0.1:8500/ui/dc1/services">http://127.0.0.1:8500/ui/dc1/services</a></p>
-<pre><code class="language-sh">  liyifei@MacPro ~ % consul agent -dev
-  ==&gt; Starting Consul agent...
-             Version: &#39;1.10.4&#39;
-             Node ID: &#39;6db154b4-62ff-e67d-e745-1a7270fa1ce8&#39;
-           Node name: &#39;B000000147796DS&#39;
-          Datacenter: &#39;dc1&#39; (Segment: &#39;&lt;all&gt;&#39;)
-              Server: true (Bootstrap: false)
-         Client Addr: [127.0.0.1] (HTTP: 8500, HTTPS: -1, gRPC: 8502, DNS: 8600)
-        Cluster Addr: 127.0.0.(LAN: 8301, WAN: 8302)
-           Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false, Auto-Encrypt-TLS: false
-</code></pre>
-<p><img src="/images/blog/engineering/microservice-image_7_4.png" alt="image_7_4.png"></p>
-<p>我们可以看到，现在没有客户端注册上来，只有一个自身的实例。</p>
-<h4>2.2.创建服务提供者 <a href="#scroller-10" id="scroller-10"></a></h4>
-<p>由于Spring Cloud Consul项目的实现，我们可以轻松的将基于Spring Boot的微服务应用注册到Consul上，并通过此实现微服务架构中的服务治理。</p>
-<p>我们在micro-service-center下新建一个cloud项目consul-client，该项目pom文件添加如下：</p>
-<pre><code class="language-xml">&lt;xml&gt;
-  &lt;!--    在子工程中添加父工程名称--&gt;
-  &lt;parent&gt;
-    &lt;groupId&gt;com.microservice&lt;/groupId&gt;
-    &lt;artifactId&gt;center&lt;/artifactId&gt;
-    &lt;version&gt;1.0.0&lt;/version&gt;
-  &lt;/parent&gt;
-  
-  &lt;dependencies&gt;
-    &lt;!--        Consul服务发现--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-cloud-starter-consul-discovery&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-    &lt;!--        Consul健康检查--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-  &lt;/dependencies&gt;
-&lt;/xml&gt;
-</code></pre>
-<p>然后修改一下<code>application.yml的配置信息</code>，将consul配置写入，注释应该很清楚了，如下：</p>
-<pre><code class="language-yaml">spring:
-  application:
-    name: consul-producer # 当前服务的名称
-  cloud:
-    consul: # 以下为Consuk注册中心的地址，如果安装的不是这个host和port，这边可以调整
-      host: localhost
-      port: 8500
-server:
-  port: 850# 当前服务的端口
-</code></pre>
-<p>同样的，我们要在应用主类Application文件中通过加上<code>@EnableDiscoveryClient</code>注解，该注解保证当前服务被Consul当成provider发现。</p>
-<p>大家看到这个做法跟Eureka一样，因为Spring Cloud对服务治理做的一层抽象，所以可以屏蔽Eureka和Consul服务治理的实现细节，</p>
-<p>程序上不需要做改变，只需要引入不同的服务治理依赖，并配置相关的配置属性 就能轻松的将微服务纳入Spring Cloud的各个服务治理框架中。</p>
-<pre><code class="language-java">@SpringBootApplication
-@EnableDiscoveryClient
-public class ConsulClientApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class, args);
+<h3>第五步：acquireQueued — 自旋获取锁</h3>
+<pre><code class="language-java">final boolean acquireQueued(final Node node, int arg) {
+    boolean failed = true;
+    try {
+        boolean interrupted = false;
+        for (;;) {
+            final Node p = node.predecessor();
+            if (p == head &amp;&amp; tryAcquire(arg)) {   // 前驱是头节点，尝试获取锁
+                setHead(node);                     // 获取成功，当前节点成为新的头节点
+                p.next = null;                     // help GC
+                failed = false;
+                return interrupted;
+            }
+            if (shouldParkAfterFailedAcquire(p, node) &amp;&amp;
+                parkAndCheckInterrupt())           // 获取失败，判断是否需要挂起
+                interrupted = true;
+        }
+    } finally {
+        if (failed)
+            cancelAcquire(node);
     }
 }
 </code></pre>
-<p>修改完成之后，我们就可以把这个服务提供者启动了，然后再去注册中心查看服务的注册情况，就可以看到被注册进来的Provider（consul-producer）：</p>
-<p><img src="/images/blog/engineering/microservice-image_7_5.png" alt="image_7_5.png"></p>
-<h2>总结 <a href="#scroller-11" id="scroller-11"></a></h2>
-<p>除了 Eureka、Consul，还有其他的的注册中心技术，如Zookeeper、Nocas等。但无论何种注册中心技术，本质上都是为了解决微服务中的如下问题：</p>
-<p><strong>解耦服务之间相互依赖的细节</strong></p>
-<p>我们知道服务之间的远程调用必须要知道对方的IP、端口信息。我们可以在调用方直接配置被调用方的IP、端口，这种调用方直接依赖IP、端口的方式存在明显的问题，如被调用的IP、端口变化后，调用方法也要同步修改。</p>
-<p>通过服务发现，将服务之间IP与端口的依赖转化为服务名的依赖，服务名可以根据具微服务业务来做标识，因此，屏蔽、解耦服务之间的依赖细节是服务发现与注册解决的第一个问题。</p>
-<p><strong>对微服务进行动态管理</strong></p>
-<p>在微服务架构中，服务众多，服务之间的相互依赖也错综复杂，无论是服务主动停止，意外挂掉，还是因为流量增加对服务实现进行扩容，这些服务数据或状态上的动态变化，都需要尽快的通知到被调用方，被调用方才采取相应的措施。因此，对于服务注册与发现要实时管理者服务的数据与状态，包括服务的注册上线、服务主动下线，异常服务的剔除。</p>
+<p>核心逻辑：<strong>只有前驱节点是头节点的线程才有资格尝试获取锁</strong>。获取失败后，通过 <code>shouldParkAfterFailedAcquire</code> 判断是否需要挂起（将前驱节点的 waitStatus 设为 SIGNAL），然后通过 <code>LockSupport.park()</code> 挂起线程，避免空转浪费 CPU。</p>
+<h3>shouldParkAfterFailedAcquire 的三种情况</h3>
+<pre><code class="language-java">private static boolean shouldParkAfterFailedAcquire(Node pred, Node node) {
+    int ws = pred.waitStatus;
+    if (ws == Node.SIGNAL)        // 前驱已经是 SIGNAL，可以安全挂起
+        return true;
+    if (ws &gt; 0) {                 // 前驱已取消，向前找到有效节点
+        do {
+            node.prev = pred = pred.prev;
+        } while (pred.waitStatus &gt; 0);
+        pred.next = node;
+    } else {                      // 前驱状态为 0 或 PROPAGATE，设为 SIGNAL
+        compareAndSetWaitStatus(pred, ws, Node.SIGNAL);
+    }
+    return false;
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>前驱 waitStatus</th>
+<th>处理</th>
+<th>是否挂起</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SIGNAL (-1)</td>
+<td>直接返回 true</td>
+<td>是</td>
+</tr>
+<tr>
+<td>CANCELLED (&gt;0)</td>
+<td>跳过所有取消节点，重新链接</td>
+<td>否，下次循环再判断</td>
+</tr>
+<tr>
+<td>0 或 PROPAGATE</td>
+<td>CAS 设为 SIGNAL</td>
+<td>否，下次循环再判断</td>
+</tr>
+</tbody></table>
+<h2>解锁流程</h2>
+<p>ReentrantLock 解锁时<strong>不区分公平和非公平</strong>：</p>
+<pre><code class="language-java">// ReentrantLock
+public void unlock() {
+    sync.release(1);
+}
+</code></pre>
+<pre><code class="language-java">// AbstractQueuedSynchronizer
+public final boolean release(int arg) {
+    if (tryRelease(arg)) {
+        Node h = head;
+        if (h != null &amp;&amp; h.waitStatus != 0)
+            unparkSuccessor(h);          // 唤醒后继节点
+        return true;
+    }
+    return false;
+}
+</code></pre>
+<h3>tryRelease — 可重入锁的释放</h3>
+<pre><code class="language-java">// ReentrantLock.Sync
+protected final boolean tryRelease(int releases) {
+    int c = getState() - releases;       // state 减 1
+    if (Thread.currentThread() != getExclusiveOwnerThread())
+        throw new IllegalMonitorStateException();
+    boolean free = false;
+    if (c == 0) {                         // 只有 state 减到 0，锁才真正释放
+        free = true;
+        setExclusiveOwnerThread(null);
+    }
+    setState(c);
+    return free;
+}
+</code></pre>
+<h3>unparkSuccessor — 唤醒后继线程</h3>
+<pre><code class="language-java">private void unparkSuccessor(Node node) {
+    int ws = node.waitStatus;
+    if (ws &lt; 0)
+        compareAndSetWaitStatus(node, ws, 0);
+
+    Node s = node.next;
+    if (s == null || s.waitStatus &gt; 0) {
+        s = null;
+        // 从尾部向前遍历，找到第一个非取消状态的节点
+        for (Node t = tail; t != null &amp;&amp; t != node; t = t.prev)
+            if (t.waitStatus &lt;= 0)
+                s = t;
+    }
+    if (s != null)
+        LockSupport.unpark(s.thread);    // 唤醒线程
+}
+</code></pre>
+<blockquote>
+<p><strong>为什么要从后向前遍历？</strong> 两个原因：</p>
+<ol>
+<li><code>addWaiter</code> 中节点入队不是原子操作——<code>node.prev = pred</code> 和 <code>compareAndSetTail</code> 完成后，<code>pred.next = node</code> 可能还未执行。此时从前向后遍历会断链。</li>
+<li><code>cancelAcquire</code> 产生 CANCELLED 节点时，先断开的是 next 指针，prev 指针未断开。因此从后向前遍历才能保证遍历完整。</li>
+</ol>
+</blockquote>
+<h2>CANCELLED 节点的处理</h2>
+<p>当 <code>acquireQueued</code> 中发生异常时，会执行 <code>cancelAcquire(node)</code> 将节点标记为 CANCELLED。处理逻辑根据节点位置分为三种情况：</p>
+<table>
+<thead>
+<tr>
+<th>节点位置</th>
+<th>处理方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>尾节点</td>
+<td>将前驱设为新的 tail，其 next 置为 null</td>
+</tr>
+<tr>
+<td>头节点的后继</td>
+<td>唤醒当前节点的后继线程（unparkSuccessor）</td>
+</tr>
+<tr>
+<td>中间节点</td>
+<td>将前驱的 next 指向当前节点的后继，跳过当前节点</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><code>cancelAcquire</code> 只操作 next 指针，不操作 prev 指针。因为执行 cancel 时前驱可能已经出队，修改 prev 不安全。prev 指针的清理留给 <code>shouldParkAfterFailedAcquire</code>——此方法在获取锁失败时执行，此时共享资源已被占用，前方节点不会变化，修改 prev 是安全的。</p>
+</blockquote>
+<h2>中断处理机制</h2>
+<p>AQS 的 <code>acquire</code> 方法是<strong>不可中断</strong>的——线程在等待过程中不会响应中断，而是记录中断状态，等获取到锁后再&quot;补上&quot;中断：</p>
+<pre><code class="language-java">public final void acquire(int arg) {
+    if (!tryAcquire(arg) &amp;&amp;
+        acquireQueued(addWaiter(Node.EXCLUSIVE), arg))  // 返回 true 说明被中断过
+        selfInterrupt();                                  // 补上中断
+}
+
+static void selfInterrupt() {
+    Thread.currentThread().interrupt();
+}
+</code></pre>
+<p>这种设计的考量是：线程被唤醒时并不知道原因（可能是前驱释放了锁，也可能是被中断），所以通过 <code>Thread.interrupted()</code> 检查并清除中断标记，记录下来，最后在获取锁成功后统一补上。</p>
+<h2>park / unpark 机制</h2>
+<p>AQS 中线程的阻塞和唤醒通过 <code>LockSupport</code> 实现：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>LockSupport.park(this)</code></td>
+<td>阻塞当前线程</td>
+</tr>
+<tr>
+<td><code>LockSupport.unpark(thread)</code></td>
+<td>唤醒指定线程</td>
+</tr>
+</tbody></table>
+<p>它们的底层实现是通过 <code>Unsafe</code> 类调用 CPU 原语。相比 <code>Object.wait/notify</code>，park/unpark 的优势在于：</p>
+<ul>
+<li>不需要在同步块中使用</li>
+<li><code>unpark</code> 可以先于 <code>park</code> 调用（基于许可机制）</li>
+<li>可以精确唤醒指定线程</li>
+</ul>
+<p>在 AQS 中使用 park 的主要目的是：<strong>让排队等待的线程挂起，停止自旋以避免浪费 CPU 资源</strong>，并在需要时通过 unpark 精确唤醒。</p>
+<h2>AQS 在 JUC 中的应用场景</h2>
+<p>AQS 是 JUC 包的基石，几乎所有同步工具都构建在它之上：</p>
+<table>
+<thead>
+<tr>
+<th>同步工具</th>
+<th>如何使用 AQS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>ReentrantLock</strong></td>
+<td>state 表示锁的重入次数。获取锁时 state+1，释放时 state-1。state 为 0 表示锁空闲。同时记录持有锁的线程用于重入检测。</td>
+</tr>
+<tr>
+<td><strong>Semaphore</strong></td>
+<td>state 表示可用许可数。<code>acquireShared</code> 减少计数，<code>tryReleaseShared</code> 增加计数。</td>
+</tr>
+<tr>
+<td><strong>CountDownLatch</strong></td>
+<td>state 表示计数器。每次 <code>countDown()</code> 减 1，<code>await()</code> 等待 state 变为 0 后所有线程被唤醒。</td>
+</tr>
+<tr>
+<td><strong>ReentrantReadWriteLock</strong></td>
+<td>state 的高 16 位保存读锁持有次数，低 16 位保存写锁持有次数。读锁用共享模式，写锁用独占模式。</td>
+</tr>
+<tr>
+<td><strong>ThreadPoolExecutor</strong></td>
+<td>Worker 内部类继承 AQS，利用独占模式实现对工作线程的状态管理。</td>
+</tr>
+</tbody></table>
+<h3>State 在不同同步器中的语义</h3>
+<pre><code>ReentrantLock:       state = 重入次数 (0 = 空闲)
+Semaphore:           state = 可用许可数
+CountDownLatch:      state = 剩余计数 (0 = 所有线程放行)
+ReadWriteLock:       state = [高16位:读锁次数][低16位:写锁次数]
+</code></pre>
+<h2>自定义同步器示例</h2>
+<p>理解 AQS 后，我们可以用极少的代码实现一个简单的互斥锁：</p>
+<pre><code class="language-java">public class SimpleLock {
+
+    private static class Sync extends AbstractQueuedSynchronizer {
+        @Override
+        protected boolean tryAcquire(int arg) {
+            return compareAndSetState(0, 1);
+        }
+
+        @Override
+        protected boolean tryRelease(int arg) {
+            setState(0);
+            return true;
+        }
+
+        @Override
+        protected boolean isHeldExclusively() {
+            return getState() == 1;
+        }
+    }
+
+    private final Sync sync = new Sync();
+
+    public void lock()   { sync.acquire(1); }
+    public void unlock() { sync.release(1); }
+}
+</code></pre>
+<p>使用：</p>
+<pre><code class="language-java">public static void main(String[] args) throws InterruptedException {
+    SimpleLock lock = new SimpleLock();
+    int[] count = {0};
+
+    Runnable task = () -&gt; {
+        lock.lock();
+        try {
+            for (int i = 0; i &lt; 10000; i++) count[0]++;
+        } finally {
+            lock.unlock();
+        }
+    };
+
+    Thread t1 = new Thread(task);
+    Thread t2 = new Thread(task);
+    t1.start(); t2.start();
+    t1.join();  t2.join();
+    System.out.println(count[0]);  // 始终输出 20000
+}
+</code></pre>
+<p>只需重写 <code>tryAcquire</code> 和 <code>tryRelease</code>，AQS 就接管了排队、阻塞、唤醒、中断处理等全部复杂逻辑。</p>
+<h2>总结</h2>
+<p>AQS 的设计精髓可以归纳为以下几点：</p>
+<ol>
+<li><strong>一个 state 变量统一抽象</strong>：不同的同步器通过赋予 state 不同的语义（重入次数、许可数、计数器等），复用同一套框架</li>
+<li><strong>CLH 变体双向队列管理等待线程</strong>：通过 FIFO 队列保证公平性，通过 CAS + 自旋保证入队的线程安全</li>
+<li><strong>模板方法模式降低接入成本</strong>：自定义同步器只需实现 tryAcquire/tryRelease 等少量方法，框架处理全部排队和唤醒逻辑</li>
+<li><strong>park/unpark 精确控制线程状态</strong>：避免自旋空转浪费 CPU，同时支持精确唤醒</li>
+<li><strong>从后向前遍历保证正确性</strong>：在非原子入队操作和 CANCELLED 节点处理中，始终保证能遍历到所有有效节点</li>
+</ol>
+<blockquote>
+<p>AQS 是 Doug Lea 在并发编程领域的杰作。理解了 AQS，就理解了 JUC 包中绝大部分同步工具的底层运作方式。它不仅是面试的高频考点，更是我们在实际工程中设计自定义同步器时可以直接借鉴的框架。</p>
+</blockquote>
 18:T454,<h1>Maven使用技巧</h1>
 <h3>1、使用maven.config定制化配置</h3>
 <p>Located within the project&#39;s <strong>top level directory</strong>, the files</p>
@@ -465,7 +753,671 @@ public class ConsulClientApplication {
 </code></pre>
 <p>There must not be a whitespace after <code>--settings,</code>With the introduction of <code>maven 3.9</code>, there was a BREAKING CHANGE that affects the parsing of the <code>maven.config</code> file:</p>
 <p>Each line in <code>.mvn/maven.config</code> is now interpreted as a single argument. That is, if the file contains multiple arguments, these must now be placed on separate lines.</p>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-31","children":"2024年03月31日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"RabbitMQ、RocketMQ、Kafka区别"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","消息队列",{"href":"/blog/tag/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"消息队列"}],["$","$L13","中间件",{"href":"/blog/tag/%E4%B8%AD%E9%97%B4%E4%BB%B6/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"中间件"}],["$","$L13","技术选型",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术选型"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/服务注册与发现（实践篇）","title":"服务注册与发现（实践篇）","description":"前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。 并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景...","pubDate":"2024-03-24","tags":["微服务","服务发现","工程实践"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/tooling/Maven使用技巧","title":"Maven使用技巧","description":"手把手教你如何在工作中巧妙使用Maven，提升开发效率。","pubDate":"2024-04-03","tags":["Maven","Java","构建工具"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"消息队列":{"prev":null,"next":null},"中间件":{"prev":null,"next":null},"技术选型":{"prev":null,"next":null}}}]}],["$","$L19",null,{}]]}]}]}]
+19:T5c64,<blockquote>
+<p>微服务架构已经成为互联网后端系统的主流架构范式。然而，从单体架构迁移到微服务，绝不仅仅是把代码拆成几个服务那么简单——它涉及服务如何注册与发现、如何通信与容错、如何部署与监控等一系列基础设施问题。本文从架构设计的核心关注点出发，结合业界最佳实践，系统性地梳理微服务架构落地所需的技术体系。</p>
+</blockquote>
+<h2>微服务架构概览</h2>
+<h3>什么是微服务架构？</h3>
+<p>与单体（Monolithic）架构不同，微服务架构是由一系列<strong>职责单一的细粒度服务</strong>构成的分布式网状结构，服务之间通过轻量级机制进行通信。这种架构带来了独立部署、技术异构、弹性伸缩等优势，但同时也引入了一系列新的技术挑战。</p>
+<h3>核心技术关注点</h3>
+<p>一个完整的微服务架构需要关注以下层面：</p>
+<table>
+<thead>
+<tr>
+<th>层面</th>
+<th>关注点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>通信</strong></td>
+<td>服务注册与发现、负载均衡、RPC 框架、API 网关</td>
+</tr>
+<tr>
+<td><strong>可靠性</strong></td>
+<td>服务容错（熔断、隔离、限流、降级）</td>
+</tr>
+<tr>
+<td><strong>基础设施</strong></td>
+<td>配置中心、缓存、消息队列、数据库</td>
+</tr>
+<tr>
+<td><strong>交付</strong></td>
+<td>CI/CD 流水线、自动化测试、灰度发布</td>
+</tr>
+<tr>
+<td><strong>可观测性</strong></td>
+<td>日志系统、监控告警、链路追踪</td>
+</tr>
+<tr>
+<td><strong>部署</strong></td>
+<td>负载均衡、DNS、CDN</td>
+</tr>
+</tbody></table>
+<p>接下来，我们逐一展开讨论。</p>
+<h2>服务注册、发现与负载均衡</h2>
+<p>微服务架构下，服务提供方需要注册通告服务地址，服务调用方需要发现目标服务，同时服务提供方一般以集群方式提供服务，这就引入了负载均衡和健康检查问题。</p>
+<p>根据负载均衡器（LB）所在位置的不同，目前主要有三种方案：</p>
+<h3>方案一：集中式 LB</h3>
+<p>在服务消费者和服务提供者之间设置独立的 LB（如 F5 硬件或 LVS/HAProxy 软件），LB 上有所有服务的地址映射表，由运维配置注册。服务消费方通过 DNS 域名指向 LB。</p>
+<table>
+<thead>
+<tr>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实现简单，当前业界主流</td>
+<td>单点问题，LB 容易成为瓶颈</td>
+</tr>
+<tr>
+<td>易于做集中式访问控制</td>
+<td>增加一跳（hop），有性能开销</td>
+</tr>
+<tr>
+<td></td>
+<td>一旦 LB 故障，影响是灾难性的</td>
+</tr>
+</tbody></table>
+<h3>方案二：进程内 LB（客户端负载）</h3>
+<p>将 LB 功能以库的形式集成到服务消费方进程内，也称为<strong>软负载（Soft Load Balancing）</strong>。需要配合服务注册表（Service Registry）支持服务自注册和自发现。</p>
+<p>工作原理：</p>
+<ol>
+<li>服务提供方启动时，将地址注册到服务注册表，并定期发送心跳</li>
+<li>服务消费方通过内置 LB 组件查询注册表，缓存并定期刷新目标地址列表</li>
+<li>以某种负载均衡策略选择目标地址，直接发起请求</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>分布式方案，无单点问题</td>
+<td>多语言栈需开发多种客户端库</td>
+</tr>
+<tr>
+<td>服务间直接调用，性能好</td>
+<td>客户端库升级需服务方重新发布</td>
+</tr>
+</tbody></table>
+<p>典型案例：Netflix OSS（Eureka + Ribbon + Karyon）、阿里 Dubbo。</p>
+<h3>方案三：主机独立 LB 进程（Sidecar 模式）</h3>
+<p>将 LB 和服务发现功能从进程内移出，变成主机上的独立进程。同一主机上的多个服务共享该 LB 进程完成服务发现和负载均衡。</p>
+<table>
+<thead>
+<tr>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无单点，一个 LB 挂只影响该主机</td>
+<td>部署较复杂，环节多</td>
+</tr>
+<tr>
+<td>不需要为不同语言开发客户端库</td>
+<td>出错调试排查不方便</td>
+</tr>
+<tr>
+<td>LB 升级不需要服务方改代码</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>典型案例：Airbnb SmartStack（Zookeeper + Nerve + Synapse/HAProxy）、Kubernetes 内部服务发现。</p>
+<blockquote>
+<p>三种方案各有取舍，选择时需要综合考虑团队技术栈的多样性、运维能力和性能要求。当前趋势是方案三（Sidecar 模式）逐渐演化为 Service Mesh（服务网格），如 Istio + Envoy。</p>
+</blockquote>
+<h2>API 网关（Service Gateway）</h2>
+<p>微服务最终需要以某种方式暴露给外部系统访问，这就需要<strong>服务网关</strong>。网关是连接企业内部和外部系统的一道门，承担以下关键职责：</p>
+<table>
+<thead>
+<tr>
+<th>职责</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>反向路由</strong></td>
+<td>将外部请求路由到内部具体的微服务，对外呈现统一入口</td>
+</tr>
+<tr>
+<td><strong>安全认证</strong></td>
+<td>集中处理用户认证、授权和防爬虫</td>
+</tr>
+<tr>
+<td><strong>限流容错</strong></td>
+<td>流量高峰期限流保护后台，内部故障时集中容错</td>
+</tr>
+<tr>
+<td><strong>监控</strong></td>
+<td>集中监控访问量、调用延迟、错误计数</td>
+</tr>
+<tr>
+<td><strong>日志</strong></td>
+<td>收集所有访问日志，为后续分析提供数据</td>
+</tr>
+</tbody></table>
+<p>除此之外，网关还可以实现<strong>线上引流、线上压测、金丝雀发布（Canary Testing）、数据中心双活</strong>等高级功能。</p>
+<h3>微服务的分层架构</h3>
+<p>引入网关和服务注册表之后，微服务可以简化为两层结构：</p>
+<ul>
+<li><strong>后端通用服务（Middle Tier Service）</strong>：启动时注册地址到注册表</li>
+<li><strong>前端边缘服务（Edge Service）</strong>：查询注册表发现后端服务，对后端服务做聚合和裁剪后暴露给外部设备</li>
+</ul>
+<p>网关通过查询注册表将外部请求路由到前端服务，整个微服务体系的自注册、自发现和软路由就此串联起来。如果用设计模式的视角看——<strong>网关类似 Proxy/Facade 模式，服务注册表类似 IoC 依赖注入模式</strong>。</p>
+<p>常见的网关组件：Netflix Zuul、Kong、APISIX、Spring Cloud Gateway。</p>
+<h2>服务容错</h2>
+<p>当企业微服务化后，服务之间存在错综复杂的依赖关系。一个前端请求一般依赖多个后端服务（1→N 扇出）。在生产环境中，如果一个应用不能对其依赖的故障进行容错和隔离，就面临被拖垮的风险。在高流量场景下，某个单一后端一旦发生延迟，可能在数秒内导致所有应用资源（线程、队列等）被耗尽，造成<strong>雪崩效应（Cascading Failure）</strong>。</p>
+<p>业界总结出以下核心容错模式：</p>
+<h3>熔断器模式（Circuit Breaker）</h3>
+<p>原理类似家用电路熔断器。当目标服务慢或大量超时时，调用方主动熔断，防止服务被进一步拖垮。</p>
+<p>熔断器有三种状态：</p>
+<pre><code>Closed（正常）→ Open（熔断）→ Half-Open（半熔断）→ Closed/Open
+</code></pre>
+<ul>
+<li><strong>Closed</strong>：正常状态，请求正常通过</li>
+<li><strong>Open</strong>：调用持续出错或超时，进入熔断状态，后续请求直接拒绝（Fail Fast）</li>
+<li><strong>Half-Open</strong>：一段时间后允许少量请求尝试，成功则恢复，失败则继续熔断</li>
+</ul>
+<h3>舱壁隔离模式（Bulkhead Isolation）</h3>
+<p>像船舱一样对资源进行隔离。典型实现是<strong>线程隔离</strong>：假定应用 A 调用 Svc1/Svc2/Svc3 三个服务，容器共有 120 个工作线程，可以给每个服务各分配 40 个线程。当 Svc2 变慢时，只有分配给 Svc2 的 40 个线程被耗尽，Svc1 和 Svc3 的 80 个线程不受影响。</p>
+<h3>限流（Rate Limiting）</h3>
+<p>对服务限定并发访问量，比如单位时间只允许 100 个并发调用，超过限制的请求拒绝并回退。没有限流机制的服务在突发流量（秒杀、大促）时极易被冲垮。</p>
+<h3>降级回退（Fallback）</h3>
+<p>当熔断或限流发生时的后续处理策略：</p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fail Fast</td>
+<td>直接抛出异常</td>
+</tr>
+<tr>
+<td>返回缺省值</td>
+<td>返回空值或默认数据</td>
+</tr>
+<tr>
+<td>备份服务</td>
+<td>从备份数据源获取数据</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Netflix 将上述容错模式集成到 Hystrix 开源组件中（现已进入维护模式，社区推荐 Resilience4j 或 Sentinel 作为替代）。Spring Cloud Circuit Breaker 提供了统一的抽象层。</p>
+</blockquote>
+<h2>服务框架的核心能力</h2>
+<p>微服务化后，为了让业务开发人员专注于业务逻辑，避免冗余和重复劳动，需要将公共关注点推到框架层面。一个成熟的服务框架应当封装以下能力：</p>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>服务注册发现</td>
+<td>服务端自注册，客户端自发现和负载均衡</td>
+</tr>
+<tr>
+<td>监控日志</td>
+<td>框架层日志、Metrics、调用链数据的记录和暴露</td>
+</tr>
+<tr>
+<td>REST/RPC 与序列化</td>
+<td>支持 HTTP/REST 和 Binary/RPC，可定制序列化（JSON/Protobuf 等）</td>
+</tr>
+<tr>
+<td>动态配置</td>
+<td>运行时动态调整参数和配置</td>
+</tr>
+<tr>
+<td>限流容错</td>
+<td>集成限流和熔断组件，结合动态配置实现动态限流</td>
+</tr>
+<tr>
+<td>管理接口</td>
+<td>在线查看和动态调整框架及服务内部状态（如 Spring Boot Actuator）</td>
+</tr>
+<tr>
+<td>统一错误处理</td>
+<td>框架层统一处理异常并记录日志</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>访问控制逻辑的插件化封装</td>
+</tr>
+<tr>
+<td>文档自动生成</td>
+<td>如 Swagger/OpenAPI 的自动化文档方案</td>
+</tr>
+</tbody></table>
+<p>当前业界成熟的微服务框架有：Spring Cloud/Spring Boot、Apache Dubbo、Go-Micro、gRPC 等。</p>
+<h2>基础设施选型</h2>
+<h3>RPC 框架选型</h3>
+<p>RPC（Remote Procedure Call）框架大致分为两大流派：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>代表框架</th>
+<th>特点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>跨语言调用型</strong></td>
+<td>gRPC、Thrift、Hprose</td>
+<td>支持多语言调用，无服务治理机制</td>
+<td>多语言调用场景</td>
+</tr>
+<tr>
+<td><strong>服务治理型</strong></td>
+<td>Dubbo、Motan、rpcx</td>
+<td>功能丰富，含服务发现和治理能力</td>
+<td>大型服务的解耦和治理</td>
+</tr>
+</tbody></table>
+<p><strong>选型建议</strong>：如果是 Java 为主的团队，推荐 <strong>Dubbo</strong>（高性能，性能测试中比 Feign 强约 10 倍）。如果需要跨语言支持，Dubbo 也支持通过 Dubbo-Go 实现 Java + Go 双语言微服务架构。如果是纯粹的跨语言场景，<strong>gRPC</strong> 基于 HTTP/2 + Protobuf，是业界标准选择。</p>
+<h3>注册中心选型</h3>
+<p>所有的服务发现都依赖于一个高可用的服务注册表。主流选择：</p>
+<table>
+<thead>
+<tr>
+<th>注册中心</th>
+<th>特点</th>
+<th>一致性模型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Nacos</strong></td>
+<td>同时支持注册中心和配置中心，功能全面</td>
+<td>AP/CP 可切换</td>
+</tr>
+<tr>
+<td><strong>ZooKeeper</strong></td>
+<td>最早的分布式协调服务，生态成熟</td>
+<td>CP</td>
+</tr>
+<tr>
+<td><strong>Etcd</strong></td>
+<td>Kubernetes 默认存储，高可用和一致性</td>
+<td>CP</td>
+</tr>
+<tr>
+<td><strong>Consul</strong></td>
+<td>支持多数据中心，内置健康检查</td>
+<td>CP</td>
+</tr>
+<tr>
+<td><strong>Eureka</strong></td>
+<td>Netflix 开源，AP 模型，已停止维护</td>
+<td>AP</td>
+</tr>
+</tbody></table>
+<p><strong>选型建议</strong>：推荐 <strong>Nacos</strong>（nacos + MySQL 高可用部署），一站式解决注册中心和配置中心的需求。</p>
+<h3>配置中心选型</h3>
+<p>随着系统复杂度增长，配置管理面临越来越高的要求：配置修改实时生效、灰度发布、分环境/分集群管理、完善的权限审核机制。传统的配置文件方式已经无法满足需求。</p>
+<p>配置中心的核心架构组件：</p>
+<ul>
+<li><strong>配置服务端</strong>：集中存储和管理所有配置信息</li>
+<li><strong>配置客户端</strong>：通过<strong>定期拉取（Pull）</strong> 或 <strong>服务端推送（Push）</strong> 方式获取配置更新</li>
+<li><strong>管理界面</strong>：配置的增删改查和审计</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>配置中心</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Nacos</strong></td>
+<td>阿里开源，同时支持注册和配置，生态活跃</td>
+</tr>
+<tr>
+<td><strong>Apollo</strong></td>
+<td>携程开源，功能完善，支持灰度发布和权限管理</td>
+</tr>
+<tr>
+<td><strong>Spring Cloud Config</strong></td>
+<td>Spring 生态原生支持，基于 Git 存储</td>
+</tr>
+</tbody></table>
+<h3>缓存中间件选型</h3>
+<table>
+<thead>
+<tr>
+<th>缓存</th>
+<th>特点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Redis</strong></td>
+<td>多数据结构，支持持久化和集群</td>
+<td>通用缓存、分布式锁、排行榜等</td>
+</tr>
+<tr>
+<td><strong>Memcached</strong></td>
+<td>纯内存 KV，简单高效</td>
+<td>简单的对象缓存</td>
+</tr>
+</tbody></table>
+<p><strong>选型建议</strong>：推荐 <strong>Redis Cluster</strong> 高可用集群部署。</p>
+<blockquote>
+<p>需要特别关注 Redis 的 Big Key 问题。在高并发场景下，Big Key 会导致单个节点内存和网络带宽瓶颈，严重时可造成系统瘫痪。建议制定 Key 规范并定期扫描。</p>
+</blockquote>
+<h3>消息中间件选型</h3>
+<p>消息中间件的三大核心场景：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>说明</th>
+<th>典型案例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>异步处理</strong></td>
+<td>减少主流程等待时间，非核心逻辑异步执行</td>
+<td>注册后发送邮件、异步更新缓存</td>
+</tr>
+<tr>
+<td><strong>系统解耦</strong></td>
+<td>上下游系统通过消息通信，不需要强一致</td>
+<td>支付成功后通知 ERP/WMS/推荐等系统</td>
+</tr>
+<tr>
+<td><strong>削峰填谷</strong></td>
+<td>大流量请求放入队列，消费者按能力消化</td>
+<td>秒杀系统的下单排队</td>
+</tr>
+</tbody></table>
+<p>主流消息中间件对比：</p>
+<table>
+<thead>
+<tr>
+<th>中间件</th>
+<th>吞吐量</th>
+<th>延迟</th>
+<th>可靠性</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Kafka</strong></td>
+<td>极高</td>
+<td>毫秒级</td>
+<td>高（可配置）</td>
+<td>日志收集、大数据流处理、事件溯源</td>
+</tr>
+<tr>
+<td><strong>RocketMQ</strong></td>
+<td>高</td>
+<td>毫秒级</td>
+<td>极高（事务消息）</td>
+<td>电商交易、金融场景</td>
+</tr>
+<tr>
+<td><strong>RabbitMQ</strong></td>
+<td>中等</td>
+<td>微秒级</td>
+<td>高</td>
+<td>实时性要求高、路由复杂的场景</td>
+</tr>
+</tbody></table>
+<p><strong>选型建议</strong>：<strong>Kafka</strong> 用于日志采集和大数据场景，<strong>RocketMQ</strong> 用于业务消息和交易场景，二者搭配使用。</p>
+<h3>数据库选型</h3>
+<h4>关系型数据库</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>代表</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>传统 RDBMS</strong></td>
+<td>MySQL、PostgreSQL</td>
+<td>成熟稳定，生态丰富，百万级 PV 搭配主从 + 缓存可满足</td>
+</tr>
+<tr>
+<td><strong>NewSQL</strong></td>
+<td>TiDB、CockroachDB</td>
+<td>完整 SQL 支持 + ACID 事务 + 弹性伸缩 + 高可用 + 大数据分析能力</td>
+</tr>
+</tbody></table>
+<p>当 MySQL 需要分库分表且逻辑复杂度高、扩展性不足时，可以考虑 TiDB。</p>
+<h4>NoSQL 数据库</h4>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>代表</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>键值型</strong></td>
+<td>Redis、Memcache</td>
+<td>缓存、会话管理</td>
+</tr>
+<tr>
+<td><strong>列式</strong></td>
+<td>HBase、Cassandra</td>
+<td>写多读少、时序数据</td>
+</tr>
+<tr>
+<td><strong>文档型</strong></td>
+<td>MongoDB、CouchDB</td>
+<td>非结构化数据、灵活 Schema</td>
+</tr>
+<tr>
+<td><strong>图数据库</strong></td>
+<td>Neo4J</td>
+<td>社交网络、推荐系统</td>
+</tr>
+</tbody></table>
+<h2>CI/CD 流水线</h2>
+<p>从代码到最终服务用户，可以分为三个阶段：</p>
+<pre><code>Code → Artifact（制品库）→ Running Service → Production
+</code></pre>
+<ol>
+<li><strong>代码到制品</strong>：持续构建，制品集中管理</li>
+<li><strong>制品到服务</strong>：部署到指定环境</li>
+<li><strong>开发到生产</strong>：变更在不同环境间的迁移和灰度发布</li>
+</ol>
+<h3>工具链推荐</h3>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>推荐工具</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>代码管理</strong></td>
+<td>GitLab</td>
+<td>社区版功能丰富，结合 Gerrit 做 Code Review</td>
+</tr>
+<tr>
+<td><strong>持续集成</strong></td>
+<td>Jenkins / GitLab CI</td>
+<td>Jenkins 插件生态强大；GitLab CI 与 GitLab 深度集成</td>
+</tr>
+<tr>
+<td><strong>制品仓库</strong></td>
+<td>Harbor</td>
+<td>开源的 Docker 镜像仓库，支持镜像签名和漏洞扫描</td>
+</tr>
+<tr>
+<td><strong>部署编排</strong></td>
+<td>Kubernetes</td>
+<td>容器编排的事实标准，支持声明式部署和自动伸缩</td>
+</tr>
+<tr>
+<td><strong>项目管理</strong></td>
+<td>Jira + Confluence</td>
+<td>项目管理、任务跟踪和知识管理的行业标配</td>
+</tr>
+</tbody></table>
+<p><strong>初期建议</strong>：Jenkins + GitLab + Harbor 的组合，可以覆盖制品管理、发布流程、权限控制、版本变更和服务回滚。</p>
+<h3>自动化测试</h3>
+<p>自动化测试平台是 CI/CD 流水线的重要一环：</p>
+<ul>
+<li><strong>单元测试</strong>：JUnit / TestNG，覆盖核心业务逻辑</li>
+<li><strong>接口测试</strong>：可基于开源框架（如 SpringBoot + TestNG）搭建</li>
+<li><strong>性能测试</strong>：JMeter / Gatling</li>
+<li><strong>端到端测试</strong>：Selenium / Cypress</li>
+</ul>
+<h2>可观测性体系</h2>
+<h3>日志系统</h3>
+<p>日志系统涵盖日志打印、采集、中转、存储、分析、搜索和分发。日志系统的建设不仅是工具建设，还包括规范和组件建设——基本的日志（如全链路追踪 ID）应在框架和组件层面统一注入。</p>
+<p><strong>常规方案：ELK Stack</strong></p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Filebeat</strong></td>
+<td>轻量级日志采集器，替代 Logstash-Forwarder</td>
+</tr>
+<tr>
+<td><strong>Logstash</strong></td>
+<td>日志收集、过滤和转换</td>
+</tr>
+<tr>
+<td><strong>Elasticsearch</strong></td>
+<td>分布式搜索引擎，存储和索引日志</td>
+</tr>
+<tr>
+<td><strong>Kibana</strong></td>
+<td>可视化界面，日志搜索和分析</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>免费版 ELK 没有安全机制，建议前置 Nginx 做反向代理和简单用户认证。</p>
+</blockquote>
+<p><strong>实时计算方案</strong>：对于需要实时分析的场景，可以采用 Flume + Kafka + Flink（或 Storm）的架构。Kafka 负责高吞吐的消息缓冲，Flume 负责多样化的数据采集，Flink 负责实时流计算。</p>
+<h3>监控系统</h3>
+<p>监控系统主要覆盖两个层面：</p>
+<table>
+<thead>
+<tr>
+<th>层面</th>
+<th>监控指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>基础设施</strong></td>
+<td>机器负载、IO、网络流量、CPU、内存</td>
+</tr>
+<tr>
+<td><strong>服务质量</strong></td>
+<td>可用性、成功率、失败率、QPS、延迟</td>
+</tr>
+</tbody></table>
+<p><strong>推荐方案：Prometheus + Grafana</strong></p>
+<p>Prometheus 是 Google BorgMon 的开源版本，使用 Go 开发，采用 <strong>Pull</strong> 模式主动拉取指标数据。其核心组件：</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Prometheus Server</strong></td>
+<td>数据采集和存储，提供 PromQL 查询</td>
+</tr>
+<tr>
+<td><strong>Exporter</strong></td>
+<td>各类数据采集组件（数据库、硬件、MQ、HTTP 服务器等）</td>
+</tr>
+<tr>
+<td><strong>Push Gateway</strong></td>
+<td>支持短生命周期 Job 主动推送指标</td>
+</tr>
+<tr>
+<td><strong>Alertmanager</strong></td>
+<td>灵活的报警规则和通知管理</td>
+</tr>
+<tr>
+<td><strong>Grafana</strong></td>
+<td>高度定制化的可视化监控面板</td>
+</tr>
+</tbody></table>
+<p>Prometheus + Grafana 搭配统一的服务框架，可以满足绝大部分中小团队的监控需求。</p>
+<h2>生产环境部署架构</h2>
+<h3>DNS</h3>
+<p>DNS 是基础服务，一般直接选择云厂商：</p>
+<ul>
+<li><strong>国内</strong>：阿里云 DNS 或腾讯 DNSPod，线上产品建议使用付费版</li>
+<li><strong>海外</strong>：优先选择 AWS Route 53</li>
+<li><strong>国内外互通</strong>：建议在 APP 层实现容灾逻辑或智能调度，因为没有单一 DNS 服务能同时很好地覆盖国内外</li>
+</ul>
+<h3>负载均衡（LB）</h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>云服务环境</td>
+<td>直接使用云厂商 LB（阿里云 SLB / 腾讯云 CLB / AWS ELB）</td>
+</tr>
+<tr>
+<td>自建机房</td>
+<td>LVS（四层）+ Nginx（七层）</td>
+</tr>
+</tbody></table>
+<p>云厂商 LB 通常支持四层（TCP/UDP）和七层（HTTP/HTTPS）协议、集中化证书管理和健康检查。</p>
+<h3>CDN</h3>
+<p>CDN 的选型主要看业务覆盖区域：</p>
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>推荐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>国内</td>
+<td>阿里云 CDN、腾讯云 CDN</td>
+</tr>
+<tr>
+<td>海外</td>
+<td>AWS CloudFront、Akamai</td>
+</tr>
+</tbody></table>
+<h2>总结</h2>
+<p>微服务架构的落地是一个系统工程，核心技术关注点可以归纳为以下几个层面：</p>
+<ol>
+<li><strong>服务通信</strong>：通过注册中心 + 负载均衡 + API 网关，构建服务间和内外部的通信体系</li>
+<li><strong>服务可靠性</strong>：通过熔断、隔离、限流和降级四大模式，保障系统在故障和高峰期的稳定性</li>
+<li><strong>服务框架</strong>：将公共关注点下沉到框架层，让业务开发专注于业务逻辑</li>
+<li><strong>基础设施</strong>：根据业务需求和团队技术栈，选择合适的 RPC、注册中心、缓存、消息队列和数据库</li>
+<li><strong>持续交付</strong>：通过 CI/CD 流水线实现代码到生产环境的自动化、可重复的发布流程</li>
+<li><strong>可观测性</strong>：通过日志、监控和链路追踪构建系统的透明度，为问题排查和性能优化提供数据支撑</li>
+</ol>
+<p>好的架构不是设计出来的，而是演进出来的。架构师需要在不同阶段做出合适的判断——既不过度设计，也不欠缺考虑。关键是保持对技术的敏锐度，在实践中不断验证和调整。</p>
+<blockquote>
+<p>路漫漫其修远兮，架构求索无止尽也。</p>
+</blockquote>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-31","children":"2024年03月31日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"RabbitMQ、RocketMQ、Kafka区别"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","消息队列",{"href":"/blog/tag/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"消息队列"}],["$","$L13","中间件",{"href":"/blog/tag/%E4%B8%AD%E9%97%B4%E4%BB%B6/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"中间件"}],["$","$L13","技术选型",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术选型"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/middleware/深入理解AQS：Java并发的基石","title":"深入理解AQS：Java并发的基石","description":"系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。","pubDate":"2024-03-25","tags":["Java","并发编程","AQS","ReentrantLock","JUC"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/tooling/Maven使用技巧","title":"Maven使用技巧","description":"手把手教你如何在工作中巧妙使用Maven，提升开发效率。","pubDate":"2024-04-03","tags":["Maven","Java","构建工具"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"消息队列":{"prev":null,"next":null},"中间件":{"prev":null,"next":null},"技术选型":{"prev":{"slug":"engineering/architecture/微服务架构落地指南：从核心模式到技术选型","title":"微服务架构落地指南：从核心模式到技术选型","description":"系统性地探讨微服务架构设计的核心关注点，包括服务注册发现、API 网关、服务容错、基础设施选型、CI/CD 流水线和可观测性体系，帮助你从 0 到 1 构建一套完整的微服务技术栈。","pubDate":"2024-03-18","tags":["架构设计","微服务","分布式系统","技术选型"],"heroImage":"$undefined","content":"$19"},"next":null}}}]}],["$","$L1a",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
