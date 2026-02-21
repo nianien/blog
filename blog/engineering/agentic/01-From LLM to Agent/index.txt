@@ -9,13 +9,13 @@ d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/fffdcdb4fb651185.css","style"]
-0:{"P":null,"b":"wlOkUxTzHfxl8sQA11M8Z","p":"","c":["","blog","engineering","agentic","01-From%20LLM%20to%20Agent",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/01-From%20LLM%20to%20Agent","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/01-From%20LLM%20to%20Agent","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","A8q-5-sozbkdqNeXy2I7bv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"Dhq92JtvZPpMJAPdZEYU7","p":"","c":["","blog","engineering","agentic","01-From%20LLM%20to%20Agent",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/01-From%20LLM%20to%20Agent","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/01-From%20LLM%20to%20Agent","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","x8S6vldFOY7kMA2MufPDav",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
 14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-1a:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+1b:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
 15:T9629,<h1>From LLM to Agent: Agentic 系统的知识地图</h1>
 <blockquote>
@@ -1553,7 +1553,774 @@ rule.setAvgRt(200);               // 平均 RT &gt; 200ms 时触发限流
 </tbody></table>
 <p>最好的限流系统是你感觉不到它存在的系统。流量平稳时安静旁观，突增时默默吸收合理突发，真正超限时优雅拒绝——确保已接受的请求仍能正常处理。它不是一堵墙，而是一个阀门：精确控制流量进出，让系统在极端压力下保持可控、可预测、可依赖。</p>
 <p><strong>限流的本质，是对系统能力边界的敬畏，以及在边界之内追求最大价值的工程智慧。</strong></p>
-18:T8130,<h1>From Prompt to Agent: 为什么 LLM 本身不是 Agent</h1>
+18:T72c6,<h1>SET化架构：从单元化原理到大规模落地实践</h1>
+<blockquote>
+<p>当系统规模突破单机房、单集群的承载极限，当一次机房故障就可能导致全站不可用时，SET 化架构就成为了必然选择。它不是一种特定的技术方案，而是一种<strong>将系统划分为独立自治单元，实现水平扩展和故障隔离</strong>的架构思想。</p>
+</blockquote>
+<p>互联网业务的高速增长给架构带来了两个根本性挑战：<strong>容量的天花板</strong>和<strong>可用性的脆弱性</strong>。传统的垂直扩展（Scale-up）终有极限，而简单的水平扩展（Scale-out）在数据一致性、服务依赖、运维复杂度等方面又面临诸多困难。</p>
+<p>SET 化架构（也称为单元化架构、Cell-based Architecture）正是为了系统性地解决这些问题而诞生的。本文将从原理到实践，全面解析 SET 化架构的设计与落地。</p>
+<h2>什么是 SET 化架构？</h2>
+<h3>概念定义</h3>
+<p>SET（Scalable Elastic Topology，可扩展弹性拓扑）化架构是一种<strong>将系统按照某个维度（通常是用户 ID）划分为多个独立、自包含的部署单元</strong>的架构模式。每个 SET 都是一个&quot;小型完整系统&quot;，拥有独立的应用服务、缓存、数据库等全套基础设施，能够独立处理分配给它的流量。</p>
+<pre><code>SET 化的核心思想：
+
+传统架构：         所有用户 → 一套系统
+                    （纵向扩展，存在单点瓶颈）
+
+SET 化架构：       用户按规则分组 → 每组对应一个 SET
+                    SET-1: 用户 0~999W    → 独立的一套完整系统
+                    SET-2: 用户 1000W~1999W → 独立的一套完整系统
+                    SET-3: 用户 2000W~2999W → 独立的一套完整系统
+                    （水平扩展，理论上无上限）
+</code></pre>
+<h3>SET 的核心特征</h3>
+<table>
+<thead>
+<tr>
+<th>特征</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>自包含</strong></td>
+<td>每个 SET 拥有完整的服务栈（应用、缓存、DB），能独立处理请求</td>
+</tr>
+<tr>
+<td><strong>对等部署</strong></td>
+<td>所有 SET 的架构相同，只是处理的数据分片不同</td>
+</tr>
+<tr>
+<td><strong>故障隔离</strong></td>
+<td>单个 SET 的故障不会影响其他 SET</td>
+</tr>
+<tr>
+<td><strong>水平扩展</strong></td>
+<td>通过增加 SET 数量实现容量扩展</td>
+</tr>
+<tr>
+<td><strong>流量可调度</strong></td>
+<td>通过路由规则灵活调度流量在 SET 间的分配</td>
+</tr>
+</tbody></table>
+<h3>SET 化与传统分布式的区别</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>传统分布式架构</th>
+<th>SET 化架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>扩展方式</td>
+<td>各层独立扩展（加应用节点、加 DB 从库）</td>
+<td>整体作为一个单元扩展</td>
+</tr>
+<tr>
+<td>故障影响</td>
+<td>某一层故障影响全局</td>
+<td>故障隔离在单个 SET 内</td>
+</tr>
+<tr>
+<td>数据分片</td>
+<td>数据库层分片，应用层无感知</td>
+<td>从入口到数据库全链路分片</td>
+</tr>
+<tr>
+<td>部署单元</td>
+<td>按服务部署</td>
+<td>按 SET（单元）部署</td>
+</tr>
+<tr>
+<td>容量规划</td>
+<td>各组件独立评估</td>
+<td>按 SET 整体评估</td>
+</tr>
+</tbody></table>
+<h2>SET 化架构演进历程</h2>
+<p>SET 化不是一步到位的设计，而是随着业务规模增长逐步演化的结果。</p>
+<h3>阶段一：单体架构</h3>
+<pre><code>用户 → 应用服务器 → 数据库
+</code></pre>
+<p>所有功能在一个应用中，单库单表。适用于初创期，简单高效。</p>
+<p><strong>瓶颈</strong>：单机容量有限，数据库成为瓶颈。</p>
+<h3>阶段二：读写分离 + 缓存</h3>
+<pre><code>用户 → 应用集群 → 缓存 → 主库（写）/ 从库（读）
+</code></pre>
+<p>通过读写分离缓解数据库压力，引入缓存降低 DB 负载。</p>
+<p><strong>瓶颈</strong>：写入瓶颈无法解决，主库仍是单点。</p>
+<h3>阶段三：分库分表</h3>
+<pre><code>用户 → 应用集群 → 数据库中间件 → DB 分片 1 / DB 分片 2 / DB 分片 N
+</code></pre>
+<p>数据库水平拆分，解决写入瓶颈。但分片逻辑散落在各处，跨分片查询复杂。</p>
+<p><strong>瓶颈</strong>：应用层无分片感知，缓存与 DB 分片不对齐，运维复杂。</p>
+<h3>阶段四：服务化（微服务）</h3>
+<pre><code>用户 → API 网关 → 微服务 A / 微服务 B / ... → 各自的 DB
+</code></pre>
+<p>按业务域拆分为独立服务，各服务独立部署和扩展。</p>
+<p><strong>瓶颈</strong>：服务间调用复杂，全链路缺乏统一的分片和隔离机制。</p>
+<h3>阶段五：SET 化（单元化）</h3>
+<pre><code>用户 → 统一路由层 → SET-1（完整服务栈）/ SET-2 / SET-N
+                       ↕ 数据同步
+</code></pre>
+<p>全链路按统一维度分片，每个 SET 自包含完整服务栈，实现真正的水平扩展和故障隔离。</p>
+<p><strong>这就是 SET 化架构的终态。</strong> 下面详细介绍每个核心组件的设计。</p>
+<h2>核心设计一：流量路由</h2>
+<p>流量路由是 SET 化架构的&quot;大脑&quot;，它决定了每个请求应该被路由到哪个 SET。</p>
+<h3>路由键的选择</h3>
+<p>路由键（Sharding Key）是 SET 化的核心决策之一，选择不当会导致严重的跨 SET 调用问题。</p>
+<table>
+<thead>
+<tr>
+<th>路由键</th>
+<th>优点</th>
+<th>缺点</th>
+<th>适用业务</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>用户 ID</strong></td>
+<td>用户维度天然隔离，覆盖面广</td>
+<td>用户间交互需跨 SET</td>
+<td>电商、社交、O2O</td>
+</tr>
+<tr>
+<td><strong>商户 ID</strong></td>
+<td>商户维度隔离</td>
+<td>用户下单需跨 SET</td>
+<td>B 端平台</td>
+</tr>
+<tr>
+<td><strong>地理区域</strong></td>
+<td>天然的流量隔离</td>
+<td>跨区域业务需特殊处理</td>
+<td>本地生活、物流</td>
+</tr>
+<tr>
+<td><strong>订单 ID</strong></td>
+<td>订单维度隔离</td>
+<td>需要提前生成带路由信息的 ID</td>
+<td>交易系统</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>实践经验</strong>：绝大多数 C 端业务选择<strong>用户 ID</strong> 作为路由键，因为用户是最核心的业务实体，以用户为维度分片可以最大程度地减少跨 SET 调用。</p>
+</blockquote>
+<h3>路由架构设计</h3>
+<p>SET 化的路由通常分为三层：</p>
+<p><strong>第一层：接入路由（DNS / LB 层）</strong></p>
+<p>在最外层通过 DNS 或负载均衡器将流量分配到对应的 SET。</p>
+<pre><code>用户请求 → DNS 解析 → 全局负载均衡（GSLB）
+                            ↓
+                    根据用户 ID 哈希路由
+                    ↓           ↓           ↓
+                 SET-1 LB    SET-2 LB    SET-3 LB
+</code></pre>
+<p><strong>第二层：网关路由（API Gateway 层）</strong></p>
+<p>API 网关根据请求中的路由键（如 Header、Cookie、Token 中的用户 ID）将请求路由到正确的 SET。</p>
+<pre><code>请求 → API Gateway → 提取路由键 → 查询路由表 → 转发到目标 SET
+</code></pre>
+<p><strong>第三层：服务路由（RPC 层）</strong></p>
+<p>服务间调用时，RPC 框架自动根据上下文中的路由键将请求路由到同 SET 的服务实例。</p>
+<pre><code>Service A (SET-1) → RPC Framework → 自动路由到 → Service B (SET-1)
+                    （通过上下文传递 SET 标识）
+</code></pre>
+<h3>路由表设计</h3>
+<p>路由表是映射用户到 SET 的核心数据结构：</p>
+<pre><code>路由表结构：
+┌──────────────┬──────────┬──────────┐
+│  分片范围      │  SET ID  │  状态     │
+├──────────────┼──────────┼──────────┤
+│  0 ~ 999      │  SET-1   │  Active  │
+│  1000 ~ 1999  │  SET-2   │  Active  │
+│  2000 ~ 2999  │  SET-3   │  Active  │
+│  3000 ~ 3999  │  SET-1   │  Active  │  ← 同一个 SET 可承载多个分片
+└──────────────┴──────────┴──────────┘
+</code></pre>
+<p>路由策略的关键设计要点：</p>
+<ol>
+<li><strong>虚拟分片</strong>：不直接将用户映射到物理 SET，而是先映射到虚拟分片（如 1024 个），再将虚拟分片映射到物理 SET。这样扩容时只需调整虚拟分片的映射关系</li>
+<li><strong>路由缓存</strong>：路由表在网关和服务端本地缓存，避免每次请求都查询路由服务</li>
+<li><strong>路由一致性</strong>：路由表变更时需要保证全链路一致性，避免请求被路由到错误的 SET</li>
+</ol>
+<h2>核心设计二：数据分片与同步</h2>
+<p>数据层是 SET 化最复杂的部分，需要解决数据分片、跨 SET 数据访问、数据同步等问题。</p>
+<h3>数据分类</h3>
+<p>SET 化架构中的数据按照与路由键的关系分为三类：</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>定义</th>
+<th>存储方式</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>SET 内数据</strong></td>
+<td>与路由键强绑定的数据</td>
+<td>仅存储在对应 SET</td>
+<td>用户订单、用户资产、购物车</td>
+</tr>
+<tr>
+<td><strong>全局数据</strong></td>
+<td>所有 SET 共享的数据</td>
+<td>全局存储 + 各 SET 只读副本</td>
+<td>商品信息、配置数据、类目</td>
+</tr>
+<tr>
+<td><strong>跨 SET 数据</strong></td>
+<td>涉及多个路由键的数据</td>
+<td>全局存储或冗余存储</td>
+<td>商户维度的聚合数据、排行榜</td>
+</tr>
+</tbody></table>
+<h3>SET 内数据</h3>
+<p>SET 内数据遵循&quot;谁的数据谁存储&quot;原则，每个 SET 只处理和存储自己分片内的数据：</p>
+<pre><code>SET-1 数据库：只存储 UserID 0~999 的数据
+SET-2 数据库：只存储 UserID 1000~1999 的数据
+
+用户 A (ID=500) 下单 → 请求路由到 SET-1 → 订单写入 SET-1 DB
+用户 B (ID=1500) 下单 → 请求路由到 SET-2 → 订单写入 SET-2 DB
+</code></pre>
+<h3>全局数据</h3>
+<p>全局数据（如商品信息）需要所有 SET 都能访问，通常采用以下方案：</p>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>原理</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>全局服务</strong></td>
+<td>独立部署的全局服务 + 数据库</td>
+<td>数据一致性好</td>
+<td>全局服务成为依赖瓶颈</td>
+</tr>
+<tr>
+<td><strong>数据广播</strong></td>
+<td>写入全局库后异步同步到各 SET</td>
+<td>本地读取性能好</td>
+<td>数据有延迟，存储冗余</td>
+</tr>
+<tr>
+<td><strong>缓存分发</strong></td>
+<td>全局数据写入后推送到各 SET 缓存</td>
+<td>读取极快</td>
+<td>缓存一致性需要保障</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>实践建议</strong>：高频读取的全局数据（如商品详情）采用&quot;数据广播 + 本地缓存&quot;方案；低频但要求强一致的全局数据（如配置变更）采用&quot;全局服务&quot;方案。</p>
+</blockquote>
+<h3>数据同步机制</h3>
+<p>SET 间的数据同步是保证业务连续性的关键，特别是在故障切换场景下：</p>
+<pre><code>                     主 SET                          备 SET
+                 ┌──────────┐                    ┌──────────┐
+                 │  应用层    │                    │  应用层    │
+                 │  缓存层    │                    │  缓存层    │
+                 │  数据库    │ ── Binlog 同步 ──→ │  数据库    │
+                 └──────────┘                    └──────────┘
+
+        同步方式：MySQL Binlog → Canal/DTS → 目标 SET 数据库
+        同步延迟：通常 &lt; 1s，需要监控告警
+</code></pre>
+<p>数据同步的关键指标：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>目标值</th>
+<th>监控方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>同步延迟</td>
+<td>&lt; 1 秒</td>
+<td>Binlog 位点差监控</td>
+</tr>
+<tr>
+<td>数据一致性</td>
+<td>99.99%</td>
+<td>定期全量对账</td>
+</tr>
+<tr>
+<td>同步可用性</td>
+<td>99.99%</td>
+<td>同步链路健康检查</td>
+</tr>
+</tbody></table>
+<h2>核心设计三：全局服务</h2>
+<p>有些服务天然不能被 SET 化，它们需要作为全局服务为所有 SET 提供能力。</p>
+<h3>全局 ID 生成</h3>
+<p>在 SET 化架构中，ID 生成必须保证全局唯一且带有路由信息：</p>
+<pre><code>ID 结构设计：
+┌────────────┬──────────┬───────────┬──────────┐
+│  时间戳      │  SET ID  │  机器 ID   │  序列号   │
+│  41 bits    │  5 bits  │  5 bits   │  12 bits │
+└────────────┴──────────┴───────────┴──────────┘
+
+总长度：63 bits（Long 类型）
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>生成方案</th>
+<th>优点</th>
+<th>缺点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>全局 ID 服务</strong></td>
+<td>全局唯一性保证最强</td>
+<td>依赖外部服务，存在可用性风险</td>
+<td>核心业务（订单、支付）</td>
+</tr>
+<tr>
+<td><strong>本地 Snowflake</strong></td>
+<td>无外部依赖，性能最高</td>
+<td>需要解决时钟回拨问题</td>
+<td>非核心业务</td>
+</tr>
+<tr>
+<td><strong>号段模式</strong></td>
+<td>批量获取减少调用</td>
+<td>号段用尽时有短暂延迟</td>
+<td>通用场景</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>兜底策略</strong>：本地 ID 生成作为兜底方案，当全局 ID 服务不可用时自动降级为本地生成，确保业务不中断。</p>
+</blockquote>
+<h3>全局配置中心</h3>
+<p>配置中心负责管理所有 SET 的路由规则、业务配置和开关：</p>
+<pre><code>配置中心架构：
+                  ┌─────────────────┐
+                  │   配置中心集群     │
+                  │  (ZK/Nacos/etcd) │
+                  └────────┬────────┘
+                     ↙     ↓     ↘
+            SET-1 Agent  SET-2 Agent  SET-3 Agent
+               ↓            ↓            ↓
+            本地缓存      本地缓存      本地缓存
+
+推送机制：配置变更 → 配置中心 → 推送给各 SET Agent → 更新本地缓存
+</code></pre>
+<h3>全局调度中心</h3>
+<p>负责 SET 的健康监控、故障检测和流量调度：</p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>健康检查</td>
+<td>定期探测各 SET 的健康状态</td>
+</tr>
+<tr>
+<td>故障检测</td>
+<td>发现 SET 异常时触发告警</td>
+</tr>
+<tr>
+<td>流量切换</td>
+<td>故障 SET 的流量自动切换到备用 SET</td>
+</tr>
+<tr>
+<td>容量管理</td>
+<td>监控各 SET 的容量使用率</td>
+</tr>
+<tr>
+<td>扩缩容编排</td>
+<td>新增或下线 SET 时的流量编排</td>
+</tr>
+</tbody></table>
+<h2>核心设计四：故障隔离与切换</h2>
+<p>故障隔离是 SET 化架构最核心的价值之一。</p>
+<h3>故障域划分</h3>
+<p>SET 化架构将故障影响范围从&quot;全站&quot;缩小到&quot;单个 SET&quot;：</p>
+<pre><code>传统架构故障：
+  DB 主库宕机 → 全站不可用 → 影响 100% 用户
+
+SET 化架构故障：
+  SET-2 DB 宕机 → 仅 SET-2 不可用 → 影响约 33% 用户（假设 3 个 SET）
+                    ↓ 自动切换
+                 SET-2 流量切换到备用 → 影响时间 &lt; 分钟级
+</code></pre>
+<h3>故障切换策略</h3>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>切换速度</th>
+<th>数据风险</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>主备切换</strong></td>
+<td>秒级~分钟级</td>
+<td>可能丢失未同步数据</td>
+<td>SET 内部 DB 主备切换</td>
+</tr>
+<tr>
+<td><strong>SET 间切换</strong></td>
+<td>分钟级</td>
+<td>依赖数据同步延迟</td>
+<td>整个 SET 故障</td>
+</tr>
+<tr>
+<td><strong>跨机房切换</strong></td>
+<td>分钟级~小时级</td>
+<td>需要全量数据同步</td>
+<td>机房级故障</td>
+</tr>
+</tbody></table>
+<h3>故障切换流程</h3>
+<pre><code>正常状态：
+  用户流量 → 路由层 → SET-2（主）
+
+故障检测：
+  健康检查失败 → 确认 SET-2 不可用 → 触发切换流程
+
+切换执行：
+  1. 停止 SET-2 的流量接入（路由层摘除）
+  2. 等待 SET-2 → SET-2-备 的数据同步完成（或接受部分数据丢失）
+  3. 更新路由表：SET-2 的分片 → SET-2-备
+  4. 开放 SET-2-备 的流量接入
+  5. 验证切换后的业务正确性
+
+恢复状态：
+  用户流量 → 路由层 → SET-2-备（新主）
+</code></pre>
+<h3>容灾等级</h3>
+<table>
+<thead>
+<tr>
+<th>等级</th>
+<th>容灾范围</th>
+<th>实现方式</th>
+<th>RTO</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>L1</strong></td>
+<td>单机故障</td>
+<td>应用集群 + DB 主备</td>
+<td>秒级</td>
+</tr>
+<tr>
+<td><strong>L2</strong></td>
+<td>机架故障</td>
+<td>跨机架部署</td>
+<td>秒级</td>
+</tr>
+<tr>
+<td><strong>L3</strong></td>
+<td>机房故障</td>
+<td>同城双机房 SET 互备</td>
+<td>分钟级</td>
+</tr>
+<tr>
+<td><strong>L4</strong></td>
+<td>城市故障</td>
+<td>异地 SET 互备</td>
+<td>分钟级~小时级</td>
+</tr>
+</tbody></table>
+<h2>核心设计五：SET 扩缩容</h2>
+<p>SET 化架构的一个重要优势是可以通过增减 SET 数量来调整系统容量。</p>
+<h3>扩容流程</h3>
+<pre><code>扩容场景：当前 3 个 SET 容量不足，需要扩容到 4 个 SET
+
+Step 1: 部署新 SET（SET-4）
+  - 部署完整的应用服务、缓存、数据库
+  - 从现有 SET 同步全局数据
+
+Step 2: 数据迁移
+  - 将 SET-1 的部分虚拟分片的数据迁移到 SET-4
+  - 采用双写方案保证迁移过程不中断服务
+
+Step 3: 路由切换
+  - 更新路由表：迁移的虚拟分片指向 SET-4
+  - 灰度切换流量，逐步验证
+
+Step 4: 清理
+  - 验证完成后，清理 SET-1 中已迁移的数据
+  - 回收空闲资源
+</code></pre>
+<h3>虚拟分片的价值</h3>
+<p>虚拟分片是实现平滑扩缩容的关键：</p>
+<pre><code>初始状态（3 个 SET，1024 个虚拟分片）：
+  SET-1: 虚拟分片 0~341
+  SET-2: 虚拟分片 342~682
+  SET-3: 虚拟分片 683~1023
+
+扩容到 4 个 SET（只需调整虚拟分片映射）：
+  SET-1: 虚拟分片 0~255
+  SET-2: 虚拟分片 256~511
+  SET-3: 虚拟分片 512~767
+  SET-4: 虚拟分片 768~1023
+
+优势：用户 → 虚拟分片的映射不变，只调整虚拟分片 → 物理 SET 的映射
+</code></pre>
+<h2>实践案例：电商交易系统 SET 化</h2>
+<p>以一个典型的电商交易系统为例，展示 SET 化的具体落地方案。</p>
+<h3>业务分析</h3>
+<table>
+<thead>
+<tr>
+<th>服务</th>
+<th>路由键关系</th>
+<th>SET 化策略</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用户服务</td>
+<td>用户 ID（强绑定）</td>
+<td>SET 内部署</td>
+</tr>
+<tr>
+<td>订单服务</td>
+<td>用户 ID（强绑定）</td>
+<td>SET 内部署</td>
+</tr>
+<tr>
+<td>支付服务</td>
+<td>用户 ID（强绑定）</td>
+<td>SET 内部署</td>
+</tr>
+<tr>
+<td>商品服务</td>
+<td>无关（全局数据）</td>
+<td>全局部署 + 数据广播</td>
+</tr>
+<tr>
+<td>库存服务</td>
+<td>商品维度（跨 SET）</td>
+<td>全局部署</td>
+</tr>
+<tr>
+<td>搜索服务</td>
+<td>无关（全局数据）</td>
+<td>全局部署</td>
+</tr>
+<tr>
+<td>营销服务</td>
+<td>活动维度（跨 SET）</td>
+<td>全局部署</td>
+</tr>
+</tbody></table>
+<h3>整体架构</h3>
+<pre><code>                        ┌──────────────────────────────────┐
+                        │          统一接入层（GSLB）         │
+                        └───────────────┬──────────────────┘
+                                        ↓
+                        ┌──────────────────────────────────┐
+                        │         API Gateway（路由层）       │
+                        │    提取 UserID → 查询路由表 → 转发   │
+                        └──┬──────────────┬────────────┬───┘
+                           ↓              ↓            ↓
+                    ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+                    │   SET-1     │ │   SET-2     │ │   SET-3     │
+                    │ ┌─────────┐ │ │ ┌─────────┐ │ │ ┌─────────┐ │
+                    │ │用户服务  │ │ │ │用户服务  │ │ │ │用户服务  │ │
+                    │ │订单服务  │ │ │ │订单服务  │ │ │ │订单服务  │ │
+                    │ │支付服务  │ │ │ │支付服务  │ │ │ │支付服务  │ │
+                    │ │Redis    │ │ │ │Redis    │ │ │ │Redis    │ │
+                    │ │MySQL    │ │ │ │MySQL    │ │ │ │MySQL    │ │
+                    │ └─────────┘ │ │ └─────────┘ │ │ └─────────┘ │
+                    └─────────────┘ └─────────────┘ └─────────────┘
+                           ↕              ↕            ↕
+                    ┌──────────────────────────────────────────┐
+                    │              全局服务层                     │
+                    │  商品服务 │ 库存服务 │ 搜索服务 │ 营销服务    │
+                    │         全局 ID 服务 │ 配置中心              │
+                    └──────────────────────────────────────────┘
+</code></pre>
+<h3>下单流程的 SET 化处理</h3>
+<pre><code>用户 A（ID=500）下单购买商品 X：
+
+1. 请求到达 API Gateway
+2. Gateway 提取 UserID=500，查路由表 → SET-1
+3. 请求转发到 SET-1 的订单服务
+4. 订单服务调用全局商品服务查询商品信息
+5. 订单服务调用全局库存服务扣减库存
+6. 订单服务在 SET-1 本地 DB 创建订单
+7. 订单服务调用 SET-1 本地的支付服务发起支付
+8. 支付完成后，SET-1 的订单服务更新本地订单状态
+</code></pre>
+<p>关键点：</p>
+<ul>
+<li>用户维度的数据操作（创建订单、支付）在 SET 内完成，无跨 SET 调用</li>
+<li>商品、库存等全局数据通过全局服务访问</li>
+<li>RPC 框架自动将 SET 标识通过上下文传递，保证 SET 内调用的正确性</li>
+</ul>
+<h2>SET 化实施路线</h2>
+<p>SET 化是一个渐进式的过程，不应该一步到位。</p>
+<h3>阶段规划</h3>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>目标</th>
+<th>关键动作</th>
+<th>周期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>P0：基础设施准备</strong></td>
+<td>具备 SET 化的基础能力</td>
+<td>统一 RPC 框架、引入路由组件、改造 ID 生成</td>
+<td>1~2 月</td>
+</tr>
+<tr>
+<td><strong>P1：核心链路 SET 化</strong></td>
+<td>交易核心链路实现 SET 化</td>
+<td>订单、支付、用户服务 SET 化部署</td>
+<td>2~3 月</td>
+</tr>
+<tr>
+<td><strong>P2：全链路 SET 化</strong></td>
+<td>所有服务完成 SET 化改造</td>
+<td>非核心服务 SET 化、全局服务治理</td>
+<td>3~6 月</td>
+</tr>
+<tr>
+<td><strong>P3：异地 SET</strong></td>
+<td>实现异地多活能力</td>
+<td>跨机房 SET 部署、数据同步、故障切换</td>
+<td>3~6 月</td>
+</tr>
+</tbody></table>
+<h3>改造清单</h3>
+<p><strong>应用层改造</strong>：</p>
+<ul>
+<li>所有服务支持从请求上下文中提取和传递路由键</li>
+<li>RPC 框架支持基于路由键的服务路由</li>
+<li>消息队列的生产和消费支持 SET 路由</li>
+<li>定时任务支持按 SET 分片执行</li>
+</ul>
+<p><strong>数据层改造</strong>：</p>
+<ul>
+<li>数据库按 SET 进行物理隔离</li>
+<li>缓存按 SET 进行 namespace 隔离</li>
+<li>全局数据的同步机制建设</li>
+<li>数据对账和修复工具</li>
+</ul>
+<p><strong>基础设施改造</strong>：</p>
+<ul>
+<li>统一路由服务建设</li>
+<li>全局 ID 生成服务建设</li>
+<li>监控体系支持 SET 维度</li>
+<li>发布系统支持按 SET 灰度</li>
+</ul>
+<h2>SET 化与异地多活的关系</h2>
+<p>SET 化架构是异地多活的基础。两者的关系可以这样理解：</p>
+<pre><code>SET 化 = 单元化部署 + 流量路由 + 数据分片
+异地多活 = SET 化 + 跨地域部署 + 数据同步 + 故障切换
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>同城 SET 化</th>
+<th>异地多活 SET 化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>部署范围</td>
+<td>同城多机房</td>
+<td>跨城市多机房</td>
+</tr>
+<tr>
+<td>网络延迟</td>
+<td>&lt; 1ms</td>
+<td>10~50ms</td>
+</tr>
+<tr>
+<td>数据同步</td>
+<td>同步/半同步复制</td>
+<td>异步复制（最终一致性）</td>
+</tr>
+<tr>
+<td>故障切换</td>
+<td>自动秒级切换</td>
+<td>手动/半自动分钟级切换</td>
+</tr>
+<tr>
+<td>核心挑战</td>
+<td>路由准确性</td>
+<td>数据一致性 + 切换决策</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>SET 化架构天然具备&quot;每个 SET 独立自治&quot;的特性，这为异地多活提供了完美的基础。只需将不同的 SET 部署到不同的地域，配合数据同步和流量调度，就能实现异地多活。</p>
+</blockquote>
+<h2>常见问题与解决方案</h2>
+<h3>跨 SET 调用问题</h3>
+<p><strong>问题</strong>：部分业务场景不可避免需要跨 SET 访问数据。</p>
+<p><strong>解决方案</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用户查看商户信息</td>
+<td>商户数据作为全局数据广播</td>
+</tr>
+<tr>
+<td>商户查看所有订单</td>
+<td>聚合服务从各 SET 并行查询后合并</td>
+</tr>
+<tr>
+<td>全站排行榜</td>
+<td>各 SET 本地计算后汇总到全局服务</td>
+</tr>
+<tr>
+<td>跨用户转账</td>
+<td>通过消息队列异步通知目标 SET</td>
+</tr>
+</tbody></table>
+<h3>数据迁移问题</h3>
+<p><strong>问题</strong>：扩容时需要在 SET 间迁移数据。</p>
+<p><strong>解决方案</strong>：双写方案</p>
+<pre><code>Phase 1: 新 SET 开始从旧 SET 同步增量数据（Binlog 订阅）
+Phase 2: 同步追上后，开启双写模式（新请求同时写入新旧 SET）
+Phase 3: 路由切换，新请求全部路由到新 SET
+Phase 4: 验证无误后，停止双写，清理旧数据
+</code></pre>
+<h3>全局服务瓶颈</h3>
+<p><strong>问题</strong>：全局服务成为所有 SET 的共同依赖，可能成为瓶颈。</p>
+<p><strong>解决方案</strong>：</p>
+<ol>
+<li><strong>数据本地化</strong>：全局数据尽可能广播到各 SET 本地，减少全局服务调用</li>
+<li><strong>缓存优先</strong>：全局数据走多级缓存，降低对全局 DB 的访问</li>
+<li><strong>异步化</strong>：非实时性要求的全局操作通过消息队列异步处理</li>
+<li><strong>弹性扩展</strong>：全局服务本身也需要集群化部署和弹性扩展</li>
+</ol>
+<h2>总结</h2>
+<p>SET 化架构是应对互联网业务规模化增长的系统性解决方案。它的核心思想并不复杂——<strong>把一个大系统拆分成多个独立自治的小系统</strong>——但真正的挑战在于落地过程中的每一个细节。</p>
+<p>回顾 SET 化的关键设计决策：</p>
+<ol>
+<li><strong>路由键选择决定了架构的天花板</strong>。选错路由键会导致大量跨 SET 调用，抵消 SET 化的优势</li>
+<li><strong>数据分类是 SET 化的基础</strong>。明确哪些是 SET 内数据、哪些是全局数据，才能设计合理的数据架构</li>
+<li><strong>虚拟分片是弹性扩展的关键</strong>。不要将用户直接映射到物理 SET，虚拟分片层带来的灵活性至关重要</li>
+<li><strong>全局服务的治理不能忽视</strong>。全局服务是所有 SET 的共同依赖，必须做到高可用和高性能</li>
+<li><strong>渐进式实施是务实的选择</strong>。从核心链路开始，逐步扩展，而不是试图一步到位</li>
+</ol>
+<blockquote>
+<p><strong>SET 化不是目的，而是手段。</strong> 它服务于两个根本目标：让系统能够水平扩展以承载业务增长，让故障影响可控以保障用户体验。在实施 SET 化之前，先问自己：当前的业务规模真的需要 SET 化吗？</p>
+</blockquote>
+19:T8130,<h1>From Prompt to Agent: 为什么 LLM 本身不是 Agent</h1>
 <blockquote>
 <p>当我们说&quot;让 AI 帮我完成这件事&quot;时，我们期望的不是一次文本生成，而是一次<strong>有目标、有规划、有执行、有反馈</strong>的任务完成过程。这正是 LLM 和 Agent 的根本区别。</p>
 <p>本文是 Agentic 系列第 02 篇。上一篇我们绘制了全景地图，这一篇我们回到原点：为什么一个再强大的 LLM，本身也不是 Agent？从&quot;不是什么&quot;出发，才能精确定义&quot;是什么&quot;。</p>
@@ -2091,7 +2858,7 @@ memory.store(
 <li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
 </ul>
 </blockquote>
-19:T498b,<h2>一、引言</h2>
+1a:T498b,<h2>一、引言</h2>
 <p>人工智能正处于一次范式迁移的节点：从“能说”的大语言模型（LLM）走向“能做”的智能体（Agent）。LLM 带来了通用的语言理解和生成能力，但它仍然是一个<br><strong>封闭、被动、短期记忆</strong>的系统：知识停留在训练时刻，无法直接访问实时世界；只能在用户输入后响应；上下文窗口限制使得记忆易失；输出不含可执行语义，更谈不上与外界系统协作。</p>
 <p><strong>Agent</strong> 的提出，正是为 LLM 补齐“行动力”：通过<strong>工具调用</strong>连入 API/数据库/计算环境，通过<strong>记忆</strong>维持跨会话状态，通过<strong>编排<br><strong>将复杂任务拆解为可控的工作流，必要时引入</strong>多 Agent 协作</strong>。当这四个维度协同起来，语言就不再是终点，而是驱动系统执行任务的接口。</p>
 <h2>二、Agent 是什么</h2>
@@ -2390,7 +3157,7 @@ user_proxy.initiate_chat(assistant, message=&quot;写一份新能源车行业调
 <p><strong>多模态 Agent</strong> 将同时处理文本、图像、语音与视频，统一在一个任务图里协同；<strong>模型路由与降级</strong>会让系统自动在质量、成本、延迟之间折中；<br><strong>Agent OS/编排平台</strong>将成为企业的“智能内核”，承载权限、任务、审计与经济计量；而 <strong>LLMOps 标准化</strong><br>则会把“可观测、安全治理、回放评测”固化为工程必修课。</p>
 <h2>八、结语</h2>
 <p>从 LLM 到 Agent，不只是“接口变了”，而是<strong>软件工程边界</strong>的扩大：语言成了新的“应用协议”，编排成了“智能内核”，数据与工具成了“外设”。掌握本文的框架图谱与依赖链，意味着你可以按需组装：以<br>LlamaIndex 做数据底座，以 LangGraph 管编排，以 LangChain/AutoGen/CrewAI 做场景拼装，再用监控与安全把它变成真正<strong>可运营</strong><br>的系统。愿你从 demo 出发，驶向生产。</p>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/agentic/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"Agentic 系统"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-01","children":"2025年12月01日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"From LLM to Agent: Agentic 系统的知识地图"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L13","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L13","LLM",{"href":"/blog/tag/LLM/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"LLM"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/限流的本质：从令牌桶到分布式流控的架构思考","title":"限流的本质：从令牌桶到分布式流控的架构思考","description":"限流不是一个算法问题，而是一个系统设计问题。从单机令牌桶到分布式 Redis 计数器，从 Nginx 接入层到业务层精细化流控——每一层的限流策略背后，都是对系统容量、业务优先级和降级策略的深度思考。","pubDate":"2025-11-25","tags":["限流","分布式系统","系统架构","高可用"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/02-From Prompt to Agent","title":"From Prompt to Agent: 为什么 LLM 本身不是 Agent","description":"LLM 是一个无状态的文本函数，Agent 是一个有状态的推理系统。本文从 LLM 的五大局限出发，精确定义 Agent 的组件模型与控制循环，并沿 Chatbot → Agent 的光谱逐级拆解，帮助你建立从 Prompt 到 Agent 的完整认知框架。","pubDate":"2025-12-05","tags":["Agentic","AI Engineering","LLM"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":null,"next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"AI Engineering":{"prev":null,"next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"LLM":{"prev":{"slug":"insights/technology/AI-Agent技术科普","title":"Agent 技术科普：开启智能体的新时代","description":"本文面向工程与产品落地，采用“概述长文 + 框架细化 + 技术依赖链”的结构：前半部分回答*为什么与是什么*，中段把*主流框架逐一讲透*（背景、要解决的问题、核心机制、现状与生态、典型应用、优缺点、示例、学习建议），最后给出*最小依赖链*以便快速动手。","pubDate":"2025-09-25","tags":["AI Agent","LLM","智能体"],"heroImage":"$undefined","content":"$19"},"next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"}}}]}],["$","$L1a",null,{}]]}]}]}]
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/agentic/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"Agentic 系统"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-01","children":"2025年12月01日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"From LLM to Agent: Agentic 系统的知识地图"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L13","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L13","LLM",{"href":"/blog/tag/LLM/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"LLM"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/限流的本质：从令牌桶到分布式流控的架构思考","title":"限流的本质：从令牌桶到分布式流控的架构思考","description":"限流不是一个算法问题，而是一个系统设计问题。从单机令牌桶到分布式 Redis 计数器，从 Nginx 接入层到业务层精细化流控——每一层的限流策略背后，都是对系统容量、业务优先级和降级策略的深度思考。","pubDate":"2025-11-25","tags":["限流","分布式系统","系统架构","高可用"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/architecture/SET化架构：从单元化原理到大规模落地实践","title":"SET化架构：从单元化原理到大规模落地实践","description":"深入剖析SET化（单元化）架构的核心原理与设计实践，涵盖流量路由、数据分片、全局服务、故障隔离等关键环节，结合美团、阿里等大厂实践经验，构建可水平扩展的弹性架构体系。","pubDate":"2025-12-05","tags":["架构设计","SET化架构","单元化","异地多活","高可用"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":null,"next":{"slug":"engineering/agentic/02-From Prompt to Agent","title":"From Prompt to Agent: 为什么 LLM 本身不是 Agent","description":"LLM 是一个无状态的文本函数，Agent 是一个有状态的推理系统。本文从 LLM 的五大局限出发，精确定义 Agent 的组件模型与控制循环，并沿 Chatbot → Agent 的光谱逐级拆解，帮助你建立从 Prompt 到 Agent 的完整认知框架。","pubDate":"2025-12-05","tags":["Agentic","AI Engineering","LLM"],"heroImage":"$undefined","content":"$19"}},"AI Engineering":{"prev":null,"next":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:next"},"LLM":{"prev":{"slug":"insights/technology/AI-Agent技术科普","title":"Agent 技术科普：开启智能体的新时代","description":"本文面向工程与产品落地，采用“概述长文 + 框架细化 + 技术依赖链”的结构：前半部分回答*为什么与是什么*，中段把*主流框架逐一讲透*（背景、要解决的问题、核心机制、现状与生态、典型应用、优缺点、示例、学习建议），最后给出*最小依赖链*以便快速动手。","pubDate":"2025-09-25","tags":["AI Agent","LLM","智能体"],"heroImage":"$undefined","content":"$1a"},"next":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:next"}}}]}],["$","$L1b",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null

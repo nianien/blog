@@ -9,13 +9,13 @@ d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/fffdcdb4fb651185.css","style"]
-0:{"P":null,"b":"wlOkUxTzHfxl8sQA11M8Z","p":"","c":["","blog","engineering","agentic","04-The%20Agent%20Control%20Loop",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/04-The%20Agent%20Control%20Loop","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/04-The%20Agent%20Control%20Loop","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","gszczT3CvwRtP9We3L8Fnv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"Dhq92JtvZPpMJAPdZEYU7","p":"","c":["","blog","engineering","agentic","04-The%20Agent%20Control%20Loop",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/04-The%20Agent%20Control%20Loop","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/04-The%20Agent%20Control%20Loop","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","6OCaS_-LpanjFhlb3wL3qv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
 14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-1a:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+1c:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
 15:Tc7d3,<h1>The Agent Control Loop: Agent 运行时的核心抽象</h1>
 <blockquote>
@@ -1085,7 +1085,1306 @@ N       T               S + NT               S + NT
 <li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
 </ul>
 </blockquote>
-17:T9547,<h1>Agent vs Workflow vs Automation: 选对抽象才是关键</h1>
+17:T5c64,<blockquote>
+<p>微服务架构已经成为互联网后端系统的主流架构范式。然而，从单体架构迁移到微服务，绝不仅仅是把代码拆成几个服务那么简单——它涉及服务如何注册与发现、如何通信与容错、如何部署与监控等一系列基础设施问题。本文从架构设计的核心关注点出发，结合业界最佳实践，系统性地梳理微服务架构落地所需的技术体系。</p>
+</blockquote>
+<h2>微服务架构概览</h2>
+<h3>什么是微服务架构？</h3>
+<p>与单体（Monolithic）架构不同，微服务架构是由一系列<strong>职责单一的细粒度服务</strong>构成的分布式网状结构，服务之间通过轻量级机制进行通信。这种架构带来了独立部署、技术异构、弹性伸缩等优势，但同时也引入了一系列新的技术挑战。</p>
+<h3>核心技术关注点</h3>
+<p>一个完整的微服务架构需要关注以下层面：</p>
+<table>
+<thead>
+<tr>
+<th>层面</th>
+<th>关注点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>通信</strong></td>
+<td>服务注册与发现、负载均衡、RPC 框架、API 网关</td>
+</tr>
+<tr>
+<td><strong>可靠性</strong></td>
+<td>服务容错（熔断、隔离、限流、降级）</td>
+</tr>
+<tr>
+<td><strong>基础设施</strong></td>
+<td>配置中心、缓存、消息队列、数据库</td>
+</tr>
+<tr>
+<td><strong>交付</strong></td>
+<td>CI/CD 流水线、自动化测试、灰度发布</td>
+</tr>
+<tr>
+<td><strong>可观测性</strong></td>
+<td>日志系统、监控告警、链路追踪</td>
+</tr>
+<tr>
+<td><strong>部署</strong></td>
+<td>负载均衡、DNS、CDN</td>
+</tr>
+</tbody></table>
+<p>接下来，我们逐一展开讨论。</p>
+<h2>服务注册、发现与负载均衡</h2>
+<p>微服务架构下，服务提供方需要注册通告服务地址，服务调用方需要发现目标服务，同时服务提供方一般以集群方式提供服务，这就引入了负载均衡和健康检查问题。</p>
+<p>根据负载均衡器（LB）所在位置的不同，目前主要有三种方案：</p>
+<h3>方案一：集中式 LB</h3>
+<p>在服务消费者和服务提供者之间设置独立的 LB（如 F5 硬件或 LVS/HAProxy 软件），LB 上有所有服务的地址映射表，由运维配置注册。服务消费方通过 DNS 域名指向 LB。</p>
+<table>
+<thead>
+<tr>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实现简单，当前业界主流</td>
+<td>单点问题，LB 容易成为瓶颈</td>
+</tr>
+<tr>
+<td>易于做集中式访问控制</td>
+<td>增加一跳（hop），有性能开销</td>
+</tr>
+<tr>
+<td></td>
+<td>一旦 LB 故障，影响是灾难性的</td>
+</tr>
+</tbody></table>
+<h3>方案二：进程内 LB（客户端负载）</h3>
+<p>将 LB 功能以库的形式集成到服务消费方进程内，也称为<strong>软负载（Soft Load Balancing）</strong>。需要配合服务注册表（Service Registry）支持服务自注册和自发现。</p>
+<p>工作原理：</p>
+<ol>
+<li>服务提供方启动时，将地址注册到服务注册表，并定期发送心跳</li>
+<li>服务消费方通过内置 LB 组件查询注册表，缓存并定期刷新目标地址列表</li>
+<li>以某种负载均衡策略选择目标地址，直接发起请求</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>分布式方案，无单点问题</td>
+<td>多语言栈需开发多种客户端库</td>
+</tr>
+<tr>
+<td>服务间直接调用，性能好</td>
+<td>客户端库升级需服务方重新发布</td>
+</tr>
+</tbody></table>
+<p>典型案例：Netflix OSS（Eureka + Ribbon + Karyon）、阿里 Dubbo。</p>
+<h3>方案三：主机独立 LB 进程（Sidecar 模式）</h3>
+<p>将 LB 和服务发现功能从进程内移出，变成主机上的独立进程。同一主机上的多个服务共享该 LB 进程完成服务发现和负载均衡。</p>
+<table>
+<thead>
+<tr>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无单点，一个 LB 挂只影响该主机</td>
+<td>部署较复杂，环节多</td>
+</tr>
+<tr>
+<td>不需要为不同语言开发客户端库</td>
+<td>出错调试排查不方便</td>
+</tr>
+<tr>
+<td>LB 升级不需要服务方改代码</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>典型案例：Airbnb SmartStack（Zookeeper + Nerve + Synapse/HAProxy）、Kubernetes 内部服务发现。</p>
+<blockquote>
+<p>三种方案各有取舍，选择时需要综合考虑团队技术栈的多样性、运维能力和性能要求。当前趋势是方案三（Sidecar 模式）逐渐演化为 Service Mesh（服务网格），如 Istio + Envoy。</p>
+</blockquote>
+<h2>API 网关（Service Gateway）</h2>
+<p>微服务最终需要以某种方式暴露给外部系统访问，这就需要<strong>服务网关</strong>。网关是连接企业内部和外部系统的一道门，承担以下关键职责：</p>
+<table>
+<thead>
+<tr>
+<th>职责</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>反向路由</strong></td>
+<td>将外部请求路由到内部具体的微服务，对外呈现统一入口</td>
+</tr>
+<tr>
+<td><strong>安全认证</strong></td>
+<td>集中处理用户认证、授权和防爬虫</td>
+</tr>
+<tr>
+<td><strong>限流容错</strong></td>
+<td>流量高峰期限流保护后台，内部故障时集中容错</td>
+</tr>
+<tr>
+<td><strong>监控</strong></td>
+<td>集中监控访问量、调用延迟、错误计数</td>
+</tr>
+<tr>
+<td><strong>日志</strong></td>
+<td>收集所有访问日志，为后续分析提供数据</td>
+</tr>
+</tbody></table>
+<p>除此之外，网关还可以实现<strong>线上引流、线上压测、金丝雀发布（Canary Testing）、数据中心双活</strong>等高级功能。</p>
+<h3>微服务的分层架构</h3>
+<p>引入网关和服务注册表之后，微服务可以简化为两层结构：</p>
+<ul>
+<li><strong>后端通用服务（Middle Tier Service）</strong>：启动时注册地址到注册表</li>
+<li><strong>前端边缘服务（Edge Service）</strong>：查询注册表发现后端服务，对后端服务做聚合和裁剪后暴露给外部设备</li>
+</ul>
+<p>网关通过查询注册表将外部请求路由到前端服务，整个微服务体系的自注册、自发现和软路由就此串联起来。如果用设计模式的视角看——<strong>网关类似 Proxy/Facade 模式，服务注册表类似 IoC 依赖注入模式</strong>。</p>
+<p>常见的网关组件：Netflix Zuul、Kong、APISIX、Spring Cloud Gateway。</p>
+<h2>服务容错</h2>
+<p>当企业微服务化后，服务之间存在错综复杂的依赖关系。一个前端请求一般依赖多个后端服务（1→N 扇出）。在生产环境中，如果一个应用不能对其依赖的故障进行容错和隔离，就面临被拖垮的风险。在高流量场景下，某个单一后端一旦发生延迟，可能在数秒内导致所有应用资源（线程、队列等）被耗尽，造成<strong>雪崩效应（Cascading Failure）</strong>。</p>
+<p>业界总结出以下核心容错模式：</p>
+<h3>熔断器模式（Circuit Breaker）</h3>
+<p>原理类似家用电路熔断器。当目标服务慢或大量超时时，调用方主动熔断，防止服务被进一步拖垮。</p>
+<p>熔断器有三种状态：</p>
+<pre><code>Closed（正常）→ Open（熔断）→ Half-Open（半熔断）→ Closed/Open
+</code></pre>
+<ul>
+<li><strong>Closed</strong>：正常状态，请求正常通过</li>
+<li><strong>Open</strong>：调用持续出错或超时，进入熔断状态，后续请求直接拒绝（Fail Fast）</li>
+<li><strong>Half-Open</strong>：一段时间后允许少量请求尝试，成功则恢复，失败则继续熔断</li>
+</ul>
+<h3>舱壁隔离模式（Bulkhead Isolation）</h3>
+<p>像船舱一样对资源进行隔离。典型实现是<strong>线程隔离</strong>：假定应用 A 调用 Svc1/Svc2/Svc3 三个服务，容器共有 120 个工作线程，可以给每个服务各分配 40 个线程。当 Svc2 变慢时，只有分配给 Svc2 的 40 个线程被耗尽，Svc1 和 Svc3 的 80 个线程不受影响。</p>
+<h3>限流（Rate Limiting）</h3>
+<p>对服务限定并发访问量，比如单位时间只允许 100 个并发调用，超过限制的请求拒绝并回退。没有限流机制的服务在突发流量（秒杀、大促）时极易被冲垮。</p>
+<h3>降级回退（Fallback）</h3>
+<p>当熔断或限流发生时的后续处理策略：</p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fail Fast</td>
+<td>直接抛出异常</td>
+</tr>
+<tr>
+<td>返回缺省值</td>
+<td>返回空值或默认数据</td>
+</tr>
+<tr>
+<td>备份服务</td>
+<td>从备份数据源获取数据</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Netflix 将上述容错模式集成到 Hystrix 开源组件中（现已进入维护模式，社区推荐 Resilience4j 或 Sentinel 作为替代）。Spring Cloud Circuit Breaker 提供了统一的抽象层。</p>
+</blockquote>
+<h2>服务框架的核心能力</h2>
+<p>微服务化后，为了让业务开发人员专注于业务逻辑，避免冗余和重复劳动，需要将公共关注点推到框架层面。一个成熟的服务框架应当封装以下能力：</p>
+<table>
+<thead>
+<tr>
+<th>能力</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>服务注册发现</td>
+<td>服务端自注册，客户端自发现和负载均衡</td>
+</tr>
+<tr>
+<td>监控日志</td>
+<td>框架层日志、Metrics、调用链数据的记录和暴露</td>
+</tr>
+<tr>
+<td>REST/RPC 与序列化</td>
+<td>支持 HTTP/REST 和 Binary/RPC，可定制序列化（JSON/Protobuf 等）</td>
+</tr>
+<tr>
+<td>动态配置</td>
+<td>运行时动态调整参数和配置</td>
+</tr>
+<tr>
+<td>限流容错</td>
+<td>集成限流和熔断组件，结合动态配置实现动态限流</td>
+</tr>
+<tr>
+<td>管理接口</td>
+<td>在线查看和动态调整框架及服务内部状态（如 Spring Boot Actuator）</td>
+</tr>
+<tr>
+<td>统一错误处理</td>
+<td>框架层统一处理异常并记录日志</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>访问控制逻辑的插件化封装</td>
+</tr>
+<tr>
+<td>文档自动生成</td>
+<td>如 Swagger/OpenAPI 的自动化文档方案</td>
+</tr>
+</tbody></table>
+<p>当前业界成熟的微服务框架有：Spring Cloud/Spring Boot、Apache Dubbo、Go-Micro、gRPC 等。</p>
+<h2>基础设施选型</h2>
+<h3>RPC 框架选型</h3>
+<p>RPC（Remote Procedure Call）框架大致分为两大流派：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>代表框架</th>
+<th>特点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>跨语言调用型</strong></td>
+<td>gRPC、Thrift、Hprose</td>
+<td>支持多语言调用，无服务治理机制</td>
+<td>多语言调用场景</td>
+</tr>
+<tr>
+<td><strong>服务治理型</strong></td>
+<td>Dubbo、Motan、rpcx</td>
+<td>功能丰富，含服务发现和治理能力</td>
+<td>大型服务的解耦和治理</td>
+</tr>
+</tbody></table>
+<p><strong>选型建议</strong>：如果是 Java 为主的团队，推荐 <strong>Dubbo</strong>（高性能，性能测试中比 Feign 强约 10 倍）。如果需要跨语言支持，Dubbo 也支持通过 Dubbo-Go 实现 Java + Go 双语言微服务架构。如果是纯粹的跨语言场景，<strong>gRPC</strong> 基于 HTTP/2 + Protobuf，是业界标准选择。</p>
+<h3>注册中心选型</h3>
+<p>所有的服务发现都依赖于一个高可用的服务注册表。主流选择：</p>
+<table>
+<thead>
+<tr>
+<th>注册中心</th>
+<th>特点</th>
+<th>一致性模型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Nacos</strong></td>
+<td>同时支持注册中心和配置中心，功能全面</td>
+<td>AP/CP 可切换</td>
+</tr>
+<tr>
+<td><strong>ZooKeeper</strong></td>
+<td>最早的分布式协调服务，生态成熟</td>
+<td>CP</td>
+</tr>
+<tr>
+<td><strong>Etcd</strong></td>
+<td>Kubernetes 默认存储，高可用和一致性</td>
+<td>CP</td>
+</tr>
+<tr>
+<td><strong>Consul</strong></td>
+<td>支持多数据中心，内置健康检查</td>
+<td>CP</td>
+</tr>
+<tr>
+<td><strong>Eureka</strong></td>
+<td>Netflix 开源，AP 模型，已停止维护</td>
+<td>AP</td>
+</tr>
+</tbody></table>
+<p><strong>选型建议</strong>：推荐 <strong>Nacos</strong>（nacos + MySQL 高可用部署），一站式解决注册中心和配置中心的需求。</p>
+<h3>配置中心选型</h3>
+<p>随着系统复杂度增长，配置管理面临越来越高的要求：配置修改实时生效、灰度发布、分环境/分集群管理、完善的权限审核机制。传统的配置文件方式已经无法满足需求。</p>
+<p>配置中心的核心架构组件：</p>
+<ul>
+<li><strong>配置服务端</strong>：集中存储和管理所有配置信息</li>
+<li><strong>配置客户端</strong>：通过<strong>定期拉取（Pull）</strong> 或 <strong>服务端推送（Push）</strong> 方式获取配置更新</li>
+<li><strong>管理界面</strong>：配置的增删改查和审计</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>配置中心</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Nacos</strong></td>
+<td>阿里开源，同时支持注册和配置，生态活跃</td>
+</tr>
+<tr>
+<td><strong>Apollo</strong></td>
+<td>携程开源，功能完善，支持灰度发布和权限管理</td>
+</tr>
+<tr>
+<td><strong>Spring Cloud Config</strong></td>
+<td>Spring 生态原生支持，基于 Git 存储</td>
+</tr>
+</tbody></table>
+<h3>缓存中间件选型</h3>
+<table>
+<thead>
+<tr>
+<th>缓存</th>
+<th>特点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Redis</strong></td>
+<td>多数据结构，支持持久化和集群</td>
+<td>通用缓存、分布式锁、排行榜等</td>
+</tr>
+<tr>
+<td><strong>Memcached</strong></td>
+<td>纯内存 KV，简单高效</td>
+<td>简单的对象缓存</td>
+</tr>
+</tbody></table>
+<p><strong>选型建议</strong>：推荐 <strong>Redis Cluster</strong> 高可用集群部署。</p>
+<blockquote>
+<p>需要特别关注 Redis 的 Big Key 问题。在高并发场景下，Big Key 会导致单个节点内存和网络带宽瓶颈，严重时可造成系统瘫痪。建议制定 Key 规范并定期扫描。</p>
+</blockquote>
+<h3>消息中间件选型</h3>
+<p>消息中间件的三大核心场景：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>说明</th>
+<th>典型案例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>异步处理</strong></td>
+<td>减少主流程等待时间，非核心逻辑异步执行</td>
+<td>注册后发送邮件、异步更新缓存</td>
+</tr>
+<tr>
+<td><strong>系统解耦</strong></td>
+<td>上下游系统通过消息通信，不需要强一致</td>
+<td>支付成功后通知 ERP/WMS/推荐等系统</td>
+</tr>
+<tr>
+<td><strong>削峰填谷</strong></td>
+<td>大流量请求放入队列，消费者按能力消化</td>
+<td>秒杀系统的下单排队</td>
+</tr>
+</tbody></table>
+<p>主流消息中间件对比：</p>
+<table>
+<thead>
+<tr>
+<th>中间件</th>
+<th>吞吐量</th>
+<th>延迟</th>
+<th>可靠性</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Kafka</strong></td>
+<td>极高</td>
+<td>毫秒级</td>
+<td>高（可配置）</td>
+<td>日志收集、大数据流处理、事件溯源</td>
+</tr>
+<tr>
+<td><strong>RocketMQ</strong></td>
+<td>高</td>
+<td>毫秒级</td>
+<td>极高（事务消息）</td>
+<td>电商交易、金融场景</td>
+</tr>
+<tr>
+<td><strong>RabbitMQ</strong></td>
+<td>中等</td>
+<td>微秒级</td>
+<td>高</td>
+<td>实时性要求高、路由复杂的场景</td>
+</tr>
+</tbody></table>
+<p><strong>选型建议</strong>：<strong>Kafka</strong> 用于日志采集和大数据场景，<strong>RocketMQ</strong> 用于业务消息和交易场景，二者搭配使用。</p>
+<h3>数据库选型</h3>
+<h4>关系型数据库</h4>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>代表</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>传统 RDBMS</strong></td>
+<td>MySQL、PostgreSQL</td>
+<td>成熟稳定，生态丰富，百万级 PV 搭配主从 + 缓存可满足</td>
+</tr>
+<tr>
+<td><strong>NewSQL</strong></td>
+<td>TiDB、CockroachDB</td>
+<td>完整 SQL 支持 + ACID 事务 + 弹性伸缩 + 高可用 + 大数据分析能力</td>
+</tr>
+</tbody></table>
+<p>当 MySQL 需要分库分表且逻辑复杂度高、扩展性不足时，可以考虑 TiDB。</p>
+<h4>NoSQL 数据库</h4>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>代表</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>键值型</strong></td>
+<td>Redis、Memcache</td>
+<td>缓存、会话管理</td>
+</tr>
+<tr>
+<td><strong>列式</strong></td>
+<td>HBase、Cassandra</td>
+<td>写多读少、时序数据</td>
+</tr>
+<tr>
+<td><strong>文档型</strong></td>
+<td>MongoDB、CouchDB</td>
+<td>非结构化数据、灵活 Schema</td>
+</tr>
+<tr>
+<td><strong>图数据库</strong></td>
+<td>Neo4J</td>
+<td>社交网络、推荐系统</td>
+</tr>
+</tbody></table>
+<h2>CI/CD 流水线</h2>
+<p>从代码到最终服务用户，可以分为三个阶段：</p>
+<pre><code>Code → Artifact（制品库）→ Running Service → Production
+</code></pre>
+<ol>
+<li><strong>代码到制品</strong>：持续构建，制品集中管理</li>
+<li><strong>制品到服务</strong>：部署到指定环境</li>
+<li><strong>开发到生产</strong>：变更在不同环境间的迁移和灰度发布</li>
+</ol>
+<h3>工具链推荐</h3>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>推荐工具</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>代码管理</strong></td>
+<td>GitLab</td>
+<td>社区版功能丰富，结合 Gerrit 做 Code Review</td>
+</tr>
+<tr>
+<td><strong>持续集成</strong></td>
+<td>Jenkins / GitLab CI</td>
+<td>Jenkins 插件生态强大；GitLab CI 与 GitLab 深度集成</td>
+</tr>
+<tr>
+<td><strong>制品仓库</strong></td>
+<td>Harbor</td>
+<td>开源的 Docker 镜像仓库，支持镜像签名和漏洞扫描</td>
+</tr>
+<tr>
+<td><strong>部署编排</strong></td>
+<td>Kubernetes</td>
+<td>容器编排的事实标准，支持声明式部署和自动伸缩</td>
+</tr>
+<tr>
+<td><strong>项目管理</strong></td>
+<td>Jira + Confluence</td>
+<td>项目管理、任务跟踪和知识管理的行业标配</td>
+</tr>
+</tbody></table>
+<p><strong>初期建议</strong>：Jenkins + GitLab + Harbor 的组合，可以覆盖制品管理、发布流程、权限控制、版本变更和服务回滚。</p>
+<h3>自动化测试</h3>
+<p>自动化测试平台是 CI/CD 流水线的重要一环：</p>
+<ul>
+<li><strong>单元测试</strong>：JUnit / TestNG，覆盖核心业务逻辑</li>
+<li><strong>接口测试</strong>：可基于开源框架（如 SpringBoot + TestNG）搭建</li>
+<li><strong>性能测试</strong>：JMeter / Gatling</li>
+<li><strong>端到端测试</strong>：Selenium / Cypress</li>
+</ul>
+<h2>可观测性体系</h2>
+<h3>日志系统</h3>
+<p>日志系统涵盖日志打印、采集、中转、存储、分析、搜索和分发。日志系统的建设不仅是工具建设，还包括规范和组件建设——基本的日志（如全链路追踪 ID）应在框架和组件层面统一注入。</p>
+<p><strong>常规方案：ELK Stack</strong></p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Filebeat</strong></td>
+<td>轻量级日志采集器，替代 Logstash-Forwarder</td>
+</tr>
+<tr>
+<td><strong>Logstash</strong></td>
+<td>日志收集、过滤和转换</td>
+</tr>
+<tr>
+<td><strong>Elasticsearch</strong></td>
+<td>分布式搜索引擎，存储和索引日志</td>
+</tr>
+<tr>
+<td><strong>Kibana</strong></td>
+<td>可视化界面，日志搜索和分析</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>免费版 ELK 没有安全机制，建议前置 Nginx 做反向代理和简单用户认证。</p>
+</blockquote>
+<p><strong>实时计算方案</strong>：对于需要实时分析的场景，可以采用 Flume + Kafka + Flink（或 Storm）的架构。Kafka 负责高吞吐的消息缓冲，Flume 负责多样化的数据采集，Flink 负责实时流计算。</p>
+<h3>监控系统</h3>
+<p>监控系统主要覆盖两个层面：</p>
+<table>
+<thead>
+<tr>
+<th>层面</th>
+<th>监控指标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>基础设施</strong></td>
+<td>机器负载、IO、网络流量、CPU、内存</td>
+</tr>
+<tr>
+<td><strong>服务质量</strong></td>
+<td>可用性、成功率、失败率、QPS、延迟</td>
+</tr>
+</tbody></table>
+<p><strong>推荐方案：Prometheus + Grafana</strong></p>
+<p>Prometheus 是 Google BorgMon 的开源版本，使用 Go 开发，采用 <strong>Pull</strong> 模式主动拉取指标数据。其核心组件：</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Prometheus Server</strong></td>
+<td>数据采集和存储，提供 PromQL 查询</td>
+</tr>
+<tr>
+<td><strong>Exporter</strong></td>
+<td>各类数据采集组件（数据库、硬件、MQ、HTTP 服务器等）</td>
+</tr>
+<tr>
+<td><strong>Push Gateway</strong></td>
+<td>支持短生命周期 Job 主动推送指标</td>
+</tr>
+<tr>
+<td><strong>Alertmanager</strong></td>
+<td>灵活的报警规则和通知管理</td>
+</tr>
+<tr>
+<td><strong>Grafana</strong></td>
+<td>高度定制化的可视化监控面板</td>
+</tr>
+</tbody></table>
+<p>Prometheus + Grafana 搭配统一的服务框架，可以满足绝大部分中小团队的监控需求。</p>
+<h2>生产环境部署架构</h2>
+<h3>DNS</h3>
+<p>DNS 是基础服务，一般直接选择云厂商：</p>
+<ul>
+<li><strong>国内</strong>：阿里云 DNS 或腾讯 DNSPod，线上产品建议使用付费版</li>
+<li><strong>海外</strong>：优先选择 AWS Route 53</li>
+<li><strong>国内外互通</strong>：建议在 APP 层实现容灾逻辑或智能调度，因为没有单一 DNS 服务能同时很好地覆盖国内外</li>
+</ul>
+<h3>负载均衡（LB）</h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>云服务环境</td>
+<td>直接使用云厂商 LB（阿里云 SLB / 腾讯云 CLB / AWS ELB）</td>
+</tr>
+<tr>
+<td>自建机房</td>
+<td>LVS（四层）+ Nginx（七层）</td>
+</tr>
+</tbody></table>
+<p>云厂商 LB 通常支持四层（TCP/UDP）和七层（HTTP/HTTPS）协议、集中化证书管理和健康检查。</p>
+<h3>CDN</h3>
+<p>CDN 的选型主要看业务覆盖区域：</p>
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>推荐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>国内</td>
+<td>阿里云 CDN、腾讯云 CDN</td>
+</tr>
+<tr>
+<td>海外</td>
+<td>AWS CloudFront、Akamai</td>
+</tr>
+</tbody></table>
+<h2>总结</h2>
+<p>微服务架构的落地是一个系统工程，核心技术关注点可以归纳为以下几个层面：</p>
+<ol>
+<li><strong>服务通信</strong>：通过注册中心 + 负载均衡 + API 网关，构建服务间和内外部的通信体系</li>
+<li><strong>服务可靠性</strong>：通过熔断、隔离、限流和降级四大模式，保障系统在故障和高峰期的稳定性</li>
+<li><strong>服务框架</strong>：将公共关注点下沉到框架层，让业务开发专注于业务逻辑</li>
+<li><strong>基础设施</strong>：根据业务需求和团队技术栈，选择合适的 RPC、注册中心、缓存、消息队列和数据库</li>
+<li><strong>持续交付</strong>：通过 CI/CD 流水线实现代码到生产环境的自动化、可重复的发布流程</li>
+<li><strong>可观测性</strong>：通过日志、监控和链路追踪构建系统的透明度，为问题排查和性能优化提供数据支撑</li>
+</ol>
+<p>好的架构不是设计出来的，而是演进出来的。架构师需要在不同阶段做出合适的判断——既不过度设计，也不欠缺考虑。关键是保持对技术的敏锐度，在实践中不断验证和调整。</p>
+<blockquote>
+<p>路漫漫其修远兮，架构求索无止尽也。</p>
+</blockquote>
+18:T602d,<h1>高并发系统设计：原理、策略与工程实践</h1>
+<blockquote>
+<p>高并发不是一个单点问题，而是一个系统性工程。它要求在计算、存储、网络、容错等多个维度协同设计，在吞吐量、延迟、一致性、可用性之间做出精确的权衡。</p>
+</blockquote>
+<p>高并发系统的本质目标是：<strong>在保证系统整体可用的前提下，最大化单位时间内的请求处理能力</strong>。这涉及两个核心指标——<strong>吞吐量</strong>（TPS/QPS）和<strong>响应延迟</strong>（Latency），以及一个隐含约束——<strong>资源成本</strong>。</p>
+<p>本文将高并发设计策略按作用层次分为四大类，逐一分析每种策略的底层原理、适用场景与决策依据。</p>
+<h2>一、计算层：提升处理能力</h2>
+<p>计算层的核心矛盾是<strong>单节点处理能力有限</strong>。解决思路有两条：纵向压榨单机性能，横向扩展节点数量。</p>
+<h3>1.1 水平扩展</h3>
+<p><strong>原理</strong>：将请求分散到多个对等节点并行处理，系统吞吐量随节点数近线性增长。</p>
+<p>水平扩展是高并发的第一性原理——当单机无法承载时，加机器是最直接的手段。但前提是系统必须具备<strong>无状态性</strong>，否则扩展只是增加复杂度。</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无状态服务</td>
+<td>请求可被任意节点处理，不依赖本地状态</td>
+</tr>
+<tr>
+<td>负载均衡</td>
+<td>流量均匀分配到各节点（轮询、加权、一致性哈希）</td>
+</tr>
+<tr>
+<td>服务发现</td>
+<td>新增/下线节点时自动感知</td>
+</tr>
+</tbody></table>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>水平扩展的收益存在拐点。当瓶颈不在计算层（如数据库连接数耗尽），加应用节点无法提升吞吐</li>
+<li>扩展前先确认瓶颈位置：CPU 密集型看计算节点数，I/O 密集型看下游容量</li>
+</ul>
+<h3>1.2 服务拆分</h3>
+<p><strong>原理</strong>：将单体应用按业务域拆分为独立服务，每个服务独立部署、独立扩展，使资源投放更精准。</p>
+<p>服务拆分的高并发价值不在于&quot;拆&quot;本身，而在于<strong>差异化扩展</strong>——热点服务可以单独扩容，而不必整体扩展。</p>
+<pre><code>单体应用：所有模块共享资源池
+  → 商品查询 QPS 暴涨时，订单、支付模块的资源也被占用
+
+服务拆分后：
+  → 商品服务独立扩容 10 倍，订单服务保持不变
+  → 资源利用率提升，扩容成本下降
+</code></pre>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>拆分粒度不是越细越好。过度拆分导致服务间调用链路变长，网络开销和故障概率增加</li>
+<li>拆分的依据是<strong>业务边界</strong>和<strong>扩展需求</strong>，而非代码量</li>
+</ul>
+<h3>1.3 异步化</h3>
+<p><strong>原理</strong>：将同步阻塞调用转为异步非阻塞，释放线程资源去处理更多请求，从而提升单位时间内的吞吐量。</p>
+<p>同步模型下，线程在等待下游响应期间处于阻塞状态，无法处理新请求。异步化的本质是<strong>把等待时间转化为处理能力</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>异步方式</th>
+<th>机制</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>消息队列</td>
+<td>请求写入 MQ 后立即返回，消费者异步处理</td>
+<td>非实时性业务（通知、日志、数据同步）</td>
+</tr>
+<tr>
+<td>异步 I/O</td>
+<td>NIO / Reactor 模型</td>
+<td>高并发网络通信（Netty、WebFlux）</td>
+</tr>
+<tr>
+<td>并行调用</td>
+<td>CompletableFuture / 协程</td>
+<td>多个独立下游调用并行执行</td>
+</tr>
+<tr>
+<td>事件驱动</td>
+<td>发布-订阅模式</td>
+<td>服务间解耦</td>
+</tr>
+</tbody></table>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>异步化的前提是业务允许<strong>延迟处理</strong>。对于实时性要求高的链路（如支付扣款），不宜异步</li>
+<li>引入异步后需要处理<strong>结果通知</strong>（回调、轮询）和<strong>失败重试</strong>，系统复杂度会上升</li>
+<li>消息队列的削峰价值：瞬时 5000 QPS 的流量冲击，系统处理能力 2000 QPS，MQ 作为缓冲区，将超出部分排队处理，避免系统过载</li>
+</ul>
+<h3>1.4 池化</h3>
+<p><strong>原理</strong>：预先创建并复用昂贵资源（连接、线程、对象），避免频繁创建/销毁带来的开销。</p>
+<p>每次创建数据库连接需要 TCP 三次握手 + 认证，耗时通常在毫秒级。在高并发场景下，这些开销会被放大数百倍。</p>
+<table>
+<thead>
+<tr>
+<th>池化类型</th>
+<th>复用的资源</th>
+<th>关键参数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据库连接池</td>
+<td>TCP 连接 + 认证会话</td>
+<td>最大连接数、最小空闲数、获取超时</td>
+</tr>
+<tr>
+<td>HTTP 连接池</td>
+<td>TCP 连接（Keep-Alive）</td>
+<td>最大连接数、每路由最大连接数</td>
+</tr>
+<tr>
+<td>线程池</td>
+<td>线程</td>
+<td>核心线程数、最大线程数、队列长度、拒绝策略</td>
+</tr>
+<tr>
+<td>对象池</td>
+<td>重量级对象（如序列化器）</td>
+<td>池大小、借出超时</td>
+</tr>
+</tbody></table>
+<p><strong>最佳实践</strong>：</p>
+<ul>
+<li>连接池大小不是越大越好。过多连接会导致数据库端线程竞争加剧，反而降低性能。PostgreSQL 官方建议的公式：<code>连接数 = ((核心数 * 2) + 有效磁盘数)</code></li>
+<li>线程池的队列策略直接影响系统行为：无界队列可能导致 OOM，有界队列需要配合合理的拒绝策略</li>
+</ul>
+<h2>二、数据层：突破存储瓶颈</h2>
+<p>高并发系统中，数据库通常是第一个到达瓶颈的组件。数据层优化的核心思路是<strong>减少对数据库的直接访问</strong>和<strong>提升数据库本身的承载能力</strong>。</p>
+<h3>2.1 缓存</h3>
+<p><strong>原理</strong>：将热点数据存储在访问速度更快的介质中（内存），减少对慢速存储（磁盘数据库）的访问。</p>
+<p>缓存是高并发系统中 ROI 最高的优化手段。一次 Redis 查询耗时约 0.5ms，一次 MySQL 查询耗时约 5<del>50ms，性能差距在 10</del>100 倍。</p>
+<p><strong>多级缓存架构</strong>：</p>
+<pre><code>请求 → L1 本地缓存（Caffeine）    命中率 ~60%
+     → L2 分布式缓存（Redis）      命中率 ~95%
+     → L3 数据库（MySQL）          兜底查询
+</code></pre>
+<p>每一层拦截掉大部分请求，最终到达数据库的流量可能不到总量的 5%。</p>
+<p><strong>缓存三大问题及应对</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>成因</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>穿透</strong></td>
+<td>查询不存在的 Key，每次都打到 DB</td>
+<td>布隆过滤器拦截；空值缓存（TTL 设短）</td>
+</tr>
+<tr>
+<td><strong>击穿</strong></td>
+<td>热点 Key 过期瞬间，大量请求涌入 DB</td>
+<td>互斥锁重建；逻辑过期 + 异步刷新</td>
+</tr>
+<tr>
+<td><strong>雪崩</strong></td>
+<td>大批 Key 同时过期</td>
+<td>过期时间加随机偏移；多级缓存兜底</td>
+</tr>
+</tbody></table>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>缓存适用于<strong>读多写少</strong>的场景。写频繁的数据缓存命中率低，且一致性维护成本高</li>
+<li>缓存与数据库的一致性没有完美方案。常用策略是<strong>Cache Aside（旁路缓存）</strong>：读时先查缓存，miss 则查 DB 并回填；写时先更新 DB，再删除缓存</li>
+<li>本地缓存适合体积小、变化少、一致性要求低的数据（如配置信息）；分布式缓存适合体积大、需要跨节点共享的数据</li>
+</ul>
+<h3>2.2 读写分离</h3>
+<p><strong>原理</strong>：将数据库的读写流量分离到不同实例，主库承担写操作，从库承担读操作，利用数据复制实现读能力的水平扩展。</p>
+<p>大多数业务系统的读写比在 7:3 到 9:1 之间。读写分离的本质是<strong>用廉价的从库分担主库的读压力</strong>。</p>
+<pre><code>写请求 → 主库（Master）
+                ↓ Binlog 复制
+读请求 → 从库 1 / 从库 2 / 从库 N
+</code></pre>
+<p><strong>需要处理的关键问题</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>说明</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>主从延迟</strong></td>
+<td>从库数据滞后于主库（通常 ms~s 级）</td>
+<td>强一致读走主库；半同步复制减少延迟</td>
+</tr>
+<tr>
+<td><strong>延迟感知</strong></td>
+<td>刚写入的数据立即读取可能读到旧值</td>
+<td>写后读强制路由到主库（Session 级别）</td>
+</tr>
+<tr>
+<td><strong>从库故障</strong></td>
+<td>某个从库不可用</td>
+<td>负载均衡自动摘除；从库集群冗余</td>
+</tr>
+</tbody></table>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>读写分离能解决读瓶颈，但无法解决写瓶颈。如果写 QPS 过高，需要考虑分库</li>
+<li>对于实时性要求高的读操作（如支付后查询订单状态），必须路由到主库</li>
+</ul>
+<h3>2.3 分库分表</h3>
+<p><strong>原理</strong>：将数据分散到多个数据库实例（分库）或多张表（分表），突破单实例的存储容量和连接数限制。</p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>解决的问题</th>
+<th>拆分维度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>垂直分库</strong></td>
+<td>不同业务的数据隔离</td>
+<td>按业务域拆分（用户库、订单库、商品库）</td>
+</tr>
+<tr>
+<td><strong>水平分库</strong></td>
+<td>单库连接数/写入能力不足</td>
+<td>按路由键分片到多个库实例</td>
+</tr>
+<tr>
+<td><strong>水平分表</strong></td>
+<td>单表数据量过大导致查询变慢</td>
+<td>按路由键分片到多张表</td>
+</tr>
+</tbody></table>
+<p><strong>分片策略对比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>原理</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hash 取模</td>
+<td><code>shardId = hash(key) % N</code></td>
+<td>数据分布均匀</td>
+<td>扩容需要数据迁移</td>
+</tr>
+<tr>
+<td>范围分片</td>
+<td>按 ID 或时间范围划分</td>
+<td>扩容简单，支持范围查询</td>
+<td>可能出现热点分片</td>
+</tr>
+<tr>
+<td>一致性哈希</td>
+<td>哈希环 + 虚拟节点</td>
+<td>扩容仅迁移部分数据</td>
+<td>实现复杂度较高</td>
+</tr>
+</tbody></table>
+<p><strong>最佳实践</strong>：</p>
+<ul>
+<li>单表数据量超过 <strong>1000 万~2000 万行</strong>时，B+ 树索引层级增加，查询性能开始下降，应考虑分表</li>
+<li>分库分表会引入<strong>分布式事务</strong>和<strong>跨分片查询</strong>两大难题，在决策前需评估这些成本是否可接受</li>
+<li>路由键的选择至关重要：选择查询最频繁的字段（通常是用户 ID），避免绝大多数查询变成跨分片查询</li>
+</ul>
+<h3>2.4 搜索引擎分流</h3>
+<p><strong>原理</strong>：将搜索、模糊查询、聚合统计等对关系型数据库不友好的查询，分流到专用搜索引擎（Elasticsearch），减轻数据库压力。</p>
+<p>MySQL 的 <code>LIKE &#39;%keyword%&#39;</code> 无法走索引，在大数据量下性能急剧下降。Elasticsearch 基于倒排索引，天然支持全文检索和聚合查询，且具备水平扩展能力。</p>
+<table>
+<thead>
+<tr>
+<th>适合搜索引擎的场景</th>
+<th>不适合的场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>全文搜索、模糊匹配</td>
+<td>强事务性写入</td>
+</tr>
+<tr>
+<td>多维度组合筛选</td>
+<td>实时一致性要求高的读取</td>
+</tr>
+<tr>
+<td>聚合统计分析</td>
+<td>频繁更新的热点数据</td>
+</tr>
+</tbody></table>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>ES 的数据来源于数据库同步（Binlog 订阅或双写），存在秒级延迟，不适合作为事务性读取的主存储</li>
+<li>ES 集群的运维成本较高（分片管理、索引优化、GC 调优），引入前需评估团队的运维能力</li>
+</ul>
+<h2>三、流量层：控制入口压力</h2>
+<p>当流量超过系统承载能力时，需要在入口层进行管控，避免系统被打垮。</p>
+<h3>3.1 CDN 静态加速</h3>
+<p><strong>原理</strong>：将静态资源（图片、CSS、JS）分发到离用户最近的边缘节点，用户就近访问，减少源站压力和网络延迟。</p>
+<p>CDN 的价值不仅是加速，更是<strong>将静态请求从应用服务器完全卸载</strong>。一个电商页面中，静态资源请求可能占总请求量的 80% 以上。</p>
+<pre><code>无 CDN：  用户（深圳） → 源站（北京）   RTT ~40ms
+有 CDN：  用户（深圳） → CDN 节点（深圳）  RTT ~5ms
+</code></pre>
+<p><strong>最佳实践</strong>：</p>
+<ul>
+<li>静态资源使用独立域名，避免携带不必要的 Cookie</li>
+<li>文件名带内容哈希（如 <code>app.a3b2c1.js</code>），配合长缓存策略，既保证缓存命中率又支持即时更新</li>
+</ul>
+<h3>3.2 限流</h3>
+<p><strong>原理</strong>：当入口流量超过系统容量时，主动丢弃超出部分的请求，保证系统在承载范围内正常服务。</p>
+<p>限流是<strong>保护系统不被打垮的最后一道防线</strong>。它的前提假设是：服务部分用户优于服务零用户。</p>
+<p><strong>主流限流算法对比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>算法</th>
+<th>原理</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>固定窗口</strong></td>
+<td>固定时间窗口内计数</td>
+<td>实现简单</td>
+<td>存在窗口边界突发问题</td>
+</tr>
+<tr>
+<td><strong>滑动窗口</strong></td>
+<td>滑动时间窗口内计数</td>
+<td>平滑度优于固定窗口</td>
+<td>内存占用略高</td>
+</tr>
+<tr>
+<td><strong>漏桶</strong></td>
+<td>请求以固定速率流出</td>
+<td>流量绝对平滑</td>
+<td>无法应对合理的突发流量</td>
+</tr>
+<tr>
+<td><strong>令牌桶</strong></td>
+<td>令牌以固定速率生成，请求消耗令牌</td>
+<td>允许一定突发流量</td>
+<td>参数调优有一定复杂度</td>
+</tr>
+</tbody></table>
+<p><strong>限流的层次</strong>：</p>
+<pre><code>接入层限流（Nginx / API Gateway）   → 粗粒度，按 IP 或接口
+应用层限流（Sentinel / Guava）      → 细粒度，按用户、业务维度
+数据层限流（连接池 / 信号量）         → 保护下游资源
+</code></pre>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>限流阈值必须基于<strong>压测数据</strong>设定，而非拍脑袋。先压测确定系统容量，再按容量的 70%~80% 设置限流阈值</li>
+<li>被限流的请求应返回明确的状态码（如 HTTP 429）和友好的提示，而非超时或错误</li>
+</ul>
+<h3>3.3 负载均衡</h3>
+<p><strong>原理</strong>：将入口流量按策略分配到多个后端节点，避免单节点过载，同时实现故障自动摘除。</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>实现</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DNS 负载均衡</td>
+<td>DNS 多 A 记录</td>
+<td>粗粒度，无法感知后端状态</td>
+</tr>
+<tr>
+<td>L4 负载均衡</td>
+<td>LVS / F5</td>
+<td>高性能（百万级），基于 IP + 端口</td>
+</tr>
+<tr>
+<td>L7 负载均衡</td>
+<td>Nginx / HAProxy</td>
+<td>灵活（可按 URL、Header 路由），性能略低于 L4</td>
+</tr>
+</tbody></table>
+<p><strong>常用调度算法</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>算法</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>轮询 / 加权轮询</td>
+<td>后端节点性能一致或差异已知</td>
+</tr>
+<tr>
+<td>最少连接</td>
+<td>请求处理时间差异大</td>
+</tr>
+<tr>
+<td>一致性哈希</td>
+<td>需要会话亲和或缓存亲和</td>
+</tr>
+<tr>
+<td>随机</td>
+<td>后端节点对等，实现最简单</td>
+</tr>
+</tbody></table>
+<h2>四、容错层：保障系统韧性</h2>
+<p>高并发场景下，系统组件出现故障的概率随节点数增长而增大。容错设计的目标是<strong>局部故障不扩散为全局雪崩</strong>。</p>
+<h3>4.1 熔断</h3>
+<p><strong>原理</strong>：当下游服务的错误率或响应时间超过阈值时，自动切断对该服务的调用，防止故障沿调用链向上蔓延。</p>
+<p>熔断器借鉴了电路断路器的设计，有三个状态：</p>
+<pre><code>Closed（关闭）→ 正常放行请求
+    ↓ 错误率超过阈值
+Open（打开）→ 直接拒绝请求，返回降级结果
+    ↓ 超时后放行少量探测请求
+Half-Open（半开）→ 探测成功则恢复，失败则重新打开
+</code></pre>
+<p><strong>决策要点</strong>：</p>
+<ul>
+<li>熔断阈值的设定需要区分<strong>瞬时抖动</strong>和<strong>持续故障</strong>。通常使用滑动窗口统计，避免单次超时就触发熔断</li>
+<li>熔断后的降级策略需要提前设计：返回默认值、返回缓存数据、或返回友好提示</li>
+</ul>
+<h3>4.2 降级</h3>
+<p><strong>原理</strong>：在系统压力过大时，主动关闭非核心功能，将资源集中保障核心链路。</p>
+<p>降级是一种<strong>有策略的功能取舍</strong>，核心思想是：宁可部分功能不可用，也不能让整个系统崩溃。</p>
+<table>
+<thead>
+<tr>
+<th>降级层次</th>
+<th>策略</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>接口降级</strong></td>
+<td>关闭非核心接口</td>
+<td>大促期间关闭商品评论、推荐功能</td>
+</tr>
+<tr>
+<td><strong>数据降级</strong></td>
+<td>返回简化/缓存数据</td>
+<td>库存查询降级为返回&quot;有货&quot;</td>
+</tr>
+<tr>
+<td><strong>体验降级</strong></td>
+<td>降低功能质量</td>
+<td>图片返回低清版本、关闭个性化推荐</td>
+</tr>
+<tr>
+<td><strong>写降级</strong></td>
+<td>异步化写入</td>
+<td>日志、埋点异步落盘</td>
+</tr>
+</tbody></table>
+<p><strong>最佳实践</strong>：</p>
+<ul>
+<li>降级开关应提前埋入代码，通过配置中心实时生效，而非临时发版</li>
+<li>建立业务优先级分类（P0~P3），明确各级业务在压力场景下的降级策略</li>
+</ul>
+<h3>4.3 超时与重试</h3>
+<p><strong>原理</strong>：通过超时避免线程无限等待，通过重试应对瞬时故障。两者配合使用，在可靠性和资源效率之间取得平衡。</p>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>关键参数</th>
+<th>注意事项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>超时</strong></td>
+<td>连接超时、读取超时</td>
+<td>超时时间应基于下游 P99 延迟设定，而非经验值</td>
+</tr>
+<tr>
+<td><strong>重试</strong></td>
+<td>最大重试次数、退避策略</td>
+<td>仅对<strong>幂等</strong>操作重试；使用指数退避避免重试风暴</td>
+</tr>
+</tbody></table>
+<p><strong>重试的风险——重试风暴</strong>：</p>
+<pre><code>正常情况：A → B → C，每层 1 次调用 = 1 次
+重试场景：A(重试3次) → B(重试3次) → C
+  C 的实际请求量 = 3 × 3 = 9 倍放大
+</code></pre>
+<p><strong>最佳实践</strong>：</p>
+<ul>
+<li>在调用链的<strong>最外层</strong>设置重试，中间层尽量不重试，避免指数级放大</li>
+<li>重试需配合<strong>熔断</strong>使用：当下游已经熔断时，不应继续重试</li>
+</ul>
+<h3>4.4 隔离</h3>
+<p><strong>原理</strong>：将不同业务或不同调用方的资源隔离开，防止某一个慢请求或故障请求耗尽全局资源。</p>
+<table>
+<thead>
+<tr>
+<th>隔离方式</th>
+<th>机制</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>线程池隔离</strong></td>
+<td>每个下游调用使用独立线程池</td>
+<td>调用外部服务，需要严格隔离</td>
+</tr>
+<tr>
+<td><strong>信号量隔离</strong></td>
+<td>限制某类请求的并发数</td>
+<td>轻量级隔离，开销比线程池小</td>
+</tr>
+<tr>
+<td><strong>进程隔离</strong></td>
+<td>不同业务部署在独立进程/容器</td>
+<td>核心业务与非核心业务隔离</td>
+</tr>
+<tr>
+<td><strong>机房/泳道隔离</strong></td>
+<td>流量按泳道划分到独立基础设施</td>
+<td>SET 化架构、灰度发布</td>
+</tr>
+</tbody></table>
+<h2>五、验证层：建立量化基准</h2>
+<p>以上所有策略的效果，最终都需要通过压力测试来验证。</p>
+<h3>5.1 压力测试</h3>
+<p>压测的目的不是&quot;测试系统能抗多少&quot;，而是<strong>建立系统容量的量化认知</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>压测指标</th>
+<th>含义</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>QPS/TPS</strong></td>
+<td>每秒处理请求/事务数</td>
+<td>确定系统吞吐上限</td>
+</tr>
+<tr>
+<td><strong>P99 延迟</strong></td>
+<td>99% 的请求响应时间</td>
+<td>确定延迟是否可接受</td>
+</tr>
+<tr>
+<td><strong>错误率</strong></td>
+<td>失败请求占比</td>
+<td>确定系统稳定性边界</td>
+</tr>
+<tr>
+<td><strong>资源利用率</strong></td>
+<td>CPU、内存、网络、磁盘</td>
+<td>确定瓶颈所在</td>
+</tr>
+</tbody></table>
+<p><strong>压测原则</strong>：</p>
+<ul>
+<li><strong>全链路压测</strong>：仅压测单个服务无法反映真实瓶颈，需要从入口到数据库全链路施压</li>
+<li><strong>梯度加压</strong>：从低流量逐步增加，观察每个阶段的指标变化，而非直接打到目标流量</li>
+<li><strong>压测环境隔离</strong>：避免压测流量影响线上数据，使用影子库/影子表隔离</li>
+</ul>
+<h3>5.2 容量规划</h3>
+<p>基于压测数据建立容量模型：</p>
+<pre><code>所需节点数 = 预估峰值 QPS / 单节点安全 QPS × 冗余系数
+
+示例：
+  预估峰值 QPS：10,000
+  单节点压测 QPS：2,000（P99 &lt; 50ms 时）
+  冗余系数：1.5（预留 50% 余量应对突发）
+
+  所需节点数 = 10,000 / 2,000 × 1.5 = 7.5 → 8 个节点
+</code></pre>
+<p><strong>最佳实践</strong>：</p>
+<ul>
+<li>容量规划以 <strong>P99 延迟可接受时的 QPS</strong> 为基准，而非极限 QPS</li>
+<li>预留 30%~50% 的余量应对突发流量和非预期场景</li>
+<li>建立常态化的容量巡检机制，而非仅在大促前才做压测</li>
+</ul>
+<h2>六、策略选择决策框架</h2>
+<p>面对高并发问题时，不同策略的优先级和适用条件不同。以下是一个决策参考框架：</p>
+<h3>按瓶颈类型选择策略</h3>
+<table>
+<thead>
+<tr>
+<th>瓶颈类型</th>
+<th>表现</th>
+<th>优先策略</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>CPU 瓶颈</strong></td>
+<td>CPU 利用率持续 &gt; 80%</td>
+<td>水平扩展、异步化、算法优化</td>
+</tr>
+<tr>
+<td><strong>数据库瓶颈（读）</strong></td>
+<td>慢查询多、从库延迟高</td>
+<td>缓存、读写分离、索引优化</td>
+</tr>
+<tr>
+<td><strong>数据库瓶颈（写）</strong></td>
+<td>主库 TPS 到顶、锁等待严重</td>
+<td>分库分表、异步写入、批量合并</td>
+</tr>
+<tr>
+<td><strong>网络瓶颈</strong></td>
+<td>带宽打满、延迟升高</td>
+<td>CDN、数据压缩、减少调用次数</td>
+</tr>
+<tr>
+<td><strong>连接数瓶颈</strong></td>
+<td>too many connections</td>
+<td>池化、读写分离、分库</td>
+</tr>
+</tbody></table>
+<h3>按投入产出比排序</h3>
+<p>高并发优化应遵循<strong>先低成本高收益，再高成本高收益</strong>的顺序：</p>
+<pre><code>第一梯队（低成本、高收益）：
+  缓存 → 池化 → 索引优化 → CDN
+
+第二梯队（中等成本）：
+  读写分离 → 异步化 → 限流/熔断/降级
+
+第三梯队（高成本）：
+  分库分表 → 水平扩展 → 服务拆分 → SET 化
+</code></pre>
+<h2>总结</h2>
+<p>高并发系统设计不是某个单一技巧的应用，而是多种策略在不同层次的协同配合。核心原则可以归纳为三点：</p>
+<ol>
+<li><strong>先定位瓶颈，再选择策略</strong>。不做盲目优化，压测数据是一切决策的基础</li>
+<li><strong>优先选择低成本方案</strong>。缓存、池化、异步化往往能以最小代价解决 80% 的并发问题</li>
+<li><strong>容错比性能更重要</strong>。系统在高并发下&quot;不崩&quot;比&quot;更快&quot;更关键——限流、熔断、降级是系统韧性的底线</li>
+</ol>
+<blockquote>
+<p>一个成熟的高并发系统，不是在每个环节都做到极致，而是在每个环节都做出了正确的取舍。</p>
+</blockquote>
+19:T9547,<h1>Agent vs Workflow vs Automation: 选对抽象才是关键</h1>
 <blockquote>
 <p>系列第 03 篇。上一篇我们讲了&quot;LLM 本身不是 Agent&quot;，这一篇要回答一个更实际的问题：<strong>你的问题，真的需要 Agent 吗？</strong></p>
 </blockquote>
@@ -1762,7 +3061,7 @@ workflow.add_step(Step(&quot;load&quot;, step_3_load, depends_on=[&quot;analyze&
 <li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
 </ul>
 </blockquote>
-18:Td4a2,<h1>Tool Calling Deep Dive: 让 LLM 成为可编程接口</h1>
+1a:Td4a2,<h1>Tool Calling Deep Dive: 让 LLM 成为可编程接口</h1>
 <blockquote>
 <p>这是 Agentic 系列的第 05 篇。在前几篇中我们建立了 Agent 的概念模型、控制循环、以及 Agent 与 Workflow 的边界。本篇聚焦于 Agent 能力的核心支点——Tool Calling。</p>
 <p>Tool Calling 不是&quot;让 AI 调 API&quot;这么简单。它是 LLM 从 <strong>Text-in/Text-out 的生成模型</strong> 变成 <strong>可编程接口</strong> 的关键转折点。理解它的工作原理、设计约束和工程实践，是构建任何 Agentic 系统的前提。</p>
@@ -2827,7 +4126,7 @@ class SecureToolRegistry(ToolRegistry):
 <li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
 </ul>
 </blockquote>
-19:T9c80,<h1>Agent Runtime from Scratch: 不依赖框架构建 Agent</h1>
+1b:T9c80,<h1>Agent Runtime from Scratch: 不依赖框架构建 Agent</h1>
 <blockquote>
 <p>框架是加速器，不是知识的替代品。</p>
 <p>本文是 Agentic 系列第 07 篇，也是 Phase 2 的收官之作。我们将抛开所有框架，用纯 Python 从零构建一个功能完整的 Agent Runtime。这是系列中代码量最大的一篇——每一行代码都指向同一个目标：让你彻底理解 Agent 的运行本质。</p>
@@ -3667,7 +4966,7 @@ Turns: 6 | Tokens: 8432 | 13245ms | completed
 <li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
 </ul>
 </blockquote>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/agentic/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"Agentic 系统"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-14","children":"2025年12月14日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"The Agent Control Loop: Agent 运行时的核心抽象"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L13","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L13","Runtime",{"href":"/blog/tag/Runtime/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Runtime"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/03-Agent vs Workflow vs Automation","title":"Agent vs Workflow vs Automation: 选对抽象才是关键","description":"不是所有问题都需要 Agent。本文系统比较 Rule-based Automation、Workflow/DAG、Agent 三种执行范式，从确定性、成本、可观测性等维度给出选型框架，帮助工程师在真实场景中选对抽象层次。","pubDate":"2025-12-09","tags":["Agentic","AI Engineering","Architecture"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/05-Tool Calling Deep Dive","title":"Tool Calling Deep Dive: 让 LLM 成为可编程接口","description":"Tool Calling 是 LLM 从「对话机器」变成「可编程接口」的关键转折点。本文从底层原理出发，系统拆解 Tool Calling 的工作机制、JSON Schema 契约设计、工具注册与发现策略、错误处理、安全性考量及关键 Trade-off，附带完整可运行代码。","pubDate":"2025-12-18","tags":["Agentic","AI Engineering","Tool Calling"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"AI Engineering":{"prev":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"Runtime":{"prev":null,"next":{"slug":"engineering/agentic/07-Agent Runtime from Scratch","title":"Agent Runtime from Scratch: 不依赖框架构建 Agent","description":"不依赖 LangChain 等框架，从零实现一个功能完整的 Agent Runtime。逐模块构建 LLMClient、ToolRegistry、ToolExecutor、MessageManager 和核心控制循环，包含并行工具调用、Streaming、超时控制、死循环检测等高级特性，附完整可运行代码。","pubDate":"2025-12-28","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$19"}}}}]}],["$","$L1a",null,{}]]}]}]}]
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/agentic/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"Agentic 系统"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-14","children":"2025年12月14日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"The Agent Control Loop: Agent 运行时的核心抽象"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L13","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L13","Runtime",{"href":"/blog/tag/Runtime/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Runtime"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/微服务架构落地指南：从核心模式到技术选型","title":"微服务架构落地指南：从核心模式到技术选型","description":"系统性地探讨微服务架构设计的核心关注点，包括服务注册发现、API 网关、服务容错、基础设施选型、CI/CD 流水线和可观测性体系，帮助你从 0 到 1 构建一套完整的微服务技术栈。","pubDate":"2025-12-12","tags":["架构设计","微服务","分布式系统","技术选型"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/architecture/高并发系统设计：原理、策略与工程实践","title":"高并发系统设计：原理、策略与工程实践","description":"系统梳理高并发架构的核心设计策略，从计算层、数据层、流量层到容错层，逐一分析每种策略的适用原理、决策依据与工程实践，构建可落地的高并发设计知识体系。","pubDate":"2025-12-15","tags":["高并发","系统架构","性能优化","分布式系统"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":{"slug":"engineering/agentic/03-Agent vs Workflow vs Automation","title":"Agent vs Workflow vs Automation: 选对抽象才是关键","description":"不是所有问题都需要 Agent。本文系统比较 Rule-based Automation、Workflow/DAG、Agent 三种执行范式，从确定性、成本、可观测性等维度给出选型框架，帮助工程师在真实场景中选对抽象层次。","pubDate":"2025-12-09","tags":["Agentic","AI Engineering","Architecture"],"heroImage":"$undefined","content":"$19"},"next":{"slug":"engineering/agentic/05-Tool Calling Deep Dive","title":"Tool Calling Deep Dive: 让 LLM 成为可编程接口","description":"Tool Calling 是 LLM 从「对话机器」变成「可编程接口」的关键转折点。本文从底层原理出发，系统拆解 Tool Calling 的工作机制、JSON Schema 契约设计、工具注册与发现策略、错误处理、安全性考量及关键 Trade-off，附带完整可运行代码。","pubDate":"2025-12-18","tags":["Agentic","AI Engineering","Tool Calling"],"heroImage":"$undefined","content":"$1a"}},"AI Engineering":{"prev":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:prev","next":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:next"},"Runtime":{"prev":null,"next":{"slug":"engineering/agentic/07-Agent Runtime from Scratch","title":"Agent Runtime from Scratch: 不依赖框架构建 Agent","description":"不依赖 LangChain 等框架，从零实现一个功能完整的 Agent Runtime。逐模块构建 LLMClient、ToolRegistry、ToolExecutor、MessageManager 和核心控制循环，包含并行工具调用、Streaming、超时控制、死循环检测等高级特性，附完整可运行代码。","pubDate":"2025-12-28","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$1b"}}}}]}],["$","$L1c",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null

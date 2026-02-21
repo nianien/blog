@@ -9,13 +9,13 @@ d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/fffdcdb4fb651185.css","style"]
-0:{"P":null,"b":"wlOkUxTzHfxl8sQA11M8Z","p":"","c":["","blog","engineering","agentic","07-Agent%20Runtime%20from%20Scratch",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/07-Agent%20Runtime%20from%20Scratch","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/07-Agent%20Runtime%20from%20Scratch","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","nwLykUZTPGrCoDPBCo-Z5v",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"Dhq92JtvZPpMJAPdZEYU7","p":"","c":["","blog","engineering","agentic","07-Agent%20Runtime%20from%20Scratch",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/07-Agent%20Runtime%20from%20Scratch","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/07-Agent%20Runtime%20from%20Scratch","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","cb2tOiGZW2wbxC9L4Elamv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
 14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-1a:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+1b:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
 15:T9c80,<h1>Agent Runtime from Scratch: 不依赖框架构建 Agent</h1>
 <blockquote>
@@ -857,1055 +857,614 @@ Turns: 6 | Tokens: 8432 | 13245ms | completed
 <li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
 </ul>
 </blockquote>
-17:Td28a,<h1>Prompt Engineering for Agents: 面向 Agent 的提示词工程</h1>
-<blockquote>
-<p>Agentic 系列第 06 篇。前文我们讨论了 Tool Calling 的设计哲学与工程实践，LLM 已经具备了&quot;使用工具&quot;的能力。但工具只是 Agent 的四肢，Prompt 才是 Agent 的大脑皮层——它定义了 Agent 如何感知、如何推理、如何决策、如何行动。</p>
-<p>本文的核心观点：<strong>Agent 的 Prompt 不是&quot;聊天提示词&quot;，而是&quot;系统接口规范&quot;。</strong> Chatbot 的 Prompt 追求对话自然，Agent 的 Prompt 追求行为可控。这两者的设计哲学截然不同。</p>
+17:T5870,<blockquote>
+<p>Java 中的大部分同步工具（ReentrantLock、Semaphore、CountDownLatch、ReentrantReadWriteLock 等）都基于 AbstractQueuedSynchronizer（AQS）实现。理解 AQS，就等于掌握了 Java 并发编程的底层脉络。本文从设计思想出发，逐层深入 AQS 的数据结构、核心流程和源码实现，并通过 ReentrantLock 串联全局，最后梳理 AQS 在 JUC 中的应用全景。</p>
 </blockquote>
-<hr>
-<h2>1. 从&quot;对话技巧&quot;到&quot;接口规范&quot;</h2>
-<p>大多数人对 Prompt Engineering 的印象停留在&quot;写好提示词让 AI 回答更好&quot;的阶段。这在 Chatbot 场景下基本成立——你调整措辞、给几个例子、加一句&quot;请一步一步思考&quot;，模型输出的质量就会改善。</p>
-<p>但 Agent 场景完全不同。</p>
-<p>Agent 的 Prompt 不是写给&quot;一个聊天助手&quot;的，而是写给&quot;一个程序运行时&quot;的。它的目的不是让输出&quot;看起来更好&quot;，而是让输出<strong>可解析、可路由、可执行</strong>。一个 Agent Prompt 的失败，不是&quot;回答不够好&quot;，而是<strong>系统崩溃</strong>——JSON 解析失败、工具调用参数错误、无限循环、状态机卡死。</p>
+<h2>AQS 是什么？</h2>
+<p>AQS（AbstractQueuedSynchronizer）是 <code>java.util.concurrent.locks</code> 包中的一个<strong>抽象类</strong>，是构建锁和同步器的基础框架。Doug Lea 设计 AQS 的核心目标是：</p>
+<ul>
+<li>降低构建锁和同步器的工作量</li>
+<li>避免在多个位置处理竞争问题</li>
+<li>在基于 AQS 的同步器中，阻塞只可能在一个时刻发生，降低上下文切换开销，提高吞吐量</li>
+</ul>
+<p>AQS 支持两种工作模式：</p>
 <table>
 <thead>
 <tr>
-<th>维度</th>
-<th>Chatbot Prompt</th>
-<th>Agent Prompt</th>
+<th>模式</th>
+<th>含义</th>
+<th>典型实现</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>目标</td>
-<td>自然、有帮助的回复</td>
-<td>可解析、可执行的结构化输出</td>
+<td><strong>独占模式（Exclusive）</strong></td>
+<td>同一时刻只能有一个线程获取到锁</td>
+<td>ReentrantLock</td>
 </tr>
 <tr>
-<td>消费者</td>
-<td>人类用户</td>
-<td>程序代码（Parser / Router / Executor）</td>
-</tr>
-<tr>
-<td>失败模式</td>
-<td>回答质量下降</td>
-<td>系统崩溃、无限循环、安全漏洞</td>
-</tr>
-<tr>
-<td>格式要求</td>
-<td>宽松，Markdown 即可</td>
-<td>严格，JSON / XML / 特定 Schema</td>
-</tr>
-<tr>
-<td>可测试性</td>
-<td>主观评估</td>
-<td>可自动化断言</td>
-</tr>
-<tr>
-<td>版本管理</td>
-<td>通常不管理</td>
-<td>必须版本控制，等同于代码</td>
+<td><strong>共享模式（Shared）</strong></td>
+<td>同一时刻可以有多个线程同时获取</td>
+<td>CountDownLatch、ReadWriteLock、Semaphore</td>
 </tr>
 </tbody></table>
-<p>这意味着，<strong>Agent 的 Prompt Engineering 本质上是一种接口设计（Interface Design）</strong>，而不是文案写作。</p>
-<hr>
-<h2>2. Agent Prompt 的分层架构</h2>
-<p>一个成熟的 Agent 系统，发送给 LLM 的 Prompt 不是一坨字符串，而是多个层次动态组装的结果。</p>
-<h3>2.1 四层结构</h3>
-<pre><code>┌─────────────────────────────────────────────────────┐
-│                   Final Prompt                       │
-│  ┌───────────────────────────────────────────────┐  │
-│  │  Layer 1: System Prompt (静态)                 │  │
-│  │  - 身份定义（你是谁，你的职责是什么）            │  │
-│  │  - 行为约束（必须做什么，禁止做什么）            │  │
-│  │  - 输出格式规范（JSON Schema / XML 模板）       │  │
-│  ├───────────────────────────────────────────────┤  │
-│  │  Layer 2: Context Injection (动态)             │  │
-│  │  - 可用工具列表及其描述                         │  │
-│  │  - 历史对话摘要 / 关键事实                      │  │
-│  │  - 当前系统状态（已完成步骤、中间结果）           │  │
-│  │  - 检索到的外部知识（RAG 结果）                  │  │
-│  ├───────────────────────────────────────────────┤  │
-│  │  Layer 3: User Input (外部)                    │  │
-│  │  - 用户的原始请求                               │  │
-│  │  - 或上一步 Agent 的输出（在 Multi-Agent 中）    │  │
-│  ├───────────────────────────────────────────────┤  │
-│  │  Layer 4: Constraints &amp; Guardrails (静态+动态)  │  │
-│  │  - 安全边界（禁止调用的工具、禁止访问的数据）     │  │
-│  │  - 输出限制（最大步骤数、Token 预算）            │  │
-│  │  - 当前 Turn 的特殊指令                         │  │
-│  └───────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────┘
-</code></pre>
-<h3>2.2 组装过程</h3>
-<p>Prompt 组装不是简单的字符串拼接，而是一个有优先级、有裁剪策略的构建过程：</p>
-<pre><code>                  Token Budget: 8000
-                       │
-      ┌────────────────┼────────────────┐
-      │                │                │
-      ▼                ▼                ▼
- System Prompt    Context Injection   User Input
- (固定预算:2000)  (弹性预算:4500)    (固定预算:1500)
-      │                │                │
-      │          ┌─────┴─────┐          │
-      │          │           │          │
-      │      Tool Descs   History       │
-      │      (1500 max)  (3000 max)     │
-      │          │           │          │
-      │          │     [若超预算]        │
-      │          │     → 压缩/截断      │
-      │          │           │          │
-      ▼          ▼           ▼          ▼
-     ┌──────────────────────────────────┐
-     │      Prompt Assembler            │
-     │  1. 拼装各层                      │
-     │  2. 计算总 Token                  │
-     │  3. 若超预算 → 压缩 Context 层    │
-     │  4. 注入 Constraints              │
-     └──────────────────────────────────┘
-                    │
-                    ▼
-              Final Prompt
-</code></pre>
-<p>关键设计决策：<strong>System Prompt 和 User Input 的预算是固定的，Context Injection 的预算是弹性的。</strong> 当总 Token 超出预算时，优先压缩 Context 层（截断历史、精简工具描述），而非删减 System Prompt 中的行为约束。因为行为约束一旦丢失，Agent 的行为就不可控了。</p>
-<h3>2.3 Python 示例：Prompt 组装器</h3>
-<pre><code class="language-python">from dataclasses import dataclass, field
-
-@dataclass
-class PromptLayer:
-    content: str
-    priority: int        # 越高越不容易被裁剪
-    max_tokens: int
-    compressible: bool   # 是否允许被压缩
-
-@dataclass
-class PromptAssembler:
-    total_budget: int = 8000
-    layers: list[PromptLayer] = field(default_factory=list)
-
-    def add_layer(self, layer: PromptLayer):
-        self.layers.append(layer)
-
-    def assemble(self) -&gt; str:
-        # 按优先级排序：高优先级最后处理（最不容易被裁剪）
-        sorted_layers = sorted(self.layers, key=lambda l: l.priority)
-
-        total_used = sum(estimate_tokens(l.content) for l in self.layers)
-
-        if total_used &gt; self.total_budget:
-            overflow = total_used - self.total_budget
-            # 从低优先级开始压缩
-            for layer in sorted_layers:
-                if not layer.compressible:
-                    continue
-                available_cut = estimate_tokens(layer.content) - 100  # 至少保留 100 token
-                cut = min(overflow, available_cut)
-                layer.content = truncate_to_tokens(layer.content,
-                                                    estimate_tokens(layer.content) - cut)
-                overflow -= cut
-                if overflow &lt;= 0:
-                    break
-
-        # 按原始顺序拼装
-        return &quot;\n\n&quot;.join(l.content for l in self.layers)
-</code></pre>
-<hr>
-<h2>3. 四种关键 Agent Prompt 设计模式</h2>
-<p>Agent 系统中，不同角色的 Agent 需要不同风格的 Prompt。以下是四种最核心的设计模式，每种都给出完整可用的 Prompt 示例。</p>
-<h3>3.1 Router Prompt：意图路由</h3>
-<p>Router 的职责是根据用户输入<strong>选择正确的工具或子流程</strong>，而不是自己去执行任务。它是 Agent 系统的&quot;交通警察&quot;。</p>
-<pre><code class="language-python">ROUTER_PROMPT = &quot;&quot;&quot;You are a request router. Your ONLY job is to analyze the user&#39;s
-request and select the appropriate tool. Do NOT attempt to answer the question yourself.
-
-## Available Tools
-{tool_descriptions}
-
-## Routing Rules
-1. If the request involves real-time data (weather, stock prices, news) → use `web_search`
-2. If the request involves the user&#39;s own data (files, emails, calendar) → use `data_query`
-3. If the request involves code generation or debugging → use `code_assistant`
-4. If the request involves image generation or editing → use `image_tool`
-5. If the request is ambiguous, ask a clarifying question instead of guessing.
-6. If NO tool matches, respond with tool_name: &quot;none&quot; and explain why.
-
-## Output Format (strict JSON, no markdown fence)
-{{
-  &quot;reasoning&quot;: &quot;&lt;one sentence explaining your routing decision&gt;&quot;,
-  &quot;tool_name&quot;: &quot;&lt;exact tool name from the list above, or &#39;none&#39;&gt;&quot;,
-  &quot;tool_input&quot;: {{&lt;parameters to pass to the selected tool&gt;}},
-  &quot;confidence&quot;: &lt;float between 0.0 and 1.0&gt;
-}}
-
-## Critical Constraints
-- NEVER fabricate a tool name not in the list.
-- NEVER return free-form text. ALWAYS return valid JSON.
-- If confidence &lt; 0.6, set tool_name to &quot;none&quot; and ask for clarification.
-&quot;&quot;&quot;
-</code></pre>
-<p><strong>设计要点：</strong></p>
-<ul>
-<li>明确告诉 LLM &quot;你不负责回答问题&quot;，避免它自作主张直接回答</li>
-<li>提供确定性的路由规则（if-then），减少 LLM 的自由裁量空间</li>
-<li>要求输出 confidence 分数，让调用方可以做二次判断</li>
-<li>兜底规则：没有匹配的工具时，显式输出 &quot;none&quot;</li>
-</ul>
-<h3>3.2 Planner Prompt：任务规划</h3>
-<p>Planner 的职责是将一个复杂请求<strong>分解为可执行的子任务列表</strong>。它是 Agent 的&quot;项目经理&quot;。</p>
-<pre><code class="language-python">PLANNER_PROMPT = &quot;&quot;&quot;You are a task planner. Given a complex user request, decompose it
-into a sequence of concrete, executable sub-tasks.
-
-## Planning Principles
-1. Each sub-task must be independently executable by a single tool call.
-2. Sub-tasks should be ordered by dependency — a task can only depend on tasks before it.
-3. Minimize the number of steps. Do NOT over-decompose simple requests.
-4. If a request can be done in ONE tool call, return a plan with ONE step.
-
-## Available Tools
-{tool_descriptions}
-
-## Output Format (strict JSON)
-{{
-  &quot;analysis&quot;: &quot;&lt;brief analysis of the request&#39;s complexity and required resources&gt;&quot;,
-  &quot;plan&quot;: [
-    {{
-      &quot;step_id&quot;: 1,
-      &quot;description&quot;: &quot;&lt;what this step does&gt;&quot;,
-      &quot;tool_name&quot;: &quot;&lt;tool to use&gt;&quot;,
-      &quot;tool_input&quot;: {{&lt;parameters&gt;}},
-      &quot;depends_on&quot;: []
-    }},
-    {{
-      &quot;step_id&quot;: 2,
-      &quot;description&quot;: &quot;&lt;what this step does&gt;&quot;,
-      &quot;tool_name&quot;: &quot;&lt;tool to use&gt;&quot;,
-      &quot;tool_input&quot;: {{&lt;parameters, can reference $step_1_result&gt;}},
-      &quot;depends_on&quot;: [1]
-    }}
-  ],
-  &quot;estimated_steps&quot;: &lt;int&gt;,
-  &quot;can_parallelize&quot;: [&lt;list of step_id groups that can run concurrently&gt;]
-}}
-
-## Constraints
-- Maximum 8 steps. If the task seems to need more, simplify or ask the user to narrow scope.
-- NEVER include steps like &quot;verify result&quot; or &quot;report to user&quot; — those are handled by the system.
-- Use $step_N_result to reference the output of a previous step.
-&quot;&quot;&quot;
-</code></pre>
-<p><strong>设计要点：</strong></p>
-<ul>
-<li>&quot;最小化步骤数&quot;原则防止 LLM 过度分解（这是规划器最常见的问题）</li>
-<li><code>depends_on</code> 字段使得执行引擎可以识别并行机会</li>
-<li>明确设置步骤上限（8 步），避免 LLM 生成无休止的计划</li>
-<li>禁止 LLM 添加&quot;元步骤&quot;（验证、汇报），这些是系统层的职责</li>
-</ul>
-<h3>3.3 Executor Prompt：执行操作</h3>
-<p>Executor 的职责是<strong>执行单个具体操作</strong>，并以严格的格式返回结果。它是 Agent 的&quot;操作工&quot;。</p>
-<pre><code class="language-python">EXECUTOR_PROMPT = &quot;&quot;&quot;You are a task executor. You will receive a specific sub-task and
-must execute it using the provided tool.
-
-## Current Task
-{task_description}
-
-## Tool to Use
-Name: {tool_name}
-Schema: {tool_schema}
-
-## Context from Previous Steps
-{previous_results}
-
-## Execution Rules
-1. Call the tool EXACTLY ONCE with the correct parameters.
-2. Do NOT deviate from the task description.
-3. Do NOT call tools not specified for this task.
-4. If the tool call fails, report the error — do NOT retry or improvise.
-
-## Output Format (strict JSON)
-{{
-  &quot;tool_call&quot;: {{
-    &quot;name&quot;: &quot;{tool_name}&quot;,
-    &quot;arguments&quot;: {{&lt;filled parameters&gt;}}
-  }},
-  &quot;explanation&quot;: &quot;&lt;one sentence on why these parameters were chosen&gt;&quot;
-}}
-&quot;&quot;&quot;
-</code></pre>
-<p><strong>设计要点：</strong></p>
-<ul>
-<li>Executor 的设计哲学是&quot;最小权限&quot;——只做被告知的事</li>
-<li>严禁 Executor 自主决策，发现错误只能上报，不能自行重试</li>
-<li>这种设计让 Executor 成为一个确定性单元，便于测试和审计</li>
-</ul>
-<h3>3.4 Reflector Prompt：结果反思</h3>
-<p>Reflector 的职责是<strong>评估执行结果</strong>，判断是否达成目标，如果未达成则提出修正方案。它是 Agent 的&quot;质量检查员&quot;。</p>
-<pre><code class="language-python">REFLECTOR_PROMPT = &quot;&quot;&quot;You are a result evaluator. Given the original user request and the
-execution result, determine whether the task has been completed successfully.
-
-## Original Request
-{user_request}
-
-## Execution Plan
-{plan}
-
-## Execution Results
-{results}
-
-## Evaluation Criteria
-1. Completeness: Does the result fully address the user&#39;s request?
-2. Correctness: Is the result factually and logically correct?
-3. Format: Is the result in the expected format?
-
-## Output Format (strict JSON)
-{{
-  &quot;evaluation&quot;: {{
-    &quot;completeness&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}},
-    &quot;correctness&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}},
-    &quot;format&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}}
-  }},
-  &quot;overall_pass&quot;: &lt;true|false&gt;,
-  &quot;action&quot;: &quot;&lt;one of: &#39;accept&#39;, &#39;retry_step&#39;, &#39;replan&#39;, &#39;escalate&#39;&gt;&quot;,
-  &quot;retry_details&quot;: {{
-    &quot;step_id&quot;: &lt;which step to retry, if applicable&gt;,
-    &quot;modification&quot;: &quot;&lt;what to change in the retry&gt;&quot;
-  }}
-}}
-
-## Decision Rules
-- If all scores &gt;= 4: action = &quot;accept&quot;
-- If any score &lt;= 2 and retry_count &lt; 3: action = &quot;retry_step&quot; or &quot;replan&quot;
-- If retry_count &gt;= 3: action = &quot;escalate&quot; (ask user for help)
-- NEVER accept a result with correctness score &lt;= 2.
-&quot;&quot;&quot;
-</code></pre>
-<p><strong>设计要点：</strong></p>
-<ul>
-<li>多维度评估（完整性、正确性、格式）而非简单的 pass/fail</li>
-<li>明确的决策规则，减少 LLM 判断的主观性</li>
-<li>retry_count 上限防止无限重试循环</li>
-<li>&quot;escalate&quot; 作为最终兜底——承认失败比无限循环好得多</li>
-</ul>
-<h3>3.5 四种模式的协作</h3>
-<pre><code>User Request
-     │
-     ▼
- ┌────────┐     tool_name + input     ┌──────────┐
- │ Router │ ──── (简单请求直接执行) ───→│ Executor │──→ Result
- └────┬───┘                           └──────────┘
-      │ (复杂请求)                          ▲
-      ▼                                    │
- ┌─────────┐    plan[step_1..N]     ┌──────┴───┐
- │ Planner │ ─────────────────────→│ Executor  │
- └─────────┘                       │ (per step)│
-                                   └──────┬───┘
-                                          │ results
-                                          ▼
-                                   ┌───────────┐
-                                   │ Reflector  │
-                                   └─────┬─────┘
-                                         │
-                              ┌──────────┼──────────┐
-                              │          │          │
-                           accept    retry_step   replan
-                              │          │          │
-                              ▼          ▼          ▼
-                           Return    Executor    Planner
-                           to User  (重试该步)   (重新规划)
-</code></pre>
-<hr>
-<h2>4. Chain-of-Thought 在 Agent 中的应用</h2>
-<h3>4.1 标准 CoT vs Agent CoT</h3>
-<p>标准的 Chain-of-Thought（CoT）是一种推理增强技术——&quot;Let&#39;s think step by step&quot;。但在 Agent 中，CoT 的用途和形式有本质不同：</p>
+<p>无论哪种模式，本质上都是对 AQS 内部一个 <strong><code>state</code> 变量</strong>的获取和释放。</p>
+<h2>AQS 的整体架构</h2>
+<p>AQS 框架共分为<strong>五层</strong>，自上而下由浅入深：</p>
 <table>
 <thead>
 <tr>
-<th>维度</th>
-<th>标准 CoT</th>
-<th>Agent CoT</th>
+<th>层次</th>
+<th>内容</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>目的</td>
-<td>提高推理准确性</td>
-<td>让中间推理过程可审计、可路由</td>
+<td>第一层</td>
+<td>API 层</td>
+<td>自定义同步器需重写的方法（tryAcquire、tryRelease 等）</td>
 </tr>
 <tr>
-<td>消费者</td>
-<td>最终输出的一部分</td>
-<td>Agent Runtime 的中间状态</td>
+<td>第二层</td>
+<td>获取/释放方法</td>
+<td>acquire、release、acquireShared、releaseShared</td>
 </tr>
 <tr>
-<td>格式</td>
-<td>自然语言</td>
-<td>结构化（通常嵌入 JSON 的某个字段）</td>
+<td>第三层</td>
+<td>队列操作</td>
+<td>addWaiter、acquireQueued、shouldParkAfterFailedAcquire</td>
 </tr>
 <tr>
-<td>是否返回用户</td>
-<td>通常是</td>
-<td>通常不是（内部消费）</td>
+<td>第四层</td>
+<td>线程阻塞/唤醒</td>
+<td>LockSupport.park / unpark</td>
+</tr>
+<tr>
+<td>第五层</td>
+<td>基础数据</td>
+<td>state、Node、CLH 变体队列</td>
 </tr>
 </tbody></table>
-<p>Agent 的 CoT 更像是一个<strong>内部日志</strong>，而非用户可见的推理过程。它的首要目标是让系统（而非人类）能够理解和利用中间推理。</p>
-<h3>4.2 Scratchpad 模式</h3>
-<p>Scratchpad 模式是 Agent CoT 的典型实现——在 Prompt 中显式开辟一个&quot;草稿区&quot;，让 LLM 在其中进行中间推理，然后输出最终决策。</p>
-<pre><code class="language-python">SCRATCHPAD_PROMPT = &quot;&quot;&quot;Analyze the user&#39;s request and decide on an action.
-
-## User Request
-{user_request}
-
-## Available Tools
-{tools}
-
-## Instructions
-Use the &lt;scratchpad&gt; section to think through your decision. This section will NOT be
-shown to the user. Then provide your final action in the &lt;action&gt; section.
-
-&lt;scratchpad&gt;
-Think through:
-1. What is the user actually asking for?
-2. Which tools could help? What are the pros/cons of each?
-3. What information am I missing?
-4. What&#39;s the simplest approach that works?
-&lt;/scratchpad&gt;
-
-&lt;action&gt;
-Return strict JSON here:
-{{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}, &quot;reasoning_summary&quot;: &quot;...&quot;}}
-&lt;/action&gt;
-&quot;&quot;&quot;
+<p>当接入自定义同步器时，<strong>只需重写第一层的部分方法即可</strong>，不需要关注底层实现。当加锁或解锁操作触发时，沿着第一层到第五层逐层深入。</p>
+<h2>核心数据结构</h2>
+<h3>同步状态 State</h3>
+<p>AQS 使用一个 <code>volatile int</code> 类型的成员变量 <code>state</code> 来表示同步状态：</p>
+<pre><code class="language-java">private volatile int state;
 </code></pre>
-<p>Runtime 解析时，只提取 <code>&lt;action&gt;</code> 标签中的内容作为执行指令，<code>&lt;scratchpad&gt;</code> 的内容记录到日志中用于调试和审计。</p>
-<h3>4.3 显式推理 vs 隐式推理的 Trade-off</h3>
-<p><strong>显式推理（Explicit Reasoning）：</strong> 在 Prompt 中要求 LLM 输出推理过程。</p>
-<p>优势：</p>
+<p>State 的含义由具体的同步器定义，例如：</p>
 <ul>
-<li>可审计，出了问题能追溯&quot;为什么做了这个决策&quot;</li>
-<li>推理质量通常更高（CoT 效应）</li>
-<li>便于调试</li>
+<li><strong>ReentrantLock</strong>：state 表示锁被重入的次数，0 表示未被持有</li>
+<li><strong>Semaphore</strong>：state 表示可用许可的数量</li>
+<li><strong>CountDownLatch</strong>：state 表示计数器的值</li>
 </ul>
-<p>劣势：</p>
+<p>AQS 提供三个方法操作 state，均为 <code>final</code> 修饰，子类不可重写：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>getState()</code></td>
+<td>获取当前 state 值</td>
+</tr>
+<tr>
+<td><code>setState(int)</code></td>
+<td>设置 state 值</td>
+</tr>
+<tr>
+<td><code>compareAndSetState(int, int)</code></td>
+<td>CAS 方式更新 state</td>
+</tr>
+</tbody></table>
+<h3>CLH 变体队列与 Node 节点</h3>
+<p>AQS 的核心思想是：如果请求的共享资源空闲，就将当前线程设置为有效的工作线程，并将资源设置为锁定状态；<strong>如果资源被占用，就通过一个 CLH 变体的 FIFO 双向队列来管理等待线程</strong>。</p>
+<blockquote>
+<p>CLH 队列以其发明者 Craig、Landin 和 Hagersten 命名，原始 CLH 是单向链表。AQS 中的变体是虚拟双向队列，通过将每条请求线程封装成 Node 节点来实现锁的分配。</p>
+</blockquote>
+<p>Node 节点的关键属性：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>thread</code></td>
+<td>该节点代表的线程</td>
+</tr>
+<tr>
+<td><code>waitStatus</code></td>
+<td>当前节点在队列中的等待状态</td>
+</tr>
+<tr>
+<td><code>prev</code></td>
+<td>前驱指针</td>
+</tr>
+<tr>
+<td><code>next</code></td>
+<td>后继指针</td>
+</tr>
+<tr>
+<td><code>nextWaiter</code></td>
+<td>指向下一个处于 CONDITION 状态的节点</td>
+</tr>
+</tbody></table>
+<p><code>waitStatus</code> 的枚举值：</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>名称</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>默认值</td>
+<td>Node 初始化时的状态</td>
+</tr>
+<tr>
+<td>1</td>
+<td>CANCELLED</td>
+<td>线程获取锁的请求已取消</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>SIGNAL</td>
+<td>后继节点的线程需要被唤醒</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>CONDITION</td>
+<td>节点在条件队列中，等待 Condition 唤醒</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>PROPAGATE</td>
+<td>共享模式下，释放操作需要向后传播</td>
+</tr>
+</tbody></table>
+<p>AQS 内部还维护了<strong>两种队列</strong>：</p>
 <ul>
-<li>消耗更多 Token（推理内容可能占输出的 50%+）</li>
-<li>增加延迟</li>
-<li>推理内容可能包含敏感的内部逻辑</li>
+<li><strong>同步队列（Sync Queue）</strong>：获取资源失败的线程进入此队列自旋等待，当前驱节点是头节点时尝试获取资源</li>
+<li><strong>条件队列（Condition Queue）</strong>：基于 <code>Condition</code> 实现，调用 <code>await()</code> 时线程进入条件队列，调用 <code>signal()</code> 时转移到同步队列</li>
 </ul>
-<p><strong>隐式推理（Implicit Reasoning）：</strong> 直接要求 LLM 输出最终决策，不要求中间过程。</p>
-<p>优势：</p>
-<ul>
-<li>Token 用量更低，延迟更短</li>
-<li>输出更简洁，解析更简单</li>
-</ul>
-<p>劣势：</p>
-<ul>
-<li>黑盒，无法理解决策过程</li>
-<li>在复杂场景下准确率下降明显</li>
-</ul>
-<p><strong>工程决策建议：</strong></p>
-<ul>
-<li>Router 和 Executor（简单、确定性高）：倾向隐式推理，追求速度</li>
-<li>Planner 和 Reflector（复杂、需要判断）：必须显式推理，追求准确性和可审计性</li>
-<li>在系统稳定后，可以通过 A/B 测试逐步将显式推理切换为隐式推理以降低成本</li>
-</ul>
-<hr>
-<h2>5. Few-shot vs Zero-shot 在 Agent 场景的选择</h2>
-<p>这是 Agent Prompt 设计中一个重要但常被忽视的决策点。</p>
-<h3>5.1 决策矩阵</h3>
-<pre><code>                    输出结构化程度
-                 低 ◄──────────► 高
-                 │                │
-  任务复杂度  高  │  Few-shot      │  Zero-shot + Schema
-                 │  (复杂规划)     │  (结构化反思)
-                 │                │
-              低  │  Zero-shot     │  Zero-shot + Schema
-                 │  (简单对话)     │  (工具调用)
-                 │                │
+<blockquote>
+<p>注意：双向链表的<strong>头节点是一个虚节点</strong>（不存储实际线程信息），真正的第一个有效节点从第二个开始。</p>
+</blockquote>
+<h2>自定义同步器需要重写的方法</h2>
+<p>AQS 采用<strong>模板方法模式</strong>，自定义同步器只需根据需要重写以下方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>模式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>tryAcquire(int)</code></td>
+<td>独占</td>
+<td>尝试获取资源，成功返回 true</td>
+</tr>
+<tr>
+<td><code>tryRelease(int)</code></td>
+<td>独占</td>
+<td>尝试释放资源，成功返回 true</td>
+</tr>
+<tr>
+<td><code>tryAcquireShared(int)</code></td>
+<td>共享</td>
+<td>尝试获取资源，负数=失败，0=成功但无剩余，正数=成功且有剩余</td>
+</tr>
+<tr>
+<td><code>tryReleaseShared(int)</code></td>
+<td>共享</td>
+<td>尝试释放资源，如果释放后允许唤醒后续节点返回 true</td>
+</tr>
+<tr>
+<td><code>isHeldExclusively()</code></td>
+<td>独占</td>
+<td>当前线程是否独占资源，用到 Condition 时需实现</td>
+</tr>
+</tbody></table>
+<p>独占模式实现 <code>tryAcquire-tryRelease</code>，共享模式实现 <code>tryAcquireShared-tryReleaseShared</code>。AQS 也支持同时实现两种模式，如 <code>ReentrantReadWriteLock</code>。</p>
+<h2>通过 ReentrantLock 理解加锁流程</h2>
+<p>ReentrantLock 是 AQS 独占模式最典型的实现。我们以<strong>非公平锁</strong>为例，完整追踪加锁流程。</p>
+<h3>第一步：lock()</h3>
+<pre><code class="language-java">// ReentrantLock.NonfairSync
+final void lock() {
+    if (compareAndSetState(0, 1))           // 直接 CAS 尝试获取锁
+        setExclusiveOwnerThread(Thread.currentThread());
+    else
+        acquire(1);                          // 失败则进入 AQS 框架流程
+}
 </code></pre>
-<h3>5.2 工具调用：Zero-shot 优先</h3>
-<p>工具调用场景天然适合 Zero-shot。原因是 <strong>JSON Schema 本身就是最好的&quot;示例&quot;</strong>——它精确定义了每个参数的名称、类型、描述和约束，比任何 Few-shot 示例都更完整。</p>
-<pre><code class="language-python"># 工具调用不需要 few-shot，Schema 就是最好的约束
-tool_schema = {
-    &quot;name&quot;: &quot;search_database&quot;,
-    &quot;description&quot;: &quot;Search the product database with filters&quot;,
-    &quot;parameters&quot;: {
-        &quot;type&quot;: &quot;object&quot;,
-        &quot;properties&quot;: {
-            &quot;query&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;Search keywords&quot;},
-            &quot;category&quot;: {
-                &quot;type&quot;: &quot;string&quot;,
-                &quot;enum&quot;: [&quot;electronics&quot;, &quot;clothing&quot;, &quot;books&quot;],
-                &quot;description&quot;: &quot;Product category filter&quot;
-            },
-            &quot;max_results&quot;: {
-                &quot;type&quot;: &quot;integer&quot;,
-                &quot;default&quot;: 10,
-                &quot;minimum&quot;: 1,
-                &quot;maximum&quot;: 100
-            }
-        },
-        &quot;required&quot;: [&quot;query&quot;]
+<p>非公平锁上来就尝试 CAS 抢锁（不管队列中有没有等待线程），这是它&quot;非公平&quot;的体现。</p>
+<h3>第二步：acquire()</h3>
+<pre><code class="language-java">// AbstractQueuedSynchronizer
+public final void acquire(int arg) {
+    if (!tryAcquire(arg) &amp;&amp;
+        acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
+        selfInterrupt();
+}
+</code></pre>
+<p>这一行代码浓缩了整个加锁流程的四个步骤：</p>
+<pre><code>tryAcquire → addWaiter → acquireQueued → selfInterrupt
+</code></pre>
+<ol>
+<li><strong>tryAcquire</strong>：尝试获取锁（由子类实现）</li>
+<li><strong>addWaiter</strong>：获取失败，将当前线程封装为 Node 加入队列尾部</li>
+<li><strong>acquireQueued</strong>：在队列中自旋等待，直到获取到锁</li>
+<li><strong>selfInterrupt</strong>：如果等待过程中被中断过，补上中断</li>
+</ol>
+<h3>第三步：tryAcquire（公平 vs 非公平）</h3>
+<p><strong>非公平锁</strong>的实现：</p>
+<pre><code class="language-java">final boolean nonfairTryAcquire(int acquires) {
+    final Thread current = Thread.currentThread();
+    int c = getState();
+    if (c == 0) {
+        if (compareAndSetState(0, acquires)) {   // 直接 CAS，不检查队列
+            setExclusiveOwnerThread(current);
+            return true;
+        }
+    }
+    else if (current == getExclusiveOwnerThread()) {  // 可重入逻辑
+        int nextc = c + acquires;
+        if (nextc &lt; 0) throw new Error(&quot;Maximum lock count exceeded&quot;);
+        setState(nextc);
+        return true;
+    }
+    return false;
+}
+</code></pre>
+<p><strong>公平锁</strong>的区别仅在于多了一个 <code>hasQueuedPredecessors()</code> 检查：</p>
+<pre><code class="language-java">if (c == 0) {
+    if (!hasQueuedPredecessors() &amp;&amp;   // 公平锁：先检查队列中是否有等待线程
+        compareAndSetState(0, acquires)) {
+        setExclusiveOwnerThread(current);
+        return true;
     }
 }
 </code></pre>
-<p>加 Few-shot 反而可能引入问题：LLM 可能过度拟合示例中的具体值，而不是理解 Schema 的通用约束。</p>
-<h3>5.3 复杂规划：Few-shot 有价值</h3>
-<p>规划场景是 Few-shot 真正发挥价值的地方。因为&quot;好的计划&quot;是一个模糊的概念——仅凭输出格式定义不足以引导 LLM 产出高质量的计划。</p>
-<pre><code class="language-python">PLANNER_WITH_EXAMPLES = &quot;&quot;&quot;You are a task planner.
-
-## Example 1: Multi-step data analysis
-User: &quot;Compare last month&#39;s sales with the same period last year and visualize the trend&quot;
-Plan:
-[
-  {{&quot;step_id&quot;: 1, &quot;tool&quot;: &quot;data_query&quot;, &quot;input&quot;: &quot;sales data for 2025-07&quot;, &quot;depends_on&quot;: []}},
-  {{&quot;step_id&quot;: 2, &quot;tool&quot;: &quot;data_query&quot;, &quot;input&quot;: &quot;sales data for 2024-07&quot;, &quot;depends_on&quot;: []}},
-  {{&quot;step_id&quot;: 3, &quot;tool&quot;: &quot;data_compare&quot;, &quot;input&quot;: &quot;$step_1_result, $step_2_result&quot;, &quot;depends_on&quot;: [1, 2]}},
-  {{&quot;step_id&quot;: 4, &quot;tool&quot;: &quot;chart_gen&quot;, &quot;input&quot;: &quot;$step_3_result, type=line&quot;, &quot;depends_on&quot;: [3]}}
-]
-Note: Steps 1 and 2 can run in parallel since they have no dependencies.
-
-## Example 2: Simple single-step task
-User: &quot;What&#39;s the weather in Tokyo?&quot;
-Plan:
-[
-  {{&quot;step_id&quot;: 1, &quot;tool&quot;: &quot;weather_api&quot;, &quot;input&quot;: &quot;Tokyo&quot;, &quot;depends_on&quot;: []}}
-]
-Note: Simple requests should NOT be over-decomposed.
-
-## Now plan for:
-User: &quot;{user_request}&quot;
-&quot;&quot;&quot;
+<table>
+<thead>
+<tr>
+<th>锁类型</th>
+<th>state == 0 时的行为</th>
+<th>可重入逻辑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>非公平锁</td>
+<td>直接 CAS 抢锁</td>
+<td>相同：state + 1</td>
+</tr>
+<tr>
+<td>公平锁</td>
+<td>先检查队列再 CAS</td>
+<td>相同：state + 1</td>
+</tr>
+</tbody></table>
+<h3>第四步：addWaiter — 入队</h3>
+<pre><code class="language-java">private Node addWaiter(Node mode) {
+    Node node = new Node(Thread.currentThread(), mode);
+    Node pred = tail;
+    if (pred != null) {            // 队列已初始化，尝试快速入队
+        node.prev = pred;
+        if (compareAndSetTail(pred, node)) {
+            pred.next = node;
+            return node;
+        }
+    }
+    enq(node);                     // 快速入队失败或队列未初始化
+    return node;
+}
 </code></pre>
-<p>Few-shot 示例在这里传递了两个关键信息：</p>
+<p><code>enq()</code> 方法通过<strong>自旋 + CAS</strong> 确保入队成功：</p>
+<pre><code class="language-java">private Node enq(final Node node) {
+    for (;;) {
+        Node t = tail;
+        if (t == null) {                         // 队列为空，初始化
+            if (compareAndSetHead(new Node()))    // 创建虚拟头节点
+                tail = head;
+        } else {
+            node.prev = t;
+            if (compareAndSetTail(t, node)) {
+                t.next = node;
+                return t;
+            }
+        }
+    }
+}
+</code></pre>
+<p>线程获取锁的过程可以形象理解为：</p>
+<pre><code>线程1获取锁成功 → 线程2申请锁失败 → 线程2入队等待 → 线程3申请失败 → 线程3排在线程2后面 → ...
+</code></pre>
+<h3>第五步：acquireQueued — 自旋获取锁</h3>
+<pre><code class="language-java">final boolean acquireQueued(final Node node, int arg) {
+    boolean failed = true;
+    try {
+        boolean interrupted = false;
+        for (;;) {
+            final Node p = node.predecessor();
+            if (p == head &amp;&amp; tryAcquire(arg)) {   // 前驱是头节点，尝试获取锁
+                setHead(node);                     // 获取成功，当前节点成为新的头节点
+                p.next = null;                     // help GC
+                failed = false;
+                return interrupted;
+            }
+            if (shouldParkAfterFailedAcquire(p, node) &amp;&amp;
+                parkAndCheckInterrupt())           // 获取失败，判断是否需要挂起
+                interrupted = true;
+        }
+    } finally {
+        if (failed)
+            cancelAcquire(node);
+    }
+}
+</code></pre>
+<p>核心逻辑：<strong>只有前驱节点是头节点的线程才有资格尝试获取锁</strong>。获取失败后，通过 <code>shouldParkAfterFailedAcquire</code> 判断是否需要挂起（将前驱节点的 waitStatus 设为 SIGNAL），然后通过 <code>LockSupport.park()</code> 挂起线程，避免空转浪费 CPU。</p>
+<h3>shouldParkAfterFailedAcquire 的三种情况</h3>
+<pre><code class="language-java">private static boolean shouldParkAfterFailedAcquire(Node pred, Node node) {
+    int ws = pred.waitStatus;
+    if (ws == Node.SIGNAL)        // 前驱已经是 SIGNAL，可以安全挂起
+        return true;
+    if (ws &gt; 0) {                 // 前驱已取消，向前找到有效节点
+        do {
+            node.prev = pred = pred.prev;
+        } while (pred.waitStatus &gt; 0);
+        pred.next = node;
+    } else {                      // 前驱状态为 0 或 PROPAGATE，设为 SIGNAL
+        compareAndSetWaitStatus(pred, ws, Node.SIGNAL);
+    }
+    return false;
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>前驱 waitStatus</th>
+<th>处理</th>
+<th>是否挂起</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SIGNAL (-1)</td>
+<td>直接返回 true</td>
+<td>是</td>
+</tr>
+<tr>
+<td>CANCELLED (&gt;0)</td>
+<td>跳过所有取消节点，重新链接</td>
+<td>否，下次循环再判断</td>
+</tr>
+<tr>
+<td>0 或 PROPAGATE</td>
+<td>CAS 设为 SIGNAL</td>
+<td>否，下次循环再判断</td>
+</tr>
+</tbody></table>
+<h2>解锁流程</h2>
+<p>ReentrantLock 解锁时<strong>不区分公平和非公平</strong>：</p>
+<pre><code class="language-java">// ReentrantLock
+public void unlock() {
+    sync.release(1);
+}
+</code></pre>
+<pre><code class="language-java">// AbstractQueuedSynchronizer
+public final boolean release(int arg) {
+    if (tryRelease(arg)) {
+        Node h = head;
+        if (h != null &amp;&amp; h.waitStatus != 0)
+            unparkSuccessor(h);          // 唤醒后继节点
+        return true;
+    }
+    return false;
+}
+</code></pre>
+<h3>tryRelease — 可重入锁的释放</h3>
+<pre><code class="language-java">// ReentrantLock.Sync
+protected final boolean tryRelease(int releases) {
+    int c = getState() - releases;       // state 减 1
+    if (Thread.currentThread() != getExclusiveOwnerThread())
+        throw new IllegalMonitorStateException();
+    boolean free = false;
+    if (c == 0) {                         // 只有 state 减到 0，锁才真正释放
+        free = true;
+        setExclusiveOwnerThread(null);
+    }
+    setState(c);
+    return free;
+}
+</code></pre>
+<h3>unparkSuccessor — 唤醒后继线程</h3>
+<pre><code class="language-java">private void unparkSuccessor(Node node) {
+    int ws = node.waitStatus;
+    if (ws &lt; 0)
+        compareAndSetWaitStatus(node, ws, 0);
+
+    Node s = node.next;
+    if (s == null || s.waitStatus &gt; 0) {
+        s = null;
+        // 从尾部向前遍历，找到第一个非取消状态的节点
+        for (Node t = tail; t != null &amp;&amp; t != node; t = t.prev)
+            if (t.waitStatus &lt;= 0)
+                s = t;
+    }
+    if (s != null)
+        LockSupport.unpark(s.thread);    // 唤醒线程
+}
+</code></pre>
+<blockquote>
+<p><strong>为什么要从后向前遍历？</strong> 两个原因：</p>
 <ol>
-<li><strong>粒度标准</strong>——什么程度的分解是合适的</li>
-<li><strong>并行意识</strong>——独立步骤应该标记为可并行</li>
+<li><code>addWaiter</code> 中节点入队不是原子操作——<code>node.prev = pred</code> 和 <code>compareAndSetTail</code> 完成后，<code>pred.next = node</code> 可能还未执行。此时从前向后遍历会断链。</li>
+<li><code>cancelAcquire</code> 产生 CANCELLED 节点时，先断开的是 next 指针，prev 指针未断开。因此从后向前遍历才能保证遍历完整。</li>
 </ol>
-<h3>5.4 反思评估：Zero-shot + 结构化输出</h3>
-<p>反思（Reflection）场景适合 Zero-shot + 结构化输出。原因是反思本质上是&quot;评判&quot;，而评判标准已经通过评估维度（completeness / correctness / format）和评分规则完整定义了。给出 Few-shot 示例反而可能让 LLM 锚定在示例的评分上，而不是独立评估当前结果。</p>
-<p><strong>总结决策原则：</strong></p>
-<ul>
-<li>格式约束充分（JSON Schema / 评分规则）→ Zero-shot</li>
-<li>需要传递&quot;风格&quot;或&quot;粒度标准&quot; → Few-shot</li>
-<li>两者都可以时 → 优先 Zero-shot（更省 Token，更不容易过拟合）</li>
-</ul>
-<hr>
-<h2>6. Prompt 工程化实践</h2>
-<p>当 Agent 系统超过原型阶段，Prompt 管理就变成了一个严肃的工程问题。</p>
-<h3>6.1 Prompt 模板化</h3>
-<p>核心思想：<strong>分离静态结构和动态内容</strong>。静态部分（身份定义、行为规则、输出格式）是模板，动态部分（工具列表、历史消息、当前状态）通过变量注入。</p>
-<pre><code class="language-python">from typing import Any
-from string import Template
-import hashlib
-import json
-from datetime import datetime
+</blockquote>
+<h2>CANCELLED 节点的处理</h2>
+<p>当 <code>acquireQueued</code> 中发生异常时，会执行 <code>cancelAcquire(node)</code> 将节点标记为 CANCELLED。处理逻辑根据节点位置分为三种情况：</p>
+<table>
+<thead>
+<tr>
+<th>节点位置</th>
+<th>处理方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>尾节点</td>
+<td>将前驱设为新的 tail，其 next 置为 null</td>
+</tr>
+<tr>
+<td>头节点的后继</td>
+<td>唤醒当前节点的后继线程（unparkSuccessor）</td>
+</tr>
+<tr>
+<td>中间节点</td>
+<td>将前驱的 next 指向当前节点的后继，跳过当前节点</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><code>cancelAcquire</code> 只操作 next 指针，不操作 prev 指针。因为执行 cancel 时前驱可能已经出队，修改 prev 不安全。prev 指针的清理留给 <code>shouldParkAfterFailedAcquire</code>——此方法在获取锁失败时执行，此时共享资源已被占用，前方节点不会变化，修改 prev 是安全的。</p>
+</blockquote>
+<h2>中断处理机制</h2>
+<p>AQS 的 <code>acquire</code> 方法是<strong>不可中断</strong>的——线程在等待过程中不会响应中断，而是记录中断状态，等获取到锁后再&quot;补上&quot;中断：</p>
+<pre><code class="language-java">public final void acquire(int arg) {
+    if (!tryAcquire(arg) &amp;&amp;
+        acquireQueued(addWaiter(Node.EXCLUSIVE), arg))  // 返回 true 说明被中断过
+        selfInterrupt();                                  // 补上中断
+}
 
-
-class PromptTemplate:
-    &quot;&quot;&quot;可管理、可版本化、可测试的 Prompt 模板&quot;&quot;&quot;
-
-    def __init__(self, name: str, template: str, version: str,
-                 required_vars: list[str], metadata: dict | None = None):
-        self.name = name
-        self.template = template
-        self.version = version
-        self.required_vars = required_vars
-        self.metadata = metadata or {}
-        self._hash = hashlib.sha256(template.encode()).hexdigest()[:12]
-
-    def render(self, **kwargs) -&gt; str:
-        # 校验所有必需变量都已提供
-        missing = set(self.required_vars) - set(kwargs.keys())
-        if missing:
-            raise ValueError(f&quot;Missing required variables: {missing}&quot;)
-
-        # 渲染模板
-        rendered = self.template
-        for key, value in kwargs.items():
-            placeholder = &quot;{&quot; + key + &quot;}&quot;
-            if isinstance(value, (dict, list)):
-                value = json.dumps(value, indent=2, ensure_ascii=False)
-            rendered = rendered.replace(placeholder, str(value))
-
-        return rendered
-
-    def fingerprint(self) -&gt; str:
-        &quot;&quot;&quot;返回模板内容的哈希指纹，用于版本追踪&quot;&quot;&quot;
-        return f&quot;{self.name}@{self.version}#{self._hash}&quot;
-
-
-class PromptRegistry:
-    &quot;&quot;&quot;Prompt 模板注册中心：集中管理所有 Agent 使用的 Prompt&quot;&quot;&quot;
-
-    def __init__(self):
-        self._templates: dict[str, dict[str, PromptTemplate]] = {}  # name -&gt; {version -&gt; template}
-
-    def register(self, template: PromptTemplate):
-        if template.name not in self._templates:
-            self._templates[template.name] = {}
-        self._templates[template.name][template.version] = template
-
-    def get(self, name: str, version: str = &quot;latest&quot;) -&gt; PromptTemplate:
-        if name not in self._templates:
-            raise KeyError(f&quot;Template &#39;{name}&#39; not found&quot;)
-
-        versions = self._templates[name]
-        if version == &quot;latest&quot;:
-            latest_version = sorted(versions.keys())[-1]
-            return versions[latest_version]
-
-        if version not in versions:
-            raise KeyError(f&quot;Version &#39;{version}&#39; not found for template &#39;{name}&#39;&quot;)
-        return versions[version]
-
-    def list_all(self) -&gt; dict[str, list[str]]:
-        return {name: sorted(vers.keys()) for name, vers in self._templates.items()}
-
-
-# ── 使用示例 ──
-
-registry = PromptRegistry()
-
-# 注册 Router Prompt v1
-registry.register(PromptTemplate(
-    name=&quot;router&quot;,
-    version=&quot;1.0&quot;,
-    template=&quot;&quot;&quot;You are a request router.
-Available tools: {tool_descriptions}
-Route the following request: {user_input}
-Output JSON: {{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}}}&quot;&quot;&quot;,
-    required_vars=[&quot;tool_descriptions&quot;, &quot;user_input&quot;],
-    metadata={&quot;author&quot;: &quot;agent-team&quot;, &quot;last_tested&quot;: &quot;2025-08-10&quot;}
-))
-
-# 注册 Router Prompt v2（增加了 confidence 字段）
-registry.register(PromptTemplate(
-    name=&quot;router&quot;,
-    version=&quot;2.0&quot;,
-    template=&quot;&quot;&quot;You are a request router. Your ONLY job is to route, not to answer.
-Available tools: {tool_descriptions}
-Route the following request: {user_input}
-Output JSON: {{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}, &quot;confidence&quot;: &lt;0.0-1.0&gt;}}&quot;&quot;&quot;,
-    required_vars=[&quot;tool_descriptions&quot;, &quot;user_input&quot;],
-    metadata={&quot;author&quot;: &quot;agent-team&quot;, &quot;last_tested&quot;: &quot;2025-08-13&quot;}
-))
-
-# 获取并渲染
-router_prompt = registry.get(&quot;router&quot;, version=&quot;2.0&quot;)
-final_prompt = router_prompt.render(
-    tool_descriptions=&quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
-    user_input=&quot;What is 42 * 17?&quot;
-)
+static void selfInterrupt() {
+    Thread.currentThread().interrupt();
+}
 </code></pre>
-<h3>6.2 Prompt 版本控制</h3>
-<p>为什么 Prompt 需要版本控制？因为 <strong>Prompt 是 Agent 行为的源代码</strong>。改一个词可能导致 Agent 行为的巨大变化——从正确路由变成错误路由，从结构化输出变成自由文本。</p>
-<p>版本控制策略：</p>
-<pre><code>prompts/
-├── router/
-│   ├── v1.0.txt          # 初始版本
-│   ├── v1.1.txt          # 修复：低 confidence 时的行为
-│   ├── v2.0.txt          # 重大变更：新增 confidence 字段
-│   └── changelog.md      # 变更记录
-├── planner/
-│   ├── v1.0.txt
-│   └── v1.1.txt
-├── executor/
-│   └── v1.0.txt
-└── reflector/
-    └── v1.0.txt
-</code></pre>
-<p>关键实践：</p>
+<p>这种设计的考量是：线程被唤醒时并不知道原因（可能是前驱释放了锁，也可能是被中断），所以通过 <code>Thread.interrupted()</code> 检查并清除中断标记，记录下来，最后在获取锁成功后统一补上。</p>
+<h2>park / unpark 机制</h2>
+<p>AQS 中线程的阻塞和唤醒通过 <code>LockSupport</code> 实现：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>LockSupport.park(this)</code></td>
+<td>阻塞当前线程</td>
+</tr>
+<tr>
+<td><code>LockSupport.unpark(thread)</code></td>
+<td>唤醒指定线程</td>
+</tr>
+</tbody></table>
+<p>它们的底层实现是通过 <code>Unsafe</code> 类调用 CPU 原语。相比 <code>Object.wait/notify</code>，park/unpark 的优势在于：</p>
 <ul>
-<li><strong>每次 Prompt 变更都有对应的测试结果</strong>（下面会详述）</li>
-<li><strong>生产环境使用固定版本号</strong>，而非 &quot;latest&quot;</li>
-<li><strong>支持灰度发布</strong>：新版 Prompt 可以先对 10% 的流量生效</li>
-<li><strong>保留回滚能力</strong>：发现新版 Prompt 导致问题时，立即切回旧版</li>
+<li>不需要在同步块中使用</li>
+<li><code>unpark</code> 可以先于 <code>park</code> 调用（基于许可机制）</li>
+<li>可以精确唤醒指定线程</li>
 </ul>
-<h3>6.3 Prompt 测试</h3>
-<p>Prompt 测试的核心挑战是 LLM 输出的非确定性。我们不能像测试普通函数那样做精确断言，但可以做<strong>结构化断言</strong>和<strong>统计性断言</strong>。</p>
-<pre><code class="language-python">from dataclasses import dataclass
+<p>在 AQS 中使用 park 的主要目的是：<strong>让排队等待的线程挂起，停止自旋以避免浪费 CPU 资源</strong>，并在需要时通过 unpark 精确唤醒。</p>
+<h2>AQS 在 JUC 中的应用场景</h2>
+<p>AQS 是 JUC 包的基石，几乎所有同步工具都构建在它之上：</p>
+<table>
+<thead>
+<tr>
+<th>同步工具</th>
+<th>如何使用 AQS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>ReentrantLock</strong></td>
+<td>state 表示锁的重入次数。获取锁时 state+1，释放时 state-1。state 为 0 表示锁空闲。同时记录持有锁的线程用于重入检测。</td>
+</tr>
+<tr>
+<td><strong>Semaphore</strong></td>
+<td>state 表示可用许可数。<code>acquireShared</code> 减少计数，<code>tryReleaseShared</code> 增加计数。</td>
+</tr>
+<tr>
+<td><strong>CountDownLatch</strong></td>
+<td>state 表示计数器。每次 <code>countDown()</code> 减 1，<code>await()</code> 等待 state 变为 0 后所有线程被唤醒。</td>
+</tr>
+<tr>
+<td><strong>ReentrantReadWriteLock</strong></td>
+<td>state 的高 16 位保存读锁持有次数，低 16 位保存写锁持有次数。读锁用共享模式，写锁用独占模式。</td>
+</tr>
+<tr>
+<td><strong>ThreadPoolExecutor</strong></td>
+<td>Worker 内部类继承 AQS，利用独占模式实现对工作线程的状态管理。</td>
+</tr>
+</tbody></table>
+<h3>State 在不同同步器中的语义</h3>
+<pre><code>ReentrantLock:       state = 重入次数 (0 = 空闲)
+Semaphore:           state = 可用许可数
+CountDownLatch:      state = 剩余计数 (0 = 所有线程放行)
+ReadWriteLock:       state = [高16位:读锁次数][低16位:写锁次数]
+</code></pre>
+<h2>自定义同步器示例</h2>
+<p>理解 AQS 后，我们可以用极少的代码实现一个简单的互斥锁：</p>
+<pre><code class="language-java">public class SimpleLock {
 
-@dataclass
-class PromptTestCase:
-    name: str
-    input_vars: dict[str, Any]       # 模板变量
-    assertions: list[dict]            # 断言列表
-
-    # 断言类型：
-    # {&quot;type&quot;: &quot;json_valid&quot;}                           → 输出是合法 JSON
-    # {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;}      → JSON 中包含指定字段
-    # {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;a&quot;, &quot;b&quot;]} → 字段值在范围内
-    # {&quot;type&quot;: &quot;no_field&quot;, &quot;field&quot;: &quot;apology&quot;}         → 不包含某字段（防止 LLM 废话）
-    # {&quot;type&quot;: &quot;max_tokens&quot;, &quot;limit&quot;: 200}             → 输出长度不超过限制
-
-
-class PromptTestRunner:
-    def __init__(self, llm_client, template: PromptTemplate):
-        self.llm = llm_client
-        self.template = template
-
-    def run_test(self, test_case: PromptTestCase, n_runs: int = 5) -&gt; dict:
-        &quot;&quot;&quot;对同一个测试用例运行 N 次，统计通过率&quot;&quot;&quot;
-        prompt = self.template.render(**test_case.input_vars)
-        results = []
-
-        for _ in range(n_runs):
-            output = self.llm.generate(prompt)
-            pass_all = True
-            details = []
-
-            for assertion in test_case.assertions:
-                passed = self._check_assertion(output, assertion)
-                details.append({&quot;assertion&quot;: assertion, &quot;passed&quot;: passed})
-                if not passed:
-                    pass_all = False
-
-            results.append({&quot;output&quot;: output, &quot;passed&quot;: pass_all, &quot;details&quot;: details})
-
-        pass_rate = sum(1 for r in results if r[&quot;passed&quot;]) / n_runs
-        return {
-            &quot;test_case&quot;: test_case.name,
-            &quot;template&quot;: self.template.fingerprint(),
-            &quot;n_runs&quot;: n_runs,
-            &quot;pass_rate&quot;: pass_rate,
-            &quot;results&quot;: results
+    private static class Sync extends AbstractQueuedSynchronizer {
+        @Override
+        protected boolean tryAcquire(int arg) {
+            return compareAndSetState(0, 1);
         }
 
-    def _check_assertion(self, output: str, assertion: dict) -&gt; bool:
-        if assertion[&quot;type&quot;] == &quot;json_valid&quot;:
-            try:
-                json.loads(output)
-                return True
-            except json.JSONDecodeError:
-                return False
+        @Override
+        protected boolean tryRelease(int arg) {
+            setState(0);
+            return true;
+        }
 
-        if assertion[&quot;type&quot;] == &quot;has_field&quot;:
-            try:
-                data = json.loads(output)
-                return assertion[&quot;field&quot;] in data
-            except (json.JSONDecodeError, TypeError):
-                return False
-
-        if assertion[&quot;type&quot;] == &quot;field_in&quot;:
-            try:
-                data = json.loads(output)
-                return data.get(assertion[&quot;field&quot;]) in assertion[&quot;values&quot;]
-            except (json.JSONDecodeError, TypeError):
-                return False
-
-        return False  # 未知断言类型
-
-
-# ── 测试用例示例 ──
-
-test_cases = [
-    PromptTestCase(
-        name=&quot;math_request_should_route_to_calculator&quot;,
-        input_vars={
-            &quot;tool_descriptions&quot;: &quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
-            &quot;user_input&quot;: &quot;What is 1024 * 768?&quot;
-        },
-        assertions=[
-            {&quot;type&quot;: &quot;json_valid&quot;},
-            {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;},
-            {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;calculator&quot;]},
-        ]
-    ),
-    PromptTestCase(
-        name=&quot;ambiguous_request_should_not_guess&quot;,
-        input_vars={
-            &quot;tool_descriptions&quot;: &quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
-            &quot;user_input&quot;: &quot;Help me with my project&quot;
-        },
-        assertions=[
-            {&quot;type&quot;: &quot;json_valid&quot;},
-            {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;},
-            {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;none&quot;]},
-        ]
-    ),
-]
-</code></pre>
-<p><strong>测试策略建议：</strong></p>
-<ul>
-<li>每个 Prompt 版本至少 10 个测试用例，覆盖正常路径、边界情况和对抗输入</li>
-<li>每个测试用例运行 5-10 次，要求通过率 &gt;= 90%（而非 100%，因为 LLM 输出非确定性）</li>
-<li>将测试集纳入 CI，每次 Prompt 变更触发回归测试</li>
-</ul>
-<h3>6.4 Prompt 组合：模块化拼装</h3>
-<p>复杂 Agent 的 Prompt 往往由多个模块组合而成。与其维护一个巨大的单体 Prompt，不如将其拆分为可复用的模块：</p>
-<pre><code class="language-python">class PromptComposer:
-    &quot;&quot;&quot;将多个 Prompt 模块按顺序组合&quot;&quot;&quot;
-
-    def __init__(self):
-        self._modules: list[tuple[str, PromptTemplate]] = []
-
-    def add(self, section_name: str, template: PromptTemplate):
-        self._modules.append((section_name, template))
-        return self  # 支持链式调用
-
-    def compose(self, **all_vars) -&gt; str:
-        sections = []
-        for section_name, template in self._modules:
-            # 每个模块只取自己需要的变量
-            relevant_vars = {k: v for k, v in all_vars.items()
-                           if k in template.required_vars}
-            rendered = template.render(**relevant_vars)
-            sections.append(f&quot;## {section_name}\n{rendered}&quot;)
-        return &quot;\n\n&quot;.join(sections)
-
-
-# 使用方式
-identity_module = PromptTemplate(
-    name=&quot;identity&quot;, version=&quot;1.0&quot;,
-    template=&quot;You are {agent_role}. {agent_description}&quot;,
-    required_vars=[&quot;agent_role&quot;, &quot;agent_description&quot;]
-)
-
-tools_module = PromptTemplate(
-    name=&quot;tools&quot;, version=&quot;1.0&quot;,
-    template=&quot;Available tools:\n{tool_descriptions}&quot;,
-    required_vars=[&quot;tool_descriptions&quot;]
-)
-
-output_format_module = PromptTemplate(
-    name=&quot;output_format&quot;, version=&quot;1.0&quot;,
-    template=&quot;You MUST respond in the following JSON format:\n{json_schema}&quot;,
-    required_vars=[&quot;json_schema&quot;]
-)
-
-constraints_module = PromptTemplate(
-    name=&quot;constraints&quot;, version=&quot;1.0&quot;,
-    template=&quot;Constraints:\n{constraint_list}&quot;,
-    required_vars=[&quot;constraint_list&quot;]
-)
-
-# 组合
-composer = PromptComposer()
-composer.add(&quot;Identity&quot;, identity_module) \
-        .add(&quot;Tools&quot;, tools_module) \
-        .add(&quot;Output Format&quot;, output_format_module) \
-        .add(&quot;Constraints&quot;, constraints_module)
-
-final_prompt = composer.compose(
-    agent_role=&quot;a task router&quot;,
-    agent_description=&quot;You route user requests to the appropriate tool.&quot;,
-    tool_descriptions=&quot;1. search: web search\n2. calc: calculator&quot;,
-    json_schema=&#39;{&quot;tool_name&quot;: &quot;string&quot;, &quot;tool_input&quot;: &quot;object&quot;}&#39;,
-    constraint_list=&quot;- Never fabricate tool names\n- Always return valid JSON&quot;
-)
-</code></pre>
-<p>模块化的好处：</p>
-<ul>
-<li>同一个 <code>output_format_module</code> 可以被 Router、Planner、Executor 共享</li>
-<li>修改 constraints 不需要触碰 identity 和 tools 部分</li>
-<li>每个模块可以独立测试和版本控制</li>
-</ul>
-<hr>
-<h2>7. Context Window 管理</h2>
-<p>Agent 的 Context Window 管理是一个独特且关键的工程挑战。与 Chatbot 的&quot;对话越长体验越差&quot;不同，Agent 的 context 膨胀会直接导致<strong>系统性故障</strong>。</p>
-<h3>7.1 Agent 的 Context 膨胀问题</h3>
-<p>Agent 的 context 会从三个维度快速膨胀：</p>
-<pre><code>Turn 1:  System(2000) + User(200) + Response(500)              = 2,700 tokens
-Turn 2:  + Tool_Result(3000) + Response(800)                   = 6,500 tokens
-Turn 3:  + Tool_Result(5000) + Error_Msg(1000) + Response(600) = 13,100 tokens
-Turn 4:  + Tool_Result(2000) + Response(400)                   = 15,500 tokens
-Turn 5:  + RAG_Context(4000) + Response(1000)                  = 20,500 tokens
-  ...
-Turn 10: 很容易突破 50,000 tokens
-</code></pre>
-<p>三大膨胀源：</p>
-<ol>
-<li><strong>工具返回值</strong>：一次数据库查询可能返回几千 token 的 JSON，一次网页抓取可能返回上万 token</li>
-<li><strong>历史消息积累</strong>：每一轮的 user message + assistant response + tool calls 都在累积</li>
-<li><strong>错误信息</strong>：工具调用失败的 traceback、重试过程中的冗余信息</li>
-</ol>
-<h3>7.2 消息压缩策略</h3>
-<p><strong>策略 1：摘要压缩（Summarization）</strong></p>
-<p>将早期的对话历史压缩为摘要，只保留关键事实和决策结果。</p>
-<pre><code class="language-python">def compress_history(messages: list[dict], llm_client,
-                     keep_recent: int = 4) -&gt; list[dict]:
-    &quot;&quot;&quot;将早期历史压缩为摘要，保留最近 N 轮完整消息&quot;&quot;&quot;
-    if len(messages) &lt;= keep_recent:
-        return messages
-
-    old_messages = messages[:-keep_recent]
-    recent_messages = messages[-keep_recent:]
-
-    # 用 LLM 生成摘要
-    summary_prompt = f&quot;&quot;&quot;Summarize the following conversation history into key facts
-and decisions. Keep only information that might be needed for future steps.
-Be concise — maximum 200 words.
-
-{format_messages(old_messages)}&quot;&quot;&quot;
-
-    summary = llm_client.generate(summary_prompt)
-
-    # 将摘要作为一条 system message 注入
-    summary_message = {
-        &quot;role&quot;: &quot;system&quot;,
-        &quot;content&quot;: f&quot;[Conversation Summary]\n{summary}&quot;
+        @Override
+        protected boolean isHeldExclusively() {
+            return getState() == 1;
+        }
     }
 
-    return [summary_message] + recent_messages
+    private final Sync sync = new Sync();
+
+    public void lock()   { sync.acquire(1); }
+    public void unlock() { sync.release(1); }
+}
 </code></pre>
-<p><strong>策略 2：滑动窗口（Sliding Window）</strong></p>
-<p>更简单粗暴——只保留最近 N 条消息，丢弃更早的消息。</p>
-<pre><code class="language-python">def sliding_window(messages: list[dict], max_messages: int = 10) -&gt; list[dict]:
-    &quot;&quot;&quot;保留 system message + 最近 N 条消息&quot;&quot;&quot;
-    system_msgs = [m for m in messages if m[&quot;role&quot;] == &quot;system&quot;]
-    non_system = [m for m in messages if m[&quot;role&quot;] != &quot;system&quot;]
-    return system_msgs + non_system[-max_messages:]
+<p>使用：</p>
+<pre><code class="language-java">public static void main(String[] args) throws InterruptedException {
+    SimpleLock lock = new SimpleLock();
+    int[] count = {0};
+
+    Runnable task = () -&gt; {
+        lock.lock();
+        try {
+            for (int i = 0; i &lt; 10000; i++) count[0]++;
+        } finally {
+            lock.unlock();
+        }
+    };
+
+    Thread t1 = new Thread(task);
+    Thread t2 = new Thread(task);
+    t1.start(); t2.start();
+    t1.join();  t2.join();
+    System.out.println(count[0]);  // 始终输出 20000
+}
 </code></pre>
-<p><strong>策略 3：选择性保留（Selective Retention）</strong></p>
-<p>根据消息的&quot;重要性&quot;决定保留还是丢弃。</p>
-<pre><code class="language-python">def selective_retain(messages: list[dict], token_budget: int) -&gt; list[dict]:
-    &quot;&quot;&quot;按重要性保留消息，直到填满 token 预算&quot;&quot;&quot;
-
-    def importance_score(msg: dict) -&gt; int:
-        if msg[&quot;role&quot;] == &quot;system&quot;:
-            return 100  # 永远保留
-        if msg.get(&quot;is_final_result&quot;):
-            return 90   # 最终结果必须保留
-        if msg[&quot;role&quot;] == &quot;user&quot;:
-            return 80   # 用户输入高优先
-        if msg.get(&quot;tool_error&quot;):
-            return 20   # 错误信息低优先（已经被处理过了）
-        if msg.get(&quot;tool_result&quot;):
-            return 40   # 工具结果中等优先
-        return 50
-
-    scored = [(importance_score(m), i, m) for i, m in enumerate(messages)]
-    scored.sort(key=lambda x: (-x[0], x[1]))  # 按重要性降序，原始顺序升序
-
-    retained = []
-    used_tokens = 0
-    for score, idx, msg in scored:
-        msg_tokens = estimate_tokens(msg[&quot;content&quot;])
-        if used_tokens + msg_tokens &lt;= token_budget:
-            retained.append((idx, msg))
-            used_tokens += msg_tokens
-
-    # 恢复原始顺序
-    retained.sort(key=lambda x: x[0])
-    return [msg for _, msg in retained]
-</code></pre>
-<h3>7.3 Token 预算分配</h3>
-<p>一个经验性的 Token 预算分配方案（以 8K context window 为例）：</p>
-<pre><code>Total Context Window: 8,192 tokens
-                    │
-    ┌───────────────┼───────────────┐
-    │               │               │
-System Prompt    Working Area     Reserved for
-  ~25%            ~60%            Output ~15%
- (2,048)         (4,915)          (1,229)
-    │               │
-    │         ┌─────┴──────┐
-    │         │            │
-    │    Tool Descs    History + State
-    │     ~15%          ~45%
-    │    (1,229)       (3,686)
-    │
-    ├── Identity &amp; Role: 500
-    ├── Behavior Rules: 800
-    ├── Output Format: 500
-    └── Constraints: 248
-</code></pre>
-<p>关键原则：</p>
-<ul>
-<li><strong>Output Reserved 不能省</strong>：如果留给输出的空间不足，LLM 会输出截断的 JSON，导致解析失败</li>
-<li><strong>System Prompt 预算固定</strong>：行为约束不能因为 context 紧张而被裁剪</li>
-<li><strong>History 是最大的压缩空间</strong>：优先在这里节省 Token</li>
-<li><strong>工具描述可以按需加载</strong>：如果 Router 已经选定了工具，后续 Executor 只需要注入被选中工具的描述，而非全部工具</li>
-</ul>
-<h3>7.4 工具返回值的处理</h3>
-<p>工具返回值是 context 膨胀的最大单点源头。以下是几种处理策略：</p>
-<pre><code class="language-python">def process_tool_result(result: str, max_tokens: int = 1500) -&gt; str:
-    &quot;&quot;&quot;处理工具返回值，防止 context 爆炸&quot;&quot;&quot;
-
-    result_tokens = estimate_tokens(result)
-
-    if result_tokens &lt;= max_tokens:
-        return result
-
-    # 策略 1：截断（适用于文本类结果）
-    if is_text(result):
-        return truncate_to_tokens(result, max_tokens) + &quot;\n[... truncated]&quot;
-
-    # 策略 2：提取摘要（适用于 JSON 类结果）
-    if is_json(result):
-        data = json.loads(result)
-        if isinstance(data, list):
-            # 只保留前 N 条记录 + 总数信息
-            summary = {
-                &quot;total_count&quot;: len(data),
-                &quot;showing_first&quot;: 5,
-                &quot;records&quot;: data[:5],
-                &quot;note&quot;: f&quot;Truncated from {len(data)} records. Request specific filters for more.&quot;
-            }
-            return json.dumps(summary, ensure_ascii=False, indent=2)
-
-    # 策略 3：兜底截断
-    return truncate_to_tokens(result, max_tokens) + &quot;\n[... truncated]&quot;
-</code></pre>
-<hr>
-<h2>8. 常见陷阱</h2>
-<h3>8.1 Prompt 太长导致 LLM &quot;忘记&quot;关键指令</h3>
-<p><strong>现象：</strong> System Prompt 有 3000 token，其中包含 20 条行为规则。LLM 在前几轮严格遵守，但随着 context 变长，开始&quot;遗忘&quot;中间的规则——尤其是第 8-15 条。</p>
-<p><strong>原因：</strong> LLM 对 prompt 中不同位置内容的&quot;注意力&quot;不均匀。开头和结尾的内容通常被更好地遵循（primacy effect 和 recency effect），中间的内容最容易被忽略。</p>
-<p><strong>应对：</strong></p>
-<ul>
-<li>将最关键的规则放在 System Prompt 的开头和结尾</li>
-<li>将规则数量控制在 7 条以内（与人类工作记忆容量一致，也利于 LLM）</li>
-<li>在消息末尾添加 reminder：&quot;Remember: always output valid JSON. Never fabricate tool names.&quot;</li>
-<li>按当前 Turn 的需要动态注入最相关的规则子集，而非每次都注入全部规则</li>
-</ul>
-<h3>8.2 工具描述和 System Prompt 冲突</h3>
-<p><strong>现象：</strong> System Prompt 说&quot;不要执行任何数据删除操作&quot;，但某个工具的 description 中包含&quot;Deletes records matching the query&quot;。LLM 收到删除请求时，行为不确定——有时遵循 System Prompt 的禁令，有时遵循工具描述的能力。</p>
-<p><strong>原因：</strong> LLM 看到的是拼装后的完整 prompt，它不理解&quot;System Prompt 优先级高于工具描述&quot;这个层级关系。两段相互矛盾的文本让 LLM 陷入冲突。</p>
-<p><strong>应对：</strong></p>
-<ul>
-<li>在 Prompt 组装阶段做<strong>一致性检查</strong>：扫描工具描述中的关键词，与 System Prompt 的禁止列表做匹配</li>
-<li>如果某个工具被禁用，<strong>直接不注入它的描述</strong>，而不是注入描述然后在 System Prompt 中禁止</li>
-<li>在 System Prompt 中明确声明优先级：&quot;If any tool description conflicts with these rules, these rules take priority.&quot;</li>
-</ul>
-<h3>8.3 过度约束导致 LLM 无法灵活应对</h3>
-<p><strong>现象：</strong> 为了保证安全，System Prompt 中加了大量限制：&quot;只能调用列表中的工具&quot;、&quot;只能输出 JSON&quot;、&quot;不能包含任何解释&quot;、&quot;不能问用户问题&quot;、&quot;必须在一次调用中完成&quot;......结果 LLM 在遇到无法处理的请求时，输出空 JSON 或无意义的工具调用，而不是合理地拒绝或请求澄清。</p>
-<p><strong>原因：</strong> 过度约束堵死了 LLM 所有的&quot;逃生通道&quot;。它没有被允许说&quot;我不知道&quot;或&quot;我需要更多信息&quot;，所以只能在约束框架内硬凑一个输出。</p>
-<p><strong>应对：</strong></p>
-<ul>
-<li>永远为 LLM 保留一个&quot;安全出口&quot;：允许它输出 <code>{&quot;action&quot;: &quot;clarify&quot;, &quot;question&quot;: &quot;...&quot;}</code> 或 <code>{&quot;action&quot;: &quot;refuse&quot;, &quot;reason&quot;: &quot;...&quot;}</code></li>
-<li>区分&quot;硬约束&quot;和&quot;软约束&quot;：硬约束（安全规则）不可违反，软约束（输出偏好）在特殊情况下可以放松</li>
-<li>将约束从&quot;禁止列表&quot;改为&quot;优先级列表&quot;：先尝试 X，如果不行可以 Y，最后可以 Z</li>
-</ul>
-<h3>8.4 Prompt Injection 在 Agent 中的放大效应</h3>
-<p>在 Chatbot 中，Prompt Injection 最多让模型输出不当内容。但在 Agent 中，Prompt Injection 可能触发<strong>真实的工具调用</strong>——删除数据、发送邮件、调用 API。</p>
-<p><strong>应对：</strong></p>
-<ul>
-<li>用户输入和系统指令之间必须有明确的分隔标记</li>
-<li>工具调用前做参数校验（schema validation），而非完全信任 LLM 输出</li>
-<li>高危操作（删除、支付、发送）增加人工确认步骤</li>
-<li>将用户输入视为&quot;不可信数据&quot;，在 Prompt 中明确标注：<code>[USER INPUT - UNTRUSTED]: {user_message}</code></li>
-</ul>
-<hr>
-<h2>9. 结语：从 Prompt 到 Runtime</h2>
-<p>Prompt Engineering for Agents 的本质是<strong>为 LLM 定义一套可编程的行为接口</strong>。我们在本文中讨论了分层架构、设计模式、推理策略、测试方法和 context 管理——这些都是让 Agent &quot;可控&quot;的基础设施。</p>
-<p>但 Prompt 本身只是 Agent 系统的一个组件。再好的 Prompt 也需要一个可靠的 Runtime 来驱动——处理 LLM 的响应、管理状态机的转换、执行工具调用、处理错误和重试。</p>
-<p>下一篇文章《Agent Runtime from Scratch: 不依赖框架构建 Agent》将从零开始实现一个完整的 Agent 运行时。我们会把本文设计的 Prompt 模式，放进一个真实可运行的控制循环中，展示 Prompt、工具、状态管理和错误处理如何在代码层面协同工作。</p>
-<p><strong>进一步思考：</strong></p>
+<p>只需重写 <code>tryAcquire</code> 和 <code>tryRelease</code>，AQS 就接管了排队、阻塞、唤醒、中断处理等全部复杂逻辑。</p>
+<h2>总结</h2>
+<p>AQS 的设计精髓可以归纳为以下几点：</p>
 <ol>
-<li><p><strong>Prompt 的自动优化</strong>：如果我们有了 Prompt 测试框架和评估指标，是否可以用搜索算法（DSPy 的思路）自动优化 Prompt？这和手工调优的 trade-off 在哪里？</p>
-</li>
-<li><p><strong>Multi-Model Prompt 策略</strong>：Router 用小模型（快、便宜），Planner 用大模型（准、贵），Executor 用中等模型。不同模型对 Prompt 的响应特性不同，如何为不同模型定制 Prompt？</p>
-</li>
-<li><p><strong>Prompt 的可解释性</strong>：当 Agent 做出错误决策时，我们如何从 Prompt 和输出中定位问题根因？这需要什么样的 observability 基础设施？</p>
-</li>
-<li><p><strong>动态 Prompt 生成</strong>：是否可以让一个 &quot;Meta-Agent&quot; 根据当前任务特征，动态生成最合适的 Prompt？这会引入什么样的复杂性和风险？</p>
-</li>
+<li><strong>一个 state 变量统一抽象</strong>：不同的同步器通过赋予 state 不同的语义（重入次数、许可数、计数器等），复用同一套框架</li>
+<li><strong>CLH 变体双向队列管理等待线程</strong>：通过 FIFO 队列保证公平性，通过 CAS + 自旋保证入队的线程安全</li>
+<li><strong>模板方法模式降低接入成本</strong>：自定义同步器只需实现 tryAcquire/tryRelease 等少量方法，框架处理全部排队和唤醒逻辑</li>
+<li><strong>park/unpark 精确控制线程状态</strong>：避免自旋空转浪费 CPU，同时支持精确唤醒</li>
+<li><strong>从后向前遍历保证正确性</strong>：在非原子入队操作和 CANCELLED 节点处理中，始终保证能遍历到所有有效节点</li>
 </ol>
-<hr>
 <blockquote>
-<p><strong>系列导航</strong>：本文是 Agentic 系列的第 06 篇。</p>
-<ul>
-<li>上一篇：<a href="/blog/engineering/agentic/05-Tool%20Calling%20Deep%20Dive">05 | Tool Calling Deep Dive</a></li>
-<li>下一篇：<a href="/blog/engineering/agentic/07-Agent%20Runtime%20from%20Scratch">07 | Agent Runtime from Scratch</a></li>
-<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
-</ul>
+<p>AQS 是 Doug Lea 在并发编程领域的杰作。理解了 AQS，就理解了 JUC 包中绝大部分同步工具的底层运作方式。它不仅是面试的高频考点，更是我们在实际工程中设计自定义同步器时可以直接借鉴的框架。</p>
 </blockquote>
 18:Tfd22,<h1>Memory Architecture: Agent 的状态与记忆体系</h1>
 <blockquote>
@@ -3233,7 +2792,1057 @@ class MemoryManager:
 <li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
 </ul>
 </blockquote>
-19:Tc7d3,<h1>The Agent Control Loop: Agent 运行时的核心抽象</h1>
+19:Td28a,<h1>Prompt Engineering for Agents: 面向 Agent 的提示词工程</h1>
+<blockquote>
+<p>Agentic 系列第 06 篇。前文我们讨论了 Tool Calling 的设计哲学与工程实践，LLM 已经具备了&quot;使用工具&quot;的能力。但工具只是 Agent 的四肢，Prompt 才是 Agent 的大脑皮层——它定义了 Agent 如何感知、如何推理、如何决策、如何行动。</p>
+<p>本文的核心观点：<strong>Agent 的 Prompt 不是&quot;聊天提示词&quot;，而是&quot;系统接口规范&quot;。</strong> Chatbot 的 Prompt 追求对话自然，Agent 的 Prompt 追求行为可控。这两者的设计哲学截然不同。</p>
+</blockquote>
+<hr>
+<h2>1. 从&quot;对话技巧&quot;到&quot;接口规范&quot;</h2>
+<p>大多数人对 Prompt Engineering 的印象停留在&quot;写好提示词让 AI 回答更好&quot;的阶段。这在 Chatbot 场景下基本成立——你调整措辞、给几个例子、加一句&quot;请一步一步思考&quot;，模型输出的质量就会改善。</p>
+<p>但 Agent 场景完全不同。</p>
+<p>Agent 的 Prompt 不是写给&quot;一个聊天助手&quot;的，而是写给&quot;一个程序运行时&quot;的。它的目的不是让输出&quot;看起来更好&quot;，而是让输出<strong>可解析、可路由、可执行</strong>。一个 Agent Prompt 的失败，不是&quot;回答不够好&quot;，而是<strong>系统崩溃</strong>——JSON 解析失败、工具调用参数错误、无限循环、状态机卡死。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Chatbot Prompt</th>
+<th>Agent Prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>目标</td>
+<td>自然、有帮助的回复</td>
+<td>可解析、可执行的结构化输出</td>
+</tr>
+<tr>
+<td>消费者</td>
+<td>人类用户</td>
+<td>程序代码（Parser / Router / Executor）</td>
+</tr>
+<tr>
+<td>失败模式</td>
+<td>回答质量下降</td>
+<td>系统崩溃、无限循环、安全漏洞</td>
+</tr>
+<tr>
+<td>格式要求</td>
+<td>宽松，Markdown 即可</td>
+<td>严格，JSON / XML / 特定 Schema</td>
+</tr>
+<tr>
+<td>可测试性</td>
+<td>主观评估</td>
+<td>可自动化断言</td>
+</tr>
+<tr>
+<td>版本管理</td>
+<td>通常不管理</td>
+<td>必须版本控制，等同于代码</td>
+</tr>
+</tbody></table>
+<p>这意味着，<strong>Agent 的 Prompt Engineering 本质上是一种接口设计（Interface Design）</strong>，而不是文案写作。</p>
+<hr>
+<h2>2. Agent Prompt 的分层架构</h2>
+<p>一个成熟的 Agent 系统，发送给 LLM 的 Prompt 不是一坨字符串，而是多个层次动态组装的结果。</p>
+<h3>2.1 四层结构</h3>
+<pre><code>┌─────────────────────────────────────────────────────┐
+│                   Final Prompt                       │
+│  ┌───────────────────────────────────────────────┐  │
+│  │  Layer 1: System Prompt (静态)                 │  │
+│  │  - 身份定义（你是谁，你的职责是什么）            │  │
+│  │  - 行为约束（必须做什么，禁止做什么）            │  │
+│  │  - 输出格式规范（JSON Schema / XML 模板）       │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 2: Context Injection (动态)             │  │
+│  │  - 可用工具列表及其描述                         │  │
+│  │  - 历史对话摘要 / 关键事实                      │  │
+│  │  - 当前系统状态（已完成步骤、中间结果）           │  │
+│  │  - 检索到的外部知识（RAG 结果）                  │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 3: User Input (外部)                    │  │
+│  │  - 用户的原始请求                               │  │
+│  │  - 或上一步 Agent 的输出（在 Multi-Agent 中）    │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 4: Constraints &amp; Guardrails (静态+动态)  │  │
+│  │  - 安全边界（禁止调用的工具、禁止访问的数据）     │  │
+│  │  - 输出限制（最大步骤数、Token 预算）            │  │
+│  │  - 当前 Turn 的特殊指令                         │  │
+│  └───────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────┘
+</code></pre>
+<h3>2.2 组装过程</h3>
+<p>Prompt 组装不是简单的字符串拼接，而是一个有优先级、有裁剪策略的构建过程：</p>
+<pre><code>                  Token Budget: 8000
+                       │
+      ┌────────────────┼────────────────┐
+      │                │                │
+      ▼                ▼                ▼
+ System Prompt    Context Injection   User Input
+ (固定预算:2000)  (弹性预算:4500)    (固定预算:1500)
+      │                │                │
+      │          ┌─────┴─────┐          │
+      │          │           │          │
+      │      Tool Descs   History       │
+      │      (1500 max)  (3000 max)     │
+      │          │           │          │
+      │          │     [若超预算]        │
+      │          │     → 压缩/截断      │
+      │          │           │          │
+      ▼          ▼           ▼          ▼
+     ┌──────────────────────────────────┐
+     │      Prompt Assembler            │
+     │  1. 拼装各层                      │
+     │  2. 计算总 Token                  │
+     │  3. 若超预算 → 压缩 Context 层    │
+     │  4. 注入 Constraints              │
+     └──────────────────────────────────┘
+                    │
+                    ▼
+              Final Prompt
+</code></pre>
+<p>关键设计决策：<strong>System Prompt 和 User Input 的预算是固定的，Context Injection 的预算是弹性的。</strong> 当总 Token 超出预算时，优先压缩 Context 层（截断历史、精简工具描述），而非删减 System Prompt 中的行为约束。因为行为约束一旦丢失，Agent 的行为就不可控了。</p>
+<h3>2.3 Python 示例：Prompt 组装器</h3>
+<pre><code class="language-python">from dataclasses import dataclass, field
+
+@dataclass
+class PromptLayer:
+    content: str
+    priority: int        # 越高越不容易被裁剪
+    max_tokens: int
+    compressible: bool   # 是否允许被压缩
+
+@dataclass
+class PromptAssembler:
+    total_budget: int = 8000
+    layers: list[PromptLayer] = field(default_factory=list)
+
+    def add_layer(self, layer: PromptLayer):
+        self.layers.append(layer)
+
+    def assemble(self) -&gt; str:
+        # 按优先级排序：高优先级最后处理（最不容易被裁剪）
+        sorted_layers = sorted(self.layers, key=lambda l: l.priority)
+
+        total_used = sum(estimate_tokens(l.content) for l in self.layers)
+
+        if total_used &gt; self.total_budget:
+            overflow = total_used - self.total_budget
+            # 从低优先级开始压缩
+            for layer in sorted_layers:
+                if not layer.compressible:
+                    continue
+                available_cut = estimate_tokens(layer.content) - 100  # 至少保留 100 token
+                cut = min(overflow, available_cut)
+                layer.content = truncate_to_tokens(layer.content,
+                                                    estimate_tokens(layer.content) - cut)
+                overflow -= cut
+                if overflow &lt;= 0:
+                    break
+
+        # 按原始顺序拼装
+        return &quot;\n\n&quot;.join(l.content for l in self.layers)
+</code></pre>
+<hr>
+<h2>3. 四种关键 Agent Prompt 设计模式</h2>
+<p>Agent 系统中，不同角色的 Agent 需要不同风格的 Prompt。以下是四种最核心的设计模式，每种都给出完整可用的 Prompt 示例。</p>
+<h3>3.1 Router Prompt：意图路由</h3>
+<p>Router 的职责是根据用户输入<strong>选择正确的工具或子流程</strong>，而不是自己去执行任务。它是 Agent 系统的&quot;交通警察&quot;。</p>
+<pre><code class="language-python">ROUTER_PROMPT = &quot;&quot;&quot;You are a request router. Your ONLY job is to analyze the user&#39;s
+request and select the appropriate tool. Do NOT attempt to answer the question yourself.
+
+## Available Tools
+{tool_descriptions}
+
+## Routing Rules
+1. If the request involves real-time data (weather, stock prices, news) → use `web_search`
+2. If the request involves the user&#39;s own data (files, emails, calendar) → use `data_query`
+3. If the request involves code generation or debugging → use `code_assistant`
+4. If the request involves image generation or editing → use `image_tool`
+5. If the request is ambiguous, ask a clarifying question instead of guessing.
+6. If NO tool matches, respond with tool_name: &quot;none&quot; and explain why.
+
+## Output Format (strict JSON, no markdown fence)
+{{
+  &quot;reasoning&quot;: &quot;&lt;one sentence explaining your routing decision&gt;&quot;,
+  &quot;tool_name&quot;: &quot;&lt;exact tool name from the list above, or &#39;none&#39;&gt;&quot;,
+  &quot;tool_input&quot;: {{&lt;parameters to pass to the selected tool&gt;}},
+  &quot;confidence&quot;: &lt;float between 0.0 and 1.0&gt;
+}}
+
+## Critical Constraints
+- NEVER fabricate a tool name not in the list.
+- NEVER return free-form text. ALWAYS return valid JSON.
+- If confidence &lt; 0.6, set tool_name to &quot;none&quot; and ask for clarification.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>明确告诉 LLM &quot;你不负责回答问题&quot;，避免它自作主张直接回答</li>
+<li>提供确定性的路由规则（if-then），减少 LLM 的自由裁量空间</li>
+<li>要求输出 confidence 分数，让调用方可以做二次判断</li>
+<li>兜底规则：没有匹配的工具时，显式输出 &quot;none&quot;</li>
+</ul>
+<h3>3.2 Planner Prompt：任务规划</h3>
+<p>Planner 的职责是将一个复杂请求<strong>分解为可执行的子任务列表</strong>。它是 Agent 的&quot;项目经理&quot;。</p>
+<pre><code class="language-python">PLANNER_PROMPT = &quot;&quot;&quot;You are a task planner. Given a complex user request, decompose it
+into a sequence of concrete, executable sub-tasks.
+
+## Planning Principles
+1. Each sub-task must be independently executable by a single tool call.
+2. Sub-tasks should be ordered by dependency — a task can only depend on tasks before it.
+3. Minimize the number of steps. Do NOT over-decompose simple requests.
+4. If a request can be done in ONE tool call, return a plan with ONE step.
+
+## Available Tools
+{tool_descriptions}
+
+## Output Format (strict JSON)
+{{
+  &quot;analysis&quot;: &quot;&lt;brief analysis of the request&#39;s complexity and required resources&gt;&quot;,
+  &quot;plan&quot;: [
+    {{
+      &quot;step_id&quot;: 1,
+      &quot;description&quot;: &quot;&lt;what this step does&gt;&quot;,
+      &quot;tool_name&quot;: &quot;&lt;tool to use&gt;&quot;,
+      &quot;tool_input&quot;: {{&lt;parameters&gt;}},
+      &quot;depends_on&quot;: []
+    }},
+    {{
+      &quot;step_id&quot;: 2,
+      &quot;description&quot;: &quot;&lt;what this step does&gt;&quot;,
+      &quot;tool_name&quot;: &quot;&lt;tool to use&gt;&quot;,
+      &quot;tool_input&quot;: {{&lt;parameters, can reference $step_1_result&gt;}},
+      &quot;depends_on&quot;: [1]
+    }}
+  ],
+  &quot;estimated_steps&quot;: &lt;int&gt;,
+  &quot;can_parallelize&quot;: [&lt;list of step_id groups that can run concurrently&gt;]
+}}
+
+## Constraints
+- Maximum 8 steps. If the task seems to need more, simplify or ask the user to narrow scope.
+- NEVER include steps like &quot;verify result&quot; or &quot;report to user&quot; — those are handled by the system.
+- Use $step_N_result to reference the output of a previous step.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>&quot;最小化步骤数&quot;原则防止 LLM 过度分解（这是规划器最常见的问题）</li>
+<li><code>depends_on</code> 字段使得执行引擎可以识别并行机会</li>
+<li>明确设置步骤上限（8 步），避免 LLM 生成无休止的计划</li>
+<li>禁止 LLM 添加&quot;元步骤&quot;（验证、汇报），这些是系统层的职责</li>
+</ul>
+<h3>3.3 Executor Prompt：执行操作</h3>
+<p>Executor 的职责是<strong>执行单个具体操作</strong>，并以严格的格式返回结果。它是 Agent 的&quot;操作工&quot;。</p>
+<pre><code class="language-python">EXECUTOR_PROMPT = &quot;&quot;&quot;You are a task executor. You will receive a specific sub-task and
+must execute it using the provided tool.
+
+## Current Task
+{task_description}
+
+## Tool to Use
+Name: {tool_name}
+Schema: {tool_schema}
+
+## Context from Previous Steps
+{previous_results}
+
+## Execution Rules
+1. Call the tool EXACTLY ONCE with the correct parameters.
+2. Do NOT deviate from the task description.
+3. Do NOT call tools not specified for this task.
+4. If the tool call fails, report the error — do NOT retry or improvise.
+
+## Output Format (strict JSON)
+{{
+  &quot;tool_call&quot;: {{
+    &quot;name&quot;: &quot;{tool_name}&quot;,
+    &quot;arguments&quot;: {{&lt;filled parameters&gt;}}
+  }},
+  &quot;explanation&quot;: &quot;&lt;one sentence on why these parameters were chosen&gt;&quot;
+}}
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>Executor 的设计哲学是&quot;最小权限&quot;——只做被告知的事</li>
+<li>严禁 Executor 自主决策，发现错误只能上报，不能自行重试</li>
+<li>这种设计让 Executor 成为一个确定性单元，便于测试和审计</li>
+</ul>
+<h3>3.4 Reflector Prompt：结果反思</h3>
+<p>Reflector 的职责是<strong>评估执行结果</strong>，判断是否达成目标，如果未达成则提出修正方案。它是 Agent 的&quot;质量检查员&quot;。</p>
+<pre><code class="language-python">REFLECTOR_PROMPT = &quot;&quot;&quot;You are a result evaluator. Given the original user request and the
+execution result, determine whether the task has been completed successfully.
+
+## Original Request
+{user_request}
+
+## Execution Plan
+{plan}
+
+## Execution Results
+{results}
+
+## Evaluation Criteria
+1. Completeness: Does the result fully address the user&#39;s request?
+2. Correctness: Is the result factually and logically correct?
+3. Format: Is the result in the expected format?
+
+## Output Format (strict JSON)
+{{
+  &quot;evaluation&quot;: {{
+    &quot;completeness&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}},
+    &quot;correctness&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}},
+    &quot;format&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}}
+  }},
+  &quot;overall_pass&quot;: &lt;true|false&gt;,
+  &quot;action&quot;: &quot;&lt;one of: &#39;accept&#39;, &#39;retry_step&#39;, &#39;replan&#39;, &#39;escalate&#39;&gt;&quot;,
+  &quot;retry_details&quot;: {{
+    &quot;step_id&quot;: &lt;which step to retry, if applicable&gt;,
+    &quot;modification&quot;: &quot;&lt;what to change in the retry&gt;&quot;
+  }}
+}}
+
+## Decision Rules
+- If all scores &gt;= 4: action = &quot;accept&quot;
+- If any score &lt;= 2 and retry_count &lt; 3: action = &quot;retry_step&quot; or &quot;replan&quot;
+- If retry_count &gt;= 3: action = &quot;escalate&quot; (ask user for help)
+- NEVER accept a result with correctness score &lt;= 2.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>多维度评估（完整性、正确性、格式）而非简单的 pass/fail</li>
+<li>明确的决策规则，减少 LLM 判断的主观性</li>
+<li>retry_count 上限防止无限重试循环</li>
+<li>&quot;escalate&quot; 作为最终兜底——承认失败比无限循环好得多</li>
+</ul>
+<h3>3.5 四种模式的协作</h3>
+<pre><code>User Request
+     │
+     ▼
+ ┌────────┐     tool_name + input     ┌──────────┐
+ │ Router │ ──── (简单请求直接执行) ───→│ Executor │──→ Result
+ └────┬───┘                           └──────────┘
+      │ (复杂请求)                          ▲
+      ▼                                    │
+ ┌─────────┐    plan[step_1..N]     ┌──────┴───┐
+ │ Planner │ ─────────────────────→│ Executor  │
+ └─────────┘                       │ (per step)│
+                                   └──────┬───┘
+                                          │ results
+                                          ▼
+                                   ┌───────────┐
+                                   │ Reflector  │
+                                   └─────┬─────┘
+                                         │
+                              ┌──────────┼──────────┐
+                              │          │          │
+                           accept    retry_step   replan
+                              │          │          │
+                              ▼          ▼          ▼
+                           Return    Executor    Planner
+                           to User  (重试该步)   (重新规划)
+</code></pre>
+<hr>
+<h2>4. Chain-of-Thought 在 Agent 中的应用</h2>
+<h3>4.1 标准 CoT vs Agent CoT</h3>
+<p>标准的 Chain-of-Thought（CoT）是一种推理增强技术——&quot;Let&#39;s think step by step&quot;。但在 Agent 中，CoT 的用途和形式有本质不同：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>标准 CoT</th>
+<th>Agent CoT</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>目的</td>
+<td>提高推理准确性</td>
+<td>让中间推理过程可审计、可路由</td>
+</tr>
+<tr>
+<td>消费者</td>
+<td>最终输出的一部分</td>
+<td>Agent Runtime 的中间状态</td>
+</tr>
+<tr>
+<td>格式</td>
+<td>自然语言</td>
+<td>结构化（通常嵌入 JSON 的某个字段）</td>
+</tr>
+<tr>
+<td>是否返回用户</td>
+<td>通常是</td>
+<td>通常不是（内部消费）</td>
+</tr>
+</tbody></table>
+<p>Agent 的 CoT 更像是一个<strong>内部日志</strong>，而非用户可见的推理过程。它的首要目标是让系统（而非人类）能够理解和利用中间推理。</p>
+<h3>4.2 Scratchpad 模式</h3>
+<p>Scratchpad 模式是 Agent CoT 的典型实现——在 Prompt 中显式开辟一个&quot;草稿区&quot;，让 LLM 在其中进行中间推理，然后输出最终决策。</p>
+<pre><code class="language-python">SCRATCHPAD_PROMPT = &quot;&quot;&quot;Analyze the user&#39;s request and decide on an action.
+
+## User Request
+{user_request}
+
+## Available Tools
+{tools}
+
+## Instructions
+Use the &lt;scratchpad&gt; section to think through your decision. This section will NOT be
+shown to the user. Then provide your final action in the &lt;action&gt; section.
+
+&lt;scratchpad&gt;
+Think through:
+1. What is the user actually asking for?
+2. Which tools could help? What are the pros/cons of each?
+3. What information am I missing?
+4. What&#39;s the simplest approach that works?
+&lt;/scratchpad&gt;
+
+&lt;action&gt;
+Return strict JSON here:
+{{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}, &quot;reasoning_summary&quot;: &quot;...&quot;}}
+&lt;/action&gt;
+&quot;&quot;&quot;
+</code></pre>
+<p>Runtime 解析时，只提取 <code>&lt;action&gt;</code> 标签中的内容作为执行指令，<code>&lt;scratchpad&gt;</code> 的内容记录到日志中用于调试和审计。</p>
+<h3>4.3 显式推理 vs 隐式推理的 Trade-off</h3>
+<p><strong>显式推理（Explicit Reasoning）：</strong> 在 Prompt 中要求 LLM 输出推理过程。</p>
+<p>优势：</p>
+<ul>
+<li>可审计，出了问题能追溯&quot;为什么做了这个决策&quot;</li>
+<li>推理质量通常更高（CoT 效应）</li>
+<li>便于调试</li>
+</ul>
+<p>劣势：</p>
+<ul>
+<li>消耗更多 Token（推理内容可能占输出的 50%+）</li>
+<li>增加延迟</li>
+<li>推理内容可能包含敏感的内部逻辑</li>
+</ul>
+<p><strong>隐式推理（Implicit Reasoning）：</strong> 直接要求 LLM 输出最终决策，不要求中间过程。</p>
+<p>优势：</p>
+<ul>
+<li>Token 用量更低，延迟更短</li>
+<li>输出更简洁，解析更简单</li>
+</ul>
+<p>劣势：</p>
+<ul>
+<li>黑盒，无法理解决策过程</li>
+<li>在复杂场景下准确率下降明显</li>
+</ul>
+<p><strong>工程决策建议：</strong></p>
+<ul>
+<li>Router 和 Executor（简单、确定性高）：倾向隐式推理，追求速度</li>
+<li>Planner 和 Reflector（复杂、需要判断）：必须显式推理，追求准确性和可审计性</li>
+<li>在系统稳定后，可以通过 A/B 测试逐步将显式推理切换为隐式推理以降低成本</li>
+</ul>
+<hr>
+<h2>5. Few-shot vs Zero-shot 在 Agent 场景的选择</h2>
+<p>这是 Agent Prompt 设计中一个重要但常被忽视的决策点。</p>
+<h3>5.1 决策矩阵</h3>
+<pre><code>                    输出结构化程度
+                 低 ◄──────────► 高
+                 │                │
+  任务复杂度  高  │  Few-shot      │  Zero-shot + Schema
+                 │  (复杂规划)     │  (结构化反思)
+                 │                │
+              低  │  Zero-shot     │  Zero-shot + Schema
+                 │  (简单对话)     │  (工具调用)
+                 │                │
+</code></pre>
+<h3>5.2 工具调用：Zero-shot 优先</h3>
+<p>工具调用场景天然适合 Zero-shot。原因是 <strong>JSON Schema 本身就是最好的&quot;示例&quot;</strong>——它精确定义了每个参数的名称、类型、描述和约束，比任何 Few-shot 示例都更完整。</p>
+<pre><code class="language-python"># 工具调用不需要 few-shot，Schema 就是最好的约束
+tool_schema = {
+    &quot;name&quot;: &quot;search_database&quot;,
+    &quot;description&quot;: &quot;Search the product database with filters&quot;,
+    &quot;parameters&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;query&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;Search keywords&quot;},
+            &quot;category&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [&quot;electronics&quot;, &quot;clothing&quot;, &quot;books&quot;],
+                &quot;description&quot;: &quot;Product category filter&quot;
+            },
+            &quot;max_results&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;default&quot;: 10,
+                &quot;minimum&quot;: 1,
+                &quot;maximum&quot;: 100
+            }
+        },
+        &quot;required&quot;: [&quot;query&quot;]
+    }
+}
+</code></pre>
+<p>加 Few-shot 反而可能引入问题：LLM 可能过度拟合示例中的具体值，而不是理解 Schema 的通用约束。</p>
+<h3>5.3 复杂规划：Few-shot 有价值</h3>
+<p>规划场景是 Few-shot 真正发挥价值的地方。因为&quot;好的计划&quot;是一个模糊的概念——仅凭输出格式定义不足以引导 LLM 产出高质量的计划。</p>
+<pre><code class="language-python">PLANNER_WITH_EXAMPLES = &quot;&quot;&quot;You are a task planner.
+
+## Example 1: Multi-step data analysis
+User: &quot;Compare last month&#39;s sales with the same period last year and visualize the trend&quot;
+Plan:
+[
+  {{&quot;step_id&quot;: 1, &quot;tool&quot;: &quot;data_query&quot;, &quot;input&quot;: &quot;sales data for 2025-07&quot;, &quot;depends_on&quot;: []}},
+  {{&quot;step_id&quot;: 2, &quot;tool&quot;: &quot;data_query&quot;, &quot;input&quot;: &quot;sales data for 2024-07&quot;, &quot;depends_on&quot;: []}},
+  {{&quot;step_id&quot;: 3, &quot;tool&quot;: &quot;data_compare&quot;, &quot;input&quot;: &quot;$step_1_result, $step_2_result&quot;, &quot;depends_on&quot;: [1, 2]}},
+  {{&quot;step_id&quot;: 4, &quot;tool&quot;: &quot;chart_gen&quot;, &quot;input&quot;: &quot;$step_3_result, type=line&quot;, &quot;depends_on&quot;: [3]}}
+]
+Note: Steps 1 and 2 can run in parallel since they have no dependencies.
+
+## Example 2: Simple single-step task
+User: &quot;What&#39;s the weather in Tokyo?&quot;
+Plan:
+[
+  {{&quot;step_id&quot;: 1, &quot;tool&quot;: &quot;weather_api&quot;, &quot;input&quot;: &quot;Tokyo&quot;, &quot;depends_on&quot;: []}}
+]
+Note: Simple requests should NOT be over-decomposed.
+
+## Now plan for:
+User: &quot;{user_request}&quot;
+&quot;&quot;&quot;
+</code></pre>
+<p>Few-shot 示例在这里传递了两个关键信息：</p>
+<ol>
+<li><strong>粒度标准</strong>——什么程度的分解是合适的</li>
+<li><strong>并行意识</strong>——独立步骤应该标记为可并行</li>
+</ol>
+<h3>5.4 反思评估：Zero-shot + 结构化输出</h3>
+<p>反思（Reflection）场景适合 Zero-shot + 结构化输出。原因是反思本质上是&quot;评判&quot;，而评判标准已经通过评估维度（completeness / correctness / format）和评分规则完整定义了。给出 Few-shot 示例反而可能让 LLM 锚定在示例的评分上，而不是独立评估当前结果。</p>
+<p><strong>总结决策原则：</strong></p>
+<ul>
+<li>格式约束充分（JSON Schema / 评分规则）→ Zero-shot</li>
+<li>需要传递&quot;风格&quot;或&quot;粒度标准&quot; → Few-shot</li>
+<li>两者都可以时 → 优先 Zero-shot（更省 Token，更不容易过拟合）</li>
+</ul>
+<hr>
+<h2>6. Prompt 工程化实践</h2>
+<p>当 Agent 系统超过原型阶段，Prompt 管理就变成了一个严肃的工程问题。</p>
+<h3>6.1 Prompt 模板化</h3>
+<p>核心思想：<strong>分离静态结构和动态内容</strong>。静态部分（身份定义、行为规则、输出格式）是模板，动态部分（工具列表、历史消息、当前状态）通过变量注入。</p>
+<pre><code class="language-python">from typing import Any
+from string import Template
+import hashlib
+import json
+from datetime import datetime
+
+
+class PromptTemplate:
+    &quot;&quot;&quot;可管理、可版本化、可测试的 Prompt 模板&quot;&quot;&quot;
+
+    def __init__(self, name: str, template: str, version: str,
+                 required_vars: list[str], metadata: dict | None = None):
+        self.name = name
+        self.template = template
+        self.version = version
+        self.required_vars = required_vars
+        self.metadata = metadata or {}
+        self._hash = hashlib.sha256(template.encode()).hexdigest()[:12]
+
+    def render(self, **kwargs) -&gt; str:
+        # 校验所有必需变量都已提供
+        missing = set(self.required_vars) - set(kwargs.keys())
+        if missing:
+            raise ValueError(f&quot;Missing required variables: {missing}&quot;)
+
+        # 渲染模板
+        rendered = self.template
+        for key, value in kwargs.items():
+            placeholder = &quot;{&quot; + key + &quot;}&quot;
+            if isinstance(value, (dict, list)):
+                value = json.dumps(value, indent=2, ensure_ascii=False)
+            rendered = rendered.replace(placeholder, str(value))
+
+        return rendered
+
+    def fingerprint(self) -&gt; str:
+        &quot;&quot;&quot;返回模板内容的哈希指纹，用于版本追踪&quot;&quot;&quot;
+        return f&quot;{self.name}@{self.version}#{self._hash}&quot;
+
+
+class PromptRegistry:
+    &quot;&quot;&quot;Prompt 模板注册中心：集中管理所有 Agent 使用的 Prompt&quot;&quot;&quot;
+
+    def __init__(self):
+        self._templates: dict[str, dict[str, PromptTemplate]] = {}  # name -&gt; {version -&gt; template}
+
+    def register(self, template: PromptTemplate):
+        if template.name not in self._templates:
+            self._templates[template.name] = {}
+        self._templates[template.name][template.version] = template
+
+    def get(self, name: str, version: str = &quot;latest&quot;) -&gt; PromptTemplate:
+        if name not in self._templates:
+            raise KeyError(f&quot;Template &#39;{name}&#39; not found&quot;)
+
+        versions = self._templates[name]
+        if version == &quot;latest&quot;:
+            latest_version = sorted(versions.keys())[-1]
+            return versions[latest_version]
+
+        if version not in versions:
+            raise KeyError(f&quot;Version &#39;{version}&#39; not found for template &#39;{name}&#39;&quot;)
+        return versions[version]
+
+    def list_all(self) -&gt; dict[str, list[str]]:
+        return {name: sorted(vers.keys()) for name, vers in self._templates.items()}
+
+
+# ── 使用示例 ──
+
+registry = PromptRegistry()
+
+# 注册 Router Prompt v1
+registry.register(PromptTemplate(
+    name=&quot;router&quot;,
+    version=&quot;1.0&quot;,
+    template=&quot;&quot;&quot;You are a request router.
+Available tools: {tool_descriptions}
+Route the following request: {user_input}
+Output JSON: {{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}}}&quot;&quot;&quot;,
+    required_vars=[&quot;tool_descriptions&quot;, &quot;user_input&quot;],
+    metadata={&quot;author&quot;: &quot;agent-team&quot;, &quot;last_tested&quot;: &quot;2025-08-10&quot;}
+))
+
+# 注册 Router Prompt v2（增加了 confidence 字段）
+registry.register(PromptTemplate(
+    name=&quot;router&quot;,
+    version=&quot;2.0&quot;,
+    template=&quot;&quot;&quot;You are a request router. Your ONLY job is to route, not to answer.
+Available tools: {tool_descriptions}
+Route the following request: {user_input}
+Output JSON: {{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}, &quot;confidence&quot;: &lt;0.0-1.0&gt;}}&quot;&quot;&quot;,
+    required_vars=[&quot;tool_descriptions&quot;, &quot;user_input&quot;],
+    metadata={&quot;author&quot;: &quot;agent-team&quot;, &quot;last_tested&quot;: &quot;2025-08-13&quot;}
+))
+
+# 获取并渲染
+router_prompt = registry.get(&quot;router&quot;, version=&quot;2.0&quot;)
+final_prompt = router_prompt.render(
+    tool_descriptions=&quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+    user_input=&quot;What is 42 * 17?&quot;
+)
+</code></pre>
+<h3>6.2 Prompt 版本控制</h3>
+<p>为什么 Prompt 需要版本控制？因为 <strong>Prompt 是 Agent 行为的源代码</strong>。改一个词可能导致 Agent 行为的巨大变化——从正确路由变成错误路由，从结构化输出变成自由文本。</p>
+<p>版本控制策略：</p>
+<pre><code>prompts/
+├── router/
+│   ├── v1.0.txt          # 初始版本
+│   ├── v1.1.txt          # 修复：低 confidence 时的行为
+│   ├── v2.0.txt          # 重大变更：新增 confidence 字段
+│   └── changelog.md      # 变更记录
+├── planner/
+│   ├── v1.0.txt
+│   └── v1.1.txt
+├── executor/
+│   └── v1.0.txt
+└── reflector/
+    └── v1.0.txt
+</code></pre>
+<p>关键实践：</p>
+<ul>
+<li><strong>每次 Prompt 变更都有对应的测试结果</strong>（下面会详述）</li>
+<li><strong>生产环境使用固定版本号</strong>，而非 &quot;latest&quot;</li>
+<li><strong>支持灰度发布</strong>：新版 Prompt 可以先对 10% 的流量生效</li>
+<li><strong>保留回滚能力</strong>：发现新版 Prompt 导致问题时，立即切回旧版</li>
+</ul>
+<h3>6.3 Prompt 测试</h3>
+<p>Prompt 测试的核心挑战是 LLM 输出的非确定性。我们不能像测试普通函数那样做精确断言，但可以做<strong>结构化断言</strong>和<strong>统计性断言</strong>。</p>
+<pre><code class="language-python">from dataclasses import dataclass
+
+@dataclass
+class PromptTestCase:
+    name: str
+    input_vars: dict[str, Any]       # 模板变量
+    assertions: list[dict]            # 断言列表
+
+    # 断言类型：
+    # {&quot;type&quot;: &quot;json_valid&quot;}                           → 输出是合法 JSON
+    # {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;}      → JSON 中包含指定字段
+    # {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;a&quot;, &quot;b&quot;]} → 字段值在范围内
+    # {&quot;type&quot;: &quot;no_field&quot;, &quot;field&quot;: &quot;apology&quot;}         → 不包含某字段（防止 LLM 废话）
+    # {&quot;type&quot;: &quot;max_tokens&quot;, &quot;limit&quot;: 200}             → 输出长度不超过限制
+
+
+class PromptTestRunner:
+    def __init__(self, llm_client, template: PromptTemplate):
+        self.llm = llm_client
+        self.template = template
+
+    def run_test(self, test_case: PromptTestCase, n_runs: int = 5) -&gt; dict:
+        &quot;&quot;&quot;对同一个测试用例运行 N 次，统计通过率&quot;&quot;&quot;
+        prompt = self.template.render(**test_case.input_vars)
+        results = []
+
+        for _ in range(n_runs):
+            output = self.llm.generate(prompt)
+            pass_all = True
+            details = []
+
+            for assertion in test_case.assertions:
+                passed = self._check_assertion(output, assertion)
+                details.append({&quot;assertion&quot;: assertion, &quot;passed&quot;: passed})
+                if not passed:
+                    pass_all = False
+
+            results.append({&quot;output&quot;: output, &quot;passed&quot;: pass_all, &quot;details&quot;: details})
+
+        pass_rate = sum(1 for r in results if r[&quot;passed&quot;]) / n_runs
+        return {
+            &quot;test_case&quot;: test_case.name,
+            &quot;template&quot;: self.template.fingerprint(),
+            &quot;n_runs&quot;: n_runs,
+            &quot;pass_rate&quot;: pass_rate,
+            &quot;results&quot;: results
+        }
+
+    def _check_assertion(self, output: str, assertion: dict) -&gt; bool:
+        if assertion[&quot;type&quot;] == &quot;json_valid&quot;:
+            try:
+                json.loads(output)
+                return True
+            except json.JSONDecodeError:
+                return False
+
+        if assertion[&quot;type&quot;] == &quot;has_field&quot;:
+            try:
+                data = json.loads(output)
+                return assertion[&quot;field&quot;] in data
+            except (json.JSONDecodeError, TypeError):
+                return False
+
+        if assertion[&quot;type&quot;] == &quot;field_in&quot;:
+            try:
+                data = json.loads(output)
+                return data.get(assertion[&quot;field&quot;]) in assertion[&quot;values&quot;]
+            except (json.JSONDecodeError, TypeError):
+                return False
+
+        return False  # 未知断言类型
+
+
+# ── 测试用例示例 ──
+
+test_cases = [
+    PromptTestCase(
+        name=&quot;math_request_should_route_to_calculator&quot;,
+        input_vars={
+            &quot;tool_descriptions&quot;: &quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+            &quot;user_input&quot;: &quot;What is 1024 * 768?&quot;
+        },
+        assertions=[
+            {&quot;type&quot;: &quot;json_valid&quot;},
+            {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;},
+            {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;calculator&quot;]},
+        ]
+    ),
+    PromptTestCase(
+        name=&quot;ambiguous_request_should_not_guess&quot;,
+        input_vars={
+            &quot;tool_descriptions&quot;: &quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+            &quot;user_input&quot;: &quot;Help me with my project&quot;
+        },
+        assertions=[
+            {&quot;type&quot;: &quot;json_valid&quot;},
+            {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;},
+            {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;none&quot;]},
+        ]
+    ),
+]
+</code></pre>
+<p><strong>测试策略建议：</strong></p>
+<ul>
+<li>每个 Prompt 版本至少 10 个测试用例，覆盖正常路径、边界情况和对抗输入</li>
+<li>每个测试用例运行 5-10 次，要求通过率 &gt;= 90%（而非 100%，因为 LLM 输出非确定性）</li>
+<li>将测试集纳入 CI，每次 Prompt 变更触发回归测试</li>
+</ul>
+<h3>6.4 Prompt 组合：模块化拼装</h3>
+<p>复杂 Agent 的 Prompt 往往由多个模块组合而成。与其维护一个巨大的单体 Prompt，不如将其拆分为可复用的模块：</p>
+<pre><code class="language-python">class PromptComposer:
+    &quot;&quot;&quot;将多个 Prompt 模块按顺序组合&quot;&quot;&quot;
+
+    def __init__(self):
+        self._modules: list[tuple[str, PromptTemplate]] = []
+
+    def add(self, section_name: str, template: PromptTemplate):
+        self._modules.append((section_name, template))
+        return self  # 支持链式调用
+
+    def compose(self, **all_vars) -&gt; str:
+        sections = []
+        for section_name, template in self._modules:
+            # 每个模块只取自己需要的变量
+            relevant_vars = {k: v for k, v in all_vars.items()
+                           if k in template.required_vars}
+            rendered = template.render(**relevant_vars)
+            sections.append(f&quot;## {section_name}\n{rendered}&quot;)
+        return &quot;\n\n&quot;.join(sections)
+
+
+# 使用方式
+identity_module = PromptTemplate(
+    name=&quot;identity&quot;, version=&quot;1.0&quot;,
+    template=&quot;You are {agent_role}. {agent_description}&quot;,
+    required_vars=[&quot;agent_role&quot;, &quot;agent_description&quot;]
+)
+
+tools_module = PromptTemplate(
+    name=&quot;tools&quot;, version=&quot;1.0&quot;,
+    template=&quot;Available tools:\n{tool_descriptions}&quot;,
+    required_vars=[&quot;tool_descriptions&quot;]
+)
+
+output_format_module = PromptTemplate(
+    name=&quot;output_format&quot;, version=&quot;1.0&quot;,
+    template=&quot;You MUST respond in the following JSON format:\n{json_schema}&quot;,
+    required_vars=[&quot;json_schema&quot;]
+)
+
+constraints_module = PromptTemplate(
+    name=&quot;constraints&quot;, version=&quot;1.0&quot;,
+    template=&quot;Constraints:\n{constraint_list}&quot;,
+    required_vars=[&quot;constraint_list&quot;]
+)
+
+# 组合
+composer = PromptComposer()
+composer.add(&quot;Identity&quot;, identity_module) \
+        .add(&quot;Tools&quot;, tools_module) \
+        .add(&quot;Output Format&quot;, output_format_module) \
+        .add(&quot;Constraints&quot;, constraints_module)
+
+final_prompt = composer.compose(
+    agent_role=&quot;a task router&quot;,
+    agent_description=&quot;You route user requests to the appropriate tool.&quot;,
+    tool_descriptions=&quot;1. search: web search\n2. calc: calculator&quot;,
+    json_schema=&#39;{&quot;tool_name&quot;: &quot;string&quot;, &quot;tool_input&quot;: &quot;object&quot;}&#39;,
+    constraint_list=&quot;- Never fabricate tool names\n- Always return valid JSON&quot;
+)
+</code></pre>
+<p>模块化的好处：</p>
+<ul>
+<li>同一个 <code>output_format_module</code> 可以被 Router、Planner、Executor 共享</li>
+<li>修改 constraints 不需要触碰 identity 和 tools 部分</li>
+<li>每个模块可以独立测试和版本控制</li>
+</ul>
+<hr>
+<h2>7. Context Window 管理</h2>
+<p>Agent 的 Context Window 管理是一个独特且关键的工程挑战。与 Chatbot 的&quot;对话越长体验越差&quot;不同，Agent 的 context 膨胀会直接导致<strong>系统性故障</strong>。</p>
+<h3>7.1 Agent 的 Context 膨胀问题</h3>
+<p>Agent 的 context 会从三个维度快速膨胀：</p>
+<pre><code>Turn 1:  System(2000) + User(200) + Response(500)              = 2,700 tokens
+Turn 2:  + Tool_Result(3000) + Response(800)                   = 6,500 tokens
+Turn 3:  + Tool_Result(5000) + Error_Msg(1000) + Response(600) = 13,100 tokens
+Turn 4:  + Tool_Result(2000) + Response(400)                   = 15,500 tokens
+Turn 5:  + RAG_Context(4000) + Response(1000)                  = 20,500 tokens
+  ...
+Turn 10: 很容易突破 50,000 tokens
+</code></pre>
+<p>三大膨胀源：</p>
+<ol>
+<li><strong>工具返回值</strong>：一次数据库查询可能返回几千 token 的 JSON，一次网页抓取可能返回上万 token</li>
+<li><strong>历史消息积累</strong>：每一轮的 user message + assistant response + tool calls 都在累积</li>
+<li><strong>错误信息</strong>：工具调用失败的 traceback、重试过程中的冗余信息</li>
+</ol>
+<h3>7.2 消息压缩策略</h3>
+<p><strong>策略 1：摘要压缩（Summarization）</strong></p>
+<p>将早期的对话历史压缩为摘要，只保留关键事实和决策结果。</p>
+<pre><code class="language-python">def compress_history(messages: list[dict], llm_client,
+                     keep_recent: int = 4) -&gt; list[dict]:
+    &quot;&quot;&quot;将早期历史压缩为摘要，保留最近 N 轮完整消息&quot;&quot;&quot;
+    if len(messages) &lt;= keep_recent:
+        return messages
+
+    old_messages = messages[:-keep_recent]
+    recent_messages = messages[-keep_recent:]
+
+    # 用 LLM 生成摘要
+    summary_prompt = f&quot;&quot;&quot;Summarize the following conversation history into key facts
+and decisions. Keep only information that might be needed for future steps.
+Be concise — maximum 200 words.
+
+{format_messages(old_messages)}&quot;&quot;&quot;
+
+    summary = llm_client.generate(summary_prompt)
+
+    # 将摘要作为一条 system message 注入
+    summary_message = {
+        &quot;role&quot;: &quot;system&quot;,
+        &quot;content&quot;: f&quot;[Conversation Summary]\n{summary}&quot;
+    }
+
+    return [summary_message] + recent_messages
+</code></pre>
+<p><strong>策略 2：滑动窗口（Sliding Window）</strong></p>
+<p>更简单粗暴——只保留最近 N 条消息，丢弃更早的消息。</p>
+<pre><code class="language-python">def sliding_window(messages: list[dict], max_messages: int = 10) -&gt; list[dict]:
+    &quot;&quot;&quot;保留 system message + 最近 N 条消息&quot;&quot;&quot;
+    system_msgs = [m for m in messages if m[&quot;role&quot;] == &quot;system&quot;]
+    non_system = [m for m in messages if m[&quot;role&quot;] != &quot;system&quot;]
+    return system_msgs + non_system[-max_messages:]
+</code></pre>
+<p><strong>策略 3：选择性保留（Selective Retention）</strong></p>
+<p>根据消息的&quot;重要性&quot;决定保留还是丢弃。</p>
+<pre><code class="language-python">def selective_retain(messages: list[dict], token_budget: int) -&gt; list[dict]:
+    &quot;&quot;&quot;按重要性保留消息，直到填满 token 预算&quot;&quot;&quot;
+
+    def importance_score(msg: dict) -&gt; int:
+        if msg[&quot;role&quot;] == &quot;system&quot;:
+            return 100  # 永远保留
+        if msg.get(&quot;is_final_result&quot;):
+            return 90   # 最终结果必须保留
+        if msg[&quot;role&quot;] == &quot;user&quot;:
+            return 80   # 用户输入高优先
+        if msg.get(&quot;tool_error&quot;):
+            return 20   # 错误信息低优先（已经被处理过了）
+        if msg.get(&quot;tool_result&quot;):
+            return 40   # 工具结果中等优先
+        return 50
+
+    scored = [(importance_score(m), i, m) for i, m in enumerate(messages)]
+    scored.sort(key=lambda x: (-x[0], x[1]))  # 按重要性降序，原始顺序升序
+
+    retained = []
+    used_tokens = 0
+    for score, idx, msg in scored:
+        msg_tokens = estimate_tokens(msg[&quot;content&quot;])
+        if used_tokens + msg_tokens &lt;= token_budget:
+            retained.append((idx, msg))
+            used_tokens += msg_tokens
+
+    # 恢复原始顺序
+    retained.sort(key=lambda x: x[0])
+    return [msg for _, msg in retained]
+</code></pre>
+<h3>7.3 Token 预算分配</h3>
+<p>一个经验性的 Token 预算分配方案（以 8K context window 为例）：</p>
+<pre><code>Total Context Window: 8,192 tokens
+                    │
+    ┌───────────────┼───────────────┐
+    │               │               │
+System Prompt    Working Area     Reserved for
+  ~25%            ~60%            Output ~15%
+ (2,048)         (4,915)          (1,229)
+    │               │
+    │         ┌─────┴──────┐
+    │         │            │
+    │    Tool Descs    History + State
+    │     ~15%          ~45%
+    │    (1,229)       (3,686)
+    │
+    ├── Identity &amp; Role: 500
+    ├── Behavior Rules: 800
+    ├── Output Format: 500
+    └── Constraints: 248
+</code></pre>
+<p>关键原则：</p>
+<ul>
+<li><strong>Output Reserved 不能省</strong>：如果留给输出的空间不足，LLM 会输出截断的 JSON，导致解析失败</li>
+<li><strong>System Prompt 预算固定</strong>：行为约束不能因为 context 紧张而被裁剪</li>
+<li><strong>History 是最大的压缩空间</strong>：优先在这里节省 Token</li>
+<li><strong>工具描述可以按需加载</strong>：如果 Router 已经选定了工具，后续 Executor 只需要注入被选中工具的描述，而非全部工具</li>
+</ul>
+<h3>7.4 工具返回值的处理</h3>
+<p>工具返回值是 context 膨胀的最大单点源头。以下是几种处理策略：</p>
+<pre><code class="language-python">def process_tool_result(result: str, max_tokens: int = 1500) -&gt; str:
+    &quot;&quot;&quot;处理工具返回值，防止 context 爆炸&quot;&quot;&quot;
+
+    result_tokens = estimate_tokens(result)
+
+    if result_tokens &lt;= max_tokens:
+        return result
+
+    # 策略 1：截断（适用于文本类结果）
+    if is_text(result):
+        return truncate_to_tokens(result, max_tokens) + &quot;\n[... truncated]&quot;
+
+    # 策略 2：提取摘要（适用于 JSON 类结果）
+    if is_json(result):
+        data = json.loads(result)
+        if isinstance(data, list):
+            # 只保留前 N 条记录 + 总数信息
+            summary = {
+                &quot;total_count&quot;: len(data),
+                &quot;showing_first&quot;: 5,
+                &quot;records&quot;: data[:5],
+                &quot;note&quot;: f&quot;Truncated from {len(data)} records. Request specific filters for more.&quot;
+            }
+            return json.dumps(summary, ensure_ascii=False, indent=2)
+
+    # 策略 3：兜底截断
+    return truncate_to_tokens(result, max_tokens) + &quot;\n[... truncated]&quot;
+</code></pre>
+<hr>
+<h2>8. 常见陷阱</h2>
+<h3>8.1 Prompt 太长导致 LLM &quot;忘记&quot;关键指令</h3>
+<p><strong>现象：</strong> System Prompt 有 3000 token，其中包含 20 条行为规则。LLM 在前几轮严格遵守，但随着 context 变长，开始&quot;遗忘&quot;中间的规则——尤其是第 8-15 条。</p>
+<p><strong>原因：</strong> LLM 对 prompt 中不同位置内容的&quot;注意力&quot;不均匀。开头和结尾的内容通常被更好地遵循（primacy effect 和 recency effect），中间的内容最容易被忽略。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>将最关键的规则放在 System Prompt 的开头和结尾</li>
+<li>将规则数量控制在 7 条以内（与人类工作记忆容量一致，也利于 LLM）</li>
+<li>在消息末尾添加 reminder：&quot;Remember: always output valid JSON. Never fabricate tool names.&quot;</li>
+<li>按当前 Turn 的需要动态注入最相关的规则子集，而非每次都注入全部规则</li>
+</ul>
+<h3>8.2 工具描述和 System Prompt 冲突</h3>
+<p><strong>现象：</strong> System Prompt 说&quot;不要执行任何数据删除操作&quot;，但某个工具的 description 中包含&quot;Deletes records matching the query&quot;。LLM 收到删除请求时，行为不确定——有时遵循 System Prompt 的禁令，有时遵循工具描述的能力。</p>
+<p><strong>原因：</strong> LLM 看到的是拼装后的完整 prompt，它不理解&quot;System Prompt 优先级高于工具描述&quot;这个层级关系。两段相互矛盾的文本让 LLM 陷入冲突。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>在 Prompt 组装阶段做<strong>一致性检查</strong>：扫描工具描述中的关键词，与 System Prompt 的禁止列表做匹配</li>
+<li>如果某个工具被禁用，<strong>直接不注入它的描述</strong>，而不是注入描述然后在 System Prompt 中禁止</li>
+<li>在 System Prompt 中明确声明优先级：&quot;If any tool description conflicts with these rules, these rules take priority.&quot;</li>
+</ul>
+<h3>8.3 过度约束导致 LLM 无法灵活应对</h3>
+<p><strong>现象：</strong> 为了保证安全，System Prompt 中加了大量限制：&quot;只能调用列表中的工具&quot;、&quot;只能输出 JSON&quot;、&quot;不能包含任何解释&quot;、&quot;不能问用户问题&quot;、&quot;必须在一次调用中完成&quot;......结果 LLM 在遇到无法处理的请求时，输出空 JSON 或无意义的工具调用，而不是合理地拒绝或请求澄清。</p>
+<p><strong>原因：</strong> 过度约束堵死了 LLM 所有的&quot;逃生通道&quot;。它没有被允许说&quot;我不知道&quot;或&quot;我需要更多信息&quot;，所以只能在约束框架内硬凑一个输出。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>永远为 LLM 保留一个&quot;安全出口&quot;：允许它输出 <code>{&quot;action&quot;: &quot;clarify&quot;, &quot;question&quot;: &quot;...&quot;}</code> 或 <code>{&quot;action&quot;: &quot;refuse&quot;, &quot;reason&quot;: &quot;...&quot;}</code></li>
+<li>区分&quot;硬约束&quot;和&quot;软约束&quot;：硬约束（安全规则）不可违反，软约束（输出偏好）在特殊情况下可以放松</li>
+<li>将约束从&quot;禁止列表&quot;改为&quot;优先级列表&quot;：先尝试 X，如果不行可以 Y，最后可以 Z</li>
+</ul>
+<h3>8.4 Prompt Injection 在 Agent 中的放大效应</h3>
+<p>在 Chatbot 中，Prompt Injection 最多让模型输出不当内容。但在 Agent 中，Prompt Injection 可能触发<strong>真实的工具调用</strong>——删除数据、发送邮件、调用 API。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>用户输入和系统指令之间必须有明确的分隔标记</li>
+<li>工具调用前做参数校验（schema validation），而非完全信任 LLM 输出</li>
+<li>高危操作（删除、支付、发送）增加人工确认步骤</li>
+<li>将用户输入视为&quot;不可信数据&quot;，在 Prompt 中明确标注：<code>[USER INPUT - UNTRUSTED]: {user_message}</code></li>
+</ul>
+<hr>
+<h2>9. 结语：从 Prompt 到 Runtime</h2>
+<p>Prompt Engineering for Agents 的本质是<strong>为 LLM 定义一套可编程的行为接口</strong>。我们在本文中讨论了分层架构、设计模式、推理策略、测试方法和 context 管理——这些都是让 Agent &quot;可控&quot;的基础设施。</p>
+<p>但 Prompt 本身只是 Agent 系统的一个组件。再好的 Prompt 也需要一个可靠的 Runtime 来驱动——处理 LLM 的响应、管理状态机的转换、执行工具调用、处理错误和重试。</p>
+<p>下一篇文章《Agent Runtime from Scratch: 不依赖框架构建 Agent》将从零开始实现一个完整的 Agent 运行时。我们会把本文设计的 Prompt 模式，放进一个真实可运行的控制循环中，展示 Prompt、工具、状态管理和错误处理如何在代码层面协同工作。</p>
+<p><strong>进一步思考：</strong></p>
+<ol>
+<li><p><strong>Prompt 的自动优化</strong>：如果我们有了 Prompt 测试框架和评估指标，是否可以用搜索算法（DSPy 的思路）自动优化 Prompt？这和手工调优的 trade-off 在哪里？</p>
+</li>
+<li><p><strong>Multi-Model Prompt 策略</strong>：Router 用小模型（快、便宜），Planner 用大模型（准、贵），Executor 用中等模型。不同模型对 Prompt 的响应特性不同，如何为不同模型定制 Prompt？</p>
+</li>
+<li><p><strong>Prompt 的可解释性</strong>：当 Agent 做出错误决策时，我们如何从 Prompt 和输出中定位问题根因？这需要什么样的 observability 基础设施？</p>
+</li>
+<li><p><strong>动态 Prompt 生成</strong>：是否可以让一个 &quot;Meta-Agent&quot; 根据当前任务特征，动态生成最合适的 Prompt？这会引入什么样的复杂性和风险？</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 06 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/05-Tool%20Calling%20Deep%20Dive">05 | Tool Calling Deep Dive</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/07-Agent%20Runtime%20from%20Scratch">07 | Agent Runtime from Scratch</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+1a:Tc7d3,<h1>The Agent Control Loop: Agent 运行时的核心抽象</h1>
 <blockquote>
 <p>如果说 LLM 是 Agent 的大脑，那么 Control Loop 就是 Agent 的心跳。</p>
 <p>大多数教程在讲 Agent 时，上来就接框架、调 API、跑 demo。但如果你不理解 Agent 运行时的核心抽象——控制循环——你永远只是在用别人的黑盒。</p>
@@ -4301,7 +4910,7 @@ N       T               S + NT               S + NT
 <li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
 </ul>
 </blockquote>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/agentic/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"Agentic 系统"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-28","children":"2025年12月28日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Agent Runtime from Scratch: 不依赖框架构建 Agent"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L13","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L13","Runtime",{"href":"/blog/tag/Runtime/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Runtime"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/06-Prompt Engineering for Agents","title":"Prompt Engineering for Agents: 面向 Agent 的提示词工程","description":"Agent 的 Prompt 不是聊天提示词，而是系统接口规范。本文系统拆解 Agent Prompt 的分层架构、四种关键设计模式（Router / Planner / Executor / Reflector）、Chain-of-Thought 的 Agent 化应用、Few-shot vs Zero-shot 的场景选择、Prompt 工程化实践（模板化 / 版本控制 / 测试 / 组合），以及 Context Window 管理策略。","pubDate":"2025-12-23","tags":["Agentic","AI Engineering","Prompt Engineering"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/08-Memory Architecture","title":"Memory Architecture: Agent 的状态与记忆体系","description":"LLM 是无状态的，但 Agent 必须有状态。本文系统拆解 Agent 记忆的四层架构——Conversation Buffer、Working Memory、Episodic Memory、Semantic Memory，从认知科学类比出发，深入每一层的设计原理、存储方案、读写策略与 Context Window 管理，附完整 Python 实现。","pubDate":"2026-01-02","tags":["Agentic","AI Engineering","Memory"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"AI Engineering":{"prev":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:prev","next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"Runtime":{"prev":{"slug":"engineering/agentic/04-The Agent Control Loop","title":"The Agent Control Loop: Agent 运行时的核心抽象","description":"Agent 的本质不是一次函数调用，而是一个可中断的控制循环。本文从状态机模型出发，深入剖析 Agent Control Loop 的每个阶段——OBSERVE、THINK、ACT、REFLECT，对比 ReAct 与 Plan-then-Execute 两种主流模式，讨论状态管理、错误处理与性能优化策略，并给出一个不依赖任何框架的完整 Python 实现。","pubDate":"2025-12-14","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$19"},"next":null}}}]}],["$","$L1a",null,{}]]}]}]}]
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/agentic/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"Agentic 系统"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-28","children":"2025年12月28日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"Agent Runtime from Scratch: 不依赖框架构建 Agent"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L13","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L13","Runtime",{"href":"/blog/tag/Runtime/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Runtime"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/middleware/深入理解AQS：Java并发的基石","title":"深入理解AQS：Java并发的基石","description":"系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。","pubDate":"2025-12-28","tags":["Java","并发编程","AQS","ReentrantLock","JUC"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/08-Memory Architecture","title":"Memory Architecture: Agent 的状态与记忆体系","description":"LLM 是无状态的，但 Agent 必须有状态。本文系统拆解 Agent 记忆的四层架构——Conversation Buffer、Working Memory、Episodic Memory、Semantic Memory，从认知科学类比出发，深入每一层的设计原理、存储方案、读写策略与 Context Window 管理，附完整 Python 实现。","pubDate":"2026-01-02","tags":["Agentic","AI Engineering","Memory"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":{"slug":"engineering/agentic/06-Prompt Engineering for Agents","title":"Prompt Engineering for Agents: 面向 Agent 的提示词工程","description":"Agent 的 Prompt 不是聊天提示词，而是系统接口规范。本文系统拆解 Agent Prompt 的分层架构、四种关键设计模式（Router / Planner / Executor / Reflector）、Chain-of-Thought 的 Agent 化应用、Few-shot vs Zero-shot 的场景选择、Prompt 工程化实践（模板化 / 版本控制 / 测试 / 组合），以及 Context Window 管理策略。","pubDate":"2025-12-23","tags":["Agentic","AI Engineering","Prompt Engineering"],"heroImage":"$undefined","content":"$19"},"next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"AI Engineering":{"prev":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:prev","next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"Runtime":{"prev":{"slug":"engineering/agentic/04-The Agent Control Loop","title":"The Agent Control Loop: Agent 运行时的核心抽象","description":"Agent 的本质不是一次函数调用，而是一个可中断的控制循环。本文从状态机模型出发，深入剖析 Agent Control Loop 的每个阶段——OBSERVE、THINK、ACT、REFLECT，对比 ReAct 与 Plan-then-Execute 两种主流模式，讨论状态管理、错误处理与性能优化策略，并给出一个不依赖任何框架的完整 Python 实现。","pubDate":"2025-12-14","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$1a"},"next":null}}}]}],["$","$L1b",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null

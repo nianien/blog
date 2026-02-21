@@ -9,7 +9,7 @@ d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/fffdcdb4fb651185.css","style"]
-0:{"P":null,"b":"wlOkUxTzHfxl8sQA11M8Z","p":"","c":["","blog","engineering","middleware","%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","N_R1y47-DNB-gxQEjVdqQv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"Dhq92JtvZPpMJAPdZEYU7","p":"","c":["","blog","engineering","middleware","%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","ssNB1yYhBTrph6nCDaNCnv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
@@ -626,457 +626,2221 @@ ReadWriteLock:       state = [高16位:读锁次数][低16位:写锁次数]
 <blockquote>
 <p>AQS 是 Doug Lea 在并发编程领域的杰作。理解了 AQS，就理解了 JUC 包中绝大部分同步工具的底层运作方式。它不仅是面试的高频考点，更是我们在实际工程中设计自定义同步器时可以直接借鉴的框架。</p>
 </blockquote>
-17:T4849,<h2>服务注册中心 <a href="#scroller-1" id="scroller-1"></a></h2>
-<p>前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。</p>
-<p>并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景下做正确的技术选型。</p>
+17:Td28a,<h1>Prompt Engineering for Agents: 面向 Agent 的提示词工程</h1>
+<blockquote>
+<p>Agentic 系列第 06 篇。前文我们讨论了 Tool Calling 的设计哲学与工程实践，LLM 已经具备了&quot;使用工具&quot;的能力。但工具只是 Agent 的四肢，Prompt 才是 Agent 的大脑皮层——它定义了 Agent 如何感知、如何推理、如何决策、如何行动。</p>
+<p>本文的核心观点：<strong>Agent 的 Prompt 不是&quot;聊天提示词&quot;，而是&quot;系统接口规范&quot;。</strong> Chatbot 的 Prompt 追求对话自然，Agent 的 Prompt 追求行为可控。这两者的设计哲学截然不同。</p>
+</blockquote>
+<hr>
+<h2>1. 从&quot;对话技巧&quot;到&quot;接口规范&quot;</h2>
+<p>大多数人对 Prompt Engineering 的印象停留在&quot;写好提示词让 AI 回答更好&quot;的阶段。这在 Chatbot 场景下基本成立——你调整措辞、给几个例子、加一句&quot;请一步一步思考&quot;，模型输出的质量就会改善。</p>
+<p>但 Agent 场景完全不同。</p>
+<p>Agent 的 Prompt 不是写给&quot;一个聊天助手&quot;的，而是写给&quot;一个程序运行时&quot;的。它的目的不是让输出&quot;看起来更好&quot;，而是让输出<strong>可解析、可路由、可执行</strong>。一个 Agent Prompt 的失败，不是&quot;回答不够好&quot;，而是<strong>系统崩溃</strong>——JSON 解析失败、工具调用参数错误、无限循环、状态机卡死。</p>
 <table>
 <thead>
 <tr>
-<th><strong>指标</strong></th>
-<th><strong>Eureka</strong></th>
-<th><strong>Zookeeper</strong></th>
-<th><strong>Consul</strong></th>
-<th><strong>Etcd</strong></th>
+<th>维度</th>
+<th>Chatbot Prompt</th>
+<th>Agent Prompt</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>一致性协议</td>
-<td>AP</td>
-<td>CP（Paxos算法）</td>
-<td>CP（Raft算法）</td>
-<td>CP（Raft算法）</td>
+<td>目标</td>
+<td>自然、有帮助的回复</td>
+<td>可解析、可执行的结构化输出</td>
 </tr>
 <tr>
-<td>健康检查</td>
-<td>TTL(Time To Live)</td>
-<td>TCP Keep Alive</td>
-<td>TTL\HTTP\TCP\Script</td>
-<td>Lease TTL KeepAlive</td>
+<td>消费者</td>
+<td>人类用户</td>
+<td>程序代码（Parser / Router / Executor）</td>
 </tr>
 <tr>
-<td>watch/long polling</td>
-<td>不支持</td>
-<td>watch</td>
-<td>long polling</td>
-<td>watch</td>
+<td>失败模式</td>
+<td>回答质量下降</td>
+<td>系统崩溃、无限循环、安全漏洞</td>
 </tr>
 <tr>
-<td>雪崩保护</td>
-<td>支持</td>
-<td>不支持</td>
-<td>不支持</td>
-<td>不支持</td>
+<td>格式要求</td>
+<td>宽松，Markdown 即可</td>
+<td>严格，JSON / XML / 特定 Schema</td>
 </tr>
 <tr>
-<td>安全与权限</td>
-<td>不支持</td>
-<td>ACL</td>
-<td>ACL</td>
-<td>RBAC</td>
+<td>可测试性</td>
+<td>主观评估</td>
+<td>可自动化断言</td>
 </tr>
 <tr>
-<td>是否支持多数据中心</td>
-<td>是</td>
-<td>否</td>
-<td>是</td>
-<td>否</td>
-</tr>
-<tr>
-<td>是否有管理界面</td>
-<td>是</td>
-<td>否（可用第三方ZkTools）</td>
-<td>是</td>
-<td>否</td>
-</tr>
-<tr>
-<td>Spring Cloud 集成</td>
-<td>支持</td>
-<td>支持</td>
-<td>支持</td>
-<td>支持</td>
-</tr>
-<tr>
-<td>Dubbo 集成</td>
-<td>不支持</td>
-<td>支持</td>
-<td>支持</td>
-<td>不支持</td>
-</tr>
-<tr>
-<td>K8S 集成</td>
-<td>不支持</td>
-<td>不支持</td>
-<td>支持</td>
-<td>支持</td>
+<td>版本管理</td>
+<td>通常不管理</td>
+<td>必须版本控制，等同于代码</td>
 </tr>
 </tbody></table>
-<p>我们可以看出，四种技术类型对Spring Cloud的支持度都很高。Spring Cloud是微服务架构的一站式解决方案，我们平时构建微服务的过程中需要做的的如 配置管理、服务发现、负载均衡、断路器、智能路由、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等操作。Spring Cloud 为我们提供了一套简易的编程模型，使我们能在 Spring Boot 的基础上轻松地实现微服务项目的构建。</p>
-<p>Spring Cloud包含了多个不同开源产品，来保证一站式的微服务解决方案，如：Spring Cloud Config、Spring Cloud Netflix、Spring Cloud Security、Spring Cloud Commons、Spring Cloud Zookeeper、Spring Cloud CLI等项目。</p>
-<h2>Spring Cloud 框架下实现 <a href="#scroller-2" id="scroller-2"></a></h2>
-<p>Spring Cloud为服务治理做了一层抽象，这样能够支持多种不同的服务治理框架，比如：Netflix Eureka、Consul。我们这边就以这两个为例子，看看服务治理是如何实现。</p>
-<blockquote>
-<p><em>在Spring Cloud服务治理抽象层的作用下，可以无缝地切换服务治理实现，且不影响任何其他的服务注册、发现、调用逻辑。</em></p>
-<p><em>所以，下面我们通过介绍这两种服务治理的实现来体会Spring Cloud这一层抽象所带来的好处。</em></p>
-</blockquote>
-<h3>2.Spring Cloud Eureka <a href="#scroller-3" id="scroller-3"></a></h3>
-<p>Spring Cloud Eureka是Spring Cloud Netflix项目下的服务治理模块。而Spring Cloud Netflix项目是Spring Cloud的子项目之一，主要内容是对Netflix公司一系列开源产品的包装，它为Spring Boot应用提供了自配置的Netflix OSS整合。</p>
-<p>通过一些简单的注解，开发者就可以快速的在应用中配置一下常用模块并构建庞大的分布式系统。它主要提供的模块包括：服务发现（Eureka），断路器（Hystrix），智能路由（Zuul），客户端负载均衡（Ribbon）等。</p>
-<p>下面，就来具体看看如何使用Spring Cloud Eureka实现服务治理。</p>
-<h4>2.1.创建注册中心 <a href="#scroller-4" id="scroller-4"></a></h4>
-<p>创建一个Spring Cloud项目，我们命名为micro-service-center，并在<code>pom.xml</code>中引入需要的依赖内容：</p>
-<pre><code class="language-xml"> &lt;packaging&gt;pom&lt;/packaging&gt;
+<p>这意味着，<strong>Agent 的 Prompt Engineering 本质上是一种接口设计（Interface Design）</strong>，而不是文案写作。</p>
+<hr>
+<h2>2. Agent Prompt 的分层架构</h2>
+<p>一个成熟的 Agent 系统，发送给 LLM 的 Prompt 不是一坨字符串，而是多个层次动态组装的结果。</p>
+<h3>2.1 四层结构</h3>
+<pre><code>┌─────────────────────────────────────────────────────┐
+│                   Final Prompt                       │
+│  ┌───────────────────────────────────────────────┐  │
+│  │  Layer 1: System Prompt (静态)                 │  │
+│  │  - 身份定义（你是谁，你的职责是什么）            │  │
+│  │  - 行为约束（必须做什么，禁止做什么）            │  │
+│  │  - 输出格式规范（JSON Schema / XML 模板）       │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 2: Context Injection (动态)             │  │
+│  │  - 可用工具列表及其描述                         │  │
+│  │  - 历史对话摘要 / 关键事实                      │  │
+│  │  - 当前系统状态（已完成步骤、中间结果）           │  │
+│  │  - 检索到的外部知识（RAG 结果）                  │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 3: User Input (外部)                    │  │
+│  │  - 用户的原始请求                               │  │
+│  │  - 或上一步 Agent 的输出（在 Multi-Agent 中）    │  │
+│  ├───────────────────────────────────────────────┤  │
+│  │  Layer 4: Constraints &amp; Guardrails (静态+动态)  │  │
+│  │  - 安全边界（禁止调用的工具、禁止访问的数据）     │  │
+│  │  - 输出限制（最大步骤数、Token 预算）            │  │
+│  │  - 当前 Turn 的特殊指令                         │  │
+│  └───────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────┘
 </code></pre>
-<p>表明这个项目中可以没有Java代码，也不执行任何代码，只是为了聚合工程或者传递依赖，所以可以把src文件夹删了。这是一个父级项目，因为我们还要在下面建立Eureka的注册中心、客户端等多个子项目 。</p>
-<p>在micro-service-center下，新建一个命名为 eureka-service 的Module，依旧是Spring Cloud 项目，建完之后，pom.xml做如下改动：</p>
-<pre><code class="language-xml">&lt;xml&gt;
-    &lt;!--在子工程中添加父工程名称--&gt;
-    &lt;parent&gt;
-        &lt;groupId&gt;com.microservice&lt;/groupId&gt;
-        &lt;artifactId&gt;center&lt;/artifactId&gt;
-        &lt;version&gt;1.0.0&lt;/version&gt;
-    &lt;/parent&gt;
-    &lt;dependencies&gt;
-        &lt;!--加入 eureka 服务 --&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-cloud-netflix-eureka-server&lt;/artifactId&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
-&lt;/xml&gt;
+<h3>2.2 组装过程</h3>
+<p>Prompt 组装不是简单的字符串拼接，而是一个有优先级、有裁剪策略的构建过程：</p>
+<pre><code>                  Token Budget: 8000
+                       │
+      ┌────────────────┼────────────────┐
+      │                │                │
+      ▼                ▼                ▼
+ System Prompt    Context Injection   User Input
+ (固定预算:2000)  (弹性预算:4500)    (固定预算:1500)
+      │                │                │
+      │          ┌─────┴─────┐          │
+      │          │           │          │
+      │      Tool Descs   History       │
+      │      (1500 max)  (3000 max)     │
+      │          │           │          │
+      │          │     [若超预算]        │
+      │          │     → 压缩/截断      │
+      │          │           │          │
+      ▼          ▼           ▼          ▼
+     ┌──────────────────────────────────┐
+     │      Prompt Assembler            │
+     │  1. 拼装各层                      │
+     │  2. 计算总 Token                  │
+     │  3. 若超预算 → 压缩 Context 层    │
+     │  4. 注入 Constraints              │
+     └──────────────────────────────────┘
+                    │
+                    ▼
+              Final Prompt
 </code></pre>
-<p>改完之后，回到父项目micro-service-center，修改pom中的信息：</p>
-<pre><code class="language-xml">&lt;xml&gt;
-    &lt;groupId&gt;com.microservice&lt;/groupId&gt;
-    &lt;artifactId&gt;center&lt;/artifactId&gt;
-    &lt;packaging&gt;pom&lt;/packaging&gt;
-    &lt;version&gt;1.0.0&lt;/version&gt;
-    &lt;name&gt;center&lt;/name&gt;
-    &lt;description&gt;Demo project for Spring Boot&lt;/description&gt;
-    &lt;!--在父工程添加子工程名称--&gt;
-    &lt;modules&gt;
-        &lt;module&gt;eureka-service&lt;/module&gt;
-        &lt;module&gt;eureka-client&lt;/module&gt;
-    &lt;/modules&gt;
-&lt;/xml&gt;
+<p>关键设计决策：<strong>System Prompt 和 User Input 的预算是固定的，Context Injection 的预算是弹性的。</strong> 当总 Token 超出预算时，优先压缩 Context 层（截断历史、精简工具描述），而非删减 System Prompt 中的行为约束。因为行为约束一旦丢失，Agent 的行为就不可控了。</p>
+<h3>2.3 Python 示例：Prompt 组装器</h3>
+<pre><code class="language-python">from dataclasses import dataclass, field
+
+@dataclass
+class PromptLayer:
+    content: str
+    priority: int        # 越高越不容易被裁剪
+    max_tokens: int
+    compressible: bool   # 是否允许被压缩
+
+@dataclass
+class PromptAssembler:
+    total_budget: int = 8000
+    layers: list[PromptLayer] = field(default_factory=list)
+
+    def add_layer(self, layer: PromptLayer):
+        self.layers.append(layer)
+
+    def assemble(self) -&gt; str:
+        # 按优先级排序：高优先级最后处理（最不容易被裁剪）
+        sorted_layers = sorted(self.layers, key=lambda l: l.priority)
+
+        total_used = sum(estimate_tokens(l.content) for l in self.layers)
+
+        if total_used &gt; self.total_budget:
+            overflow = total_used - self.total_budget
+            # 从低优先级开始压缩
+            for layer in sorted_layers:
+                if not layer.compressible:
+                    continue
+                available_cut = estimate_tokens(layer.content) - 100  # 至少保留 100 token
+                cut = min(overflow, available_cut)
+                layer.content = truncate_to_tokens(layer.content,
+                                                    estimate_tokens(layer.content) - cut)
+                overflow -= cut
+                if overflow &lt;= 0:
+                    break
+
+        # 按原始顺序拼装
+        return &quot;\n\n&quot;.join(l.content for l in self.layers)
 </code></pre>
-<p>对两个项目进行clean + install，应该是成功的。</p>
-<p>eureka-service我们是作为注册中心来用的，所以在它的主类Application中加入<code>@EnableEurekaServer</code>注解，就能开启注册中心功能。</p>
-<pre><code class="language-java">@SpringBootApplication
-@EnableEurekaServer
-public class ServiceApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ServiceApplication.class, args);
-        System.out.println(&quot;Start Eureka Service&quot;);
+<hr>
+<h2>3. 四种关键 Agent Prompt 设计模式</h2>
+<p>Agent 系统中，不同角色的 Agent 需要不同风格的 Prompt。以下是四种最核心的设计模式，每种都给出完整可用的 Prompt 示例。</p>
+<h3>3.1 Router Prompt：意图路由</h3>
+<p>Router 的职责是根据用户输入<strong>选择正确的工具或子流程</strong>，而不是自己去执行任务。它是 Agent 系统的&quot;交通警察&quot;。</p>
+<pre><code class="language-python">ROUTER_PROMPT = &quot;&quot;&quot;You are a request router. Your ONLY job is to analyze the user&#39;s
+request and select the appropriate tool. Do NOT attempt to answer the question yourself.
+
+## Available Tools
+{tool_descriptions}
+
+## Routing Rules
+1. If the request involves real-time data (weather, stock prices, news) → use `web_search`
+2. If the request involves the user&#39;s own data (files, emails, calendar) → use `data_query`
+3. If the request involves code generation or debugging → use `code_assistant`
+4. If the request involves image generation or editing → use `image_tool`
+5. If the request is ambiguous, ask a clarifying question instead of guessing.
+6. If NO tool matches, respond with tool_name: &quot;none&quot; and explain why.
+
+## Output Format (strict JSON, no markdown fence)
+{{
+  &quot;reasoning&quot;: &quot;&lt;one sentence explaining your routing decision&gt;&quot;,
+  &quot;tool_name&quot;: &quot;&lt;exact tool name from the list above, or &#39;none&#39;&gt;&quot;,
+  &quot;tool_input&quot;: {{&lt;parameters to pass to the selected tool&gt;}},
+  &quot;confidence&quot;: &lt;float between 0.0 and 1.0&gt;
+}}
+
+## Critical Constraints
+- NEVER fabricate a tool name not in the list.
+- NEVER return free-form text. ALWAYS return valid JSON.
+- If confidence &lt; 0.6, set tool_name to &quot;none&quot; and ask for clarification.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>明确告诉 LLM &quot;你不负责回答问题&quot;，避免它自作主张直接回答</li>
+<li>提供确定性的路由规则（if-then），减少 LLM 的自由裁量空间</li>
+<li>要求输出 confidence 分数，让调用方可以做二次判断</li>
+<li>兜底规则：没有匹配的工具时，显式输出 &quot;none&quot;</li>
+</ul>
+<h3>3.2 Planner Prompt：任务规划</h3>
+<p>Planner 的职责是将一个复杂请求<strong>分解为可执行的子任务列表</strong>。它是 Agent 的&quot;项目经理&quot;。</p>
+<pre><code class="language-python">PLANNER_PROMPT = &quot;&quot;&quot;You are a task planner. Given a complex user request, decompose it
+into a sequence of concrete, executable sub-tasks.
+
+## Planning Principles
+1. Each sub-task must be independently executable by a single tool call.
+2. Sub-tasks should be ordered by dependency — a task can only depend on tasks before it.
+3. Minimize the number of steps. Do NOT over-decompose simple requests.
+4. If a request can be done in ONE tool call, return a plan with ONE step.
+
+## Available Tools
+{tool_descriptions}
+
+## Output Format (strict JSON)
+{{
+  &quot;analysis&quot;: &quot;&lt;brief analysis of the request&#39;s complexity and required resources&gt;&quot;,
+  &quot;plan&quot;: [
+    {{
+      &quot;step_id&quot;: 1,
+      &quot;description&quot;: &quot;&lt;what this step does&gt;&quot;,
+      &quot;tool_name&quot;: &quot;&lt;tool to use&gt;&quot;,
+      &quot;tool_input&quot;: {{&lt;parameters&gt;}},
+      &quot;depends_on&quot;: []
+    }},
+    {{
+      &quot;step_id&quot;: 2,
+      &quot;description&quot;: &quot;&lt;what this step does&gt;&quot;,
+      &quot;tool_name&quot;: &quot;&lt;tool to use&gt;&quot;,
+      &quot;tool_input&quot;: {{&lt;parameters, can reference $step_1_result&gt;}},
+      &quot;depends_on&quot;: [1]
+    }}
+  ],
+  &quot;estimated_steps&quot;: &lt;int&gt;,
+  &quot;can_parallelize&quot;: [&lt;list of step_id groups that can run concurrently&gt;]
+}}
+
+## Constraints
+- Maximum 8 steps. If the task seems to need more, simplify or ask the user to narrow scope.
+- NEVER include steps like &quot;verify result&quot; or &quot;report to user&quot; — those are handled by the system.
+- Use $step_N_result to reference the output of a previous step.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>&quot;最小化步骤数&quot;原则防止 LLM 过度分解（这是规划器最常见的问题）</li>
+<li><code>depends_on</code> 字段使得执行引擎可以识别并行机会</li>
+<li>明确设置步骤上限（8 步），避免 LLM 生成无休止的计划</li>
+<li>禁止 LLM 添加&quot;元步骤&quot;（验证、汇报），这些是系统层的职责</li>
+</ul>
+<h3>3.3 Executor Prompt：执行操作</h3>
+<p>Executor 的职责是<strong>执行单个具体操作</strong>，并以严格的格式返回结果。它是 Agent 的&quot;操作工&quot;。</p>
+<pre><code class="language-python">EXECUTOR_PROMPT = &quot;&quot;&quot;You are a task executor. You will receive a specific sub-task and
+must execute it using the provided tool.
+
+## Current Task
+{task_description}
+
+## Tool to Use
+Name: {tool_name}
+Schema: {tool_schema}
+
+## Context from Previous Steps
+{previous_results}
+
+## Execution Rules
+1. Call the tool EXACTLY ONCE with the correct parameters.
+2. Do NOT deviate from the task description.
+3. Do NOT call tools not specified for this task.
+4. If the tool call fails, report the error — do NOT retry or improvise.
+
+## Output Format (strict JSON)
+{{
+  &quot;tool_call&quot;: {{
+    &quot;name&quot;: &quot;{tool_name}&quot;,
+    &quot;arguments&quot;: {{&lt;filled parameters&gt;}}
+  }},
+  &quot;explanation&quot;: &quot;&lt;one sentence on why these parameters were chosen&gt;&quot;
+}}
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>Executor 的设计哲学是&quot;最小权限&quot;——只做被告知的事</li>
+<li>严禁 Executor 自主决策，发现错误只能上报，不能自行重试</li>
+<li>这种设计让 Executor 成为一个确定性单元，便于测试和审计</li>
+</ul>
+<h3>3.4 Reflector Prompt：结果反思</h3>
+<p>Reflector 的职责是<strong>评估执行结果</strong>，判断是否达成目标，如果未达成则提出修正方案。它是 Agent 的&quot;质量检查员&quot;。</p>
+<pre><code class="language-python">REFLECTOR_PROMPT = &quot;&quot;&quot;You are a result evaluator. Given the original user request and the
+execution result, determine whether the task has been completed successfully.
+
+## Original Request
+{user_request}
+
+## Execution Plan
+{plan}
+
+## Execution Results
+{results}
+
+## Evaluation Criteria
+1. Completeness: Does the result fully address the user&#39;s request?
+2. Correctness: Is the result factually and logically correct?
+3. Format: Is the result in the expected format?
+
+## Output Format (strict JSON)
+{{
+  &quot;evaluation&quot;: {{
+    &quot;completeness&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}},
+    &quot;correctness&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}},
+    &quot;format&quot;: {{&quot;score&quot;: &lt;1-5&gt;, &quot;reason&quot;: &quot;&lt;explanation&gt;&quot;}}
+  }},
+  &quot;overall_pass&quot;: &lt;true|false&gt;,
+  &quot;action&quot;: &quot;&lt;one of: &#39;accept&#39;, &#39;retry_step&#39;, &#39;replan&#39;, &#39;escalate&#39;&gt;&quot;,
+  &quot;retry_details&quot;: {{
+    &quot;step_id&quot;: &lt;which step to retry, if applicable&gt;,
+    &quot;modification&quot;: &quot;&lt;what to change in the retry&gt;&quot;
+  }}
+}}
+
+## Decision Rules
+- If all scores &gt;= 4: action = &quot;accept&quot;
+- If any score &lt;= 2 and retry_count &lt; 3: action = &quot;retry_step&quot; or &quot;replan&quot;
+- If retry_count &gt;= 3: action = &quot;escalate&quot; (ask user for help)
+- NEVER accept a result with correctness score &lt;= 2.
+&quot;&quot;&quot;
+</code></pre>
+<p><strong>设计要点：</strong></p>
+<ul>
+<li>多维度评估（完整性、正确性、格式）而非简单的 pass/fail</li>
+<li>明确的决策规则，减少 LLM 判断的主观性</li>
+<li>retry_count 上限防止无限重试循环</li>
+<li>&quot;escalate&quot; 作为最终兜底——承认失败比无限循环好得多</li>
+</ul>
+<h3>3.5 四种模式的协作</h3>
+<pre><code>User Request
+     │
+     ▼
+ ┌────────┐     tool_name + input     ┌──────────┐
+ │ Router │ ──── (简单请求直接执行) ───→│ Executor │──→ Result
+ └────┬───┘                           └──────────┘
+      │ (复杂请求)                          ▲
+      ▼                                    │
+ ┌─────────┐    plan[step_1..N]     ┌──────┴───┐
+ │ Planner │ ─────────────────────→│ Executor  │
+ └─────────┘                       │ (per step)│
+                                   └──────┬───┘
+                                          │ results
+                                          ▼
+                                   ┌───────────┐
+                                   │ Reflector  │
+                                   └─────┬─────┘
+                                         │
+                              ┌──────────┼──────────┐
+                              │          │          │
+                           accept    retry_step   replan
+                              │          │          │
+                              ▼          ▼          ▼
+                           Return    Executor    Planner
+                           to User  (重试该步)   (重新规划)
+</code></pre>
+<hr>
+<h2>4. Chain-of-Thought 在 Agent 中的应用</h2>
+<h3>4.1 标准 CoT vs Agent CoT</h3>
+<p>标准的 Chain-of-Thought（CoT）是一种推理增强技术——&quot;Let&#39;s think step by step&quot;。但在 Agent 中，CoT 的用途和形式有本质不同：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>标准 CoT</th>
+<th>Agent CoT</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>目的</td>
+<td>提高推理准确性</td>
+<td>让中间推理过程可审计、可路由</td>
+</tr>
+<tr>
+<td>消费者</td>
+<td>最终输出的一部分</td>
+<td>Agent Runtime 的中间状态</td>
+</tr>
+<tr>
+<td>格式</td>
+<td>自然语言</td>
+<td>结构化（通常嵌入 JSON 的某个字段）</td>
+</tr>
+<tr>
+<td>是否返回用户</td>
+<td>通常是</td>
+<td>通常不是（内部消费）</td>
+</tr>
+</tbody></table>
+<p>Agent 的 CoT 更像是一个<strong>内部日志</strong>，而非用户可见的推理过程。它的首要目标是让系统（而非人类）能够理解和利用中间推理。</p>
+<h3>4.2 Scratchpad 模式</h3>
+<p>Scratchpad 模式是 Agent CoT 的典型实现——在 Prompt 中显式开辟一个&quot;草稿区&quot;，让 LLM 在其中进行中间推理，然后输出最终决策。</p>
+<pre><code class="language-python">SCRATCHPAD_PROMPT = &quot;&quot;&quot;Analyze the user&#39;s request and decide on an action.
+
+## User Request
+{user_request}
+
+## Available Tools
+{tools}
+
+## Instructions
+Use the &lt;scratchpad&gt; section to think through your decision. This section will NOT be
+shown to the user. Then provide your final action in the &lt;action&gt; section.
+
+&lt;scratchpad&gt;
+Think through:
+1. What is the user actually asking for?
+2. Which tools could help? What are the pros/cons of each?
+3. What information am I missing?
+4. What&#39;s the simplest approach that works?
+&lt;/scratchpad&gt;
+
+&lt;action&gt;
+Return strict JSON here:
+{{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}, &quot;reasoning_summary&quot;: &quot;...&quot;}}
+&lt;/action&gt;
+&quot;&quot;&quot;
+</code></pre>
+<p>Runtime 解析时，只提取 <code>&lt;action&gt;</code> 标签中的内容作为执行指令，<code>&lt;scratchpad&gt;</code> 的内容记录到日志中用于调试和审计。</p>
+<h3>4.3 显式推理 vs 隐式推理的 Trade-off</h3>
+<p><strong>显式推理（Explicit Reasoning）：</strong> 在 Prompt 中要求 LLM 输出推理过程。</p>
+<p>优势：</p>
+<ul>
+<li>可审计，出了问题能追溯&quot;为什么做了这个决策&quot;</li>
+<li>推理质量通常更高（CoT 效应）</li>
+<li>便于调试</li>
+</ul>
+<p>劣势：</p>
+<ul>
+<li>消耗更多 Token（推理内容可能占输出的 50%+）</li>
+<li>增加延迟</li>
+<li>推理内容可能包含敏感的内部逻辑</li>
+</ul>
+<p><strong>隐式推理（Implicit Reasoning）：</strong> 直接要求 LLM 输出最终决策，不要求中间过程。</p>
+<p>优势：</p>
+<ul>
+<li>Token 用量更低，延迟更短</li>
+<li>输出更简洁，解析更简单</li>
+</ul>
+<p>劣势：</p>
+<ul>
+<li>黑盒，无法理解决策过程</li>
+<li>在复杂场景下准确率下降明显</li>
+</ul>
+<p><strong>工程决策建议：</strong></p>
+<ul>
+<li>Router 和 Executor（简单、确定性高）：倾向隐式推理，追求速度</li>
+<li>Planner 和 Reflector（复杂、需要判断）：必须显式推理，追求准确性和可审计性</li>
+<li>在系统稳定后，可以通过 A/B 测试逐步将显式推理切换为隐式推理以降低成本</li>
+</ul>
+<hr>
+<h2>5. Few-shot vs Zero-shot 在 Agent 场景的选择</h2>
+<p>这是 Agent Prompt 设计中一个重要但常被忽视的决策点。</p>
+<h3>5.1 决策矩阵</h3>
+<pre><code>                    输出结构化程度
+                 低 ◄──────────► 高
+                 │                │
+  任务复杂度  高  │  Few-shot      │  Zero-shot + Schema
+                 │  (复杂规划)     │  (结构化反思)
+                 │                │
+              低  │  Zero-shot     │  Zero-shot + Schema
+                 │  (简单对话)     │  (工具调用)
+                 │                │
+</code></pre>
+<h3>5.2 工具调用：Zero-shot 优先</h3>
+<p>工具调用场景天然适合 Zero-shot。原因是 <strong>JSON Schema 本身就是最好的&quot;示例&quot;</strong>——它精确定义了每个参数的名称、类型、描述和约束，比任何 Few-shot 示例都更完整。</p>
+<pre><code class="language-python"># 工具调用不需要 few-shot，Schema 就是最好的约束
+tool_schema = {
+    &quot;name&quot;: &quot;search_database&quot;,
+    &quot;description&quot;: &quot;Search the product database with filters&quot;,
+    &quot;parameters&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+            &quot;query&quot;: {&quot;type&quot;: &quot;string&quot;, &quot;description&quot;: &quot;Search keywords&quot;},
+            &quot;category&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [&quot;electronics&quot;, &quot;clothing&quot;, &quot;books&quot;],
+                &quot;description&quot;: &quot;Product category filter&quot;
+            },
+            &quot;max_results&quot;: {
+                &quot;type&quot;: &quot;integer&quot;,
+                &quot;default&quot;: 10,
+                &quot;minimum&quot;: 1,
+                &quot;maximum&quot;: 100
+            }
+        },
+        &quot;required&quot;: [&quot;query&quot;]
     }
 }
 </code></pre>
-<p>但是默认情况下，该注册中心也会把自己当做客户端，那就变成自己注册自己了，这个是可以剔除的，我们看一下它的YAML中的详细配置，注释比较清楚：</p>
-<pre><code class="language-yaml">  server:
-    port: 1000
-  spring:
-    application:
-      name: eureka-server
-  eureka:
-    instance:
-      hostname: localhost
-    client:
-    register-with-eureka: false  # 不作为客户端进行注册
-    fetch-registry: false  # 不获取注册列表
-    service-url:  # 注册地址，客户端需要注册到该地址中
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+<p>加 Few-shot 反而可能引入问题：LLM 可能过度拟合示例中的具体值，而不是理解 Schema 的通用约束。</p>
+<h3>5.3 复杂规划：Few-shot 有价值</h3>
+<p>规划场景是 Few-shot 真正发挥价值的地方。因为&quot;好的计划&quot;是一个模糊的概念——仅凭输出格式定义不足以引导 LLM 产出高质量的计划。</p>
+<pre><code class="language-python">PLANNER_WITH_EXAMPLES = &quot;&quot;&quot;You are a task planner.
+
+## Example 1: Multi-step data analysis
+User: &quot;Compare last month&#39;s sales with the same period last year and visualize the trend&quot;
+Plan:
+[
+  {{&quot;step_id&quot;: 1, &quot;tool&quot;: &quot;data_query&quot;, &quot;input&quot;: &quot;sales data for 2025-07&quot;, &quot;depends_on&quot;: []}},
+  {{&quot;step_id&quot;: 2, &quot;tool&quot;: &quot;data_query&quot;, &quot;input&quot;: &quot;sales data for 2024-07&quot;, &quot;depends_on&quot;: []}},
+  {{&quot;step_id&quot;: 3, &quot;tool&quot;: &quot;data_compare&quot;, &quot;input&quot;: &quot;$step_1_result, $step_2_result&quot;, &quot;depends_on&quot;: [1, 2]}},
+  {{&quot;step_id&quot;: 4, &quot;tool&quot;: &quot;chart_gen&quot;, &quot;input&quot;: &quot;$step_3_result, type=line&quot;, &quot;depends_on&quot;: [3]}}
+]
+Note: Steps 1 and 2 can run in parallel since they have no dependencies.
+
+## Example 2: Simple single-step task
+User: &quot;What&#39;s the weather in Tokyo?&quot;
+Plan:
+[
+  {{&quot;step_id&quot;: 1, &quot;tool&quot;: &quot;weather_api&quot;, &quot;input&quot;: &quot;Tokyo&quot;, &quot;depends_on&quot;: []}}
+]
+Note: Simple requests should NOT be over-decomposed.
+
+## Now plan for:
+User: &quot;{user_request}&quot;
+&quot;&quot;&quot;
 </code></pre>
-<p>文中的注释还是比较清楚的。 这边可以看到，端口号是1000，所以当工程启动之后，访问 <a href="http://localhost:1000/">http://localhost:1000/</a> 是可以看到Eureka注册中心页面的。其中还没有发现任何服务。</p>
-<p><img src="/images/blog/engineering/microservice-image_7_1.png" alt="image_7_1.png"></p>
-<h4>2.1.创建客户端 <a href="#scroller-5" id="scroller-5"></a></h4>
-<p>目前服务中心还是空的，所以我们创建一个能够提供服务的客户端，并将其注册到注册中心去。</p>
-<p>同样的，我们创建一个Spring Cloud的子项目，命名为<code>eureka-client</code>，<code>pom.xml</code>中的配置如下：</p>
-<pre><code class="language-xml">  
-&lt;xml&gt;
-    &lt;!--在子工程中添加父工程名称--&gt;
-    &lt;parent&gt;
-        &lt;groupId&gt;com.microservice&lt;/groupId&gt;
-        &lt;artifactId&gt;center&lt;/artifactId&gt;
-        &lt;version&gt;1.0.0&lt;/version&gt;
-    &lt;/parent&gt;
-    &lt;dependencies&gt;
-        &lt;!--加入 eureka 服务 --&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-cloud-netflix-eureka-server&lt;/artifactId&gt;
-        &lt;/dependency&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
-            &lt;artifactId&gt;lombok&lt;/artifactId&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
-&lt;/xml&gt;
+<p>Few-shot 示例在这里传递了两个关键信息：</p>
+<ol>
+<li><strong>粒度标准</strong>——什么程度的分解是合适的</li>
+<li><strong>并行意识</strong>——独立步骤应该标记为可并行</li>
+</ol>
+<h3>5.4 反思评估：Zero-shot + 结构化输出</h3>
+<p>反思（Reflection）场景适合 Zero-shot + 结构化输出。原因是反思本质上是&quot;评判&quot;，而评判标准已经通过评估维度（completeness / correctness / format）和评分规则完整定义了。给出 Few-shot 示例反而可能让 LLM 锚定在示例的评分上，而不是独立评估当前结果。</p>
+<p><strong>总结决策原则：</strong></p>
+<ul>
+<li>格式约束充分（JSON Schema / 评分规则）→ Zero-shot</li>
+<li>需要传递&quot;风格&quot;或&quot;粒度标准&quot; → Few-shot</li>
+<li>两者都可以时 → 优先 Zero-shot（更省 Token，更不容易过拟合）</li>
+</ul>
+<hr>
+<h2>6. Prompt 工程化实践</h2>
+<p>当 Agent 系统超过原型阶段，Prompt 管理就变成了一个严肃的工程问题。</p>
+<h3>6.1 Prompt 模板化</h3>
+<p>核心思想：<strong>分离静态结构和动态内容</strong>。静态部分（身份定义、行为规则、输出格式）是模板，动态部分（工具列表、历史消息、当前状态）通过变量注入。</p>
+<pre><code class="language-python">from typing import Any
+from string import Template
+import hashlib
+import json
+from datetime import datetime
+
+
+class PromptTemplate:
+    &quot;&quot;&quot;可管理、可版本化、可测试的 Prompt 模板&quot;&quot;&quot;
+
+    def __init__(self, name: str, template: str, version: str,
+                 required_vars: list[str], metadata: dict | None = None):
+        self.name = name
+        self.template = template
+        self.version = version
+        self.required_vars = required_vars
+        self.metadata = metadata or {}
+        self._hash = hashlib.sha256(template.encode()).hexdigest()[:12]
+
+    def render(self, **kwargs) -&gt; str:
+        # 校验所有必需变量都已提供
+        missing = set(self.required_vars) - set(kwargs.keys())
+        if missing:
+            raise ValueError(f&quot;Missing required variables: {missing}&quot;)
+
+        # 渲染模板
+        rendered = self.template
+        for key, value in kwargs.items():
+            placeholder = &quot;{&quot; + key + &quot;}&quot;
+            if isinstance(value, (dict, list)):
+                value = json.dumps(value, indent=2, ensure_ascii=False)
+            rendered = rendered.replace(placeholder, str(value))
+
+        return rendered
+
+    def fingerprint(self) -&gt; str:
+        &quot;&quot;&quot;返回模板内容的哈希指纹，用于版本追踪&quot;&quot;&quot;
+        return f&quot;{self.name}@{self.version}#{self._hash}&quot;
+
+
+class PromptRegistry:
+    &quot;&quot;&quot;Prompt 模板注册中心：集中管理所有 Agent 使用的 Prompt&quot;&quot;&quot;
+
+    def __init__(self):
+        self._templates: dict[str, dict[str, PromptTemplate]] = {}  # name -&gt; {version -&gt; template}
+
+    def register(self, template: PromptTemplate):
+        if template.name not in self._templates:
+            self._templates[template.name] = {}
+        self._templates[template.name][template.version] = template
+
+    def get(self, name: str, version: str = &quot;latest&quot;) -&gt; PromptTemplate:
+        if name not in self._templates:
+            raise KeyError(f&quot;Template &#39;{name}&#39; not found&quot;)
+
+        versions = self._templates[name]
+        if version == &quot;latest&quot;:
+            latest_version = sorted(versions.keys())[-1]
+            return versions[latest_version]
+
+        if version not in versions:
+            raise KeyError(f&quot;Version &#39;{version}&#39; not found for template &#39;{name}&#39;&quot;)
+        return versions[version]
+
+    def list_all(self) -&gt; dict[str, list[str]]:
+        return {name: sorted(vers.keys()) for name, vers in self._templates.items()}
+
+
+# ── 使用示例 ──
+
+registry = PromptRegistry()
+
+# 注册 Router Prompt v1
+registry.register(PromptTemplate(
+    name=&quot;router&quot;,
+    version=&quot;1.0&quot;,
+    template=&quot;&quot;&quot;You are a request router.
+Available tools: {tool_descriptions}
+Route the following request: {user_input}
+Output JSON: {{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}}}&quot;&quot;&quot;,
+    required_vars=[&quot;tool_descriptions&quot;, &quot;user_input&quot;],
+    metadata={&quot;author&quot;: &quot;agent-team&quot;, &quot;last_tested&quot;: &quot;2025-08-10&quot;}
+))
+
+# 注册 Router Prompt v2（增加了 confidence 字段）
+registry.register(PromptTemplate(
+    name=&quot;router&quot;,
+    version=&quot;2.0&quot;,
+    template=&quot;&quot;&quot;You are a request router. Your ONLY job is to route, not to answer.
+Available tools: {tool_descriptions}
+Route the following request: {user_input}
+Output JSON: {{&quot;tool_name&quot;: &quot;...&quot;, &quot;tool_input&quot;: {{...}}, &quot;confidence&quot;: &lt;0.0-1.0&gt;}}&quot;&quot;&quot;,
+    required_vars=[&quot;tool_descriptions&quot;, &quot;user_input&quot;],
+    metadata={&quot;author&quot;: &quot;agent-team&quot;, &quot;last_tested&quot;: &quot;2025-08-13&quot;}
+))
+
+# 获取并渲染
+router_prompt = registry.get(&quot;router&quot;, version=&quot;2.0&quot;)
+final_prompt = router_prompt.render(
+    tool_descriptions=&quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+    user_input=&quot;What is 42 * 17?&quot;
+)
 </code></pre>
-<p>在应用主类Application文件中通过加上<code>@EnableDiscoveryClient</code>注解，该注解保证当前服务被Eureka当成provider发现。</p>
-<pre><code class="language-java">@SpringBootApplication
-@EnableDiscoveryClient
-public class ClientApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class, args);
-        System.out.println(&quot;start client!&quot;);
+<h3>6.2 Prompt 版本控制</h3>
+<p>为什么 Prompt 需要版本控制？因为 <strong>Prompt 是 Agent 行为的源代码</strong>。改一个词可能导致 Agent 行为的巨大变化——从正确路由变成错误路由，从结构化输出变成自由文本。</p>
+<p>版本控制策略：</p>
+<pre><code>prompts/
+├── router/
+│   ├── v1.0.txt          # 初始版本
+│   ├── v1.1.txt          # 修复：低 confidence 时的行为
+│   ├── v2.0.txt          # 重大变更：新增 confidence 字段
+│   └── changelog.md      # 变更记录
+├── planner/
+│   ├── v1.0.txt
+│   └── v1.1.txt
+├── executor/
+│   └── v1.0.txt
+└── reflector/
+    └── v1.0.txt
+</code></pre>
+<p>关键实践：</p>
+<ul>
+<li><strong>每次 Prompt 变更都有对应的测试结果</strong>（下面会详述）</li>
+<li><strong>生产环境使用固定版本号</strong>，而非 &quot;latest&quot;</li>
+<li><strong>支持灰度发布</strong>：新版 Prompt 可以先对 10% 的流量生效</li>
+<li><strong>保留回滚能力</strong>：发现新版 Prompt 导致问题时，立即切回旧版</li>
+</ul>
+<h3>6.3 Prompt 测试</h3>
+<p>Prompt 测试的核心挑战是 LLM 输出的非确定性。我们不能像测试普通函数那样做精确断言，但可以做<strong>结构化断言</strong>和<strong>统计性断言</strong>。</p>
+<pre><code class="language-python">from dataclasses import dataclass
+
+@dataclass
+class PromptTestCase:
+    name: str
+    input_vars: dict[str, Any]       # 模板变量
+    assertions: list[dict]            # 断言列表
+
+    # 断言类型：
+    # {&quot;type&quot;: &quot;json_valid&quot;}                           → 输出是合法 JSON
+    # {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;}      → JSON 中包含指定字段
+    # {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;a&quot;, &quot;b&quot;]} → 字段值在范围内
+    # {&quot;type&quot;: &quot;no_field&quot;, &quot;field&quot;: &quot;apology&quot;}         → 不包含某字段（防止 LLM 废话）
+    # {&quot;type&quot;: &quot;max_tokens&quot;, &quot;limit&quot;: 200}             → 输出长度不超过限制
+
+
+class PromptTestRunner:
+    def __init__(self, llm_client, template: PromptTemplate):
+        self.llm = llm_client
+        self.template = template
+
+    def run_test(self, test_case: PromptTestCase, n_runs: int = 5) -&gt; dict:
+        &quot;&quot;&quot;对同一个测试用例运行 N 次，统计通过率&quot;&quot;&quot;
+        prompt = self.template.render(**test_case.input_vars)
+        results = []
+
+        for _ in range(n_runs):
+            output = self.llm.generate(prompt)
+            pass_all = True
+            details = []
+
+            for assertion in test_case.assertions:
+                passed = self._check_assertion(output, assertion)
+                details.append({&quot;assertion&quot;: assertion, &quot;passed&quot;: passed})
+                if not passed:
+                    pass_all = False
+
+            results.append({&quot;output&quot;: output, &quot;passed&quot;: pass_all, &quot;details&quot;: details})
+
+        pass_rate = sum(1 for r in results if r[&quot;passed&quot;]) / n_runs
+        return {
+            &quot;test_case&quot;: test_case.name,
+            &quot;template&quot;: self.template.fingerprint(),
+            &quot;n_runs&quot;: n_runs,
+            &quot;pass_rate&quot;: pass_rate,
+            &quot;results&quot;: results
+        }
+
+    def _check_assertion(self, output: str, assertion: dict) -&gt; bool:
+        if assertion[&quot;type&quot;] == &quot;json_valid&quot;:
+            try:
+                json.loads(output)
+                return True
+            except json.JSONDecodeError:
+                return False
+
+        if assertion[&quot;type&quot;] == &quot;has_field&quot;:
+            try:
+                data = json.loads(output)
+                return assertion[&quot;field&quot;] in data
+            except (json.JSONDecodeError, TypeError):
+                return False
+
+        if assertion[&quot;type&quot;] == &quot;field_in&quot;:
+            try:
+                data = json.loads(output)
+                return data.get(assertion[&quot;field&quot;]) in assertion[&quot;values&quot;]
+            except (json.JSONDecodeError, TypeError):
+                return False
+
+        return False  # 未知断言类型
+
+
+# ── 测试用例示例 ──
+
+test_cases = [
+    PromptTestCase(
+        name=&quot;math_request_should_route_to_calculator&quot;,
+        input_vars={
+            &quot;tool_descriptions&quot;: &quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+            &quot;user_input&quot;: &quot;What is 1024 * 768?&quot;
+        },
+        assertions=[
+            {&quot;type&quot;: &quot;json_valid&quot;},
+            {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;},
+            {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;calculator&quot;]},
+        ]
+    ),
+    PromptTestCase(
+        name=&quot;ambiguous_request_should_not_guess&quot;,
+        input_vars={
+            &quot;tool_descriptions&quot;: &quot;1. web_search: Search the web\n2. calculator: Do math&quot;,
+            &quot;user_input&quot;: &quot;Help me with my project&quot;
+        },
+        assertions=[
+            {&quot;type&quot;: &quot;json_valid&quot;},
+            {&quot;type&quot;: &quot;has_field&quot;, &quot;field&quot;: &quot;tool_name&quot;},
+            {&quot;type&quot;: &quot;field_in&quot;, &quot;field&quot;: &quot;tool_name&quot;, &quot;values&quot;: [&quot;none&quot;]},
+        ]
+    ),
+]
+</code></pre>
+<p><strong>测试策略建议：</strong></p>
+<ul>
+<li>每个 Prompt 版本至少 10 个测试用例，覆盖正常路径、边界情况和对抗输入</li>
+<li>每个测试用例运行 5-10 次，要求通过率 &gt;= 90%（而非 100%，因为 LLM 输出非确定性）</li>
+<li>将测试集纳入 CI，每次 Prompt 变更触发回归测试</li>
+</ul>
+<h3>6.4 Prompt 组合：模块化拼装</h3>
+<p>复杂 Agent 的 Prompt 往往由多个模块组合而成。与其维护一个巨大的单体 Prompt，不如将其拆分为可复用的模块：</p>
+<pre><code class="language-python">class PromptComposer:
+    &quot;&quot;&quot;将多个 Prompt 模块按顺序组合&quot;&quot;&quot;
+
+    def __init__(self):
+        self._modules: list[tuple[str, PromptTemplate]] = []
+
+    def add(self, section_name: str, template: PromptTemplate):
+        self._modules.append((section_name, template))
+        return self  # 支持链式调用
+
+    def compose(self, **all_vars) -&gt; str:
+        sections = []
+        for section_name, template in self._modules:
+            # 每个模块只取自己需要的变量
+            relevant_vars = {k: v for k, v in all_vars.items()
+                           if k in template.required_vars}
+            rendered = template.render(**relevant_vars)
+            sections.append(f&quot;## {section_name}\n{rendered}&quot;)
+        return &quot;\n\n&quot;.join(sections)
+
+
+# 使用方式
+identity_module = PromptTemplate(
+    name=&quot;identity&quot;, version=&quot;1.0&quot;,
+    template=&quot;You are {agent_role}. {agent_description}&quot;,
+    required_vars=[&quot;agent_role&quot;, &quot;agent_description&quot;]
+)
+
+tools_module = PromptTemplate(
+    name=&quot;tools&quot;, version=&quot;1.0&quot;,
+    template=&quot;Available tools:\n{tool_descriptions}&quot;,
+    required_vars=[&quot;tool_descriptions&quot;]
+)
+
+output_format_module = PromptTemplate(
+    name=&quot;output_format&quot;, version=&quot;1.0&quot;,
+    template=&quot;You MUST respond in the following JSON format:\n{json_schema}&quot;,
+    required_vars=[&quot;json_schema&quot;]
+)
+
+constraints_module = PromptTemplate(
+    name=&quot;constraints&quot;, version=&quot;1.0&quot;,
+    template=&quot;Constraints:\n{constraint_list}&quot;,
+    required_vars=[&quot;constraint_list&quot;]
+)
+
+# 组合
+composer = PromptComposer()
+composer.add(&quot;Identity&quot;, identity_module) \
+        .add(&quot;Tools&quot;, tools_module) \
+        .add(&quot;Output Format&quot;, output_format_module) \
+        .add(&quot;Constraints&quot;, constraints_module)
+
+final_prompt = composer.compose(
+    agent_role=&quot;a task router&quot;,
+    agent_description=&quot;You route user requests to the appropriate tool.&quot;,
+    tool_descriptions=&quot;1. search: web search\n2. calc: calculator&quot;,
+    json_schema=&#39;{&quot;tool_name&quot;: &quot;string&quot;, &quot;tool_input&quot;: &quot;object&quot;}&#39;,
+    constraint_list=&quot;- Never fabricate tool names\n- Always return valid JSON&quot;
+)
+</code></pre>
+<p>模块化的好处：</p>
+<ul>
+<li>同一个 <code>output_format_module</code> 可以被 Router、Planner、Executor 共享</li>
+<li>修改 constraints 不需要触碰 identity 和 tools 部分</li>
+<li>每个模块可以独立测试和版本控制</li>
+</ul>
+<hr>
+<h2>7. Context Window 管理</h2>
+<p>Agent 的 Context Window 管理是一个独特且关键的工程挑战。与 Chatbot 的&quot;对话越长体验越差&quot;不同，Agent 的 context 膨胀会直接导致<strong>系统性故障</strong>。</p>
+<h3>7.1 Agent 的 Context 膨胀问题</h3>
+<p>Agent 的 context 会从三个维度快速膨胀：</p>
+<pre><code>Turn 1:  System(2000) + User(200) + Response(500)              = 2,700 tokens
+Turn 2:  + Tool_Result(3000) + Response(800)                   = 6,500 tokens
+Turn 3:  + Tool_Result(5000) + Error_Msg(1000) + Response(600) = 13,100 tokens
+Turn 4:  + Tool_Result(2000) + Response(400)                   = 15,500 tokens
+Turn 5:  + RAG_Context(4000) + Response(1000)                  = 20,500 tokens
+  ...
+Turn 10: 很容易突破 50,000 tokens
+</code></pre>
+<p>三大膨胀源：</p>
+<ol>
+<li><strong>工具返回值</strong>：一次数据库查询可能返回几千 token 的 JSON，一次网页抓取可能返回上万 token</li>
+<li><strong>历史消息积累</strong>：每一轮的 user message + assistant response + tool calls 都在累积</li>
+<li><strong>错误信息</strong>：工具调用失败的 traceback、重试过程中的冗余信息</li>
+</ol>
+<h3>7.2 消息压缩策略</h3>
+<p><strong>策略 1：摘要压缩（Summarization）</strong></p>
+<p>将早期的对话历史压缩为摘要，只保留关键事实和决策结果。</p>
+<pre><code class="language-python">def compress_history(messages: list[dict], llm_client,
+                     keep_recent: int = 4) -&gt; list[dict]:
+    &quot;&quot;&quot;将早期历史压缩为摘要，保留最近 N 轮完整消息&quot;&quot;&quot;
+    if len(messages) &lt;= keep_recent:
+        return messages
+
+    old_messages = messages[:-keep_recent]
+    recent_messages = messages[-keep_recent:]
+
+    # 用 LLM 生成摘要
+    summary_prompt = f&quot;&quot;&quot;Summarize the following conversation history into key facts
+and decisions. Keep only information that might be needed for future steps.
+Be concise — maximum 200 words.
+
+{format_messages(old_messages)}&quot;&quot;&quot;
+
+    summary = llm_client.generate(summary_prompt)
+
+    # 将摘要作为一条 system message 注入
+    summary_message = {
+        &quot;role&quot;: &quot;system&quot;,
+        &quot;content&quot;: f&quot;[Conversation Summary]\n{summary}&quot;
     }
-}jC
+
+    return [summary_message] + recent_messages
 </code></pre>
-<p>在YAML文件上加上如下配置：</p>
-<pre><code class="language-yaml">server:
-  port: 1001
-spring:
-  application:
-    name: eureka-client
-eureka:
-  client:
-    service-url:  # 这边就保证了注册到 eureka-service 这个注册中心去
-      defaultZone: http://localhost:1000/eureka/
+<p><strong>策略 2：滑动窗口（Sliding Window）</strong></p>
+<p>更简单粗暴——只保留最近 N 条消息，丢弃更早的消息。</p>
+<pre><code class="language-python">def sliding_window(messages: list[dict], max_messages: int = 10) -&gt; list[dict]:
+    &quot;&quot;&quot;保留 system message + 最近 N 条消息&quot;&quot;&quot;
+    system_msgs = [m for m in messages if m[&quot;role&quot;] == &quot;system&quot;]
+    non_system = [m for m in messages if m[&quot;role&quot;] != &quot;system&quot;]
+    return system_msgs + non_system[-max_messages:]
 </code></pre>
-<p><code>spring.application.name</code>属性，指定了微服务的名称，在调用的时候可以通过该名称进行服务访问。<code>eureka.client.serviceUrl.defaultZone</code>属性对应服务注册中心的配置内容，指定服务注册中心的位置。</p>
-<p>大家看到，这边端口设置为1001，那是因为要在本机上测试 服务提供方 和 服务注册中心，所以<code>server的port</code>属性需设置不同的端口。</p>
-<p>最后，我们再写一个接口，通过DiscoveryClient对象，在客户端中获取注册中心的所有服务信息。</p>
-<pre><code class="language-java">  @Controller
-  @RequestMapping(&quot;/eurekacenter&quot;)
-  public class EuServiceController {
+<p><strong>策略 3：选择性保留（Selective Retention）</strong></p>
+<p>根据消息的&quot;重要性&quot;决定保留还是丢弃。</p>
+<pre><code class="language-python">def selective_retain(messages: list[dict], token_budget: int) -&gt; list[dict]:
+    &quot;&quot;&quot;按重要性保留消息，直到填满 token 预算&quot;&quot;&quot;
+
+    def importance_score(msg: dict) -&gt; int:
+        if msg[&quot;role&quot;] == &quot;system&quot;:
+            return 100  # 永远保留
+        if msg.get(&quot;is_final_result&quot;):
+            return 90   # 最终结果必须保留
+        if msg[&quot;role&quot;] == &quot;user&quot;:
+            return 80   # 用户输入高优先
+        if msg.get(&quot;tool_error&quot;):
+            return 20   # 错误信息低优先（已经被处理过了）
+        if msg.get(&quot;tool_result&quot;):
+            return 40   # 工具结果中等优先
+        return 50
+
+    scored = [(importance_score(m), i, m) for i, m in enumerate(messages)]
+    scored.sort(key=lambda x: (-x[0], x[1]))  # 按重要性降序，原始顺序升序
+
+    retained = []
+    used_tokens = 0
+    for score, idx, msg in scored:
+        msg_tokens = estimate_tokens(msg[&quot;content&quot;])
+        if used_tokens + msg_tokens &lt;= token_budget:
+            retained.append((idx, msg))
+            used_tokens += msg_tokens
+
+    # 恢复原始顺序
+    retained.sort(key=lambda x: x[0])
+    return [msg for _, msg in retained]
+</code></pre>
+<h3>7.3 Token 预算分配</h3>
+<p>一个经验性的 Token 预算分配方案（以 8K context window 为例）：</p>
+<pre><code>Total Context Window: 8,192 tokens
+                    │
+    ┌───────────────┼───────────────┐
+    │               │               │
+System Prompt    Working Area     Reserved for
+  ~25%            ~60%            Output ~15%
+ (2,048)         (4,915)          (1,229)
+    │               │
+    │         ┌─────┴──────┐
+    │         │            │
+    │    Tool Descs    History + State
+    │     ~15%          ~45%
+    │    (1,229)       (3,686)
+    │
+    ├── Identity &amp; Role: 500
+    ├── Behavior Rules: 800
+    ├── Output Format: 500
+    └── Constraints: 248
+</code></pre>
+<p>关键原则：</p>
+<ul>
+<li><strong>Output Reserved 不能省</strong>：如果留给输出的空间不足，LLM 会输出截断的 JSON，导致解析失败</li>
+<li><strong>System Prompt 预算固定</strong>：行为约束不能因为 context 紧张而被裁剪</li>
+<li><strong>History 是最大的压缩空间</strong>：优先在这里节省 Token</li>
+<li><strong>工具描述可以按需加载</strong>：如果 Router 已经选定了工具，后续 Executor 只需要注入被选中工具的描述，而非全部工具</li>
+</ul>
+<h3>7.4 工具返回值的处理</h3>
+<p>工具返回值是 context 膨胀的最大单点源头。以下是几种处理策略：</p>
+<pre><code class="language-python">def process_tool_result(result: str, max_tokens: int = 1500) -&gt; str:
+    &quot;&quot;&quot;处理工具返回值，防止 context 爆炸&quot;&quot;&quot;
+
+    result_tokens = estimate_tokens(result)
+
+    if result_tokens &lt;= max_tokens:
+        return result
+
+    # 策略 1：截断（适用于文本类结果）
+    if is_text(result):
+        return truncate_to_tokens(result, max_tokens) + &quot;\n[... truncated]&quot;
+
+    # 策略 2：提取摘要（适用于 JSON 类结果）
+    if is_json(result):
+        data = json.loads(result)
+        if isinstance(data, list):
+            # 只保留前 N 条记录 + 总数信息
+            summary = {
+                &quot;total_count&quot;: len(data),
+                &quot;showing_first&quot;: 5,
+                &quot;records&quot;: data[:5],
+                &quot;note&quot;: f&quot;Truncated from {len(data)} records. Request specific filters for more.&quot;
+            }
+            return json.dumps(summary, ensure_ascii=False, indent=2)
+
+    # 策略 3：兜底截断
+    return truncate_to_tokens(result, max_tokens) + &quot;\n[... truncated]&quot;
+</code></pre>
+<hr>
+<h2>8. 常见陷阱</h2>
+<h3>8.1 Prompt 太长导致 LLM &quot;忘记&quot;关键指令</h3>
+<p><strong>现象：</strong> System Prompt 有 3000 token，其中包含 20 条行为规则。LLM 在前几轮严格遵守，但随着 context 变长，开始&quot;遗忘&quot;中间的规则——尤其是第 8-15 条。</p>
+<p><strong>原因：</strong> LLM 对 prompt 中不同位置内容的&quot;注意力&quot;不均匀。开头和结尾的内容通常被更好地遵循（primacy effect 和 recency effect），中间的内容最容易被忽略。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>将最关键的规则放在 System Prompt 的开头和结尾</li>
+<li>将规则数量控制在 7 条以内（与人类工作记忆容量一致，也利于 LLM）</li>
+<li>在消息末尾添加 reminder：&quot;Remember: always output valid JSON. Never fabricate tool names.&quot;</li>
+<li>按当前 Turn 的需要动态注入最相关的规则子集，而非每次都注入全部规则</li>
+</ul>
+<h3>8.2 工具描述和 System Prompt 冲突</h3>
+<p><strong>现象：</strong> System Prompt 说&quot;不要执行任何数据删除操作&quot;，但某个工具的 description 中包含&quot;Deletes records matching the query&quot;。LLM 收到删除请求时，行为不确定——有时遵循 System Prompt 的禁令，有时遵循工具描述的能力。</p>
+<p><strong>原因：</strong> LLM 看到的是拼装后的完整 prompt，它不理解&quot;System Prompt 优先级高于工具描述&quot;这个层级关系。两段相互矛盾的文本让 LLM 陷入冲突。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>在 Prompt 组装阶段做<strong>一致性检查</strong>：扫描工具描述中的关键词，与 System Prompt 的禁止列表做匹配</li>
+<li>如果某个工具被禁用，<strong>直接不注入它的描述</strong>，而不是注入描述然后在 System Prompt 中禁止</li>
+<li>在 System Prompt 中明确声明优先级：&quot;If any tool description conflicts with these rules, these rules take priority.&quot;</li>
+</ul>
+<h3>8.3 过度约束导致 LLM 无法灵活应对</h3>
+<p><strong>现象：</strong> 为了保证安全，System Prompt 中加了大量限制：&quot;只能调用列表中的工具&quot;、&quot;只能输出 JSON&quot;、&quot;不能包含任何解释&quot;、&quot;不能问用户问题&quot;、&quot;必须在一次调用中完成&quot;......结果 LLM 在遇到无法处理的请求时，输出空 JSON 或无意义的工具调用，而不是合理地拒绝或请求澄清。</p>
+<p><strong>原因：</strong> 过度约束堵死了 LLM 所有的&quot;逃生通道&quot;。它没有被允许说&quot;我不知道&quot;或&quot;我需要更多信息&quot;，所以只能在约束框架内硬凑一个输出。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>永远为 LLM 保留一个&quot;安全出口&quot;：允许它输出 <code>{&quot;action&quot;: &quot;clarify&quot;, &quot;question&quot;: &quot;...&quot;}</code> 或 <code>{&quot;action&quot;: &quot;refuse&quot;, &quot;reason&quot;: &quot;...&quot;}</code></li>
+<li>区分&quot;硬约束&quot;和&quot;软约束&quot;：硬约束（安全规则）不可违反，软约束（输出偏好）在特殊情况下可以放松</li>
+<li>将约束从&quot;禁止列表&quot;改为&quot;优先级列表&quot;：先尝试 X，如果不行可以 Y，最后可以 Z</li>
+</ul>
+<h3>8.4 Prompt Injection 在 Agent 中的放大效应</h3>
+<p>在 Chatbot 中，Prompt Injection 最多让模型输出不当内容。但在 Agent 中，Prompt Injection 可能触发<strong>真实的工具调用</strong>——删除数据、发送邮件、调用 API。</p>
+<p><strong>应对：</strong></p>
+<ul>
+<li>用户输入和系统指令之间必须有明确的分隔标记</li>
+<li>工具调用前做参数校验（schema validation），而非完全信任 LLM 输出</li>
+<li>高危操作（删除、支付、发送）增加人工确认步骤</li>
+<li>将用户输入视为&quot;不可信数据&quot;，在 Prompt 中明确标注：<code>[USER INPUT - UNTRUSTED]: {user_message}</code></li>
+</ul>
+<hr>
+<h2>9. 结语：从 Prompt 到 Runtime</h2>
+<p>Prompt Engineering for Agents 的本质是<strong>为 LLM 定义一套可编程的行为接口</strong>。我们在本文中讨论了分层架构、设计模式、推理策略、测试方法和 context 管理——这些都是让 Agent &quot;可控&quot;的基础设施。</p>
+<p>但 Prompt 本身只是 Agent 系统的一个组件。再好的 Prompt 也需要一个可靠的 Runtime 来驱动——处理 LLM 的响应、管理状态机的转换、执行工具调用、处理错误和重试。</p>
+<p>下一篇文章《Agent Runtime from Scratch: 不依赖框架构建 Agent》将从零开始实现一个完整的 Agent 运行时。我们会把本文设计的 Prompt 模式，放进一个真实可运行的控制循环中，展示 Prompt、工具、状态管理和错误处理如何在代码层面协同工作。</p>
+<p><strong>进一步思考：</strong></p>
+<ol>
+<li><p><strong>Prompt 的自动优化</strong>：如果我们有了 Prompt 测试框架和评估指标，是否可以用搜索算法（DSPy 的思路）自动优化 Prompt？这和手工调优的 trade-off 在哪里？</p>
+</li>
+<li><p><strong>Multi-Model Prompt 策略</strong>：Router 用小模型（快、便宜），Planner 用大模型（准、贵），Executor 用中等模型。不同模型对 Prompt 的响应特性不同，如何为不同模型定制 Prompt？</p>
+</li>
+<li><p><strong>Prompt 的可解释性</strong>：当 Agent 做出错误决策时，我们如何从 Prompt 和输出中定位问题根因？这需要什么样的 observability 基础设施？</p>
+</li>
+<li><p><strong>动态 Prompt 生成</strong>：是否可以让一个 &quot;Meta-Agent&quot; 根据当前任务特征，动态生成最合适的 Prompt？这会引入什么样的复杂性和风险？</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 06 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/05-Tool%20Calling%20Deep%20Dive">05 | Tool Calling Deep Dive</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/07-Agent%20Runtime%20from%20Scratch">07 | Agent Runtime from Scratch</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+18:T9c80,<h1>Agent Runtime from Scratch: 不依赖框架构建 Agent</h1>
+<blockquote>
+<p>框架是加速器，不是知识的替代品。</p>
+<p>本文是 Agentic 系列第 07 篇，也是 Phase 2 的收官之作。我们将抛开所有框架，用纯 Python 从零构建一个功能完整的 Agent Runtime。这是系列中代码量最大的一篇——每一行代码都指向同一个目标：让你彻底理解 Agent 的运行本质。</p>
+</blockquote>
+<hr>
+<h2>1. 为什么要自己写 Agent Runtime？</h2>
+<p>前几篇我们理解了控制循环（第 04 篇）、Tool Calling（第 05 篇）、Prompt 工程（第 06 篇）。但这些还停留在概念层面。现在的问题是：<strong>不用 LangChain、不用 LangGraph——你能写出一个 Agent 吗？</strong></p>
+<p>自建 Runtime 的价值：</p>
+<ul>
+<li><strong>透明性</strong>：每一行代码你都清楚，出了问题知道往哪里看</li>
+<li><strong>可控性</strong>：精确控制重试策略、超时机制、消息压缩、工具调度，而不被框架的默认行为绑架</li>
+<li><strong>本质理解</strong>：理解了 Runtime 本质，用任何框架时都能一眼看出它在做什么、哪里做得不好</li>
+</ul>
+<p>更现实的原因：<strong>生产环境中很多 Agent 系统最终都走向了自研</strong>。框架在 PoC 阶段很方便，但到了需要精细控制 Token 成本、自定义 Observability、与内部基础设施深度集成时，框架往往成为障碍。</p>
+<hr>
+<h2>2. 架构设计</h2>
+<pre><code>┌───────────────────────────────────────────────────┐
+│                   AgentRuntime                     │
+│                (Core Control Loop)                 │
+│                                                    │
+│  ┌────────────┐  ┌──────────────┐  ┌───────────┐ │
+│  │ LLMClient  │  │MessageManager│  │ StateStore │ │
+│  │ chat()     │  │ append()     │  │ save()     │ │
+│  │ stream()   │  │ compress()   │  │ load()     │ │
+│  │ retry()    │  │ count_tokens │  │ clear()    │ │
+│  └─────┬──────┘  └──────┬───────┘  └───────────┘ │
+│        │                │                          │
+│        ▼                ▼                          │
+│  ┌────────────────────────────────────┐            │
+│  │          Runtime Loop              │            │
+│  │  while not done and turns &lt; max:   │            │
+│  │    response = llm.chat(messages)   │            │
+│  │    if tool_calls:                  │            │
+│  │      results = executor.run()      │            │
+│  │    else: done = True               │            │
+│  └──────────┬─────────────────────────┘            │
+│       ┌─────┴──────┐                               │
+│       ▼            ▼                                │
+│  ┌──────────┐ ┌────────────┐                       │
+│  │ToolRegist│ │ToolExecutor│                       │
+│  │ register │ │ execute()  │                       │
+│  │ schema() │ │ parallel() │                       │
+│  └──────────┘ └────────────┘                       │
+└───────────────────────────────────────────────────┘
+</code></pre>
+<p><strong>核心设计原则——职责分离</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>职责</th>
+<th>边界</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>LLMClient</code></td>
+<td>封装模型调用，处理重试</td>
+<td>只管&quot;调 API&quot;，不管消息历史</td>
+</tr>
+<tr>
+<td><code>ToolRegistry</code></td>
+<td>注册工具，生成 JSON Schema</td>
+<td>只管&quot;有哪些工具&quot;，不管怎么调</td>
+</tr>
+<tr>
+<td><code>ToolExecutor</code></td>
+<td>解析 tool_calls，分发执行</td>
+<td>只管&quot;执行工具&quot;，不管谁触发的</td>
+</tr>
+<tr>
+<td><code>MessageManager</code></td>
+<td>管理消息列表，Token 计数和压缩</td>
+<td>只管&quot;消息&quot;，不管消息从哪来</td>
+</tr>
+<tr>
+<td><code>AgentRuntime</code></td>
+<td>组装一切，驱动控制循环</td>
+<td>只管&quot;编排&quot;，不自己做具体事</td>
+</tr>
+</tbody></table>
+<p>任何模块可独立替换。换 Anthropic API？只改 <code>LLMClient</code>。状态存 Redis？只改 <code>StateStore</code>。Runtime 本身不需要变动。</p>
+<hr>
+<h2>3. 逐步构建</h2>
+<h3>Step 1: LLMClient — 封装模型调用</h3>
+<p>封装 OpenAI 兼容接口，支持 <code>tools</code> / <code>tool_choice</code>，处理流式/非流式，实现指数退避重试。</p>
+<pre><code class="language-python"># llm_client.py
+import time, json, logging
+from dataclasses import dataclass, field
+from typing import Optional, Generator
+from openai import OpenAI, APIError, RateLimitError, APITimeoutError
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class ToolCall:
+    id: str
+    name: str
+    arguments: dict
+
+@dataclass
+class LLMResponse:
+    content: Optional[str] = None
+    tool_calls: list[ToolCall] = field(default_factory=list)
+    usage: dict = field(default_factory=dict)
+    finish_reason: str = &quot;&quot;
+
+    @property
+    def has_tool_calls(self) -&gt; bool:
+        return len(self.tool_calls) &gt; 0
+
+class LLMClient:
+    RETRYABLE_ERRORS = (RateLimitError, APITimeoutError, APIError)
+
+    def __init__(self, model=&quot;gpt-4o&quot;, base_url=None, api_key=None,
+                 max_retries=3, retry_base_delay=1.0, timeout=60.0):
+        self.model = model
+        self.max_retries = max_retries
+        self.retry_base_delay = retry_base_delay
+        self.client = OpenAI(base_url=base_url, api_key=api_key, timeout=timeout)
+
+    def chat(self, messages, tools=None, tool_choice=&quot;auto&quot;, temperature=0.0):
+        kwargs = {&quot;model&quot;: self.model, &quot;messages&quot;: messages,
+                  &quot;temperature&quot;: temperature}
+        if tools:
+            kwargs[&quot;tools&quot;] = tools
+            kwargs[&quot;tool_choice&quot;] = tool_choice
+        raw = self._call_with_retry(**kwargs)
+        return self._parse_response(raw)
+
+    def stream(self, messages, tools=None, tool_choice=&quot;auto&quot;,
+               temperature=0.0) -&gt; Generator[LLMResponse, None, None]:
+        kwargs = {&quot;model&quot;: self.model, &quot;messages&quot;: messages,
+                  &quot;temperature&quot;: temperature, &quot;stream&quot;: True}
+        if tools:
+            kwargs[&quot;tools&quot;] = tools
+            kwargs[&quot;tool_choice&quot;] = tool_choice
+
+        accumulated_tool_calls: dict[int, dict] = {}
+        for chunk in self._call_with_retry(**kwargs):
+            delta = chunk.choices[0].delta if chunk.choices else None
+            if not delta:
+                continue
+            if delta.content:
+                yield LLMResponse(content=delta.content)
+            # 流式下 tool_calls 分片到达，需要累积拼装
+            if delta.tool_calls:
+                for tc in delta.tool_calls:
+                    idx = tc.index
+                    if idx not in accumulated_tool_calls:
+                        accumulated_tool_calls[idx] = {
+                            &quot;id&quot;: &quot;&quot;, &quot;name&quot;: &quot;&quot;, &quot;arguments&quot;: &quot;&quot;}
+                    if tc.id: accumulated_tool_calls[idx][&quot;id&quot;] = tc.id
+                    if tc.function.name:
+                        accumulated_tool_calls[idx][&quot;name&quot;] = tc.function.name
+                    if tc.function.arguments:
+                        accumulated_tool_calls[idx][&quot;arguments&quot;] += \
+                            tc.function.arguments
+
+        if accumulated_tool_calls:
+            tool_calls = []
+            for d in accumulated_tool_calls.values():
+                args = json.loads(d[&quot;arguments&quot;]) if d[&quot;arguments&quot;] else {}
+                tool_calls.append(ToolCall(d[&quot;id&quot;], d[&quot;name&quot;], args))
+            yield LLMResponse(tool_calls=tool_calls)
+
+    def _call_with_retry(self, **kwargs):
+        last_error = None
+        for attempt in range(self.max_retries + 1):
+            try:
+                return self.client.chat.completions.create(**kwargs)
+            except self.RETRYABLE_ERRORS as e:
+                last_error = e
+                if attempt &lt; self.max_retries:
+                    delay = self.retry_base_delay * (2 ** attempt)
+                    logger.warning(f&quot;Retry {attempt+1} in {delay}s: {e}&quot;)
+                    time.sleep(delay)
+        raise last_error
+
+    def _parse_response(self, raw) -&gt; LLMResponse:
+        choice = raw.choices[0]
+        msg = choice.message
+        tool_calls = []
+        if msg.tool_calls:
+            for tc in msg.tool_calls:
+                args = json.loads(tc.function.arguments) \
+                    if tc.function.arguments else {}
+                tool_calls.append(ToolCall(tc.id, tc.function.name, args))
+        return LLMResponse(
+            content=msg.content, tool_calls=tool_calls,
+            usage={&quot;prompt_tokens&quot;: raw.usage.prompt_tokens,
+                   &quot;completion_tokens&quot;: raw.usage.completion_tokens,
+                   &quot;total_tokens&quot;: raw.usage.total_tokens},
+            finish_reason=choice.finish_reason)
+</code></pre>
+<p><strong>关键设计决策</strong>：</p>
+<ol>
+<li><strong>统一 <code>LLMResponse</code></strong>：无论底层用什么模型，Runtime 只看到同一结构——适配器模式。</li>
+<li><strong>重试只针对可恢复错误</strong>：<code>RateLimitError</code> 值得重试，<code>AuthenticationError</code> 重试一万次也没用。</li>
+<li><strong>流式 tool_calls 累积拼装</strong>：OpenAI 把 tool_calls 拆成多个 chunk（先发 name，再逐步发 arguments），必须在客户端拼装。这是容易踩的坑。</li>
+</ol>
+<hr>
+<h3>Step 2: ToolRegistry — 工具注册与发现</h3>
+<p>用装饰器注册函数，通过 type hints 和 docstring 自动生成 OpenAI 格式的 JSON Schema。</p>
+<pre><code class="language-python"># tool_registry.py
+import inspect, json
+from typing import Any, Callable, Optional, get_type_hints
+
+TYPE_MAP = {str: &quot;string&quot;, int: &quot;integer&quot;, float: &quot;number&quot;,
+            bool: &quot;boolean&quot;, list: &quot;array&quot;, dict: &quot;object&quot;}
+
+class ToolRegistry:
+    def __init__(self):
+        self._tools: dict[str, Callable] = {}
+        self._schemas: dict[str, dict] = {}
+
+    def tool(self, name=None, description=None):
+        &quot;&quot;&quot;装饰器注册工具&quot;&quot;&quot;
+        def decorator(func):
+            n = name or func.__name__
+            d = description or (func.__doc__ or &quot;&quot;).strip().split(&quot;\n&quot;)[0]
+            self._tools[n] = func
+            self._schemas[n] = self._gen_schema(func, n, d)
+            return func
+        return decorator
+
+    def register(self, func, name=None, description=None):
+        &quot;&quot;&quot;命令式注册（适用于无法加装饰器的场景）&quot;&quot;&quot;
+        n = name or func.__name__
+        d = description or (func.__doc__ or &quot;&quot;).strip().split(&quot;\n&quot;)[0]
+        self._tools[n] = func
+        self._schemas[n] = self._gen_schema(func, n, d)
+
+    def get_function(self, name): return self._tools.get(name)
+    def get_all_schemas(self): return list(self._schemas.values())
+    def list_tools(self): return list(self._tools.keys())
+
+    def _gen_schema(self, func, name, description):
+        sig = inspect.signature(func)
+        hints = get_type_hints(func)
+        properties, required = {}, []
+        for pname, param in sig.parameters.items():
+            if pname in (&quot;self&quot;, &quot;cls&quot;): continue
+            ptype = hints.get(pname, str)
+            prop = {&quot;type&quot;: TYPE_MAP.get(ptype, &quot;string&quot;)}
+            # 从 Google 风格 docstring 提取参数描述
+            pdesc = self._param_desc(func, pname)
+            if pdesc: prop[&quot;description&quot;] = pdesc
+            properties[pname] = prop
+            if param.default is inspect.Parameter.empty:
+                required.append(pname)
+        return {&quot;type&quot;: &quot;function&quot;, &quot;function&quot;: {
+            &quot;name&quot;: name, &quot;description&quot;: description,
+            &quot;parameters&quot;: {&quot;type&quot;: &quot;object&quot;,
+                           &quot;properties&quot;: properties, &quot;required&quot;: required}}}
+
+    @staticmethod
+    def _param_desc(func, param_name):
+        doc = func.__doc__ or &quot;&quot;
+        in_args = False
+        for line in doc.split(&quot;\n&quot;):
+            s = line.strip()
+            if s.lower().startswith(&quot;args:&quot;): in_args = True; continue
+            if in_args and param_name + &quot;:&quot; in s:
+                return s.split(&quot;:&quot;, 1)[1].strip()
+        return &quot;&quot;
+</code></pre>
+<p>验证效果：</p>
+<pre><code class="language-python">registry = ToolRegistry()
+
+@registry.tool()
+def web_search(query: str, max_results: int = 5) -&gt; str:
+    &quot;&quot;&quot;搜索网页内容
+    Args:
+        query: 搜索关键词
+        max_results: 最大返回结果数量
+    &quot;&quot;&quot;
+    return f&quot;Results for: {query}&quot;
+
+# 输出 OpenAI 格式的 tool schema
+# {&quot;type&quot;:&quot;function&quot;,&quot;function&quot;:{&quot;name&quot;:&quot;web_search&quot;,&quot;description&quot;:&quot;搜索网页内容&quot;,
+#  &quot;parameters&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;properties&quot;:{&quot;query&quot;:{&quot;type&quot;:&quot;string&quot;,
+#  &quot;description&quot;:&quot;搜索关键词&quot;},&quot;max_results&quot;:{&quot;type&quot;:&quot;integer&quot;,
+#  &quot;description&quot;:&quot;最大返回结果数量&quot;}},&quot;required&quot;:[&quot;query&quot;]}}}
+</code></pre>
+<hr>
+<h3>Step 3: ToolExecutor — 工具执行与结果处理</h3>
+<p>接收 LLM 返回的 <code>tool_calls</code>，分发执行，收集结果，处理异常。支持串行和并行两种模式。</p>
+<pre><code class="language-python"># tool_executor.py
+import json, time, logging, traceback
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FTE
+from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class ToolResult:
+    tool_call_id: str
+    name: str
+    result: str
+    success: bool
+    duration_ms: float = 0.0
+
+class ToolExecutor:
+    def __init__(self, registry, default_timeout=30.0, max_workers=4):
+        self.registry = registry
+        self.default_timeout = default_timeout
+        self.max_workers = max_workers
+
+    def execute(self, tool_calls) -&gt; list[ToolResult]:
+        &quot;&quot;&quot;串行执行&quot;&quot;&quot;
+        return [self._run_one(tc) for tc in tool_calls]
+
+    def execute_parallel(self, tool_calls) -&gt; list[ToolResult]:
+        &quot;&quot;&quot;并行执行（LLM 一次返回多个 tool_calls 时使用）&quot;&quot;&quot;
+        if len(tool_calls) &lt;= 1:
+            return self.execute(tool_calls)
+        results = []
+        with ThreadPoolExecutor(max_workers=self.max_workers) as pool:
+            futures = {pool.submit(self._run_one, tc): tc for tc in tool_calls}
+            for fut in futures:
+                try:
+                    results.append(fut.result(timeout=self.default_timeout))
+                except FTE:
+                    tc = futures[fut]
+                    results.append(ToolResult(
+                        tc.id, tc.name,
+                        f&quot;Error: &#39;{tc.name}&#39; timed out after &quot;
+                        f&quot;{self.default_timeout}s&quot;, False))
+        return results
+
+    def _run_one(self, tool_call) -&gt; ToolResult:
+        start = time.monotonic()
+        func = self.registry.get_function(tool_call.name)
+        if not func:
+            return ToolResult(tool_call.id, tool_call.name,
+                f&quot;Error: Unknown tool &#39;{tool_call.name}&#39;. &quot;
+                f&quot;Available: {self.registry.list_tools()}&quot;, False)
+        try:
+            result = func(**tool_call.arguments)
+            if not isinstance(result, str):
+                result = json.dumps(result, ensure_ascii=False, default=str)
+            ms = (time.monotonic() - start) * 1000
+            logger.info(f&quot;Tool &#39;{tool_call.name}&#39; OK in {ms:.0f}ms&quot;)
+            return ToolResult(tool_call.id, tool_call.name, result, True, ms)
+        except Exception as e:
+            ms = (time.monotonic() - start) * 1000
+            msg = f&quot;Error: {type(e).__name__}: {e}&quot;
+            logger.error(f&quot;{msg}\n{traceback.format_exc()}&quot;)
+            return ToolResult(tool_call.id, tool_call.name, msg, False, ms)
+
+    @staticmethod
+    def results_to_messages(results):
+        return [{&quot;role&quot;: &quot;tool&quot;, &quot;tool_call_id&quot;: r.tool_call_id,
+                 &quot;content&quot;: r.result} for r in results]
+</code></pre>
+<p><strong>串行 vs 并行的 Trade-off</strong>：串行简单可调试；并行在 LLM 同时返回多个独立 tool_calls 时显著降低延迟。LLM 在一次响应中返回多个 tool_calls 本身就隐含了&quot;它们之间无依赖&quot;——否则它会分成多轮调用。</p>
+<hr>
+<h3>Step 4: MessageManager — 消息历史管理与压缩</h3>
+<p>解决 Agent 长对话中最常遇到的问题：<strong>消息越来越多，Context Window 不够用了</strong>。</p>
+<pre><code class="language-python"># message_manager.py
+import json, logging, tiktoken
+from typing import Optional
+from copy import deepcopy
+
+logger = logging.getLogger(__name__)
+
+class MessageManager:
+    def __init__(self, system_prompt=&quot;&quot;, model=&quot;gpt-4o&quot;,
+                 max_tokens=120000, compression_threshold=0.75):
+        self.system_prompt = system_prompt
+        self.max_tokens = max_tokens
+        self.compression_threshold = compression_threshold
+        try: self.enc = tiktoken.encoding_for_model(model)
+        except KeyError: self.enc = tiktoken.get_encoding(&quot;cl100k_base&quot;)
+        self._messages: list[dict] = []
+
+    def append(self, msg):
+        self._messages.append(msg)
+        self._maybe_compress()
+
+    def extend(self, msgs):
+        self._messages.extend(msgs)
+        self._maybe_compress()
+
+    def get_messages(self):
+        out = []
+        if self.system_prompt:
+            out.append({&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: self.system_prompt})
+        out.extend(deepcopy(self._messages))
+        return out
+
+    def count_tokens(self, msgs=None):
+        msgs = msgs or self.get_messages()
+        total = 2  # priming tokens
+        for m in msgs:
+            total += 4  # per-message overhead
+            for v in m.values():
+                if isinstance(v, str): total += len(self.enc.encode(v))
+                elif isinstance(v, list):
+                    total += len(self.enc.encode(json.dumps(v)))
+        return total
+
+    def _maybe_compress(self):
+        threshold = int(self.max_tokens * self.compression_threshold)
+        if self.count_tokens() &lt;= threshold: return
+        logger.info(&quot;Token threshold exceeded, compressing...&quot;)
+        self._sliding_window_compress(threshold)
+
+    def _sliding_window_compress(self, target):
+        &quot;&quot;&quot;从最早的消息移除，保持 tool_call 对完整性。
+
+        关键约束：assistant(tool_calls) 后面的 tool(result) 消息必须
+        一起移除，否则 OpenAI API 会报错。
+        &quot;&quot;&quot;
+        msgs, i = self._messages, 0
+        while i &lt; len(msgs):
+            remaining = msgs[i:]
+            sys_msgs = ([{&quot;role&quot;:&quot;system&quot;,&quot;content&quot;:self.system_prompt}]
+                        if self.system_prompt else [])
+            if self.count_tokens(sys_msgs + remaining) &lt;= target: break
+            i += 1
+            # 如果刚移除的是含 tool_calls 的 assistant，连续移除后续 tool 消息
+            if (i &gt; 0 and msgs[i-1].get(&quot;role&quot;) == &quot;assistant&quot;
+                    and msgs[i-1].get(&quot;tool_calls&quot;)):
+                while i &lt; len(msgs) and msgs[i].get(&quot;role&quot;) == &quot;tool&quot;:
+                    i += 1
+        if i &gt; 0:
+            summary = {&quot;role&quot;: &quot;system&quot;, &quot;content&quot;:
+                f&quot;[{i} earlier messages removed to fit context window.]&quot;}
+            self._messages = [summary] + msgs[i:]
+            logger.info(f&quot;Removed {i} msgs, tokens: {self.count_tokens()}&quot;)
+</code></pre>
+<p><strong>三个关键点</strong>：System Prompt 始终保留不参与压缩；tool_call 对必须保持完整（<code>assistant</code> + 后续 <code>tool</code> 消息一起删或一起留）；在 75% 时就触发压缩，给回复留够空间。</p>
+<hr>
+<h3>Step 5: StateStore — 状态持久化</h3>
+<p>简单的键值存储，生产中替换为 Redis 或数据库即可。</p>
+<pre><code class="language-python"># state_store.py
+import json
+from typing import Any, Optional
+from pathlib import Path
+
+class StateStore:
+    def __init__(self, store_dir=&quot;.agent_state&quot;):
+        self.dir = Path(store_dir)
+        self.dir.mkdir(parents=True, exist_ok=True)
+        self._cache: dict[str, Any] = {}
+
+    def save(self, key, value):
+        self._cache[key] = value
+        (self.dir / f&quot;{key}.json&quot;).write_text(
+            json.dumps(value, ensure_ascii=False, indent=2, default=str))
+
+    def load(self, key, default=None):
+        if key in self._cache: return self._cache[key]
+        f = self.dir / f&quot;{key}.json&quot;
+        if f.exists():
+            v = json.loads(f.read_text())
+            self._cache[key] = v
+            return v
+        return default
+
+    def clear(self, key=None):
+        if key:
+            self._cache.pop(key, None)
+            (self.dir / f&quot;{key}.json&quot;).unlink(missing_ok=True)
+        else:
+            self._cache.clear()
+            for f in self.dir.glob(&quot;*.json&quot;): f.unlink()
+</code></pre>
+<hr>
+<h2>4. 核心 Runtime Loop</h2>
+<p>所有模块就绪，组装成完整的 <code>AgentRuntime</code>。这是整篇文章的核心。</p>
+<pre><code class="language-python"># agent_runtime.py
+import json, time, logging
+from dataclasses import dataclass, field
+from typing import Optional, Callable
+from collections import Counter
+
+from llm_client import LLMClient, LLMResponse
+from tool_registry import ToolRegistry
+from tool_executor import ToolExecutor
+from message_manager import MessageManager
+from state_store import StateStore
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class RuntimeConfig:
+    max_turns: int = 20               # 最大循环轮次
+    max_total_time: float = 300.0     # 最大总执行时间（秒）
+    parallel_tool_calls: bool = True  # 是否并行执行工具
+    loop_detection_window: int = 4    # 死循环检测窗口
+    loop_detection_threshold: int = 3 # 相同调用出现次数阈值
+
+@dataclass
+class AgentResult:
+    content: str
+    turns: int = 0
+    total_tokens: int = 0
+    tool_calls_made: list[dict] = field(default_factory=list)
+    duration_ms: float = 0.0
+    stopped_reason: str = &quot;&quot;
+
+class AgentRuntime:
+    def __init__(self, llm: LLMClient, registry: ToolRegistry,
+                 system_prompt=&quot;You are a helpful assistant.&quot;,
+                 config: Optional[RuntimeConfig] = None):
+        self.llm = llm
+        self.registry = registry
+        self.executor = ToolExecutor(registry)
+        self.config = config or RuntimeConfig()
+        self.messages = MessageManager(system_prompt=system_prompt,
+                                       model=llm.model)
+        self.state = StateStore()
+        self.on_tool_start: Optional[Callable] = None
+        self.on_tool_end: Optional[Callable] = None
+
+    def run(self, user_input: str) -&gt; AgentResult:
+        start_time = time.monotonic()
+        self.messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_input})
+        tools = self.registry.get_all_schemas() or None
+
+        turns, total_tokens, all_tc = 0, 0, []
+        tc_history: list[str] = []
+        final_content, stopped = &quot;&quot;, &quot;completed&quot;
+
+        while turns &lt; self.config.max_turns:
+            turns += 1
+
+            # ── 全局超时检查 ─────────────────────────────
+            if time.monotonic() - start_time &gt; self.config.max_total_time:
+                stopped = f&quot;timeout ({self.config.max_total_time}s)&quot;
+                break
+
+            # ── 调用 LLM ────────────────────────────────
+            logger.info(f&quot;Turn {turns}: calling LLM...&quot;)
+            resp = self.llm.chat(self.messages.get_messages(), tools=tools)
+            total_tokens += resp.usage.get(&quot;total_tokens&quot;, 0)
+
+            # ── 情况 1: 有 tool_calls → 执行工具 ────────
+            if resp.has_tool_calls:
+                # 构建 assistant 消息（必须包含 tool_calls 字段）
+                asst = {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: resp.content,
+                        &quot;tool_calls&quot;: [
+                    {&quot;id&quot;: tc.id, &quot;type&quot;: &quot;function&quot;,
+                     &quot;function&quot;: {&quot;name&quot;: tc.name,
+                                  &quot;arguments&quot;: json.dumps(tc.arguments)}}
+                    for tc in resp.tool_calls]}
+                self.messages.append(asst)
+
+                # 死循环检测
+                sig = json.dumps([(tc.name, tc.arguments)
+                                  for tc in resp.tool_calls], sort_keys=True)
+                tc_history.append(sig)
+                if self._detect_loop(tc_history):
+                    stopped = &quot;loop_detected&quot;
+                    final_content = (&quot;I&#39;m repeating the same actions. &quot;
+                                     &quot;Stopping to summarize findings.&quot;)
+                    break
+
+                # 执行
+                if self.on_tool_start: self.on_tool_start(resp.tool_calls)
+                if self.config.parallel_tool_calls and len(resp.tool_calls) &gt; 1:
+                    results = self.executor.execute_parallel(resp.tool_calls)
+                else:
+                    results = self.executor.execute(resp.tool_calls)
+                if self.on_tool_end: self.on_tool_end(results)
+
+                for tc, r in zip(resp.tool_calls, results):
+                    all_tc.append({&quot;turn&quot;: turns, &quot;name&quot;: tc.name,
+                        &quot;arguments&quot;: tc.arguments,
+                        &quot;success&quot;: r.success, &quot;duration_ms&quot;: r.duration_ms})
+
+                self.messages.extend(ToolExecutor.results_to_messages(results))
+
+            # ── 情况 2: 纯文本 → 任务完成 ───────────────
+            else:
+                final_content = resp.content or &quot;&quot;
+                self.messages.append(
+                    {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: final_content})
+                break
+        else:
+            stopped = f&quot;max_turns ({self.config.max_turns})&quot;
+
+        return AgentResult(
+            content=final_content, turns=turns, total_tokens=total_tokens,
+            tool_calls_made=all_tc,
+            duration_ms=(time.monotonic() - start_time) * 1000,
+            stopped_reason=stopped)
+
+    def _detect_loop(self, history):
+        &quot;&quot;&quot;滑动窗口 + 频次统计，同时捕获连续重复和交替重复&quot;&quot;&quot;
+        w = self.config.loop_detection_window
+        t = self.config.loop_detection_threshold
+        if len(history) &lt; t: return False
+        return any(c &gt;= t for c in Counter(history[-w:]).values())
+</code></pre>
+<h3>核心循环解读</h3>
+<p><strong>两种退出路径</strong>——这是 Agent 与 Workflow 的本质区别：</p>
+<pre><code>resp.has_tool_calls == True   → 继续（还有事要做）
+resp.has_tool_calls == False  → break（LLM 认为任务完成了）
+</code></pre>
+<p><strong>为什么 assistant 消息必须包含 tool_calls 字段？</strong> 这是 OpenAI API 的协议约束。消息流必须是：<code>user</code> → <code>assistant(tool_calls)</code> → <code>tool(result)</code> → <code>assistant(final)</code>。打破这个顺序会报错。</p>
+<p><strong>死循环检测</strong>用滑动窗口而非简单的&quot;连续 N 次相同&quot;，因为 LLM 有时会在两个工具间交替调用（A→B→A→B→...），这也是死循环，但不是&quot;连续相同&quot;。</p>
+<hr>
+<h2>5. 高级特性</h2>
+<h3>5.1 Streaming 支持</h3>
+<p>流式模式下需要边输出文本、边判断是否有 tool_calls：</p>
+<pre><code class="language-python"># 添加到 AgentRuntime
+def run_stream(self, user_input: str):
+    self.messages.append({&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: user_input})
+    tools = self.registry.get_all_schemas() or None
+    turns = 0
+
+    while turns &lt; self.config.max_turns:
+        turns += 1
+        content, final_tc = &quot;&quot;, None
+
+        for chunk in self.llm.stream(self.messages.get_messages(), tools=tools):
+            if chunk.content:
+                content += chunk.content
+                yield {&quot;type&quot;: &quot;text&quot;, &quot;content&quot;: chunk.content}
+            if chunk.tool_calls:
+                final_tc = chunk.tool_calls
+
+        if final_tc:
+            yield {&quot;type&quot;: &quot;tool_start&quot;,
+                   &quot;calls&quot;: [{&quot;name&quot;:tc.name} for tc in final_tc]}
+            asst = {&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: content,
+                    &quot;tool_calls&quot;: [
+                {&quot;id&quot;:tc.id, &quot;type&quot;:&quot;function&quot;,
+                 &quot;function&quot;:{&quot;name&quot;:tc.name,
+                             &quot;arguments&quot;:json.dumps(tc.arguments)}}
+                for tc in final_tc]}
+            self.messages.append(asst)
+            results = self.executor.execute(final_tc)
+            self.messages.extend(ToolExecutor.results_to_messages(results))
+            yield {&quot;type&quot;: &quot;tool_end&quot;,
+                   &quot;results&quot;: [{&quot;name&quot;:r.name, &quot;ok&quot;:r.success} for r in results]}
+        else:
+            self.messages.append({&quot;role&quot;:&quot;assistant&quot;,&quot;content&quot;:content})
+            yield {&quot;type&quot;: &quot;done&quot;, &quot;content&quot;: content}
+            break
+</code></pre>
+<h3>5.2 超时控制的两层设计</h3>
+<pre><code>┌──────────────────────────────────────┐
+│ 全局超时 (max_total_time = 300s)     │
+│  ┌──────┐ ┌──────┐ ┌──────┐        │
+│  │Tool 1│ │Tool 2│ │Tool 3│        │
+│  │30s   │ │30s   │ │30s   │        │
+│  └──────┘ └──────┘ └──────┘        │
+│ 单工具超时 (default_timeout = 30s)   │
+└──────────────────────────────────────┘
+</code></pre>
+<p>单工具超时在 <code>ToolExecutor</code> 中通过 <code>ThreadPoolExecutor.result(timeout=30)</code> 控制；全局超时在 Runtime 每轮循环开始时检查 elapsed time。</p>
+<hr>
+<h2>6. 完整示例：研究助手 Agent</h2>
+<pre><code class="language-python"># research_agent.py
+import json, os, logging
+from agent_runtime import AgentRuntime, RuntimeConfig
+from llm_client import LLMClient
+from tool_registry import ToolRegistry
+
+logging.basicConfig(level=logging.INFO,
+    format=&quot;%(asctime)s [%(levelname)s] %(name)s: %(message)s&quot;)
+
+registry = ToolRegistry()
+
+@registry.tool()
+def web_search(query: str, max_results: int = 5) -&gt; str:
+    &quot;&quot;&quot;搜索网页内容
+    Args:
+        query: 搜索关键词
+        max_results: 最大返回数量
+    &quot;&quot;&quot;
+    # 生产环境替换为 SerpAPI / Bing API
+    return json.dumps([{&quot;title&quot;: f&quot;Result {i+1} for &#39;{query}&#39;&quot;,
+        &quot;url&quot;: f&quot;https://example.com/article-{i+1}&quot;,
+        &quot;snippet&quot;: f&quot;Detailed article about {query}, section {i+1}...&quot;}
+        for i in range(min(max_results, 3))], ensure_ascii=False)
+
+@registry.tool()
+def read_url(url: str) -&gt; str:
+    &quot;&quot;&quot;读取网页内容
+    Args:
+        url: 网页地址
+    &quot;&quot;&quot;
+    # 生产环境替换为 requests + BeautifulSoup
+    return (f&quot;[Content from {url}]\n&quot;
+            f&quot;Key points: 1) Fundamental concepts 2) Best practices &quot;
+            f&quot;3) Common pitfalls 4) Case studies and benchmarks&quot;)
+
+@registry.tool()
+def write_file(filename: str, content: str) -&gt; str:
+    &quot;&quot;&quot;写入文件
+    Args:
+        filename: 文件名
+        content: 文本内容
+    &quot;&quot;&quot;
+    os.makedirs(&quot;output&quot;, exist_ok=True)
+    path = os.path.join(&quot;output&quot;, os.path.basename(filename))
+    with open(path, &quot;w&quot;) as f: f.write(content)
+    return f&quot;Wrote {len(content)} chars to {path}&quot;
+
+@registry.tool()
+def ask_user(question: str) -&gt; str:
+    &quot;&quot;&quot;向用户提问
+    Args:
+        question: 问题
+    &quot;&quot;&quot;
+    print(f&quot;\nAgent asks: {question}&quot;)
+    return input(&quot;Your answer: &quot;)
+
+SYSTEM_PROMPT = &quot;&quot;&quot;You are a research assistant. Workflow:
+1. Search for information using web_search
+2. Read promising articles using read_url (at least 2 sources)
+3. Synthesize into a report and save with write_file
+4. Present a summary. Use ask_user if the topic is unclear.&quot;&quot;&quot;
+
+agent = AgentRuntime(
+    llm=LLMClient(model=&quot;gpt-4o&quot;, api_key=os.environ.get(&quot;OPENAI_API_KEY&quot;)),
+    registry=registry,
+    system_prompt=SYSTEM_PROMPT,
+    config=RuntimeConfig(max_turns=15, max_total_time=120.0))
+
+if __name__ == &quot;__main__&quot;:
+    result = agent.run(&quot;研究 Python asyncio 最佳实践，整理成技术报告并保存。&quot;)
+    print(f&quot;\n{&#39;=&#39;*50}\nTurns: {result.turns} | Tokens: {result.total_tokens} &quot;
+          f&quot;| {result.duration_ms:.0f}ms | {result.stopped_reason}&quot;)
+    for tc in result.tool_calls_made:
+        print(f&quot;  Turn {tc[&#39;turn&#39;]}: {tc[&#39;name&#39;]}() &quot;
+              f&quot;{&#39;OK&#39; if tc[&#39;success&#39;] else &#39;FAIL&#39;} {tc[&#39;duration_ms&#39;]:.0f}ms&quot;)
+    print(f&quot;\n{result.content[:300]}&quot;)
+</code></pre>
+<h3>执行 Trace</h3>
+<pre><code>Turn 1: calling LLM...  → web_search(&quot;Python asyncio best practices&quot;)
+Turn 2: calling LLM...  → read_url(url1) + read_url(url2)  [parallel]
+Turn 3: calling LLM...  → web_search(&quot;asyncio common pitfalls&quot;)
+Turn 4: calling LLM...  → read_url(url3)
+Turn 5: calling LLM...  → write_file(&quot;asyncio-report.md&quot;, ...)
+Turn 6: calling LLM...  → [no tool_calls] → Done
+
+==================================================
+Turns: 6 | Tokens: 8432 | 13245ms | completed
+  Turn 1: web_search() OK 45ms
+  Turn 2: read_url() OK 120ms
+  Turn 2: read_url() OK 135ms
+  Turn 3: web_search() OK 38ms
+  Turn 4: read_url() OK 110ms
+  Turn 5: write_file() OK 5ms
+</code></pre>
+<p>注意 Turn 2：LLM 返回了两个 <code>read_url</code>，Runtime 自动并行执行。</p>
+<hr>
+<h2>7. 与框架对比</h2>
+<h3>自建 vs 框架</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>自建 Runtime</th>
+<th>框架（LangChain 等）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>透明性</strong></td>
+<td>完全透明</td>
+<td>需要读框架源码</td>
+</tr>
+<tr>
+<td><strong>调试</strong></td>
+<td>直接 breakpoint</td>
+<td>需要理解框架抽象层</td>
+</tr>
+<tr>
+<td><strong>定制</strong></td>
+<td>任何行为可改</td>
+<td>受 API 设计约束</td>
+</tr>
+<tr>
+<td><strong>依赖</strong></td>
+<td><code>openai</code> + <code>tiktoken</code></td>
+<td>几十个传递依赖</td>
+</tr>
+<tr>
+<td><strong>边界情况</strong></td>
+<td>自己发现和处理</td>
+<td>社区帮你踩过坑</td>
+</tr>
+<tr>
+<td><strong>生态集成</strong></td>
+<td>每个都要自己写</td>
+<td>现成的 VectorStore/Retriever</td>
+</tr>
+<tr>
+<td><strong>开发速度</strong></td>
+<td>初期更慢</td>
+<td>有模板更快</td>
+</tr>
+</tbody></table>
+<h3>决策建议</h3>
+<ul>
+<li><strong>学习阶段</strong>：一定要自建一次。不理解原理就用框架，永远无法判断框架是否在坑你。</li>
+<li><strong>PoC / Hackathon</strong>：用框架，速度第一。</li>
+<li><strong>生产系统</strong>：自建核心 Runtime + 选择性使用框架组件（如只用 LangChain 的 Retriever）。</li>
+<li><strong>基础设施团队</strong>：自建。你们的需求框架大概率满足不了。</li>
+</ul>
+<hr>
+<h2>8. 结语：Phase 2 完成</h2>
+<p>到这里，Phase 2 四篇文章全部完成：</p>
+<ul>
+<li><strong>第 04 篇</strong>：理解控制循环 — Observe → Think → Act → Reflect</li>
+<li><strong>第 05 篇</strong>：深入 Tool Calling — JSON Schema、Function Calling、Structured Output</li>
+<li><strong>第 06 篇</strong>：Prompt Engineering — System Prompt 设计、工具选择引导、Reflection Prompt</li>
+<li><strong>第 07 篇（本篇）</strong>：把以上所有知识组装成可运行的 Agent Runtime</li>
+</ul>
+<p>此刻你有能力<strong>不依赖任何框架，从零构建功能完整的 Agent 系统</strong>。</p>
+<p>但如果你运行过这个 Agent，会很快发现几个问题：</p>
+<ol>
+<li><strong>没有记忆</strong>：每次启动都是白纸，不记得上次的对话</li>
+<li><strong>不会计划</strong>：面对复杂任务只是一步步试，没有全局规划</li>
+<li><strong>一个不够用</strong>：有些任务需要不同角色的 Agent 协作</li>
+</ol>
+<p>这就是 Phase 3 要解决的问题：</p>
+<ul>
+<li><strong>第 08 篇</strong>：Memory Architecture — Agent 的状态与记忆体系</li>
+<li><strong>第 09 篇</strong>：RAG as Cognitive Memory — 检索增强生成的工程实践</li>
+<li><strong>第 10 篇</strong>：Planning and Reflection — 从 ReAct 到分层规划</li>
+<li><strong>第 11 篇</strong>：Multi-Agent Collaboration — 多 Agent 协作</li>
+</ul>
+<p>Phase 2 给了你造一把锤子的能力。Phase 3 将教你如何造一个工具箱。</p>
+<hr>
+<blockquote>
+<p><strong>系列导航</strong>：本文是 Agentic 系列的第 07 篇。</p>
+<ul>
+<li>上一篇：<a href="/blog/engineering/agentic/06-Prompt%20Engineering%20for%20Agents">06 | Prompt Engineering for Agents</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/08-Memory%20Architecture">08 | Memory Architecture</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-From%20LLM%20to%20Agent">01 | From LLM to Agent</a></li>
+</ul>
+</blockquote>
+19:T4fc0,<p>你有没有遇到过因为没有打印SQL导致问题排查困难？如果你使用了成熟ORM框架，那么很容易支撑SQL的拦截和监控，例如Mybatis的Interceptor或JOOQ的Listener都支持SQL执行过程的跟踪监控，但是，如果你的ORM框架不支持SQL监控，那么很不幸，你就只能在代码中手动打印日志了。然而，为了防SQL注入，应用中的SQL语句都是参数化的，直接打印的话，SQL语句未绑定参数，ORM框架一般都提供了SQL参数绑定的功能，原生的JDBC这样就失去了一定的监控价值。</p>
+<p>另外，在TOB的业务中，有些场景SQL参数超长，如大IN查询，SQL语句会长达到几万甚至十几万，此时，我们又需要对SQL语句进行缩略打印。注意，这里的SQL缩略打印不是简单的对SQL语句进行截断，而是对SQL语句中的参数列表进行截断，例如下面的SQL</p>
+<pre><code class="language-sql">select * from user 
+where id in (1001,1001, 1002, 1003, 1004, 1005, 1006, 1007) 
+and name in(sql
+select name from whitelist 
+where name in(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;,&#39;g&#39;,&#39;h&#39;,&#39;i&#39;,&#39;j&#39;,&#39;k&#39;,&#39;l&#39;,&#39;m&#39;)
+)
+</code></pre>
+<p>缩略下印如下：</p>
+<pre><code class="language-sql">select * from user 
+where id in (1001,1001, 1002, 1003, 1004,...) 
+and name in(
+select name from whitelist 
+where name in(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,...)
+)
+</code></pre>
+<p>既然SQL 监控很重要，那么对于应用层的SQL监控都有哪些手段呢？一个SQL请求的执行链路，一般从DAO层开始：DAO -&gt; ORM -&gt; DataSource  -&gt; Connection -&gt; Driver -&gt; DB，那么在这个链路上有哪些环节可以切入监控呢？ DAO层是数据访问层的入口，而我们的目标是应用层监控，因此，能够实现SQL监控的环节只有：ORM -&gt; DataSource  -&gt; Connection -&gt; Driver，而要实现通用的非侵入式监控，则应该独立于ORM，因此我们可以从<strong>DataSource  -&gt; Connection -&gt; Driver</strong>三个环节进行入手：</p>
+<h3><strong>一、SQL Profile监控</strong></h3>
+<h4><strong>1、驱动层监控</strong></h4>
+<p>如果Driver层支持日志监控，则最方便，例如MySQL，可以在jdbc url中添加logger：</p>
+<pre><code class="language-properties">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;logger=Slf4JLogger&amp;profileSQL=true
+</code></pre>
+<p>基于Driver监控的问题在于：一方面强依赖于DB，和ORM层面临一样的问题，不具有通用性上述的问题，且需要厂商的支持，例如Oracle Driver就不支持日志监控；另一方面SQL格式固定，无法进行定制化输出。</p>
+<h4><strong>2、连接层监控</strong></h4>
+<p>如果厂商驱动不支持SQL日志，可以Driver进行代理实现SQL监控功能，常用的开源组件如<a href="https://p6spy.readthedocs.io/en/latest/">P6Spy</a>、<a href="https://github.com/arthurblake/log4jdbc">log4jdbc</a> 等，其原理都是代理了厂商的驱动，因此只需要修改jdbc url：</p>
+<ul>
+<li>pyspy</li>
+</ul>
+<pre><code class="language-properties">jdbc:p6spy:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC
+</code></pre>
+<ul>
+<li>log4jdbc</li>
+</ul>
+<pre><code class="language-properties">jdbc:log4jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC
+</code></pre>
+<h4><strong>3、数据源层监控</strong></h4>
+<p>可以通过对DataSource进行代理实现SQL监控</p>
+<ul>
+<li>P6Spy：</li>
+</ul>
+<pre><code class="language-java">@Bean
+@Primary
+public DataSource spyDataSource(@Autowired DataSource dataSource) {
+  // wrap a datasource using P6SpyDataSource
+  return new P6DataSource(dataSource);
+}
+</code></pre>
+<ul>
+<li>log4jdbc</li>
+</ul>
+<pre><code class="language-java">public DataSource spyDataSource(DataSource dataSource) {
+    // wrap the provided dataSource
+  return new DataSource() {
+    @Override
+    public Connection getConnection() throws SQLException {
+      // wrap the connection with log4jdbc
+      return new ConnectionSpy(dataSource.getConnection());
+    }
+      
+    @Override
+    public Connection getConnection(String username, String password) throws SQLException {
+       // wrap the connection with log4jdbc
+      return new ConnectionSpy(dataSource.getConnection(username, password));
+     }
+      //...
+  };
+}
+</code></pre>
+<p>上述三种方案都可以实现SQL监控，那么在实际应用场景中选择哪种方式更好呢？这和实际的生产方式有关。在我手，数据库是基于KDB的，Java应用是基于KsBoot，其中，数据库连接是在KDB平台配置的，底层的数据源是使用ShardingSphere+HikariDataSource进行魔改的。</p>
+<p>第一种方案，由于数据库连接是由DBA维护的，升级需求修改数据库连接，因此不建议。</p>
+<p>第二种方案，同理需要修改数据库连接，且比第一种更容易配错，因此也不建议。</p>
+<p>排除上述两种方式，剩下的只有第三种方案了，但是第三种方案有很大的挑战，原因在于需要兼容快手kuaishou-framework奇葩的JdbcTemplate使用方式。确切地说，在于使用了DataSourceConfig。</p>
+<pre><code class="language-java">public interface DataSourceConfig extends HasBizDef {
+
+    /**
+     * 数据源名称，必须与KDB申请时填写的一致
+     */String bizName();
+
+    /**
+     * 获取当前可用区单库只读的JdbcTemplate
+     */
+    default NamedParameterJdbcTemplate read() {
+        return InternalDatasourceConfig.readForceAz(this, currentAz(), currentPaz(), &quot;read&quot;);
+    }   
+
+    /**
+     * 获取当前可用区单库读写的JdbcTemplate
+     */
+    default NamedParameterJdbcTemplate write() {
+        return InternalDatasourceConfig.writeForceAz(this, currentAz(), currentPaz(), &quot;write&quot;);
+    }	
+  //....
+}
+</code></pre>
+<p>DefaultDataSourceConfig是一个接口类，默认封装了NamedParameterJdbcTemplate的创建，业务方通过继承该接口来定义数据源:</p>
+<pre><code class="language-kotlin">enum class AdDataSources(
+    private val bizDef: BizDef,
+    private val forTest: AdDataSources? = null,
+    private val usingNewZk: Boolean = false
+) : DataSourceConfig{
+    adFansTopProfileDashboardTest,
+    adFansTopProfileDashboard,
+    adChargeTest,
+    adCharge,
+    adChargeReadOnly,
+    adDspReadOnlyTest,
+    adDspReadOnly;
+    public open fun bizName(): String {
+        return bizDef.bizName
+    }
+}
+</code></pre>
+<p>如果在业务中直接使用了DataSourceConfig创建的NamedParameterJdbcTemplate，那么我们就需要修改过程中创建的DataSource对象。那么，这里的DataSource究竟是怎么创建的呢？</p>
+<p>具体扒代码的过程就不赘述了，直接说结果吧，kuaishou-framework的数据源最终是通过DataSourceFactory进行创建的，具体代码如下：</p>
+<pre><code class="language-java">public static ListenableDataSource&lt;Failover&lt;Instance&gt;&gt; create(Instance i) {
+   //...
+   try {
+       return supplyWithRetry(
+        DATA_SOURCE_BUILD_RETRY,
+        DATA_SOURCE_BUILD_RETRY_DELAY,
+        () -&gt; new ListenableDataSource&lt;&gt;(
+              bizName, 
+              new HikariDataSource(config), ds -&gt; i.toString(), i),
+              DataSourceFactory::needRetry);
+                               
+  } catch (Throwable e) {/**/}
+}
+</code></pre>
+<p>由代码可以看到，这里的数据源实际上是通过new HikariDataSource(config)手动创建的，而DataSourceConfig又没有对外暴露创建的数据源，所以，我们该如何对DataSource代理呢?</p>
+<h3><strong>二、动态修改加载类</strong></h3>
+<p>成本最低的方式就是直接修改这段代码，将其中&#x7684;<em>&#x6E;ew HikariDataSource(config)</em>&#x4FEE;改&#x6210;<em>&#x6E;ew P6DataSource(new HikariDataSource(config))，</em>&#x90A3;么问题来了，这段代码属于基础组件包中的代码，基础架构组没有动力去修改，而我们又没有修改的权限，要想动这块代码，只能使用黑科技了。黑科技的手段有很多，那么问题又来了，哪种手段更合适呢？</p>
+<p>首先我们来分析一下，有哪些手段可以修改Java字节码？</p>
+<ul>
+<li>方案一、编译时修改，需要开发maven插件</li>
+</ul>
+<p>（不使用maven插件的同学咋办？）</p>
+<ul>
+<li>方案二、加载时修改，重写类加载器</li>
+</ul>
+<p>需要在代码中指定特定的类加载器，用有一定的侵入式</p>
+<ul>
+<li>方案三、运行时修改，使用JavaAgent</li>
+</ul>
+<p>需要修改应用启动参数，运维成本有点高</p>
+<p>首先要说明的是，这里不是对类方法进行增强，所以想使用cglib动态代理的想法是不可行的。前面三种方案都有一定的局限性：方案一比较麻烦，方案二侵入性强，方案三则需要使用JavaAgent技术，那有没有方案不使用Agent就可以动态修改已经加载的字节码呢？答案是没有，至少理论上没有。不过，好在天无绝人之路，JDK9之后，可以动态启动JavaAgent，这样就不用修改启动参数了。这里，我们选择使用byte-buddy进行字节码重写。</p>
+<p><em>下面是对动态启动Java Agent技术的解释</em></p>
+<blockquote>
+<p>Note that starting with Java 9, there is the Launcher-Agent-Class manifest attribute for jar files that can specify the class of a Java Agent to start before the class specified with the Main-Class is launched. That way, you can easily have your Agent collaborating with your application code in your JVM, without the need for any additional command line options. The Agent can be as simple as having an agentmain method in your main class storing the Instrumentation reference in a static variable.</p>
+</blockquote>
+<blockquote>
+<p>See <a href="https://docs.oracle.com/en/java/javase/15/docs/api/java.instrument/java/lang/instrument/package-summary.html#package.description">the java.lang.instrument package documentation</a>…</p>
+</blockquote>
+<blockquote>
+<p>Getting hands on an Instrumentation instance when the JVM has not been started with Agents is trickier. It must support launching Agents after startup in general, e.g. via the Attach API. <a href="https://stackoverflow.com/a/19912148/2711488">This answer</a> demonstrates at its end such a self-attach to get hands on the Instrumentation. When you have the necessary manifest attribute in your application jar file, you could even use that as agent jar and omit the creation of a temporary stub file.</p>
+</blockquote>
+<blockquote>
+<p>However, recent JVMs forbid self-attaching unless -Djdk.attach.allowAttachSelf=true has been specified at startup, but I suppose, taking additional steps at startup time, is precisely what you don’t want to do. One way to circumvent this, is to use another process. All this process has to to, is to attach to your original process and tell the JVM to start the Agent. Then, it may already terminate and everything else works the same way as before the introduction of this restriction.</p>
+</blockquote>
+<blockquote>
+<p>As mentioned in <a href="https://stackoverflow.com/questions/56787777/?noredirect=1&lq=1#comment100160373_56787777">this comment</a>, Byte-Buddy has already implemented those necessary steps and the stripped-down Byte-Buddy-Agent contains that logic only, so you can use it to build your own logic atop it.</p>
+</blockquote>
+<ul>
+<li>字节码工具对比</li>
+</ul>
+<p><img src="https://static.yximgs.com/udata/pkg/EE-KSTACK/4223630ea14c6367968188fd52cafa26.png" alt="图片"></p>
+<ul>
+<li>使用bytebuddy修改字节码</li>
+</ul>
+<p>在实现代码之前，我们回过头来再看一下快手的数据源生成：</p>
+<pre><code class="language-java">new ListenableDataSource&lt;&gt;(bizName, new HikariDataSource(config), ds -&gt; i.toString());
+</code></pre>
+<p>这里实际生成的数据源类型是ListenableDataSource，而ListenableDataSource刚好继承了DelegatingDataSource类，而DelegatingDataSource的构造方法如下：</p>
+<pre><code class="language-java">public class DelegatingDataSource implements DataSource {
+   //...
+  public DelegatingDataSource(DataSource targetDataSource) {
+    this.setTargetDataSource(targetDataSource);
+   }
+
+  public void setTargetDataSource(@Nullable DataSource targetDataSource) {
+      this.targetDataSource = targetDataSource;
+  }
+  //...
+}
+</code></pre>
+<p>因此，我们可以通过改写DelegatingDataSource#setTargetDataSource方法，实现同样的效果，修改后的方法应该如下：</p>
+<pre><code class="language-java">public void setTargetDataSource(@Nullable DataSource targetDataSource) {
+        this.targetDataSource = new P6DataSource(targetDataSource;
+}
+</code></pre>
+<p>那么具体如何修改字节码呢？这里是<a href="https://bytebuddy.net/#/tutorial">官方文档</a>，原理我们不做赘述，直接介绍实现了。实现方式有三种：</p>
+<h4><strong>1、类文件替换</strong></h4>
+<p>假设你已经通过Java代码编译了新的类，现在要替换JVM中类的定义，代码如下：</p>
+<pre><code class="language-java">new ByteBuddy()
+  .redefine(NewDelegatingDataSource.class)
+  .name(DelegatingDataSource.class.getName())
+  .make()
+  .load(Thread.currentThread().getContextClassLoader(), 
+        ClassReloadingStrategy.fromInstalledAgent());
+</code></pre>
+<h4><strong>2、操作字节码：</strong></h4>
+<pre><code class="language-java">new ByteBuddy()
+    .redefine(DelegatingDataSource.class)
+    //重写DelegatingDataSource#setTargetDataSource方法
+    .method(named(&quot;setTargetDataSource&quot;))
+    .intercept(MyImplementation.INSTANCE)
+    .make()
+    .load(Thread.currentThread().getContextClassLoader(),
+          ClassReloadingStrategy.fromInstalledAgent());
+
+enum MyImplementation implements Implementation {
+
+INSTANCE; // singleton
+
+  @Override
+  public InstrumentedType prepare(InstrumentedType instrumentedType) {
+  return instrumentedType;
+  }
   
-    @Autowired
-    DiscoveryClient discoveryClient;
-    
-    @RequestMapping(value = &quot;/service&quot;, method = {RequestMethod.GET})
-    @ResponseBody
-    public String getServiceInfo() {
-       return  &quot;service:&quot;+discoveryClient.getServices()+&quot; , memo:&quot;+discoveryClient.description();
-    }
-}
-</code></pre>
-<p>这时候跑一下试试看，继续访问之前的地址：<a href="http://localhost:1000/">http://localhost:1000/</a> ，可以看到Eureka注册中心页面已经包含一个我们定义的服务了，就是上面新建的 100端口的服务。</p>
-<p><img src="/images/blog/engineering/microservice-image_7_2.png" alt="image_7_2.png"></p>
-<p>同样，我们可以调用上面的那个获取注册服务信息的接口，从服务发现的角度看看有多少个服务被注册到注册中心去。 <a href="http://localhost:1001/eurekacenter/service">http://localhost:1001/eurekacenter/service</a></p>
-<p><img src="/images/blog/engineering/microservice-image_7_3.png" alt="image_7_3.png"></p>
-<p>如上图所示，方括号中的<code>eureka-client</code>通过Spring Cloud定义的 getServiceInfo 接口在eureka的实现中获取到的所有服务清单，他是一个String的List，如果注册了多个提供者，就会全部显示。</p>
-<h3>2.Spring Cloud Consul <a href="#scroller-6" id="scroller-6"></a></h3>
-<p>Consul 用于实现分布式系统的服务发现与配置。与其它分布式服务注册与发现的方案，Consul 的方案更具“一站式”特征，内置了服务注册与发现框 架、分布一致性协议实现、健康检查、Key/Value 存储、多数据中心方案，不再需要依赖其它工具（比如 ZooKeeper 之类的）。</p>
-<p>而Spring Cloud Consul ，是将其作为一个整体，在微服务架构中为我们的基础设施提供服务发现和服务配置的工具。</p>
-<h4>2.2.Consul 的优势 <a href="#scroller-7" id="scroller-7"></a></h4>
-<p>1、使用 Raft 算法来保证一致性, 比复杂的 Paxos 算法更直接。</p>
-<p>2、支持多数据中心，内外网的服务采用不同的端口进行监听。 多数据中心集群可以避免单数据中心的单点故障,而其部署则需要考虑网络延迟, 分片等情况等。 zookeeper 和 etcd 均不提供多数据中心功能的支持，上面表格中有体现。</p>
-<p>3、支持健康检查。</p>
-<p>4、支持 http 和 dns 协议接口。 zookeeper 的集成较为复杂, etcd 只支持 http 协议。</p>
-<p>5、官方提供 web 管理界面, etcd 无此功能。</p>
-<h4>2.2.Consul的特性 <a href="#scroller-8" id="scroller-8"></a></h4>
-<p>1、服务发现</p>
-<p>2、健康检查</p>
-<p>3、Key/Value存储</p>
-<p>4、多数据中心</p>
-<h4>2.2.安装Consul注册中心 <a href="#scroller-9" id="scroller-9"></a></h4>
-<p>1、官方下载64版本 ：<a href="https://www.consul.io/downloads.html">https://www.consul.io/downloads.html</a></p>
-<p>2、解压后复制到目录 /usr/local/bin 下</p>
-<p>3、启动终端，先看下啥版本的</p>
-<pre><code class="language-sh">liyifei@MacPro ~ % consul --version
-Consul v1.10.4
-Revision 7bbad6fe
-Protocol spoken by default, understands to (agent will automatically use protocol &gt;when speaking to compatible agents)
-</code></pre>
-<p>4、执行安装命令，可以看到他的 Client Addr 的端口为8500。所以访问 8500端口站点，<a href="http://127.0.0.1:8500/ui/dc1/services">http://127.0.0.1:8500/ui/dc1/services</a></p>
-<pre><code class="language-sh">  liyifei@MacPro ~ % consul agent -dev
-  ==&gt; Starting Consul agent...
-             Version: &#39;1.10.4&#39;
-             Node ID: &#39;6db154b4-62ff-e67d-e745-1a7270fa1ce8&#39;
-           Node name: &#39;B000000147796DS&#39;
-          Datacenter: &#39;dc1&#39; (Segment: &#39;&lt;all&gt;&#39;)
-              Server: true (Bootstrap: false)
-         Client Addr: [127.0.0.1] (HTTP: 8500, HTTPS: -1, gRPC: 8502, DNS: 8600)
-        Cluster Addr: 127.0.0.(LAN: 8301, WAN: 8302)
-           Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false, Auto-Encrypt-TLS: false
-</code></pre>
-<p><img src="/images/blog/engineering/microservice-image_7_4.png" alt="image_7_4.png"></p>
-<p>我们可以看到，现在没有客户端注册上来，只有一个自身的实例。</p>
-<h4>2.2.创建服务提供者 <a href="#scroller-10" id="scroller-10"></a></h4>
-<p>由于Spring Cloud Consul项目的实现，我们可以轻松的将基于Spring Boot的微服务应用注册到Consul上，并通过此实现微服务架构中的服务治理。</p>
-<p>我们在micro-service-center下新建一个cloud项目consul-client，该项目pom文件添加如下：</p>
-<pre><code class="language-xml">&lt;xml&gt;
-  &lt;!--    在子工程中添加父工程名称--&gt;
-  &lt;parent&gt;
-    &lt;groupId&gt;com.microservice&lt;/groupId&gt;
-    &lt;artifactId&gt;center&lt;/artifactId&gt;
-    &lt;version&gt;1.0.0&lt;/version&gt;
-  &lt;/parent&gt;
+  @Override
+  public ByteCodeAppender appender(Target implementationTarget) {
+  return MyAppender.INSTANCE;
+  }
   
-  &lt;dependencies&gt;
-    &lt;!--        Consul服务发现--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-cloud-starter-consul-discovery&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-    &lt;!--        Consul健康检查--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-boot-starter-actuator&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-  &lt;/dependencies&gt;
-&lt;/xml&gt;
-</code></pre>
-<p>然后修改一下<code>application.yml的配置信息</code>，将consul配置写入，注释应该很清楚了，如下：</p>
-<pre><code class="language-yaml">spring:
-  application:
-    name: consul-producer # 当前服务的名称
-  cloud:
-    consul: # 以下为Consuk注册中心的地址，如果安装的不是这个host和port，这边可以调整
-      host: localhost
-      port: 8500
-server:
-  port: 850# 当前服务的端口
-</code></pre>
-<p>同样的，我们要在应用主类Application文件中通过加上<code>@EnableDiscoveryClient</code>注解，该注解保证当前服务被Consul当成provider发现。</p>
-<p>大家看到这个做法跟Eureka一样，因为Spring Cloud对服务治理做的一层抽象，所以可以屏蔽Eureka和Consul服务治理的实现细节，</p>
-<p>程序上不需要做改变，只需要引入不同的服务治理依赖，并配置相关的配置属性 就能轻松的将微服务纳入Spring Cloud的各个服务治理框架中。</p>
-<pre><code class="language-java">@SpringBootApplication
-@EnableDiscoveryClient
-public class ConsulClientApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class, args);
-    }
+}
+//字节码定义
+enum MyAppender implements ByteCodeAppender {
+
+INSTANCE; // singleton
+
+@Override
+public Size apply(MethodVisitor methodVisitor,
+        Implementation.Context implementationContext,
+        MethodDescription instrumentedMethod) {
+  Label label0 = new Label();
+  methodVisitor.visitLabel(label0);
+  methodVisitor.visitLineNumber(70, label0);
+  methodVisitor.visitVarInsn(ALOAD, 0);
+  methodVisitor.visitTypeInsn(NEW, &quot;com/p6spy/engine/spy/P6DataSource&quot;);
+  methodVisitor.visitInsn(DUP);
+  methodVisitor.visitVarInsn(ALOAD, 1);
+  methodVisitor.visitMethodInsn(INVOKESPECIAL, &quot;com/p6spy/engine/spy/P6DataSource&quot;, &quot;&lt;init&gt;&quot;, &quot;(Ljavax/sql/DataSource;)V&quot;, false);
+  methodVisitor.visitFieldInsn(PUTFIELD, &quot;org/springframework/jdbc/datasource/DelegatingDataSource&quot;, &quot;targetDataSource&quot;, &quot;Ljavax/sql/DataSource;&quot;);
+  Label label1 = new Label();
+  methodVisitor.visitLabel(label1);
+  methodVisitor.visitLineNumber(71, label1);
+  methodVisitor.visitInsn(RETURN);
+  Label label2 = new Label();
+  methodVisitor.visitLabel(label2);
+  methodVisitor.visitLocalVariable(&quot;this&quot;, &quot;Lorg/springframework/jdbc/datasource/DelegatingDataSource;&quot;, null, label0, label2, 0);
+  methodVisitor.visitLocalVariable(&quot;targetDataSource&quot;, &quot;Ljavax/sql/DataSource;&quot;, null, label0, label2, 1);
+  methodVisitor.visitMaxs(4, 2);
+  return new Size(4, 2);
+  }
 }
 </code></pre>
-<p>修改完成之后，我们就可以把这个服务提供者启动了，然后再去注册中心查看服务的注册情况，就可以看到被注册进来的Provider（consul-producer）：</p>
-<p><img src="/images/blog/engineering/microservice-image_7_5.png" alt="image_7_5.png"></p>
-<h2>总结 <a href="#scroller-11" id="scroller-11"></a></h2>
-<p>除了 Eureka、Consul，还有其他的的注册中心技术，如Zookeeper、Nocas等。但无论何种注册中心技术，本质上都是为了解决微服务中的如下问题：</p>
-<p><strong>解耦服务之间相互依赖的细节</strong></p>
-<p>我们知道服务之间的远程调用必须要知道对方的IP、端口信息。我们可以在调用方直接配置被调用方的IP、端口，这种调用方直接依赖IP、端口的方式存在明显的问题，如被调用的IP、端口变化后，调用方法也要同步修改。</p>
-<p>通过服务发现，将服务之间IP与端口的依赖转化为服务名的依赖，服务名可以根据具微服务业务来做标识，因此，屏蔽、解耦服务之间的依赖细节是服务发现与注册解决的第一个问题。</p>
-<p><strong>对微服务进行动态管理</strong></p>
-<p>在微服务架构中，服务众多，服务之间的相互依赖也错综复杂，无论是服务主动停止，意外挂掉，还是因为流量增加对服务实现进行扩容，这些服务数据或状态上的动态变化，都需要尽快的通知到被调用方，被调用方才采取相应的措施。因此，对于服务注册与发现要实时管理者服务的数据与状态，包括服务的注册上线、服务主动下线，异常服务的剔除。</p>
-18:T2b20,<p><a href="https://baijiahao.baidu.com/s?id=1769207484615537227">转载</a></p>
-<h4>引言</h4>
-<h4>1、队列应用场景：</h4>
-<p>MQ（Message Queue，消息队列）<br><strong>消息队列在实际应用中常用的使用场景（优点）</strong>：<code>异步处理</code>，<code>应用解耦</code>，<code>流量削锋</code>和<code>消息通讯</code>四个场景。</p>
-<h4>2、目前使用较多的消息队列：</h4>
-<p>有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ。</p>
-<h4>3、如何选型（目前现状）：</h4>
-<p>ActiveMQ，性能不是很好，因此在高并发的场景下，直接被pass掉了。它的Api很完善，在中小型互联网公司可以去使用。最早大家都用 ActiveMQ，但是现在确实大家用的不多了，社区也不是很活跃，不推荐用这个了；</p>
-<p>后来大家开始用 RabbitMQ，但是确实 erlang 语言阻止了大量的 Java 工程师去深入研究和掌控它，对公司而言，几乎处于不可控的状态，但是确实人家是开源的，比较稳定的支持，活跃度也高，可视化的管理界面比较友好；</p>
-<p>不过现在确实越来越多的公司，会去用 RocketMQ，确实很不错（阿里出品），它是纯Java开发，它高性能、满足可靠性、分布式事物、支持水平扩展、上亿级别的消息堆积、主从之间的切换等等。MQ的所有优点它基本都满足。但是它最大的缺点：商业版收费。但社区可能有突然黄掉的风险，对自己公司技术实力有绝对自信的，推荐用 RocketMQ，否则老老实实用 RabbitMQ 吧，毕竟RabbitMQ有活跃的开源社区，绝对不会黄。</p>
-<p>所以中小型公司，技术实力较为一般，技术挑战不是特别高，用 RabbitMQ 是不错的选择；大型公司，基础架构研发实力较强，用 RocketMQ 是很好的选择。</p>
-<p>如果是大数据领域的实时计算、日志采集等场景，用 Kafka 是业内标准的，绝对没问题，适合产生大量数据的互联网服务的数据收集业务等。社区活跃度很高，何况几乎是全世界这个领域的事实性规范。kafka，主要强调高性能，如果对业务需要可靠性消息的投递的时候。那么就不能够选择kafka了。</p>
-<h4>4、使用消息队列缺点：</h4>
-<ul>
-<li>系统可用性降低：系统引入的外部依赖越多，越容易挂掉，万一MQ挂了，整套系统崩溃了。</li>
-<li>系统复杂性提高：加MQ进来，怎么保证消息没有重复消费？怎么处理消息丢失的情况？怎么保证消息传递的顺序性？</li>
-<li>一致性问题：A系统处理完了直接返回成功了，后面的如果失败了，这数据就不一致了。</li>
-</ul>
-<h4>一、RabbitMQ</h4>
-<h4>1、RabbitMQ概述</h4>
-<p><code>AMQP</code>，即Advanced Message Queuing Protocol，一个提供统一消息服务的应用层<strong>标准高级消息队列协议</strong>，是应用层协议的一个开放标准，为面向消息的中间件设计。AMQP的主要特征是面向消息、队列、路由（包括点对点和发布/订阅）、可靠性、安全。<br>AMQP协议更多用在企业系统内，对数据一致性、稳定性和可靠性要求很高的场景，对性能和吞吐量的要求还在其次。</p>
-<p><code>RabbitMQ</code>是实现了高级消息队列协议（AMQP）的开源消息代理软件（亦称面向消息的中间件）。RabbitMQ服务器是用Erlang语言编写的。</p>
-<p>RabbitMQ 是比较有代表性的，因为是<code>基于主从（非分布式）做高可用性</code>的。</p>
-<h4>2、RabbitMQ原理图</h4>
-<p>RabbitMQ通过<code>信道</code>的方式传输数据，将消息发布到交换机上，消息拥有一个路邮键，由消息创建时设定，通过队列路由键，可以把队列绑定到交换机上，消息到达交换机后，RabbitMQ将消息的路由键与队列的路由键进行匹配（不同的交换机有不同的路由规则），匹配到相应的队列，消息投递到队列的队列中供消费者消费。</p>
-<blockquote>
-<p>多个消费者可以订阅同一个Queue，消息将以<code>循环（round-robin）</code>的方式发送给消费者，每条消息只会发给一个订阅的消费者，而不是每个消费者都收到所有的消息并处理。</p>
-</blockquote>
-<blockquote>
-<p>每个Channel运行在独立的线程上，多个线程共享同一个socket。</p>
-</blockquote>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/dfde605794cc90a31ce1223c54218372.jpeg@c_1,w_901,h_315,x_0,y_0" alt=""><br><strong>相关概念：</strong></p>
-<ul>
-<li>ConnectionFactory（连接管理器）：应用程序与Rabbit之间建立连接的管理器，程序代码中使用；</li>
-<li>Broker：简单来说就是消息队列服务器实体。</li>
-<li>Channel（信道）：消息推送使用的通道；</li>
-<li>Exchange（交换器）：用于接受、分配消息；</li>
-<li>Queue（队列）：用于存储生产者的消息；</li>
-<li>RoutingKey（路由键）：用于把生成者的数据分配到交换器上；【最大255个字节】</li>
-<li>BindingKey（绑定键）：用于把交换器的消息绑定到队列上；【最大255个字节】</li>
-<li>vhost（虚拟主机）每个Rabbit都能创建很多vhost，每个虚拟主机其实都是mini版的RabbitMQ，拥有自己的队列，交换器和绑定，拥有自己的权限机制。</li>
-</ul>
-<h4>3、RabbitMQ常用的三种交换机</h4>
-<p><strong>RabbitMQ常用的三种Exchange</strong>：fanout,direct,topic</p>
-<h4>（1）Direct Exchange ：</h4>
-<p>直连型交换机，根据消息携带的路由键将消息投递给对应队列。<br>　　大致流程，有一个队列绑定到一个直连交换机上，同时赋予一个路由键 routing key。　然后当一个消息携带着路由值为X，这个消息通过生产者发送给交换机时，交换机就会根据这个路由值X去寻找绑定值也是X的队列。</p>
-<h4>（2）Fanout Exchange：</h4>
-<p>扇型交换机，这个交换机没有路由键概念，就算你绑了路由键也是无视的。 这个交换机在接收到消息后，会直接转发到绑定到它上面的所有队列。</p>
-<h4>（3）Topic Exchange：</h4>
-<p>主题交换机，这个交换机其实跟直连交换机流程差不多，但是它的特点就是在它的路由键和绑定键之间是有规则的。<br>　　<br><strong>性能排序</strong>：fanout &gt; direct &gt;&gt; topic。</p>
-<h4>4、 RabbitMQ集群元数据</h4>
-<p>RabbitMQ集群会始终同步四种类型的内部元数据：</p>
-<ul>
-<li>a. 队列元数据：队列名称和它的属性</li>
-<li>b. 交换器元数据：交换器名称、类型和属性</li>
-<li>c. 绑定元数据：一张简单的表格展示了如何将消息路由到队列</li>
-<li>d. vhost元数据：为vhost内的队列、交换器和绑定提供命名空间和安全属性</li>
-</ul>
-<h4>5、RabbitMQ镜像集群</h4>
-<p><strong>RabbitMQ 有三种模式</strong>：单机模式、普通集群模式（无高可用性）、<code>镜像集群模式</code>（高可用性）。</p>
-<p><code>镜像队列</code>将需要消费的队列变成镜像队列，存在于多个节点，实现RabbitMQ的高可用，保证 100% 数据不丢失。作用就是消息实体会主动在镜像节点之间实现同步，而不是像普通模式那样，在消费者消费数据时临时拉取，缺点就是集群内部的<code>同步通讯</code>会占去大量的网络带宽。<br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/53a92fdedade9355420e866bbdb51be1.jpeg@c_1,w_613,h_390,x_0,y_0" alt=""></p>
-<h4>二、RocketMQ</h4>
-<p><code>RocketMQ</code>是阿里开源的消息中间件，目前也已经孵化为Apache顶级项目。用Java语言实现，在设计时参考了Kafka，并做出了自己的一些改进，消息可靠性上比Kafka更好。RocketMQ在阿里内部被广泛应用在订单，交易，充值，流计算，消息推送，日志流式处理，binglog分发等场景。</p>
-<p><strong>RocketMQ缺点：</strong></p>
-<ul>
-<li>单机支持1万以上持久化队列；</li>
-<li>RocketMQ的所有消息都是持久化的，先写入系统PAGECACHE，然后刷盘，可以保证内存与磁盘都有一份数据，而访问时，直接从内存读取。</li>
-<li>模型简单，接口易用（JMS的接口很多场合并不太实用）；</li>
-<li>性能非常好，可以允许大量堆积消息在Broker中；</li>
-<li>支持多种消费模式，包括集群消费、广播消费等；</li>
-<li>各个环节分布式扩展设计，支持主从和高可用；</li>
-<li>开发度较活跃，版本更新很快。</li>
-</ul>
-<p><strong>RocketMQ缺点：</strong></p>
-<ul>
-<li>支持的 客户端语言不多，目前是Java及C++，其中C++还不成熟</li>
-<li>维护RocketMQ需要专业的团队</li>
-<li>商业版收费，有许多功能是不对外提供的。</li>
-<li>没有在MQ核心里实现JMS等接口</li>
-</ul>
-<h4>三、kafka</h4>
-<h4>1、kafka概述</h4>
-<p><code>kafka</code>是Linkedin于2010年12月份开源的<code>消息发布订阅</code>系统,它主要用于处理活跃的流式数据,大数据量的数据处理上。作为hadoop生态系统的一部分，被各种商业公司广泛应用。</p>
-<p><strong>kafka优点：</strong></p>
-<ul>
-<li>高吞吐量、低延迟：kafka每秒可以处理几十万条消息，它的延迟最低只有几毫秒</li>
-<li>可扩展性：kafka集群支持热扩展</li>
-<li>持久性、可靠性：消息被持久化到本地磁盘，并且支持数据备份防止数据丢失</li>
-<li>容错性：允许集群中节点失败（若副本数量为n,则允许n-1个节点失败）</li>
-<li>高并发：支持数千个客户端同时读写</li>
-</ul>
-<p><strong>kafka缺点：</strong></p>
-<ul>
-<li>快速持久化：可以在O(1)的系统开销下进行消息持久化；</li>
-<li>高吞吐：在一台普通的服务器上既可以达到10W/s的吞吐速率；</li>
-<li>完全的分布式系统：Broker、Producer和Consumer都原生自动支持分布式，自动实现负载均衡；</li>
-<li>支持同步和异步复制两种高可用机制；</li>
-<li>支持数据批量发送和拉取；</li>
-<li>零拷贝技术(zero-copy)：减少IO操作步骤，提高系统吞吐量；</li>
-<li>数据迁移、扩容对用户透明；</li>
-<li>无需停机即可扩展机器；</li>
-<li>其他特性：丰富的消息拉取模型、高效订阅者水平扩展、实时的消息订阅、亿级的消息堆积能力、定期删除机制</li>
-</ul>
-<h4>2、kafka原理图</h4>
-<p><img src="https://pic.rmb.bdstatic.com/bjh/beautify/3d90e1705de49c669f22628af2f6004a.jpeg@c_1,w_1010,h_651,x_0,y_0" alt=""><br><img src="https://pic.rmb.bdstatic.com/bjh/beautify/a5531d658050ce7abecb5ad4242d92ab.jpeg@c_1,w_1002,h_300,x_0,y_0" alt=""></p>
-<h4>四、总结</h4>
-<p><img src="/images/blog/engineering/middleware-img_20250723_04.png" alt="img_20250723_04.png">{: .full-width}</p>
-19:T454,<h1>Maven使用技巧</h1>
-<h3>1、使用maven.config定制化配置</h3>
-<p>Located within the project&#39;s <strong>top level directory</strong>, the files</p>
-<ul>
-<li><code>maven.config</code></li>
-<li><code>jvm.config</code></li>
-<li><code>extensions.xml</code></li>
-</ul>
-<p>contain project specific configuration for running Maven.</p>
-<p>This directory is part of the project and may be checked in into your version control.</p>
-<blockquote>
-<p>ref：<a href="https://maven.apache.org/configure.html">https://maven.apache.org/configure.html</a></p>
-</blockquote>
-<p>常见配置如：</p>
-<pre><code class="language-bash">-Dmaven.test.skip=true
---settings
-/Users/skyfalling/.m2/settings.xml
+<p>上述代码的核心思想是字节操作字节码，操作字节码是非常复杂和繁重的事情，且无法debug，那么有没有比较方便的方式呢？</p>
+<p>我们可以手动改写Java代码，然后利用插件生成对应的字节码，然后在其基础上进行修改，研发成本会低很多。这里推荐IDEA的一个插件：Byte-Code-Analyzer，使用该插件可以查看类对应的ASM字节码:</p>
+<p><img src="https://static.yximgs.com/udata/pkg/EE-KSTACK/e31962a90f6598880e78d8254d6c74d9" alt="图片"></p>
+<h4><strong>3、利用byte-buddy的Advice</strong></h4>
+<pre><code class="language-java"> public static void redefine() {
+   new ByteBuddy()
+     .redefine(DelegatingDataSource.class)
+     .visit(Advice.to(Decorator.class)
+            .on(ElementMatchers.named(&quot;setTargetDataSource&quot;)))
+     .make()
+     .load(Thread.currentThread().getContextClassLoader(),
+           ClassReloadingStrategy.fromInstalledAgent()).getLoaded();
+ }
+
+static class Decorator {
+
+  //在方法开始插入代码
+  @Advice.OnMethodEnter
+    public static void enter(@Advice.Argument(value = 0, readOnly = false) DataSource dataSource) {
+    dataSource = new P6DataSource(dataSource);
+  }
+}
 </code></pre>
-<p>There must not be a whitespace after <code>--settings,</code>With the introduction of <code>maven 3.9</code>, there was a BREAKING CHANGE that affects the parsing of the <code>maven.config</code> file:</p>
-<p>Each line in <code>.mvn/maven.config</code> is now interpreted as a single argument. That is, if the file contains multiple arguments, these must now be placed on separate lines.</p>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-25","children":"2024年03月25日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"深入理解AQS：Java并发的基石"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Java",{"href":"/blog/tag/Java/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Java"}],["$","$L13","并发编程",{"href":"/blog/tag/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"并发编程"}],["$","$L13","AQS",{"href":"/blog/tag/AQS/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AQS"}],["$","$L13","ReentrantLock",{"href":"/blog/tag/ReentrantLock/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"ReentrantLock"}],["$","$L13","JUC",{"href":"/blog/tag/JUC/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"JUC"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/服务注册与发现（实践篇）","title":"服务注册与发现（实践篇）","description":"前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。 并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景...","pubDate":"2024-03-24","tags":["微服务","服务发现","工程实践"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/middleware/RabbitMQ、RocketMQ、Kafka区别","title":"RabbitMQ、RocketMQ、Kafka区别","description":"MQ（Message Queue，消息队列） 在实际应用中常用的使用场景：异步处理，应用解耦，流量削锋和消息通讯四个场景。目前使用较多的消息队列有老牌的ActiveMQ、RabbitMQ，ZeroMQ，炙手可热的Kafka，MetaMQ，阿里巴巴的RocketMQ","pubDate":"2024-03-31","tags":["消息队列","中间件","技术选型"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Java":{"prev":null,"next":{"slug":"engineering/tooling/Maven使用技巧","title":"Maven使用技巧","description":"手把手教你如何在工作中巧妙使用Maven，提升开发效率。","pubDate":"2024-04-03","tags":["Maven","Java","构建工具"],"heroImage":"$undefined","content":"$19"}},"并发编程":{"prev":null,"next":null},"AQS":{"prev":null,"next":null},"ReentrantLock":{"prev":null,"next":null},"JUC":{"prev":null,"next":null}}}]}],["$","$L1a",null,{}]]}]}]}]
+<p>byte-buddy的Advisor和动态代理的原理不一样，他是直接修改方法体的字节码，上面的方法就是表示在方法开始插入一行，其效果如下：</p>
+<pre><code class="language-java">public void setTargetDataSource(@Nullable DataSource targetDataSource) {
+  //插入的代码
+  targetDataSource = new P6DataSource(targetDataSource);
+  this.targetDataSource = targetDataSource;
+}
+</code></pre>
+<p>注：</p>
+<ol>
+<li>动态修改已加载的类，是有限制条件的，不能添加方法或者字段，因此通过byte-buddy的Methoddelegation方法修改字节码是不可行的。</li>
+<li>使用byte-buddy的Advice，可以对非Spring托管的类进行动态增强，因为是直接修改字节码，性能更好。</li>
+</ol>
+<h3><strong>三、自动生效</strong></h3>
+<p>前面我们讲了如何修改字节码，以提供SQL监控功能，那么如何让SQL监控自动生效呢？我们的目标是非侵入式解决方案：既不能修改业务代码，也不能更改系统配置。鉴于Java世界的事实标准，我们利用了SpringBoot-Starter功能，只需增加一个maven依赖，就自动提供了SQL监控能力。</p>
+<pre><code class="language-xml">&lt;dependency&gt;
+  &lt;groupId&gt;com.kuaishou.ad&lt;/groupId&gt;
+  &lt;artifactId&gt;sqllog-spring-boot-starter&lt;/artifactId&gt;
+  &lt;version&gt;制品库查询最新版&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<p>至于SpringBoot-Starter的实现原理，网上资料很多，核心思想就是提供默认配置，开箱即用。需要注意的是，Spring6.0自动配置的方案有了调整，原来基于spring.factories的配置改成了org.springframework.boot.autoconfigure.AutoConfiguration.imports，原有的方式还支持，这对应普通应用没有影响，但是在实现Spring多容器隔离的方案上有一定的影响，后面有时间会展开讲一下。</p>
+<pre><code class="language-java">private static String[] getConfigurations(File file) {
+  @EnableAutoConfiguration
+  class NoScan {
+    //用于扫描META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports,该类定义在方法中,是为了避免扫描当前类时被加载
+  }
+  FileClassLoader classLoader = new FileClassLoader(file);
+  AutoConfigurationImportSelector selector = new AutoConfigurationImportSelector();
+  selector.setBeanClassLoader(classLoader);
+  selector.setResourceLoader(new ClassLoaderResourcePatternResolver(classLoader));
+  selector.setEnvironment(new StandardEnvironment());
+  String[] configurations = selector.selectImports(new StandardAnnotationMetadata(NoScan.class));
+  return configurations;
+}
+</code></pre>
+<h3><strong>四、SQL打印效果</strong></h3>
+<p>sqllog-spring-boot-starter默认基于p6spy，并对SQL输出提供了扩展，打印SQL日志如下：</p>
+<p><img src="https://static.yximgs.com/udata/pkg/EE-KSTACK/28cd44d1451c960cfb982773aab6ec44" alt=""></p>
+<p>SQL的打印内容分为三部分：</p>
+<p>第一行，显示执行时间、耗时、SQL操作、数据库连接等信息</p>
+<p>第二行，显示参数化SQL</p>
+<p>第三行，显示绑定参数后的实际执行的SQL</p>
+<p>通过日志看到，当SQL语句超长时，系统会对参数化SQL进行个性化缩略，而对实际执行的SQL，则保持原样输出，这样可以检索关键信息。</p>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-28","children":"2025年12月28日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"深入理解AQS：Java并发的基石"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Java",{"href":"/blog/tag/Java/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Java"}],["$","$L13","并发编程",{"href":"/blog/tag/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"并发编程"}],["$","$L13","AQS",{"href":"/blog/tag/AQS/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AQS"}],["$","$L13","ReentrantLock",{"href":"/blog/tag/ReentrantLock/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"ReentrantLock"}],["$","$L13","JUC",{"href":"/blog/tag/JUC/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"JUC"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/06-Prompt Engineering for Agents","title":"Prompt Engineering for Agents: 面向 Agent 的提示词工程","description":"Agent 的 Prompt 不是聊天提示词，而是系统接口规范。本文系统拆解 Agent Prompt 的分层架构、四种关键设计模式（Router / Planner / Executor / Reflector）、Chain-of-Thought 的 Agent 化应用、Few-shot vs Zero-shot 的场景选择、Prompt 工程化实践（模板化 / 版本控制 / 测试 / 组合），以及 Context Window 管理策略。","pubDate":"2025-12-23","tags":["Agentic","AI Engineering","Prompt Engineering"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/07-Agent Runtime from Scratch","title":"Agent Runtime from Scratch: 不依赖框架构建 Agent","description":"不依赖 LangChain 等框架，从零实现一个功能完整的 Agent Runtime。逐模块构建 LLMClient、ToolRegistry、ToolExecutor、MessageManager 和核心控制循环，包含并行工具调用、Streaming、超时控制、死循环检测等高级特性，附完整可运行代码。","pubDate":"2025-12-28","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Java":{"prev":{"slug":"engineering/middleware/非侵入式SQL监控","title":"非侵入式SQL监控","description":"你有没有因为应用程序没有打印SQL而导致问题排查困难？有没有因为SQL没有显示参数而导致日志毫无意义？有没有因为SQL超长而导致查看痛苦？有没有因为缺少SQL性能监控而导致无法报警？...","pubDate":"2024-04-07","tags":["SQL监控","Java","非侵入式"],"heroImage":"$undefined","content":"$19"},"next":null},"并发编程":{"prev":null,"next":null},"AQS":{"prev":null,"next":null},"ReentrantLock":{"prev":null,"next":null},"JUC":{"prev":null,"next":null}}}]}],["$","$L1a",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
-a:{"metadata":[["$","title","0",{"children":"深入理解AQS：Java并发的基石 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。"}],["$","meta","2",{"property":"og:title","content":"深入理解AQS：Java并发的基石"}],["$","meta","3",{"property":"og:description","content":"系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-03-25"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"深入理解AQS：Java并发的基石"}],["$","meta","9",{"name":"twitter:description","content":"系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+a:{"metadata":[["$","title","0",{"children":"深入理解AQS：Java并发的基石 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。"}],["$","meta","2",{"property":"og:title","content":"深入理解AQS：Java并发的基石"}],["$","meta","3",{"property":"og:description","content":"系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-12-28"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"深入理解AQS：Java并发的基石"}],["$","meta","9",{"name":"twitter:description","content":"系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
 12:{"metadata":"$a:metadata","error":null,"digest":"$undefined"}
