@@ -1,6 +1,6 @@
 ---
 title: "深入理解AQS：Java并发的基石"
-pubDate: "2024-03-25"
+pubDate: "2025-12-28"
 description: "系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。"
 tags: ["Java", "并发编程", "AQS", "ReentrantLock", "JUC"]
 ---
