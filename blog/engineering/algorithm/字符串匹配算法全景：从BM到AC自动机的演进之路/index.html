@@ -1,0 +1,572 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="stylesheet" href="/_next/static/css/129144073acbb2fa.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-42d55485b4428e47.js"/><script src="/_next/static/chunks/4bd1b696-8ec333fca6b38e39.js" async=""></script><script src="/_next/static/chunks/1684-a2aac8a674e5d38c.js" async=""></script><script src="/_next/static/chunks/main-app-2791dc86ed05573e.js" async=""></script><script src="/_next/static/chunks/6874-7791217feaf05c17.js" async=""></script><script src="/_next/static/chunks/app/layout-142e67ac4336647c.js" async=""></script><script src="/_next/static/chunks/968-d7155a2506e36f1d.js" async=""></script><script src="/_next/static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js" async=""></script><meta name="next-size-adjust" content=""/><title>字符串匹配算法全景：从BM到AC自动机的演进之路 - Skyfalling Blog</title><meta name="description" content="系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"/><meta property="og:title" content="字符串匹配算法全景：从BM到AC自动机的演进之路"/><meta property="og:description" content="系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2023-09-20"/><meta property="article:author" content="Skyfalling"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="字符串匹配算法全景：从BM到AC自动机的演进之路"/><meta name="twitter:description" content="系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"/><link rel="shortcut icon" href="/favicon.png"/><link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16"/><link rel="icon" href="/favicon.png"/><link rel="apple-touch-icon" href="/favicon.png"/><script>document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))</script><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__className_f367f3"><div hidden=""><!--$--><!--/$--></div><div class="min-h-screen flex flex-col"><header class="bg-[var(--background)]"><nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global"><div class="flex lg:flex-1"><a class="-m-1.5 p-1.5" href="/"><span class="sr-only">Skyfalling Blog</span><span class="text-2xl font-bold text-gray-900">Skyfalling</span></a></div><div class="flex lg:hidden"><button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"><span class="sr-only">打开主菜单</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg></button></div><div class="hidden lg:flex lg:gap-x-12"><a class="text-base font-semibold leading-6 transition-colors text-gray-900 hover:text-blue-600" href="/">首页</a><a class="text-base font-semibold leading-6 transition-colors text-blue-600 border-b-2 border-blue-600 pb-1" href="/blog/">博客</a><a class="text-base font-semibold leading-6 transition-colors text-gray-900 hover:text-blue-600" href="/about/">关于</a></div><div class="hidden lg:flex lg:flex-1 lg:justify-end"></div></nav></header><main class="flex-1"><article class="min-h-screen"><div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8"><div class="rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12"><header class="mb-8"><nav class="flex items-center gap-1 text-sm mb-4"><a class="text-gray-500 hover:text-blue-600 transition-colors" href="/blog/page/1/">博客</a><span class="text-gray-300">/</span><a class="text-gray-500 hover:text-blue-600 transition-colors" href="/blog/category/engineering/page/1/">Engineering</a></nav><div class="flex items-center mb-6"><div class="inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal"><svg class="w-4 h-4 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><time dateTime="2023-09-20">2023年09月20日</time></div></div><h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">字符串匹配算法全景：从BM到AC自动机的演进之路</h1><div class="flex flex-wrap gap-2 mb-6 justify-center"><a class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors" href="/blog/tag/%E7%AE%97%E6%B3%95/page/1/">算法</a><a class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors" href="/blog/tag/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/page/1/">字符串匹配</a><a class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors" href="/blog/tag/KMP/page/1/">KMP</a><a class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors" href="/blog/tag/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/page/1/">AC自动机</a></div></header><div class="max-w-5xl mx-auto"><div class="prose prose-lg prose-gray mx-auto max-w-none prose-headings:text-gray-900 prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700 prose-strong:text-gray-900 prose-strong:font-semibold prose-li:text-gray-700 prose-hr:border-gray-300"><blockquote>
+<p>字符串匹配是计算机科学中最基础也最重要的问题之一。从文本编辑器的查找替换，到搜索引擎的全文检索，再到网络安全中的入侵检测与敏感词过滤，字符串匹配算法无处不在。本文系统梳理从朴素匹配到 AC 自动机的完整算法演进脉络，深入分析各算法的设计思想、预处理策略与工程适用场景。</p>
+</blockquote>
+<h2>问题定义与分类</h2>
+<p>字符串匹配问题的形式化定义如下：给定文本串 T（长度为 n）和模式串 P（长度为 m），在 T 中查找 P 出现的所有位置。</p>
+<p>根据模式串的数量，字符串匹配问题可分为两类：</p>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>描述</th>
+<th>典型算法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>单模式匹配</strong></td>
+<td>在文本串中查找一个模式串</td>
+<td>BF、BM、Horspool、Sunday、KMP、Rabin-Karp</td>
+</tr>
+<tr>
+<td><strong>多模式匹配</strong></td>
+<td>在文本串中同时查找多个模式串</td>
+<td>AC 自动机、Wu-Manber</td>
+</tr>
+</tbody></table>
+<p>单模式匹配算法又可按匹配方向进一步划分：</p>
+<ul>
+<li><strong>前缀匹配</strong>（从左到右）：KMP</li>
+<li><strong>后缀匹配</strong>（从右到左）：BM、Horspool</li>
+<li><strong>特定方向优化</strong>：Sunday（从左到右匹配，但利用窗口后一位字符跳转）</li>
+<li><strong>基于哈希</strong>：Rabin-Karp（不依赖字符逐一比较）</li>
+</ul>
+<p>理解这一分类体系，是掌握各算法设计动机的前提。</p>
+<h2>朴素匹配算法（Brute Force）</h2>
+<p>朴素匹配是最直观的策略：将模式串与文本串逐位对齐，逐字符比较。一旦某个位置失配，模式串整体右移一位，重新从头比较。</p>
+<pre><code>文本串 T:  A B C A B C A B D
+模式串 P:  A B C A B D
+                     ↑ 失配
+
+文本串 T:  A B C A B C A B D
+模式串 P:    A B C A B D
+             ↑ 失配
+
+... 逐位右移，重复比较
+</code></pre>
+<p>其核心逻辑可以用伪代码表示：</p>
+<pre><code>BruteForce(T, P):
+    for i = 0 to n - m:
+        for j = 0 to m - 1:
+            if T[i + j] != P[j]:
+                break
+        if j == m:
+            report match at position i
+</code></pre>
+<p><strong>复杂度分析</strong>：最坏情况下，每次比较 m 个字符后失配，共需比较 (n - m + 1) 次，时间复杂度为 O(n * m)。典型的最坏用例是 T = &quot;AAAAAAAAB&quot;、P = &quot;AAAAB&quot;，每次比较到最后一位才失配。</p>
+<p>朴素算法的核心缺陷在于：<strong>失配后丢弃了所有已匹配的信息</strong>，导致大量冗余比较。后续的所有优化算法，本质上都在解决同一个问题——如何利用已知信息，在失配时尽可能多地跳过无效比较。</p>
+<h2>基于后缀匹配的算法族</h2>
+<h3>BM 算法：坏字符规则与好后缀规则</h3>
+<p>Boyer-Moore（BM）算法由 Robert S. Boyer 和 J Strother Moore 于 1977 年提出，是实际工程中应用最广泛的单模式匹配算法之一。Unix/Linux 系统中的 <code>grep</code> 命令在内部实现中即采用了 BM 算法的变体。</p>
+<p>BM 算法的核心设计思想有两点：<strong>从右到左比较</strong>（后缀匹配），以及<strong>通过两条跳转规则最大化移动距离</strong>。</p>
+<h4>匹配方向</h4>
+<p>与朴素算法从左到右逐字符比较不同，BM 将模式串与文本串对齐后，从模式串的末尾开始向左比较。这一设计的直觉来源是：如果文本串中某个字符完全不出现在模式串中，从右侧发现这一点后可以直接跳过整个模式串长度，而从左侧发现则只能跳过一位。</p>
+<h4>坏字符规则（Bad Character Rule）</h4>
+<p>当从右向左比较过程中，文本串中某个字符 c 与模式串中对应位置的字符不匹配时，该字符 c 即为&quot;坏字符&quot;。此时按以下策略决定移动距离：</p>
+<ol>
+<li><strong>字符 c 不在模式串中出现</strong>：模式串直接跳过整个窗口，移动距离为当前比较位置到模式串起始位置的距离加一。</li>
+<li><strong>字符 c 在模式串中出现</strong>：将模式串向右滑动，使模式串中最右侧的字符 c 与文本串中的坏字符对齐。</li>
+</ol>
+<pre><code>文本串: ... X C B A B ...
+模式串:     A B C A B
+                ↑ 比较位置 j=2, T 中字符为 &#39;B&#39;
+                  &#39;B&#39; 在模式串中最右出现位置为 j=4
+                  → 但此时对齐会导致左移，取 1
+
+坏字符规则实质：skip = j - last_occurrence(c)
+若 skip &lt;= 0，则至少移动 1 位
+</code></pre>
+<p>预处理阶段需要构建 <strong>MakeSkip 表</strong>（坏字符表），记录字符表中每个字符在模式串中最后一次出现的位置。未出现的字符标记为 -1。时间复杂度为 O(|Sigma| + m)，其中 |Sigma| 为字符集大小。</p>
+<h4>好后缀规则（Good Suffix Rule）</h4>
+<p>当从右到左比较的过程中，已经有若干字符匹配成功（形成&quot;好后缀&quot;），但在某个位置失配时，好后缀规则提供了另一种跳转策略。设好后缀为 t，则有三种情况：</p>
+<p><strong>情况一：模式串中存在另一个子串等于好后缀 t。</strong> 将模式串右移，使该子串与好后缀在文本串中的位置对齐。需要注意的是，该子串的前一个字符必须与好后缀前的字符不同，否则移动后仍会在同一位置失配。</p>
+<pre><code>模式串: C A B C A B
+好后缀:       A B
+              ↑ 模式串中 CAB 的 AB 可以对齐
+移动后: ... C A B C A B
+</code></pre>
+<p><strong>情况二：模式串中没有完整的子串匹配好后缀，但模式串的某个前缀等于好后缀的某个后缀。</strong> 此时将模式串右移，使该前缀与好后缀的对应后缀对齐。</p>
+<pre><code>模式串: A B C D A B
+好后缀:     D A B
+模式串前缀 AB = 好后缀后缀 AB
+→ 将模式串的前缀 AB 与好后缀的后缀 AB 对齐
+</code></pre>
+<p><strong>情况三：模式串中既无子串匹配好后缀，前缀也无法匹配好后缀的任何后缀。</strong> 此时模式串直接移动 m 位。</p>
+<p>预处理阶段需要构建 <strong>MakeShift 表</strong>（好后缀表），记录每种好后缀情况下的移动距离。该表的构建较为复杂，通常借助后缀数组或前缀函数辅助完成，时间复杂度为 O(m)。</p>
+<h4>BM 的移动策略</h4>
+<p>每次失配时，BM 算法同时计算坏字符规则和好后缀规则给出的移动距离，取二者中的<strong>较大值</strong>作为实际移动距离。这是 BM 算法高效的关键——两条规则互相补充，确保了在各种情况下都能获得尽可能大的跳转。</p>
+<p><strong>复杂度分析</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>时间复杂度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>最好情况</td>
+<td>O(n / (m + 1))</td>
+<td>每次比较第一个字符就跳过整个模式串</td>
+</tr>
+<tr>
+<td>最坏情况</td>
+<td>O(n * m)</td>
+<td>退化为朴素匹配，如 T = &quot;AAAA...&quot;、P = &quot;AAA&quot;</td>
+</tr>
+<tr>
+<td>平均情况</td>
+<td>亚线性</td>
+<td>实际文本中表现优异，通常远快于 O(n)</td>
+</tr>
+</tbody></table>
+<p>BM 算法在处理自然语言文本时尤为高效，因为坏字符规则在字符集较大时跳转距离更长。</p>
+<h3>Horspool 算法：BM 的工程化简化</h3>
+<p>Horspool 算法（1980）是 BM 算法的简化版本。它的核心观察是：BM 的好后缀规则实现复杂，而在实际应用中，坏字符规则已经能提供足够好的跳转效果。因此 Horspool 直接舍弃了好后缀规则，仅保留并改进了坏字符规则。</p>
+<p>Horspool 的改进在于：<strong>始终以当前匹配窗口中文本串最末尾的字符</strong>作为坏字符参考，而非 BM 中以实际失配位置的字符作为参考。无论在哪个位置失配，都用窗口最右侧对应的文本字符来查表决定移动距离。</p>
+<pre><code>文本串: ... A B C D E F ...
+模式串:     X X X X
+                  ↑ 无论在哪失配，都以 D（窗口最末字符）查表
+</code></pre>
+<p><strong>预处理</strong>：构建一个移动距离表，记录每个字符在模式串中距离最右端的距离。对于模式串 P[0..m-1]：</p>
+<pre><code>shift[c] = m                           （c 不在 P[0..m-2] 中出现）
+shift[c] = m - 1 - max{j : P[j] = c, 0 &lt;= j &lt;= m-2}  （c 在 P[0..m-2] 中出现）
+</code></pre>
+<p>注意最后一个字符 P[m-1] 不参与计算，因为它就是窗口末尾本身。</p>
+<p><strong>示例</strong>：模式串 P = &quot;BARBER&quot;，m = 6</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>B</th>
+<th>A</th>
+<th>R</th>
+<th>E</th>
+<th>其他</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>shift</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+</tr>
+</tbody></table>
+<p>B 在位置 0 和 4 出现（排除最后位置 5），最右为位置 4，shift = 6 - 1 - 4 = 1。</p>
+<p>Horspool 算法的最坏时间复杂度仍为 O(n * m)，但在实际应用中的平均性能与 BM 非常接近，且实现简洁得多，是许多工程场景下的首选。</p>
+<h3>Sunday 算法：面向实际场景的进一步优化</h3>
+<p>Sunday 算法由 Daniel M. Sunday 于 1990 年提出，从设计理念上看，它走了一条与 BM/Horspool 不同的路径：<strong>匹配方向从左到右</strong>（与朴素算法一致），但在失配时利用了一个独特的观察。</p>
+<p>Sunday 的核心思想：当匹配失败时，不关注失配位置本身，而是关注<strong>文本串中参与当前匹配窗口的最末位字符的下一位字符</strong>，即 T[i + m]（i 为当前窗口起始位置）。</p>
+<p>判断逻辑：</p>
+<ol>
+<li><strong>T[i + m] 不在模式串中出现</strong>：模式串直接跳过 m + 1 位（因为包含该字符的任何对齐都不可能匹配）。</li>
+<li><strong>T[i + m] 在模式串中出现</strong>：将模式串向右移动，使模式串中最右侧的该字符与 T[i + m] 对齐。</li>
+</ol>
+<pre><code>文本串: A B C E D A B C D
+模式串: A B C D
+            ↑ 失配（C != D）
+关注 T[i+m] = T[4] = &#39;E&#39;
+&#39;E&#39; 不在模式串中 → 跳过 m+1 = 5 位
+
+文本串: A B C E D A B C D
+模式串:           A B C D
+                  → 匹配成功
+</code></pre>
+<p><strong>预处理</strong>：与 Horspool 类似，构建一个移动距离表。不同的是，Sunday 的表需要包含模式串的最后一个字符（因为参考的是窗口外的下一个字符）：</p>
+<pre><code>shift[c] = m + 1                       （c 不在 P 中出现）
+shift[c] = m - max{j : P[j] = c, 0 &lt;= j &lt;= m-1}  （c 在 P 中出现）
+</code></pre>
+<p>Sunday 算法的优势在于最大跳转距离为 m + 1（比 BM 的 m 还多一位），且实现极其简洁。在短模式串和字符集较大的场景下（如英文文本搜索），Sunday 通常表现最优。但在最坏情况下（如二进制文本中搜索重复模式），其复杂度同样退化为 O(n * m)。</p>
+<h3>后缀匹配算法族小结</h3>
+<table>
+<thead>
+<tr>
+<th>算法</th>
+<th>匹配方向</th>
+<th>跳转依据</th>
+<th>预处理复杂度</th>
+<th>实现复杂度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BM</td>
+<td>右→左</td>
+<td>坏字符 + 好后缀</td>
+<td>O(|Sigma| + m)</td>
+<td>较高</td>
+</tr>
+<tr>
+<td>Horspool</td>
+<td>右→左</td>
+<td>窗口末尾字符</td>
+<td>O(|Sigma| + m)</td>
+<td>低</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>左→右</td>
+<td>窗口下一位字符</td>
+<td>O(|Sigma| + m)</td>
+<td>最低</td>
+</tr>
+</tbody></table>
+<p>三者的共性是：都通过预处理模式串，在失配时尽可能地跳过更多的比较位置。差异在于跳转参考字符的选取策略和实现复杂度之间的权衡。</p>
+<h2>基于前缀匹配的算法</h2>
+<h3>KMP 算法：部分匹配表与无回溯匹配</h3>
+<p>Knuth-Morris-Pratt（KMP）算法由 Donald Knuth、James Morris 和 Vaughan Pratt 于 1977 年提出，与 BM 算法同年发表，但走了一条完全不同的技术路线。KMP 的设计目标非常明确：<strong>文本串指针永远不回溯</strong>。</p>
+<p>在朴素算法中，每次失配后文本串指针要退回到本次匹配开始位置的下一位。KMP 的核心洞察是：当在位置 j 处失配时，模式串的前 j 个字符（P[0..j-1]）已经与文本串匹配成功。如果 P[0..j-1] 自身存在&quot;前缀等于后缀&quot;的结构，那么可以直接将模式串滑动到该前缀位置继续比较，而无需回退文本串指针。</p>
+<h4>next 数组（部分匹配表）</h4>
+<p>next 数组（也称失败函数或部分匹配表）是 KMP 算法的核心数据结构。对于模式串 P，next[j] 的含义是：P[0..j-1] 这个子串中，最长的&quot;真前缀等于真后缀&quot;的长度。</p>
+<p>以模式串 P = &quot;ABCABD&quot; 为例：</p>
+<table>
+<thead>
+<tr>
+<th>j</th>
+<th>子串</th>
+<th>最长公共前后缀</th>
+<th>next[j]</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>&quot;&quot;</td>
+<td>无</td>
+<td>-1（特殊标记）</td>
+</tr>
+<tr>
+<td>1</td>
+<td>&quot;A&quot;</td>
+<td>无</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>&quot;AB&quot;</td>
+<td>无</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&quot;ABC&quot;</td>
+<td>无</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>&quot;ABCA&quot;</td>
+<td>&quot;A&quot;</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>&quot;ABCAB&quot;</td>
+<td>&quot;AB&quot;</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<h4>next 数组的构建过程</h4>
+<p>next 数组的构建本身就是一次&quot;模式串对自身的匹配&quot;过程，其思想与 KMP 匹配过程完全一致：</p>
+<pre><code>BuildNext(P):
+    m = length(P)
+    next[0] = -1
+    j = 0, k = -1
+    while j &lt; m - 1:
+        if k == -1 or P[j] == P[k]:
+            j++, k++
+            next[j] = k
+        else:
+            k = next[k]    // 利用已计算的 next 值回溯
+</code></pre>
+<p>这段逻辑的关键在于 <code>k = next[k]</code> 这一步。当 P[j] 与 P[k] 不匹配时，不是简单地将 k 重置为 0，而是利用 next 数组已经计算好的部分，跳转到下一个可能匹配的位置。这正是 KMP 思想在预处理阶段的自我应用。</p>
+<p>构建过程的时间复杂度为 O(m)，因为 j 单调递增且 k 的回退次数有上界。</p>
+<h4>匹配过程</h4>
+<pre><code>KMP_Match(T, P):
+    i = 0, j = 0
+    while i &lt; n and j &lt; m:
+        if j == -1 or T[i] == P[j]:
+            i++, j++
+        else:
+            j = next[j]    // 文本串指针 i 不回溯
+    if j == m:
+        report match at position i - m
+</code></pre>
+<p>匹配过程中，文本串指针 i 始终向前移动，永不回溯。每次失配时，仅调整模式串指针 j 到 next[j] 的位置，相当于将模式串向右滑动 j - next[j] 位。</p>
+<p><strong>复杂度分析</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>时间复杂度</th>
+<th>空间复杂度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>预处理（构建 next）</td>
+<td>O(m)</td>
+<td>O(m)</td>
+</tr>
+<tr>
+<td>匹配</td>
+<td>O(n)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>总计</td>
+<td>O(n + m)</td>
+<td>O(m)</td>
+</tr>
+</tbody></table>
+<p>KMP 的时间复杂度是严格的 O(n + m)，不存在退化为 O(n * m) 的最坏情况，这是它相对于 BM 系列算法的理论优势。然而在实际工程中，BM 及其变体在大字符集文本上的平均表现往往优于 KMP，因为 BM 的跳转距离通常更大。</p>
+<h4>next 数组的优化</h4>
+<p>标准 next 数组存在一个可优化的场景：当 P[j] 失配后跳转到 next[j] = k，若 P[k] == P[j]，则在位置 k 必然还会失配，这次跳转是浪费的。优化版本在构建时做如下修正：</p>
+<pre><code>if P[j] == P[k]:
+    next[j] = next[k]    // 跳过必然失败的比较
+else:
+    next[j] = k
+</code></pre>
+<p>该优化不改变渐进复杂度，但能减少实际比较次数。</p>
+<h2>基于哈希的匹配</h2>
+<h3>Rabin-Karp 算法：滚动哈希</h3>
+<p>Rabin-Karp（RK）算法由 Michael Rabin 和 Richard Karp 于 1987 年提出，采用了一种与上述算法截然不同的思路：不逐字符比较，而是<strong>比较哈希值</strong>。</p>
+<h4>基本思想</h4>
+<p>将模式串 P 计算出一个哈希值 h(P)，然后对文本串 T 中每个长度为 m 的子串计算哈希值，与 h(P) 比较。若哈希值相等，再逐字符验证以排除哈希冲突。</p>
+<p>朴素地实现这一思想，每个子串的哈希计算需要 O(m) 时间，总复杂度仍为 O(n * m)，并无改善。RK 算法的精妙之处在于<strong>滚动哈希</strong>（Rolling Hash）。</p>
+<h4>滚动哈希</h4>
+<p>选取一个基数 d（通常取字符集大小）和一个素数 q（用于取模防止溢出），定义哈希函数：</p>
+<pre><code>h(S[i..i+m-1]) = (S[i] * d^(m-1) + S[i+1] * d^(m-2) + ... + S[i+m-1]) mod q
+</code></pre>
+<p>当窗口从 T[i..i+m-1] 滑动到 T[i+1..i+m] 时，新哈希值可以通过 O(1) 的算术运算从旧值递推得出：</p>
+<pre><code>h(T[i+1..i+m]) = (d * (h(T[i..i+m-1]) - T[i] * d^(m-1)) + T[i+m]) mod q
+</code></pre>
+<p>即：移除最高位字符的贡献，整体左移一位（乘以 d），加上新进入窗口的字符。整个过程仅涉及常数次乘法、加法和取模运算。</p>
+<h4>哈希冲突处理</h4>
+<p>当 h(T[i..i+m-1]) == h(P) 时，存在两种可能：真正匹配，或哈希冲突。因此必须进行逐字符验证。选择合适的素数 q 可以降低冲突概率。在理论分析中，若 q 足够大且随机选取，冲突概率为 O(1/q)。</p>
+<p><strong>复杂度分析</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>时间复杂度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>期望情况</td>
+<td>O(n + m)</td>
+<td>冲突次数少，验证开销可忽略</td>
+</tr>
+<tr>
+<td>最坏情况</td>
+<td>O(n * m)</td>
+<td>所有窗口哈希均冲突（如 q 选择不当）</td>
+</tr>
+</tbody></table>
+<h4>RK 的独特优势</h4>
+<p>RK 算法在单模式匹配中并不比 BM/KMP 更优，但它有一个独特的应用场景：<strong>多模式串的同时匹配</strong>。当需要在文本中同时搜索 k 个等长的模式串时，可以将所有模式串的哈希值存入哈希表，每次窗口滑动后查表比较，时间复杂度为 O(n + k * m)，远优于逐一匹配。此外，RK 算法天然适合二维模式匹配（在矩阵中搜索子矩阵）等扩展场景。</p>
+<h2>多模式匹配</h2>
+<h3>AC 自动机：Trie + 失败指针</h3>
+<p>前面讨论的算法都针对单模式匹配问题。当需要在一个文本串中同时搜索多个模式串时（如敏感词过滤需要同时检测数千个关键词），逐一应用单模式算法的效率极低。Aho-Corasick（AC）自动机正是为解决这一问题而设计的。</p>
+<p>AC 自动机由 Alfred Aho 和 Margaret Corasick 于 1975 年提出，是多模式匹配的经典算法。其核心思想是将多个模式串构建为一个有限状态自动机，使文本串只需扫描一遍即可找到所有模式串的所有出现位置。</p>
+<h4>三个核心函数</h4>
+<p>AC 自动机由三个函数协同工作：</p>
+<p><strong>1. goto 函数（转移函数）</strong></p>
+<p>goto 函数本质上是一棵 <strong>Trie 树</strong>（字典树），由所有模式串构建而成。Trie 的每条边代表一个字符，从根节点到某个节点的路径表示某个模式串的前缀。</p>
+<p>以模式串集合 {&quot;he&quot;, &quot;she&quot;, &quot;his&quot;, &quot;hers&quot;} 为例，构建的 Trie 结构如下：</p>
+<pre><code>        root
+       /    \
+      h      s
+     / \      \
+    e   i      h
+    |   |      |
+    r   s      e
+    |
+    s
+</code></pre>
+<p>goto(s, c) 表示在状态 s 下输入字符 c 后转移到的下一个状态。若当前状态没有字符 c 对应的子节点，则 goto 返回失败（fail）。根节点是特殊的：对于根节点，任何不匹配的字符都转移回根节点本身（而非失败），这保证了自动机始终可以继续运行。</p>
+<p><strong>2. failure 函数（失败指针）</strong></p>
+<p>failure 函数是 AC 自动机的精髓所在，其设计理念与 KMP 的 next 数组一脉相承。当在某个状态 s 下无法通过 goto 函数继续前进时，failure(s) 指向另一个状态 s&#39;，使得从根到 s&#39; 的路径所代表的字符串是从根到 s 的路径所代表的字符串的<strong>最长真后缀</strong>，且 s&#39; 是 Trie 中的一个有效状态。</p>
+<p>直观理解：failure 指针利用了&quot;已匹配部分的后缀可能是另一个模式串的前缀&quot;这一信息，避免了文本串指针的回溯。</p>
+<p>以上例为例，部分 failure 指针：</p>
+<ul>
+<li>状态 &quot;sh&quot; 的 failure 指向状态 &quot;h&quot;（因为 &quot;h&quot; 是 &quot;sh&quot; 的最长真后缀且在 Trie 中存在）</li>
+<li>状态 &quot;she&quot; 的 failure 指向状态 &quot;he&quot;（因为 &quot;he&quot; 是 &quot;she&quot; 的最长真后缀且在 Trie 中存在）</li>
+</ul>
+<p><strong>3. output 函数（输出函数）</strong></p>
+<p>output(s) 记录在状态 s 处可以报告的所有匹配模式串。一个状态可能对应多个输出，因为到达某个状态时，不仅该状态本身可能对应一个完整的模式串，其 failure 链上的祖先状态也可能对应完整的模式串。</p>
+<p>例如，到达状态 &quot;she&quot; 时，output 不仅包含 &quot;she&quot;，还需沿 failure 链检查：failure(&quot;she&quot;) = &quot;he&quot;，而 &quot;he&quot; 也是一个完整模式串，因此 output(&quot;she&quot;) = {&quot;she&quot;, &quot;he&quot;}。</p>
+<h4>构建过程</h4>
+<p>AC 自动机的构建分为两个阶段：</p>
+<p><strong>阶段一：构建 Trie 树（goto 函数 + 初始 output 函数）</strong></p>
+<p>将所有模式串逐一插入 Trie 树。每插入一个完整的模式串后，在其终止节点的 output 集合中记录该模式串。时间复杂度为 O(所有模式串总长度之和)。</p>
+<p><strong>阶段二：BFS 构建 failure 指针（同时完善 output 函数）</strong></p>
+<p>使用广度优先搜索（BFS）逐层计算 failure 指针：</p>
+<pre><code>BuildFailure():
+    queue = new Queue()
+
+    // 第一层节点的 failure 指向根
+    for each child c of root:
+        failure(c) = root
+        queue.enqueue(c)
+
+    // BFS 逐层构建
+    while queue is not empty:
+        current = queue.dequeue()
+        for each child node via character a:
+            // 核心逻辑：沿 failure 链找可行转移
+            state = failure(current)
+            while state != root and goto(state, a) == fail:
+                state = failure(state)
+            failure(child) = goto(state, a)   // 若 goto(root, a) 也 fail，则为 root
+
+            // 合并 output：当前节点的 output 需包含 failure 指向节点的 output
+            output(child) = output(child) ∪ output(failure(child))
+
+            queue.enqueue(child)
+</code></pre>
+<p>BFS 保证了在计算某个节点的 failure 指针时，其所有更浅层节点的 failure 指针已经计算完成。合并 output 的操作保证了匹配过程中不会遗漏任何模式串。</p>
+<h4>匹配过程</h4>
+<pre><code>AC_Match(T):
+    state = root
+    for i = 0 to n - 1:
+        while state != root and goto(state, T[i]) == fail:
+            state = failure(state)
+        state = goto(state, T[i])
+        if state == fail:
+            state = root
+
+        // 报告当前状态的所有匹配
+        temp = state
+        while temp != root:
+            if output(temp) is not empty:
+                report output(temp) at position i
+            temp = failure(temp)
+</code></pre>
+<p>文本串的每个字符只被读取一次，指针始终向前。对于每个位置，沿 failure 链检查所有可能的匹配输出。</p>
+<p><strong>复杂度分析</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>时间复杂度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>构建 Trie</td>
+<td>O(L)</td>
+<td>L 为所有模式串总长度之和</td>
+</tr>
+<tr>
+<td>构建 failure</td>
+<td>O(L)</td>
+<td>BFS 遍历所有节点</td>
+</tr>
+<tr>
+<td>匹配</td>
+<td>O(n + z)</td>
+<td>n 为文本长度，z 为匹配结果总数</td>
+</tr>
+<tr>
+<td>空间</td>
+<td>O(L * |Sigma|)</td>
+<td>可通过链表或哈希优化</td>
+</tr>
+</tbody></table>
+<h4>工程应用场景</h4>
+<p>AC 自动机在工业界有广泛的应用：</p>
+<ul>
+<li><strong>敏感词过滤</strong>：将敏感词库构建为 AC 自动机，对用户输入文本进行一次扫描即可检出所有敏感词。典型的敏感词库包含数万个词条，使用 AC 自动机可以在毫秒级完成检测。</li>
+<li><strong>病毒特征码扫描</strong>：杀毒软件将病毒特征码库构建为 AC 自动机，扫描文件时一次遍历即可匹配所有已知特征。</li>
+<li><strong>网络入侵检测系统（IDS）</strong>：如 Snort，利用 AC 自动机在网络数据包中实时检测攻击特征。</li>
+<li><strong>搜索引擎</strong>：对查询词进行多关键词高亮标注。</li>
+<li><strong>DNA 序列分析</strong>：在基因组序列中搜索多个目标片段。</li>
+</ul>
+<h2>算法选型指南</h2>
+<p>字符串匹配算法的选型不存在&quot;银弹&quot;，需要根据具体场景的特征进行权衡：</p>
+<h3>复杂度对比</h3>
+<table>
+<thead>
+<tr>
+<th>算法</th>
+<th>预处理时间</th>
+<th>匹配时间（最优）</th>
+<th>匹配时间（最差）</th>
+<th>空间</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Brute Force</td>
+<td>无</td>
+<td>O(n)</td>
+<td>O(n * m)</td>
+<td>O(1)</td>
+<td>极短模式串、一次性匹配</td>
+</tr>
+<tr>
+<td>BM</td>
+<td>O(|Sigma| + m)</td>
+<td>O(n / m)</td>
+<td>O(n * m)</td>
+<td>O(|Sigma| + m)</td>
+<td>长文本、大字符集</td>
+</tr>
+<tr>
+<td>Horspool</td>
+<td>O(|Sigma| + m)</td>
+<td>O(n / m)</td>
+<td>O(n * m)</td>
+<td>O(|Sigma|)</td>
+<td>BM 的工程简化替代</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>O(|Sigma| + m)</td>
+<td>O(n / (m+1))</td>
+<td>O(n * m)</td>
+<td>O(|Sigma|)</td>
+<td>短模式串、交互式搜索</td>
+</tr>
+<tr>
+<td>KMP</td>
+<td>O(m)</td>
+<td>O(n)</td>
+<td>O(n)</td>
+<td>O(m)</td>
+<td>需要最坏保证的场景</td>
+</tr>
+<tr>
+<td>Rabin-Karp</td>
+<td>O(m)</td>
+<td>O(n)</td>
+<td>O(n * m)</td>
+<td>O(1)</td>
+<td>多模式等长匹配、二维匹配</td>
+</tr>
+<tr>
+<td>AC 自动机</td>
+<td>O(L)</td>
+<td>O(n + z)</td>
+<td>O(n + z)</td>
+<td>O(L * |Sigma|)</td>
+<td>多模式匹配</td>
+</tr>
+</tbody></table>
+<h3>场景决策路径</h3>
+<p><strong>单模式短文本（m 较小，n 较小）</strong>：朴素算法或 Sunday 算法。预处理开销在短文本上不划算，Sunday 的实现简单且跳转距离大。</p>
+<p><strong>单模式长文本（大字符集，如自然语言）</strong>：BM 算法或 Horspool 算法。大字符集意味着坏字符规则的跳转距离更大，BM 系列算法的亚线性性能优势最为明显。Linux 的 <code>grep</code> 正是基于这一判断选择了 BM 变体。</p>
+<p><strong>单模式长文本（小字符集，如 DNA 序列）</strong>：KMP 算法。小字符集下 BM 系列的跳转距离有限，KMP 的 O(n) 最坏保证更有价值。</p>
+<p><strong>需要严格最坏复杂度保证</strong>：KMP 算法。在安全相关场景中（如正则表达式引擎的实现），算法的最坏性能不可接受为 O(n * m)，此时 KMP 是唯一的选择。</p>
+<p><strong>多个等长模式串</strong>：Rabin-Karp 算法。通过哈希表存储所有模式串的哈希值，一次滚动扫描即可完成。</p>
+<p><strong>大规模多模式匹配</strong>：AC 自动机。模式串数量从几十到数万，AC 自动机的匹配时间与模式串数量无关（仅与文本长度和匹配结果数相关），是唯一可行的方案。</p>
+<h3>工程实践中的补充考量</h3>
+<p>算法选择不仅取决于渐进复杂度，还需考虑以下工程因素：</p>
+<ul>
+<li><strong>缓存友好性</strong>：BM/Horspool 的跳跃式访问模式对 CPU 缓存不太友好，KMP 的顺序访问模式在某些场景下可能因缓存命中率更高而表现更好。</li>
+<li><strong>预处理开销</strong>：如果文本很短或匹配只执行一次，预处理的固定开销可能超过它带来的收益。此时朴素算法反而最优。</li>
+<li><strong>实现复杂度与可维护性</strong>：BM 的完整实现（包括好后缀规则）相当复杂，Horspool 和 Sunday 在牺牲极少理论性能的前提下大幅降低了实现难度。</li>
+<li><strong>并行化潜力</strong>：Rabin-Karp 的哈希计算具有天然的可并行性，适合 GPU 或 SIMD 加速。</li>
+</ul>
+<p>字符串匹配算法的演进史，实质上是一部<strong>信息利用效率</strong>的进化史。从朴素算法的&quot;零信息利用&quot;，到 KMP/BM 的&quot;利用已匹配字符信息&quot;，再到 AC 自动机的&quot;利用多模式串间的共享前缀信息&quot;，每一步跨越都建立在对问题结构更深入的理解之上。理解这些算法的设计思想，远比记忆它们的具体实现更有价值。</p>
+</div></div><!--$!--><template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template><div class="mt-12 pt-8 border-t border-gray-200">加载导航中...</div><!--/$--><div class="mt-16 border-t border-gray-200 pt-8"><div class="mx-auto max-w-3xl"><h3 class="text-2xl font-bold text-gray-900 mb-8">评论</h3></div></div></div></div></article><!--$--><!--/$--></main><footer class="bg-[var(--background)]"><div class="mx-auto max-w-7xl px-6 py-12 lg:px-8"><p class="text-center text-xs leading-5 text-gray-400">© <!-- -->2026<!-- --> Skyfalling</p></div></footer></div><script src="/_next/static/chunks/webpack-42d55485b4428e47.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[10616,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"7177\",\"static/chunks/app/layout-142e67ac4336647c.js\"],\"default\"]\n3:I[87555,[],\"\"]\n4:I[31295,[],\"\"]\n6:I[59665,[],\"OutletBoundary\"]\n9:I[74911,[],\"AsyncMetadataOutlet\"]\nb:I[59665,[],\"ViewportBoundary\"]\nd:I[59665,[],\"MetadataBoundary\"]\nf:I[26614,[],\"\"]\n:HL[\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/129144073acbb2fa.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"23QKHIVSTghHWvM98JcHB\",\"p\":\"\",\"c\":[\"\",\"blog\",\"engineering\",\"algorithm\",\"%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"blog\",{\"children\":[[\"slug\",\"engineering/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF\",\"c\"],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/129144073acbb2fa.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"zh-CN\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_f367f3\",\"children\":[\"$\",\"div\",null,{\"className\":\"min-h-screen flex flex-col\",\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"main\",null,{\"className\":\"flex-1\",\"children\":[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"bg-[var(--background)]\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-7xl px-6 py-12 lg:px-8\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-center text-xs leading-5 text-gray-400\",\"children\":[\"© \",2026,\" Skyfalling\"]}]}]}]]}]}]}]]}],{\"children\":[\"blog\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"slug\",\"engineering/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF\",\"c\"],[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[\"$L5\",null,[\"$\",\"$L6\",null,{\"children\":[\"$L7\",\"$L8\",[\"$\",\"$L9\",null,{\"promise\":\"$@a\"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"y6PTpTD0gwCl0w4MLU2Kiv\",{\"children\":[[\"$\",\"$Lb\",null,{\"children\":\"$Lc\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],[\"$\",\"$Ld\",null,{\"children\":\"$Le\"}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$f\",\"$undefined\"],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"10:\"$Sreact.suspense\"\n11:I[74911,[],\"AsyncMetadata\"]\n13:I[6874,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"968\",\"static/chunks/968-d7155a2506e36f1d.js\",\"6909\",\"static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js\"],\"\"]\n14:I[32923,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"968\",\"static/chunks/968-d7155a2506e36f1d.js\",\"6909\",\"static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js\"],\"default\"]\n16:I[40780,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"968\",\"static/chunks/968-d7155a2506e36f1d.js\",\"6909\",\"static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js\"],\"default\"]\n1a:I[85300,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"968\",\"static/chunks/968-d7155a2506e36f1d.js\",\"6909\",\"static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js\"],\"default\"]\ne:[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$10\",null,{\"fallback\":null,\"children\":[\"$\",\"$L11\",null,{\"promise\":\"$@12\"}]}]}]\n15:T72ad,"])</script><script>self.__next_f.push([1,"\u003cblockquote\u003e\n\u003cp\u003e字符串匹配是计算机科学中最基础也最重要的问题之一。从文本编辑器的查找替换，到搜索引擎的全文检索，再到网络安全中的入侵检测与敏感词过滤，字符串匹配算法无处不在。本文系统梳理从朴素匹配到 AC 自动机的完整算法演进脉络，深入分析各算法的设计思想、预处理策略与工程适用场景。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch2\u003e问题定义与分类\u003c/h2\u003e\n\u003cp\u003e字符串匹配问题的形式化定义如下：给定文本串 T（长度为 n）和模式串 P（长度为 m），在 T 中查找 P 出现的所有位置。\u003c/p\u003e\n\u003cp\u003e根据模式串的数量，字符串匹配问题可分为两类：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e分类\u003c/th\u003e\n\u003cth\u003e描述\u003c/th\u003e\n\u003cth\u003e典型算法\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e单模式匹配\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e在文本串中查找一个模式串\u003c/td\u003e\n\u003ctd\u003eBF、BM、Horspool、Sunday、KMP、Rabin-Karp\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e多模式匹配\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e在文本串中同时查找多个模式串\u003c/td\u003e\n\u003ctd\u003eAC 自动机、Wu-Manber\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e单模式匹配算法又可按匹配方向进一步划分：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e前缀匹配\u003c/strong\u003e（从左到右）：KMP\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e后缀匹配\u003c/strong\u003e（从右到左）：BM、Horspool\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e特定方向优化\u003c/strong\u003e：Sunday（从左到右匹配，但利用窗口后一位字符跳转）\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e基于哈希\u003c/strong\u003e：Rabin-Karp（不依赖字符逐一比较）\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e理解这一分类体系，是掌握各算法设计动机的前提。\u003c/p\u003e\n\u003ch2\u003e朴素匹配算法（Brute Force）\u003c/h2\u003e\n\u003cp\u003e朴素匹配是最直观的策略：将模式串与文本串逐位对齐，逐字符比较。一旦某个位置失配，模式串整体右移一位，重新从头比较。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e文本串 T:  A B C A B C A B D\n模式串 P:  A B C A B D\n                     ↑ 失配\n\n文本串 T:  A B C A B C A B D\n模式串 P:    A B C A B D\n             ↑ 失配\n\n... 逐位右移，重复比较\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e其核心逻辑可以用伪代码表示：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eBruteForce(T, P):\n    for i = 0 to n - m:\n        for j = 0 to m - 1:\n            if T[i + j] != P[j]:\n                break\n        if j == m:\n            report match at position i\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e复杂度分析\u003c/strong\u003e：最坏情况下，每次比较 m 个字符后失配，共需比较 (n - m + 1) 次，时间复杂度为 O(n * m)。典型的最坏用例是 T = \u0026quot;AAAAAAAAB\u0026quot;、P = \u0026quot;AAAAB\u0026quot;，每次比较到最后一位才失配。\u003c/p\u003e\n\u003cp\u003e朴素算法的核心缺陷在于：\u003cstrong\u003e失配后丢弃了所有已匹配的信息\u003c/strong\u003e，导致大量冗余比较。后续的所有优化算法，本质上都在解决同一个问题——如何利用已知信息，在失配时尽可能多地跳过无效比较。\u003c/p\u003e\n\u003ch2\u003e基于后缀匹配的算法族\u003c/h2\u003e\n\u003ch3\u003eBM 算法：坏字符规则与好后缀规则\u003c/h3\u003e\n\u003cp\u003eBoyer-Moore（BM）算法由 Robert S. Boyer 和 J Strother Moore 于 1977 年提出，是实际工程中应用最广泛的单模式匹配算法之一。Unix/Linux 系统中的 \u003ccode\u003egrep\u003c/code\u003e 命令在内部实现中即采用了 BM 算法的变体。\u003c/p\u003e\n\u003cp\u003eBM 算法的核心设计思想有两点：\u003cstrong\u003e从右到左比较\u003c/strong\u003e（后缀匹配），以及\u003cstrong\u003e通过两条跳转规则最大化移动距离\u003c/strong\u003e。\u003c/p\u003e\n\u003ch4\u003e匹配方向\u003c/h4\u003e\n\u003cp\u003e与朴素算法从左到右逐字符比较不同，BM 将模式串与文本串对齐后，从模式串的末尾开始向左比较。这一设计的直觉来源是：如果文本串中某个字符完全不出现在模式串中，从右侧发现这一点后可以直接跳过整个模式串长度，而从左侧发现则只能跳过一位。\u003c/p\u003e\n\u003ch4\u003e坏字符规则（Bad Character Rule）\u003c/h4\u003e\n\u003cp\u003e当从右向左比较过程中，文本串中某个字符 c 与模式串中对应位置的字符不匹配时，该字符 c 即为\u0026quot;坏字符\u0026quot;。此时按以下策略决定移动距离：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e字符 c 不在模式串中出现\u003c/strong\u003e：模式串直接跳过整个窗口，移动距离为当前比较位置到模式串起始位置的距离加一。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e字符 c 在模式串中出现\u003c/strong\u003e：将模式串向右滑动，使模式串中最右侧的字符 c 与文本串中的坏字符对齐。\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode\u003e文本串: ... X C B A B ...\n模式串:     A B C A B\n                ↑ 比较位置 j=2, T 中字符为 \u0026#39;B\u0026#39;\n                  \u0026#39;B\u0026#39; 在模式串中最右出现位置为 j=4\n                  → 但此时对齐会导致左移，取 1\n\n坏字符规则实质：skip = j - last_occurrence(c)\n若 skip \u0026lt;= 0，则至少移动 1 位\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e预处理阶段需要构建 \u003cstrong\u003eMakeSkip 表\u003c/strong\u003e（坏字符表），记录字符表中每个字符在模式串中最后一次出现的位置。未出现的字符标记为 -1。时间复杂度为 O(|Sigma| + m)，其中 |Sigma| 为字符集大小。\u003c/p\u003e\n\u003ch4\u003e好后缀规则（Good Suffix Rule）\u003c/h4\u003e\n\u003cp\u003e当从右到左比较的过程中，已经有若干字符匹配成功（形成\u0026quot;好后缀\u0026quot;），但在某个位置失配时，好后缀规则提供了另一种跳转策略。设好后缀为 t，则有三种情况：\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e情况一：模式串中存在另一个子串等于好后缀 t。\u003c/strong\u003e 将模式串右移，使该子串与好后缀在文本串中的位置对齐。需要注意的是，该子串的前一个字符必须与好后缀前的字符不同，否则移动后仍会在同一位置失配。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e模式串: C A B C A B\n好后缀:       A B\n              ↑ 模式串中 CAB 的 AB 可以对齐\n移动后: ... C A B C A B\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e情况二：模式串中没有完整的子串匹配好后缀，但模式串的某个前缀等于好后缀的某个后缀。\u003c/strong\u003e 此时将模式串右移，使该前缀与好后缀的对应后缀对齐。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e模式串: A B C D A B\n好后缀:     D A B\n模式串前缀 AB = 好后缀后缀 AB\n→ 将模式串的前缀 AB 与好后缀的后缀 AB 对齐\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e情况三：模式串中既无子串匹配好后缀，前缀也无法匹配好后缀的任何后缀。\u003c/strong\u003e 此时模式串直接移动 m 位。\u003c/p\u003e\n\u003cp\u003e预处理阶段需要构建 \u003cstrong\u003eMakeShift 表\u003c/strong\u003e（好后缀表），记录每种好后缀情况下的移动距离。该表的构建较为复杂，通常借助后缀数组或前缀函数辅助完成，时间复杂度为 O(m)。\u003c/p\u003e\n\u003ch4\u003eBM 的移动策略\u003c/h4\u003e\n\u003cp\u003e每次失配时，BM 算法同时计算坏字符规则和好后缀规则给出的移动距离，取二者中的\u003cstrong\u003e较大值\u003c/strong\u003e作为实际移动距离。这是 BM 算法高效的关键——两条规则互相补充，确保了在各种情况下都能获得尽可能大的跳转。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e复杂度分析\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e场景\u003c/th\u003e\n\u003cth\u003e时间复杂度\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e最好情况\u003c/td\u003e\n\u003ctd\u003eO(n / (m + 1))\u003c/td\u003e\n\u003ctd\u003e每次比较第一个字符就跳过整个模式串\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e最坏情况\u003c/td\u003e\n\u003ctd\u003eO(n * m)\u003c/td\u003e\n\u003ctd\u003e退化为朴素匹配，如 T = \u0026quot;AAAA...\u0026quot;、P = \u0026quot;AAA\u0026quot;\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e平均情况\u003c/td\u003e\n\u003ctd\u003e亚线性\u003c/td\u003e\n\u003ctd\u003e实际文本中表现优异，通常远快于 O(n)\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eBM 算法在处理自然语言文本时尤为高效，因为坏字符规则在字符集较大时跳转距离更长。\u003c/p\u003e\n\u003ch3\u003eHorspool 算法：BM 的工程化简化\u003c/h3\u003e\n\u003cp\u003eHorspool 算法（1980）是 BM 算法的简化版本。它的核心观察是：BM 的好后缀规则实现复杂，而在实际应用中，坏字符规则已经能提供足够好的跳转效果。因此 Horspool 直接舍弃了好后缀规则，仅保留并改进了坏字符规则。\u003c/p\u003e\n\u003cp\u003eHorspool 的改进在于：\u003cstrong\u003e始终以当前匹配窗口中文本串最末尾的字符\u003c/strong\u003e作为坏字符参考，而非 BM 中以实际失配位置的字符作为参考。无论在哪个位置失配，都用窗口最右侧对应的文本字符来查表决定移动距离。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e文本串: ... A B C D E F ...\n模式串:     X X X X\n                  ↑ 无论在哪失配，都以 D（窗口最末字符）查表\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e预处理\u003c/strong\u003e：构建一个移动距离表，记录每个字符在模式串中距离最右端的距离。对于模式串 P[0..m-1]：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eshift[c] = m                           （c 不在 P[0..m-2] 中出现）\nshift[c] = m - 1 - max{j : P[j] = c, 0 \u0026lt;= j \u0026lt;= m-2}  （c 在 P[0..m-2] 中出现）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e注意最后一个字符 P[m-1] 不参与计算，因为它就是窗口末尾本身。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e示例\u003c/strong\u003e：模式串 P = \u0026quot;BARBER\u0026quot;，m = 6\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e字符\u003c/th\u003e\n\u003cth\u003eB\u003c/th\u003e\n\u003cth\u003eA\u003c/th\u003e\n\u003cth\u003eR\u003c/th\u003e\n\u003cth\u003eE\u003c/th\u003e\n\u003cth\u003e其他\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eshift\u003c/td\u003e\n\u003ctd\u003e1\u003c/td\u003e\n\u003ctd\u003e4\u003c/td\u003e\n\u003ctd\u003e3\u003c/td\u003e\n\u003ctd\u003e2\u003c/td\u003e\n\u003ctd\u003e6\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eB 在位置 0 和 4 出现（排除最后位置 5），最右为位置 4，shift = 6 - 1 - 4 = 1。\u003c/p\u003e\n\u003cp\u003eHorspool 算法的最坏时间复杂度仍为 O(n * m)，但在实际应用中的平均性能与 BM 非常接近，且实现简洁得多，是许多工程场景下的首选。\u003c/p\u003e\n\u003ch3\u003eSunday 算法：面向实际场景的进一步优化\u003c/h3\u003e\n\u003cp\u003eSunday 算法由 Daniel M. Sunday 于 1990 年提出，从设计理念上看，它走了一条与 BM/Horspool 不同的路径：\u003cstrong\u003e匹配方向从左到右\u003c/strong\u003e（与朴素算法一致），但在失配时利用了一个独特的观察。\u003c/p\u003e\n\u003cp\u003eSunday 的核心思想：当匹配失败时，不关注失配位置本身，而是关注\u003cstrong\u003e文本串中参与当前匹配窗口的最末位字符的下一位字符\u003c/strong\u003e，即 T[i + m]（i 为当前窗口起始位置）。\u003c/p\u003e\n\u003cp\u003e判断逻辑：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eT[i + m] 不在模式串中出现\u003c/strong\u003e：模式串直接跳过 m + 1 位（因为包含该字符的任何对齐都不可能匹配）。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eT[i + m] 在模式串中出现\u003c/strong\u003e：将模式串向右移动，使模式串中最右侧的该字符与 T[i + m] 对齐。\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode\u003e文本串: A B C E D A B C D\n模式串: A B C D\n            ↑ 失配（C != D）\n关注 T[i+m] = T[4] = \u0026#39;E\u0026#39;\n\u0026#39;E\u0026#39; 不在模式串中 → 跳过 m+1 = 5 位\n\n文本串: A B C E D A B C D\n模式串:           A B C D\n                  → 匹配成功\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e预处理\u003c/strong\u003e：与 Horspool 类似，构建一个移动距离表。不同的是，Sunday 的表需要包含模式串的最后一个字符（因为参考的是窗口外的下一个字符）：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eshift[c] = m + 1                       （c 不在 P 中出现）\nshift[c] = m - max{j : P[j] = c, 0 \u0026lt;= j \u0026lt;= m-1}  （c 在 P 中出现）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSunday 算法的优势在于最大跳转距离为 m + 1（比 BM 的 m 还多一位），且实现极其简洁。在短模式串和字符集较大的场景下（如英文文本搜索），Sunday 通常表现最优。但在最坏情况下（如二进制文本中搜索重复模式），其复杂度同样退化为 O(n * m)。\u003c/p\u003e\n\u003ch3\u003e后缀匹配算法族小结\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e算法\u003c/th\u003e\n\u003cth\u003e匹配方向\u003c/th\u003e\n\u003cth\u003e跳转依据\u003c/th\u003e\n\u003cth\u003e预处理复杂度\u003c/th\u003e\n\u003cth\u003e实现复杂度\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eBM\u003c/td\u003e\n\u003ctd\u003e右→左\u003c/td\u003e\n\u003ctd\u003e坏字符 + 好后缀\u003c/td\u003e\n\u003ctd\u003eO(|Sigma| + m)\u003c/td\u003e\n\u003ctd\u003e较高\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eHorspool\u003c/td\u003e\n\u003ctd\u003e右→左\u003c/td\u003e\n\u003ctd\u003e窗口末尾字符\u003c/td\u003e\n\u003ctd\u003eO(|Sigma| + m)\u003c/td\u003e\n\u003ctd\u003e低\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eSunday\u003c/td\u003e\n\u003ctd\u003e左→右\u003c/td\u003e\n\u003ctd\u003e窗口下一位字符\u003c/td\u003e\n\u003ctd\u003eO(|Sigma| + m)\u003c/td\u003e\n\u003ctd\u003e最低\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e三者的共性是：都通过预处理模式串，在失配时尽可能地跳过更多的比较位置。差异在于跳转参考字符的选取策略和实现复杂度之间的权衡。\u003c/p\u003e\n\u003ch2\u003e基于前缀匹配的算法\u003c/h2\u003e\n\u003ch3\u003eKMP 算法：部分匹配表与无回溯匹配\u003c/h3\u003e\n\u003cp\u003eKnuth-Morris-Pratt（KMP）算法由 Donald Knuth、James Morris 和 Vaughan Pratt 于 1977 年提出，与 BM 算法同年发表，但走了一条完全不同的技术路线。KMP 的设计目标非常明确：\u003cstrong\u003e文本串指针永远不回溯\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e在朴素算法中，每次失配后文本串指针要退回到本次匹配开始位置的下一位。KMP 的核心洞察是：当在位置 j 处失配时，模式串的前 j 个字符（P[0..j-1]）已经与文本串匹配成功。如果 P[0..j-1] 自身存在\u0026quot;前缀等于后缀\u0026quot;的结构，那么可以直接将模式串滑动到该前缀位置继续比较，而无需回退文本串指针。\u003c/p\u003e\n\u003ch4\u003enext 数组（部分匹配表）\u003c/h4\u003e\n\u003cp\u003enext 数组（也称失败函数或部分匹配表）是 KMP 算法的核心数据结构。对于模式串 P，next[j] 的含义是：P[0..j-1] 这个子串中，最长的\u0026quot;真前缀等于真后缀\u0026quot;的长度。\u003c/p\u003e\n\u003cp\u003e以模式串 P = \u0026quot;ABCABD\u0026quot; 为例：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003ej\u003c/th\u003e\n\u003cth\u003e子串\u003c/th\u003e\n\u003cth\u003e最长公共前后缀\u003c/th\u003e\n\u003cth\u003enext[j]\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003ctd\u003e\u0026quot;\u0026quot;\u003c/td\u003e\n\u003ctd\u003e无\u003c/td\u003e\n\u003ctd\u003e-1（特殊标记）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e1\u003c/td\u003e\n\u003ctd\u003e\u0026quot;A\u0026quot;\u003c/td\u003e\n\u003ctd\u003e无\u003c/td\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e2\u003c/td\u003e\n\u003ctd\u003e\u0026quot;AB\u0026quot;\u003c/td\u003e\n\u003ctd\u003e无\u003c/td\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e3\u003c/td\u003e\n\u003ctd\u003e\u0026quot;ABC\u0026quot;\u003c/td\u003e\n\u003ctd\u003e无\u003c/td\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e4\u003c/td\u003e\n\u003ctd\u003e\u0026quot;ABCA\u0026quot;\u003c/td\u003e\n\u003ctd\u003e\u0026quot;A\u0026quot;\u003c/td\u003e\n\u003ctd\u003e1\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e5\u003c/td\u003e\n\u003ctd\u003e\u0026quot;ABCAB\u0026quot;\u003c/td\u003e\n\u003ctd\u003e\u0026quot;AB\u0026quot;\u003c/td\u003e\n\u003ctd\u003e2\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4\u003enext 数组的构建过程\u003c/h4\u003e\n\u003cp\u003enext 数组的构建本身就是一次\u0026quot;模式串对自身的匹配\u0026quot;过程，其思想与 KMP 匹配过程完全一致：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eBuildNext(P):\n    m = length(P)\n    next[0] = -1\n    j = 0, k = -1\n    while j \u0026lt; m - 1:\n        if k == -1 or P[j] == P[k]:\n            j++, k++\n            next[j] = k\n        else:\n            k = next[k]    // 利用已计算的 next 值回溯\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e这段逻辑的关键在于 \u003ccode\u003ek = next[k]\u003c/code\u003e 这一步。当 P[j] 与 P[k] 不匹配时，不是简单地将 k 重置为 0，而是利用 next 数组已经计算好的部分，跳转到下一个可能匹配的位置。这正是 KMP 思想在预处理阶段的自我应用。\u003c/p\u003e\n\u003cp\u003e构建过程的时间复杂度为 O(m)，因为 j 单调递增且 k 的回退次数有上界。\u003c/p\u003e\n\u003ch4\u003e匹配过程\u003c/h4\u003e\n\u003cpre\u003e\u003ccode\u003eKMP_Match(T, P):\n    i = 0, j = 0\n    while i \u0026lt; n and j \u0026lt; m:\n        if j == -1 or T[i] == P[j]:\n            i++, j++\n        else:\n            j = next[j]    // 文本串指针 i 不回溯\n    if j == m:\n        report match at position i - m\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e匹配过程中，文本串指针 i 始终向前移动，永不回溯。每次失配时，仅调整模式串指针 j 到 next[j] 的位置，相当于将模式串向右滑动 j - next[j] 位。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e复杂度分析\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e阶段\u003c/th\u003e\n\u003cth\u003e时间复杂度\u003c/th\u003e\n\u003cth\u003e空间复杂度\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e预处理（构建 next）\u003c/td\u003e\n\u003ctd\u003eO(m)\u003c/td\u003e\n\u003ctd\u003eO(m)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e匹配\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003ctd\u003e-\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e总计\u003c/td\u003e\n\u003ctd\u003eO(n + m)\u003c/td\u003e\n\u003ctd\u003eO(m)\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eKMP 的时间复杂度是严格的 O(n + m)，不存在退化为 O(n * m) 的最坏情况，这是它相对于 BM 系列算法的理论优势。然而在实际工程中，BM 及其变体在大字符集文本上的平均表现往往优于 KMP，因为 BM 的跳转距离通常更大。\u003c/p\u003e\n\u003ch4\u003enext 数组的优化\u003c/h4\u003e\n\u003cp\u003e标准 next 数组存在一个可优化的场景：当 P[j] 失配后跳转到 next[j] = k，若 P[k] == P[j]，则在位置 k 必然还会失配，这次跳转是浪费的。优化版本在构建时做如下修正：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eif P[j] == P[k]:\n    next[j] = next[k]    // 跳过必然失败的比较\nelse:\n    next[j] = k\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e该优化不改变渐进复杂度，但能减少实际比较次数。\u003c/p\u003e\n\u003ch2\u003e基于哈希的匹配\u003c/h2\u003e\n\u003ch3\u003eRabin-Karp 算法：滚动哈希\u003c/h3\u003e\n\u003cp\u003eRabin-Karp（RK）算法由 Michael Rabin 和 Richard Karp 于 1987 年提出，采用了一种与上述算法截然不同的思路：不逐字符比较，而是\u003cstrong\u003e比较哈希值\u003c/strong\u003e。\u003c/p\u003e\n\u003ch4\u003e基本思想\u003c/h4\u003e\n\u003cp\u003e将模式串 P 计算出一个哈希值 h(P)，然后对文本串 T 中每个长度为 m 的子串计算哈希值，与 h(P) 比较。若哈希值相等，再逐字符验证以排除哈希冲突。\u003c/p\u003e\n\u003cp\u003e朴素地实现这一思想，每个子串的哈希计算需要 O(m) 时间，总复杂度仍为 O(n * m)，并无改善。RK 算法的精妙之处在于\u003cstrong\u003e滚动哈希\u003c/strong\u003e（Rolling Hash）。\u003c/p\u003e\n\u003ch4\u003e滚动哈希\u003c/h4\u003e\n\u003cp\u003e选取一个基数 d（通常取字符集大小）和一个素数 q（用于取模防止溢出），定义哈希函数：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eh(S[i..i+m-1]) = (S[i] * d^(m-1) + S[i+1] * d^(m-2) + ... + S[i+m-1]) mod q\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e当窗口从 T[i..i+m-1] 滑动到 T[i+1..i+m] 时，新哈希值可以通过 O(1) 的算术运算从旧值递推得出：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eh(T[i+1..i+m]) = (d * (h(T[i..i+m-1]) - T[i] * d^(m-1)) + T[i+m]) mod q\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e即：移除最高位字符的贡献，整体左移一位（乘以 d），加上新进入窗口的字符。整个过程仅涉及常数次乘法、加法和取模运算。\u003c/p\u003e\n\u003ch4\u003e哈希冲突处理\u003c/h4\u003e\n\u003cp\u003e当 h(T[i..i+m-1]) == h(P) 时，存在两种可能：真正匹配，或哈希冲突。因此必须进行逐字符验证。选择合适的素数 q 可以降低冲突概率。在理论分析中，若 q 足够大且随机选取，冲突概率为 O(1/q)。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e复杂度分析\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e场景\u003c/th\u003e\n\u003cth\u003e时间复杂度\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e期望情况\u003c/td\u003e\n\u003ctd\u003eO(n + m)\u003c/td\u003e\n\u003ctd\u003e冲突次数少，验证开销可忽略\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e最坏情况\u003c/td\u003e\n\u003ctd\u003eO(n * m)\u003c/td\u003e\n\u003ctd\u003e所有窗口哈希均冲突（如 q 选择不当）\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4\u003eRK 的独特优势\u003c/h4\u003e\n\u003cp\u003eRK 算法在单模式匹配中并不比 BM/KMP 更优，但它有一个独特的应用场景：\u003cstrong\u003e多模式串的同时匹配\u003c/strong\u003e。当需要在文本中同时搜索 k 个等长的模式串时，可以将所有模式串的哈希值存入哈希表，每次窗口滑动后查表比较，时间复杂度为 O(n + k * m)，远优于逐一匹配。此外，RK 算法天然适合二维模式匹配（在矩阵中搜索子矩阵）等扩展场景。\u003c/p\u003e\n\u003ch2\u003e多模式匹配\u003c/h2\u003e\n\u003ch3\u003eAC 自动机：Trie + 失败指针\u003c/h3\u003e\n\u003cp\u003e前面讨论的算法都针对单模式匹配问题。当需要在一个文本串中同时搜索多个模式串时（如敏感词过滤需要同时检测数千个关键词），逐一应用单模式算法的效率极低。Aho-Corasick（AC）自动机正是为解决这一问题而设计的。\u003c/p\u003e\n\u003cp\u003eAC 自动机由 Alfred Aho 和 Margaret Corasick 于 1975 年提出，是多模式匹配的经典算法。其核心思想是将多个模式串构建为一个有限状态自动机，使文本串只需扫描一遍即可找到所有模式串的所有出现位置。\u003c/p\u003e\n\u003ch4\u003e三个核心函数\u003c/h4\u003e\n\u003cp\u003eAC 自动机由三个函数协同工作：\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e1. goto 函数（转移函数）\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003egoto 函数本质上是一棵 \u003cstrong\u003eTrie 树\u003c/strong\u003e（字典树），由所有模式串构建而成。Trie 的每条边代表一个字符，从根节点到某个节点的路径表示某个模式串的前缀。\u003c/p\u003e\n\u003cp\u003e以模式串集合 {\u0026quot;he\u0026quot;, \u0026quot;she\u0026quot;, \u0026quot;his\u0026quot;, \u0026quot;hers\u0026quot;} 为例，构建的 Trie 结构如下：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e        root\n       /    \\\n      h      s\n     / \\      \\\n    e   i      h\n    |   |      |\n    r   s      e\n    |\n    s\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003egoto(s, c) 表示在状态 s 下输入字符 c 后转移到的下一个状态。若当前状态没有字符 c 对应的子节点，则 goto 返回失败（fail）。根节点是特殊的：对于根节点，任何不匹配的字符都转移回根节点本身（而非失败），这保证了自动机始终可以继续运行。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e2. failure 函数（失败指针）\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003efailure 函数是 AC 自动机的精髓所在，其设计理念与 KMP 的 next 数组一脉相承。当在某个状态 s 下无法通过 goto 函数继续前进时，failure(s) 指向另一个状态 s\u0026#39;，使得从根到 s\u0026#39; 的路径所代表的字符串是从根到 s 的路径所代表的字符串的\u003cstrong\u003e最长真后缀\u003c/strong\u003e，且 s\u0026#39; 是 Trie 中的一个有效状态。\u003c/p\u003e\n\u003cp\u003e直观理解：failure 指针利用了\u0026quot;已匹配部分的后缀可能是另一个模式串的前缀\u0026quot;这一信息，避免了文本串指针的回溯。\u003c/p\u003e\n\u003cp\u003e以上例为例，部分 failure 指针：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e状态 \u0026quot;sh\u0026quot; 的 failure 指向状态 \u0026quot;h\u0026quot;（因为 \u0026quot;h\u0026quot; 是 \u0026quot;sh\u0026quot; 的最长真后缀且在 Trie 中存在）\u003c/li\u003e\n\u003cli\u003e状态 \u0026quot;she\u0026quot; 的 failure 指向状态 \u0026quot;he\u0026quot;（因为 \u0026quot;he\u0026quot; 是 \u0026quot;she\u0026quot; 的最长真后缀且在 Trie 中存在）\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e3. output 函数（输出函数）\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eoutput(s) 记录在状态 s 处可以报告的所有匹配模式串。一个状态可能对应多个输出，因为到达某个状态时，不仅该状态本身可能对应一个完整的模式串，其 failure 链上的祖先状态也可能对应完整的模式串。\u003c/p\u003e\n\u003cp\u003e例如，到达状态 \u0026quot;she\u0026quot; 时，output 不仅包含 \u0026quot;she\u0026quot;，还需沿 failure 链检查：failure(\u0026quot;she\u0026quot;) = \u0026quot;he\u0026quot;，而 \u0026quot;he\u0026quot; 也是一个完整模式串，因此 output(\u0026quot;she\u0026quot;) = {\u0026quot;she\u0026quot;, \u0026quot;he\u0026quot;}。\u003c/p\u003e\n\u003ch4\u003e构建过程\u003c/h4\u003e\n\u003cp\u003eAC 自动机的构建分为两个阶段：\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e阶段一：构建 Trie 树（goto 函数 + 初始 output 函数）\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e将所有模式串逐一插入 Trie 树。每插入一个完整的模式串后，在其终止节点的 output 集合中记录该模式串。时间复杂度为 O(所有模式串总长度之和)。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e阶段二：BFS 构建 failure 指针（同时完善 output 函数）\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e使用广度优先搜索（BFS）逐层计算 failure 指针：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eBuildFailure():\n    queue = new Queue()\n\n    // 第一层节点的 failure 指向根\n    for each child c of root:\n        failure(c) = root\n        queue.enqueue(c)\n\n    // BFS 逐层构建\n    while queue is not empty:\n        current = queue.dequeue()\n        for each child node via character a:\n            // 核心逻辑：沿 failure 链找可行转移\n            state = failure(current)\n            while state != root and goto(state, a) == fail:\n                state = failure(state)\n            failure(child) = goto(state, a)   // 若 goto(root, a) 也 fail，则为 root\n\n            // 合并 output：当前节点的 output 需包含 failure 指向节点的 output\n            output(child) = output(child) ∪ output(failure(child))\n\n            queue.enqueue(child)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBFS 保证了在计算某个节点的 failure 指针时，其所有更浅层节点的 failure 指针已经计算完成。合并 output 的操作保证了匹配过程中不会遗漏任何模式串。\u003c/p\u003e\n\u003ch4\u003e匹配过程\u003c/h4\u003e\n\u003cpre\u003e\u003ccode\u003eAC_Match(T):\n    state = root\n    for i = 0 to n - 1:\n        while state != root and goto(state, T[i]) == fail:\n            state = failure(state)\n        state = goto(state, T[i])\n        if state == fail:\n            state = root\n\n        // 报告当前状态的所有匹配\n        temp = state\n        while temp != root:\n            if output(temp) is not empty:\n                report output(temp) at position i\n            temp = failure(temp)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e文本串的每个字符只被读取一次，指针始终向前。对于每个位置，沿 failure 链检查所有可能的匹配输出。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e复杂度分析\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e阶段\u003c/th\u003e\n\u003cth\u003e时间复杂度\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e构建 Trie\u003c/td\u003e\n\u003ctd\u003eO(L)\u003c/td\u003e\n\u003ctd\u003eL 为所有模式串总长度之和\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e构建 failure\u003c/td\u003e\n\u003ctd\u003eO(L)\u003c/td\u003e\n\u003ctd\u003eBFS 遍历所有节点\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e匹配\u003c/td\u003e\n\u003ctd\u003eO(n + z)\u003c/td\u003e\n\u003ctd\u003en 为文本长度，z 为匹配结果总数\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e空间\u003c/td\u003e\n\u003ctd\u003eO(L * |Sigma|)\u003c/td\u003e\n\u003ctd\u003e可通过链表或哈希优化\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4\u003e工程应用场景\u003c/h4\u003e\n\u003cp\u003eAC 自动机在工业界有广泛的应用：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e敏感词过滤\u003c/strong\u003e：将敏感词库构建为 AC 自动机，对用户输入文本进行一次扫描即可检出所有敏感词。典型的敏感词库包含数万个词条，使用 AC 自动机可以在毫秒级完成检测。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e病毒特征码扫描\u003c/strong\u003e：杀毒软件将病毒特征码库构建为 AC 自动机，扫描文件时一次遍历即可匹配所有已知特征。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e网络入侵检测系统（IDS）\u003c/strong\u003e：如 Snort，利用 AC 自动机在网络数据包中实时检测攻击特征。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e搜索引擎\u003c/strong\u003e：对查询词进行多关键词高亮标注。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDNA 序列分析\u003c/strong\u003e：在基因组序列中搜索多个目标片段。\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e算法选型指南\u003c/h2\u003e\n\u003cp\u003e字符串匹配算法的选型不存在\u0026quot;银弹\u0026quot;，需要根据具体场景的特征进行权衡：\u003c/p\u003e\n\u003ch3\u003e复杂度对比\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e算法\u003c/th\u003e\n\u003cth\u003e预处理时间\u003c/th\u003e\n\u003cth\u003e匹配时间（最优）\u003c/th\u003e\n\u003cth\u003e匹配时间（最差）\u003c/th\u003e\n\u003cth\u003e空间\u003c/th\u003e\n\u003cth\u003e适用场景\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eBrute Force\u003c/td\u003e\n\u003ctd\u003e无\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003ctd\u003eO(n * m)\u003c/td\u003e\n\u003ctd\u003eO(1)\u003c/td\u003e\n\u003ctd\u003e极短模式串、一次性匹配\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eBM\u003c/td\u003e\n\u003ctd\u003eO(|Sigma| + m)\u003c/td\u003e\n\u003ctd\u003eO(n / m)\u003c/td\u003e\n\u003ctd\u003eO(n * m)\u003c/td\u003e\n\u003ctd\u003eO(|Sigma| + m)\u003c/td\u003e\n\u003ctd\u003e长文本、大字符集\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eHorspool\u003c/td\u003e\n\u003ctd\u003eO(|Sigma| + m)\u003c/td\u003e\n\u003ctd\u003eO(n / m)\u003c/td\u003e\n\u003ctd\u003eO(n * m)\u003c/td\u003e\n\u003ctd\u003eO(|Sigma|)\u003c/td\u003e\n\u003ctd\u003eBM 的工程简化替代\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eSunday\u003c/td\u003e\n\u003ctd\u003eO(|Sigma| + m)\u003c/td\u003e\n\u003ctd\u003eO(n / (m+1))\u003c/td\u003e\n\u003ctd\u003eO(n * m)\u003c/td\u003e\n\u003ctd\u003eO(|Sigma|)\u003c/td\u003e\n\u003ctd\u003e短模式串、交互式搜索\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eKMP\u003c/td\u003e\n\u003ctd\u003eO(m)\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003ctd\u003eO(m)\u003c/td\u003e\n\u003ctd\u003e需要最坏保证的场景\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eRabin-Karp\u003c/td\u003e\n\u003ctd\u003eO(m)\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003ctd\u003eO(n * m)\u003c/td\u003e\n\u003ctd\u003eO(1)\u003c/td\u003e\n\u003ctd\u003e多模式等长匹配、二维匹配\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eAC 自动机\u003c/td\u003e\n\u003ctd\u003eO(L)\u003c/td\u003e\n\u003ctd\u003eO(n + z)\u003c/td\u003e\n\u003ctd\u003eO(n + z)\u003c/td\u003e\n\u003ctd\u003eO(L * |Sigma|)\u003c/td\u003e\n\u003ctd\u003e多模式匹配\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3\u003e场景决策路径\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e单模式短文本（m 较小，n 较小）\u003c/strong\u003e：朴素算法或 Sunday 算法。预处理开销在短文本上不划算，Sunday 的实现简单且跳转距离大。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e单模式长文本（大字符集，如自然语言）\u003c/strong\u003e：BM 算法或 Horspool 算法。大字符集意味着坏字符规则的跳转距离更大，BM 系列算法的亚线性性能优势最为明显。Linux 的 \u003ccode\u003egrep\u003c/code\u003e 正是基于这一判断选择了 BM 变体。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e单模式长文本（小字符集，如 DNA 序列）\u003c/strong\u003e：KMP 算法。小字符集下 BM 系列的跳转距离有限，KMP 的 O(n) 最坏保证更有价值。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e需要严格最坏复杂度保证\u003c/strong\u003e：KMP 算法。在安全相关场景中（如正则表达式引擎的实现），算法的最坏性能不可接受为 O(n * m)，此时 KMP 是唯一的选择。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e多个等长模式串\u003c/strong\u003e：Rabin-Karp 算法。通过哈希表存储所有模式串的哈希值，一次滚动扫描即可完成。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e大规模多模式匹配\u003c/strong\u003e：AC 自动机。模式串数量从几十到数万，AC 自动机的匹配时间与模式串数量无关（仅与文本长度和匹配结果数相关），是唯一可行的方案。\u003c/p\u003e\n\u003ch3\u003e工程实践中的补充考量\u003c/h3\u003e\n\u003cp\u003e算法选择不仅取决于渐进复杂度，还需考虑以下工程因素：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e缓存友好性\u003c/strong\u003e：BM/Horspool 的跳跃式访问模式对 CPU 缓存不太友好，KMP 的顺序访问模式在某些场景下可能因缓存命中率更高而表现更好。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e预处理开销\u003c/strong\u003e：如果文本很短或匹配只执行一次，预处理的固定开销可能超过它带来的收益。此时朴素算法反而最优。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e实现复杂度与可维护性\u003c/strong\u003e：BM 的完整实现（包括好后缀规则）相当复杂，Horspool 和 Sunday 在牺牲极少理论性能的前提下大幅降低了实现难度。\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e并行化潜力\u003c/strong\u003e：Rabin-Karp 的哈希计算具有天然的可并行性，适合 GPU 或 SIMD 加速。\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e字符串匹配算法的演进史，实质上是一部\u003cstrong\u003e信息利用效率\u003c/strong\u003e的进化史。从朴素算法的\u0026quot;零信息利用\u0026quot;，到 KMP/BM 的\u0026quot;利用已匹配字符信息\u0026quot;，再到 AC 自动机的\u0026quot;利用多模式串间的共享前缀信息\u0026quot;，每一步跨越都建立在对问题结构更深入的理解之上。理解这些算法的设计思想，远比记忆它们的具体实现更有价值。\u003c/p\u003e\n"])</script><script>self.__next_f.push([1,"17:T6306,"])</script><script>self.__next_f.push([1,"\u003cblockquote\u003e\n\u003cp\u003e数据结构的价值不在于理论本身的优美，而在于它如何被工程系统所采纳并解决真实问题。SkipList 和 Merkle Tree 是两种看似无关、实则共享\u0026quot;层次化组织\u0026quot;思想的经典结构：前者以随机化索引实现高效有序检索，后者以递归哈希实现数据完整性验证。它们分别活跃在 Redis、LevelDB、Bitcoin、IPFS 等系统的核心路径上。本文将从原理出发，逐层剖析两者的结构设计、算法实现与工程应用。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003chr\u003e\n\u003ch2\u003eSkipList：随机化索引的有序结构\u003c/h2\u003e\n\u003ch3\u003e设计动机：为什么不用平衡树\u003c/h3\u003e\n\u003cp\u003e在有序数据的检索场景中，平衡二叉搜索树（AVL Tree、Red-Black Tree）是经典解法，能够在 O(log n) 时间内完成查找、插入和删除。然而，平衡树在工程实践中存在几个显著问题：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e维度\u003c/th\u003e\n\u003cth\u003e平衡树\u003c/th\u003e\n\u003cth\u003e跳表\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e实现复杂度\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e旋转操作逻辑复杂，AVL 需维护平衡因子，红黑树需维护颜色约束\u003c/td\u003e\n\u003ctd\u003e核心逻辑仅为链表操作加随机数生成\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e并发友好性\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e旋转涉及多个节点的结构性变更，锁粒度大\u003c/td\u003e\n\u003ctd\u003e插入和删除只影响局部节点，天然适合细粒度锁\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e范围查询\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e需要中序遍历，实现不够直观\u003c/td\u003e\n\u003ctd\u003e底层即为有序链表，天然支持顺序扫描\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e内存局部性\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e树节点分散在堆中，缓存命中率低\u003c/td\u003e\n\u003ctd\u003e同层节点可连续分配，局部性相对较好\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e1990 年，William Pugh 在论文 \u003cem\u003eSkip Lists: A Probabilistic Alternative to Balanced Trees\u003c/em\u003e 中提出了跳表结构。其核心洞察是：\u003cstrong\u003e用随机化代替严格的平衡维护，以概率性的方式达到与平衡树相当的期望性能，同时将实现复杂度降低一个量级。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eRedis 的作者 Antirez 曾明确表示选择跳表的理由：实现简单、范围操作性能优异、且易于调试。这一工程判断使得跳表成为 Redis Sorted Set 的底层数据结构之一。\u003c/p\u003e\n\u003ch3\u003e数据结构与核心原理\u003c/h3\u003e\n\u003cp\u003e跳表的本质思想是：\u003cstrong\u003e在有序链表之上构建多层稀疏索引，以空间换时间，将链表的 O(n) 查找降低至 O(log n)。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e其结构可以抽象为一个多层有序链表的叠加：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eLevel 3:  HEAD ───────────────────────────────\u0026gt; 50 ──────────────────\u0026gt; NIL\nLevel 2:  HEAD ──────────\u0026gt; 20 ────────────────\u0026gt; 50 ──────────\u0026gt; 70 ──\u0026gt; NIL\nLevel 1:  HEAD ──\u0026gt; 10 ──\u0026gt; 20 ──\u0026gt; 30 ──\u0026gt; 40 ──\u0026gt; 50 ──\u0026gt; 60 ──\u0026gt; 70 ──\u0026gt; NIL\nLevel 0:  HEAD ──\u0026gt; 10 ──\u0026gt; 20 ──\u0026gt; 30 ──\u0026gt; 40 ──\u0026gt; 50 ──\u0026gt; 60 ──\u0026gt; 70 ──\u0026gt; NIL\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e结构性质如下：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e底层（Level 0）\u003c/strong\u003e 是一个包含所有元素的完整有序链表\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e每一层\u003c/strong\u003e都是下一层的\u0026quot;索引子集\u0026quot;，元素按升序排列\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e最高层\u003c/strong\u003e通常只包含极少量节点，作为搜索的起始入口\u003c/li\u003e\n\u003cli\u003e每个节点包含一个值和一个指针数组，数组长度等于该节点所在的层数\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e节点的数据结构定义如下：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003eclass SkipListNode\u0026lt;T\u0026gt; {\n    T value;\n    SkipListNode\u0026lt;T\u0026gt;[] forward; // forward[i] 指向第 i 层的下一个节点\n\n    SkipListNode(T value, int level) {\n        this.value = value;\n        this.forward = new SkipListNode[level + 1];\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e搜索算法：从顶层到底层的路径收敛\u003c/h3\u003e\n\u003cp\u003e搜索过程遵循\u0026quot;先右后下\u0026quot;的策略：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e从最高层的头节点开始\u003c/li\u003e\n\u003cli\u003e在当前层向右移动，直到下一个节点的值大于等于目标值\u003c/li\u003e\n\u003cli\u003e如果下一个节点的值等于目标值，搜索成功\u003c/li\u003e\n\u003cli\u003e否则，下降一层，重复步骤 2\u003c/li\u003e\n\u003cli\u003e如果降到最底层仍未找到，搜索失败\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003epublic SkipListNode\u0026lt;T\u0026gt; search(T target) {\n    SkipListNode\u0026lt;T\u0026gt; current = head;\n    for (int i = maxLevel; i \u0026gt;= 0; i--) {\n        while (current.forward[i] != null\n               \u0026amp;\u0026amp; current.forward[i].value.compareTo(target) \u0026lt; 0) {\n            current = current.forward[i];\n        }\n    }\n    current = current.forward[0];\n    if (current != null \u0026amp;\u0026amp; current.value.equals(target)) {\n        return current;\n    }\n    return null;\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e搜索路径的直观理解：每下降一层，搜索范围大约缩小一半，与二分查找的思路一致。\u003c/p\u003e\n\u003ch3\u003e插入算法：随机化层数决策\u003c/h3\u003e\n\u003cp\u003e插入操作的关键在于\u003cstrong\u003e如何决定新节点的层数\u003c/strong\u003e。跳表采用几何分布的随机化策略：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003eprivate int randomLevel() {\n    int level = 0;\n    // p = 0.5，相当于\u0026quot;抛硬币\u0026quot;\n    while (Math.random() \u0026lt; 0.5 \u0026amp;\u0026amp; level \u0026lt; MAX_LEVEL) {\n        level++;\n    }\n    return level;\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e这一设计的数学性质：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e性质\u003c/th\u003e\n\u003cth\u003e值\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e节点出现在第 k 层的概率\u003c/td\u003e\n\u003ctd\u003e(1/2)^k\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e节点层数的期望值\u003c/td\u003e\n\u003ctd\u003e2（当 p = 1/2）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e期望总节点数（含索引）\u003c/td\u003e\n\u003ctd\u003e2n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e为什么选择随机化而非确定性策略？\u003c/strong\u003e 确定性策略（如每隔一个节点提升一层）在静态场景下是最优的，但在动态插入删除时需要全局重组索引结构，退化为 O(n) 操作。随机化策略的精妙之处在于：它不需要任何全局信息，仅通过局部的随机决策，就能在期望意义上维持索引的均匀分布。\u003c/p\u003e\n\u003cp\u003e插入的完整流程：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e从最高层开始搜索，记录每层中最后一个小于目标值的节点（即 update 数组）\u003c/li\u003e\n\u003cli\u003e调用 \u003ccode\u003erandomLevel()\u003c/code\u003e 生成新节点的层数 k\u003c/li\u003e\n\u003cli\u003e如果 k 大于当前最大层数，扩展 update 数组，将新增层的前驱设为 head\u003c/li\u003e\n\u003cli\u003e创建新节点，在 0 到 k 层逐层插入（修改前驱指针）\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003epublic void insert(T value) {\n    SkipListNode\u0026lt;T\u0026gt;[] update = new SkipListNode[MAX_LEVEL + 1];\n    SkipListNode\u0026lt;T\u0026gt; current = head;\n\n    // 搜索并记录每层的前驱节点\n    for (int i = maxLevel; i \u0026gt;= 0; i--) {\n        while (current.forward[i] != null\n               \u0026amp;\u0026amp; current.forward[i].value.compareTo(value) \u0026lt; 0) {\n            current = current.forward[i];\n        }\n        update[i] = current;\n    }\n\n    int newLevel = randomLevel();\n    if (newLevel \u0026gt; maxLevel) {\n        for (int i = maxLevel + 1; i \u0026lt;= newLevel; i++) {\n            update[i] = head;\n        }\n        maxLevel = newLevel;\n    }\n\n    SkipListNode\u0026lt;T\u0026gt; newNode = new SkipListNode\u0026lt;\u0026gt;(value, newLevel);\n    for (int i = 0; i \u0026lt;= newLevel; i++) {\n        newNode.forward[i] = update[i].forward[i];\n        update[i].forward[i] = newNode;\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e删除算法\u003c/h3\u003e\n\u003cp\u003e删除操作的逻辑与插入类似：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e搜索过程中记录每层的前驱节点\u003c/li\u003e\n\u003cli\u003e找到目标节点后，在每一层中移除该节点（修改前驱指针跳过它）\u003c/li\u003e\n\u003cli\u003e如果删除后最高层为空，降低 maxLevel\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003epublic void delete(T value) {\n    SkipListNode\u0026lt;T\u0026gt;[] update = new SkipListNode[MAX_LEVEL + 1];\n    SkipListNode\u0026lt;T\u0026gt; current = head;\n\n    for (int i = maxLevel; i \u0026gt;= 0; i--) {\n        while (current.forward[i] != null\n               \u0026amp;\u0026amp; current.forward[i].value.compareTo(value) \u0026lt; 0) {\n            current = current.forward[i];\n        }\n        update[i] = current;\n    }\n\n    current = current.forward[0];\n    if (current != null \u0026amp;\u0026amp; current.value.equals(value)) {\n        for (int i = 0; i \u0026lt;= maxLevel; i++) {\n            if (update[i].forward[i] != current) break;\n            update[i].forward[i] = current.forward[i];\n        }\n        while (maxLevel \u0026gt; 0 \u0026amp;\u0026amp; head.forward[maxLevel] == null) {\n            maxLevel--;\n        }\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e复杂度分析\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e操作\u003c/th\u003e\n\u003cth\u003e时间复杂度（期望）\u003c/th\u003e\n\u003cth\u003e时间复杂度（最坏）\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e搜索\u003c/td\u003e\n\u003ctd\u003eO(log n)\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e插入\u003c/td\u003e\n\u003ctd\u003eO(log n)\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e删除\u003c/td\u003e\n\u003ctd\u003eO(log n)\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e空间复杂度\u003c/strong\u003e为 O(n)。虽然索引节点的期望总数为 2n，但每个索引节点只存储指针而非数据副本，实际空间开销可控。\u003c/p\u003e\n\u003cp\u003e最坏情况（所有节点都在同一层）在实际中几乎不会发生，其概率以指数级衰减。对于 n 个节点，跳表退化为单层链表的概率为 (1/2)^n。\u003c/p\u003e\n\u003ch3\u003e工程应用\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eRedis Sorted Set（ZSet）\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eRedis 的有序集合在元素数量超过阈值时，底层使用跳表实现。选择跳表而非平衡树的原因包括：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e范围查询高效\u003c/strong\u003e：\u003ccode\u003eZRANGEBYSCORE\u003c/code\u003e、\u003ccode\u003eZRANGEBYLEX\u003c/code\u003e 等命令需要按区间遍历，跳表的底层链表天然支持顺序扫描，时间复杂度为 O(log n + m)，其中 m 为返回元素数\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e实现简洁\u003c/strong\u003e：Redis 是单线程模型，并发优势非核心考量，但代码简洁性直接影响可维护性\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e内存效率\u003c/strong\u003e：Redis 的跳表实现（\u003ccode\u003ezskiplist\u003c/code\u003e）将 p 值设为 0.25 而非 0.5，使得平均每个节点只有 1.33 层索引，进一步降低内存开销\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eRedis 跳表的额外优化包括：每个节点增加了 backward 指针支持反向遍历、节点中存储 span 字段用于快速计算排名。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eLevelDB / RocksDB MemTable\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eLevelDB 的内存写入缓冲区（MemTable）使用跳表作为核心数据结构。在 LSM-Tree 架构中，所有写入操作首先进入 MemTable，积累到一定大小后刷入磁盘形成 SSTable。跳表在此场景下的优势：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e写入性能\u003c/strong\u003e：O(log n) 的插入复杂度，且不涉及旋转等全局调整操作\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e并发写入\u003c/strong\u003e：LevelDB 的跳表实现支持无锁并发读、单写者写入的模式\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e有序迭代\u003c/strong\u003e：MemTable 刷盘时需要按序输出所有键值对，跳表底层链表的顺序性正好满足\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eJava ConcurrentSkipListMap\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eJava 标准库中的 \u003ccode\u003eConcurrentSkipListMap\u003c/code\u003e 是基于跳表实现的并发有序映射，与 \u003ccode\u003eTreeMap\u003c/code\u003e（基于红黑树）形成对照：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e特性\u003c/th\u003e\n\u003cth\u003eConcurrentSkipListMap\u003c/th\u003e\n\u003cth\u003eConcurrentHashMap\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e有序性\u003c/td\u003e\n\u003ctd\u003e有序\u003c/td\u003e\n\u003ctd\u003e无序\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e并发策略\u003c/td\u003e\n\u003ctd\u003e无锁（CAS）\u003c/td\u003e\n\u003ctd\u003e分段锁 / CAS\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e范围操作\u003c/td\u003e\n\u003ctd\u003eO(log n + m)\u003c/td\u003e\n\u003ctd\u003e不支持\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e适用场景\u003c/td\u003e\n\u003ctd\u003e需要有序性的并发映射\u003c/td\u003e\n\u003ctd\u003e高并发键值查找\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e跳表的结构特性使其天然适合 CAS 操作：插入和删除只需修改少量指针，无需像红黑树那样进行涉及多个节点的旋转。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003eMerkle Tree：递归哈希的信任结构\u003c/h2\u003e\n\u003ch3\u003e从 Hash 到 Merkle Tree 的演进\u003c/h3\u003e\n\u003cp\u003e理解 Merkle Tree，需要先理解它所解决的问题链。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e单一 Hash 的能力与局限。\u003c/strong\u003e 对一份数据计算哈希值（如 SHA-256），可以快速验证数据是否被篡改。但当数据量很大时（如一个 4GB 的文件），任何一个字节的损坏都意味着整个文件需要重新传输——因为单一 Hash 无法定位损坏的位置。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHash List 的改进。\u003c/strong\u003e 将大文件分成若干数据块，对每个数据块分别计算哈希值，得到一个哈希列表。验证时逐块比对哈希值，即可定位损坏的数据块。但 Hash List 本身的完整性如何保证？需要一个额外的\u0026quot;根哈希\u0026quot;对整个列表签名。且当数据块数量为 N 时，验证任意单块的完整性仍需传输所有 N 个哈希值。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eMerkle Tree 的泛化。\u003c/strong\u003e 1979 年，Ralph Merkle 提出了以他名字命名的 Merkle Tree。它将 Hash List 泛化为一棵二叉树结构：叶节点存储数据块的哈希值，非叶节点存储其子节点哈希值拼接后的哈希值，根节点的哈希值（Merkle Root）即为整棵树的\u0026quot;指纹\u0026quot;。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e                    Root Hash\n                   /         \\\n              Hash(0-1)     Hash(2-3)\n              /      \\       /      \\\n          Hash(0)  Hash(1) Hash(2)  Hash(3)\n            |        |       |        |\n          Data0    Data1   Data2    Data3\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e这一结构带来了关键性质：\u003cstrong\u003e验证任意单个数据块的完整性，只需 O(log N) 个哈希值，而非全部 N 个。\u003c/strong\u003e\u003c/p\u003e\n\u003ch3\u003e核心操作\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e构建：O(n)\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eMerkle Tree 的构建过程是自底向上的：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e将原始数据分割为等大的数据块 D0, D1, ..., Dn-1\u003c/li\u003e\n\u003cli\u003e对每个数据块计算哈希值：Hi = Hash(Di)，得到叶节点层\u003c/li\u003e\n\u003cli\u003e相邻叶节点两两配对，拼接后计算哈希值：H(i,i+1) = Hash(Hi || Hi+1)\u003c/li\u003e\n\u003cli\u003e如果某层节点数为奇数，将最后一个节点复制一份凑成偶数\u003c/li\u003e\n\u003cli\u003e递归上述过程，直到仅剩一个节点，即为 Merkle Root\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e构建过程需要计算约 2n 次哈希（完全二叉树的节点总数），时间复杂度为 O(n)。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-python\"\u003edef build_merkle_tree(data_blocks):\n    # 叶节点层\n    nodes = [sha256(block) for block in data_blocks]\n    tree = [nodes[:]]\n\n    while len(nodes) \u0026gt; 1:\n        if len(nodes) % 2 == 1:\n            nodes.append(nodes[-1])  # 奇数时复制最后一个\n        next_level = []\n        for i in range(0, len(nodes), 2):\n            parent = sha256(nodes[i] + nodes[i + 1])\n            next_level.append(parent)\n        tree.append(next_level)\n        nodes = next_level\n\n    return tree  # tree[-1][0] 即为 Merkle Root\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e验证（Merkle Proof）：O(log N)\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eMerkle Proof 是 Merkle Tree 最核心的应用机制。假设要验证 Data2 是否包含在某个已知 Merkle Root 的数据集中，验证者无需获取全部数据，只需获得一条从该叶节点到根的\u0026quot;认证路径\u0026quot;（Authentication Path）：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e验证 Data2：\n需要的哈希值：Hash(3), Hash(0-1)\n\n验证过程：\n1. 计算 Hash(2) = Hash(Data2)\n2. 计算 Hash(2-3) = Hash(Hash(2) || Hash(3))   ← Hash(3) 由证明者提供\n3. 计算 Root\u0026#39; = Hash(Hash(0-1) || Hash(2-3))    ← Hash(0-1) 由证明者提供\n4. 比较 Root\u0026#39; 与已知的 Merkle Root 是否一致\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e对于包含 N 个数据块的 Merkle Tree，认证路径的长度为 log2(N)，验证时间复杂度为 O(log N)。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e更新\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e当某个数据块发生变更时，只需沿着该叶节点到根的路径重新计算哈希值，路径长度为 O(log N)，无需重建整棵树。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e一致性检测\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e比较两棵 Merkle Tree 的差异时，从根节点开始：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e如果根哈希一致，两棵树完全相同\u003c/li\u003e\n\u003cli\u003e如果根哈希不同，递归比较左右子树\u003c/li\u003e\n\u003cli\u003e当某个子树的哈希一致时，剪枝（跳过该子树）\u003c/li\u003e\n\u003cli\u003e最终定位到所有不一致的叶节点\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e最好情况下（完全一致）只需一次比较；最坏情况下（完全不同）需要遍历所有节点；典型情况下（少量差异），时间复杂度接近 O(log N)。\u003c/p\u003e\n\u003ch3\u003e工程应用\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e分布式数据一致性校验：Cassandra Anti-Entropy Repair\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e在 Cassandra 等分布式数据库中，数据以多副本存储在不同节点上。由于网络分区、节点宕机等原因，副本之间可能出现不一致。Cassandra 使用 Merkle Tree 进行 Anti-Entropy Repair：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e每个节点为自己存储的数据构建 Merkle Tree\u003c/li\u003e\n\u003cli\u003e需要同步时，两个节点交换 Merkle Root\u003c/li\u003e\n\u003cli\u003e如果 Root 不同，逐层交换子树哈希值，定位不一致的数据范围\u003c/li\u003e\n\u003cli\u003e仅同步不一致的数据分区\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e这种机制的优势在于：对于百万级键值的数据集，可能只需交换几十到几百个哈希值就能精确定位差异，大幅减少网络传输量。DynamoDB、Riak 等系统也采用了类似的策略。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eP2P 文件传输：BitTorrent\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eBitTorrent 协议中，大文件被分割为若干固定大小的数据块（通常 256KB）。种子文件（.torrent）中包含每个数据块的哈希值。当下载者从多个 Peer 获取数据块时，通过校验哈希值确保数据块的完整性。\u003c/p\u003e\n\u003cp\u003eBEP 30（Merkle Hash Torrent）对此进行了优化：种子文件中只包含 Merkle Root，数据块的哈希值在下载过程中按需获取。这使得种子文件的大小从 O(n) 降至 O(1)，对大文件的元数据开销改善尤为显著。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e区块链：Bitcoin SPV 与 Ethereum MPT\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eMerkle Tree 在区块链中的应用是其最广为人知的工程实践。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eBitcoin 的交易存储与 SPV 验证。\u003c/strong\u003e 在 Bitcoin 中，每个区块的所有交易以 Merkle Tree 组织，Merkle Root 存储在区块头中。区块头固定为 80 字节，包含：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e字段\u003c/th\u003e\n\u003cth\u003e大小\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eVersion\u003c/td\u003e\n\u003ctd\u003e4 bytes\u003c/td\u003e\n\u003ctd\u003e区块版本号\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ePrevious Block Hash\u003c/td\u003e\n\u003ctd\u003e32 bytes\u003c/td\u003e\n\u003ctd\u003e前一区块头的哈希\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eMerkle Root\u003c/td\u003e\n\u003ctd\u003e32 bytes\u003c/td\u003e\n\u003ctd\u003e交易 Merkle 树的根哈希\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eTimestamp\u003c/td\u003e\n\u003ctd\u003e4 bytes\u003c/td\u003e\n\u003ctd\u003e出块时间戳\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eDifficulty Target\u003c/td\u003e\n\u003ctd\u003e4 bytes\u003c/td\u003e\n\u003ctd\u003e挖矿难度目标\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eNonce\u003c/td\u003e\n\u003ctd\u003e4 bytes\u003c/td\u003e\n\u003ctd\u003e随机数\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eSPV（Simplified Payment Verification，简化支付验证）利用 Merkle Proof 使轻客户端无需下载完整区块链即可验证交易：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e轻客户端只下载所有区块头（每个 80 字节，截至目前约 60MB）\u003c/li\u003e\n\u003cli\u003e验证某笔交易时，向全节点请求该交易的 Merkle Proof\u003c/li\u003e\n\u003cli\u003e利用认证路径和区块头中的 Merkle Root 验证交易是否确实包含在该区块中\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e对于包含 4000 笔交易的区块，Merkle Proof 仅需约 12 个哈希值（12 * 32 = 384 字节），而非传输全部交易数据。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eEthereum 的三棵 Merkle 树。\u003c/strong\u003e Ethereum 在 Bitcoin 的基础上进一步扩展，每个区块头中包含三棵独立的 Merkle 树的根哈希：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e树\u003c/th\u003e\n\u003cth\u003e存储内容\u003c/th\u003e\n\u003cth\u003e用途\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eTransaction Trie\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e区块中的所有交易\u003c/td\u003e\n\u003ctd\u003e验证交易存在性\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eReceipt Trie\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e每笔交易的执行结果（日志、Gas 消耗等）\u003c/td\u003e\n\u003ctd\u003e验证合约事件和执行结果\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eState Trie\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e全局账户状态（余额、合约代码、存储等）\u003c/td\u003e\n\u003ctd\u003e验证任意账户在某个区块高度的状态\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eEthereum 的 State Trie 采用了 MPT（Merkle Patricia Trie）结构，这是 Merkle Tree 与 Patricia Trie（前缀压缩字典树）的结合：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003ePatricia Trie\u003c/strong\u003e 提供键值映射能力，支持按地址查找账户状态\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMerkle 化\u003c/strong\u003e 使得每个节点包含其子树的哈希值，支持状态证明\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e16 叉树\u003c/strong\u003e 结构（而非二叉树），每个非叶节点有 16 个子分支（对应十六进制的 0-f），加上一个 value 槽\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eMPT 的节点类型包括：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e节点类型\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e空节点\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e空值\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e叶节点（Leaf）\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e存储剩余键路径和值\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e扩展节点（Extension）\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e存储共享前缀和子节点哈希\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e分支节点（Branch）\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e16 个子节点槽位 + 1 个值槽位\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e这种设计使得 Ethereum 支持\u0026quot;状态证明\u0026quot;——任何人只需 Merkle Root 和一条认证路径，即可验证某个账户在某个区块高度时的余额、Nonce 或合约存储值。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e版本控制系统：Git 对象存储\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eGit 的对象模型本质上是一个 Merkle DAG（有向无环图）。每次 commit 都包含一个 tree 对象的哈希，tree 对象递归引用子 tree 和 blob（文件内容）的哈希。这意味着：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e任何文件内容的修改都会导致从该文件到根 commit 的整条路径上所有哈希值变化\u003c/li\u003e\n\u003cli\u003e两个 commit 如果引用了相同的 tree hash，则对应的目录结构和文件内容完全一致\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003egit diff\u003c/code\u003e 的快速比较正是基于此：从根 tree 开始，哈希一致的子树可以直接跳过\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eIPFS：Merkle DAG 的内容寻址\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eIPFS（InterPlanetary File System）将 Merkle Tree 泛化为 Merkle DAG，每个节点可以有多个父节点。文件被分块后组织为 Merkle DAG，根节点的哈希值即为文件的 CID（Content Identifier）。这种设计实现了：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e内容寻址\u003c/strong\u003e：相同内容永远对应相同的 CID，天然去重\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e增量传输\u003c/strong\u003e：两个版本的文件只需传输差异块\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e完整性验证\u003c/strong\u003e：下载过程中逐块验证哈希，无需信任数据来源\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e数字签名：Merkle Signature Scheme\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eMerkle Tree 最早的应用之一是构建一次性签名方案的扩展。Lamport 一次性签名方案（OTS）每个密钥只能签名一次。Merkle Signature Scheme 通过 Merkle Tree 将多个 OTS 公钥组织在一起：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e生成 N 个 OTS 密钥对\u003c/li\u003e\n\u003cli\u003e将 N 个公钥作为叶节点构建 Merkle Tree\u003c/li\u003e\n\u003cli\u003e发布 Merkle Root 作为公钥\u003c/li\u003e\n\u003cli\u003e每次签名使用一个 OTS 密钥，附带对应的 Merkle Proof\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e这种方案在后量子密码学中受到重视，因为它的安全性仅依赖哈希函数的抗碰撞性，而非大数分解或离散对数等可能被量子计算机攻破的数学难题。XMSS（eXtended Merkle Signature Scheme）已被 NIST 纳入后量子密码学标准候选。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e对比与总结\u003c/h2\u003e\n\u003cp\u003eSkipList 和 Merkle Tree 表面上分属不同领域——一个面向有序检索，一个面向数据完整性——但它们共享深层的设计哲学：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e维度\u003c/th\u003e\n\u003cth\u003eSkipList\u003c/th\u003e\n\u003cth\u003eMerkle Tree\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e核心思想\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e多层稀疏索引\u003c/td\u003e\n\u003ctd\u003e递归哈希聚合\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e层次化组织\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e多层链表，上层是下层的索引\u003c/td\u003e\n\u003ctd\u003e二叉树，父节点是子节点的哈希\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e关键操作复杂度\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003eO(log n) 查找/插入/删除\u003c/td\u003e\n\u003ctd\u003eO(log n) 验证/更新\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e设计目标\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e高效的有序数据检索与范围查询\u003c/td\u003e\n\u003ctd\u003e高效的数据完整性验证与差异检测\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e随机性角色\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e随机化层数决策维持结构均衡\u003c/td\u003e\n\u003ctd\u003e哈希函数提供确定性\u0026quot;指纹\u0026quot;\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e空间换时间\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e索引层消耗额外空间换取查找效率\u003c/td\u003e\n\u003ctd\u003e内部节点消耗额外空间换取验证效率\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e典型应用系统\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003eRedis、LevelDB、Java ConcurrentSkipListMap\u003c/td\u003e\n\u003ctd\u003eBitcoin、Ethereum、Cassandra、Git、IPFS\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e从工程视角看，两者的共同启示在于：\u003cstrong\u003e在海量数据场景下，层次化组织是降低操作复杂度的普适策略。\u003c/strong\u003e 无论是跳表通过分层索引将链表搜索从 O(n) 降至 O(log n)，还是 Merkle Tree 通过分层哈希将数据验证从 O(n) 降至 O(log n)，其本质都是利用树状/层级结构实现对数级的信息压缩。\u003c/p\u003e\n\u003cp\u003e理解这些经典数据结构的设计思想，不仅有助于读懂现有系统的实现细节，更重要的是在面对新的工程问题时，能够从中提取可复用的设计模式——分层抽象、空间换时间、随机化替代确定性平衡——这些思想远比具体的实现代码更有持久价值。\u003c/p\u003e\n"])</script><script>self.__next_f.push([1,"18:T1f85,"])</script><script>self.__next_f.push([1,"\u003ch1\u003e区块链在商业中的应用：机遇与挑战\u003c/h1\u003e\n\u003cp\u003e区块链技术已经从加密货币的底层技术发展成为具有广泛商业应用潜力的创新技术。本文将深入探讨区块链在商业领域的实际应用案例，以及企业如何利用这项技术创造价值。\u003c/p\u003e\n\u003ch2\u003e区块链技术基础\u003c/h2\u003e\n\u003ch3\u003e核心特性\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e去中心化\u003c/strong\u003e - 不依赖中央机构，数据分布在网络中\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e不可篡改\u003c/strong\u003e - 一旦记录，数据几乎无法被修改\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e透明性\u003c/strong\u003e - 所有参与者都可以查看交易记录\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e安全性\u003c/strong\u003e - 使用密码学技术保护数据安全\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e技术架构\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e共识机制\u003c/strong\u003e - 确保网络参与者对数据状态达成一致\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e智能合约\u003c/strong\u003e - 自动执行的程序化合约\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e分布式账本\u003c/strong\u003e - 所有交易记录的共享数据库\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch2\u003e供应链管理应用\u003c/h2\u003e\n\u003ch3\u003e传统供应链问题\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e信息不透明\u003c/strong\u003e - 各环节信息孤岛\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e追溯困难\u003c/strong\u003e - 产品来源难以验证\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e效率低下\u003c/strong\u003e - 人工处理流程复杂\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e信任缺失\u003c/strong\u003e - 各方缺乏互信机制\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e区块链解决方案\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e全程追溯\u003c/strong\u003e - 从原材料到最终产品的完整记录\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e实时监控\u003c/strong\u003e - 供应链各环节实时状态更新\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e自动化执行\u003c/strong\u003e - 智能合约自动触发相关流程\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e数据共享\u003c/strong\u003e - 授权各方安全共享信息\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e实际案例\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e沃尔玛\u003c/strong\u003e - 使用区块链追踪食品供应链\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e马士基\u003c/strong\u003e - 航运物流区块链平台\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eIBM Food Trust\u003c/strong\u003e - 食品安全追溯系统\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e数字身份管理\u003c/h2\u003e\n\u003ch3\u003e传统身份问题\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e数据泄露\u003c/strong\u003e - 集中存储容易成为攻击目标\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e重复验证\u003c/strong\u003e - 每次都需要重新验证身份\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e隐私保护\u003c/strong\u003e - 个人数据被过度收集\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e跨境问题\u003c/strong\u003e - 不同国家身份系统不兼容\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e区块链解决方案\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e自主身份\u003c/strong\u003e - 用户完全控制自己的身份信息\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e零知识证明\u003c/strong\u003e - 证明身份而不泄露具体信息\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e跨平台互认\u003c/strong\u003e - 一次验证，多处使用\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e隐私保护\u003c/strong\u003e - 最小化数据收集和共享\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e应用场景\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e金融服务\u003c/strong\u003e - KYC/AML合规\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e医疗健康\u003c/strong\u003e - 患者身份和医疗记录\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e政府服务\u003c/strong\u003e - 数字身份证和公共服务\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e教育认证\u003c/strong\u003e - 学历和技能证书\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e智能合约应用\u003c/h2\u003e\n\u003ch3\u003e什么是智能合约\u003c/h3\u003e\n\u003cp\u003e智能合约是运行在区块链上的自动执行程序，当预设条件满足时自动执行相应操作。\u003c/p\u003e\n\u003ch3\u003e商业应用场景\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e保险理赔\u003c/strong\u003e - 自动触发理赔流程\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e版权保护\u003c/strong\u003e - 自动分配版税\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e租赁管理\u003c/strong\u003e - 自动处理租金支付\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e投票系统\u003c/strong\u003e - 确保投票透明和不可篡改\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e实际案例\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e以太坊\u003c/strong\u003e - 最广泛使用的智能合约平台\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eChainlink\u003c/strong\u003e - 连接链下数据的预言机网络\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ePolkadot\u003c/strong\u003e - 多链互操作平台\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e金融服务创新\u003c/h2\u003e\n\u003ch3\u003e传统金融痛点\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e跨境支付\u003c/strong\u003e - 费用高、速度慢\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e中小企业融资\u003c/strong\u003e - 缺乏信用记录\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e资产证券化\u003c/strong\u003e - 流程复杂、成本高\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e监管合规\u003c/strong\u003e - 人工处理效率低\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e区块链解决方案\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eDeFi\u003c/strong\u003e - 去中心化金融服务\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSTO\u003c/strong\u003e - 证券型代币发行\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e跨境支付\u003c/strong\u003e - 快速、低成本的国际转账\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e供应链金融\u003c/strong\u003e - 基于真实贸易的融资\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e创新产品\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e稳定币\u003c/strong\u003e - 价值稳定的数字货币\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e借贷平台\u003c/strong\u003e - 去中心化借贷服务\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDEX\u003c/strong\u003e - 去中心化交易所\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e资产管理\u003c/strong\u003e - 自动化投资组合管理\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e企业实施策略\u003c/h2\u003e\n\u003ch3\u003e技术选择\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e公有链\u003c/strong\u003e - 完全去中心化，适合公开应用\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e私有链\u003c/strong\u003e - 企业控制，适合内部应用\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e联盟链\u003c/strong\u003e - 多方参与，适合行业协作\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e混合方案\u003c/strong\u003e - 结合多种技术优势\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e实施步骤\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e需求分析\u003c/strong\u003e - 明确业务痛点和目标\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e技术选型\u003c/strong\u003e - 选择合适的技术方案\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e原型开发\u003c/strong\u003e - 快速验证概念\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e试点应用\u003c/strong\u003e - 小范围测试和优化\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e全面推广\u003c/strong\u003e - 逐步扩大应用范围\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e成功要素\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e业务驱动\u003c/strong\u003e - 以解决实际问题为导向\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e技术成熟\u003c/strong\u003e - 选择经过验证的技术\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e生态合作\u003c/strong\u003e - 与合作伙伴共同建设\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e持续创新\u003c/strong\u003e - 不断优化和改进\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e挑战与风险\u003c/h2\u003e\n\u003ch3\u003e技术挑战\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e性能限制\u003c/strong\u003e - 交易处理速度有限\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e扩展性问题\u003c/strong\u003e - 网络容量和成本\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e互操作性\u003c/strong\u003e - 不同区块链系统兼容\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e用户体验\u003c/strong\u003e - 复杂的技术操作\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e监管风险\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e法律不确定性\u003c/strong\u003e - 监管政策不明确\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e合规要求\u003c/strong\u003e - 需要满足各种监管规定\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e跨境问题\u003c/strong\u003e - 不同国家监管差异\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e责任界定\u003c/strong\u003e - 技术故障的责任归属\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e商业风险\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e投资回报\u003c/strong\u003e - 技术投入与收益平衡\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e竞争压力\u003c/strong\u003e - 技术更新换代快\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e人才短缺\u003c/strong\u003e - 专业人才稀缺\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e市场接受度\u003c/strong\u003e - 用户接受程度不确定\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch2\u003e未来发展趋势\u003c/h2\u003e\n\u003ch3\u003e技术演进\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eLayer 2解决方案\u003c/strong\u003e - 提高性能和降低成本\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e跨链技术\u003c/strong\u003e - 实现不同区块链互操作\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e零知识证明\u003c/strong\u003e - 增强隐私保护能力\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e量子抗性\u003c/strong\u003e - 应对量子计算威胁\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e应用扩展\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e物联网集成\u003c/strong\u003e - 设备自动交互和支付\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAI结合\u003c/strong\u003e - 智能合约与AI技术融合\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e元宇宙\u003c/strong\u003e - 虚拟世界的经济基础设施\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e碳中和\u003c/strong\u003e - 支持环保和可持续发展\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e监管发展\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e监管沙盒\u003c/strong\u003e - 创新与监管的平衡\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e国际协调\u003c/strong\u003e - 全球监管标准统一\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e技术中立\u003c/strong\u003e - 监管关注功能而非技术\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e消费者保护\u003c/strong\u003e - 确保用户权益\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch2\u003e总结\u003c/h2\u003e\n\u003cp\u003e区块链技术在商业领域具有巨大的应用潜力，但成功实施需要综合考虑技术、业务、监管等多个方面。企业应该以解决实际问题为导向，选择合适的应用场景，制定清晰的实施策略，并在实践中不断优化和改进。\u003c/p\u003e\n\u003cp\u003e随着技术的成熟和监管的完善，区块链将在更多商业场景中发挥重要作用，为企业创造新的价值和竞争优势。\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cem\u003e区块链不仅是技术革命，更是商业模式的创新。企业需要拥抱变化，积极探索区块链技术的商业应用。\u003c/em\u003e \u003c/p\u003e\n"])</script><script>self.__next_f.push([1,"19:T4ac3,"])</script><script>self.__next_f.push([1,"\u003ch2\u003e引言：一个看似简单的几何问题\u003c/h2\u003e\n\u003cp\u003e给定一个二维平面上的点和一个多边形，判断该点是否位于多边形内部——这是计算几何中最基础也是最重要的问题之一。\u003c/p\u003e\n\u003cp\u003e这个问题的应用场景远比想象中广泛。在 GIS（地理信息系统）领域，地理围栏需要判断一个 GPS 坐标是否落在某个行政区划或配送区域内；在游戏引擎中，碰撞检测的核心步骤之一就是判断角色是否进入了某个不规则区域；在图形渲染中，扫描线填充算法需要逐像素判断哪些点落在多边形内部以进行着色。\u003c/p\u003e\n\u003cp\u003e尽管问题描述简洁，但一旦考虑凹多边形、自交多边形、射线穿过顶点等边界情况，实现一个工程上鲁棒的算法并非易事。本文将系统讲解两种经典算法——\u003cstrong\u003e射线法（Ray Casting）\u003c/strong\u003e 与\u003cstrong\u003e回转数法（Winding Number）\u003c/strong\u003e，深入分析其数学原理、边界处理策略与工程优化方法。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e问题定义与数学基础\u003c/h2\u003e\n\u003ch3\u003e多边形的分类\u003c/h3\u003e\n\u003cp\u003e在讨论算法之前，有必要明确多边形的分类，因为不同类型的多边形对算法的适用性有直接影响。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e简单多边形（Simple Polygon）：\u003c/strong\u003e 边与边之间除了在顶点处相连外不存在交叉。简单多边形又可细分为凸多边形（任意内角小于 180 度）和凹多边形（存在内角大于 180 度的顶点）。凸多边形的判定可以利用叉积在 O(log n) 时间内完成，但凹多边形无法利用这一性质。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e复杂多边形（Complex Polygon）：\u003c/strong\u003e 边与边之间存在交叉（自交），形成的区域可能存在重叠。自交多边形的\u0026quot;内部\u0026quot;定义取决于填充规则的选择，这正是射线法与回转数法在语义上产生分歧的关键场景。\u003c/p\u003e\n\u003ch3\u003eJordan 曲线定理\u003c/h3\u003e\n\u003cp\u003e射线法的数学基础是 Jordan 曲线定理：\u003cstrong\u003e平面上任何一条简单闭曲线将平面划分为恰好两个区域——一个有界的内部区域和一个无界的外部区域。\u003c/strong\u003e 从内部任意一点出发的射线，在到达无穷远处（外部）的过程中，必须穿过曲线奇数次；从外部出发的射线则穿过偶数次（包括零次）。\u003c/p\u003e\n\u003cp\u003e这个定理直觉上显而易见，但严格证明并不简单。对于多边形这一特殊的分段线性闭曲线，我们可以在离散层面上精确计算射线与每条边的交点，从而将连续几何问题转化为可计算的算法。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e射线法（Ray Casting Algorithm）\u003c/h2\u003e\n\u003ch3\u003e核心原理：奇偶规则\u003c/h3\u003e\n\u003cp\u003e射线法的核心思路极为简洁：从测试点 P 向任意方向发射一条射线（通常选择水平向右方向，即正 x 方向），统计该射线与多边形所有边的交点数量。根据 Jordan 曲线定理：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e交点数为奇数\u003c/strong\u003e -\u0026gt; 点在多边形内部\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e交点数为偶数\u003c/strong\u003e -\u0026gt; 点在多边形外部\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e直观理解：当测试点在多边形内部时，射线从内部出发，第一次穿越边界即\u0026quot;出去\u0026quot;，随后每一对穿越都对应一次\u0026quot;进入-出去\u0026quot;的循环。整个过程产生 1 + 2k（奇数）个交点。当测试点在外部时，每次穿越都是\u0026quot;进入-出去\u0026quot;成对出现，产生 2k（偶数）个交点。\u003c/p\u003e\n\u003ch3\u003e算法流程\u003c/h3\u003e\n\u003cp\u003e对于一个由 n 个顶点 V_0, V_1, ..., V_{n-1} 定义的多边形和测试点 P(x, y)：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e初始化交点计数器 count = 0\u003c/li\u003e\n\u003cli\u003e遍历多边形的每条边 (V_i, V_{i+1})（其中 V_n = V_0 构成闭合）\u003c/li\u003e\n\u003cli\u003e对于每条边，判断水平射线是否与该边相交\u003c/li\u003e\n\u003cli\u003e若相交，count 加 1\u003c/li\u003e\n\u003cli\u003e若 count 为奇数，则点在多边形内\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e判断射线与边是否相交的具体条件为：边的两个端点必须分布在射线所在水平线的两侧（一个在上方，一个在下方或恰好在线上），且交点的 x 坐标位于测试点的右侧。\u003c/p\u003e\n\u003ch3\u003e边界情况的严格处理\u003c/h3\u003e\n\u003cp\u003e射线法的优雅之处在于其概念的简洁性，但工程实现的难点在于边界情况的处理。以下逐一分析。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e射线穿过多边形顶点：\u003c/strong\u003e 当射线恰好经过多边形的某个顶点时，该顶点同时是两条边的端点，如果简单地对两条边分别判断交点，可能会将同一个交叉点计数两次或零次，导致奇偶性错误。\u003c/p\u003e\n\u003cp\u003e解决方案是采用\u003cstrong\u003e半开区间约定（half-open interval）\u003c/strong\u003e：对于每条边，只有当边的一个端点严格位于射线下方（y \u0026lt; P_y），另一个端点位于射线上方或恰好在射线上（y \u0026gt;= P_y）时，才视为相交。这样，对于穿过顶点的情况：如果该顶点连接的两条边分别位于射线的两侧（一条边从下方来，另一条边向上方去），则恰好产生一个交点；如果两条边位于射线的同一侧（如一条边从下方来到顶点，又向下方去），则交点计数为零或二，对奇偶性无影响。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e边与射线重合：\u003c/strong\u003e 当多边形的某条边恰好与射线共线（即水平且 y 坐标等于 P_y）时，该边上的所有点都是\u0026quot;交点\u0026quot;。处理策略同样依赖半开区间约定：水平边的两个端点 y 坐标相同，均不满足\u0026quot;一上一下\u0026quot;的条件，因此整条水平边不产生任何交点。这在数学上等价于将水平边\u0026quot;忽略\u0026quot;。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e自交多边形：\u003c/strong\u003e 射线法天然适用于自交多边形，此时它实际上遵循的是\u003cstrong\u003e奇偶填充规则（Even-Odd Rule）\u003c/strong\u003e。自交区域被穿过偶数次的边界包围，在奇偶规则下被视为\u0026quot;外部\u0026quot;——即重叠区域通过 XOR 操作被剔除。这在某些场景下是期望的行为（如 SVG 的 \u003ccode\u003efill-rule: evenodd\u003c/code\u003e），但在另一些场景下可能不符合预期。\u003c/p\u003e\n\u003ch3\u003e算法实现\u003c/h3\u003e\n\u003cp\u003e以下是射线法的 C 语言实现，采用水平向右射线与半开区间约定：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-c\"\u003ebool pointInPolygon(double x, double y,\n                    double *polyX, double *polyY, int polySides) {\n    int i, j = polySides - 1;\n    bool oddNodes = false;\n\n    for (i = 0; i \u0026lt; polySides; i++) {\n        if ((polyY[i] \u0026lt; y \u0026amp;\u0026amp; polyY[j] \u0026gt;= y)\n        ||  (polyY[j] \u0026lt; y \u0026amp;\u0026amp; polyY[i] \u0026gt;= y)) {\n            if (polyX[i] + (y - polyY[i]) / (polyY[j] - polyY[i])\n                * (polyX[j] - polyX[i]) \u0026lt; x) {\n                oddNodes = !oddNodes;\n            }\n        }\n        j = i;\n    }\n    return oddNodes;\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e逐行解析：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e外层 \u003ccode\u003efor\u003c/code\u003e 循环遍历多边形每条边 \u003ccode\u003e(V_i, V_j)\u003c/code\u003e，其中 \u003ccode\u003ej\u003c/code\u003e 始终指向前一个顶点，形成循环遍历\u003c/li\u003e\n\u003cli\u003e第一个 \u003ccode\u003eif\u003c/code\u003e 判断：边的两个端点是否分布在水平射线的两侧（采用半开区间 \u003ccode\u003e\u0026lt;\u003c/code\u003e 和 \u003ccode\u003e\u0026gt;=\u003c/code\u003e）\u003c/li\u003e\n\u003cli\u003e第二个 \u003ccode\u003eif\u003c/code\u003e 判断：计算射线与边的交点 x 坐标，判断交点是否在测试点的左侧（即测试点在交点右侧），若是则翻转 \u003ccode\u003eoddNodes\u003c/code\u003e 标志\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e交点 x 坐标的计算基于线性插值：给定边的两个端点 (x_i, y_i) 和 (x_j, y_j)，射线 y = P_y 与该边的交点 x 坐标为：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003ex_intersect = x_i + (P_y - y_i) / (y_j - y_i) * (x_j - x_i)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e复杂度分析\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e时间复杂度：O(n)\u003c/strong\u003e，其中 n 为多边形的边数。算法仅需遍历所有边一次，每条边的计算为常数时间\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e空间复杂度：O(1)\u003c/strong\u003e，仅使用常数个辅助变量\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e边界点的归属\u003c/h3\u003e\n\u003cp\u003e需要特别说明的是，当测试点恰好位于多边形边上时，射线法的返回值是不确定的——可能返回\u0026quot;内\u0026quot;也可能返回\u0026quot;外\u0026quot;，取决于浮点运算的精度和具体的边方位。在工程实践中，由于边在数学上是无面积的一维对象，这种不确定性在绝大多数场景下可以忽略。如果应用需要对边界点做确定性判断，需要额外增加点到边的距离判断逻辑。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e回转数法（Winding Number Algorithm）\u003c/h2\u003e\n\u003ch3\u003e原理：绕测试点的回转数\u003c/h3\u003e\n\u003cp\u003e回转数法从另一个视角定义\u0026quot;内部\u0026quot;：计算多边形边界绕测试点旋转的总角度。具体而言，\u003cstrong\u003e回转数（Winding Number）\u003c/strong\u003e 定义为：沿多边形边界按顶点顺序遍历一圈时，从测试点观察，边界总共绕测试点逆时针旋转了多少圈。\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e回转数不为零\u003c/strong\u003e -\u0026gt; 点在多边形内部\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e回转数为零\u003c/strong\u003e -\u0026gt; 点在多边形外部\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e对于简单多边形，回转数只可能是 +1、-1 或 0，此时回转数法与射线法的结果完全一致。两者的差异体现在\u003cstrong\u003e自交多边形\u003c/strong\u003e上。\u003c/p\u003e\n\u003ch3\u003e与射线法的语义差异\u003c/h3\u003e\n\u003cp\u003e考虑一个\u0026quot;8\u0026quot;字形自交多边形，其两个环重叠区域的回转数为 +2 或 -2。在回转数法下，重叠区域属于\u0026quot;内部\u0026quot;（回转数非零）；在射线法（奇偶规则）下，重叠区域属于\u0026quot;外部\u0026quot;（射线穿过偶数条边）。\u003c/p\u003e\n\u003cp\u003e这两种语义分别对应图形学中的两种填充规则：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e奇偶规则（Even-Odd Rule）：\u003c/strong\u003e 射线法的行为，自交区域被 XOR 剔除\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e非零规则（Non-Zero Rule）：\u003c/strong\u003e 回转数法的行为，只要回转数非零即为内部\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eSVG 和 CSS 中的 \u003ccode\u003efill-rule\u003c/code\u003e 属性正是控制这一行为的：\u003ccode\u003eevenodd\u003c/code\u003e 对应射线法语义，\u003ccode\u003enonzero\u003c/code\u003e 对应回转数法语义。\u003c/p\u003e\n\u003ch3\u003e实现思路\u003c/h3\u003e\n\u003cp\u003e直观的实现是逐边累加角度变化量，但涉及反三角函数计算，效率较低。高效的实现方法同样基于边与水平线的交叉计数，但区分方向：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003efunction windingNumber(P, polygon):\n    wn = 0\n    for each edge (V_i, V_{i+1}):\n        if V_i.y \u0026lt;= P.y:\n            if V_{i+1}.y \u0026gt; P.y:                // 向上穿越\n                if isLeft(V_i, V_{i+1}, P) \u0026gt; 0: // P 在边的左侧\n                    wn += 1\n        else:\n            if V_{i+1}.y \u0026lt;= P.y:               // 向下穿越\n                if isLeft(V_i, V_{i+1}, P) \u0026lt; 0: // P 在边的右侧\n                    wn -= 1\n    return wn != 0\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e其中 \u003ccode\u003eisLeft\u003c/code\u003e 函数通过叉积判断点 P 相对于有向边 (V_i, V_{i+1}) 的方位：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eisLeft(V_i, V_{i+1}, P) =\n    (V_{i+1}.x - V_i.x) * (P.y - V_i.y) -\n    (P.x - V_i.x) * (V_{i+1}.y - V_i.y)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e该实现的时间复杂度同样为 O(n)，且不涉及三角函数运算，全部计算基于加减乘运算，在性能上与射线法相当。\u003c/p\u003e\n\u003ch3\u003e射线法与回转数法的对比\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e维度\u003c/th\u003e\n\u003cth\u003e射线法\u003c/th\u003e\n\u003cth\u003e回转数法\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e填充规则\u003c/td\u003e\n\u003ctd\u003e奇偶规则（Even-Odd）\u003c/td\u003e\n\u003ctd\u003e非零规则（Non-Zero）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e简单多边形\u003c/td\u003e\n\u003ctd\u003e结果一致\u003c/td\u003e\n\u003ctd\u003e结果一致\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e自交多边形\u003c/td\u003e\n\u003ctd\u003e重叠区域视为外部\u003c/td\u003e\n\u003ctd\u003e重叠区域视为内部\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e时间复杂度\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003ctd\u003eO(n)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e实现难度\u003c/td\u003e\n\u003ctd\u003e较低\u003c/td\u003e\n\u003ctd\u003e略高（需处理方向）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e数值稳定性\u003c/td\u003e\n\u003ctd\u003e涉及除法\u003c/td\u003e\n\u003ctd\u003e仅涉及乘法（叉积）\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e在大多数工程场景中，如果处理的是简单多边形，两种算法可以互换使用。对于自交多边形，需要根据业务语义选择合适的填充规则。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e算法优化\u003c/h2\u003e\n\u003ch3\u003e包围盒预检测（Bounding Box）\u003c/h3\u003e\n\u003cp\u003e最直接的优化是在执行射线法之前，先判断测试点是否落在多边形的轴对齐包围盒（AABB）内。包围盒通过预计算多边形所有顶点的 x、y 坐标极值得到：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eif (x \u0026lt; minX || x \u0026gt; maxX || y \u0026lt; minY || y \u0026gt; maxY)\n    return false;  // 点在包围盒之外，必定不在多边形内\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e包围盒预计算为 O(n)，一次计算后可复用。后续每次判定的预检测为 O(1)，能快速排除大量明显在多边形外部的点。\u003c/p\u003e\n\u003ch3\u003e边的早期跳过优化\u003c/h3\u003e\n\u003cp\u003e在射线法的实现中，Nathan Mercer 提出了一种优化：在判断边的两端点是否跨越水平线之后，增加一个额外条件 \u003ccode\u003epolyX[i] \u0026lt;= x || polyX[j] \u0026lt;= x\u003c/code\u003e，用于跳过那些完全位于测试点右侧的边——这些边不可能与向右发射的射线产生在测试点左侧的交点。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-c\"\u003eif ((polyY[i] \u0026lt; y \u0026amp;\u0026amp; polyY[j] \u0026gt;= y)\n||  (polyY[j] \u0026lt; y \u0026amp;\u0026amp; polyY[i] \u0026gt;= y)) {\n    if (polyX[i] \u0026lt;= x || polyX[j] \u0026lt;= x) {  // 新增条件\n        if (polyX[i] + (y - polyY[i]) / (polyY[j] - polyY[i])\n            * (polyX[j] - polyX[i]) \u0026lt; x) {\n            oddNodes = !oddNodes;\n        }\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e这一优化避免了对完全位于右侧的边执行浮点除法和乘法运算，在多边形边数较多且测试点靠近多边形中心时效果显著。\u003c/p\u003e\n\u003ch3\u003e空间索引加速\u003c/h3\u003e\n\u003cp\u003e当需要对同一个多边形进行大量点的判定（如 GIS 服务中的批量坐标归属查询），O(n) 的逐边遍历会成为性能瓶颈。此时可以引入空间索引进行预处理：\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e网格法（Grid）：\u003c/strong\u003e 将多边形的包围盒划分为 m x m 的均匀网格。预处理阶段，计算每个网格单元与多边形的关系：完全在内部、完全在外部、或与边界相交。查询时，先定位测试点所在的网格单元，若为完全内部或完全外部则直接返回，仅对边界单元执行射线法。预处理复杂度为 O(n * m)，查询复杂度降至 O(1)（最优情况）到 O(n/m)（最坏情况）。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e梯形分解（Trapezoidal Decomposition）：\u003c/strong\u003e 将多边形分解为若干梯形区域，构建搜索结构。预处理复杂度 O(n log n)，单次查询复杂度 O(log n)。适用于对查询延迟有严格要求的场景。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eR-Tree 索引：\u003c/strong\u003e 将多边形的边组织为 R-Tree。查询时，先通过 R-Tree 筛选出与水平射线可能相交的边，再对这些边执行精确判断。当多边形边数达到数千甚至数万级别时，R-Tree 能将实际需要检查的边数降低一到两个数量级。\u003c/p\u003e\n\u003ch3\u003e批量判定的预处理策略\u003c/h3\u003e\n\u003cp\u003e在实际工程中，常见的场景是：多边形固定不变，需要对海量动态点进行判定。典型如地理围栏服务——行政区划多边形固定，而 GPS 坐标持续涌入。\u003c/p\u003e\n\u003cp\u003e此时最高效的策略是\u003cstrong\u003e基于扫描线的预处理\u003c/strong\u003e：将包围盒在 y 方向上分为若干水平带（slab），每个水平带内记录穿过该带的边集合。查询时先通过 y 坐标定位到水平带，再只对该带内的边执行射线法。这种方法将每次查询的平均边检查数量从 n 降低到 n/k（k 为水平带数量），是 GIS 工程实践中常用的优化手段。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e工程应用\u003c/h2\u003e\n\u003ch3\u003eGIS 地理围栏\u003c/h3\u003e\n\u003cp\u003e地理围栏（Geofencing）是点在多边形内判定最典型的工程应用。在物流配送中，需要判断用户地址是否在配送区域内；在出行服务中，需要判断车辆是否驶入或驶出电子围栏；在气象服务中，需要判断某个坐标属于哪个气象分区。\u003c/p\u003e\n\u003cp\u003eGIS 场景的特殊性在于坐标系。GPS 坐标是经纬度（球面坐标），而射线法假设平面直角坐标系。对于小范围区域（如城市级别），可以直接将经纬度视为平面坐标进行计算，误差可控。对于大范围区域（如跨越数千公里的国界），需要先进行墨卡托投影或其他地图投影，将球面坐标转换为平面坐标后再执行算法。\u003c/p\u003e\n\u003cp\u003e此外，GIS 中的多边形边数通常较大——一个省级行政区划的边界可能由数万个顶点组成。此时空间索引（如 R-Tree）和网格预处理几乎是必需的优化手段。PostGIS 中的 \u003ccode\u003eST_Contains\u003c/code\u003e 函数内部正是采用了 R-Tree 索引加速的射线法实现。\u003c/p\u003e\n\u003ch3\u003e地图服务：行政区划归属查询\u003c/h3\u003e\n\u003cp\u003e大型地图服务需要支持\u0026quot;根据经纬度查询所属行政区划\u0026quot;的高频请求。其本质是对数百个行政区划多边形的批量点包含测试。工程实现通常分为两级：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e粗筛：\u003c/strong\u003e 使用 R-Tree 对所有行政区划的包围盒建立索引，根据查询点快速定位到候选区划（通常只有 1-3 个）\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e精确判定：\u003c/strong\u003e 对候选区划执行射线法或回转数法\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e这种两级架构将原本 O(N * n) 的问题（N 个区划，每个区划 n 条边）降低到接近 O(log N + n\u0026#39;) 的复杂度，其中 n\u0026#39; 是候选区划的平均边数。\u003c/p\u003e\n\u003ch3\u003e游戏引擎碰撞检测\u003c/h3\u003e\n\u003cp\u003e在游戏开发中，碰撞检测通常采用多阶段策略：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e宽阶段（Broad Phase）：\u003c/strong\u003e 使用包围盒（AABB 或 OBB）快速排除不可能碰撞的物体对\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e窄阶段（Narrow Phase）：\u003c/strong\u003e 对宽阶段筛选出的候选对执行精确碰撞检测\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e点在多边形内判定在窄阶段发挥作用，尤其对于不规则形状的碰撞区域（如地形边界、不规则触发区域）。对于凸多边形，通常使用 GJK（Gilbert-Johnson-Keerthi）算法，但对于凹多边形区域，射线法仍然是最直接可靠的方案。\u003c/p\u003e\n\u003ch3\u003e数据可视化：区域着色与热力图\u003c/h3\u003e\n\u003cp\u003e在前端数据可视化中，Choropleth Map（分级统色地图）需要将数据点分配到对应的地理区域。例如，将每个用户的坐标归属到对应的省份，再根据各省份的用户密度进行着色。这本质上就是大规模的点在多边形内批量判定。\u003c/p\u003e\n\u003cp\u003eD3.js 和 ECharts 等可视化库内部均实现了射线法。在 Canvas 渲染场景中，\u003ccode\u003eCanvasRenderingContext2D.isPointInPath()\u003c/code\u003e 方法底层也是基于类似的算法实现。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e总结\u003c/h2\u003e\n\u003cp\u003e点在多边形内判定是计算几何中的基石问题。射线法以其概念简洁、实现高效的特点成为工程实践中的首选方案，其 O(n) 的时间复杂度和对凹多边形的天然支持使其适用于绝大多数场景。回转数法在处理自交多边形时提供了不同的语义选择（非零填充规则 vs 奇偶填充规则），是理解图形填充行为的关键。\u003c/p\u003e\n\u003cp\u003e在工程应用中，算法本身的效率往往不是瓶颈——真正的挑战在于如何通过包围盒预检测、空间索引、网格预处理等手段，将海量查询的平均复杂度从 O(n) 降低到接近 O(1)。理解算法原理是基础，而将其融入具体的工程架构中进行系统性优化，才是将理论转化为生产力的关键。\u003c/p\u003e\n"])</script><script>self.__next_f.push([1,"5:[\"$\",\"article\",null,{\"className\":\"min-h-screen\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12\",\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-8\",\"children\":[[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-1 text-sm mb-4\",\"children\":[[\"$\",\"$L13\",null,{\"href\":\"/blog/page/1\",\"className\":\"text-gray-500 hover:text-blue-600 transition-colors\",\"children\":\"博客\"}],[\"$\",\"span\",null,{\"className\":\"text-gray-300\",\"children\":\"/\"}],[\"$\",\"$L13\",null,{\"href\":\"/blog/category/engineering/page/1\",\"className\":\"text-gray-500 hover:text-blue-600 transition-colors\",\"children\":\"Engineering\"}],\"$undefined\"]}],[\"$\",\"div\",null,{\"className\":\"flex items-center mb-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal\",\"children\":[[\"$\",\"svg\",null,{\"className\":\"w-4 h-4 mr-2 text-gray-400\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"viewBox\":\"0 0 24 24\",\"children\":[\"$\",\"path\",null,{\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"strokeWidth\":2,\"d\":\"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z\"}]}],[\"$\",\"time\",null,{\"dateTime\":\"2023-09-20\",\"children\":\"2023年09月20日\"}]]}]}],[\"$\",\"h1\",null,{\"className\":\"text-4xl font-bold text-gray-900 mb-6 text-center\",\"children\":\"字符串匹配算法全景：从BM到AC自动机的演进之路\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2 mb-6 justify-center\",\"children\":[[\"$\",\"$L13\",\"算法\",{\"href\":\"/blog/tag/%E7%AE%97%E6%B3%95/page/1/\",\"className\":\"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors\",\"children\":\"算法\"}],[\"$\",\"$L13\",\"字符串匹配\",{\"href\":\"/blog/tag/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/page/1/\",\"className\":\"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors\",\"children\":\"字符串匹配\"}],[\"$\",\"$L13\",\"KMP\",{\"href\":\"/blog/tag/KMP/page/1/\",\"className\":\"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors\",\"children\":\"KMP\"}],[\"$\",\"$L13\",\"AC自动机\",{\"href\":\"/blog/tag/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/page/1/\",\"className\":\"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors\",\"children\":\"AC自动机\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"max-w-5xl mx-auto\",\"children\":[\"$\",\"$L14\",null,{\"content\":\"$15\"}]}],[\"$\",\"$10\",null,{\"fallback\":[\"$\",\"div\",null,{\"className\":\"mt-12 pt-8 border-t border-gray-200\",\"children\":\"加载导航中...\"}],\"children\":[\"$\",\"$L16\",null,{\"globalNav\":{\"prev\":{\"slug\":\"engineering/algorithm/SkipList与Merkle Tree：两种经典结构的原理与工程应用\",\"title\":\"SkipList与Merkle Tree：两种经典结构的原理与工程应用\",\"description\":\"深入分析跳表与Merkle树的数据结构原理、算法实现及其在Redis、LevelDB、区块链、分布式系统中的工程应用\",\"pubDate\":\"2023-06-15\",\"tags\":[\"数据结构\",\"SkipList\",\"Merkle Tree\",\"分布式系统\"],\"heroImage\":\"$undefined\",\"content\":\"$17\"},\"next\":{\"slug\":\"insights/technology/区块链在商业中的应用\",\"title\":\"区块链在商业中的应用：机遇与挑战\",\"description\":\"探讨区块链技术在商业领域的实际应用，包括供应链管理、数字身份、智能合约等，以及企业如何利用区块链技术创造价值\",\"pubDate\":\"2024-01-05\",\"tags\":[\"区块链\",\"商业应用\",\"去中心化\"],\"heroImage\":\"/images/blockchain.jpg\",\"content\":\"$18\"}},\"tagNav\":{\"算法\":{\"prev\":null,\"next\":{\"slug\":\"engineering/algorithm/计算几何基础：点在多边形内判定算法详解\",\"title\":\"计算几何基础：点在多边形内判定算法详解\",\"description\":\"系统讲解点在多边形内判定的经典算法——射线法与回转数法，涵盖边界情况处理、算法优化及在GIS与图形学中的工程应用\",\"pubDate\":\"2024-07-25\",\"tags\":[\"算法\",\"计算几何\",\"多边形\",\"GIS\"],\"heroImage\":\"$undefined\",\"content\":\"$19\"}},\"字符串匹配\":{\"prev\":null,\"next\":null},\"KMP\":{\"prev\":null,\"next\":null},\"AC自动机\":{\"prev\":null,\"next\":null}}}]}],[\"$\",\"$L1a\",null,{}]]}]}]}]\n"])</script><script>self.__next_f.push([1,"8:null\n"])</script><script>self.__next_f.push([1,"c:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n7:null\n"])</script><script>self.__next_f.push([1,"a:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"字符串匹配算法全景：从BM到AC自动机的演进之路 - Skyfalling Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"字符串匹配算法全景：从BM到AC自动机的演进之路\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2023-09-20\"}],[\"$\",\"meta\",\"6\",{\"property\":\"article:author\",\"content\":\"Skyfalling\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:title\",\"content\":\"字符串匹配算法全景：从BM到AC自动机的演进之路\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:description\",\"content\":\"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型\"}],[\"$\",\"link\",\"10\",{\"rel\":\"shortcut icon\",\"href\":\"/favicon.png\"}],[\"$\",\"link\",\"11\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}],[\"$\",\"link\",\"12\",{\"rel\":\"icon\",\"href\":\"/favicon.png\"}],[\"$\",\"link\",\"13\",{\"rel\":\"apple-touch-icon\",\"href\":\"/favicon.png\"}]],\"error\":null,\"digest\":\"$undefined\"}\n12:{\"metadata\":\"$a:metadata\",\"error\":null,\"digest\":\"$undefined\"}\n"])</script></body></html>

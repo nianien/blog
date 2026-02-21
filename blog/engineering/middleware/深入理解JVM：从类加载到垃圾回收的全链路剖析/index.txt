@@ -1,0 +1,1348 @@
+1:"$Sreact.fragment"
+2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-142e67ac4336647c.js"],"default"]
+3:I[87555,[],""]
+4:I[31295,[],""]
+6:I[59665,[],"OutletBoundary"]
+9:I[74911,[],"AsyncMetadataOutlet"]
+b:I[59665,[],"ViewportBoundary"]
+d:I[59665,[],"MetadataBoundary"]
+f:I[26614,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/129144073acbb2fa.css","style"]
+0:{"P":null,"b":"23QKHIVSTghHWvM98JcHB","p":"","c":["","blog","engineering","middleware","%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM%EF%BC%9A%E4%BB%8E%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%88%B0%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%9A%84%E5%85%A8%E9%93%BE%E8%B7%AF%E5%89%96%E6%9E%90",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM%EF%BC%9A%E4%BB%8E%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%88%B0%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%9A%84%E5%85%A8%E9%93%BE%E8%B7%AF%E5%89%96%E6%9E%90","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/129144073acbb2fa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM%EF%BC%9A%E4%BB%8E%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%88%B0%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%9A%84%E5%85%A8%E9%93%BE%E8%B7%AF%E5%89%96%E6%9E%90","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","99FjvpTFJD63xCMMlf4kFv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+10:"$Sreact.suspense"
+11:I[74911,[],"AsyncMetadata"]
+13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
+14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+18:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
+15:T6a92,<h1>深入理解JVM：从类加载到垃圾回收的全链路剖析</h1>
+<blockquote>
+<p>Java 程序的生命周期始于类加载，终于垃圾回收。理解 JVM 的工作原理，不仅是性能调优的基础，更是理解 Java 语言设计哲学的关键。</p>
+</blockquote>
+<p>JVM（Java Virtual Machine）是 Java 生态的基石。它屏蔽了底层硬件差异，为 Java 程序提供了一个统一的运行时环境。但这层抽象并非没有代价——内存管理、类加载、即时编译等机制的复杂性，往往是生产环境问题的根源。</p>
+<p>本文将沿着 Java 程序的执行链路，从类文件的加载、运行时内存的分配，到对象的回收，系统梳理 JVM 的核心机制。</p>
+<h2>一、类加载机制</h2>
+<h3>1.1 类的生命周期</h3>
+<p>一个 Java 类从被加载到 JVM 内存，到最终被卸载，经历以下阶段：</p>
+<pre><code>加载（Loading）→ 验证（Verification）→ 准备（Preparation）
+    → 解析（Resolution）→ 初始化（Initialization）
+        → 使用（Using）→ 卸载（Unloading）
+</code></pre>
+<p>其中，验证、准备、解析统称为**链接（Linking）**阶段。</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>核心动作</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>加载</strong></td>
+<td>读取 .class 字节流，生成 Class 对象</td>
+<td>由 ClassLoader 执行</td>
+</tr>
+<tr>
+<td><strong>验证</strong></td>
+<td>校验字节码的合法性和安全性</td>
+<td>文件格式、元数据、字节码、符号引用验证</td>
+</tr>
+<tr>
+<td><strong>准备</strong></td>
+<td>为类的静态变量分配内存并赋零值</td>
+<td><code>static int a = 10</code> 在此阶段 a = 0</td>
+</tr>
+<tr>
+<td><strong>解析</strong></td>
+<td>将符号引用替换为直接引用</td>
+<td>类、字段、方法、接口方法的解析</td>
+</tr>
+<tr>
+<td><strong>初始化</strong></td>
+<td>执行类构造器 <code>&lt;clinit&gt;()</code></td>
+<td>静态变量赋值和静态代码块的执行</td>
+</tr>
+</tbody></table>
+<h3>1.2 ClassLoader 体系</h3>
+<p>JVM 内置三层 ClassLoader，形成层级结构：</p>
+<pre><code>Bootstrap ClassLoader（引导类加载器）
+    ↑ parent
+Extension ClassLoader（扩展类加载器）
+    ↑ parent
+Application ClassLoader（应用类加载器）
+    ↑ parent
+Custom ClassLoader（自定义类加载器）
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>ClassLoader</th>
+<th>实现语言</th>
+<th>加载路径</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bootstrap</strong></td>
+<td>C/C++</td>
+<td><code>$JAVA_HOME/lib</code>（rt.jar 等）</td>
+<td>JVM 内部实现，Java 中无法直接引用（返回 null）</td>
+</tr>
+<tr>
+<td><strong>Extension</strong></td>
+<td>Java</td>
+<td><code>$JAVA_HOME/lib/ext</code></td>
+<td><code>sun.misc.Launcher$ExtClassLoader</code></td>
+</tr>
+<tr>
+<td><strong>Application</strong></td>
+<td>Java</td>
+<td>classpath</td>
+<td><code>sun.misc.Launcher$AppClassLoader</code>，默认的类加载器</td>
+</tr>
+</tbody></table>
+<p>三者的关系通过 <code>sun.misc.Launcher</code> 的构造函数建立：</p>
+<pre><code class="language-java">public Launcher() {
+    // 1. 创建 ExtClassLoader
+    ExtClassLoader extClassLoader = ExtClassLoader.getExtClassLoader();
+    // 2. 创建 AppClassLoader，parent 设为 ExtClassLoader
+    AppClassLoader appClassLoader = AppClassLoader.getAppClassLoader(extClassLoader);
+    // 3. 设置线程上下文类加载器为 AppClassLoader
+    Thread.currentThread().setContextClassLoader(appClassLoader);
+}
+</code></pre>
+<h3>1.3 双亲委派模型</h3>
+<p><strong>核心规则</strong>：当一个 ClassLoader 收到类加载请求时，首先将请求委派给父加载器处理，只有当父加载器无法完成加载时，才由自身尝试加载。</p>
+<p>执行流程（<code>ClassLoader.loadClass()</code> 源码逻辑）：</p>
+<pre><code class="language-java">protected Class&lt;?&gt; loadClass(String name, boolean resolve) {
+    // 1. 检查类是否已被加载
+    Class&lt;?&gt; c = findLoadedClass(name);
+    if (c == null) {
+        try {
+            // 2. 委派给父加载器
+            if (parent != null) {
+                c = parent.loadClass(name, false);
+            } else {
+                // parent 为 null 表示委派给 Bootstrap
+                c = findBootstrapClassOrNull(name);
+            }
+        } catch (ClassNotFoundException e) {
+            // 父加载器无法加载
+        }
+        if (c == null) {
+            // 3. 父加载器无法加载，自行加载
+            c = findClass(name);
+        }
+    }
+    return c;
+}
+</code></pre>
+<p><strong>双亲委派的价值</strong>：</p>
+<ul>
+<li><strong>安全性</strong>：防止核心类库被篡改。即使自定义了一个 <code>java.lang.String</code>，也不会被加载，因为 Bootstrap ClassLoader 会优先加载 rt.jar 中的版本</li>
+<li><strong>唯一性</strong>：同一个类在 JVM 中只会被加载一次，避免类的重复加载</li>
+</ul>
+<h3>1.4 打破双亲委派</h3>
+<p>双亲委派并非不可逾越。以下场景需要打破这一模型：</p>
+<p><strong>场景一：SPI 机制</strong></p>
+<p>Java SPI（Service Provider Interface）的典型问题：核心接口由 Bootstrap ClassLoader 加载（如 <code>java.sql.Driver</code>），但实现类在应用 classpath 下（如 MySQL 驱动），Bootstrap 无法向下委派。</p>
+<p>解决方案：<strong>线程上下文类加载器（Thread Context ClassLoader）</strong>。</p>
+<pre><code class="language-java">// JDBC DriverManager 的实现
+ServiceLoader&lt;Driver&gt; loadedDrivers = ServiceLoader.load(Driver.class);
+// ServiceLoader.load() 内部使用 Thread.currentThread().getContextClassLoader()
+// 从而绕过了双亲委派，用 AppClassLoader 加载 SPI 实现类
+</code></pre>
+<p><strong>场景二：热部署</strong></p>
+<p>OSGi、Tomcat 等容器需要实现类的热替换。Tomcat 为每个 Web 应用创建独立的 ClassLoader（<code>WebAppClassLoader</code>），它优先从自身路径加载类，找不到才委派给父加载器——这与双亲委派的顺序恰好相反。</p>
+<p><strong>场景三：自定义 ClassLoader</strong></p>
+<p>通过重写 <code>findClass()</code> 方法实现自定义加载逻辑，如从网络加载、加密 class 文件的解密加载等：</p>
+<pre><code class="language-java">public class EncryptedClassLoader extends ClassLoader {
+    @Override
+    protected Class&lt;?&gt; findClass(String name) throws ClassNotFoundException {
+        byte[] encrypted = loadBytesFromDisk(name);
+        byte[] decrypted = decrypt(encrypted);  // 解密 class 字节码
+        return defineClass(name, decrypted, 0, decrypted.length);
+    }
+}
+</code></pre>
+<h2>二、运行时内存模型</h2>
+<h3>2.1 内存区域划分</h3>
+<p>JVM 运行时内存分为线程私有和线程共享两大类：</p>
+<pre><code>┌─────────────────── JVM 内存 ───────────────────────┐
+│                                                      │
+│  线程私有                    线程共享                   │
+│  ┌──────────────────┐      ┌────────────────────┐   │
+│  │ 程序计数器（PC）    │      │       堆（Heap）     │   │
+│  │ 虚拟机栈（Stack）   │      │  ┌──────────────┐  │   │
+│  │ 本地方法栈         │      │  │  新生代        │  │   │
+│  └──────────────────┘      │  │  Eden + S0/S1 │  │   │
+│                             │  ├──────────────┤  │   │
+│                             │  │  老年代        │  │   │
+│                             │  └──────────────┘  │   │
+│                             ├────────────────────┤   │
+│                             │  元空间（Metaspace）  │   │
+│                             │  （本地内存）          │   │
+│                             └────────────────────┘   │
+└──────────────────────────────────────────────────────┘
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>线程属性</th>
+<th>存储内容</th>
+<th>异常</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>程序计数器</strong></td>
+<td>私有</td>
+<td>当前线程执行的字节码行号</td>
+<td>唯一不会 OOM 的区域</td>
+</tr>
+<tr>
+<td><strong>虚拟机栈</strong></td>
+<td>私有</td>
+<td>栈帧（局部变量表、操作数栈、方法返回地址）</td>
+<td>StackOverflowError / OOM</td>
+</tr>
+<tr>
+<td><strong>本地方法栈</strong></td>
+<td>私有</td>
+<td>Native 方法调用的栈帧</td>
+<td>StackOverflowError / OOM</td>
+</tr>
+<tr>
+<td><strong>堆</strong></td>
+<td>共享</td>
+<td>对象实例和数组</td>
+<td>OutOfMemoryError: Java heap space</td>
+</tr>
+<tr>
+<td><strong>元空间</strong></td>
+<td>共享</td>
+<td>类元数据、方法字节码、常量池</td>
+<td>OutOfMemoryError: Metaspace</td>
+</tr>
+</tbody></table>
+<h3>2.2 从 PermGen 到 Metaspace</h3>
+<p>Java 8 是 JVM 内存模型的一个重要分水岭——<strong>永久代（PermGen）被元空间（Metaspace）取代</strong>。</p>
+<p><strong>永久代的问题</strong>：</p>
+<ul>
+<li>大小固定（默认 64MB，<code>-XX:MaxPermSize</code>），难以预估合理值</li>
+<li>类元数据与普通 Java 对象混在同一 GC 管理体系中，增加了 Full GC 的复杂度</li>
+<li>动态生成类（如大量使用反射、动态代理）容易触发 <code>java.lang.OutOfMemoryError: PermGen space</code></li>
+</ul>
+<p><strong>元空间的设计</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>PermGen（Java 7-）</th>
+<th>Metaspace（Java 8+）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>存储位置</td>
+<td>JVM 堆内</td>
+<td>本地内存（Native Memory）</td>
+</tr>
+<tr>
+<td>默认大小</td>
+<td>固定（64MB）</td>
+<td>无上限（受物理内存限制）</td>
+</tr>
+<tr>
+<td>内存分配</td>
+<td>与堆对象相同的 GC 管理</td>
+<td>每个 ClassLoader 独立分配，线性分配</td>
+</tr>
+<tr>
+<td>回收策略</td>
+<td>Full GC 触发</td>
+<td>ClassLoader 被回收时，整块释放</td>
+</tr>
+<tr>
+<td>调优参数</td>
+<td><code>-XX:MaxPermSize</code></td>
+<td><code>-XX:MaxMetaspaceSize</code>、<code>-XX:MetaspaceSize</code></td>
+</tr>
+</tbody></table>
+<p><strong>元空间的内存模型</strong>：</p>
+<p>每个 ClassLoader 拥有独立的内存块（chunk）。加载新类时，从当前 chunk 中线性分配空间。当 ClassLoader 被 GC 回收时，其对应的所有 chunk 一次性释放——不存在单个类的逐一回收。</p>
+<pre><code>ClassLoader A → [chunk1: Class1 Class2 Class3]
+ClassLoader B → [chunk2: Class4 Class5]
+ClassLoader C → [chunk3: Class6]
+
+当 ClassLoader B 被 GC → chunk2 整块释放
+</code></pre>
+<p><strong>压缩类指针空间（Compressed Class Space）</strong>：</p>
+<p>在 64 位 JVM 上，如果开启了压缩类指针（<code>-XX:+UseCompressedClassPointers</code>，默认开启），Metaspace 中的 <code>InstanceKlass</code>、<code>ArrayKlass</code> 及虚方法表会存储在一块独立的内存区域中。该区域大小通过 <code>-XX:CompressedClassSpaceSize</code> 控制（默认 1GB）。</p>
+<h3>2.3 对象的内存布局</h3>
+<p>一个 Java 对象在堆中的内存布局由三部分组成：</p>
+<pre><code>┌────────────────────────────────────┐
+│          对象头（Header）             │
+│  ┌──────────────────────────────┐  │
+│  │ Mark Word（标记字）             │  │  → 哈希码、GC 年龄、锁标志位
+│  │ Klass Pointer（类型指针）       │  │  → 指向元空间中的 Class 元数据
+│  │ Array Length（仅数组对象）       │  │
+│  └──────────────────────────────┘  │
+├────────────────────────────────────┤
+│          实例数据（Instance Data）    │  → 字段值（含父类字段）
+├────────────────────────────────────┤
+│          对齐填充（Padding）          │  → 补齐到 8 字节的整数倍
+└────────────────────────────────────┘
+</code></pre>
+<p><strong>Mark Word 的结构</strong>（64 位 JVM）：</p>
+<table>
+<thead>
+<tr>
+<th>锁状态</th>
+<th>存储内容</th>
+<th>标志位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无锁</td>
+<td>对象哈希码（31bit）、GC 分代年龄（4bit）</td>
+<td>01</td>
+</tr>
+<tr>
+<td>偏向锁</td>
+<td>线程 ID（54bit）、Epoch（2bit）、GC 年龄</td>
+<td>01</td>
+</tr>
+<tr>
+<td>轻量级锁</td>
+<td>指向栈中锁记录的指针</td>
+<td>00</td>
+</tr>
+<tr>
+<td>重量级锁</td>
+<td>指向 Monitor 的指针</td>
+<td>10</td>
+</tr>
+<tr>
+<td>GC 标记</td>
+<td>空</td>
+<td>11</td>
+</tr>
+</tbody></table>
+<p>注意：GC 分代年龄占 <strong>4 bit</strong>，最大值为 15。这就是为什么对象晋升老年代的默认阈值 <code>-XX:MaxTenuringThreshold</code> 不能超过 15。</p>
+<h2>三、垃圾回收</h2>
+<h3>3.1 对象存活判定</h3>
+<p>在回收内存之前，JVM 首先需要判断哪些对象是&quot;活&quot;的，哪些是&quot;死&quot;的。</p>
+<p><strong>引用计数法</strong></p>
+<p>每个对象维护一个引用计数器：被引用时加 1，引用失效时减 1。计数为 0 的对象即可回收。</p>
+<p>优点：实现简单，判定效率高。<br>缺陷：<strong>无法解决循环引用问题</strong>。</p>
+<pre><code class="language-java">// A 和 B 互相引用，但外部已无法访问
+// 引用计数永远不为 0，无法被回收
+Object a = new Object();  // a.refCount = 1
+Object b = new Object();  // b.refCount = 1
+a.field = b;              // b.refCount = 2
+b.field = a;              // a.refCount = 2
+a = null;                 // a.refCount = 1（仍不为 0）
+b = null;                 // b.refCount = 1（仍不为 0）
+</code></pre>
+<p><strong>可达性分析（Reachability Analysis）</strong></p>
+<p>JVM 实际采用的方案。从一组称为 <strong>GC Roots</strong> 的根对象出发，沿引用链向下遍历。不在任何引用链上的对象即为不可达，判定为垃圾。</p>
+<p>GC Roots 包括：</p>
+<table>
+<thead>
+<tr>
+<th>GC Root 类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>虚拟机栈中的局部变量</td>
+<td>方法正在执行时，栈帧中引用的对象</td>
+</tr>
+<tr>
+<td>方法区中的静态变量</td>
+<td>类的 <code>static</code> 字段引用的对象</td>
+</tr>
+<tr>
+<td>方法区中的常量</td>
+<td><code>static final</code> 引用的对象</td>
+</tr>
+<tr>
+<td>JNI 引用</td>
+<td>Native 方法持有的对象引用</td>
+</tr>
+<tr>
+<td>活跃线程</td>
+<td>所有存活的 Thread 对象</td>
+</tr>
+<tr>
+<td>同步锁持有的对象</td>
+<td>被 <code>synchronized</code> 锁定的对象</td>
+</tr>
+</tbody></table>
+<h3>3.2 安全点与 Stop-The-World</h3>
+<p>GC 在执行可达性分析时，需要确保对象引用关系不会发生变化，因此必须暂停所有应用线程——即 <strong>Stop-The-World（STW）</strong>。</p>
+<p>但并非任何时刻都可以暂停线程。线程只有运行到**安全点（Safepoint）**时才能暂停。安全点通常设置在：</p>
+<ul>
+<li>方法调用处</li>
+<li>循环的回边（back edge）</li>
+<li>异常抛出处</li>
+</ul>
+<p>JVM 使用<strong>主动式中断</strong>：GC 需要 STW 时，设置一个全局标志，各线程在安全点检查该标志，发现需要暂停则主动挂起。</p>
+<h3>3.3 GC 算法</h3>
+<p>四种基础 GC 算法，各有适用场景：</p>
+<p><strong>标记-清除（Mark-Sweep）</strong></p>
+<pre><code>标记阶段：从 GC Roots 遍历，标记所有存活对象
+清除阶段：遍历堆，回收未标记的对象
+</code></pre>
+<ul>
+<li>优点：实现简单</li>
+<li>缺点：产生内存碎片，分配大对象时可能找不到连续空间</li>
+</ul>
+<p><strong>标记-整理（Mark-Compact）</strong></p>
+<pre><code>标记阶段：同标记-清除
+整理阶段：将所有存活对象向内存一端移动，然后清理边界外的空间
+</code></pre>
+<ul>
+<li>优点：无内存碎片</li>
+<li>缺点：移动对象开销大，STW 时间更长</li>
+</ul>
+<p><strong>复制算法（Copying）</strong></p>
+<pre><code>将内存分为两块：对象空间和空闲空间
+GC 时将存活对象从对象空间复制到空闲空间，然后清空整个对象空间
+两块空间角色互换
+</code></pre>
+<ul>
+<li>优点：无碎片、分配高效（指针碰撞）</li>
+<li>缺点：可用内存减半</li>
+</ul>
+<p><strong>分代收集（Generational Collection）</strong></p>
+<p>基于&quot;大多数对象朝生夕灭&quot;的统计假设，将堆划分为新生代和老年代，针对不同代的特征选择不同算法：</p>
+<pre><code>新生代（Young Generation）：Eden : S0 : S1 = 8 : 1 : 1
+    → 对象存活率低，使用复制算法
+
+老年代（Old Generation）：
+    → 对象存活率高，使用标记-清除或标记-整理算法
+</code></pre>
+<p><strong>新生代 GC（Minor GC）流程</strong>：</p>
+<pre><code>1. 新对象分配在 Eden 区
+2. Eden 满触发 Minor GC
+3. 存活对象复制到 S0（Survivor From）
+4. 下一次 Minor GC，Eden + S0 的存活对象复制到 S1，清空 Eden + S0
+5. S0 和 S1 角色交换
+6. 对象每经历一次 Minor GC，年龄 +1
+7. 年龄达到阈值（默认 15）的对象晋升老年代
+</code></pre>
+<p><strong>对象直接进入老年代的条件</strong>：</p>
+<ul>
+<li>大对象（超过 <code>-XX:PretenureSizeThreshold</code>）</li>
+<li>长期存活对象（年龄超过阈值）</li>
+<li>Survivor 空间中相同年龄对象总大小超过 Survivor 一半（动态年龄判定）</li>
+<li>Minor GC 后 Survivor 放不下的存活对象</li>
+</ul>
+<h3>3.4 垃圾收集器</h3>
+<p>JVM 提供了多种垃圾收集器，分为新生代和老年代两组，可以组合使用：</p>
+<table>
+<thead>
+<tr>
+<th>收集器</th>
+<th>分代</th>
+<th>算法</th>
+<th>线程</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Serial</strong></td>
+<td>新生代</td>
+<td>复制</td>
+<td>单线程</td>
+<td>简单高效，适合单核或小堆</td>
+</tr>
+<tr>
+<td><strong>ParNew</strong></td>
+<td>新生代</td>
+<td>复制</td>
+<td>多线程</td>
+<td>Serial 的多线程版本，能与 CMS 配合</td>
+</tr>
+<tr>
+<td><strong>Parallel Scavenge</strong></td>
+<td>新生代</td>
+<td>复制</td>
+<td>多线程</td>
+<td>以吞吐量为目标，支持自适应调节</td>
+</tr>
+<tr>
+<td><strong>Serial Old</strong></td>
+<td>老年代</td>
+<td>标记-整理</td>
+<td>单线程</td>
+<td>Serial 的老年代版本</td>
+</tr>
+<tr>
+<td><strong>Parallel Old</strong></td>
+<td>老年代</td>
+<td>标记-整理</td>
+<td>多线程</td>
+<td>Parallel Scavenge 的老年代搭档</td>
+</tr>
+<tr>
+<td><strong>CMS</strong></td>
+<td>老年代</td>
+<td>标记-清除</td>
+<td>并发</td>
+<td>以最短停顿为目标</td>
+</tr>
+<tr>
+<td><strong>G1</strong></td>
+<td>整堆</td>
+<td>分区 + 复制/整理</td>
+<td>并发</td>
+<td>可预测停顿时间，JDK 9 默认</td>
+</tr>
+</tbody></table>
+<p><strong>CMS（Concurrent Mark Sweep）</strong></p>
+<p>CMS 的设计目标是<strong>最短回收停顿时间</strong>。它采用标记-清除算法，GC 过程分为四个阶段：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>STW</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>初始标记</td>
+<td>是</td>
+<td>仅标记 GC Roots 直接关联的对象，速度很快</td>
+</tr>
+<tr>
+<td>并发标记</td>
+<td>否</td>
+<td>从初始标记的对象出发，遍历整个对象图</td>
+</tr>
+<tr>
+<td>重新标记</td>
+<td>是</td>
+<td>修正并发标记期间因程序运行产生的引用变动</td>
+</tr>
+<tr>
+<td>并发清除</td>
+<td>否</td>
+<td>清除不可达对象</td>
+</tr>
+</tbody></table>
+<p>CMS 的两次 STW 都很短暂，绝大部分工作与应用线程并发执行。</p>
+<p><strong>CMS 的局限</strong>：</p>
+<ul>
+<li><strong>CPU 敏感</strong>：并发阶段占用 CPU 资源，核心数少时影响应用吞吐</li>
+<li><strong>浮动垃圾</strong>：并发清除阶段新产生的垃圾只能等下次 GC</li>
+<li><strong>内存碎片</strong>：标记-清除算法的固有问题</li>
+</ul>
+<p><strong>G1（Garbage-First）</strong></p>
+<p>G1 是 JDK 9 开始的默认收集器，它将堆划分为多个大小相等的 <strong>Region</strong>（默认 2048 个），每个 Region 可以动态充当 Eden、Survivor 或 Old 区。</p>
+<pre><code>┌────┬────┬────┬────┬────┬────┬────┬────┐
+│  E │  E │  S │  O │  O │  H │  E │  O │
+└────┴────┴────┴────┴────┴────┴────┴────┘
+E = Eden    S = Survivor    O = Old    H = Humongous
+</code></pre>
+<p>G1 的核心优势：</p>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>可预测的停顿</strong></td>
+<td>通过 <code>-XX:MaxGCPauseMillis</code> 设定目标停顿时间，G1 优先回收收益最大的 Region</td>
+</tr>
+<tr>
+<td><strong>无内存碎片</strong></td>
+<td>Region 间使用复制算法，Region 内使用标记-整理</td>
+</tr>
+<tr>
+<td><strong>大对象处理</strong></td>
+<td>超过 Region 50% 的大对象分配在 Humongous Region</td>
+</tr>
+<tr>
+<td><strong>混合回收</strong></td>
+<td>Mixed GC 同时回收新生代和部分老年代 Region</td>
+</tr>
+</tbody></table>
+<p>G1 的 GC 过程：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>STW</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>初始标记</td>
+<td>是</td>
+<td>标记 GC Roots 直接关联对象（借助 Minor GC 完成）</td>
+</tr>
+<tr>
+<td>并发标记</td>
+<td>否</td>
+<td>遍历对象图，标记存活对象</td>
+</tr>
+<tr>
+<td>最终标记</td>
+<td>是</td>
+<td>处理并发阶段遗留的 SATB（Snapshot-At-The-Beginning）记录</td>
+</tr>
+<tr>
+<td>筛选回收</td>
+<td>是</td>
+<td>按回收收益排序 Region，将存活对象复制到空 Region</td>
+</tr>
+</tbody></table>
+<h3>3.5 收集器选型决策</h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>推荐收集器</th>
+<th>关键参数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单核 / 小堆（&lt; 1GB）</td>
+<td>Serial + Serial Old</td>
+<td><code>-XX:+UseSerialGC</code></td>
+</tr>
+<tr>
+<td>多核 / 吞吐量优先</td>
+<td>Parallel Scavenge + Parallel Old</td>
+<td><code>-XX:+UseParallelGC</code>（JDK 8 默认）</td>
+</tr>
+<tr>
+<td>多核 / 延迟敏感</td>
+<td>ParNew + CMS</td>
+<td><code>-XX:+UseConcMarkSweepGC</code></td>
+</tr>
+<tr>
+<td>大堆（&gt; 4GB）/ 延迟可控</td>
+<td>G1</td>
+<td><code>-XX:+UseG1GC</code>（JDK 9+ 默认）</td>
+</tr>
+<tr>
+<td>超大堆 / 超低延迟</td>
+<td>ZGC / Shenandoah</td>
+<td><code>-XX:+UseZGC</code>（JDK 11+）</td>
+</tr>
+</tbody></table>
+<h2>四、JVM 调优实践</h2>
+<h3>4.1 关键调优参数</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>-Xms</code> / <code>-Xmx</code></td>
+<td>堆初始/最大大小</td>
+<td>设为相同值，避免运行时动态扩容</td>
+</tr>
+<tr>
+<td><code>-Xmn</code></td>
+<td>新生代大小</td>
+<td>通常为堆的 1/3 到 1/2</td>
+</tr>
+<tr>
+<td><code>-XX:MetaspaceSize</code></td>
+<td>Metaspace 初始高水位线</td>
+<td>根据类加载量设定，避免启动时频繁 Full GC</td>
+</tr>
+<tr>
+<td><code>-XX:MaxMetaspaceSize</code></td>
+<td>Metaspace 上限</td>
+<td>建议设定上限，防止内存泄漏耗尽系统内存</td>
+</tr>
+<tr>
+<td><code>-XX:SurvivorRatio</code></td>
+<td>Eden 与 Survivor 的比例</td>
+<td>默认 8:1:1，一般无需调整</td>
+</tr>
+<tr>
+<td><code>-XX:MaxTenuringThreshold</code></td>
+<td>晋升老年代的年龄阈值</td>
+<td>默认 15，最大 15（4 bit 限制）</td>
+</tr>
+<tr>
+<td><code>-XX:MaxGCPauseMillis</code></td>
+<td>G1 目标停顿时间</td>
+<td>默认 200ms，根据业务 SLA 设定</td>
+</tr>
+</tbody></table>
+<h3>4.2 常见问题与排查</h3>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>表现</th>
+<th>排查方向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>频繁 Full GC</strong></td>
+<td>老年代频繁被填满</td>
+<td>检查大对象分配、内存泄漏、Metaspace 增长</td>
+</tr>
+<tr>
+<td><strong>长时间 STW</strong></td>
+<td>应用周期性卡顿</td>
+<td>GC 日志分析、考虑切换为 G1/ZGC</td>
+</tr>
+<tr>
+<td><strong>OOM: Java heap space</strong></td>
+<td>堆内存不足</td>
+<td>堆转储分析（<code>jmap -dump</code>）、排查内存泄漏</td>
+</tr>
+<tr>
+<td><strong>OOM: Metaspace</strong></td>
+<td>类元数据空间耗尽</td>
+<td>排查动态类生成（反射、CGLIB 代理）是否失控</td>
+</tr>
+<tr>
+<td><strong>OOM: GC overhead limit</strong></td>
+<td>GC 耗时超过 98% 但回收不到 2% 内存</td>
+<td>通常是内存泄漏的征兆</td>
+</tr>
+</tbody></table>
+<h3>4.3 监控工具</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>jstat -gc</code></td>
+<td>实时查看 GC 统计（各代容量、GC 次数和耗时）</td>
+</tr>
+<tr>
+<td><code>jmap -heap</code></td>
+<td>查看堆内存使用概况</td>
+</tr>
+<tr>
+<td><code>jmap -dump</code></td>
+<td>导出堆转储文件（配合 MAT / VisualVM 分析）</td>
+</tr>
+<tr>
+<td><code>jstack</code></td>
+<td>导出线程快照（排查死锁、线程阻塞）</td>
+</tr>
+<tr>
+<td><code>jcmd GC.class_stats</code></td>
+<td>查看类元数据统计（替代 <code>jmap -permstat</code>）</td>
+</tr>
+<tr>
+<td>GC 日志</td>
+<td><code>-Xlog:gc*</code>（JDK 9+）/ <code>-XX:+PrintGCDetails</code>（JDK 8）</td>
+</tr>
+</tbody></table>
+<h2>总结</h2>
+<p>JVM 的三大核心机制——类加载、内存管理、垃圾回收——构成了 Java 程序运行的底层基石：</p>
+<ol>
+<li><strong>类加载的双亲委派模型</strong>保证了类的安全性和唯一性，但 SPI、热部署等场景需要理解如何合理打破它</li>
+<li><strong>从 PermGen 到 Metaspace 的演进</strong>反映了 JVM 设计从&quot;固定分配&quot;到&quot;弹性管理&quot;的思路转变</li>
+<li><strong>GC 收集器的选型</strong>没有最优解，只有最匹配的方案——吞吐量优先选 Parallel，延迟敏感选 CMS/G1/ZGC</li>
+</ol>
+<blockquote>
+<p>理解 JVM 的意义不在于记住每个参数的默认值，而在于建立&quot;代码行为 → JVM 行为 → 系统表现&quot;的因果链，从而在生产问题出现时，能够从现象追溯到根因。</p>
+</blockquote>
+17:T5439,<h1>Java并发编程：从内存模型到并发工具的设计哲学</h1>
+<blockquote>
+<p>并发编程的核心挑战不在于&quot;如何让多个线程同时跑&quot;，而在于&quot;如何让多个线程正确地协作&quot;。理解 Java 内存模型和并发工具的设计原理，是写出正确并发代码的前提。</p>
+</blockquote>
+<p>并发编程是 Java 工程师的核心能力之一。它涉及从硬件层面的缓存一致性，到语言层面的内存模型，再到 JUC 工具类的 API 设计，是一个纵深很大的知识领域。</p>
+<p>本文将从底层原理出发，逐层构建 Java 并发编程的知识体系。</p>
+<h2>一、硬件基础：CPU 缓存与一致性</h2>
+<h3>1.1 为什么需要缓存</h3>
+<p>现代 CPU 的运算速度远超主内存的读写速度（差距约 100 倍）。为了弥补这一差距，CPU 引入了多级缓存（L1/L2/L3 Cache）。每个核心拥有独立的 L1/L2 缓存，L3 缓存为所有核心共享。</p>
+<pre><code>CPU Core 0          CPU Core 1
+┌─────────┐        ┌─────────┐
+│ L1 Cache│        │ L1 Cache│
+│ L2 Cache│        │ L2 Cache│
+└────┬────┘        └────┬────┘
+     └────────┬─────────┘
+         L3 Cache（共享）
+              │
+         主内存（RAM）
+</code></pre>
+<p>缓存的引入解决了性能问题，但带来了新问题：<strong>当多个核心各自缓存了同一块数据的副本，其中一个核心修改了数据，如何保证其他核心看到的是最新值？</strong></p>
+<h3>1.2 MESI 缓存一致性协议</h3>
+<p>MESI 是最广泛采用的缓存一致性协议，每个缓存行处于四种状态之一：</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+<th>对主内存</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>M（Modified）</strong></td>
+<td>当前核心修改了数据，与主内存不一致</td>
+<td>需要写回</td>
+</tr>
+<tr>
+<td><strong>E（Exclusive）</strong></td>
+<td>当前核心独占数据，与主内存一致</td>
+<td>无需写回</td>
+</tr>
+<tr>
+<td><strong>S（Shared）</strong></td>
+<td>多个核心共享数据，与主内存一致</td>
+<td>无需写回</td>
+</tr>
+<tr>
+<td><strong>I（Invalid）</strong></td>
+<td>缓存行无效</td>
+<td>需从主内存重新加载</td>
+</tr>
+</tbody></table>
+<p>当 Core 0 修改了处于 S 状态的缓存行时：</p>
+<ol>
+<li>Core 0 将缓存行状态改为 M</li>
+<li>通过总线嗅探（Bus Snooping）通知其他核心</li>
+<li>其他核心将对应缓存行标记为 I</li>
+<li>其他核心下次读取该数据时，从 Core 0 的缓存或主内存重新加载</li>
+</ol>
+<h3>1.3 缓存行伪共享（False Sharing）</h3>
+<p>缓存行是缓存操作的最小单位，大小通常为 <strong>64 字节</strong>。如果两个无关的变量恰好落在同一缓存行中，一个变量的修改会导致另一个变量的缓存行也失效——这就是伪共享。</p>
+<pre><code class="language-java">// 伪共享示例：head 和 tail 可能在同一缓存行
+class Queue {
+    volatile long head;  // 生产者频繁修改
+    volatile long tail;  // 消费者频繁修改
+}
+</code></pre>
+<p>Doug Lea 在 <code>LinkedTransferQueue</code> 中的解决方案——填充字节使变量独占一个缓存行：</p>
+<pre><code class="language-java">// JDK 7 中的做法
+class PaddedAtomicReference&lt;T&gt; extends AtomicReference&lt;T&gt; {
+    Object p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, pa, pb, pc, pd, pe;
+}
+
+// JDK 8+ 可以使用 @Contended 注解
+@sun.misc.Contended
+class QueueNode {
+    volatile long value;
+}
+</code></pre>
+<h2>二、Java 内存模型（JMM）</h2>
+<h3>2.1 JMM 的抽象</h3>
+<p>Java 内存模型（Java Memory Model）定义了<strong>多线程如何通过共享内存进行通信</strong>的规则。它并不描述具体的硬件实现，而是提供了一组抽象的可见性和有序性保证。</p>
+<pre><code>线程 A 工作内存          线程 B 工作内存
+┌──────────────┐      ┌──────────────┐
+│  变量副本      │      │  变量副本      │
+└──────┬───────┘      └──────┬───────┘
+       │    save/load         │
+       └──────────┬───────────┘
+              主内存
+         ┌──────────────┐
+         │  共享变量      │
+         └──────────────┘
+</code></pre>
+<p>JMM 定义了 8 种内存交互操作：lock、unlock、read、load、use、assign、store、write。这些操作的组合规则保证了多线程程序的语义正确性。</p>
+<h3>2.2 三大并发问题</h3>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>描述</th>
+<th>根源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>可见性</strong></td>
+<td>一个线程修改了变量，其他线程看不到最新值</td>
+<td>CPU 缓存导致各线程工作内存不一致</td>
+</tr>
+<tr>
+<td><strong>原子性</strong></td>
+<td>一组操作被中断导致中间状态暴露</td>
+<td>线程切换导致复合操作被打断</td>
+</tr>
+<tr>
+<td><strong>有序性</strong></td>
+<td>代码执行顺序与编写顺序不一致</td>
+<td>编译器优化、CPU 指令重排序</td>
+</tr>
+</tbody></table>
+<h3>2.3 volatile 的语义与实现</h3>
+<p><code>volatile</code> 是 Java 中最轻量的同步机制，它提供两个保证：</p>
+<ol>
+<li><strong>可见性</strong>：对 volatile 变量的写操作对所有线程立即可见</li>
+<li><strong>有序性</strong>：禁止指令重排序（通过内存屏障实现）</li>
+</ol>
+<p><strong>但不保证原子性</strong>：<code>volatile int count; count++</code> 并不是线程安全的，因为 <code>count++</code> 是读-改-写三步操作。</p>
+<p><strong>硬件级实现</strong>：</p>
+<p>在 x86 架构上，对 volatile 变量的写操作会生成一条带 <strong>LOCK 前缀</strong>的指令。LOCK 前缀的作用：</p>
+<ol>
+<li>将当前处理器缓存行的数据写回主内存</li>
+<li>使其他处理器中缓存该地址的缓存行失效（通过 MESI 协议）</li>
+</ol>
+<pre><code>// JIT 编译后的汇编（x86）
+0x01a3de24: lock addl $0x0,(%esp)  // LOCK 前缀指令
+</code></pre>
+<p>在 P6 及更新的处理器上，LOCK 不再锁总线，而是<strong>锁缓存行</strong>（Cache Locking），性能开销远小于总线锁。</p>
+<h3>2.4 happens-before 规则</h3>
+<p>JMM 通过 <strong>happens-before</strong> 关系定义了操作间的可见性保证。如果操作 A happens-before 操作 B，则 A 的结果对 B 可见。</p>
+<table>
+<thead>
+<tr>
+<th>规则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>程序顺序规则</td>
+<td>同一线程中的操作，前面的 happens-before 后面的</td>
+</tr>
+<tr>
+<td>volatile 规则</td>
+<td>volatile 写 happens-before 后续的 volatile 读</td>
+</tr>
+<tr>
+<td>锁规则</td>
+<td>unlock happens-before 后续对同一锁的 lock</td>
+</tr>
+<tr>
+<td>传递性</td>
+<td>如果 A hb B，B hb C，则 A hb C</td>
+</tr>
+<tr>
+<td>线程启动规则</td>
+<td><code>Thread.start()</code> happens-before 该线程的每个动作</td>
+</tr>
+<tr>
+<td>线程终止规则</td>
+<td>线程的所有动作 happens-before 其他线程检测到该线程终止</td>
+</tr>
+</tbody></table>
+<h2>三、锁机制</h2>
+<h3>3.1 synchronized vs Lock</h3>
+<p>Java 提供两种锁机制：内置锁（<code>synchronized</code>）和显式锁（<code>java.util.concurrent.locks.Lock</code>）。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>synchronized</th>
+<th>Lock</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实现层面</td>
+<td>JVM 内置（monitorenter/monitorexit）</td>
+<td>Java API 层（基于 AQS）</td>
+</tr>
+<tr>
+<td>锁获取</td>
+<td>阻塞式，不可中断</td>
+<td>支持非阻塞 <code>tryLock()</code>、可中断 <code>lockInterruptibly()</code></td>
+</tr>
+<tr>
+<td>锁释放</td>
+<td>自动释放（退出同步块）</td>
+<td>必须在 <code>finally</code> 中手动 <code>unlock()</code></td>
+</tr>
+<tr>
+<td>条件等待</td>
+<td><code>Object.wait()/notify()</code></td>
+<td><code>Condition.await()/signal()</code>，支持多条件队列</td>
+</tr>
+<tr>
+<td>公平性</td>
+<td>不支持</td>
+<td><code>ReentrantLock(true)</code> 支持公平锁</td>
+</tr>
+<tr>
+<td>锁状态查询</td>
+<td>不支持</td>
+<td><code>isLocked()</code>、<code>getHoldCount()</code> 等</td>
+</tr>
+</tbody></table>
+<p><strong>选择原则</strong>：优先使用 <code>synchronized</code>（JVM 持续优化，且不会忘记释放锁）；需要高级特性（超时、中断、多条件、公平性）时选择 <code>Lock</code>。</p>
+<h3>3.2 Condition：精确的线程协作</h3>
+<p><code>Condition</code> 是 <code>Lock</code> 的配套组件，它替代了 <code>Object.wait()/notify()</code> 机制，最大的优势是<strong>支持多个等待队列</strong>。</p>
+<pre><code class="language-java">// 使用 Object 的 wait/notify：只有一个等待队列，notifyAll 会唤醒所有线程
+// 使用 Condition：可以创建多个条件队列，signal 只唤醒特定队列中的线程
+
+ReentrantLock lock = new ReentrantLock();
+Condition notFull  = lock.newCondition();  // 生产者等待队列
+Condition notEmpty = lock.newCondition();  // 消费者等待队列
+</code></pre>
+<p><strong>有界缓冲区实现</strong>（经典的生产者-消费者模型）：</p>
+<pre><code class="language-java">class BoundedBuffer&lt;E&gt; {
+    final Lock lock = new ReentrantLock();
+    final Condition notFull  = lock.newCondition();
+    final Condition notEmpty = lock.newCondition();
+    final Object[] items = new Object[100];
+    int putIndex, takeIndex, count;
+
+    public void put(E e) throws InterruptedException {
+        lock.lock();
+        try {
+            while (count == items.length)
+                notFull.await();      // 缓冲区满，生产者等待
+            items[putIndex] = e;
+            if (++putIndex == items.length) putIndex = 0;
+            ++count;
+            notEmpty.signal();        // 通知消费者
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public E take() throws InterruptedException {
+        lock.lock();
+        try {
+            while (count == 0)
+                notEmpty.await();     // 缓冲区空，消费者等待
+            E e = (E) items[takeIndex];
+            if (++takeIndex == items.length) takeIndex = 0;
+            --count;
+            notFull.signal();         // 通知生产者
+            return e;
+        } finally {
+            lock.unlock();
+        }
+    }
+}
+</code></pre>
+<p>注意 <code>await()</code> 必须在 <code>while</code> 循环中调用，以防止<strong>虚假唤醒（Spurious Wakeup）</strong>。</p>
+<h3>3.3 ReadWriteLock：读写分离</h3>
+<p>当读操作远多于写操作时，使用排他锁会严重限制并发度。<code>ReadWriteLock</code> 允许多个线程同时持有读锁，但写锁是排他的。</p>
+<table>
+<thead>
+<tr>
+<th>锁状态</th>
+<th>读锁请求</th>
+<th>写锁请求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无锁</td>
+<td>允许</td>
+<td>允许</td>
+</tr>
+<tr>
+<td>读锁已持有</td>
+<td>允许（共享）</td>
+<td>阻塞</td>
+</tr>
+<tr>
+<td>写锁已持有</td>
+<td>阻塞</td>
+<td>阻塞</td>
+</tr>
+</tbody></table>
+<p><code>ReentrantReadWriteLock</code> 的设计决策：</p>
+<ul>
+<li><strong>写锁可降级为读锁</strong>：持有写锁的线程可以再获取读锁，然后释放写锁</li>
+<li><strong>读锁不可升级为写锁</strong>：防止死锁（多个读线程同时尝试升级会互相等待）</li>
+<li><strong>支持公平/非公平模式</strong>：非公平模式下，读锁可能&quot;插队&quot;导致写线程饥饿</li>
+</ul>
+<h2>四、JUC 并发工具类</h2>
+<p><code>java.util.concurrent</code> 包提供了一组高级同步工具，用于解决常见的线程协调问题。</p>
+<h3>4.1 CountDownLatch：一次性倒计数门闩</h3>
+<p><strong>语义</strong>：一个或多个线程等待其他线程完成一组操作后再继续执行。</p>
+<pre><code class="language-java">CountDownLatch latch = new CountDownLatch(3);  // 计数器初始值 3
+
+// 工作线程
+executor.submit(() -&gt; {
+    doTask();
+    latch.countDown();  // 计数器 -1
+});
+
+// 等待线程
+latch.await();  // 阻塞直到计数器归零
+// 所有任务完成，继续执行
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li><strong>一次性</strong>：计数器归零后无法重置</li>
+<li>底层基于 AQS 的共享模式实现</li>
+</ul>
+<p><strong>典型场景</strong>：服务启动时等待所有依赖组件初始化完成。</p>
+<h3>4.2 CyclicBarrier：可重用的屏障</h3>
+<p><strong>语义</strong>：一组线程互相等待，直到所有线程都到达屏障点，然后同时继续执行。</p>
+<pre><code class="language-java">CyclicBarrier barrier = new CyclicBarrier(3, () -&gt; {
+    System.out.println(&quot;所有线程到齐，开始下一阶段&quot;);  // barrierAction
+});
+
+// 每个工作线程
+executor.submit(() -&gt; {
+    doPhase1();
+    barrier.await();  // 等待其他线程
+    doPhase2();
+    barrier.await();  // 可以重复使用
+});
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li><strong>可重用</strong>：所有线程通过屏障后，计数器自动重置</li>
+<li>支持 <strong>barrierAction</strong>：所有线程到齐时执行的回调</li>
+<li>如果某个线程等待超时或被中断，屏障进入 <strong>Broken</strong> 状态，所有等待线程收到 <code>BrokenBarrierException</code></li>
+</ul>
+<h3>4.3 Semaphore：信号量</h3>
+<p><strong>语义</strong>：控制同时访问某个资源的线程数量。</p>
+<pre><code class="language-java">Semaphore semaphore = new Semaphore(5);  // 最多 5 个并发
+
+executor.submit(() -&gt; {
+    semaphore.acquire();    // 获取许可（可用许可 -1）
+    try {
+        accessResource();
+    } finally {
+        semaphore.release();  // 释放许可（可用许可 +1）
+    }
+});
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>支持<strong>公平/非公平</strong>模式</li>
+<li><code>tryAcquire()</code> 提供非阻塞获取</li>
+<li>许可数量可以动态增减（<code>release()</code> 可以在未 <code>acquire()</code> 的情况下调用）</li>
+</ul>
+<h3>4.4 三者对比</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>核心语义</th>
+<th>是否可重用</th>
+<th>计数方向</th>
+<th>典型场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>CountDownLatch</strong></td>
+<td>一个线程等待 N 个线程</td>
+<td>否</td>
+<td>递减至 0</td>
+<td>主线程等待子任务完成</td>
+</tr>
+<tr>
+<td><strong>CyclicBarrier</strong></td>
+<td>N 个线程互相等待</td>
+<td>是</td>
+<td>递增至 N</td>
+<td>多阶段并行计算</td>
+</tr>
+<tr>
+<td><strong>Semaphore</strong></td>
+<td>控制并发访问数量</td>
+<td>-</td>
+<td>许可的获取与释放</td>
+<td>限流、资源池</td>
+</tr>
+</tbody></table>
+<h2>五、生产者-消费者模式</h2>
+<p>生产者-消费者是并发编程中最经典的协作模式。Java 提供了从底层到高层的多种实现方式。</p>
+<h3>5.1 三种实现方式对比</h3>
+<table>
+<thead>
+<tr>
+<th>实现方式</th>
+<th>同步机制</th>
+<th>通知粒度</th>
+<th>复杂度</th>
+<th>推荐度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>synchronized + wait/notify</td>
+<td>内置锁</td>
+<td>全量唤醒（notifyAll）</td>
+<td>低</td>
+<td>一般</td>
+</tr>
+<tr>
+<td>Lock + Condition</td>
+<td>显式锁</td>
+<td>精确唤醒（signal）</td>
+<td>中</td>
+<td>推荐</td>
+</tr>
+<tr>
+<td>BlockingQueue</td>
+<td>封装在队列内部</td>
+<td>内部自动处理</td>
+<td>最低</td>
+<td>最推荐</td>
+</tr>
+</tbody></table>
+<p><strong>为什么 BlockingQueue 是最佳选择</strong>：</p>
+<p><code>BlockingQueue</code> 将同步、等待、通知的逻辑完全封装在 <code>put()</code>/<code>take()</code> 方法内部，调用方无需关心并发细节：</p>
+<pre><code class="language-java">BlockingQueue&lt;Task&gt; queue = new ArrayBlockingQueue&lt;&gt;(100);
+
+// 生产者
+queue.put(task);   // 队列满时自动阻塞
+
+// 消费者
+Task task = queue.take();  // 队列空时自动阻塞
+</code></pre>
+<h3>5.2 BlockingQueue 的实现选型</h3>
+<table>
+<thead>
+<tr>
+<th>实现类</th>
+<th>底层结构</th>
+<th>是否有界</th>
+<th>锁策略</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ArrayBlockingQueue</code></td>
+<td>数组</td>
+<td>有界</td>
+<td>单锁</td>
+<td>通用场景</td>
+</tr>
+<tr>
+<td><code>LinkedBlockingQueue</code></td>
+<td>链表</td>
+<td>可选有界</td>
+<td>读写分离锁</td>
+<td>吞吐量要求高</td>
+</tr>
+<tr>
+<td><code>SynchronousQueue</code></td>
+<td>无容量</td>
+<td>无</td>
+<td>CAS</td>
+<td>直接传递（线程池默认）</td>
+</tr>
+<tr>
+<td><code>PriorityBlockingQueue</code></td>
+<td>堆</td>
+<td>无界</td>
+<td>单锁</td>
+<td>优先级调度</td>
+</tr>
+</tbody></table>
+<h2>六、线程池</h2>
+<h3>6.1 ThreadPoolExecutor 核心参数</h3>
+<pre><code class="language-java">new ThreadPoolExecutor(
+    corePoolSize,      // 核心线程数
+    maximumPoolSize,   // 最大线程数
+    keepAliveTime,     // 非核心线程空闲存活时间
+    TimeUnit.SECONDS,
+    workQueue,         // 任务队列
+    threadFactory,     // 线程工厂
+    rejectedHandler    // 拒绝策略
+);
+</code></pre>
+<p><strong>任务提交流程</strong>：</p>
+<pre><code>提交任务
+  → 当前线程数 &lt; corePoolSize？        → 创建核心线程执行
+  → 任务队列未满？                      → 入队等待
+  → 当前线程数 &lt; maximumPoolSize？      → 创建非核心线程执行
+  → 以上都不满足                        → 执行拒绝策略
+</code></pre>
+<h3>6.2 拒绝策略</h3>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>行为</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>AbortPolicy</strong></td>
+<td>抛出 <code>RejectedExecutionException</code></td>
+<td>默认策略，适合需要感知过载的场景</td>
+</tr>
+<tr>
+<td><strong>CallerRunsPolicy</strong></td>
+<td>由提交线程自己执行任务</td>
+<td>反压效果，但可能导致提交线程阻塞</td>
+</tr>
+<tr>
+<td><strong>DiscardPolicy</strong></td>
+<td>静默丢弃任务</td>
+<td>允许丢失的场景（如日志）</td>
+</tr>
+<tr>
+<td><strong>DiscardOldestPolicy</strong></td>
+<td>丢弃队列中最旧的任务</td>
+<td>实时性要求高、可接受旧数据丢失</td>
+</tr>
+</tbody></table>
+<h3>6.3 生产阻塞型线程池</h3>
+<p>标准 <code>ThreadPoolExecutor</code> 使用 <code>BlockingQueue.offer()</code>（非阻塞）入队。队列满时不会阻塞提交线程，而是触发拒绝策略。</p>
+<p>在某些场景下（如需要严格的背压机制），需要让提交线程在队列满时<strong>阻塞等待</strong>而非被拒绝。可通过自定义拒绝策略实现：</p>
+<pre><code class="language-java">ThreadPoolExecutor executor = new ThreadPoolExecutor(
+    coreSize, maxSize, 60, TimeUnit.SECONDS,
+    new LinkedBlockingQueue&lt;&gt;(capacity),
+    (runnable, pool) -&gt; {
+        try {
+            // 队列满时，put() 会阻塞提交线程
+            pool.getQueue().put(runnable);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
+);
+</code></pre>
+<p>这种方式的优势在于：复用 <code>ThreadPoolExecutor</code> 的线程管理能力，同时实现了生产者阻塞语义，避免了手工管理线程的复杂性。</p>
+<h3>6.4 线程池配置最佳实践</h3>
+<table>
+<thead>
+<tr>
+<th>任务类型</th>
+<th>核心线程数建议</th>
+<th>队列选择</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>CPU 密集型</strong></td>
+<td><code>N_cpu + 1</code></td>
+<td>小容量有界队列</td>
+</tr>
+<tr>
+<td><strong>I/O 密集型</strong></td>
+<td><code>N_cpu × 2</code> 或更高</td>
+<td>较大容量有界队列</td>
+</tr>
+<tr>
+<td><strong>混合型</strong></td>
+<td>拆分为 CPU 池和 I/O 池</td>
+<td>各自独立配置</td>
+</tr>
+</tbody></table>
+<p>关键原则：</p>
+<ul>
+<li><strong>永远不要使用无界队列</strong>：<code>Executors.newFixedThreadPool()</code> 默认使用无界的 <code>LinkedBlockingQueue</code>，可能导致 OOM</li>
+<li><strong>为线程池命名</strong>：自定义 <code>ThreadFactory</code>，给线程添加有意义的名称前缀，便于排查问题</li>
+<li><strong>监控队列深度</strong>：线程池队列持续增长是系统过载的信号</li>
+</ul>
+<h2>总结</h2>
+<p>Java 并发编程的知识体系可以沿着三个层次理解：</p>
+<ol>
+<li><strong>硬件层</strong>：CPU 缓存、MESI 协议、缓存行伪共享——这是并发问题的物理根源</li>
+<li><strong>模型层</strong>：JMM、happens-before、volatile/synchronized 语义——这是 Java 对硬件差异的抽象屏蔽</li>
+<li><strong>工具层</strong>：Lock/Condition、CountDownLatch/CyclicBarrier/Semaphore、BlockingQueue、ThreadPoolExecutor——这是面向工程的并发编程基础设施</li>
+</ol>
+<blockquote>
+<p>并发工具的选择不在于功能的强大，而在于语义的匹配。<code>synchronized</code> 足以解决大多数问题；<code>BlockingQueue</code> 比手动的 wait/notify 更安全；标准 <code>ThreadPoolExecutor</code> 比自定义线程管理更可靠。优先选择高层抽象，只在确有需要时才下沉到底层机制。</p>
+</blockquote>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2021-06-15","children":"2021年06月15日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"深入理解JVM：从类加载到垃圾回收的全链路剖析"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","JVM",{"href":"/blog/tag/JVM/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"JVM"}],["$","$L13","Java",{"href":"/blog/tag/Java/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Java"}],["$","$L13","垃圾回收",{"href":"/blog/tag/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"垃圾回收"}],["$","$L13","类加载",{"href":"/blog/tag/%E7%B1%BB%E5%8A%A0%E8%BD%BD/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"类加载"}],["$","$L13","性能调优",{"href":"/blog/tag/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"性能调优"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":null,"next":{"slug":"engineering/middleware/Java并发编程：从内存模型到并发工具的设计哲学","title":"Java并发编程：从内存模型到并发工具的设计哲学","description":"从CPU缓存一致性协议到Java内存模型，从volatile的硬件级实现到Lock/Condition的协作机制，从JUC并发工具类到线程池的高级用法，系统构建Java并发编程的知识体系。","pubDate":"2021-11-20","tags":["Java","并发编程","JMM","JUC","线程池"],"heroImage":"$undefined","content":"$17"}},"tagNav":{"JVM":{"prev":null,"next":null},"Java":{"prev":null,"next":"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next"},"垃圾回收":{"prev":null,"next":null},"类加载":{"prev":null,"next":null},"性能调优":{"prev":null,"next":null}}}]}],["$","$L18",null,{}]]}]}]}]
+8:null
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:null
+a:{"metadata":[["$","title","0",{"children":"深入理解JVM：从类加载到垃圾回收的全链路剖析 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"系统剖析JVM核心机制，从类加载的双亲委派模型到运行时内存布局，从PermGen到Metaspace的演进，再到七大垃圾收集器的设计原理与选型策略，构建完整的JVM知识体系。"}],["$","meta","2",{"property":"og:title","content":"深入理解JVM：从类加载到垃圾回收的全链路剖析"}],["$","meta","3",{"property":"og:description","content":"系统剖析JVM核心机制，从类加载的双亲委派模型到运行时内存布局，从PermGen到Metaspace的演进，再到七大垃圾收集器的设计原理与选型策略，构建完整的JVM知识体系。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2021-06-15"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"深入理解JVM：从类加载到垃圾回收的全链路剖析"}],["$","meta","9",{"name":"twitter:description","content":"系统剖析JVM核心机制，从类加载的双亲委派模型到运行时内存布局，从PermGen到Metaspace的演进，再到七大垃圾收集器的设计原理与选型策略，构建完整的JVM知识体系。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
+12:{"metadata":"$a:metadata","error":null,"digest":"$undefined"}

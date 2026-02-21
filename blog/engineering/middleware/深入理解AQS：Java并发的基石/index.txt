@@ -8,14 +8,14 @@ b:I[59665,[],"ViewportBoundary"]
 d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/css/fffdcdb4fb651185.css","style"]
-0:{"P":null,"b":"bJbIT2Kmv3sjcEJSOV0Wp","p":"","c":["","blog","engineering","middleware","%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fffdcdb4fb651185.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","9-GkiXBH6Nq_FzoJDgzQbv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+:HL["/_next/static/css/129144073acbb2fa.css","style"]
+0:{"P":null,"b":"23QKHIVSTghHWvM98JcHB","p":"","c":["","blog","engineering","middleware","%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/129144073acbb2fa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS%EF%BC%9AJava%E5%B9%B6%E5%8F%91%E7%9A%84%E5%9F%BA%E7%9F%B3","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","SwgBEa8eHQ96uYwT11FWZv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
 14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-1a:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
+1b:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
 e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
 15:T5870,<blockquote>
 <p>Java 中的大部分同步工具（ReentrantLock、Semaphore、CountDownLatch、ReentrantReadWriteLock 等）都基于 AbstractQueuedSynchronizer（AQS）实现。理解 AQS，就等于掌握了 Java 并发编程的底层脉络。本文从设计思想出发，逐层深入 AQS 的数据结构、核心流程和源码实现，并通过 ReentrantLock 串联全局，最后梳理 AQS 在 JUC 中的应用全景。</p>
@@ -2838,7 +2838,585 @@ static class Decorator {
 <p>第二行，显示参数化SQL</p>
 <p>第三行，显示绑定参数后的实际执行的SQL</p>
 <p>通过日志看到，当SQL语句超长时，系统会对参数化SQL进行个性化缩略，而对实际执行的SQL，则保持原样输出，这样可以检索关键信息。</p>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-28","children":"2025年12月28日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"深入理解AQS：Java并发的基石"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Java",{"href":"/blog/tag/Java/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Java"}],["$","$L13","并发编程",{"href":"/blog/tag/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"并发编程"}],["$","$L13","AQS",{"href":"/blog/tag/AQS/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AQS"}],["$","$L13","ReentrantLock",{"href":"/blog/tag/ReentrantLock/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"ReentrantLock"}],["$","$L13","JUC",{"href":"/blog/tag/JUC/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"JUC"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/06-Prompt Engineering for Agents","title":"Prompt Engineering for Agents: 面向 Agent 的提示词工程","description":"Agent 的 Prompt 不是聊天提示词，而是系统接口规范。本文系统拆解 Agent Prompt 的分层架构、四种关键设计模式（Router / Planner / Executor / Reflector）、Chain-of-Thought 的 Agent 化应用、Few-shot vs Zero-shot 的场景选择、Prompt 工程化实践（模板化 / 版本控制 / 测试 / 组合），以及 Context Window 管理策略。","pubDate":"2025-12-23","tags":["Agentic","AI Engineering","Prompt Engineering"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/07-Agent Runtime from Scratch","title":"Agent Runtime from Scratch: 不依赖框架构建 Agent","description":"不依赖 LangChain 等框架，从零实现一个功能完整的 Agent Runtime。逐模块构建 LLMClient、ToolRegistry、ToolExecutor、MessageManager 和核心控制循环，包含并行工具调用、Streaming、超时控制、死循环检测等高级特性，附完整可运行代码。","pubDate":"2025-12-28","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Java":{"prev":{"slug":"engineering/middleware/非侵入式SQL监控","title":"非侵入式SQL监控","description":"你有没有因为应用程序没有打印SQL而导致问题排查困难？有没有因为SQL没有显示参数而导致日志毫无意义？有没有因为SQL超长而导致查看痛苦？有没有因为缺少SQL性能监控而导致无法报警？...","pubDate":"2024-04-07","tags":["SQL监控","Java","非侵入式"],"heroImage":"$undefined","content":"$19"},"next":null},"并发编程":{"prev":null,"next":null},"AQS":{"prev":null,"next":null},"ReentrantLock":{"prev":null,"next":null},"JUC":{"prev":null,"next":null}}}]}],["$","$L1a",null,{}]]}]}]}]
+1a:T5439,<h1>Java并发编程：从内存模型到并发工具的设计哲学</h1>
+<blockquote>
+<p>并发编程的核心挑战不在于&quot;如何让多个线程同时跑&quot;，而在于&quot;如何让多个线程正确地协作&quot;。理解 Java 内存模型和并发工具的设计原理，是写出正确并发代码的前提。</p>
+</blockquote>
+<p>并发编程是 Java 工程师的核心能力之一。它涉及从硬件层面的缓存一致性，到语言层面的内存模型，再到 JUC 工具类的 API 设计，是一个纵深很大的知识领域。</p>
+<p>本文将从底层原理出发，逐层构建 Java 并发编程的知识体系。</p>
+<h2>一、硬件基础：CPU 缓存与一致性</h2>
+<h3>1.1 为什么需要缓存</h3>
+<p>现代 CPU 的运算速度远超主内存的读写速度（差距约 100 倍）。为了弥补这一差距，CPU 引入了多级缓存（L1/L2/L3 Cache）。每个核心拥有独立的 L1/L2 缓存，L3 缓存为所有核心共享。</p>
+<pre><code>CPU Core 0          CPU Core 1
+┌─────────┐        ┌─────────┐
+│ L1 Cache│        │ L1 Cache│
+│ L2 Cache│        │ L2 Cache│
+└────┬────┘        └────┬────┘
+     └────────┬─────────┘
+         L3 Cache（共享）
+              │
+         主内存（RAM）
+</code></pre>
+<p>缓存的引入解决了性能问题，但带来了新问题：<strong>当多个核心各自缓存了同一块数据的副本，其中一个核心修改了数据，如何保证其他核心看到的是最新值？</strong></p>
+<h3>1.2 MESI 缓存一致性协议</h3>
+<p>MESI 是最广泛采用的缓存一致性协议，每个缓存行处于四种状态之一：</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+<th>对主内存</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>M（Modified）</strong></td>
+<td>当前核心修改了数据，与主内存不一致</td>
+<td>需要写回</td>
+</tr>
+<tr>
+<td><strong>E（Exclusive）</strong></td>
+<td>当前核心独占数据，与主内存一致</td>
+<td>无需写回</td>
+</tr>
+<tr>
+<td><strong>S（Shared）</strong></td>
+<td>多个核心共享数据，与主内存一致</td>
+<td>无需写回</td>
+</tr>
+<tr>
+<td><strong>I（Invalid）</strong></td>
+<td>缓存行无效</td>
+<td>需从主内存重新加载</td>
+</tr>
+</tbody></table>
+<p>当 Core 0 修改了处于 S 状态的缓存行时：</p>
+<ol>
+<li>Core 0 将缓存行状态改为 M</li>
+<li>通过总线嗅探（Bus Snooping）通知其他核心</li>
+<li>其他核心将对应缓存行标记为 I</li>
+<li>其他核心下次读取该数据时，从 Core 0 的缓存或主内存重新加载</li>
+</ol>
+<h3>1.3 缓存行伪共享（False Sharing）</h3>
+<p>缓存行是缓存操作的最小单位，大小通常为 <strong>64 字节</strong>。如果两个无关的变量恰好落在同一缓存行中，一个变量的修改会导致另一个变量的缓存行也失效——这就是伪共享。</p>
+<pre><code class="language-java">// 伪共享示例：head 和 tail 可能在同一缓存行
+class Queue {
+    volatile long head;  // 生产者频繁修改
+    volatile long tail;  // 消费者频繁修改
+}
+</code></pre>
+<p>Doug Lea 在 <code>LinkedTransferQueue</code> 中的解决方案——填充字节使变量独占一个缓存行：</p>
+<pre><code class="language-java">// JDK 7 中的做法
+class PaddedAtomicReference&lt;T&gt; extends AtomicReference&lt;T&gt; {
+    Object p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, pa, pb, pc, pd, pe;
+}
+
+// JDK 8+ 可以使用 @Contended 注解
+@sun.misc.Contended
+class QueueNode {
+    volatile long value;
+}
+</code></pre>
+<h2>二、Java 内存模型（JMM）</h2>
+<h3>2.1 JMM 的抽象</h3>
+<p>Java 内存模型（Java Memory Model）定义了<strong>多线程如何通过共享内存进行通信</strong>的规则。它并不描述具体的硬件实现，而是提供了一组抽象的可见性和有序性保证。</p>
+<pre><code>线程 A 工作内存          线程 B 工作内存
+┌──────────────┐      ┌──────────────┐
+│  变量副本      │      │  变量副本      │
+└──────┬───────┘      └──────┬───────┘
+       │    save/load         │
+       └──────────┬───────────┘
+              主内存
+         ┌──────────────┐
+         │  共享变量      │
+         └──────────────┘
+</code></pre>
+<p>JMM 定义了 8 种内存交互操作：lock、unlock、read、load、use、assign、store、write。这些操作的组合规则保证了多线程程序的语义正确性。</p>
+<h3>2.2 三大并发问题</h3>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>描述</th>
+<th>根源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>可见性</strong></td>
+<td>一个线程修改了变量，其他线程看不到最新值</td>
+<td>CPU 缓存导致各线程工作内存不一致</td>
+</tr>
+<tr>
+<td><strong>原子性</strong></td>
+<td>一组操作被中断导致中间状态暴露</td>
+<td>线程切换导致复合操作被打断</td>
+</tr>
+<tr>
+<td><strong>有序性</strong></td>
+<td>代码执行顺序与编写顺序不一致</td>
+<td>编译器优化、CPU 指令重排序</td>
+</tr>
+</tbody></table>
+<h3>2.3 volatile 的语义与实现</h3>
+<p><code>volatile</code> 是 Java 中最轻量的同步机制，它提供两个保证：</p>
+<ol>
+<li><strong>可见性</strong>：对 volatile 变量的写操作对所有线程立即可见</li>
+<li><strong>有序性</strong>：禁止指令重排序（通过内存屏障实现）</li>
+</ol>
+<p><strong>但不保证原子性</strong>：<code>volatile int count; count++</code> 并不是线程安全的，因为 <code>count++</code> 是读-改-写三步操作。</p>
+<p><strong>硬件级实现</strong>：</p>
+<p>在 x86 架构上，对 volatile 变量的写操作会生成一条带 <strong>LOCK 前缀</strong>的指令。LOCK 前缀的作用：</p>
+<ol>
+<li>将当前处理器缓存行的数据写回主内存</li>
+<li>使其他处理器中缓存该地址的缓存行失效（通过 MESI 协议）</li>
+</ol>
+<pre><code>// JIT 编译后的汇编（x86）
+0x01a3de24: lock addl $0x0,(%esp)  // LOCK 前缀指令
+</code></pre>
+<p>在 P6 及更新的处理器上，LOCK 不再锁总线，而是<strong>锁缓存行</strong>（Cache Locking），性能开销远小于总线锁。</p>
+<h3>2.4 happens-before 规则</h3>
+<p>JMM 通过 <strong>happens-before</strong> 关系定义了操作间的可见性保证。如果操作 A happens-before 操作 B，则 A 的结果对 B 可见。</p>
+<table>
+<thead>
+<tr>
+<th>规则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>程序顺序规则</td>
+<td>同一线程中的操作，前面的 happens-before 后面的</td>
+</tr>
+<tr>
+<td>volatile 规则</td>
+<td>volatile 写 happens-before 后续的 volatile 读</td>
+</tr>
+<tr>
+<td>锁规则</td>
+<td>unlock happens-before 后续对同一锁的 lock</td>
+</tr>
+<tr>
+<td>传递性</td>
+<td>如果 A hb B，B hb C，则 A hb C</td>
+</tr>
+<tr>
+<td>线程启动规则</td>
+<td><code>Thread.start()</code> happens-before 该线程的每个动作</td>
+</tr>
+<tr>
+<td>线程终止规则</td>
+<td>线程的所有动作 happens-before 其他线程检测到该线程终止</td>
+</tr>
+</tbody></table>
+<h2>三、锁机制</h2>
+<h3>3.1 synchronized vs Lock</h3>
+<p>Java 提供两种锁机制：内置锁（<code>synchronized</code>）和显式锁（<code>java.util.concurrent.locks.Lock</code>）。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>synchronized</th>
+<th>Lock</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实现层面</td>
+<td>JVM 内置（monitorenter/monitorexit）</td>
+<td>Java API 层（基于 AQS）</td>
+</tr>
+<tr>
+<td>锁获取</td>
+<td>阻塞式，不可中断</td>
+<td>支持非阻塞 <code>tryLock()</code>、可中断 <code>lockInterruptibly()</code></td>
+</tr>
+<tr>
+<td>锁释放</td>
+<td>自动释放（退出同步块）</td>
+<td>必须在 <code>finally</code> 中手动 <code>unlock()</code></td>
+</tr>
+<tr>
+<td>条件等待</td>
+<td><code>Object.wait()/notify()</code></td>
+<td><code>Condition.await()/signal()</code>，支持多条件队列</td>
+</tr>
+<tr>
+<td>公平性</td>
+<td>不支持</td>
+<td><code>ReentrantLock(true)</code> 支持公平锁</td>
+</tr>
+<tr>
+<td>锁状态查询</td>
+<td>不支持</td>
+<td><code>isLocked()</code>、<code>getHoldCount()</code> 等</td>
+</tr>
+</tbody></table>
+<p><strong>选择原则</strong>：优先使用 <code>synchronized</code>（JVM 持续优化，且不会忘记释放锁）；需要高级特性（超时、中断、多条件、公平性）时选择 <code>Lock</code>。</p>
+<h3>3.2 Condition：精确的线程协作</h3>
+<p><code>Condition</code> 是 <code>Lock</code> 的配套组件，它替代了 <code>Object.wait()/notify()</code> 机制，最大的优势是<strong>支持多个等待队列</strong>。</p>
+<pre><code class="language-java">// 使用 Object 的 wait/notify：只有一个等待队列，notifyAll 会唤醒所有线程
+// 使用 Condition：可以创建多个条件队列，signal 只唤醒特定队列中的线程
+
+ReentrantLock lock = new ReentrantLock();
+Condition notFull  = lock.newCondition();  // 生产者等待队列
+Condition notEmpty = lock.newCondition();  // 消费者等待队列
+</code></pre>
+<p><strong>有界缓冲区实现</strong>（经典的生产者-消费者模型）：</p>
+<pre><code class="language-java">class BoundedBuffer&lt;E&gt; {
+    final Lock lock = new ReentrantLock();
+    final Condition notFull  = lock.newCondition();
+    final Condition notEmpty = lock.newCondition();
+    final Object[] items = new Object[100];
+    int putIndex, takeIndex, count;
+
+    public void put(E e) throws InterruptedException {
+        lock.lock();
+        try {
+            while (count == items.length)
+                notFull.await();      // 缓冲区满，生产者等待
+            items[putIndex] = e;
+            if (++putIndex == items.length) putIndex = 0;
+            ++count;
+            notEmpty.signal();        // 通知消费者
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public E take() throws InterruptedException {
+        lock.lock();
+        try {
+            while (count == 0)
+                notEmpty.await();     // 缓冲区空，消费者等待
+            E e = (E) items[takeIndex];
+            if (++takeIndex == items.length) takeIndex = 0;
+            --count;
+            notFull.signal();         // 通知生产者
+            return e;
+        } finally {
+            lock.unlock();
+        }
+    }
+}
+</code></pre>
+<p>注意 <code>await()</code> 必须在 <code>while</code> 循环中调用，以防止<strong>虚假唤醒（Spurious Wakeup）</strong>。</p>
+<h3>3.3 ReadWriteLock：读写分离</h3>
+<p>当读操作远多于写操作时，使用排他锁会严重限制并发度。<code>ReadWriteLock</code> 允许多个线程同时持有读锁，但写锁是排他的。</p>
+<table>
+<thead>
+<tr>
+<th>锁状态</th>
+<th>读锁请求</th>
+<th>写锁请求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无锁</td>
+<td>允许</td>
+<td>允许</td>
+</tr>
+<tr>
+<td>读锁已持有</td>
+<td>允许（共享）</td>
+<td>阻塞</td>
+</tr>
+<tr>
+<td>写锁已持有</td>
+<td>阻塞</td>
+<td>阻塞</td>
+</tr>
+</tbody></table>
+<p><code>ReentrantReadWriteLock</code> 的设计决策：</p>
+<ul>
+<li><strong>写锁可降级为读锁</strong>：持有写锁的线程可以再获取读锁，然后释放写锁</li>
+<li><strong>读锁不可升级为写锁</strong>：防止死锁（多个读线程同时尝试升级会互相等待）</li>
+<li><strong>支持公平/非公平模式</strong>：非公平模式下，读锁可能&quot;插队&quot;导致写线程饥饿</li>
+</ul>
+<h2>四、JUC 并发工具类</h2>
+<p><code>java.util.concurrent</code> 包提供了一组高级同步工具，用于解决常见的线程协调问题。</p>
+<h3>4.1 CountDownLatch：一次性倒计数门闩</h3>
+<p><strong>语义</strong>：一个或多个线程等待其他线程完成一组操作后再继续执行。</p>
+<pre><code class="language-java">CountDownLatch latch = new CountDownLatch(3);  // 计数器初始值 3
+
+// 工作线程
+executor.submit(() -&gt; {
+    doTask();
+    latch.countDown();  // 计数器 -1
+});
+
+// 等待线程
+latch.await();  // 阻塞直到计数器归零
+// 所有任务完成，继续执行
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li><strong>一次性</strong>：计数器归零后无法重置</li>
+<li>底层基于 AQS 的共享模式实现</li>
+</ul>
+<p><strong>典型场景</strong>：服务启动时等待所有依赖组件初始化完成。</p>
+<h3>4.2 CyclicBarrier：可重用的屏障</h3>
+<p><strong>语义</strong>：一组线程互相等待，直到所有线程都到达屏障点，然后同时继续执行。</p>
+<pre><code class="language-java">CyclicBarrier barrier = new CyclicBarrier(3, () -&gt; {
+    System.out.println(&quot;所有线程到齐，开始下一阶段&quot;);  // barrierAction
+});
+
+// 每个工作线程
+executor.submit(() -&gt; {
+    doPhase1();
+    barrier.await();  // 等待其他线程
+    doPhase2();
+    barrier.await();  // 可以重复使用
+});
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li><strong>可重用</strong>：所有线程通过屏障后，计数器自动重置</li>
+<li>支持 <strong>barrierAction</strong>：所有线程到齐时执行的回调</li>
+<li>如果某个线程等待超时或被中断，屏障进入 <strong>Broken</strong> 状态，所有等待线程收到 <code>BrokenBarrierException</code></li>
+</ul>
+<h3>4.3 Semaphore：信号量</h3>
+<p><strong>语义</strong>：控制同时访问某个资源的线程数量。</p>
+<pre><code class="language-java">Semaphore semaphore = new Semaphore(5);  // 最多 5 个并发
+
+executor.submit(() -&gt; {
+    semaphore.acquire();    // 获取许可（可用许可 -1）
+    try {
+        accessResource();
+    } finally {
+        semaphore.release();  // 释放许可（可用许可 +1）
+    }
+});
+</code></pre>
+<p><strong>核心特征</strong>：</p>
+<ul>
+<li>支持<strong>公平/非公平</strong>模式</li>
+<li><code>tryAcquire()</code> 提供非阻塞获取</li>
+<li>许可数量可以动态增减（<code>release()</code> 可以在未 <code>acquire()</code> 的情况下调用）</li>
+</ul>
+<h3>4.4 三者对比</h3>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>核心语义</th>
+<th>是否可重用</th>
+<th>计数方向</th>
+<th>典型场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>CountDownLatch</strong></td>
+<td>一个线程等待 N 个线程</td>
+<td>否</td>
+<td>递减至 0</td>
+<td>主线程等待子任务完成</td>
+</tr>
+<tr>
+<td><strong>CyclicBarrier</strong></td>
+<td>N 个线程互相等待</td>
+<td>是</td>
+<td>递增至 N</td>
+<td>多阶段并行计算</td>
+</tr>
+<tr>
+<td><strong>Semaphore</strong></td>
+<td>控制并发访问数量</td>
+<td>-</td>
+<td>许可的获取与释放</td>
+<td>限流、资源池</td>
+</tr>
+</tbody></table>
+<h2>五、生产者-消费者模式</h2>
+<p>生产者-消费者是并发编程中最经典的协作模式。Java 提供了从底层到高层的多种实现方式。</p>
+<h3>5.1 三种实现方式对比</h3>
+<table>
+<thead>
+<tr>
+<th>实现方式</th>
+<th>同步机制</th>
+<th>通知粒度</th>
+<th>复杂度</th>
+<th>推荐度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>synchronized + wait/notify</td>
+<td>内置锁</td>
+<td>全量唤醒（notifyAll）</td>
+<td>低</td>
+<td>一般</td>
+</tr>
+<tr>
+<td>Lock + Condition</td>
+<td>显式锁</td>
+<td>精确唤醒（signal）</td>
+<td>中</td>
+<td>推荐</td>
+</tr>
+<tr>
+<td>BlockingQueue</td>
+<td>封装在队列内部</td>
+<td>内部自动处理</td>
+<td>最低</td>
+<td>最推荐</td>
+</tr>
+</tbody></table>
+<p><strong>为什么 BlockingQueue 是最佳选择</strong>：</p>
+<p><code>BlockingQueue</code> 将同步、等待、通知的逻辑完全封装在 <code>put()</code>/<code>take()</code> 方法内部，调用方无需关心并发细节：</p>
+<pre><code class="language-java">BlockingQueue&lt;Task&gt; queue = new ArrayBlockingQueue&lt;&gt;(100);
+
+// 生产者
+queue.put(task);   // 队列满时自动阻塞
+
+// 消费者
+Task task = queue.take();  // 队列空时自动阻塞
+</code></pre>
+<h3>5.2 BlockingQueue 的实现选型</h3>
+<table>
+<thead>
+<tr>
+<th>实现类</th>
+<th>底层结构</th>
+<th>是否有界</th>
+<th>锁策略</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ArrayBlockingQueue</code></td>
+<td>数组</td>
+<td>有界</td>
+<td>单锁</td>
+<td>通用场景</td>
+</tr>
+<tr>
+<td><code>LinkedBlockingQueue</code></td>
+<td>链表</td>
+<td>可选有界</td>
+<td>读写分离锁</td>
+<td>吞吐量要求高</td>
+</tr>
+<tr>
+<td><code>SynchronousQueue</code></td>
+<td>无容量</td>
+<td>无</td>
+<td>CAS</td>
+<td>直接传递（线程池默认）</td>
+</tr>
+<tr>
+<td><code>PriorityBlockingQueue</code></td>
+<td>堆</td>
+<td>无界</td>
+<td>单锁</td>
+<td>优先级调度</td>
+</tr>
+</tbody></table>
+<h2>六、线程池</h2>
+<h3>6.1 ThreadPoolExecutor 核心参数</h3>
+<pre><code class="language-java">new ThreadPoolExecutor(
+    corePoolSize,      // 核心线程数
+    maximumPoolSize,   // 最大线程数
+    keepAliveTime,     // 非核心线程空闲存活时间
+    TimeUnit.SECONDS,
+    workQueue,         // 任务队列
+    threadFactory,     // 线程工厂
+    rejectedHandler    // 拒绝策略
+);
+</code></pre>
+<p><strong>任务提交流程</strong>：</p>
+<pre><code>提交任务
+  → 当前线程数 &lt; corePoolSize？        → 创建核心线程执行
+  → 任务队列未满？                      → 入队等待
+  → 当前线程数 &lt; maximumPoolSize？      → 创建非核心线程执行
+  → 以上都不满足                        → 执行拒绝策略
+</code></pre>
+<h3>6.2 拒绝策略</h3>
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>行为</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>AbortPolicy</strong></td>
+<td>抛出 <code>RejectedExecutionException</code></td>
+<td>默认策略，适合需要感知过载的场景</td>
+</tr>
+<tr>
+<td><strong>CallerRunsPolicy</strong></td>
+<td>由提交线程自己执行任务</td>
+<td>反压效果，但可能导致提交线程阻塞</td>
+</tr>
+<tr>
+<td><strong>DiscardPolicy</strong></td>
+<td>静默丢弃任务</td>
+<td>允许丢失的场景（如日志）</td>
+</tr>
+<tr>
+<td><strong>DiscardOldestPolicy</strong></td>
+<td>丢弃队列中最旧的任务</td>
+<td>实时性要求高、可接受旧数据丢失</td>
+</tr>
+</tbody></table>
+<h3>6.3 生产阻塞型线程池</h3>
+<p>标准 <code>ThreadPoolExecutor</code> 使用 <code>BlockingQueue.offer()</code>（非阻塞）入队。队列满时不会阻塞提交线程，而是触发拒绝策略。</p>
+<p>在某些场景下（如需要严格的背压机制），需要让提交线程在队列满时<strong>阻塞等待</strong>而非被拒绝。可通过自定义拒绝策略实现：</p>
+<pre><code class="language-java">ThreadPoolExecutor executor = new ThreadPoolExecutor(
+    coreSize, maxSize, 60, TimeUnit.SECONDS,
+    new LinkedBlockingQueue&lt;&gt;(capacity),
+    (runnable, pool) -&gt; {
+        try {
+            // 队列满时，put() 会阻塞提交线程
+            pool.getQueue().put(runnable);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
+);
+</code></pre>
+<p>这种方式的优势在于：复用 <code>ThreadPoolExecutor</code> 的线程管理能力，同时实现了生产者阻塞语义，避免了手工管理线程的复杂性。</p>
+<h3>6.4 线程池配置最佳实践</h3>
+<table>
+<thead>
+<tr>
+<th>任务类型</th>
+<th>核心线程数建议</th>
+<th>队列选择</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>CPU 密集型</strong></td>
+<td><code>N_cpu + 1</code></td>
+<td>小容量有界队列</td>
+</tr>
+<tr>
+<td><strong>I/O 密集型</strong></td>
+<td><code>N_cpu × 2</code> 或更高</td>
+<td>较大容量有界队列</td>
+</tr>
+<tr>
+<td><strong>混合型</strong></td>
+<td>拆分为 CPU 池和 I/O 池</td>
+<td>各自独立配置</td>
+</tr>
+</tbody></table>
+<p>关键原则：</p>
+<ul>
+<li><strong>永远不要使用无界队列</strong>：<code>Executors.newFixedThreadPool()</code> 默认使用无界的 <code>LinkedBlockingQueue</code>，可能导致 OOM</li>
+<li><strong>为线程池命名</strong>：自定义 <code>ThreadFactory</code>，给线程添加有意义的名称前缀，便于排查问题</li>
+<li><strong>监控队列深度</strong>：线程池队列持续增长是系统过载的信号</li>
+</ul>
+<h2>总结</h2>
+<p>Java 并发编程的知识体系可以沿着三个层次理解：</p>
+<ol>
+<li><strong>硬件层</strong>：CPU 缓存、MESI 协议、缓存行伪共享——这是并发问题的物理根源</li>
+<li><strong>模型层</strong>：JMM、happens-before、volatile/synchronized 语义——这是 Java 对硬件差异的抽象屏蔽</li>
+<li><strong>工具层</strong>：Lock/Condition、CountDownLatch/CyclicBarrier/Semaphore、BlockingQueue、ThreadPoolExecutor——这是面向工程的并发编程基础设施</li>
+</ol>
+<blockquote>
+<p>并发工具的选择不在于功能的强大，而在于语义的匹配。<code>synchronized</code> 足以解决大多数问题；<code>BlockingQueue</code> 比手动的 wait/notify 更安全；标准 <code>ThreadPoolExecutor</code> 比自定义线程管理更可靠。优先选择高层抽象，只在确有需要时才下沉到底层机制。</p>
+</blockquote>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-28","children":"2025年12月28日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"深入理解AQS：Java并发的基石"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Java",{"href":"/blog/tag/Java/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Java"}],["$","$L13","并发编程",{"href":"/blog/tag/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"并发编程"}],["$","$L13","AQS",{"href":"/blog/tag/AQS/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AQS"}],["$","$L13","ReentrantLock",{"href":"/blog/tag/ReentrantLock/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"ReentrantLock"}],["$","$L13","JUC",{"href":"/blog/tag/JUC/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"JUC"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/06-Prompt Engineering for Agents","title":"Prompt Engineering for Agents: 面向 Agent 的提示词工程","description":"Agent 的 Prompt 不是聊天提示词，而是系统接口规范。本文系统拆解 Agent Prompt 的分层架构、四种关键设计模式（Router / Planner / Executor / Reflector）、Chain-of-Thought 的 Agent 化应用、Few-shot vs Zero-shot 的场景选择、Prompt 工程化实践（模板化 / 版本控制 / 测试 / 组合），以及 Context Window 管理策略。","pubDate":"2025-12-23","tags":["Agentic","AI Engineering","Prompt Engineering"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/07-Agent Runtime from Scratch","title":"Agent Runtime from Scratch: 不依赖框架构建 Agent","description":"不依赖 LangChain 等框架，从零实现一个功能完整的 Agent Runtime。逐模块构建 LLMClient、ToolRegistry、ToolExecutor、MessageManager 和核心控制循环，包含并行工具调用、Streaming、超时控制、死循环检测等高级特性，附完整可运行代码。","pubDate":"2025-12-28","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Java":{"prev":{"slug":"engineering/middleware/非侵入式SQL监控","title":"非侵入式SQL监控","description":"你有没有因为应用程序没有打印SQL而导致问题排查困难？有没有因为SQL没有显示参数而导致日志毫无意义？有没有因为SQL超长而导致查看痛苦？有没有因为缺少SQL性能监控而导致无法报警？...","pubDate":"2024-04-07","tags":["SQL监控","Java","非侵入式"],"heroImage":"$undefined","content":"$19"},"next":null},"并发编程":{"prev":{"slug":"engineering/middleware/Java并发编程：从内存模型到并发工具的设计哲学","title":"Java并发编程：从内存模型到并发工具的设计哲学","description":"从CPU缓存一致性协议到Java内存模型，从volatile的硬件级实现到Lock/Condition的协作机制，从JUC并发工具类到线程池的高级用法，系统构建Java并发编程的知识体系。","pubDate":"2021-11-20","tags":["Java","并发编程","JMM","JUC","线程池"],"heroImage":"$undefined","content":"$1a"},"next":null},"AQS":{"prev":null,"next":null},"ReentrantLock":{"prev":null,"next":null},"JUC":{"prev":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:并发编程:prev","next":null}}}]}],["$","$L1b",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
