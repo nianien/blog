@@ -122,7 +122,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">联系</h2>
           <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm">
             <span className="text-gray-600">
-              Email: <a href="mailto:neil.ln@outlook.com" className="text-blue-600 hover:text-blue-500">neil.ln@outlook.com</a>
+              Email: <a href="mailto:skyfalling@live.com" className="text-blue-600 hover:text-blue-500">skyfalling@live.com</a>
             </span>
             <span className="text-gray-600">
               GitHub: <a href="https://github.com/nianien" className="text-blue-600 hover:text-blue-500">nianien</a>
