@@ -9,7 +9,7 @@ d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/7dd6b3ec14b0b1d8.css","style"]
-0:{"P":null,"b":"2rrmzfsoknNGuymzsZdxz","p":"","c":["","blog","engineering","agentic","01-From%20LLM%20to%20Agent",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/01-From%20LLM%20to%20Agent","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7dd6b3ec14b0b1d8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/01-From%20LLM%20to%20Agent","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","X9EJU6gWVcuXAdMVq08kav",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"kLuGQpYNrv7rzQ0jpQCVp","p":"","c":["","blog","engineering","agentic","01-From%20LLM%20to%20Agent",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/01-From%20LLM%20to%20Agent","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7dd6b3ec14b0b1d8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/01-From%20LLM%20to%20Agent","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","I-N9gMUJQ85TtpCt1jVh-v",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
@@ -798,12 +798,8 @@ class Agent:
 <li>完整目录见第 5 节</li>
 </ul>
 </blockquote>
-17:T7179,<h2>为什么你的系统需要限流</h2>
-<p>先看两个真实事故。</p>
-<p><strong>事故一：短信轰炸。</strong> 电商大促，运营要向 200 万用户推送促销短信。开发对接了短信服务商 API，写了批量发送任务就上线。活动当天，200 万条请求几乎同时涌向服务商。服务商 API 上限是 400 QPS。没有任何限流措施，前几秒就把接口打崩，后续请求全部超时或静默丢弃。几个小时后才发现，超过一半的短信根本没送达。</p>
-<p><strong>事故二：风控反噬。</strong> 某大型互联网公司风控系统，平时运行稳定。双十一流量瞬间飙到日常 10 倍，风控依赖的下游评分服务没做流量保护，直接崩溃。连锁反应：所有经过风控的交易请求因调用超时被拦截——包括完全正常的用户交易。最终损失不是来自欺诈，而是自己的系统把正常用户挡在了门外。</p>
-<p>两个事故揭示同一个本质：<strong>限流不是为了&quot;限制&quot;，而是为了&quot;保护&quot;。</strong></p>
-<p>在高并发系统设计中，缓存、降级和限流被称为&quot;三大利器&quot;：</p>
+17:Tbf8e,<h2>一、为什么你的系统需要限流</h2>
+<p>每个系统都有容量边界。缓存解决读的问题，降级解决非核心链路的问题，但当写操作高并发、稀缺资源被争抢、昂贵查询集中涌入时——<strong>只有限流能保护你。</strong></p>
 <table>
 <thead>
 <tr>
@@ -832,72 +828,272 @@ class Agent:
 <td>需要准确的容量评估，否则误杀或漏放</td>
 </tr>
 </tbody></table>
-<p>三者各有分工，但限流的不可替代性在于：当稀缺资源被争抢、写操作高并发、昂贵查询集中调用时，缓存和降级都帮不了你。</p>
+<p>但&quot;限流&quot;这两个字过于笼统。请求涌入太快是限流问题，同时处理的请求太多也是限流问题，同样叫限流，控制的东西完全不同。<strong>限流不是一个算法，而是一套控制体系。</strong> 要选对方案，首先要搞清楚：你到底在控制什么？</p>
 <hr>
-<h2>四种限流算法：原理、适用场景与工程取舍</h2>
-<h3>漏桶算法（Leaky Bucket）</h3>
-<p><strong>核心原理</strong></p>
-<p>漏桶的逻辑可以用一句话概括：<strong>无论流入多快，流出永远恒定。</strong></p>
-<pre><code>请求流入 → [  桶（有容量上限）  ] → 恒定速率流出 → 下游处理
-                    ↓
-              桶满则丢弃
-</code></pre>
-<ul>
-<li>请求以任意速率流入桶中</li>
-<li>桶底以固定速率流出（处理请求）</li>
-<li>桶有容量上限，溢出的请求被直接丢弃</li>
-</ul>
-<p><strong>核心参数</strong></p>
+<h2>二、你到底在控制什么——四种限流模型</h2>
+<p>大多数人一提&quot;限流&quot;就想到令牌桶、漏桶。但算法只是手段，在选算法之前要先回答一个更根本的问题：<strong>你要控制的是什么物理量？</strong></p>
+<p>现实中的限流需求可以归纳为四种控制模型，每种控制着不同的&quot;物理量&quot;，适用不同的场景，也对应不同的算法家族：</p>
+<h3>到达速率控制——控制&quot;多快进来&quot;</h3>
+<blockquote>
+<p>本质：单位时间内允许通过的请求数量。</p>
+</blockquote>
+<p>典型场景：API 接口限制每秒 1000 次调用、用户登录接口限制每分钟 5 次尝试、短信验证码 60 秒内只能发一次。</p>
+<p>这是最常见的限流需求。它的核心关注点是&quot;单位时间的请求数&quot;——不管每个请求要跑多久、占多少资源，只要单位时间内的数量不超标就放行。</p>
+<h3>并发占用控制——控制&quot;同时多少个&quot;</h3>
+<blockquote>
+<p>本质：任意时刻正在处理的请求数量。</p>
+</blockquote>
+<p>典型场景：数据库连接池最多 50 个连接、报表导出接口最多同时执行 3 个、文件上传同时只允许 10 个。</p>
+<p>与速率控制的区别：速率控制不关心每个请求&quot;待多久&quot;，并发控制则相反——一个跑 10 分钟的报表任务，速率限制器根本管不住它。如果你有 10 个这样的任务同时运行，速率限制器显示&quot;每秒只进来 1 个&quot;一切正常，但系统已经被压垮了。</p>
+<h3>长期配额控制——控制&quot;总共多少次&quot;</h3>
+<blockquote>
+<p>本质：一个较长周期内允许消耗的总量。</p>
+</blockquote>
+<p>典型场景：免费用户每天 100 次 API 调用、每月 10GB 流量配额、每个租户每月 100 万次查询。</p>
+<p>配额控制关注的是&quot;累计消耗&quot;，时间尺度从小时到月不等。它与速率控制看似相似（都是&quot;一段时间内的请求数&quot;），但有本质区别：速率控制关注的是&quot;瞬时压力&quot;——保护系统不被打垮；配额控制关注的是&quot;商业资源&quot;——控制成本或实现产品差异化。一个配额为每天 1000 次的用户，完全可以在第一秒就用完所有配额，速率限制器不会拦他。</p>
+<h3>执行节奏控制——控制&quot;多快出去&quot;</h3>
+<blockquote>
+<p>本质：请求被处理和释放的速率，确保输出均匀平稳。</p>
+</blockquote>
+<p>典型场景：消息队列消费速率控制、音视频流恒定码率传输、对接物理设备接口（打印机、传感器）。</p>
+<p>前面三种都是在&quot;入口&quot;做控制：请求来了，判断能不能进。节奏控制不同，它控制的是&quot;出口&quot;——请求已经被接受，但要排队按固定节奏释放。即使系统空闲、令牌充裕，也不会加速处理。</p>
+<h3>为什么不能互相替代</h3>
 <table>
 <thead>
 <tr>
-<th>参数</th>
-<th>含义</th>
-<th>设计考量</th>
+<th>控制模型</th>
+<th>控制的物理量</th>
+<th>如果只用速率限制…</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>流出速率</td>
-<td>下游能承受的恒定处理能力</td>
-<td>取决于下游系统的稳态吞吐上限</td>
+<td>到达速率</td>
+<td>单位时间请求数</td>
+<td>✅ 这正是它干的事</td>
 </tr>
 <tr>
-<td>桶容量</td>
-<td>允许暂存的最大请求数</td>
-<td>过大导致延迟积累，过小导致突发流量全被丢弃</td>
+<td>并发占用</td>
+<td>同时在处理的请求数</td>
+<td>❌ 10 个慢请求各跑 10 分钟，速率上看只有&quot;1 个/分钟&quot;，但并发已爆</td>
+</tr>
+<tr>
+<td>长期配额</td>
+<td>累计消耗总量</td>
+<td>❌ 速率 100/s 的限制管不住&quot;每天只许用 1000 次&quot;的商业规则</td>
+</tr>
+<tr>
+<td>执行节奏</td>
+<td>输出的均匀程度</td>
+<td>❌ 令牌桶允许突发消费，下游设备收到脉冲流量就炸了</td>
 </tr>
 </tbody></table>
+<h3>需求 → 算法决策总表</h3>
+<p>在进入具体算法之前，先给出一张导航图。后续章节会逐一展开每种算法的原理和实现：</p>
+<table>
+<thead>
+<tr>
+<th>你的需求</th>
+<th>控制模型</th>
+<th>推荐算法</th>
+<th>章节</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>API 限制每秒 N 次调用</td>
+<td>到达速率</td>
+<td>固定窗口 / 滑动窗口计数器</td>
+<td>3.1</td>
+</tr>
+<tr>
+<td>精确统计每个请求的时间分布</td>
+<td>到达速率</td>
+<td>滑动窗口日志</td>
+<td>3.1</td>
+</tr>
+<tr>
+<td>允许突发但限制平均速率</td>
+<td>突发 + 速率</td>
+<td>令牌桶 / GCRA</td>
+<td>3.2</td>
+</tr>
+<tr>
+<td>下游绝对不能承受波动</td>
+<td>执行节奏</td>
+<td>漏桶</td>
+<td>3.3</td>
+</tr>
+<tr>
+<td>限制同时处理的请求数</td>
+<td>并发占用</td>
+<td>信号量 / Bulkhead</td>
+<td>3.4</td>
+</tr>
+<tr>
+<td>每天/每月 N 次调用额度</td>
+<td>长期配额</td>
+<td>固定窗口长周期 / 滚动配额</td>
+<td>3.5</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、限流算法详解与工程实现</h2>
+<h3>3.1 速率控制家族——控制&quot;多快进来&quot;</h3>
+<p>这一族算法的共同目标：在一个时间窗口内，限制请求的通过数量。区别在于如何定义和计算&quot;窗口&quot;。</p>
+<h4>固定窗口计数器（Fixed Window Counter）</h4>
+<p><strong>核心原理</strong></p>
+<p>在一个固定时间窗口内维护计数器，超过阈值就拒绝，窗口结束时归零。</p>
+<pre><code>|← 窗口1 (0-1s) →|← 窗口2 (1-2s) →|
+    count=0→100        count=0→...
+    阈值=100           阈值=100
+</code></pre>
+<p><strong>伪代码</strong></p>
+<pre><code class="language-python">def fixed_window_allow(key, threshold, window_size):
+    window_id = current_time() // window_size  # 当前窗口编号
+    counter_key = f&quot;{key}:{window_id}&quot;
+
+    count = store.increment(counter_key)
+    if count == 1:
+        store.set_expiry(counter_key, window_size)  # 首次请求设置过期
+
+    return count &lt;= threshold
+</code></pre>
+<p><strong>经典问题：窗口边界的 2 倍峰值</strong></p>
+<pre><code>|← 窗口1 →|← 窗口2 →|
+      ↑
+   最后100ms涌入100个  最前100ms涌入100个
+
+   → 200ms 内实际通过了 200 个请求（2 倍于阈值）
+</code></pre>
 <p><strong>适用场景</strong></p>
 <ul>
-<li>对接物理设备或硬件接口（严格不允许任何突发）</li>
-<li>需要绝对平滑的输出流量（如音视频流的恒定码率传输）</li>
-<li>流量整形（traffic shaping）场景</li>
+<li>精度要求不高的简单限流（大部分业务场景）</li>
+<li>需要快速实现的场景</li>
+<li>阈值本身留有足够余量（2 倍偶发峰值可承受）</li>
 </ul>
-<p><strong>不适用场景</strong></p>
-<ul>
-<li>互联网业务的 API 限流（真实流量天然是突发的，漏桶的死板会浪费系统空闲容量）</li>
-<li>需要快速响应突发请求的场景</li>
-</ul>
-<p><strong>工程实践：Nginx 的 <code>limit_req</code> 就是漏桶实现</strong></p>
-<pre><code class="language-nginx"># 定义限流区域：10MB 共享内存，每个 IP 每秒 10 个请求
-limit_req_zone $binary_remote_addr zone=api:10m rate=10r/s;
-
-server {
-    location /api/ {
-        # burst=20：桶容量为 20，超出的排队
-        # nodelay：排队请求不延迟，立即处理（占用 burst 配额）
-        limit_req zone=api burst=20 nodelay;
-
-        # 超限返回 429 而非默认的 503
-        limit_req_status 429;
-    }
-}
-</code></pre>
-<p>这里有个常见误区：<code>burst=20 nodelay</code> 不是&quot;允许突发 20 个请求&quot;那么简单。<code>nodelay</code> 的含义是突发请求立即转发（不排队等待），但每个突发请求会&quot;占用&quot;一个 burst 槽位，槽位按 <code>rate</code> 的速率恢复。实际效果是：瞬间可以通过 30 个请求（rate + burst），但之后必须等槽位恢复。</p>
+<p><strong>工程判断</strong>：在很多场景中，固定窗口的精度已经足够。边界处偶尔的 2 倍峰值，对于留有余量的系统来说不是问题。不要为理论上的完美过度工程化。</p>
 <hr>
-<h3>令牌桶算法（Token Bucket）</h3>
+<h4>滑动窗口计数器（Sliding Window Counter）</h4>
 <p><strong>核心原理</strong></p>
-<p>令牌桶的理念与漏桶相反：<strong>在空闲时积蓄能力，在繁忙时释放能力。</strong></p>
+<p>将时间窗口划分为更细的子窗口（slot），统计时基于当前时间点向前滑动统计。</p>
+<pre><code>子窗口:  |s1|s2|s3|s4|s5|s6|s7|s8|s9|s10|
+当前统计范围:          |←————————————→|
+</code></pre>
+<p><strong>与固定窗口的对比</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>固定窗口</th>
+<th>滑动窗口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>精度</td>
+<td>存在边界 2 倍峰值</td>
+<td>消除边界效应</td>
+</tr>
+<tr>
+<td>实现复杂度</td>
+<td>一个计数器</td>
+<td>N 个子窗口计数器</td>
+</tr>
+<tr>
+<td>存储开销</td>
+<td>O(1)</td>
+<td>O(N)，N 为子窗口数</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>精度要求低、快速实现</td>
+<td>精度要求高、阈值接近系统极限</td>
+</tr>
+</tbody></table>
+<p><strong>伪代码</strong></p>
+<pre><code class="language-python">def sliding_window_allow(key, threshold, window_size, num_slots):
+    slot_size = window_size / num_slots
+    now = current_time()
+    current_slot = now // slot_size
+
+    # 统计当前窗口内所有子窗口的计数
+    total = 0
+    for i in range(num_slots):
+        slot_key = f&quot;{key}:{current_slot - i}&quot;
+        total += store.get(slot_key, default=0)
+
+    if total &gt;= threshold:
+        return False
+
+    # 当前子窗口计数 +1
+    store.increment(f&quot;{key}:{current_slot}&quot;)
+    store.set_expiry(f&quot;{key}:{current_slot}&quot;, window_size + slot_size)
+    return True
+</code></pre>
+<p><strong>工程实践：Sentinel 的滑动窗口实现</strong></p>
+<p>阿里巴巴的 Sentinel 框架使用 <code>LeapArray</code> 数据结构实现滑动窗口：</p>
+<ul>
+<li>将 1 秒划分为若干个 <code>WindowWrap</code>（默认 2 个，即 500ms 一个子窗口）</li>
+<li>每个子窗口维护独立的 pass/block/exception 等计数器</li>
+<li>通过环形数组 + 时间戳判断实现窗口滑动，避免频繁创建销毁对象</li>
+</ul>
+<hr>
+<h4>滑动窗口日志（Sliding Window Log）</h4>
+<p><strong>核心原理</strong></p>
+<p>记录每一个请求的精确时间戳，判断时移除窗口外的过期记录，然后统计剩余记录数。这是精度最高的速率控制算法——没有子窗口的近似，每个请求的时间位置都被精确记录。</p>
+<pre><code>窗口大小 = 1s，阈值 = 5
+
+请求日志: [0.1, 0.3, 0.5, 0.8, 0.9]
+                                    ↑ 当前时间 = 1.2s
+
+移除 &lt; 0.2 的记录 → [0.3, 0.5, 0.8, 0.9]
+当前窗口内 4 个请求 &lt; 阈值 5 → 放行，记录 1.2
+</code></pre>
+<p><strong>伪代码</strong></p>
+<pre><code class="language-python">def sliding_log_allow(key, threshold, window_size):
+    now = current_time()
+
+    # 移除窗口外的过期记录
+    store.remove_before(key, now - window_size)
+
+    # 统计当前窗口内的请求数
+    count = store.count(key)
+
+    if count &lt; threshold:
+        store.add(key, now)  # 记录本次请求时间戳
+        return True
+    return False
+</code></pre>
+<p><strong>优势与代价</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>精度</td>
+<td>完美——没有任何窗口边界问题</td>
+</tr>
+<tr>
+<td>存储开销</td>
+<td>O(N)，N 为窗口内的请求数。QPS 1000 + 1s 窗口 = 1000 条记录</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>低 QPS + 高精度要求（如 API 计费、安全审计）</td>
+</tr>
+<tr>
+<td>不适用</td>
+<td>高 QPS 场景——存储和清理开销过大</td>
+</tr>
+</tbody></table>
+<p><strong>工程判断</strong>：滑动窗口日志的精度是三种窗口算法中最高的，但存储成本也最高。在 Redis 中通常用 Sorted Set 实现（第四章会详细展示）。对于大多数业务场景，滑动窗口计数器是更好的平衡点。</p>
+<hr>
+<h3>3.2 突发与平均速率——控制&quot;允许多大的脉冲&quot;</h3>
+<p>窗口类算法有一个共同的局限：它们只看&quot;窗口内的总量&quot;，不区分&quot;均匀到达&quot;和&quot;一瞬间全来&quot;。令牌桶和 GCRA 解决的正是这个问题——允许一定程度的突发，但限制长期平均速率。</p>
+<h4>令牌桶算法（Token Bucket）</h4>
+<p><strong>核心原理</strong></p>
+<p>令牌桶的理念：<strong>在空闲时积蓄能力，在繁忙时释放能力。</strong></p>
 <pre><code>令牌生成器 ──恒定速率──→ [  令牌桶（有容量上限）  ]
                                     ↓
                          请求到达 → 取令牌 → 有令牌则通过
@@ -930,6 +1126,27 @@ server {
 <td>编码了对突发流量的容忍度</td>
 </tr>
 </tbody></table>
+<p><strong>伪代码</strong></p>
+<pre><code class="language-python">class TokenBucket:
+    def __init__(self, rate, capacity):
+        self.rate = rate          # 令牌生成速率（个/秒）
+        self.capacity = capacity  # 桶容量
+        self.tokens = capacity    # 当前令牌数
+        self.last_refill = current_time()
+
+    def allow(self, cost=1):
+        now = current_time()
+        # 懒填充：按经过的时间计算应补充的令牌
+        elapsed = now - self.last_refill
+        self.tokens = min(self.capacity, self.tokens + elapsed * self.rate)
+        self.last_refill = now
+
+        if self.tokens &gt;= cost:
+            self.tokens -= cost
+            return True
+        return False
+</code></pre>
+<p>关键实现细节：&quot;懒填充&quot;（lazy refill）。不需要一个后台线程不断往桶里放令牌，只需在每次请求到来时，根据距上次填充的时间差计算应补充的令牌数。这让实现变得无锁且高效。</p>
 <p><strong>适用场景</strong></p>
 <ul>
 <li>互联网 API 限流（绝大多数场景的首选）</li>
@@ -985,115 +1202,298 @@ RateLimiter limiter = RateLimiter.create(100.0, 3, TimeUnit.SECONDS);
 </tbody></table>
 <p><strong>关键注意</strong>：Guava RateLimiter 是<strong>单机限流</strong>。它只能控制当前 JVM 进程的流量，在分布式环境下需要配合 Redis 方案使用。</p>
 <hr>
-<h3>固定窗口计数器（Fixed Window Counter）</h3>
+<h4>GCRA（Generic Cell Rate Algorithm）</h4>
 <p><strong>核心原理</strong></p>
-<p>在一个固定时间窗口内维护计数器，超过阈值就拒绝，窗口结束时归零。</p>
-<pre><code>|← 窗口1 (0-1s) →|← 窗口2 (1-2s) →|
-    count=0→100        count=0→...
-    阈值=100           阈值=100
-</code></pre>
-<p><strong>经典问题：窗口边界的 2 倍峰值</strong></p>
-<pre><code>|← 窗口1 →|← 窗口2 →|
-      ↑
-   最后100ms涌入100个  最前100ms涌入100个
+<p>GCRA 是令牌桶的数学等价形式，但实现更精简。它不维护&quot;当前令牌数&quot;，而是维护一个&quot;理论到达时间&quot;（TAT，Theoretical Arrival Time）——下一个请求最早应该在什么时候到达。</p>
+<p>核心思想：如果请求到达得比预期频率更快，TAT 会不断后推；如果请求到达得比预期慢，TAT 会被拉回到当前时间附近（但不会超前太多，受突发容量限制）。</p>
+<pre><code>参数：
+  emission_interval = 1/rate     -- 每个请求的理论间隔
+  burst_tolerance   = burst * emission_interval  -- 允许的最大提前量
 
-   → 200ms 内实际通过了 200 个请求（2 倍于阈值）
+判断逻辑：
+  TAT = max(TAT, now) + emission_interval
+  如果 TAT - now &gt; burst_tolerance → 拒绝（超前太多，突发已耗尽）
+  否则 → 放行，更新 TAT
 </code></pre>
-<p><strong>适用场景</strong></p>
-<ul>
-<li>精度要求不高的简单限流（大部分业务场景）</li>
-<li>需要快速实现的场景</li>
-<li>阈值本身留有足够余量（2 倍偶发峰值可承受）</li>
-</ul>
-<p><strong>工程判断</strong>：在很多场景中，固定窗口的精度已经足够。边界处偶尔的 2 倍峰值，对于留有余量的系统来说不是问题。不要为理论上的完美过度工程化。</p>
-<hr>
-<h3>滑动窗口计数器（Sliding Window）</h3>
-<p><strong>核心原理</strong></p>
-<p>将时间窗口划分为更细的子窗口（slot），统计时基于当前时间点向前滑动统计。</p>
-<pre><code>子窗口:  |s1|s2|s3|s4|s5|s6|s7|s8|s9|s10|
-当前统计范围:          |←————————————→|
+<p><strong>伪代码</strong></p>
+<pre><code class="language-python">class GCRA:
+    def __init__(self, rate, burst):
+        self.emission_interval = 1.0 / rate       # 每个请求的理论间隔
+        self.burst_tolerance = burst * self.emission_interval  # 最大提前量
+        self.tat = 0  # 理论到达时间（Theoretical Arrival Time）
+
+    def allow(self):
+        now = current_time()
+        # 新的 TAT = max(上次TAT, 当前时间) + 一个间隔
+        new_tat = max(self.tat, now) + self.emission_interval
+
+        # 如果 TAT 超前当前时间太多，说明突发额度已用完
+        if new_tat - now &gt; self.burst_tolerance:
+            return False
+
+        self.tat = new_tat
+        return True
 </code></pre>
-<p><strong>与固定窗口的对比</strong></p>
+<p><strong>为什么 GCRA 值得关注</strong></p>
 <table>
 <thead>
 <tr>
-<th>维度</th>
-<th>固定窗口</th>
-<th>滑动窗口</th>
+<th>优势</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>精度</td>
-<td>存在边界 2 倍峰值</td>
-<td>消除边界效应</td>
+<td>状态极简</td>
+<td>只需存储一个值（TAT），对比令牌桶需要存 tokens + last_refill</td>
 </tr>
 <tr>
-<td>实现复杂度</td>
-<td>一个计数器</td>
-<td>N 个子窗口计数器</td>
+<td>天然适合分布式</td>
+<td>一个 Redis key 存一个时间戳，原子 CAS 即可更新</td>
 </tr>
 <tr>
-<td>存储开销</td>
-<td>O(1)</td>
-<td>O(N)，N 为子窗口数</td>
-</tr>
-<tr>
-<td>适用场景</td>
-<td>精度要求低、快速实现</td>
-<td>精度要求高、阈值接近系统极限</td>
+<td>数学精确</td>
+<td>与令牌桶行为完全等价，但无浮点累积误差</td>
 </tr>
 </tbody></table>
-<p><strong>工程实践：Sentinel 的滑动窗口实现</strong></p>
-<p>阿里巴巴的 Sentinel 框架使用 <code>LeapArray</code> 数据结构实现滑动窗口：</p>
+<p><strong>工程实践</strong>：GCRA 广泛用于网络设备的 ATM 流量控制（这也是它名字中&quot;Cell Rate&quot;的来源），在互联网领域被 Cloudflare、Stripe 等公司采用作为 API 限流的核心算法。</p>
+<hr>
+<h3>3.3 流量整形——控制&quot;多快出去&quot;</h3>
+<h4>漏桶算法（Leaky Bucket）</h4>
+<p><strong>核心原理</strong></p>
+<p>漏桶的逻辑可以用一句话概括：<strong>无论流入多快，流出永远恒定。</strong></p>
+<pre><code>请求流入 → [  桶（有容量上限）  ] → 恒定速率流出 → 下游处理
+                    ↓
+              桶满则丢弃
+</code></pre>
 <ul>
-<li>将 1 秒划分为若干个 <code>WindowWrap</code>（默认 2 个，即 500ms 一个子窗口）</li>
-<li>每个子窗口维护独立的 pass/block/exception 等计数器</li>
-<li>通过环形数组 + 时间戳判断实现窗口滑动，避免频繁创建销毁对象</li>
+<li>请求以任意速率流入桶中</li>
+<li>桶底以固定速率流出（处理请求）</li>
+<li>桶有容量上限，溢出的请求被直接丢弃</li>
+</ul>
+<p><strong>核心参数</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+<th>设计考量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>流出速率</td>
+<td>下游能承受的恒定处理能力</td>
+<td>取决于下游系统的稳态吞吐上限</td>
+</tr>
+<tr>
+<td>桶容量</td>
+<td>允许暂存的最大请求数</td>
+<td>过大导致延迟积累，过小导致突发流量全被丢弃</td>
+</tr>
+</tbody></table>
+<p><strong>与令牌桶的本质区别</strong></p>
+<p>令牌桶控制的是&quot;允许进入的速率&quot;（入口），漏桶控制的是&quot;实际处理的速率&quot;（出口）。令牌桶在空闲后可以突发放行一批请求，漏桶永远不会——即使桶里积攒了很多请求，也只能按固定速率一个个出去。</p>
+<p><strong>适用场景</strong></p>
+<ul>
+<li>对接物理设备或硬件接口（严格不允许任何突发）</li>
+<li>需要绝对平滑的输出流量（如音视频流的恒定码率传输）</li>
+<li>流量整形（traffic shaping）场景</li>
+</ul>
+<p><strong>不适用场景</strong></p>
+<ul>
+<li>互联网业务的 API 限流（真实流量天然是突发的，漏桶的死板会浪费系统空闲容量）</li>
+<li>需要快速响应突发请求的场景</li>
+</ul>
+<p><strong>工程实践：Nginx 的 <code>limit_req</code> 就是漏桶实现</strong></p>
+<pre><code class="language-nginx"># 定义限流区域：10MB 共享内存，每个 IP 每秒 10 个请求
+limit_req_zone $binary_remote_addr zone=api:10m rate=10r/s;
+
+server {
+    location /api/ {
+        # burst=20：桶容量为 20，超出的排队
+        # nodelay：排队请求不延迟，立即处理（占用 burst 配额）
+        limit_req zone=api burst=20 nodelay;
+
+        # 超限返回 429 而非默认的 503
+        limit_req_status 429;
+    }
+}
+</code></pre>
+<p>这里有个常见误区：<code>burst=20 nodelay</code> 不是&quot;允许突发 20 个请求&quot;那么简单。<code>nodelay</code> 的含义是突发请求立即转发（不排队等待），但每个突发请求会&quot;占用&quot;一个 burst 槽位，槽位按 <code>rate</code> 的速率恢复。实际效果是：瞬间可以通过 30 个请求（rate + burst），但之后必须等槽位恢复。</p>
+<hr>
+<h3>3.4 并发控制——控制&quot;同时多少个&quot;</h3>
+<p>前面所有算法都在控制&quot;速率&quot;——单位时间通过多少个请求。但有些场景下，速率不是瓶颈，并发才是。</p>
+<p><strong>问题场景</strong>：一个报表导出接口，每次调用需要 30 秒完成，消耗大量 CPU 和内存。即使限制为每秒 1 个请求，如果 30 秒内每秒都来一个，就有 30 个同时在执行——足以打垮服务。</p>
+<h4>信号量 / Bulkhead</h4>
+<p><strong>核心原理</strong></p>
+<p>维护一个并发计数器。请求进入时 +1，请求完成时 -1。计数器达到上限时，新请求被拒绝或排队。</p>
+<pre><code>请求进入 → 计数器 +1 → [正在处理：当前 3/5] → 完成 → 计数器 -1
+                ↓
+          计数器 = 5 → 拒绝/排队
+</code></pre>
+<p><strong>伪代码</strong></p>
+<pre><code class="language-python">class ConcurrencyLimiter:
+    def __init__(self, max_concurrent):
+        self.max_concurrent = max_concurrent
+        self.current = 0         # 当前并发数
+        self.lock = Lock()
+
+    def acquire(self):
+        with self.lock:
+            if self.current &gt;= self.max_concurrent:
+                return False
+            self.current += 1
+            return True
+
+    def release(self):
+        with self.lock:
+            self.current -= 1
+</code></pre>
+<p><strong>关键区别：为什么速率限制替代不了并发控制？</strong></p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>速率限制（10 req/s）</th>
+<th>并发控制（max=5）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>快请求（10ms）</td>
+<td>正常工作</td>
+<td>不会触发（并发始终很低）</td>
+</tr>
+<tr>
+<td>慢请求（30s）</td>
+<td>30s 内放入 300 个请求，全部同时在跑</td>
+<td>只允许 5 个同时执行，第 6 个等待</td>
+</tr>
+<tr>
+<td>资源保护效果</td>
+<td>慢请求场景下完全失效</td>
+<td>精确保护下游并发能力</td>
+</tr>
+</tbody></table>
+<p><strong>工程实践</strong></p>
+<ul>
+<li>Java：<code>Semaphore</code>、Resilience4j 的 <code>Bulkhead</code></li>
+<li>数据库：连接池本质就是并发控制</li>
+<li>Nginx：<code>limit_conn</code> 限制并发连接数</li>
+<li>Hystrix/Sentinel：线程池隔离（每个下游依赖独立的并发上限）</li>
+</ul>
+<p><strong>Bulkhead（舱壁隔离）模式</strong>：把不同依赖的并发限制隔离开，A 服务的慢查询把自己的并发额度用完，不会影响 B 服务的调用。</p>
+<hr>
+<h3>3.5 配额控制——控制&quot;总共多少次&quot;</h3>
+<h4>固定窗口长周期 / 滚动配额</h4>
+<p><strong>核心原理</strong></p>
+<p>配额控制在技术实现上往往就是一个大窗口的固定窗口计数器——窗口大小从分钟级变成天/月级。但它的设计意图完全不同：速率控制保护系统不被打垮，配额控制实现商业规则。</p>
+<p><strong>典型实现</strong></p>
+<pre><code class="language-python">def check_quota(user_id, tier):
+    quotas = {
+        &quot;free&quot;: {&quot;daily&quot;: 100, &quot;monthly&quot;: 1000},
+        &quot;pro&quot;:  {&quot;daily&quot;: 10000, &quot;monthly&quot;: 100000},
+    }
+
+    daily_key = f&quot;quota:daily:{user_id}:{today()}&quot;
+    monthly_key = f&quot;quota:monthly:{user_id}:{this_month()}&quot;
+
+    daily_count = store.get(daily_key, 0)
+    monthly_count = store.get(monthly_key, 0)
+
+    limits = quotas[tier]
+    if daily_count &gt;= limits[&quot;daily&quot;] or monthly_count &gt;= limits[&quot;monthly&quot;]:
+        return False, remaining(limits, daily_count, monthly_count)
+
+    store.increment(daily_key)
+    store.increment(monthly_key)
+    return True, remaining(limits, daily_count + 1, monthly_count + 1)
+</code></pre>
+<p><strong>工程要点</strong></p>
+<ul>
+<li>配额通常需要返回剩余量（<code>X-RateLimit-Remaining</code> header），方便调用方规划使用</li>
+<li>长周期配额的窗口边界（如月初重置）是产品决策，不是技术决策</li>
+<li>配额超限的拒绝策略通常比速率限制更&quot;温和&quot;——返回明确的额度信息和升级引导，而非简单的 429</li>
 </ul>
 <hr>
-<h3>四种算法对比总结</h3>
+<h3>算法对比总表</h3>
 <table>
 <thead>
 <tr>
 <th>算法</th>
+<th>控制模型</th>
 <th>核心特征</th>
 <th>突发处理</th>
-<th>实现复杂度</th>
+<th>存储开销</th>
 <th>推荐场景</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>漏桶</strong></td>
-<td>恒定输出</td>
-<td>不允许突发</td>
-<td>低</td>
-<td>流量整形、硬件接口</td>
-</tr>
-<tr>
-<td><strong>令牌桶</strong></td>
-<td>弹性输出</td>
-<td>允许有限突发</td>
-<td>中</td>
-<td>API 限流（首选）</td>
-</tr>
-<tr>
 <td><strong>固定窗口</strong></td>
+<td>到达速率</td>
 <td>简单计数</td>
-<td>边界可能 2 倍峰值</td>
-<td>最低</td>
+<td>边界 2 倍峰值</td>
+<td>O(1)</td>
 <td>快速实现、精度要求低</td>
 </tr>
 <tr>
-<td><strong>滑动窗口</strong></td>
-<td>精确计数</td>
+<td><strong>滑动窗口计数器</strong></td>
+<td>到达速率</td>
+<td>子窗口聚合</td>
 <td>平滑</td>
-<td>高</td>
+<td>O(N) 子窗口数</td>
 <td>精度要求高、阈值紧</td>
 </tr>
+<tr>
+<td><strong>滑动窗口日志</strong></td>
+<td>到达速率</td>
+<td>精确时间戳</td>
+<td>完美</td>
+<td>O(N) 请求数</td>
+<td>低 QPS + 高精度</td>
+</tr>
+<tr>
+<td><strong>令牌桶</strong></td>
+<td>突发 + 速率</td>
+<td>积蓄+释放</td>
+<td>允许有限突发</td>
+<td>O(1)</td>
+<td>API 限流（首选）</td>
+</tr>
+<tr>
+<td><strong>GCRA</strong></td>
+<td>突发 + 速率</td>
+<td>单时间戳</td>
+<td>允许有限突发</td>
+<td>O(1)</td>
+<td>分布式 API 限流</td>
+</tr>
+<tr>
+<td><strong>漏桶</strong></td>
+<td>执行节奏</td>
+<td>恒定输出</td>
+<td>不允许突发</td>
+<td>O(1)</td>
+<td>流量整形、硬件接口</td>
+</tr>
+<tr>
+<td><strong>信号量</strong></td>
+<td>并发占用</td>
+<td>进出计数</td>
+<td>不涉及</td>
+<td>O(1)</td>
+<td>慢请求、连接池</td>
+</tr>
+<tr>
+<td><strong>固定窗口长周期</strong></td>
+<td>长期配额</td>
+<td>累计统计</td>
+<td>不涉及</td>
+<td>O(1)</td>
+<td>商业配额、计费</td>
+</tr>
 </tbody></table>
-<p><strong>选择策略</strong>：如果没有特殊需求，令牌桶是互联网业务的默认选择。如果需要极致简单，用固定窗口。如果下游绝对不能承受波动，用漏桶。如果阈值非常接近系统极限，用滑动窗口。</p>
+<p><strong>选择策略</strong>：先确定你的控制模型（速率/并发/配额/节奏），再在对应的算法家族中选择。如果没有特殊需求，令牌桶是互联网业务的默认选择。</p>
 <hr>
-<h2>从单机到分布式：最关键的认知跃迁</h2>
+<h2>四、从单机到分布式：最关键的认知跃迁</h2>
 <h3>单机限流为什么在集群中失效</h3>
 <p>一个团队用 Guava RateLimiter 限制短信 API 调用为 400 QPS，本地测试完美。代码部署到 4 个节点后，4 个节点各自以 400 QPS 发送，服务商实际承受 1600 QPS，接口再次崩溃。</p>
 <p><strong>根因：单机限流只能控制单个进程的流量，对其他节点一无所知。</strong></p>
@@ -1143,8 +1543,7 @@ RateLimiter limiter = RateLimiter.create(100.0, 3, TimeUnit.SECONDS);
 <td>Redis + 用户维度 key</td>
 </tr>
 </tbody></table>
-<hr>
-<h2>Redis 分布式限流：为什么是标准答案</h2>
+<h3>Redis 分布式限流：为什么是标准答案</h3>
 <p>Redis 之所以成为分布式限流的事实标准，是因为它的特性精确匹配了限流的每一个核心需求：</p>
 <table>
 <thead>
@@ -1278,7 +1677,7 @@ end
 <p>分布式系统中，各节点用本地时间计算 Redis key 中的时间窗口标识，时钟偏移可能导致不同节点在不同窗口中计数。严格做法是用 Redis 服务端时间 <code>redis.call(&#39;TIME&#39;)</code>。但现代服务器通过 NTP 同步后的时钟偏差通常在毫秒级，对秒级窗口几乎无影响。</p>
 <p><strong>工程判断</strong>：对于秒级窗口，使用本地时间戳即可。对于百毫秒级窗口或对精度有极端要求的场景，使用 Redis 服务端时间。</p>
 <hr>
-<h2>多层限流：纵深防御架构</h2>
+<h2>五、多层限流：纵深防御架构</h2>
 <p>一个常见误区是试图在某一层解决所有限流问题。良好的限流架构应该是分层的——每一层保护不同的东西，承担不同的职责。</p>
 <pre><code>                     请求流入
                         ↓
@@ -1430,7 +1829,63 @@ public class BusinessRateLimiter {
 </ul>
 <p><strong>每一层保护不同的东西。</strong> 接入层保护基础设施不被滥用流量冲垮；API 网关保护服务处理能力不被超载；业务层保护业务规则不被绕过；数据层保护最脆弱的存储和依赖。</p>
 <hr>
-<h2>限流之后：被拒绝的请求去哪了</h2>
+<h2>六、限流的工程闭环</h2>
+<p>限流架构设计完了，还差两个关键环节：阈值从哪来？被拒绝的请求去哪了？这两个问题不解决，限流就是半成品。</p>
+<h3>6.1 阈值从哪来</h3>
+<p>所有限流工程中最难的问题不是技术实现，而是：<strong>阈值应该设多少？</strong></p>
+<p><strong>四步确定阈值</strong></p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>方法</th>
+<th>产出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>1. 压测基线</strong></td>
+<td>逐步加压，观察 P99 延迟和错误率的拐点</td>
+<td>系统实际容量边界</td>
+</tr>
+<tr>
+<td><strong>2. 安全系数</strong></td>
+<td>阈值 = 容量边界 × 70%~80%</td>
+<td>留出余量应对突发波动</td>
+</tr>
+<tr>
+<td><strong>3. 持续监控</strong></td>
+<td>监控 P99、错误率、CPU、内存</td>
+<td>发现容量变化及时调整</td>
+</tr>
+<tr>
+<td><strong>4. 渐进调整</strong></td>
+<td>从保守值开始，观察线上表现后逐步放宽</td>
+<td>避免上线即翻车</td>
+</tr>
+</tbody></table>
+<p><strong>自适应限流</strong></p>
+<p>更高级的形态是基于实时指标的自动限流。以 Sentinel 为例：</p>
+<pre><code class="language-java">// 基于系统负载的自适应限流
+SystemRule rule = new SystemRule();
+rule.setHighestCpuUsage(0.8);    // CPU &gt; 80% 时触发限流
+rule.setHighestSystemLoad(2.5);   // System Load &gt; 2.5 时触发限流
+rule.setAvgRt(200);               // 平均 RT &gt; 200ms 时触发限流
+
+// 优点：省去人为猜测阈值
+// 风险：正常流量波动可能触发误限，需仔细调试灵敏度
+</code></pre>
+<p><strong>阈值是业务决策</strong></p>
+<blockquote>
+<p><strong>限流阈值不是纯技术参数，而是一个业务决策。</strong></p>
+</blockquote>
+<p>它编码的是&quot;我们愿意承受多大负载，以及拒绝超额流量的业务成本是什么&quot;。</p>
+<ul>
+<li>面向消费者的核心交易链路：拒绝一个请求 = 损失一笔订单 → 阈值宜宽</li>
+<li>内部数据分析任务：晚执行几分钟无损失 → 阈值可严</li>
+<li>计算密集的报表接口：单个请求消耗大量资源 → 阈值必须严</li>
+</ul>
+<p>阈值设定必须综合技术容量和业务容忍度，需要工程团队和产品团队协同决策。</p>
+<h3>6.2 被拒绝的请求去哪了</h3>
 <p>大多数限流讨论都集中在&quot;如何拒绝&quot;，很少有人思考&quot;拒绝之后怎么办&quot;。而在真实业务中，后者往往更重要。</p>
 <table>
 <thead>
@@ -1470,62 +1925,80 @@ public class BusinessRateLimiter {
 <p>回到短信发送事故：被限流的短信不能直接丢弃，必须进入重试队列。秒杀请求被限流？直接告知&quot;已售罄&quot;比让用户苦等体验更好。商品详情页被限流？返回缓存数据即可，用户感知的是&quot;数据没那么新&quot;而不是&quot;服务挂了&quot;。</p>
 <p>只设计了限流而没考虑拒绝后的处理，就像只安装了闸门却没修泄洪渠——水是拦住了，但迟早会溃坝。</p>
 <hr>
-<h2>阈值从哪来：限流的度量方法论</h2>
-<p>所有限流工程中最难的问题不是技术实现，而是：<strong>阈值应该设多少？</strong></p>
-<h3>四步确定阈值</h3>
+<h2>七、金融场景：限流 ≠ 正确性</h2>
+<p>在金融、支付等对正确性有极高要求的领域，限流只是防御体系的一环。很多团队犯的错误是：觉得&quot;加了限流就安全了&quot;。现实是，限流解决的是<strong>流量问题</strong>，不是<strong>正确性问题</strong>。</p>
+<h3>三层防护：限流 + 并发控制 + 幂等</h3>
+<p>考虑一个支付场景：用户点了两次&quot;付款&quot;按钮。</p>
 <table>
 <thead>
 <tr>
-<th>步骤</th>
-<th>方法</th>
-<th>产出</th>
+<th>防护层</th>
+<th>解决的问题</th>
+<th>如果只有这一层</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>1. 压测基线</strong></td>
-<td>逐步加压，观察 P99 延迟和错误率的拐点</td>
-<td>系统实际容量边界</td>
+<td><strong>限流</strong></td>
+<td>防止支付接口被高频调用打垮</td>
+<td>两次点击间隔 100ms，速率限制 10/s → 都放行，扣两次款</td>
 </tr>
 <tr>
-<td><strong>2. 安全系数</strong></td>
-<td>阈值 = 容量边界 × 70%~80%</td>
-<td>留出余量应对突发波动</td>
+<td><strong>并发控制</strong></td>
+<td>同一笔订单同一时刻只允许一个支付请求在处理</td>
+<td>第二次被排队/拒绝，但如果第一次失败后重试呢？</td>
 </tr>
 <tr>
-<td><strong>3. 持续监控</strong></td>
-<td>监控 P99、错误率、CPU、内存</td>
-<td>发现容量变化及时调整</td>
-</tr>
-<tr>
-<td><strong>4. 渐进调整</strong></td>
-<td>从保守值开始，观察线上表现后逐步放宽</td>
-<td>避免上线即翻车</td>
+<td><strong>幂等</strong></td>
+<td>同一笔支付操作无论执行几次，结果只生效一次</td>
+<td>无论重试多少次、并发多少个，最终只扣一次款</td>
 </tr>
 </tbody></table>
-<h3>自适应限流</h3>
-<p>更高级的形态是基于实时指标的自动限流。以 Sentinel 为例：</p>
-<pre><code class="language-java">// 基于系统负载的自适应限流
-SystemRule rule = new SystemRule();
-rule.setHighestCpuUsage(0.8);    // CPU &gt; 80% 时触发限流
-rule.setHighestSystemLoad(2.5);   // System Load &gt; 2.5 时触发限流
-rule.setAvgRt(200);               // 平均 RT &gt; 200ms 时触发限流
-
-// 优点：省去人为猜测阈值
-// 风险：正常流量波动可能触发误限，需仔细调试灵敏度
-</code></pre>
-<h3>阈值是业务决策</h3>
-<blockquote>
-<p><strong>限流阈值不是纯技术参数，而是一个业务决策。</strong></p>
-</blockquote>
-<p>它编码的是&quot;我们愿意承受多大负载，以及拒绝超额流量的业务成本是什么&quot;。</p>
+<p><strong>三层必须配合使用：</strong></p>
 <ul>
-<li>面向消费者的核心交易链路：拒绝一个请求 = 损失一笔订单 → 阈值宜宽</li>
-<li>内部数据分析任务：晚执行几分钟无损失 → 阈值可严</li>
-<li>计算密集的报表接口：单个请求消耗大量资源 → 阈值必须严</li>
+<li>限流是<strong>外围护栏</strong>——挡住异常流量，保护系统不被打垮</li>
+<li>并发控制是<strong>执行调度</strong>——同一资源同一时刻只有一个操作在执行</li>
+<li>幂等是<strong>正确性保障</strong>——即使前两层被突破，最终结果仍然正确</li>
 </ul>
-<p>阈值设定必须综合技术容量和业务容忍度，需要工程团队和产品团队协同决策。</p>
+<h3>伪代码：PaymentProtection 组合示例</h3>
+<pre><code class="language-python">class PaymentProtection:
+    def __init__(self):
+        self.rate_limiter = TokenBucket(rate=100, capacity=200)    # 限流
+        self.locks = DistributedLockManager()                       # 并发控制
+        self.idempotency = IdempotencyStore()                       # 幂等
+
+    def process_payment(self, order_id, idempotency_key, amount):
+        # 第一层：限流 —— 保护系统不被打垮
+        if not self.rate_limiter.allow():
+            return Error(&quot;RATE_LIMITED&quot;, &quot;系统繁忙，请稍后重试&quot;)
+
+        # 第二层：幂等检查 —— 如果这个操作已经成功过，直接返回之前的结果
+        existing = self.idempotency.get(idempotency_key)
+        if existing:
+            return existing  # 重复请求，返回之前的结果
+
+        # 第三层：并发控制 —— 同一订单同一时刻只处理一个支付请求
+        lock = self.locks.acquire(f&quot;payment:{order_id}&quot;, timeout=10)
+        if not lock:
+            return Error(&quot;CONCURRENT&quot;, &quot;订单正在处理中&quot;)
+
+        try:
+            # 再次检查幂等（拿到锁之后的 double-check）
+            existing = self.idempotency.get(idempotency_key)
+            if existing:
+                return existing
+
+            # 执行实际支付
+            result = do_payment(order_id, amount)
+
+            # 记录幂等结果
+            self.idempotency.store(idempotency_key, result)
+            return result
+        finally:
+            lock.release()
+</code></pre>
+<p><strong>核心认知</strong>：限流是流量层面的保护，幂等才是业务正确性的最后防线。在金融场景中，这三层缺一不可。</p>
 <hr>
-<h2>总结：限流是一种系统思维</h2>
+<h2>八、总结：限流是一种系统思维</h2>
 <p>限流从表面看是算法选择题，但真正落地到生产环境时，它是一个系统设计问题：</p>
 <table>
 <thead>
@@ -1535,6 +2008,10 @@ rule.setAvgRt(200);               // 平均 RT &gt; 200ms 时触发限流
 </tr>
 </thead>
 <tbody><tr>
+<td><strong>控制对象</strong></td>
+<td>你在控制什么？速率、并发、配额还是节奏？控制模型选错，算法再精妙也解决不了问题</td>
+</tr>
+<tr>
 <td><strong>容量</strong></td>
 <td>系统到底能承受多少？需要压测和监控，不是拍脑袋</td>
 </tr>
@@ -3157,7 +3634,7 @@ user_proxy.initiate_chat(assistant, message=&quot;写一份新能源车行业调
 <p><strong>多模态 Agent</strong> 将同时处理文本、图像、语音与视频，统一在一个任务图里协同；<strong>模型路由与降级</strong>会让系统自动在质量、成本、延迟之间折中；<br><strong>Agent OS/编排平台</strong>将成为企业的“智能内核”，承载权限、任务、审计与经济计量；而 <strong>LLMOps 标准化</strong><br>则会把“可观测、安全治理、回放评测”固化为工程必修课。</p>
 <h2>八、结语</h2>
 <p>从 LLM 到 Agent，不只是“接口变了”，而是<strong>软件工程边界</strong>的扩大：语言成了新的“应用协议”，编排成了“智能内核”，数据与工具成了“外设”。掌握本文的框架图谱与依赖链，意味着你可以按需组装：以<br>LlamaIndex 做数据底座，以 LangGraph 管编排，以 LangChain/AutoGen/CrewAI 做场景拼装，再用监控与安全把它变成真正<strong>可运营</strong><br>的系统。愿你从 demo 出发，驶向生产。</p>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/agentic/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"Agentic 系统"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-01","children":"2025年12月01日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"From LLM to Agent: Agentic 系统的知识地图"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L13","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L13","LLM",{"href":"/blog/tag/LLM/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"LLM"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/限流的本质：从令牌桶到分布式流控的架构思考","title":"限流的本质：从令牌桶到分布式流控的架构思考","description":"限流不是一个算法问题，而是一个系统设计问题。从单机令牌桶到分布式 Redis 计数器，从 Nginx 接入层到业务层精细化流控——每一层的限流策略背后，都是对系统容量、业务优先级和降级策略的深度思考。","pubDate":"2025-11-25","tags":["限流","分布式系统","系统架构","高可用"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/architecture/SET化架构：从单元化原理到大规模落地实践","title":"SET化架构：从单元化原理到大规模落地实践","description":"深入剖析SET化（单元化）架构的核心原理与设计实践，涵盖流量路由、数据分片、全局服务、故障隔离等关键环节，结合美团、阿里等大厂实践经验，构建可水平扩展的弹性架构体系。","pubDate":"2025-12-05","tags":["架构设计","SET化架构","单元化","异地多活","高可用"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":null,"next":{"slug":"engineering/agentic/02-From Prompt to Agent","title":"From Prompt to Agent: 为什么 LLM 本身不是 Agent","description":"LLM 是一个无状态的文本函数，Agent 是一个有状态的推理系统。本文从 LLM 的五大局限出发，精确定义 Agent 的组件模型与控制循环，并沿 Chatbot → Agent 的光谱逐级拆解，帮助你建立从 Prompt 到 Agent 的完整认知框架。","pubDate":"2025-12-05","tags":["Agentic","AI Engineering","LLM"],"heroImage":"$undefined","content":"$19"}},"AI Engineering":{"prev":null,"next":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:next"},"LLM":{"prev":{"slug":"insights/technology/AI-Agent技术科普","title":"Agent 技术科普：开启智能体的新时代","description":"本文面向工程与产品落地，采用“概述长文 + 框架细化 + 技术依赖链”的结构：前半部分回答*为什么与是什么*，中段把*主流框架逐一讲透*（背景、要解决的问题、核心机制、现状与生态、典型应用、优缺点、示例、学习建议），最后给出*最小依赖链*以便快速动手。","pubDate":"2025-09-25","tags":["AI Agent","LLM","智能体"],"heroImage":"$undefined","content":"$1a"},"next":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:next"}}}]}],["$","$L1b",null,{}]]}]}]}]
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/agentic/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"Agentic 系统"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-01","children":"2025年12月01日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"From LLM to Agent: Agentic 系统的知识地图"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","Agentic",{"href":"/blog/tag/Agentic/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Agentic"}],["$","$L13","AI Engineering",{"href":"/blog/tag/AI%20Engineering/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AI Engineering"}],["$","$L13","LLM",{"href":"/blog/tag/LLM/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"LLM"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/限流的本质：从限流算法到分布式流控的架构思考","title":"限流的本质：从限流算法到分布式流控的架构思考","description":"限流不是一个算法问题，而是一个系统设计问题。从速率控制到并发保护，从单机令牌桶到分布式 Redis 计数器，从 Nginx 接入层到业务层精细化流控——每一层的限流策略背后，都是对系统容量、业务优先级和降级策略的深度思考。","pubDate":"2025-11-25","tags":["限流","分布式系统","系统架构","高可用"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/architecture/SET化架构：从单元化原理到大规模落地实践","title":"SET化架构：从单元化原理到大规模落地实践","description":"深入剖析SET化（单元化）架构的核心原理与设计实践，涵盖流量路由、数据分片、全局服务、故障隔离等关键环节，结合美团、阿里等大厂实践经验，构建可水平扩展的弹性架构体系。","pubDate":"2025-12-05","tags":["架构设计","SET化架构","单元化","异地多活","高可用"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"Agentic":{"prev":null,"next":{"slug":"engineering/agentic/02-From Prompt to Agent","title":"From Prompt to Agent: 为什么 LLM 本身不是 Agent","description":"LLM 是一个无状态的文本函数，Agent 是一个有状态的推理系统。本文从 LLM 的五大局限出发，精确定义 Agent 的组件模型与控制循环，并沿 Chatbot → Agent 的光谱逐级拆解，帮助你建立从 Prompt 到 Agent 的完整认知框架。","pubDate":"2025-12-05","tags":["Agentic","AI Engineering","LLM"],"heroImage":"$undefined","content":"$19"}},"AI Engineering":{"prev":null,"next":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:next"},"LLM":{"prev":{"slug":"insights/technology/AI-Agent技术科普","title":"Agent 技术科普：开启智能体的新时代","description":"本文面向工程与产品落地，采用“概述长文 + 框架细化 + 技术依赖链”的结构：前半部分回答*为什么与是什么*，中段把*主流框架逐一讲透*（背景、要解决的问题、核心机制、现状与生态、典型应用、优缺点、示例、学习建议），最后给出*最小依赖链*以便快速动手。","pubDate":"2025-09-25","tags":["AI Agent","LLM","智能体"],"heroImage":"$undefined","content":"$1a"},"next":"$5:props:children:props:children:props:children:2:props:children:props:tagNav:Agentic:next"}}}]}],["$","$L1b",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
