@@ -1,0 +1,677 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="stylesheet" href="/_next/static/css/66b421ed9771e9de.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-42d55485b4428e47.js"/><script src="/_next/static/chunks/4bd1b696-8ec333fca6b38e39.js" async=""></script><script src="/_next/static/chunks/1684-a2aac8a674e5d38c.js" async=""></script><script src="/_next/static/chunks/main-app-2791dc86ed05573e.js" async=""></script><script src="/_next/static/chunks/6874-7791217feaf05c17.js" async=""></script><script src="/_next/static/chunks/app/layout-142e67ac4336647c.js" async=""></script><script src="/_next/static/chunks/968-d7155a2506e36f1d.js" async=""></script><script src="/_next/static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js" async=""></script><meta name="next-size-adjust" content=""/><title>MySQL 索引原理与查询优化：从 B+Tree 到 EXPLAIN 的工程实践 - Skyfalling Blog</title><meta name="description" content="索引不是加了就快的魔法，而是一套需要理解底层数据结构、遵循匹配规则、结合业务场景做判断的工程实践。从磁盘 I/O 的物理约束理解 B+Tree 的设计动机，从最左前缀匹配理解复合索引的使用规则，从 EXPLAIN 的输出理解优化器的真实决策——每一步都是在缩小扫描行数与实际需要行数之间的差距。"/><meta property="og:title" content="MySQL 索引原理与查询优化：从 B+Tree 到 EXPLAIN 的工程实践"/><meta property="og:description" content="索引不是加了就快的魔法，而是一套需要理解底层数据结构、遵循匹配规则、结合业务场景做判断的工程实践。从磁盘 I/O 的物理约束理解 B+Tree 的设计动机，从最左前缀匹配理解复合索引的使用规则，从 EXPLAIN 的输出理解优化器的真实决策——每一步都是在缩小扫描行数与实际需要行数之间的差距。"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-11-25"/><meta property="article:author" content="Skyfalling"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="MySQL 索引原理与查询优化：从 B+Tree 到 EXPLAIN 的工程实践"/><meta name="twitter:description" content="索引不是加了就快的魔法，而是一套需要理解底层数据结构、遵循匹配规则、结合业务场景做判断的工程实践。从磁盘 I/O 的物理约束理解 B+Tree 的设计动机，从最左前缀匹配理解复合索引的使用规则，从 EXPLAIN 的输出理解优化器的真实决策——每一步都是在缩小扫描行数与实际需要行数之间的差距。"/><link rel="shortcut icon" href="/favicon.png"/><link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16"/><link rel="icon" href="/favicon.png"/><link rel="apple-touch-icon" href="/favicon.png"/><script>document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))</script><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__className_f367f3"><div hidden=""><!--$--><!--/$--></div><div class="min-h-screen flex flex-col"><header class="bg-[var(--background)]"><nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global"><div class="flex lg:flex-1"><a class="-m-1.5 p-1.5" href="/"><span class="sr-only">Skyfalling Blog</span><span class="text-2xl font-bold text-gray-900">Skyfalling</span></a></div><div class="flex lg:hidden"><button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"><span class="sr-only">打开主菜单</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg></button></div><div class="hidden lg:flex lg:gap-x-12"><a class="text-base font-semibold leading-6 transition-colors text-gray-900 hover:text-blue-600" href="/">首页</a><a class="text-base font-semibold leading-6 transition-colors text-blue-600 border-b-2 border-blue-600 pb-1" href="/blog/">博客</a><a class="text-base font-semibold leading-6 transition-colors text-gray-900 hover:text-blue-600" href="/about/">关于</a></div><div class="hidden lg:flex lg:flex-1 lg:justify-end"></div></nav></header><main class="flex-1"><article class="min-h-screen"><div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8"><div class="rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12"><header class="mb-8"><nav class="flex items-center gap-1 text-sm mb-4"><a class="text-gray-500 hover:text-blue-600 transition-colors" href="/blog/page/1/">博客</a><span class="text-gray-300">/</span><a class="text-gray-500 hover:text-blue-600 transition-colors" href="/blog/category/engineering/page/1/">Engineering</a><span class="text-gray-300">/</span><a class="text-blue-600 hover:text-blue-700 transition-colors" href="/blog/category/engineering/middleware/page/1/">中间件</a></nav><div class="flex items-center mb-6"><div class="inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal"><svg class="w-4 h-4 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><time dateTime="2025-11-25">2025年11月25日</time></div></div><h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">MySQL 索引原理与查询优化：从 B+Tree 到 EXPLAIN 的工程实践</h1><div class="flex flex-wrap gap-2 mb-6 justify-center"><a class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors" href="/blog/tag/MySQL/page/1/">MySQL</a><a class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors" href="/blog/tag/%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/page/1/">索引优化</a><a class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors" href="/blog/tag/%E6%85%A2%E6%9F%A5%E8%AF%A2/page/1/">慢查询</a><a class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors" href="/blog/tag/%E6%95%B0%E6%8D%AE%E5%BA%93/page/1/">数据库</a></div></header><div class="max-w-5xl mx-auto"><div class="prose prose-lg prose-gray mx-auto max-w-none prose-headings:text-gray-900 prose-headings:font-bold prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700 prose-strong:text-gray-900 prose-strong:font-semibold prose-li:text-gray-700 prose-hr:border-gray-300"><h2>一、为什么需要索引：从磁盘 I/O 说起</h2>
+<p>&quot;给这个查询加个索引就好了。&quot;——这句话说起来简单，但如果不理解索引为什么有效，就无法判断什么时候该加、怎么加、以及加了为什么还是慢。</p>
+<p>答案藏在磁盘里。</p>
+<h3>内存与磁盘：10 万倍的速度鸿沟</h3>
+<p>数据库的数据最终存储在磁盘上。一次磁盘 I/O 的真实耗时：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>耗时</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>寻道（Seek）</td>
+<td>~5ms</td>
+<td>磁头移动到目标磁道</td>
+</tr>
+<tr>
+<td>旋转延迟（Rotation）</td>
+<td>~4.17ms</td>
+<td>7200 RPM 磁盘，平均半圈</td>
+</tr>
+<tr>
+<td>数据传输（Transfer）</td>
+<td>~0.1ms</td>
+<td>读取数据到内存</td>
+</tr>
+<tr>
+<td><strong>总计</strong></td>
+<td><strong>~9ms</strong></td>
+<td>一次随机 I/O 的代价</td>
+</tr>
+</tbody></table>
+<p>9 毫秒看起来不多，但换算到 CPU 视角：一台 500-MIPS 的机器每秒执行 5 亿条指令，9ms 就是 <strong>450 万条指令</strong> 的时间。在 CPU 看来，等一次磁盘 I/O 就像等了一个世纪。</p>
+<p>如果一张百万行的表没有索引，查一条记录需要全表扫描——假设每行读一次磁盘，那就是百万次 I/O。这就是为什么没有索引的查询会慢得不可接受。</p>
+<h3>操作系统的预读优化</h3>
+<p>操作系统做了一个关键优化：<strong>页（Page）预读</strong>。当你从磁盘读取一个字节时，OS 会把这个字节所在的整个页（通常 4KB 或 8KB）一次性加载到内存。读 1 字节和读 4KB 的 I/O 成本是一样的——都是 1 次磁盘 I/O。</p>
+<p>这意味着：<strong>如果一种数据结构能保证每次查询只需要少量的 I/O，并且每次 I/O 都能充分利用页的空间，那它就是高效的索引结构。</strong></p>
+<p>B+Tree 正是为此而设计的。</p>
+<hr>
+<h2>二、B+Tree：为磁盘而生的数据结构</h2>
+<p>为什么不用二叉树、红黑树这些内存中高效的数据结构？</p>
+<p>关键在于<strong>树的高度</strong>。二叉搜索树的高度是 log₂N，100 万条数据需要 20 层。每一层都意味着一次磁盘 I/O——20 次随机 I/O，每次 9ms，一个简单查询就要 180ms。</p>
+<p>B+Tree 的解决思路：<strong>增大每个节点的扇出（fanout），压低树的高度。</strong></p>
+<h3>B+Tree 的三个关键设计决策</h3>
+<pre><code>             [17 | 35]              ← 非叶子节点：只存键值，不存数据
+            /    |    \
+     [8|12]   [26|30]   [60|75]     ← 非叶子节点
+      / | \    / | \     / | \
+  [3,5][9,10][13,15][28,29][36][60][75,79][90,99]  ← 叶子节点：存储实际数据
+   ↔     ↔      ↔      ↔     ↔    ↔      ↔       ← 叶子节点横向链表
+</code></pre>
+<p><strong>决策一：非叶子节点只存键值不存数据。</strong> 这样一个磁盘页（16KB，InnoDB 默认页大小）能放下更多的键值，单节点的扇出可以达到 <strong>1200+</strong>（每个键值 8 字节 + 指针 6 字节，16KB / 14B ≈ 1170）。</p>
+<p><strong>决策二：数据全部下沉到叶子节点。</strong> 不管查什么数据，走过的路径长度是一样的。查询性能稳定可预测。</p>
+<p><strong>决策三：叶子节点之间用双向链表连接。</strong> 范围查询（如 <code>WHERE id BETWEEN 100 AND 200</code>）只需定位到起点，然后顺着链表遍历，不用回到树根。</p>
+<h3>真实数据：22.1GB 表的 B+Tree 长什么样</h3>
+<p>以一张 22.1GB 的 InnoDB 表为例：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>叶子节点容纳量</td>
+<td>~468 行/页</td>
+</tr>
+<tr>
+<td>非叶子节点扇出</td>
+<td>~1200 路</td>
+</tr>
+<tr>
+<td>B+Tree 高度</td>
+<td><strong>3 层</strong></td>
+</tr>
+<tr>
+<td>非叶子节点总内存</td>
+<td><strong>&lt; 18.8MB</strong></td>
+</tr>
+<tr>
+<td>高度 4 层时可容纳</td>
+<td>25.9TB</td>
+</tr>
+</tbody></table>
+<p>3 层 B+Tree 意味着：查找任意一条记录只需 <strong>3 次磁盘 I/O</strong>。而非叶子节点只占 18.8MB，完全可以常驻内存——实际上只有最后一次叶子节点的读取是真正的磁盘 I/O。</p>
+<p>这就是索引高效的根本原因：<strong>将百万次随机 I/O 压缩为 1~3 次。</strong></p>
+<p>高度公式：<code>h = log(m+1)N</code>，其中 m 是每个节点的扇出数，N 是总记录数。扇出越大，高度越低。这也解释了为什么主键用 int（4 字节）比 uuid（36 字节）好——键越短，一个页能放下越多键，扇出越大，树越矮。</p>
+<blockquote>
+<p>关于 B+Tree、B-Tree、LSM-Tree 等存储引擎数据结构的理论细节，参见<a href="/blog/engineering/data-structure/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E6%A0%B8%E5%BF%83%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%9Ab-tree%E5%AE%B6%E6%97%8F%E4%B8%8Elsm-tree%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%9D%83%E8%A1%A1">《存储引擎核心数据结构：B-Tree 家族与 LSM-Tree 的设计权衡》</a>。本文聚焦 MySQL 层面的索引使用和优化。</p>
+</blockquote>
+<hr>
+<h2>三、InnoDB 索引的存储结构</h2>
+<p>理解了 B+Tree 的通用原理后，还需要理解 InnoDB 对 B+Tree 的具体实现方式——它直接决定了&quot;回表&quot;的代价和覆盖索引的价值。</p>
+<h3>聚簇索引 vs 非聚簇索引</h3>
+<p>InnoDB 和 MyISAM 在索引的组织方式上有根本区别：</p>
+<pre><code>MyISAM（非聚簇）：
+  索引文件(.MYI)          数据文件(.MYD)
+  ┌──────────┐           ┌──────────┐
+  │ key → 地址 │  ──→     │  行数据    │
+  └──────────┘           └──────────┘
+  索引和数据分离，索引叶子节点存储数据文件中的物理地址
+
+InnoDB（聚簇）：
+  主键索引(.ibd)
+  ┌─────────────────┐
+  │ primary key → 行数据 │    ← 主键索引的叶子节点就是数据本身
+  └─────────────────┘
+
+  二级索引(.ibd)
+  ┌──────────────────────┐
+  │ index key → primary key │  ← 二级索引的叶子节点存主键值
+  └──────────────────────┘
+</code></pre>
+<p><strong>InnoDB 的聚簇索引</strong>：主键和数据存在一起。主键索引的叶子节点就是完整的行数据。这意味着按主键查找只需一棵 B+Tree。</p>
+<p><strong>InnoDB 的二级索引</strong>：叶子节点存储的不是数据的物理地址，而是主键值。通过二级索引查找时，先在二级索引树中找到主键值，再到主键索引树中找到完整数据——这个过程叫<strong>回表</strong>。</p>
+<h3>回表的代价</h3>
+<p>一次二级索引查询 = <strong>两棵 B+Tree 的查找</strong>。</p>
+<pre><code>SELECT * FROM users WHERE name = &#39;张三&#39;;
+-- 假设 name 上有索引
+
+步骤 1：在 name 索引树中查找 &#39;张三&#39; → 得到主键 id = 42
+步骤 2：在主键索引树中查找 id = 42 → 得到完整行数据（回表）
+</code></pre>
+<p>如果查询返回大量行，每一行都要回表一次，性能会急剧下降。</p>
+<h3>覆盖索引：避免回表</h3>
+<p>如果索引中已经包含了查询需要的所有列，就不需要回表。这就是<strong>覆盖索引（Covering Index）</strong>。</p>
+<pre><code class="language-sql">-- 索引：INDEX idx_name_age (name, age)
+
+-- 需要回表：SELECT * FROM users WHERE name = &#39;张三&#39;
+-- 索引里没有 email、address 等列，必须回表取完整数据
+
+-- 覆盖索引：SELECT name, age FROM users WHERE name = &#39;张三&#39;
+-- 索引里就有 name 和 age，直接返回，不用回表
+-- EXPLAIN 的 Extra 列会显示 &quot;Using index&quot;
+</code></pre>
+<h3>为什么 InnoDB 必须有主键</h3>
+<p>InnoDB 的数据组织方式决定了它必须依赖一个聚簇索引。如果你没有显式定义主键：</p>
+<ol>
+<li>InnoDB 会选择第一个<strong>非空唯一索引</strong>作为聚簇索引</li>
+<li>如果也没有，InnoDB 会自动生成一个 6 字节的隐藏 RowID</li>
+</ol>
+<p>自动生成的 RowID 用户不可见、不可查询，浪费了聚簇索引的优势。<strong>建议总是显式定义自增整型主键</strong>——它既短（扇出大）又有序（插入不会导致页分裂）。</p>
+<hr>
+<h2>四、索引的使用规则</h2>
+<p>建了索引不代表查询一定会用。MySQL 优化器在决定是否使用索引时有一套严格的规则。搞清楚这些规则，才能建出真正有效的索引。</p>
+<h3>4.1 最左前缀匹配（最重要的规则）</h3>
+<p>复合索引 <code>(a, b, c, d)</code> 的匹配遵循<strong>从左到右</strong>的顺序，遇到范围查询（<code>&gt;</code>, <code>&lt;</code>, <code>BETWEEN</code>, <code>LIKE</code>）就停止匹配。</p>
+<pre><code class="language-sql">-- 索引：INDEX idx (a, b, c, d)
+
+WHERE a = 1 AND b = 2 AND c &gt; 3 AND d = 4
+-- 命中：a ✓, b ✓, c ✓（范围）, d ✗（c 之后停止匹配）
+-- 实际使用了 a, b, c 三列
+
+WHERE a = 1 AND b = 2 AND d = 4
+-- 命中：a ✓, b ✓, c 跳过（不在 WHERE 中）, d ✗
+-- 实际使用了 a, b 两列
+
+WHERE b = 2 AND c = 3
+-- 命中：a 缺失 → 整个索引不可用 ✗
+-- 没有最左列 a，无法使用这个索引
+</code></pre>
+<p><strong>优化技巧</strong>：如果某列在 WHERE 中是范围条件，把它放到复合索引的最后面。</p>
+<pre><code class="language-sql">-- 查询：WHERE a = 1 AND b = 2 AND c &gt; 3 AND d = 4
+
+-- 差索引：INDEX (a, b, c, d) → 只用 a, b, c
+-- 好索引：INDEX (a, b, d, c) → 用到 a, b, d, c 四列全命中
+</code></pre>
+<h3>4.2 选择性（Selectivity）</h3>
+<p>选择性衡量一个列能过滤掉多少数据：</p>
+<pre><code>选择性 = COUNT(DISTINCT col) / COUNT(*)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>选择性</th>
+<th>含义</th>
+<th>建索引价值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&gt; 0.1</td>
+<td>每 10 行中有 1 个不同值</td>
+<td>高，适合建索引</td>
+</tr>
+<tr>
+<td>0.01 ~ 0.1</td>
+<td>重复较多</td>
+<td>取决于实际数据分布</td>
+</tr>
+<tr>
+<td>&lt; 0.01</td>
+<td>高度重复（如 status: 0/1/2）</td>
+<td>通常不适合，但有例外</td>
+</tr>
+</tbody></table>
+<p><strong>反直觉案例：低选择性也可能有效。</strong> 如果一个 status 字段只有 3 个值（-1, 0, 1），但业务上 99.9% 的记录是 status=1，你要查的恰好是 status=0 的那一小批——索引的效果取决于你要查的值的分布，而不是列整体的选择性。</p>
+<blockquote>
+<p><strong>关键洞察</strong>：选择性公式给出的是统计平均，但实际查询命中的是具体值的分布。对于数据分布极度不均匀的列，需要结合业务场景判断。</p>
+</blockquote>
+<h3>4.3 五条工程戒律</h3>
+<p><strong>① 不要在索引列上做计算或函数调用</strong></p>
+<pre><code class="language-sql">-- ✗ 不走索引：函数包裹了索引列
+WHERE FROM_UNIXTIME(create_time) = &#39;2024-05-29&#39;
+WHERE YEAR(created_date) = 2024
+
+-- ✓ 走索引：把计算移到值一侧
+WHERE create_time = UNIX_TIMESTAMP(&#39;2024-05-29&#39;)
+WHERE created_date &gt;= &#39;2024-01-01&#39; AND created_date &lt; &#39;2025-01-01&#39;
+</code></pre>
+<p>原因：对索引列施加函数后，B+Tree 无法利用键值的有序性。</p>
+<p><strong>② = 和 IN 的顺序不影响索引使用</strong></p>
+<pre><code class="language-sql">-- 以下两种写法等价，优化器会自动重排
+WHERE a = 1 AND b = 2 AND c = 3
+WHERE c = 3 AND a = 1 AND b = 2
+</code></pre>
+<p><strong>③ 扩展已有索引，而非新建</strong></p>
+<pre><code class="language-sql">-- 已有索引：INDEX idx_a (a)
+-- 现在需要查 WHERE a = ? AND b = ?
+
+-- ✗ 新建：INDEX idx_ab (a, b)  → 现在有两个索引，浪费空间且写入变慢
+-- ✓ 扩展：把 idx_a 改为 INDEX idx_ab (a, b)  → idx_ab 同时覆盖单列查询
+</code></pre>
+<p><strong>④ 尽量用覆盖索引减少回表</strong></p>
+<p>如果查询只需要少量列，把这些列都放进索引里，避免回表。</p>
+<p><strong>⑤ 复合索引中选择性高的列放前面</strong></p>
+<p>选择性高的列放前面，能更快地缩小候选集。但这条规则要让位于最左前缀匹配——如果查询条件固定，优先保证查询能命中索引。</p>
+<hr>
+<h2>五、EXPLAIN：读懂优化器的决策</h2>
+<p>索引建好了，查询到底用没用、怎么用？EXPLAIN 是唯一的答案。</p>
+<pre><code class="language-sql">EXPLAIN SELECT * FROM users WHERE name = &#39;张三&#39; AND age &gt; 20;
+</code></pre>
+<h3>核心字段解读</h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>含义</th>
+<th>关注点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>type</strong></td>
+<td>访问类型</td>
+<td>从好到差：system &gt; const &gt; eq_ref &gt; ref &gt; range &gt; index &gt; ALL</td>
+</tr>
+<tr>
+<td><strong>key</strong></td>
+<td>实际使用的索引</td>
+<td>NULL 表示没走索引</td>
+</tr>
+<tr>
+<td><strong>rows</strong></td>
+<td>预估扫描行数</td>
+<td><strong>最关键指标</strong>，越接近结果行数越好</td>
+</tr>
+<tr>
+<td><strong>Extra</strong></td>
+<td>附加信息</td>
+<td>关注 Using index / Using filesort / Using temporary</td>
+</tr>
+</tbody></table>
+<h3>type 等级详解</h3>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>含义</th>
+<th>触发条件</th>
+<th>性能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>const</td>
+<td>通过主键或唯一索引定位一行</td>
+<td><code>WHERE id = 1</code></td>
+<td>极快</td>
+</tr>
+<tr>
+<td>eq_ref</td>
+<td>JOIN 时被驱动表主键等值匹配</td>
+<td><code>JOIN ON a.id = b.id</code></td>
+<td>极快</td>
+</tr>
+<tr>
+<td>ref</td>
+<td>非唯一索引等值匹配</td>
+<td><code>WHERE name = &#39;张三&#39;</code></td>
+<td>快</td>
+</tr>
+<tr>
+<td>range</td>
+<td>索引范围扫描</td>
+<td><code>WHERE id &gt; 100</code> / <code>WHERE id IN (1,2,3)</code></td>
+<td>较快</td>
+</tr>
+<tr>
+<td>index</td>
+<td>全索引扫描</td>
+<td>覆盖索引但无 WHERE 条件</td>
+<td>一般</td>
+</tr>
+<tr>
+<td>ALL</td>
+<td>全表扫描</td>
+<td>无可用索引</td>
+<td>最慢</td>
+</tr>
+</tbody></table>
+<h3>Extra 中的关键信号</h3>
+<table>
+<thead>
+<tr>
+<th>Extra</th>
+<th>含义</th>
+<th>是否需要优化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Using index</td>
+<td>覆盖索引，无需回表</td>
+<td>好，不用动</td>
+</tr>
+<tr>
+<td>Using where</td>
+<td>在存储引擎返回数据后由 Server 层过滤</td>
+<td>看情况</td>
+</tr>
+<tr>
+<td>Using filesort</td>
+<td>无法利用索引排序，需额外排序</td>
+<td>通常需要优化</td>
+</tr>
+<tr>
+<td>Using temporary</td>
+<td>需要创建临时表（常见于 GROUP BY）</td>
+<td>需要优化</td>
+</tr>
+</tbody></table>
+<p><strong>实战口诀</strong>：</p>
+<ul>
+<li>看到 <code>ALL</code> → 考虑加索引</li>
+<li>看到 <code>Using filesort</code> → 检查 ORDER BY 是否能走索引</li>
+<li>看到 <code>Using temporary</code> → 检查 GROUP BY 是否能走索引</li>
+<li><code>rows</code> 远大于实际结果行数 → 索引选择性不够或索引列不对</li>
+</ul>
+<hr>
+<h2>六、ORDER BY 与 GROUP BY 的索引优化</h2>
+<p>排序和分组是慢查询的常见元凶。MySQL 能利用索引的有序性避免额外排序（filesort），但条件很严格。</p>
+<h3>6.1 ORDER BY 能走索引的条件</h3>
+<pre><code class="language-sql">-- 场景一：纯 ORDER BY
+-- 索引 (sort_col)
+SELECT * FROM t ORDER BY sort_col;       -- ✓ 走索引
+
+-- 场景二：WHERE + ORDER BY
+-- 索引 (col_a, sort_col)
+SELECT * FROM t WHERE col_a = 1 ORDER BY sort_col;  -- ✓ 走索引
+
+-- 场景三：多列排序
+-- 索引 (uid, x, y)
+SELECT * FROM t WHERE uid = 1 ORDER BY x, y LIMIT 10;  -- ✓ 走索引
+</code></pre>
+<p>关键原则：<strong>WHERE 条件列和 ORDER BY 列必须在同一个复合索引中，且满足最左前缀。</strong></p>
+<h3>6.2 ORDER BY 不能走索引的五种情况</h3>
+<pre><code class="language-sql">-- ① 排序列来自不同索引
+-- 有 INDEX(key1) 和 INDEX(key2)
+ORDER BY key1, key2          -- ✗ 两个索引无法合并排序
+
+-- ② 跳过了复合索引的中间列
+-- INDEX(key_part1, key_part2)
+WHERE key_part1 = 1
+ORDER BY key_part2            -- ✓ 连续的
+
+WHERE other_col = 1
+ORDER BY key_part2            -- ✗ key_part1 缺失
+
+-- ③ ASC 和 DESC 混用
+-- INDEX(a, b)
+ORDER BY a ASC, b DESC       -- ✗ 方向不一致（MySQL 8.0 之前）
+
+-- ④ WHERE 和 ORDER BY 用了不同索引的列
+-- INDEX(key1), INDEX(key2)
+WHERE key1 = 1 ORDER BY key2 -- ✗ 走 key1 索引做过滤，但无法用它排序 key2
+
+-- ⑤ 排序列上有函数
+ORDER BY YEAR(login_date)     -- ✗ 函数破坏了索引有序性
+</code></pre>
+<h3>6.3 GROUP BY + Top-N 查询模式</h3>
+<p>&quot;每个分组取前 N 条&quot;是常见的业务需求。几种实现方式的对比：</p>
+<p><strong>方案一：子查询 + MAX（推荐）</strong></p>
+<pre><code class="language-sql">-- 每组取最大值
+SELECT a.* FROM tb a
+WHERE val = (SELECT MAX(val) FROM tb WHERE name = a.name)
+ORDER BY a.name;
+</code></pre>
+<p><strong>方案二：INNER JOIN + GROUP BY（推荐）</strong></p>
+<pre><code class="language-sql">SELECT a.* FROM tb a
+INNER JOIN (SELECT name, MAX(val) val FROM tb GROUP BY name) b
+ON a.name = b.name AND a.val = b.val
+ORDER BY a.name;
+</code></pre>
+<p><strong>方案三：窗口函数（MySQL 8.0+，最简洁）</strong></p>
+<pre><code class="language-sql">-- ROW_NUMBER：严格排名，不并列
+SELECT * FROM (
+    SELECT *, ROW_NUMBER() OVER (PARTITION BY subject ORDER BY score DESC) rn
+    FROM tb_score
+) t WHERE rn &lt;= 3;
+
+-- DENSE_RANK：允许并列，无间隔
+SELECT * FROM (
+    SELECT *, DENSE_RANK() OVER (PARTITION BY subject ORDER BY score DESC) rk
+    FROM tb_score
+) t WHERE rk &lt;= 3;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>处理并列</th>
+<th>示例：分数 92, 92, 88</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ROW_NUMBER</td>
+<td>不并列</td>
+<td>1, 2, 3</td>
+</tr>
+<tr>
+<td>RANK</td>
+<td>并列，有间隔</td>
+<td>1, 1, 3</td>
+</tr>
+<tr>
+<td>DENSE_RANK</td>
+<td>并列，无间隔</td>
+<td>1, 1, 2</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、慢查询优化实战</h2>
+<p>理论讲完了，以下三个真实案例覆盖了慢查询优化中最常见的思路和最重要的教训。</p>
+<h3>优化前的必要步骤</h3>
+<pre><code class="language-sql">-- 排除查询缓存的干扰
+SELECT SQL_NO_CACHE * FROM ...;
+</code></pre>
+<h3>7.1 案例一：JOIN 重构——从 1.87s 到 10ms</h3>
+<p><strong>原始查询</strong>：查找最近一段时间内有更新的员工。</p>
+<pre><code class="language-sql">SELECT DISTINCT cert.emp_id
+FROM cm_log cl
+INNER JOIN (
+    SELECT emp.id emp_id, emp_cert.id cert_id
+    FROM employee emp
+    LEFT JOIN emp_certificate emp_cert ON emp.id = emp_cert.emp_id
+    WHERE emp.is_deleted = 0
+) cert
+ON (cl.ref_table = &#39;Employee&#39; AND cl.ref_oid = cert.emp_id)
+   OR (cl.ref_table = &#39;EmpCertificate&#39; AND cl.ref_oid = cert.cert_id)
+WHERE cl.last_upd_date &gt;= &#39;2013-11-07 15:03:00&#39;
+  AND cl.last_upd_date &lt;= &#39;2013-11-08 16:00:00&#39;;
+</code></pre>
+<p><strong>问题诊断</strong>：</p>
+<ul>
+<li>结果：53 条记录，耗时 <strong>1.87 秒</strong></li>
+<li>EXPLAIN 显示：cm_log 用 <code>idx_last_upd_date</code> 过滤后只有 <strong>379 行</strong></li>
+<li>但 JOIN 的派生表（cert）返回 <strong>63,727 行</strong></li>
+<li>379 × 63,727 ≈ 2,400 万次比较，绝大多数是无用功</li>
+</ul>
+<p><strong>根因</strong>：OR 连接两种关联条件导致无法走索引 JOIN，退化为笛卡尔积。</p>
+<p><strong>优化方案</strong>：拆成两条查询 + UNION，让小表 cm_log 先过滤。</p>
+<pre><code class="language-sql">SELECT emp.id FROM cm_log cl
+INNER JOIN employee emp
+    ON cl.ref_table = &#39;Employee&#39; AND cl.ref_oid = emp.id
+WHERE cl.last_upd_date &gt;= &#39;2013-11-07 15:03:00&#39;
+  AND cl.last_upd_date &lt;= &#39;2013-11-08 16:00:00&#39;
+  AND emp.is_deleted = 0
+
+UNION
+
+SELECT emp.id FROM cm_log cl
+INNER JOIN emp_certificate ec
+    ON cl.ref_table = &#39;EmpCertificate&#39; AND cl.ref_oid = ec.id
+INNER JOIN employee emp ON emp.id = ec.emp_id
+WHERE cl.last_upd_date &gt;= &#39;2013-11-07 15:03:00&#39;
+  AND cl.last_upd_date &lt;= &#39;2013-11-08 16:00:00&#39;
+  AND emp.is_deleted = 0;
+</code></pre>
+<p><strong>结果</strong>：<strong>10ms</strong>，提升 <strong>187 倍</strong>。</p>
+<p><strong>教训</strong>：JOIN 中的 OR 条件几乎总是性能杀手。拆成 UNION 让每个分支都能走索引。</p>
+<hr>
+<h3>7.2 案例二：低选择性索引——从 6.22s 到 200ms</h3>
+<p><strong>原始查询</strong>：查找待同步的 POI 数据。</p>
+<pre><code class="language-sql">SELECT * FROM stage_poi sp
+WHERE sp.accurate_result = 1
+  AND sp.sync_status IN (0, 2, 4);
+</code></pre>
+<p><strong>问题诊断</strong>：</p>
+<ul>
+<li>结果：951 条记录，耗时 <strong>6.22 秒</strong></li>
+<li>EXPLAIN：type = ALL，全表扫描 <strong>361 万行</strong></li>
+<li>两个字段的选择性都极低：<ul>
+<li><code>accurate_result</code>：只有 -1, 0, 1 三个值</li>
+<li><code>sync_status</code>：只有 0, 1, 2, 3, 4 五个值</li>
+</ul>
+</li>
+</ul>
+<p>按常规判断，这两列的选择性太差，不适合建索引。</p>
+<p><strong>转折点：理解业务上下文。</strong></p>
+<p>这是一个数据同步任务，每 5 分钟执行一次：</p>
+<ul>
+<li>处理状态为 0/2/4 的记录（待同步）</li>
+<li>处理完毕后将状态改为 1（已同步）</li>
+<li><strong>在任意时刻，待同步的数据不超过 1000 条</strong>，其余 360 万条都是 status=1</li>
+</ul>
+<p>也就是说，虽然 sync_status 只有 5 个值，但 <strong>你要查的值的数据量只占 0.03%</strong>。</p>
+<p><strong>优化方案</strong>：</p>
+<pre><code class="language-sql">ALTER TABLE stage_poi ADD INDEX idx_acc_status(accurate_result, sync_status);
+</code></pre>
+<p><strong>结果</strong>：<strong>200ms</strong>，提升 <strong>31 倍</strong>。</p>
+<p><strong>教训</strong>：数据分布比选择性统计更重要。在数据严重倾斜的场景下，低选择性的列也能从索引中获益。</p>
+<hr>
+<h3>7.3 案例三：不可优化的查询——13s 且无解</h3>
+<p><strong>原始查询</strong>：分页查询联系人。</p>
+<pre><code class="language-sql">SELECT c.id, c.name, c.position, c.sex, c.phone, ...
+FROM contact c
+INNER JOIN contact_branch cb ON c.id = cb.contact_id
+INNER JOIN branch_user bu ON cb.branch_id = bu.branch_id
+INNER JOIN org_emp_info oei ON oei.data_id = bu.user_id
+WHERE bu.status IN (&#39;0&#39;, &#39;1&#39;)
+  AND oei.node_left = 2875 AND oei.node_right = 10802
+  AND oei.org_category = -1
+ORDER BY c.created_time
+LIMIT 0, 10;
+</code></pre>
+<p><strong>问题诊断</strong>：</p>
+<ul>
+<li>结果：10 条记录，耗时 <strong>13.06 秒</strong></li>
+<li>单表索引都没问题，JOIN 行数也合理</li>
+<li>但 JOIN 结果有 <strong>77.8 万行</strong>，然后对这 77.8 万行排序取前 10 条</li>
+</ul>
+<p><strong>尝试优化</strong>：改写为 EXISTS 子查询。</p>
+<pre><code class="language-sql">SELECT c.id, c.name, ...
+FROM contact c
+WHERE EXISTS (
+    SELECT 1 FROM contact_branch cb
+    INNER JOIN branch_user bu ON cb.branch_id = bu.branch_id
+    INNER JOIN org_emp_info oei ON oei.data_id = bu.user_id
+    WHERE c.id = cb.contact_id
+      AND bu.status IN (&#39;0&#39;, &#39;1&#39;)
+      AND oei.node_left = 2875 AND oei.node_right = 10802
+      AND oei.org_category = -1
+)
+ORDER BY c.created_time LIMIT 0, 10;
+</code></pre>
+<p><strong>结果</strong>：在当前参数下 <strong>0ms</strong>。但换一组参数（匹配 0 行的情况），查询耗时 <strong>218 秒</strong>。</p>
+<p><strong>根因</strong>：MySQL 的嵌套循环 + LIMIT 策略在匹配率极低时退化——每次从 contact 表取 10 行，去子查询里匹配，没匹配到就取下一批 10 行，直到遍历整张表。</p>
+<p><strong>最终结论</strong>：<strong>不是所有慢查询都能在 SQL 层面解决。</strong> 当 JOIN 结果集巨大且排序字段不在过滤条件中时，需要在应用层寻找出路——比如预计算排序、异步分页、或改变产品交互方式。</p>
+<hr>
+<h2>八、分页查询优化</h2>
+<p>深度分页是一个高频性能问题。<code>LIMIT 100000, 20</code> 看起来只取 20 条，实际上 MySQL 需要扫描前 100,020 行，丢弃前 100,000 行。</p>
+<h3>四种优化方案</h3>
+<p><strong>方案一：基于主键翻页（最推荐）</strong></p>
+<pre><code class="language-sql">-- 前端传入上一页最后一条记录的 id
+SELECT * FROM users WHERE id &gt; 456891 ORDER BY id LIMIT 20;
+-- 无论&quot;第几页&quot;，永远只扫描 20 行
+</code></pre>
+<p>限制：只能&quot;下一页&quot;，不能跳页。适合瀑布流、无限滚动。</p>
+<p><strong>方案二：子查询定位起点</strong></p>
+<pre><code class="language-sql">SELECT * FROM users
+WHERE id &gt;= (SELECT id FROM users ORDER BY id LIMIT 100000, 1)
+ORDER BY id LIMIT 20;
+-- 子查询走覆盖索引（只查 id），速度快
+-- 外层查询从定位点开始，只扫描 20 行
+</code></pre>
+<p><strong>方案三：反向查询</strong></p>
+<pre><code class="language-sql">-- 如果总共 160 万行，要取 LIMIT 1200000, 20（偏移 75%）
+-- 反向查询：ORDER BY id DESC LIMIT 400000, 20（偏移 25%）
+-- 扫描量从 120 万降到 40 万
+</code></pre>
+<p>适用：偏移量超过总量 50% 时。</p>
+<p><strong>方案四：延迟关联</strong></p>
+<pre><code class="language-sql">-- 先查主键列表（走覆盖索引，无回表）
+SELECT a.* FROM users a
+INNER JOIN (SELECT id FROM users ORDER BY id LIMIT 100000, 20) b
+ON a.id = b.id;
+</code></pre>
+<p>子查询只在索引上操作，外层 JOIN 只回表 20 行。</p>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>扫描行数</th>
+<th>可跳页</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基于主键翻页</td>
+<td>约等于 pageSize</td>
+<td>不可以</td>
+<td>瀑布流、列表翻页</td>
+</tr>
+<tr>
+<td>子查询定位</td>
+<td>索引扫描 + pageSize</td>
+<td>可以</td>
+<td>通用分页</td>
+</tr>
+<tr>
+<td>反向查询</td>
+<td>减半</td>
+<td>可以</td>
+<td>偏移超过 50%</td>
+</tr>
+<tr>
+<td>延迟关联</td>
+<td>索引扫描 + pageSize</td>
+<td>可以</td>
+<td>需回表的分页</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>九、索引设计决策指南</h2>
+<h3>该不该建索引</h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>建议</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>WHERE 条件中的等值查询列</td>
+<td>建</td>
+<td>直接命中</td>
+</tr>
+<tr>
+<td>WHERE 条件中的范围查询列</td>
+<td>建（放复合索引最后）</td>
+<td>范围查询后的列不会被使用</td>
+</tr>
+<tr>
+<td>JOIN 关联字段</td>
+<td>必须建</td>
+<td>否则每次 JOIN 都全表扫描</td>
+</tr>
+<tr>
+<td>ORDER BY 字段</td>
+<td>考虑和 WHERE 列组成复合索引</td>
+<td>避免 filesort</td>
+</tr>
+<tr>
+<td>高频查询但选择性低的列</td>
+<td>看数据分布</td>
+<td>统计选择性不等于实际过滤效果</td>
+</tr>
+<tr>
+<td>很少出现在 WHERE 中的列</td>
+<td>不建</td>
+<td>索引的写入代价大于查询收益</td>
+</tr>
+</tbody></table>
+<h3>索引过多的代价</h3>
+<p>索引不是免费的。每多一个索引：</p>
+<ul>
+<li>每次 INSERT 需要额外维护一棵 B+Tree（写入变慢）</li>
+<li>每次 UPDATE 涉及索引列时需要更新索引</li>
+<li>每个索引都占磁盘空间</li>
+<li>索引太多时优化器可能选错索引（需要 <code>FORCE INDEX</code> 纠正）</li>
+</ul>
+<p><strong>经验法则</strong>：单表索引数量建议不超过 5~6 个。优先使用复合索引覆盖多种查询，而非为每个查询建单独的索引。</p>
+<h3>核心原则</h3>
+<blockquote>
+<p><strong>索引优化的本质，是让 EXPLAIN 中的 <code>rows</code> 尽可能接近查询的实际结果行数。</strong> 扫描的行数和返回的行数之间的差距，就是浪费的 I/O。</p>
+</blockquote>
+</div></div><!--$!--><template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template><div class="mt-12 pt-8 border-t border-gray-200">加载导航中...</div><!--/$--><div class="mt-16 border-t border-gray-200 pt-8"><div class="mx-auto max-w-3xl"><h3 class="text-2xl font-bold text-gray-900 mb-8">评论</h3></div></div></div></div></article><!--$--><!--/$--></main><footer class="bg-[var(--background)]"><div class="mx-auto max-w-7xl px-6 py-12 lg:px-8"><p class="text-center text-xs leading-5 text-gray-400">© <!-- -->2026<!-- --> Skyfalling</p></div></footer></div><script src="/_next/static/chunks/webpack-42d55485b4428e47.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[10616,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"7177\",\"static/chunks/app/layout-142e67ac4336647c.js\"],\"default\"]\n3:I[87555,[],\"\"]\n4:I[31295,[],\"\"]\n6:I[59665,[],\"OutletBoundary\"]\n9:I[74911,[],\"AsyncMetadataOutlet\"]\nb:I[59665,[],\"ViewportBoundary\"]\nd:I[59665,[],\"MetadataBoundary\"]\nf:I[26614,[],\"\"]\n:HL[\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/66b421ed9771e9de.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"C33gYo3klV3feVWcJcf5W\",\"p\":\"\",\"c\":[\"\",\"blog\",\"engineering\",\"middleware\",\"MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%EF%BC%9A%E4%BB%8EB%2BTree%E5%88%B0EXPLAIN%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"blog\",{\"children\":[[\"slug\",\"engineering/middleware/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%EF%BC%9A%E4%BB%8EB%2BTree%E5%88%B0EXPLAIN%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5\",\"c\"],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/66b421ed9771e9de.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"zh-CN\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_f367f3\",\"children\":[\"$\",\"div\",null,{\"className\":\"min-h-screen flex flex-col\",\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"main\",null,{\"className\":\"flex-1\",\"children\":[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"bg-[var(--background)]\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-7xl px-6 py-12 lg:px-8\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-center text-xs leading-5 text-gray-400\",\"children\":[\"© \",2026,\" Skyfalling\"]}]}]}]]}]}]}]]}],{\"children\":[\"blog\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"slug\",\"engineering/middleware/MySQL%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%EF%BC%9A%E4%BB%8EB%2BTree%E5%88%B0EXPLAIN%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5\",\"c\"],[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[\"$L5\",null,[\"$\",\"$L6\",null,{\"children\":[\"$L7\",\"$L8\",[\"$\",\"$L9\",null,{\"promise\":\"$@a\"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"WYwnq71C6CA_HNKiKY6Sov\",{\"children\":[[\"$\",\"$Lb\",null,{\"children\":\"$Lc\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],[\"$\",\"$Ld\",null,{\"children\":\"$Le\"}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$f\",\"$undefined\"],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"10:\"$Sreact.suspense\"\n11:I[74911,[],\"AsyncMetadata\"]\n13:I[6874,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"968\",\"static/chunks/968-d7155a2506e36f1d.js\",\"6909\",\"static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js\"],\"\"]\n14:I[32923,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"968\",\"static/chunks/968-d7155a2506e36f1d.js\",\"6909\",\"static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js\"],\"default\"]\n16:I[40780,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"968\",\"static/chunks/968-d7155a2506e36f1d.js\",\"6909\",\"static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js\"],\"default\"]\n19:I[85300,[\"6874\",\"static/chunks/6874-7791217feaf05c17.js\",\"968\",\"static/chunks/968-d7155a2506e36f1d.js\",\"6909\",\"static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js\"],\"default\"]\ne:[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$10\",null,{\"fallback\":null,\"children\":[\"$\",\"$L11\",null,{\"promise\":\"$@12\"}]}]}]\n15:T6f06,"])</script><script>self.__next_f.push([1,"\u003ch2\u003e一、为什么需要索引：从磁盘 I/O 说起\u003c/h2\u003e\n\u003cp\u003e\u0026quot;给这个查询加个索引就好了。\u0026quot;——这句话说起来简单，但如果不理解索引为什么有效，就无法判断什么时候该加、怎么加、以及加了为什么还是慢。\u003c/p\u003e\n\u003cp\u003e答案藏在磁盘里。\u003c/p\u003e\n\u003ch3\u003e内存与磁盘：10 万倍的速度鸿沟\u003c/h3\u003e\n\u003cp\u003e数据库的数据最终存储在磁盘上。一次磁盘 I/O 的真实耗时：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e阶段\u003c/th\u003e\n\u003cth\u003e耗时\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e寻道（Seek）\u003c/td\u003e\n\u003ctd\u003e~5ms\u003c/td\u003e\n\u003ctd\u003e磁头移动到目标磁道\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e旋转延迟（Rotation）\u003c/td\u003e\n\u003ctd\u003e~4.17ms\u003c/td\u003e\n\u003ctd\u003e7200 RPM 磁盘，平均半圈\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e数据传输（Transfer）\u003c/td\u003e\n\u003ctd\u003e~0.1ms\u003c/td\u003e\n\u003ctd\u003e读取数据到内存\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e总计\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e~9ms\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e一次随机 I/O 的代价\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e9 毫秒看起来不多，但换算到 CPU 视角：一台 500-MIPS 的机器每秒执行 5 亿条指令，9ms 就是 \u003cstrong\u003e450 万条指令\u003c/strong\u003e 的时间。在 CPU 看来，等一次磁盘 I/O 就像等了一个世纪。\u003c/p\u003e\n\u003cp\u003e如果一张百万行的表没有索引，查一条记录需要全表扫描——假设每行读一次磁盘，那就是百万次 I/O。这就是为什么没有索引的查询会慢得不可接受。\u003c/p\u003e\n\u003ch3\u003e操作系统的预读优化\u003c/h3\u003e\n\u003cp\u003e操作系统做了一个关键优化：\u003cstrong\u003e页（Page）预读\u003c/strong\u003e。当你从磁盘读取一个字节时，OS 会把这个字节所在的整个页（通常 4KB 或 8KB）一次性加载到内存。读 1 字节和读 4KB 的 I/O 成本是一样的——都是 1 次磁盘 I/O。\u003c/p\u003e\n\u003cp\u003e这意味着：\u003cstrong\u003e如果一种数据结构能保证每次查询只需要少量的 I/O，并且每次 I/O 都能充分利用页的空间，那它就是高效的索引结构。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eB+Tree 正是为此而设计的。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e二、B+Tree：为磁盘而生的数据结构\u003c/h2\u003e\n\u003cp\u003e为什么不用二叉树、红黑树这些内存中高效的数据结构？\u003c/p\u003e\n\u003cp\u003e关键在于\u003cstrong\u003e树的高度\u003c/strong\u003e。二叉搜索树的高度是 log₂N，100 万条数据需要 20 层。每一层都意味着一次磁盘 I/O——20 次随机 I/O，每次 9ms，一个简单查询就要 180ms。\u003c/p\u003e\n\u003cp\u003eB+Tree 的解决思路：\u003cstrong\u003e增大每个节点的扇出（fanout），压低树的高度。\u003c/strong\u003e\u003c/p\u003e\n\u003ch3\u003eB+Tree 的三个关键设计决策\u003c/h3\u003e\n\u003cpre\u003e\u003ccode\u003e             [17 | 35]              ← 非叶子节点：只存键值，不存数据\n            /    |    \\\n     [8|12]   [26|30]   [60|75]     ← 非叶子节点\n      / | \\    / | \\     / | \\\n  [3,5][9,10][13,15][28,29][36][60][75,79][90,99]  ← 叶子节点：存储实际数据\n   ↔     ↔      ↔      ↔     ↔    ↔      ↔       ← 叶子节点横向链表\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e决策一：非叶子节点只存键值不存数据。\u003c/strong\u003e 这样一个磁盘页（16KB，InnoDB 默认页大小）能放下更多的键值，单节点的扇出可以达到 \u003cstrong\u003e1200+\u003c/strong\u003e（每个键值 8 字节 + 指针 6 字节，16KB / 14B ≈ 1170）。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e决策二：数据全部下沉到叶子节点。\u003c/strong\u003e 不管查什么数据，走过的路径长度是一样的。查询性能稳定可预测。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e决策三：叶子节点之间用双向链表连接。\u003c/strong\u003e 范围查询（如 \u003ccode\u003eWHERE id BETWEEN 100 AND 200\u003c/code\u003e）只需定位到起点，然后顺着链表遍历，不用回到树根。\u003c/p\u003e\n\u003ch3\u003e真实数据：22.1GB 表的 B+Tree 长什么样\u003c/h3\u003e\n\u003cp\u003e以一张 22.1GB 的 InnoDB 表为例：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e指标\u003c/th\u003e\n\u003cth\u003e数据\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e叶子节点容纳量\u003c/td\u003e\n\u003ctd\u003e~468 行/页\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e非叶子节点扇出\u003c/td\u003e\n\u003ctd\u003e~1200 路\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eB+Tree 高度\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e3 层\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e非叶子节点总内存\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e\u0026lt; 18.8MB\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e高度 4 层时可容纳\u003c/td\u003e\n\u003ctd\u003e25.9TB\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e3 层 B+Tree 意味着：查找任意一条记录只需 \u003cstrong\u003e3 次磁盘 I/O\u003c/strong\u003e。而非叶子节点只占 18.8MB，完全可以常驻内存——实际上只有最后一次叶子节点的读取是真正的磁盘 I/O。\u003c/p\u003e\n\u003cp\u003e这就是索引高效的根本原因：\u003cstrong\u003e将百万次随机 I/O 压缩为 1~3 次。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e高度公式：\u003ccode\u003eh = log(m+1)N\u003c/code\u003e，其中 m 是每个节点的扇出数，N 是总记录数。扇出越大，高度越低。这也解释了为什么主键用 int（4 字节）比 uuid（36 字节）好——键越短，一个页能放下越多键，扇出越大，树越矮。\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e关于 B+Tree、B-Tree、LSM-Tree 等存储引擎数据结构的理论细节，参见\u003ca href=\"/blog/engineering/data-structure/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E6%A0%B8%E5%BF%83%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%9Ab-tree%E5%AE%B6%E6%97%8F%E4%B8%8Elsm-tree%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%9D%83%E8%A1%A1\"\u003e《存储引擎核心数据结构：B-Tree 家族与 LSM-Tree 的设计权衡》\u003c/a\u003e。本文聚焦 MySQL 层面的索引使用和优化。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003chr\u003e\n\u003ch2\u003e三、InnoDB 索引的存储结构\u003c/h2\u003e\n\u003cp\u003e理解了 B+Tree 的通用原理后，还需要理解 InnoDB 对 B+Tree 的具体实现方式——它直接决定了\u0026quot;回表\u0026quot;的代价和覆盖索引的价值。\u003c/p\u003e\n\u003ch3\u003e聚簇索引 vs 非聚簇索引\u003c/h3\u003e\n\u003cp\u003eInnoDB 和 MyISAM 在索引的组织方式上有根本区别：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eMyISAM（非聚簇）：\n  索引文件(.MYI)          数据文件(.MYD)\n  ┌──────────┐           ┌──────────┐\n  │ key → 地址 │  ──→     │  行数据    │\n  └──────────┘           └──────────┘\n  索引和数据分离，索引叶子节点存储数据文件中的物理地址\n\nInnoDB（聚簇）：\n  主键索引(.ibd)\n  ┌─────────────────┐\n  │ primary key → 行数据 │    ← 主键索引的叶子节点就是数据本身\n  └─────────────────┘\n\n  二级索引(.ibd)\n  ┌──────────────────────┐\n  │ index key → primary key │  ← 二级索引的叶子节点存主键值\n  └──────────────────────┘\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eInnoDB 的聚簇索引\u003c/strong\u003e：主键和数据存在一起。主键索引的叶子节点就是完整的行数据。这意味着按主键查找只需一棵 B+Tree。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eInnoDB 的二级索引\u003c/strong\u003e：叶子节点存储的不是数据的物理地址，而是主键值。通过二级索引查找时，先在二级索引树中找到主键值，再到主键索引树中找到完整数据——这个过程叫\u003cstrong\u003e回表\u003c/strong\u003e。\u003c/p\u003e\n\u003ch3\u003e回表的代价\u003c/h3\u003e\n\u003cp\u003e一次二级索引查询 = \u003cstrong\u003e两棵 B+Tree 的查找\u003c/strong\u003e。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSELECT * FROM users WHERE name = \u0026#39;张三\u0026#39;;\n-- 假设 name 上有索引\n\n步骤 1：在 name 索引树中查找 \u0026#39;张三\u0026#39; → 得到主键 id = 42\n步骤 2：在主键索引树中查找 id = 42 → 得到完整行数据（回表）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e如果查询返回大量行，每一行都要回表一次，性能会急剧下降。\u003c/p\u003e\n\u003ch3\u003e覆盖索引：避免回表\u003c/h3\u003e\n\u003cp\u003e如果索引中已经包含了查询需要的所有列，就不需要回表。这就是\u003cstrong\u003e覆盖索引（Covering Index）\u003c/strong\u003e。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 索引：INDEX idx_name_age (name, age)\n\n-- 需要回表：SELECT * FROM users WHERE name = \u0026#39;张三\u0026#39;\n-- 索引里没有 email、address 等列，必须回表取完整数据\n\n-- 覆盖索引：SELECT name, age FROM users WHERE name = \u0026#39;张三\u0026#39;\n-- 索引里就有 name 和 age，直接返回，不用回表\n-- EXPLAIN 的 Extra 列会显示 \u0026quot;Using index\u0026quot;\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e为什么 InnoDB 必须有主键\u003c/h3\u003e\n\u003cp\u003eInnoDB 的数据组织方式决定了它必须依赖一个聚簇索引。如果你没有显式定义主键：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eInnoDB 会选择第一个\u003cstrong\u003e非空唯一索引\u003c/strong\u003e作为聚簇索引\u003c/li\u003e\n\u003cli\u003e如果也没有，InnoDB 会自动生成一个 6 字节的隐藏 RowID\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e自动生成的 RowID 用户不可见、不可查询，浪费了聚簇索引的优势。\u003cstrong\u003e建议总是显式定义自增整型主键\u003c/strong\u003e——它既短（扇出大）又有序（插入不会导致页分裂）。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e四、索引的使用规则\u003c/h2\u003e\n\u003cp\u003e建了索引不代表查询一定会用。MySQL 优化器在决定是否使用索引时有一套严格的规则。搞清楚这些规则，才能建出真正有效的索引。\u003c/p\u003e\n\u003ch3\u003e4.1 最左前缀匹配（最重要的规则）\u003c/h3\u003e\n\u003cp\u003e复合索引 \u003ccode\u003e(a, b, c, d)\u003c/code\u003e 的匹配遵循\u003cstrong\u003e从左到右\u003c/strong\u003e的顺序，遇到范围查询（\u003ccode\u003e\u0026gt;\u003c/code\u003e, \u003ccode\u003e\u0026lt;\u003c/code\u003e, \u003ccode\u003eBETWEEN\u003c/code\u003e, \u003ccode\u003eLIKE\u003c/code\u003e）就停止匹配。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 索引：INDEX idx (a, b, c, d)\n\nWHERE a = 1 AND b = 2 AND c \u0026gt; 3 AND d = 4\n-- 命中：a ✓, b ✓, c ✓（范围）, d ✗（c 之后停止匹配）\n-- 实际使用了 a, b, c 三列\n\nWHERE a = 1 AND b = 2 AND d = 4\n-- 命中：a ✓, b ✓, c 跳过（不在 WHERE 中）, d ✗\n-- 实际使用了 a, b 两列\n\nWHERE b = 2 AND c = 3\n-- 命中：a 缺失 → 整个索引不可用 ✗\n-- 没有最左列 a，无法使用这个索引\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e优化技巧\u003c/strong\u003e：如果某列在 WHERE 中是范围条件，把它放到复合索引的最后面。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 查询：WHERE a = 1 AND b = 2 AND c \u0026gt; 3 AND d = 4\n\n-- 差索引：INDEX (a, b, c, d) → 只用 a, b, c\n-- 好索引：INDEX (a, b, d, c) → 用到 a, b, d, c 四列全命中\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e4.2 选择性（Selectivity）\u003c/h3\u003e\n\u003cp\u003e选择性衡量一个列能过滤掉多少数据：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e选择性 = COUNT(DISTINCT col) / COUNT(*)\n\u003c/code\u003e\u003c/pre\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e选择性\u003c/th\u003e\n\u003cth\u003e含义\u003c/th\u003e\n\u003cth\u003e建索引价值\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u0026gt; 0.1\u003c/td\u003e\n\u003ctd\u003e每 10 行中有 1 个不同值\u003c/td\u003e\n\u003ctd\u003e高，适合建索引\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e0.01 ~ 0.1\u003c/td\u003e\n\u003ctd\u003e重复较多\u003c/td\u003e\n\u003ctd\u003e取决于实际数据分布\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u0026lt; 0.01\u003c/td\u003e\n\u003ctd\u003e高度重复（如 status: 0/1/2）\u003c/td\u003e\n\u003ctd\u003e通常不适合，但有例外\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e反直觉案例：低选择性也可能有效。\u003c/strong\u003e 如果一个 status 字段只有 3 个值（-1, 0, 1），但业务上 99.9% 的记录是 status=1，你要查的恰好是 status=0 的那一小批——索引的效果取决于你要查的值的分布，而不是列整体的选择性。\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cstrong\u003e关键洞察\u003c/strong\u003e：选择性公式给出的是统计平均，但实际查询命中的是具体值的分布。对于数据分布极度不均匀的列，需要结合业务场景判断。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch3\u003e4.3 五条工程戒律\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e① 不要在索引列上做计算或函数调用\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- ✗ 不走索引：函数包裹了索引列\nWHERE FROM_UNIXTIME(create_time) = \u0026#39;2024-05-29\u0026#39;\nWHERE YEAR(created_date) = 2024\n\n-- ✓ 走索引：把计算移到值一侧\nWHERE create_time = UNIX_TIMESTAMP(\u0026#39;2024-05-29\u0026#39;)\nWHERE created_date \u0026gt;= \u0026#39;2024-01-01\u0026#39; AND created_date \u0026lt; \u0026#39;2025-01-01\u0026#39;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e原因：对索引列施加函数后，B+Tree 无法利用键值的有序性。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e② = 和 IN 的顺序不影响索引使用\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 以下两种写法等价，优化器会自动重排\nWHERE a = 1 AND b = 2 AND c = 3\nWHERE c = 3 AND a = 1 AND b = 2\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e③ 扩展已有索引，而非新建\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 已有索引：INDEX idx_a (a)\n-- 现在需要查 WHERE a = ? AND b = ?\n\n-- ✗ 新建：INDEX idx_ab (a, b)  → 现在有两个索引，浪费空间且写入变慢\n-- ✓ 扩展：把 idx_a 改为 INDEX idx_ab (a, b)  → idx_ab 同时覆盖单列查询\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e④ 尽量用覆盖索引减少回表\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e如果查询只需要少量列，把这些列都放进索引里，避免回表。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e⑤ 复合索引中选择性高的列放前面\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e选择性高的列放前面，能更快地缩小候选集。但这条规则要让位于最左前缀匹配——如果查询条件固定，优先保证查询能命中索引。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e五、EXPLAIN：读懂优化器的决策\u003c/h2\u003e\n\u003cp\u003e索引建好了，查询到底用没用、怎么用？EXPLAIN 是唯一的答案。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eEXPLAIN SELECT * FROM users WHERE name = \u0026#39;张三\u0026#39; AND age \u0026gt; 20;\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e核心字段解读\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e字段\u003c/th\u003e\n\u003cth\u003e含义\u003c/th\u003e\n\u003cth\u003e关注点\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003etype\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e访问类型\u003c/td\u003e\n\u003ctd\u003e从好到差：system \u0026gt; const \u0026gt; eq_ref \u0026gt; ref \u0026gt; range \u0026gt; index \u0026gt; ALL\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003ekey\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e实际使用的索引\u003c/td\u003e\n\u003ctd\u003eNULL 表示没走索引\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003erows\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e预估扫描行数\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e最关键指标\u003c/strong\u003e，越接近结果行数越好\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eExtra\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e附加信息\u003c/td\u003e\n\u003ctd\u003e关注 Using index / Using filesort / Using temporary\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3\u003etype 等级详解\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003etype\u003c/th\u003e\n\u003cth\u003e含义\u003c/th\u003e\n\u003cth\u003e触发条件\u003c/th\u003e\n\u003cth\u003e性能\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003econst\u003c/td\u003e\n\u003ctd\u003e通过主键或唯一索引定位一行\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eWHERE id = 1\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e极快\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eeq_ref\u003c/td\u003e\n\u003ctd\u003eJOIN 时被驱动表主键等值匹配\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eJOIN ON a.id = b.id\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e极快\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eref\u003c/td\u003e\n\u003ctd\u003e非唯一索引等值匹配\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eWHERE name = \u0026#39;张三\u0026#39;\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e快\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003erange\u003c/td\u003e\n\u003ctd\u003e索引范围扫描\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eWHERE id \u0026gt; 100\u003c/code\u003e / \u003ccode\u003eWHERE id IN (1,2,3)\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e较快\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eindex\u003c/td\u003e\n\u003ctd\u003e全索引扫描\u003c/td\u003e\n\u003ctd\u003e覆盖索引但无 WHERE 条件\u003c/td\u003e\n\u003ctd\u003e一般\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eALL\u003c/td\u003e\n\u003ctd\u003e全表扫描\u003c/td\u003e\n\u003ctd\u003e无可用索引\u003c/td\u003e\n\u003ctd\u003e最慢\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3\u003eExtra 中的关键信号\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eExtra\u003c/th\u003e\n\u003cth\u003e含义\u003c/th\u003e\n\u003cth\u003e是否需要优化\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eUsing index\u003c/td\u003e\n\u003ctd\u003e覆盖索引，无需回表\u003c/td\u003e\n\u003ctd\u003e好，不用动\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eUsing where\u003c/td\u003e\n\u003ctd\u003e在存储引擎返回数据后由 Server 层过滤\u003c/td\u003e\n\u003ctd\u003e看情况\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eUsing filesort\u003c/td\u003e\n\u003ctd\u003e无法利用索引排序，需额外排序\u003c/td\u003e\n\u003ctd\u003e通常需要优化\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eUsing temporary\u003c/td\u003e\n\u003ctd\u003e需要创建临时表（常见于 GROUP BY）\u003c/td\u003e\n\u003ctd\u003e需要优化\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e实战口诀\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e看到 \u003ccode\u003eALL\u003c/code\u003e → 考虑加索引\u003c/li\u003e\n\u003cli\u003e看到 \u003ccode\u003eUsing filesort\u003c/code\u003e → 检查 ORDER BY 是否能走索引\u003c/li\u003e\n\u003cli\u003e看到 \u003ccode\u003eUsing temporary\u003c/code\u003e → 检查 GROUP BY 是否能走索引\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003erows\u003c/code\u003e 远大于实际结果行数 → 索引选择性不够或索引列不对\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch2\u003e六、ORDER BY 与 GROUP BY 的索引优化\u003c/h2\u003e\n\u003cp\u003e排序和分组是慢查询的常见元凶。MySQL 能利用索引的有序性避免额外排序（filesort），但条件很严格。\u003c/p\u003e\n\u003ch3\u003e6.1 ORDER BY 能走索引的条件\u003c/h3\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 场景一：纯 ORDER BY\n-- 索引 (sort_col)\nSELECT * FROM t ORDER BY sort_col;       -- ✓ 走索引\n\n-- 场景二：WHERE + ORDER BY\n-- 索引 (col_a, sort_col)\nSELECT * FROM t WHERE col_a = 1 ORDER BY sort_col;  -- ✓ 走索引\n\n-- 场景三：多列排序\n-- 索引 (uid, x, y)\nSELECT * FROM t WHERE uid = 1 ORDER BY x, y LIMIT 10;  -- ✓ 走索引\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e关键原则：\u003cstrong\u003eWHERE 条件列和 ORDER BY 列必须在同一个复合索引中，且满足最左前缀。\u003c/strong\u003e\u003c/p\u003e\n\u003ch3\u003e6.2 ORDER BY 不能走索引的五种情况\u003c/h3\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- ① 排序列来自不同索引\n-- 有 INDEX(key1) 和 INDEX(key2)\nORDER BY key1, key2          -- ✗ 两个索引无法合并排序\n\n-- ② 跳过了复合索引的中间列\n-- INDEX(key_part1, key_part2)\nWHERE key_part1 = 1\nORDER BY key_part2            -- ✓ 连续的\n\nWHERE other_col = 1\nORDER BY key_part2            -- ✗ key_part1 缺失\n\n-- ③ ASC 和 DESC 混用\n-- INDEX(a, b)\nORDER BY a ASC, b DESC       -- ✗ 方向不一致（MySQL 8.0 之前）\n\n-- ④ WHERE 和 ORDER BY 用了不同索引的列\n-- INDEX(key1), INDEX(key2)\nWHERE key1 = 1 ORDER BY key2 -- ✗ 走 key1 索引做过滤，但无法用它排序 key2\n\n-- ⑤ 排序列上有函数\nORDER BY YEAR(login_date)     -- ✗ 函数破坏了索引有序性\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e6.3 GROUP BY + Top-N 查询模式\u003c/h3\u003e\n\u003cp\u003e\u0026quot;每个分组取前 N 条\u0026quot;是常见的业务需求。几种实现方式的对比：\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e方案一：子查询 + MAX（推荐）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 每组取最大值\nSELECT a.* FROM tb a\nWHERE val = (SELECT MAX(val) FROM tb WHERE name = a.name)\nORDER BY a.name;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e方案二：INNER JOIN + GROUP BY（推荐）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT a.* FROM tb a\nINNER JOIN (SELECT name, MAX(val) val FROM tb GROUP BY name) b\nON a.name = b.name AND a.val = b.val\nORDER BY a.name;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e方案三：窗口函数（MySQL 8.0+，最简洁）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- ROW_NUMBER：严格排名，不并列\nSELECT * FROM (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY subject ORDER BY score DESC) rn\n    FROM tb_score\n) t WHERE rn \u0026lt;= 3;\n\n-- DENSE_RANK：允许并列，无间隔\nSELECT * FROM (\n    SELECT *, DENSE_RANK() OVER (PARTITION BY subject ORDER BY score DESC) rk\n    FROM tb_score\n) t WHERE rk \u0026lt;= 3;\n\u003c/code\u003e\u003c/pre\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e函数\u003c/th\u003e\n\u003cth\u003e处理并列\u003c/th\u003e\n\u003cth\u003e示例：分数 92, 92, 88\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eROW_NUMBER\u003c/td\u003e\n\u003ctd\u003e不并列\u003c/td\u003e\n\u003ctd\u003e1, 2, 3\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eRANK\u003c/td\u003e\n\u003ctd\u003e并列，有间隔\u003c/td\u003e\n\u003ctd\u003e1, 1, 3\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eDENSE_RANK\u003c/td\u003e\n\u003ctd\u003e并列，无间隔\u003c/td\u003e\n\u003ctd\u003e1, 1, 2\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003chr\u003e\n\u003ch2\u003e七、慢查询优化实战\u003c/h2\u003e\n\u003cp\u003e理论讲完了，以下三个真实案例覆盖了慢查询优化中最常见的思路和最重要的教训。\u003c/p\u003e\n\u003ch3\u003e优化前的必要步骤\u003c/h3\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 排除查询缓存的干扰\nSELECT SQL_NO_CACHE * FROM ...;\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e7.1 案例一：JOIN 重构——从 1.87s 到 10ms\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e原始查询\u003c/strong\u003e：查找最近一段时间内有更新的员工。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT DISTINCT cert.emp_id\nFROM cm_log cl\nINNER JOIN (\n    SELECT emp.id emp_id, emp_cert.id cert_id\n    FROM employee emp\n    LEFT JOIN emp_certificate emp_cert ON emp.id = emp_cert.emp_id\n    WHERE emp.is_deleted = 0\n) cert\nON (cl.ref_table = \u0026#39;Employee\u0026#39; AND cl.ref_oid = cert.emp_id)\n   OR (cl.ref_table = \u0026#39;EmpCertificate\u0026#39; AND cl.ref_oid = cert.cert_id)\nWHERE cl.last_upd_date \u0026gt;= \u0026#39;2013-11-07 15:03:00\u0026#39;\n  AND cl.last_upd_date \u0026lt;= \u0026#39;2013-11-08 16:00:00\u0026#39;;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e问题诊断\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e结果：53 条记录，耗时 \u003cstrong\u003e1.87 秒\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eEXPLAIN 显示：cm_log 用 \u003ccode\u003eidx_last_upd_date\u003c/code\u003e 过滤后只有 \u003cstrong\u003e379 行\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e但 JOIN 的派生表（cert）返回 \u003cstrong\u003e63,727 行\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e379 × 63,727 ≈ 2,400 万次比较，绝大多数是无用功\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e根因\u003c/strong\u003e：OR 连接两种关联条件导致无法走索引 JOIN，退化为笛卡尔积。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e优化方案\u003c/strong\u003e：拆成两条查询 + UNION，让小表 cm_log 先过滤。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT emp.id FROM cm_log cl\nINNER JOIN employee emp\n    ON cl.ref_table = \u0026#39;Employee\u0026#39; AND cl.ref_oid = emp.id\nWHERE cl.last_upd_date \u0026gt;= \u0026#39;2013-11-07 15:03:00\u0026#39;\n  AND cl.last_upd_date \u0026lt;= \u0026#39;2013-11-08 16:00:00\u0026#39;\n  AND emp.is_deleted = 0\n\nUNION\n\nSELECT emp.id FROM cm_log cl\nINNER JOIN emp_certificate ec\n    ON cl.ref_table = \u0026#39;EmpCertificate\u0026#39; AND cl.ref_oid = ec.id\nINNER JOIN employee emp ON emp.id = ec.emp_id\nWHERE cl.last_upd_date \u0026gt;= \u0026#39;2013-11-07 15:03:00\u0026#39;\n  AND cl.last_upd_date \u0026lt;= \u0026#39;2013-11-08 16:00:00\u0026#39;\n  AND emp.is_deleted = 0;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e结果\u003c/strong\u003e：\u003cstrong\u003e10ms\u003c/strong\u003e，提升 \u003cstrong\u003e187 倍\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e教训\u003c/strong\u003e：JOIN 中的 OR 条件几乎总是性能杀手。拆成 UNION 让每个分支都能走索引。\u003c/p\u003e\n\u003chr\u003e\n\u003ch3\u003e7.2 案例二：低选择性索引——从 6.22s 到 200ms\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e原始查询\u003c/strong\u003e：查找待同步的 POI 数据。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT * FROM stage_poi sp\nWHERE sp.accurate_result = 1\n  AND sp.sync_status IN (0, 2, 4);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e问题诊断\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e结果：951 条记录，耗时 \u003cstrong\u003e6.22 秒\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eEXPLAIN：type = ALL，全表扫描 \u003cstrong\u003e361 万行\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e两个字段的选择性都极低：\u003cul\u003e\n\u003cli\u003e\u003ccode\u003eaccurate_result\u003c/code\u003e：只有 -1, 0, 1 三个值\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003esync_status\u003c/code\u003e：只有 0, 1, 2, 3, 4 五个值\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e按常规判断，这两列的选择性太差，不适合建索引。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e转折点：理解业务上下文。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e这是一个数据同步任务，每 5 分钟执行一次：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e处理状态为 0/2/4 的记录（待同步）\u003c/li\u003e\n\u003cli\u003e处理完毕后将状态改为 1（已同步）\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e在任意时刻，待同步的数据不超过 1000 条\u003c/strong\u003e，其余 360 万条都是 status=1\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e也就是说，虽然 sync_status 只有 5 个值，但 \u003cstrong\u003e你要查的值的数据量只占 0.03%\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e优化方案\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eALTER TABLE stage_poi ADD INDEX idx_acc_status(accurate_result, sync_status);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e结果\u003c/strong\u003e：\u003cstrong\u003e200ms\u003c/strong\u003e，提升 \u003cstrong\u003e31 倍\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e教训\u003c/strong\u003e：数据分布比选择性统计更重要。在数据严重倾斜的场景下，低选择性的列也能从索引中获益。\u003c/p\u003e\n\u003chr\u003e\n\u003ch3\u003e7.3 案例三：不可优化的查询——13s 且无解\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e原始查询\u003c/strong\u003e：分页查询联系人。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT c.id, c.name, c.position, c.sex, c.phone, ...\nFROM contact c\nINNER JOIN contact_branch cb ON c.id = cb.contact_id\nINNER JOIN branch_user bu ON cb.branch_id = bu.branch_id\nINNER JOIN org_emp_info oei ON oei.data_id = bu.user_id\nWHERE bu.status IN (\u0026#39;0\u0026#39;, \u0026#39;1\u0026#39;)\n  AND oei.node_left = 2875 AND oei.node_right = 10802\n  AND oei.org_category = -1\nORDER BY c.created_time\nLIMIT 0, 10;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e问题诊断\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e结果：10 条记录，耗时 \u003cstrong\u003e13.06 秒\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e单表索引都没问题，JOIN 行数也合理\u003c/li\u003e\n\u003cli\u003e但 JOIN 结果有 \u003cstrong\u003e77.8 万行\u003c/strong\u003e，然后对这 77.8 万行排序取前 10 条\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e尝试优化\u003c/strong\u003e：改写为 EXISTS 子查询。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT c.id, c.name, ...\nFROM contact c\nWHERE EXISTS (\n    SELECT 1 FROM contact_branch cb\n    INNER JOIN branch_user bu ON cb.branch_id = bu.branch_id\n    INNER JOIN org_emp_info oei ON oei.data_id = bu.user_id\n    WHERE c.id = cb.contact_id\n      AND bu.status IN (\u0026#39;0\u0026#39;, \u0026#39;1\u0026#39;)\n      AND oei.node_left = 2875 AND oei.node_right = 10802\n      AND oei.org_category = -1\n)\nORDER BY c.created_time LIMIT 0, 10;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e结果\u003c/strong\u003e：在当前参数下 \u003cstrong\u003e0ms\u003c/strong\u003e。但换一组参数（匹配 0 行的情况），查询耗时 \u003cstrong\u003e218 秒\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e根因\u003c/strong\u003e：MySQL 的嵌套循环 + LIMIT 策略在匹配率极低时退化——每次从 contact 表取 10 行，去子查询里匹配，没匹配到就取下一批 10 行，直到遍历整张表。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e最终结论\u003c/strong\u003e：\u003cstrong\u003e不是所有慢查询都能在 SQL 层面解决。\u003c/strong\u003e 当 JOIN 结果集巨大且排序字段不在过滤条件中时，需要在应用层寻找出路——比如预计算排序、异步分页、或改变产品交互方式。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e八、分页查询优化\u003c/h2\u003e\n\u003cp\u003e深度分页是一个高频性能问题。\u003ccode\u003eLIMIT 100000, 20\u003c/code\u003e 看起来只取 20 条，实际上 MySQL 需要扫描前 100,020 行，丢弃前 100,000 行。\u003c/p\u003e\n\u003ch3\u003e四种优化方案\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e方案一：基于主键翻页（最推荐）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 前端传入上一页最后一条记录的 id\nSELECT * FROM users WHERE id \u0026gt; 456891 ORDER BY id LIMIT 20;\n-- 无论\u0026quot;第几页\u0026quot;，永远只扫描 20 行\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e限制：只能\u0026quot;下一页\u0026quot;，不能跳页。适合瀑布流、无限滚动。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e方案二：子查询定位起点\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT * FROM users\nWHERE id \u0026gt;= (SELECT id FROM users ORDER BY id LIMIT 100000, 1)\nORDER BY id LIMIT 20;\n-- 子查询走覆盖索引（只查 id），速度快\n-- 外层查询从定位点开始，只扫描 20 行\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e方案三：反向查询\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 如果总共 160 万行，要取 LIMIT 1200000, 20（偏移 75%）\n-- 反向查询：ORDER BY id DESC LIMIT 400000, 20（偏移 25%）\n-- 扫描量从 120 万降到 40 万\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e适用：偏移量超过总量 50% 时。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e方案四：延迟关联\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 先查主键列表（走覆盖索引，无回表）\nSELECT a.* FROM users a\nINNER JOIN (SELECT id FROM users ORDER BY id LIMIT 100000, 20) b\nON a.id = b.id;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e子查询只在索引上操作，外层 JOIN 只回表 20 行。\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e方案\u003c/th\u003e\n\u003cth\u003e扫描行数\u003c/th\u003e\n\u003cth\u003e可跳页\u003c/th\u003e\n\u003cth\u003e适用场景\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e基于主键翻页\u003c/td\u003e\n\u003ctd\u003e约等于 pageSize\u003c/td\u003e\n\u003ctd\u003e不可以\u003c/td\u003e\n\u003ctd\u003e瀑布流、列表翻页\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e子查询定位\u003c/td\u003e\n\u003ctd\u003e索引扫描 + pageSize\u003c/td\u003e\n\u003ctd\u003e可以\u003c/td\u003e\n\u003ctd\u003e通用分页\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e反向查询\u003c/td\u003e\n\u003ctd\u003e减半\u003c/td\u003e\n\u003ctd\u003e可以\u003c/td\u003e\n\u003ctd\u003e偏移超过 50%\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e延迟关联\u003c/td\u003e\n\u003ctd\u003e索引扫描 + pageSize\u003c/td\u003e\n\u003ctd\u003e可以\u003c/td\u003e\n\u003ctd\u003e需回表的分页\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003chr\u003e\n\u003ch2\u003e九、索引设计决策指南\u003c/h2\u003e\n\u003ch3\u003e该不该建索引\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e场景\u003c/th\u003e\n\u003cth\u003e建议\u003c/th\u003e\n\u003cth\u003e原因\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eWHERE 条件中的等值查询列\u003c/td\u003e\n\u003ctd\u003e建\u003c/td\u003e\n\u003ctd\u003e直接命中\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eWHERE 条件中的范围查询列\u003c/td\u003e\n\u003ctd\u003e建（放复合索引最后）\u003c/td\u003e\n\u003ctd\u003e范围查询后的列不会被使用\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eJOIN 关联字段\u003c/td\u003e\n\u003ctd\u003e必须建\u003c/td\u003e\n\u003ctd\u003e否则每次 JOIN 都全表扫描\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eORDER BY 字段\u003c/td\u003e\n\u003ctd\u003e考虑和 WHERE 列组成复合索引\u003c/td\u003e\n\u003ctd\u003e避免 filesort\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e高频查询但选择性低的列\u003c/td\u003e\n\u003ctd\u003e看数据分布\u003c/td\u003e\n\u003ctd\u003e统计选择性不等于实际过滤效果\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e很少出现在 WHERE 中的列\u003c/td\u003e\n\u003ctd\u003e不建\u003c/td\u003e\n\u003ctd\u003e索引的写入代价大于查询收益\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3\u003e索引过多的代价\u003c/h3\u003e\n\u003cp\u003e索引不是免费的。每多一个索引：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e每次 INSERT 需要额外维护一棵 B+Tree（写入变慢）\u003c/li\u003e\n\u003cli\u003e每次 UPDATE 涉及索引列时需要更新索引\u003c/li\u003e\n\u003cli\u003e每个索引都占磁盘空间\u003c/li\u003e\n\u003cli\u003e索引太多时优化器可能选错索引（需要 \u003ccode\u003eFORCE INDEX\u003c/code\u003e 纠正）\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e经验法则\u003c/strong\u003e：单表索引数量建议不超过 5~6 个。优先使用复合索引覆盖多种查询，而非为每个查询建单独的索引。\u003c/p\u003e\n\u003ch3\u003e核心原则\u003c/h3\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cstrong\u003e索引优化的本质，是让 EXPLAIN 中的 \u003ccode\u003erows\u003c/code\u003e 尽可能接近查询的实际结果行数。\u003c/strong\u003e 扫描的行数和返回的行数之间的差距，就是浪费的 I/O。\u003c/p\u003e\n\u003c/blockquote\u003e\n"])</script><script>self.__next_f.push([1,"17:T6119,"])</script><script>self.__next_f.push([1,"\u003ch2\u003e一、Redis 为什么快：不只是\u0026quot;内存\u0026quot;\u003c/h2\u003e\n\u003cp\u003e\u0026quot;Redis 快是因为数据在内存里。\u0026quot;——这句话对但不够。如果只是内存操作快，那任何 HashMap 都够快了。Redis 的性能来自多个设计决策的叠加效应。\u003c/p\u003e\n\u003ch3\u003e单线程模型\u003c/h3\u003e\n\u003cp\u003eRedis 用\u003cstrong\u003e单线程\u003c/strong\u003e处理所有客户端请求。这不是技术限制，而是刻意的设计选择：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e无锁竞争\u003c/strong\u003e：所有操作天然串行化，不需要任何锁机制\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e无上下文切换\u003c/strong\u003e：没有线程调度开销\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e数据结构可以更简单\u003c/strong\u003e：不用考虑并发安全，实现更紧凑高效\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eRedis 的瓶颈从来不是 CPU——单线程下 CPU 利用率很难跑满。真正的瓶颈在\u003cstrong\u003e内存带宽\u003c/strong\u003e和\u003cstrong\u003e网络 I/O\u003c/strong\u003e。\u003c/p\u003e\n\u003ch3\u003eI/O 多路复用\u003c/h3\u003e\n\u003cp\u003e单线程不意味着一次只能处理一个连接。Redis 使用 \u003ccode\u003eepoll\u003c/code\u003e/\u003ccode\u003ekqueue\u003c/code\u003e 等 I/O 多路复用技术，单线程也能同时监听成千上万个连接。当有数据可读时才去处理，避免空等。\u003c/p\u003e\n\u003ch3\u003e基准性能\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e场景\u003c/th\u003e\n\u003cth\u003e吞吐量 / 延迟\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e本地 Unix Socket，INCR 命令\u003c/td\u003e\n\u003ctd\u003e100K+ TPS\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eLAN 网络，简单 GET/SET\u003c/td\u003e\n\u003ctd\u003e~1ms 延迟\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ePipeline 批量操作\u003c/td\u003e\n\u003ctd\u003e吞吐提升 5~10 倍\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3\u003eSLOWLOG：发现真正的慢操作\u003c/h3\u003e\n\u003cpre\u003e\u003ccode\u003eSLOWLOG GET 10    -- 获取最近 10 条慢查询\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eRedis 默认记录执行时间超过 \u003cstrong\u003e10ms\u003c/strong\u003e 的命令（可配置 \u003ccode\u003eslowlog-log-slower-than\u003c/code\u003e）。注意：SLOWLOG 不包含网络 I/O 时间，只记录命令本身的执行耗时。如果 SLOWLOG 里出现了简单命令（如 GET），通常说明内存不足导致了 swap。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e二、五种数据类型与内部编码\u003c/h2\u003e\n\u003cp\u003eRedis 不是一个简单的 Key-Value 存储，它的五种数据类型各有针对性的内部实现，选对类型是性能优化的起点。\u003c/p\u003e\n\u003ch3\u003e2.1 String：不只是字符串\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e内部结构\u003c/strong\u003e：SDS（Simple Dynamic String）\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-c\"\u003estruct sdshdr {\n    long len;       // 已使用长度\n    long free;      // 剩余可用空间\n    char buf[];     // 实际数据（二进制安全）\n};\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e与 C 字符串相比，SDS 的优势：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e二进制安全\u003c/strong\u003e：可以存储任意二进制数据（图片、序列化对象），不受 \u003ccode\u003e\\0\u003c/code\u003e 截断\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eO(1) 获取长度\u003c/strong\u003e：直接读 \u003ccode\u003elen\u003c/code\u003e 字段\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e空间预分配\u003c/strong\u003e：\u003ccode\u003efree\u003c/code\u003e 字段减少内存重分配次数\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e核心操作与适用场景\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e操作\u003c/th\u003e\n\u003cth\u003e命令\u003c/th\u003e\n\u003cth\u003e适用场景\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e原子计数\u003c/td\u003e\n\u003ctd\u003eINCR / INCRBY\u003c/td\u003e\n\u003ctd\u003e计数器、限流、ID 生成\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e设置过期\u003c/td\u003e\n\u003ctd\u003eSET key value EX seconds\u003c/td\u003e\n\u003ctd\u003e缓存、分布式锁\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e批量读写\u003c/td\u003e\n\u003ctd\u003eMGET / MSET\u003c/td\u003e\n\u003ctd\u003e减少网络往返\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e内存开销\u003c/strong\u003e：一个 String 类型的 Key-Value 约有 \u003cstrong\u003e90 字节\u003c/strong\u003e 的元数据开销。如果你存储大量短小的值（如用户 ID → 用户名映射），考虑改用 Hash 类型来降低开销。\u003c/p\u003e\n\u003cp\u003e最大值大小：\u003cstrong\u003e1GB\u003c/strong\u003e。\u003c/p\u003e\n\u003ch3\u003e2.2 List：双向链表\u003c/h3\u003e\n\u003cp\u003e底层实现为双向链表，O(1) 的头尾操作，O(N) 的随机访问。最大长度 2³²-1。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e核心操作\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eLPUSH / RPUSH     -- 头部/尾部插入\nLPOP / RPOP       -- 头部/尾部弹出\nLRANGE 0 -1       -- 获取全部元素\nLINDEX 3          -- 按下标访问（O(N)，慎用）\nLTRIM 0 99        -- 只保留前 100 个元素\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e阻塞操作\u003c/strong\u003e（消息队列语义）：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eBLPOP key 30      -- 阻塞弹出，最多等 30 秒\nBRPOP key 0       -- 阻塞弹出，永久等待\nRPOPLPUSH src dst -- 原子地从 src 尾部弹出，推入 dst 头部\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003ccode\u003eRPOPLPUSH\u003c/code\u003e 可以实现可靠队列：消费者从工作队列弹出任务的同时推入备份队列，处理完成后再从备份队列删除。如果消费者崩溃，备份队列中的任务不会丢失。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e适用场景\u003c/strong\u003e：消息队列、最新动态（Timeline）、任务队列。\u003c/p\u003e\n\u003ch3\u003e2.3 Hash：对象存储的正确方式\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e内部编码演变\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e条件\u003c/th\u003e\n\u003cth\u003e编码\u003c/th\u003e\n\u003cth\u003e性能\u003c/th\u003e\n\u003cth\u003e内存\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e字段数 ≤ 64 且每个值 ≤ 512B\u003c/td\u003e\n\u003ctd\u003ezipmap（紧凑编码）\u003c/td\u003e\n\u003ctd\u003eO(N) 但对少量字段很快\u003c/td\u003e\n\u003ctd\u003e极省\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e超过阈值\u003c/td\u003e\n\u003ctd\u003ehashtable\u003c/td\u003e\n\u003ctd\u003eO(1)\u003c/td\u003e\n\u003ctd\u003e正常\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e阈值可通过 \u003ccode\u003ehash-max-zipmap-entries\u003c/code\u003e（默认 64）和 \u003ccode\u003ehash-max-zipmap-value\u003c/code\u003e（默认 512）配置。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e为什么用 Hash 而不是多个 String？\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e假设存储 100 万个用户的 3 个属性（name, age, email）：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e方案\u003c/th\u003e\n\u003cth\u003eKey 数量\u003c/th\u003e\n\u003cth\u003e内存开销\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e3 个 String：\u003ccode\u003euser:1:name\u003c/code\u003e, \u003ccode\u003euser:1:age\u003c/code\u003e, \u003ccode\u003euser:1:email\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e300 万\u003c/td\u003e\n\u003ctd\u003e每个 Key 90 字节开销 × 300 万\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e1 个 Hash：\u003ccode\u003euser:1\u003c/code\u003e → {name, age, email}\u003c/td\u003e\n\u003ctd\u003e100 万\u003c/td\u003e\n\u003ctd\u003e共享一份 Key 元数据\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003eHash 方案的内存节省通常在 \u003cstrong\u003e50%~70%\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e核心命令\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eHSET user:1 name \u0026quot;张三\u0026quot; age 28    -- 设置字段\nHGET user:1 name                   -- 获取单个字段\nHMGET user:1 name age email        -- 批量获取\nHINCRBY user:1 age 1               -- 原子递增\nHGETALL user:1                     -- 获取所有字段（大 Hash 慎用）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e适用场景\u003c/strong\u003e：用户信息、配置项、购物车、任何\u0026quot;对象\u0026quot;型数据。\u003c/p\u003e\n\u003ch3\u003e2.4 Set：集合运算\u003c/h3\u003e\n\u003cp\u003eHash Table 实现，O(1) 的增删查。最大元素数 2³²-1。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e独特能力：集合运算\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSINTER set1 set2        -- 交集：共同好友\nSUNION set1 set2        -- 并集：合并标签\nSDIFF set1 set2         -- 差集：可能认识的人\nSRANDMEMBER set 3       -- 随机取 3 个元素（抽奖）\nSPOP set                -- 随机弹出 1 个元素\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e适用场景\u003c/strong\u003e：标签系统、共同好友、去重、抽奖。\u003c/p\u003e\n\u003ch3\u003e2.5 Sorted Set：有序集合\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e内部实现\u003c/strong\u003e：Skip List + Hash Table 混合结构。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e┌──────────────────────────────────────────┐\n│ Hash Table: element → score    O(1) 查分 │\n│ Skip List:  按 score 排序     O(log N) 范围 │\n└──────────────────────────────────────────┘\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e两种数据结构各取所长：Hash Table 提供 O(1) 的分数查询，Skip List 提供 O(log N) 的排序和范围查询。Skip List 是双向链表式的，支持正向和反向遍历。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e核心命令\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eZADD board 1000 \u0026quot;user:1\u0026quot;              -- 添加/更新分数\nZINCRBY board 10 \u0026quot;user:1\u0026quot;             -- 分数原子递增\nZREVRANGE board 0 9 WITHSCORES        -- 排行榜前 10（降序）\nZRANGEBYSCORE board 90 100            -- 分数在 90~100 的元素\nZRANK board \u0026quot;user:1\u0026quot;                  -- 排名（升序）\nZREVRANK board \u0026quot;user:1\u0026quot;               -- 排名（降序）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e适用场景\u003c/strong\u003e：排行榜、延迟队列（score 存时间戳）、带权重的优先级队列。\u003c/p\u003e\n\u003ch3\u003e选型决策表\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e场景\u003c/th\u003e\n\u003cth\u003e推荐类型\u003c/th\u003e\n\u003cth\u003e关键命令\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e缓存、计数器、分布式锁\u003c/td\u003e\n\u003ctd\u003eString\u003c/td\u003e\n\u003ctd\u003eGET/SET/INCR\u003c/td\u003e\n\u003ctd\u003e最简单，最常用\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e消息队列、最新列表\u003c/td\u003e\n\u003ctd\u003eList\u003c/td\u003e\n\u003ctd\u003eLPUSH/BRPOP\u003c/td\u003e\n\u003ctd\u003e阻塞弹出实现可靠消费\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e对象属性存储\u003c/td\u003e\n\u003ctd\u003eHash\u003c/td\u003e\n\u003ctd\u003eHSET/HGET/HMGET\u003c/td\u003e\n\u003ctd\u003e比多个 String 省内存 50%+\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e标签、去重、集合运算\u003c/td\u003e\n\u003ctd\u003eSet\u003c/td\u003e\n\u003ctd\u003eSADD/SINTER/SDIFF\u003c/td\u003e\n\u003ctd\u003e交并差运算\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e排行榜、延迟队列\u003c/td\u003e\n\u003ctd\u003eSorted Set\u003c/td\u003e\n\u003ctd\u003eZADD/ZREVRANGE\u003c/td\u003e\n\u003ctd\u003eO(log N) 范围查询\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003chr\u003e\n\u003ch2\u003e三、过期策略：惰性删除 + 主动采样\u003c/h2\u003e\n\u003cp\u003eRedis 不会为每个设置了过期时间的 Key 启动一个定时器——那样百万个 Key 就需要百万个定时器。它采用两种策略配合。\u003c/p\u003e\n\u003ch3\u003e被动过期（Lazy Expiration）\u003c/h3\u003e\n\u003cp\u003e访问一个 Key 时，Redis 先检查它是否过期。如果过期了，删除并返回空。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e问题\u003c/strong\u003e：如果一个 Key 设了过期时间但再也没有被访问，它就永远不会被删除，一直占着内存。\u003c/p\u003e\n\u003ch3\u003e主动过期（Active Expiration）\u003c/h3\u003e\n\u003cp\u003eRedis 每秒执行 \u003cstrong\u003e10 次\u003c/strong\u003e以下流程：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e从设置了过期时间的 Key 中随机采样 100 个\u003c/li\u003e\n\u003cli\u003e删除其中已过期的\u003c/li\u003e\n\u003cli\u003e如果过期 Key 超过 \u003cstrong\u003e25%\u003c/strong\u003e，回到步骤 1 继续\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e这是一个概率性的清理策略——不保证所有过期 Key 都被及时清理，但保证过期 Key 不会大量累积。\u003c/p\u003e\n\u003ch3\u003e主从一致性\u003c/h3\u003e\n\u003cp\u003e过期删除\u003cstrong\u003e只在 Master 上执行\u003c/strong\u003e。Master 删除一个过期 Key 后，向 Slave 发送 DEL 命令。Slave 自己不会主动删除过期 Key——在收到 Master 的 DEL 之前，Slave 上的过期 Key 仍然可读。\u003c/p\u003e\n\u003ch3\u003e内存淘汰策略\u003c/h3\u003e\n\u003cp\u003e当内存使用达到 \u003ccode\u003emaxmemory\u003c/code\u003e 上限时，Redis 需要决定淘汰哪些 Key：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e策略\u003c/th\u003e\n\u003cth\u003e淘汰范围\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003evolatile-lru\u003c/td\u003e\n\u003ctd\u003e设了过期时间的 Key\u003c/td\u003e\n\u003ctd\u003e淘汰最近最少使用的（默认）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003evolatile-ttl\u003c/td\u003e\n\u003ctd\u003e设了过期时间的 Key\u003c/td\u003e\n\u003ctd\u003e淘汰剩余 TTL 最短的\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eallkeys-lru\u003c/td\u003e\n\u003ctd\u003e所有 Key\u003c/td\u003e\n\u003ctd\u003e淘汰最近最少使用的\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003enoeviction\u003c/td\u003e\n\u003ctd\u003e不淘汰\u003c/td\u003e\n\u003ctd\u003e写入报错（OOM）\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cstrong\u003e工程建议\u003c/strong\u003e：生产环境必须设置 \u003ccode\u003emaxmemory\u003c/code\u003e。如果不设置，Redis 内存持续增长，最终触发 OS swap，性能断崖式下降——从微秒级变成毫秒级甚至秒级。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003chr\u003e\n\u003ch2\u003e四、持久化：RDB 与 AOF 的设计权衡\u003c/h2\u003e\n\u003cp\u003eRedis 是内存数据库，但它不是\u0026quot;重启就丢数据\u0026quot;的玩具。持久化机制让 Redis 在进程崩溃甚至断电后仍能恢复数据。\u003c/p\u003e\n\u003ch3\u003e4.1 写操作的五步管线\u003c/h3\u003e\n\u003cp\u003e要理解持久化的数据安全性，需要先理解一次写操作在操作系统层面经历的五个阶段：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eClient                 Redis Server              OS Kernel              Disk\n  │                        │                        │                    │\n  │── write request ──→    │                        │                    │\n  │                    ①存入内存                     │                    │\n  │                        │── write() ──→          │                    │\n  │                        │                    ②写入内核缓冲区          │\n  │                        │                        │── transfer ──→    │\n  │                        │                        │                ③到达磁盘控制器缓存\n  │                        │                        │                    │\n  │                        │                        │                ④写入物理介质\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e数据安全性分析\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e故障类型\u003c/th\u003e\n\u003cth\u003e数据安全时机\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eRedis 进程崩溃\u003c/td\u003e\n\u003ctd\u003e第 ② 步之后\u003c/td\u003e\n\u003ctd\u003e内核缓冲区还在，OS 会最终刷盘\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e操作系统崩溃\u003c/td\u003e\n\u003ctd\u003e第 ③ 步之后\u003c/td\u003e\n\u003ctd\u003e磁盘控制器缓存有电容保护（企业级）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e断电\u003c/td\u003e\n\u003ctd\u003e第 ④ 步之后\u003c/td\u003e\n\u003ctd\u003e只有写入物理介质才绝对安全\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003ccode\u003efsync\u003c/code\u003e 的作用：强制将内核缓冲区的数据推到磁盘控制器（乃至物理介质），消除第 ②→④ 之间的不确定性。\u003c/p\u003e\n\u003ch3\u003e4.2 RDB 快照\u003c/h3\u003e\n\u003cp\u003eRDB 在指定的时间间隔内生成内存数据的全量快照。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e触发条件\u003c/strong\u003e（可配置）：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003esave 900 1        # 900 秒内至少 1 次写入\nsave 300 10       # 300 秒内至少 10 次写入\nsave 60 10000     # 60 秒内至少 10000 次写入\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e实现机制\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e1. Redis Fork 子进程\n2. 子进程遍历内存，将数据写入临时文件（RDB 格式）\n3. 写完后，原子 rename 替换旧 RDB 文件\n4. 父进程继续处理请求（通过 COW 机制共享内存页）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eCOW（Copy-On-Write）\u003c/strong\u003e：Fork 之后父子进程共享内存页。只有当父进程修改某个内存页时，OS 才会复制这个页。如果写入量不大，Fork 的额外内存开销很小。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e性能数据\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e指标\u003c/th\u003e\n\u003cth\u003e数据\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eFork 耗时\u003c/td\u003e\n\u003ctd\u003e~10ms / GB 内存\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e1.5GB 快照 → 200MB 文件\u003c/td\u003e\n\u003ctd\u003e~8 秒（PC 级机器）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eRDB 加载速度\u003c/td\u003e\n\u003ctd\u003e极快（直接映射到内存结构）\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e原子性保证\u003c/strong\u003e：先写临时文件，再 rename 替换。如果写入过程中进程崩溃，旧 RDB 文件不受影响——数据永远不会损坏，最多丢失最后一次快照之后的写入。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e局限\u003c/strong\u003e：两次快照之间的数据可能丢失。按默认配置，最坏情况下可能丢失 \u003cstrong\u003e最近 5 分钟\u003c/strong\u003e 的数据。\u003c/p\u003e\n\u003ch3\u003e4.3 AOF 日志\u003c/h3\u003e\n\u003cp\u003eAOF（Append Only File）记录每一条写命令，格式是 Redis 协议文本（人类可读）。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e三种 fsync 策略\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e策略\u003c/th\u003e\n\u003cth\u003e行为\u003c/th\u003e\n\u003cth\u003e最大数据丢失\u003c/th\u003e\n\u003cth\u003e性能影响\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003eappendfsync no\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e不主动 fsync，交给 OS\u003c/td\u003e\n\u003ctd\u003e~30 秒（Linux 默认）\u003c/td\u003e\n\u003ctd\u003e最小\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003eappendfsync everysec\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e每秒 fsync 一次\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e最多 2 秒\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e小（推荐）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003eappendfsync always\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e每条命令都 fsync\u003c/td\u003e\n\u003ctd\u003e不丢数据\u003c/td\u003e\n\u003ctd\u003e大\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e为什么 \u003ccode\u003eeverysec\u003c/code\u003e 最多丢 2 秒而不是 1 秒？因为如果上一次 fsync 超过 1 秒还没完成，Redis 会\u003cstrong\u003e延迟\u003c/strong\u003e当前的 fsync（避免阻塞主线程），最终可能累积两秒的数据。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eAOF 重写\u003c/strong\u003e：\u003c/p\u003e\n\u003cp\u003eAOF 文件随写入不断增长。Redis 通过重写来压缩文件：Fork 子进程遍历内存，生成等价的最小命令集。比如一个 Key 被 SET 了 100 次，重写后只保留最后一次的 SET 命令。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e性能数据\u003c/strong\u003e：1.4GB AOF 文件加载约 \u003cstrong\u003e13 秒\u003c/strong\u003e。\u003c/p\u003e\n\u003ch3\u003e4.4 RDB vs AOF 决策\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e维度\u003c/th\u003e\n\u003cth\u003eRDB\u003c/th\u003e\n\u003cth\u003eAOF\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e数据安全性\u003c/td\u003e\n\u003ctd\u003e可能丢数分钟\u003c/td\u003e\n\u003ctd\u003e最多丢 1~2 秒（everysec）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e文件大小\u003c/td\u003e\n\u003ctd\u003e紧凑（二进制）\u003c/td\u003e\n\u003ctd\u003e较大（文本命令，需定期重写）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e启动恢复速度\u003c/td\u003e\n\u003ctd\u003e极快（直接加载）\u003c/td\u003e\n\u003ctd\u003e较慢（逐条重放命令）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e写性能影响\u003c/td\u003e\n\u003ctd\u003eFork 时有短暂阻塞\u003c/td\u003e\n\u003ctd\u003e每秒 fsync 影响小\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e文件可读性\u003c/td\u003e\n\u003ctd\u003e不可读\u003c/td\u003e\n\u003ctd\u003e可读（Redis 协议文本）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e适合做备份\u003c/td\u003e\n\u003ctd\u003e是（完整快照，可远程传输）\u003c/td\u003e\n\u003ctd\u003e不适合（文件持续增长）\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e工程建议\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e生产环境两者都开\u003c/strong\u003e：RDB 做定期冷备（便于传输和恢复），AOF 做热恢复（丢数据少）\u003c/li\u003e\n\u003cli\u003e如果只能选一个：选 AOF（数据安全性更高）\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e内存安全边界\u003c/strong\u003e：预留 \u003cstrong\u003e2 倍\u003c/strong\u003e 已用内存给 Fork 的 COW 开销。1GB 数据 → 至少准备 2GB 可用内存\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch2\u003e五、复制与高可用\u003c/h2\u003e\n\u003ch3\u003e5.1 主从复制\u003c/h3\u003e\n\u003cp\u003eRedis 的复制是\u003cstrong\u003e异步\u003c/strong\u003e的，Slave 最终一致。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e全量同步\u003c/strong\u003e（首次连接或数据差异过大时）：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eSlave 发送 SLAVEOF master_ip port\n    ↓\nMaster 执行 BGSAVE，生成 RDB 文件\n    ↓\nMaster 将 RDB 传输给 Slave\n    ↓\nSlave 丢弃旧数据，加载 RDB\n    ↓\nMaster 将 BGSAVE 期间的写命令发送给 Slave\n    ↓\n进入增量同步状态\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e增量同步\u003c/strong\u003e：Master 将每条写命令实时发送给 Slave 重放。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003ePSYNC（Redis 2.8+）\u003c/strong\u003e：部分重同步。Master 维护一个\u003cstrong\u003e复制积压缓冲区（replication backlog）\u003c/strong\u003e，如果 Slave 断连后再连上，且断连期间的数据还在缓冲区内，就只发送缺失的命令，避免全量复制。\u003c/p\u003e\n\u003ch3\u003e5.2 Sentinel 哨兵\u003c/h3\u003e\n\u003cp\u003e主从复制解决了数据冗余，但 Master 挂了需要人工切换。Sentinel 实现自动故障转移。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e架构\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e┌─────────┐     ┌─────────┐     ┌─────────┐\n│Sentinel 1│     │Sentinel 2│     │Sentinel 3│   ← 独立进程，至少 3 个\n└────┬────┘     └────┬────┘     └────┬────┘\n     │               │               │\n     └───── 监控 ─────┼───── 监控 ────┘\n                      │\n              ┌───────┴───────┐\n              │    Master     │\n              └───┬───────┬──┘\n                  │       │\n           ┌──────┘       └──────┐\n           │                     │\n      ┌────┴────┐          ┌────┴────┐\n      │ Slave 1 │          │ Slave 2 │\n      └─────────┘          └─────────┘\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e故障检测过程\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e阶段\u003c/th\u003e\n\u003cth\u003e行为\u003c/th\u003e\n\u003cth\u003e时间\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e心跳\u003c/td\u003e\n\u003ctd\u003e每个 Sentinel 每秒向 Master/Slave 发 PING\u003c/td\u003e\n\u003ctd\u003e持续\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e主观下线（sdown）\u003c/td\u003e\n\u003ctd\u003e某个 Sentinel 连续无响应\u003c/td\u003e\n\u003ctd\u003e30 秒（可配置）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e客观下线（odown）\u003c/td\u003e\n\u003ctd\u003e多数 Sentinel（quorum，默认 2）在 5 秒内一致认为 Master 不可用\u003c/td\u003e\n\u003ctd\u003e5 秒\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e故障转移\u003c/td\u003e\n\u003ctd\u003e选举 Leader Sentinel → 选择最优 Slave → 提升为 Master → 重定向其他 Slave\u003c/td\u003e\n\u003ctd\u003e秒级\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003eSentinel 之间的发现\u003c/strong\u003e：通过 Pub/Sub 通道，每 5 秒广播自己的信息。新加入的 Sentinel 自动被发现。\u003c/p\u003e\n\u003ch3\u003e5.3 Cluster（简述）\u003c/h3\u003e\n\u003cp\u003eRedis Cluster 提供数据自动分片和高可用：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e16384 个 slot\u003c/strong\u003e：每个 Key 通过 CRC16 哈希映射到一个 slot，每个节点负责一部分 slot\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e客户端重定向\u003c/strong\u003e：请求的 Key 不在当前节点时，返回 \u003ccode\u003eMOVED\u003c/code\u003e 或 \u003ccode\u003eASK\u003c/code\u003e 指引客户端到正确节点\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e自动故障转移\u003c/strong\u003e：每个 Master 有一个或多个 Slave，Master 挂掉后 Slave 自动提升\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003evs 客户端分片（如 Jedis ShardedJedis）：Cluster 支持在线迁移 slot（动态扩缩容），客户端分片不支持。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e六、性能调优实践\u003c/h2\u003e\n\u003ch3\u003ePipeline：减少网络往返\u003c/h3\u003e\n\u003cp\u003eRedis 命令的延迟大部分花在网络往返（RTT）上。Pipeline 将多个命令打包成一次网络请求：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e-- 不用 Pipeline：100 个 SET → 100 次 RTT\n-- 用 Pipeline：100 个 SET → 1 次 RTT\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003ePipeline 不是原子操作（中间可能插入其他客户端的命令），但吞吐可提升 \u003cstrong\u003e5~10 倍\u003c/strong\u003e。\u003c/p\u003e\n\u003ch3\u003eLua 脚本：服务端执行\u003c/h3\u003e\n\u003cpre\u003e\u003ccode\u003eEVAL \u0026quot;redis.call(\u0026#39;SET\u0026#39;, KEYS[1], ARGV[1]); redis.call(\u0026#39;EXPIRE\u0026#39;, KEYS[1], ARGV[2])\u0026quot; 1 mykey myvalue 60\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eLua 脚本在 Redis 中天然是\u003cstrong\u003e原子\u003c/strong\u003e的——脚本执行期间不会被其他命令打断。适合需要\u0026quot;读-判断-写\u0026quot;原子性的场景（如分布式锁、限流计数器）。\u003c/p\u003e\n\u003ch3\u003e大 Key 问题\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e问题\u003c/th\u003e\n\u003cth\u003e原因\u003c/th\u003e\n\u003cth\u003e解决方案\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eDEL 大 Key 阻塞\u003c/td\u003e\n\u003ctd\u003e释放大块内存需要时间\u003c/td\u003e\n\u003ctd\u003e用 UNLINK（异步删除，Redis 4.0+）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eSet 扩容阻塞\u003c/td\u003e\n\u003ctd\u003eHash Table resize 需要写锁\u003c/td\u003e\n\u003ctd\u003e控制 Set 大小，拆分到多个 Key\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eHGETALL 大 Hash 阻塞\u003c/td\u003e\n\u003ctd\u003e遍历大量字段\u003c/td\u003e\n\u003ctd\u003e用 HSCAN 分批获取\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e网络阻塞\u003c/td\u003e\n\u003ctd\u003e大 Value 传输占用带宽\u003c/td\u003e\n\u003ctd\u003eValue 大小控制在 10KB 以内\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3\u003e生产禁用命令\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e命令\u003c/th\u003e\n\u003cth\u003e风险\u003c/th\u003e\n\u003cth\u003e替代方案\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003eKEYS *\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003eO(N) 遍历所有 Key，阻塞主线程\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eSCAN\u003c/code\u003e（游标分批遍历）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003eFLUSHDB\u003c/code\u003e / \u003ccode\u003eFLUSHALL\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e清空数据库\u003c/td\u003e\n\u003ctd\u003e线上应禁用\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003eSORT\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003eCPU 密集型排序\u003c/td\u003e\n\u003ctd\u003e在 Slave 上执行，或应用层排序\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3\u003e连接池配置\u003c/h3\u003e\n\u003cp\u003e以 Jedis 为例，默认最大连接数为 \u003cstrong\u003e8\u003c/strong\u003e。高并发场景下远远不够：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003eJedisPoolConfig config = new JedisPoolConfig();\nconfig.setMaxTotal(200);        // 最大连接数\nconfig.setMaxIdle(50);          // 最大空闲连接\nconfig.setMinIdle(10);          // 最小空闲连接\nconfig.setMaxWaitMillis(3000);  // 获取连接超时\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e配置原则\u003c/strong\u003e：连接数 ≥ 峰值并发线程数，但不要过多（Redis 单线程，连接再多也是排队）。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e七、Redis vs Memcached：选型依据\u003c/h2\u003e\n\u003cp\u003e两者都是内存缓存，但定位不同。\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e维度\u003c/th\u003e\n\u003cth\u003eRedis\u003c/th\u003e\n\u003cth\u003eMemcached\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e数据结构\u003c/td\u003e\n\u003ctd\u003eString/List/Hash/Set/Sorted Set\u003c/td\u003e\n\u003ctd\u003e纯 Key-Value\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e持久化\u003c/td\u003e\n\u003ctd\u003eRDB + AOF\u003c/td\u003e\n\u003ctd\u003e无\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e高可用\u003c/td\u003e\n\u003ctd\u003e主从复制 + Sentinel\u003c/td\u003e\n\u003ctd\u003e无内置方案\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e内存效率\u003c/td\u003e\n\u003ctd\u003e有对象开销（~90 字节/Key）\u003c/td\u003e\n\u003ctd\u003e更高效的 slab 分配\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e单 Value 上限\u003c/td\u003e\n\u003ctd\u003e1GB\u003c/td\u003e\n\u003ctd\u003e1MB\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e多线程\u003c/td\u003e\n\u003ctd\u003e单线程（6.0 起 I/O 多线程）\u003c/td\u003e\n\u003ctd\u003e多线程\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e集群\u003c/td\u003e\n\u003ctd\u003eRedis Cluster\u003c/td\u003e\n\u003ctd\u003e客户端一致性 Hash\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e选择 Memcached 的场景\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e纯缓存，不需要持久化\u003c/li\u003e\n\u003cli\u003e大 Value（\u0026gt; 100KB），Memcached 的 slab 内存分配更高效\u003c/li\u003e\n\u003cli\u003e简单 KV，不需要复杂数据结构\u003c/li\u003e\n\u003cli\u003e已有成熟的 Memcached 集群\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e选择 Redis 的场景\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e需要持久化（缓存 + 存储双角色）\u003c/li\u003e\n\u003cli\u003e需要复杂数据结构（排行榜、队列、集合运算）\u003c/li\u003e\n\u003cli\u003e需要内置高可用（Sentinel、Cluster）\u003c/li\u003e\n\u003cli\u003e需要 Pub/Sub、Lua 脚本等高级特性\u003c/li\u003e\n\u003c/ul\u003e\n\u003cblockquote\u003e\n\u003cp\u003e大多数新项目选 Redis——功能超集，生态更活跃。选 Memcached 的理由通常是\u0026quot;已经在用\u0026quot;或\u0026quot;纯缓存场景下更高的内存效率\u0026quot;。\u003c/p\u003e\n\u003c/blockquote\u003e\n"])</script><script>self.__next_f.push([1,"18:T5d26,"])</script><script>self.__next_f.push([1,"\u003ch2\u003e一、事务的核心问题：并发读写的五种冲突\u003c/h2\u003e\n\u003cp\u003e事务不是数据库的\u0026quot;高级功能\u0026quot;，而是解决一个根本性矛盾的机制：\u003cstrong\u003e多个操作同时访问同一份数据时，如何保证结果的正确性。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e以银行转账为例：A 账户向 B 账户转 500 元，这个操作必须是\u0026quot;A 减 500\u0026quot;和\u0026quot;B 加 500\u0026quot;同时成功或同时失败——中间不能有其他事务看到 A 减了但 B 还没加的中间状态。\u003c/p\u003e\n\u003cp\u003eACID 四个字母概括了事务需要保证的四种性质：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e性质\u003c/th\u003e\n\u003cth\u003e含义\u003c/th\u003e\n\u003cth\u003e保障机制\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eA\u003c/strong\u003etomicity（原子性）\u003c/td\u003e\n\u003ctd\u003e要么全做，要么全不做\u003c/td\u003e\n\u003ctd\u003eundo log（回滚日志）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eC\u003c/strong\u003eonsistency（一致性）\u003c/td\u003e\n\u003ctd\u003e事务前后数据满足约束\u003c/td\u003e\n\u003ctd\u003e由 A + I + D 共同保证\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eI\u003c/strong\u003esolation（隔离性）\u003c/td\u003e\n\u003ctd\u003e并发事务互不干扰\u003c/td\u003e\n\u003ctd\u003e锁 + MVCC\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eD\u003c/strong\u003eurability（持久性）\u003c/td\u003e\n\u003ctd\u003e提交后数据不丢\u003c/td\u003e\n\u003ctd\u003eredo log（重做日志）\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e其中\u003cstrong\u003e隔离性\u003c/strong\u003e是最复杂的。完美的隔离（串行执行）性能太差，所以 SQL 标准定义了四个隔离级别，本质是在\u0026quot;并发度\u0026quot;和\u0026quot;正确性\u0026quot;之间做不同程度的取舍。\u003c/p\u003e\n\u003ch3\u003e五种并发冲突\u003c/h3\u003e\n\u003cp\u003e在讨论隔离级别之前，先搞清楚并发事务之间到底会产生哪些冲突：\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e① 脏读（Dirty Read）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e事务 A：读取 X = 100\n事务 B：将 X 改为 200（未提交）\n事务 A：再读 X = 200  ← 读到了 B 未提交的数据\n事务 B：回滚（X 恢复为 100）\n事务 A 基于 X=200 做的决策全部错误\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e读到了别人\u003cstrong\u003e尚未提交\u003c/strong\u003e的修改。如果对方回滚，你的决策就建立在一个\u0026quot;从未存在过\u0026quot;的值上。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e② 不可重复读（Non-Repeatable Read）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e事务 A：读取 X = 100\n事务 B：将 X 改为 200 并提交\n事务 A：再读 X = 200  ← 同一事务内两次读取结果不同\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e同一事务内两次读取\u003cstrong\u003e同一行\u003c/strong\u003e，结果不一致。关注的是\u003cstrong\u003e已有行的修改\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e③ 幻读（Phantom Read）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e事务 A：SELECT * WHERE age \u0026gt; 20  → 返回 10 行\n事务 B：INSERT INTO ... (age=25) 并提交\n事务 A：SELECT * WHERE age \u0026gt; 20  → 返回 11 行  ← 多了一行\u0026quot;幻影\u0026quot;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e同一事务内两次范围查询，结果集\u003cstrong\u003e行数不同\u003c/strong\u003e。关注的是\u003cstrong\u003e新插入的行\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e④ 丢失更新（Lost Update）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e事务 A：读取余额 = 1000\n事务 B：读取余额 = 1000\n事务 A：扣款 200，写入余额 = 800\n事务 B：扣款 300，写入余额 = 700  ← A 的扣款被覆盖\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e两个事务都基于同一个旧值做计算，后提交的覆盖了先提交的。最终余额 700，正确答案应该是 500。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e⑤ 第二类丢失更新\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e本质与丢失更新相同，但发生在\u0026quot;先读后写\u0026quot;的场景。事务 A 和 B 都读到同一行，各自修改后提交，先提交的修改被后提交的覆盖。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e二、四种隔离级别：本质是锁的持有时间和范围\u003c/h2\u003e\n\u003cp\u003e隔离级别的差异不在于\u0026quot;要不要加锁\u0026quot;，而在于\u003cstrong\u003e锁什么（行还是范围）\u003cstrong\u003e和\u003c/strong\u003e持有多久（读完就放还是事务结束才放）\u003c/strong\u003e。\u003c/p\u003e\n\u003ch3\u003e2.1 Read Uncommitted（读未提交）\u003c/h3\u003e\n\u003cpre\u003e\u003ccode\u003e读操作：不加锁\n写操作：加排他锁，事务结束释放\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003e读不加锁意味着可以读到其他事务正在修改但尚未提交的数据 → \u003cstrong\u003e允许脏读\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e写加锁防止两个事务同时修改同一行 → 防止丢失更新\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e适用场景\u003c/strong\u003e：几乎不用。读到脏数据可能导致级联错误——你基于未提交的数据做了决策，对方回滚后你的决策就建立在错误的基础上。\u003c/p\u003e\n\u003ch3\u003e2.2 Read Committed（读已提交）\u003c/h3\u003e\n\u003cpre\u003e\u003ccode\u003e读操作：加共享锁，读完立即释放\n写操作：加排他锁，事务结束释放\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e关键行为\u003c/strong\u003e：共享锁\u003cstrong\u003e读完就释放\u003c/strong\u003e，不会持有到事务结束。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 事务 A\nBEGIN;\nSELECT balance FROM accounts WHERE id = 1;  -- 加共享锁，读取后立即释放\n-- （此时其他事务可以修改 id=1 的行）\nSELECT balance FROM accounts WHERE id = 1;  -- 再次读取，可能得到不同的值\nCOMMIT;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e两次读之间，其他事务可能修改并提交了该行 → \u003cstrong\u003e允许不可重复读\u003c/strong\u003e，但\u003cstrong\u003e杜绝脏读\u003c/strong\u003e（只能读到已提交的值）。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eRead Committed 是大多数数据库（Oracle、PostgreSQL、SQL Server）的默认隔离级别。\u003c/strong\u003e 它在安全性和性能之间取得了不错的平衡。\u003c/p\u003e\n\u003ch3\u003e2.3 Repeatable Read（可重复读）\u003c/h3\u003e\n\u003cpre\u003e\u003ccode\u003e读操作：加共享锁，事务结束才释放\n写操作：加排他锁，事务结束释放\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e关键区别\u003c/strong\u003e：共享锁\u003cstrong\u003e持有到事务结束\u003c/strong\u003e。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 事务 A\nBEGIN;\nSELECT balance FROM accounts WHERE id = 1;  -- 加共享锁，持有到 COMMIT\n-- （其他事务无法修改 id=1 的行，因为共享锁还没释放）\nSELECT balance FROM accounts WHERE id = 1;  -- 一定读到相同的值\nCOMMIT;  -- 释放共享锁\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e锁住了读过的行，保证本事务内两次读取结果一致 → \u003cstrong\u003e杜绝不可重复读\u003c/strong\u003e。但其他事务仍然可以 INSERT 新行 → \u003cstrong\u003e允许幻读\u003c/strong\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eRepeatable Read 是 InnoDB 的默认隔离级别。\u003c/strong\u003e InnoDB 通过 \u003cstrong\u003eNext-Key Lock\u003c/strong\u003e（间隙锁）在很大程度上解决了幻读问题，使得 RR 级别在 InnoDB 中几乎等同于 Serializable 的正确性，但性能好得多。\u003c/p\u003e\n\u003ch3\u003e2.4 Serializable（可串行化）\u003c/h3\u003e\n\u003cpre\u003e\u003ccode\u003e所有读写操作完全串行化\n读操作加范围锁（锁住行和行之间的间隙）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e最高隔离级别，完全杜绝所有并发问题。代价是\u003cstrong\u003e并发度极低\u003c/strong\u003e——多个事务实质上排队执行。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e适用场景\u003c/strong\u003e：极少使用。通常有更好的替代方案（如应用层乐观锁 + Read Committed）。\u003c/p\u003e\n\u003ch3\u003e隔离级别对比总表\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e隔离级别\u003c/th\u003e\n\u003cth\u003e脏读\u003c/th\u003e\n\u003cth\u003e不可重复读\u003c/th\u003e\n\u003cth\u003e幻读\u003c/th\u003e\n\u003cth\u003e并发度\u003c/th\u003e\n\u003cth\u003e锁持有特征\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003eRead Uncommitted\u003c/td\u003e\n\u003ctd\u003e可能\u003c/td\u003e\n\u003ctd\u003e可能\u003c/td\u003e\n\u003ctd\u003e可能\u003c/td\u003e\n\u003ctd\u003e最高\u003c/td\u003e\n\u003ctd\u003e读不加锁\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eRead Committed\u003c/td\u003e\n\u003ctd\u003e杜绝\u003c/td\u003e\n\u003ctd\u003e可能\u003c/td\u003e\n\u003ctd\u003e可能\u003c/td\u003e\n\u003ctd\u003e高\u003c/td\u003e\n\u003ctd\u003e读锁读完就放\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eRepeatable Read\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e杜绝\u003c/td\u003e\n\u003ctd\u003e杜绝\u003c/td\u003e\n\u003ctd\u003e可能*\u003c/td\u003e\n\u003ctd\u003e中\u003c/td\u003e\n\u003ctd\u003e读锁事务结束放\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eSerializable\u003c/td\u003e\n\u003ctd\u003e杜绝\u003c/td\u003e\n\u003ctd\u003e杜绝\u003c/td\u003e\n\u003ctd\u003e杜绝\u003c/td\u003e\n\u003ctd\u003e最低\u003c/td\u003e\n\u003ctd\u003e读锁 + 范围锁\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e*InnoDB 的 RR 级别通过 Next-Key Lock 在大多数场景下也能杜绝幻读。\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cstrong\u003e工程建议\u003c/strong\u003e：大多数业务场景使用 \u003cstrong\u003eRead Committed + 应用层乐观锁\u003c/strong\u003e（版本号机制）是最佳平衡。InnoDB 默认的 Repeatable Read 在不了解其加锁行为时容易引发意外的锁等待和死锁。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003chr\u003e\n\u003ch2\u003e三、InnoDB 的锁类型体系\u003c/h2\u003e\n\u003cp\u003e理解了隔离级别的宏观框架后，需要深入 InnoDB 的具体锁类型——它们决定了\u0026quot;到底锁了什么\u0026quot;。\u003c/p\u003e\n\u003ch3\u003e3.1 按粒度分\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e行锁（Record Lock）\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e锁住索引中的一条记录。注意：InnoDB 的行锁是\u003cstrong\u003e加在索引上\u003c/strong\u003e的，不是加在数据行上的。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 假设 id 是主键\nSELECT * FROM users WHERE id = 1 FOR UPDATE;\n-- 锁住主键索引中 id=1 的记录\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e间隙锁（Gap Lock）\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e锁住索引记录之间的\u0026quot;间隙\u0026quot;，防止其他事务在这个间隙中插入新记录。这是 InnoDB 防止幻读的关键机制。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 假设索引中有 id = 5, 10, 15\nSELECT * FROM users WHERE id BETWEEN 6 AND 14 FOR UPDATE;\n-- 锁住 (5, 10) 和 (10, 15) 两个间隙\n-- 其他事务无法在这些间隙中 INSERT\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eNext-Key Lock\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eRecord Lock + Gap Lock 的组合。InnoDB 在 Repeatable Read 级别下默认使用 Next-Key Lock——既锁住当前记录，又锁住记录前面的间隙。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e索引中：... 5, 10, 15, 20 ...\nNext-Key Lock on 10 → 锁住 (5, 10]（左开右闭）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e表锁\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e当 UPDATE/DELETE 的 WHERE 条件没有走索引时，InnoDB 无法定位具体的行，退化为\u003cstrong\u003e全表扫描 + 锁住所有扫描到的行\u003c/strong\u003e——效果等同于表锁。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 假设 status 没有索引\nUPDATE users SET name = \u0026#39;...\u0026#39; WHERE status = 1;\n-- 全表扫描，锁住所有行 → 其他事务完全被阻塞\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e这就是为什么 UPDATE/DELETE 语句\u003cstrong\u003e必须走索引\u003c/strong\u003e的另一个重要原因。\u003c/p\u003e\n\u003ch3\u003e3.2 按模式分\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e锁模式\u003c/th\u003e\n\u003cth\u003e触发方式\u003c/th\u003e\n\u003cth\u003e兼容性\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e共享锁（S）\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eSELECT ... LOCK IN SHARE MODE\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e与 S 兼容，与 X 互斥\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e排他锁（X）\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eSELECT ... FOR UPDATE\u003c/code\u003e / INSERT / UPDATE / DELETE\u003c/td\u003e\n\u003ctd\u003e与所有锁互斥\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e意向共享锁（IS）\u003c/td\u003e\n\u003ctd\u003e事务打算在行级加 S 锁时自动在表级加 IS\u003c/td\u003e\n\u003ctd\u003e表级信号，快速判断兼容性\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e意向排他锁（IX）\u003c/td\u003e\n\u003ctd\u003e事务打算在行级加 X 锁时自动在表级加 IX\u003c/td\u003e\n\u003ctd\u003e表级信号\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e意向锁的作用\u003c/strong\u003e：当一个事务想对整张表加锁时（如 DDL 操作），不需要逐行检查是否有行锁，只需检查表上是否有 IS/IX 锁即可。\u003c/p\u003e\n\u003ch3\u003e3.3 锁兼容矩阵\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e\u003c/th\u003e\n\u003cth\u003eS\u003c/th\u003e\n\u003cth\u003eX\u003c/th\u003e\n\u003cth\u003eIS\u003c/th\u003e\n\u003cth\u003eIX\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eS\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e兼容\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e兼容\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eX\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eIS\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e兼容\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e兼容\u003c/td\u003e\n\u003ctd\u003e兼容\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003eIX\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e\u003cstrong\u003e冲突\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003e兼容\u003c/td\u003e\n\u003ctd\u003e兼容\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e核心规则：\u003cstrong\u003e排他锁与一切互斥，共享锁之间互相兼容。\u003c/strong\u003e\u003c/p\u003e\n\u003ch3\u003e3.4 关键认知：行锁加在索引上\u003c/h3\u003e\n\u003cp\u003e这是理解 InnoDB 锁行为的最重要的一句话：\u003cstrong\u003eInnoDB 的行锁不是锁\u0026quot;行\u0026quot;，而是锁\u0026quot;索引记录\u0026quot;。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e这意味着：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e无索引 → 表锁\u003c/strong\u003e：WHERE 条件没走索引时，全表扫描会锁住所有行\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e二级索引 → 两次加锁\u003c/strong\u003e：通过二级索引定位数据时，先锁二级索引记录，再锁主键索引记录\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e加锁顺序不可控\u003c/strong\u003e：不同的二级索引可能导致不同的加锁顺序 → 死锁\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 假设 users 表有索引 idx_name(name) 和主键 id\nUPDATE users SET age = 30 WHERE name = \u0026#39;张三\u0026#39;;\n\n-- 加锁过程：\n-- 1. 在 idx_name 中找到 name=\u0026#39;张三\u0026#39; → 锁住 idx_name 中的这条记录\n-- 2. 通过 idx_name 拿到主键 id=42 → 锁住主键索引中 id=42 的记录\n-- 3. 执行 UPDATE\n-- 4. 事务提交时释放所有锁\n\u003c/code\u003e\u003c/pre\u003e\n\u003chr\u003e\n\u003ch2\u003e四、死锁：成因、案例与排查\u003c/h2\u003e\n\u003ch3\u003e4.1 死锁的四个必要条件\u003c/h3\u003e\n\u003cp\u003e死锁的产生需要同时满足四个条件：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003e互斥\u003c/strong\u003e：锁是排他的（排他锁不能共享）\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e持有并等待\u003c/strong\u003e：事务持有一把锁的同时等待另一把锁\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e不可抢占\u003c/strong\u003e：已获得的锁不会被强制释放\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e循环等待\u003c/strong\u003e：A 等 B，B 等 A\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e打破任一条件即可避免死锁。工程上最实际的手段是\u003cstrong\u003e统一加锁顺序\u003c/strong\u003e（打破循环等待）。\u003c/p\u003e\n\u003ch3\u003e4.2 真实案例：UPDATE 引发的死锁\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e场景\u003c/strong\u003e：高并发下同时执行：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eINSERT INTO user_praise(uid, plan_id, stage_id) VALUES(?, ?, ?);\nUPDATE plan_hot SET hot = hot + 1 WHERE plan_id = ?;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e报错：\u003ccode\u003eDeadlock found when trying to get lock; try restarting transaction\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e问题 SQL\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eUPDATE coupon\nSET coup_num_usr = coup_num_usr + 1\nWHERE coup_usr = ? AND spec_id = ? AND coup_num_usr \u0026lt; ?;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e假设 \u003ccode\u003e(spec_id, coup_usr)\u003c/code\u003e 上有联合索引 \u003ccode\u003eidx_spec_usr\u003c/code\u003e。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e加锁过程分析\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e事务 A 执行 UPDATE（通过 idx_spec_usr 定位）：\n  ① 锁 idx_spec_usr 中的记录（二级索引锁）\n  ② 等待主键索引锁...\n\n事务 B 执行 UPDATE（通过主键定位，恰好涉及同一行）：\n  ① 锁主键索引中的记录\n  ② 等待 idx_spec_usr 锁...\n\n事务 A 持有二级索引锁，等主键锁\n事务 B 持有主键锁，等二级索引锁\n→ 循环等待 → 死锁\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e加锁顺序图示：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e事务 A：idx_spec_usr ──→ 等待 Primary Key\n                              ↑\n                              │ 循环等待\n                              ↓\n事务 B：Primary Key  ──→ 等待 idx_spec_usr\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003e4.3 解决方案：拆分 SELECT 和 UPDATE\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e死锁写法\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 通过二级索引条件直接 UPDATE\n-- 加锁顺序：二级索引 → 主键（不可控）\nUPDATE coupon\nSET coup_num_usr = coup_num_usr + 1\nWHERE coup_usr = ? AND spec_id = ? AND coup_num_usr \u0026lt; ?;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e安全写法\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 第一步：SELECT 不加锁（普通读，走 MVCC 快照）\nSELECT id FROM coupon WHERE coup_usr = ? AND spec_id = ?;\n\n-- 第二步：用主键 UPDATE，加锁顺序确定且统一\nUPDATE coupon\nSET coup_num_usr = coup_num_usr + 1\nWHERE id = ? AND coup_num_usr \u0026lt; ?;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e为什么安全\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSELECT 走 MVCC 快照读，不加任何锁\u003c/li\u003e\n\u003cli\u003eUPDATE 只通过主键定位，所有事务的加锁顺序都是\u0026quot;只锁主键索引\u0026quot;\u003c/li\u003e\n\u003cli\u003e加锁顺序统一 → 打破循环等待 → 不会死锁\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e4.4 死锁排查工具箱\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e查看最近的死锁信息\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSHOW ENGINE INNODB STATUS\\G\n-- 找到 \u0026quot;LATEST DETECTED DEADLOCK\u0026quot; 段落\n-- 会显示两个事务各自持有和等待的锁\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eMySQL 8.0+ 实时查看锁信息\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 查看当前持有的锁\nSELECT * FROM performance_schema.data_locks;\n\n-- 查看锁等待关系\nSELECT * FROM performance_schema.data_lock_waits;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e关键配置项\u003c/strong\u003e：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e参数\u003c/th\u003e\n\u003cth\u003e默认值\u003c/th\u003e\n\u003cth\u003e说明\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003einnodb_lock_wait_timeout\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e50 秒\u003c/td\u003e\n\u003ctd\u003e锁等待超时时间\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003einnodb_deadlock_detect\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003eON\u003c/td\u003e\n\u003ctd\u003e自动死锁检测\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003einnodb_print_all_deadlocks\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003eOFF\u003c/td\u003e\n\u003ctd\u003e将所有死锁信息写入错误日志\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cblockquote\u003e\n\u003cp\u003e建议生产环境开启 \u003ccode\u003einnodb_print_all_deadlocks\u003c/code\u003e，方便事后分析。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003ch3\u003e4.5 死锁预防通用策略\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e策略\u003c/th\u003e\n\u003cth\u003e做法\u003c/th\u003e\n\u003cth\u003e原理\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e统一加锁顺序\u003c/td\u003e\n\u003ctd\u003e所有事务按主键顺序加锁\u003c/td\u003e\n\u003ctd\u003e打破循环等待\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e保持事务短小\u003c/td\u003e\n\u003ctd\u003e减少持锁时间和锁范围\u003c/td\u003e\n\u003ctd\u003e减少冲突窗口\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e避免锁升级\u003c/td\u003e\n\u003ctd\u003eWHERE 条件必须走索引\u003c/td\u003e\n\u003ctd\u003e防止行锁退化为表锁\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e使用主键更新\u003c/td\u003e\n\u003ctd\u003e先 SELECT id，再 UPDATE WHERE id=?\u003c/td\u003e\n\u003ctd\u003e统一加锁路径\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e降低隔离级别\u003c/td\u003e\n\u003ctd\u003eRead Committed 加锁更少\u003c/td\u003e\n\u003ctd\u003e减少间隙锁，降低冲突\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e重试机制\u003c/td\u003e\n\u003ctd\u003e捕获死锁异常后自动重试\u003c/td\u003e\n\u003ctd\u003e死锁不可完全避免时的兜底\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003chr\u003e\n\u003ch2\u003e五、InnoDB vs MyISAM：锁机制对比\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e维度\u003c/th\u003e\n\u003cth\u003eInnoDB\u003c/th\u003e\n\u003cth\u003eMyISAM\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e锁粒度\u003c/td\u003e\n\u003ctd\u003e行级锁（基于索引）\u003c/td\u003e\n\u003ctd\u003e表级锁\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e事务支持\u003c/td\u003e\n\u003ctd\u003e完整 ACID\u003c/td\u003e\n\u003ctd\u003e不支持\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e死锁\u003c/td\u003e\n\u003ctd\u003e可能发生\u003c/td\u003e\n\u003ctd\u003e不会（表级锁不产生循环等待）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e并发读写\u003c/td\u003e\n\u003ctd\u003e高（行锁冲突少）\u003c/td\u003e\n\u003ctd\u003e低（写锁阻塞所有读）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e崩溃恢复\u003c/td\u003e\n\u003ctd\u003eredo log 保证恢复\u003c/td\u003e\n\u003ctd\u003e无保障\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e存储文件\u003c/td\u003e\n\u003ctd\u003eFRM + ibd（聚簇存储）\u003c/td\u003e\n\u003ctd\u003eFRM + MYI + MYD\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e外键\u003c/td\u003e\n\u003ctd\u003e支持\u003c/td\u003e\n\u003ctd\u003e不支持\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003eMyISAM 的锁行为\u003c/strong\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e读操作：对整表加共享锁 → 多个读可以并行\n写操作：对整表加排他锁 → 阻塞所有读和写\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e简单粗暴，但没有死锁问题（只有表级锁，不存在\u0026quot;持有 A 等 B、持有 B 等 A\u0026quot;的情况）。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e工程判断\u003c/strong\u003e：除了只读归档表和全文搜索（MyISAM 的全文索引在 MySQL 5.6 之前更成熟）等极少数场景，一律使用 InnoDB。MySQL 5.5.5 之后 InnoDB 已经是默认引擎。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2\u003e六、分页查询与锁的关系\u003c/h2\u003e\n\u003cp\u003e分页查询的性能问题不只是\u0026quot;扫描行数多\u0026quot;，还有一个容易忽视的问题：\u003cstrong\u003e持锁时间。\u003c/strong\u003e\u003c/p\u003e\n\u003ch3\u003e大偏移分页的锁隐患\u003c/h3\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- 在一个事务中\nBEGIN;\nSELECT * FROM orders WHERE status = 1 ORDER BY id LIMIT 100000, 20 FOR UPDATE;\n-- 扫描 100,020 行，对所有扫描到的行加排他锁\n-- 锁持有到事务提交\nCOMMIT;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e如果这个事务执行 500ms，那 100,020 行数据被锁住 500ms。在高并发场景下，其他要修改这些行的事务全部排队等待。\u003c/p\u003e\n\u003ch3\u003e优化方案\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e方案一：基于主键翻页（最推荐）\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT * FROM orders WHERE status = 1 AND id \u0026gt; 456891 ORDER BY id LIMIT 20;\n-- 只扫描 20 行，只锁 20 行\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e方案二：子查询定位\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT * FROM orders\nWHERE id \u0026gt;= (SELECT id FROM orders WHERE status = 1 ORDER BY id LIMIT 100000, 1)\n  AND status = 1\nORDER BY id LIMIT 20;\n-- 子查询走覆盖索引（只查 id），不加行锁\n-- 外层只扫描 20 行\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e方案三：延迟关联\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSELECT o.* FROM orders o\nINNER JOIN (SELECT id FROM orders WHERE status = 1 ORDER BY id LIMIT 100000, 20) t\nON o.id = t.id;\n-- 子查询在索引上操作，不回表不加行锁\n-- 外层只回表 20 行\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e核心原则\u003c/strong\u003e：缩短事务中的锁持有时间。扫描行数越少，持锁时间越短，并发冲突越少。\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e关于分页查询优化的更多细节和性能对比，参见\u003ca href=\"/blog/engineering/middleware/mysql%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%EF%BC%9A%E4%BB%8Eb+tree%E5%88%B0explain%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5\"\u003e《MySQL 索引原理与查询优化》\u003c/a\u003e中的\u0026quot;分页查询优化\u0026quot;章节。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003chr\u003e\n\u003ch2\u003e七、工程实践总结\u003c/h2\u003e\n\u003ch3\u003e场景决策矩阵\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e业务场景\u003c/th\u003e\n\u003cth\u003e推荐隔离级别\u003c/th\u003e\n\u003cth\u003e锁策略\u003c/th\u003e\n\u003cth\u003e注意事项\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\u003ctr\u003e\n\u003ctd\u003e普通 CRUD\u003c/td\u003e\n\u003ctd\u003eRead Committed\u003c/td\u003e\n\u003ctd\u003e短事务，尽快提交\u003c/td\u003e\n\u003ctd\u003e大多数场景的最佳平衡\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e余额扣减 / 库存扣减\u003c/td\u003e\n\u003ctd\u003eRepeatable Read\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eSELECT ... FOR UPDATE\u003c/code\u003e 锁行后更新\u003c/td\u003e\n\u003ctd\u003e用主键加锁，避免死锁\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e批量数据更新\u003c/td\u003e\n\u003ctd\u003eRead Committed\u003c/td\u003e\n\u003ctd\u003e分批提交（每 1000 行 COMMIT 一次）\u003c/td\u003e\n\u003ctd\u003e控制锁持有范围，避免长事务\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e热点行更新（秒杀）\u003c/td\u003e\n\u003ctd\u003eRead Committed\u003c/td\u003e\n\u003ctd\u003e排队 + 合并写入，而非靠数据库锁硬扛\u003c/td\u003e\n\u003ctd\u003e单行高并发更新不是数据库该解决的问题\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e对账 / 报表查询\u003c/td\u003e\n\u003ctd\u003eRead Committed\u003c/td\u003e\n\u003ctd\u003e不加锁，用 MVCC 快照读\u003c/td\u003e\n\u003ctd\u003e不需要强一致，减少锁竞争\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e跨服务操作\u003c/td\u003e\n\u003ctd\u003e—\u003c/td\u003e\n\u003ctd\u003e参考分布式事务方案\u003c/td\u003e\n\u003ctd\u003e不要在分布式场景下依赖数据库事务\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\u003c/table\u003e\n\u003ch3\u003e关键原则\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e① 事务越短越好\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e事务持有锁的时间 = 从加锁到 COMMIT 的时间。在事务中做网络调用、文件操作、复杂计算——都是在延长锁的持有时间，放大冲突概率。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003e-- ✗ 坏实践：事务中包含外部调用\nBEGIN;\nSELECT balance FROM accounts WHERE id = 1 FOR UPDATE;\n-- 调用外部支付接口... 200ms\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nCOMMIT;\n-- id=1 的行被锁住 200ms+\n\n-- ✓ 好实践：先完成外部调用，再开事务\n-- 调用外部支付接口... 200ms\nBEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1 AND balance \u0026gt;= 100;\nCOMMIT;\n-- id=1 的行只被锁住几毫秒\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e② WHERE 条件必须走索引\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e没有索引的 UPDATE/DELETE 会锁住全表扫描路径上的所有行。一条看似无害的 UPDATE 可能导致整张表不可写。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e③ 统一加锁顺序\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e如果多个事务需要锁多行或多个索引，确保它们按相同的顺序加锁。最简单的做法：永远用主键作为 UPDATE 的 WHERE 条件。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e④ 死锁是正常现象\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e在高并发系统中，死锁不可能完全消除。关键是：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e设计时尽量减少死锁概率（统一顺序、缩短事务）\u003c/li\u003e\n\u003cli\u003e运行时有兜底机制（捕获死锁异常、自动重试）\u003c/li\u003e\n\u003cli\u003e事后能排查根因（开启 \u003ccode\u003einnodb_print_all_deadlocks\u003c/code\u003e、定期分析 \u003ccode\u003eSHOW ENGINE INNODB STATUS\u003c/code\u003e）\u003c/li\u003e\n\u003c/ul\u003e\n\u003cblockquote\u003e\n\u003cp\u003e关于分布式场景下的事务方案（2PC、TCC、Saga、本地消息表等），参见\u003ca href=\"/blog/engineering/middleware/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%B8%8E%E4%BA%8B%E5%8A%A1%EF%BC%9A%E4%BB%8E%E5%9F%BA%E7%A1%80%E5%88%B0%E5%AE%9E%E8%B7%B5\"\u003e《分布式系统与事务：从基础到实践》\u003c/a\u003e。\u003c/p\u003e\n\u003c/blockquote\u003e\n"])</script><script>self.__next_f.push([1,"5:[\"$\",\"article\",null,{\"className\":\"min-h-screen\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12\",\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-8\",\"children\":[[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-1 text-sm mb-4\",\"children\":[[\"$\",\"$L13\",null,{\"href\":\"/blog/page/1\",\"className\":\"text-gray-500 hover:text-blue-600 transition-colors\",\"children\":\"博客\"}],[\"$\",\"span\",null,{\"className\":\"text-gray-300\",\"children\":\"/\"}],[\"$\",\"$L13\",null,{\"href\":\"/blog/category/engineering/page/1\",\"className\":\"text-gray-500 hover:text-blue-600 transition-colors\",\"children\":\"Engineering\"}],[[\"$\",\"span\",null,{\"className\":\"text-gray-300\",\"children\":\"/\"}],[\"$\",\"$L13\",null,{\"href\":\"/blog/category/engineering/middleware/page/1\",\"className\":\"text-blue-600 hover:text-blue-700 transition-colors\",\"children\":\"中间件\"}]]]}],[\"$\",\"div\",null,{\"className\":\"flex items-center mb-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal\",\"children\":[[\"$\",\"svg\",null,{\"className\":\"w-4 h-4 mr-2 text-gray-400\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"viewBox\":\"0 0 24 24\",\"children\":[\"$\",\"path\",null,{\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"strokeWidth\":2,\"d\":\"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z\"}]}],[\"$\",\"time\",null,{\"dateTime\":\"2025-11-25\",\"children\":\"2025年11月25日\"}]]}]}],[\"$\",\"h1\",null,{\"className\":\"text-4xl font-bold text-gray-900 mb-6 text-center\",\"children\":\"MySQL 索引原理与查询优化：从 B+Tree 到 EXPLAIN 的工程实践\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2 mb-6 justify-center\",\"children\":[[\"$\",\"$L13\",\"MySQL\",{\"href\":\"/blog/tag/MySQL/page/1/\",\"className\":\"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors\",\"children\":\"MySQL\"}],[\"$\",\"$L13\",\"索引优化\",{\"href\":\"/blog/tag/%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/page/1/\",\"className\":\"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors\",\"children\":\"索引优化\"}],[\"$\",\"$L13\",\"慢查询\",{\"href\":\"/blog/tag/%E6%85%A2%E6%9F%A5%E8%AF%A2/page/1/\",\"className\":\"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors\",\"children\":\"慢查询\"}],[\"$\",\"$L13\",\"数据库\",{\"href\":\"/blog/tag/%E6%95%B0%E6%8D%AE%E5%BA%93/page/1/\",\"className\":\"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors\",\"children\":\"数据库\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"max-w-5xl mx-auto\",\"children\":[\"$\",\"$L14\",null,{\"content\":\"$15\"}]}],[\"$\",\"$10\",null,{\"fallback\":[\"$\",\"div\",null,{\"className\":\"mt-12 pt-8 border-t border-gray-200\",\"children\":\"加载导航中...\"}],\"children\":[\"$\",\"$L16\",null,{\"globalNav\":{\"prev\":{\"slug\":\"engineering/middleware/Redis核心机制与工程实践：从数据结构选型到持久化的设计权衡\",\"title\":\"Redis 核心机制与工程实践：从数据结构选型到持久化的设计权衡\",\"description\":\"Redis 的快不是因为内存数据库四个字就能解释的，而是单线程模型、精心设计的数据结构、惰性过期策略和高效持久化机制共同作用的结果。从五种数据类型的内部编码理解选型依据，从 RDB 和 AOF 的写入管线理解持久化保障，从 Sentinel 的故障检测理解高可用设计——每一个工程决策都在性能、安全和复杂度之间寻找平衡点。\",\"pubDate\":\"2025-11-25\",\"tags\":[\"Redis\",\"缓存\",\"持久化\",\"高可用\"],\"heroImage\":\"$undefined\",\"content\":\"$17\"},\"next\":{\"slug\":\"engineering/middleware/MySQL事务与锁机制：从隔离级别到死锁排查的全链路分析\",\"title\":\"MySQL 事务与锁机制：从隔离级别到死锁排查的全链路分析\",\"description\":\"事务的四个隔离级别不是教科书上的枯燥定义，而是对读写冲突这个核心矛盾的四种不同权衡。Read Uncommitted 用最小代价换最大并发，Serializable 用最大代价换绝对正确。中间两档的差异藏在锁持有多久和锁住什么范围的细节里。理解这些细节，才能看懂 InnoDB 的加锁行为，才能在死锁发生时快速定位根因。\",\"pubDate\":\"2025-11-25\",\"tags\":[\"MySQL\",\"事务\",\"锁机制\",\"死锁\"],\"heroImage\":\"$undefined\",\"content\":\"$18\"}},\"tagNav\":{\"MySQL\":{\"prev\":null,\"next\":\"$5:props:children:props:children:props:children:2:props:children:props:globalNav:next\"},\"索引优化\":{\"prev\":null,\"next\":null},\"慢查询\":{\"prev\":null,\"next\":null},\"数据库\":{\"prev\":null,\"next\":null}}}]}],[\"$\",\"$L19\",null,{}]]}]}]}]\n"])</script><script>self.__next_f.push([1,"8:null\n"])</script><script>self.__next_f.push([1,"c:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n7:null\n"])</script><script>self.__next_f.push([1,"a:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"MySQL 索引原理与查询优化：从 B+Tree 到 EXPLAIN 的工程实践 - Skyfalling Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"索引不是加了就快的魔法，而是一套需要理解底层数据结构、遵循匹配规则、结合业务场景做判断的工程实践。从磁盘 I/O 的物理约束理解 B+Tree 的设计动机，从最左前缀匹配理解复合索引的使用规则，从 EXPLAIN 的输出理解优化器的真实决策——每一步都是在缩小扫描行数与实际需要行数之间的差距。\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"MySQL 索引原理与查询优化：从 B+Tree 到 EXPLAIN 的工程实践\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"索引不是加了就快的魔法，而是一套需要理解底层数据结构、遵循匹配规则、结合业务场景做判断的工程实践。从磁盘 I/O 的物理约束理解 B+Tree 的设计动机，从最左前缀匹配理解复合索引的使用规则，从 EXPLAIN 的输出理解优化器的真实决策——每一步都是在缩小扫描行数与实际需要行数之间的差距。\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-11-25\"}],[\"$\",\"meta\",\"6\",{\"property\":\"article:author\",\"content\":\"Skyfalling\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:title\",\"content\":\"MySQL 索引原理与查询优化：从 B+Tree 到 EXPLAIN 的工程实践\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:description\",\"content\":\"索引不是加了就快的魔法，而是一套需要理解底层数据结构、遵循匹配规则、结合业务场景做判断的工程实践。从磁盘 I/O 的物理约束理解 B+Tree 的设计动机，从最左前缀匹配理解复合索引的使用规则，从 EXPLAIN 的输出理解优化器的真实决策——每一步都是在缩小扫描行数与实际需要行数之间的差距。\"}],[\"$\",\"link\",\"10\",{\"rel\":\"shortcut icon\",\"href\":\"/favicon.png\"}],[\"$\",\"link\",\"11\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}],[\"$\",\"link\",\"12\",{\"rel\":\"icon\",\"href\":\"/favicon.png\"}],[\"$\",\"link\",\"13\",{\"rel\":\"apple-touch-icon\",\"href\":\"/favicon.png\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"12:{\"metadata\":\"$a:metadata\",\"error\":null,\"digest\":\"$undefined\"}\n"])</script></body></html>
