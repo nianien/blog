@@ -1,7 +1,7 @@
 ---
 title: "短剧出海本地化：一套可规模化的全自动 AI 配音流水线设计与实践"
 description: "本文记录了我在真实短剧出海项目中，从 0 到 1 设计并落地的一套全自动视频本地化流水线。该系统以 SSOT 为核心，串联 ASR、翻译、TTS 与混音等多个阶段，在严格的成本与时间轴约束下，实现了可重跑、可人工干预、可规模化的工程化交付。"
-pubDate: 2026-2-10
+pubDate: 2026-3-01
 tags: ["AI配音", "TTS", "视频本地化"]
 ---
 
@@ -17,6 +17,7 @@ tags: ["AI配音", "TTS", "视频本地化"]
 
 - **关注整体方案**：阅读第 1、2、7 章（约 5 分钟）
 - **工程实现 / 架构设计**：重点阅读第 3、4 章（约 20 分钟）
+- **可视化工具链（IDE + Voice Casting）**：重点阅读 3.5、3.8 节
 - **成本与合规**：直接跳到第 6 章
 
 ---
@@ -45,40 +46,48 @@ tags: ["AI配音", "TTS", "视频本地化"]
 
 ## 2. 流水线总览
 
-整条流水线共 10 个阶段，严格线性执行：
+整条流水线共 9 个阶段，分为 5 个 Stage，通过 2 个 Gate（人工质量关卡）进行质量把控：
 
 ```
-demux → sep → asr → sub → [人工校验] → mt → align → tts → mix → burn
-  │       │      │      │                  │      │       │      │      │
-  │       │      │      │                  │      │       │      │      └─ 成片 mp4
-  │       │      │      │                  │      │       │      └─ 混音 WAV
-  │       │      │      │                  │      │       └─ 逐句 TTS 音频
-  │       │      │      │                  │      └─ 配音 SSOT（dub.model.json）
-  │       │      │      │                  └─ 翻译结果（mt_output.jsonl）
-  │       │      │      └─ 字幕 SSOT（subtitle.model.json）
-  │       │      └─ ASR 原始响应
-  │       └─ 人声 / 伴奏分离
-  └─ 原始音频
+Stage:  提取      识别                     [校准]   翻译          [审阅]   配音        合成
+Phase:  extract   asr → parse → reseg              mt → align             tts → mix   burn
+Gate:                                       ↑                       ↑
+                                    source_review          translation_review
+```
+
+```
+extract → asr → parse → reseg → [校准] → mt → align → [审阅] → tts → mix → burn
+   │        │       │        │               │      │              │      │      │
+   │        │       │        │               │      │              │      │      └─ 成片 mp4
+   │        │       │        │               │      │              │      └─ 混音 WAV
+   │        │       │        │               │      │              └─ 逐句 TTS 音频
+   │        │       │        │               │      └─ 配音 SSOT（dub.model.json）
+   │        │       │        │               └─ 翻译结果（mt_output.jsonl）
+   │        │       │        └─ LLM 断句优化
+   │        │       └─ 字幕 SSOT（subtitle.model.json）
+   │        └─ ASR 原始响应
+   └─ 原始音频 + 人声 / 伴奏分离
 ```
 
 三个 SSOT（Single Source of Truth）贯穿整条流水线：
 
 | SSOT | 产出阶段 | 消费阶段 | 说明 |
 |------|---------|---------|------|
-| `asr-result.json` | ASR | Sub | ASR 原始响应，包含 word 级时间戳、speaker、emotion |
-| `subtitle.model.json` | Sub | MT, Align | 字幕数据源，人工可编辑 |
+| `asr-result.json` | ASR | Parse, Reseg | ASR 原始响应，包含 word 级时间戳、speaker、emotion |
+| `subtitle.model.json` | Parse | MT, Align | 字幕数据源，人工可编辑 |
 | `dub.model.json` | Align | TTS, Mix | 配音时间轴，包含翻译文本、时长预算 |
 
 ### 一页版心智模型
 
-如果不看任何实现细节，这套流水线的核心逻辑可以用 6 句话概括：
+如果不看任何实现细节，这套流水线的核心逻辑可以用 7 句话概括：
 
 1. **音频先洗干净**：人声分离后再做 ASR，识别率显著提升
 2. **ASR 原始结果不动**：一切下游数据从 raw response 派生，不丢信息
 3. **人只改 SSOT**：人工校验只编辑 `subtitle.model.json`，不碰任何派生文件
-4. **翻译不碰时间轴**：翻译只管文本，时间窗由 SSOT 锁定
-5. **配音服从原时间窗**：TTS 输出必须塞进原始 utterance 的时间预算，超了就加速，绝不拉长
-6. **混音只做"放置"**：每段 TTS 精确放到时间轴位置，不做全局拉伸
+4. **Gate 控制节奏**：两个质量关卡（校准 / 审阅）自动暂停流水线，人工确认后再继续
+5. **翻译不碰时间轴**：翻译只管文本，时间窗由 SSOT 锁定
+6. **配音服从原时间窗**：TTS 输出必须塞进原始 utterance 的时间预算，超了就加速，绝不拉长
+7. **混音只做"放置"**：每段 TTS 精确放到时间轴位置，不做全局拉伸
 
 ### 为什么这件事并不简单？
 
@@ -95,26 +104,21 @@ ASR、翻译、TTS 各自都有成熟的 API。但把它们串成一条**可运�
 
 ## 3. 各环节深度分析
 
-### 3.1 音频提取（Demux）
+### 3.1 音频提取 + 人声分离（Extract）
 
-**做什么**：从 mp4 提取单声道 WAV（16kHz, PCM s16le）。
+> 旧版流水线中 Demux（音频提取）和 Sep（人声分离）是两个独立阶段，当前版本已合并为单个 `extract` 阶段。
 
-**工程要点**：
-- 统一采样率为 16kHz（ASR 模型的标准输入）
-- 强制单声道（短剧通常是单声道或假立体声）
-- 一行 ffmpeg 命令，无模型依赖
+**做什么**：
+1. 从 mp4 提取单声道 WAV（16kHz, PCM s16le）
+2. 将人声从 BGM/环境音中分离，输出 `vocals.wav`（人声）和 `accompaniment.wav`（伴奏）
 
-这是整条流水线中最简单的环节，但采样率的选择直接影响下游 ASR 和 TTS 的质量。16kHz 是绝大多数语音模型的训练采样率，不要为了"保留细节"用更高采样率——那只会增加传输和处理成本。
+**为什么合并**：这两步紧密耦合且中间产物没有人工干预需求，合并后减少 manifest 管理开销。
 
-### 3.2 人声分离（Sep）
-
-**做什么**：将人声从 BGM/环境音中分离，输出 `vocals.wav`（人声）和 `accompaniment.wav`（伴奏）。
-
-**为什么需要**：
+**为什么需要人声分离**：
 - ASR 准确率：带 BGM 的音频会显著降低语音识别准确率
 - 混音质量：最终混音需要在伴奏轨上叠加英文 TTS，如果不分离就只能覆盖原始音频
 
-#### 模型选型
+#### 人声分离模型选型
 
 | 模型 | 类型 | 质量 | 速度 | 成本 |
 |------|------|------|------|------|
@@ -128,11 +132,12 @@ ASR、翻译、TTS 各自都有成熟的 API。但把它们串成一条**可运�
 - 虽然 CPU 模式慢（2 分钟音频需 3-10 分钟），但质量显著优于 Spleeter
 - GPU 加速后可以降到实时以下
 
-**工程处理**：
+**工程要点**：
+- 统一采样率为 16kHz（ASR 模型的标准输入），强制单声道
 - 使用 `--two-stems=vocals` 模式（只分离人声和伴奏，不拆鼓/贝斯）
 - 输出自动缓存：按输入文件哈希存储，相同音频不重复分离
 
-### 3.3 语音识别 + 说话人分离（ASR）
+### 3.2 语音识别 + 说话人分离（ASR）
 
 **做什么**：将音频转为文字，同时标注说话人身份、word 级时间戳、情绪和性别。
 
@@ -170,7 +175,9 @@ ASR 的 speaker diarization 是目前全流水线中**最大的不确定性来�
 - 音频上传至火山引擎对象存储（TOS），基于内容哈希去重，避免重复上传
 - 采用异步轮询模式：submit → poll query，支持长音频
 
-### 3.4 字幕模型生成（Sub）
+### 3.3 字幕模型生成（Parse）
+
+> 旧版流水线中称为 Sub 阶段，当前版本更名为 `parse`。
 
 **做什么**：从 ASR 原始响应生成结构化的字幕模型（`subtitle.model.json`），这是人工校验的切入点。
 
@@ -224,17 +231,45 @@ asr-result.json → extract_all_words (speaker_gender_map)
 
 speaker 提升为对象而非扁平字符串，将 gender、speech_rate、emotion 等说话人属性内聚到 speaker 对象内，语义更清晰，也让 gender 信息自然流向下游。
 
-**副作用**：Sub 阶段完成后会自动更新 `speaker_to_role.json`（剧级文件），收集本集出现的所有 speaker ID，为后续声线分配做准备。
+### 3.4 LLM 断句优化（Reseg）
 
-### 3.5 人工校验（Bless）
+**做什么**：对 Parse 阶段产出的长 utterance 进行 LLM 驱动的断句优化。
 
-Sub 阶段完成后，流水线会暂停，等待人工检查 `subtitle.model.json`：
+**为什么需要单独一个阶段**：Parse 阶段基于静音间隔和 speaker 边界做机械拆分，但中文口语中经常出现一口气说完的长句（20-30 字），这些长句直译为英文后会超出 TTS 时长预算。Reseg 用 LLM 在语义合适的位置二次拆分。
 
-- **修正 speaker 错误**：将被误判的 speaker 合并（如 spk_1 和 spk_3 实际是同一人）
-- **修正文本错误**：ASR 识别错误的文字
-- **调整 utterance 边界**：拆分过长的 utterance 或合并碎片
+**触发条件**：
+- 段落字符数 ≥ 25 字
+- 段落时长 ≥ 6000ms
 
-这是 **全流水线中唯一的必要人工干预点**。
+**工作方式**：
+1. 筛选出超阈值的段落作为候选
+2. 将候选段落的中文文本发送给 LLM（GPT-4o / Gemini），请求按语义拆分
+3. 利用 ASR 的 **word 级时间戳** 为拆分后的子段精确分配起止时间
+4. 验证拆分一致性（文本完整性、最小长度/时长）
+
+**关键设计**：Reseg 不会改变原始时间骨架——它只在 word 边界处切分，确保拆分后的每个子段都有精确的毫秒级时间戳。
+
+### 3.5 人工校准（ASR Calibration IDE）
+
+Parse + Reseg 完成后，流水线在 **source_review** 门控处暂停，等待人工校准。
+
+这是**全流水线中最关键的人工干预点**。为此我们构建了一个专用的 **ASR Calibration IDE**——基于 Web 的可视化校准工具。界面包含视频播放器、段落列表、多轨时间轴、Pipeline 状态面板四个核心区域：
+
+![ASR Calibration IDE](/images/blog/engineering/ide-overview.png)
+
+#### 核心校准能力
+
+- **文本修正**：双击段落文本直接编辑（修正 ASR 识别错误）
+- **说话人分配**：快捷键 1-9 切换说话人（修正 speaker diarization 错误）
+- **时间轴微调**：Alt+方向键 ±50ms / Shift+Alt ±200ms 精细调整
+- **拆分 / 合并**：Ctrl+B 在播放头位置拆分，Ctrl+M 合并相邻段落
+- **情绪标注**：快捷键切换情绪标签（N=neutral, A=angry, S=sad...）
+- **时间轴可视化**：Canvas 绘制的多轨时间轴，按说话人分色，支持拖拽调整边缘
+- **Pipeline 集成**：底部集成 Pipeline 状态面板，可直接触发流水线执行、查看各阶段状态和 Gate 状态
+
+#### 导出
+
+校准完成后点击 Export，自动生成 `subtitle.model.json`（下游 MT/Align 的输入）+ `asr.fix.json`（向后兼容）+ `zh.srt`（中文字幕），然后在 Pipeline 面板中直接触发后续阶段。
 
 ### 3.6 机器翻译（MT）
 
@@ -271,6 +306,8 @@ Sub 阶段完成后，流水线会暂停，等待人工检查 `subtitle.model.js
 - 目标语速：12-17 CPS（characters per second）
 
 ### 3.7 时间轴对齐 + 重断句（Align）
+
+> Align 完成后，流水线在 **translation_review** 门控处暂停，人工可审阅翻译质量后再触发后续的 TTS 和混音阶段。
 
 **做什么**：将英文翻译映射回原始中文时间轴，生成配音 SSOT（`dub.model.json`）。
 
@@ -310,17 +347,35 @@ Sub 阶段完成后，流水线会暂停，等待人工检查 `subtitle.model.js
 - 支持 emotion 和 prosody 精细控制
 - 流式输出，支持 sentence 级时间戳
 
-**两层声线映射 + 性别兜底**：
+**单文件声线映射（`roles.json`）**：
 
-```
-speaker_to_role.json (人工填写)     role_cast.json (人工填写)        VolcEngine API
-  spk_1 → "Ping_An"           →    "ICL_en_male_zayne_tob"     →    voice_type 参数
-  spk_9 → ""(未标注)          →    default_roles["male"]       →    按性别兜底
+> 早期版本使用两个文件（`speaker_to_role.json` + `role_cast.json`），当前已简化为单文件 `roles.json`，位于 `{剧}/dub/dict/roles.json`，整剧共享。
+
+```json
+{
+  "roles":         { "PingAn": "en_male_hades_moon_bigtts", ... },
+  "default_roles": { "male": "zh_male_jieshuonansheng_mars_bigtts", "female": "..." }
+}
 ```
 
-1. `speaker_to_role.json`：speaker → 角色名（按集分 key）
-2. `role_cast.json`：角色名 → voice_type（剧级复用）
-3. 未标注的 speaker 按 gender 走 `default_roles` 兜底
+解析链路：
+- 已标注角色：`roles[角色名] → voice_type`
+- 未标注角色：按 gender 走 `default_roles` 兜底
+
+**Voice Casting UI**：
+
+为了消除人工编辑 JSON 的摩擦，IDE 内置了 **Voice Casting** 页面——可视化管理 `roles.json` 的全屏工具：
+
+左栏为角色列表，右栏为音色目录。选中角色后点击右栏音色即可完成绑定；每个音色卡片支持试听官方 demo 和自定义合成，展开 "Try" 面板可选择情绪、输入文本、一键合成对比不同音色效果：
+
+![Voice Casting — 角色声线分配与试听](/images/blog/engineering/voice-casting.png)
+
+- **分配**：选中左栏角色 → 点击右栏音色卡片即完成绑定（蓝色圆点标记）
+- **试听**：音色卡片 ▶ 按钮播放官方 demo；"Try" 按钮展开内联合成面板
+- **合成对比**：选择 Emotion + 输入文本 → Synthesize → 自动播放，历史记录按音色分组展示
+- **自动滚动**：选中已绑定音色的角色时，右栏自动滚动到对应音色卡片居中
+
+合成结果缓存在服务端（基于 `SHA256(voice_id|text|emotion)` 去重），相同参数不重复调用 TTS API。
 
 **语速适配**：
 - TTS 合成后计算时长，若超过 budget_ms，通过调整 speech_rate 参数加速（最高 1.3×）
@@ -364,7 +419,7 @@ atrim=duration={target_sec}   # 超出时精确截断
 - 目标：-16 LUFS（短视频标准）
 - True Peak：-1.0 dB
 
-### 3.10 硬字幕擦除（Inpaint）
+### 3.10 硬字幕擦除（Inpaint，暂未集成）
 
 **做什么**：检测并擦除原视频中烧录的中文硬字幕，为英文字幕腾出空间。
 
@@ -420,10 +475,10 @@ ffmpeg -i video.mp4 -i mix.wav \
 
 **典型场景**：
 ```bash
-# 首次运行到 sub，人工校验
-vsd run video.mp4 --to sub
+# 首次运行到 parse，进入校准 Gate
+vsd run video.mp4 --to parse
 
-# 校验后继续，sub 和之前的阶段自动跳过
+# 校准完成后继续，parse 和之前的阶段自动跳过
 vsd run video.mp4 --to burn
 
 # 翻译不满意，只重跑 mt 及之后
@@ -486,13 +541,13 @@ workspace/
 
 ### 4.4 人工干预：Bless 机制
 
-**问题**：人工编辑了 `subtitle.model.json` 后，文件内容变了，指纹不匹配，Runner 会认为 Sub 阶段需要重跑——这会覆盖人工编辑。
+**问题**：人工编辑了 `subtitle.model.json` 后，文件内容变了，指纹不匹配，Runner 会认为 Parse 阶段需要重跑——这会覆盖人工编辑。
 
 **解决方案：`vsd bless` 命令**
 
 ```bash
 # 编辑 subtitle.model.json 后
-vsd bless video.mp4 sub
+vsd bless video.mp4 parse
 ```
 
 Bless 做的事情很简单：**重新计算指定阶段的输出文件指纹，更新 manifest**。
@@ -506,7 +561,7 @@ for key, artifact_data in phase_artifacts.items():
 manifest.save()
 ```
 
-Bless 后，Runner 看到输出指纹匹配，就不会重跑 Sub 阶段。但下游阶段（MT、Align）的输入指纹变了（因为 subtitle.model.json 内容变了），所以会自动重跑——这正是我们想要的行为。
+Bless 后，Runner 看到输出指纹匹配，就不会重跑 Parse 阶段。但下游阶段（MT、Align）的输入指纹变了（因为 subtitle.model.json 内容变了），所以会自动重跑——这正是我们想要的行为。
 
 **设计哲学**：Bless 不是"跳过"，而是"接受"。它告诉系统"这个产物的内容是我认可的"，然后增量执行自然会做正确的事。
 
@@ -526,23 +581,17 @@ Bless 后，Runner 看到输出指纹匹配，就不会重跑 Sub 阶段。但�
 
 ## 5. 未来优化方向
 
-### 5.1 自动音色池创建
+### 5.1 声线管理（已落地）
 
-**现状**：需要人工填写 `speaker_to_role.json`（speaker → 角色名）和 `role_cast.json`（角色名 → voice_type），这是目前流水线中**最耗人工的环节**。
+**旧状态**：需要人工编辑两个 JSON 文件（`speaker_to_role.json` + `role_cast.json`）来完成声线分配。
 
-**优化方向**：
+**当前状态**：已简化为单文件 `roles.json`，并配套 Voice Casting UI（见 3.8 节）。通过可视化界面完成角色→音色的绑定、试听、合成预览，大幅降低了人工操作门槛。
 
-1. **自动性别检测 → 自动分配**：ASR 已经返回 gender 信息，可以自动从声线池中按性别匹配
+**仍可优化的方向**：
+
+1. **自动性别检测 → 自动推荐**：ASR 已经返回 gender 信息，可以在 Voice Casting UI 中自动推荐性别匹配的音色
 2. **音色聚类**：对每集的 speaker 做声纹嵌入，聚类后自动匹配最相似的声线
-3. **跨集一致性**：同一剧的多集中，确保同一角色使用相同声线
-
-**实现思路**：
-```
-asr-result.json (gender, speaker)
-  → 声纹嵌入 (e.g., Resemblyzer, ECAPA-TDNN)
-    → 聚类 → 自动匹配声线池
-      → 生成 speaker_to_role.json（人工确认后 bless）
-```
+3. **跨集一致性**：同一剧的多集中，确保同一角色使用相同声线（`roles.json` 已是剧级配置，天然支持）
 
 ### 5.2 声纹识别自动关联音色
 
@@ -559,7 +608,7 @@ if reference_audio and os.path.exists(reference_audio):
 ```
 
 **流水线集成**：
-1. Sep 阶段分离出人声
+1. Extract 阶段分离出人声
 2. 按 speaker 切割出参考片段（选择最长、最清晰的一段）
 3. TTS 阶段自动使用参考片段做 ICL
 
@@ -602,7 +651,7 @@ if reference_audio and os.path.exists(reference_audio):
 | ASR | 豆包 | ~¥0.15 | 按音频时长 |
 | MT | GPT-4o-mini / Gemini Flash | ~¥0.02 | 按 token |
 | TTS | VolcEngine | ~¥0.10 | 按字符 |
-| Sep | Demucs (本地) | 电费 | CPU/GPU |
+| Extract (人声分离) | Demucs (本地) | 电费 | CPU/GPU |
 | Mix/Burn | FFmpeg (本地) | 电费 | CPU |
 | **合计** | | **~¥0.3-0.5/集** | 不含计算资源 |
 
@@ -639,13 +688,14 @@ if reference_audio and os.path.exists(reference_audio):
 关键设计决策：
 1. **SSOT 驱动**：三个核心 JSON 文件贯穿全链路，每个环节只读上游 SSOT、写下游 SSOT
 2. **增量执行**：基于指纹的 7 级检查，避免不必要的计算和 API 消耗
-3. **人工干预点最小化**：只在 Sub 阶段后暂停，其余全自动
+3. **Gate 控制节奏**：两个质量关卡（source_review / translation_review）在关键节点自动暂停，人工确认后继续
 4. **Bless 机制**：人工编辑后"接受"而非"跳过"，让增量执行自然做正确的事
 5. **Timeline-First 混音**：用 adelay 精确放置 TTS，而非全局拉伸
+6. **可视化工具链**：ASR Calibration IDE + Voice Casting UI，将人工干预的摩擦降到最低
 
 这套方案目前已在实际短剧项目中运行，单集端到端成本约 ¥0.3-0.5，从 mp4 到配音成片的全流程耗时约 10-15 分钟（含 Demucs 的 CPU 时间）。
 
-未来的主要优化方向是**消除人工声线分配**（通过声纹识别 + ICL 声音克隆），和**提升翻译质量**（通过跨句上下文理解）。合规问题（尤其是声音克隆）和成本控制（尤其是规模化后的 TTS 费用）是需要持续关注的两个维度。
+未来的主要优化方向是**自动声线推荐**（通过声纹识别 + ICL 声音克隆进一步减少人工），和**提升翻译质量**（通过跨句上下文理解）。合规问题（尤其是声音克隆）和成本控制（尤其是规模化后的 TTS 费用）是需要持续关注的两个维度。
 
 ---
 
