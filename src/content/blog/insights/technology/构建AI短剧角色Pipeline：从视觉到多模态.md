@@ -3,7 +3,7 @@ title: "构建AI短剧角色Pipeline：从视觉到多模态"
 description: "一条能跑的AI短剧角色Pipeline长什么样？本文从工程实践出发，逐层拆解视觉层（LoRA+IP-Adapter+ControlNet）、表演层（LivePortrait）、音频层（声纹克隆+TTS）、对齐层（Lip-sync）的构建方法，给出完整的技术栈选择和成本估算。"
 pubDate: 2026-03-14
 tags: ["AIGC", "AI短剧", "Pipeline", "LoRA", "Lip-sync", "TTS"]
-author: "Savin"
+author: "skyfalling"
 ---
 
 ## 一、目标：一条AI短剧角色Pipeline长什么样

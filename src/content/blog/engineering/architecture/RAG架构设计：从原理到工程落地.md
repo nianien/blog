@@ -3,7 +3,7 @@ title: "RAG 架构设计：从原理到工程落地"
 description: "面向一线工程师的 RAG 架构设计指南，覆盖六层架构、数据清洗、Chunking 策略、混合检索、多模态处理、安全合规、评测闭环与成本估算，帮你避开从 PoC 到生产的每一个坑。"
 pubDate: 2026-03-20
 tags: ["RAG", "LLM", "架构设计", "向量检索", "知识库", "AI工程"]
-author: "Savin"
+author: "skyfalling"
 ---
 
 # RAG 架构设计 — 从原理到工程落地

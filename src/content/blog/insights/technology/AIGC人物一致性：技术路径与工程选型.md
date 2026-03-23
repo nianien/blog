@@ -3,7 +3,7 @@ title: "AIGC人物一致性：技术路径与工程选型"
 description: "AI短剧的核心工程难题是人物一致性。本文从工程实践出发，拆解六种技术路径的原理与适用场景，分析DiT与U-Net架构的选型影响，并给出面向AI短剧场景的决策矩阵。"
 pubDate: 2026-03-14
 tags: ["AIGC", "人物一致性", "AI短剧", "Stable Diffusion", "技术选型"]
-author: "Savin"
+author: "skyfalling"
 ---
 
 ## 一、为什么人物一致性是AI短剧的核心难题

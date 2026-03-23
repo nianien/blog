@@ -51,13 +51,13 @@ title: "文章标题"
 description: "一两句话的文章摘要，要有信息量"
 pubDate: 2026-03-19          # 日期格式：YYYY-MM-DD，可带引号也可不带
 tags: ["标签1", "标签2"]      # 字符串数组
-author: "Savin"              # 固定作者名
+author: "skyfalling"              # 固定作者名
 ---
 ```
 
 ### Frontmatter 注意事项
 
-- `author` 固定为 `"Savin"`
+- `author` 固定为 `"skyfalling"`
 - `description` 要写得有信息密度，概括核心观点而不只是描述主题
 - `tags` 选择与内容匹配的关键词，可参考已有文章的 tag 体系
 - `pubDate` 使用当天日期
