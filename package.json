@@ -16,9 +16,9 @@
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .next out .turbo",
     "export": "NEXT_EXPORT=true next build",
-    "preview": "./scripts/preview.sh",
+    "preview": "./scripts/cli.sh preview",
     "deploy": "gh-pages -d out",
-    "help": "./scripts/help.sh"
+    "help": "./scripts/cli.sh help"
   },
   "dependencies": {
     "@giscus/react": "^3.1.0",
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@napi-rs/canvas": "^0.1.97",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

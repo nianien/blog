@@ -25,6 +25,7 @@
   "include": [
     "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": [
-    "next-tailwind-site/node_modules"
+    "next-tailwind-site/node_modules",
+    "scripts"
   ]
 }

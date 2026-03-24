@@ -83,3 +83,7 @@ temp/
 # TypeScript
 *.tsbuildinfo
 
+# 微信公众号发布工具
+.env.wx
+.wx-token.json
+
