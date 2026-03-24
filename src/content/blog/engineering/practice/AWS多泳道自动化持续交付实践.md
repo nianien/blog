@@ -21,7 +21,13 @@ tags: ["AWS", "DevOps", "泳道部署"]
 
 **问题本质：** DevOps 模板分散，难以统一演进与治理。
 
-在这种背景下，我们设计了一个具备“集中模板治理 + 并发部署能力”的体系：  
+### 从两层到三层的演化
+
+最初我们只有两层——infra 栈管网络，app 栈管一切服务资源。第一次并发部署冲突发生在两个服务同时更新 ALB ListenerRule 时：它们共享同一个 boot 栈，CloudFormation 的栈级锁让第二个部署排队等待，高峰期 pipeline 排队长达十几分钟。
+
+第一个直觉是”把 ALB 拆到每个服务自己的栈里”，但这意味着每个服务独占一个 ALB——成本不可接受。真正的解法是把 **ALB 的创建（低频）** 和 **ListenerRule 的变更（高频）** 拆开：ALB 放在 boot 栈（按服务隔离，低频变更），ListenerRule 放在 app 栈（按泳道隔离，高频变更）。这就是三层架构的由来——**不是设计出来的，是被并发冲突逼出来的**。
+
+在这种背景下，最终形成了一个具备”集中模板治理 + 并发部署能力”的体系：
 **双仓 + 三层 Pipeline + Lane 栈隔离**，下图展示了多泳道 CI/CD 的分层架构设计。
 
 ```mermaid
@@ -379,11 +385,13 @@ ALB 按 Header 匹配：
 
 ### 典型灰度流程
 
-1. 触发新 Lane：`LANE=gray`
-2. 发布 `app-user-api-dev-gray`
-3. 小流量 Header 导入 gray；
-4. 验证稳定后，将 gray 升级为 default；
-5. 删除旧 Lane 栈。
+1. 触发新 Lane：`LANE=gray`，发布 `app-user-api-dev-gray`
+2. 小流量验证：请求带 `tracestate: ctx=lane:gray` Header 导入 gray
+3. 验证通过后，以相同 `BRANCH` 和镜像 Tag 重新触发 pipeline，将 `LANE` 参数改为 `default` 即可完成正式发布
+4. default 栈更新完成，全量流量自动走 default TG（不带 Header 的请求回落至 default）
+5. 删除 gray Lane 栈：`aws cloudformation delete-stack --stack-name app-user-api-dev-gray`
+
+> **注意**："升级"不是栈迁移——gray 和 default 是两个完全独立的栈，共用同一套模板与参数机制。所谓"升级"就是用同一个镜像重新跑一次 pipeline，只是 LANE 参数不同。gray 栈在 default 发布期间可保留作为快速回滚通道，确认稳定后再删除。
 
 整个流程无须改 ALB 或共享层，完全自动化。
 

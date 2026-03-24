@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import { BlogPost, NavigationInfo, BlogPostWithNavigation, Category } from '@/types/blog';
-import { CATEGORY_META, DIR_TO_VIRTUAL } from '@/lib/categories';
+import { CATEGORY_META } from '@/lib/categories';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/blog');
 
@@ -189,10 +189,9 @@ function getPhysicalDir(slug: string): string {
   return parts[0];
 }
 
-// 从 slug 提取虚拟分类路径（经过 DIR_TO_VIRTUAL 映射）
+// 从 slug 提取分类路径（物理目录前两段）
 export function getCategoryFromSlug(slug: string): string {
-  const physicalDir = getPhysicalDir(slug);
-  return DIR_TO_VIRTUAL[physicalDir] || physicalDir;
+  return getPhysicalDir(slug);
 }
 
 // 返回所有分类及文章计数
