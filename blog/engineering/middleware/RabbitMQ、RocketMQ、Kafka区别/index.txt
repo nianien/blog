@@ -9,7 +9,7 @@ d:I[59665,[],"MetadataBoundary"]
 f:I[26614,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/605202f1c492fbd8.css","style"]
-0:{"P":null,"b":"sinq6J7hCLTNqjsRcilV3","p":"","c":["","blog","engineering","middleware","RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/605202f1c492fbd8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","NRRgAZq9ucg-AUk0LUWvYv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"6Mvh70ti4kivODsa4M3k4","p":"","c":["","blog","engineering","middleware","RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/605202f1c492fbd8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/RabbitMQ%E3%80%81RocketMQ%E3%80%81Kafka%E5%8C%BA%E5%88%AB","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","3gLONTqHttnm8FSWhWGtcv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
 10:"$Sreact.suspense"
 11:I[74911,[],"AsyncMetadata"]
 13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
@@ -445,691 +445,437 @@ public class ConsulClientApplication {
 <p>通过服务发现，将服务之间IP与端口的依赖转化为服务名的依赖，服务名可以根据具微服务业务来做标识，因此，屏蔽、解耦服务之间的依赖细节是服务发现与注册解决的第一个问题。</p>
 <p><strong>对微服务进行动态管理</strong></p>
 <p>在微服务架构中，服务众多，服务之间的相互依赖也错综复杂，无论是服务主动停止，意外挂掉，还是因为流量增加对服务实现进行扩容，这些服务数据或状态上的动态变化，都需要尽快的通知到被调用方，被调用方才采取相应的措施。因此，对于服务注册与发现要实时管理者服务的数据与状态，包括服务的注册上线、服务主动下线，异常服务的剔除。</p>
-18:T454,<h1>Maven使用技巧</h1>
-<h3>1、使用maven.config定制化配置</h3>
-<p>Located within the project&#39;s <strong>top level directory</strong>, the files</p>
+18:T3dc2,<blockquote>
+<p><em>首先强调一下，Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过</em><a href="https://central.sonatype.org/pages/ossrh-guide.html">Sonatype OSSRH</a><em>仓库来发布jar包。所以，接下来主要介绍如何将jar包发布到Sonatype OSSRH。</em></p>
+</blockquote>
+<p>首先，先说一下大体的步骤：</p>
 <ul>
-<li><code>maven.config</code></li>
-<li><code>jvm.config</code></li>
-<li><code>extensions.xml</code></li>
+<li>注册Sonatype账号</li>
+<li>创建Issue，验证域名</li>
+<li>安装GPG，发布密钥</li>
+<li>配置Maven，发布构件</li>
 </ul>
-<p>contain project specific configuration for running Maven.</p>
-<p>This directory is part of the project and may be checked in into your version control.</p>
-<blockquote>
-<p>ref：<a href="https://maven.apache.org/configure.html">https://maven.apache.org/configure.html</a></p>
-</blockquote>
-<p>常见配置如：</p>
-<pre><code class="language-bash">-Dmaven.test.skip=true
---settings
-/Users/skyfalling/.m2/settings.xml
-</code></pre>
-<p>There must not be a whitespace after <code>--settings,</code>With the introduction of <code>maven 3.9</code>, there was a BREAKING CHANGE that affects the parsing of the <code>maven.config</code> file:</p>
-<p>Each line in <code>.mvn/maven.config</code> is now interpreted as a single argument. That is, if the file contains multiple arguments, these must now be placed on separate lines.</p>
-19:T5c64,<blockquote>
-<p>微服务架构已经成为互联网后端系统的主流架构范式。然而，从单体架构迁移到微服务，绝不仅仅是把代码拆成几个服务那么简单——它涉及服务如何注册与发现、如何通信与容错、如何部署与监控等一系列基础设施问题。本文从架构设计的核心关注点出发，结合业界最佳实践，系统性地梳理微服务架构落地所需的技术体系。</p>
-</blockquote>
-<h2>微服务架构概览</h2>
-<h3>什么是微服务架构？</h3>
-<p>与单体（Monolithic）架构不同，微服务架构是由一系列<strong>职责单一的细粒度服务</strong>构成的分布式网状结构，服务之间通过轻量级机制进行通信。这种架构带来了独立部署、技术异构、弹性伸缩等优势，但同时也引入了一系列新的技术挑战。</p>
-<h3>核心技术关注点</h3>
-<p>一个完整的微服务架构需要关注以下层面：</p>
-<table>
-<thead>
-<tr>
-<th>层面</th>
-<th>关注点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>通信</strong></td>
-<td>服务注册与发现、负载均衡、RPC 框架、API 网关</td>
-</tr>
-<tr>
-<td><strong>可靠性</strong></td>
-<td>服务容错（熔断、隔离、限流、降级）</td>
-</tr>
-<tr>
-<td><strong>基础设施</strong></td>
-<td>配置中心、缓存、消息队列、数据库</td>
-</tr>
-<tr>
-<td><strong>交付</strong></td>
-<td>CI/CD 流水线、自动化测试、灰度发布</td>
-</tr>
-<tr>
-<td><strong>可观测性</strong></td>
-<td>日志系统、监控告警、链路追踪</td>
-</tr>
-<tr>
-<td><strong>部署</strong></td>
-<td>负载均衡、DNS、CDN</td>
-</tr>
-</tbody></table>
-<p>接下来，我们逐一展开讨论。</p>
-<h2>服务注册、发现与负载均衡</h2>
-<p>微服务架构下，服务提供方需要注册通告服务地址，服务调用方需要发现目标服务，同时服务提供方一般以集群方式提供服务，这就引入了负载均衡和健康检查问题。</p>
-<p>根据负载均衡器（LB）所在位置的不同，目前主要有三种方案：</p>
-<h3>方案一：集中式 LB</h3>
-<p>在服务消费者和服务提供者之间设置独立的 LB（如 F5 硬件或 LVS/HAProxy 软件），LB 上有所有服务的地址映射表，由运维配置注册。服务消费方通过 DNS 域名指向 LB。</p>
-<table>
-<thead>
-<tr>
-<th>优点</th>
-<th>缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>实现简单，当前业界主流</td>
-<td>单点问题，LB 容易成为瓶颈</td>
-</tr>
-<tr>
-<td>易于做集中式访问控制</td>
-<td>增加一跳（hop），有性能开销</td>
-</tr>
-<tr>
-<td></td>
-<td>一旦 LB 故障，影响是灾难性的</td>
-</tr>
-</tbody></table>
-<h3>方案二：进程内 LB（客户端负载）</h3>
-<p>将 LB 功能以库的形式集成到服务消费方进程内，也称为<strong>软负载（Soft Load Balancing）</strong>。需要配合服务注册表（Service Registry）支持服务自注册和自发现。</p>
-<p>工作原理：</p>
-<ol>
-<li>服务提供方启动时，将地址注册到服务注册表，并定期发送心跳</li>
-<li>服务消费方通过内置 LB 组件查询注册表，缓存并定期刷新目标地址列表</li>
-<li>以某种负载均衡策略选择目标地址，直接发起请求</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>优点</th>
-<th>缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>分布式方案，无单点问题</td>
-<td>多语言栈需开发多种客户端库</td>
-</tr>
-<tr>
-<td>服务间直接调用，性能好</td>
-<td>客户端库升级需服务方重新发布</td>
-</tr>
-</tbody></table>
-<p>典型案例：Netflix OSS（Eureka + Ribbon + Karyon）、阿里 Dubbo。</p>
-<h3>方案三：主机独立 LB 进程（Sidecar 模式）</h3>
-<p>将 LB 和服务发现功能从进程内移出，变成主机上的独立进程。同一主机上的多个服务共享该 LB 进程完成服务发现和负载均衡。</p>
-<table>
-<thead>
-<tr>
-<th>优点</th>
-<th>缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>无单点，一个 LB 挂只影响该主机</td>
-<td>部署较复杂，环节多</td>
-</tr>
-<tr>
-<td>不需要为不同语言开发客户端库</td>
-<td>出错调试排查不方便</td>
-</tr>
-<tr>
-<td>LB 升级不需要服务方改代码</td>
-<td></td>
-</tr>
-</tbody></table>
-<p>典型案例：Airbnb SmartStack（Zookeeper + Nerve + Synapse/HAProxy）、Kubernetes 内部服务发现。</p>
-<blockquote>
-<p>三种方案各有取舍，选择时需要综合考虑团队技术栈的多样性、运维能力和性能要求。当前趋势是方案三（Sidecar 模式）逐渐演化为 Service Mesh（服务网格），如 Istio + Envoy。</p>
-</blockquote>
-<h2>API 网关（Service Gateway）</h2>
-<p>微服务最终需要以某种方式暴露给外部系统访问，这就需要<strong>服务网关</strong>。网关是连接企业内部和外部系统的一道门，承担以下关键职责：</p>
-<table>
-<thead>
-<tr>
-<th>职责</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>反向路由</strong></td>
-<td>将外部请求路由到内部具体的微服务，对外呈现统一入口</td>
-</tr>
-<tr>
-<td><strong>安全认证</strong></td>
-<td>集中处理用户认证、授权和防爬虫</td>
-</tr>
-<tr>
-<td><strong>限流容错</strong></td>
-<td>流量高峰期限流保护后台，内部故障时集中容错</td>
-</tr>
-<tr>
-<td><strong>监控</strong></td>
-<td>集中监控访问量、调用延迟、错误计数</td>
-</tr>
-<tr>
-<td><strong>日志</strong></td>
-<td>收集所有访问日志，为后续分析提供数据</td>
-</tr>
-</tbody></table>
-<p>除此之外，网关还可以实现<strong>线上引流、线上压测、金丝雀发布（Canary Testing）、数据中心双活</strong>等高级功能。</p>
-<h3>微服务的分层架构</h3>
-<p>引入网关和服务注册表之后，微服务可以简化为两层结构：</p>
+<p>这里面比较重要和容易出错的是第二步和第三步，下面一一详细介绍。</p>
+<h4>1、注册Sonatype账号 <a href="#bojci" id="bojci"></a></h4>
+<p>第一步很简单，登录官网，注册账号就好了<a href="https://issues.sonatype.org/secure/Signup!default.jspa">Sign up for Jira - Sonatype JIRA</a></p>
+<p>注册完成，登陆后的界面如下：</p>
+<p><img src="/images/blog/engineering/practice-image_60.png" alt="image_60.png"></p>
+<h4>2、创建Issue <a href="#omwqz" id="omwqz"></a></h4>
+<p>这里项目选择：Community Support - Open Source Project Repository Hosting (OSSRH)，问题 类型选择：New Project</p>
+<p><img src="/images/blog/engineering/practice-image_67.png" alt="image_67.png"></p>
+<h4>2.1、补充项目信息</h4>
+<p><img src="/images/blog/engineering/practice-image_62.png" alt="image_62.png"></p>
+<h4>2.2、验证域名 <a href="#snbg0" id="snbg0"></a></h4>
+<p>我们需要使用域名作为Group Id，如果你拥有域&#x540D;<em>&#x65;xample.com，则能够使用com.example开头作为Group Id，例如：com.example.myproject。其他一些栗子如下：</em></p>
 <ul>
-<li><strong>后端通用服务（Middle Tier Service）</strong>：启动时注册地址到注册表</li>
-<li><strong>前端边缘服务（Edge Service）</strong>：查询注册表发现后端服务，对后端服务做聚合和裁剪后暴露给外部设备</li>
+<li><em>example.com -&gt; com.example.domain</em></li>
+<li><a href="http://www.springframework.org/">www.springframework.org</a> -&gt; org.springframework</li>
+<li>subdomain.example.com -&gt; example.com</li>
+<li>github.com/yourusername -&gt; io.github.yourusername</li>
+<li>my-domain.com -&gt; com.my-domain</li>
 </ul>
-<p>网关通过查询注册表将外部请求路由到前端服务，整个微服务体系的自注册、自发现和软路由就此串联起来。如果用设计模式的视角看——<strong>网关类似 Proxy/Facade 模式，服务注册表类似 IoC 依赖注入模式</strong>。</p>
-<p>常见的网关组件：Netflix Zuul、Kong、APISIX、Spring Cloud Gateway。</p>
-<h2>服务容错</h2>
-<p>当企业微服务化后，服务之间存在错综复杂的依赖关系。一个前端请求一般依赖多个后端服务（1→N 扇出）。在生产环境中，如果一个应用不能对其依赖的故障进行容错和隔离，就面临被拖垮的风险。在高流量场景下，某个单一后端一旦发生延迟，可能在数秒内导致所有应用资源（线程、队列等）被耗尽，造成<strong>雪崩效应（Cascading Failure）</strong>。</p>
-<p>业界总结出以下核心容错模式：</p>
-<h3>熔断器模式（Circuit Breaker）</h3>
-<p>原理类似家用电路熔断器。当目标服务慢或大量超时时，调用方主动熔断，防止服务被进一步拖垮。</p>
-<p>熔断器有三种状态：</p>
-<pre><code>Closed（正常）→ Open（熔断）→ Half-Open（半熔断）→ Closed/Open
+<p>要想使用某个域名作为Group Id，你需要证明拥有该域名，至于如何证明，详见官方文档：<a href="https://central.sonatype.org/faq/how-to-set-txt-record">https://central.sonatype.org/faq/how-to-set-txt-record/</a></p>
+<p>如果你没有自己的域名，则可以通过代码托管平台的账号关联子域名。假设你托管平台账户名为myusername，那么你可以通过以下托管平台验证Group Id ：</p>
+<p><img src="/images/blog/engineering/practice-image_63.png" alt="image_63.png"></p>
+<p>由于我没有自己的域名，这里我选择使用github账号验证Group Id。点击“新建”按钮，完成提交，之后你的注册邮箱会收到一封邮件，显示创建项目信息：</p>
+<p><img src="/images/blog/engineering/practice-image_65.png" alt="image_65.png"></p>
+<p>稍后还会收到一封审核邮件，提示你进行域名验证，时间延迟大概在十分钟以内。</p>
+<p><strong>2.3、人工审核及确认</strong></p>
+<p><img src="/images/blog/engineering/practice-image_66.png" alt="image_66.png"></p>
+<p>我使用的是github账户，按邮件提示，需要在github平台上创建一个指定的临时工程。创建完成之后，可以在issue下面添加评论，触发验证。验证成功后，你会收到一份邮件：</p>
+<p><img src="/images/blog/engineering/practice-image_68.png" alt="image_68.png"></p>
+<p>收到上述邮件，就表示完成了Group Id的验证，此时你就可以使用该Group Id或者子Group Id发布Maven构件了。如上，我填写的Group Id是 “io.github.nianien”，因此，我可以使用 “io.github.nianien”或者 “io.github.nianien.xxx” 作为项目的GroupId发布Maven构件。</p>
+<p>在通过Maven发布构件之前，我们需要进行Maven配置，这里还需要一些前置工作。</p>
+<h4>3、安装GPG，创建密钥 <a href="#dcxco" id="dcxco"></a></h4>
+<p>安装GPG的方式有多种，这里推荐图形化安装，因为通过命令行安装，由于找不到合适的密钥服务器，发布密钥时会失败。这里给出Mac版本的下载地址：<a href="https://releases.gpgtools.org/GPG_Suite-2022.1.dmg">https://releases.gpgtools.org/GPG_Suite-2022.1.dmg</a></p>
+<ul>
+<li>创建密钥</li>
+</ul>
+<p><img src="/images/blog/engineering/practice-image_69.png" alt="image_69.png"></p>
+<p>3.1、发布密钥</p>
+<p><img src="/images/blog/engineering/practice-image_70.png" alt="image_70.png"></p>
+<p>发布成功后，收到一份邮件：</p>
+<p><img src="/images/blog/engineering/practice-image_71.png" alt="image_71.png"></p>
+<p>按照邮件指示操作，完成密钥发布。密钥发布成功之后，下一步就是配置maven settings.xml和工程pom.xml文件。</p>
+<h4>4、配置Maven，发布构件 <a href="#amad1" id="amad1"></a></h4>
+<ul>
+<li>第一步，配置setting.xml文件，添加server节点：</li>
+</ul>
+<pre><code class="language-xml">&lt;servers&gt;
+&lt;server&gt;
+    &lt;id&gt;ossrh&lt;/id&gt;
+    &lt;username&gt;sonatype账户名&lt;/username&gt;
+    &lt;password&gt;sonatype账户密码&lt;/password&gt;
+&lt;/server&gt;
+&lt;/servers&gt;
+&lt;profile&gt;
+  &lt;id&gt;ossrh&lt;/id&gt;
+  &lt;properties&gt;
+    &lt;gpg.executable&gt;gpg&lt;/gpg.executable&gt;
+    &lt;gpg.passphrase&gt;创建密钥时使用的密码&lt;/gpg.passphrase&gt;
+    &lt;gpg.homedir&gt;/Users/yourname/.gnupg&lt;/gpg.homedir&gt;
+   &lt;/properties&gt;
+&lt;/profile&gt;
 </code></pre>
 <ul>
-<li><strong>Closed</strong>：正常状态，请求正常通过</li>
-<li><strong>Open</strong>：调用持续出错或超时，进入熔断状态，后续请求直接拒绝（Fail Fast）</li>
-<li><strong>Half-Open</strong>：一段时间后允许少量请求尝试，成功则恢复，失败则继续熔断</li>
+<li>第二步，配置pom.xml文件，添加必填项</li>
 </ul>
-<h3>舱壁隔离模式（Bulkhead Isolation）</h3>
-<p>像船舱一样对资源进行隔离。典型实现是<strong>线程隔离</strong>：假定应用 A 调用 Svc1/Svc2/Svc3 三个服务，容器共有 120 个工作线程，可以给每个服务各分配 40 个线程。当 Svc2 变慢时，只有分配给 Svc2 的 40 个线程被耗尽，Svc1 和 Svc3 的 80 个线程不受影响。</p>
-<h3>限流（Rate Limiting）</h3>
-<p>对服务限定并发访问量，比如单位时间只允许 100 个并发调用，超过限制的请求拒绝并回退。没有限流机制的服务在突发流量（秒杀、大促）时极易被冲垮。</p>
-<h3>降级回退（Fallback）</h3>
-<p>当熔断或限流发生时的后续处理策略：</p>
-<table>
-<thead>
-<tr>
-<th>策略</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Fail Fast</td>
-<td>直接抛出异常</td>
-</tr>
-<tr>
-<td>返回缺省值</td>
-<td>返回空值或默认数据</td>
-</tr>
-<tr>
-<td>备份服务</td>
-<td>从备份数据源获取数据</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>Netflix 将上述容错模式集成到 Hystrix 开源组件中（现已进入维护模式，社区推荐 Resilience4j 或 Sentinel 作为替代）。Spring Cloud Circuit Breaker 提供了统一的抽象层。</p>
-</blockquote>
-<h2>服务框架的核心能力</h2>
-<p>微服务化后，为了让业务开发人员专注于业务逻辑，避免冗余和重复劳动，需要将公共关注点推到框架层面。一个成熟的服务框架应当封装以下能力：</p>
-<table>
-<thead>
-<tr>
-<th>能力</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>服务注册发现</td>
-<td>服务端自注册，客户端自发现和负载均衡</td>
-</tr>
-<tr>
-<td>监控日志</td>
-<td>框架层日志、Metrics、调用链数据的记录和暴露</td>
-</tr>
-<tr>
-<td>REST/RPC 与序列化</td>
-<td>支持 HTTP/REST 和 Binary/RPC，可定制序列化（JSON/Protobuf 等）</td>
-</tr>
-<tr>
-<td>动态配置</td>
-<td>运行时动态调整参数和配置</td>
-</tr>
-<tr>
-<td>限流容错</td>
-<td>集成限流和熔断组件，结合动态配置实现动态限流</td>
-</tr>
-<tr>
-<td>管理接口</td>
-<td>在线查看和动态调整框架及服务内部状态（如 Spring Boot Actuator）</td>
-</tr>
-<tr>
-<td>统一错误处理</td>
-<td>框架层统一处理异常并记录日志</td>
-</tr>
-<tr>
-<td>安全</td>
-<td>访问控制逻辑的插件化封装</td>
-</tr>
-<tr>
-<td>文档自动生成</td>
-<td>如 Swagger/OpenAPI 的自动化文档方案</td>
-</tr>
-</tbody></table>
-<p>当前业界成熟的微服务框架有：Spring Cloud/Spring Boot、Apache Dubbo、Go-Micro、gRPC 等。</p>
-<h2>基础设施选型</h2>
-<h3>RPC 框架选型</h3>
-<p>RPC（Remote Procedure Call）框架大致分为两大流派：</p>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>代表框架</th>
-<th>特点</th>
-<th>适用场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>跨语言调用型</strong></td>
-<td>gRPC、Thrift、Hprose</td>
-<td>支持多语言调用，无服务治理机制</td>
-<td>多语言调用场景</td>
-</tr>
-<tr>
-<td><strong>服务治理型</strong></td>
-<td>Dubbo、Motan、rpcx</td>
-<td>功能丰富，含服务发现和治理能力</td>
-<td>大型服务的解耦和治理</td>
-</tr>
-</tbody></table>
-<p><strong>选型建议</strong>：如果是 Java 为主的团队，推荐 <strong>Dubbo</strong>（高性能，性能测试中比 Feign 强约 10 倍）。如果需要跨语言支持，Dubbo 也支持通过 Dubbo-Go 实现 Java + Go 双语言微服务架构。如果是纯粹的跨语言场景，<strong>gRPC</strong> 基于 HTTP/2 + Protobuf，是业界标准选择。</p>
-<h3>注册中心选型</h3>
-<p>所有的服务发现都依赖于一个高可用的服务注册表。主流选择：</p>
-<table>
-<thead>
-<tr>
-<th>注册中心</th>
-<th>特点</th>
-<th>一致性模型</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Nacos</strong></td>
-<td>同时支持注册中心和配置中心，功能全面</td>
-<td>AP/CP 可切换</td>
-</tr>
-<tr>
-<td><strong>ZooKeeper</strong></td>
-<td>最早的分布式协调服务，生态成熟</td>
-<td>CP</td>
-</tr>
-<tr>
-<td><strong>Etcd</strong></td>
-<td>Kubernetes 默认存储，高可用和一致性</td>
-<td>CP</td>
-</tr>
-<tr>
-<td><strong>Consul</strong></td>
-<td>支持多数据中心，内置健康检查</td>
-<td>CP</td>
-</tr>
-<tr>
-<td><strong>Eureka</strong></td>
-<td>Netflix 开源，AP 模型，已停止维护</td>
-<td>AP</td>
-</tr>
-</tbody></table>
-<p><strong>选型建议</strong>：推荐 <strong>Nacos</strong>（nacos + MySQL 高可用部署），一站式解决注册中心和配置中心的需求。</p>
-<h3>配置中心选型</h3>
-<p>随着系统复杂度增长，配置管理面临越来越高的要求：配置修改实时生效、灰度发布、分环境/分集群管理、完善的权限审核机制。传统的配置文件方式已经无法满足需求。</p>
-<p>配置中心的核心架构组件：</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&lt;!--已经验证的Group Id--&gt;
+    &lt;groupId&gt;io.github.nianien&lt;/groupId&gt;
+    &lt;artifactId&gt;cudrania&lt;/artifactId&gt;
+    &lt;version&gt;1.0.1&lt;/version&gt;&lt;!--必填--&gt;
+    &lt;name&gt;io.github.nianien:cudrania&lt;/name&gt;&lt;!--必填--&gt;
+    &lt;description&gt;support tools for java development&lt;/description&gt;&lt;!--必填--&gt;
+    &lt;url&gt;https://github.com/nianien/cudrania&lt;/url&gt;
+    &lt;properties&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;java.version&gt;17&lt;/java.version&gt;
+    &lt;/properties&gt;&lt;!--必填--&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;The Apache Software License, Version 2.0&lt;/name&gt;
+            &lt;url&gt;https://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;&lt;!--必填--&gt;
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;id&gt;nianien&lt;/id&gt;
+            &lt;name&gt;nianien&lt;/name&gt;
+            &lt;email&gt;nianien@126.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;&lt;!--必填--&gt;
+    &lt;scm&gt;
+        &lt;connection&gt;https://github.com/nianien/cudrania.git&lt;/connection&gt;
+        &lt;developerConnection&gt;scm:git:ssh://git@github.com:nianien/cudrania.git
+        &lt;/developerConnection&gt;
+        &lt;url&gt;https://github.com/nianien/cudrania&lt;/url&gt;
+    &lt;/scm&gt;
+    &lt;build&gt;
+        &lt;pluginManagement&gt;
+            &lt;plugins&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.11.0&lt;/version&gt;
+                    &lt;configuration&gt;
+                        &lt;source&gt;${java.version}&lt;/source&gt;
+                        &lt;target&gt;${java.version}&lt;/target&gt;
+                    &lt;/configuration&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;&lt;!--必填--&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.3.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-sources&lt;/id&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar-no-fork&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+                &lt;plugin&gt;&lt;!--必填--&gt; 
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.5.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;attach-javadocs&lt;/id&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;jar&lt;/goal&gt;
+                            &lt;/goals&gt;
+                            &lt;configuration&gt;
+                                &lt;additionalparam&gt;
+                                    -Xdoclint:none
+                                &lt;/additionalparam&gt;
+                            &lt;/configuration&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;&lt;!--必填--&gt;
+                &lt;plugin&gt;
+                    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                    &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                    &lt;version&gt;3.1.0&lt;/version&gt;
+                    &lt;executions&gt;
+                        &lt;execution&gt;
+                            &lt;id&gt;sign-artifacts&lt;/id&gt;
+                            &lt;phase&gt;verify&lt;/phase&gt;
+                            &lt;goals&gt;
+                                &lt;goal&gt;sign&lt;/goal&gt;
+                            &lt;/goals&gt;
+                        &lt;/execution&gt;
+                    &lt;/executions&gt;
+                &lt;/plugin&gt;
+            &lt;/plugins&gt;
+        &lt;/pluginManagement&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                &lt;artifactId&gt;maven-javadoc-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+
+    &lt;profiles&gt;&lt;!--必填--&gt;
+        &lt;profile&gt;
+            &lt;id&gt;ossrh&lt;/id&gt;
+            &lt;build&gt;
+                &lt;plugins&gt;
+                    &lt;plugin&gt;&lt;!--必填--&gt;
+                        &lt;groupId&gt;org.sonatype.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;nexus-staging-maven-plugin&lt;/artifactId&gt;
+                        &lt;version&gt;1.6.13&lt;/version&gt;
+                        &lt;extensions&gt;true&lt;/extensions&gt;
+                        &lt;configuration&gt;
+                            &lt;serverId&gt;ossrh&lt;/serverId&gt;
+                            &lt;nexusUrl&gt;https://s01.oss.sonatype.org/&lt;/nexusUrl&gt; 
+                          &lt;autoReleaseAfterClose&gt;true&lt;/autoReleaseAfterClose&gt;
+                        &lt;/configuration&gt;
+                    &lt;/plugin&gt;
+                    &lt;plugin&gt;&lt;!--必填--&gt;
+                        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                        &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;
+                    &lt;/plugin&gt;
+                &lt;/plugins&gt;
+            &lt;/build&gt;&lt;!--必填--&gt;
+            &lt;distributionManagement&gt;
+                &lt;snapshotRepository&gt;
+                    &lt;id&gt;ossrh&lt;/id&gt;
+                  &lt;url&gt;https://s01.oss.sonatype.org/content/repositories/snapshots
+                    &lt;/url&gt;
+                &lt;/snapshotRepository&gt;
+                &lt;repository&gt;
+                    &lt;id&gt;ossrh&lt;/id&gt;
+                    &lt;url&gt;https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
+                    &lt;/url&gt;
+                &lt;/repository&gt;
+            &lt;/distributionManagement&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+
+    &lt;dependencies&gt;&lt;!--maven依赖--&gt;&lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre>
+<p>上面已经是最精简的pom配置了，我已经把必选项标注好了。这里主要包含两部分内容，一部分是snoatype要求的必备信息，包括：证书、开发者信息、仓库地址和发布地址；另一部分是deploy需要的maven插件列表，大家可以根据实际情况酌情修改。</p>
+<p>需要说明的是，为了不用默认打包冲突，专门定义了用于发布中央仓库的profile：ossrh，这里只需要添加额外的两个插件：nexus-staging-maven-plugin和maven-gpg-plugin，前者用于jar上传，后者用于密钥签名。</p>
 <ul>
-<li><strong>配置服务端</strong>：集中存储和管理所有配置信息</li>
-<li><strong>配置客户端</strong>：通过<strong>定期拉取（Pull）</strong> 或 <strong>服务端推送（Push）</strong> 方式获取配置更新</li>
-<li><strong>管理界面</strong>：配置的增删改查和审计</li>
+<li>第三步，执行maven命令，发布构件</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>配置中心</th>
-<th>特点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Nacos</strong></td>
-<td>阿里开源，同时支持注册和配置，生态活跃</td>
-</tr>
-<tr>
-<td><strong>Apollo</strong></td>
-<td>携程开源，功能完善，支持灰度发布和权限管理</td>
-</tr>
-<tr>
-<td><strong>Spring Cloud Config</strong></td>
-<td>Spring 生态原生支持，基于 Git 存储</td>
-</tr>
-</tbody></table>
-<h3>缓存中间件选型</h3>
-<table>
-<thead>
-<tr>
-<th>缓存</th>
-<th>特点</th>
-<th>适用场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Redis</strong></td>
-<td>多数据结构，支持持久化和集群</td>
-<td>通用缓存、分布式锁、排行榜等</td>
-</tr>
-<tr>
-<td><strong>Memcached</strong></td>
-<td>纯内存 KV，简单高效</td>
-<td>简单的对象缓存</td>
-</tr>
-</tbody></table>
-<p><strong>选型建议</strong>：推荐 <strong>Redis Cluster</strong> 高可用集群部署。</p>
+<p>配置好pom文件，可以执行maven命令：“mvn clean deploy -Possrh” 进行发布。如果版本号带SNAPSHOT后缀，会发布到snapshots仓库，否则发布到release仓库。</p>
+<p>这里nexus-staging-maven-plugin插件有一个配置项：autoReleaseAfterClose，如果设置为true的话，推送完成会自动release。第一次发布成功后，会收到一封邮件：</p>
+<p><img src="/images/blog/engineering/practice-image_72.png" alt="image_72.png"></p>
+<ul>
+<li><em><strong>最后，让jar包更快的在中央仓库被搜索到</strong></em></li>
+</ul>
+<p>根据邮件提示，Jar包成功发布成功后，大约30分钟后会推到中央仓库，我们可以从仓库地址看到我们发布的Jar包：<a href="https://repo1.maven.org/maven2">https://repo1.maven.org/maven2/</a></p>
+<p><img src="/images/blog/engineering/practice-image_73.png" alt="image_73.png"></p>
+<p>此时，其他项目就可以通过maven依赖引用我们的构件了，但是这时候通过中央仓库仍然搜不到我们的Maven构件。按照邮件提示可能会需要四小时，实际情况是我等了5个小时依然搜不到。如果遇到这种情况，我们可以通过在对issue添加评论反馈，会有人工回复进行解决：</p>
+<p><img src="/images/blog/engineering/practice-image_74.png" alt="image_74.png"></p>
+<p>另外，关于mvnrepository与Maven Central的关系，有人咨询，官方也做了解答：</p>
+<p><img src="/images/blog/engineering/practice-image_75.png" alt="image_75.png"></p>
+<p>根据我的实际经验判断，mvnrepository应该是定时同步的，我发布成功后，第二天才能搜到：</p>
+<p><img src="/images/blog/engineering/practice-image_76.png" alt="image_76.png"></p>
+<p>下面是官方指导文档，介绍非常详细，基本上不用在网上搜索其他教程了。</p>
+<h4>官方参考文档 <a href="#dzquo" id="dzquo"></a></h4>
+<p><a href="https://central.sonatype.org/publish/publish-guide">https://central.sonatype.org/publish/publish-guide/</a></p>
+19:T4bde,<h2>Agent 的价值上限与工程化下限</h2>
+<p>人工智能正处于一次范式迁移的节点：从&quot;能说&quot;的大语言模型（LLM）走向&quot;能做&quot;的智能体（Agent）。LLM 带来了通用的语言理解和生成能力，但它仍然是一个<strong>封闭、被动、短期记忆</strong>的系统：知识停留在训练时刻，无法直接访问实时世界；只能在用户输入后响应；上下文窗口限制使得记忆易失；输出不含可执行语义。</p>
+<p>Agent 为 LLM 补齐了&quot;行动力&quot;：通过<strong>工具调用</strong>连入 API/数据库/计算环境，通过<strong>记忆</strong>维持跨会话状态，通过<strong>编排</strong>将复杂任务拆解为可控的工作流，必要时引入<strong>多 Agent 协作</strong>。当这四个维度协同起来，语言不再是终点，而是驱动系统执行任务的接口。</p>
+<p>这些能力已在客服、法务审查、财务报表、运维巡检、投研分析等场景展示出价值。但——</p>
+<p><strong>绝大多数 Agent demo 跑起来很好看，生产化率却极低。</strong> 这是 2024-2025 年 AI 工程界最重要的集体认知。问题不在于 Agent 不够聪明，而在于从 demo 到生产之间存在一段被严重低估的工程鸿沟。</p>
+<p>本文围绕这个核心张力展开：<strong>Agent 的能力上限在哪里？工程化的下限在哪里？中间那段路怎么走？</strong> 如果你只需要一份框架清单，看官方文档就够了；这篇文章要传递的是判断——哪些地方是陷阱，哪些选择在生产中被证明是错的，哪些框架的定位被普遍误解。</p>
+<h2>Agent 在生产中最常见的三种死法</h2>
+<p>在讨论框架和选型之前，先回答一个更重要的问题：<strong>Agent 到底为什么在生产中失败？</strong></p>
+<h3>工具调用的可靠性陷阱</h3>
+<p>LLM 的工具调用（Function Calling）在 happy path 上表现不错，但在<strong>边界条件</strong>下经常出错——参数类型不对、必填字段遗漏、枚举值超出范围。单次出错可能无伤大雅，但 Agent 的循环结构会把一个小错误<strong>放大成级联失败</strong>：工具返回了错误结果 → Agent 基于错误结果做出错误推理 → 下一步工具调用基于错误推理生成错误参数 → 整条链路雪崩。</p>
+<p>这不是偶发问题，而是结构性的。一个搜索 Agent 在目标信息不存在时，正确行为是报告&quot;未找到&quot;，但实际中 LLM 经常会&quot;创造性地&quot;尝试相近的查询词、拼接错误的 API 参数，最终返回一个看起来合理但完全不相关的结果。用户拿到的是一个<strong>自信的错误答案</strong>，比没有答案更危险。</p>
+<p><strong>缓解策略</strong>：工具入参做严格的 JSON Schema 校验；关键步骤的工具输出做结果校验（不只是检查 HTTP 200，而是验证语义正确性）；在高风险节点引入人工审核断点。</p>
+<h3>上下文窗口的经济学</h3>
+<p>一个多步 ReAct Agent 跑十轮，每轮包含完整的历史上下文 + 思考 + 工具调用结果，累积消耗轻松达到 5-10 万 token。<strong>按 GPT-4o 计价，一次复杂任务的成本在 $0.5-2 之间；如果是客服场景每天处理几千次，月账单在数万美元量级。</strong></p>
+<p>延迟同样是真实阻力：十轮串行调用，每轮 1-3 秒，一个任务的端到端延迟在 15-30 秒。用户对&quot;等待 AI 思考&quot;的耐心远没有 demo 视频里展示的那么好。</p>
+<p><strong>缓解策略</strong>：用 Plan-and-Execute 模式把 LLM 调用集中到规划阶段，执行阶段尽量用确定性代码；对历史上下文做摘要压缩而不是全量传递；工具选择等轻量决策用小模型（如 GPT-4o-mini），只在关键推理节点用大模型。</p>
+<h3>评估困境：你不知道它做得好不好</h3>
+<p>分类任务有准确率，翻译任务有 BLEU 分数，但 Agent 任务的评估本身就是一个未解决的工程问题。</p>
+<p>一个&quot;帮我调研新能源车行业并写报告&quot;的任务，怎么衡量 Agent 做得好不好？端到端的&quot;任务成功率&quot;太粗了——报告写出来了但质量不行算成功吗？步骤级评估需要人工逐步审查——这在规模化场景下不可持续。而且 Agent 的输出具有不确定性，同一个任务跑两次结果可能完全不同，传统的回归测试思路在这里几乎失效。</p>
+<p><strong>这是从 demo 走向生产最关键的卡点。</strong> 没有可靠的评估手段，你就无法量化改进、无法做 A/B 测试、无法向业务方证明 Agent 比人工或传统自动化更好。</p>
+<p><strong>缓解策略</strong>：把 Agent 任务拆解为可独立评估的子步骤，对每个子步骤定义明确的通过标准；建立&quot;黄金标准&quot;测试集（人工标注的参考结果）；引入 LLM-as-Judge 做自动化评估，但要对评估模型本身做校准。</p>
 <blockquote>
-<p>需要特别关注 Redis 的 Big Key 问题。在高并发场景下，Big Key 会导致单个节点内存和网络带宽瓶颈，严重时可造成系统瘫痪。建议制定 Key 规范并定期扫描。</p>
+<p><strong>一句话：Agent 的三个结构性风险是工具不可靠、成本不可控、质量不可测。</strong> 任何不正视这三个问题的 Agent 项目，都会在 demo 之后撞墙。</p>
 </blockquote>
-<h3>消息中间件选型</h3>
-<p>消息中间件的三大核心场景：</p>
+<h2>架构分层：七个框架不在同一层次</h2>
+<p>当前最被提及的 Agent 相关项目有七个：<strong>ReAct、Plan-and-Execute、LLMCompiler、LangChain、LangGraph、LlamaIndex、CrewAI/AutoGen</strong>。</p>
+<p>但它们不是同一层次的东西——把它们并列对比&quot;优缺点&quot;，就像把 MySQL、Spring MVC、微服务、Docker 放在一张表里比较。正确的理解方式是看它们在一个完整 Agent 系统中分别处于哪一层：</p>
+<pre><code>┌─────────────────────────────────────────────────┐
+│             协作模式 / 应用层                     │
+│         CrewAI · AutoGen · 自定义 Agent          │
+├─────────────────────────────────────────────────┤
+│             编排层 / 工作流引擎                   │
+│         LangGraph · 状态机 · DAG                 │
+├─────────────────────────────────────────────────┤
+│             推理范式                              │
+│     ReAct · Plan-and-Execute · LLMCompiler       │
+├─────────────────────────────────────────────────┤
+│             能力层 / 胶水框架                     │
+│     LangChain（LLM/Prompt/Memory/Tools 抽象）    │
+├─────────────────────────────────────────────────┤
+│             数据层 / 检索增强                     │
+│         LlamaIndex · 向量数据库                   │
+└─────────────────────────────────────────────────┘
+</code></pre>
+<p>理解了层次关系，选型才有意义：你不是在七个框架里&quot;选一个&quot;，而是在每一层里选合适的组件，然后把它们组装起来。</p>
+<h3>推理范式：ReAct vs Plan-and-Execute vs LLMCompiler</h3>
+<p>这三个不是框架，而是<strong>推理策略</strong>——Agent &quot;怎么想&quot;的范式。</p>
+<p><strong>ReAct（Reason + Act）</strong> 是最基础的范式：<code>Thought → Action → Observation → Thought → ...</code> 循环。每步都调 LLM 做推理，透明度高、易调试，但成本和延迟随步骤数线性增长。<strong>适合探索性任务</strong>（不确定需要哪些工具、需要根据中间结果动态调整策略），<strong>不适合步骤确定的流程性任务</strong>。</p>
+<pre><code class="language-python"># ReAct 示例（LangChain）
+from langchain.agents import initialize_agent, load_tools
+from langchain.chat_models import ChatOpenAI
+
+llm = ChatOpenAI(model=&quot;gpt-4o-mini&quot;)
+tools = load_tools([&quot;serpapi&quot;, &quot;llm-math&quot;], llm=llm)
+agent = initialize_agent(tools, llm, agent=&quot;zero-shot-react-description&quot;, verbose=True)
+agent.run(&quot;美元兑日元的即期汇率是多少？100 美元大约换多少日元？&quot;)
+</code></pre>
+<p><strong>Plan-and-Execute</strong> 把 LLM 调用集中到规划阶段，执行阶段尽量用确定性代码。成本可控、执行可回放，但<strong>对初始计划质量依赖极高</strong>——如果规划阶段遗漏了关键步骤，执行阶段没有能力纠偏。<strong>适合结构相对确定的多步任务</strong>（报告生成、ETL 流程），不适合需要大量即兴调整的场景。</p>
+<pre><code class="language-python"># Plan-and-Execute 示例
+plan = llm(&quot;把&#39;新能源车行业研究&#39;分解为可执行步骤&quot;)
+for step in plan.steps:
+    execute(step)  # 确定性工具调用
+final = llm(f&quot;根据执行产物撰写摘要：{collect_outputs()}&quot;)
+</code></pre>
+<p><strong>LLMCompiler</strong> 源自微软研究，把自然语言任务&quot;编译&quot;为并行 DAG。吞吐高、结构清晰，但<strong>实现复杂且缺少成熟工具链</strong>，目前仍以学术和实验为主。</p>
+<p><strong>我的选型判断</strong>：</p>
 <table>
 <thead>
 <tr>
 <th>场景</th>
-<th>说明</th>
-<th>典型案例</th>
+<th>推荐范式</th>
+<th>原因</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>异步处理</strong></td>
-<td>减少主流程等待时间，非核心逻辑异步执行</td>
-<td>注册后发送邮件、异步更新缓存</td>
+<td>开放式探索（如&quot;帮我调研X&quot;）</td>
+<td>ReAct</td>
+<td>需要动态发现信息和调整策略</td>
 </tr>
 <tr>
-<td><strong>系统解耦</strong></td>
-<td>上下游系统通过消息通信，不需要强一致</td>
-<td>支付成功后通知 ERP/WMS/推荐等系统</td>
+<td>流程确定的多步任务</td>
+<td>Plan-and-Execute</td>
+<td>降低成本，提高可控性</td>
 </tr>
 <tr>
-<td><strong>削峰填谷</strong></td>
-<td>大流量请求放入队列，消费者按能力消化</td>
-<td>秒杀系统的下单排队</td>
+<td>多数据源并行采集</td>
+<td>LLMCompiler</td>
+<td>并行化带来显著吞吐提升</td>
+</tr>
+<tr>
+<td>大多数生产场景</td>
+<td><strong>Plan-and-Execute + ReAct 降级</strong></td>
+<td>先规划，遇到意外再启用 ReAct 逐步探索</td>
 </tr>
 </tbody></table>
-<p>主流消息中间件对比：</p>
-<table>
-<thead>
-<tr>
-<th>中间件</th>
-<th>吞吐量</th>
-<th>延迟</th>
-<th>可靠性</th>
-<th>适用场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Kafka</strong></td>
-<td>极高</td>
-<td>毫秒级</td>
-<td>高（可配置）</td>
-<td>日志收集、大数据流处理、事件溯源</td>
-</tr>
-<tr>
-<td><strong>RocketMQ</strong></td>
-<td>高</td>
-<td>毫秒级</td>
-<td>极高（事务消息）</td>
-<td>电商交易、金融场景</td>
-</tr>
-<tr>
-<td><strong>RabbitMQ</strong></td>
-<td>中等</td>
-<td>微秒级</td>
-<td>高</td>
-<td>实时性要求高、路由复杂的场景</td>
-</tr>
-</tbody></table>
-<p><strong>选型建议</strong>：<strong>Kafka</strong> 用于日志采集和大数据场景，<strong>RocketMQ</strong> 用于业务消息和交易场景，二者搭配使用。</p>
-<h3>数据库选型</h3>
-<h4>关系型数据库</h4>
-<table>
-<thead>
-<tr>
-<th>类别</th>
-<th>代表</th>
-<th>特点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>传统 RDBMS</strong></td>
-<td>MySQL、PostgreSQL</td>
-<td>成熟稳定，生态丰富，百万级 PV 搭配主从 + 缓存可满足</td>
-</tr>
-<tr>
-<td><strong>NewSQL</strong></td>
-<td>TiDB、CockroachDB</td>
-<td>完整 SQL 支持 + ACID 事务 + 弹性伸缩 + 高可用 + 大数据分析能力</td>
-</tr>
-</tbody></table>
-<p>当 MySQL 需要分库分表且逻辑复杂度高、扩展性不足时，可以考虑 TiDB。</p>
-<h4>NoSQL 数据库</h4>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>代表</th>
-<th>适用场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>键值型</strong></td>
-<td>Redis、Memcache</td>
-<td>缓存、会话管理</td>
-</tr>
-<tr>
-<td><strong>列式</strong></td>
-<td>HBase、Cassandra</td>
-<td>写多读少、时序数据</td>
-</tr>
-<tr>
-<td><strong>文档型</strong></td>
-<td>MongoDB、CouchDB</td>
-<td>非结构化数据、灵活 Schema</td>
-</tr>
-<tr>
-<td><strong>图数据库</strong></td>
-<td>Neo4J</td>
-<td>社交网络、推荐系统</td>
-</tr>
-</tbody></table>
-<h2>CI/CD 流水线</h2>
-<p>从代码到最终服务用户，可以分为三个阶段：</p>
-<pre><code>Code → Artifact（制品库）→ Running Service → Production
+<p>最后一行是实践中最常用的组合——不是非此即彼，而是混合使用。</p>
+<h3>胶水层：LangChain 的功与过</h3>
+<p>LangChain 是 2022 年首个&quot;把 LLM 嵌入应用&quot;的通用框架，社区最大、教程最全、第三方集成最多。它解决了一个真实问题：统一抽象 LLM/Prompt/Memory/Tools 的调用接口，让原型开发成本极低。</p>
+<pre><code class="language-python"># LangChain RAG QA 极简示例
+from langchain.chains import RetrievalQA
+from langchain.chat_models import ChatOpenAI
+
+llm = ChatOpenAI(model=&quot;gpt-4o-mini&quot;)
+qa = RetrievalQA.from_chain_type(llm, retriever=vectorstore.as_retriever())
+print(qa.run(&quot;总结这份合同的关键风险&quot;))
 </code></pre>
-<ol>
-<li><strong>代码到制品</strong>：持续构建，制品集中管理</li>
-<li><strong>制品到服务</strong>：部署到指定环境</li>
-<li><strong>开发到生产</strong>：变更在不同环境间的迁移和灰度发布</li>
-</ol>
-<h3>工具链推荐</h3>
-<table>
-<thead>
-<tr>
-<th>环节</th>
-<th>推荐工具</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>代码管理</strong></td>
-<td>GitLab</td>
-<td>社区版功能丰富，结合 Gerrit 做 Code Review</td>
-</tr>
-<tr>
-<td><strong>持续集成</strong></td>
-<td>Jenkins / GitLab CI</td>
-<td>Jenkins 插件生态强大；GitLab CI 与 GitLab 深度集成</td>
-</tr>
-<tr>
-<td><strong>制品仓库</strong></td>
-<td>Harbor</td>
-<td>开源的 Docker 镜像仓库，支持镜像签名和漏洞扫描</td>
-</tr>
-<tr>
-<td><strong>部署编排</strong></td>
-<td>Kubernetes</td>
-<td>容器编排的事实标准，支持声明式部署和自动伸缩</td>
-</tr>
-<tr>
-<td><strong>项目管理</strong></td>
-<td>Jira + Confluence</td>
-<td>项目管理、任务跟踪和知识管理的行业标配</td>
-</tr>
-</tbody></table>
-<p><strong>初期建议</strong>：Jenkins + GitLab + Harbor 的组合，可以覆盖制品管理、发布流程、权限控制、版本变更和服务回滚。</p>
-<h3>自动化测试</h3>
-<p>自动化测试平台是 CI/CD 流水线的重要一环：</p>
+<p><strong>但 LangChain 的设计债务是真实的。</strong> 它的核心问题是抽象太多、太厚——Chain、Agent、Memory、Callback、OutputParser 层层嵌套，调试时经常需要穿透五六层抽象才能看到实际的 API 调用。在快速迭代的 AI 领域，过度抽象的框架反而成为负担：底层模型的能力在变，API 在变，最佳实践在变，而你被钉在框架的抽象层里。</p>
+<p><strong>我的判断：用 LangChain 起步是对的，但不要把它当架构。</strong> 当你的项目从 PoC 走向生产，应该逐步减少对 LangChain Chain/Agent 层的依赖，只保留它在 LLM 适配和工具调用层面的价值，把编排交给 LangGraph 或自研状态机。</p>
+<h3>编排层：LangGraph</h3>
+<p>LangGraph 的出现正是因为 LangChain 的链式范式无法表达循环、回退、并行和长时状态。它将 Agent 视为显式状态机/DAG，用图结构定义节点（函数/Agent）和边（条件/并行/回路）。</p>
+<pre><code class="language-python"># LangGraph 示例：检索→生成→评估→回退
+from langgraph.graph import StateGraph
+
+def retrieve(state): ...
+def generate(state): ...
+def evaluate(state): ...  # 返回 pass/fail
+
+g = StateGraph()
+g.add_node(&quot;retrieve&quot;, retrieve)
+g.add_node(&quot;generate&quot;, generate)
+g.add_node(&quot;evaluate&quot;, evaluate)
+
+g.set_entry_point(&quot;retrieve&quot;)
+g.add_edge(&quot;retrieve&quot;, &quot;generate&quot;)
+g.add_edge(&quot;generate&quot;, &quot;evaluate&quot;)
+g.add_conditional_edges(&quot;evaluate&quot;, {&quot;pass&quot;: &quot;END&quot;, &quot;fail&quot;: &quot;generate&quot;})
+</code></pre>
+<p>LangGraph 还提供人机协作断点、LangSmith 链路追踪、Platform 持久化部署——这些是生产中真正需要的能力。</p>
+<p><strong>我的判断：LangGraph 是当前生产化 Agent 的最佳平衡点。</strong> 它的学习曲线高于 LangChain，但换来的是可控性和可观测性——这两样东西在生产中的价值远超&quot;原型开发速度快&quot;。</p>
+<h3>数据层：LlamaIndex</h3>
+<p>LlamaIndex（原 GPT Index）是<strong>数据接入与检索增强</strong>平台，不是 Agent 框架——这个定位常被误解。它的核心价值在于：多格式数据连接器（文件系统、S3、Notion、数据库）、多种索引策略（向量、关键词、图）、混合检索与重排。</p>
+<pre><code class="language-python"># LlamaIndex 向量索引示例
+from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader
+
+docs = SimpleDirectoryReader(&quot;docs&quot;).load_data()
+index = GPTVectorStoreIndex.from_documents(docs)
+query_engine = index.as_query_engine()
+print(query_engine.query(&quot;列出这份合同的终止条款&quot;))
+</code></pre>
+<p><strong>我的判断：LlamaIndex 做好了它该做的事——数据层。</strong> 不要用它做编排，不要用它替代 LangGraph 管理工作流。最佳实践是 LlamaIndex 做数据底座 + LangGraph 做编排的组合。</p>
+<h3>协作层：CrewAI / AutoGen</h3>
+<p>多 Agent 协作框架通过角色化的 Agent（研究员、撰稿员、审稿员）协同完成复杂任务。</p>
+<pre><code class="language-python"># AutoGen 极简示例
+from autogen import AssistantAgent, UserProxyAgent
+
+assistant = AssistantAgent(&quot;researcher&quot;, llm_config={&quot;model&quot;: &quot;gpt-4o-mini&quot;})
+user_proxy = UserProxyAgent(&quot;writer&quot;, human_input_mode=&quot;NEVER&quot;)
+user_proxy.initiate_chat(assistant, message=&quot;写一份新能源车行业调研大纲&quot;)
+</code></pre>
+<p><strong>这里需要说一句不那么受欢迎的话：多 Agent 协作目前仍处于&quot;看起来很酷但生产可用性存疑&quot;的阶段。</strong></p>
+<p>问题在于：多 Agent 之间的通信是自然语言——而自然语言本身就是有损的。Agent A 传递给 Agent B 的信息，B 的理解可能和 A 的意图存在偏差；多跳传递后，信息衰减和误解累积会导致最终输出质量不可控。当你把两个各自 80% 可靠的 Agent 串联起来，系统可靠性不是 80%，而是 64%——三个串联就是 51%。</p>
+<p><strong>我的判断：</strong> 如果你的任务可以用单 Agent + 工具调用解决，不要上多 Agent。多 Agent 只在以下场景有真实价值：</p>
 <ul>
-<li><strong>单元测试</strong>：JUnit / TestNG，覆盖核心业务逻辑</li>
-<li><strong>接口测试</strong>：可基于开源框架（如 SpringBoot + TestNG）搭建</li>
-<li><strong>性能测试</strong>：JMeter / Gatling</li>
-<li><strong>端到端测试</strong>：Selenium / Cypress</li>
+<li>任务需要<strong>对抗性检查</strong>（一个 Agent 生成、另一个 Agent 审核挑错）</li>
+<li>需要<strong>异构模型</strong>协同（一个用大模型做推理、一个用小模型做执行）</li>
+<li>角色之间有明确的<strong>信息不对称</strong>（每个 Agent 只看到自己职责范围内的数据）</li>
 </ul>
-<h2>可观测性体系</h2>
-<h3>日志系统</h3>
-<p>日志系统涵盖日志打印、采集、中转、存储、分析、搜索和分发。日志系统的建设不仅是工具建设，还包括规范和组件建设——基本的日志（如全链路追踪 ID）应在框架和组件层面统一注入。</p>
-<p><strong>常规方案：ELK Stack</strong></p>
-<table>
-<thead>
-<tr>
-<th>组件</th>
-<th>职责</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Filebeat</strong></td>
-<td>轻量级日志采集器，替代 Logstash-Forwarder</td>
-</tr>
-<tr>
-<td><strong>Logstash</strong></td>
-<td>日志收集、过滤和转换</td>
-</tr>
-<tr>
-<td><strong>Elasticsearch</strong></td>
-<td>分布式搜索引擎，存储和索引日志</td>
-</tr>
-<tr>
-<td><strong>Kibana</strong></td>
-<td>可视化界面，日志搜索和分析</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>免费版 ELK 没有安全机制，建议前置 Nginx 做反向代理和简单用户认证。</p>
-</blockquote>
-<p><strong>实时计算方案</strong>：对于需要实时分析的场景，可以采用 Flume + Kafka + Flink（或 Storm）的架构。Kafka 负责高吞吐的消息缓冲，Flume 负责多样化的数据采集，Flink 负责实时流计算。</p>
-<h3>监控系统</h3>
-<p>监控系统主要覆盖两个层面：</p>
-<table>
-<thead>
-<tr>
-<th>层面</th>
-<th>监控指标</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>基础设施</strong></td>
-<td>机器负载、IO、网络流量、CPU、内存</td>
-</tr>
-<tr>
-<td><strong>服务质量</strong></td>
-<td>可用性、成功率、失败率、QPS、延迟</td>
-</tr>
-</tbody></table>
-<p><strong>推荐方案：Prometheus + Grafana</strong></p>
-<p>Prometheus 是 Google BorgMon 的开源版本，使用 Go 开发，采用 <strong>Pull</strong> 模式主动拉取指标数据。其核心组件：</p>
-<table>
-<thead>
-<tr>
-<th>组件</th>
-<th>职责</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Prometheus Server</strong></td>
-<td>数据采集和存储，提供 PromQL 查询</td>
-</tr>
-<tr>
-<td><strong>Exporter</strong></td>
-<td>各类数据采集组件（数据库、硬件、MQ、HTTP 服务器等）</td>
-</tr>
-<tr>
-<td><strong>Push Gateway</strong></td>
-<td>支持短生命周期 Job 主动推送指标</td>
-</tr>
-<tr>
-<td><strong>Alertmanager</strong></td>
-<td>灵活的报警规则和通知管理</td>
-</tr>
-<tr>
-<td><strong>Grafana</strong></td>
-<td>高度定制化的可视化监控面板</td>
-</tr>
-</tbody></table>
-<p>Prometheus + Grafana 搭配统一的服务框架，可以满足绝大部分中小团队的监控需求。</p>
-<h2>生产环境部署架构</h2>
-<h3>DNS</h3>
-<p>DNS 是基础服务，一般直接选择云厂商：</p>
+<h2>编排：从 Demo 到可运营的关键</h2>
+<p>单一 LLM + 工具调用可以跑出 demo，但<strong>编排</strong>才是让 Agent 系统可运营的关键：</p>
 <ul>
-<li><strong>国内</strong>：阿里云 DNS 或腾讯 DNSPod，线上产品建议使用付费版</li>
-<li><strong>海外</strong>：优先选择 AWS Route 53</li>
-<li><strong>国内外互通</strong>：建议在 APP 层实现容灾逻辑或智能调度，因为没有单一 DNS 服务能同时很好地覆盖国内外</li>
+<li><strong>任务有序性</strong>：复杂流程的前后置依赖、并行合并、条件分支</li>
+<li><strong>可靠性</strong>：失败重试、幂等、回退策略、超时与熔断、降级链路</li>
+<li><strong>安全性</strong>：提示注入防护、工具白名单、参数校验、沙箱执行、RBAC 与审计</li>
+<li><strong>可观测性</strong>：结构化日志、链路追踪（OpenTelemetry）、成本与延迟指标、交互回放</li>
 </ul>
-<h3>负载均衡（LB）</h3>
-<table>
-<thead>
-<tr>
-<th>场景</th>
-<th>方案</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>云服务环境</td>
-<td>直接使用云厂商 LB（阿里云 SLB / 腾讯云 CLB / AWS ELB）</td>
-</tr>
-<tr>
-<td>自建机房</td>
-<td>LVS（四层）+ Nginx（七层）</td>
-</tr>
-</tbody></table>
-<p>云厂商 LB 通常支持四层（TCP/UDP）和七层（HTTP/HTTPS）协议、集中化证书管理和健康检查。</p>
-<h3>CDN</h3>
-<p>CDN 的选型主要看业务覆盖区域：</p>
-<table>
-<thead>
-<tr>
-<th>区域</th>
-<th>推荐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>国内</td>
-<td>阿里云 CDN、腾讯云 CDN</td>
-</tr>
-<tr>
-<td>海外</td>
-<td>AWS CloudFront、Akamai</td>
-</tr>
-</tbody></table>
-<h2>总结</h2>
-<p>微服务架构的落地是一个系统工程，核心技术关注点可以归纳为以下几个层面：</p>
+<p>没有编排的 Agent 系统像是没有错误处理的代码——happy path 跑得通，任何意外都会导致不可预知的行为。在生产中，&quot;意外&quot;不是可能发生，而是一定会发生。</p>
+<h2>学习路径：一条最小可行路径</h2>
+<p>按技术依赖关系递进：</p>
 <ol>
-<li><strong>服务通信</strong>：通过注册中心 + 负载均衡 + API 网关，构建服务间和内外部的通信体系</li>
-<li><strong>服务可靠性</strong>：通过熔断、隔离、限流和降级四大模式，保障系统在故障和高峰期的稳定性</li>
-<li><strong>服务框架</strong>：将公共关注点下沉到框架层，让业务开发专注于业务逻辑</li>
-<li><strong>基础设施</strong>：根据业务需求和团队技术栈，选择合适的 RPC、注册中心、缓存、消息队列和数据库</li>
-<li><strong>持续交付</strong>：通过 CI/CD 流水线实现代码到生产环境的自动化、可重复的发布流程</li>
-<li><strong>可观测性</strong>：通过日志、监控和链路追踪构建系统的透明度，为问题排查和性能优化提供数据支撑</li>
+<li><strong>基础接口</strong> → Python/JS 基础；HTTP/JSON；异步与并发</li>
+<li><strong>LLM 能力</strong> → Prompt Engineering；<strong>Function Calling/Tool Use</strong>；结构化输出（JSON Schema）</li>
+<li><strong>RAG 能力</strong> → 文档分块与清洗；嵌入模型；<strong>向量数据库（pgvector/Milvus/Weaviate）</strong>；混合检索与重排</li>
+<li><strong>编排能力</strong> → <strong>状态机/DAG（LangGraph）</strong>；重试回退；超时熔断；人机协作</li>
+<li><strong>评估与运维</strong> → Agent 评估框架；日志/追踪（OpenTelemetry）；成本监控；安全（提示注入防护、RBAC、审计）</li>
 </ol>
-<p>好的架构不是设计出来的，而是演进出来的。架构师需要在不同阶段做出合适的判断——既不过度设计，也不欠缺考虑。关键是保持对技术的敏锐度，在实践中不断验证和调整。</p>
+<p><strong>一个容易被忽视的建议</strong>：第 2 步的 Function Calling 比大多数人以为的更值得深入。Agent 的可靠性有一半建立在&quot;工具调用是否正确&quot;上——花时间写好工具的 Schema 定义、参数描述和示例，回报率远高于优化 Prompt。</p>
+<h2>真正的技术瓶颈在哪里</h2>
+<p>不写&quot;多模态 Agent 将同时处理文本、图像和视频&quot;这类任何 AI 文章都能复制粘贴的句子。只说我认为<strong>一旦突破就会带来质变</strong>的三个瓶颈：</p>
+<p><strong>第一，可靠的工具执行层。</strong> 当前 Agent 最大的隐性瓶颈不是模型推理能力，而是工具调用的可靠性。LLM 调用工具的成功率在复杂任务上远低于 demo 展示的水平。如果这个问题被解决——无论是通过更可靠的 Function Calling 协议、专用的工具执行模型，还是形式化的参数校验框架——Agent 的生产化率会有非线性提升。</p>
+<p><strong>第二，评估基础设施。</strong> 没有可靠的评估，就没有可靠的迭代。当前 Agent 评估基本靠&quot;人肉看结果&quot;，这在规模化场景下不可持续。谁先建立起自动化、可规模化、可信赖的 Agent 评估体系，谁就掌握了 Agent 工程化的命脉。这可能比模型本身的进步更重要。</p>
+<p><strong>第三，成本的结构性下降。</strong> 当前 Agent 的 token 消耗模式（每步全量上下文）在经济上限制了适用场景。成本的突破可能来自几个方向：上下文缓存（已在推进）、专用的轻量决策模型（不需要 GPT-4 来决定调用哪个工具）、端侧推理与云端推理的混合调度。当一次复杂 Agent 任务的成本从美元降到美分，适用场景会扩大一个数量级。</p>
 <blockquote>
-<p>路漫漫其修远兮，架构求索无止尽也。</p>
+<p><strong>Agent 的未来不取决于模型有多聪明，而取决于工程体系有多可靠。</strong> 这是一个工程问题，不是一个 AI 问题。</p>
 </blockquote>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-31","children":"2024年03月31日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"RabbitMQ、RocketMQ、Kafka区别"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","消息队列",{"href":"/blog/tag/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"消息队列"}],["$","$L13","中间件",{"href":"/blog/tag/%E4%B8%AD%E9%97%B4%E4%BB%B6/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"中间件"}],["$","$L13","技术选型",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术选型"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/服务注册与发现（实践篇）","title":"服务注册与发现（实践篇）","description":"前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。 并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景...","pubDate":"2024-03-24","tags":["微服务","服务发现","工程实践"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/tooling/Maven使用技巧","title":"Maven使用技巧","description":"手把手教你如何在工作中巧妙使用Maven，提升开发效率。","pubDate":"2024-04-03","tags":["Maven","Java","构建工具"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"消息队列":{"prev":null,"next":null},"中间件":{"prev":null,"next":null},"技术选型":{"prev":null,"next":{"slug":"engineering/architecture/微服务架构落地指南：从核心模式到技术选型","title":"微服务架构落地指南：从核心模式到技术选型","description":"系统性地探讨微服务架构设计的核心关注点，包括服务注册发现、API 网关、服务容错、基础设施选型、CI/CD 流水线和可观测性体系，帮助你从 0 到 1 构建一套完整的微服务技术栈。","pubDate":"2025-12-12","tags":["架构设计","微服务","分布式系统","技术选型"],"heroImage":"$undefined","content":"$19"}}}}]}],["$","$L1a",null,{}]]}]}]}]
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"Engineering"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/middleware/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"中间件"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-31","children":"2024年03月31日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"RabbitMQ、RocketMQ、Kafka区别"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","消息队列",{"href":"/blog/tag/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"消息队列"}],["$","$L13","中间件",{"href":"/blog/tag/%E4%B8%AD%E9%97%B4%E4%BB%B6/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"中间件"}],["$","$L13","技术选型",{"href":"/blog/tag/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"技术选型"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/architecture/服务注册与发现（实践篇）","title":"服务注册与发现（实践篇）","description":"前面我们对业内几种比较常见的注册中心做了介绍：Eureka、Zookeeper、Consul、Etcd。 并且在各个指标上做了对比：注册方式（watch/polling）、健康检查、雪崩保护、安全与权限，以及在Spring Cloud、Dubbo、Kubernets上的支持程度。方便我们在不同的场景...","pubDate":"2024-03-24","tags":["微服务","服务发现","工程实践"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/practice/Java构件发布到中央仓库","title":"Java构件发布到中央仓库","description":"Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过...","pubDate":"2024-04-04","tags":["Maven","Java","开源发布"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"消息队列":{"prev":null,"next":null},"中间件":{"prev":null,"next":null},"技术选型":{"prev":null,"next":{"slug":"insights/technology/AI-Agent技术科普","title":"AI Agent 技术全景：从能力上限到工程化下限","description":"Agent 的价值上限很高，但工程化下限很低——大多数团队死在中间这段路上。本文不只介绍框架和范式，更要回答：Agent 在哪里真的失败了？七个框架之间到底是什么关系？从 demo 到生产，卡点到底在哪里？","pubDate":"2025-09-25","tags":["AI Agent","LLM","智能体","技术选型"],"heroImage":"$undefined","content":"$19"}}}}]}],["$","$L1a",null,{}]]}]}]}]
 8:null
 c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
