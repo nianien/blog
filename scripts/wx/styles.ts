@@ -83,13 +83,15 @@ export const wxStyles: Record<string, string> = {
     color: ${CODE_TEXT};
     border-radius: 6px;
     overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
     font-size: 14px;
     line-height: 1.6;
-    -webkit-overflow-scrolling: touch;
   `,
   code: `
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
     font-size: 14px;
+    white-space: nowrap;
   `,
   // 行内代码
   codeInline: `

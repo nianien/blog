@@ -87,12 +87,17 @@ const marked = new Marked({
       return `<blockquote style="${s('blockquote')}">${inner}</blockquote>\n`
     },
     code({ text, lang }: Tokens.Code) {
-      const escaped = text
+      let escaped = text
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
+      // 微信会重置 white-space:pre，必须用显式格式化
+      escaped = escaped
+        .replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;')
+        .replace(/ /g, '&nbsp;')
+        .replace(/\n/g, '<br/>')
       const langLabel = lang ? `<span style="color:#888;font-size:12px;display:block;margin-bottom:8px;">${lang}</span>` : ''
-      return `<pre style="${s('pre')}">${langLabel}<code style="${s('code')}">${escaped}</code></pre>\n`
+      return `<section style="${s('pre')}">${langLabel}<code style="${s('code')}">${escaped}</code></section>\n`
     },
     codespan({ text }: Tokens.Codespan) {
       return `<code style="${s('codeInline')}">${text}</code>`
@@ -120,16 +125,15 @@ const marked = new Marked({
       const style = ordered ? s('ol') : s('ul')
       const itemsHtml = items.map(item => {
         let inner = this.parser.parse(item.tokens)
-        // 去掉 li 内的 <p> 包裹，避免微信渲染出多余空行
-        inner = inner.replace(/^<p style="[^"]*">([\s\S]*?)<\/p>\n?$/g, '$1')
+        // 微信会剥掉 <li> 内的 <p> 等块级元素，导致内容丢失
+        // 将相邻 <p> 之间替换为 <br>，再去掉所有 <p> 标签
+        inner = inner.replace(/<\/p>\n*<p style="[^"]*">/g, '<br/><br/>')
+        inner = inner.replace(/<p style="[^"]*">/g, '')
+        inner = inner.replace(/<\/p>/g, '')
+        inner = inner.trim()
         return `<li style="${s('li')}">${inner}</li>`
-      }).join('\n')
+      }).join('')
       return `<${tag} style="${style}">${itemsHtml}</${tag}>\n`
-    },
-    listitem({ tokens }: Tokens.ListItem) {
-      let inner = this.parser.parse(tokens)
-      inner = inner.replace(/^<p style="[^"]*">([\s\S]*?)<\/p>\n?$/g, '$1')
-      return `<li style="${s('li')}">${inner}</li>\n`
     },
     strong({ tokens }: Tokens.Strong) {
       const inner = this.parser.parseInline(tokens)
@@ -157,6 +161,9 @@ const marked = new Marked({
 })
 
 let html = marked.parse(mdContent) as string
+
+// 防止 </strong> 后的中文标点被微信换行分离（把标点拉入 strong 内部）
+html = html.replace(/<\/strong>([：。，、；！？:.])/g, '$1</strong>')
 
 // 文末引流
 const footerHtml = `
