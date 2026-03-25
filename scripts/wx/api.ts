@@ -1,34 +1,27 @@
 /**
- * 微信公众号 API 封装
- * - access_token 获取与缓存
- * - 图片素材上传
- * - 草稿箱创建
+ * 微信公众号 API 封装（通过云托管代理）
+ *
+ * .env.wx 配置项：
+ *   WX_PROXY_URL   - 云托管服务地址
+ *   WX_PROXY_TOKEN - 调用凭证
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs'
+import { readFileSync, existsSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const TOKEN_CACHE_FILE = resolve(__dirname, '../../.wx-token.json')
 
-const WX_API_BASE = 'https://api.weixin.qq.com/cgi-bin'
-
-interface TokenCache {
-  access_token: string
-  expires_at: number // unix timestamp ms
-}
-
-interface WxConfig {
-  appid: string
-  appsecret: string
+interface ProxyConfig {
+  proxyUrl: string
+  proxyToken: string
 }
 
 /** 从 .env.wx 读取配置 */
-export function loadWxConfig(): WxConfig {
+export function loadWxConfig(): ProxyConfig {
   const envPath = resolve(__dirname, '../../.env.wx')
   if (!existsSync(envPath)) {
-    throw new Error('缺少 .env.wx 配置文件，请创建并填入 WX_APPID 和 WX_APPSECRET')
+    throw new Error('缺少 .env.wx 配置文件，请创建并填入 WX_PROXY_URL 和 WX_PROXY_TOKEN')
   }
   const content = readFileSync(envPath, 'utf-8')
   const vars: Record<string, string> = {}
@@ -39,137 +32,96 @@ export function loadWxConfig(): WxConfig {
     if (eqIdx === -1) continue
     vars[trimmed.slice(0, eqIdx).trim()] = trimmed.slice(eqIdx + 1).trim()
   }
-  const appid = vars['WX_APPID']
-  const appsecret = vars['WX_APPSECRET']
-  if (!appid || !appsecret) {
-    throw new Error('.env.wx 中缺少 WX_APPID 或 WX_APPSECRET')
+  const proxyUrl = vars['WX_PROXY_URL']
+  const proxyToken = vars['WX_PROXY_TOKEN']
+  if (!proxyUrl || !proxyToken) {
+    throw new Error('.env.wx 中缺少 WX_PROXY_URL 或 WX_PROXY_TOKEN')
   }
-  return { appid, appsecret }
+  return { proxyUrl, proxyToken }
 }
 
-/** 获取 access_token，优先使用缓存 */
-export async function getAccessToken(config: WxConfig): Promise<string> {
-  // 尝试读取缓存
-  if (existsSync(TOKEN_CACHE_FILE)) {
-    try {
-      const cache: TokenCache = JSON.parse(readFileSync(TOKEN_CACHE_FILE, 'utf-8'))
-      if (cache.access_token && cache.expires_at > Date.now() + 60_000) {
-        return cache.access_token
-      }
-    } catch {
-      // 缓存无效，重新获取
-    }
+let _config: ProxyConfig | null = null
+
+function getConfig(): ProxyConfig {
+  if (!_config) _config = loadWxConfig()
+  return _config
+}
+
+/** 调用云托管代理 */
+async function callProxy(action: string, params: Record<string, unknown>): Promise<any> {
+  const { proxyUrl, proxyToken } = getConfig()
+
+  const res = await fetch(proxyUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${proxyToken}`,
+    },
+    body: JSON.stringify({ action, params }),
+  })
+
+  const text = await res.text()
+  let data: { success: boolean; data?: any; error?: string }
+  try {
+    data = JSON.parse(text)
+  } catch {
+    throw new Error(`代理返回非JSON (HTTP ${res.status}): ${text.slice(0, 300)}`)
   }
 
-  const url = `${WX_API_BASE}/token?grant_type=client_credential&appid=${config.appid}&secret=${config.appsecret}`
-  const res = await fetch(url)
-  const data = await res.json() as { access_token?: string; expires_in?: number; errcode?: number; errmsg?: string }
-
-  if (data.errcode) {
-    throw new Error(`获取 access_token 失败: ${data.errcode} ${data.errmsg}`)
+  if (!data.success) {
+    throw new Error(`[${action}] ${data.error || '未知错误'}`)
   }
 
-  const token = data.access_token!
-  const expiresIn = data.expires_in! // 秒
-
-  // 缓存到文件
-  const cache: TokenCache = {
-    access_token: token,
-    expires_at: Date.now() + expiresIn * 1000,
-  }
-  writeFileSync(TOKEN_CACHE_FILE, JSON.stringify(cache, null, 2), 'utf-8')
-
-  return token
+  return data.data
 }
 
 /** 上传永久图片素材，返回 media_id 和 url */
-export async function uploadImage(
-  token: string,
-  imagePath: string,
-): Promise<{ media_id: string; url: string }> {
-  const url = `${WX_API_BASE}/material/add_material?access_token=${token}&type=image`
-
+export async function uploadImage(imagePath: string): Promise<{ media_id: string; url: string }> {
   const fileBuffer = readFileSync(imagePath)
   const fileName = imagePath.split('/').pop() || 'image.png'
 
-  const formData = new FormData()
-  formData.append('media', new Blob([fileBuffer]), fileName)
+  const result = await callProxy('uploadImage', {
+    fileBase64: fileBuffer.toString('base64'),
+    fileName,
+  })
 
-  const res = await fetch(url, { method: 'POST', body: formData })
-  const data = await res.json() as { media_id?: string; url?: string; errcode?: number; errmsg?: string }
-
-  if (data.errcode) {
-    throw new Error(`上传图片失败: ${data.errcode} ${data.errmsg}`)
+  if (!result?.media_id) {
+    throw new Error(`uploadImage 返回无效: ${JSON.stringify(result)}`)
   }
 
-  return { media_id: data.media_id!, url: data.url! }
+  return { media_id: result.media_id, url: result.url }
 }
 
-/**
- * 上传文章内图片（用于正文中的图片，返回微信 CDN URL）
- * 注意：此接口上传的图片不占素材库配额
- */
-export async function uploadContentImage(
-  token: string,
-  imageBuffer: Buffer,
-  fileName: string,
-): Promise<string> {
-  const url = `${WX_API_BASE}/media/uploadimg?access_token=${token}`
+/** 上传文章内图片，返回微信 CDN URL */
+export async function uploadContentImage(imageBuffer: Buffer, fileName: string): Promise<string> {
+  const result = await callProxy('uploadContentImage', {
+    fileBase64: imageBuffer.toString('base64'),
+    fileName,
+  })
 
-  const formData = new FormData()
-  formData.append('media', new Blob([imageBuffer]), fileName)
-
-  const res = await fetch(url, { method: 'POST', body: formData })
-  const data = await res.json() as { url?: string; errcode?: number; errmsg?: string }
-
-  if (data.errcode) {
-    throw new Error(`上传内容图片失败: ${data.errcode} ${data.errmsg}`)
+  if (!result?.url) {
+    throw new Error(`uploadContentImage 返回无效: ${JSON.stringify(result)}`)
   }
 
-  return data.url!
+  return result.url
 }
 
-interface DraftArticle {
+export interface DraftArticle {
   title: string
   author: string
-  digest: string         // 摘要
-  content: string        // HTML 正文
-  thumb_media_id: string // 封面图 media_id
-  content_source_url?: string // 原文链接
+  digest: string
+  content: string
+  thumb_media_id: string
+  content_source_url?: string
 }
 
 /** 创建草稿 */
-export async function createDraft(
-  token: string,
-  article: DraftArticle,
-): Promise<string> {
-  const url = `${WX_API_BASE}/draft/add?access_token=${token}`
+export async function createDraft(article: DraftArticle): Promise<string> {
+  const result = await callProxy('createDraft', { ...article })
 
-  const body = {
-    articles: [
-      {
-        title: article.title,
-        author: article.author,
-        digest: article.digest,
-        content: article.content,
-        thumb_media_id: article.thumb_media_id,
-        content_source_url: article.content_source_url || '',
-        need_open_comment: 0,
-        only_fans_can_comment: 0,
-      },
-    ],
+  if (!result?.media_id) {
+    throw new Error(`createDraft 返回无效: ${JSON.stringify(result)}`)
   }
 
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  })
-  const data = await res.json() as { media_id?: string; errcode?: number; errmsg?: string }
-
-  if (data.errcode) {
-    throw new Error(`创建草稿失败: ${data.errcode} ${data.errmsg}`)
-  }
-
-  return data.media_id!
+  return result.media_id
 }

@@ -17,8 +17,6 @@ import matter from 'gray-matter'
 import { Marked, type Tokens } from 'marked'
 import { wxStyles, normalizeStyle } from './styles.js'
 import {
-  loadWxConfig,
-  getAccessToken,
   uploadImage,
   uploadContentImage,
   createDraft,
@@ -162,6 +160,9 @@ const marked = new Marked({
 
 let html = marked.parse(mdContent) as string
 
+// 微信不允许外部链接，将 <a> 标签替换为纯文本
+html = html.replace(/<a\s[^>]*>(.*?)<\/a>/g, '$1')
+
 // 防止 </strong> 后的中文标点被微信换行分离（把标点拉入 strong 内部）
 html = html.replace(/<\/strong>([：。，、；！？:.])/g, '$1</strong>')
 
@@ -177,7 +178,7 @@ html = `<section style="${s('wrapper')}">${html}${footerHtml}</section>`
 
 // ─── 图片处理 ───
 
-async function processImages(html: string, token: string): Promise<string> {
+async function processImages(html: string): Promise<string> {
   const imgRegex = /<img\s+src="([^"]+)"/g
   const matches = [...html.matchAll(imgRegex)]
 
@@ -222,8 +223,8 @@ async function processImages(html: string, token: string): Promise<string> {
     if (!extname(fileName)) fileName += '.png'
 
     console.log(`  ⬆️  上传: ${fileName}`)
-    const wxUrl = await uploadContentImage(token, imageBuffer, fileName)
-    html = html.replaceAll(originalSrc, wxUrl)
+    const wxUrl = await uploadContentImage(imageBuffer, fileName)
+    html = html.split(originalSrc).join(wxUrl)
     console.log(`  ✅ 替换完成`)
   }
 
@@ -232,7 +233,7 @@ async function processImages(html: string, token: string): Promise<string> {
 
 // ─── 封面图处理 ───
 
-async function getThumbMediaId(token: string): Promise<string> {
+async function getThumbMediaId(): Promise<string> {
   if (cover) {
     // frontmatter 中指定了封面图
     const coverPath = resolve(dirname(absolutePath), cover)
@@ -240,7 +241,7 @@ async function getThumbMediaId(token: string): Promise<string> {
       throw new Error(`封面图不存在: ${coverPath}`)
     }
     console.log(`🖼️  上传封面图: ${cover}`)
-    const { media_id } = await uploadImage(token, coverPath)
+    const { media_id } = await uploadImage(coverPath)
     return media_id
   }
 
@@ -251,7 +252,7 @@ async function getThumbMediaId(token: string): Promise<string> {
   const tmpCoverPath = resolve(__dirname, '../../out/wx/.wx-cover-tmp.png')
   mkdirSync(dirname(tmpCoverPath), { recursive: true })
   writeFileSync(tmpCoverPath, coverBuf)
-  const { media_id } = await uploadImage(token, tmpCoverPath)
+  const { media_id } = await uploadImage(tmpCoverPath)
   return media_id
 }
 
@@ -315,22 +316,18 @@ if (previewMode) {
 // ─── 发布模式 ───
 
 async function publish() {
-  console.log('\n🔑 获取 access_token...')
-  const config = loadWxConfig()
-  const token = await getAccessToken(config)
-
   // 处理文章中的图片
-  html = await processImages(html, token)
+  html = await processImages(html)
 
   // 获取封面图
-  const thumbMediaId = await getThumbMediaId(token)
+  const thumbMediaId = await getThumbMediaId()
 
   // 创建草稿
   console.log('\n📝 创建草稿...')
-  const mediaId = await createDraft(token, {
+  const mediaId = await createDraft({
     title,
     author,
-    digest: description,
+    digest: description.length > 40 ? description.slice(0, 39) + '…' : description,
     content: html,
     thumb_media_id: thumbMediaId,
     content_source_url: articleUrl,
