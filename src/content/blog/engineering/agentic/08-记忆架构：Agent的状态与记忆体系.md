@@ -1,5 +1,5 @@
 ---
-title: "Memory Architecture: Agent 的状态与记忆体系"
+title: "记忆架构：Agent的状态与记忆体系"
 description: "LLM 是无状态的，但 Agent 必须有状态。本文系统拆解 Agent 记忆的四层架构——Conversation Buffer、Working Memory、Episodic Memory、Semantic Memory，从认知科学类比出发，深入每一层的设计原理、存储方案、读写策略与 Context Window 管理，附完整 Python 实现。"
 pubDate: "2026-01-02"
 tags: ["Agentic", "AI Engineering", "Memory"]
@@ -1284,9 +1284,1422 @@ def rule_based_compress(messages: list[dict]) -> list[dict]:
 
 ---
 
-## 9. 小结与下一步
+## 9. 记忆分层决策树
 
-本文建立了 Agent 记忆的四层架构：
+在实践中，最常见的问题是："这条信息应该存到哪一层记忆？"没有清晰的决策框架，工程师往往会在不同层之间反复修改，导致记忆架构混乱。本节提供一个系统的决策树，帮助快速定位信息的归属。
+
+### 决策框架
+
+```
+                           ┌─ 信息 ─┐
+                           │        │
+                  是否为当前对话流的直接产物？
+                           │
+                    ┌──────┴──────┐
+                    │             │
+                   否             是
+                    │             │
+                    │      ┌──────▼──────────┐
+                    │      │ Conversation     │
+                    │      │ Buffer (L1)      │
+                    │      │                  │
+                    │      │ 消息历史、对话   │
+                    │      │ 上下文、用户输入 │
+                    │      └──────────────────┘
+                    │
+      是否为当前任务执行状态信息？
+                    │
+         ┌──────────┴──────────┐
+         │                     │
+        否                     是
+         │            ┌────────▼─────────┐
+         │            │ Working Memory   │
+         │            │ (L2)             │
+         │            │                  │
+         │            │ 任务目标、执行   │
+         │            │ 计划、进度、     │
+         │            │ Scratchpad       │
+         │            └──────────────────┘
+         │
+    是否需要跨会话保留？
+         │
+    ┌────┴─────┐
+    │           │
+   否          是
+    │           │
+    │      是否可以泛化为结构化知识？
+    │           │
+    │      ┌────┴────┐
+    │      │          │
+    │     否         是
+    │      │          │
+    │      │    ┌─────▼────────────┐
+    │      │    │ Semantic Memory  │
+    │      │    │ (L4)             │
+    │      │    │                  │
+    │      │    │ 知识库、规则、   │
+    │      │    │ 事实、政策       │
+    │      │    └──────────────────┘
+    │      │
+    │  ┌───▼──────────────────┐
+    │  │ Episodic Memory      │
+    │  │ (L3)                 │
+    │  │                      │
+    │  │ 过去任务、用户偏好、 │
+    │  │ 错误案例、成功案例   │
+    │  └──────────────────────┘
+    │
+  (不保留或临时缓存)
+```
+
+### 具体示例
+
+**示例 1：用户输入 "把上次的数据改成蓝色"**
+
+```
+Step 1: 是否为当前对话流的直接产物？ → 是
+  └─> Conversation Buffer (L1)
+
+  存储：{
+    "role": "user",
+    "content": "把上次的数据改成蓝色",
+    "timestamp": "2024-03-20T10:15:00Z"
+  }
+
+  同时，Agent 需要在 Working Memory 中记录：
+  {
+    "task": "修改数据可视化颜色",
+    "reference": "上次生成的图表",
+    "action": "pending"
+  }
+```
+
+**示例 2：执行过程中发现"数据有 15% 的缺失值"**
+
+```
+Step 1: 是否为当前任务执行状态信息？ → 是
+  └─> Working Memory (L2)
+
+  存储到 Scratchpad：{
+    "data_quality": {
+      "missing_percentage": 0.15,
+      "affected_columns": ["sales", "region"],
+      "handling_strategy": "forward_fill"
+    }
+  }
+
+  同时注入到当前 prompt 中，让 Agent 在后续决策时考虑这一发现
+```
+
+**示例 3：任务完成，提取"我需要先清理缺失值再做聚合"这一教训**
+
+```
+Step 1: 是否为当前任务执行状态信息？ → 否
+Step 2: 是否需要跨会话保留？ → 是
+Step 3: 是否可以泛化为结构化知识？ → 是
+
+  └─> Semantic Memory (L4) 知识库
+
+  存储：{
+    "rule_id": "data_prep_order",
+    "title": "数据处理的执行顺序",
+    "content": "清理缺失值必须在聚合操作之前，否则会导致统计不准",
+    "applicable_scenarios": ["数据分析", "ETL流程"],
+    "confidence": 0.95
+  }
+```
+
+**示例 4：用户说 "我发现你上次的方法不对，应该用另一种方式"**
+
+```
+Step 1: 是否为当前任务执行状态信息？ → 否
+Step 2: 是否需要跨会话保留？ → 是
+Step 3: 是否可以泛化为结构化知识？ → 否
+
+  └─> Episodic Memory (L3)
+
+  存储：{
+    "episode_id": "ep_2024_03_20_001",
+    "task_description": "处理销售数据分析",
+    "previous_approach": "使用线性回归预测",
+    "corrected_approach": "应使用时间序列模型（ARIMA）",
+    "user_feedback": "线性回归忽略了季节性",
+    "lesson": "销售数据具有明显季节性，不能用简单线性模型",
+    "importance": 0.85
+  }
+```
+
+**示例 5：Agent 自动生成的中间结果（如 API 调用返回值）**
+
+```
+Step 1: 是否为当前对话流的直接产物？ → 是
+Step 2: 是当前任务执行状态信息？ → 是
+
+  └─> Working Memory (L2) + Conversation Buffer (L1)
+
+  在 L2 中作为"已执行步骤的输出"：
+  {
+    "step_id": 2,
+    "action": "fetch_data",
+    "result": {
+      "rows": 50000,
+      "columns": 12,
+      "date_range": "2024-01 to 2024-12"
+    }
+  }
+
+  在 L1 中作为"对话历史"的一部分：
+  {
+    "role": "tool",
+    "content": "Successfully fetched data: 50000 rows, 12 columns"
+  }
+```
+
+### 决策树实现
+
+```python
+from enum import Enum
+from typing import Dict, Any
+
+class MemoryLayer(Enum):
+    CONVERSATION_BUFFER = 1
+    WORKING_MEMORY = 2
+    EPISODIC_MEMORY = 3
+    SEMANTIC_MEMORY = 4
+    DISCARD = 0
+
+class MemoryLayerDecisionTree:
+    """根据信息特征自动判断应该存储到哪一层"""
+
+    @staticmethod
+    def decide(info: Dict[str, Any]) -> MemoryLayer:
+        """
+        Args:
+            info: 包含以下关键字段的字典
+                - content: 信息内容
+                - is_direct_message: 是否为直接输入/输出
+                - is_task_state: 是否为任务状态
+                - is_cross_session: 是否需要跨会话保留
+                - is_generalizable: 是否可泛化为知识
+                - importance: 重要性评分 (0-1)
+                - is_user_feedback: 是否为用户反馈
+
+        Returns:
+            应该存储的记忆层级
+        """
+
+        # 第一道：是否为当前对话流的直接产物？
+        if info.get("is_direct_message"):
+            return MemoryLayer.CONVERSATION_BUFFER
+
+        # 第二道：是否为当前任务执行状态？
+        if info.get("is_task_state"):
+            return MemoryLayer.WORKING_MEMORY
+
+        # 第三道：是否需要跨会话保留？
+        if not info.get("is_cross_session"):
+            return MemoryLayer.DISCARD
+
+        # 第四道：是否可泛化为知识？
+        if info.get("is_generalizable"):
+            # 知识库需要满足：
+            # 1. 相对稳定（不频繁变化）
+            # 2. 适用于多个场景
+            # 3. 重要性较高
+            if (info.get("stability_score", 0.5) > 0.7 and
+                info.get("applicability_score", 0.5) > 0.6 and
+                info.get("importance", 0.5) > 0.6):
+                return MemoryLayer.SEMANTIC_MEMORY
+
+        # 默认：episodic 记忆
+        return MemoryLayer.EPISODIC_MEMORY
+
+    @staticmethod
+    def get_storage_strategy(layer: MemoryLayer) -> Dict[str, Any]:
+        """获取每一层的存储策略"""
+        strategies = {
+            MemoryLayer.CONVERSATION_BUFFER: {
+                "storage": "in-memory queue / Redis",
+                "max_entries": 100,
+                "retention_policy": "sliding window (last N messages)",
+                "access_pattern": "sequential",
+                "ttl": "single session"
+            },
+            MemoryLayer.WORKING_MEMORY: {
+                "storage": "in-memory dictionary / task cache",
+                "max_entries": 1,  # 每个任务一份
+                "retention_policy": "task lifecycle",
+                "access_pattern": "random access by key",
+                "ttl": "task duration"
+            },
+            MemoryLayer.EPISODIC_MEMORY: {
+                "storage": "vector database (e.g., Pinecone, Weaviate)",
+                "max_entries": "unlimited",
+                "retention_policy": "time decay + importance score",
+                "access_pattern": "semantic similarity search",
+                "ttl": "days to months"
+            },
+            MemoryLayer.SEMANTIC_MEMORY: {
+                "storage": "structured database / knowledge graph",
+                "max_entries": "unlimited",
+                "retention_policy": "version control",
+                "access_pattern": "exact match / graph traversal",
+                "ttl": "permanent"
+            },
+        }
+        return strategies.get(layer, {})
+```
+
+---
+
+## 10. 系统化遗忘机制
+
+简单的时间衰减已经不够。真实的 Agent 系统需要更精细的遗忘策略：为什么有些记忆应该被遗忘得快一些，有些应该被永久保留？本节介绍三种高级遗忘策略及其组合方案。
+
+### 三种遗忘策略
+
+#### 策略 1: 重要性评分遗忘
+
+信息的重要性不是固定的。"用户偏好用表格格式展示数据"这条信息很重要（高权重）；而"2024-03-15 调用了 API，返回 200 状态码"就没那么重要（低权重）。
+
+```python
+import time
+import math
+from dataclasses import dataclass
+from typing import Optional
+
+@dataclass
+class MemoryEntry:
+    """记忆条目"""
+    id: str
+    content: str
+    timestamp: float                    # 写入时间
+    importance_score: float             # 初始重要性 (0-1)
+    access_count: int = 0               # 被检索次数
+    last_access_time: Optional[float] = None
+    tags: list[str] = None              # 标签（如 user_preference, task_result）
+
+    def set_importance(self, score: float):
+        """手动设置重要性"""
+        assert 0 <= score <= 1
+        self.importance_score = score
+
+    def increment_access(self):
+        """记录访问"""
+        self.access_count += 1
+        self.last_access_time = time.time()
+
+
+class ImportanceBasedForgetfulness:
+    """基于重要性的遗忘管理器"""
+
+    def __init__(self, base_forget_rate: float = 0.05):
+        """
+        Args:
+            base_forget_rate: 基础遗忘率（每天遗忘的比例）
+        """
+        self.base_forget_rate = base_forget_rate
+
+    def compute_forget_score(self, entry: MemoryEntry, current_time: float) -> float:
+        """
+        计算遗忘评分：值越高，越应该被遗忘
+
+        基础公式：
+        forget_score = base_rate × time_factor × (1 - importance_adjustment)
+
+        where:
+        - time_factor: 时间越久，遗忘倾向越强
+        - importance_adjustment: 重要性越高，遗忘倾向越弱
+        """
+
+        # 计算时间衰减因子
+        age_days = (current_time - entry.timestamp) / 86400
+        time_factor = min(1.0, age_days / 30)  # 30 天后达到最大衰减
+
+        # 重要性调整：重要性越高，遗忘评分越低
+        # importance_score = 0.9 → importance_adjustment = 0.1（难以遗忘）
+        # importance_score = 0.1 → importance_adjustment = 0.9（容易遗忘）
+        importance_adjustment = 1 - entry.importance_score
+
+        forget_score = self.base_forget_rate * time_factor * importance_adjustment
+
+        return forget_score
+
+    def should_forget(self, entry: MemoryEntry, current_time: float, threshold: float = 0.5) -> bool:
+        """判断是否应该遗忘这条记忆"""
+        return self.compute_forget_score(entry, current_time) > threshold
+
+
+class QueryFrequencyBasedForgetfulness:
+    """基于查询频率的热度衰减"""
+
+    def __init__(self, lookback_days: int = 30, hot_threshold: int = 5):
+        """
+        Args:
+            lookback_days: 计算热度的时间窗口
+            hot_threshold: 判定为"热"的最少访问次数
+        """
+        self.lookback_days = lookback_days
+        self.hot_threshold = hot_threshold
+
+    def compute_hotness(self, entry: MemoryEntry, current_time: float) -> float:
+        """
+        计算记忆的"热度"：最近被访问的频率
+
+        热度范围 0-1：
+        - 1.0: 非常热（最近经常被检索）
+        - 0.5: 中等
+        - 0.0: 冷（很久没被检索过）
+        """
+
+        if entry.last_access_time is None:
+            # 从未被访问
+            age_days = (current_time - entry.timestamp) / 86400
+            return max(0, 1 - age_days / 30)  # 新记忆默认较热
+
+        # 最后访问距今的天数
+        days_since_last_access = (
+            (current_time - entry.last_access_time) / 86400
+        )
+
+        # 查询频率（每天访问次数）
+        days_of_existence = (current_time - entry.timestamp) / 86400
+        if days_of_existence == 0:
+            days_of_existence = 1
+        access_frequency = entry.access_count / days_of_existence
+
+        # 综合评分：近期被访问 + 频繁被访问
+        recency_score = max(0, 1 - days_since_last_access / self.lookback_days)
+        frequency_score = min(1.0, access_frequency / self.hot_threshold)
+
+        hotness = recency_score * 0.6 + frequency_score * 0.4
+        return hotness
+
+    def should_downgrade(self, entry: MemoryEntry, current_time: float) -> bool:
+        """
+        判断是否应该将记忆从高优先级降级到低优先级
+
+        降级意味着：
+        - 从 Episodic Memory 转移到冷存储（如归档库）
+        - 检索时优先级降低
+        - 自动清理列表中的排序靠后
+        """
+        hotness = self.compute_hotness(entry, current_time)
+        return hotness < 0.2  # 热度过低时降级
+```
+
+#### 策略 2: 混合遗忘（时间 × 重要性 × 热度）
+
+上面的两个策略可以结合起来，形成一个更强大的遗忘模型：
+
+```python
+class HybridForgettingManager:
+    """综合时间、重要性、热度的遗忘管理器"""
+
+    def __init__(
+        self,
+        base_forget_rate: float = 0.05,
+        weight_time: float = 0.4,
+        weight_importance: float = 0.35,
+        weight_hotness: float = 0.25,
+    ):
+        self.base_forget_rate = base_forget_rate
+        self.weight_time = weight_time
+        self.weight_importance = weight_importance
+        self.weight_hotness = weight_hotness
+
+        self.importance_mgr = ImportanceBasedForgetfulness(base_forget_rate)
+        self.hotness_mgr = QueryFrequencyBasedForgetfulness()
+
+    def compute_comprehensive_forget_score(
+        self, entry: MemoryEntry, current_time: float
+    ) -> float:
+        """
+        综合评分：越高越应该被遗忘
+
+        final_score =
+            weight_time × time_score +
+            weight_importance × (1 - importance_score) +
+            weight_hotness × (1 - hotness_score)
+        """
+
+        # 时间评分：越久越容易遗忘
+        age_days = (current_time - entry.timestamp) / 86400
+        time_score = min(1.0, age_days / 90)  # 90 天后达到最大
+
+        # 重要性评分：直接使用 entry 中存储的值
+        importance_penalty = 1 - entry.importance_score
+
+        # 热度评分：冷的记忆更容易遗忘
+        hotness = self.hotness_mgr.compute_hotness(entry, current_time)
+        hotness_penalty = 1 - hotness
+
+        # 加权综合
+        final_score = (
+            self.weight_time * time_score +
+            self.weight_importance * importance_penalty +
+            self.weight_hotness * hotness_penalty
+        )
+
+        return final_score
+
+    def should_forget(
+        self, entry: MemoryEntry, current_time: float, threshold: float = 0.6
+    ) -> bool:
+        """判断是否应该遗忘"""
+        score = self.compute_comprehensive_forget_score(entry, current_time)
+        return score > threshold
+
+    def get_forget_probability(
+        self, entry: MemoryEntry, current_time: float
+    ) -> float:
+        """
+        获取遗忘概率（0-1）
+
+        可用于：
+        - 决定是否定期执行遗忘检查
+        - 生成遗忘日志
+        - 监控记忆库的健康度
+        """
+        score = self.compute_comprehensive_forget_score(entry, current_time)
+        # 使用 sigmoid 函数将评分转换为概率
+        return 1 / (1 + math.exp(-5 * (score - 0.5)))
+
+
+class ForgettingManager:
+    """
+    记忆遗忘的主管理类
+
+    责任：
+    1. 定期扫描记忆库，识别应该遗忘的条目
+    2. 执行遗忘操作（删除或降级）
+    3. 记录遗忘日志（用于调试和分析）
+    4. 支持撤销遗忘（soft delete）
+    """
+
+    def __init__(self, memory_store, config: Dict[str, Any] = None):
+        self.memory_store = memory_store
+        self.config = config or self._default_config()
+
+        self.hybrid_mgr = HybridForgettingManager(
+            base_forget_rate=self.config["base_forget_rate"],
+            weight_time=self.config["weight_time"],
+            weight_importance=self.config["weight_importance"],
+            weight_hotness=self.config["weight_hotness"],
+        )
+
+        self.forget_log = []
+
+    @staticmethod
+    def _default_config() -> Dict[str, Any]:
+        return {
+            "base_forget_rate": 0.05,
+            "weight_time": 0.4,
+            "weight_importance": 0.35,
+            "weight_hotness": 0.25,
+            "forget_threshold": 0.6,
+            "batch_size": 100,
+            "check_interval_seconds": 3600,  # 每小时检查一次
+        }
+
+    def scan_and_forget(self, current_time: Optional[float] = None) -> Dict[str, Any]:
+        """
+        扫描整个记忆库，执行遗忘操作
+
+        Returns:
+            {
+                "deleted": int,           # 删除的条目数
+                "downgraded": int,        # 降级的条目数
+                "preserved": int,         # 保留的条目数
+                "log": [...]              # 详细日志
+            }
+        """
+        if current_time is None:
+            current_time = time.time()
+
+        deleted_count = 0
+        downgraded_count = 0
+        preserved_count = 0
+
+        # 分批扫描
+        all_entries = self.memory_store.list_all()
+        batch_size = self.config["batch_size"]
+
+        for i in range(0, len(all_entries), batch_size):
+            batch = all_entries[i : i + batch_size]
+
+            for entry in batch:
+                should_delete = self.hybrid_mgr.should_forget(
+                    entry, current_time, threshold=self.config["forget_threshold"]
+                )
+
+                if should_delete:
+                    self.memory_store.soft_delete(entry.id)
+                    deleted_count += 1
+                    self.forget_log.append({
+                        "timestamp": current_time,
+                        "action": "delete",
+                        "entry_id": entry.id,
+                        "reason": "forget_threshold_exceeded",
+                        "score": self.hybrid_mgr.compute_comprehensive_forget_score(
+                            entry, current_time
+                        ),
+                    })
+                else:
+                    preserved_count += 1
+
+        return {
+            "deleted": deleted_count,
+            "downgraded": downgraded_count,
+            "preserved": preserved_count,
+            "total_scanned": len(all_entries),
+            "log_sample": self.forget_log[-10:],
+        }
+
+    def restore_forgotten(self, entry_id: str) -> bool:
+        """
+        撤销遗忘操作（如果支持软删除）
+
+        通常在以下场景使用：
+        - 用户明确要求恢复某条记忆
+        - 系统发现遗忘错误
+        """
+        return self.memory_store.restore(entry_id)
+
+    def batch_set_importance(self, tag: str, importance: float):
+        """
+        批量设置某类记忆的重要性
+
+        Args:
+            tag: 记忆标签（如 "user_preference"）
+            importance: 新的重要性评分 (0-1)
+
+        Example:
+            mgr.batch_set_importance("user_preference", 0.95)
+            # 所有标记为用户偏好的记忆都变成"难以遗忘"
+        """
+        entries = self.memory_store.query_by_tag(tag)
+        for entry in entries:
+            entry.set_importance(importance)
+            self.memory_store.update(entry)
+```
+
+---
+
+## 11. Embedding 成本优化
+
+向量化（Embedding）是检索的关键，但 Token 成本不容忽视。对于一个中等规模的 Episodic Memory 库（10000 条记忆），定期重新 Embedding 所有条目会产生巨大成本。本节介绍三种成本优化策略。
+
+### 问题分析
+
+假设你有一个 Episodic Memory 库，包含 10,000 条过去的交互记录。每条记录平均 200 tokens。
+
+**全量 Embedding 的成本**：
+```
+10,000 条 × 200 tokens = 2,000,000 tokens
+
+假设 Embedding API 的价格是 $0.02 per 1M tokens（如 OpenAI text-embedding-3-small）：
+成本 = 2,000,000 × $0.02 / 1,000,000 = $0.04
+
+看起来不贵。但问题是：
+1. 如果每天新增 100 条记忆，每周需要重新 Embedding？
+2. 如果记忆库增长到 100,000 条？
+3. 如果你运行多个 Agent 实例？
+```
+
+**实际成本考虑**：
+
+```
+周场景：
+- 每周全量 Embedding: 10,000 条 × 200 tokens × 52 周 = 104M tokens/年
+- 年成本: ~$2,080/年（单个库）
+
+如果有 10 个 Agent 实例，每个都维护自己的记忆库：
+- 年成本: $20,800/年
+```
+
+### 策略 1: 增量 vs 全量
+
+最直接的优化：只 Embedding 新增或修改的记忆，而不是全量重新计算。
+
+```python
+from datetime import datetime, timedelta
+from typing import List, Optional
+
+class IncrementalEmbeddingStrategy:
+    """增量 Embedding 策略"""
+
+    def __init__(self, embedding_client, memory_store):
+        self.embedding_client = embedding_client
+        self.memory_store = memory_store
+        self.last_embedding_time = None
+
+    def get_records_needing_embedding(
+        self,
+        since: Optional[datetime] = None,
+        include_modified: bool = True
+    ) -> List[MemoryEntry]:
+        """
+        获取需要 Embedding 的记录
+
+        Args:
+            since: 只返回此时间点之后的记录
+            include_modified: 是否包含修改过的记录
+
+        Returns:
+            待 Embedding 的记录列表
+        """
+        if since is None:
+            since = self.last_embedding_time or (
+                datetime.now() - timedelta(days=7)
+            )
+
+        criteria = {
+            "created_after": since,
+        }
+
+        if include_modified:
+            criteria["modified_after"] = since
+
+        return self.memory_store.query(criteria)
+
+    def embed_incremental(self) -> Dict[str, Any]:
+        """
+        执行增量 Embedding
+
+        Returns:
+            {
+                "newly_embedded": int,
+                "cost": float,
+                "tokens_used": int,
+                "time_elapsed": float
+            }
+        """
+        records = self.get_records_needing_embedding()
+
+        if not records:
+            return {"newly_embedded": 0, "cost": 0, "tokens_used": 0}
+
+        # 批量获取 Embedding
+        texts = [r.content for r in records]
+        embeddings, tokens_used = self.embedding_client.embed_batch(texts)
+
+        # 写回记忆库
+        for record, embedding in zip(records, embeddings):
+            record.embedding = embedding
+            record.embedding_timestamp = datetime.now()
+            self.memory_store.update(record)
+
+        self.last_embedding_time = datetime.now()
+
+        cost = self._estimate_cost(tokens_used)
+
+        return {
+            "newly_embedded": len(records),
+            "tokens_used": tokens_used,
+            "cost": cost,
+        }
+
+    @staticmethod
+    def _estimate_cost(tokens: int, price_per_1m: float = 0.02) -> float:
+        """估算成本"""
+        return tokens / 1_000_000 * price_per_1m
+```
+
+**成本对比**：
+
+```
+假设每天新增 50 条记忆（200 tokens/条）：
+- 增量 Embedding (每天): 50 × 200 = 10K tokens/天 = $0.0002/天
+- 全量 Embedding (每周): 2M tokens/周 = $0.04/周 = $2.08/年
+
+周期对比：
+┌────────────────┬─────────────────┬─────────────────┐
+│ 重新 Embedding  │ 全量成本/次     │ 年成本(52周)    │
+├────────────────┼─────────────────┼─────────────────┤
+│ 每周一次        │ ~$0.04         │ ~$2.08         │
+│ 每天一次(增量)  │ ~$0.0002       │ ~$0.07         │
+│ 从不(只初始化)  │ ~$0.04(一次)   │ ~$0.04         │
+└────────────────┴─────────────────┴─────────────────┘
+```
+
+### 策略 2: 哈希缓存（内容不变则跳过重新 Embedding）
+
+问题：有些记忆的内容可能被修改（如重要性评分改变，但文本内容不变）。此时重新 Embedding 是浪费。
+
+```python
+import hashlib
+
+class EmbeddingCacheWithHashVerification:
+    """使用内容哈希缓存 Embedding 结果"""
+
+    def __init__(self, embedding_client, memory_store):
+        self.embedding_client = embedding_client
+        self.memory_store = memory_store
+        self.content_hash_cache = {}  # content_hash -> embedding
+
+    @staticmethod
+    def compute_content_hash(content: str) -> str:
+        """计算内容的 SHA256 哈希"""
+        return hashlib.sha256(content.encode()).hexdigest()
+
+    def get_or_embed(self, record: MemoryEntry) -> List[float]:
+        """
+        获取 Embedding，如果内容未变则返回缓存结果
+
+        Args:
+            record: 记忆条目
+
+        Returns:
+            embedding 向量
+        """
+        content_hash = self.compute_content_hash(record.content)
+
+        # 情况 1: 记录本身就有 embedding（可能来自之前的计算）
+        if record.embedding is not None:
+            # 检查内容是否改变过
+            if not hasattr(record, "content_hash") or record.content_hash == content_hash:
+                # 内容未变，直接返回已有的 embedding
+                return record.embedding
+
+        # 情况 2: 哈希缓存中有
+        if content_hash in self.content_hash_cache:
+            embedding = self.content_hash_cache[content_hash]
+            record.embedding = embedding
+            record.content_hash = content_hash
+            return embedding
+
+        # 情况 3: 需要调用 API 计算新的 embedding
+        embedding = self.embedding_client.embed(record.content)
+        self.content_hash_cache[content_hash] = embedding
+        record.embedding = embedding
+        record.content_hash = content_hash
+
+        return embedding
+
+    def batch_get_or_embed(self, records: List[MemoryEntry]) -> Dict[str, List[float]]:
+        """
+        批量获取 Embedding，智能判断是否需要调用 API
+
+        Returns:
+            {record_id: embedding}
+        """
+        to_embed = []
+        cached_results = {}
+
+        for record in records:
+            content_hash = self.compute_content_hash(record.content)
+
+            # 检查缓存
+            if content_hash in self.content_hash_cache:
+                cached_results[record.id] = self.content_hash_cache[content_hash]
+            elif record.embedding is not None and (
+                not hasattr(record, "content_hash") or record.content_hash == content_hash
+            ):
+                cached_results[record.id] = record.embedding
+            else:
+                to_embed.append((record.id, record.content, content_hash))
+
+        # 批量调用 API（只处理需要的）
+        newly_embedded = {}
+        if to_embed:
+            ids, contents, hashes = zip(*to_embed)
+            embeddings = self.embedding_client.embed_batch(contents)
+
+            for record_id, embedding, content_hash in zip(ids, embeddings, hashes):
+                newly_embedded[record_id] = embedding
+                self.content_hash_cache[content_hash] = embedding
+
+        # 合并结果
+        return {**cached_results, **newly_embedded}
+
+    def clear_cache(self):
+        """清空缓存（可选）"""
+        self.content_hash_cache.clear()
+```
+
+**缓存效果示例**：
+
+```
+假设 10,000 条记忆中：
+- 20% 的记忆内容从未改变（100% 命中缓存）
+- 30% 的记忆内容改变过，但现在稳定（70% 命中）
+- 50% 的记忆是新的或频繁改变（0% 命中）
+
+实际需要 Embedding 的比例：
+= 20% × 0% + 30% × 30% + 50% × 100%
+= 0% + 9% + 50%
+= 59%
+
+节省成本：41%（与全量 Embedding 相比）
+```
+
+### 策略 3: 批量 Embedding 的吞吐优化
+
+当需要 Embedding 大量记忆时，批处理和并发可以显著提升吞吐量。
+
+```python
+import asyncio
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+class BatchEmbeddingOptimizer:
+    """批量 Embedding 的吞吐优化"""
+
+    def __init__(
+        self,
+        embedding_client,
+        batch_size: int = 100,
+        max_workers: int = 4,
+    ):
+        self.embedding_client = embedding_client
+        self.batch_size = batch_size
+        self.max_workers = max_workers
+
+    def embed_batch_sync(self, texts: List[str], show_progress: bool = True) -> List[List[float]]:
+        """
+        同步批量 Embedding
+
+        Args:
+            texts: 待 Embedding 的文本列表
+            show_progress: 是否显示进度
+
+        Returns:
+            Embedding 向量列表
+        """
+        embeddings = []
+        total_batches = (len(texts) + self.batch_size - 1) // self.batch_size
+
+        for i in range(0, len(texts), self.batch_size):
+            batch = texts[i : i + self.batch_size]
+            batch_embeddings = self.embedding_client.embed_batch(batch)
+            embeddings.extend(batch_embeddings)
+
+            if show_progress:
+                current_batch = (i // self.batch_size) + 1
+                print(f"Progress: {current_batch}/{total_batches} batches")
+
+        return embeddings
+
+    async def embed_batch_async(self, texts: List[str]) -> List[List[float]]:
+        """
+        异步批量 Embedding（更高效）
+
+        Args:
+            texts: 待 Embedding 的文本列表
+
+        Returns:
+            Embedding 向量列表
+        """
+        loop = asyncio.get_event_loop()
+
+        def process_batch(batch):
+            return self.embedding_client.embed_batch(batch)
+
+        embeddings = []
+        tasks = []
+
+        # 将文本分批，创建异步任务
+        for i in range(0, len(texts), self.batch_size):
+            batch = texts[i : i + self.batch_size]
+            task = loop.run_in_executor(None, process_batch, batch)
+            tasks.append(task)
+
+        # 等待所有任务完成
+        results = await asyncio.gather(*tasks)
+        for result in results:
+            embeddings.extend(result)
+
+        return embeddings
+
+    def estimate_cost_and_time(self, num_texts: int, avg_tokens_per_text: int) -> Dict[str, Any]:
+        """
+        估算成本和时间
+
+        Args:
+            num_texts: 文本数量
+            avg_tokens_per_text: 平均每条文本的 token 数
+
+        Returns:
+            {
+                "total_tokens": int,
+                "estimated_cost": float,
+                "estimated_time_seconds": float,
+                "api_calls": int,
+                "batches": int,
+            }
+        """
+        total_tokens = num_texts * avg_tokens_per_text
+        total_batches = (num_texts + self.batch_size - 1) // self.batch_size
+
+        # 假设平均响应时间 1 秒/batch，支持 4 个并发
+        estimated_time = (total_batches / self.max_workers) * 1.0
+
+        estimated_cost = total_tokens / 1_000_000 * 0.02  # 以 $0.02/1M 计
+
+        return {
+            "total_texts": num_texts,
+            "total_tokens": total_tokens,
+            "estimated_cost": estimated_cost,
+            "estimated_time_seconds": estimated_time,
+            "api_calls": total_batches,
+            "batches": total_batches,
+        }
+
+
+class EmbeddingCostOptimizer:
+    """综合 Embedding 成本优化管理器"""
+
+    def __init__(self, embedding_client, memory_store):
+        self.embedding_client = embedding_client
+        self.memory_store = memory_store
+        self.hash_cache = EmbeddingCacheWithHashVerification(
+            embedding_client, memory_store
+        )
+        self.batch_optimizer = BatchEmbeddingOptimizer(embedding_client)
+        self.cost_log = []
+
+    def optimize_and_embed(self, records: List[MemoryEntry]) -> Dict[str, Any]:
+        """
+        使用所有优化策略进行 Embedding
+
+        流程：
+        1. 使用哈希缓存跳过未变更的内容
+        2. 使用批量处理提升吞吐
+        3. 记录成本和统计信息
+        """
+
+        start_time = time.time()
+
+        # 步骤 1: 哈希缓存过滤
+        result = self.hash_cache.batch_get_or_embed(records)
+
+        elapsed_time = time.time() - start_time
+
+        # 统计
+        cache_hits = sum(
+            1 for r in records if r.id in result and r.embedding is not None
+        )
+        newly_embedded = len(records) - cache_hits
+
+        # 估算成本（简化估算）
+        api_calls = (newly_embedded + self.batch_optimizer.batch_size - 1) // self.batch_optimizer.batch_size
+        avg_tokens = 200  # 假设
+        estimated_cost = newly_embedded * avg_tokens / 1_000_000 * 0.02
+
+        log_entry = {
+            "timestamp": datetime.now(),
+            "total_records": len(records),
+            "cache_hits": cache_hits,
+            "newly_embedded": newly_embedded,
+            "cost_saved_by_cache": (cache_hits * avg_tokens / 1_000_000 * 0.02),
+            "estimated_cost": estimated_cost,
+            "elapsed_time": elapsed_time,
+        }
+        self.cost_log.append(log_entry)
+
+        return {
+            "completed": True,
+            "embedded_records": result,
+            "statistics": log_entry,
+            "cumulative_cost": sum(log["estimated_cost"] for log in self.cost_log),
+        }
+```
+
+---
+
+## 12. 多租户记忆隔离与并发控制
+
+当 Agent 系统支持多用户场景时，记忆隔离和并发控制变成必需品。一个用户的记忆不能泄露给另一个用户，同时多个用户可能并发修改各自的记忆。
+
+### 隔离方案
+
+#### 方案 1: User ID 命名空间隔离
+
+最直接的方案：所有记忆的 key 都带上 `user_id` 前缀。
+
+```python
+from typing import Optional, Dict, Any
+
+class NamespacedMemoryStore:
+    """基于 user_id 命名空间的隔离存储"""
+
+    def __init__(self, backend_store):
+        """
+        Args:
+            backend_store: 底层存储（如 Redis 或数据库）
+        """
+        self.backend = backend_store
+
+    @staticmethod
+    def _make_key(user_id: str, memory_layer: str, entry_id: str) -> str:
+        """生成命名空间化的 key"""
+        return f"user:{user_id}:memory:{memory_layer}:{entry_id}"
+
+    def write(
+        self,
+        user_id: str,
+        memory_layer: str,
+        entry_id: str,
+        value: Dict[str, Any],
+    ) -> bool:
+        """写入记忆"""
+        key = self._make_key(user_id, memory_layer, entry_id)
+        return self.backend.set(key, value)
+
+    def read(
+        self,
+        user_id: str,
+        memory_layer: str,
+        entry_id: str,
+    ) -> Optional[Dict[str, Any]]:
+        """读取记忆"""
+        key = self._make_key(user_id, memory_layer, entry_id)
+        return self.backend.get(key)
+
+    def list_user_memories(
+        self,
+        user_id: str,
+        memory_layer: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        """列出用户的所有记忆"""
+        pattern = f"user:{user_id}:memory:{memory_layer or '*'}:*"
+        keys = self.backend.keys(pattern)
+        return {key: self.backend.get(key) for key in keys}
+
+    def delete(self, user_id: str, memory_layer: str, entry_id: str) -> bool:
+        """删除记忆"""
+        key = self._make_key(user_id, memory_layer, entry_id)
+        return self.backend.delete(key)
+```
+
+**隔离效果验证**：
+
+```python
+# 用户 A 的数据
+store.write("user_a", "episodic", "ep_001", {"content": "..."})
+
+# 用户 B 读取
+result = store.read("user_b", "episodic", "ep_001")
+# result = None（隔离成功！）
+
+# 列出用户 A 的所有记忆
+user_a_memories = store.list_user_memories("user_a")
+# 只会返回 user_a 的记忆，不会泄露其他用户的数据
+```
+
+### 并发控制
+
+#### 方案 2: 乐观锁 + 版本号
+
+当多个 Agent 实例可能同时修改同一条记忆时，需要并发控制。乐观锁是一个轻量级方案。
+
+```python
+from dataclasses import dataclass
+import threading
+
+@dataclass
+class VersionedMemoryEntry:
+    """支持版本控制的记忆条目"""
+
+    id: str
+    user_id: str
+    content: str
+    version: int = 1              # 版本号，每次更新递增
+    last_modified_time: float = None
+    last_modified_by: str = None   # 修改者（agent ID）
+    locked: bool = False
+    lock_owner: Optional[str] = None
+    lock_time: Optional[float] = None
+
+
+class OptimisticLockingMemoryStore:
+    """基于乐观锁的并发控制"""
+
+    def __init__(self, backend_store):
+        self.backend = backend_store
+        self.local_lock = threading.RLock()  # 本地锁（保护字典操作）
+
+    def read_with_version(
+        self, user_id: str, entry_id: str
+    ) -> tuple[VersionedMemoryEntry, bool]:
+        """
+        读取记忆并获取版本号
+
+        Returns:
+            (entry, success)
+        """
+        key = f"user:{user_id}:entry:{entry_id}"
+        entry = self.backend.get(key)
+
+        if entry is None:
+            return None, False
+
+        return VersionedMemoryEntry(**entry), True
+
+    def write_with_version_check(
+        self,
+        user_id: str,
+        entry_id: str,
+        new_content: str,
+        expected_version: int,
+        agent_id: str,
+    ) -> tuple[bool, str]:
+        """
+        有条件更新：只有版本号匹配才能更新
+
+        Args:
+            user_id: 用户 ID
+            entry_id: 条目 ID
+            new_content: 新内容
+            expected_version: 期望的版本号（乐观锁）
+            agent_id: 执行修改的 agent
+
+        Returns:
+            (success, message)
+        """
+        key = f"user:{user_id}:entry:{entry_id}"
+
+        with self.local_lock:
+            current = self.backend.get(key)
+
+            if current is None:
+                # 新建条目
+                self.backend.set(
+                    key,
+                    {
+                        "id": entry_id,
+                        "user_id": user_id,
+                        "content": new_content,
+                        "version": 1,
+                        "last_modified_by": agent_id,
+                        "last_modified_time": time.time(),
+                    },
+                )
+                return True, "Created"
+
+            current_version = current.get("version", 1)
+
+            if current_version != expected_version:
+                # 版本不匹配，更新失败
+                return (
+                    False,
+                    f"Version mismatch: expected {expected_version}, "
+                    f"got {current_version}. Concurrent modification detected.",
+                )
+
+            # 版本匹配，执行更新
+            self.backend.set(
+                key,
+                {
+                    **current,
+                    "content": new_content,
+                    "version": current_version + 1,
+                    "last_modified_by": agent_id,
+                    "last_modified_time": time.time(),
+                },
+            )
+
+            return True, f"Updated to version {current_version + 1}"
+
+    def resolve_conflict(
+        self,
+        user_id: str,
+        entry_id: str,
+        conflict_strategy: str = "latest-write-wins",
+    ) -> tuple[VersionedMemoryEntry, bool]:
+        """
+        当乐观锁失败时，尝试冲突解决
+
+        Args:
+            conflict_strategy: 冲突策略
+                - "latest-write-wins": 保留最新的版本（默认）
+                - "merge": 尝试合并两个版本
+                - "abort": 放弃此次更新
+
+        Returns:
+            (resolved_entry, success)
+        """
+        key = f"user:{user_id}:entry:{entry_id}"
+        current = self.backend.get(key)
+
+        if current is None:
+            return None, False
+
+        # 重新读取最新版本
+        latest_entry = VersionedMemoryEntry(**current)
+
+        if conflict_strategy == "latest-write-wins":
+            # 直接返回最新版本
+            return latest_entry, True
+
+        elif conflict_strategy == "merge":
+            # 这里可以实现更复杂的合并逻辑
+            # 示例：如果内容是 JSON，可以做字段级合并
+            return latest_entry, True
+
+        elif conflict_strategy == "abort":
+            return None, False
+
+        return None, False
+```
+
+### 租户级配额管理
+
+```python
+@dataclass
+class TenantQuota:
+    """租户级配额"""
+
+    user_id: str
+    max_memory_entries: int       # 最多存储条目数
+    max_embedding_per_day: int    # 每天最多 Embedding 次数
+    max_context_window_tokens: int # 单次推理最多注入 token
+    storage_limit_gb: float        # 存储空间限制
+
+
+class MultiTenantMemoryStore:
+    """支持多租户、隔离、并发控制的记忆存储"""
+
+    def __init__(
+        self,
+        backend_store,
+        default_quota: Optional[TenantQuota] = None,
+    ):
+        self.backend = backend_store
+        self.namespaced_store = NamespacedMemoryStore(backend_store)
+        self.locking_store = OptimisticLockingMemoryStore(backend_store)
+        self.quotas: Dict[str, TenantQuota] = {}
+        self.default_quota = (
+            default_quota or self._create_default_quota()
+        )
+
+    @staticmethod
+    def _create_default_quota() -> TenantQuota:
+        """默认配额"""
+        return TenantQuota(
+            user_id="default",
+            max_memory_entries=10000,
+            max_embedding_per_day=50000,
+            max_context_window_tokens=32768,
+            storage_limit_gb=10.0,
+        )
+
+    def register_user(self, user_id: str, quota: Optional[TenantQuota] = None):
+        """注册用户及其配额"""
+        if quota is None:
+            quota = TenantQuota(
+                user_id=user_id,
+                **{
+                    k: v for k, v in self.default_quota.__dict__.items()
+                    if k != "user_id"
+                },
+            )
+        self.quotas[user_id] = quota
+
+    def check_quota(self, user_id: str, operation: str) -> tuple[bool, str]:
+        """检查用户是否满足配额"""
+        if user_id not in self.quotas:
+            return False, f"User {user_id} not registered"
+
+        quota = self.quotas[user_id]
+
+        if operation == "write_entry":
+            # 检查条目数量限制
+            user_memories = self.namespaced_store.list_user_memories(user_id)
+            if len(user_memories) >= quota.max_memory_entries:
+                return (
+                    False,
+                    f"Exceeded max entries limit: {quota.max_memory_entries}",
+                )
+
+        elif operation == "embedding":
+            # 检查每日 Embedding 配额（简化）
+            # 实际应用中需要记录每日消费
+            pass
+
+        elif operation == "context_injection":
+            # 检查上下文注入限制
+            pass
+
+        return True, "OK"
+
+    def write_memory(
+        self,
+        user_id: str,
+        memory_layer: str,
+        entry_id: str,
+        content: str,
+        agent_id: str,
+    ) -> tuple[bool, str]:
+        """
+        写入记忆（带租户隔离和配额检查）
+
+        Args:
+            user_id: 用户 ID
+            memory_layer: 记忆层级
+            entry_id: 条目 ID
+            content: 内容
+            agent_id: 执行操作的 agent
+
+        Returns:
+            (success, message)
+        """
+
+        # 步骤 1: 检查配额
+        quota_ok, quota_msg = self.check_quota(user_id, "write_entry")
+        if not quota_ok:
+            return False, quota_msg
+
+        # 步骤 2: 读取旧版本（为了获取版本号）
+        old_entry, found = self.locking_store.read_with_version(user_id, entry_id)
+        expected_version = old_entry.version if found else 0
+
+        # 步骤 3: 尝试写入（带乐观锁）
+        success, msg = self.locking_store.write_with_version_check(
+            user_id=user_id,
+            entry_id=entry_id,
+            new_content=content,
+            expected_version=expected_version,
+            agent_id=agent_id,
+        )
+
+        return success, msg
+
+    def read_memory(self, user_id: str, entry_id: str) -> Optional[Dict[str, Any]]:
+        """读取记忆（带租户隔离）"""
+        entry, found = self.locking_store.read_with_version(user_id, entry_id)
+        if not found:
+            return None
+        return entry.__dict__
+
+    def list_user_memories(self, user_id: str, memory_layer: Optional[str] = None) -> Dict[str, Any]:
+        """列出用户的所有记忆（租户隔离）"""
+        return self.namespaced_store.list_user_memories(user_id, memory_layer)
+
+    def enforce_quota_limit(self, user_id: str):
+        """
+        强制执行配额限制
+
+        在存储空间或条目数超限时触发：
+        1. 遗忘最不重要的条目
+        2. 压缩旧的对话历史
+        3. 发送告警通知
+        """
+        quota = self.quotas.get(user_id, self.default_quota)
+        user_memories = self.namespaced_store.list_user_memories(user_id)
+
+        if len(user_memories) > quota.max_memory_entries:
+            # 触发遗忘机制
+            excess = len(user_memories) - quota.max_memory_entries
+            # ... 删除最不重要的 excess 条记忆
+            pass
+```
+
+---
+
+## 13. 小结与下一步（更新）
+
+本文建立了 Agent 记忆的四层架构，并深入讨论了四个进阶主题：
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -1308,6 +2721,18 @@ def rule_based_compress(messages: list[dict]) -> list[dict]:
 3. **遗忘是特性**：没有遗忘机制的记忆系统最终会被噪声淹没
 4. **读写时机很关键**：什么时候写入、什么时候检索、检索多少条——这些决策直接影响 Agent 的表现
 5. **从简单开始**：先用内存 + 滑动窗口跑通，再逐步引入向量检索和 LLM 摘要
+
+### 四个进阶主题总结
+
+本文在基础四层架构之上，补充了四个生产级别的优化：
+
+**第 9 章 - 记忆分层决策树**：解决"这条信息应该存哪里"的问题。提供了从信息特征自动路由到对应记忆层的决策框架，并给出了五个具体的示例及其对应的编码实现。
+
+**第 10 章 - 系统化遗忘机制**：超越时间衰减的简单模型，介绍了三种高级策略：基于重要性的遗忘、基于查询热度的衰减、以及结合三维因素（时间 × 重要性 × 热度）的混合遗忘。给出了完整的 `ForgettingManager` 类实现。
+
+**第 11 章 - Embedding 成本优化**：向量化的隐性成本往往被忽视。本章讨论增量 vs 全量 Embedding、哈希缓存（跳过内容未变的重新计算）、以及批量处理的吞吐优化，可以削减 40-60% 的 Embedding 成本。给出了 `EmbeddingCostOptimizer` 的完整实现。
+
+**第 12 章 - 多租户隔离与并发控制**：当 Agent 服务多用户时，记忆隔离和并发一致性变成必需品。本章介绍了命名空间隔离、乐观锁 + 版本号的并发控制、以及租户级配额管理，给出了 `MultiTenantMemoryStore` 的框架代码。
 
 在四层记忆中，Layer 4 Semantic Memory 的"读取"操作——即如何从大规模知识库中高效检索相关信息——是一个足够深的话题。它涉及 Ingestion、Chunking、Embedding、Hybrid Retrieval、Reranking 等一系列工程决策。
 

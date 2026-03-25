@@ -1,5 +1,5 @@
 ---
-title: "The Agent Control Loop: Agent 运行时的核心抽象"
+title: "Agent控制循环：运行时的核心抽象"
 pubDate: "2025-12-14"
 description: "Agent 的本质不是一次函数调用，而是一个可中断的控制循环。本文从状态机模型出发，深入剖析 Agent Control Loop 的每个阶段——OBSERVE、THINK、ACT、REFLECT，对比 ReAct 与 Plan-then-Execute 两种主流模式，讨论状态管理、错误处理与性能优化策略，并给出一个不依赖任何框架的完整 Python 实现。"
 tags: ["Agentic", "AI Engineering", "Runtime"]
@@ -1066,7 +1066,1107 @@ def _trim_tool_results(self, messages: list[dict], max_len: int = 500) -> list[d
 
 ---
 
-## 9. 小结与进一步思考
+## 9. 异步工具调用的完整错误处理
+
+在实际系统中，工具调用通常不是串行执行，而是需要并行化处理多个工具调用。然而并行执行引入了新的复杂性：**如何优雅地处理部分工具失败、全部失败、或部分超时的场景？**
+
+### 9.1 并行工具调用的三种失败模式
+
+**模式一：部分失败** — 多个工具中某些成功、某些失败
+
+**模式二：全部失败** — 所有工具调用都无法完成
+
+**模式三：部分超时** — 某些工具超时、某些成功、某些异常
+
+每种模式都需要不同的重试和降级策略。
+
+### 9.2 完整的异步工具调用实现
+
+```python
+import asyncio
+from typing import Any
+from dataclasses import dataclass
+from enum import Enum
+
+
+class ToolResultStatus(Enum):
+    SUCCESS = "success"
+    TIMEOUT = "timeout"
+    ERROR = "error"
+    PARTIAL = "partial"
+
+
+@dataclass
+class ToolResult:
+    """工具执行结果的统一表示"""
+    tool_name: str
+    tool_call_id: str
+    status: ToolResultStatus
+    content: str
+    duration_ms: float
+    error_type: str = None
+    retry_count: int = 0
+
+
+class AsyncToolExecutor:
+    """并行工具调用执行器，支持重试、超时、降级"""
+
+    def __init__(
+        self,
+        timeout_seconds: float = 30,
+        max_retries: int = 2,
+        fallback_on_timeout: bool = True,
+    ):
+        self.timeout = timeout_seconds
+        self.max_retries = max_retries
+        self.fallback_on_timeout = fallback_on_timeout
+
+    async def execute_tool_calls(
+        self,
+        tool_calls: list[dict],
+        tool_registry: dict[str, callable],
+    ) -> tuple[list[ToolResult], str]:
+        """
+        并行执行多个工具调用，返回结果列表和错误聚合报告
+
+        Args:
+            tool_calls: 从 LLM 返回的 tool_calls 列表
+            tool_registry: 工具名称 -> 可调用对象的映射
+
+        Returns:
+            (results, error_report)
+        """
+        tasks = []
+        for tc in tool_calls:
+            task = asyncio.create_task(
+                self._execute_single_with_retry(tc, tool_registry)
+            )
+            tasks.append(task)
+
+        # 使用 gather with return_exceptions=True
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+
+        tool_results = []
+        error_messages = []
+
+        for i, result in enumerate(results):
+            if isinstance(result, Exception):
+                tool_result = ToolResult(
+                    tool_name="[unknown]",
+                    tool_call_id=tool_calls[i].get("id", f"call_{i}"),
+                    status=ToolResultStatus.ERROR,
+                    content=f"Task execution failed: {type(result).__name__}: {result}",
+                    duration_ms=0,
+                    error_type=type(result).__name__,
+                )
+                error_messages.append(tool_result.content)
+            else:
+                tool_result = result
+                tool_results.append(tool_result)
+                if tool_result.status != ToolResultStatus.SUCCESS:
+                    error_messages.append(
+                        f"[{tool_result.tool_name}] {tool_result.status.value}: "
+                        f"{tool_result.content[:100]}"
+                    )
+
+        error_report = self._generate_error_report(tool_results, error_messages)
+        return tool_results, error_report
+
+    async def _execute_single_with_retry(
+        self,
+        tool_call: dict,
+        tool_registry: dict[str, callable],
+    ) -> ToolResult:
+        """单个工具调用的重试逻辑"""
+        tool_name = tool_call["function"]["name"]
+        tool_call_id = tool_call["id"]
+
+        if tool_name not in tool_registry:
+            return ToolResult(
+                tool_name=tool_name,
+                tool_call_id=tool_call_id,
+                status=ToolResultStatus.ERROR,
+                content=f"Tool not found: {tool_name}",
+                duration_ms=0,
+                error_type="ToolNotFound",
+            )
+
+        fn = tool_registry[tool_name]
+        args = self._parse_args_safe(tool_call)
+
+        for attempt in range(self.max_retries + 1):
+            try:
+                start = asyncio.get_event_loop().time()
+                result = await asyncio.wait_for(
+                    self._call_tool_async(fn, args),
+                    timeout=self.timeout,
+                )
+                duration_ms = (asyncio.get_event_loop().time() - start) * 1000
+                return ToolResult(
+                    tool_name=tool_name,
+                    tool_call_id=tool_call_id,
+                    status=ToolResultStatus.SUCCESS,
+                    content=str(result),
+                    duration_ms=duration_ms,
+                    retry_count=attempt,
+                )
+
+            except asyncio.TimeoutError:
+                duration_ms = self.timeout * 1000
+                if attempt < self.max_retries and self.fallback_on_timeout:
+                    fallback_args = self._create_fallback_args(args)
+                    args = fallback_args
+                    continue
+                else:
+                    return ToolResult(
+                        tool_name=tool_name,
+                        tool_call_id=tool_call_id,
+                        status=ToolResultStatus.TIMEOUT,
+                        content=(
+                            f"Tool execution timed out after {self.timeout}s. "
+                            f"Consider retrying with simpler parameters."
+                        ),
+                        duration_ms=duration_ms,
+                        error_type="TimeoutError",
+                        retry_count=attempt,
+                    )
+
+            except Exception as e:
+                duration_ms = (asyncio.get_event_loop().time() - start) * 1000 if 'start' in locals() else 0
+                if attempt < self.max_retries and self._is_retryable_error(e):
+                    await asyncio.sleep(2 ** attempt)
+                    continue
+                else:
+                    return ToolResult(
+                        tool_name=tool_name,
+                        tool_call_id=tool_call_id,
+                        status=ToolResultStatus.ERROR,
+                        content=f"{type(e).__name__}: {str(e)[:200]}",
+                        duration_ms=duration_ms,
+                        error_type=type(e).__name__,
+                        retry_count=attempt,
+                    )
+
+        return ToolResult(
+            tool_name=tool_name,
+            tool_call_id=tool_call_id,
+            status=ToolResultStatus.ERROR,
+            content="Unexpected: max retries exceeded",
+            duration_ms=0,
+            retry_count=self.max_retries + 1,
+        )
+
+    async def _call_tool_async(self, fn: callable, args: dict) -> Any:
+        """同步函数转异步"""
+        if asyncio.iscoroutinefunction(fn):
+            return await fn(**args)
+        else:
+            loop = asyncio.get_event_loop()
+            return await loop.run_in_executor(None, lambda: fn(**args))
+
+    def _parse_args_safe(self, tool_call: dict) -> dict:
+        """安全解析工具参数"""
+        import json
+        try:
+            return json.loads(tool_call["function"]["arguments"])
+        except json.JSONDecodeError as e:
+            raise ValueError(f"Invalid JSON in tool arguments: {e}")
+
+    def _is_retryable_error(self, e: Exception) -> bool:
+        """判断异常是否值得重试"""
+        retryable = (ConnectionError, TimeoutError, OSError)
+        return isinstance(e, retryable) or "temporarily unavailable" in str(e).lower()
+
+    def _create_fallback_args(self, args: dict) -> dict:
+        """为超时的工具创建简化参数"""
+        fallback = args.copy()
+        for key in ["limit", "max_results", "count"]:
+            if key in fallback and isinstance(fallback[key], int):
+                fallback[key] = max(1, fallback[key] // 2)
+        return fallback
+
+    def _generate_error_report(
+        self,
+        results: list[ToolResult],
+        error_messages: list[str],
+    ) -> str:
+        """生成供 LLM 理解的错误聚合报告"""
+        if not error_messages:
+            return ""
+
+        summary_by_status = {}
+        for r in results:
+            status = r.status.value
+            if status not in summary_by_status:
+                summary_by_status[status] = []
+            summary_by_status[status].append(r.tool_name)
+
+        report = "## Tool Execution Summary\n"
+        for status, tools in summary_by_status.items():
+            report += f"- **{status.upper()}**: {', '.join(tools)}\n"
+
+        if error_messages:
+            report += "\n### Error Details\n"
+            for msg in error_messages[:5]:
+                report += f"- {msg}\n"
+
+        return report
+```
+
+这个实现的关键特点：
+
+1. **返回异常不中断**：用 `return_exceptions=True` 让单个工具失败不导致整个并行执行失败
+2. **三层重试机制**：超时可以用简化参数重试，某些异常可以指数退避重试
+3. **错误聚合报告**：将所有错误汇总为结构化的报告，供 LLM 理解和决策
+4. **统一结果表示**：所有结果都用 `ToolResult` 统一表示，便于下游处理
+5. **同步/异步兼容**：通过 `run_in_executor` 在线程池中执行同步工具
+
+---
+
+## 10. 多模态输入的 OBSERVE 归一化
+
+OBSERVE 阶段通常假设输入是纯文本。但在实际应用中，Agent 需要处理图片、PDF、音频等多模态输入。如何在 OBSERVE 阶段统一归一化这些不同格式的输入？
+
+### 10.1 多模态输入的挑战
+
+- **图片**：可能包含图表、截图、照片，需要视觉理解转为文本描述
+- **PDF**：可能有复杂版面、表格、图片混合，需要结构化提取
+- **音频**：需要转文字（语音识别），可能有背景噪音
+- **视频**：需要关键帧提取 + 转文本，数据量大
+
+### 10.2 统一的 ObservationResult 格式
+
+```python
+from dataclasses import dataclass
+from enum import Enum
+from typing import Optional
+import base64
+
+
+class InputModality(Enum):
+    TEXT = "text"
+    IMAGE = "image"
+    PDF = "pdf"
+    AUDIO = "audio"
+    VIDEO = "video"
+    MIXED = "mixed"
+
+
+@dataclass
+class ObservationResult:
+    """OBSERVE 阶段的统一输出格式"""
+    modality: InputModality
+    normalized_text: str
+    raw_data: Optional[bytes] = None
+    metadata: dict = None
+    extraction_confidence: float = 1.0
+
+
+class MultimodalObserver:
+    """多模态输入的 OBSERVE 处理器"""
+
+    def __init__(self, vision_model: str = "gpt-4o"):
+        self.vision_model = vision_model
+        self.openai_client = None
+
+    async def observe(
+        self,
+        input_data: any,
+        input_type: InputModality = None,
+    ) -> ObservationResult:
+        """接收多模态输入，归一化为 ObservationResult"""
+        if input_type is None:
+            input_type = self._infer_modality(input_data)
+
+        match input_type:
+            case InputModality.TEXT:
+                return await self._observe_text(input_data)
+            case InputModality.IMAGE:
+                return await self._observe_image(input_data)
+            case InputModality.PDF:
+                return await self._observe_pdf(input_data)
+            case InputModality.AUDIO:
+                return await self._observe_audio(input_data)
+            case InputModality.VIDEO:
+                return await self._observe_video(input_data)
+            case _:
+                raise ValueError(f"Unsupported modality: {input_type}")
+
+    async def _observe_text(self, text: str) -> ObservationResult:
+        """纯文本输入"""
+        return ObservationResult(
+            modality=InputModality.TEXT,
+            normalized_text=text.strip(),
+            metadata={"length": len(text)},
+            extraction_confidence=1.0,
+        )
+
+    async def _observe_image(self, image_data: bytes) -> ObservationResult:
+        """图片输入：使用 Vision 模型转为文本描述"""
+        try:
+            from PIL import Image
+            import io
+
+            img = Image.open(io.BytesIO(image_data))
+            img_width, img_height = img.size
+            img_format = img.format
+        except Exception as e:
+            return ObservationResult(
+                modality=InputModality.IMAGE,
+                normalized_text=f"[Failed to parse image: {e}]",
+                extraction_confidence=0.0,
+            )
+
+        img_b64 = base64.b64encode(image_data).decode("utf-8")
+
+        self._ensure_openai_client()
+        try:
+            response = self.openai_client.chat.completions.create(
+                model=self.vision_model,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "Please analyze this image and provide: 1) Main objects and their relationships, 2) Any visible text, 3) Key insights, 4) Overall context.",
+                            },
+                            {
+                                "type": "image_url",
+                                "image_url": {
+                                    "url": f"data:image/{img_format.lower()};base64,{img_b64}",
+                                },
+                            },
+                        ],
+                    }
+                ],
+                max_tokens=1024,
+            )
+            description = response.choices[0].message.content
+            confidence = 0.9
+        except Exception as e:
+            description = f"[Vision analysis failed: {e}]"
+            confidence = 0.5
+
+        return ObservationResult(
+            modality=InputModality.IMAGE,
+            normalized_text=description,
+            raw_data=image_data,
+            metadata={"width": img_width, "height": img_height, "format": img_format},
+            extraction_confidence=confidence,
+        )
+
+    async def _observe_pdf(self, pdf_data: bytes) -> ObservationResult:
+        """PDF 输入：提取关键段落和信息"""
+        try:
+            import PyPDF2
+            import io
+
+            pdf_file = io.BytesIO(pdf_data)
+            reader = PyPDF2.PdfReader(pdf_file)
+            num_pages = len(reader.pages)
+
+            extracted_text = []
+            for i, page in enumerate(reader.pages[:min(5, num_pages)]):
+                text = page.extract_text()
+                if text.strip():
+                    extracted_text.append(f"[Page {i+1}]\n{text}")
+
+            full_text = "\n".join(extracted_text)
+
+            if len(full_text) > 2000:
+                self._ensure_openai_client()
+                summary_resp = self.openai_client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[{"role": "user", "content": f"Summarize:\n\n{full_text[:2000]}"}],
+                    max_tokens=300,
+                )
+                normalized = summary_resp.choices[0].message.content
+                confidence = 0.75
+            else:
+                normalized = full_text
+                confidence = 0.9
+
+        except Exception as e:
+            normalized = f"[PDF extraction failed: {e}]"
+            confidence = 0.0
+
+        return ObservationResult(
+            modality=InputModality.PDF,
+            normalized_text=normalized,
+            raw_data=pdf_data,
+            metadata={"pages": num_pages},
+            extraction_confidence=confidence,
+        )
+
+    async def _observe_audio(self, audio_data: bytes) -> ObservationResult:
+        """音频输入：转文字（语音识别）"""
+        try:
+            import io
+
+            self._ensure_openai_client()
+            transcript = self.openai_client.audio.transcriptions.create(
+                model="whisper-1",
+                file=("audio.wav", io.BytesIO(audio_data), "audio/wav"),
+            )
+            normalized_text = transcript.text.strip()
+            confidence = 0.85
+
+        except Exception as e:
+            normalized_text = f"[Audio transcription failed: {e}]"
+            confidence = 0.0
+
+        return ObservationResult(
+            modality=InputModality.AUDIO,
+            normalized_text=normalized_text,
+            raw_data=audio_data,
+            metadata={"transcription_model": "whisper-1"},
+            extraction_confidence=confidence,
+        )
+
+    async def _observe_video(self, video_data: bytes) -> ObservationResult:
+        """视频输入：提取关键帧并生成描述"""
+        try:
+            import cv2
+            import numpy as np
+            import io
+
+            nparr = np.frombuffer(video_data, np.uint8)
+            cap = cv2.VideoCapture(io.BytesIO(video_data))
+            frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+            fps = cap.get(cv2.CAP_PROP_FPS)
+            duration_sec = frame_count / fps if fps > 0 else 0
+
+            frame_descriptions = []
+            frame_indices = []
+            frame_step = max(1, frame_count // 10)
+
+            for frame_idx in range(0, frame_count, frame_step):
+                cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
+                ret, frame = cap.read()
+                if not ret:
+                    continue
+
+                ret, buf = cv2.imencode(".jpg", frame)
+                frame_b64 = base64.b64encode(buf).decode("utf-8")
+
+                self._ensure_openai_client()
+                response = self.openai_client.chat.completions.create(
+                    model=self.vision_model,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": [
+                                {"type": "text", "text": "Describe what's happening in this frame."},
+                                {
+                                    "type": "image_url",
+                                    "image_url": {"url": f"data:image/jpeg;base64,{frame_b64}"},
+                                },
+                            ],
+                        }
+                    ],
+                    max_tokens=100,
+                )
+                desc = response.choices[0].message.content
+                frame_descriptions.append(desc)
+                frame_indices.append(int(frame_idx / fps))
+
+            cap.release()
+
+            summary = "Video timeline:\n"
+            for ts, desc in zip(frame_indices, frame_descriptions):
+                summary += f"[{ts}s] {desc}\n"
+
+            confidence = 0.7
+
+        except Exception as e:
+            summary = f"[Video analysis failed: {e}]"
+            confidence = 0.0
+
+        return ObservationResult(
+            modality=InputModality.VIDEO,
+            normalized_text=summary,
+            raw_data=video_data,
+            metadata={"duration_sec": duration_sec, "frame_count": frame_count},
+            extraction_confidence=confidence,
+        )
+
+    def _infer_modality(self, input_data: any) -> InputModality:
+        """根据输入数据推断模态类型"""
+        if isinstance(input_data, str):
+            if input_data.startswith(("http://", "https://", "/")):
+                if input_data.endswith(".pdf"):
+                    return InputModality.PDF
+                elif input_data.endswith((".mp3", ".wav", ".m4a")):
+                    return InputModality.AUDIO
+                elif input_data.endswith((".mp4", ".mov", ".avi")):
+                    return InputModality.VIDEO
+                elif input_data.endswith((".jpg", ".png", ".gif")):
+                    return InputModality.IMAGE
+            return InputModality.TEXT
+
+        if isinstance(input_data, bytes):
+            if input_data.startswith(b"\x89PNG"):
+                return InputModality.IMAGE
+            elif input_data.startswith(b"\xff\xd8\xff"):
+                return InputModality.IMAGE
+            elif input_data.startswith(b"%PDF"):
+                return InputModality.PDF
+            elif input_data.startswith(b"ID3") or input_data.startswith(b"\xff\xfb"):
+                return InputModality.AUDIO
+            return InputModality.AUDIO
+
+        return InputModality.TEXT
+
+    def _ensure_openai_client(self):
+        """延迟初始化 OpenAI 客户端"""
+        if self.openai_client is None:
+            from openai import AsyncOpenAI
+            self.openai_client = AsyncOpenAI()
+```
+
+这个设计的优势：
+
+1. **模态无关**：Agent 只需处理文本，多模态转换在 OBSERVE 层完成
+2. **质量追踪**：每个 ObservationResult 都有 extraction_confidence，帮助 Agent 决定是否需要人工审核
+3. **可降级**：当某种模态的识别失败时，可以回退到原始数据或要求用户提供文本版本
+4. **可扩展**：新增模态只需新增一个 _observe_* 方法
+
+---
+
+## 11. 增强版死循环检测
+
+原有的死循环检测基于"输出重复"。但在复杂任务中，Agent 可能在做有意义的工作，但效率很低——例如，逐个检查潜在的解决方案，每次都获得一点新信息，但总体没有取得进展。这需要基于**效率指标**的智能检测机制。
+
+### 11.1 效率指标与 progress_score
+
+关键观察：如果 Agent 在真正取得进展，那么每一轮应该产生**新信息增益**。反之，如果连续 N 轮都没有新信息，那就是死循环。
+
+定义 **progress_score** 的几种方式：
+
+1. **信息熵增益**：每轮消息的平均信息量变化
+2. **工具调用多样性**：最近 N 次工具调用的不同工具比例
+3. **工具参数变化**：工具参数与之前调用的差异程度
+4. **答案置信度**：LLM 在答案中表达的置信程度变化
+
+```python
+from dataclasses import dataclass
+import hashlib
+
+
+@dataclass
+class ProgressMetrics:
+    """单轮的进度指标"""
+    round_num: int
+    tool_calls: list[str]
+    tool_args_hash: str
+    output_entropy: float
+    answer_confidence: float
+    is_retry: bool
+
+
+class ProgressTracker:
+    """基于效率指标的智能进度追踪器"""
+
+    def __init__(
+        self,
+        window_size: int = 5,
+        progress_threshold: float = 0.3,
+        loop_trigger_rounds: int = 3,
+    ):
+        self.window_size = window_size
+        self.threshold = progress_threshold
+        self.trigger_rounds = loop_trigger_rounds
+        self.history: list[ProgressMetrics] = []
+        self.seen_tool_hashes: dict[str, int] = {}
+
+    def evaluate_round(
+        self,
+        messages: list[dict],
+        round_num: int,
+    ) -> tuple[float, dict]:
+        """评估一轮的进度分数"""
+        last_assistant_msg = None
+        last_tool_calls = []
+
+        for msg in reversed(messages):
+            if msg["role"] == "assistant" and last_assistant_msg is None:
+                last_assistant_msg = msg
+                if msg.get("tool_calls"):
+                    last_tool_calls = msg["tool_calls"]
+                break
+
+        if last_assistant_msg is None:
+            return 0.5, {}
+
+        tool_diversity_score = self._compute_tool_diversity(last_tool_calls, messages)
+        parameter_novelty_score = self._compute_parameter_novelty(last_tool_calls)
+        output_entropy = self._compute_entropy(last_assistant_msg.get("content", ""))
+        confidence = self._estimate_confidence(last_assistant_msg.get("content", ""))
+        is_retry = self._is_retry(last_tool_calls)
+
+        progress_score = (
+            tool_diversity_score * 0.3 +
+            parameter_novelty_score * 0.25 +
+            output_entropy * 0.2 +
+            confidence * 0.15 +
+            (0.0 if is_retry else 0.1)
+        )
+
+        metrics = ProgressMetrics(
+            round_num=round_num,
+            tool_calls=[tc["function"]["name"] for tc in last_tool_calls],
+            tool_args_hash=self._hash_tool_calls(last_tool_calls),
+            output_entropy=output_entropy,
+            answer_confidence=confidence,
+            is_retry=is_retry,
+        )
+
+        self.history.append(metrics)
+        return progress_score, {
+            "tool_diversity": tool_diversity_score,
+            "parameter_novelty": parameter_novelty_score,
+            "entropy": output_entropy,
+            "confidence": confidence,
+            "is_retry": is_retry,
+            "combined_score": progress_score,
+        }
+
+    def detect_loop(self) -> tuple[bool, str]:
+        """检测是否陷入死循环"""
+        if len(self.history) < self.trigger_rounds:
+            return False, ""
+
+        recent_scores = [
+            self._compute_round_score(m) for m in self.history[-self.trigger_rounds :]
+        ]
+        avg_score = sum(recent_scores) / len(recent_scores)
+
+        if avg_score < self.threshold:
+            return True, (
+                f"Low progress detected: average progress_score = {avg_score:.2f} "
+                f"(threshold = {self.threshold}). Agent appears stuck in inefficient loop."
+            )
+
+        if len(self.history) >= self.window_size:
+            recent_hashes = [m.tool_args_hash for m in self.history[-self.window_size :]]
+            if self._is_pattern_loop(recent_hashes):
+                return True, f"Repetitive tool calling pattern detected. Agent stuck in loop."
+
+        return False, ""
+
+    def _compute_tool_diversity(self, tool_calls: list[dict], all_messages: list[dict]) -> float:
+        """计算工具多样性分数"""
+        if not tool_calls:
+            return 0.3
+
+        current_tools = set(tc["function"]["name"] for tc in tool_calls)
+        recent_tools = set()
+        tool_count = 0
+        for msg in reversed(all_messages):
+            if msg["role"] == "assistant" and msg.get("tool_calls"):
+                for tc in msg["tool_calls"]:
+                    recent_tools.add(tc["function"]["name"])
+                tool_count += 1
+                if tool_count >= 3:
+                    break
+
+        new_tools = current_tools - recent_tools
+        diversity_ratio = len(new_tools) / max(len(current_tools), 1)
+        return min(1.0, 0.3 + diversity_ratio * 0.7)
+
+    def _compute_parameter_novelty(self, tool_calls: list[dict]) -> float:
+        """计算参数新颖性"""
+        if not tool_calls:
+            return 0.5
+
+        current_hash = self._hash_tool_calls(tool_calls)
+        if current_hash in self.seen_tool_hashes:
+            repeat_count = self.seen_tool_hashes[current_hash]
+            novelty = max(0.0, 1.0 - repeat_count * 0.25)
+        else:
+            novelty = 1.0
+
+        self.seen_tool_hashes[current_hash] = self.seen_tool_hashes.get(current_hash, 0) + 1
+        return novelty
+
+    def _compute_entropy(self, text: str) -> float:
+        """计算文本的信息熵"""
+        if not text:
+            return 0.0
+
+        from collections import Counter
+        import math
+
+        char_counts = Counter(text.lower())
+        total = sum(char_counts.values())
+
+        entropy = 0.0
+        for count in char_counts.values():
+            p = count / total
+            entropy -= p * math.log2(p) if p > 0 else 0
+
+        normalized_entropy = min(1.0, entropy / 5.5)
+        return normalized_entropy
+
+    def _estimate_confidence(self, text: str) -> float:
+        """启发式估计答案置信度"""
+        high_confidence_words = [
+            "definitely", "certainly", "absolutely", "confirmed", "verified",
+            "确定", "肯定", "已验证", "已确认",
+        ]
+        low_confidence_words = [
+            "maybe", "possibly", "unclear", "uncertain",
+            "可能", "不确定", "不清楚", "似乎",
+        ]
+
+        text_lower = text.lower()
+        high_count = sum(1 for w in high_confidence_words if w in text_lower)
+        low_count = sum(1 for w in low_confidence_words if w in text_lower)
+
+        if high_count + low_count == 0:
+            confidence = 0.5
+        else:
+            confidence = (high_count - low_count) / (high_count + low_count + 1)
+            confidence = (confidence + 1) / 2
+
+        return max(0.0, min(1.0, confidence))
+
+    def _is_retry(self, tool_calls: list[dict]) -> bool:
+        """检测是否在重试"""
+        if len(self.history) < 1 or not tool_calls:
+            return False
+
+        last_hash = self._hash_tool_calls(tool_calls)
+        prev_hash = self.history[-1].tool_args_hash if self.history else None
+        return last_hash == prev_hash
+
+    def _hash_tool_calls(self, tool_calls: list[dict]) -> str:
+        """为工具调用序列生成哈希"""
+        import json
+        call_str = json.dumps(
+            [{"name": tc["function"]["name"], "args": tc["function"]["arguments"]}
+             for tc in tool_calls],
+            sort_keys=True,
+        )
+        return hashlib.md5(call_str.encode()).hexdigest()
+
+    def _compute_round_score(self, metrics: ProgressMetrics) -> float:
+        """从 ProgressMetrics 计算综合得分"""
+        return (
+            self._compute_tool_diversity_from_history() * 0.3 +
+            metrics.output_entropy * 0.2 +
+            metrics.answer_confidence * 0.15 +
+            (0.0 if metrics.is_retry else 0.1)
+        )
+
+    def _is_pattern_loop(self, hashes: list[str]) -> bool:
+        """检测哈希序列中是否存在循环模式"""
+        if len(hashes) < 4:
+            return False
+        for i in range(len(hashes) - 3):
+            if (hashes[i] == hashes[i + 2] and hashes[i + 1] == hashes[i + 3]):
+                return True
+        return False
+
+    def _compute_tool_diversity_from_history(self) -> float:
+        """基于历史的工具多样性分数"""
+        if not self.history:
+            return 0.5
+        tools = set()
+        for m in self.history[-5:]:
+            tools.update(m.tool_calls)
+        return min(1.0, len(tools) / 5.0)
+
+    def get_diagnostics(self) -> dict:
+        """返回诊断信息"""
+        if not self.history:
+            return {}
+        recent = self.history[-self.trigger_rounds :]
+        scores = [self._compute_round_score(m) for m in recent]
+        return {
+            "recent_scores": scores,
+            "average_score": sum(scores) / len(scores) if scores else 0,
+            "threshold": self.threshold,
+            "history_length": len(self.history),
+        }
+```
+
+这个增强版死循环检测的优势：多维度评估、阈值自适应、可诊断、避免误判。
+
+---
+
+## 12. 分布式 Stateful Agent 的考量
+
+到目前为止，我们假设 Agent 运行在单进程中，所有状态存储在内存。但在生产环境中，Agent 经常需要跨多个 Worker、多个地理位置、多个时间段运行——这时候**分布式状态一致性**成为关键问题。
+
+### 12.1 单进程假设的局限
+
+在分布式环境中引入的问题：
+
+1. **竞态条件**：多个 Worker 同时修改同一个 Agent 状态
+2. **不可见的依赖**：Worker A 和 Worker B 可能看到不同版本的状态
+3. **崩溃恢复**：某个 Worker 崩溃，其他 Worker 能否接管？
+4. **强一致性 vs 最终一致性**：如何权衡？
+
+### 12.2 三种分布式状态管理方案
+
+#### 方案 A：分布式锁（Pessimistic Locking）
+
+核心思路：**任何时候只有一个 Worker 可以修改某个 Agent 的状态**
+
+```python
+import redis
+from contextlib import contextmanager
+
+
+class DistributedStatefulAgent:
+    """使用分布式锁的 Stateful Agent"""
+
+    def __init__(self, agent_id: str, redis_client: redis.Redis):
+        self.agent_id = agent_id
+        self.redis = redis_client
+        self.lock_key = f"agent:{agent_id}:lock"
+        self.state_key = f"agent:{agent_id}:state"
+
+    @contextmanager
+    def acquire_lock(self, timeout_seconds: int = 30, blocking: bool = True):
+        """获取分布式锁"""
+        acquired = self.redis.set(
+            self.lock_key,
+            "1",
+            ex=timeout_seconds,
+            nx=True,
+        )
+
+        if not acquired and not blocking:
+            raise RuntimeError(f"Cannot acquire lock for agent {self.agent_id}")
+
+        while not acquired:
+            import time
+            time.sleep(0.1)
+            acquired = self.redis.set(
+                self.lock_key,
+                "1",
+                ex=timeout_seconds,
+                nx=True,
+            )
+
+        try:
+            yield
+        finally:
+            self.redis.delete(self.lock_key)
+
+    def save_state(self, state: dict) -> None:
+        """保存状态到 Redis"""
+        import json
+        self.redis.set(self.state_key, json.dumps(state))
+
+    def load_state(self) -> dict:
+        """从 Redis 加载状态"""
+        import json
+        data = self.redis.get(self.state_key)
+        return json.loads(data) if data else {}
+
+    async def run_step(self, user_input: str) -> str:
+        """单步执行：获取锁 -> 加载状态 -> 执行 -> 保存状态 -> 释放锁"""
+        with self.acquire_lock(timeout_seconds=60):
+            state = self.load_state()
+            new_state, output = await self._execute_round(state, user_input)
+            self.save_state(new_state)
+            return output
+```
+
+**优点：** 简单直观，不会有并发冲突。**缺点：** 性能受锁竞争影响，不适合长时间持有锁。
+
+#### 方案 B：乐观并发控制（Optimistic Locking with Versioning）
+
+核心思路：**不用锁，但为状态加版本号。如果版本冲突，则拒绝修改**
+
+```python
+import json
+from dataclasses import asdict, dataclass
+
+
+@dataclass
+class VersionedState:
+    """带版本号的状态"""
+    data: dict
+    version: int
+    last_modified_by: str
+    timestamp: float
+
+
+class OptimisticStatefulAgent:
+    """使用版本号的乐观并发控制"""
+
+    def __init__(self, agent_id: str, redis_client: redis.Redis, worker_id: str):
+        self.agent_id = agent_id
+        self.redis = redis_client
+        self.worker_id = worker_id
+        self.state_key = f"agent:{agent_id}:state"
+
+    def load_state(self) -> VersionedState:
+        """加载带版本号的状态"""
+        import time
+        data = self.redis.get(self.state_key)
+        if not data:
+            return VersionedState(data={}, version=0, last_modified_by=self.worker_id, timestamp=time.time())
+        return VersionedState(**json.loads(data))
+
+    def save_state_or_conflict(self, new_state: VersionedState) -> bool:
+        """尝试保存状态，若版本冲突则返回 False"""
+        lua_script = """
+        local current = redis.call('GET', KEYS[1])
+        if not current then
+            redis.call('SET', KEYS[1], ARGV[1])
+            return 1
+        end
+        local current_version = cjson.decode(current).version
+        local new_version = cjson.decode(ARGV[1]).version
+        if current_version + 1 == new_version then
+            redis.call('SET', KEYS[1], ARGV[1])
+            return 1
+        else
+            return 0
+        end
+        """
+        result = self.redis.eval(
+            lua_script,
+            1,
+            self.state_key,
+            json.dumps(asdict(new_state), default=str),
+        )
+        return bool(result)
+
+    async def run_step(self, user_input: str) -> str:
+        """乐观并发执行"""
+        max_retries = 3
+        for attempt in range(max_retries):
+            state = self.load_state()
+            new_state, output = await self._execute_round(state, user_input)
+            new_state.version = state.version + 1
+            new_state.last_modified_by = self.worker_id
+
+            if self.save_state_or_conflict(new_state):
+                return output
+            else:
+                import asyncio
+                await asyncio.sleep(0.1 * (2 ** attempt))
+
+        raise RuntimeError(f"Failed to save state after {max_retries} retries.")
+```
+
+**优点：** 无锁，并发性能高。**缺点：** 需要处理冲突重试，冲突率可能较高。
+
+#### 方案 C：事件溯源（Event Sourcing）
+
+核心思路：**不直接保存状态，而是保存一序列的不可变事件**
+
+```python
+from dataclasses import asdict, dataclass
+from enum import Enum
+
+
+class EventType(Enum):
+    ROUND_STARTED = "round_started"
+    LLM_CALLED = "llm_called"
+    TOOL_EXECUTED = "tool_executed"
+    ROUND_COMPLETED = "round_completed"
+
+
+@dataclass
+class Event:
+    """不可变事件"""
+    event_type: EventType
+    timestamp: float
+    worker_id: str
+    data: dict
+
+
+class EventSourcedAgent:
+    """基于事件溯源的分布式 Agent"""
+
+    def __init__(self, agent_id: str, redis_client: redis.Redis, worker_id: str):
+        self.agent_id = agent_id
+        self.redis = redis_client
+        self.worker_id = worker_id
+        self.events_key = f"agent:{agent_id}:events"
+
+    def append_event(self, event: Event) -> None:
+        """添加事件（追加写入，无法修改）"""
+        import json
+        import time
+        event.timestamp = time.time()
+        self.redis.rpush(self.events_key, json.dumps(asdict(event), default=str))
+
+    def replay_events(self) -> dict:
+        """从头重放所有事件，重构当前状态"""
+        import json
+
+        state = {"turns": 0, "messages": [], "tool_results": [], "status": "running"}
+
+        events_data = self.redis.lrange(self.events_key, 0, -1)
+        for event_json in events_data:
+            event = Event(**json.loads(event_json))
+            match event.event_type:
+                case EventType.ROUND_STARTED:
+                    state["turns"] += 1
+                case EventType.LLM_CALLED:
+                    state["messages"].append(event.data["response"])
+                case EventType.TOOL_EXECUTED:
+                    state["tool_results"].append({
+                        "tool": event.data["tool_name"],
+                        "result": event.data["result"],
+                    })
+                case EventType.ROUND_COMPLETED:
+                    state["status"] = "idle"
+
+        return state
+
+    async def run_step(self, user_input: str) -> str:
+        """事件溯源执行"""
+        import time
+
+        self.append_event(Event(
+            event_type=EventType.ROUND_STARTED,
+            timestamp=time.time(),
+            worker_id=self.worker_id,
+            data={"user_input": user_input},
+        ))
+
+        # 执行控制循环...
+
+        self.append_event(Event(
+            event_type=EventType.ROUND_COMPLETED,
+            timestamp=time.time(),
+            worker_id=self.worker_id,
+            data={},
+        ))
+
+        final_state = self.replay_events()
+        return final_state.get("final_answer", "")
+```
+
+**优点：** 完整审计日志，天然支持时间旅行调试，易于故障恢复。**缺点：** 重放开销大，需要更多存储空间。
+
+### 12.3 三种方案的对比与选型
+
+| 方案 | 并发性 | 一致性 | 恢复能力 | 实现复杂度 | 适用场景 |
+|------|--------|--------|---------|-----------|---------|
+| 分布式锁 | 低 | 强 | 中 | 低 | 少量并发、需要强一致性 |
+| 乐观并发 | 高 | 最终 | 高 | 中 | 多 Worker、冲突低的业务 |
+| 事件溯源 | 高 | 强 | 高 | 高 | 审计要求高、需要完整历史 |
+
+**选型建议：**
+
+- **小规模、单域部署**：分布式锁即可
+- **多 Worker 并发、对延迟敏感**：乐观并发
+- **金融、医疗等合规审计严格的场景**：事件溯源
+
+---
+
+## 13. 小结与进一步思考
 
 本文从状态机模型出发，完整地拆解了 Agent Control Loop 的核心抽象：
 

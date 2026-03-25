@@ -1,5 +1,5 @@
 ---
-title: "Production-Grade Agent Systems: 评估、成本与安全"
+title: "生产级Agent系统：评估、成本与安全"
 pubDate: "2026-02-01"
 description: "Agentic 系列终篇。从 Observability、Evaluation、Cost Engineering、Security 四个维度，系统性地讨论 Agent 从实验室走向生产环境所面临的核心挑战与工程实践。包含完整的 Trace 设计、评估框架、成本模型、安全防护方案，以及一张整合前 13 篇所有概念的生产架构全景图。"
 tags: ["Agentic", "AI Engineering", "Production"]
@@ -1351,9 +1351,377 @@ PERMISSIONS = [
 - 确认机制要有超时：如果用户长时间不确认，操作应自动取消而不是自动执行
 - 记录所有确认和拒绝的日志，用于审计
 
+
+## 5.5 Security 分层防护体系
+
+以上讨论的是各个安全问题的单点防护。但真正的生产级安全需要的是**纵深防御（Defense in Depth）**——多层防护叠加，即使某一层被突破，后续层级仍能阻止攻击。
+
+Agent 系统应该按以下四层构建防护体系：
+
+### 第一层：参数验证与输入清洗
+
+LLM 不是唯一的输入源。工具返回的数据、用户上传的文件、数据库查询结果，这些都是输入。每一个输入都应该经过严格的**参数验证**。
+
+```python
+from typing import Any, Callable
+import re
+
+
+class InputValidator:
+    """输入参数验证"""
+
+    @staticmethod
+    def sanitize_sql(query: str) -> tuple[bool, str]:
+        """防止 SQL 注入"""
+        dangerous_keywords = [
+            r"DROP\s+TABLE",
+            r"DELETE\s+FROM",
+            r"TRUNCATE",
+            r"INSERT\s+INTO",
+            r"UPDATE\s+.*\s+SET",
+            r"EXEC\s+",
+            r"EXECUTE\s+",
+            r";\s*DROP",
+            r";\s*DELETE",
+        ]
+        for pattern in dangerous_keywords:
+            if re.search(pattern, query, re.IGNORECASE):
+                return False, f"检测到潜在的 SQL 注入: {pattern}"
+        return True, query
+
+    @staticmethod
+    def sanitize_shell(command: str) -> tuple[bool, str]:
+        """防止命令注入"""
+        dangerous_chars = ["|", "&", ";", "`", "$", "(", ")", "<", ">", "
+"]
+        for char in dangerous_chars:
+            if char in command:
+                return False, f"检测到潜在的命令注入字符: {char}"
+        return True, command
+
+    @staticmethod
+    def sanitize_html(content: str) -> str:
+        """防止 XSS"""
+        import html
+        return html.escape(content)
+
+    @staticmethod
+    def validate_json(data: str, max_depth: int = 10) -> tuple[bool, Any]:
+        """验证 JSON 并限制嵌套深度"""
+        import json
+        def check_depth(obj: Any, current_depth: int = 0) -> bool:
+            if current_depth > max_depth:
+                return False
+            if isinstance(obj, dict):
+                return all(check_depth(v, current_depth + 1) for v in obj.values())
+            elif isinstance(obj, list):
+                return all(check_depth(v, current_depth + 1) for v in obj)
+            return True
+        try:
+            parsed = json.loads(data)
+            if check_depth(parsed):
+                return True, parsed
+            else:
+                return False, "JSON 嵌套深度超过限制"
+        except json.JSONDecodeError as e:
+            return False, f"无效的 JSON: {str(e)}"
+
+    @staticmethod
+    def validate_url(url: str) -> tuple[bool, str]:
+        """URL 验证和沙箱隔离"""
+        import urllib.parse
+        try:
+            parsed = urllib.parse.urlparse(url)
+        except Exception as e:
+            return False, f"无效的 URL: {str(e)}"
+        dangerous_schemes = ["javascript", "data", "file"]
+        if parsed.scheme in dangerous_schemes:
+            return False, f"不支持的 URL 协议: {parsed.scheme}"
+        dangerous_hostnames = ["localhost", "127.0.0.1", "169.254"]
+        if any(parsed.hostname and parsed.hostname.startswith(prefix) for prefix in dangerous_hostnames):
+            return False, "禁止访问本地地址"
+        return True, url
+```
+
+### 第二层：Prompt Injection 防护
+
+```python
+class PromptInjectionDetector:
+    """Prompt Injection 检测与防护"""
+
+    ATTACK_PATTERNS = {
+        "instruction_override": [
+            r"忽略.*?之前.*?指令",
+            r"ignore.*?previous.*?instruction",
+            r"forget.*?everything",
+            r"new instruction",
+            r"you are now",
+        ],
+        "system_prompt_leak": [
+            r"输出.*?system\s+prompt",
+            r"reveal.*?system.*?prompt",
+            r"what.*?is.*?your.*?instruction",
+            r"tell.*?me.*?your.*?role",
+        ],
+        "hidden_commands": [
+            r"<\s*hidden\s*>",
+            r"\[.*?hidden.*?\]",
+            r"###.*?SYSTEM",
+        ],
+    }
+
+    def __init__(self):
+        self.compiled_patterns = {}
+        for category, patterns in self.ATTACK_PATTERNS.items():
+            self.compiled_patterns[category] = [
+                re.compile(p, re.IGNORECASE) for p in patterns
+            ]
+
+    def detect(self, text: str) -> tuple[bool, list[str]]:
+        """检测是否包含注入特征"""
+        detected_attacks = []
+        for category, patterns in self.compiled_patterns.items():
+            for pattern in patterns:
+                if pattern.search(text):
+                    detected_attacks.append(f"{category}: {pattern.pattern}")
+        is_clean = len(detected_attacks) == 0
+        return is_clean, detected_attacks
+```
+
+### 第三层：隐私保护
+
+隐私和数据分级是生产系统的必要要素。
+
+### 第四层：审计与合规
+
+审计日志确保可追溯性和合规性。
+
+```python
+from dataclasses import dataclass
+from datetime import datetime
+
+@dataclass
+class AuditLog:
+    """审计日志"""
+    timestamp: float
+    event_type: str
+    actor: str
+    resource: str
+    action: str
+    status: str
+    details: dict
+    risk_level: str
+```
+
+SecurityLayerStack 类整合了以上四层，实现端到端的安全防护。
+
 ---
 
-## 6. 灰度发布与回滚
+## 6. Agent Evaluation 框架的参考实现
+
+前面的第 3 节介绍了评估的原理和方法。这一节给出一个完整的、可以直接使用的参考实现。
+
+核心包括三部分：
+
+**(1) 自动化测试套件** — 定义 TestCase，批量运行，每个用例都生成 Trace，从中评估工具选择准确率、步骤效率、输出质量
+
+**(2) 回归测试机制** — 保存历史结果，对比版本间的关键指标变化，自动检测性能退化
+
+**(3) 评估报告生成** — 生成可视化的评估报告，展示通过率、成本、延迟等关键指标
+
+`AgentEvaluationFramework` 的伪代码框架：
+
+```python
+class AgentEvaluationFramework:
+    def run_test_suite(self, test_cases: list) -> dict:
+        results = []
+        for case in test_cases:
+            result = self._run_single_test(case)
+            results.append(result)
+        return self._aggregate_results(results)
+
+    def _run_single_test(self, case) -> EvalResult:
+        agent = self.agent_factory()
+        tracer = AgentTracer()
+        output = agent.run(case.input, tracer=tracer)
+        trace = tracer.end_trace(output)
+        # 评估：工具选择准确率、步骤效率、输出质量
+        return EvalResult(...)
+
+    def check_regression(self, new_results, threshold=0.05) -> dict:
+        # 对比上一版本，检测指标下降
+        previous = self.results_history[-2]
+        warnings = []
+        for metric in ["task_completion_rate", "output_quality", "cost_per_task"]:
+            if regression_detected(previous[metric], new_results[metric], threshold):
+                warnings.append(f"{metric} 下降")
+        return {"regression_detected": len(warnings) > 0, "warnings": warnings}
+
+    def generate_report(self, version: str, output_file: str = None) -> str:
+        # 生成评估报告
+        ...
+```
+
+建议集成到 CI/CD：每次 Prompt 变更、模型变更、工具变更后自动运行。
+
+---
+
+## 7. Cost Engineering 可视化与 Pareto 分析
+
+Agent 系统的成本管理不只是"降低成本"，而是找到**成本与质量的最优平衡点**（Pareto 前沿）。
+
+### 7.1 Pareto 前沿分析
+
+在多目标优化中，Pareto 前沿是指那些无法通过改进某一目标而不损害其他目标的解决方案集合。
+
+对于 Agent 优化：
+
+```
+质量 (越高越好)
+  ↑
+  │       Pareto 前沿
+  │      /‾‾‾‾
+  │     / ●
+  │    / (成本最低的高质量方案)
+  │   /
+  │  /
+  └─────────────→ 成本 (越低越好)
+```
+
+找到 Pareto 前沿的方法：**系统地尝试不同的优化策略组合**。
+
+常见的优化策略：
+- 模型降级：GPT-4o → GPT-4o-mini（成本 1/7，质量下降但仍可接受）
+- Prompt 压缩：减少 system prompt 冗余内容
+- 结果缓存：相同查询复用结果（可省 30-50% 成本）
+- 工具结果截断：API 返回数据往往远超 LLM 需要（可省 20-40% token）
+- 批处理：批量处理相似任务（可省 10-30% 成本）
+
+### 7.2 成本归因分析
+
+成本不是均匀分布的。某个步骤可能占用 80% 的预算。需要按模块分解：
+
+```python
+class CostAttributionAnalyzer:
+    def analyze_cost_breakdown(self, traces) -> dict:
+        breakdown = {
+            "llm_calls": 0.0,      # LLM API 调用
+            "tool_calls": 0.0,     # 外部工具（搜索、数据库等）
+            "memory_ops": 0.0,     # 向量数据库、缓存
+            "embedding": 0.0,      # Embedding 模型
+        }
+        # 逐个 span 统计成本
+        for trace in traces:
+            for span in trace["spans"]:
+                if span["type"] == "llm_call":
+                    breakdown["llm_calls"] += estimate_llm_cost(span)
+                ...
+        return breakdown  # 返回百分比和美元数
+```
+
+通过成本归因，快速定位成本驱动因素。例如：如果 70% 成本来自 LLM，那么模型降级优先级高；如果 40% 成本来自某个工具，优化工具调用策略更重要。
+
+### 7.3 成本预算控制
+
+在系统级设置成本上限：
+
+```python
+class CostBudgetController:
+    def __init__(self, daily_limit=100, monthly_limit=2000, per_request_limit=0.5):
+        ...
+    
+    def check_budget(self, estimated_cost) -> tuple[bool, str]:
+        if estimated_cost > self.per_request_limit:
+            return False, "单请求超限"
+        if self.daily_spend + estimated_cost > self.daily_limit:
+            return False, "日预算超限"
+        return True, "ok"
+```
+
+### 7.4 优化策略的节省估算表
+
+| 策略 | 条件 | 成本节省 |
+|------|------|---------|
+| 模型降级 | 从 GPT-4o 降级到 mini | 85% |
+| 缓存 | 缓存命中率 30% | 30% |
+| Prompt 压缩 | 减少 system prompt 冗余 | 15-20% |
+| 工具结果截断 | 限制 API 返回数据大小 | 20-40% |
+| 批处理 | 批量 10 个任务 | 10-30% |
+| **联合优化** | 以上策略综合应用 | **60-80%** |
+
+联合优化的关键：一次只改一个变量，通过 Evaluation 确保质量仍在可接受范围内。
+
+---
+
+## 8. 监控告警与人工介入策略
+
+Agent 系统的运维实践。不同于传统服务，Agent 的行为充满不确定性，需要主动式监控和人工干预。
+
+### 8.1 SLO/SLA 定义框架
+
+定义性能目标：
+
+| 指标 | 目标 |
+|------|------|
+| 响应时间 P99 | < 5 秒 |
+| 任务完成率 | > 99% |
+| 成本/任务 | < $0.10 |
+| 错误率 | < 0.5% |
+| 可用性 | > 99.9% |
+
+### 8.2 告警规则
+
+```python
+AlertRule(
+    rule_id="latency_p95",
+    metric="latency_p95_ms",
+    condition="exceeds",
+    threshold=10000,
+    duration_seconds=300,  # 持续 5 分钟才告警，避免瞬时抖动
+    severity=AlertSeverity.WARNING,
+    action="slack",
+)
+```
+
+典型告警：
+- 错误率超过 5% → Page On-call 工程师
+- 成本小时花费超过 $50 → 立即告警并自动降级
+- Token 消耗异常增长 50% → 告警并检查 Prompt 变更
+
+### 8.3 人工介入触发条件
+
+```python
+InterventionTrigger(
+    condition_name="low_confidence",
+    description="Agent 置信度 < 0.5",
+    required_action="review_output",
+)
+```
+
+常见触发条件：
+- 置信度低 → 输出需人工审核
+- 高风险工具（发邮件、删除） → 执行前需确认
+- 无限循环（超过最大轮次） → 中止并回滚
+- 一致性失败（多次尝试结果不一致） → 需人工决策
+
+### 8.4 灰度发布与回滚
+
+金丝雀发布：
+
+```
+新版本 v2.1.0 发布流程：
+├─ 阶段 1: Canary    - 1% 流量（~100 用户/小时）- 2 小时
+├─ 阶段 2: Early Access - 10% 流量 - 6 小时  
+├─ 阶段 3: Progressive  - 50% 流量 - 12 小时
+└─ 阶段 4: Stable    - 100% 流量
+```
+
+回滚条件：错误率 > 5% 或 P99 延迟 > 15 秒，自动触发回滚（预期 60 秒内完成）。
+
+---
+
+
+## 9. 灰度发布与回滚
 
 ### 6.1 Agent 的"发布"比传统服务复杂
 
@@ -1489,7 +1857,7 @@ class PromptRegistry:
 
 ---
 
-## 7. 生产 Agent 系统架构全景图
+## 10. 生产 Agent 系统架构全景图
 
 以下这张图将前 13 篇的所有概念整合在一起，展示一个完整的生产级 Agent 系统：
 
@@ -1568,7 +1936,7 @@ class PromptRegistry:
 
 ---
 
-## 8. Checklist：Agent 上线前的检查清单
+## 11. Checklist：Agent 上线前的检查清单
 
 在将 Agent 推向生产之前，逐项检查以下清单：
 
@@ -1618,7 +1986,7 @@ class PromptRegistry:
 
 ---
 
-## 9. 系列总结与展望
+## 12. 系列总结与展望
 
 ### 14 篇文章的知识路径
 

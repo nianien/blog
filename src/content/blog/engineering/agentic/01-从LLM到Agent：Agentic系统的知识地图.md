@@ -1,5 +1,5 @@
 ---
-title: "From LLM to Agent: Agentic 系统的知识地图"
+title: "从LLM到Agent：Agentic系统的知识地图"
 description: "Agentic 系列开篇。从 LLM 的局限出发，定义 Agent 的核心组成，绘制 Agentic 系统全景架构图，并通过代码演示从 ChatCompletion 到完整 Agent 的演进路径。本文是整个系列 14 篇文章的精神锚点与导航地图。"
 pubDate: "2025-12-01"
 tags: ["Agentic", "AI Engineering", "LLM"]
@@ -720,7 +720,881 @@ Agent 在以下场景中可能是错误的选择：
 
 ---
 
-## 8. 结语与后续预告
+## 8. 选型决策树
+
+选择合适的架构级别（LLM、Workflow、还是 Agent）需要综合考虑多个维度。以下是一个决策框架：
+
+### 8.1 决策维度
+
+```
+                        任务特征评估
+                             │
+          ┌──────────────────┼──────────────────┐
+          │                  │                  │
+      确定性程度         延迟要求            成本承受力
+          │                  │                  │
+     ┌────┴────┐        ┌────┴────┐       ┌────┴────┐
+     高        低        <200ms    >2s      紧        充足
+     │         │          │        │       │         │
+```
+
+### 8.2 决策矩阵
+
+| 场景 | 任务特征 | 确定性 | 延迟 | 成本 | 推荐方案 | 代码示例 |
+|------|---------|--------|------|------|---------|---------|
+| **简单问答** | 用户问"今天天气如何？" | 高 | <1s | 低 | `ChatCompletion` | 一次 API 调用 |
+| **个性化推荐** | 基于历史记录推荐商品，逻辑清晰 | 高 | <500ms | 低 | `ChatCompletion + Prompt` | 在 prompt 中写死逻辑 |
+| **订单处理** | 验证库存→计算价格→生成订单，步骤固定 | 高 | <1s | 中 | `Workflow / DAG` | 见 9.3 示例 |
+| **报表生成** | 查多个数据源，聚合，需重试 | 中 | <30s | 中 | `Agent (轻量级)` | Workflow + 少量工具 |
+| **客户支持诊断** | 问题类型多样，需多次追问 | 低 | <5s | 中 | `Agent (完整)` | 见 Level 5 |
+| **数据分析与洞察** | 不确定需要哪些数据源，需迭代优化 | 低 | <1min | 高 | `Agent (完整)` | 多工具协作 |
+| **代码生成与自测** | 生成→测试→修复，需循环 | 低 | <2min | 高 | `Agent + 长步骤` | ReAct 模式 |
+
+### 8.3 快速判断流程
+
+```
+START
+  │
+  ├─ 任务流程能否用 flowchart 清晰表达？
+  │   ├─ 是 → 流程完全确定，步骤不变
+  │   │   └─ 是否需要 NLP 或多 API 聚合？
+  │   │       ├─ 否 → 用传统后端 + DB（不用 LLM）
+  │   │       └─ 是 → 用 ChatCompletion + prompt 工程
+  │   │
+  │   └─ 否 → 流程存在分支和不确定性
+  │       └─ 是否需要 <200ms 响应？
+  │           ├─ 是 → **不适合 Agent**，降级为 prompt + rule
+  │           └─ 否 → 是否能负担多次 API 调用？
+  │               ├─ 否 → **Workflow 引擎**（确定性 + 成本控制）
+  │               └─ 是 → **Agent**（自主规划 + 多步推理）
+  │
+  └─ 选择确定，评估 memory 需求
+      ├─ 需要跨会话持久化？
+      │   ├─ 是 → 加 RAG / Vector DB
+      │   └─ 否 → 会话内存足够
+      │
+      └─ 需要多 Agent 协作？
+          ├─ 是 → 设计 Multi-Agent 系统
+          └─ 否 → 单 Agent 足够
+
+END
+```
+
+### 8.4 具体场景举例
+
+**场景 A：电商订单处理（确定性任务）**
+
+> 订单流程：验证用户 → 检查库存 → 计算折扣 → 生成订单 → 发送确认
+
+- **确定性**：高（步骤顺序固定）
+- **延迟要求**：<1s
+- **成本**：每单 0.05 元，年 100 万单
+
+**选择**：`Workflow / 状态机`，不用 Agent
+
+原因：
+- 步骤顺序明确，不需要 LLM 重新规划
+- 延迟要求严格，每多一个 LLM 调用就多增加 1-2s
+- 成本敏感：Agent 的多轮调用会让每单成本翻倍
+
+---
+
+**场景 B：财务数据分析和洞察（探索性任务）**
+
+> 用户问："去年 Q4 相比 Q3，我们的毛利率变化趋势如何？哪些产品线贡献最大？"
+
+- **确定性**：低（不知道需要查哪些表，需要多少次聚合）
+- **延迟要求**：<30s 可接受
+- **成本**：对 token 消耗有预算
+
+**选择**：`Agent (完整)`
+
+原因：
+- 需要多步探索：先查销售表 → 计算成本 → 比较环比 → 识别贡献者
+- 每一步结果都可能影响下一步（自适应）
+- 可以接受多次 LLM 调用和较长延迟
+- 需要记忆：可能需要参考之前查过的数据
+
+---
+
+**场景 C：实时库存预警（低延迟 + 确定性）**
+
+> 当库存低于警戒线时自动触发预警和建议采购量
+
+- **确定性**：高（逻辑清晰：库存值 < 阈值 → 发警告）
+- **延迟要求**：<100ms
+- **成本**：成本约束严格
+
+**选择**：`规则引擎 + 轻量级 prompt`，不用 Agent
+
+原因：
+- Agent 无法提供 <100ms 响应（网络+LLM 调用最少 500ms）
+- 用规则引擎实现主逻辑，必要时用 ChatCompletion 生成人类可读的建议文案
+
+---
+
+## 9. 何时不用 Agent —— 反面教学
+
+### 9.1 问题陈述
+
+假设我们要实现"订单处理系统"。用户通过 API 提交订单，系统需要：
+
+1. 验证订单内容（检查是否有异常）
+2. 检查库存（是否有货）
+3. 计算订单总价（包含税费、折扣）
+4. 生成订单记录
+5. 返回订单 ID
+
+这个流程**完全确定**：步骤顺序固定，每步的输入和输出都明确。
+
+### 9.2 用 Agent 实现（反面示例）
+
+```python
+from openai import OpenAI
+import json
+import time
+
+client = OpenAI()
+
+# Agent 方式：让 LLM 决定每一步做什么
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "validate_order",
+            "description": "验证订单内容是否合法",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "order_id": {"type": "string"},
+                    "items": {"type": "array"},
+                    "customer_id": {"type": "string"},
+                },
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "check_inventory",
+            "description": "检查库存是否充足",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "items": {"type": "array"},
+                },
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "calculate_price",
+            "description": "计算订单总价",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "items": {"type": "array"},
+                    "customer_id": {"type": "string"},
+                },
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "create_order",
+            "description": "创建订单记录",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "customer_id": {"type": "string"},
+                    "items": {"type": "array"},
+                    "total_price": {"type": "number"},
+                },
+            },
+        },
+    },
+]
+
+# 工具实现（模拟）
+tool_impl = {
+    "validate_order": lambda **kw: json.dumps({"valid": True}),
+    "check_inventory": lambda **kw: json.dumps({"in_stock": True}),
+    "calculate_price": lambda **kw: json.dumps({"total": 999.99, "tax": 79.99}),
+    "create_order": lambda **kw: json.dumps({"order_id": "ORD-2025-0001"}),
+}
+
+def process_order_with_agent(order_data: dict) -> dict:
+    """使用 Agent 处理订单"""
+    start_time = time.time()
+    token_count = 0
+
+    messages = [
+        {
+            "role": "system",
+            "content": "You are an order processing agent. Process the order step by step."
+        },
+        {
+            "role": "user",
+            "content": f"Process this order: {json.dumps(order_data)}",
+        }
+    ]
+
+    # Agent 循环
+    iterations = 0
+    max_iterations = 10
+
+    while iterations < max_iterations:
+        iterations += 1
+
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=messages,
+            tools=tools,
+        )
+
+        # 追踪 token 消耗
+        token_count += response.usage.prompt_tokens + response.usage.completion_tokens
+
+        msg = response.choices[0].message
+        messages.append(msg.model_dump())
+
+        if not msg.tool_calls:
+            # Agent 认为完成
+            return {
+                "result": msg.content,
+                "iterations": iterations,
+                "tokens": token_count,
+                "latency_ms": (time.time() - start_time) * 1000,
+                "cost": token_count * 0.0015 / 1000,  # gpt-4o-mini 价格估算
+            }
+
+        # 执行工具调用
+        for tool_call in msg.tool_calls:
+            fn_name = tool_call.function.name
+            fn_args = json.loads(tool_call.function.arguments)
+            result = tool_impl[fn_name](**fn_args)
+
+            messages.append({
+                "role": "tool",
+                "tool_call_id": tool_call.id,
+                "content": result,
+            })
+
+    return {
+        "error": "Max iterations exceeded",
+        "tokens": token_count,
+        "latency_ms": (time.time() - start_time) * 1000,
+        "cost": token_count * 0.0015 / 1000,
+    }
+
+# 测试
+order = {
+    "customer_id": "CUST-123",
+    "items": [
+        {"sku": "PROD-001", "qty": 2, "price": 499.99},
+        {"sku": "PROD-002", "qty": 1, "price": 199.99},
+    ]
+}
+
+result_agent = process_order_with_agent(order)
+print("Agent 方式结果：")
+print(json.dumps(result_agent, indent=2, ensure_ascii=False))
+```
+
+**Agent 方式的问题**：
+- ⏱️ **延迟高**：平均 3-5 秒（多次 API 调用 + 网络往返）
+- 💰 **成本高**：每个订单耗费 2000+ tokens，成本 ¥0.003+（比 Workflow 高 10 倍）
+- 🎲 **不可预测**：LLM 可能按错误的顺序执行工具，或重复调用同一工具
+- 📊 **难以调试**：如果某个订单处理失败，很难追踪是哪一步出问题（LLM 的"思考过程"不透明）
+- 🔒 **难以审计**：金融场景需要清晰的执行日志，Agent 的非确定性会导致审计困难
+
+### 9.3 用 Workflow 实现（推荐方案）
+
+```python
+from dataclasses import dataclass
+import json
+from enum import Enum
+from typing import Optional
+import time
+
+class OrderStatus(Enum):
+    PENDING = "pending"
+    VALIDATED = "validated"
+    INVENTORY_CHECKED = "inventory_checked"
+    PRICE_CALCULATED = "price_calculated"
+    CREATED = "created"
+    FAILED = "failed"
+
+@dataclass
+class OrderContext:
+    """订单处理的执行上下文"""
+    customer_id: str
+    items: list
+    status: OrderStatus = OrderStatus.PENDING
+    validation_result: Optional[dict] = None
+    inventory_result: Optional[dict] = None
+    price_result: Optional[dict] = None
+    order_id: Optional[str] = None
+    error: Optional[str] = None
+
+class OrderWorkflow:
+    """确定性的订单处理工作流"""
+
+    def __init__(self):
+        self.token_count = 0  # 成本追踪
+        self.steps_log = []   # 审计日志
+
+    def run(self, order_data: dict) -> dict:
+        """执行订单处理流程"""
+        start_time = time.time()
+        ctx = OrderContext(
+            customer_id=order_data["customer_id"],
+            items=order_data["items"],
+        )
+
+        try:
+            # Step 1: 验证
+            self._validate_order(ctx)
+
+            # Step 2: 检查库存
+            self._check_inventory(ctx)
+
+            # Step 3: 计算价格
+            self._calculate_price(ctx)
+
+            # Step 4: 创建订单
+            self._create_order(ctx)
+
+            ctx.status = OrderStatus.CREATED
+
+        except Exception as e:
+            ctx.status = OrderStatus.FAILED
+            ctx.error = str(e)
+
+        return {
+            "order_id": ctx.order_id,
+            "status": ctx.status.value,
+            "error": ctx.error,
+            "price": ctx.price_result,
+            "steps_executed": len(self.steps_log),
+            "steps_log": self.steps_log,
+            "tokens": self.token_count,
+            "latency_ms": (time.time() - start_time) * 1000,
+            "cost": self.token_count * 0.0015 / 1000,
+        }
+
+    def _validate_order(self, ctx: OrderContext):
+        """Step 1: 验证订单"""
+        self.steps_log.append("VALIDATE: start")
+
+        if not ctx.customer_id:
+            raise ValueError("缺少 customer_id")
+        if not ctx.items or len(ctx.items) == 0:
+            raise ValueError("订单为空")
+
+        # 检查每个 item
+        for item in ctx.items:
+            if not item.get("sku") or item.get("qty", 0) <= 0:
+                raise ValueError(f"非法的 item: {item}")
+
+        ctx.validation_result = {"valid": True}
+        ctx.status = OrderStatus.VALIDATED
+        self.steps_log.append("VALIDATE: success")
+
+    def _check_inventory(self, ctx: OrderContext):
+        """Step 2: 检查库存"""
+        self.steps_log.append("INVENTORY: start")
+
+        # 模拟库存查询
+        skus = [item["sku"] for item in ctx.items]
+        inventory = {
+            "PROD-001": 100,
+            "PROD-002": 50,
+        }
+
+        for sku in skus:
+            if sku not in inventory or inventory[sku] <= 0:
+                raise ValueError(f"SKU {sku} 库存不足")
+
+        ctx.inventory_result = {"in_stock": True}
+        ctx.status = OrderStatus.INVENTORY_CHECKED
+        self.steps_log.append("INVENTORY: success")
+
+    def _calculate_price(self, ctx: OrderContext):
+        """Step 3: 计算价格"""
+        self.steps_log.append("PRICE: start")
+
+        subtotal = sum(item.get("price", 0) * item.get("qty", 1) for item in ctx.items)
+        tax_rate = 0.08
+        tax = subtotal * tax_rate
+        total = subtotal + tax
+
+        ctx.price_result = {
+            "subtotal": subtotal,
+            "tax": tax,
+            "total": total,
+        }
+        ctx.status = OrderStatus.PRICE_CALCULATED
+        self.steps_log.append(f"PRICE: total={total}")
+
+    def _create_order(self, ctx: OrderContext):
+        """Step 4: 创建订单"""
+        self.steps_log.append("CREATE: start")
+
+        # 模拟数据库写入
+        order_id = f"ORD-{int(time.time() * 1000)}"
+        ctx.order_id = order_id
+
+        self.steps_log.append(f"CREATE: order_id={order_id}")
+
+# 测试
+order = {
+    "customer_id": "CUST-123",
+    "items": [
+        {"sku": "PROD-001", "qty": 2, "price": 499.99},
+        {"sku": "PROD-002", "qty": 1, "price": 199.99},
+    ]
+}
+
+workflow = OrderWorkflow()
+result_workflow = workflow.run(order)
+print("Workflow 方式结果：")
+print(json.dumps(result_workflow, indent=2, ensure_ascii=False))
+```
+
+**Workflow 方式的优势**：
+
+| 指标 | Agent | Workflow |
+|------|-------|----------|
+| **延迟** | 3-5s | <100ms |
+| **成本** | ¥0.003/单 | ¥0.00003/单（100 倍便宜） |
+| **可预测性** | 不确定 | 完全确定 |
+| **可审计性** | 难 | 易（清晰的步骤日志） |
+| **错误处理** | 含糊 | 精确的 try-catch |
+| **调试难度** | 困难 | 简单 |
+| **扩展灵活性** | 高 | 低 |
+
+### 9.4 总结：何时选择哪个方案
+
+- **Workflow**：适合确定性流程。步骤顺序固定、输入输出明确、成本/延迟敏感。订单、支付、报表生成等。
+- **Agent**：适合探索性任务。不确定需要几步、用什么工具、可以接受较长延迟和较高成本。数据分析、问题诊断、代码生成等。
+
+**黄金法则**：用最简单的工具解决问题。如果 Workflow 够用，不要用 Agent。成本、延迟、可维护性都会感谢你这个决定。
+
+---
+
+## 10. 增强 Level 5 代码 —— 生产级实现
+
+前面的 Level 5 给出了一个架构骨架。本节补充**生产级必需的三个关键能力**：错误处理与重试、成本追踪、结构化可观测性。
+
+### 10.1 完整的生产级 Agent
+
+```python
+import logging
+import json
+import time
+from dataclasses import dataclass, field
+from typing import Optional, Callable, Any
+from enum import Enum
+from collections import defaultdict
+import random
+
+# 日志配置（OpenTelemetry 风格）
+logger = logging.getLogger(__name__)
+handler = logging.StreamHandler()
+formatter = logging.Formatter(
+    '%(asctime)s [%(levelname)s] trace_id=%(trace_id)s span_id=%(span_id)s %(message)s'
+)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+
+
+class RetryPolicy(Enum):
+    """重试策略"""
+    NO_RETRY = "no_retry"
+    EXPONENTIAL_BACKOFF = "exponential_backoff"
+    LINEAR_BACKOFF = "linear_backoff"
+
+
+@dataclass
+class CostMetrics:
+    """成本和 token 追踪"""
+    prompt_tokens: int = 0
+    completion_tokens: int = 0
+    total_tokens: int = 0
+    
+    # 模型定价（USD per 1M tokens）
+    model_prices = {
+        "gpt-4o": {"input": 5.00, "output": 15.00},
+        "gpt-4o-mini": {"input": 0.15, "output": 0.60},
+        "gpt-4-turbo": {"input": 10.00, "output": 30.00},
+    }
+    
+    def add(self, prompt_tokens: int, completion_tokens: int, model: str = "gpt-4o"):
+        """累加 token 消耗"""
+        self.prompt_tokens += prompt_tokens
+        self.completion_tokens += completion_tokens
+        self.total_tokens = self.prompt_tokens + self.completion_tokens
+    
+    def calculate_cost(self, model: str = "gpt-4o") -> float:
+        """计算成本（USD）"""
+        prices = self.model_prices.get(model, self.model_prices["gpt-4o"])
+        input_cost = self.prompt_tokens * prices["input"] / 1_000_000
+        output_cost = self.completion_tokens * prices["output"] / 1_000_000
+        return input_cost + output_cost
+    
+    def to_dict(self) -> dict:
+        return {
+            "prompt_tokens": self.prompt_tokens,
+            "completion_tokens": self.completion_tokens,
+            "total_tokens": self.total_tokens,
+            "estimated_cost_usd": round(self.calculate_cost(), 6),
+        }
+
+
+@dataclass
+class Trace:
+    """OpenTelemetry 风格的追踪记录"""
+    trace_id: str
+    span_id: str
+    start_time: float
+    end_time: Optional[float] = None
+    status: str = "pending"  # pending, success, error
+    error: Optional[str] = None
+    span_name: str = ""
+    attributes: dict = field(default_factory=dict)
+    
+    def end(self, status: str = "success", error: Optional[str] = None):
+        """结束 span"""
+        self.end_time = time.time()
+        self.status = status
+        self.error = error
+    
+    def duration_ms(self) -> float:
+        """获取执行时间（ms）"""
+        if self.end_time is None:
+            return time.time() - self.start_time
+        return (self.end_time - self.start_time) * 1000
+    
+    def to_dict(self) -> dict:
+        return {
+            "trace_id": self.trace_id,
+            "span_id": self.span_id,
+            "span_name": self.span_name,
+            "status": self.status,
+            "duration_ms": self.duration_ms(),
+            "error": self.error,
+            "attributes": self.attributes,
+        }
+
+
+class Observability:
+    """可观测性系统（日志 + 指标 + 追踪）"""
+    
+    def __init__(self):
+        self.traces: list[Trace] = []
+        self.metrics: dict = defaultdict(int)
+        self.trace_stack: list[Trace] = []
+    
+    def start_span(self, span_name: str, trace_id: str = None) -> Trace:
+        """开始新的 span（与当前 trace_id 关联）"""
+        if not trace_id:
+            trace_id = self._generate_id()
+        
+        span_id = self._generate_id()
+        trace = Trace(
+            trace_id=trace_id,
+            span_id=span_id,
+            start_time=time.time(),
+            span_name=span_name,
+        )
+        
+        self.trace_stack.append(trace)
+        logger.info(
+            f"Span started: {span_name}",
+            extra={"trace_id": trace_id, "span_id": span_id}
+        )
+        
+        return trace
+    
+    def end_span(self, trace: Trace, status: str = "success", error: Optional[str] = None):
+        """结束 span，并记录"""
+        trace.end(status, error)
+        self.traces.append(trace)
+        
+        level = "ERROR" if status == "error" else "INFO"
+        logger.log(
+            getattr(logging, level),
+            f"Span ended: {trace.span_name} (duration: {trace.duration_ms():.1f}ms)",
+            extra={"trace_id": trace.trace_id, "span_id": trace.span_id}
+        )
+    
+    def record_metric(self, metric_name: str, value: int = 1):
+        """记录指标"""
+        self.metrics[metric_name] += value
+    
+    @staticmethod
+    def _generate_id(length: int = 16) -> str:
+        """生成 trace_id 和 span_id"""
+        return ''.join(str(random.randint(0, 9)) for _ in range(length))
+    
+    def get_summary(self) -> dict:
+        """获取可观测性摘要"""
+        total_duration = sum(t.duration_ms() for t in self.traces)
+        errors = [t for t in self.traces if t.status == "error"]
+        
+        return {
+            "total_spans": len(self.traces),
+            "total_duration_ms": total_duration,
+            "error_count": len(errors),
+            "error_rate": len(errors) / max(1, len(self.traces)),
+            "metrics": dict(self.metrics),
+            "traces": [t.to_dict() for t in self.traces[-10:]],  # 最后 10 个 span
+        }
+
+
+class ProductionAgent:
+    """生产级 Agent —— 加入错误处理、成本追踪、可观测性"""
+    
+    def __init__(
+        self,
+        model: str = "gpt-4o-mini",
+        max_iterations: int = 10,
+        retry_policy: RetryPolicy = RetryPolicy.EXPONENTIAL_BACKOFF,
+        max_retries: int = 3,
+        token_budget: int = 50000,
+    ):
+        self.model = model
+        self.max_iterations = max_iterations
+        self.retry_policy = retry_policy
+        self.max_retries = max_retries
+        self.token_budget = token_budget
+        
+        self.cost = CostMetrics()
+        self.obs = Observability()
+        self.trace_id = None
+    
+    def run(self, user_input: str) -> dict:
+        """主入口，包含完整的错误处理和追踪"""
+        self.trace_id = self.obs._generate_id()
+        main_span = self.obs.start_span("agent.run", self.trace_id)
+        
+        try:
+            # 检查 token 预算
+            if self.cost.total_tokens > self.token_budget:
+                raise RuntimeError(f"Token 预算已耗尽：{self.cost.total_tokens}/{self.token_budget}")
+            
+            result = self._execute_with_retry(user_input)
+            self.obs.end_span(main_span, "success")
+            
+            return {
+                "success": True,
+                "result": result,
+                "cost": self.cost.to_dict(),
+                "observability": self.obs.get_summary(),
+            }
+        
+        except Exception as e:
+            self.obs.end_span(main_span, "error", str(e))
+            logger.error(
+                f"Agent execution failed: {str(e)}",
+                extra={"trace_id": self.trace_id, "span_id": main_span.span_id}
+            )
+            
+            return {
+                "success": False,
+                "error": str(e),
+                "cost": self.cost.to_dict(),
+                "observability": self.obs.get_summary(),
+            }
+    
+    def _execute_with_retry(self, user_input: str) -> str:
+        """带重试的执行逻辑（指数退避）"""
+        last_error = None
+        
+        for attempt in range(self.max_retries):
+            try:
+                return self._execute_loop(user_input)
+            except Exception as e:
+                last_error = e
+                
+                if attempt < self.max_retries - 1:
+                    # 计算退避时间
+                    if self.retry_policy == RetryPolicy.EXPONENTIAL_BACKOFF:
+                        wait_time = 2 ** attempt + random.uniform(0, 1)
+                    else:
+                        wait_time = attempt + random.uniform(0, 1)
+                    
+                    logger.warning(
+                        f"Attempt {attempt + 1} failed, retrying in {wait_time:.1f}s: {str(e)}",
+                        extra={"trace_id": self.trace_id}
+                    )
+                    time.sleep(wait_time)
+        
+        raise last_error
+    
+    def _execute_loop(self, user_input: str) -> str:
+        """核心控制循环"""
+        loop_span = self.obs.start_span("agent.loop", self.trace_id)
+        
+        try:
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant with tools."},
+                {"role": "user", "content": user_input},
+            ]
+            
+            for iteration in range(self.max_iterations):
+                iteration_span = self.obs.start_span(f"agent.iteration.{iteration}", self.trace_id)
+                
+                try:
+                    # 模拟 LLM 调用（实际环境中调用真实 API）
+                    response_text = self._mock_llm_call(messages, user_input)
+                    
+                    # 累加 token 消耗
+                    estimated_tokens = len(response_text.split())
+                    self.cost.add(
+                        prompt_tokens=len(user_input.split()) * 2,
+                        completion_tokens=estimated_tokens,
+                        model=self.model
+                    )
+                    
+                    # 预算检查
+                    if self.cost.total_tokens > self.token_budget:
+                        raise RuntimeError(f"Token 预算耗尽：{self.cost.total_tokens}/{self.token_budget}")
+                    
+                    # 模拟完成
+                    iteration_span.attributes = {
+                        "iteration": iteration,
+                        "tokens_used": estimated_tokens,
+                        "cumulative_tokens": self.cost.total_tokens,
+                    }
+                    
+                    self.obs.end_span(iteration_span, "success")
+                    self.obs.record_metric("agent.iterations")
+                    
+                    return response_text
+                
+                except Exception as e:
+                    self.obs.end_span(iteration_span, "error", str(e))
+                    self.obs.record_metric("agent.iteration_errors")
+                    raise
+            
+            # 超出最大迭代数
+            error_msg = f"超过最大迭代次数：{self.max_iterations}"
+            self.obs.end_span(loop_span, "error", error_msg)
+            raise RuntimeError(error_msg)
+        
+        except Exception as e:
+            self.obs.end_span(loop_span, "error", str(e))
+            raise
+    
+    def _mock_llm_call(self, messages: list, user_input: str) -> str:
+        """模拟 LLM 调用（实际环境中使用 OpenAI API）"""
+        # 这里应该调用 openai.chat.completions.create()
+        # 为了演示，我们返回模拟响应
+        
+        response_span = self.obs.start_span("llm.chat_completions", self.trace_id)
+        
+        try:
+            # 模拟延迟
+            time.sleep(0.1)
+            
+            response_text = f"基于用户输入 '{user_input[:30]}...' 的模拟响应。"
+            
+            response_span.attributes = {
+                "model": self.model,
+                "tokens_estimated": len(response_text.split()),
+            }
+            
+            self.obs.end_span(response_span, "success")
+            return response_text
+        
+        except Exception as e:
+            self.obs.end_span(response_span, "error", str(e))
+            raise
+
+
+# 使用示例
+if __name__ == "__main__":
+    agent = ProductionAgent(
+        model="gpt-4o-mini",
+        max_iterations=5,
+        retry_policy=RetryPolicy.EXPONENTIAL_BACKOFF,
+        max_retries=2,
+        token_budget=10000,
+    )
+    
+    result = agent.run("分析一下我的销售数据")
+    
+    print("执行结果：")
+    print(json.dumps(result, indent=2, ensure_ascii=False))
+    print("\n成本估算：")
+    print(f"  - 总 tokens：{result['cost']['total_tokens']}")
+    print(f"  - 预估费用：${result['cost']['estimated_cost_usd']}")
+    print("\n可观测性摘要：")
+    print(f"  - Span 总数：{result['observability']['total_spans']}")
+    print(f"  - 错误率：{result['observability']['error_rate']:.1%}")
+    print(f"  - 总耗时：{result['observability']['total_duration_ms']:.1f}ms")
+```
+
+### 10.2 代码关键特性说明
+
+**1. 指数退避重试（Exponential Backoff）**
+
+当 API 调用失败时，不是立即重试，而是等待一段时间后重试。等待时间按指数增长：
+
+- 第 1 次失败：等待 2^0 + 随机 = ~1s
+- 第 2 次失败：等待 2^1 + 随机 = ~2-3s
+- 第 3 次失败：等待 2^2 + 随机 = ~4-5s
+
+这样可以避免"雪崩"（一个故障导致大量重试，加重服务器负担）。
+
+**2. Token 成本追踪**
+
+```python
+self.cost.add(
+    prompt_tokens=input_tokens,
+    completion_tokens=output_tokens,
+    model=self.model
+)
+
+# 自动计算成本
+cost_usd = self.cost.calculate_cost("gpt-4o-mini")  # USD 结算
+```
+
+生产系统需要实时知道每个请求的成本，这样才能设置合理的预算告警。
+
+**3. 结构化日志与 OpenTelemetry 追踪**
+
+```python
+logger.info(
+    "Span started",
+    extra={"trace_id": "abc123", "span_id": "def456"}
+)
+```
+
+这种结构化日志可以被 ELK、Datadog 等日志系统解析，便于在生产环境中排查问题。Trace ID 将不同 span 关联起来，形成完整的执行链路。
+
+**4. Token 预算控制**
+
+```python
+if self.cost.total_tokens > self.token_budget:
+    raise RuntimeError("Token 预算耗尽")
+```
+
+防止某个失控的 Agent 消耗无限 token，导致账单爆炸。
+
+---
+
+**总结**：从 Level 0 到 Level 5 的演进，本质上是不断增加系统的"智能度"和"可靠性"。但每一步都要考虑成本——无论是工程成本（代码复杂度）还是运营成本（token 消耗）。第 8-10 节的内容就是帮助你做出这个权衡的决策框架。
+
+---
+
+---
+
+## 11. 结语与后续预告
 
 本文作为系列开篇，建立了三个关键认知：
 
