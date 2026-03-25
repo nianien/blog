@@ -10,8 +10,9 @@
 
 ```
 src/content/blog/
-├── engineering/          # 工程技术类
+├── engineering/          # 工程技术类（偏"怎么建"）
 │   ├── agentic/          # AI Agent 系列
+│   ├── aigc/             # AIGC 视频/短剧工程系列
 │   ├── algorithm/        # 算法
 │   ├── architecture/     # 系统架构
 │   ├── data/             # 数据工程
@@ -19,11 +20,11 @@ src/content/blog/
 │   ├── middleware/       # 中间件
 │   ├── practice/         # 工程实践
 │   └── tooling/          # 工具链
-├── insights/             # 洞察分析类
+├── insights/             # 洞察分析类（偏"怎么看"）
 │   ├── business/         # 商业分析
 │   ├── finance/          # 金融
 │   ├── science/          # 科学
-│   └── technology/       # 技术趋势（AI、AIGC、区块链等前沿方向）
+│   └── technology/       # 技术趋势、行业格局、宏观分析
 ├── life/                 # 生活成长类
 │   ├── digital/          # 数字生活
 │   ├── growth/           # 个人成长
@@ -35,8 +36,10 @@ src/content/blog/
 
 ### 目录选择规则
 
-- **engineering/**：偏工程实现、代码、架构设计、技术方案的文章
-- **insights/technology/**：偏技术趋势、行业分析、技术科普的文章（如 AI 交互式视频、AIGC 人物一致性）
+- **engineering/**：偏工程实现、代码、架构设计、技术方案的文章（读完去"动手建"）
+- **engineering/aigc/**：AIGC 视频生成、短剧制作、角色一致性等工程实战文章
+- **engineering/agentic/**：AI Agent、LLM 工程化、Agentic 系统系列
+- **insights/technology/**：偏技术趋势、行业格局、宏观分析的文章（读完去"思考判断"）
 - **insights/business/**：偏商业模式、品牌、创业相关分析
 - **life/growth/**：职业发展、个人成长话题
 - 参考材料放在 `material/` 目录，**不要**把文章放在 material 中
