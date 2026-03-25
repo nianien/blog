@@ -1,20 +1,11 @@
-const fs = require('fs')
 const express = require('express')
 const FormData = require('./form-data-lite')
 
 const app = express()
 app.use(express.json({ limit: '10mb' }))
 
-const WX_API = 'https://api.weixin.qq.com/cgi-bin'
-const TOKEN_PATH = '/.tencentcloudbase/wx/cloudbase_access_token'
-
-function getToken() {
-  try {
-    return fs.readFileSync(TOKEN_PATH, 'utf-8').trim()
-  } catch (err) {
-    throw new Error(`读取cloudbase_access_token失败: ${err.message}`)
-  }
-}
+// 开放接口服务：http + 不带 access_token
+const WX_API = 'http://api.weixin.qq.com/cgi-bin'
 
 /** 统一调微信 API，自动检查错误 */
 async function wxRequest(url, options = {}) {
@@ -33,8 +24,7 @@ async function wxRequest(url, options = {}) {
 }
 
 async function handleUploadImage(params) {
-  const token = getToken()
-  const url = `${WX_API}/material/add_material?cloudbase_access_token=${token}&type=image`
+  const url = `${WX_API}/material/add_material?type=image`
   const buffer = Buffer.from(params.fileBase64, 'base64')
   const form = new FormData()
   form.append('media', buffer, params.fileName)
@@ -44,8 +34,7 @@ async function handleUploadImage(params) {
 }
 
 async function handleUploadContentImage(params) {
-  const token = getToken()
-  const url = `${WX_API}/media/uploadimg?cloudbase_access_token=${token}`
+  const url = `${WX_API}/media/uploadimg`
   const buffer = Buffer.from(params.fileBase64, 'base64')
   const form = new FormData()
   form.append('media', buffer, params.fileName)
@@ -55,8 +44,7 @@ async function handleUploadContentImage(params) {
 }
 
 async function handleCreateDraft(params) {
-  const token = getToken()
-  const url = `${WX_API}/draft/add?cloudbase_access_token=${token}`
+  const url = `${WX_API}/draft/add`
   const body = {
     articles: [{
       title: params.title,

@@ -33,9 +33,9 @@ export function loadWxConfig(): ProxyConfig {
     vars[trimmed.slice(0, eqIdx).trim()] = trimmed.slice(eqIdx + 1).trim()
   }
   const proxyUrl = vars['WX_PROXY_URL']
-  const proxyToken = vars['WX_PROXY_TOKEN']
-  if (!proxyUrl || !proxyToken) {
-    throw new Error('.env.wx 中缺少 WX_PROXY_URL 或 WX_PROXY_TOKEN')
+  const proxyToken = vars['WX_PROXY_TOKEN'] || ''
+  if (!proxyUrl) {
+    throw new Error('.env.wx 中缺少 WX_PROXY_URL')
   }
   return { proxyUrl, proxyToken }
 }
@@ -69,7 +69,7 @@ async function callProxy(action: string, params: Record<string, unknown>): Promi
   }
 
   if (!data.success) {
-    throw new Error(`[${action}] ${data.error || '未知错误'}`)
+    throw new Error(`[${action}] ${data.error || `未知错误, 完整响应: ${text.slice(0, 500)}`}`)
   }
 
   return data.data

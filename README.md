@@ -330,6 +330,63 @@ src/content/blog/              ← 所有文章根目录
 
 ---
 
+### 微信公众号发布
+
+一键将 Markdown 文章发布到微信公众号草稿箱。
+
+#### 使用
+
+```bash
+# 预览排版（生成 HTML 并打开浏览器）
+./scripts/cli.sh wx:preview src/content/blog/xxx.md
+
+# 发布到草稿箱
+./scripts/cli.sh wx:publish src/content/blog/xxx.md
+```
+
+#### 架构
+
+```
+本地脚本                     微信云托管                      微信 API
+┌──────────────┐  POST JSON  ┌──────────────────┐  内网调用  ┌──────────────┐
+│ publish.ts   │ ──────────→ │ wx-proxy (Docker) │ ────────→ │ api.weixin.  │
+│ api.ts       │ ← response  │ 免鉴权，无需token │ ← response│ qq.com       │
+└──────────────┘              └──────────────────┘            └──────────────┘
+```
+
+- **本地** (`scripts/wx/`): Markdown → 微信排版 HTML，图片 base64 编码，调用云端代理
+- **云端** (`scripts/wx/scf/`): Express 服务部署在微信云托管，通过「开放接口服务」免鉴权调用微信 API
+- 不需要 access_token、不需要 IP 白名单
+
+#### 本地配置
+
+`.env.wx`：
+
+```
+WX_PROXY_URL=https://你的云托管公网域名/wx-proxy
+```
+
+#### 云端配置（微信云托管控制台）
+
+1. **云调用 → 开放接口服务 → 开启**
+2. **云调用权限配置**，添加白名单：
+   ```
+   /cgi-bin/material/add_material
+   /cgi-bin/media/uploadimg
+   /cgi-bin/draft/add
+   ```
+3. 上传 `scripts/wx/scf/` 下的代码部署 Docker 服务
+4. **开启开关后必须重新创建版本才生效**
+
+#### 注意事项
+
+- 微信公众号摘要（digest）限制约 40 字符，发布时自动截断并加省略号
+- 微信不支持文章内外部链接，发布时自动去除 `<a>` 标签保留文字
+- 封面图未指定时自动根据标题和标签生成
+- 云托管最小实例数设为 0 可省钱，冷启动约 1-2 秒
+
+---
+
 ### 常用操作速查
 
 ```bash
