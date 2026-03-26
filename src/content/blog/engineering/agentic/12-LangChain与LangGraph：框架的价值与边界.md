@@ -2471,6 +2471,6 @@ class ReasoningAgent:
 
 > **系列导航**：本文是 Agentic 系列的第 12 篇。
 >
-> - 上一篇：[11 | Multi-Agent Collaboration](/engineering/agentic/11-多Agent协作：协作模式与架构设计)
-> - 下一篇：[13 | MCP and Tool Protocol](/engineering/agentic/13-MCP与工具协议：Agent工具的协议化未来)
-> - 完整目录：[01 | From LLM to Agent](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
+> - 上一篇：[11 | 多Agent协作：协作模式与架构设计](/engineering/agentic/11-多Agent协作：协作模式与架构设计)
+> - 下一篇：[13 | MCP与工具协议：Agent工具的协议化未来](/engineering/agentic/13-MCP与工具协议：Agent工具的协议化未来)
+> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

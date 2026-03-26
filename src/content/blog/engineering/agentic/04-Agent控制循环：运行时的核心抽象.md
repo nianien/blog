@@ -2193,6 +2193,6 @@ class EventSourcedAgent:
 
 > **系列导航**：本文是 Agentic 系列的第 04 篇。
 >
-> - 上一篇：[03 | Agent vs Workflow vs Automation](/engineering/agentic/03-Agent、Workflow与Automation：选对抽象才是关键)
-> - 下一篇：[05 | Tool Calling Deep Dive](/engineering/agentic/05-工具调用深度解析：让LLM成为可编程接口)
-> - 完整目录：[01 | From LLM to Agent](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
+> - 上一篇：[03 | Agent、Workflow与Automation：选对抽象才是关键](/engineering/agentic/03-Agent、Workflow与Automation：选对抽象才是关键)
+> - 下一篇：[05 | 工具调用深度解析：让LLM成为可编程接口](/engineering/agentic/05-工具调用深度解析：让LLM成为可编程接口)
+> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

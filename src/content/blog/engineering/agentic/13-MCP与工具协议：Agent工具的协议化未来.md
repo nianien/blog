@@ -2380,6 +2380,6 @@ MCP 正在快速演进，几个未解问题值得关注：
 
 > **系列导航**：本文是 Agentic 系列的第 13 篇。
 >
-> - 上一篇：[12 | LangChain vs LangGraph](/engineering/agentic/12-LangChain与LangGraph：框架的价值与边界)
-> - 下一篇：[14 | Production-Grade Agent Systems](/engineering/agentic/14-生产级Agent系统：评估、成本与安全)
-> - 完整目录：[01 | From LLM to Agent](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
+> - 上一篇：[12 | LangChain与LangGraph：框架的价值与边界](/engineering/agentic/12-LangChain与LangGraph：框架的价值与边界)
+> - 下一篇：[14 | 生产级Agent系统：评估、成本与安全](/engineering/agentic/14-生产级Agent系统：评估、成本与安全)
+> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

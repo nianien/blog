@@ -11,7 +11,8 @@ export const CATEGORY_META: Record<string, { name: string; description: string }
   'engineering/domain':       { name: '领域建模',     description: '业务架构与领域驱动设计' },
   'engineering/middleware':   { name: '中间件',       description: '消息队列、分布式事务等' },
   'engineering/practice':     { name: '工程实践',     description: 'DevOps、CI/CD 与工程化' },
-  'engineering/algorithm':    { name: '算法',         description: '算法设计与问题求解' },
+  'engineering/algorithm':    { name: '算法与数据结构',         description: '算法设计与问题求解' },
+  'engineering/aigc':         { name: 'AIGC 创作',    description: 'AIGC 视频生成、短剧制作' },
   'engineering/data':         { name: '数据工程',     description: '大数据与数据分析' },
   // 二级 — Industry
   'insights/technology': { name: '技术趋势', description: 'AI、区块链等技术趋势' },

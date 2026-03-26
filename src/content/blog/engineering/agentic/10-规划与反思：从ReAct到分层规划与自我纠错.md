@@ -2358,6 +2358,6 @@ class SpecializationEvaluator:
 
 > **系列导航**：本文是 Agentic 系列的第 10 篇。
 >
-> - 上一篇：[09 | RAG as Cognitive Memory](/engineering/agentic/09-RAG作为认知记忆：检索增强生成的工程实践)
-> - 下一篇：[11 | Multi-Agent Collaboration](/engineering/agentic/11-多Agent协作：协作模式与架构设计)
-> - 完整目录：[01 | From LLM to Agent](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
+> - 上一篇：[09 | RAG作为认知记忆：检索增强生成的工程实践](/engineering/agentic/09-RAG作为认知记忆：检索增强生成的工程实践)
+> - 下一篇：[11 | 多Agent协作：协作模式与架构设计](/engineering/agentic/11-多Agent协作：协作模式与架构设计)
+> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
