@@ -1614,5 +1614,5 @@ if self.cost.total_tokens > self.token_budget:
 
 > **系列导航**：本文是 Agentic 系列的第 01 篇。
 >
-> - 下一篇：[02 | From Prompt to Agent](/blog/engineering/agentic/02-From%20Prompt%20to%20Agent)
+> - 下一篇：[02 | From Prompt to Agent](/engineering/agentic/02-从Prompt到Agent：为什么LLM本身不是Agent)
 > - 完整目录见第 5 节

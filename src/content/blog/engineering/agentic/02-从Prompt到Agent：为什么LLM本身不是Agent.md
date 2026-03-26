@@ -839,6 +839,6 @@ Agent 的最佳应用场景是：**任务需要多步推理、工具组合使用
 
 > **系列导航**：本文是 Agentic 系列的第 02 篇。
 >
-> - 上一篇：[01 | From LLM to Agent](/blog/engineering/agentic/01-From%20LLM%20to%20Agent)
-> - 下一篇：[03 | Agent vs Workflow vs Automation](/blog/engineering/agentic/03-Agent%20vs%20Workflow%20vs%20Automation)
-> - 完整目录：[01 | From LLM to Agent](/blog/engineering/agentic/01-From%20LLM%20to%20Agent)
+> - 上一篇：[01 | From LLM to Agent](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
+> - 下一篇：[03 | Agent vs Workflow vs Automation](/engineering/agentic/03-Agent、Workflow与Automation：选对抽象才是关键)
+> - 完整目录：[01 | From LLM to Agent](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

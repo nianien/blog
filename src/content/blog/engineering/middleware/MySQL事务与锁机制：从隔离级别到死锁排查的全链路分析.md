@@ -460,7 +460,7 @@ ON o.id = t.id;
 
 **核心原则**：缩短事务中的锁持有时间。扫描行数越少，持锁时间越短，并发冲突越少。
 
-> 关于分页查询优化的更多细节和性能对比，参见[《MySQL 索引原理与查询优化》](/blog/engineering/middleware/mysql索引原理与查询优化：从b+tree到explain的工程实践)中的"分页查询优化"章节。
+> 关于分页查询优化的更多细节和性能对比，参见[《MySQL 索引原理与查询优化》](/engineering/middleware/MySQL索引原理与查询优化：从B+Tree到EXPLAIN的工程实践)中的"分页查询优化"章节。
 
 ---
 
@@ -516,4 +516,4 @@ COMMIT;
 - 运行时有兜底机制（捕获死锁异常、自动重试）
 - 事后能排查根因（开启 `innodb_print_all_deadlocks`、定期分析 `SHOW ENGINE INNODB STATUS`）
 
-> 关于分布式场景下的事务方案（2PC、TCC、Saga、本地消息表等），参见[《分布式系统与事务：从基础到实践》](/blog/engineering/middleware/分布式系统与事务：从基础到实践)。
+> 关于分布式场景下的事务方案（2PC、TCC、Saga、本地消息表等），参见[《分布式系统与事务：从基础到实践》](/engineering/middleware/分布式系统与事务：从基础到实践)。

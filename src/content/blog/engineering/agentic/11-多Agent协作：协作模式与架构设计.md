@@ -1830,6 +1830,6 @@ Phase 3 知识路线：
 
 > **系列导航**：本文是 Agentic 系列的第 11 篇。
 >
-> - 上一篇：[10 | Planning and Reflection](/blog/engineering/agentic/10-Planning%20and%20Reflection)
-> - 下一篇：[12 | LangChain vs LangGraph](/blog/engineering/agentic/12-LangChain%20vs%20LangGraph)
-> - 完整目录：[01 | From LLM to Agent](/blog/engineering/agentic/01-From%20LLM%20to%20Agent)
+> - 上一篇：[10 | Planning and Reflection](/engineering/agentic/10-规划与反思：从ReAct到分层规划与自我纠错)
+> - 下一篇：[12 | LangChain vs LangGraph](/engineering/agentic/12-LangChain与LangGraph：框架的价值与边界)
+> - 完整目录：[01 | From LLM to Agent](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

@@ -2054,6 +2054,6 @@ Tool Calling 的本质是一个精心设计的 **协议**：
 
 > **系列导航**：本文是 Agentic 系列的第 05 篇。
 >
-> - 上一篇：[04 | The Agent Control Loop](/blog/engineering/agentic/04-The%20Agent%20Control%20Loop)
-> - 下一篇：[06 | Prompt Engineering for Agents](/blog/engineering/agentic/06-Prompt%20Engineering%20for%20Agents)
-> - 完整目录：[01 | From LLM to Agent](/blog/engineering/agentic/01-From%20LLM%20to%20Agent)
+> - 上一篇：[04 | The Agent Control Loop](/engineering/agentic/04-Agent控制循环：运行时的核心抽象)
+> - 下一篇：[06 | Prompt Engineering for Agents](/engineering/agentic/06-面向Agent的提示词工程)
+> - 完整目录：[01 | From LLM to Agent](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
