@@ -55,6 +55,9 @@ const author = frontmatter.author || 'skyfalling'
 const description = frontmatter.description || ''
 const cover = frontmatter.cover as string | undefined
 
+// 去掉正文开头的一级标题（已从 frontmatter 中获取，避免重复）
+const mdBody = mdContent.replace(/^\s*#\s+.+\n+/, '')
+
 console.log(`📄 文章: ${title}`)
 console.log(`✍️  作者: ${author}`)
 console.log(`🔗 原文: ${articleUrl}`)
@@ -158,7 +161,7 @@ const marked = new Marked({
   },
 })
 
-let html = marked.parse(mdContent) as string
+let html = marked.parse(mdBody) as string
 
 // 微信不允许外部链接，将 <a> 标签替换为纯文本
 html = html.replace(/<a\s[^>]*>(.*?)<\/a>/g, '$1')
@@ -249,7 +252,7 @@ async function getThumbMediaId(): Promise<string> {
   const tags = (frontmatter.tags as string[]) || []
   console.log('🖼️  自动生成封面图...')
   const coverBuf = generateCover(title, tags)
-  const tmpCoverPath = resolve(__dirname, '../../out/wx/.wx-cover-tmp.png')
+  const tmpCoverPath = resolve(__dirname, '../../wx_out/.wx-cover-tmp.png')
   mkdirSync(dirname(tmpCoverPath), { recursive: true })
   writeFileSync(tmpCoverPath, coverBuf)
   const { media_id } = await uploadImage(tmpCoverPath)
@@ -259,7 +262,7 @@ async function getThumbMediaId(): Promise<string> {
 // ─── 预览模式 ───
 
 if (previewMode) {
-  const outDir = resolve(__dirname, '../../out/wx')
+  const outDir = resolve(__dirname, '../../wx_out')
   mkdirSync(outDir, { recursive: true })
   const outFileName = basename(absolutePath, '.md') + '.html'
   const outPath = resolve(outDir, outFileName)

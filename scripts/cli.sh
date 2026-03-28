@@ -78,6 +78,13 @@ cmd_clean() {
   echo "✅ 清理完成"
 }
 
+cmd_wx_build() {
+  echo "📦 构建微信云函数 zip 包..."
+  cd scripts/wx/scf
+  zip -j wx-proxy.zip index.js form-data-lite.js package.json
+  echo "✅ 构建完成: scripts/wx/scf/wx-proxy.zip"
+}
+
 cmd_wx_preview() {
   if [ -z "$1" ]; then
     echo "用法: $0 wx:preview <md文件路径>"
@@ -112,6 +119,7 @@ cmd_help() {
   deploy           构建并部署到 GitHub Pages
 
 微信公众号:
+  wx:build         构建云函数 zip 包
   wx:preview <md>  生成微信排版预览 HTML
   wx:publish <md>  发布文章到公众号草稿箱
 
@@ -131,6 +139,7 @@ case "${1:-help}" in
   preview)    cmd_preview ;;
   deploy)     cmd_deploy ;;
   clean)      cmd_clean ;;
+  wx:build)   cmd_wx_build ;;
   wx:preview) cmd_wx_preview "$2" ;;
   wx:publish) cmd_wx_publish "$2" ;;
   help|--help|-h) cmd_help ;;

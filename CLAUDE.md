@@ -78,7 +78,8 @@ author: "skyfalling"              # 固定作者名
 
 ## 文章写作风格
 
-- 面向技术从业者时：包含代码片段、架构图（ASCII）、技术栈对比表
+- 面向技术从业者时：包含代码片段、架构图（SVG）、技术栈对比表
+- 架构图、流程图等使用 **SVG 文件**而非 ASCII art，SVG 文件存放在 `public/images/blog/` 目录下，Markdown 中用 `![描述](/images/blog/xxx.svg)` 引用
 - 善用 Markdown 表格、代码块、引用块增强可读性
 - 每个大章节末尾用**一句话总结**收束
 - 使用"Normal vs Better"对比模式而非"Wrong vs Correct"

@@ -53,7 +53,7 @@ async function handleCreateDraft(params) {
       content: params.content,
       thumb_media_id: params.thumb_media_id,
       content_source_url: params.content_source_url || '',
-      need_open_comment: 0,
+      need_open_comment: 1,
       only_fans_can_comment: 0,
     }],
   }

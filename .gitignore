@@ -86,5 +86,6 @@ temp/
 # 微信公众号发布工具
 .env.wx
 .wx-token.json
+wx_out/
 
 /scripts/wx/scf/wx-proxy.zip
