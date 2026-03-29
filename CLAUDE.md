@@ -84,3 +84,33 @@ author: "skyfalling"              # 固定作者名
 - 每个大章节末尾用**一句话总结**收束
 - 使用"Normal vs Better"对比模式而非"Wrong vs Correct"
 - 中文为主，技术术语保留英文（如 Pipeline、State Management）
+
+## 代码块使用规范
+
+**代码块（\`\`\`）仅用于真正的代码和配置**，包括：YAML/JSON/SQL/Python 等编程语言代码、配置文件、Prompt 模板、伪代码（含 `while`/`if` 等语法结构的）。
+
+**以下内容禁止使用代码块**，应使用 Markdown 原生格式：
+
+- 纯文本列表、分类罗列 → 使用 **Markdown 表格**
+- 指标体系、分级策略、配额层次 → 使用 **Markdown 表格**
+- 流程步骤（无代码语法的）→ 使用 **Markdown 表格**（阶段/动作列）
+- 对比信息（前后对比、方案对比）→ 使用 **Markdown 表格**
+- ASCII art 图形（流程图、架构图、树形图）→ 转为 **SVG 文件**
+
+简单判断标准：如果代码块里的内容去掉缩进后就是普通中文句子和列表，那就不应该用代码块。
+
+## SVG 图形规范
+
+SVG 文件存放在 `public/images/blog/{article-slug}/` 目录，命名格式 `{序号}-{描述}.svg`。
+
+SVG 绘制约定：
+
+- 字体：`font-family="system-ui, -apple-system, 'PingFang SC', sans-serif"`，代码类文本用 `'SF Mono', 'Menlo', monospace`
+- 圆角矩形：`rx="6"` 或 `rx="8"`
+- 描边：`stroke-width="1.5"`
+- 配色：浅色填充 + 深色描边（如 `fill="#DBEAFE" stroke="#3B82F6"`）
+- **不使用 `<marker>` 元素**（博客渲染环境不支持），箭头用 `<polygon>` 三角形实现
+- 不使用 CSS `<style>` 块，所有样式用内联属性
+- 所有元素必须在 `viewBox` 范围内，不允许溢出
+- 连接线使用直线（水平/垂直），避免对角线连接
+- 多个并排矩形之间留足间距，不允许重叠

@@ -1,0 +1,88 @@
+<svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="260" y="25" font-size="18" font-weight="bold" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">Tool Execution Security Pipeline</text>
+
+  <!-- Start: LLM Output -->
+  <rect x="160" y="45" width="200" height="40" fill="#F3F4F6" stroke="#4B5563" stroke-width="1.5" rx="8"/>
+  <text x="260" y="72" font-size="13" font-weight="600" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">LLM 输出 tool_call</text>
+
+  <!-- Arrow down -->
+  <line x1="260" y1="85" x2="260" y2="110" stroke="#666" stroke-width="1.5"/>
+  <polygon points="256,106 260,115 264,106" fill="#666"/>
+
+  <!-- Step 1: Permission Check -->
+  <circle cx="100" cy="130" r="16" fill="#3B82F6" stroke="#1E40AF" stroke-width="1.5"/>
+  <text x="100" y="137" font-size="12" font-weight="bold" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">1</text>
+
+  <rect x="130" y="115" width="250" height="30" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" rx="6"/>
+  <text x="140" y="136" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">权限检查：该 Agent 是否有权调用此工具？</text>
+
+  <!-- Rejection branch 1 -->
+  <line x1="380" y1="130" x2="410" y2="130" stroke="#EF4444" stroke-width="1.5"/>
+  <polygon points="406,126 415,130 406,134" fill="#EF4444"/>
+  <text x="420" y="135" font-size="11" fill="#DC2626" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">否 → 拒绝</text>
+
+  <!-- Arrow down -->
+  <line x1="260" y1="145" x2="260" y2="170" stroke="#666" stroke-width="1.5"/>
+  <polygon points="256,166 260,175 264,166" fill="#666"/>
+
+  <!-- Step 2: Parameter Validation -->
+  <circle cx="100" cy="190" r="16" fill="#10B981" stroke="#047857" stroke-width="1.5"/>
+  <text x="100" y="197" font-size="12" font-weight="bold" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">2</text>
+
+  <rect x="130" y="175" width="250" height="30" fill="#DCFCE7" stroke="#10B981" stroke-width="1.5" rx="6"/>
+  <text x="140" y="196" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">参数校验：参数是否符合 Schema？</text>
+
+  <!-- Rejection branch 2 -->
+  <line x1="380" y1="190" x2="410" y2="190" stroke="#EF4444" stroke-width="1.5"/>
+  <polygon points="406,186 415,190 406,194" fill="#EF4444"/>
+  <text x="420" y="195" font-size="11" fill="#DC2626" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">否 → 错误</text>
+
+  <!-- Arrow down -->
+  <line x1="260" y1="205" x2="260" y2="230" stroke="#666" stroke-width="1.5"/>
+  <polygon points="256,226 260,235 264,226" fill="#666"/>
+
+  <!-- Step 3: Risk Assessment -->
+  <circle cx="100" cy="250" r="16" fill="#F59E0B" stroke="#D97706" stroke-width="1.5"/>
+  <text x="100" y="257" font-size="12" font-weight="bold" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">3</text>
+
+  <rect x="130" y="235" width="250" height="30" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5" rx="6"/>
+  <text x="140" y="256" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">风险评估：是否为敏感操作？</text>
+
+  <!-- Risk branch -->
+  <line x1="380" y1="250" x2="410" y2="250" stroke="#F59E0B" stroke-width="1.5"/>
+  <polygon points="406,246 415,250 406,254" fill="#F59E0B"/>
+  <text x="420" y="255" font-size="11" fill="#D97706" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">是 → 审批队列</text>
+
+  <!-- Arrow down -->
+  <line x1="260" y1="265" x2="260" y2="290" stroke="#666" stroke-width="1.5"/>
+  <polygon points="256,286 260,295 264,286" fill="#666"/>
+
+  <!-- Step 4: Sandbox Execution -->
+  <circle cx="100" cy="310" r="16" fill="#8B5CF6" stroke="#6D28D9" stroke-width="1.5"/>
+  <text x="100" y="317" font-size="12" font-weight="bold" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">4</text>
+
+  <rect x="130" y="295" width="250" height="30" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5" rx="6"/>
+  <text x="140" y="316" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">沙箱执行：在隔离环境中执行工具</text>
+
+  <!-- Timeout branch -->
+  <line x1="380" y1="310" x2="410" y2="310" stroke="#EF4444" stroke-width="1.5"/>
+  <polygon points="406,306 415,310 406,314" fill="#EF4444"/>
+  <text x="420" y="315" font-size="11" fill="#DC2626" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">超时 → 终止</text>
+
+  <!-- Arrow down -->
+  <line x1="260" y1="325" x2="260" y2="350" stroke="#666" stroke-width="1.5"/>
+  <polygon points="256,346 260,355 264,346" fill="#666"/>
+
+  <!-- Step 5: Result Filtering -->
+  <circle cx="100" cy="370" r="16" fill="#EC4899" stroke="#BE185D" stroke-width="1.5"/>
+  <text x="100" y="377" font-size="12" font-weight="bold" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">5</text>
+
+  <rect x="130" y="355" width="250" height="30" fill="#FCE7F3" stroke="#EC4899" stroke-width="1.5" rx="6"/>
+  <text x="140" y="376" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">结果过滤：检查工具返回是否包含敏感信息</text>
+
+  <!-- Final output -->
+  <line x1="380" y1="370" x2="410" y2="370" stroke="#10B981" stroke-width="1.5"/>
+  <polygon points="406,366 415,370 406,374" fill="#10B981"/>
+  <text x="420" y="375" font-size="11" fill="#047857" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">脱敏返回</text>
+</svg>

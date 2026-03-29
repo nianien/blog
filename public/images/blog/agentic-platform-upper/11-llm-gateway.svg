@@ -1,0 +1,54 @@
+<svg viewBox="0 0 440 330" xmlns="http://www.w3.org/2000/svg">
+  <!-- Agent Runtime -->
+  <rect x="100" y="10" width="240" height="38" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" rx="6"/>
+  <text x="220" y="35" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">Agent Runtime</text>
+
+  <!-- Label: unified interface -->
+  <text x="220" y="64" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#64748b" text-anchor="middle">统一接口: llm.chat(model, messages, tools)</text>
+
+  <!-- Arrow down -->
+  <line x1="220" y1="70" x2="220" y2="88" stroke="#666" stroke-width="1.5"/>
+  <polygon points="216,84 220,92 224,84" fill="#666"/>
+
+  <!-- LLM Gateway outer container -->
+  <rect x="30" y="92" width="380" height="230" fill="#F8FAFC" stroke="#475569" stroke-width="1.5" rx="8"/>
+  <text x="50" y="114" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#1e293b">LLM Gateway</text>
+
+  <!-- Router -->
+  <rect x="50" y="125" width="100" height="40" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" rx="6"/>
+  <text x="100" y="150" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Router</text>
+
+  <!-- Limiter -->
+  <rect x="170" y="125" width="100" height="40" fill="#FCE7F3" stroke="#EC4899" stroke-width="1.5" rx="6"/>
+  <text x="220" y="150" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#9d174d" text-anchor="middle">Limiter</text>
+
+  <!-- Cache -->
+  <rect x="290" y="125" width="100" height="40" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5" rx="6"/>
+  <text x="340" y="150" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Cache</text>
+
+  <!-- Vertical lines down from each box -->
+  <line x1="100" y1="165" x2="100" y2="185" stroke="#666" stroke-width="1.5"/>
+  <polygon points="96,181 100,189 104,181" fill="#666"/>
+  <line x1="220" y1="165" x2="220" y2="185" stroke="#666" stroke-width="1.5"/>
+  <polygon points="216,181 220,189 224,181" fill="#666"/>
+  <line x1="340" y1="165" x2="340" y2="185" stroke="#666" stroke-width="1.5"/>
+  <polygon points="336,181 340,189 344,181" fill="#666"/>
+
+  <!-- Provider Adapters sub-container -->
+  <rect x="50" y="190" width="340" height="120" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5" rx="6"/>
+  <text x="220" y="212" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Provider Adapters</text>
+
+  <!-- OpenAI -->
+  <rect x="65" y="225" width="90" height="36" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" rx="6"/>
+  <text x="110" y="248" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">OpenAI</text>
+
+  <!-- Claude -->
+  <rect x="175" y="225" width="90" height="36" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5" rx="6"/>
+  <text x="220" y="248" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#5b21b6" text-anchor="middle">Claude</text>
+
+  <!-- Local -->
+  <rect x="285" y="225" width="90" height="36" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5" rx="6"/>
+  <text x="330" y="248" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">Local</text>
+
+  <!-- Vertical lines from each top component into Provider Adapters are already the arrows above -->
+</svg>

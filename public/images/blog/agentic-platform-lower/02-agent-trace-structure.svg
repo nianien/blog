@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 420">
+  <!-- ===== 传统微服务 Trace — Waterfall ===== -->
+  <text x="20" y="20" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#1e293b">传统微服务 Trace</text>
+  <text x="200" y="20" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#94a3b8">总耗时 ~120ms，链路确定，Span 数量固定</text>
+
+  <!-- 时间轴刻度 -->
+  <line x1="120" y1="30" x2="540" y2="30" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="120" y="28" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">0ms</text>
+  <text x="260" y="28" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">40ms</text>
+  <text x="400" y="28" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">80ms</text>
+  <text x="540" y="28" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">120ms</text>
+
+  <!-- Request (全宽) -->
+  <text x="15" y="48" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569">Request</text>
+  <rect x="120" y="37" width="420" height="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1" rx="3"/>
+
+  <!-- Service A -->
+  <text x="15" y="68" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569">Service A</text>
+  <rect x="130" y="57" width="175" height="16" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1" rx="3"/>
+  <text x="218" y="69" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#1e40af" text-anchor="middle">50ms</text>
+
+  <!-- Service B -->
+  <text x="15" y="88" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569">Service B</text>
+  <rect x="310" y="77" width="140" height="16" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1" rx="3"/>
+  <text x="380" y="89" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#1e40af" text-anchor="middle">40ms</text>
+
+  <!-- Database -->
+  <text x="15" y="108" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569">Database</text>
+  <rect x="320" y="97" width="70" height="16" fill="#BFDBFE" stroke="#3B82F6" stroke-width="1" rx="3"/>
+  <text x="355" y="109" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#1e40af" text-anchor="middle">20ms</text>
+
+  <!-- ===== 分隔线 ===== -->
+  <line x1="15" y1="130" x2="565" y2="130" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ===== Agent Trace — Waterfall ===== -->
+  <text x="20" y="155" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Agent Trace</text>
+  <text x="130" y="155" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#94a3b8">总耗时 ~25s，路径不确定，Span 数量动态</text>
+
+  <!-- 时间轴刻度 -->
+  <line x1="120" y1="165" x2="540" y2="165" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="120" y="163" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">0s</text>
+  <text x="204" y="163" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">5s</text>
+  <text x="288" y="163" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">10s</text>
+  <text x="372" y="163" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">15s</text>
+  <text x="456" y="163" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">20s</text>
+  <text x="540" y="163" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#94a3b8" text-anchor="middle">25s</text>
+
+  <!-- Session Span (全宽) -->
+  <text x="15" y="183" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" font-weight="bold" fill="#0369a1">Session</text>
+  <rect x="120" y="172" width="420" height="16" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1" rx="3"/>
+
+  <!-- Turn 1 Span -->
+  <text x="25" y="203" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" font-weight="bold" fill="#1e40af">Turn 1</text>
+  <rect x="120" y="192" width="134" height="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1" rx="3"/>
+  <text x="187" y="204" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#1e40af" text-anchor="middle">8s</text>
+
+  <!-- Context Assembly 1 -->
+  <text x="35" y="223" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#92400e">Context</text>
+  <rect x="120" y="212" width="5" height="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" rx="2"/>
+
+  <!-- LLM Call 1 -->
+  <text x="35" y="243" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#166534">LLM Call</text>
+  <rect x="125" y="232" width="30" height="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="1" rx="3"/>
+  <text x="170" y="244" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#166534">gpt-4o 1.8s → tool_call</text>
+
+  <!-- Tool Call 1 -->
+  <text x="35" y="263" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#6b21a8">Tool Call</text>
+  <rect x="155" y="252" width="15" height="16" fill="#EDE9FE" stroke="#A855F7" stroke-width="1" rx="3"/>
+  <text x="185" y="264" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#6b21a8">order-query 0.3s</text>
+
+  <!-- LLM Call 2 (final) -->
+  <text x="35" y="283" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#166534">LLM Call</text>
+  <rect x="170" y="272" width="25" height="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="1" rx="3"/>
+  <text x="210" y="284" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#166534">1.5s → final_answer</text>
+
+  <!-- Turn 2 Span -->
+  <text x="25" y="308" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" font-weight="bold" fill="#1e40af">Turn 2</text>
+  <rect x="260" y="297" width="218" height="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1" rx="3"/>
+  <text x="369" y="309" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#1e40af" text-anchor="middle">13s</text>
+
+  <!-- Context Assembly 2 -->
+  <text x="35" y="328" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#92400e">Context</text>
+  <rect x="260" y="317" width="5" height="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" rx="2"/>
+
+  <!-- LLM Call 3 -->
+  <text x="35" y="348" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#166534">LLM Call</text>
+  <rect x="265" y="337" width="35" height="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="1" rx="3"/>
+  <text x="315" y="349" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#166534">gpt-4o 2.1s → tool_call</text>
+
+  <!-- Tool Call 2 + Retry -->
+  <text x="35" y="368" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#6b21a8">Tool Call</text>
+  <rect x="300" y="357" width="40" height="16" fill="#EDE9FE" stroke="#A855F7" stroke-width="1" rx="3"/>
+  <rect x="342" y="357" width="25" height="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="1" rx="3"/>
+  <text x="385" y="369" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#6b21a8">refund-api 1.2s + retry 0.8s</text>
+
+  <!-- LLM Call 4 (final) -->
+  <text x="35" y="388" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#166534">LLM Call</text>
+  <rect x="370" y="377" width="30" height="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="1" rx="3"/>
+  <text x="415" y="389" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#166534">1.8s → final_answer</text>
+
+  <!-- 底部注释 -->
+  <text x="120" y="412" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#64748b">Tokens: 5200 in + 850 out | Cost: $0.032 | Tools: 2 calls | Model: gpt-4o</text>
+</svg>
