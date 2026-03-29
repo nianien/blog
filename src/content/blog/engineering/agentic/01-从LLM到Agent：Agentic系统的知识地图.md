@@ -61,13 +61,7 @@ f(prompt: str, context: str) → response: str
 
 这不是随意的拼凑，而是对上一节五个局限的逐一回应：
 
-```
-局限：知识静态     → 解法：Memory（外部知识 + RAG）
-局限：无法行动     → 解法：Tools（函数调用 + 外部接口）
-局限：记忆易失     → 解法：Memory（会话状态 + 持久化记忆）
-局限：单步思维     → 解法：Planner（任务分解 + 多步规划）
-局限：不会反思     → 解法：Runtime（控制循环 + 反思机制）
-```
+![LLM 五大局限与 Agent 组件的对应关系](/images/blog/agentic-01/llm-limitations-solutions.svg)
 
 每个组件都有明确的职责：
 
@@ -81,13 +75,7 @@ f(prompt: str, context: str) → response: str
 
 用一个类比来强化理解：
 
-```
-LLM  ≈ CPU             —— 强大的计算单元，但单独无法工作
-Agent ≈ Operating System —— 围绕 CPU 构建的完整运行时
-
-LLM  是 Pure Function   —— 相同输入，相同输出，无副作用
-Agent 是 Stateful System —— 有状态、有副作用、有执行循环
-```
+![LLM vs Agent 类比](/images/blog/agentic-01/llm-vs-agent-analogy.svg)
 
 这个区分极其重要。很多团队把 LLM 当 Agent 用（期望一次 prompt 解决所有问题），或者把 Agent 当 LLM 用（忽略控制循环和状态管理），都会走进死胡同。
 
