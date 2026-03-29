@@ -1,82 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"/>
-    </marker>
-    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#059669"/>
-    </marker>
-    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
 
   <!-- Title -->
   <rect x="200" y="15" width="300" height="40" rx="8" fill="#1e293b"/>
   <text x="350" y="41" text-anchor="middle" fill="white" font-size="16" font-weight="600">Agent Control Loop</text>
 
-  <!-- Observe -->
-  <rect x="270" y="80" width="160" height="60" rx="12" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <!-- === Nodes === -->
+  <rect x="270" y="80" width="160" height="60" rx="12" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
   <text x="350" y="105" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">Observe</text>
   <text x="350" y="125" text-anchor="middle" fill="#1e40af" font-size="12">感知输入</text>
 
-  <!-- Think -->
-  <rect x="490" y="175" width="160" height="60" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="490" y="175" width="160" height="60" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
   <text x="570" y="200" text-anchor="middle" fill="#3730a3" font-size="15" font-weight="600">Think</text>
   <text x="570" y="220" text-anchor="middle" fill="#3730a3" font-size="12">理解意图</text>
 
-  <!-- Plan -->
-  <rect x="490" y="280" width="160" height="60" rx="12" fill="#fae8ff" stroke="#a855f7" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="490" y="280" width="160" height="60" rx="12" fill="#fae8ff" stroke="#a855f7" stroke-width="2"/>
   <text x="570" y="305" text-anchor="middle" fill="#7e22ce" font-size="15" font-weight="600">Plan</text>
   <text x="570" y="325" text-anchor="middle" fill="#7e22ce" font-size="12">制定计划</text>
 
-  <!-- Act -->
-  <rect x="270" y="380" width="160" height="60" rx="12" fill="#dcfce7" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="270" y="380" width="160" height="60" rx="12" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
   <text x="350" y="405" text-anchor="middle" fill="#15803d" font-size="15" font-weight="600">Act</text>
   <text x="350" y="425" text-anchor="middle" fill="#15803d" font-size="12">执行动作</text>
 
-  <!-- Reflect -->
-  <rect x="50" y="280" width="160" height="60" rx="12" fill="#fef9c3" stroke="#eab308" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="50" y="280" width="160" height="60" rx="12" fill="#fef9c3" stroke="#eab308" stroke-width="2"/>
   <text x="130" y="305" text-anchor="middle" fill="#a16207" font-size="15" font-weight="600">Reflect</text>
   <text x="130" y="325" text-anchor="middle" fill="#a16207" font-size="12">评估结果</text>
 
-  <!-- Update -->
-  <rect x="50" y="175" width="160" height="60" rx="12" fill="#ffedd5" stroke="#f97316" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="50" y="175" width="160" height="60" rx="12" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
   <text x="130" y="200" text-anchor="middle" fill="#c2410c" font-size="15" font-weight="600">Update</text>
   <text x="130" y="220" text-anchor="middle" fill="#c2410c" font-size="12">更新状态</text>
 
-  <!-- Arrows: Observe → Think -->
-  <line x1="430" y1="110" x2="490" y2="185" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- === Arrows (computed with Python for precise orientation) === -->
 
-  <!-- Think → Plan -->
-  <line x1="570" y1="235" x2="570" y2="280" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- 1: Observe → Think -->
+  <line x1="430" y1="120" x2="486" y2="175" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="490,178 479,175 486,167" fill="#475569"/>
 
-  <!-- Plan → Act -->
-  <line x1="490" y1="320" x2="430" y2="390" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- 2: Think → Plan -->
+  <line x1="570" y1="235" x2="570" y2="276" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="570,280 565,270 575,270" fill="#475569"/>
 
-  <!-- Act → Reflect -->
-  <line x1="270" y1="410" x2="210" y2="320" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- 3: Plan → Act -->
+  <line x1="490" y1="330" x2="434" y2="382" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="430,385 434,375 441,382" fill="#475569"/>
 
-  <!-- Reflect → Update -->
-  <line x1="130" y1="280" x2="130" y2="235" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- 4: Act → Reflect -->
+  <line x1="270" y1="400" x2="214" y2="339" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="210,335 220,339 213,346" fill="#475569"/>
 
-  <!-- Update → Observe -->
-  <line x1="210" y1="195" x2="270" y2="120" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- 5: Reflect → Update -->
+  <line x1="130" y1="280" x2="130" y2="239" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="130,235 135,245 125,245" fill="#475569"/>
 
-  <!-- Center cycle icon -->
-  <circle cx="350" cy="240" r="30" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="6,4"/>
-  <path d="M 340 225 A 15 15 0 1 1 360 225" fill="none" stroke="#059669" stroke-width="2.5" marker-end="url(#arrow-green)"/>
-  <text x="350" y="250" text-anchor="middle" fill="#059669" font-size="10" font-weight="600">LOOP</text>
+  <!-- 6: Update → Observe -->
+  <line x1="210" y1="185" x2="266" y2="134" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="270,130 266,140 259,133" fill="#475569"/>
+
+  <!-- === Center: clockwise circular arrow (arc ~340°, gap ~20°) === -->
+  <path d="M 367.2,215.4 A 30,30 0 1,1 357.8,211.0" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Arrowhead at arc end, tangent to clockwise direction -->
+  <polygon points="358,211 347,213 350,203" fill="#059669"/>
+  <text x="350" y="248" text-anchor="middle" fill="#059669" font-size="10" font-weight="600">LOOP</text>
 
   <!-- Step numbers -->
-  <circle cx="450" cy="140" r="12" fill="#3b82f6"/><text x="450" y="144" text-anchor="middle" fill="white" font-size="10" font-weight="700">1</text>
-  <circle cx="590" cy="255" r="12" fill="#6366f1"/><text x="590" y="259" text-anchor="middle" fill="white" font-size="10" font-weight="700">2</text>
-  <circle cx="465" cy="360" r="12" fill="#a855f7"/><text x="465" y="364" text-anchor="middle" fill="white" font-size="10" font-weight="700">3</text>
-  <circle cx="235" cy="370" r="12" fill="#22c55e"/><text x="235" y="374" text-anchor="middle" fill="white" font-size="10" font-weight="700">4</text>
-  <circle cx="110" cy="265" r="12" fill="#eab308"/><text x="110" y="269" text-anchor="middle" fill="white" font-size="10" font-weight="700">5</text>
-  <circle cx="175" cy="150" r="12" fill="#f97316"/><text x="175" y="154" text-anchor="middle" fill="white" font-size="10" font-weight="700">6</text>
+  <circle cx="465" cy="148" r="12" fill="#3b82f6"/>
+  <text x="465" y="152" text-anchor="middle" fill="white" font-size="10" font-weight="700">1</text>
 
-  <!-- Footer note -->
+  <circle cx="590" cy="255" r="12" fill="#6366f1"/>
+  <text x="590" y="259" text-anchor="middle" fill="white" font-size="10" font-weight="700">2</text>
+
+  <circle cx="468" cy="358" r="12" fill="#a855f7"/>
+  <text x="468" y="362" text-anchor="middle" fill="white" font-size="10" font-weight="700">3</text>
+
+  <circle cx="238" cy="372" r="12" fill="#22c55e"/>
+  <text x="238" y="376" text-anchor="middle" fill="white" font-size="10" font-weight="700">4</text>
+
+  <circle cx="110" cy="265" r="12" fill="#eab308"/>
+  <text x="110" y="269" text-anchor="middle" fill="white" font-size="10" font-weight="700">5</text>
+
+  <circle cx="230" cy="155" r="12" fill="#f97316"/>
+  <text x="230" y="159" text-anchor="middle" fill="white" font-size="10" font-weight="700">6</text>
+
+  <!-- Footer -->
   <text x="350" y="475" text-anchor="middle" fill="#94a3b8" font-size="11">每次循环迭代推进任务，直到满足退出条件</text>
   <text x="350" y="495" text-anchor="middle" fill="#94a3b8" font-size="11">退出策略：Max Iterations / Goal Completion / Token Budget</text>
 </svg>
