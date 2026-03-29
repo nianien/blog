@@ -1,0 +1,84 @@
+<svg width="700" height="350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="700" height="350" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="350" y="30" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+    Re-embedding 成本对比
+  </text>
+
+  <!-- Column Headers -->
+  <rect x="40" y="70" width="220" height="40" fill="#E65100" rx="6" />
+  <rect x="260" y="70" width="200" height="40" fill="#E65100" rx="6" />
+  <rect x="460" y="70" width="200" height="40" fill="#E65100" rx="6" />
+
+  <text x="150" y="95" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    Re-embedding 策略
+  </text>
+  <text x="360" y="95" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    全量成本/次
+  </text>
+  <text x="560" y="95" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    年成本(52周)
+  </text>
+
+  <!-- Row 1 -->
+  <rect x="40" y="110" width="220" height="60" fill="#FFF3E0" stroke="#E65100" stroke-width="1" rx="4" />
+  <rect x="260" y="110" width="200" height="60" fill="#FFF3E0" stroke="#E65100" stroke-width="1" rx="4" />
+  <rect x="460" y="110" width="200" height="60" fill="#FFF3E0" stroke="#E65100" stroke-width="1" rx="4" />
+
+  <text x="150" y="140" font-size="12" text-anchor="middle" fill="#333">
+    每周一次
+  </text>
+  <text x="360" y="140" font-size="12" text-anchor="middle" fill="#333">
+    ~$0.04
+  </text>
+  <text x="560" y="140" font-size="12" text-anchor="middle" fill="#333">
+    ~$2.08
+  </text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="170" width="220" height="60" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1" rx="4" />
+  <rect x="260" y="170" width="200" height="60" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1" rx="4" />
+  <rect x="460" y="170" width="200" height="60" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1" rx="4" />
+
+  <text x="150" y="200" font-size="12" text-anchor="middle" fill="#333">
+    每天一次
+  </text>
+  <text x="150" y="217" font-size="10" text-anchor="middle" fill="#666">
+    (增量)
+  </text>
+  <text x="360" y="200" font-size="12" text-anchor="middle" fill="#333">
+    ~$0.0002
+  </text>
+  <text x="560" y="200" font-size="12" text-anchor="middle" fill="#333">
+    ~$0.07
+  </text>
+
+  <!-- Row 3 -->
+  <rect x="40" y="230" width="220" height="60" fill="#E3F2FD" stroke="#1565C0" stroke-width="1" rx="4" />
+  <rect x="260" y="230" width="200" height="60" fill="#E3F2FD" stroke="#1565C0" stroke-width="1" rx="4" />
+  <rect x="460" y="230" width="200" height="60" fill="#E3F2FD" stroke="#1565C0" stroke-width="1" rx="4" />
+
+  <text x="150" y="260" font-size="12" text-anchor="middle" fill="#333">
+    从不
+  </text>
+  <text x="150" y="277" font-size="10" text-anchor="middle" fill="#666">
+    (只初始化)
+  </text>
+  <text x="360" y="260" font-size="12" text-anchor="middle" fill="#333">
+    ~$0.04
+  </text>
+  <text x="360" y="277" font-size="10" text-anchor="middle" fill="#666">
+    (一次)
+  </text>
+  <text x="560" y="260" font-size="12" text-anchor="middle" fill="#333">
+    ~$0.04
+  </text>
+
+  <!-- Note -->
+  <rect x="40" y="310" width="620" height="30" fill="#FFFACD" stroke="#999" stroke-width="1" rx="4" />
+  <text x="350" y="332" font-size="10" text-anchor="middle" fill="#333">
+    注：成本估算基于 OpenAI text-embedding-3-small ($0.02 per 1M tokens)
+  </text>
+</svg>

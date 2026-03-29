@@ -1,0 +1,98 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, sans-serif; }
+      .title { font-size: 14px; font-weight: bold; fill: #333; }
+      .method { font-size: 12px; font-weight: bold; fill: #333; }
+      .score { font-size: 11px; fill: #333; }
+      .note { font-size: 10px; fill: #666; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="450" y="35" class="title" text-anchor="middle">传统排序 vs Edges-First 排序</text>
+
+  <!-- ===== TRADITIONAL SORT (LEFT) ===== -->
+  <g id="traditional">
+    <!-- Heading -->
+    <text x="225" y="75" class="method" text-anchor="middle">传统排序 (按分数递减)</text>
+
+    <!-- Items -->
+    <g id="trad-item-1">
+      <rect x="100" y="100" width="250" height="50" fill="#e3f2fd" stroke="#3498db" stroke-width="2" rx="4"/>
+      <text x="120" y="125" class="score">[score=0.95]</text>
+      <text x="385" y="125" font-size="10" fill="#27ae60" font-weight="bold">← 被充分利用</text>
+    </g>
+
+    <g id="trad-item-2">
+      <rect x="100" y="155" width="250" height="50" fill="#e3f2fd" stroke="#3498db" stroke-width="2" rx="4"/>
+      <text x="120" y="180" class="score">[score=0.92]</text>
+    </g>
+
+    <g id="trad-item-3">
+      <rect x="100" y="210" width="250" height="50" fill="#fff3cd" stroke="#f39c12" stroke-width="2" rx="4"/>
+      <text x="120" y="235" class="score">[score=0.88]</text>
+      <text x="385" y="235" font-size="10" fill="#e74c3c" font-weight="bold">← 在中间，可能被忽视</text>
+    </g>
+
+    <g id="trad-item-4">
+      <rect x="100" y="265" width="250" height="50" fill="#e3f2fd" stroke="#3498db" stroke-width="2" rx="4"/>
+      <text x="120" y="290" class="score">[score=0.85]</text>
+    </g>
+
+    <g id="trad-item-5">
+      <rect x="100" y="320" width="250" height="50" fill="#e3f2fd" stroke="#3498db" stroke-width="2" rx="4"/>
+      <text x="120" y="345" class="score">[score=0.80]</text>
+    </g>
+  </g>
+
+  <!-- ===== EDGES-FIRST SORT (RIGHT) ===== -->
+  <g id="edges-first">
+    <!-- Heading -->
+    <text x="675" y="75" class="method" text-anchor="middle">Edges-First 排序</text>
+
+    <!-- Items -->
+    <g id="edge-item-1">
+      <rect x="550" y="100" width="250" height="50" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" rx="4"/>
+      <text x="570" y="125" class="score">[score=0.95]</text>
+      <text x="820" y="125" font-size="10" fill="#27ae60" font-weight="bold">← 最开头</text>
+    </g>
+
+    <g id="edge-item-2">
+      <rect x="550" y="155" width="250" height="50" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" rx="4"/>
+      <text x="570" y="180" class="score">[score=0.80]</text>
+      <text x="820" y="180" font-size="10" fill="#27ae60" font-weight="bold">← 最后面 (recency)</text>
+    </g>
+
+    <g id="edge-item-3">
+      <rect x="550" y="210" width="250" height="50" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" rx="4"/>
+      <text x="570" y="235" class="score">[score=0.92]</text>
+      <text x="820" y="235" font-size="10" fill="#27ae60" font-weight="bold">← 接近开头</text>
+    </g>
+
+    <g id="edge-item-4">
+      <rect x="550" y="265" width="250" height="50" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" rx="4"/>
+      <text x="570" y="290" class="score">[score=0.85]</text>
+    </g>
+
+    <g id="edge-item-5">
+      <rect x="550" y="320" width="250" height="50" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" rx="4"/>
+      <text x="570" y="345" class="score">[score=0.88]</text>
+      <text x="820" y="345" font-size="10" fill="#27ae60" font-weight="bold">← 中间但左移</text>
+    </g>
+  </g>
+
+  <!-- Benefits section -->
+  <g id="benefits">
+    <rect x="60" y="410" width="780" height="80" fill="white" stroke="#ccc" stroke-width="1" rx="4"/>
+
+    <text x="80" y="435" font-weight="bold" font-size="12">Edges-First 的优势：</text>
+
+    <text x="80" y="460" font-size="11" fill="#333">• 最相关的内容（0.95）在最开头 → 充分利用</text>
+    <text x="80" y="477" font-size="11" fill="#333">• 次高相关的内容（0.80）在最后面 → 利用 "Recency Bias"</text>
+    <text x="80" y="494" font-size="11" fill="#333">• 中间的内容左移 → 减少信息损失，同时避免"Lost in the Middle"</text>
+  </g>
+</svg>

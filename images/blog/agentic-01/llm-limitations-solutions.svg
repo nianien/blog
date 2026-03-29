@@ -1,0 +1,48 @@
+<svg viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="300" y="20" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">LLM 五大局限 → Agent 组件逐一回应</text>
+
+  <!-- Row backgrounds -->
+  <rect x="20" y="34" width="560" height="32" rx="4" fill="#FFF3E0"/>
+  <rect x="20" y="70" width="560" height="32" rx="4" fill="#E3F2FD"/>
+  <rect x="20" y="106" width="560" height="32" rx="4" fill="#FFF3E0"/>
+  <rect x="20" y="142" width="560" height="32" rx="4" fill="#E8F5E9"/>
+  <rect x="20" y="178" width="560" height="32" rx="4" fill="#F3E5F5"/>
+
+  <!-- Column: 局限 -->
+  <text x="40" y="55" font-size="11" font-weight="bold" fill="#E65100">知识静态</text>
+  <text x="40" y="91" font-size="11" font-weight="bold" fill="#1565C0">无法行动</text>
+  <text x="40" y="127" font-size="11" font-weight="bold" fill="#E65100">记忆易失</text>
+  <text x="40" y="163" font-size="11" font-weight="bold" fill="#2E7D32">单步思维</text>
+  <text x="40" y="199" font-size="11" font-weight="bold" fill="#7B1FA2">不会反思</text>
+
+  <!-- Arrow column -->
+  <text x="175" y="55" font-size="12" fill="#999">→</text>
+  <text x="175" y="91" font-size="12" fill="#999">→</text>
+  <text x="175" y="127" font-size="12" fill="#999">→</text>
+  <text x="175" y="163" font-size="12" fill="#999">→</text>
+  <text x="175" y="199" font-size="12" fill="#999">→</text>
+
+  <!-- Column: 组件 (badge style) -->
+  <rect x="200" y="40" width="72" height="20" rx="10" fill="#E65100"/>
+  <text x="236" y="54" font-size="9" font-weight="bold" text-anchor="middle" fill="#fff">Memory</text>
+
+  <rect x="200" y="76" width="58" height="20" rx="10" fill="#1565C0"/>
+  <text x="229" y="90" font-size="9" font-weight="bold" text-anchor="middle" fill="#fff">Tools</text>
+
+  <rect x="200" y="112" width="72" height="20" rx="10" fill="#E65100"/>
+  <text x="236" y="126" font-size="9" font-weight="bold" text-anchor="middle" fill="#fff">Memory</text>
+
+  <rect x="200" y="148" width="72" height="20" rx="10" fill="#2E7D32"/>
+  <text x="236" y="162" font-size="9" font-weight="bold" text-anchor="middle" fill="#fff">Planner</text>
+
+  <rect x="200" y="184" width="72" height="20" rx="10" fill="#7B1FA2"/>
+  <text x="236" y="198" font-size="9" font-weight="bold" text-anchor="middle" fill="#fff">Runtime</text>
+
+  <!-- Column: 具体手段 -->
+  <text x="290" y="55" font-size="10" fill="#555">外部知识 + RAG</text>
+  <text x="290" y="91" font-size="10" fill="#555">函数调用 + 外部接口</text>
+  <text x="290" y="127" font-size="10" fill="#555">会话状态 + 持久化记忆</text>
+  <text x="290" y="163" font-size="10" fill="#555">任务分解 + 多步规划</text>
+  <text x="290" y="199" font-size="10" fill="#555">控制循环 + 反思机制</text>
+</svg>

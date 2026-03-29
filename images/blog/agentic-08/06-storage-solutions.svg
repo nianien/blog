@@ -1,0 +1,100 @@
+<svg width="1000" height="550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="550" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="500" y="30" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+    记忆存储方案对比
+  </text>
+
+  <!-- Column Headers -->
+  <rect x="20" y="60" width="180" height="40" fill="#1565C0" rx="6" />
+  <rect x="200" y="60" width="240" height="40" fill="#1565C0" rx="6" />
+  <rect x="440" y="60" width="250" height="40" fill="#1565C0" rx="6" />
+  <rect x="690" y="60" width="280" height="40" fill="#1565C0" rx="6" />
+
+  <text x="110" y="85" font-size="12" font-weight="bold" text-anchor="middle" fill="white">存储方案</text>
+  <text x="320" y="85" font-size="12" font-weight="bold" text-anchor="middle" fill="white">适用记忆层</text>
+  <text x="565" y="85" font-size="12" font-weight="bold" text-anchor="middle" fill="white">优点</text>
+  <text x="830" y="85" font-size="12" font-weight="bold" text-anchor="middle" fill="white">缺点</text>
+
+  <!-- Row 1: In-Memory -->
+  <rect x="20" y="100" width="180" height="120" fill="#E3F2FD" stroke="#1565C0" stroke-width="1" rx="4" />
+  <rect x="200" y="100" width="240" height="120" fill="#E3F2FD" stroke="#1565C0" stroke-width="1" rx="4" />
+  <rect x="440" y="100" width="250" height="120" fill="#E3F2FD" stroke="#1565C0" stroke-width="1" rx="4" />
+  <rect x="690" y="100" width="280" height="120" fill="#E3F2FD" stroke="#1565C0" stroke-width="1" rx="4" />
+
+  <text x="110" y="120" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">内存</text>
+  <text x="110" y="135" font-size="10" text-anchor="middle" fill="#666">(dict/list)</text>
+
+  <text x="320" y="120" font-size="11" text-anchor="middle" fill="#333">Conversation</text>
+  <text x="320" y="135" font-size="11" text-anchor="middle" fill="#333">Buffer,</text>
+  <text x="320" y="150" font-size="11" text-anchor="middle" fill="#333">Working Memory</text>
+
+  <text x="565" y="120" font-size="11" text-anchor="middle" fill="#333">零延迟</text>
+  <text x="565" y="140" font-size="11" text-anchor="middle" fill="#333">实现简单</text>
+  <text x="565" y="160" font-size="11" text-anchor="middle" fill="#333">无外部依赖</text>
+
+  <text x="830" y="120" font-size="11" text-anchor="middle" fill="#333">重启丢失</text>
+  <text x="830" y="140" font-size="11" text-anchor="middle" fill="#333">不可跨进程</text>
+  <text x="830" y="160" font-size="11" text-anchor="middle" fill="#333">容量受限</text>
+
+  <!-- Row 2: Redis -->
+  <rect x="20" y="220" width="180" height="120" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1" rx="4" />
+  <rect x="200" y="220" width="240" height="120" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1" rx="4" />
+  <rect x="440" y="220" width="250" height="120" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1" rx="4" />
+  <rect x="690" y="220" width="280" height="120" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1" rx="4" />
+
+  <text x="110" y="240" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">Redis</text>
+
+  <text x="320" y="240" font-size="11" text-anchor="middle" fill="#333">会话状态,</text>
+  <text x="320" y="255" font-size="11" text-anchor="middle" fill="#333">Working Memory,</text>
+  <text x="320" y="270" font-size="11" text-anchor="middle" fill="#333">短期缓存</text>
+
+  <text x="565" y="240" font-size="11" text-anchor="middle" fill="#333">亚毫秒读写</text>
+  <text x="565" y="255" font-size="11" text-anchor="middle" fill="#333">支持 TTL 自动过期</text>
+  <text x="565" y="270" font-size="11" text-anchor="middle" fill="#333">可跨进程</text>
+
+  <text x="830" y="240" font-size="11" text-anchor="middle" fill="#333">无语义检索</text>
+  <text x="830" y="255" font-size="11" text-anchor="middle" fill="#333">数据结构较简单</text>
+  <text x="830" y="270" font-size="11" text-anchor="middle" fill="#333">需要额外运维</text>
+
+  <!-- Row 3: Vector DB -->
+  <rect x="20" y="340" width="180" height="120" fill="#FFF3E0" stroke="#E65100" stroke-width="1" rx="4" />
+  <rect x="200" y="340" width="240" height="120" fill="#FFF3E0" stroke="#E65100" stroke-width="1" rx="4" />
+  <rect x="440" y="340" width="250" height="120" fill="#FFF3E0" stroke="#E65100" stroke-width="1" rx="4" />
+  <rect x="690" y="340" width="280" height="120" fill="#FFF3E0" stroke="#E65100" stroke-width="1" rx="4" />
+
+  <text x="110" y="360" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">向量数据库</text>
+  <text x="110" y="375" font-size="10" text-anchor="middle" fill="#666">(Chroma /</text>
+  <text x="110" y="387" font-size="10" text-anchor="middle" fill="#666">Pinecone)</text>
+
+  <text x="320" y="360" font-size="11" text-anchor="middle" fill="#333">Episodic Memory,</text>
+  <text x="320" y="375" font-size="11" text-anchor="middle" fill="#333">Semantic Memory</text>
+
+  <text x="565" y="360" font-size="11" text-anchor="middle" fill="#333">语义相似度检索</text>
+  <text x="565" y="375" font-size="11" text-anchor="middle" fill="#333">适合非结构化数据</text>
+  <text x="565" y="390" font-size="11" text-anchor="middle" fill="#333">可扩展</text>
+
+  <text x="830" y="360" font-size="11" text-anchor="middle" fill="#333">写入有延迟</text>
+  <text x="830" y="375" font-size="11" text-anchor="middle" fill="#333">精确查询弱</text>
+  <text x="830" y="390" font-size="11" text-anchor="middle" fill="#333">需要 Embedding</text>
+
+  <!-- Row 4: Relational DB -->
+  <rect x="20" y="460" width="180" height="70" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1" rx="4" />
+  <rect x="200" y="460" width="240" height="70" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1" rx="4" />
+  <rect x="440" y="460" width="250" height="70" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1" rx="4" />
+  <rect x="690" y="460" width="280" height="70" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1" rx="4" />
+
+  <text x="110" y="480" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">关系数据库</text>
+  <text x="110" y="495" font-size="10" text-anchor="middle" fill="#666">(PostgreSQL)</text>
+
+  <text x="320" y="480" font-size="11" text-anchor="middle" fill="#333">用户偏好, 任务历史,</text>
+  <text x="320" y="495" font-size="11" text-anchor="middle" fill="#333">审计日志</text>
+
+  <text x="565" y="480" font-size="11" text-anchor="middle" fill="#333">结构化查询强</text>
+  <text x="565" y="495" font-size="11" text-anchor="middle" fill="#333">事务保证，成熟稳定</text>
+
+  <text x="830" y="480" font-size="11" text-anchor="middle" fill="#333">无语义检索</text>
+  <text x="830" y="495" font-size="11" text-anchor="middle" fill="#333">Schema 需设计，向量支持有限</text>
+</svg>

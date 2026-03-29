@@ -1,0 +1,122 @@
+<svg viewBox="0 0 860 760" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Outer border -->
+  <rect x="15" y="8" width="830" height="745" rx="8" fill="#FAFAFA" stroke="#B0BEC5" stroke-width="1"/>
+
+  <!-- USER REQUEST pill -->
+  <rect x="330" y="22" width="200" height="34" rx="17" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="430" y="44" text-anchor="middle" font-size="12" font-weight="bold" fill="#0D47A1">USER REQUEST</text>
+  <!-- Arrow down -->
+  <line x1="430" y1="56" x2="430" y2="72" stroke="#546E7A" stroke-width="1.5"/>
+  <polygon points="426,72 430,82 434,72" fill="#546E7A"/>
+
+  <!-- API GATEWAY bar -->
+  <rect x="80" y="85" width="700" height="44" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
+  <text x="430" y="103" text-anchor="middle" font-size="12" font-weight="bold" fill="#B71C1C">API GATEWAY</text>
+  <text x="430" y="120" text-anchor="middle" font-size="9" fill="#E53935">Rate Limiting · Auth · Input Validation · Prompt Injection Filter</text>
+  <!-- Arrow down -->
+  <line x1="430" y1="129" x2="430" y2="145" stroke="#546E7A" stroke-width="1.5"/>
+  <polygon points="426,145 430,155 434,145" fill="#546E7A"/>
+
+  <!-- AGENT RUNTIME outer box -->
+  <rect x="50" y="158" width="760" height="300" rx="8" fill="#F5F5F5" stroke="#455A64" stroke-width="1.5"/>
+  <text x="430" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#263238">AGENT RUNTIME</text>
+
+  <!-- Control Loop inner box -->
+  <rect x="75" y="188" width="710" height="108" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="430" y="208" text-anchor="middle" font-size="11" font-weight="bold" fill="#0D47A1">Control Loop (04)</text>
+  <text x="430" y="226" text-anchor="middle" font-size="10" fill="#42A5F5">OBSERVE → THINK → PLAN → ACT → REFLECT → UPDATE</text>
+
+  <!-- Components inside Control Loop -->
+  <rect x="95" y="240" width="150" height="48" rx="5" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1"/>
+  <text x="170" y="258" text-anchor="middle" font-size="10" font-weight="bold" fill="#1B5E20">Planner (10)</text>
+  <text x="170" y="274" text-anchor="middle" font-size="9" fill="#4CAF50">ReAct / Plan-Exec / Hierarchical</text>
+
+  <rect x="265" y="240" width="150" height="48" rx="5" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="340" y="258" text-anchor="middle" font-size="10" font-weight="bold" fill="#BF360C">Prompt Engine (06)</text>
+  <text x="340" y="274" text-anchor="middle" font-size="9" fill="#F57C00">4-Layer Assembly / Token Budget</text>
+
+  <rect x="435" y="240" width="150" height="48" rx="5" fill="#FCE4EC" stroke="#AD1457" stroke-width="1"/>
+  <text x="510" y="258" text-anchor="middle" font-size="10" font-weight="bold" fill="#880E4F">Budget Guard</text>
+  <text x="510" y="274" text-anchor="middle" font-size="9" fill="#C2185B">max rounds / tokens / cost</text>
+
+  <!-- Arrows from Control Loop to lower row -->
+  <line x1="170" y1="296" x2="170" y2="318" stroke="#546E7A" stroke-width="1.5"/>
+  <polygon points="166,318 170,328 174,318" fill="#546E7A"/>
+  <line x1="400" y1="296" x2="400" y2="318" stroke="#546E7A" stroke-width="1.5"/>
+  <polygon points="396,318 400,328 404,318" fill="#546E7A"/>
+  <line x1="630" y1="296" x2="630" y2="318" stroke="#546E7A" stroke-width="1.5"/>
+  <polygon points="626,318 630,328 634,318" fill="#546E7A"/>
+
+  <!-- Lower components row -->
+  <rect x="85" y="332" width="170" height="70" rx="5" fill="#E8EAF6" stroke="#3949AB" stroke-width="1"/>
+  <text x="170" y="355" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A237E">LLM Router</text>
+  <text x="170" y="372" text-anchor="middle" font-size="9" fill="#5C6BC0">Model Tier · Fallback · Cache</text>
+
+  <rect x="315" y="332" width="170" height="70" rx="5" fill="#E0F2F1" stroke="#00695C" stroke-width="1"/>
+  <text x="400" y="355" text-anchor="middle" font-size="10" font-weight="bold" fill="#004D40">Tool Registry (05,13)</text>
+  <text x="400" y="372" text-anchor="middle" font-size="9" fill="#00897B">MCP · Sandbox</text>
+
+  <rect x="545" y="332" width="170" height="70" rx="5" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1"/>
+  <text x="630" y="355" text-anchor="middle" font-size="10" font-weight="bold" fill="#4A148C">Memory Manager (08,09)</text>
+  <text x="630" y="372" text-anchor="middle" font-size="9" fill="#AB47BC">Short/Long-term · RAG Pipeline</text>
+
+  <!-- Arrows to External Services -->
+  <line x1="170" y1="402" x2="170" y2="470" stroke="#546E7A" stroke-width="1.5"/>
+  <polygon points="166,470 170,480 174,470" fill="#546E7A"/>
+  <line x1="400" y1="402" x2="400" y2="470" stroke="#546E7A" stroke-width="1.5"/>
+  <polygon points="396,470 400,480 404,470" fill="#546E7A"/>
+  <line x1="630" y1="402" x2="630" y2="470" stroke="#546E7A" stroke-width="1.5"/>
+  <polygon points="626,470 630,480 634,470" fill="#546E7A"/>
+
+  <!-- External Services row -->
+  <rect x="85" y="483" width="170" height="50" rx="5" fill="#ECEFF1" stroke="#607D8B" stroke-width="1"/>
+  <text x="170" y="504" text-anchor="middle" font-size="10" font-weight="bold" fill="#37474F">LLM APIs</text>
+  <text x="170" y="520" text-anchor="middle" font-size="9" fill="#78909C">GPT-4o / Claude / Open Source</text>
+
+  <rect x="315" y="483" width="170" height="50" rx="5" fill="#ECEFF1" stroke="#607D8B" stroke-width="1"/>
+  <text x="400" y="504" text-anchor="middle" font-size="10" font-weight="bold" fill="#37474F">External Services</text>
+  <text x="400" y="520" text-anchor="middle" font-size="9" fill="#78909C">Databases / APIs</text>
+
+  <rect x="545" y="483" width="170" height="50" rx="5" fill="#ECEFF1" stroke="#607D8B" stroke-width="1"/>
+  <text x="630" y="504" text-anchor="middle" font-size="10" font-weight="bold" fill="#37474F">Vector DB / Knowledge</text>
+  <text x="630" y="520" text-anchor="middle" font-size="9" fill="#78909C">Graph / User Store</text>
+
+  <!-- Divider line -->
+  <line x1="30" y1="548" x2="830" y2="548" stroke="#B0BEC5" stroke-width="1"/>
+
+  <!-- CROSS-CUTTING CONCERNS title -->
+  <text x="430" y="572" text-anchor="middle" font-size="13" font-weight="bold" fill="#263238">CROSS-CUTTING CONCERNS</text>
+
+  <!-- Four concern boxes -->
+  <rect x="40" y="585" width="185" height="95" rx="5" fill="#E3F2FD" stroke="#1565C0" stroke-width="1"/>
+  <text x="132" y="605" text-anchor="middle" font-size="10" font-weight="bold" fill="#0D47A1">Observability</text>
+  <text x="132" y="622" text-anchor="middle" font-size="9" fill="#42A5F5">Tracer · Metrics</text>
+  <text x="132" y="638" text-anchor="middle" font-size="9" fill="#42A5F5">Structured Logging</text>
+  <text x="132" y="654" text-anchor="middle" font-size="9" fill="#42A5F5">Alerting</text>
+
+  <rect x="240" y="585" width="185" height="95" rx="5" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1"/>
+  <text x="332" y="605" text-anchor="middle" font-size="10" font-weight="bold" fill="#1B5E20">Evaluation</text>
+  <text x="332" y="622" text-anchor="middle" font-size="9" fill="#4CAF50">Offline / Online Eval</text>
+  <text x="332" y="638" text-anchor="middle" font-size="9" fill="#4CAF50">A/B Testing</text>
+  <text x="332" y="654" text-anchor="middle" font-size="9" fill="#4CAF50">Benchmark / Regression</text>
+
+  <rect x="440" y="585" width="185" height="95" rx="5" fill="#FFEBEE" stroke="#C62828" stroke-width="1"/>
+  <text x="532" y="605" text-anchor="middle" font-size="10" font-weight="bold" fill="#B71C1C">Security</text>
+  <text x="532" y="622" text-anchor="middle" font-size="9" fill="#E53935">Prompt Guard · Tool Sandbox</text>
+  <text x="532" y="638" text-anchor="middle" font-size="9" fill="#E53935">Data Filter / RBAC</text>
+  <text x="532" y="654" text-anchor="middle" font-size="9" fill="#E53935">Human-in-the-loop</text>
+
+  <rect x="640" y="585" width="185" height="95" rx="5" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="732" y="605" text-anchor="middle" font-size="10" font-weight="bold" fill="#BF360C">Cost Control</text>
+  <text x="732" y="622" text-anchor="middle" font-size="9" fill="#F57C00">Token Budget · Model Tiering</text>
+  <text x="732" y="638" text-anchor="middle" font-size="9" fill="#F57C00">Caching</text>
+  <text x="732" y="654" text-anchor="middle" font-size="9" fill="#F57C00">Monitoring / Alerting</text>
+
+  <!-- Deployment bar -->
+  <rect x="40" y="700" width="785" height="38" rx="5" fill="#E8EAF6" stroke="#3949AB" stroke-width="1"/>
+  <text x="432" y="716" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A237E">Deployment &amp; Release</text>
+  <text x="432" y="731" text-anchor="middle" font-size="9" fill="#5C6BC0">Prompt Versioning · Gradual Rollout · Feature Flags · Rollback</text>
+
+  <!-- Note -->
+  <text x="430" y="755" text-anchor="middle" font-size="9" fill="#90A4AE">(括号中的数字对应系列文章编号)</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 730 380" width="730" height="380">
+  <defs>
+    <!-- Arrow marker definition -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Main outer container (Global timeout) -->
+  <rect x="30" y="30" width="670" height="330" rx="8" fill="#f0f7ff" stroke="#3498db" stroke-width="3"/>
+
+  <!-- Global timeout label -->
+  <text x="50" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">全局超时 (max_total_time = 300s)</text>
+
+  <!-- Tool 1 -->
+  <g>
+    <rect x="60" y="90" width="100" height="80" rx="6" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+    <text x="110" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">Tool 1</text>
+    <text x="110" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#555">30s</text>
+  </g>
+
+  <!-- Tool 2 -->
+  <g>
+    <rect x="285" y="90" width="100" height="80" rx="6" fill="#e8f8f0" stroke="#27ae60" stroke-width="2"/>
+    <text x="335" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">Tool 2</text>
+    <text x="335" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#555">30s</text>
+  </g>
+
+  <!-- Tool 3 -->
+  <g>
+    <rect x="510" y="90" width="100" height="80" rx="6" fill="#fef5e7" stroke="#f39c12" stroke-width="2"/>
+    <text x="560" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">Tool 3</text>
+    <text x="560" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#555">30s</text>
+  </g>
+
+  <!-- Single tool timeout label -->
+  <text x="50" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="bold" fill="#2c3e50">单工具超时 (default_timeout = 30s)</text>
+
+  <!-- Detailed explanation boxes -->
+  <g>
+    <rect x="60" y="245" width="290" height="60" rx="6" fill="#fff9e6" stroke="#f39c12" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="205" y="268" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#333">ThreadPoolExecutor.result()</text>
+    <text x="205" y="288" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#333">timeout=30 in ToolExecutor</text>
+  </g>
+
+  <g>
+    <rect x="380" y="245" width="290" height="60" rx="6" fill="#e8f4f8" stroke="#3498db" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="525" y="268" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#333">Elapsed time check at</text>
+    <text x="525" y="288" font-family="system-ui, -apple-system, sans-serif" font-size="12" text-anchor="middle" fill="#333">Runtime loop start</text>
+  </g>
+</svg>

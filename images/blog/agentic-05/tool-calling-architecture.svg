@@ -1,0 +1,81 @@
+<svg viewBox="0 0 900 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, sans-serif; }
+      .title { font-size: 14px; font-weight: 600; fill: #1e40af; }
+      .label { font-size: 13px; fill: #374151; }
+      .contract { font-size: 12px; fill: #6b7280; font-style: italic; }
+      .box { fill: #f0f4f8; stroke: #3b82f6; stroke-width: 2; }
+      .arrow { stroke: #6366f1; stroke-width: 2; fill: none; marker-end: url(#arrowhead); marker-start: url(#arrowhead-start); }
+      .protocol { stroke: #10b981; stroke-width: 2; fill: none; marker-end: url(#arrowhead-green); marker-start: url(#arrowhead-green-start); }
+      .dashed { stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6366f1"/>
+    </marker>
+    <marker id="arrowhead-start" markerWidth="10" markerHeight="10" refX="1" refY="3" orient="auto">
+      <polygon points="10 0, 0 3, 10 6" fill="#6366f1"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#10b981"/>
+    </marker>
+    <marker id="arrowhead-green-start" markerWidth="10" markerHeight="10" refX="1" refY="3" orient="auto">
+      <polygon points="10 0, 0 3, 10 6" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <!-- Main boxes -->
+  <!-- LLM Box -->
+  <g id="llm-section">
+    <rect x="50" y="100" width="160" height="180" rx="8" class="box"/>
+    <text x="130" y="130" text-anchor="middle" class="title">LLM</text>
+    <text x="130" y="150" text-anchor="middle" class="label">(决策层)</text>
+    <text x="60" y="180" class="label">• 理解意图</text>
+    <text x="60" y="200" class="label">• 选择工具</text>
+    <text x="60" y="220" class="label">• 生成参数</text>
+    <text x="60" y="240" class="label">• 组织回答</text>
+  </g>
+
+  <!-- Runtime Box -->
+  <g id="runtime-section">
+    <rect x="370" y="100" width="160" height="180" rx="8" class="box"/>
+    <text x="450" y="130" text-anchor="middle" class="title">Runtime</text>
+    <text x="450" y="150" text-anchor="middle" class="label">(调度层)</text>
+    <text x="380" y="180" class="label">• 参数验证</text>
+    <text x="380" y="200" class="label">• 路由执行</text>
+    <text x="380" y="220" class="label">• 错误处理</text>
+    <text x="380" y="240" class="label">• 结果收集</text>
+  </g>
+
+  <!-- Tools Box -->
+  <g id="tools-section">
+    <rect x="690" y="100" width="160" height="180" rx="8" class="box"/>
+    <text x="770" y="130" text-anchor="middle" class="title">Tools</text>
+    <text x="770" y="150" text-anchor="middle" class="label">(能力层)</text>
+    <text x="700" y="180" class="label">• 具体能力</text>
+    <text x="700" y="200" class="label">• 函数实现</text>
+    <text x="700" y="220" class="label">• 外部集成</text>
+    <text x="700" y="240" class="label">• 返回结果</text>
+  </g>
+
+  <!-- Bidirectional arrows with labels -->
+  <!-- LLM <-> Runtime -->
+  <path class="arrow" d="M 210 160 L 370 160"/>
+  <path class="arrow" d="M 370 180 L 210 180"/>
+  <text x="290" y="145" text-anchor="middle" class="contract">JSON Schema (契约)</text>
+  <text x="290" y="200" text-anchor="middle" class="contract">Tool Call JSON</text>
+  <text x="290" y="218" text-anchor="middle" class="contract">Tool Result</text>
+
+  <!-- Runtime <-> Tools -->
+  <path class="arrow" d="M 530 160 L 690 160"/>
+  <path class="arrow" d="M 690 180 L 530 180"/>
+  <text x="610" y="145" text-anchor="middle" class="contract">Function Call</text>
+  <text x="610" y="200" text-anchor="middle" class="contract">Function</text>
+  <text x="610" y="218" text-anchor="middle" class="contract">Return</text>
+
+  <!-- Bottom note -->
+  <g id="note">
+    <rect x="50" y="310" width="800" height="25" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="450" y="330" text-anchor="middle" class="label" font-style="italic">Tool Calling 的本质是一个精心设计的协议：LLM (决策) ◄─────► Runtime (调度) ◄─────► Tools (能力)</text>
+  </g>
+</svg>

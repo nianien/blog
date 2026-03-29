@@ -1,0 +1,99 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, sans-serif; }
+      .title { font-size: 15px; font-weight: bold; fill: #333; }
+      .label { font-size: 12px; fill: #333; }
+      .sublabel { font-size: 11px; fill: #666; }
+      .advantage { font-size: 11px; fill: #27ae60; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#fafafa" />
+
+  <!-- ===== BI-ENCODER SECTION ===== -->
+  <g id="bi-encoder">
+    <!-- Title -->
+    <text x="225" y="35" class="title" text-anchor="middle" fill="#3498db">Bi-encoder (初步检索阶段)</text>
+
+    <!-- Query box -->
+    <rect x="120" y="60" width="110" height="50" fill="#e3f2fd" stroke="#3498db" stroke-width="2" rx="4"/>
+    <text x="175" y="85" text-anchor="middle" font-weight="bold">Query</text>
+
+    <!-- Document box -->
+    <rect x="260" y="60" width="110" height="50" fill="#e3f2fd" stroke="#3498db" stroke-width="2" rx="4"/>
+    <text x="315" y="85" text-anchor="middle" font-weight="bold">Document</text>
+
+    <!-- Arrows down -->
+    <line x1="175" y1="110" x2="175" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="315" y1="110" x2="315" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Encoder boxes -->
+    <rect x="130" y="140" width="90" height="50" fill="#fff3e0" stroke="#f39c12" stroke-width="2" rx="4"/>
+    <text x="175" y="165" text-anchor="middle" font-weight="bold" font-size="12">Encoder</text>
+
+    <rect x="270" y="140" width="90" height="50" fill="#fff3e0" stroke="#f39c12" stroke-width="2" rx="4"/>
+    <text x="315" y="165" text-anchor="middle" font-weight="bold" font-size="12">Encoder</text>
+
+    <!-- Right side annotations -->
+    <text x="380" y="145" class="sublabel">独立编码</text>
+    <text x="380" y="160" class="advantage">↓ 可以预计算</text>
+    <text x="380" y="175" class="advantage">↓ 速度快</text>
+    <text x="380" y="190" class="advantage">↓ 精度有限</text>
+
+    <!-- Arrows down -->
+    <line x1="175" y1="190" x2="175" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="315" y1="190" x2="315" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Vector outputs -->
+    <text x="175" y="240" text-anchor="middle" font-weight="bold" font-size="12">vec_q</text>
+    <text x="315" y="240" text-anchor="middle" font-weight="bold" font-size="12">vec_d</text>
+
+    <!-- Arrows to comparison -->
+    <line x1="175" y1="250" x2="245" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="315" y1="250" x2="245" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Comparison box -->
+    <rect x="170" y="280" width="150" height="50" fill="#f0f0f0" stroke="#666" stroke-width="2" rx="4"/>
+    <text x="245" y="300" text-anchor="middle" font-weight="bold" font-size="12">cosine(q, d)</text>
+    <text x="245" y="318" text-anchor="middle" class="label">score</text>
+  </g>
+
+  <!-- ===== DIVIDER ===== -->
+  <line x1="50" y1="380" x2="850" y2="380" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- ===== CROSS-ENCODER SECTION ===== -->
+  <g id="cross-encoder">
+    <!-- Title -->
+    <text x="225" y="430" class="title" text-anchor="middle" fill="#e74c3c">Cross-encoder (Reranking 阶段)</text>
+
+    <!-- Combined input box -->
+    <rect x="80" y="455" width="290" height="60" fill="#fce4ec" stroke="#e74c3c" stroke-width="2" rx="4"/>
+    <text x="225" y="480" text-anchor="middle" font-weight="bold" font-size="12">[CLS] Query [SEP] Doc</text>
+    <text x="225" y="500" text-anchor="middle" class="sublabel">拼接在一起</text>
+
+    <!-- Arrow down -->
+    <line x1="225" y1="515" x2="225" y2="540" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Encoder box -->
+    <rect x="100" y="540" width="250" height="60" fill="#fff3e0" stroke="#f39c12" stroke-width="2" rx="4"/>
+    <text x="225" y="565" text-anchor="middle" font-weight="bold" font-size="12">Transformer Encoder</text>
+    <text x="225" y="580" text-anchor="middle" class="label" font-size="11">(交叉注意力)</text>
+
+    <!-- Right side annotations -->
+    <text x="380" y="540" class="sublabel">联合编码</text>
+    <text x="380" y="555" class="advantage">↓ 不可预计算</text>
+    <text x="380" y="570" class="advantage">↓ 速度慢</text>
+    <text x="380" y="585" class="advantage">↓ 精度高</text>
+
+    <!-- Arrow down -->
+    <line x1="225" y1="600" x2="225" y2="620" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Score output -->
+    <text x="225" y="645" text-anchor="middle" font-weight="bold" font-size="12">score</text>
+  </g>
+</svg>

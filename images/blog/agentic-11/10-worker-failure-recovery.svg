@@ -1,0 +1,90 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="380" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Worker 失败处理决策树</text>
+
+  <!-- Start: Worker 执行失败 -->
+  <rect x="280" y="42" width="200" height="38" rx="4" fill="#ffccbc" stroke="#d84315" stroke-width="1.5"/>
+  <text x="380" y="66" font-size="12" font-weight="bold" text-anchor="middle" fill="#d84315">Worker 执行失败</text>
+
+  <line x1="380" y1="80" x2="380" y2="100" stroke="#333" stroke-width="1.5"/>
+  <polygon points="376,100 380,110 384,100" fill="#333"/>
+
+  <!-- Decision 1: 是否可重试？ -->
+  <rect x="280" y="112" width="200" height="38" rx="4" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
+  <text x="380" y="136" font-size="11" text-anchor="middle" fill="#333">是否可重试？</text>
+
+  <!-- Yes → right -->
+  <line x1="480" y1="131" x2="518" y2="131" stroke="#333" stroke-width="1.5"/>
+  <polygon points="518,127 528,131 518,135" fill="#333"/>
+  <text x="496" y="125" font-size="9" fill="#666">是</text>
+
+  <rect x="530" y="112" width="160" height="38" rx="4" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="610" y="136" font-size="11" text-anchor="middle" fill="#333">重试（最多 N 次）</text>
+
+  <!-- From retry → down to success check -->
+  <line x1="610" y1="150" x2="610" y2="170" stroke="#333" stroke-width="1.5"/>
+  <polygon points="606,170 610,180 614,170" fill="#333"/>
+
+  <rect x="530" y="182" width="160" height="38" rx="4" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
+  <text x="610" y="206" font-size="11" text-anchor="middle" fill="#333">成功？</text>
+
+  <!-- Success → down -->
+  <line x1="610" y1="220" x2="610" y2="240" stroke="#333" stroke-width="1.5"/>
+  <polygon points="606,240 610,250 614,240" fill="#333"/>
+  <text x="620" y="236" font-size="9" fill="#666">是</text>
+  <rect x="550" y="252" width="120" height="32" rx="4" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="610" y="273" font-size="11" text-anchor="middle" fill="#333">继续</text>
+
+  <!-- Failure from success check → right then down (joins escalation) -->
+  <line x1="690" y1="201" x2="720" y2="201" stroke="#333" stroke-width="1.5"/>
+  <text x="700" y="195" font-size="9" fill="#666">否</text>
+  <line x1="720" y1="201" x2="720" y2="340" stroke="#333" stroke-width="1.5"/>
+  <line x1="720" y1="340" x2="500" y2="340" stroke="#333" stroke-width="1.5"/>
+  <polygon points="500,336 490,340 500,344" fill="#333"/>
+
+  <!-- No → down from Decision 1 -->
+  <line x1="380" y1="150" x2="380" y2="190" stroke="#333" stroke-width="1.5"/>
+  <polygon points="376,190 380,200 384,190" fill="#333"/>
+  <text x="390" y="175" font-size="9" fill="#666">否</text>
+
+  <!-- Decision 2: 有替代 Worker？ -->
+  <rect x="280" y="202" width="200" height="38" rx="4" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
+  <text x="380" y="226" font-size="11" text-anchor="middle" fill="#333">有替代 Worker？</text>
+
+  <!-- Yes → right to fallback action -->
+  <line x1="480" y1="221" x2="518" y2="221" stroke="#333" stroke-width="1.5"/>
+  <polygon points="518,217 528,221 518,225" fill="#333"/>
+  <text x="496" y="215" font-size="9" fill="#666">是</text>
+
+  <rect x="530" y="302" width="160" height="38" rx="4" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+
+  <!-- Actually let me place fallback action inline -->
+  <rect x="530" y="202" width="160" height="38" rx="4" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="610" y="226" font-size="11" text-anchor="middle" fill="#333">分配给替代 Worker</text>
+
+  <!-- No → down from Decision 2 -->
+  <line x1="380" y1="240" x2="380" y2="275" stroke="#333" stroke-width="1.5"/>
+  <polygon points="376,275 380,285 384,275" fill="#333"/>
+  <text x="390" y="262" font-size="9" fill="#666">否</text>
+
+  <!-- Decision 3: 关键路径？ -->
+  <rect x="280" y="287" width="200" height="38" rx="4" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
+  <text x="380" y="311" font-size="11" text-anchor="middle" fill="#333">关键路径？</text>
+
+  <!-- Yes → left: 整体任务失败 -->
+  <line x1="280" y1="306" x2="218" y2="306" stroke="#333" stroke-width="1.5"/>
+  <polygon points="218,302 208,306 218,310" fill="#333"/>
+  <text x="245" y="300" font-size="9" fill="#666">是</text>
+
+  <rect x="60" y="287" width="146" height="38" rx="4" fill="#ffccbc" stroke="#d84315" stroke-width="1.5"/>
+  <text x="133" y="311" font-size="11" font-weight="bold" text-anchor="middle" fill="#d84315">整体任务失败</text>
+
+  <!-- No → down: 降级处理 -->
+  <line x1="380" y1="325" x2="380" y2="355" stroke="#333" stroke-width="1.5"/>
+  <polygon points="376,355 380,365 384,355" fill="#333"/>
+  <text x="390" y="345" font-size="9" fill="#666">否</text>
+
+  <rect x="300" y="367" width="160" height="50" rx="4" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="380" y="389" font-size="11" text-anchor="middle" fill="#333">降级处理</text>
+  <text x="380" y="405" font-size="9" text-anchor="middle" fill="#666">（跳过该子任务）</text>
+</svg>

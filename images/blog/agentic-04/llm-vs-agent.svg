@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 185" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="185" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- LLM row -->
+  <text x="30" y="52" font-size="15" font-weight="bold" fill="#1976D2">LLM:</text>
+  <rect x="90" y="32" width="80" height="32" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="130" y="53" text-anchor="middle" font-size="12" fill="#1565C0">Input</text>
+  <line x1="170" y1="48" x2="230" y2="48" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="235" y="32" width="80" height="32" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="275" y="53" text-anchor="middle" font-size="12" fill="#2E7D32">Output</text>
+  <text x="380" y="53" font-size="12" fill="#999">（一次调用）</text>
+
+  <!-- Agent row -->
+  <text x="30" y="122" font-size="15" font-weight="bold" fill="#7B1FA2">Agent:</text>
+  <rect x="90" y="102" width="80" height="32" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="130" y="123" text-anchor="middle" font-size="12" fill="#1565C0">Input</text>
+  <line x1="170" y1="118" x2="205" y2="118" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Loop box -->
+  <rect x="210" y="94" width="310" height="48" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="365" y="115" text-anchor="middle" font-size="11" fill="#6A1B9A">Observe → Think → Act → Reflect</text>
+  <text x="365" y="132" text-anchor="middle" font-size="10" fill="#9C27B0">循环 N 次</text>
+
+  <!-- Loop arrow -->
+  <defs>
+    <marker id="arrow-purple" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#7B1FA2"/>
+    </marker>
+  </defs>
+  <path d="M510,134 Q550,168 510,168 L230,168 Q200,168 210,140" fill="none" stroke="#7B1FA2" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrow-purple)"/>
+
+  <text x="535" y="115" font-size="13" fill="#999">…</text>
+  <line x1="548" y1="118" x2="575" y2="118" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="580" y="102" width="80" height="32" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="620" y="123" text-anchor="middle" font-size="12" fill="#2E7D32">Output</text>
+  <text x="680" y="123" font-size="10" fill="#999">（多轮）</text>
+</svg>

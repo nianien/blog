@@ -1,23 +1,19 @@
 1:"$Sreact.fragment"
-2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-142e67ac4336647c.js"],"default"]
-3:I[87555,[],""]
-4:I[31295,[],""]
-6:I[59665,[],"OutletBoundary"]
-9:I[74911,[],"AsyncMetadataOutlet"]
-b:I[59665,[],"ViewportBoundary"]
-d:I[59665,[],"MetadataBoundary"]
-f:I[26614,[],""]
+2:I[2638,["2619","static/chunks/2619-6352ef9022ea9a44.js","7177","static/chunks/app/layout-cc0f87213df1eab1.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+6:I[4431,[],"OutletBoundary"]
+8:I[5278,[],"AsyncMetadataOutlet"]
+a:I[4431,[],"ViewportBoundary"]
+c:I[4431,[],"MetadataBoundary"]
+d:"$Sreact.suspense"
+f:I[7150,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/css/34491b5ca0fd2bfa.css","style"]
-0:{"P":null,"b":"ZS83X6QC0rHEZwHjKWqXD","p":"","c":["","blog","engineering","domain","%E5%9F%BA%E4%BA%8EDDD%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%9A%E4%BB%8E%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1%E5%88%B0%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/domain/%E5%9F%BA%E4%BA%8EDDD%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%9A%E4%BB%8E%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1%E5%88%B0%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/34491b5ca0fd2bfa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/domain/%E5%9F%BA%E4%BA%8EDDD%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%9A%E4%BB%8E%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1%E5%88%B0%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","9d7quUlBoV1JVDNTKt0OBv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
-10:"$Sreact.suspense"
-11:I[74911,[],"AsyncMetadata"]
-13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
-14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-1c:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
-15:T51ba,<blockquote>
+:HL["/_next/static/css/7f62681e243899a1.css","style"]
+0:{"P":null,"b":"J7t9u3We_KaTvz0Be1HjC","p":"","c":["","blog","engineering","domain","%E5%9F%BA%E4%BA%8EDDD%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%9A%E4%BB%8E%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1%E5%88%B0%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/domain/%E5%9F%BA%E4%BA%8EDDD%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%9A%E4%BB%8E%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1%E5%88%B0%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7f62681e243899a1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/domain/%E5%9F%BA%E4%BA%8EDDD%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%9A%E4%BB%8E%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1%E5%88%B0%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+10:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],""]
+11:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+12:T51ba,<blockquote>
 <p>微服务架构的核心难题不是技术选型，而是<strong>如何找到正确的服务边界</strong>。拆分得太粗，和单体无异；拆分得太细，分布式的复杂性会吞噬所有收益。领域驱动设计（DDD）提供了一套系统性的方法论，帮助我们从业务本质出发，找到合理的拆分边界。本文将从 DDD 的核心概念出发，结合电商领域的实例，完整展示如何基于 DDD 构建微服务。</p>
 </blockquote>
 <h2>微服务的本质：不是&quot;小&quot;，而是&quot;界限清晰&quot;</h2>
@@ -493,7 +489,10 @@ e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"ch
 <blockquote>
 <p>DDD 不是银弹，它是一种思考方式。它引导我们从业务本质出发，用结构化的方法找到正确的服务边界。在微服务架构中，<strong>找到正确的边界比选择正确的技术栈重要十倍</strong>。</p>
 </blockquote>
-17:T1a8a0,<h1>Planning and Reflection: 从 ReAct 到分层规划与自我纠错</h1>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L10",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/domain/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"领域建模"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2026-01-15","children":"2026年01月15日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"基于DDD构建微服务：从战略设计到落地实践"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L10","DDD",{"href":"/blog/tag/DDD/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"DDD"}],["$","$L10","微服务",{"href":"/blog/tag/%E5%BE%AE%E6%9C%8D%E5%8A%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"微服务"}],["$","$L10","领域驱动设计",{"href":"/blog/tag/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"领域驱动设计"}],["$","$L10","架构设计",{"href":"/blog/tag/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"架构设计"}],["$","$L10","事件驱动",{"href":"/blog/tag/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"事件驱动"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L11",null,{"content":"$12"}]}],"$L13","$L14"]}]}]}]
+15:I[6249,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+1b:I[6929,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+16:T8f30,<h1>Planning and Reflection: 从 ReAct 到分层规划与自我纠错</h1>
 <blockquote>
 <p>LLM 的 next-token prediction 天生是&quot;短视&quot;的——它只看到当前 token 的概率分布，不会思考十步之后的结局。规划（Planning）让 Agent 具备&quot;远视&quot;能力，反思（Reflection）让 Agent 具备&quot;纠错&quot;能力。二者结合，是 Agent 从&quot;工具调用器&quot;进化为&quot;问题解决者&quot;的关键。</p>
 <p>本文是 Agentic 系列的第 10 篇。我们将从规划范式的演进出发，深入分析 ReAct、Plan-and-Execute、Tree-of-Thought、Hierarchical Planning 四种规划模式，再系统探讨 Reflection 机制的设计与陷阱。</p>
@@ -513,21 +512,7 @@ e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"ch
 <p>二者结合，Agent 才能从&quot;工具调用器&quot;进化为&quot;问题解决者&quot;。</p>
 <hr>
 <h2>2. 规划范式的演进</h2>
-<pre><code>   2022              2023 early         2023 mid            2023+ now
-    │                    │                  │                    │
-    ▼                    ▼                  ▼                    ▼
-┌────────┐      ┌──────────────┐    ┌──────────────┐   ┌────────────────┐
-│No Plan │─────▶│    ReAct     │───▶│Plan-and-Exec │──▶│ Hierarchical   │
-│直接回答 │      │Thought-Act-  │    │先规划再执行   │   │  Planning      │
-└────────┘      │Observation   │    └──────────────┘   │ 多层级分解     │
-                └──────┬───────┘                       └────────────────┘
-                       │           ┌──────────────┐           ▲
-                       └──────────▶│Tree-of-Thought│──────────┘
-                                   │多路径搜索     │
-                                   └──────────────┘
-
-能力维度：单步回答 ──▶ 逐步推理 ──▶ 全局规划 ──▶ 多路径探索 ──▶ 递归分解
-</code></pre>
+<p><img src="/images/blog/agentic-10/01-paradigm-evolution.svg" alt="Agent 推理范式演进"></p>
 <table>
 <thead>
 <tr>
@@ -572,16 +557,7 @@ e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"ch
 <h2>3. ReAct 深入分析</h2>
 <h3>3.1 原理：Reason + Act 交替进行</h3>
 <p>ReAct（Yao et al., 2022）让 LLM 在推理（Thought）和行动（Action）之间交替，每次行动后观察结果（Observation），再基于观察继续推理。</p>
-<pre><code>User Question
-     │
-     ▼
-┌──────────┐     ┌──────────┐     ┌──────────────┐
-│ Thought  │────▶│  Action  │────▶│ Observation  │
-│ (推理)   │     │ (行动)   │     │ (观察结果)    │
-└──────────┘     └──────────┘     └──────┬───────┘
-     ▲                                    │
-     └────────────────────────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-10/02-react-loop.svg" alt="ReAct 循环"></p>
 <h3>3.2 ReAct Prompt 模板</h3>
 <pre><code class="language-python">REACT_SYSTEM_PROMPT = &quot;&quot;&quot;You operate in a loop of Thought, Action, Observation.
 
@@ -682,16 +658,7 @@ class ReActAgent:
 <h2>4. Plan-and-Execute 模式</h2>
 <h3>4.1 原理：先规划再执行</h3>
 <p>Plan-and-Execute 将规划与执行分离：先用一次 LLM 调用生成完整计划，再逐个执行子任务，必要时触发 Replanning。</p>
-<pre><code>┌────────────┐       Plan: [S1, S2, S3]      ┌────────────┐
-│  Planner   │──────────────────────────────▶│  Executor  │
-│ (全局规划)  │                                │ (逐步执行)  │
-└────────────┘                                └─────┬──────┘
-      ▲                                             │ 执行失败
-      │            ┌─────────────┐                  │
-      └────────────│  Replanner  │◀─────────────────┘
-                   │ (动态修正)   │
-                   └─────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-10/03-plan-and-execute.svg" alt="Plan-and-Execute 架构"></p>
 <h3>4.2 Planner / Executor 分离的优势</h3>
 <ol>
 <li><strong>关注点分离</strong>：Planner 负责&quot;做什么&quot;，Executor 负责&quot;怎么做&quot;，可以分别用不同模型优化</li>
@@ -814,13 +781,7 @@ class PlanAndExecuteAgent:
 <h2>5. Tree-of-Thought</h2>
 <h3>5.1 原理</h3>
 <p>Tree-of-Thought（ToT，Yao et al. 2023）模拟人类&quot;深思熟虑&quot;：同时考虑多条推理路径，评估每条的前景，选择最优的继续深入。</p>
-<pre><code>                       Root (问题)
-                      /     |     \
-                   Th1     Th2    Th3      ← 生成多个候选 Thought
-                  /   \     |    /   \
-               T1a   T1b  T2a  T3a  T3b   ← 继续展开
-                ✗      ✓    ✗    ✓    ✗    ← 评估函数打分，剪枝
-</code></pre>
+<p><img src="/images/blog/agentic-10/04-tree-of-thought.svg" alt="Tree-of-Thought 搜索树"></p>
 <p>三个核心组件：<strong>Thought Generator</strong>（每步生成 k 个候选）、<strong>State Evaluator</strong>（对候选打分）、<strong>Search Algorithm</strong>（BFS 或 DFS）。</p>
 <h3>5.2 BFS vs DFS</h3>
 <ul>
@@ -834,12 +795,34 @@ class PlanAndExecuteAgent:
 <li><strong>外部验证</strong>：可验证的问题（数学/代码）用外部工具检查。最可靠但适用范围有限。</li>
 </ol>
 <h3>5.4 Trade-off：质量 vs 成本</h3>
-<pre><code>方法           LLM 调用次数      质量    适用场景
-─────────────  ──────────────   ─────   ──────────
-ReAct(单路径)   O(steps)         基准    大多数任务
-ToT-BFS        O(k * d * 2)     高      创意/数学/方案选型
-ToT-DFS        O(k^d) 最坏      中-高   深度推理
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>LLM 调用次数</th>
+<th>质量</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ReAct（单路径）</td>
+<td>O(steps)</td>
+<td>基准</td>
+<td>大多数任务</td>
+</tr>
+<tr>
+<td>ToT-BFS</td>
+<td>O(k × d × 2)</td>
+<td>高</td>
+<td>创意/数学/方案选型</td>
+</tr>
+<tr>
+<td>ToT-DFS</td>
+<td>O(k^d) 最坏</td>
+<td>中-高</td>
+<td>深度推理</td>
+</tr>
+</tbody></table>
 <p>k=3, d=3 时 ToT 可能需要 40+ 次 LLM 调用，ReAct 只需 5-6 次——<strong>8-10 倍成本差距</strong>。只有当正确性要求高且存在多条有意义的推理路径时，ToT 的投入才有回报。</p>
 <h3>5.5 Python 实现</h3>
 <pre><code class="language-python">import json
@@ -924,21 +907,7 @@ class TreeOfThought:
 <hr>
 <h2>6. 分层规划（Hierarchical Planning）</h2>
 <p>当任务复杂到&quot;设计并实现用户权限系统&quot;这种级别时，一层计划无法覆盖从架构到实现的所有粒度。分层规划通过<strong>递归分解</strong>解决：高层拆子目标，低层拆具体动作。</p>
-<pre><code>高层规划器 (Strategic)
-├─ 子目标1: 设计数据模型
-│   └─ 低层规划器 (Tactical)
-│       ├─ Action: 分析需求
-│       ├─ Action: 设计 ER 图
-│       └─ Action: 定义 API Schema
-├─ 子目标2: 实现认证模块
-│   └─ 低层规划器
-│       ├─ Action: 实现 JWT 签发
-│       └─ Action: 编写测试
-└─ 子目标3: 实现授权模块
-    └─ 低层规划器
-        ├─ Action: 实现 RBAC
-        └─ Action: 集成测试
-</code></pre>
+<p><img src="/images/blog/agentic-10/05-hierarchical-planning.svg" alt="分层规划树 - 递归分解"></p>
 <h3>6.1 递归分解的终止条件</h3>
 <ol>
 <li><strong>原子性</strong>：任务可用单次工具调用完成 → 停止分解</li>
@@ -1050,26 +1019,7 @@ Return JSON: {{&quot;what_went_well&quot;:[], &quot;what_went_wrong&quot;:[], &q
 </code></pre>
 <h3>7.4 Retry Budget 与 Stop Condition</h3>
 <p>反思不能无限循环。必须有 Stop Condition：</p>
-<pre><code>                  反思完成
-                     │
-          ┌──────────▼──────────┐   是
-          │ 质量 &gt;= 阈值？       │─────▶ 返回结果
-          └──────────┬──────────┘
-                     │ 否
-          ┌──────────▼──────────┐   是
-          │ 达到最大重试？       │─────▶ 返回最好的结果
-          └──────────┬──────────┘
-                     │ 否
-          ┌──────────▼──────────┐   是
-          │ 改进幅度 &lt; 阈值？    │─────▶ 停止（再试也没用）
-          └──────────┬──────────┘
-                     │ 否
-          ┌──────────▼──────────┐   是
-          │ 成本超出预算？       │─────▶ 返回当前结果
-          └──────────┬──────────┘
-                     │ 否
-                  继续重试
-</code></pre>
+<p><img src="/images/blog/agentic-10/06-reflection-stop-condition.svg" alt="反思循环的停止条件"></p>
 <p>四个条件形成<strong>多层安全网</strong>：质量达标是正常退出，最大重试和成本预算是硬性保底，改进幅度检测是&quot;聪明的&quot;提前退出。</p>
 <h3>7.5 代码实现</h3>
 <pre><code class="language-python">@dataclass
@@ -1145,1808 +1095,19 @@ class ReflectiveAgent:
 <h3>8.3 成本爆炸</h3>
 <p>每次反思是完整 LLM 调用，包含完整上下文。对策：(1) 反思用小模型（GPT-4o-mini）；(2) 压缩上下文传摘要版本；(3) 采样反思（30% 的执行触发反思而非 100%）。</p>
 <h3>8.4 合理的 Reflection 策略</h3>
-<pre><code>Q1: 任务的错误成本高吗？
-  高 → 启用反思    低 → 跳过
-
-Q2: 错误可自动检测吗？
-  是（代码可测试） → 外部验证（更可靠更便宜）
-  否（文案质量）   → LLM Self-Critique
-
-Q3: 预算够吗？
-  够   → 结构化反思 + 多轮重试
-  不够 → 单轮 Self-Critique
-
-Q4: 延迟敏感吗？
-  是 → 最多一轮，超时直接返回
-
----
-
----
-
----
-
-
----
-
-## 9. 自发反思触发机制
-
-### 9.1 为什么需要自发触发
-
-反思不应该总是被动地在执行失败时才启动。更好的策略是：Agent 能主动察觉到质量下降的信号，自发触发反思，而不必等到显式的失败。这样可以在问题恶化前及时纠正。
-
-三种常见的衰退信号：
-
-1. **信息熵监测**：当 LLM 的输出开始重复时，信息熵突然下降。这是&quot;词汇枯竭&quot;的标志，通常意味着模型卡在某个固定的推理循环中。
-2. **预测置信度阈值**：LLM 通常可以对自己输出的置信度给出评估。当置信度连续下降或低于阈值时，反思应该被触发。
-3. **外部反馈信号**：工具返回异常（HTTP 错误、超时）、用户表示不满、或执行结果与预期格式不符。
-
-### 9.2 信息熵的计算和置信度追踪
-
-信息熵可通过分析文本 token 的概率分布来计算。当最近 N 个 token 的熵突然下降时（相比前一个窗口），说明输出开始陷入重复。置信度则由 LLM 自行评估：要求其输出一个 0-1 的置信度分数，同时说明是否仍在正轨上。
-
-### 9.3 ReflectionTrigger 类设计
-
-核心思想是多信号融合：监控三个独立信号（信息熵、置信度、外部异常），只有当多个信号同时触发时才进入反思模式。这比单一阈值更稳健。
-
-实现上，维护 entropy_history、confidence_history 两个滑动窗口，逐次判断是否满足触发条件。当检测到衰退信号时，构造新的 goal prompt，注入前一轮的发现问题和改进建议，促使下一轮执行做出改正。
-
-### 9.4 实践建议
-
-- **监控信息熵**：简单有效，可在本地计算，零成本。
-- **置信度追踪**：额外一次 LLM 调用，但提供显式的自评信号。
-- **外部反馈**：最可靠，但需要设计好信号收集机制。
-- **多信号融合**：在生产中应该综合多个信号，而不是单一阈值。例如：Entropy 下降 + 置信度低 + 用户反馈，三信号都触发时才进入反思模式。
-
----
-
-## 10. Planning 与 Reflection 的交互循环
-
-### 10.1 为什么需要规划中的动态调整
-
-静态规划假设任务的前提条件在执行过程中保持不变。但现实中：
-- 环境变化（API 服务下线、数据更新）
-- 中间步骤产生的数据与预期不符
-- 依赖关系的前提假设不成立
-
-**规划中局部修正**（Plan Repair）和**执行中动态重规划**（Adaptive Replanning）是对这些变化的响应。
-
-### 10.2 三层修正策略
-
-执行步骤失败时，先分析失败原因。如果是工具参数问题，可局部修正（调整参数重试）。如果是依赖条件不满足或前提错误，需要生成替代步骤或重新规划某个子目标。避免全局重规划的高成本。
-
-### 10.3 AdaptivePlanExecutor 的核心能力
-
-该执行器实现以下关键机制：
-- **条件分支支持**：规划中的每个步骤可以有条件表达式，执行器在运行时评估（使用 LLM）并决定是否执行该步
-- **局部修正优先**：检测到执行失败时，先诊断原因，尝试调整参数重试，避免全局重规划
-- **动态步骤插入**：当需要全局重规划时，生成新步骤并插入计划，继续执行，无需重新开始
-- **完整的执行日志**：记录每个步骤的执行状态、结果、以及是否经历过修正，便于调试和事后审计
-
-关键方法：`_check_dependencies()` 检查依赖、`_evaluate_condition()` 评估条件、`_execute_with_retry()` 支持重试、`_diagnose_and_repair()` 根据错误信息决定修复策略。
-
----
-
-## 11. Tree-of-Thought 评估函数的可靠性分析
-
-### 11.1 评估函数的三大偏差
-
-Tree-of-Thought 的核心问题不在搜索算法，而在于**评估函数本身的可靠性**。LLM 评估 LLM 的推理路径时，存在三类系统性偏差：
-
-#### (a) 确认偏差（Confirmation Bias）
-
-LLM 倾向于支持与已有假设一致的路径。如果一条推理路径的前两步很好，LLM 会对其后续步骤给予不合理的高分，即使第三步有明显缺陷。
-
-#### (b) 多数人谬误（Plurality Fallacy）
-
-当使用投票法（多次评估取多数）来降低个体 LLM 的偏差时，多个评估可能会放大共同的偏见。所有 LLM 都用相同的训练数据和算法，它们的系统性错误会同向。
-
-#### (c) 评估成本的不对称性
-
-成本高的路径（步骤多、调用多工具）往往看起来更&quot;严谨&quot;，评估函数容易给它高分。但高成本 ≠ 高质量。这导致 ToT 系统倾向于选择冗长、低效的解决方案。
-
-### 11.2 去偏差的策略
-
-**策略 1：对立面评估** — 用两个评估：一个打分，一个找缺陷，综合打分减去缺陷的严重程度。这样正面评估的乐观不会被 LLM 的确认偏差完全接纳。
-
-**策略 2：随机扰动测试** — 通过随机扰动路径（加入轻微的不确定性表述），检验评估的鲁棒性。如果打分对小的改变很敏感，说明评估不稳定，可以用稳定性加权。
-
-**策略 3：多维度评估聚合** — 从四个独立维度评估（correctness、efficiency、robustness、clarity），而不是单一打分。可以识别&quot;看似高分但实际有缺陷&quot;的路径。
-
-### 11.3 综合方案
-
-结合三种策略，取加权平均（多维度 50%、扰动稳定性 30%、对立面 20%）。既能降低单一评估的偏差，又不会过度增加成本。在生产中，BiasMitigatedToT 类整合所有去偏差方法。
-
----
-
-## 12. 认知科学的理论支撑
-
-### 12.1 Kahneman 双过程理论与 Agent 规划
-
-认知心理学家 Kahneman 提出，人类思维分为两个系统：
-
-- **System 1（快思考）**：直觉、快速、低成本，但容易出错。特点是自动化、并行处理。
-- **System 2（慢思考）**：理性、缓慢、高成本，更精确。特点是需要专注、串行处理。
-
-**在 Agent 设计中的对应**：
-
-| 人类认知 | Agent 机制 | 特征 |
-|--------|---------|------|
-| System 1 | ReAct（单步推理+行动） | 快速响应，逐步贪心 |
-| System 2 | Planning（深思熟虑的规划） | 全局视野，前瞻性强 |
-| System 1+2 协作 | Hierarchical Planning + Reflection | 多层级思考+自我纠正 |
-
-实际上，好的 Agent 架构正是对双过程理论的编程实现。简单任务直接 ReAct；复杂任务先规划、再执行、定期反思。这就是为什么 Plan-and-Execute 模式效果好于纯 ReAct：它显式地分离了&quot;快思&quot;和&quot;慢思&quot;的角色。
-
-### 12.2 Rittel 的 Wicked Problem 与 Agent 的开放性问题
-
-Rittel 和 Webber（1973）提出&quot;邪恶问题&quot;（Wicked Problem）的概念，指那些没有确定解的复杂问题。特征包括：
-
-- **定义不清**：问题本身是不确定的，不同利益方对&quot;问题是什么&quot;的理解不同
-- **无最优解**：没有&quot;唯一正确答案&quot;，只有&quot;更优&quot;和&quot;更差&quot;的权衡
-- **可逆性差**：一旦开始求解，解决方案会改变问题本身
-- **每个实例是唯一的**：无法简单套用历史经验
-
-**Agent 面对的任务通常是 Wicked 的**。例如，&quot;设计一个推荐系统&quot;没有人能完全定义它，也没有唯一最优解。
-
-**Agent 应对 Wicked Problem 的策略**：
-
-1. **迭代探索**：不期望一次规划得到完美方案，而是通过多轮执行+反思不断逼近
-2. **约束条件明确化**：显式列出假设、限制条件、优先级权衡
-3. **反馈循环**：定期反思&quot;问题定义是否还准确&quot;，而不仅仅反思&quot;解决方案是否有效&quot;
-4. **多路径探索**：Tree-of-Thought 式的多路径搜索对 Wicked Problem 特别有价值
-
-这正是为什么简单的规划（Plan-and-Execute）对 Wicked 问题不够，需要能适应和调整的规划（Hierarchical + Adaptive）。
-
-### 12.3 元认知（Metacognition）与 Agent 反思
-
-元认知是&quot;对自己认知过程的认知&quot;，即&quot;思考自己的思考&quot;。人类具有强大的元认知能力：自我监控、策略调整、学习反思。
-
-**Agent 的反思机制正是对元认知的形式化**。但关键区别是：人类的元认知是**连续的、隐性的**，而 Agent 的反思是**离散的、显式的**。
-
-这导致两个挑战：
-
-1. **反思的时机不够精细**：人类在每一步都有微观的自我监控，而 Agent 通常只在特定时刻触发反思
-2. **反思的信号可靠性不同**：人类的&quot;这不对&quot;的直觉来自丰富的经验，而 LLM 的置信度评估可能是虚幻的
-
-**改进方向**：
-
-- **增加反思频率**：不只是事后反思，而是事中反思（每 N 步检查一次）
-- **多信号融合**：不只依赖 LLM 的自评，还结合外部信号（工具反馈、用户反馈）
-- **元学习**：让 Agent 在重复类似任务时记住&quot;哪些反思策略有效&quot;，逐渐改进反思的精准度
-
-从某种意义上说，**Agent 的成熟度就取决于其元认知能力的完善程度**——能否准确察觉自己的不确定性、及时调整策略、从错误中学习。
-
----
-
-## 9. 多 Agent 协作的成本特征分析
-
-Multi-Agent 系统看起来功能更强，但成本结构也更复杂。本节量化对比四种协作模式的成本特征，帮助你在实际项目中做出经济合理的架构选择。
-
-### 9.1 四种模式的成本维度对比
-
-| 维度 | Supervisor-Worker | Peer-to-Peer | Pipeline | Dynamic Routing |
-|------|------------------|--------------|----------|-----------------|
-| **每任务 LLM 调用次数** | 1(Sup) + N(Workers) | 2-5（取决于轮数） | N（等于阶段数） | 1(Router) + 1(Expert) |
-| **平均 Token 消耗** | ~35,000 | ~28,000 | ~25,000 | ~18,000 |
-| **通信开销** | 低（星形集中） | 高（全网通信） | 低（链式顺序） | 低（分发） |
-| **端到端延迟** | 中（并行 Workers） | 高（多轮协商） | 高（串行阶段） | 低（单次路由） |
-| **并行度潜力** | 高（Worker 可并行） | 中（轮次间串行） | 低（阶段必须顺序） | 高（请求级并行） |
-| **失败重试成本** | 中（重试单个 Worker） | 高（重新协商） | 高（后续阶段受影响） | 低（重试 Expert） |
-
-### 9.2 实例成本估算：撰写技术博客
-
-假设任务为：**撰写一篇 3000 字的技术博客**，关于&quot;LLM Agent 成本优化最佳实践&quot;。我们分别用四种模式实现，并对比成本。
-
-**基础假设**：
-- GPT-4o: $15/MTok (Input), $60/MTok (Output)
-- GPT-4o-mini: $0.15/MTok (Input), $0.6/MTok (Output)
-- 平均每个 LLM 调用产生 1,500 token 输出
-- 平均上下文注入 2,000 token
-
-#### 模式一：Supervisor-Worker
-</code></pre>
-<p>执行步骤：</p>
+<p>不是所有任务都需要反思。决策树如下：</p>
+<p><img src="/images/blog/agentic-10/08-reflection-strategy-decision.svg" alt="Reflection 策略选择决策树"></p>
+<p>四个问题形成分层筛选：</p>
 <ol>
-<li>Supervisor 分解任务                          Tokens: ~3,000 (Input: 2K, Output: 1K)<br>├─ Worker A (搜索): 搜集最新的 LLM 成本数据  Tokens: ~8,000 (Input: 4K, Output: 4K)<br>├─ Worker B (分析): 分析成本优化策略         Tokens: ~8,000 (Input: 4K, Output: 4K)<br>├─ Worker C (写作): 撰写初稿                 Tokens: ~10,000 (Input: 5K, Output: 5K)<br>└─ Supervisor 合成最终版本                  Tokens: ~6,000 (Input: 4K, Output: 2K)</li>
+<li><strong>Q1：错误成本高吗？</strong> 低成本任务（闲聊、简单查询）直接跳过反思，省 token。</li>
+<li><strong>Q2：错误可自动检测吗？</strong> 可以就用外部验证（代码跑测试、SQL 查结果），比 LLM Self-Critique 更可靠也更便宜。</li>
+<li><strong>Q3：预算够吗？</strong> 够就上结构化反思 + 多轮重试（最多 3 轮），不够就单轮 Self-Critique 兜底。</li>
+<li><strong>Q4：延迟敏感？</strong> 是的话最多一轮反思，超时直接返回当前最优结果。</li>
 </ol>
-<p>总 Token: 35,000</p>
-<p>模型使用：</p>
-<ul>
-<li>Supervisor: GPT-4o (2次调用，共 9,000 token)        → $0.27</li>
-<li>Worker A/B: GPT-4o-mini (2次调用，共 16,000 token)  → $0.048</li>
-<li>Worker C: GPT-4o (1次调用，共 10,000 token)         → $0.30</li>
-<li>Supervisor 合成: GPT-4o (1次调用，共 6,000 token)   → $0.18<br>                                          Total: $0.798 (~$0.80)</li>
-</ul>
-<p>执行时间：</p>
-<ul>
-<li>Supervisor 分解: 4s</li>
-<li>Workers 并行执行: max(6s, 6s, 8s) = 8s</li>
-<li>Supervisor 合成: 5s<br>              Total: ~17s</li>
-</ul>
-<pre><code>
-#### 模式二：Peer-to-Peer
-</code></pre>
-<p>执行步骤（假设 3 轮协商）：<br>Round 1:</p>
-<ul>
-<li>Agent A (初稿作者): 撰写初稿                   ~5,000 token</li>
-<li>Agent B (技术审稿): 提出专业意见              ~4,000 token</li>
-<li>Agent C (编辑): 检查逻辑和结构                ~3,000 token</li>
-</ul>
-<p>Round 2:</p>
-<ul>
-<li>Agent A: 根据反馈修改                         ~5,000 token</li>
-<li>Agent B: 检查修改后的技术准确性               ~3,000 token</li>
-<li>Agent C: 优化措辞                            ~2,000 token</li>
-</ul>
-<p>Round 3:</p>
-<ul>
-<li>Agent A: 最终微调                            ~3,000 token</li>
-<li>共识检测: 所有 Agent 同意发布                ~2,000 token</li>
-</ul>
-<p>总 Token: ~27,000</p>
-<p>模型使用：</p>
-<ul>
-<li>所有 Agent 用 GPT-4o-mini                      → $0.081<br>                                          Total: $0.08</li>
-</ul>
-<p>执行时间：</p>
-<ul>
-<li>Round 1: A(4s) + B(3s) + C(2s) = 9s (串行)</li>
-<li>Round 2: A(4s) + B(3s) + C(2s) = 9s (串行)</li>
-<li>Round 3: A(2s) + 共识(2s) = 4s<br>                           Total: ~22s</li>
-</ul>
-<pre><code>
-#### 模式三：Pipeline
-</code></pre>
-<p>执行步骤（5 个阶段）：</p>
-<ol>
-<li>Draft Agent: 快速生成初稿                      ~5,000 token</li>
-<li>Review Agent: 审查内容准确性和完整性            ~4,000 token</li>
-<li>Edit Agent: 改进措辞和逻辑流                   ~4,000 token</li>
-<li>FactCheck Agent: 验证数据和引用               ~3,000 token</li>
-<li>Format Agent: 最终排版和调整                   ~2,000 token</li>
-</ol>
-<p>总 Token: ~18,000</p>
-<p>模型使用：</p>
-<ul>
-<li>Draft: GPT-4o-mini                            → $0.015</li>
-<li>Review: GPT-4o-mini                           → $0.012</li>
-<li>Edit: GPT-4o-mini                             → $0.012</li>
-<li>FactCheck: GPT-4o                             → $0.21</li>
-<li>Format: GPT-4o-mini                           → $0.006<br>                                          Total: $0.255</li>
-</ul>
-<p>执行时间：</p>
-<ul>
-<li>5 个阶段串行: 4s + 3s + 3s + 4s + 2s = 16s</li>
-</ul>
-<pre><code>
-#### 模式四：Dynamic Routing
-</code></pre>
-<p>执行步骤：</p>
-<ol>
-<li>Router (意图识别): &quot;这是一个技术博客写作任务&quot;  ~1,500 token (GPT-4o-mini)</li>
-<li>路由到 Blog Writer Expert Agent               ~1,500 token</li>
-<li>Blog Writer 调用子工具：<ul>
-<li>搜索工具: 不计 token（工具调用）</li>
-<li>数据整理: ~3,000 token</li>
-<li>撰写完整博客: ~10,000 token</li>
-</ul>
-</li>
-</ol>
-<p>总 Token: ~16,000</p>
-<p>模型使用：</p>
-<ul>
-<li>Router: GPT-4o-mini                           → $0.0045</li>
-<li>Expert: GPT-4o (1次，包含搜索和写作)         → $0.21<br>                                          Total: $0.214</li>
-</ul>
-<p>执行时间：</p>
-<ul>
-<li>路由决策: 1s</li>
-<li>专家执行: 8s<br>          Total: ~9s（最快！）</li>
-</ul>
-<pre><code>
-### 9.3 成本对比总结表
-
-| 指标 | Supervisor-Worker | Peer-to-Peer | Pipeline | Dynamic Routing |
-|------|------------------|--------------|----------|-----------------|
-| **总成本** | $0.80 | $0.08 | $0.26 | $0.21 |
-| **执行时间** | 17s | 22s | 16s | 9s |
-| **成本/时间** | $0.047/s | $0.0036/s | $0.016/s | $0.023/s |
-| **输出质量预期** | 高 | 中 | 中-高 | 高 |
-| **质量/成本比** | 1.25 | 12.5 | 3.8 | 4.8 |
-| **质量/时间比** | 0.059 | 0.045 | 0.063 | 0.111 |
-
-**关键发现**：
-
-1. **Peer-to-Peer 最便宜但最慢**：因为每一轮都需要多个 Agent 参与，而且往往需要 3+ 轮才能达成共识。但&quot;质量/成本比&quot;最高，说明如果你对成本很敏感且不急，它是很好的选择。
-
-2. **Dynamic Routing 最快且成本中等**：因为路由决策非常轻量，整个执行集中在一个专家 Agent。最适合高频的、决策清晰的任务。
-
-3. **Pipeline 成本最低但不是最快**：原因是阶段必须串行，但每个阶段都很轻量。适合流水线式的内容处理。
-
-4. **Supervisor-Worker 最贵但质量最高**：需要 Supervisor 的多次调用（分解+合成），但能产出最高质量的结果。适合高价值任务。
-
-**经济决策规则**：
-
-- **日均调用 &lt; 10 次**：选择 Supervisor-Worker（质量优先）
-- **日均调用 10-100 次，对成本敏感**：选择 Dynamic Routing
-- **日均调用 &gt; 100 次，对质量要求中等**：选择 Pipeline
-- **需要多视角碰撞、有充足时间**：选择 Peer-to-Peer
-
----
-
-## 10. Peer-to-Peer 协议设计深化
-
-Peer-to-Peer 模式看似简单（多个 Agent 互相对话），但要实现稳定的 P2P 协作，需要精心设计通信协议。本节深入探讨 P2P 的关键设计细节。
-
-### 10.1 对话格式标准化
-
-在 Peer-to-Peer 模式中，Agent 之间的消息必须遵循一个标准格式，否则 Agent 会互相&quot;听不懂&quot;。
-
-```python
-from dataclasses import dataclass, field
-from typing import Literal
-from enum import Enum
-import json
-
-
-class MessageType(str, Enum):
-    &quot;&quot;&quot;P2P 消息类型&quot;&quot;&quot;
-    PROPOSE = &quot;propose&quot;           # 提出方案或观点
-    COMMENT = &quot;comment&quot;           # 评论或反馈
-    QUESTION = &quot;question&quot;         # 提出问题
-    AGREE = &quot;agree&quot;               # 同意
-    DISAGREE = &quot;disagree&quot;         # 不同意
-    COMPROMISE = &quot;compromise&quot;     # 提出妥协方案
-    REQUEST_INFO = &quot;request_info&quot; # 请求信息
-    CONSENSUS = &quot;consensus&quot;       # 宣布达成共识
-
-
-@dataclass
-class P2PMessage:
-    &quot;&quot;&quot;P2P 协作中的标准消息格式&quot;&quot;&quot;
-    msg_id: str                              # 消息唯一 ID
-    sender: str                              # 发送者 Agent 名称
-    receivers: list[str]                    # 接收者列表（可以是广播）
-    msg_type: MessageType                   # 消息类型
-    content: str                            # 消息主体
-    reasoning: str = &quot;&quot;                     # 发送者的推理过程（为什么这么说）
-    evidence: list[dict] = field(default_factory=list)  # 证据列表
-    confidence: float = 0.8                 # 发送者对该观点的信心度 (0-1)
-    references: list[str] = field(default_factory=list)  # 引用的之前消息的 ID
-    timestamp: float = field(default_factory=lambda: __import__(&#39;time&#39;).time())
-    round_number: int = 0                   # 第几轮对话
-
-    def to_json(self) -&gt; str:
-        return json.dumps({
-            &quot;msg_id&quot;: self.msg_id,
-            &quot;sender&quot;: self.sender,
-            &quot;receivers&quot;: self.receivers,
-            &quot;msg_type&quot;: self.msg_type.value,
-            &quot;content&quot;: self.content,
-            &quot;reasoning&quot;: self.reasoning,
-            &quot;evidence&quot;: self.evidence,
-            &quot;confidence&quot;: self.confidence,
-            &quot;references&quot;: self.references,
-            &quot;timestamp&quot;: self.timestamp,
-            &quot;round_number&quot;: self.round_number,
-        }, ensure_ascii=False)
-</code></pre>
-<h3>10.2 轮次终止条件</h3>
-<p>P2P 协作最大的风险是陷入无限循环。需要明确的终止条件。具体实现见前面的 P2PTerminationChecker 类。</p>
-<h3>10.3 冲突解决机制</h3>
-<p>当两个 Agent 无法达成共识时，需要冲突解决机制。具体实现见前面的 ConflictResolver 类。</p>
-<h3>10.4 完整的 PeerToPeerProtocol 类</h3>
-<pre><code class="language-python">import asyncio
-import uuid
-from typing import Callable, Optional
-
-
-class PeerToPeerProtocol:
-    &quot;&quot;&quot;完整的 P2P 协作协议实现&quot;&quot;&quot;
-
-    def __init__(
-        self,
-        agents: dict[str, &quot;WorkerAgent&quot;],
-        max_rounds: int = 5,
-        consensus_threshold: float = 0.8,
-        resolution_strategy: str = &quot;confidence_weighted&quot;,
-    ):
-        self.agents = agents
-        self.max_rounds = max_rounds
-        self.consensus_threshold = consensus_threshold
-        self.resolution_strategy = resolution_strategy
-        self.message_history: list[P2PMessage] = []
-        self.agent_states: dict[str, dict] = {
-            name: {
-                &quot;opinion&quot;: &quot;&quot;,
-                &quot;agreement_confidence&quot;: 0.5,
-                &quot;last_message_time&quot;: 0,
-            }
-            for name in agents.keys()
-        }
-
-    async def run(self, topic: str, initial_content: str = &quot;&quot;) -&gt; dict:
-        &quot;&quot;&quot;运行 P2P 协作流程&quot;&quot;&quot;
-        # 实现类似上面所述的协作循环
-        # 包括多轮对话、终止条件检测、冲突解决
-        return {
-            &quot;topic&quot;: topic,
-            &quot;message_count&quot;: len(self.message_history),
-            &quot;agent_states&quot;: self.agent_states,
-        }
-</code></pre>
+<p>一句话总结：<strong>先判断值不值得反思，再选择反思方式，最后用预算和延迟做硬约束</strong>——这套决策逻辑可以直接写进 Agent 框架的配置层。</p>
 <hr>
-<h2>11. Single Agent vs Multi-Agent 的量化对比</h2>
-<p>很多团队在决定是否采用 Multi-Agent 架构时陷入困局。本节用具体数据对比两种方案。</p>
-<h3>11.1 对比任务：竞品分析报告</h3>
-<p><strong>任务定义</strong>：撰写一份 5000 字的竞品分析报告，对比 OpenAI、Anthropic、Google 三家公司的 LLM 产品策略、成本模型、应用生态。报告需要包含：</p>
-<ul>
-<li>产品对标（功能、性能、成本）</li>
-<li>市场策略分析</li>
-<li>生态建设对比</li>
-<li>风险和机会评估</li>
-<li>建议（对我们的产品有什么启示）</li>
-</ul>
-<h3>11.2 方案 A：Single Agent</h3>
-<p><strong>成本计算</strong>：</p>
-<ul>
-<li>单个 Agent 推理：22,500 tokens</li>
-<li>成本：$0.529</li>
-<li>执行时间：33s</li>
-<li>输出质量：6.8/10</li>
-</ul>
-<h3>11.3 方案 B：Multi-Agent（Supervisor-Worker）</h3>
-<p><strong>成本计算</strong>：</p>
-<ul>
-<li>5 次 LLM 调用</li>
-<li>41,500 tokens</li>
-<li>成本：$1.339</li>
-<li>执行时间：27s</li>
-<li>输出质量：8.8/10</li>
-</ul>
-<h3>11.4 对比总结表</h3>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>Single Agent</th>
-<th>Multi-Agent</th>
-<th>差异</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>总成本</strong></td>
-<td>$0.529</td>
-<td>$1.339</td>
-<td>+153%</td>
-</tr>
-<tr>
-<td><strong>执行时间</strong></td>
-<td>33s</td>
-<td>27s</td>
-<td>-18%</td>
-</tr>
-<tr>
-<td><strong>LLM 调用次数</strong></td>
-<td>1</td>
-<td>5</td>
-<td>+400%</td>
-</tr>
-<tr>
-<td><strong>Token 消耗</strong></td>
-<td>22,500</td>
-<td>41,500</td>
-<td>+84%</td>
-</tr>
-<tr>
-<td><strong>质量评分</strong></td>
-<td>6.8/10</td>
-<td>8.8/10</td>
-<td>+2</td>
-</tr>
-<tr>
-<td><strong>质量/成本</strong></td>
-<td>12.85</td>
-<td>6.57</td>
-<td>-49%</td>
-</tr>
-<tr>
-<td><strong>质量/时间</strong></td>
-<td>0.21</td>
-<td>0.33</td>
-<td>+57%</td>
-</tr>
-</tbody></table>
-<p><strong>关键发现</strong>：</p>
-<ol>
-<li><strong>成本方面</strong>：Multi-Agent 约 2.5 倍的成本，但质量提升 30%</li>
-<li><strong>时间方面</strong>：Multi-Agent 反而因为并行度快 18%</li>
-<li><strong>质量方面</strong>：Multi-Agent 明显更好（8.8 vs 6.8）</li>
-<li><strong>经济性</strong>：对高价值任务（&gt;$1000），多花 2.5x 成本是值得的</li>
-</ol>
-<p><strong>决策建议</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>场景</th>
-<th>推荐方案</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>日常内部分析，成本敏感</td>
-<td>Single Agent</td>
-</tr>
-<tr>
-<td>高价值客户交付（&gt;$1000）</td>
-<td>Multi-Agent</td>
-</tr>
-<tr>
-<td>实时系统，对延迟敏感</td>
-<td>Multi-Agent</td>
-</tr>
-<tr>
-<td>任务简单，不需要深度分析</td>
-<td>Single Agent</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>12. Worker 专业化的度量标准</h2>
-<p>不是所有任务都值得创建专门的 Worker Agent。本节提供量化的判断标准。</p>
-<h3>12.1 专业化的三个关键指标</h3>
-<p><strong>指标一：任务频率阈值</strong></p>
-<p>日均调用 &gt; 100 次时，专业化往往值得投资。</p>
-<p><strong>指标二：准确率提升幅度</strong></p>
-<p>如果专业化能将准确率从 75% 提升到 92%（17% 提升），即使频率不高，ROI 也会很高。</p>
-<p><strong>指标三：成本效率比</strong></p>
-<p>综合考虑开发成本、运行成本节省、质量提升三个因素。</p>
-<h3>12.2 SpecializationEvaluator 类</h3>
-<pre><code class="language-python">class SpecializationEvaluator:
-    &quot;&quot;&quot;Worker 专业化评估器&quot;&quot;&quot;
-
-    def __init__(
-        self,
-        frequency_weight: float = 0.4,
-        accuracy_weight: float = 0.35,
-        efficiency_weight: float = 0.25,
-    ):
-        self.frequency_weight = frequency_weight
-        self.accuracy_weight = accuracy_weight
-        self.efficiency_weight = efficiency_weight
-
-    def evaluate(
-        self,
-        task_name: str,
-        daily_call_volume: int,
-        current_accuracy: float,
-        specialized_accuracy_estimate: float,
-        error_cost: float,
-        specialization_cost_dollars: int = 2000,
-    ) -&gt; dict:
-        &quot;&quot;&quot;
-        评估一个 Worker 是否应该专业化
-
-        返回评估结果，包含：
-        - frequency_score: 0-10
-        - accuracy_score: 0-10
-        - efficiency_score: 0-10
-        - overall_score: 加权平均
-        - recommendation: &quot;强烈推荐&quot; / &quot;值得考虑&quot; / &quot;暂不必专业化&quot;
-        &quot;&quot;&quot;
-        # 三个评分维度
-        freq_score = self._score_frequency(daily_call_volume)
-        acc_score = self._score_accuracy(
-            current_accuracy,
-            specialized_accuracy_estimate,
-            error_cost,
-            daily_call_volume,
-        )
-        eff_score = self._score_efficiency(
-            daily_call_volume,
-            specialization_cost_dollars,
-        )
-
-        overall = (
-            freq_score * self.frequency_weight
-            + acc_score * self.accuracy_weight
-            + eff_score * self.efficiency_weight
-        )
-
-        if overall &gt;= 7.5:
-            rec = &quot;强烈推荐&quot;
-        elif overall &gt;= 5.5:
-            rec = &quot;值得考虑&quot;
-        else:
-            rec = &quot;暂不必专业化&quot;
-
-        return {
-            &quot;task_name&quot;: task_name,
-            &quot;frequency_score&quot;: round(freq_score, 1),
-            &quot;accuracy_score&quot;: round(acc_score, 1),
-            &quot;efficiency_score&quot;: round(eff_score, 1),
-            &quot;overall_score&quot;: round(overall, 1),
-            &quot;recommendation&quot;: rec,
-        }
-
-    def _score_frequency(self, daily_call_volume: int) -&gt; float:
-        &quot;&quot;&quot;频率评分（0-10）&quot;&quot;&quot;
-        if daily_call_volume &lt; 10:
-            return 1
-        elif daily_call_volume &lt; 100:
-            return 5
-        elif daily_call_volume &lt; 500:
-            return 8
-        else:
-            return 10
-
-    def _score_accuracy(
-        self,
-        current_accuracy: float,
-        specialized_accuracy: float,
-        error_cost: float,
-        daily_call_volume: int,
-    ) -&gt; float:
-        &quot;&quot;&quot;准确率提升评分（0-10）&quot;&quot;&quot;
-        accuracy_gain = specialized_accuracy - current_accuracy
-        if accuracy_gain &lt; 0.02:
-            return 0
-        elif accuracy_gain &lt; 0.10:
-            return accuracy_gain / 0.10 * 10
-        else:
-            return 10
-
-    def _score_efficiency(
-        self,
-        daily_call_volume: int,
-        specialization_cost_dollars: int,
-    ) -&gt; float:
-        &quot;&quot;&quot;成本效率评分（0-10）&quot;&quot;&quot;
-        monthly_savings = daily_call_volume * 0.5 * 30 * 0.2  # 假设每日成本减少 20%
-        breakeven_months = specialization_cost_dollars / monthly_savings
-        
-        if breakeven_months &lt;= 1:
-            return 10
-        elif breakeven_months &lt;= 6:
-            return 7
-        elif breakeven_months &lt;= 12:
-            return 4
-        else:
-            return 1
-</code></pre>
-<hr>
-<h2>13. 设计 Multi-Agent 系统的决策清单</h2>
-<hr>
-<h2>9. 多 Agent 协作的成本特征分析</h2>
-<p>Multi-Agent 系统看起来功能更强，但成本结构也更复杂。本节量化对比四种协作模式的成本特征，帮助你在实际项目中做出经济合理的架构选择。</p>
-<h3>9.1 四种模式的成本维度对比</h3>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>Supervisor-Worker</th>
-<th>Peer-to-Peer</th>
-<th>Pipeline</th>
-<th>Dynamic Routing</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>每任务 LLM 调用次数</strong></td>
-<td>1(Sup) + N(Workers)</td>
-<td>2-5（取决于轮数）</td>
-<td>N（等于阶段数）</td>
-<td>1(Router) + 1(Expert)</td>
-</tr>
-<tr>
-<td><strong>平均 Token 消耗</strong></td>
-<td>~35,000</td>
-<td>~28,000</td>
-<td>~25,000</td>
-<td>~18,000</td>
-</tr>
-<tr>
-<td><strong>通信开销</strong></td>
-<td>低（星形集中）</td>
-<td>高（全网通信）</td>
-<td>低（链式顺序）</td>
-<td>低（分发）</td>
-</tr>
-<tr>
-<td><strong>端到端延迟</strong></td>
-<td>中（并行 Workers）</td>
-<td>高（多轮协商）</td>
-<td>高（串行阶段）</td>
-<td>低（单次路由）</td>
-</tr>
-<tr>
-<td><strong>并行度潜力</strong></td>
-<td>高（Worker 可并行）</td>
-<td>中（轮次间串行）</td>
-<td>低（阶段必须顺序）</td>
-<td>高（请求级并行）</td>
-</tr>
-<tr>
-<td><strong>失败重试成本</strong></td>
-<td>中（重试单个 Worker）</td>
-<td>高（重新协商）</td>
-<td>高（后续阶段受影响）</td>
-<td>低（重试 Expert）</td>
-</tr>
-</tbody></table>
-<h3>9.2 实例成本估算：撰写技术博客</h3>
-<p>假设任务为：<strong>撰写一篇 3000 字的技术博客</strong>，关于&quot;LLM Agent 成本优化最佳实践&quot;。我们分别用四种模式实现，并对比成本。</p>
-<p><strong>基础假设</strong>：</p>
-<ul>
-<li>GPT-4o: $15/MTok (Input), $60/MTok (Output)</li>
-<li>GPT-4o-mini: $0.15/MTok (Input), $0.6/MTok (Output)</li>
-<li>平均每个 LLM 调用产生 1,500 token 输出</li>
-<li>平均上下文注入 2,000 token</li>
-</ul>
-<h4>模式一：Supervisor-Worker</h4>
-<pre><code>执行步骤：
-1. Supervisor 分解任务                          Tokens: ~3,000 (Input: 2K, Output: 1K)
-   ├─ Worker A (搜索): 搜集最新的 LLM 成本数据  Tokens: ~8,000 (Input: 4K, Output: 4K)
-   ├─ Worker B (分析): 分析成本优化策略         Tokens: ~8,000 (Input: 4K, Output: 4K)
-   ├─ Worker C (写作): 撰写初稿                 Tokens: ~10,000 (Input: 5K, Output: 5K)
-   └─ Supervisor 合成最终版本                  Tokens: ~6,000 (Input: 4K, Output: 2K)
-
-总 Token: 35,000
-
-模型使用：
-- Supervisor: GPT-4o (2次调用，共 9,000 token)        → $0.27
-- Worker A/B: GPT-4o-mini (2次调用，共 16,000 token)  → $0.048
-- Worker C: GPT-4o (1次调用，共 10,000 token)         → $0.30
-- Supervisor 合成: GPT-4o (1次调用，共 6,000 token)   → $0.18
-                                                Total: $0.798 (~$0.80)
-
-执行时间：
-- Supervisor 分解: 4s
-- Workers 并行执行: max(6s, 6s, 8s) = 8s
-- Supervisor 合成: 5s
-                    Total: ~17s
-</code></pre>
-<h4>模式二：Peer-to-Peer</h4>
-<pre><code>执行步骤（假设 3 轮协商）：
-Round 1:
-  - Agent A (初稿作者): 撰写初稿                   ~5,000 token
-  - Agent B (技术审稿): 提出专业意见              ~4,000 token
-  - Agent C (编辑): 检查逻辑和结构                ~3,000 token
-
-Round 2:
-  - Agent A: 根据反馈修改                         ~5,000 token
-  - Agent B: 检查修改后的技术准确性               ~3,000 token
-  - Agent C: 优化措辞                            ~2,000 token
-
-Round 3:
-  - Agent A: 最终微调                            ~3,000 token
-  - 共识检测: 所有 Agent 同意发布                ~2,000 token
-
-总 Token: ~27,000
-
-模型使用：
-- 所有 Agent 用 GPT-4o-mini                      → $0.081
-                                                Total: $0.08
-
-执行时间：
-- Round 1: A(4s) + B(3s) + C(2s) = 9s (串行)
-- Round 2: A(4s) + B(3s) + C(2s) = 9s (串行)
-- Round 3: A(2s) + 共识(2s) = 4s
-                                 Total: ~22s
-</code></pre>
-<h4>模式三：Pipeline</h4>
-<pre><code>执行步骤（5 个阶段）：
-1. Draft Agent: 快速生成初稿                      ~5,000 token
-2. Review Agent: 审查内容准确性和完整性            ~4,000 token
-3. Edit Agent: 改进措辞和逻辑流                   ~4,000 token
-4. FactCheck Agent: 验证数据和引用               ~3,000 token
-5. Format Agent: 最终排版和调整                   ~2,000 token
-
-总 Token: ~18,000
-
-模型使用：
-- Draft: GPT-4o-mini                            → $0.015
-- Review: GPT-4o-mini                           → $0.012
-- Edit: GPT-4o-mini                             → $0.012
-- FactCheck: GPT-4o                             → $0.21
-- Format: GPT-4o-mini                           → $0.006
-                                                Total: $0.255
-
-执行时间：
-- 5 个阶段串行: 4s + 3s + 3s + 4s + 2s = 16s
-</code></pre>
-<h4>模式四：Dynamic Routing</h4>
-<pre><code>执行步骤：
-1. Router (意图识别): &quot;这是一个技术博客写作任务&quot;  ~1,500 token (GPT-4o-mini)
-2. 路由到 Blog Writer Expert Agent               ~1,500 token
-3. Blog Writer 调用子工具：
-   - 搜索工具: 不计 token（工具调用）
-   - 数据整理: ~3,000 token
-   - 撰写完整博客: ~10,000 token
-
-总 Token: ~16,000
-
-模型使用：
-- Router: GPT-4o-mini                           → $0.0045
-- Expert: GPT-4o (1次，包含搜索和写作)         → $0.21
-                                                Total: $0.214
-
-执行时间：
-- 路由决策: 1s
-- 专家执行: 8s
-                Total: ~9s（最快！）
-</code></pre>
-<h3>9.3 成本对比总结表</h3>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>Supervisor-Worker</th>
-<th>Peer-to-Peer</th>
-<th>Pipeline</th>
-<th>Dynamic Routing</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>总成本</strong></td>
-<td>$0.80</td>
-<td>$0.08</td>
-<td>$0.26</td>
-<td>$0.21</td>
-</tr>
-<tr>
-<td><strong>执行时间</strong></td>
-<td>17s</td>
-<td>22s</td>
-<td>16s</td>
-<td>9s</td>
-</tr>
-<tr>
-<td><strong>成本/时间</strong></td>
-<td>$0.047/s</td>
-<td>$0.0036/s</td>
-<td>$0.016/s</td>
-<td>$0.023/s</td>
-</tr>
-<tr>
-<td><strong>输出质量预期</strong></td>
-<td>高</td>
-<td>中</td>
-<td>中-高</td>
-<td>高</td>
-</tr>
-<tr>
-<td><strong>质量/成本比</strong></td>
-<td>1.25</td>
-<td>12.5</td>
-<td>3.8</td>
-<td>4.8</td>
-</tr>
-<tr>
-<td><strong>质量/时间比</strong></td>
-<td>0.059</td>
-<td>0.045</td>
-<td>0.063</td>
-<td>0.111</td>
-</tr>
-</tbody></table>
-<p><strong>关键发现</strong>：</p>
-<ol>
-<li><p><strong>Peer-to-Peer 最便宜但最慢</strong>：因为每一轮都需要多个 Agent 参与，而且往往需要 3+ 轮才能达成共识。但&quot;质量/成本比&quot;最高，说明如果你对成本很敏感且不急，它是很好的选择。</p>
-</li>
-<li><p><strong>Dynamic Routing 最快且成本中等</strong>：因为路由决策非常轻量，整个执行集中在一个专家 Agent。最适合高频的、决策清晰的任务。</p>
-</li>
-<li><p><strong>Pipeline 成本最低但不是最快</strong>：原因是阶段必须串行，但每个阶段都很轻量。适合流水线式的内容处理。</p>
-</li>
-<li><p><strong>Supervisor-Worker 最贵但质量最高</strong>：需要 Supervisor 的多次调用（分解+合成），但能产出最高质量的结果。适合高价值任务。</p>
-</li>
-</ol>
-<p><strong>经济决策规则</strong>：</p>
-<ul>
-<li><strong>日均调用 &lt; 10 次</strong>：选择 Supervisor-Worker（质量优先）</li>
-<li><strong>日均调用 10-100 次，对成本敏感</strong>：选择 Dynamic Routing</li>
-<li><strong>日均调用 &gt; 100 次，对质量要求中等</strong>：选择 Pipeline</li>
-<li><strong>需要多视角碰撞、有充足时间</strong>：选择 Peer-to-Peer</li>
-</ul>
-<hr>
-<h2>10. Peer-to-Peer 协议设计深化</h2>
-<p>Peer-to-Peer 模式看似简单（多个 Agent 互相对话），但要实现稳定的 P2P 协作，需要精心设计通信协议。本节深入探讨 P2P 的关键设计细节。</p>
-<h3>10.1 对话格式标准化</h3>
-<p>在 Peer-to-Peer 模式中，Agent 之间的消息必须遵循一个标准格式，否则 Agent 会互相&quot;听不懂&quot;。</p>
-<pre><code class="language-python">from dataclasses import dataclass, field
-from typing import Literal
-from enum import Enum
-import json
-
-
-class MessageType(str, Enum):
-    &quot;&quot;&quot;P2P 消息类型&quot;&quot;&quot;
-    PROPOSE = &quot;propose&quot;           # 提出方案或观点
-    COMMENT = &quot;comment&quot;           # 评论或反馈
-    QUESTION = &quot;question&quot;         # 提出问题
-    AGREE = &quot;agree&quot;               # 同意
-    DISAGREE = &quot;disagree&quot;         # 不同意
-    COMPROMISE = &quot;compromise&quot;     # 提出妥协方案
-    REQUEST_INFO = &quot;request_info&quot; # 请求信息
-    CONSENSUS = &quot;consensus&quot;       # 宣布达成共识
-
-
-@dataclass
-class P2PMessage:
-    &quot;&quot;&quot;P2P 协作中的标准消息格式&quot;&quot;&quot;
-    msg_id: str                              # 消息唯一 ID
-    sender: str                              # 发送者 Agent 名称
-    receivers: list[str]                    # 接收者列表（可以是广播）
-    msg_type: MessageType                   # 消息类型
-    content: str                            # 消息主体
-    reasoning: str = &quot;&quot;                     # 发送者的推理过程（为什么这么说）
-    evidence: list[dict] = field(default_factory=list)  # 证据列表
-    confidence: float = 0.8                 # 发送者对该观点的信心度 (0-1)
-    references: list[str] = field(default_factory=list)  # 引用的之前消息的 ID
-    timestamp: float = field(default_factory=lambda: __import__(&#39;time&#39;).time())
-    round_number: int = 0                   # 第几轮对话
-
-    def to_json(self) -&gt; str:
-        return json.dumps({
-            &quot;msg_id&quot;: self.msg_id,
-            &quot;sender&quot;: self.sender,
-            &quot;receivers&quot;: self.receivers,
-            &quot;msg_type&quot;: self.msg_type.value,
-            &quot;content&quot;: self.content,
-            &quot;reasoning&quot;: self.reasoning,
-            &quot;evidence&quot;: self.evidence,
-            &quot;confidence&quot;: self.confidence,
-            &quot;references&quot;: self.references,
-            &quot;timestamp&quot;: self.timestamp,
-            &quot;round_number&quot;: self.round_number,
-        }, ensure_ascii=False)
-</code></pre>
-<h3>10.2 轮次终止条件</h3>
-<p>P2P 协作最大的风险是陷入无限循环。需要明确的终止条件。具体实现见前面的 P2PTerminationChecker 类。</p>
-<h3>10.3 冲突解决机制</h3>
-<p>当两个 Agent 无法达成共识时，需要冲突解决机制。具体实现见前面的 ConflictResolver 类。</p>
-<h3>10.4 完整的 PeerToPeerProtocol 类</h3>
-<pre><code class="language-python">import asyncio
-import uuid
-from typing import Callable, Optional
-
-
-class PeerToPeerProtocol:
-    &quot;&quot;&quot;完整的 P2P 协作协议实现&quot;&quot;&quot;
-
-    def __init__(
-        self,
-        agents: dict[str, &quot;WorkerAgent&quot;],
-        max_rounds: int = 5,
-        consensus_threshold: float = 0.8,
-        resolution_strategy: str = &quot;confidence_weighted&quot;,
-    ):
-        self.agents = agents
-        self.max_rounds = max_rounds
-        self.consensus_threshold = consensus_threshold
-        self.resolution_strategy = resolution_strategy
-        self.message_history: list[P2PMessage] = []
-        self.agent_states: dict[str, dict] = {
-            name: {
-                &quot;opinion&quot;: &quot;&quot;,
-                &quot;agreement_confidence&quot;: 0.5,
-                &quot;last_message_time&quot;: 0,
-            }
-            for name in agents.keys()
-        }
-
-    async def run(self, topic: str, initial_content: str = &quot;&quot;) -&gt; dict:
-        &quot;&quot;&quot;运行 P2P 协作流程&quot;&quot;&quot;
-        # 实现类似上面所述的协作循环
-        # 包括多轮对话、终止条件检测、冲突解决
-        return {
-            &quot;topic&quot;: topic,
-            &quot;message_count&quot;: len(self.message_history),
-            &quot;agent_states&quot;: self.agent_states,
-        }
-</code></pre>
-<hr>
-<h2>11. Single Agent vs Multi-Agent 的量化对比</h2>
-<p>很多团队在决定是否采用 Multi-Agent 架构时陷入困局。本节用具体数据对比两种方案。</p>
-<h3>11.1 对比任务：竞品分析报告</h3>
-<p><strong>任务定义</strong>：撰写一份 5000 字的竞品分析报告，对比 OpenAI、Anthropic、Google 三家公司的 LLM 产品策略、成本模型、应用生态。报告需要包含：</p>
-<ul>
-<li>产品对标（功能、性能、成本）</li>
-<li>市场策略分析</li>
-<li>生态建设对比</li>
-<li>风险和机会评估</li>
-<li>建议（对我们的产品有什么启示）</li>
-</ul>
-<h3>11.2 方案 A：Single Agent</h3>
-<p><strong>成本计算</strong>：</p>
-<ul>
-<li>单个 Agent 推理：22,500 tokens</li>
-<li>成本：$0.529</li>
-<li>执行时间：33s</li>
-<li>输出质量：6.8/10</li>
-</ul>
-<h3>11.3 方案 B：Multi-Agent（Supervisor-Worker）</h3>
-<p><strong>成本计算</strong>：</p>
-<ul>
-<li>5 次 LLM 调用</li>
-<li>41,500 tokens</li>
-<li>成本：$1.339</li>
-<li>执行时间：27s</li>
-<li>输出质量：8.8/10</li>
-</ul>
-<h3>11.4 对比总结表</h3>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>Single Agent</th>
-<th>Multi-Agent</th>
-<th>差异</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>总成本</strong></td>
-<td>$0.529</td>
-<td>$1.339</td>
-<td>+153%</td>
-</tr>
-<tr>
-<td><strong>执行时间</strong></td>
-<td>33s</td>
-<td>27s</td>
-<td>-18%</td>
-</tr>
-<tr>
-<td><strong>LLM 调用次数</strong></td>
-<td>1</td>
-<td>5</td>
-<td>+400%</td>
-</tr>
-<tr>
-<td><strong>Token 消耗</strong></td>
-<td>22,500</td>
-<td>41,500</td>
-<td>+84%</td>
-</tr>
-<tr>
-<td><strong>质量评分</strong></td>
-<td>6.8/10</td>
-<td>8.8/10</td>
-<td>+2</td>
-</tr>
-<tr>
-<td><strong>质量/成本</strong></td>
-<td>12.85</td>
-<td>6.57</td>
-<td>-49%</td>
-</tr>
-<tr>
-<td><strong>质量/时间</strong></td>
-<td>0.21</td>
-<td>0.33</td>
-<td>+57%</td>
-</tr>
-</tbody></table>
-<p><strong>关键发现</strong>：</p>
-<ol>
-<li><strong>成本方面</strong>：Multi-Agent 约 2.5 倍的成本，但质量提升 30%</li>
-<li><strong>时间方面</strong>：Multi-Agent 反而因为并行度快 18%</li>
-<li><strong>质量方面</strong>：Multi-Agent 明显更好（8.8 vs 6.8）</li>
-<li><strong>经济性</strong>：对高价值任务（&gt;$1000），多花 2.5x 成本是值得的</li>
-</ol>
-<p><strong>决策建议</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>场景</th>
-<th>推荐方案</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>日常内部分析，成本敏感</td>
-<td>Single Agent</td>
-</tr>
-<tr>
-<td>高价值客户交付（&gt;$1000）</td>
-<td>Multi-Agent</td>
-</tr>
-<tr>
-<td>实时系统，对延迟敏感</td>
-<td>Multi-Agent</td>
-</tr>
-<tr>
-<td>任务简单，不需要深度分析</td>
-<td>Single Agent</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>12. Worker 专业化的度量标准</h2>
-<p>不是所有任务都值得创建专门的 Worker Agent。本节提供量化的判断标准。</p>
-<h3>12.1 专业化的三个关键指标</h3>
-<p><strong>指标一：任务频率阈值</strong></p>
-<p>日均调用 &gt; 100 次时，专业化往往值得投资。</p>
-<p><strong>指标二：准确率提升幅度</strong></p>
-<p>如果专业化能将准确率从 75% 提升到 92%（17% 提升），即使频率不高，ROI 也会很高。</p>
-<p><strong>指标三：成本效率比</strong></p>
-<p>综合考虑开发成本、运行成本节省、质量提升三个因素。</p>
-<h3>12.2 SpecializationEvaluator 类</h3>
-<pre><code class="language-python">class SpecializationEvaluator:
-    &quot;&quot;&quot;Worker 专业化评估器&quot;&quot;&quot;
-
-    def __init__(
-        self,
-        frequency_weight: float = 0.4,
-        accuracy_weight: float = 0.35,
-        efficiency_weight: float = 0.25,
-    ):
-        self.frequency_weight = frequency_weight
-        self.accuracy_weight = accuracy_weight
-        self.efficiency_weight = efficiency_weight
-
-    def evaluate(
-        self,
-        task_name: str,
-        daily_call_volume: int,
-        current_accuracy: float,
-        specialized_accuracy_estimate: float,
-        error_cost: float,
-        specialization_cost_dollars: int = 2000,
-    ) -&gt; dict:
-        &quot;&quot;&quot;
-        评估一个 Worker 是否应该专业化
-
-        返回评估结果，包含：
-        - frequency_score: 0-10
-        - accuracy_score: 0-10
-        - efficiency_score: 0-10
-        - overall_score: 加权平均
-        - recommendation: &quot;强烈推荐&quot; / &quot;值得考虑&quot; / &quot;暂不必专业化&quot;
-        &quot;&quot;&quot;
-        # 三个评分维度
-        freq_score = self._score_frequency(daily_call_volume)
-        acc_score = self._score_accuracy(
-            current_accuracy,
-            specialized_accuracy_estimate,
-            error_cost,
-            daily_call_volume,
-        )
-        eff_score = self._score_efficiency(
-            daily_call_volume,
-            specialization_cost_dollars,
-        )
-
-        overall = (
-            freq_score * self.frequency_weight
-            + acc_score * self.accuracy_weight
-            + eff_score * self.efficiency_weight
-        )
-
-        if overall &gt;= 7.5:
-            rec = &quot;强烈推荐&quot;
-        elif overall &gt;= 5.5:
-            rec = &quot;值得考虑&quot;
-        else:
-            rec = &quot;暂不必专业化&quot;
-
-        return {
-            &quot;task_name&quot;: task_name,
-            &quot;frequency_score&quot;: round(freq_score, 1),
-            &quot;accuracy_score&quot;: round(acc_score, 1),
-            &quot;efficiency_score&quot;: round(eff_score, 1),
-            &quot;overall_score&quot;: round(overall, 1),
-            &quot;recommendation&quot;: rec,
-        }
-
-    def _score_frequency(self, daily_call_volume: int) -&gt; float:
-        &quot;&quot;&quot;频率评分（0-10）&quot;&quot;&quot;
-        if daily_call_volume &lt; 10:
-            return 1
-        elif daily_call_volume &lt; 100:
-            return 5
-        elif daily_call_volume &lt; 500:
-            return 8
-        else:
-            return 10
-
-    def _score_accuracy(
-        self,
-        current_accuracy: float,
-        specialized_accuracy: float,
-        error_cost: float,
-        daily_call_volume: int,
-    ) -&gt; float:
-        &quot;&quot;&quot;准确率提升评分（0-10）&quot;&quot;&quot;
-        accuracy_gain = specialized_accuracy - current_accuracy
-        if accuracy_gain &lt; 0.02:
-            return 0
-        elif accuracy_gain &lt; 0.10:
-            return accuracy_gain / 0.10 * 10
-        else:
-            return 10
-
-    def _score_efficiency(
-        self,
-        daily_call_volume: int,
-        specialization_cost_dollars: int,
-    ) -&gt; float:
-        &quot;&quot;&quot;成本效率评分（0-10）&quot;&quot;&quot;
-        monthly_savings = daily_call_volume * 0.5 * 30 * 0.2  # 假设每日成本减少 20%
-        breakeven_months = specialization_cost_dollars / monthly_savings
-        
-        if breakeven_months &lt;= 1:
-            return 10
-        elif breakeven_months &lt;= 6:
-            return 7
-        elif breakeven_months &lt;= 12:
-            return 4
-        else:
-            return 1
-</code></pre>
-<hr>
-<h2>13. 设计 Multi-Agent 系统的决策清单</h2>
-<h2>9. 多 Agent 协作的成本特征分析</h2>
-<p>Multi-Agent 系统看起来功能更强，但成本结构也更复杂。本节量化对比四种协作模式的成本特征，帮助你在实际项目中做出经济合理的架构选择。</p>
-<h3>9.1 四种模式的成本维度对比</h3>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>Supervisor-Worker</th>
-<th>Peer-to-Peer</th>
-<th>Pipeline</th>
-<th>Dynamic Routing</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>每任务 LLM 调用次数</strong></td>
-<td>1(Sup) + N(Workers)</td>
-<td>2-5（取决于轮数）</td>
-<td>N（等于阶段数）</td>
-<td>1(Router) + 1(Expert)</td>
-</tr>
-<tr>
-<td><strong>平均 Token 消耗</strong></td>
-<td>~35,000</td>
-<td>~28,000</td>
-<td>~25,000</td>
-<td>~18,000</td>
-</tr>
-<tr>
-<td><strong>通信开销</strong></td>
-<td>低（星形集中）</td>
-<td>高（全网通信）</td>
-<td>低（链式顺序）</td>
-<td>低（分发）</td>
-</tr>
-<tr>
-<td><strong>端到端延迟</strong></td>
-<td>中（并行 Workers）</td>
-<td>高（多轮协商）</td>
-<td>高（串行阶段）</td>
-<td>低（单次路由）</td>
-</tr>
-<tr>
-<td><strong>并行度潜力</strong></td>
-<td>高（Worker 可并行）</td>
-<td>中（轮次间串行）</td>
-<td>低（阶段必须顺序）</td>
-<td>高（请求级并行）</td>
-</tr>
-<tr>
-<td><strong>失败重试成本</strong></td>
-<td>中（重试单个 Worker）</td>
-<td>高（重新协商）</td>
-<td>高（后续阶段受影响）</td>
-<td>低（重试 Expert）</td>
-</tr>
-</tbody></table>
-<h3>9.2 实例成本估算：撰写技术博客</h3>
-<p>假设任务为：<strong>撰写一篇 3000 字的技术博客</strong>，关于&quot;LLM Agent 成本优化最佳实践&quot;。我们分别用四种模式实现，并对比成本。</p>
-<p><strong>基础假设</strong>：</p>
-<ul>
-<li>GPT-4o: $15/MTok (Input), $60/MTok (Output)</li>
-<li>GPT-4o-mini: $0.15/MTok (Input), $0.6/MTok (Output)</li>
-<li>平均每个 LLM 调用产生 1,500 token 输出</li>
-<li>平均上下文注入 2,000 token</li>
-</ul>
-<h4>模式一：Supervisor-Worker</h4>
-<pre><code>执行步骤：
-1. Supervisor 分解任务                          Tokens: ~3,000 (Input: 2K, Output: 1K)
-   ├─ Worker A (搜索): 搜集最新的 LLM 成本数据  Tokens: ~8,000 (Input: 4K, Output: 4K)
-   ├─ Worker B (分析): 分析成本优化策略         Tokens: ~8,000 (Input: 4K, Output: 4K)
-   ├─ Worker C (写作): 撰写初稿                 Tokens: ~10,000 (Input: 5K, Output: 5K)
-   └─ Supervisor 合成最终版本                  Tokens: ~6,000 (Input: 4K, Output: 2K)
-
-总 Token: 35,000
-
-模型使用：
-- Supervisor: GPT-4o (2次调用，共 9,000 token)        → $0.27
-- Worker A/B: GPT-4o-mini (2次调用，共 16,000 token)  → $0.048
-- Worker C: GPT-4o (1次调用，共 10,000 token)         → $0.30
-- Supervisor 合成: GPT-4o (1次调用，共 6,000 token)   → $0.18
-                                                Total: $0.798 (~$0.80)
-
-执行时间：
-- Supervisor 分解: 4s
-- Workers 并行执行: max(6s, 6s, 8s) = 8s
-- Supervisor 合成: 5s
-                    Total: ~17s
-</code></pre>
-<h4>模式二：Peer-to-Peer</h4>
-<pre><code>执行步骤（假设 3 轮协商）：
-Round 1:
-  - Agent A (初稿作者): 撰写初稿                   ~5,000 token
-  - Agent B (技术审稿): 提出专业意见              ~4,000 token
-  - Agent C (编辑): 检查逻辑和结构                ~3,000 token
-
-Round 2:
-  - Agent A: 根据反馈修改                         ~5,000 token
-  - Agent B: 检查修改后的技术准确性               ~3,000 token
-  - Agent C: 优化措辞                            ~2,000 token
-
-Round 3:
-  - Agent A: 最终微调                            ~3,000 token
-  - 共识检测: 所有 Agent 同意发布                ~2,000 token
-
-总 Token: ~27,000
-
-模型使用：
-- 所有 Agent 用 GPT-4o-mini                      → $0.081
-                                                Total: $0.08
-
-执行时间：
-- Round 1: A(4s) + B(3s) + C(2s) = 9s (串行)
-- Round 2: A(4s) + B(3s) + C(2s) = 9s (串行)
-- Round 3: A(2s) + 共识(2s) = 4s
-                                 Total: ~22s
-</code></pre>
-<h4>模式三：Pipeline</h4>
-<pre><code>执行步骤（5 个阶段）：
-1. Draft Agent: 快速生成初稿                      ~5,000 token
-2. Review Agent: 审查内容准确性和完整性            ~4,000 token
-3. Edit Agent: 改进措辞和逻辑流                   ~4,000 token
-4. FactCheck Agent: 验证数据和引用               ~3,000 token
-5. Format Agent: 最终排版和调整                   ~2,000 token
-
-总 Token: ~18,000
-
-模型使用：
-- Draft: GPT-4o-mini                            → $0.015
-- Review: GPT-4o-mini                           → $0.012
-- Edit: GPT-4o-mini                             → $0.012
-- FactCheck: GPT-4o                             → $0.21
-- Format: GPT-4o-mini                           → $0.006
-                                                Total: $0.255
-
-执行时间：
-- 5 个阶段串行: 4s + 3s + 3s + 4s + 2s = 16s
-</code></pre>
-<h4>模式四：Dynamic Routing</h4>
-<pre><code>执行步骤：
-1. Router (意图识别): &quot;这是一个技术博客写作任务&quot;  ~1,500 token (GPT-4o-mini)
-2. 路由到 Blog Writer Expert Agent               ~1,500 token
-3. Blog Writer 调用子工具：
-   - 搜索工具: 不计 token（工具调用）
-   - 数据整理: ~3,000 token
-   - 撰写完整博客: ~10,000 token
-
-总 Token: ~16,000
-
-模型使用：
-- Router: GPT-4o-mini                           → $0.0045
-- Expert: GPT-4o (1次，包含搜索和写作)         → $0.21
-                                                Total: $0.214
-
-执行时间：
-- 路由决策: 1s
-- 专家执行: 8s
-                Total: ~9s（最快！）
-</code></pre>
-<h3>9.3 成本对比总结表</h3>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>Supervisor-Worker</th>
-<th>Peer-to-Peer</th>
-<th>Pipeline</th>
-<th>Dynamic Routing</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>总成本</strong></td>
-<td>$0.80</td>
-<td>$0.08</td>
-<td>$0.26</td>
-<td>$0.21</td>
-</tr>
-<tr>
-<td><strong>执行时间</strong></td>
-<td>17s</td>
-<td>22s</td>
-<td>16s</td>
-<td>9s</td>
-</tr>
-<tr>
-<td><strong>成本/时间</strong></td>
-<td>$0.047/s</td>
-<td>$0.0036/s</td>
-<td>$0.016/s</td>
-<td>$0.023/s</td>
-</tr>
-<tr>
-<td><strong>输出质量预期</strong></td>
-<td>高</td>
-<td>中</td>
-<td>中-高</td>
-<td>高</td>
-</tr>
-<tr>
-<td><strong>质量/成本比</strong></td>
-<td>1.25</td>
-<td>12.5</td>
-<td>3.8</td>
-<td>4.8</td>
-</tr>
-<tr>
-<td><strong>质量/时间比</strong></td>
-<td>0.059</td>
-<td>0.045</td>
-<td>0.063</td>
-<td>0.111</td>
-</tr>
-</tbody></table>
-<p><strong>关键发现</strong>：</p>
-<ol>
-<li><p><strong>Peer-to-Peer 最便宜但最慢</strong>：因为每一轮都需要多个 Agent 参与，而且往往需要 3+ 轮才能达成共识。但&quot;质量/成本比&quot;最高，说明如果你对成本很敏感且不急，它是很好的选择。</p>
-</li>
-<li><p><strong>Dynamic Routing 最快且成本中等</strong>：因为路由决策非常轻量，整个执行集中在一个专家 Agent。最适合高频的、决策清晰的任务。</p>
-</li>
-<li><p><strong>Pipeline 成本最低但不是最快</strong>：原因是阶段必须串行，但每个阶段都很轻量。适合流水线式的内容处理。</p>
-</li>
-<li><p><strong>Supervisor-Worker 最贵但质量最高</strong>：需要 Supervisor 的多次调用（分解+合成），但能产出最高质量的结果。适合高价值任务。</p>
-</li>
-</ol>
-<p><strong>经济决策规则</strong>：</p>
-<ul>
-<li><strong>日均调用 &lt; 10 次</strong>：选择 Supervisor-Worker（质量优先）</li>
-<li><strong>日均调用 10-100 次，对成本敏感</strong>：选择 Dynamic Routing</li>
-<li><strong>日均调用 &gt; 100 次，对质量要求中等</strong>：选择 Pipeline</li>
-<li><strong>需要多视角碰撞、有充足时间</strong>：选择 Peer-to-Peer</li>
-</ul>
-<hr>
-<h2>10. Peer-to-Peer 协议设计深化</h2>
-<p>Peer-to-Peer 模式看似简单（多个 Agent 互相对话），但要实现稳定的 P2P 协作，需要精心设计通信协议。本节深入探讨 P2P 的关键设计细节。</p>
-<h3>10.1 对话格式标准化</h3>
-<p>在 Peer-to-Peer 模式中，Agent 之间的消息必须遵循一个标准格式，否则 Agent 会互相&quot;听不懂&quot;。</p>
-<pre><code class="language-python">from dataclasses import dataclass, field
-from typing import Literal
-from enum import Enum
-import json
-
-
-class MessageType(str, Enum):
-    &quot;&quot;&quot;P2P 消息类型&quot;&quot;&quot;
-    PROPOSE = &quot;propose&quot;           # 提出方案或观点
-    COMMENT = &quot;comment&quot;           # 评论或反馈
-    QUESTION = &quot;question&quot;         # 提出问题
-    AGREE = &quot;agree&quot;               # 同意
-    DISAGREE = &quot;disagree&quot;         # 不同意
-    COMPROMISE = &quot;compromise&quot;     # 提出妥协方案
-    REQUEST_INFO = &quot;request_info&quot; # 请求信息
-    CONSENSUS = &quot;consensus&quot;       # 宣布达成共识
-
-
-@dataclass
-class P2PMessage:
-    &quot;&quot;&quot;P2P 协作中的标准消息格式&quot;&quot;&quot;
-    msg_id: str                              # 消息唯一 ID
-    sender: str                              # 发送者 Agent 名称
-    receivers: list[str]                    # 接收者列表（可以是广播）
-    msg_type: MessageType                   # 消息类型
-    content: str                            # 消息主体
-    reasoning: str = &quot;&quot;                     # 发送者的推理过程（为什么这么说）
-    evidence: list[dict] = field(default_factory=list)  # 证据列表
-    confidence: float = 0.8                 # 发送者对该观点的信心度 (0-1)
-    references: list[str] = field(default_factory=list)  # 引用的之前消息的 ID
-    timestamp: float = field(default_factory=lambda: __import__(&#39;time&#39;).time())
-    round_number: int = 0                   # 第几轮对话
-
-    def to_json(self) -&gt; str:
-        return json.dumps({
-            &quot;msg_id&quot;: self.msg_id,
-            &quot;sender&quot;: self.sender,
-            &quot;receivers&quot;: self.receivers,
-            &quot;msg_type&quot;: self.msg_type.value,
-            &quot;content&quot;: self.content,
-            &quot;reasoning&quot;: self.reasoning,
-            &quot;evidence&quot;: self.evidence,
-            &quot;confidence&quot;: self.confidence,
-            &quot;references&quot;: self.references,
-            &quot;timestamp&quot;: self.timestamp,
-            &quot;round_number&quot;: self.round_number,
-        }, ensure_ascii=False)
-</code></pre>
-<h3>10.2 轮次终止条件</h3>
-<p>P2P 协作最大的风险是陷入无限循环。需要明确的终止条件。具体实现见前面的 P2PTerminationChecker 类。</p>
-<h3>10.3 冲突解决机制</h3>
-<p>当两个 Agent 无法达成共识时，需要冲突解决机制。具体实现见前面的 ConflictResolver 类。</p>
-<h3>10.4 完整的 PeerToPeerProtocol 类</h3>
-<pre><code class="language-python">import asyncio
-import uuid
-from typing import Callable, Optional
-
-
-class PeerToPeerProtocol:
-    &quot;&quot;&quot;完整的 P2P 协作协议实现&quot;&quot;&quot;
-
-    def __init__(
-        self,
-        agents: dict[str, &quot;WorkerAgent&quot;],
-        max_rounds: int = 5,
-        consensus_threshold: float = 0.8,
-        resolution_strategy: str = &quot;confidence_weighted&quot;,
-    ):
-        self.agents = agents
-        self.max_rounds = max_rounds
-        self.consensus_threshold = consensus_threshold
-        self.resolution_strategy = resolution_strategy
-        self.message_history: list[P2PMessage] = []
-        self.agent_states: dict[str, dict] = {
-            name: {
-                &quot;opinion&quot;: &quot;&quot;,
-                &quot;agreement_confidence&quot;: 0.5,
-                &quot;last_message_time&quot;: 0,
-            }
-            for name in agents.keys()
-        }
-
-    async def run(self, topic: str, initial_content: str = &quot;&quot;) -&gt; dict:
-        &quot;&quot;&quot;运行 P2P 协作流程&quot;&quot;&quot;
-        # 实现类似上面所述的协作循环
-        # 包括多轮对话、终止条件检测、冲突解决
-        return {
-            &quot;topic&quot;: topic,
-            &quot;message_count&quot;: len(self.message_history),
-            &quot;agent_states&quot;: self.agent_states,
-        }
-</code></pre>
-<hr>
-<h2>11. Single Agent vs Multi-Agent 的量化对比</h2>
-<p>很多团队在决定是否采用 Multi-Agent 架构时陷入困局。本节用具体数据对比两种方案。</p>
-<h3>11.1 对比任务：竞品分析报告</h3>
-<p><strong>任务定义</strong>：撰写一份 5000 字的竞品分析报告，对比 OpenAI、Anthropic、Google 三家公司的 LLM 产品策略、成本模型、应用生态。报告需要包含：</p>
-<ul>
-<li>产品对标（功能、性能、成本）</li>
-<li>市场策略分析</li>
-<li>生态建设对比</li>
-<li>风险和机会评估</li>
-<li>建议（对我们的产品有什么启示）</li>
-</ul>
-<h3>11.2 方案 A：Single Agent</h3>
-<p><strong>成本计算</strong>：</p>
-<ul>
-<li>单个 Agent 推理：22,500 tokens</li>
-<li>成本：$0.529</li>
-<li>执行时间：33s</li>
-<li>输出质量：6.8/10</li>
-</ul>
-<h3>11.3 方案 B：Multi-Agent（Supervisor-Worker）</h3>
-<p><strong>成本计算</strong>：</p>
-<ul>
-<li>5 次 LLM 调用</li>
-<li>41,500 tokens</li>
-<li>成本：$1.339</li>
-<li>执行时间：27s</li>
-<li>输出质量：8.8/10</li>
-</ul>
-<h3>11.4 对比总结表</h3>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>Single Agent</th>
-<th>Multi-Agent</th>
-<th>差异</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>总成本</strong></td>
-<td>$0.529</td>
-<td>$1.339</td>
-<td>+153%</td>
-</tr>
-<tr>
-<td><strong>执行时间</strong></td>
-<td>33s</td>
-<td>27s</td>
-<td>-18%</td>
-</tr>
-<tr>
-<td><strong>LLM 调用次数</strong></td>
-<td>1</td>
-<td>5</td>
-<td>+400%</td>
-</tr>
-<tr>
-<td><strong>Token 消耗</strong></td>
-<td>22,500</td>
-<td>41,500</td>
-<td>+84%</td>
-</tr>
-<tr>
-<td><strong>质量评分</strong></td>
-<td>6.8/10</td>
-<td>8.8/10</td>
-<td>+2</td>
-</tr>
-<tr>
-<td><strong>质量/成本</strong></td>
-<td>12.85</td>
-<td>6.57</td>
-<td>-49%</td>
-</tr>
-<tr>
-<td><strong>质量/时间</strong></td>
-<td>0.21</td>
-<td>0.33</td>
-<td>+57%</td>
-</tr>
-</tbody></table>
-<p><strong>关键发现</strong>：</p>
-<ol>
-<li><strong>成本方面</strong>：Multi-Agent 约 2.5 倍的成本，但质量提升 30%</li>
-<li><strong>时间方面</strong>：Multi-Agent 反而因为并行度快 18%</li>
-<li><strong>质量方面</strong>：Multi-Agent 明显更好（8.8 vs 6.8）</li>
-<li><strong>经济性</strong>：对高价值任务（&gt;$1000），多花 2.5x 成本是值得的</li>
-</ol>
-<p><strong>决策建议</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>场景</th>
-<th>推荐方案</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>日常内部分析，成本敏感</td>
-<td>Single Agent</td>
-</tr>
-<tr>
-<td>高价值客户交付（&gt;$1000）</td>
-<td>Multi-Agent</td>
-</tr>
-<tr>
-<td>实时系统，对延迟敏感</td>
-<td>Multi-Agent</td>
-</tr>
-<tr>
-<td>任务简单，不需要深度分析</td>
-<td>Single Agent</td>
-</tr>
-</tbody></table>
-<hr>
-<h2>12. Worker 专业化的度量标准</h2>
-<p>不是所有任务都值得创建专门的 Worker Agent。本节提供量化的判断标准。</p>
-<h3>12.1 专业化的三个关键指标</h3>
-<p><strong>指标一：任务频率阈值</strong></p>
-<p>日均调用 &gt; 100 次时，专业化往往值得投资。</p>
-<p><strong>指标二：准确率提升幅度</strong></p>
-<p>如果专业化能将准确率从 75% 提升到 92%（17% 提升），即使频率不高，ROI 也会很高。</p>
-<p><strong>指标三：成本效率比</strong></p>
-<p>综合考虑开发成本、运行成本节省、质量提升三个因素。</p>
-<h3>12.2 SpecializationEvaluator 类</h3>
-<pre><code class="language-python">class SpecializationEvaluator:
-    &quot;&quot;&quot;Worker 专业化评估器&quot;&quot;&quot;
-
-    def __init__(
-        self,
-        frequency_weight: float = 0.4,
-        accuracy_weight: float = 0.35,
-        efficiency_weight: float = 0.25,
-    ):
-        self.frequency_weight = frequency_weight
-        self.accuracy_weight = accuracy_weight
-        self.efficiency_weight = efficiency_weight
-
-    def evaluate(
-        self,
-        task_name: str,
-        daily_call_volume: int,
-        current_accuracy: float,
-        specialized_accuracy_estimate: float,
-        error_cost: float,
-        specialization_cost_dollars: int = 2000,
-    ) -&gt; dict:
-        &quot;&quot;&quot;
-        评估一个 Worker 是否应该专业化
-
-        返回评估结果，包含：
-        - frequency_score: 0-10
-        - accuracy_score: 0-10
-        - efficiency_score: 0-10
-        - overall_score: 加权平均
-        - recommendation: &quot;强烈推荐&quot; / &quot;值得考虑&quot; / &quot;暂不必专业化&quot;
-        &quot;&quot;&quot;
-        # 三个评分维度
-        freq_score = self._score_frequency(daily_call_volume)
-        acc_score = self._score_accuracy(
-            current_accuracy,
-            specialized_accuracy_estimate,
-            error_cost,
-            daily_call_volume,
-        )
-        eff_score = self._score_efficiency(
-            daily_call_volume,
-            specialization_cost_dollars,
-        )
-
-        overall = (
-            freq_score * self.frequency_weight
-            + acc_score * self.accuracy_weight
-            + eff_score * self.efficiency_weight
-        )
-
-        if overall &gt;= 7.5:
-            rec = &quot;强烈推荐&quot;
-        elif overall &gt;= 5.5:
-            rec = &quot;值得考虑&quot;
-        else:
-            rec = &quot;暂不必专业化&quot;
-
-        return {
-            &quot;task_name&quot;: task_name,
-            &quot;frequency_score&quot;: round(freq_score, 1),
-            &quot;accuracy_score&quot;: round(acc_score, 1),
-            &quot;efficiency_score&quot;: round(eff_score, 1),
-            &quot;overall_score&quot;: round(overall, 1),
-            &quot;recommendation&quot;: rec,
-        }
-
-    def _score_frequency(self, daily_call_volume: int) -&gt; float:
-        &quot;&quot;&quot;频率评分（0-10）&quot;&quot;&quot;
-        if daily_call_volume &lt; 10:
-            return 1
-        elif daily_call_volume &lt; 100:
-            return 5
-        elif daily_call_volume &lt; 500:
-            return 8
-        else:
-            return 10
-
-    def _score_accuracy(
-        self,
-        current_accuracy: float,
-        specialized_accuracy: float,
-        error_cost: float,
-        daily_call_volume: int,
-    ) -&gt; float:
-        &quot;&quot;&quot;准确率提升评分（0-10）&quot;&quot;&quot;
-        accuracy_gain = specialized_accuracy - current_accuracy
-        if accuracy_gain &lt; 0.02:
-            return 0
-        elif accuracy_gain &lt; 0.10:
-            return accuracy_gain / 0.10 * 10
-        else:
-            return 10
-
-    def _score_efficiency(
-        self,
-        daily_call_volume: int,
-        specialization_cost_dollars: int,
-    ) -&gt; float:
-        &quot;&quot;&quot;成本效率评分（0-10）&quot;&quot;&quot;
-        monthly_savings = daily_call_volume * 0.5 * 30 * 0.2  # 假设每日成本减少 20%
-        breakeven_months = specialization_cost_dollars / monthly_savings
-        
-        if breakeven_months &lt;= 1:
-            return 10
-        elif breakeven_months &lt;= 6:
-            return 7
-        elif breakeven_months &lt;= 12:
-            return 4
-        else:
-            return 1
-</code></pre>
-<hr>
-<h2>13. 设计 Multi-Agent 系统的决策清单</h2>
+<h2>9. 规划模式选择清单</h2>
+<p>在实际项目中，选择哪种规划模式不需要从零推导——下面的决策清单可以直接用：</p>
 <table>
 <thead>
 <tr>
@@ -2992,15 +1153,7 @@ class PeerToPeerProtocol:
 </tr>
 </tbody></table>
 <p><strong>二维决策矩阵：</strong></p>
-<pre><code>                  任务步骤少            任务步骤多
-             ┌──────────────────┬──────────────────┐
- 确定性高    │  ReAct            │  Plan-and-Exec   │
- (路径清晰)  │ (甚至不需要Agent)  │                  │
-             ├──────────────────┼──────────────────┤
- 确定性低    │  Tree-of-Thought  │  Hierarchical    │
- (需要探索)  │                   │  + Reflection    │
-             └──────────────────┴──────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-10/07-paradigm-selection-matrix.svg" alt="Agent 范式选择矩阵"></p>
 <p><strong>模式组合</strong>在生产中很常见：Hierarchical + Plan-and-Execute（高层分解子目标，内部用 Plan-Exec 执行）；ReAct + Reflection（逐步执行，每 N 步检查方向）。关键原则：<strong>从 ReAct 开始，只有当它的局限性确实成为瓶颈时再升级。</strong></p>
 <hr>
 <h2>10. 结语：规划的边界与 Multi-Agent 的必要性</h2>
@@ -3025,12 +1178,12 @@ class PeerToPeerProtocol:
 <blockquote>
 <p><strong>系列导航</strong>：本文是 Agentic 系列的第 10 篇。</p>
 <ul>
-<li>上一篇：<a href="/engineering/agentic/09-RAG%E4%BD%9C%E4%B8%BA%E8%AE%A4%E7%9F%A5%E8%AE%B0%E5%BF%86%EF%BC%9A%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5">09 | RAG作为认知记忆：检索增强生成的工程实践</a></li>
-<li>下一篇：<a href="/engineering/agentic/11-%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C%EF%BC%9A%E5%8D%8F%E4%BD%9C%E6%A8%A1%E5%BC%8F%E4%B8%8E%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1">11 | 多Agent协作：协作模式与架构设计</a></li>
-<li>完整目录：<a href="/engineering/agentic/01-%E4%BB%8ELLM%E5%88%B0Agent%EF%BC%9AAgentic%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE">01 | 从LLM到Agent：Agentic系统的知识地图</a></li>
+<li>上一篇：<a href="/blog/engineering/agentic/09-RAG%E4%BD%9C%E4%B8%BA%E8%AE%A4%E7%9F%A5%E8%AE%B0%E5%BF%86%EF%BC%9A%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%94%9F%E6%88%90%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5">09 | RAG作为认知记忆：检索增强生成的工程实践</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/11-%E5%A4%9AAgent%E5%8D%8F%E4%BD%9C%EF%BC%9A%E5%8D%8F%E4%BD%9C%E6%A8%A1%E5%BC%8F%E4%B8%8E%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1">11 | 多Agent协作：协作模式与架构设计</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-%E4%BB%8ELLM%E5%88%B0Agent%EF%BC%9AAgentic%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE">01 | 从LLM到Agent：Agentic系统的知识地图</a></li>
 </ul>
 </blockquote>
-18:T14668,<h1>Multi-Agent Collaboration: 多 Agent 协作模式与架构</h1>
+17:T124bf,<h1>Multi-Agent Collaboration: 多 Agent 协作模式与架构</h1>
 <blockquote>
 <p>一个人可以走得很快，但一群人才能走得很远。Agent 也是如此。</p>
 <p>本文是 Agentic 系列第 11 篇。前 10 篇我们一直在讨论单个 Agent 如何更聪明——更好的记忆、更强的工具、更深的规划。这一篇，我们把视角从&quot;个体智能&quot;拉升到&quot;集体智能&quot;：当一个 Agent 不够用时，多个 Agent 如何协作？</p>
@@ -3049,19 +1202,7 @@ class PeerToPeerProtocol:
 <h3>1.2 Single-Agent 的四个天花板</h3>
 <p><strong>天花板一：Context Window 限制</strong></p>
 <p>一个 Agent 的 System Prompt 需要包含：角色定义、工具描述、输出格式约束、领域知识、示例。当你试图让一个 Agent 同时承担搜索、分析、写作、代码生成、数据可视化等多个职能时，光是工具描述就可能占据数万 token。留给实际任务执行的上下文空间被严重压缩。</p>
-<pre><code>一个&quot;全能&quot; Agent 的 Context 分配：
-
-┌─────────────────────────────────────────────────┐
-│ System Prompt (角色 + 规则)         ~2,000 tokens │
-│ Tool Schemas (15 个工具)            ~6,000 tokens │
-│ 领域知识 (RAG 检索结果)             ~4,000 tokens │
-│ 对话历史                            ~8,000 tokens │
-│ 当前任务 + 中间状态                 ~3,000 tokens │
-├─────────────────────────────────────────────────┤
-│ 剩余可用空间                        ~9,000 tokens │ ← 越来越捉襟见肘
-│ (128K 窗口下比例更好，但工具越多问题越突出)         │
-└─────────────────────────────────────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-11/01-context-allocation.svg" alt="一个"全能" Agent 的 Context 分配"></p>
 <p>更关键的是，研究表明 LLM 在超长上下文中存在&quot;Lost in the Middle&quot;问题——中间位置的信息检索准确率显著下降。塞得越多，每条信息被有效利用的概率越低。</p>
 <p><strong>天花板二：专业化限制</strong></p>
 <p>一个 System Prompt 很难让 LLM 同时扮演好多个角色。你告诉它&quot;你是一个严谨的数据分析师&quot;，它分析数据时很好；但同一个 prompt 里你又说&quot;你也是一个有创意的文案写手&quot;，这两种人格的行为模式是矛盾的。严谨和创意在同一个 prompt 中互相干扰，最终两个角色都做不好。</p>
@@ -3070,45 +1211,12 @@ class PeerToPeerProtocol:
 <p>单 Agent 是一个 Single Point of Failure。如果它在第 5 步推理出错（比如工具调用参数写错），整个任务链路都会受到污染。虽然我们在第 10 篇讨论了 Reflection 和自我纠错，但自我纠错的前提是&quot;能发现自己错了&quot;——而 LLM 对自身错误的检测能力是有限的。</p>
 <p><strong>天花板四：并行度限制</strong></p>
 <p>单 Agent 的执行是串行的——一次 LLM 调用，等待结果，再进行下一次。如果一个任务可以分解为三个独立子任务（比如同时搜索三个数据源），单 Agent 只能顺序执行，浪费了大量时间。</p>
-<pre><code>Single-Agent 串行执行：
-
-  Task ──→ [Search A] ──→ [Search B] ──→ [Search C] ──→ [Synthesize]
-                                                         Total: ~40s
-
-Multi-Agent 并行执行：
-
-           ┌─→ [Search A] ─┐
-  Task ──→ ├─→ [Search B] ─┼──→ [Synthesize]
-           └─→ [Search C] ─┘
-                              Total: ~15s
-</code></pre>
+<p><img src="/images/blog/agentic-11/02-serial-vs-parallel.svg" alt="Single-Agent 串行执行 vs Multi-Agent 并行执行"></p>
 <hr>
 <h2>2. Multi-Agent 的四种协作模式</h2>
 <p>当我们决定使用多个 Agent 时，第一个架构问题是：<strong>它们之间的协作关系是什么？</strong> 不同的关系模式适用于不同的场景，选错模式比用错框架更致命。</p>
 <h3>2.1 模式一：Supervisor-Worker（上级分配型）</h3>
-<pre><code>                    ┌──────────────────┐
-                    │    Supervisor    │
-                    │   (任务分解 +    │
-                    │    结果合成)     │
-                    └──────┬───────────┘
-                           │
-              ┌────────────┼────────────┐
-              │            │            │
-              ▼            ▼            ▼
-       ┌──────────┐ ┌──────────┐ ┌──────────┐
-       │ Worker A │ │ Worker B │ │ Worker C │
-       │ (搜索)   │ │ (分析)   │ │ (写作)   │
-       └──────────┘ └──────────┘ └──────────┘
-              │            │            │
-              └────────────┼────────────┘
-                           │
-                           ▼
-                    ┌──────────────────┐
-                    │    Supervisor    │
-                    │   (收集 + 合成   │
-                    │    最终输出)     │
-                    └──────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-11/03-supervisor-worker.svg" alt="Supervisor-Worker 协作模式"></p>
 <p><strong>工作流程</strong>：</p>
 <ol>
 <li>Supervisor Agent 接收用户任务</li>
@@ -3125,19 +1233,7 @@ Multi-Agent 并行执行：
 <p><strong>适用场景</strong>：任务可以明确分解的场景。比如撰写一篇技术调研报告：Search Agent 负责信息搜集，Analyze Agent 负责数据分析，Write Agent 负责报告撰写。Supervisor 负责协调整个流程。</p>
 <p><strong>Trade-off</strong>：Supervisor 是单点——如果 Supervisor 对任务的分解不合理，所有 Worker 的努力都会被浪费。此外，Supervisor 本身也是一个 LLM 调用，它对任务的理解能力决定了整个系统的上限。</p>
 <h3>2.2 模式二：Peer-to-Peer（平等协商型）</h3>
-<pre><code>       ┌──────────┐          ┌──────────┐
-       │ Agent A  │◀────────▶│ Agent B  │
-       │ (作者)   │          │ (审稿人) │
-       └────┬─────┘          └────┬─────┘
-            │                     │
-            │    ┌──────────┐     │
-            └───▶│ Agent C  │◀────┘
-                 │ (编辑)   │
-                 └──────────┘
-
-       消息流是双向的，没有固定的上下级关系
-       每个 Agent 都可以发起对话、提出意见、做出决策
-</code></pre>
+<p><img src="/images/blog/agentic-11/04-peer-to-peer.svg" alt="Peer-to-Peer 协作模式"></p>
 <p><strong>工作流程</strong>：</p>
 <ol>
 <li>多个 Agent 地位平等，通过消息传递进行协商</li>
@@ -3153,18 +1249,7 @@ Multi-Agent 并行执行：
 <p><strong>适用场景</strong>：辩论式分析（多个 Agent 从不同立场论证）、代码审查（Author Agent 写代码，Reviewer Agent 审查，双方来回沟通直到代码质量达标）、多角度决策（乐观分析师 + 悲观分析师 + 风险评估师共同评估一个投资决策）。</p>
 <p><strong>Trade-off</strong>：没有中央协调意味着可能出现无限循环（两个 Agent 互相不同意，永远达不成共识）。需要额外的终止机制——最大轮次限制、外部仲裁者、投票制度等。调试也更困难，因为没有一个中心节点可以观察全局状态。</p>
 <h3>2.3 模式三：Pipeline（流水线型）</h3>
-<pre><code>  Input                                                          Output
-    │                                                              ▲
-    ▼                                                              │
-┌────────┐    ┌────────┐    ┌────────┐    ┌────────┐    ┌────────┐
-│ Draft  │───▶│ Review │───▶│  Edit  │───▶│  Fact  │───▶│ Format │
-│ Agent  │    │ Agent  │    │ Agent  │    │ Check  │    │ Agent  │
-│        │    │        │    │        │    │ Agent  │    │        │
-└────────┘    └────────┘    └────────┘    └────────┘    └────────┘
-
-  Stage 1       Stage 2       Stage 3       Stage 4       Stage 5
-  生成初稿      审查质量       修改完善      事实核查       格式化输出
-</code></pre>
+<p><img src="/images/blog/agentic-11/05-pipeline.svg" alt="Pipeline 流水线架构"></p>
 <p><strong>工作流程</strong>：</p>
 <ol>
 <li>Agent 按顺序串联，形成流水线</li>
@@ -3180,25 +1265,7 @@ Multi-Agent 并行执行：
 <p><strong>适用场景</strong>：内容生产流水线（起草 -&gt; 审查 -&gt; 编辑 -&gt; 排版）、数据处理管道（提取 -&gt; 清洗 -&gt; 转换 -&gt; 加载）、多阶段审批（初审 -&gt; 复审 -&gt; 终审）。</p>
 <p><strong>Trade-off</strong>：流水线是严格串行的——上游不完成，下游无法开始。如果中间某个 Agent 输出质量差，后续所有阶段都会受影响（错误传播）。但好处是架构简单、易于理解和调试、每个阶段可以独立优化。</p>
 <h3>2.4 模式四：Dynamic Routing（动态路由型）</h3>
-<pre><code>                    ┌──────────────────┐
-                    │   Router Agent   │
-                    │ (意图识别 + 路由) │
-                    └──────┬───────────┘
-                           │
-              ┌────────────┼────────────┐
-              │            │            │
-              ▼            ▼            ▼
-       ┌──────────┐ ┌──────────┐ ┌──────────┐
-       │ 技术支持  │ │ 售后服务  │ │ 销售咨询  │
-       │ Agent    │ │ Agent    │ │ Agent    │
-       │          │ │          │ │          │
-       │ 处理技术  │ │ 处理退款  │ │ 处理购买  │
-       │ 故障排查  │ │ 换货投诉  │ │ 产品推荐  │
-       └──────────┘ └──────────┘ └──────────┘
-
-  路由依据：用户输入的意图分类
-  每个专家 Agent 有独立的 System Prompt、Tools、知识库
-</code></pre>
+<p><img src="/images/blog/agentic-11/06-dynamic-routing.svg" alt="Dynamic Routing 动态路由架构"></p>
 <p><strong>工作流程</strong>：</p>
 <ol>
 <li>Router Agent 接收用户输入</li>
@@ -3281,20 +1348,7 @@ Multi-Agent 并行执行：
 <p>多个 Agent 之间需要交换信息，通信机制的选择直接影响系统的可扩展性、耦合度和调试难度。</p>
 <h3>3.1 共享内存（Blackboard Pattern）</h3>
 <p>所有 Agent 读写同一个共享状态存储。这是最简单直接的通信方式。</p>
-<pre><code>       ┌──────────┐   ┌──────────┐   ┌──────────┐
-       │ Agent A  │   │ Agent B  │   │ Agent C  │
-       └────┬─────┘   └────┬─────┘   └────┬─────┘
-            │  read/write   │  read/write   │
-            ▼              ▼              ▼
-       ┌──────────────────────────────────────────┐
-       │           Shared Blackboard              │
-       │                                          │
-       │  { &quot;search_results&quot;: [...],              │
-       │    &quot;analysis&quot;: {...},                    │
-       │    &quot;draft&quot;: &quot;...&quot;,                       │
-       │    &quot;status&quot;: {&quot;search&quot;: &quot;done&quot;, ...} }   │
-       └──────────────────────────────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-11/07-shared-blackboard.svg" alt="共享黑板 Blackboard Pattern"></p>
 <pre><code class="language-python">from dataclasses import dataclass, field
 from typing import Any
 import threading
@@ -3330,17 +1384,7 @@ class Blackboard:
 <p><strong>缺点</strong>：共享状态意味着潜在的竞争条件——两个 Agent 同时写同一个 key 怎么办？需要锁机制或更复杂的冲突解决策略。随着 Agent 数量增加，Blackboard 可能成为瓶颈。</p>
 <h3>3.2 消息传递（Message Passing）</h3>
 <p>Agent 之间通过显式的消息进行通信。每个 Agent 有自己的收件箱。</p>
-<pre><code>       ┌──────────┐         ┌──────────┐
-       │ Agent A  │──msg───▶│ Agent B  │
-       │          │◀──msg───│          │
-       └──────────┘         └──────────┘
-            │                     ▲
-            │         msg         │
-            ▼                     │
-       ┌──────────┐              │
-       │ Agent C  │──────msg─────┘
-       └──────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-11/08-message-passing.svg" alt="消息传递 Message Passing Pattern"></p>
 <pre><code class="language-python">from dataclasses import dataclass, field
 from collections import defaultdict
 from queue import Queue
@@ -3376,20 +1420,7 @@ class MessageBus:
 <p><strong>缺点</strong>：Agent 需要知道其他 Agent 的存在（至少知道 ID），耦合度比 Blackboard 高。如果通信拓扑复杂（多对多），消息管理会变得困难。</p>
 <h3>3.3 事件驱动（Event Bus）</h3>
 <p>Agent 通过发布/订阅事件进行间接通信。Agent 不需要知道谁会消费它的事件。</p>
-<pre><code>       ┌──────────┐   ┌──────────┐   ┌──────────┐
-       │ Agent A  │   │ Agent B  │   │ Agent C  │
-       │ pub: X   │   │ sub: X   │   │ sub: X,Y │
-       └────┬─────┘   └────┬─────┘   └────┬─────┘
-            │  publish      │  subscribe   │
-            ▼              ▼              ▼
-       ┌──────────────────────────────────────────┐
-       │              Event Bus                    │
-       │                                          │
-       │  topic &quot;search_done&quot;  → [Agent B, C]     │
-       │  topic &quot;analysis_done&quot; → [Agent C]        │
-       │  topic &quot;error&quot;        → [Supervisor]      │
-       └──────────────────────────────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-11/14-event-bus.svg" alt="发布/订阅 Event Bus Pattern"></p>
 <pre><code class="language-python">from collections import defaultdict
 from typing import Callable
 
@@ -3848,17 +1879,7 @@ class SupervisorAgent:
 <h2>5. 状态管理的复杂性</h2>
 <p>Multi-Agent 系统的状态管理比 Single-Agent 复杂一个数量级。核心难题在于：多个 Agent 同时操作状态，如何保证一致性。</p>
 <h3>5.1 共享状态 vs 独立状态</h3>
-<pre><code>方案 A：共享状态                     方案 B：独立状态
-┌─────────────────┐                ┌──────────┐  ┌──────────┐  ┌──────────┐
-│  Global State   │                │ State A  │  │ State B  │  │ State C  │
-│                 │                │ (Agent A │  │ (Agent B │  │ (Agent C │
-│ Agent A ──write │                │  独占)   │  │  独占)   │  │  独占)   │
-│ Agent B ──write │                └──────────┘  └──────────┘  └──────────┘
-│ Agent C ──write │                      │              │              │
-└─────────────────┘                      └──────────────┼──────────────┘
-                                                        ▼
-                                                  合并/同步层
-</code></pre>
+<p><img src="/images/blog/agentic-11/09-state-management.svg" alt="状态管理方案：共享状态 vs 独立状态"></p>
 <p><strong>共享状态</strong>的优点是 Agent 之间信息同步即时，任何 Agent 都能看到最新全局状态。缺点是需要处理并发冲突。适合 Supervisor-Worker 模式——Supervisor 需要看到所有 Worker 的进度。</p>
 <p><strong>独立状态</strong>的优点是无并发问题，每个 Agent 完全自主。缺点是 Agent 之间信息同步有延迟，需要显式的合并机制。适合 Pipeline 模式——每个阶段独立处理，只在交接时传递状态。</p>
 <h3>5.2 冲突解决策略</h3>
@@ -3902,29 +1923,7 @@ class SupervisorAgent:
 <p>Multi-Agent 系统的错误处理比 Single-Agent 更复杂，因为错误的传播路径更多。</p>
 <h3>6.1 Worker 失败</h3>
 <p>Worker 失败是最常见的情况。处理策略按优先级：</p>
-<pre><code>Worker 失败处理决策树：
-
-  Worker 执行失败
-       │
-       ▼
-  ┌─ 是否可重试？ ─── 是 ──→ 重试（最多 N 次）──→ 成功？──→ 继续
-  │      │                                          │
-  │     否                                         否
-  │      │                                          │
-  │      ▼                                          ▼
-  │  ┌─ 有替代 Worker？ ─── 是 ──→ 分配给替代 Worker
-  │  │      │
-  │  │     否
-  │  │      │
-  │  │      ▼
-  │  │  ┌─ 该子任务是关键路径？
-  │  │  │      │            │
-  │  │  │     是           否
-  │  │  │      │            │
-  │  │  │      ▼            ▼
-  │  │  │  整体任务失败   降级处理（跳过该子任务，
-  │  │  │                 标记结果为不完整）
-</code></pre>
+<p><img src="/images/blog/agentic-11/10-worker-failure-recovery.svg" alt="Worker 失败处理决策树"></p>
 <pre><code class="language-python">class ResilientAgentTeam(AgentTeam):
     &quot;&quot;&quot;增强容错能力的 Agent 团队&quot;&quot;&quot;
 
@@ -3995,14 +1994,7 @@ class SupervisorAgent:
 </code></pre>
 <h3>6.3 死锁检测</h3>
 <p>在 Peer-to-Peer 模式中，两个 Agent 可能互相等待对方的回复，形成死锁。</p>
-<pre><code>死锁场景：
-
-  Agent A: &quot;请 Agent B 先确认方案&quot;
-           ↓ 等待 B
-  Agent B: &quot;请 Agent A 先提供数据&quot;
-           ↓ 等待 A
-  → 无限等待
-</code></pre>
+<p><img src="/images/blog/agentic-11/11-deadlock-scenario.svg" alt="死锁场景示例"></p>
 <p>解决方案：</p>
 <pre><code class="language-python">class DeadlockDetector:
     &quot;&quot;&quot;简单的死锁检测器&quot;&quot;&quot;
@@ -4046,37 +2038,10 @@ class DeadlockError(Exception):
 <h2>7. Multi-Agent 的成本问题</h2>
 <p>成本是 Multi-Agent 系统必须正视的问题。它不只是&quot;贵一点&quot;的问题——可能是&quot;贵一个数量级&quot;的问题。</p>
 <h3>7.1 成本模型</h3>
-<pre><code>Single-Agent 执行一个任务的 Token 消耗：
-
-  1 x System Prompt   +  N x (Context + Response)
-  ~1,000 tokens          ~3,000 tokens x 5 iterations
-                         = ~16,000 tokens
-
-
-Multi-Agent (Supervisor + 3 Workers) 的 Token 消耗：
-
-  Supervisor 分解:   ~4,000 tokens   (System Prompt + 任务分解)
-  Worker A 执行:     ~8,000 tokens   (System Prompt + 执行)
-  Worker B 执行:     ~8,000 tokens   (System Prompt + 执行)
-  Worker C 执行:     ~8,000 tokens   (System Prompt + 执行)
-  Supervisor 合成:   ~6,000 tokens   (收集所有结果 + 合成)
-                     ──────────────
-  Total:             ~34,000 tokens   ← 约 2x Single-Agent
-
-  如果 Worker 内部也有多轮迭代，消耗会更高。
-</code></pre>
+<p><img src="/images/blog/agentic-11/12-cost-comparison.svg" alt="成本模型对比：Single-Agent vs Multi-Agent"></p>
 <h3>7.2 什么时候 Multi-Agent 的收益大于成本</h3>
 <p>不是所有场景都值得用 Multi-Agent。一个简单的决策框架：</p>
-<pre><code>                        任务复杂度
-                    低 ─────────── 高
-                    │               │
-  专业化需求  低    │  Single-Agent │  Single-Agent
-              │    │  (够用)       │  + Better Prompt
-              │    │               │
-              高    │  Single-Agent │  Multi-Agent ✓
-                    │  + Tools      │  (值得投入)
-                    │               │
-</code></pre>
+<p><img src="/images/blog/agentic-11/13-multi-agent-decision.svg" alt="Multi-Agent 决策矩阵：何时使用 Multi-Agent"></p>
 <p>Multi-Agent 在以下条件下收益最大：</p>
 <ol>
 <li><strong>任务天然可并行</strong>：子任务之间独立性高，Multi-Agent 通过并行执行缩短总耗时，即使 token 消耗增加，时间成本下降</li>
@@ -4283,7 +2248,6 @@ class Tracer:
 </tr>
 </tbody></table>
 <hr>
-<hr>
 <h2>9. 多 Agent 协作的成本特征分析</h2>
 <p>Multi-Agent 系统看起来功能更强，但成本结构也更复杂。本节量化对比四种协作模式的成本特征，帮助你在实际项目中做出经济合理的架构选择。</p>
 <h3>9.1 四种模式的成本维度对比</h3>
@@ -4350,98 +2314,13 @@ class Tracer:
 <li>平均上下文注入 2,000 token</li>
 </ul>
 <h4>模式一：Supervisor-Worker</h4>
-<pre><code>执行步骤：
-1. Supervisor 分解任务                          Tokens: ~3,000 (Input: 2K, Output: 1K)
-   ├─ Worker A (搜索): 搜集最新的 LLM 成本数据  Tokens: ~8,000 (Input: 4K, Output: 4K)
-   ├─ Worker B (分析): 分析成本优化策略         Tokens: ~8,000 (Input: 4K, Output: 4K)
-   ├─ Worker C (写作): 撰写初稿                 Tokens: ~10,000 (Input: 5K, Output: 5K)
-   └─ Supervisor 合成最终版本                  Tokens: ~6,000 (Input: 4K, Output: 2K)
-
-总 Token: 35,000
-
-模型使用：
-- Supervisor: GPT-4o (2次调用，共 9,000 token)        → $0.27
-- Worker A/B: GPT-4o-mini (2次调用，共 16,000 token)  → $0.048
-- Worker C: GPT-4o (1次调用，共 10,000 token)         → $0.30
-- Supervisor 合成: GPT-4o (1次调用，共 6,000 token)   → $0.18
-                                                Total: $0.798 (~$0.80)
-
-执行时间：
-- Supervisor 分解: 4s
-- Workers 并行执行: max(6s, 6s, 8s) = 8s
-- Supervisor 合成: 5s
-                    Total: ~17s
-</code></pre>
+<p><img src="/images/blog/agentic-11/15-cost-supervisor-worker.svg" alt="Supervisor-Worker 成本分析"></p>
 <h4>模式二：Peer-to-Peer</h4>
-<pre><code>执行步骤（假设 3 轮协商）：
-Round 1:
-  - Agent A (初稿作者): 撰写初稿                   ~5,000 token
-  - Agent B (技术审稿): 提出专业意见              ~4,000 token
-  - Agent C (编辑): 检查逻辑和结构                ~3,000 token
-
-Round 2:
-  - Agent A: 根据反馈修改                         ~5,000 token
-  - Agent B: 检查修改后的技术准确性               ~3,000 token
-  - Agent C: 优化措辞                            ~2,000 token
-
-Round 3:
-  - Agent A: 最终微调                            ~3,000 token
-  - 共识检测: 所有 Agent 同意发布                ~2,000 token
-
-总 Token: ~27,000
-
-模型使用：
-- 所有 Agent 用 GPT-4o-mini                      → $0.081
-                                                Total: $0.08
-
-执行时间：
-- Round 1: A(4s) + B(3s) + C(2s) = 9s (串行)
-- Round 2: A(4s) + B(3s) + C(2s) = 9s (串行)
-- Round 3: A(2s) + 共识(2s) = 4s
-                                 Total: ~22s
-</code></pre>
+<p><img src="/images/blog/agentic-11/16-cost-peer-to-peer.svg" alt="Peer-to-Peer 成本分析"></p>
 <h4>模式三：Pipeline</h4>
-<pre><code>执行步骤（5 个阶段）：
-1. Draft Agent: 快速生成初稿                      ~5,000 token
-2. Review Agent: 审查内容准确性和完整性            ~4,000 token
-3. Edit Agent: 改进措辞和逻辑流                   ~4,000 token
-4. FactCheck Agent: 验证数据和引用               ~3,000 token
-5. Format Agent: 最终排版和调整                   ~2,000 token
-
-总 Token: ~18,000
-
-模型使用：
-- Draft: GPT-4o-mini                            → $0.015
-- Review: GPT-4o-mini                           → $0.012
-- Edit: GPT-4o-mini                             → $0.012
-- FactCheck: GPT-4o                             → $0.21
-- Format: GPT-4o-mini                           → $0.006
-                                                Total: $0.255
-
-执行时间：
-- 5 个阶段串行: 4s + 3s + 3s + 4s + 2s = 16s
-</code></pre>
+<p><img src="/images/blog/agentic-11/17-cost-pipeline.svg" alt="Pipeline 成本分析"></p>
 <h4>模式四：Dynamic Routing</h4>
-<pre><code>执行步骤：
-1. Router (意图识别): &quot;这是一个技术博客写作任务&quot;  ~1,500 token (GPT-4o-mini)
-2. 路由到 Blog Writer Expert Agent               ~1,500 token
-3. Blog Writer 调用子工具：
-   - 搜索工具: 不计 token（工具调用）
-   - 数据整理: ~3,000 token
-   - 撰写完整博客: ~10,000 token
-
-总 Token: ~16,000
-
-模型使用：
-- Router: GPT-4o-mini                           → $0.0045
-- Expert: GPT-4o (1次，包含搜索和写作)         → $0.21
-                                                Total: $0.214
-
-执行时间：
-- 路由决策: 1s
-- 专家执行: 8s
-                Total: ~9s（最快！）
-</code></pre>
+<p><img src="/images/blog/agentic-11/18-cost-dynamic-routing.svg" alt="Dynamic Routing 成本分析"></p>
 <h3>9.3 成本对比总结表</h3>
 <table>
 <thead>
@@ -4568,9 +2447,123 @@ class P2PMessage:
         }, ensure_ascii=False)
 </code></pre>
 <h3>10.2 轮次终止条件</h3>
-<p>P2P 协作最大的风险是陷入无限循环。需要明确的终止条件。具体实现见前面的 P2PTerminationChecker 类。</p>
+<p>P2P 协作最大的风险是陷入无限循环——Agent A 和 Agent B 反复争论同一个观点，token 不断消耗却毫无进展。需要明确的终止条件：</p>
+<pre><code class="language-python">from dataclasses import dataclass
+
+
+@dataclass
+class TerminationConfig:
+    max_rounds: int = 5              # 最大轮数硬限制
+    consensus_threshold: float = 0.8 # 共识阈值：所有 Agent 信心 &gt;= 此值
+    stale_rounds: int = 2            # 连续 N 轮无实质变化 → 停止
+    token_budget: int = 50000        # Token 预算硬限制
+
+
+class P2PTerminationChecker:
+    &quot;&quot;&quot;P2P 协作的终止条件检测器&quot;&quot;&quot;
+
+    def __init__(self, config: TerminationConfig):
+        self.config = config
+        self.round_opinions: list[dict[str, str]] = []  # 每轮各 Agent 观点快照
+
+    def should_terminate(
+        self,
+        round_num: int,
+        agent_states: dict[str, dict],
+        total_tokens: int,
+    ) -&gt; tuple[bool, str]:
+        &quot;&quot;&quot;检查是否应该终止 P2P 协作&quot;&quot;&quot;
+
+        # 1. 硬限制：轮数上限
+        if round_num &gt;= self.config.max_rounds:
+            return True, f&quot;达到最大轮数 {self.config.max_rounds}&quot;
+
+        # 2. 硬限制：Token 预算
+        if total_tokens &gt;= self.config.token_budget:
+            return True, f&quot;Token 预算耗尽 ({total_tokens}/{self.config.token_budget})&quot;
+
+        # 3. 共识达成：所有 Agent 信心都超过阈值
+        confidences = [s.get(&quot;agreement_confidence&quot;, 0) for s in agent_states.values()]
+        if all(c &gt;= self.config.consensus_threshold for c in confidences):
+            return True, f&quot;达成共识（所有信心度 &gt;= {self.config.consensus_threshold}）&quot;
+
+        # 4. 停滞检测：连续 N 轮观点无变化
+        current_opinions = {
+            name: state.get(&quot;opinion&quot;, &quot;&quot;)
+            for name, state in agent_states.items()
+        }
+        self.round_opinions.append(current_opinions)
+
+        if len(self.round_opinions) &gt;= self.config.stale_rounds + 1:
+            recent = self.round_opinions[-self.config.stale_rounds:]
+            if all(r == recent[0] for r in recent):
+                return True, f&quot;连续 {self.config.stale_rounds} 轮无实质变化&quot;
+
+        return False, &quot;&quot;
+</code></pre>
 <h3>10.3 冲突解决机制</h3>
-<p>当两个 Agent 无法达成共识时，需要冲突解决机制。具体实现见前面的 ConflictResolver 类。</p>
+<p>当两个 Agent 就某个观点持续分歧时，需要一个结构化的冲突解决策略：</p>
+<pre><code class="language-python">class ConflictResolver:
+    &quot;&quot;&quot;P2P 协作中的冲突解决器&quot;&quot;&quot;
+
+    def __init__(self, strategy: str = &quot;confidence_weighted&quot;):
+        self.strategy = strategy
+
+    async def resolve(
+        self,
+        conflicting_opinions: dict[str, dict],
+        message_history: list,
+    ) -&gt; dict:
+        &quot;&quot;&quot;解决冲突，返回最终决策&quot;&quot;&quot;
+
+        if self.strategy == &quot;confidence_weighted&quot;:
+            return self._confidence_weighted(conflicting_opinions)
+        elif self.strategy == &quot;evidence_count&quot;:
+            return self._evidence_based(conflicting_opinions)
+        elif self.strategy == &quot;majority_vote&quot;:
+            return self._majority_vote(conflicting_opinions)
+        else:
+            return self._confidence_weighted(conflicting_opinions)
+
+    def _confidence_weighted(self, opinions: dict[str, dict]) -&gt; dict:
+        &quot;&quot;&quot;按信心度加权选择&quot;&quot;&quot;
+        best_agent = max(
+            opinions.keys(),
+            key=lambda a: opinions[a].get(&quot;agreement_confidence&quot;, 0)
+        )
+        return {
+            &quot;resolution&quot;: &quot;confidence_weighted&quot;,
+            &quot;winner&quot;: best_agent,
+            &quot;opinion&quot;: opinions[best_agent].get(&quot;opinion&quot;, &quot;&quot;),
+            &quot;confidence&quot;: opinions[best_agent].get(&quot;agreement_confidence&quot;, 0),
+        }
+
+    def _evidence_based(self, opinions: dict[str, dict]) -&gt; dict:
+        &quot;&quot;&quot;按证据数量选择&quot;&quot;&quot;
+        best_agent = max(
+            opinions.keys(),
+            key=lambda a: len(opinions[a].get(&quot;evidence&quot;, []))
+        )
+        return {
+            &quot;resolution&quot;: &quot;evidence_count&quot;,
+            &quot;winner&quot;: best_agent,
+            &quot;opinion&quot;: opinions[best_agent].get(&quot;opinion&quot;, &quot;&quot;),
+            &quot;evidence_count&quot;: len(opinions[best_agent].get(&quot;evidence&quot;, [])),
+        }
+
+    def _majority_vote(self, opinions: dict[str, dict]) -&gt; dict:
+        &quot;&quot;&quot;多数投票——当 Agent 数量 &gt;= 3 时有效&quot;&quot;&quot;
+        from collections import Counter
+        votes = Counter(o.get(&quot;opinion&quot;, &quot;&quot;) for o in opinions.values())
+        winner_opinion, count = votes.most_common(1)[0]
+        return {
+            &quot;resolution&quot;: &quot;majority_vote&quot;,
+            &quot;opinion&quot;: winner_opinion,
+            &quot;vote_count&quot;: count,
+            &quot;total_agents&quot;: len(opinions),
+        }
+</code></pre>
+<p>三种策略各有适用场景：<strong>confidence_weighted</strong> 适合信心度可靠的场景（如事实核查），<strong>evidence_based</strong> 适合有明确证据链的场景（如竞品分析），<strong>majority_vote</strong> 适合 Agent 数量较多、意见维度较均匀的场景。</p>
 <h3>10.4 完整的 PeerToPeerProtocol 类</h3>
 <pre><code class="language-python">import asyncio
 import uuid
@@ -4894,12 +2887,12 @@ class PeerToPeerProtocol:
 <blockquote>
 <p><strong>系列导航</strong>：本文是 Agentic 系列的第 11 篇。</p>
 <ul>
-<li>上一篇：<a href="/engineering/agentic/10-%E8%A7%84%E5%88%92%E4%B8%8E%E5%8F%8D%E6%80%9D%EF%BC%9A%E4%BB%8EReAct%E5%88%B0%E5%88%86%E5%B1%82%E8%A7%84%E5%88%92%E4%B8%8E%E8%87%AA%E6%88%91%E7%BA%A0%E9%94%99">10 | 规划与反思：从ReAct到分层规划与自我纠错</a></li>
-<li>下一篇：<a href="/engineering/agentic/12-LangChain%E4%B8%8ELangGraph%EF%BC%9A%E6%A1%86%E6%9E%B6%E7%9A%84%E4%BB%B7%E5%80%BC%E4%B8%8E%E8%BE%B9%E7%95%8C">12 | LangChain与LangGraph：框架的价值与边界</a></li>
-<li>完整目录：<a href="/engineering/agentic/01-%E4%BB%8ELLM%E5%88%B0Agent%EF%BC%9AAgentic%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE">01 | 从LLM到Agent：Agentic系统的知识地图</a></li>
+<li>上一篇：<a href="/blog/engineering/agentic/10-%E8%A7%84%E5%88%92%E4%B8%8E%E5%8F%8D%E6%80%9D%EF%BC%9A%E4%BB%8EReAct%E5%88%B0%E5%88%86%E5%B1%82%E8%A7%84%E5%88%92%E4%B8%8E%E8%87%AA%E6%88%91%E7%BA%A0%E9%94%99">10 | 规划与反思：从ReAct到分层规划与自我纠错</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/12-LangChain%E4%B8%8ELangGraph%EF%BC%9A%E6%A1%86%E6%9E%B6%E7%9A%84%E4%BB%B7%E5%80%BC%E4%B8%8E%E8%BE%B9%E7%95%8C">12 | LangChain与LangGraph：框架的价值与边界</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-%E4%BB%8ELLM%E5%88%B0Agent%EF%BC%9AAgentic%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE">01 | 从LLM到Agent：Agentic系统的知识地图</a></li>
 </ul>
 </blockquote>
-19:T5c64,<blockquote>
+18:T5c64,<blockquote>
 <p>微服务架构已经成为互联网后端系统的主流架构范式。然而，从单体架构迁移到微服务，绝不仅仅是把代码拆成几个服务那么简单——它涉及服务如何注册与发现、如何通信与容错、如何部署与监控等一系列基础设施问题。本文从架构设计的核心关注点出发，结合业界最佳实践，系统性地梳理微服务架构落地所需的技术体系。</p>
 </blockquote>
 <h2>微服务架构概览</h2>
@@ -5563,7 +3556,7 @@ class PeerToPeerProtocol:
 <blockquote>
 <p>路漫漫其修远兮，架构求索无止尽也。</p>
 </blockquote>
-1a:T5b1d,<blockquote>
+19:T5b1d,<blockquote>
 <p>多地多机房部署是互联网系统的必然发展方向。一个系统要走到这一步，必然要面对流量调配、数据拆分、网络延时、架构升级等一系列问题。本文从最简单的单机架构出发，沿着可用性不断提升的脉络，逐步推演出异地多活架构的完整面貌，并结合阿里单元化方案解析工业级落地实践。</p>
 </blockquote>
 <h2>为什么需要异地多活？</h2>
@@ -6147,7 +4140,7 @@ class PeerToPeerProtocol:
 <blockquote>
 <p>好的架构不是一步到位的，而是随着业务体量的增长逐步演进的。理解每一步演进背后的驱动力和技术挑战，比直接套用某个方案更加重要。</p>
 </blockquote>
-1b:Te5d6,<h1>RAG 架构设计 — 从原理到工程落地</h1>
+1a:Te5d6,<h1>RAG 架构设计 — 从原理到工程落地</h1>
 <blockquote>
 <p>这不是一篇教你&quot;5分钟搭建RAG&quot;的教程，而是一份面向一线工程师的架构设计指南。我们会聊清楚 RAG 到底能干什么、不能干什么，每一层该怎么选型、有哪些坑，以及什么时候该做什么程度的系统。</p>
 </blockquote>
@@ -7673,9 +5666,10 @@ class PeerToPeerProtocol:
 <li><a href="https://huggingface.co/spaces/mteb/leaderboard">MTEB Leaderboard</a> — Embedding 模型选型的权威参考，按语言/任务类型排名</li>
 <li><a href="https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf">Reciprocal Rank Fusion paper</a> — RRF 融合算法原始论文，理解多路召回融合的理论基础</li>
 </ul>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/domain/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"领域建模"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2026-01-15","children":"2026年01月15日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"基于DDD构建微服务：从战略设计到落地实践"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","DDD",{"href":"/blog/tag/DDD/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"DDD"}],["$","$L13","微服务",{"href":"/blog/tag/%E5%BE%AE%E6%9C%8D%E5%8A%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"微服务"}],["$","$L13","领域驱动设计",{"href":"/blog/tag/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"领域驱动设计"}],["$","$L13","架构设计",{"href":"/blog/tag/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"架构设计"}],["$","$L13","事件驱动",{"href":"/blog/tag/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"事件驱动"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/10-规划与反思：从ReAct到分层规划与自我纠错","title":"规划与反思：从ReAct到分层规划与自我纠错","description":"Agentic 系列第 10 篇。深入剖析 Agent 规划（Planning）与反思（Reflection）的核心机制——从 ReAct 的交替推理、Plan-and-Execute 的全局视野、Tree-of-Thought 的多路径搜索，到分层规划的递归分解，再到结构化反思与自我纠错。包含完整 Python 实现、决策分析与 trade-off 讨论。","pubDate":"2026-01-12","tags":["Agentic","AI Engineering","Planning"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/11-多Agent协作：协作模式与架构设计","title":"多Agent协作：协作模式与架构设计","description":"单个 Agent 的能力有天花板——Context Window 有限、专业化受限、单点故障、串行瓶颈。本文系统拆解多 Agent 协作的四种核心模式（Supervisor-Worker、Peer-to-Peer、Pipeline、Dynamic Routing），深入 Agent 间通信机制、状态管理、错误处理与成本控制，并用 Python 从零实现一个 Supervisor-Worker 协作框架。","pubDate":"2026-01-17","tags":["Agentic","AI Engineering","Multi-Agent"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"DDD":{"prev":null,"next":null},"微服务":{"prev":{"slug":"engineering/architecture/微服务架构落地指南：从核心模式到技术选型","title":"微服务架构落地指南：从核心模式到技术选型","description":"系统性地探讨微服务架构设计的核心关注点，包括服务注册发现、API 网关、服务容错、基础设施选型、CI/CD 流水线和可观测性体系，帮助你从 0 到 1 构建一套完整的微服务技术栈。","pubDate":"2025-12-12","tags":["架构设计","微服务","分布式系统","技术选型"],"heroImage":"$undefined","content":"$19"},"next":null},"领域驱动设计":{"prev":null,"next":null},"架构设计":{"prev":{"slug":"engineering/architecture/异地多活架构：跨地域高可用系统的设计与演进","title":"异地多活架构：跨地域高可用系统的设计与演进","description":"从单机架构到异地多活，系统性梳理多机房部署架构的演进历程。深入剖析同城灾备、同城双活、异地双活、异地多活的核心原理与技术挑战，并结合阿里单元化方案解析工业级落地实践。","pubDate":"2026-01-06","tags":["架构设计","异地多活","高可用","容灾","单元化"],"heroImage":"$undefined","content":"$1a"},"next":{"slug":"engineering/architecture/RAG架构设计：从原理到工程落地","title":"RAG 架构设计：从原理到工程落地","description":"面向一线工程师的 RAG 架构设计指南，覆盖六层架构、数据清洗、Chunking 策略、混合检索、多模态处理、安全合规、评测闭环与成本估算，帮你避开从 PoC 到生产的每一个坑。","pubDate":"2026-03-20","tags":["RAG","LLM","架构设计","向量检索","知识库","AI工程"],"heroImage":"$undefined","content":"$1b"}},"事件驱动":{"prev":null,"next":null}}}]}],["$","$L1c",null,{}]]}]}]}]
-8:null
-c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+13:["$","$d",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L15",null,{"globalNav":{"prev":{"slug":"engineering/agentic/10-规划与反思：从ReAct到分层规划与自我纠错","title":"规划与反思：从ReAct到分层规划与自我纠错","description":"Agentic 系列第 10 篇。深入剖析 Agent 规划（Planning）与反思（Reflection）的核心机制——从 ReAct 的交替推理、Plan-and-Execute 的全局视野、Tree-of-Thought 的多路径搜索，到分层规划的递归分解，再到结构化反思与自我纠错。包含完整 Python 实现、决策分析与 trade-off 讨论。","pubDate":"2026-01-12","tags":["Agentic","AI Engineering","Planning"],"heroImage":"$undefined","content":"$16"},"next":{"slug":"engineering/agentic/11-多Agent协作：协作模式与架构设计","title":"多Agent协作：协作模式与架构设计","description":"单个 Agent 的能力有天花板——Context Window 有限、专业化受限、单点故障、串行瓶颈。本文系统拆解多 Agent 协作的四种核心模式（Supervisor-Worker、Peer-to-Peer、Pipeline、Dynamic Routing），深入 Agent 间通信机制、状态管理、错误处理与成本控制，并用 Python 从零实现一个 Supervisor-Worker 协作框架。","pubDate":"2026-01-17","tags":["Agentic","AI Engineering","Multi-Agent"],"heroImage":"$undefined","content":"$17"}},"tagNav":{"DDD":{"prev":null,"next":null},"微服务":{"prev":{"slug":"engineering/architecture/微服务架构落地指南：从核心模式到技术选型","title":"微服务架构落地指南：从核心模式到技术选型","description":"系统性地探讨微服务架构设计的核心关注点，包括服务注册发现、API 网关、服务容错、基础设施选型、CI/CD 流水线和可观测性体系，帮助你从 0 到 1 构建一套完整的微服务技术栈。","pubDate":"2025-12-12","tags":["架构设计","微服务","分布式系统","技术选型"],"heroImage":"$undefined","content":"$18"},"next":null},"领域驱动设计":{"prev":null,"next":null},"架构设计":{"prev":{"slug":"engineering/architecture/异地多活架构：跨地域高可用系统的设计与演进","title":"异地多活架构：跨地域高可用系统的设计与演进","description":"从单机架构到异地多活，系统性梳理多机房部署架构的演进历程。深入剖析同城灾备、同城双活、异地双活、异地多活的核心原理与技术挑战，并结合阿里单元化方案解析工业级落地实践。","pubDate":"2026-01-06","tags":["架构设计","异地多活","高可用","容灾","单元化"],"heroImage":"$undefined","content":"$19"},"next":{"slug":"engineering/architecture/RAG架构设计：从原理到工程落地","title":"RAG 架构设计：从原理到工程落地","description":"面向一线工程师的 RAG 架构设计指南，覆盖六层架构、数据清洗、Chunking 策略、混合检索、多模态处理、安全合规、评测闭环与成本估算，帮你避开从 PoC 到生产的每一个坑。","pubDate":"2026-03-20","tags":["RAG","LLM","架构设计","向量检索","知识库","AI工程"],"heroImage":"$undefined","content":"$1a"}},"事件驱动":{"prev":null,"next":null}}}]}]
+14:["$","$L1b",null,{}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
-a:{"metadata":[["$","title","0",{"children":"基于DDD构建微服务：从战略设计到落地实践 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"深入探讨领域驱动设计（DDD）如何指导微服务的拆分与设计。从界限上下文、聚合、上下文映射到事件风暴，系统性地阐述 DDD 的战略设计工具如何帮助我们找到正确的服务边界，并通过事件驱动架构和 BFF 模式解决微服务间的通信与协作问题。"}],["$","meta","2",{"property":"og:title","content":"基于DDD构建微服务：从战略设计到落地实践"}],["$","meta","3",{"property":"og:description","content":"深入探讨领域驱动设计（DDD）如何指导微服务的拆分与设计。从界限上下文、聚合、上下文映射到事件风暴，系统性地阐述 DDD 的战略设计工具如何帮助我们找到正确的服务边界，并通过事件驱动架构和 BFF 模式解决微服务间的通信与协作问题。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-01-15"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"基于DDD构建微服务：从战略设计到落地实践"}],["$","meta","9",{"name":"twitter:description","content":"深入探讨领域驱动设计（DDD）如何指导微服务的拆分与设计。从界限上下文、聚合、上下文映射到事件风暴，系统性地阐述 DDD 的战略设计工具如何帮助我们找到正确的服务边界，并通过事件驱动架构和 BFF 模式解决微服务间的通信与协作问题。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
-12:{"metadata":"$a:metadata","error":null,"digest":"$undefined"}
+1c:I[622,[],"IconMark"]
+9:{"metadata":[["$","title","0",{"children":"基于DDD构建微服务：从战略设计到落地实践 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"深入探讨领域驱动设计（DDD）如何指导微服务的拆分与设计。从界限上下文、聚合、上下文映射到事件风暴，系统性地阐述 DDD 的战略设计工具如何帮助我们找到正确的服务边界，并通过事件驱动架构和 BFF 模式解决微服务间的通信与协作问题。"}],["$","meta","2",{"property":"og:title","content":"基于DDD构建微服务：从战略设计到落地实践"}],["$","meta","3",{"property":"og:description","content":"深入探讨领域驱动设计（DDD）如何指导微服务的拆分与设计。从界限上下文、聚合、上下文映射到事件风暴，系统性地阐述 DDD 的战略设计工具如何帮助我们找到正确的服务边界，并通过事件驱动架构和 BFF 模式解决微服务间的通信与协作问题。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-01-15"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"基于DDD构建微服务：从战略设计到落地实践"}],["$","meta","9",{"name":"twitter:description","content":"深入探讨领域驱动设计（DDD）如何指导微服务的拆分与设计。从界限上下文、聚合、上下文映射到事件风暴，系统性地阐述 DDD 的战略设计工具如何帮助我们找到正确的服务边界，并通过事件驱动架构和 BFF 模式解决微服务间的通信与协作问题。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}],["$","$L1c","14",{}]],"error":null,"digest":"$undefined"}
+e:"$9:metadata"

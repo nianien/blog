@@ -1,0 +1,113 @@
+<svg viewBox="0 0 720 440" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="360" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Linear vs Complex Flow Structures</text>
+
+  <!-- ===== Linear Chain ===== -->
+  <text x="40" y="55" font-size="12" font-weight="bold" fill="#1e40af">线性 Chain 能表达的：</text>
+
+  <rect x="40" y="68" width="80" height="38" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="80" y="92" font-size="11" text-anchor="middle" fill="#1e3a8a">A 检索</text>
+
+  <line x1="120" y1="87" x2="148" y2="87" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="148,83 158,87 148,91" fill="#3b82f6"/>
+
+  <rect x="160" y="68" width="80" height="38" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="200" y="92" font-size="11" text-anchor="middle" fill="#1e3a8a">B 摘要</text>
+
+  <line x1="240" y1="87" x2="268" y2="87" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="268,83 278,87 268,91" fill="#3b82f6"/>
+
+  <rect x="280" y="68" width="90" height="38" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="325" y="92" font-size="11" text-anchor="middle" fill="#1e3a8a">C 格式化</text>
+
+  <line x1="370" y1="87" x2="398" y2="87" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="398,83 408,87 398,91" fill="#3b82f6"/>
+
+  <rect x="410" y="68" width="80" height="38" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="450" y="92" font-size="11" text-anchor="middle" fill="#1e3a8a">D 输出</text>
+
+  <!-- ===== Complex Flow ===== -->
+  <text x="40" y="140" font-size="12" font-weight="bold" fill="#166534">现实中 Agent 需要的：</text>
+
+  <!-- Main chain: A → B → C → D -->
+  <rect x="40" y="158" width="75" height="38" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="77" y="182" font-size="11" text-anchor="middle" fill="#166534">A</text>
+
+  <line x1="115" y1="177" x2="143" y2="177" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="143,173 153,177 143,181" fill="#22c55e"/>
+
+  <rect x="155" y="158" width="75" height="38" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="192" y="182" font-size="11" text-anchor="middle" fill="#166534">B</text>
+
+  <line x1="230" y1="177" x2="298" y2="177" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="298,173 308,177 298,181" fill="#22c55e"/>
+
+  <rect x="310" y="158" width="75" height="38" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="347" y="182" font-size="11" text-anchor="middle" fill="#166534">C</text>
+
+  <line x1="385" y1="177" x2="413" y2="177" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="413,173 423,177 413,181" fill="#22c55e"/>
+
+  <rect x="425" y="158" width="75" height="38" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="462" y="182" font-size="11" text-anchor="middle" fill="#166534">D</text>
+
+  <!-- B trunk going down (for E and F branches) -->
+  <line x1="192" y1="196" x2="192" y2="330" stroke="#22c55e" stroke-width="1.5"/>
+
+  <!-- Branch to E: from trunk at y=255 → right to E -->
+  <line x1="192" y1="255" x2="238" y2="255" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="238,251 248,255 238,259" fill="#22c55e"/>
+
+  <rect x="250" y="237" width="65" height="36" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="282" y="260" font-size="11" text-anchor="middle" fill="#166534">E</text>
+
+  <!-- E → C: right from E, then up to C bottom -->
+  <line x1="315" y1="255" x2="347" y2="255" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="347" y1="255" x2="347" y2="198" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="343,198 347,188 351,198" fill="#22c55e"/>
+
+  <!-- Branch to F: from trunk at y=330 → right to F -->
+  <line x1="192" y1="330" x2="238" y2="330" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="238,326 248,330 238,334" fill="#22c55e"/>
+
+  <rect x="250" y="312" width="65" height="36" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="282" y="335" font-size="11" text-anchor="middle" fill="#166534">F</text>
+
+  <!-- F → G: right from F to G -->
+  <line x1="315" y1="330" x2="358" y2="330" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="358,326 368,330 358,334" fill="#22c55e"/>
+
+  <rect x="370" y="312" width="65" height="36" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="402" y="335" font-size="11" text-anchor="middle" fill="#166534">G</text>
+
+  <!-- G → D: right from G, then up to D bottom -->
+  <line x1="435" y1="330" x2="462" y2="330" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="462" y1="330" x2="462" y2="198" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="458,198 462,188 466,198" fill="#22c55e"/>
+
+  <!-- Loop-back dashed: F → A (down from F area, left, up to A) -->
+  <line x1="282" y1="348" x2="282" y2="388" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <line x1="282" y1="388" x2="77" y2="388" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <line x1="77" y1="388" x2="77" y2="198" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <polygon points="73,198 77,188 81,198" fill="#22c55e"/>
+
+  <!-- Annotations -->
+  <text x="330" y="250" font-size="9" fill="#555">条件分支</text>
+  <text x="445" y="326" font-size="9" fill="#555">并行执行</text>
+  <text x="100" y="400" font-size="9" fill="#555">循环重试</text>
+
+  <!-- Note box -->
+  <rect x="540" y="155" width="160" height="118" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="620" y="177" font-size="11" font-weight="bold" text-anchor="middle" fill="#92400e">LangChain 挑战：</text>
+  <text x="550" y="197" font-size="10" fill="#78350f">LCEL 语法复杂</text>
+  <text x="550" y="215" font-size="10" fill="#78350f">RunnableBranch 难以理解</text>
+  <text x="550" y="233" font-size="10" fill="#78350f">调试困难</text>
+  <text x="550" y="251" font-size="10" fill="#78350f">循环不直观</text>
+  <text x="550" y="269" font-size="10" fill="#f57f17">→ LangGraph 诞生的原因</text>
+
+  <!-- Legend -->
+  <rect x="550" y="310" width="14" height="14" rx="2" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="570" y="322" font-size="10" fill="#333">LangChain Chain</text>
+  <rect x="550" y="335" width="14" height="14" rx="2" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="570" y="347" font-size="10" fill="#333">LangGraph Graph</text>
+</svg>

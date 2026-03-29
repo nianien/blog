@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 760" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="430" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Context Compression Strategy Decision Tree</text>
+
+  <!-- ===== Level 1: Main question ===== -->
+  <rect x="290" y="48" width="280" height="50" rx="6" fill="#fff3cd" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="430" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">需要压缩 context?</text>
+  <text x="430" y="86" text-anchor="middle" font-size="10" fill="#34495e">Context size > Budget</text>
+
+  <!-- Arrow down -->
+  <line x1="430" y1="98" x2="430" y2="126" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- ===== Level 2: Complete history? ===== -->
+  <rect x="255" y="128" width="350" height="60" rx="6" fill="#fff3cd" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="430" y="152" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">是否需要保留完整历史？</text>
+  <text x="430" y="170" text-anchor="middle" font-size="10" fill="#34495e">历史对话有参考价值 vs 只关心最近的决策</text>
+
+  <!-- ===== Left branch: 不需要 → Truncation ===== -->
+  <line x1="330" y1="188" x2="330" y2="206" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="330" y1="206" x2="180" y2="206" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="180" y1="206" x2="180" y2="228" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="260" y="200" font-size="10" font-weight="bold" fill="#2c3e50">不需要</text>
+
+  <rect x="80" y="230" width="200" height="90" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="180" y="252" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">用截断 (Truncation)</text>
+  <text x="95" y="272" font-size="10" fill="#555">场景：短期任务、快速反馈</text>
+  <text x="95" y="288" font-size="10" fill="#555">例：实时编程助手、</text>
+  <text x="95" y="304" font-size="10" fill="#555">命令行 Agent</text>
+
+  <!-- ===== Right branch: 需要 → Level 3 ===== -->
+  <line x1="530" y1="188" x2="530" y2="206" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="530" y1="206" x2="650" y2="206" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="650" y1="206" x2="650" y2="228" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="580" y="200" font-size="10" font-weight="bold" fill="#2c3e50">需要</text>
+
+  <!-- ===== Level 3: Has token budget? ===== -->
+  <rect x="500" y="230" width="300" height="64" rx="6" fill="#fff3cd" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="650" y="252" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">是否有 Token 预算用于压缩？</text>
+  <text x="650" y="272" text-anchor="middle" font-size="10" fill="#34495e">可以多花 300-500 token</text>
+  <text x="650" y="286" text-anchor="middle" font-size="10" fill="#34495e">做一次 summarization</text>
+
+  <!-- ===== Left sub: 有预算 → Summarization ===== -->
+  <line x1="580" y1="294" x2="580" y2="310" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="580" y1="310" x2="460" y2="310" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="460" y1="310" x2="460" y2="332" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="520" y="306" font-size="10" font-weight="bold" fill="#2c3e50">有预算</text>
+
+  <rect x="340" y="334" width="240" height="90" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="460" y="356" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">用摘要 (Summarization)</text>
+  <text x="355" y="376" font-size="10" fill="#555">场景：复杂长期任务、需要追溯历史</text>
+  <text x="355" y="392" font-size="10" fill="#555">例：多天的任务规划、</text>
+  <text x="355" y="408" font-size="10" fill="#555">持续学习的 Agent</text>
+
+  <!-- ===== Right sub: 没有 → Selective Retention ===== -->
+  <line x1="720" y1="294" x2="720" y2="332" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="732" y="316" font-size="10" font-weight="bold" fill="#2c3e50">没有</text>
+
+  <rect x="600" y="334" width="240" height="90" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="720" y="356" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">选择性保留</text>
+  <text x="720" y="372" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">(Selective Retention)</text>
+  <text x="615" y="392" font-size="10" fill="#555">场景：超低延迟、Token 极限场景</text>
+  <text x="615" y="408" font-size="10" fill="#555">例：边缘设备、成本敏感的生产系统</text>
+
+  <!-- ===== Level 4: Key decision nodes ===== -->
+  <!-- Arrow from Summarization down -->
+  <line x1="460" y1="424" x2="460" y2="466" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <rect x="290" y="468" width="340" height="64" rx="6" fill="#fff3cd" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="460" y="492" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">历史中有关键决策节点吗？</text>
+  <text x="460" y="512" text-anchor="middle" font-size="10" fill="#34495e">决策节点明确标记 vs 所有轮次同等重要</text>
+
+  <!-- ===== Left: 有标记 → 选择性保留(按重要性) ===== -->
+  <line x1="380" y1="532" x2="380" y2="548" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="380" y1="548" x2="220" y2="548" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="220" y1="548" x2="220" y2="572" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="300" y="544" font-size="10" font-weight="bold" fill="#2c3e50">有标记</text>
+
+  <rect x="100" y="574" width="240" height="72" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="220" y="596" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">选择性保留 (按重要性)</text>
+  <text x="115" y="616" font-size="10" fill="#555">保留关键决策节点，</text>
+  <text x="115" y="632" font-size="10" fill="#555">删除不重要的轮次</text>
+
+  <!-- ===== Right: 无标记 → 用摘要(保证覆盖) ===== -->
+  <line x1="540" y1="532" x2="540" y2="548" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="540" y1="548" x2="660" y2="548" stroke="#2c3e50" stroke-width="1.2"/>
+  <line x1="660" y1="548" x2="660" y2="572" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="590" y="544" font-size="10" font-weight="bold" fill="#2c3e50">无标记</text>
+
+  <rect x="540" y="574" width="240" height="72" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="660" y="596" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">用摘要 (保证覆盖)</text>
+  <text x="555" y="616" font-size="10" fill="#555">所有轮次同等重要，</text>
+  <text x="555" y="632" font-size="10" fill="#555">摘要保证信息覆盖</text>
+</svg>

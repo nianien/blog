@@ -1,0 +1,40 @@
+<svg viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="300" y="20" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Shared Blackboard 通信</text>
+
+  <!-- Blackboard (large background card) -->
+  <rect x="30" y="110" width="540" height="100" rx="8" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="1.5"/>
+  <text x="300" y="132" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">Shared Blackboard</text>
+
+  <!-- Monospace content inside blackboard -->
+  <text x="50" y="154" font-size="9" font-family="'SF Mono', Menlo, monospace" fill="#555">{ "search_results": [...],</text>
+  <text x="50" y="170" font-size="9" font-family="'SF Mono', Menlo, monospace" fill="#555">  "analysis": {...},</text>
+  <text x="50" y="186" font-size="9" font-family="'SF Mono', Menlo, monospace" fill="#555">  "draft": "...", "status": {"search": "done"} }</text>
+
+  <!-- Three Agent cards -->
+  <rect x="50" y="42" width="110" height="40" rx="8" fill="#1976d2" stroke="none"/>
+  <text x="105" y="60" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">Agent A</text>
+  <text x="105" y="74" font-size="8" text-anchor="middle" fill="rgba(255,255,255,0.7)">read / write</text>
+
+  <rect x="245" y="42" width="110" height="40" rx="8" fill="#1976d2" stroke="none"/>
+  <text x="300" y="60" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">Agent B</text>
+  <text x="300" y="74" font-size="8" text-anchor="middle" fill="rgba(255,255,255,0.7)">read / write</text>
+
+  <rect x="440" y="42" width="110" height="40" rx="8" fill="#1976d2" stroke="none"/>
+  <text x="495" y="60" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">Agent C</text>
+  <text x="495" y="74" font-size="8" text-anchor="middle" fill="rgba(255,255,255,0.7)">read / write</text>
+
+  <!-- Down arrows from agents to blackboard -->
+  <line x1="105" y1="82" x2="105" y2="108" stroke="#90CAF9" stroke-width="1.5"/>
+  <polygon points="101,105 105,114 109,105" fill="#90CAF9"/>
+
+  <line x1="300" y1="82" x2="300" y2="108" stroke="#90CAF9" stroke-width="1.5"/>
+  <polygon points="296,105 300,114 304,105" fill="#90CAF9"/>
+
+  <line x1="495" y1="82" x2="495" y2="108" stroke="#90CAF9" stroke-width="1.5"/>
+  <polygon points="491,105 495,114 499,105" fill="#90CAF9"/>
+
+  <!-- Pros / Cons -->
+  <text x="50" y="234" font-size="9" fill="#2e7d32">优点：实现简单，Agent 完全解耦，天然支持任意读写</text>
+  <text x="50" y="250" font-size="9" fill="#c62828">缺点：需要处理并发冲突，Agent 数量多时可能成为瓶颈</text>
+</svg>

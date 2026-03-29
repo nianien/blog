@@ -1,0 +1,73 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, sans-serif; }
+      .title { font-size: 14px; font-weight: bold; fill: #333; }
+      .label { font-size: 12px; fill: #333; font-weight: bold; }
+      .sublabel { font-size: 11px; fill: #666; }
+      .metric { font-size: 11px; fill: #27ae60; font-weight: bold; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="450" y="35" class="title" text-anchor="middle">RAG 评估体系：Faithfulness Triad</text>
+
+  <!-- Query at top -->
+  <g id="query">
+    <rect x="350" y="60" width="200" height="50" fill="#e3f2fd" stroke="#3498db" stroke-width="2" rx="6"/>
+    <text x="450" y="92" text-anchor="middle" font-weight="bold">Query</text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="450" y1="110" x2="450" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Split arrows -->
+  <line x1="450" y1="140" x2="250" y2="170" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="140" x2="650" y2="170" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Context box (left) -->
+  <g id="context">
+    <rect x="120" y="170" width="260" height="80" fill="#fff3e0" stroke="#f39c12" stroke-width="2" rx="6"/>
+    <text x="250" y="200" text-anchor="middle" font-weight="bold">Context</text>
+    <text x="250" y="217" text-anchor="middle" class="sublabel">(Retrieved)</text>
+  </g>
+
+  <!-- Answer box (right) -->
+  <g id="answer">
+    <rect x="520" y="170" width="260" height="80" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" rx="6"/>
+    <text x="650" y="200" text-anchor="middle" font-weight="bold">Answer</text>
+    <text x="650" y="217" text-anchor="middle" class="sublabel">(Generated)</text>
+  </g>
+
+  <!-- Arrows converging down -->
+  <line x1="250" y1="250" x2="350" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="650" y1="250" x2="550" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Faithfulness box (center) -->
+  <g id="faithfulness">
+    <rect x="300" y="300" width="300" height="70" fill="#e8f4f8" stroke="#0d7377" stroke-width="3" rx="6"/>
+    <text x="450" y="330" text-anchor="middle" font-weight="bold" font-size="14">Faithfulness</text>
+    <text x="450" y="350" text-anchor="middle" class="sublabel">回答是否忠于 context</text>
+  </g>
+
+  <!-- Metric definitions -->
+  <g id="metrics">
+    <text x="120" y="420" class="metric">Query ↔ Context = Context Relevancy</text>
+    <text x="120" y="445" class="metric">Query ↔ Answer = Answer Relevancy</text>
+    <text x="120" y="470" class="metric">Context ↔ Answer = Faithfulness</text>
+  </g>
+
+  <!-- Legend box -->
+  <g id="legend">
+    <rect x="600" y="410" width="260" height="70" fill="white" stroke="#ccc" stroke-width="1" rx="4"/>
+    <text x="620" y="430" font-size="11" font-weight="bold">三项指标的关系：</text>
+    <text x="620" y="450" font-size="10" fill="#666">• 共同构成 RAG 质量评估</text>
+    <text x="620" y="467" font-size="10" fill="#666">• 缺一不可，需要平衡</text>
+  </g>
+</svg>

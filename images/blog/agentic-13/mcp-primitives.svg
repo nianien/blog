@@ -1,0 +1,89 @@
+<svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="350" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">MCP 三大原语 (Three Primitives)</text>
+
+  <!-- Table structure: 3 columns x 4 rows (header + 3 data rows) -->
+  <!-- Columns: x=30..230 (200px), x=230..460 (230px), x=460..670 (210px) -->
+  <!-- Rows: y=40..70 (header 30px), y=70..155 (85px), y=155..240 (85px), y=240..325 (85px) -->
+
+  <!-- ===== Background fills (drawn first, under grid) ===== -->
+  <!-- Header -->
+  <rect x="30" y="40" width="640" height="30" fill="#3b82f6"/>
+
+  <!-- Row 1 cells -->
+  <rect x="30" y="70" width="200" height="85" fill="#dbeafe"/>
+  <rect x="230" y="70" width="230" height="85" fill="#fef3c7"/>
+  <rect x="460" y="70" width="210" height="85" fill="#dcfce7"/>
+
+  <!-- Row 2 cells -->
+  <rect x="30" y="155" width="200" height="85" fill="#e0e7ff"/>
+  <rect x="230" y="155" width="230" height="85" fill="#dcfce7"/>
+  <rect x="460" y="155" width="210" height="85" fill="#fecaca"/>
+
+  <!-- Row 3 cells -->
+  <rect x="30" y="240" width="200" height="85" fill="#f3e8ff"/>
+  <rect x="230" y="240" width="230" height="85" fill="#fed7aa"/>
+  <rect x="460" y="240" width="210" height="85" fill="#e0e7ff"/>
+
+  <!-- ===== Grid lines (drawn on top of fills) ===== -->
+  <!-- Outer border -->
+  <rect x="30" y="40" width="640" height="285" rx="0" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Horizontal lines -->
+  <line x1="30" y1="70" x2="670" y2="70" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="30" y1="155" x2="670" y2="155" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="30" y1="240" x2="670" y2="240" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Vertical lines -->
+  <line x1="230" y1="40" x2="230" y2="325" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="460" y1="40" x2="460" y2="325" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Left column accent borders -->
+  <line x1="30" y1="70" x2="30" y2="155" stroke="#3b82f6" stroke-width="3"/>
+  <line x1="30" y1="155" x2="30" y2="240" stroke="#6366f1" stroke-width="3"/>
+  <line x1="30" y1="240" x2="30" y2="325" stroke="#a855f7" stroke-width="3"/>
+
+  <!-- ===== Header text ===== -->
+  <text x="130" y="60" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">原语</text>
+  <text x="345" y="60" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">控制权归属</text>
+  <text x="565" y="60" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">语义</text>
+
+  <!-- ===== Row 1: Tools ===== -->
+  <text x="130" y="96" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e40af">Tools</text>
+  <text x="130" y="114" font-size="9" text-anchor="middle" fill="#1e3a8a">可执行操作</text>
+  <text x="130" y="130" font-size="9" text-anchor="middle" fill="#1e3a8a">例: search_web, create_pr</text>
+
+  <text x="345" y="96" font-size="11" font-weight="bold" text-anchor="middle" fill="#92400e">Model 控制</text>
+  <text x="345" y="116" font-size="9" text-anchor="middle" fill="#78350f">LLM 自主决定是否调用</text>
+  <text x="345" y="132" font-size="9" text-anchor="middle" fill="#78350f">某个工具及其参数</text>
+
+  <text x="565" y="96" font-size="11" font-weight="bold" text-anchor="middle" fill="#166534">可执行操作</text>
+  <text x="565" y="116" font-size="9" text-anchor="middle" fill="#15803d">工具提供具体 action</text>
+  <text x="565" y="132" font-size="9" text-anchor="middle" fill="#15803d">LLM 自主决定何时调用</text>
+
+  <!-- ===== Row 2: Resources ===== -->
+  <text x="130" y="181" font-size="13" font-weight="bold" text-anchor="middle" fill="#312e81">Resources</text>
+  <text x="130" y="199" font-size="9" text-anchor="middle" fill="#4f46e5">可读数据源</text>
+  <text x="130" y="215" font-size="9" text-anchor="middle" fill="#4f46e5">例: KB 文档, API 响应</text>
+
+  <text x="345" y="181" font-size="11" font-weight="bold" text-anchor="middle" fill="#166534">App 控制</text>
+  <text x="345" y="201" font-size="9" text-anchor="middle" fill="#15803d">Host/LLM 决定何时</text>
+  <text x="345" y="217" font-size="9" text-anchor="middle" fill="#15803d">读取哪个 Resource</text>
+
+  <text x="565" y="181" font-size="11" font-weight="bold" text-anchor="middle" fill="#7f1d1d">可读数据源</text>
+  <text x="565" y="201" font-size="9" text-anchor="middle" fill="#5f0f0f">Resource 提供数据和上下文</text>
+  <text x="565" y="217" font-size="9" text-anchor="middle" fill="#5f0f0f">Host 决定读取</text>
+
+  <!-- ===== Row 3: Prompts ===== -->
+  <text x="130" y="266" font-size="13" font-weight="bold" text-anchor="middle" fill="#6b21a8">Prompts</text>
+  <text x="130" y="284" font-size="9" text-anchor="middle" fill="#7e22ce">交互模板</text>
+  <text x="130" y="300" font-size="9" text-anchor="middle" fill="#7e22ce">例: code_review, bug_analysis</text>
+
+  <text x="345" y="266" font-size="11" font-weight="bold" text-anchor="middle" fill="#92400e">User 控制</text>
+  <text x="345" y="286" font-size="9" text-anchor="middle" fill="#78350f">用户或 Host 显式</text>
+  <text x="345" y="302" font-size="9" text-anchor="middle" fill="#78350f">选择某个 Prompt</text>
+
+  <text x="565" y="266" font-size="11" font-weight="bold" text-anchor="middle" fill="#312e81">交互模板</text>
+  <text x="565" y="286" font-size="9" text-anchor="middle" fill="#4f46e5">Prompt 提供标准化的</text>
+  <text x="565" y="302" font-size="9" text-anchor="middle" fill="#4f46e5">交互模板，用户显式选择</text>
+</svg>

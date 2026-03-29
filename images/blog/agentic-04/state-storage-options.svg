@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 240" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="680" height="240" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="340" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">状态存储方案对比</text>
+
+  <!-- In-Memory -->
+  <rect x="30" y="55" width="190" height="170" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="125" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">In-Memory</text>
+  <text x="125" y="98" text-anchor="middle" font-size="11" fill="#90CAF9">(dict / obj)</text>
+  <line x1="50" y1="108" x2="200" y2="108" stroke="#BBDEFB" stroke-width="1"/>
+  <text x="125" y="128" text-anchor="middle" font-size="11" fill="#555">最快</text>
+  <text x="125" y="148" text-anchor="middle" font-size="11" fill="#555">进程重启丢失</text>
+  <text x="125" y="168" text-anchor="middle" font-size="11" fill="#555">单进程使用</text>
+  <text x="125" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#1976D2">适合开发/测试</text>
+
+  <!-- Redis -->
+  <rect x="245" y="55" width="190" height="170" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="340" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">Redis</text>
+  <text x="340" y="98" text-anchor="middle" font-size="11" fill="#FFB74D">(KV Store)</text>
+  <line x1="265" y1="108" x2="415" y2="108" stroke="#FFE0B2" stroke-width="1"/>
+  <text x="340" y="128" text-anchor="middle" font-size="11" fill="#555">快，支持 TTL</text>
+  <text x="340" y="148" text-anchor="middle" font-size="11" fill="#555">跨进程共享</text>
+  <text x="340" y="168" text-anchor="middle" font-size="11" fill="#555">重启后可保留</text>
+  <text x="340" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">适合 session</text>
+
+  <!-- Database -->
+  <rect x="460" y="55" width="190" height="170" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="555" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">Database</text>
+  <text x="555" y="98" text-anchor="middle" font-size="11" fill="#81C784">(PostgreSQL)</text>
+  <line x1="480" y1="108" x2="630" y2="108" stroke="#C8E6C9" stroke-width="1"/>
+  <text x="555" y="128" text-anchor="middle" font-size="11" fill="#555">持久可靠</text>
+  <text x="555" y="148" text-anchor="middle" font-size="11" fill="#555">支持查询分析</text>
+  <text x="555" y="168" text-anchor="middle" font-size="11" fill="#555">适合生产环境</text>
+  <text x="555" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#2E7D32">适合审计追溯</text>
+</svg>

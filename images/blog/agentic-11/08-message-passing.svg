@@ -1,0 +1,47 @@
+<svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="280" y="20" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Message Passing 通信</text>
+
+  <!-- Agent A - top left -->
+  <rect x="40" y="50" width="130" height="46" rx="10" fill="#7b1fa2" stroke="none"/>
+  <text x="105" y="72" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">Agent A</text>
+  <text x="105" y="87" font-size="8" text-anchor="middle" fill="rgba(255,255,255,0.7)">消息收发</text>
+
+  <!-- Agent B - top right -->
+  <rect x="390" y="50" width="130" height="46" rx="10" fill="#7b1fa2" stroke="none"/>
+  <text x="455" y="72" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">Agent B</text>
+  <text x="455" y="87" font-size="8" text-anchor="middle" fill="rgba(255,255,255,0.7)">消息收发</text>
+
+  <!-- Agent C - bottom center -->
+  <rect x="215" y="148" width="130" height="46" rx="10" fill="#7b1fa2" stroke="none"/>
+  <text x="280" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">Agent C</text>
+  <text x="280" y="185" font-size="8" text-anchor="middle" fill="rgba(255,255,255,0.7)">消息收发</text>
+
+  <!-- A → B -->
+  <line x1="170" y1="66" x2="388" y2="66" stroke="#CE93D8" stroke-width="1.5"/>
+  <polygon points="384,62 394,66 384,70" fill="#CE93D8"/>
+  <text x="280" y="60" font-size="8" text-anchor="middle" fill="#AB47BC">msg</text>
+
+  <!-- B → A -->
+  <line x1="390" y1="82" x2="172" y2="82" stroke="#CE93D8" stroke-width="1.5"/>
+  <polygon points="176,78 166,82 176,86" fill="#CE93D8"/>
+  <text x="280" y="78" font-size="8" text-anchor="middle" fill="#AB47BC">msg</text>
+
+  <!-- A → C: right-angle -->
+  <line x1="105" y1="96" x2="105" y2="128" stroke="#CE93D8" stroke-width="1.5"/>
+  <line x1="105" y1="128" x2="256" y2="128" stroke="#CE93D8" stroke-width="1.5"/>
+  <line x1="256" y1="128" x2="256" y2="146" stroke="#CE93D8" stroke-width="1.5"/>
+  <polygon points="252,143 256,152 260,143" fill="#CE93D8"/>
+  <text x="170" y="123" font-size="8" fill="#AB47BC">msg</text>
+
+  <!-- B → C: right-angle -->
+  <line x1="455" y1="96" x2="455" y2="128" stroke="#CE93D8" stroke-width="1.5"/>
+  <line x1="455" y1="128" x2="304" y2="128" stroke="#CE93D8" stroke-width="1.5"/>
+  <line x1="304" y1="128" x2="304" y2="146" stroke="#CE93D8" stroke-width="1.5"/>
+  <polygon points="300,143 304,152 308,143" fill="#CE93D8"/>
+  <text x="390" y="123" font-size="8" fill="#AB47BC">msg</text>
+
+  <!-- Pros / Cons -->
+  <text x="50" y="222" font-size="9" fill="#2e7d32">优点：通信关系显式、可追踪、可审计</text>
+  <text x="50" y="240" font-size="9" fill="#c62828">缺点：Agent 需要知道彼此存在，耦合度较高</text>
+</svg>

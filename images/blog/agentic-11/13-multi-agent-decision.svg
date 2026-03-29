@@ -1,0 +1,56 @@
+<svg viewBox="0 0 560 330" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="280" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">何时使用 Multi-Agent（任务复杂度 &amp; 专业化需求）</text>
+
+  <!-- Axis: 任务复杂度 (horizontal, above grid) -->
+  <text x="300" y="50" font-size="10" fill="#E65100" font-weight="bold" text-anchor="middle">任务复杂度 →</text>
+  <text x="190" y="68" font-size="10" font-weight="bold" text-anchor="middle" fill="#666">低</text>
+  <text x="400" y="68" font-size="10" font-weight="bold" text-anchor="middle" fill="#666">高</text>
+
+  <!-- Axis: 专业化需求 (vertical, left of grid) -->
+  <text x="72" y="140" font-size="10" fill="#E65100" font-weight="bold" text-anchor="middle" transform="rotate(-90, 72, 140)">专业化需求 →</text>
+  <text x="92" y="115" font-size="10" font-weight="bold" fill="#666">低</text>
+  <text x="92" y="185" font-size="10" font-weight="bold" fill="#666">高</text>
+
+  <!-- Cell 1: Low/Low - Green -->
+  <rect x="108" y="80" width="170" height="56" rx="8" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="1.5"/>
+  <text x="193" y="104" font-size="11" font-weight="bold" text-anchor="middle" fill="#2E7D32">Single-Agent</text>
+  <text x="193" y="122" font-size="9" text-anchor="middle" fill="#66BB6A">够用</text>
+
+  <!-- Cell 2: High complexity / Low specialization - Blue -->
+  <rect x="288" y="80" width="170" height="56" rx="8" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1.5"/>
+  <text x="373" y="104" font-size="11" font-weight="bold" text-anchor="middle" fill="#1565C0">Single-Agent</text>
+  <text x="373" y="122" font-size="9" text-anchor="middle" fill="#42A5F5">+ Better Prompt</text>
+
+  <!-- Cell 3: Low complexity / High specialization - Blue -->
+  <rect x="108" y="148" width="170" height="56" rx="8" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1.5"/>
+  <text x="193" y="172" font-size="11" font-weight="bold" text-anchor="middle" fill="#1565C0">Single-Agent</text>
+  <text x="193" y="190" font-size="9" text-anchor="middle" fill="#42A5F5">+ Tools</text>
+
+  <!-- Cell 4: High/High - Orange highlight -->
+  <rect x="288" y="148" width="170" height="56" rx="8" fill="#FFF8E1" stroke="#FFB300" stroke-width="2"/>
+  <text x="373" y="172" font-size="12" font-weight="bold" text-anchor="middle" fill="#E65100">Multi-Agent ✓</text>
+  <text x="373" y="190" font-size="9" text-anchor="middle" fill="#FF8F00">值得投入</text>
+
+  <!-- Decision principles -->
+  <line x1="70" y1="222" x2="490" y2="222" stroke="#eee" stroke-width="1"/>
+
+  <text x="80" y="244" font-size="11" font-weight="bold" fill="#333">决策原则</text>
+
+  <!-- Left column -->
+  <rect x="80" y="256" width="8" height="8" rx="4" fill="#7b1fa2"/>
+  <text x="96" y="264" font-size="9" fill="#555">任务可以并行分解 → Supervisor-Worker</text>
+
+  <rect x="80" y="276" width="8" height="8" rx="4" fill="#7b1fa2"/>
+  <text x="96" y="284" font-size="9" fill="#555">需要多视角碰撞 → Peer-to-Peer</text>
+
+  <rect x="80" y="296" width="8" height="8" rx="4" fill="#7b1fa2"/>
+  <text x="96" y="304" font-size="9" fill="#555">处理有明确阶段 → Pipeline</text>
+
+  <!-- Right column -->
+  <rect x="320" y="256" width="8" height="8" rx="4" fill="#E65100"/>
+  <text x="336" y="264" font-size="9" fill="#555">请求类型多样 → Dynamic Routing</text>
+
+  <rect x="320" y="276" width="8" height="8" rx="4" fill="#E65100"/>
+  <text x="336" y="284" font-size="9" fill="#555">不确定？先从 Pipeline 开始，逐步演进</text>
+</svg>

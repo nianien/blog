@@ -1,0 +1,90 @@
+<svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="450" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">
+    人类记忆 vs Agent 记忆
+  </text>
+
+  <!-- Header Row -->
+  <rect x="20" y="50" width="250" height="40" fill="#1565C0" rx="6" />
+  <rect x="270" y="50" width="280" height="40" fill="#1565C0" rx="6" />
+  <rect x="550" y="50" width="330" height="40" fill="#1565C0" rx="6" />
+
+  <text x="145" y="75" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    人类记忆层级
+  </text>
+  <text x="410" y="75" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    Agent 对应
+  </text>
+  <text x="715" y="75" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    特征
+  </text>
+
+  <!-- Row 1 -->
+  <rect x="20" y="90" width="250" height="70" fill="#E3F2FD" rx="6" />
+  <rect x="270" y="90" width="280" height="70" fill="#E3F2FD" rx="6" />
+  <rect x="550" y="90" width="330" height="70" fill="#E3F2FD" rx="6" />
+
+  <text x="145" y="110" font-size="12" text-anchor="middle" fill="#333">感觉记忆</text>
+  <text x="145" y="130" font-size="11" text-anchor="middle" fill="#666">(Sensory)</text>
+  <text x="410" y="110" font-size="12" text-anchor="middle" fill="#333">当前输入</text>
+  <text x="410" y="130" font-size="11" text-anchor="middle" fill="#666">(User msg/Tool)</text>
+  <text x="715" y="110" font-size="11" text-anchor="middle" fill="#333">极短暂，未经处理的原始信息</text>
+  <text x="715" y="130" font-size="11" text-anchor="middle" fill="#666">持续 &lt; 1秒 / 单次请求</text>
+
+  <!-- Row 2 -->
+  <rect x="20" y="160" width="250" height="70" fill="#FFFACD" rx="6" />
+  <rect x="270" y="160" width="280" height="70" fill="#FFFACD" rx="6" />
+  <rect x="550" y="160" width="330" height="70" fill="#FFFACD" rx="6" />
+
+  <text x="145" y="180" font-size="12" text-anchor="middle" fill="#333">工作记忆</text>
+  <text x="145" y="200" font-size="11" text-anchor="middle" fill="#666">(Working)</text>
+  <text x="410" y="180" font-size="12" text-anchor="middle" fill="#333">Context Window</text>
+  <text x="410" y="200" font-size="11" text-anchor="middle" fill="#666">(~128K tokens)</text>
+  <text x="715" y="180" font-size="11" text-anchor="middle" fill="#333">容量有限，正在处理的信息</text>
+  <text x="715" y="200" font-size="11" text-anchor="middle" fill="#666">持续几秒 / 单次 LLM 调用</text>
+
+  <!-- Row 3 -->
+  <rect x="20" y="230" width="250" height="70" fill="#E8F5E9" rx="6" />
+  <rect x="270" y="230" width="280" height="70" fill="#E8F5E9" rx="6" />
+  <rect x="550" y="230" width="330" height="70" fill="#E8F5E9" rx="6" />
+
+  <text x="145" y="250" font-size="12" text-anchor="middle" fill="#333">短期记忆</text>
+  <text x="145" y="270" font-size="11" text-anchor="middle" fill="#666">(Short-term)</text>
+  <text x="410" y="250" font-size="12" text-anchor="middle" fill="#333">会话状态</text>
+  <text x="410" y="270" font-size="11" text-anchor="middle" fill="#666">(Session state)</text>
+  <text x="715" y="250" font-size="11" text-anchor="middle" fill="#333">当前任务上下文，可被覆写</text>
+  <text x="715" y="270" font-size="11" text-anchor="middle" fill="#666">持续分钟~小时 / 单次会话</text>
+
+  <!-- Row 4 -->
+  <rect x="20" y="300" width="250" height="70" fill="#FFF3E0" rx="6" />
+  <rect x="270" y="300" width="280" height="70" fill="#FFF3E0" rx="6" />
+  <rect x="550" y="300" width="330" height="70" fill="#FFF3E0" rx="6" />
+
+  <text x="145" y="320" font-size="12" text-anchor="middle" fill="#333">长期记忆-情景</text>
+  <text x="145" y="340" font-size="11" text-anchor="middle" fill="#666">(Episodic)</text>
+  <text x="410" y="320" font-size="12" text-anchor="middle" fill="#333">历史交互记录</text>
+  <text x="410" y="340" font-size="11" text-anchor="middle" fill="#666">(Task history)</text>
+  <text x="715" y="320" font-size="11" text-anchor="middle" fill="#333">过去的经验，可被检索</text>
+  <text x="715" y="340" font-size="11" text-anchor="middle" fill="#666">持续天~月 / 跨会话</text>
+
+  <!-- Row 5 -->
+  <rect x="20" y="370" width="250" height="70" fill="#F3E5F5" rx="6" />
+  <rect x="270" y="370" width="280" height="70" fill="#F3E5F5" rx="6" />
+  <rect x="550" y="370" width="330" height="70" fill="#F3E5F5" rx="6" />
+
+  <text x="145" y="390" font-size="12" text-anchor="middle" fill="#333">长期记忆-语义</text>
+  <text x="145" y="410" font-size="11" text-anchor="middle" fill="#666">(Semantic)</text>
+  <text x="410" y="390" font-size="12" text-anchor="middle" fill="#333">知识库</text>
+  <text x="410" y="410" font-size="11" text-anchor="middle" fill="#666">(Knowledge/RAG)</text>
+  <text x="715" y="390" font-size="11" text-anchor="middle" fill="#333">结构化知识，相对稳定</text>
+  <text x="715" y="410" font-size="11" text-anchor="middle" fill="#666">持续月~年 / 持久化</text>
+</svg>

@@ -1,23 +1,19 @@
 1:"$Sreact.fragment"
-2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-142e67ac4336647c.js"],"default"]
-3:I[87555,[],""]
-4:I[31295,[],""]
-6:I[59665,[],"OutletBoundary"]
-9:I[74911,[],"AsyncMetadataOutlet"]
-b:I[59665,[],"ViewportBoundary"]
-d:I[59665,[],"MetadataBoundary"]
-f:I[26614,[],""]
+2:I[2638,["2619","static/chunks/2619-6352ef9022ea9a44.js","7177","static/chunks/app/layout-cc0f87213df1eab1.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+6:I[4431,[],"OutletBoundary"]
+8:I[5278,[],"AsyncMetadataOutlet"]
+a:I[4431,[],"ViewportBoundary"]
+c:I[4431,[],"MetadataBoundary"]
+d:"$Sreact.suspense"
+f:I[7150,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/css/34491b5ca0fd2bfa.css","style"]
-0:{"P":null,"b":"ZS83X6QC0rHEZwHjKWqXD","p":"","c":["","blog","engineering","algorithm","%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/34491b5ca0fd2bfa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","04VcOCzZ18IJxXbNqfWmzv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
-10:"$Sreact.suspense"
-11:I[74911,[],"AsyncMetadata"]
-13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
-14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-1a:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
-15:T72ad,<blockquote>
+:HL["/_next/static/css/7f62681e243899a1.css","style"]
+0:{"P":null,"b":"J7t9u3We_KaTvz0Be1HjC","p":"","c":["","blog","engineering","algorithm","%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7f62681e243899a1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/algorithm/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%E5%85%A8%E6%99%AF%EF%BC%9A%E4%BB%8EBM%E5%88%B0AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+10:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],""]
+11:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+12:T72ad,<blockquote>
 <p>字符串匹配是计算机科学中最基础也最重要的问题之一。从文本编辑器的查找替换，到搜索引擎的全文检索，再到网络安全中的入侵检测与敏感词过滤，字符串匹配算法无处不在。本文系统梳理从朴素匹配到 AC 自动机的完整算法演进脉络，深入分析各算法的设计思想、预处理策略与工程适用场景。</p>
 </blockquote>
 <h2>问题定义与分类</h2>
@@ -588,7 +584,10 @@ else:
 <li><strong>并行化潜力</strong>：Rabin-Karp 的哈希计算具有天然的可并行性，适合 GPU 或 SIMD 加速。</li>
 </ul>
 <p>字符串匹配算法的演进史，实质上是一部<strong>信息利用效率</strong>的进化史。从朴素算法的&quot;零信息利用&quot;，到 KMP/BM 的&quot;利用已匹配字符信息&quot;，再到 AC 自动机的&quot;利用多模式串间的共享前缀信息&quot;，每一步跨越都建立在对问题结构更深入的理解之上。理解这些算法的设计思想，远比记忆它们的具体实现更有价值。</p>
-17:T6306,<blockquote>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L10",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/algorithm/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"算法与数据结构"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2023-09-20","children":"2023年09月20日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"字符串匹配算法全景：从BM到AC自动机的演进之路"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L10","算法",{"href":"/blog/tag/%E7%AE%97%E6%B3%95/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"算法"}],["$","$L10","字符串匹配",{"href":"/blog/tag/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"字符串匹配"}],["$","$L10","KMP",{"href":"/blog/tag/KMP/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"KMP"}],["$","$L10","AC自动机",{"href":"/blog/tag/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AC自动机"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L11",null,{"content":"$12"}]}],"$L13","$L14"]}]}]}]
+15:I[6249,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+19:I[6929,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+16:T6306,<blockquote>
 <p>数据结构的价值不在于理论本身的优美，而在于它如何被工程系统所采纳并解决真实问题。SkipList 和 Merkle Tree 是两种看似无关、实则共享&quot;层次化组织&quot;思想的经典结构：前者以随机化索引实现高效有序检索，后者以递归哈希实现数据完整性验证。它们分别活跃在 Redis、LevelDB、Bitcoin、IPFS 等系统的核心路径上。本文将从原理出发，逐层剖析两者的结构设计、算法实现与工程应用。</p>
 </blockquote>
 <hr>
@@ -1109,198 +1108,232 @@ Level 0:  HEAD ──&gt; 10 ──&gt; 20 ──&gt; 30 ──&gt; 40 ──&gt
 </tbody></table>
 <p>从工程视角看，两者的共同启示在于：<strong>在海量数据场景下，层次化组织是降低操作复杂度的普适策略。</strong> 无论是跳表通过分层索引将链表搜索从 O(n) 降至 O(log n)，还是 Merkle Tree 通过分层哈希将数据验证从 O(n) 降至 O(log n)，其本质都是利用树状/层级结构实现对数级的信息压缩。</p>
 <p>理解这些经典数据结构的设计思想，不仅有助于读懂现有系统的实现细节，更重要的是在面对新的工程问题时，能够从中提取可复用的设计模式——分层抽象、空间换时间、随机化替代确定性平衡——这些思想远比具体的实现代码更有持久价值。</p>
-18:T40cc,<h1>Agentic 系列文章点评与优化建议</h1>
-<hr>
-<h2>系列总览</h2>
-<p>本系列共14篇文章，构建了从 LLM 基础到生产级 Agent 系统的完整学习路径。整体分为四个阶段：</p>
-<ul>
-<li><strong>概念奠基（01-03）</strong>：从 LLM 局限出发，建立 Agent 的概念模型与选型框架</li>
-<li><strong>核心机制（04-08）</strong>：深入 Control Loop、Tool Calling、Prompt Engineering、Runtime 实现、Memory 架构</li>
-<li><strong>高级能力（09-11）</strong>：RAG 认知记忆、规划与反思、多 Agent 协作</li>
-<li><strong>工程落地（12-14）</strong>：框架选型、MCP 协议、生产级系统设计</li>
-</ul>
-<hr>
-<h2>第01篇：From LLM to Agent</h2>
-<p><strong>主题</strong>：系列开篇，从 LLM 五大局限推导出 Agent 五大组件，绘制八层架构知识地图。</p>
-<p><strong>亮点</strong>：问题导向的论述逻辑严密；八层架构全面且体系化；Level 0-5 的代码演进直观清晰；Trade-off 分析体现工程成熟度。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>八层架构缺少落地选型指导 → 补充决策树，按任务确定性、延迟要求、成本承受力快速定位推荐架构</li>
-<li>Level 4/5 代码离生产级还有距离 → 补充容错、重试、成本追踪、可观测性代码片段</li>
-<li>缺少反面教学 → 用订单流转等场景对比 Workflow vs Agent 的成本/可靠性差异</li>
-</ul>
-<hr>
-<h2>第02篇：From Prompt to Agent</h2>
-<p><strong>主题</strong>：从 LLM 的数学本质（条件概率采样）论证 LLM ≠ Agent，展示 Pure LLM → Full Agent 的演进光谱。</p>
-<p><strong>亮点</strong>：数学定义精准（<code>f(prompt) → response</code> 纯函数）；五阶段同任务对比极具说服力；&quot;LLM as Reasoning Engine, Not the Entire System&quot; 的设计哲学深刻。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>光谱各阶段跨度不均（+RAG vs +Loop 的复杂度差异巨大）→ 改为按&quot;自主性/推理深度&quot;重新分层</li>
-<li>确定性 vs 非确定性的边界讨论模糊 → 形成决策矩阵：给定工具数量、变化频率、错误代价，给出代码/LLM/混合的建议</li>
-<li>成本对比仅停留在定性层面 → 选择客服对话等场景量化各阶段的成本、延迟、成功率</li>
-</ul>
-<hr>
-<h2>第03篇：Agent vs Workflow vs Automation</h2>
-<p><strong>主题</strong>：理性批判&quot;Agent 万能论&quot;，系统对比三种执行范式，提出选型决策树。</p>
-<p><strong>亮点</strong>：开篇直言&quot;80%的任务用 if/else 和 DAG 就能解决&quot;，冲击力强；九维度对比框架全面；Agent 隐性成本揭露（Token 超线性增长、不可复现的 Bug）直击痛点；决策树30秒可用。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>混合架构中的 Workflow 框架选型未涉及 → 简要对比 Airflow、Temporal、Step Functions 的适用场景</li>
-<li>成本数字范围过宽（$0.01-0.50）→ 提供成本计算模板，按工具数 × 平均步骤数 × 日调用量估算</li>
-<li>&quot;足够好&quot;的定义模糊 → 按应用场景定义质量目标（accuracy / recall / latency）</li>
-<li>Rule Engine 自身的复杂性（规则爆炸、优先级冲突）未讨论 → 补充使三种范式的 trade-off 更客观</li>
-</ul>
-<hr>
-<h2>第04篇：The Agent Control Loop</h2>
-<p><strong>主题</strong>：深入 Agent 运行时核心——OBSERVE → THINK → ACT → REFLECT 控制循环。</p>
-<p><strong>亮点</strong>：FSM 形式化描述比&quot;循环&quot;更严谨；与 OODA Loop 的跨领域类比增加理论深度；ReAct vs Plan-then-Execute 的执行轨迹对比清晰；130行完整 Python 实现是极好的教学材料。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>异步工具调用的错误处理（部分失败、超时重试）不够深 → 补充完整的错误恢复策略</li>
-<li>多模态输入（图片、PDF）的 OBSERVE 归一化完全缺失 → 新增多模态处理讨论</li>
-<li>死循环检测方法粗糙 → 引入&quot;效率&quot;指标，连续 N 轮无实质进展则判定死循环</li>
-<li>分布式 Stateful Agent 的一致性问题未涉及 → 明确单进程假设或讨论分布式锁方案</li>
-</ul>
-<hr>
-<h2>第05篇：Tool Calling Deep Dive</h2>
-<p><strong>主题</strong>：完整拆解 Tool Calling 的工程体系，从 JSON Schema 契约到工具注册/发现/执行。</p>
-<p><strong>亮点</strong>：序列图展示四方协作流程清晰；&quot;好描述 vs 差描述&quot;的对比指导性强；工具选择的三层递进方案适配不同规模；代码从 Tool 类到完整对话循环，粒度适中可直接运行。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>安全性部分（权限控制、参数注入、Sandbox）过于简化 → 补充参数注入防护案例和 Docker Sandbox 配置示例</li>
-<li>并行工具调用的隐含依赖未处理 → 增加工具依赖图构建和拓扑排序的代码</li>
-<li>工具 Schema 的版本控制未讨论 → 新增 breaking change 检测和灰度发布策略</li>
-<li>工具选择策略缺少量化对比 → 添加 Accuracy / Token Cost / Latency 实验数据表</li>
-</ul>
-<hr>
-<h2>第06篇：Prompt Engineering for Agents</h2>
-<p><strong>主题</strong>：重新定义 Agent Prompt 为&quot;系统接口规范设计&quot;，构建四层架构和四种设计模式。</p>
-<p><strong>亮点</strong>：打破&quot;Prompt = 聊天技巧&quot;的认知，概念重塑有冲击力；Router / Planner / Executor / Reflector 四种模式各有完整模板；Few-shot vs Zero-shot 的决策矩阵清晰；从模板化 → 版本控制 → 测试 → 组合的工程化体系完整。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>Context 压缩策略的&quot;摘要本身消耗 Token&quot;这个 trade-off 未分析 → 通过实际案例对比三种策略的质量和节省率</li>
-<li>Prompt 测试框架指标粗糙（仅 json_valid 等基础断言）→ 增加 tool_selection_accuracy、plan_feasibility_score 等</li>
-<li>全文隐含以 GPT 为基准，多模型适配缺失 → 新增 GPT-4 / Claude / Gemini 在 constraint 遵循度等维度的对比</li>
-<li>Prompt 失效时的降级策略未讨论 → 补充容错 JSON 解析和自适应 Prompt 调整机制</li>
-</ul>
-<hr>
-<h2>第07篇：Agent Runtime from Scratch</h2>
-<p><strong>主题</strong>：从零构建完整 Agent Runtime，不依赖任何框架。</p>
-<p><strong>亮点</strong>：五大模块职责清晰可独立替换，架构设计优秀；流式处理覆盖了 tool_calls 分片拼装的细节；死循环检测用滑动窗口+频次统计比简单计数更智能；MessageManager 保持 tool_call 对完整性约束，避免 API 错误。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>超时控制无差异化 SLA → 为每个工具增加历史执行时间统计，按 p95 延迟自适应调整</li>
-<li>并行执行无依赖感知 → 在 ToolRegistry 增加依赖图，运行时检查依赖</li>
-<li>Stream / 非 Stream 分支代码重复 → 提炼公共逻辑为 <code>_run_loop</code> 方法</li>
-<li>断点续传缺失 → 扩展 StateStore 支持检查点保存和恢复</li>
-<li>可观测性不完整 → 新增 Observability 模块，记录每步 token 消耗、延迟、工具成功率</li>
-</ul>
-<hr>
-<h2>第08篇：Memory Architecture</h2>
-<p><strong>主题</strong>：认知科学类比的四层 Agent 记忆架构（Conversation Buffer / Working / Episodic / Semantic）。</p>
-<p><strong>亮点</strong>：Atkinson-Shiffrin 模型的类比降低理解门槛；四层分层明确，各有不同的存储需求和读写频率；存储方案从内存列表到向量数据库覆盖不同规模；Token 预算动态分配和降级策略实用。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>Episodic vs Semantic 的实际边界模糊 → 补充决策树，明确&quot;给定一条信息存哪层&quot;的判断标准</li>
-<li>遗忘机制严重不足，仅提及时间衰减 → 系统化补充重要性评分、查询频率热度、混合遗忘策略</li>
-<li>向量 Embedding 的成本隐患未讨论 → 增加增量 vs 全量 Embedding 的成本对比和哈希缓存优化</li>
-<li>多租户场景下的记忆隔离和并发一致性完全缺失 → 补充 user_id 命名空间、乐观锁、分布式版本控制</li>
-</ul>
-<hr>
-<h2>第09篇：RAG as Cognitive Memory</h2>
-<p><strong>主题</strong>：&quot;检索质量 &gt; 模型大小&quot;，系统拆解 RAG 六大环节（Ingestion → Chunking → Embedding → Retrieval → Reranking → Context Packing）。</p>
-<p><strong>亮点</strong>：将 RAG 重新定义为&quot;Agent 认知记忆系统&quot;，视角独特；Chunking 大小 trade-off 和 Hybrid Retrieval 的 RRF 融合算法实用；RAGAS 框架引入使质量可度量；从&quot;检索不到&quot;&quot;检索到但没用上&quot;&quot;幻觉&quot;三个实际场景出发的优化手段有针对性。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>多语言场景（中英混合）完全缺失 → 补充跨语言 Embedding 选型指南</li>
-<li>百万级 chunk 的工程实践不足 → 补充分片、分布式存储、增量索引的实战案例</li>
-<li>各方案缺少成本-质量量化对比 → 为 BM25 only / Vector only / Hybrid / with Reranker 给出基准数据</li>
-<li>Context Packing 的&quot;Lost in the Middle&quot;解决方案过浅 → 补充层级摘要和自适应路由等策略</li>
-</ul>
-<hr>
-<h2>第10篇：Planning and Reflection</h2>
-<p><strong>主题</strong>：规划解决&quot;前瞻&quot;缺陷，反思解决&quot;回溯&quot;缺陷，四种规划范式的演进。</p>
-<p><strong>亮点</strong>：范式演进路线图一目了然；用 LLM 调用次数量化不同范式成本（ReAct O(steps)、ToT-BFS O(k×d×2)）非常直观；反思四大陷阱（无限循环、过度反思、成本爆炸、合理策略）的剖析深入；二维决策矩阵（任务步骤 × 确定性）实用性强。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>&quot;何时主动反思&quot;的自发机制缺失 → 引入信息熵、预测置信度等度量触发自发反思</li>
-<li>Planning 与 Reflection 的交互循环未系统设计 → 补充&quot;规划中局部修正&quot;和&quot;执行中动态重规划&quot;的完整代码</li>
-<li>Tree-of-Thought 评估函数的可靠性和偏差未深入讨论 → 分析确认偏差、多数人谬误等失效场景</li>
-<li>缺少认知心理学的理论支撑 → 引入 Kahneman 双过程理论、Rittel wicked problem 概念</li>
-</ul>
-<hr>
-<h2>第11篇：Multi-Agent Collaboration</h2>
-<p><strong>主题</strong>：四种协作模式（Supervisor-Worker / Peer-to-Peer / Pipeline / Dynamic Routing）的完整工程实践。</p>
-<p><strong>亮点</strong>：单 Agent 四大天花板的论述有力；通信机制三层抽象（Blackboard / Message Passing / Event Bus）清晰；完整框架实现涵盖分解、并行、依赖管理、结果合成；错误处理覆盖重试、降级、死锁检测；可观测性设计（Trace / Span）面向生产。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>不同模式的成本特征缺少细化分析 → 补充四种模式的 LLM 调用次数 / Token / 延迟 / 并行度对比表</li>
-<li>Peer-to-Peer 的协议设计太浅 → 补充对话格式标准化、轮次终止条件、冲突解决机制</li>
-<li>与单 Agent 缺少量化对比 → 同一任务对比 Single vs Multi Agent 的质量、成本、耗时</li>
-<li>Worker 专业化缺少度量指标 → 提供基于准确率/延迟/成本的定量判断标准</li>
-<li>与成熟框架（LangGraph、AutoGen）的集成指南缺失 → 补充框架集成示例</li>
-</ul>
-<hr>
-<h2>第12篇：LangChain vs LangGraph</h2>
-<p><strong>主题</strong>：框架 vs 自研的理性选择，系统对比两大框架的价值与边界。</p>
-<p><strong>亮点</strong>：立场均衡避免绝对化；同一 Agent 用两种框架实现的代码对比直观；决策矩阵从项目阶段、团队规模等维度给出清晰指引；&quot;自研 Runtime + 选择性借用框架工具集成&quot;的折中方案务实。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>LangGraph 篇幅明显少于 LangChain → 补充 LangGraph 生产中的坑点（状态序列化性能、Checkpoint 成本）</li>
-<li>其他框架（CrewAI、AutoGen）评价蜻蜓点水 → 补充代码示例和深度对比</li>
-<li>依赖倒置原则示例代码量过大 → 用 3-5 个类的最小化示例替代</li>
-<li>缺少真实迁移案例 → 补充&quot;从 LangChain MVP 迁移到 LangGraph&quot;的实战故事</li>
-<li>未讨论 LLM 原生推理能力（o1/o3）对框架设计的影响 → 扩展&quot;框架的未来&quot;讨论</li>
-</ul>
-<hr>
-<h2>第13篇：MCP and Tool Protocol</h2>
-<p><strong>主题</strong>：MCP（Model Context Protocol）的完整技术解析，从 N×M 问题到标准化工具协议。</p>
-<p><strong>亮点</strong>：N×M 集成问题的定义精准，HTTP 类比形象；三大原语（Tools / Resources / Prompts）的分层控制设计精妙；容错设计（Timeout / Retry / Circuit Breaker）达到生产级水准；工具描述最佳实践通过正反对比清晰易懂。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>MCP 自身限制（有状态交互、事务性调用）仅在&quot;进一步思考&quot;中提及 → 升级为独立小节深入分析</li>
-<li>协议对比矩阵的评分标准不明确 → 清晰定义各维度的衡量方法</li>
-<li>安全讨论缺少供应链攻击和多租户隔离 → 补充完整威胁模型</li>
-<li>缺少性能/压力测试 → 补充&quot;50+ MCP Server 连接时的系统表现&quot;分析</li>
-<li>工具市场愿景过于乐观 → 补充信誉系统、版本管理、恶意工具检测等现实问题</li>
-</ul>
-<hr>
-<h2>第14篇：Production-Grade Agent Systems</h2>
-<p><strong>主题</strong>：系列终篇，从 Observability、Evaluation、Cost Engineering、Security 四维度讨论生产化挑战。</p>
-<p><strong>亮点</strong>：&quot;实验室思维 vs 生产思维&quot;的对比一针见血；Trace 作为生产系统核心的论述深刻；四大维度的论述顺序逻辑清晰，与前13篇形成闭环。</p>
-<p><strong>不足与建议</strong>：</p>
-<ul>
-<li>Evaluation 框架需补充具体指标和自动化测试套件的参考实现</li>
-<li>Cost Engineering 应配套可视化（成本与质量的 Pareto 前沿分析）</li>
-<li>Security 应分层讨论（参数验证 → Prompt Injection 防护 → 隐私保护）</li>
-<li>补充监控告警策略：何时触发人工介入、Agent 系统的 SLO/SLA 如何定义</li>
-</ul>
-<hr>
-<h2>系列整体评价</h2>
-<h3>核心价值</h3>
+17:T29a5,<h1>创业设计思维：从想法到产品的完整路径</h1>
+<p>在当今快速变化的市场环境中，创业成功不仅需要好的想法，更需要科学的设计思维方法。本文将深入探讨如何运用设计思维来指导创业过程，从想法到产品的完整路径。</p>
+<h2>什么是设计思维</h2>
+<h3>核心概念</h3>
+<p>设计思维是一种以人为本的创新方法论，强调通过理解用户需求、快速原型设计和持续迭代来解决问题。</p>
+<h3>五个阶段</h3>
 <ol>
-<li><strong>体系化程度高</strong>：14篇从概念到生产形成完整闭环，知识图谱清晰</li>
-<li><strong>工程导向鲜明</strong>：每篇都有可运行代码，不止于概念讨论</li>
-<li><strong>立场理性务实</strong>：始终强调确定性与非确定性的权衡，反对 Agent 万能论</li>
-<li><strong>设计哲学深刻</strong>：&quot;LLM as Reasoning Engine, Not the Entire System&quot;贯穿全系列</li>
+<li><strong>同理心（Empathize）</strong> - 深入理解用户需求</li>
+<li><strong>定义（Define）</strong> - 明确问题核心</li>
+<li><strong>构思（Ideate）</strong> - 产生创意解决方案</li>
+<li><strong>原型（Prototype）</strong> - 快速制作原型</li>
+<li><strong>测试（Test）</strong> - 验证和改进方案</li>
 </ol>
-<h3>共性改进方向</h3>
-<ol>
-<li><strong>量化数据不足</strong>：大量决策建议停留在定性层面，缺少成本/性能/可靠性的基准数据</li>
-<li><strong>生产级实践欠缺</strong>：代码多为原型级，分布式、高并发、多失败模式的讨论较少</li>
-<li><strong>多模型适配缺失</strong>：隐含以 OpenAI 为基准，Claude / Gemini 等模型的差异未涉及</li>
-<li><strong>真实案例稀缺</strong>：缺少&quot;从0到1&quot;的完整项目案例和踩坑复盘</li>
-<li><strong>多语言/多模态</strong>：中英混合场景和图片/音频等多模态输入基本未涉及</li>
-<li><strong>遗忘与降级</strong>：记忆的遗忘策略、系统的优雅降级机制讨论不够深入</li>
-</ol>
-<h3>建议后续补充</h3>
+<h2>创业初期的用户研究</h2>
+<h3>用户访谈</h3>
 <ul>
-<li><strong>实战案例集</strong>：选 2-3 个完整项目，从架构选型到踩坑复盘</li>
-<li><strong>性能基准报告</strong>：不同架构在标准任务上的成本/延迟/成功率对比</li>
-<li><strong>框架集成指南</strong>：如何将系列中的设计理念落地到 LangGraph、AutoGen 等框架</li>
-<li><strong>安全与合规专题</strong>：Prompt Injection 防护、数据隐私、审计日志的完整方案</li>
+<li><strong>目标用户识别</strong> - 明确产品的目标用户群体</li>
+<li><strong>深度访谈</strong> - 了解用户真实需求和痛点</li>
+<li><strong>行为观察</strong> - 观察用户的实际使用行为</li>
+<li><strong>数据分析</strong> - 利用数据了解用户行为模式</li>
 </ul>
-19:T4ac3,<h2>引言：一个看似简单的几何问题</h2>
+<h3>用户画像构建</h3>
+<ol>
+<li><strong>基本信息</strong> - 年龄、职业、收入等</li>
+<li><strong>行为特征</strong> - 使用习惯、偏好等</li>
+<li><strong>需求痛点</strong> - 当前面临的问题</li>
+<li><strong>动机目标</strong> - 期望达成的目标</li>
+</ol>
+<h3>竞品分析</h3>
+<ul>
+<li><strong>功能对比</strong> - 分析竞争对手的功能特点</li>
+<li><strong>用户体验</strong> - 评估竞品的用户体验</li>
+<li><strong>市场定位</strong> - 了解竞品的市场策略</li>
+<li><strong>差异化机会</strong> - 寻找市场空白点</li>
+</ul>
+<h2>问题定义与机会识别</h2>
+<h3>问题挖掘</h3>
+<ol>
+<li><strong>表面问题</strong> - 用户直接表达的问题</li>
+<li><strong>深层需求</strong> - 用户未明确表达的需求</li>
+<li><strong>潜在机会</strong> - 市场变化带来的新机会</li>
+<li><strong>技术趋势</strong> - 新技术带来的可能性</li>
+</ol>
+<h3>机会评估</h3>
+<ul>
+<li><strong>市场规模</strong> - 目标市场的容量和增长潜力</li>
+<li><strong>竞争强度</strong> - 市场竞争的激烈程度</li>
+<li><strong>技术可行性</strong> - 技术实现的难度和成本</li>
+<li><strong>商业模式</strong> - 盈利模式的可持续性</li>
+</ul>
+<h3>价值主张设计</h3>
+<ol>
+<li><strong>核心价值</strong> - 产品为用户创造的核心价值</li>
+<li><strong>差异化优势</strong> - 相对于竞品的独特优势</li>
+<li><strong>用户收益</strong> - 用户使用产品获得的具体收益</li>
+<li><strong>成本效益</strong> - 用户付出的成本与获得的收益</li>
+</ol>
+<h2>创意构思与方案设计</h2>
+<h3>头脑风暴技巧</h3>
+<ul>
+<li><strong>数量优先</strong> - 先追求数量，再追求质量</li>
+<li><strong>延迟评判</strong> - 不急于否定任何想法</li>
+<li><strong>鼓励联想</strong> - 基于他人想法进行延伸</li>
+<li><strong>视觉化</strong> - 用图形和草图表达想法</li>
+</ul>
+<h3>创意筛选</h3>
+<ol>
+<li><strong>可行性评估</strong> - 技术实现的可行性</li>
+<li><strong>市场需求</strong> - 市场接受度评估</li>
+<li><strong>资源匹配</strong> - 团队能力和资源匹配度</li>
+<li><strong>风险分析</strong> - 潜在风险和不确定性</li>
+</ol>
+<h3>方案优化</h3>
+<ul>
+<li><strong>用户反馈</strong> - 收集用户对方案的意见</li>
+<li><strong>专家咨询</strong> - 寻求行业专家的建议</li>
+<li><strong>市场测试</strong> - 小范围市场验证</li>
+<li><strong>迭代改进</strong> - 基于反馈持续优化</li>
+</ul>
+<h2>原型设计与快速验证</h2>
+<h3>原型类型</h3>
+<ol>
+<li><strong>低保真原型</strong> - 纸面原型、线框图</li>
+<li><strong>中保真原型</strong> - 交互原型、功能演示</li>
+<li><strong>高保真原型</strong> - 接近最终产品的原型</li>
+<li><strong>MVP</strong> - 最小可行产品</li>
+</ol>
+<h3>原型制作工具</h3>
+<ul>
+<li><strong>设计工具</strong> - Figma、Sketch、Adobe XD</li>
+<li><strong>原型工具</strong> - InVision、Marvel、Axure</li>
+<li><strong>开发工具</strong> - React、Vue、Flutter</li>
+<li><strong>无代码平台</strong> - Bubble、Webflow、Glide</li>
+</ul>
+<h3>快速验证方法</h3>
+<ol>
+<li><strong>用户测试</strong> - 邀请目标用户测试原型</li>
+<li><strong>A/B测试</strong> - 对比不同方案的效果</li>
+<li><strong>数据分析</strong> - 收集和分析用户行为数据</li>
+<li><strong>反馈收集</strong> - 系统收集用户反馈</li>
+</ol>
+<h2>产品迭代与优化</h2>
+<h3>迭代周期</h3>
+<ul>
+<li><strong>快速迭代</strong> - 短周期快速发布和更新</li>
+<li><strong>数据驱动</strong> - 基于数据指导迭代方向</li>
+<li><strong>用户导向</strong> - 以用户需求为中心</li>
+<li><strong>持续改进</strong> - 建立持续改进机制</li>
+</ul>
+<h3>关键指标</h3>
+<ol>
+<li><strong>用户获取</strong> - 新用户注册和激活</li>
+<li><strong>用户留存</strong> - 用户持续使用情况</li>
+<li><strong>用户活跃</strong> - 用户使用频率和深度</li>
+<li><strong>商业转化</strong> - 用户付费转化率</li>
+</ol>
+<h3>优化策略</h3>
+<ul>
+<li><strong>功能优化</strong> - 改进产品功能和性能</li>
+<li><strong>体验优化</strong> - 提升用户使用体验</li>
+<li><strong>流程优化</strong> - 简化用户操作流程</li>
+<li><strong>界面优化</strong> - 改进用户界面设计</li>
+</ul>
+<h2>设计思维在创业中的应用</h2>
+<h3>产品开发</h3>
+<ol>
+<li><strong>需求分析</strong> - 深入理解用户需求</li>
+<li><strong>功能设计</strong> - 设计产品功能架构</li>
+<li><strong>界面设计</strong> - 设计用户界面和交互</li>
+<li><strong>体验优化</strong> - 持续优化用户体验</li>
+</ol>
+<h3>营销策略</h3>
+<ul>
+<li><strong>用户洞察</strong> - 基于用户研究制定营销策略</li>
+<li><strong>内容设计</strong> - 设计吸引用户的内容</li>
+<li><strong>渠道选择</strong> - 选择合适的分销渠道</li>
+<li><strong>效果评估</strong> - 评估营销活动效果</li>
+</ul>
+<h3>团队协作</h3>
+<ol>
+<li><strong>跨职能合作</strong> - 设计、技术、市场团队协作</li>
+<li><strong>用户中心</strong> - 所有决策以用户为中心</li>
+<li><strong>快速响应</strong> - 快速响应市场变化</li>
+<li><strong>持续学习</strong> - 建立学习型组织</li>
+</ol>
+<h2>成功案例分析</h2>
+<h3>案例一：Airbnb</h3>
+<ul>
+<li><strong>用户研究</strong> - 深入了解房东和房客需求</li>
+<li><strong>原型设计</strong> - 从简单的网站开始</li>
+<li><strong>快速迭代</strong> - 基于用户反馈持续改进</li>
+<li><strong>体验优化</strong> - 不断优化预订和沟通流程</li>
+</ul>
+<h3>案例二：Uber</h3>
+<ul>
+<li><strong>问题定义</strong> - 解决城市出行难题</li>
+<li><strong>用户研究</strong> - 了解司机和乘客需求</li>
+<li><strong>原型验证</strong> - 通过MVP验证商业模式</li>
+<li><strong>持续优化</strong> - 基于数据持续改进服务</li>
+</ul>
+<h3>案例三：Slack</h3>
+<ul>
+<li><strong>用户洞察</strong> - 发现团队沟通痛点</li>
+<li><strong>设计思维</strong> - 运用设计思维开发产品</li>
+<li><strong>快速迭代</strong> - 快速响应用户需求</li>
+<li><strong>体验优先</strong> - 始终关注用户体验</li>
+</ul>
+<h2>设计思维工具和方法</h2>
+<h3>用户研究工具</h3>
+<ul>
+<li><strong>用户访谈</strong> - 深度了解用户需求</li>
+<li><strong>问卷调查</strong> - 收集大量用户数据</li>
+<li><strong>用户测试</strong> - 观察用户使用行为</li>
+<li><strong>数据分析</strong> - 分析用户行为数据</li>
+</ul>
+<h3>创意工具</h3>
+<ol>
+<li><strong>思维导图</strong> - 整理和扩展想法</li>
+<li><strong>故事板</strong> - 可视化用户场景</li>
+<li><strong>角色扮演</strong> - 体验用户视角</li>
+<li><strong>类比思维</strong> - 从其他领域获得启发</li>
+</ol>
+<h3>原型工具</h3>
+<ul>
+<li><strong>纸面原型</strong> - 快速绘制界面草图</li>
+<li><strong>数字原型</strong> - 制作交互原型</li>
+<li><strong>3D打印</strong> - 制作物理原型</li>
+<li><strong>虚拟现实</strong> - 创建沉浸式体验</li>
+</ul>
+<h2>设计思维的挑战与解决方案</h2>
+<h3>常见挑战</h3>
+<ol>
+<li><strong>时间压力</strong> - 快速迭代与深度思考的平衡</li>
+<li><strong>资源限制</strong> - 有限资源下的创新</li>
+<li><strong>团队协作</strong> - 跨职能团队的协调</li>
+<li><strong>市场变化</strong> - 快速变化的市场环境</li>
+</ol>
+<h3>解决方案</h3>
+<ul>
+<li><strong>敏捷方法</strong> - 采用敏捷开发方法</li>
+<li><strong>精益创业</strong> - 运用精益创业理念</li>
+<li><strong>设计冲刺</strong> - 使用设计冲刺方法</li>
+<li><strong>持续学习</strong> - 建立学习型组织</li>
+</ul>
+<h2>未来发展趋势</h2>
+<h3>技术融合</h3>
+<ol>
+<li><strong>AI辅助设计</strong> - 人工智能辅助设计决策</li>
+<li><strong>数据驱动</strong> - 大数据指导设计方向</li>
+<li><strong>虚拟现实</strong> - VR/AR在设计中的应用</li>
+<li><strong>自动化工具</strong> - 设计流程的自动化</li>
+</ol>
+<h3>方法演进</h3>
+<ul>
+<li><strong>混合方法</strong> - 结合多种设计方法</li>
+<li><strong>远程协作</strong> - 远程团队的设计协作</li>
+<li><strong>用户参与</strong> - 用户参与设计过程</li>
+<li><strong>持续创新</strong> - 建立持续创新机制</li>
+</ul>
+<h2>总结</h2>
+<p>设计思维为创业提供了一种系统性的创新方法，通过深入理解用户需求、快速原型设计和持续迭代，能够有效降低创业风险，提高成功率。</p>
+<p>成功的创业不仅需要好的想法，更需要科学的方法和持续的努力。设计思维为创业者提供了一套完整的工具和方法，帮助他们在复杂多变的市场环境中找到正确的方向。</p>
+<p>记住，设计思维不是一次性的过程，而是一种持续的方法论。只有将设计思维融入创业的每个环节，才能真正发挥其价值。</p>
+<hr>
+<p><em>设计思维不仅是工具，更是一种思维方式。在创业的道路上，让设计思维成为你的指南针。</em> </p>
+18:T4ac3,<h2>引言：一个看似简单的几何问题</h2>
 <p>给定一个二维平面上的点和一个多边形，判断该点是否位于多边形内部——这是计算几何中最基础也是最重要的问题之一。</p>
 <p>这个问题的应用场景远比想象中广泛。在 GIS（地理信息系统）领域，地理围栏需要判断一个 GPS 坐标是否落在某个行政区划或配送区域内；在游戏引擎中，碰撞检测的核心步骤之一就是判断角色是否进入了某个不规则区域；在图形渲染中，扫描线填充算法需要逐像素判断哪些点落在多边形内部以进行着色。</p>
 <p>尽管问题描述简洁，但一旦考虑凹多边形、自交多边形、射线穿过顶点等边界情况，实现一个工程上鲁棒的算法并非易事。本文将系统讲解两种经典算法——<strong>射线法（Ray Casting）</strong> 与<strong>回转数法（Winding Number）</strong>，深入分析其数学原理、边界处理策略与工程优化方法。</p>
@@ -1509,9 +1542,10 @@ Level 0:  HEAD ──&gt; 10 ──&gt; 20 ──&gt; 30 ──&gt; 40 ──&gt
 <h2>总结</h2>
 <p>点在多边形内判定是计算几何中的基石问题。射线法以其概念简洁、实现高效的特点成为工程实践中的首选方案，其 O(n) 的时间复杂度和对凹多边形的天然支持使其适用于绝大多数场景。回转数法在处理自交多边形时提供了不同的语义选择（非零填充规则 vs 奇偶填充规则），是理解图形填充行为的关键。</p>
 <p>在工程应用中，算法本身的效率往往不是瓶颈——真正的挑战在于如何通过包围盒预检测、空间索引、网格预处理等手段，将海量查询的平均复杂度从 O(n) 降低到接近 O(1)。理解算法原理是基础，而将其融入具体的工程架构中进行系统性优化，才是将理论转化为生产力的关键。</p>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/algorithm/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"算法与数据结构"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2023-09-20","children":"2023年09月20日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"字符串匹配算法全景：从BM到AC自动机的演进之路"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","算法",{"href":"/blog/tag/%E7%AE%97%E6%B3%95/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"算法"}],["$","$L13","字符串匹配",{"href":"/blog/tag/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"字符串匹配"}],["$","$L13","KMP",{"href":"/blog/tag/KMP/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"KMP"}],["$","$L13","AC自动机",{"href":"/blog/tag/AC%E8%87%AA%E5%8A%A8%E6%9C%BA/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"AC自动机"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/algorithm/SkipList与Merkle Tree：两种经典结构的原理与工程应用","title":"SkipList与Merkle Tree：两种经典结构的原理与工程应用","description":"深入分析跳表与Merkle树的数据结构原理、算法实现及其在Redis、LevelDB、区块链、分布式系统中的工程应用","pubDate":"2023-06-15","tags":["数据结构","SkipList","Merkle Tree","分布式系统"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/Agentic系列文章点评与优化建议","title":"$undefined","description":"$undefined","pubDate":"2024-01-01","tags":[],"heroImage":"$undefined","content":"$18"}},"tagNav":{"算法":{"prev":null,"next":{"slug":"engineering/algorithm/计算几何基础：点在多边形内判定算法详解","title":"计算几何基础：点在多边形内判定算法详解","description":"系统讲解点在多边形内判定的经典算法——射线法与回转数法，涵盖边界情况处理、算法优化及在GIS与图形学中的工程应用","pubDate":"2024-07-25","tags":["算法","计算几何","多边形","GIS"],"heroImage":"$undefined","content":"$19"}},"字符串匹配":{"prev":null,"next":null},"KMP":{"prev":null,"next":null},"AC自动机":{"prev":null,"next":null}}}]}],["$","$L1a",null,{}]]}]}]}]
-8:null
-c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+13:["$","$d",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L15",null,{"globalNav":{"prev":{"slug":"engineering/algorithm/SkipList与Merkle Tree：两种经典结构的原理与工程应用","title":"SkipList与Merkle Tree：两种经典结构的原理与工程应用","description":"深入分析跳表与Merkle树的数据结构原理、算法实现及其在Redis、LevelDB、区块链、分布式系统中的工程应用","pubDate":"2023-06-15","tags":["数据结构","SkipList","Merkle Tree","分布式系统"],"heroImage":"$undefined","content":"$16"},"next":{"slug":"insights/business/创业设计思维—从想法到产品的完整路径","title":"创业设计思维：从想法到产品的完整路径","description":"探讨创业过程中的设计思维方法，包括用户研究、原型设计、迭代优化等，以及如何将创意转化为成功的产品","pubDate":"2024-01-08","tags":["产品设计","创业方法论","设计思维"],"heroImage":"$undefined","content":"$17"}},"tagNav":{"算法":{"prev":null,"next":{"slug":"engineering/algorithm/计算几何基础：点在多边形内判定算法详解","title":"计算几何基础：点在多边形内判定算法详解","description":"系统讲解点在多边形内判定的经典算法——射线法与回转数法，涵盖边界情况处理、算法优化及在GIS与图形学中的工程应用","pubDate":"2024-07-25","tags":["算法","计算几何","多边形","GIS"],"heroImage":"$undefined","content":"$18"}},"字符串匹配":{"prev":null,"next":null},"KMP":{"prev":null,"next":null},"AC自动机":{"prev":null,"next":null}}}]}]
+14:["$","$L19",null,{}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
-a:{"metadata":[["$","title","0",{"children":"字符串匹配算法全景：从BM到AC自动机的演进之路 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"}],["$","meta","2",{"property":"og:title","content":"字符串匹配算法全景：从BM到AC自动机的演进之路"}],["$","meta","3",{"property":"og:description","content":"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2023-09-20"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"字符串匹配算法全景：从BM到AC自动机的演进之路"}],["$","meta","9",{"name":"twitter:description","content":"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
-12:{"metadata":"$a:metadata","error":null,"digest":"$undefined"}
+1a:I[622,[],"IconMark"]
+9:{"metadata":[["$","title","0",{"children":"字符串匹配算法全景：从BM到AC自动机的演进之路 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"}],["$","meta","2",{"property":"og:title","content":"字符串匹配算法全景：从BM到AC自动机的演进之路"}],["$","meta","3",{"property":"og:description","content":"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2023-09-20"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"字符串匹配算法全景：从BM到AC自动机的演进之路"}],["$","meta","9",{"name":"twitter:description","content":"系统梳理字符串模式匹配算法族：BM、Horspool、Sunday、KMP、KR及AC自动机，涵盖算法原理、预处理策略、复杂度分析与工程选型"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}],["$","$L1a","14",{}]],"error":null,"digest":"$undefined"}
+e:"$9:metadata"

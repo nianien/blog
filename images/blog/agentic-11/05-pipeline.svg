@@ -1,0 +1,59 @@
+<svg viewBox="0 0 700 130" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="350" y="18" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Pipeline 模式</text>
+
+  <!-- Input label -->
+  <text x="10" y="57" font-size="11" fill="#333">Input</text>
+  <line x1="38" y1="52" x2="53" y2="52" stroke="#666" stroke-width="1.5"/>
+  <polygon points="53,48 60,52 53,56" fill="#666"/>
+
+  <!-- Stage 1: Draft -->
+  <rect x="62" y="34" width="86" height="44" rx="6" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="105" y="53" font-size="11" font-weight="bold" text-anchor="middle" fill="#2e7d32">Draft</text>
+  <text x="105" y="68" font-size="8" text-anchor="middle" fill="#666">Stage 1</text>
+  <text x="105" y="96" font-size="9" text-anchor="middle" fill="#666">生成初稿</text>
+
+  <line x1="148" y1="52" x2="170" y2="52" stroke="#666" stroke-width="1.5"/>
+  <polygon points="167,48 174,52 167,56" fill="#666"/>
+
+  <!-- Stage 2: Review -->
+  <rect x="176" y="34" width="86" height="44" rx="6" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="219" y="53" font-size="11" font-weight="bold" text-anchor="middle" fill="#2e7d32">Review</text>
+  <text x="219" y="68" font-size="8" text-anchor="middle" fill="#666">Stage 2</text>
+  <text x="219" y="96" font-size="9" text-anchor="middle" fill="#666">审查质量</text>
+
+  <line x1="262" y1="52" x2="284" y2="52" stroke="#666" stroke-width="1.5"/>
+  <polygon points="281,48 288,52 281,56" fill="#666"/>
+
+  <!-- Stage 3: Edit -->
+  <rect x="290" y="34" width="86" height="44" rx="6" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="333" y="53" font-size="11" font-weight="bold" text-anchor="middle" fill="#2e7d32">Edit</text>
+  <text x="333" y="68" font-size="8" text-anchor="middle" fill="#666">Stage 3</text>
+  <text x="333" y="96" font-size="9" text-anchor="middle" fill="#666">修改完善</text>
+
+  <line x1="376" y1="52" x2="398" y2="52" stroke="#666" stroke-width="1.5"/>
+  <polygon points="395,48 402,52 395,56" fill="#666"/>
+
+  <!-- Stage 4: Fact Check -->
+  <rect x="404" y="34" width="86" height="44" rx="6" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="447" y="53" font-size="11" font-weight="bold" text-anchor="middle" fill="#2e7d32">Fact Check</text>
+  <text x="447" y="68" font-size="8" text-anchor="middle" fill="#666">Stage 4</text>
+  <text x="447" y="96" font-size="9" text-anchor="middle" fill="#666">事实核查</text>
+
+  <line x1="490" y1="52" x2="512" y2="52" stroke="#666" stroke-width="1.5"/>
+  <polygon points="509,48 516,52 509,56" fill="#666"/>
+
+  <!-- Stage 5: Format -->
+  <rect x="518" y="34" width="86" height="44" rx="6" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="561" y="53" font-size="11" font-weight="bold" text-anchor="middle" fill="#2e7d32">Format</text>
+  <text x="561" y="68" font-size="8" text-anchor="middle" fill="#666">Stage 5</text>
+  <text x="561" y="96" font-size="9" text-anchor="middle" fill="#666">格式化输出</text>
+
+  <!-- Output -->
+  <line x1="604" y1="52" x2="626" y2="52" stroke="#666" stroke-width="1.5"/>
+  <polygon points="623,48 630,52 623,56" fill="#666"/>
+  <text x="640" y="57" font-size="11" fill="#333">Output</text>
+
+  <!-- Bottom summary -->
+  <text x="350" y="122" font-size="9" text-anchor="middle" fill="#999">每个 Stage 由独立 Agent 负责，上一阶段的输出是下一阶段的输入</text>
+</svg>

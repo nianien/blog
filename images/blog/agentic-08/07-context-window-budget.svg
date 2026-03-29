@@ -1,0 +1,92 @@
+<svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#E65100" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="650" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="400" y="30" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+    Context Window 预算分配
+  </text>
+
+  <!-- Main Box -->
+  <rect x="150" y="70" width="500" height="520" fill="white" stroke="#999" stroke-width="2" rx="8" />
+
+  <!-- System Prompt -->
+  <rect x="170" y="90" width="460" height="70" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="6" />
+  <text x="400" y="110" font-size="12" font-weight="bold" text-anchor="middle" fill="#1565C0">
+    System Prompt: ~20%
+  </text>
+  <text x="400" y="130" font-size="11" text-anchor="middle" fill="#333">
+    角色定义、指令集、输出格式要求
+  </text>
+  <text x="400" y="148" font-size="10" text-anchor="middle" fill="#999">
+    稳定不变，每次都一样
+  </text>
+
+  <!-- Arrow -->
+  <path d="M 650 125 L 700 125" stroke="#E65100" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="720" y="130" font-size="10" fill="#E65100">Layer 4</text>
+
+  <!-- Memory Injection -->
+  <rect x="170" y="175" width="460" height="95" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2" rx="6" />
+  <text x="400" y="195" font-size="12" font-weight="bold" text-anchor="middle" fill="#2E7D32">
+    Memory Injection: ~30%
+  </text>
+  <text x="400" y="215" font-size="11" text-anchor="middle" fill="#333">
+    Working Memory / Episodic Recall / Semantic Recall
+  </text>
+  <text x="400" y="235" font-size="10" text-anchor="middle" fill="#999">
+    动态变化，按相关性选取
+  </text>
+
+  <!-- Arrow -->
+  <path d="M 650 222 L 700 222" stroke="#E65100" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="720" y="227" font-size="10" fill="#E65100">Layer 2 & 3</text>
+
+  <!-- Conversation History -->
+  <rect x="170" y="285" width="460" height="85" fill="#FFF3E0" stroke="#E65100" stroke-width="2" rx="6" />
+  <text x="400" y="305" font-size="12" font-weight="bold" text-anchor="middle" fill="#E65100">
+    Conversation History: ~30%
+  </text>
+  <text x="400" y="325" font-size="11" text-anchor="middle" fill="#333">
+    历史消息 (含摘要)
+  </text>
+  <text x="400" y="343" font-size="10" text-anchor="middle" fill="#999">
+    滑动窗口 + 摘要
+  </text>
+
+  <!-- Arrow -->
+  <path d="M 650 328 L 700 328" stroke="#E65100" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="720" y="333" font-size="10" fill="#E65100">Layer 1</text>
+
+  <!-- Tool Schemas -->
+  <rect x="170" y="385" width="460" height="85" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="6" />
+  <text x="400" y="405" font-size="12" font-weight="bold" text-anchor="middle" fill="#7B1FA2">
+    Tool Schemas + Reserve: ~20%
+  </text>
+  <text x="400" y="425" font-size="11" text-anchor="middle" fill="#333">
+    工具定义、Response 空间
+  </text>
+  <text x="400" y="443" font-size="10" text-anchor="middle" fill="#999">
+    为 response 预留空间
+  </text>
+
+  <!-- Closing brace -->
+  <text x="650" y="305" font-size="40" fill="#999" font-weight="bold">}</text>
+  <text x="675" y="310" font-size="11" fill="#999">128K</text>
+  <text x="675" y="328" font-size="11" fill="#999">tokens</text>
+
+  <!-- Legend -->
+  <rect x="50" y="580" width="700" height="50" fill="#FFFACD" stroke="#999" stroke-width="1" rx="4" />
+  <text x="70" y="600" font-size="11" fill="#333">
+    • 百分比为建议配置，需根据任务特性调整
+  </text>
+  <text x="70" y="620" font-size="11" fill="#333">
+    • 实践中常见的问题：Memory Injection 若 &gt; 40% 时，边际收益急剧下降但成本继续增长
+  </text>
+</svg>

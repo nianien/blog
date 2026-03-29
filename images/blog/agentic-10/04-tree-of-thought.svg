@@ -1,0 +1,87 @@
+<svg viewBox="0 0 860 340" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="430" y="24" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Tree-of-Thought 搜索树</text>
+
+  <!-- Root -->
+  <rect x="370" y="45" width="120" height="40" rx="20" fill="#e8f4f8" stroke="#0066cc" stroke-width="2"/>
+  <text x="430" y="70" font-size="12" font-weight="bold" text-anchor="middle" fill="#0066cc">问题 (Root)</text>
+
+  <!-- T-split: vertical down from root, horizontal bar, then 3 verticals down -->
+  <line x1="430" y1="85" x2="430" y2="105" stroke="#ff9900" stroke-width="2"/>
+  <line x1="150" y1="105" x2="710" y2="105" stroke="#ff9900" stroke-width="2"/>
+  <line x1="150" y1="105" x2="150" y2="124" stroke="#ff9900" stroke-width="2"/>
+  <polygon points="146,124 150,134 154,124" fill="#ff9900"/>
+  <line x1="430" y1="105" x2="430" y2="124" stroke="#ff9900" stroke-width="2"/>
+  <polygon points="426,124 430,134 434,124" fill="#ff9900"/>
+  <line x1="710" y1="105" x2="710" y2="124" stroke="#ff9900" stroke-width="2"/>
+  <polygon points="706,124 710,134 714,124" fill="#ff9900"/>
+
+  <!-- Level 1 nodes -->
+  <rect x="95" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="150" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9900">Thought 1</text>
+
+  <rect x="375" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="430" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9900">Thought 2</text>
+
+  <rect x="655" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="710" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9900">Thought 3</text>
+
+  <!-- Level 1 scores -->
+  <text x="150" y="185" font-size="10" text-anchor="middle" fill="#666">score: 0.7</text>
+  <text x="430" y="185" font-size="10" text-anchor="middle" fill="#666">score: 0.4</text>
+  <text x="710" y="185" font-size="10" text-anchor="middle" fill="#666">score: 0.8</text>
+
+  <!-- T-split from Thought 1: 2 children -->
+  <line x1="150" y1="190" x2="150" y2="205" stroke="#9933cc" stroke-width="1.5"/>
+  <line x1="90" y1="205" x2="210" y2="205" stroke="#9933cc" stroke-width="1.5"/>
+  <line x1="90" y1="205" x2="90" y2="219" stroke="#9933cc" stroke-width="1.5"/>
+  <polygon points="86,219 90,229 94,219" fill="#9933cc"/>
+  <line x1="210" y1="205" x2="210" y2="219" stroke="#9933cc" stroke-width="1.5"/>
+  <polygon points="206,219 210,229 214,219" fill="#9933cc"/>
+
+  <!-- T1 children -->
+  <rect x="40" y="225" width="100" height="35" rx="6" fill="#f0e8f8" stroke="#9933cc" stroke-width="1.5"/>
+  <text x="90" y="247" font-size="11" font-weight="bold" text-anchor="middle" fill="#9933cc">T1a</text>
+
+  <rect x="160" y="225" width="100" height="35" rx="6" fill="#f0e8f8" stroke="#9933cc" stroke-width="1.5"/>
+  <text x="210" y="247" font-size="11" font-weight="bold" text-anchor="middle" fill="#9933cc">T1b</text>
+
+  <!-- Thought 2: vertical down (single child) -->
+  <line x1="430" y1="190" x2="430" y2="219" stroke="#9933cc" stroke-width="1.5"/>
+  <polygon points="426,219 430,229 434,219" fill="#9933cc"/>
+  <rect x="380" y="225" width="100" height="35" rx="6" fill="#f0e8f8" stroke="#9933cc" stroke-width="1.5"/>
+  <text x="430" y="247" font-size="11" font-weight="bold" text-anchor="middle" fill="#9933cc">T2a</text>
+
+  <!-- T-split from Thought 3: 2 children -->
+  <line x1="710" y1="190" x2="710" y2="205" stroke="#9933cc" stroke-width="1.5"/>
+  <line x1="650" y1="205" x2="770" y2="205" stroke="#9933cc" stroke-width="1.5"/>
+  <line x1="650" y1="205" x2="650" y2="219" stroke="#9933cc" stroke-width="1.5"/>
+  <polygon points="646,219 650,229 654,219" fill="#9933cc"/>
+  <line x1="770" y1="205" x2="770" y2="219" stroke="#9933cc" stroke-width="1.5"/>
+  <polygon points="766,219 770,229 774,219" fill="#9933cc"/>
+
+  <!-- T3 children -->
+  <rect x="600" y="225" width="100" height="35" rx="6" fill="#f0e8f8" stroke="#9933cc" stroke-width="1.5"/>
+  <text x="650" y="247" font-size="11" font-weight="bold" text-anchor="middle" fill="#9933cc">T3a</text>
+
+  <rect x="720" y="225" width="100" height="35" rx="6" fill="#f0e8f8" stroke="#9933cc" stroke-width="1.5"/>
+  <text x="770" y="247" font-size="11" font-weight="bold" text-anchor="middle" fill="#9933cc">T3b</text>
+
+  <!-- Evaluation results -->
+  <text x="90" y="280" font-size="14" font-weight="bold" text-anchor="middle" fill="#cc0000">✗</text>
+  <text x="210" y="280" font-size="14" font-weight="bold" text-anchor="middle" fill="#00aa33">✓</text>
+  <text x="430" y="280" font-size="14" font-weight="bold" text-anchor="middle" fill="#cc0000">✗</text>
+  <text x="650" y="280" font-size="14" font-weight="bold" text-anchor="middle" fill="#00aa33">✓</text>
+  <text x="770" y="280" font-size="14" font-weight="bold" text-anchor="middle" fill="#cc0000">✗</text>
+
+  <!-- Legend -->
+  <text x="430" y="310" font-size="10" text-anchor="middle" fill="#666">每层生成 k 个候选 Thought → 评估函数打分 → 保留 top-k 进入下一层</text>
+
+  <!-- Legend indicators -->
+  <rect x="260" y="322" width="12" height="12" rx="2" fill="#fff4e8" stroke="#ff9900" stroke-width="1"/>
+  <text x="278" y="333" font-size="9" fill="#666">生成候选</text>
+  <rect x="370" y="322" width="12" height="12" rx="2" fill="#f0e8f8" stroke="#9933cc" stroke-width="1"/>
+  <text x="388" y="333" font-size="9" fill="#666">展开评估</text>
+  <text x="480" y="333" font-size="9" fill="#00aa33">✓ 保留</text>
+  <text x="540" y="333" font-size="9" fill="#cc0000">✗ 剪枝</text>
+</svg>

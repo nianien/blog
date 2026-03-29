@@ -1,23 +1,19 @@
 1:"$Sreact.fragment"
-2:I[10616,["6874","static/chunks/6874-7791217feaf05c17.js","7177","static/chunks/app/layout-142e67ac4336647c.js"],"default"]
-3:I[87555,[],""]
-4:I[31295,[],""]
-6:I[59665,[],"OutletBoundary"]
-9:I[74911,[],"AsyncMetadataOutlet"]
-b:I[59665,[],"ViewportBoundary"]
-d:I[59665,[],"MetadataBoundary"]
-f:I[26614,[],""]
+2:I[2638,["2619","static/chunks/2619-6352ef9022ea9a44.js","7177","static/chunks/app/layout-cc0f87213df1eab1.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+6:I[4431,[],"OutletBoundary"]
+8:I[5278,[],"AsyncMetadataOutlet"]
+a:I[4431,[],"ViewportBoundary"]
+c:I[4431,[],"MetadataBoundary"]
+d:"$Sreact.suspense"
+f:I[7150,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/css/34491b5ca0fd2bfa.css","style"]
-0:{"P":null,"b":"ZS83X6QC0rHEZwHjKWqXD","p":"","c":["","blog","engineering","architecture","%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%8E%9F%E7%90%86%E3%80%81%E7%AD%96%E7%95%A5%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/architecture/%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%8E%9F%E7%90%86%E3%80%81%E7%AD%96%E7%95%A5%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/34491b5ca0fd2bfa.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/architecture/%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%8E%9F%E7%90%86%E3%80%81%E7%AD%96%E7%95%A5%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7","$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","WO0vr4y_XnllayvquXZhCv",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Ld",null,{"children":"$Le"}]]}],false]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
-10:"$Sreact.suspense"
-11:I[74911,[],"AsyncMetadata"]
-13:I[6874,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],""]
-14:I[32923,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-16:I[40780,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-1f:I[85300,["6874","static/chunks/6874-7791217feaf05c17.js","968","static/chunks/968-d7155a2506e36f1d.js","6909","static/chunks/app/blog/%5B...slug%5D/page-3137b04d8f9ed325.js"],"default"]
-e:["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":["$","$L11",null,{"promise":"$@12"}]}]}]
-15:T602d,<h1>高并发系统设计：原理、策略与工程实践</h1>
+:HL["/_next/static/css/7f62681e243899a1.css","style"]
+0:{"P":null,"b":"J7t9u3We_KaTvz0Be1HjC","p":"","c":["","blog","engineering","architecture","%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%8E%9F%E7%90%86%E3%80%81%E7%AD%96%E7%95%A5%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/architecture/%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%8E%9F%E7%90%86%E3%80%81%E7%AD%96%E7%95%A5%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7f62681e243899a1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/architecture/%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%8E%9F%E7%90%86%E3%80%81%E7%AD%96%E7%95%A5%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+10:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],""]
+11:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+12:T602d,<h1>高并发系统设计：原理、策略与工程实践</h1>
 <blockquote>
 <p>高并发不是一个单点问题，而是一个系统性工程。它要求在计算、存储、网络、容错等多个维度协同设计，在吞吐量、延迟、一致性、可用性之间做出精确的权衡。</p>
 </blockquote>
@@ -652,7 +648,10 @@ Half-Open（半开）→ 探测成功则恢复，失败则重新打开
 <blockquote>
 <p>一个成熟的高并发系统，不是在每个环节都做到极致，而是在每个环节都做出了正确的取舍。</p>
 </blockquote>
-17:T17604,<h1>The Agent Control Loop: Agent 运行时的核心抽象</h1>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L10",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/architecture/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"架构设计"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-15","children":"2025年12月15日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"高并发系统设计：原理、策略与工程实践"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L10","高并发",{"href":"/blog/tag/%E9%AB%98%E5%B9%B6%E5%8F%91/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"高并发"}],["$","$L10","系统架构",{"href":"/blog/tag/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"系统架构"}],["$","$L10","性能优化",{"href":"/blog/tag/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"性能优化"}],["$","$L10","分布式系统",{"href":"/blog/tag/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"分布式系统"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L11",null,{"content":"$12"}]}],"$L13","$L14"]}]}]}]
+15:I[6249,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+1e:I[6929,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
+16:T15144,<h1>The Agent Control Loop: Agent 运行时的核心抽象</h1>
 <blockquote>
 <p>如果说 LLM 是 Agent 的大脑，那么 Control Loop 就是 Agent 的心跳。</p>
 <p>大多数教程在讲 Agent 时，上来就接框架、调 API、跑 demo。但如果你不理解 Agent 运行时的核心抽象——控制循环——你永远只是在用别人的黑盒。</p>
@@ -663,11 +662,7 @@ Half-Open（半开）→ 探测成功则恢复，失败则重新打开
 <p>一个常见的误解是把 Agent 等同于&quot;一次 LLM 调用&quot;。实际上，Agent 和 LLM 的关系，类似于操作系统和 CPU 的关系——LLM 是执行推理的计算单元，而 Agent 是管理整个执行生命周期的运行时系统。</p>
 <p><strong>LLM 是一个函数：</strong> <code>f(prompt) -&gt; completion</code>，输入文本，输出文本，调用一次就结束。</p>
 <p><strong>Agent 是一个循环：</strong> 它持续运行，在每一轮中观察环境、调用 LLM 进行推理、执行动作、评估结果，然后决定是否继续。</p>
-<pre><code>LLM:    Input ──→ Output            (一次调用)
-
-Agent:  Input ──→ [Observe → Think → Act → Reflect] ──→ ... ──→ Output
-                  └──────── 循环 N 次 ────────────┘     (多轮控制)
-</code></pre>
+<p><img src="/images/blog/agentic-04/llm-vs-agent.svg" alt="LLM vs Agent"></p>
 <p>这个循环有几个关键特性：</p>
 <ul>
 <li><strong>可中断</strong>：循环可以在任何阶段暂停，等待外部输入（用户确认、异步工具返回）后恢复</li>
@@ -692,31 +687,7 @@ class AgentState(Enum):
     ERROR    = &quot;error&quot;     # 终止：不可恢复错误
 </code></pre>
 <h3>2.2 状态转移图</h3>
-<pre><code>                    ┌─────────────────────────────────────────┐
-                    │                                         │
-                    ▼                                         │
-              ┌──────────┐                                    │
-   Input ───→│ OBSERVE  │                                    │
-              └────┬─────┘                                    │
-                   │                                         │
-                   ▼                                         │
-              ┌──────────┐    need_action    ┌──────────┐    │
-              │  THINK   │ ───────────────→ │   ACT    │    │
-              └────┬─────┘                   └────┬─────┘    │
-                   │                              │          │
-                   │ has_answer                   │          │
-                   │                              ▼          │
-                   │                        ┌──────────┐     │
-                   │                        │ REFLECT  │ ────┘
-                   │                        └────┬─────┘  continue
-                   │                             │
-                   ▼                             ▼
-              ┌──────────┐                  ┌──────────┐
-              │   DONE   │                  │  ERROR   │
-              └──────────┘                  └──────────┘
-                                       (max_retries exceeded
-                                        / unrecoverable)
-</code></pre>
+<p><img src="/images/blog/agentic-04/control-loop-state-machine.svg" alt="Agent 控制循环状态机"></p>
 <p>状态转移规则：</p>
 <table>
 <thead>
@@ -774,35 +745,14 @@ class AgentState(Enum):
 </tbody></table>
 <h3>2.3 与 OODA Loop 的对比</h3>
 <p>Agent Control Loop 并不是凭空发明的，它和军事决策理论中的 <strong>OODA Loop（Observe-Orient-Decide-Act）</strong> 有深层的结构对应：</p>
-<pre><code>OODA Loop:          Agent Control Loop:
-┌─────────┐         ┌─────────┐
-│ Observe │ ──────→ │ OBSERVE │  感知环境
-├─────────┤         ├─────────┤
-│ Orient  │ ──────→ │ THINK   │  理解上下文，形成判断
-├─────────┤         │         │
-│ Decide  │ ──────→ │         │  (LLM 在 THINK 中同时完成 Orient+Decide)
-├─────────┤         ├─────────┤
-│  Act    │ ──────→ │  ACT    │  执行行动
-└─────────┘         ├─────────┤
-                    │ REFLECT │  OODA 中没有显式的反思阶段
-                    └─────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-04/ooda-vs-agent.svg" alt="OODA Loop vs Agent Control Loop"></p>
 <p>关键区别在于 <strong>REFLECT 阶段</strong>。传统 OODA Loop 假设决策者能实时感知行动效果并自然融入下一轮 Observe。但 LLM Agent 不具备这种连续感知能力——它需要一个显式的反思步骤来评估工具返回值、判断是否需要修正。这是 Agent Control Loop 相对于经典决策循环的重要改进。</p>
 <hr>
 <h2>3. 循环中每个阶段的深入分析</h2>
 <h3>3.1 OBSERVE：输入归一化</h3>
 <p>OBSERVE 阶段的职责是<strong>收集并归一化各种来源的输入</strong>，将它们统一为 LLM 可理解的格式。</p>
 <p>输入来源远不止&quot;用户消息&quot;一种：</p>
-<pre><code>输入来源                    归一化后
-┌─────────────────┐       ┌──────────────────────┐
-│ 用户消息         │ ────→ │ {&quot;role&quot;: &quot;user&quot;,     │
-│ 工具返回值       │ ────→ │  &quot;content&quot;: &quot;...&quot;}   │
-│ 系统事件         │ ────→ │                      │
-│ 定时触发         │ ────→ │ {&quot;role&quot;: &quot;system&quot;,   │
-│ 外部 Webhook    │ ────→ │  &quot;content&quot;: &quot;...&quot;}   │
-│ 上一轮反思结果   │ ────→ │                      │
-└─────────────────┘       └──────────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-04/input-normalization.svg" alt="输入归一化"></p>
 <p><strong>输入归一化的核心原则：</strong></p>
 <ol>
 <li><p><strong>所有输入都必须序列化为 message 格式</strong>。不管来源是什么，最终都要变成 <code>{&quot;role&quot;: ..., &quot;content&quot;: ...}</code> 的形式，因为 LLM 只理解 message 序列。</p>
@@ -837,20 +787,7 @@ class AgentState(Enum):
 <p>这个阶段要解决三个问题：</p>
 <p><strong>问题一：Context Window 构建</strong></p>
 <p>LLM 的输入不是当前轮次的消息，而是<strong>从任务开始到现在的完整上下文</strong>。构建 Context Window 的典型结构：</p>
-<pre><code>┌─────────────────────────────────────────────┐
-│ System Prompt                               │  固定不变
-│ (角色定义 + 能力边界 + 输出格式要求)           │
-├─────────────────────────────────────────────┤
-│ Tool Definitions                            │  固定不变
-│ (可用工具的 JSON Schema 定义)                │
-├─────────────────────────────────────────────┤
-│ Message History                             │  随轮次增长
-│ (user → assistant → tool → assistant → ...) │
-├─────────────────────────────────────────────┤
-│ Current Turn Input                          │  当前轮次
-│ (本轮 OBSERVE 阶段归一化的输入)              │
-└─────────────────────────────────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-04/context-window.svg" alt="Context Window 组成"></p>
 <p><strong>问题二：Token 预算控制</strong></p>
 <p>Context Window 有上限（4K / 8K / 128K / 200K），而每一轮循环都会增加 message history。如果不加控制，几轮之后就会超限。</p>
 <p>常见的预算控制策略：</p>
@@ -1071,18 +1008,7 @@ async def act(self, tool_calls: list[ToolCall]) -&gt; list[dict]:
 <h2>4. 两种主流 Loop 模式对比</h2>
 <h3>4.1 ReAct 模式</h3>
 <p><strong>ReAct（Reason + Act）</strong> 是目前最主流的 Agent Loop 模式，由 Yao et al. 2022 提出。其核心思想是让 LLM 交替进行推理和行动：</p>
-<pre><code>┌──────────────────────────────────────────────────────┐
-│                   ReAct Loop                         │
-│                                                      │
-│  ┌─────────┐    ┌─────────┐    ┌─────────────────┐  │
-│  │ Thought │ →  │ Action  │ →  │  Observation    │  │
-│  │(LLM推理)│    │(工具调用)│    │(工具返回值)      │  │
-│  └─────────┘    └─────────┘    └────────┬────────┘  │
-│       ▲                                  │          │
-│       └──────────────────────────────────┘          │
-│                  循环直到完成                         │
-└──────────────────────────────────────────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-04/react-loop.svg" alt="ReAct Loop"></p>
 <p>一个典型的 ReAct 执行轨迹（Trace）：</p>
 <pre><code>Thought: 用户想知道北京今天的天气。我需要调用天气 API。
 Action:  get_weather(city=&quot;北京&quot;)
@@ -1105,29 +1031,7 @@ Answer:  北京今天晴天，气温 28°C，湿度 45%。
 </ul>
 <h3>4.2 Plan-then-Execute 模式</h3>
 <p>与 ReAct 的&quot;走一步看一步&quot;不同，Plan-then-Execute 先生成一个<strong>完整的执行计划</strong>，然后按计划依次执行：</p>
-<pre><code>┌──────────────────────────────────────────────────────────┐
-│              Plan-then-Execute Loop                       │
-│                                                          │
-│  ┌──────────────────────────────────────┐                │
-│  │           Planning Phase             │                │
-│  │  Input → LLM → [Step1, Step2, ...]   │                │
-│  └───────────────┬──────────────────────┘                │
-│                  │                                        │
-│                  ▼                                        │
-│  ┌──────────────────────────────────────┐                │
-│  │         Execution Phase              │                │
-│  │  Step1 → Execute → Result1           │                │
-│  │  Step2 → Execute → Result2           │                │
-│  │  ...                                 │                │
-│  └───────────────┬──────────────────────┘                │
-│                  │                                        │
-│                  ▼                                        │
-│  ┌──────────────────────────────────────┐                │
-│  │    Replan (if needed)                │                │
-│  │  检查是否需要调整计划                   │                │
-│  └──────────────────────────────────────┘                │
-└──────────────────────────────────────────────────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-04/plan-then-execute.svg" alt="Plan-then-Execute Loop"></p>
 <p>执行轨迹示例：</p>
 <pre><code>Plan:
   1. 查询北京天气
@@ -1143,20 +1047,7 @@ Execute Step 4: (LLM 生成建议)
 Answer: ...
 </code></pre>
 <h3>4.3 Trade-off 分析</h3>
-<pre><code>                        灵活性
-                          ▲
-                          │
-                 ReAct ●  │
-                          │
-                          │        ● Hybrid
-                          │          (ReAct + Plan)
-                          │
-              Plan-then   │
-              -Execute ●  │
-                          │
-                          └──────────────────→ 效率
-                                          (LLM 调用次数)
-</code></pre>
+<p><img src="/images/blog/agentic-04/react-vs-plan-tradeoff.svg" alt="ReAct vs Plan-then-Execute 权衡"></p>
 <table>
 <thead>
 <tr>
@@ -1243,16 +1134,7 @@ class ExecutionState:
 </code></pre>
 <h3>5.3 状态持久化方案</h3>
 <p>当 Agent 需要支持暂停/恢复、跨进程执行、或长时间运行时，执行状态必须持久化。</p>
-<pre><code>┌─────────────┐     ┌──────────────┐     ┌──────────────┐
-│   In-Memory  │     │    Redis     │     │   Database   │
-│  (dict/obj)  │     │  (KV Store)  │     │ (PostgreSQL) │
-├─────────────┤     ├──────────────┤     ├──────────────┤
-│ 最快         │     │ 快，支持 TTL  │     │ 持久可靠     │
-│ 进程重启丢失  │     │ 跨进程共享    │     │ 支持查询分析  │
-│ 单进程使用    │     │ 重启后可保留  │     │ 适合生产环境  │
-│ 适合开发/测试 │     │ 适合 session  │     │ 适合审计追溯  │
-└─────────────┘     └──────────────┘     └──────────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-04/state-storage-options.svg" alt="状态存储方案对比"></p>
 <p><strong>Checkpoint 与恢复</strong> 是 Stateful Agent 的核心能力。思路很直接：在每轮循环的关键节点保存一次快照，异常恢复时从最近的快照重新开始。</p>
 <pre><code class="language-python">class CheckpointManager:
     def save(self, state: ExecutionState) -&gt; str:
@@ -2799,12 +2681,12 @@ class EventSourcedAgent:
 <blockquote>
 <p><strong>系列导航</strong>：本文是 Agentic 系列的第 04 篇。</p>
 <ul>
-<li>上一篇：<a href="/engineering/agentic/03-Agent%E3%80%81Workflow%E4%B8%8EAutomation%EF%BC%9A%E9%80%89%E5%AF%B9%E6%8A%BD%E8%B1%A1%E6%89%8D%E6%98%AF%E5%85%B3%E9%94%AE">03 | Agent、Workflow与Automation：选对抽象才是关键</a></li>
-<li>下一篇：<a href="/engineering/agentic/05-%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90%EF%BC%9A%E8%AE%A9LLM%E6%88%90%E4%B8%BA%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A5%E5%8F%A3">05 | 工具调用深度解析：让LLM成为可编程接口</a></li>
-<li>完整目录：<a href="/engineering/agentic/01-%E4%BB%8ELLM%E5%88%B0Agent%EF%BC%9AAgentic%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE">01 | 从LLM到Agent：Agentic系统的知识地图</a></li>
+<li>上一篇：<a href="/blog/engineering/agentic/03-Agent%E3%80%81Workflow%E4%B8%8EAutomation%EF%BC%9A%E9%80%89%E5%AF%B9%E6%8A%BD%E8%B1%A1%E6%89%8D%E6%98%AF%E5%85%B3%E9%94%AE">03 | Agent、Workflow与Automation：选对抽象才是关键</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/05-%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90%EF%BC%9A%E8%AE%A9LLM%E6%88%90%E4%B8%BA%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A5%E5%8F%A3">05 | 工具调用深度解析：让LLM成为可编程接口</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-%E4%BB%8ELLM%E5%88%B0Agent%EF%BC%9AAgentic%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE">01 | 从LLM到Agent：Agentic系统的知识地图</a></li>
 </ul>
 </blockquote>
-18:T16191,<h1>Tool Calling Deep Dive: 让 LLM 成为可编程接口</h1>
+17:T13cf9,<h1>Tool Calling Deep Dive: 让 LLM 成为可编程接口</h1>
 <blockquote>
 <p>这是 Agentic 系列的第 05 篇。在前几篇中我们建立了 Agent 的概念模型、控制循环、以及 Agent 与 Workflow 的边界。本篇聚焦于 Agent 能力的核心支点——Tool Calling。</p>
 <p>Tool Calling 不是&quot;让 AI 调 API&quot;这么简单。它是 LLM 从 <strong>Text-in/Text-out 的生成模型</strong> 变成 <strong>可编程接口</strong> 的关键转折点。理解它的工作原理、设计约束和工程实践，是构建任何 Agentic 系统的前提。</p>
@@ -2824,52 +2706,7 @@ class EventSourcedAgent:
 <hr>
 <h2>2. Tool Calling 的工作原理</h2>
 <h3>2.1 完整流程</h3>
-<pre><code>┌──────────────────────────────────────────────────────────────────────┐
-│                    Tool Calling 完整序列图                            │
-└──────────────────────────────────────────────────────────────────────┘
-
-  User            LLM (API)          Runtime           Tool (Function)
-   │                 │                  │                     │
-   │  &quot;北京今天天气&quot;  │                  │                     │
-   ├────────────────&gt;│                  │                     │
-   │                 │                  │                     │
-   │                 │  ┌─────────────┐ │                     │
-   │                 │  │ 推理:       │ │                     │
-   │                 │  │ 用户想查天气 │ │                     │
-   │                 │  │ 需要调用    │ │                     │
-   │                 │  │ get_weather │ │                     │
-   │                 │  └─────────────┘ │                     │
-   │                 │                  │                     │
-   │                 │  Tool Call JSON  │                     │
-   │                 │ ────────────────&gt;│                     │
-   │                 │  {               │                     │
-   │                 │   &quot;name&quot;:        │                     │
-   │                 │    &quot;get_weather&quot; │                     │
-   │                 │   &quot;arguments&quot;:   │                     │
-   │                 │    {&quot;city&quot;:      │                     │
-   │                 │     &quot;北京&quot;}      │                     │
-   │                 │  }               │                     │
-   │                 │                  │  get_weather(&quot;北京&quot;) │
-   │                 │                  ├────────────────────&gt;│
-   │                 │                  │                     │
-   │                 │                  │  {&quot;temp&quot;: 28,       │
-   │                 │                  │   &quot;condition&quot;:      │
-   │                 │                  │   &quot;晴&quot;}              │
-   │                 │                  │&lt;────────────────────┤
-   │                 │                  │                     │
-   │                 │  Tool Result     │                     │
-   │                 │ &lt;────────────────│                     │
-   │                 │                  │                     │
-   │                 │  ┌─────────────┐ │                     │
-   │                 │  │ 推理:       │ │                     │
-   │                 │  │ 根据工具返回 │ │                     │
-   │                 │  │ 组织回答    │ │                     │
-   │                 │  └─────────────┘ │                     │
-   │                 │                  │                     │
-   │ &quot;北京今天28°C,晴&quot;│                  │                     │
-   │&lt;────────────────│                  │                     │
-   │                 │                  │                     │
-</code></pre>
+<p><img src="/images/blog/agentic-05/tool-calling-sequence.svg" alt="Tool Calling 完整序列图"></p>
 <h3>2.2 关键洞察</h3>
 <p>从上面的序列图中，可以提炼出几个核心事实：</p>
 <ol>
@@ -3075,30 +2912,7 @@ response = client.chat.completions.create(
 <p>优点是简单直接，缺点是每次新增或修改工具都需要改代码、重新部署。适合工具数量少且稳定的场景。</p>
 <h3>5.2 动态注册</h3>
 <p>当工具数量增多或需要根据上下文动态调整时，需要一个 Tool Registry：</p>
-<pre><code>┌────────────────────────────────────────────────┐
-│                Tool Registry                    │
-│                                                │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐     │
-│  │ weather  │  │ database │  │  email   │     │
-│  │  tool    │  │  tool    │  │  tool    │     │
-│  └──────────┘  └──────────┘  └──────────┘     │
-│  ┌──────────┐  ┌──────────┐                    │
-│  │  calc    │  │   file   │                    │
-│  │  tool    │  │  tool    │                    │
-│  └──────────┘  └──────────┘                    │
-│                                                │
-│  register(tool) / unregister(name)             │
-│  get_tools(filter?) -&gt; List[Tool]              │
-│  get_tool(name) -&gt; Tool                        │
-│  get_definitions() -&gt; List[Dict]               │
-└────────────────────────────────────────────────┘
-         │
-         │  get_definitions()
-         ▼
-   ┌───────────┐     tools=[...]     ┌───────────┐
-   │  Runtime   │ ──────────────────&gt; │  LLM API  │
-   └───────────┘                     └───────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-05/tool-registry-architecture.svg" alt="Tool Registry 架构"></p>
 <h3>5.3 工具选择问题</h3>
 <p>当工具数量超过一定阈值（经验值：15-20 个），LLM 的工具选择准确率会明显下降。原因有两个：</p>
 <ol>
@@ -3615,27 +3429,7 @@ raise RuntimeError(&quot;Connection timeout to weather API&quot;)
 <li>尝试用其他工具达成目标</li>
 </ul>
 <h3>7.3 重试策略</h3>
-<pre><code>                  ┌──────────────────────────┐
-                  │    Tool Call 失败         │
-                  └──────────┬───────────────┘
-                             │
-                   ┌─────────▼─────────┐
-                   │  错误类型判断       │
-                   └─────────┬─────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              │              │              │
-        ┌─────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
-        │ 可重试     │ │ 参数错误   │ │ 不可恢复   │
-        │(超时/限流) │ │(类型/格式) │ │(权限/404) │
-        └─────┬─────┘ └─────┬─────┘ └─────┬─────┘
-              │              │              │
-        ┌─────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
-        │ Runtime    │ │ 回传 LLM  │ │ 回传 LLM  │
-        │ 自动重试   │ │ 让它修正   │ │ 让它放弃   │
-        │ (指数退避) │ │ 参数       │ │ 或换方案   │
-        └───────────┘ └───────────┘ └───────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-05/tool-error-retry-strategy.svg" alt="Tool Call 重试策略"></p>
 <p>核心原则：<strong>可重试的错误由 Runtime 处理，不可重试的错误交给 LLM 决策</strong>。</p>
 <ul>
 <li><strong>瞬时错误</strong>（网络超时、限流）：Runtime 自动重试，设置退避策略和最大重试次数，不需要浪费 LLM 的 token。</li>
@@ -4674,21 +4468,7 @@ results = benchmark.run_benchmark([5, 20, 100, 500])
 <hr>
 <h2>13. Trade-off 分析</h2>
 <h3>13.1 工具数量 vs 选择准确率</h3>
-<pre><code>选择准确率
-  100% │ ****
-       │     ****
-   90% │         ****
-       │             ****
-   80% │                 ****
-       │                     ****
-   70% │                         ****
-       │                             ****
-   60% │                                 ****
-       ├───┬───┬───┬───┬───┬───┬───┬───┬───── 工具数量
-       0   5  10  15  20  25  30  35  40
-
-       |&lt;-- 全量传递 --&gt;|&lt;- 需要过滤策略 -&gt;|
-</code></pre>
+<p><img src="/images/blog/agentic-05/tool-count-vs-accuracy.svg" alt="工具数量 vs 选择准确率"></p>
 <ul>
 <li><strong>&lt; 10 个工具</strong>：全量传递，不需要过滤。</li>
 <li><strong>10-20 个工具</strong>：准确率开始下降，可通过优化 description 缓解。</li>
@@ -4697,16 +4477,7 @@ results = benchmark.run_benchmark([5, 20, 100, 500])
 </ul>
 <h3>13.2 工具描述详细度 vs Token 消耗</h3>
 <p>每个工具定义大约占用 100-500 token（取决于描述长度和参数数量）。20 个工具就是 2000-10000 token 的系统开销，这是每次 API 调用都要付出的 <strong>固定成本</strong>。</p>
-<pre><code>                        描述详细度
-                  低 ◄──────────────► 高
-                  │                    │
-  Token 消耗   低 │  ⚡ 省钱但模糊     │
-                  │  LLM 可能误选工具  │
-                  │                    │
-              高 │                    │  📖 精确但昂贵
-                  │                    │  LLM 选择更准确
-                  │                    │
-</code></pre>
+<p><img src="/images/blog/agentic-05/description-detail-vs-token.svg" alt="工具描述详细度 vs Token 消耗"></p>
 <p>实践建议：</p>
 <ul>
 <li>工具 <code>name</code> 起好名字（零额外 token 成本，但信息量大）</li>
@@ -4715,19 +4486,7 @@ results = benchmark.run_benchmark([5, 20, 100, 500])
 <li>用 <code>enum</code> 和 <code>required</code> 代替冗长的文字约束</li>
 </ul>
 <h3>13.3 确定性执行 vs LLM 灵活性</h3>
-<pre><code>确定性                                          灵活性
-  │                                              │
-  │  硬编码工作流           Agent Tool Calling     │
-  │  if/else 分支            LLM 自由选择工具     │
-  │  规则引擎                自动组合工具链        │
-  │                                              │
-  │  ✅ 可预测              ✅ 处理模糊意图        │
-  │  ✅ 可审计              ✅ 适应新场景          │
-  │  ✅ 低延迟              ✅ 用户体验自然        │
-  │  ❌ 不灵活              ❌ 不可预测            │
-  │  ❌ 维护成本高          ❌ 调试困难            │
-  │  ❌ 无法处理长尾        ❌ 成本高              │
-</code></pre>
+<p><img src="/images/blog/agentic-05/determinism-vs-flexibility.svg" alt="确定性 vs 灵活性"></p>
 <p>决策框架：</p>
 <table>
 <thead>
@@ -4776,13 +4535,7 @@ results = benchmark.run_benchmark([5, 20, 100, 500])
 <hr>
 <h2>15. 总结与展望</h2>
 <p>Tool Calling 的本质是一个精心设计的 <strong>协议</strong>：</p>
-<pre><code>┌───────────┐    JSON Schema    ┌───────────┐    Function    ┌───────────┐
-│           │    (契约)          │           │    (执行)      │           │
-│    LLM    │ ◄───────────────► │  Runtime  │ ◄────────────► │   Tools   │
-│  (决策层) │   Tool Call JSON   │  (调度层) │   Function     │  (能力层) │
-│           │   Tool Result      │           │   Call/Return  │           │
-└───────────┘                   └───────────┘                └───────────┘
-</code></pre>
+<p><img src="/images/blog/agentic-05/tool-calling-architecture.svg" alt="Tool Calling 架构与协议"></p>
 <ul>
 <li><strong>LLM</strong> 负责理解意图、选择工具、生成参数——它是决策者。</li>
 <li><strong>Runtime</strong> 负责验证、路由、执行、错误处理——它是执行者。</li>
@@ -4795,12 +4548,12 @@ results = benchmark.run_benchmark([5, 20, 100, 500])
 <blockquote>
 <p><strong>系列导航</strong>：本文是 Agentic 系列的第 05 篇。</p>
 <ul>
-<li>上一篇：<a href="/engineering/agentic/04-Agent%E6%8E%A7%E5%88%B6%E5%BE%AA%E7%8E%AF%EF%BC%9A%E8%BF%90%E8%A1%8C%E6%97%B6%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8A%BD%E8%B1%A1">04 | Agent控制循环：运行时的核心抽象</a></li>
-<li>下一篇：<a href="/engineering/agentic/06-%E9%9D%A2%E5%90%91Agent%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B">06 | 面向Agent的提示词工程</a></li>
-<li>完整目录：<a href="/engineering/agentic/01-%E4%BB%8ELLM%E5%88%B0Agent%EF%BC%9AAgentic%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE">01 | 从LLM到Agent：Agentic系统的知识地图</a></li>
+<li>上一篇：<a href="/blog/engineering/agentic/04-Agent%E6%8E%A7%E5%88%B6%E5%BE%AA%E7%8E%AF%EF%BC%9A%E8%BF%90%E8%A1%8C%E6%97%B6%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8A%BD%E8%B1%A1">04 | Agent控制循环：运行时的核心抽象</a></li>
+<li>下一篇：<a href="/blog/engineering/agentic/06-%E9%9D%A2%E5%90%91Agent%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B">06 | 面向Agent的提示词工程</a></li>
+<li>完整目录：<a href="/blog/engineering/agentic/01-%E4%BB%8ELLM%E5%88%B0Agent%EF%BC%9AAgentic%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE">01 | 从LLM到Agent：Agentic系统的知识地图</a></li>
 </ul>
 </blockquote>
-19:T74e0,<h2>秒杀的本质问题</h2>
+18:T74e0,<h2>秒杀的本质问题</h2>
 <p>秒杀场景的技术特征可以用一句话概括：<strong>在一个极短的时间窗口内，大量请求争抢有限资源并完成交易。</strong></p>
 <p>这个特征决定了秒杀系统与常规业务系统的本质差异——常规系统面对的是持续稳定的流量，容量规划基于均值和百分位；而秒杀面对的是一条近乎垂直的脉冲曲线，峰值可达日常流量的数十倍甚至百倍，且持续时间往往不超过数秒。</p>
 <p>将秒杀场景产生的问题按干系方进行拆解，可以清晰看到其对系统设计的三重要求：</p>
@@ -5248,7 +5001,7 @@ WHERE id = #{itemId}
 <p><strong>原则三：隔离是最有效的保护。</strong> 无论是系统隔离、数据隔离还是部署隔离，目的都是限制故障的爆炸半径。在一个足够大的分布式系统中，故障不是&quot;可能发生&quot;，而是&quot;一定发生&quot;。</p>
 <p><strong>原则四：可用性是一个组织问题，不仅是技术问题。</strong> 稳定性在平时不紧急、出了问题就致命。如果没有组织层面的保障——将稳定性指标纳入绩效、建立专项稳定性团队、定期进行攻防演练——再好的技术方案也会在业务压力下被逐步侵蚀。</p>
 <p>一个秒杀系统的设计，可以根据不同级别的流量，由简单到复杂构建出不同层次的架构。没有一种方案适用于所有场景，选择何种架构取决于业务规模、团队能力和成本约束。但无论规模大小，以上设计原则和思考维度是通用的——它们不仅适用于秒杀，也适用于任何需要应对极端工况的分布式系统。</p>
-1a:Tf546,<h1>Agent 基础架构平台（上）：从全景架构到核心层设计</h1>
+19:Tf546,<h1>Agent 基础架构平台（上）：从全景架构到核心层设计</h1>
 <blockquote>
 <p>让一个 Agent 跑通 demo 是下午茶的事；让一百个 Agent 在生产环境中稳定、安全、经济地运行，是一个平台工程问题。本文不讨论 Agent 怎么写，而是讨论 Agent 在什么上面跑。</p>
 </blockquote>
@@ -5933,7 +5686,7 @@ workflow:
 <blockquote>
 <p><strong>下篇</strong>：<a href="/engineering/architecture/Agent%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E4%BB%8E%E5%8F%AF%E8%A7%82%E6%B5%8B%E5%88%B0%E8%A7%84%E6%A8%A1%E5%8C%96%E8%BF%90%E8%90%A5">《Agent 基础架构平台（下）：从可观测到规模化运营》</a>——弹性伸缩与 GPU 调度、分布式追踪与 Agent 级监控指标体系、安全治理与合规审计、测试与质量保障、数据层架构、开发者体验以及从 MVP 到成熟平台的演进路径。</p>
 </blockquote>
-1b:Tda6e,<h2>一、为什么你的系统需要限流</h2>
+1a:Tda6e,<h2>一、为什么你的系统需要限流</h2>
 <p>每个系统都有容量边界。缓存解决读的问题，降级解决非核心链路的问题，但当写操作高并发、稀缺资源被争抢、昂贵查询集中涌入时——<strong>只有限流能保护你。</strong></p>
 <table>
 <thead>
@@ -7308,7 +7061,7 @@ rule.setAvgRt(200);               // 平均 RT &gt; 200ms 时触发限流
 </tbody></table>
 <p>最好的限流系统是你感觉不到它存在的系统。流量平稳时安静旁观，突增时默默吸收合理突发，真正超限时优雅拒绝——确保已接受的请求仍能正常处理。它不是一堵墙，而是一个阀门：精确控制流量进出，让系统在极端压力下保持可控、可预测、可依赖。</p>
 <p><strong>限流的本质，是对系统能力边界的敬畏，以及在边界之内追求最大价值的工程智慧。</strong></p>
-1c:T7794,<h2>一、模型只是渲染器</h2>
+1b:T7794,<h2>一、模型只是渲染器</h2>
 <p>在前两篇中，我们完成了技术选型和Pipeline搭建。但如果你认为&quot;有了Pipeline就能做AI短剧产品&quot;，那就掉进了这个行业最大的认知陷阱。</p>
 <p>一个残酷的事实：</p>
 <p><strong>在实际的AI短剧产品中，模型能力约占30%，应用层工程约占70%。</strong></p>
@@ -8011,7 +7764,7 @@ JSON Schema校验 → 格式错误 → 返回LLM重新生成
 <p>配合Lip-sync的口型重绘能力，可以实现&quot;一次拍摄，多语种发行&quot;——视觉资产不变，只替换音频和口型。这是AI短剧出海的核心工程优势。</p>
 <hr>
 <p><em>本文是「AI短剧工程实践」系列的第三篇。三篇文章覆盖了从技术选型到Pipeline搭建到产品架构的完整路径。AI短剧还在快速演进中，但底层的架构逻辑——角色引擎、状态管理、内容编排——不会因为模型迭代而失效。这些才是真正的技术护城河。</em></p>
-1d:T5c64,<blockquote>
+1c:T5c64,<blockquote>
 <p>微服务架构已经成为互联网后端系统的主流架构范式。然而，从单体架构迁移到微服务，绝不仅仅是把代码拆成几个服务那么简单——它涉及服务如何注册与发现、如何通信与容错、如何部署与监控等一系列基础设施问题。本文从架构设计的核心关注点出发，结合业界最佳实践，系统性地梳理微服务架构落地所需的技术体系。</p>
 </blockquote>
 <h2>微服务架构概览</h2>
@@ -8675,7 +8428,7 @@ JSON Schema校验 → 格式错误 → 返回LLM重新生成
 <blockquote>
 <p>路漫漫其修远兮，架构求索无止尽也。</p>
 </blockquote>
-1e:T7a49,<h1>架构师的认知升级：从技术深度到系统决策能力</h1>
+1d:T7a49,<h1>架构师的认知升级：从技术深度到系统决策能力</h1>
 <blockquote>
 <p>架构的本质不是技术选型，而是在约束条件下做出最合理的决策。架构师的成长不是一蹴而就的技能习得，而是从&quot;解决问题&quot;到&quot;定义问题&quot;的思维蜕变。</p>
 </blockquote>
@@ -9615,9 +9368,10 @@ JSON Schema校验 → 格式错误 → 返回LLM重新生成
 <blockquote>
 <p><strong>一个架构师的成熟度，不在于他掌握了多少种技术，而在于他知道什么时候不该用某种技术。</strong></p>
 </blockquote>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L13",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L13",null,{"href":"/blog/category/engineering/architecture/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"架构设计"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2025-12-15","children":"2025年12月15日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"高并发系统设计：原理、策略与工程实践"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L13","高并发",{"href":"/blog/tag/%E9%AB%98%E5%B9%B6%E5%8F%91/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"高并发"}],["$","$L13","系统架构",{"href":"/blog/tag/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"系统架构"}],["$","$L13","性能优化",{"href":"/blog/tag/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"性能优化"}],["$","$L13","分布式系统",{"href":"/blog/tag/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"分布式系统"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L14",null,{"content":"$15"}]}],["$","$10",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/agentic/04-Agent控制循环：运行时的核心抽象","title":"Agent控制循环：运行时的核心抽象","description":"Agent 的本质不是一次函数调用，而是一个可中断的控制循环。本文从状态机模型出发，深入剖析 Agent Control Loop 的每个阶段——OBSERVE、THINK、ACT、REFLECT，对比 ReAct 与 Plan-then-Execute 两种主流模式，讨论状态管理、错误处理与性能优化策略，并给出一个不依赖任何框架的完整 Python 实现。","pubDate":"2025-12-14","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$17"},"next":{"slug":"engineering/agentic/05-工具调用深度解析：让LLM成为可编程接口","title":"工具调用深度解析：让LLM成为可编程接口","description":"Tool Calling 是 LLM 从「对话机器」变成「可编程接口」的关键转折点。本文从底层原理出发，系统拆解 Tool Calling 的工作机制、JSON Schema 契约设计、工具注册与发现策略、错误处理、安全性考量及关键 Trade-off，附带完整可运行代码。","pubDate":"2025-12-18","tags":["Agentic","AI Engineering","Tool Calling"],"heroImage":"$undefined","content":"$18"}},"tagNav":{"高并发":{"prev":{"slug":"engineering/architecture/一个秒杀系统的设计思考","title":"一个秒杀系统的设计思考","description":"秒杀系统的核心挑战在于瞬时流量洪峰下的高性能、强一致与高可用三角平衡。从动静分离与多级缓存的读优化，到库存扣减的一致性保障，再到全生命周期的可用性工程——每一层设计决策背后，都是对系统容量、数据正确性与业务连续性的深度权衡。","pubDate":"2024-03-14","tags":["秒杀系统","高并发","架构设计","分布式系统"],"heroImage":"$undefined","content":"$19"},"next":{"slug":"engineering/architecture/Agent基础架构平台（上）：从全景架构到核心层设计","title":"Agent基础架构平台（上）：从全景架构到核心层设计","description":"系统性介绍支撑Agent运行的基础架构平台设计。上篇从平台全景架构出发，深入接入层、调度层、运行时层、能力层四大核心层的设计原理与工程实践，重点分析Agent平台与传统微服务平台的本质差异，以及如何实现高性能、高并发、平台化与复用性。","pubDate":"2026-03-27","tags":["Agent","系统架构","基础设施","平台工程","高并发"],"heroImage":"$undefined","content":"$1a"}},"系统架构":{"prev":{"slug":"engineering/architecture/限流的本质：从限流算法到分布式流控的架构思考","title":"限流的本质：从限流算法到分布式流控的架构思考","description":"限流不是一个算法问题，而是一个系统设计问题。从速率控制到并发保护，从单机令牌桶到分布式 Redis 计数器，从 Nginx 接入层到业务层精细化流控——每一层的限流策略背后，都是对系统容量、业务优先级和降级策略的深度思考。","pubDate":"2025-11-25","tags":["限流","分布式系统","系统架构","高可用"],"heroImage":"$undefined","content":"$1b"},"next":{"slug":"engineering/aigc/AI短剧的应用层架构：从视频生成到角色引擎","title":"AI短剧的应用层架构：从视频生成到角色引擎","description":"大模型只是渲染器，真正决定AI短剧产品质量的是应用层工程。本文从架构设计出发，拆解角色实体注册表、世界状态管理、结构化剧本中间件和多模态任务调度系统的设计方案。","pubDate":"2026-03-14","tags":["AIGC","AI短剧","系统架构","内容编排","角色引擎"],"heroImage":"$undefined","content":"$1c"}},"性能优化":{"prev":null,"next":null},"分布式系统":{"prev":{"slug":"engineering/architecture/微服务架构落地指南：从核心模式到技术选型","title":"微服务架构落地指南：从核心模式到技术选型","description":"系统性地探讨微服务架构设计的核心关注点，包括服务注册发现、API 网关、服务容错、基础设施选型、CI/CD 流水线和可观测性体系，帮助你从 0 到 1 构建一套完整的微服务技术栈。","pubDate":"2025-12-12","tags":["架构设计","微服务","分布式系统","技术选型"],"heroImage":"$undefined","content":"$1d"},"next":{"slug":"engineering/architecture/架构师的认知升级：从技术深度到系统决策能力","title":"架构师的认知升级：从技术深度到系统决策能力","description":"系统梳理架构师的核心能力模型、知识体系全景与成长路径，从架构定义到设计方法论，从分布式理论到架构演进，帮助技术人建立完整的架构认知框架。","pubDate":"2025-12-20","tags":["架构设计","架构师","技术成长","分布式系统","架构方法论"],"heroImage":"$undefined","content":"$1e"}}}}]}],["$","$L1f",null,{}]]}]}]}]
-8:null
-c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+13:["$","$d",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L15",null,{"globalNav":{"prev":{"slug":"engineering/agentic/04-Agent控制循环：运行时的核心抽象","title":"Agent控制循环：运行时的核心抽象","description":"Agent 的本质不是一次函数调用，而是一个可中断的控制循环。本文从状态机模型出发，深入剖析 Agent Control Loop 的每个阶段——OBSERVE、THINK、ACT、REFLECT，对比 ReAct 与 Plan-then-Execute 两种主流模式，讨论状态管理、错误处理与性能优化策略，并给出一个不依赖任何框架的完整 Python 实现。","pubDate":"2025-12-14","tags":["Agentic","AI Engineering","Runtime"],"heroImage":"$undefined","content":"$16"},"next":{"slug":"engineering/agentic/05-工具调用深度解析：让LLM成为可编程接口","title":"工具调用深度解析：让LLM成为可编程接口","description":"Tool Calling 是 LLM 从「对话机器」变成「可编程接口」的关键转折点。本文从底层原理出发，系统拆解 Tool Calling 的工作机制、JSON Schema 契约设计、工具注册与发现策略、错误处理、安全性考量及关键 Trade-off，附带完整可运行代码。","pubDate":"2025-12-18","tags":["Agentic","AI Engineering","Tool Calling"],"heroImage":"$undefined","content":"$17"}},"tagNav":{"高并发":{"prev":{"slug":"engineering/architecture/一个秒杀系统的设计思考","title":"一个秒杀系统的设计思考","description":"秒杀系统的核心挑战在于瞬时流量洪峰下的高性能、强一致与高可用三角平衡。从动静分离与多级缓存的读优化，到库存扣减的一致性保障，再到全生命周期的可用性工程——每一层设计决策背后，都是对系统容量、数据正确性与业务连续性的深度权衡。","pubDate":"2024-03-14","tags":["秒杀系统","高并发","架构设计","分布式系统"],"heroImage":"$undefined","content":"$18"},"next":{"slug":"engineering/architecture/Agent基础架构平台（上）：从全景架构到核心层设计","title":"Agent基础架构平台（上）：从全景架构到核心层设计","description":"系统性介绍支撑Agent运行的基础架构平台设计。上篇从平台全景架构出发，深入接入层、调度层、运行时层、能力层四大核心层的设计原理与工程实践，重点分析Agent平台与传统微服务平台的本质差异，以及如何实现高性能、高并发、平台化与复用性。","pubDate":"2026-03-27","tags":["Agent","系统架构","基础设施","平台工程","高并发"],"heroImage":"$undefined","content":"$19"}},"系统架构":{"prev":{"slug":"engineering/architecture/限流的本质：从限流算法到分布式流控的架构思考","title":"限流的本质：从限流算法到分布式流控的架构思考","description":"限流不是一个算法问题，而是一个系统设计问题。从速率控制到并发保护，从单机令牌桶到分布式 Redis 计数器，从 Nginx 接入层到业务层精细化流控——每一层的限流策略背后，都是对系统容量、业务优先级和降级策略的深度思考。","pubDate":"2025-11-25","tags":["限流","分布式系统","系统架构","高可用"],"heroImage":"$undefined","content":"$1a"},"next":{"slug":"engineering/aigc/AI短剧的应用层架构：从视频生成到角色引擎","title":"AI短剧的应用层架构：从视频生成到角色引擎","description":"大模型只是渲染器，真正决定AI短剧产品质量的是应用层工程。本文从架构设计出发，拆解角色实体注册表、世界状态管理、结构化剧本中间件和多模态任务调度系统的设计方案。","pubDate":"2026-03-14","tags":["AIGC","AI短剧","系统架构","内容编排","角色引擎"],"heroImage":"$undefined","content":"$1b"}},"性能优化":{"prev":null,"next":null},"分布式系统":{"prev":{"slug":"engineering/architecture/微服务架构落地指南：从核心模式到技术选型","title":"微服务架构落地指南：从核心模式到技术选型","description":"系统性地探讨微服务架构设计的核心关注点，包括服务注册发现、API 网关、服务容错、基础设施选型、CI/CD 流水线和可观测性体系，帮助你从 0 到 1 构建一套完整的微服务技术栈。","pubDate":"2025-12-12","tags":["架构设计","微服务","分布式系统","技术选型"],"heroImage":"$undefined","content":"$1c"},"next":{"slug":"engineering/architecture/架构师的认知升级：从技术深度到系统决策能力","title":"架构师的认知升级：从技术深度到系统决策能力","description":"系统梳理架构师的核心能力模型、知识体系全景与成长路径，从架构定义到设计方法论，从分布式理论到架构演进，帮助技术人建立完整的架构认知框架。","pubDate":"2025-12-20","tags":["架构设计","架构师","技术成长","分布式系统","架构方法论"],"heroImage":"$undefined","content":"$1d"}}}}]}]
+14:["$","$L1e",null,{}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
-a:{"metadata":[["$","title","0",{"children":"高并发系统设计：原理、策略与工程实践 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"系统梳理高并发架构的核心设计策略，从计算层、数据层、流量层到容错层，逐一分析每种策略的适用原理、决策依据与工程实践，构建可落地的高并发设计知识体系。"}],["$","meta","2",{"property":"og:title","content":"高并发系统设计：原理、策略与工程实践"}],["$","meta","3",{"property":"og:description","content":"系统梳理高并发架构的核心设计策略，从计算层、数据层、流量层到容错层，逐一分析每种策略的适用原理、决策依据与工程实践，构建可落地的高并发设计知识体系。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-12-15"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"高并发系统设计：原理、策略与工程实践"}],["$","meta","9",{"name":"twitter:description","content":"系统梳理高并发架构的核心设计策略，从计算层、数据层、流量层到容错层，逐一分析每种策略的适用原理、决策依据与工程实践，构建可落地的高并发设计知识体系。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}]],"error":null,"digest":"$undefined"}
-12:{"metadata":"$a:metadata","error":null,"digest":"$undefined"}
+1f:I[622,[],"IconMark"]
+9:{"metadata":[["$","title","0",{"children":"高并发系统设计：原理、策略与工程实践 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"系统梳理高并发架构的核心设计策略，从计算层、数据层、流量层到容错层，逐一分析每种策略的适用原理、决策依据与工程实践，构建可落地的高并发设计知识体系。"}],["$","meta","2",{"property":"og:title","content":"高并发系统设计：原理、策略与工程实践"}],["$","meta","3",{"property":"og:description","content":"系统梳理高并发架构的核心设计策略，从计算层、数据层、流量层到容错层，逐一分析每种策略的适用原理、决策依据与工程实践，构建可落地的高并发设计知识体系。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-12-15"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"高并发系统设计：原理、策略与工程实践"}],["$","meta","9",{"name":"twitter:description","content":"系统梳理高并发架构的核心设计策略，从计算层、数据层、流量层到容错层，逐一分析每种策略的适用原理、决策依据与工程实践，构建可落地的高并发设计知识体系。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}],["$","$L1f","14",{}]],"error":null,"digest":"$undefined"}
+e:"$9:metadata"

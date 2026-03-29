@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="620" height="420" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="310" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">AIOps 混合架构</text>
+
+  <!-- Alert input -->
+  <rect x="230" y="50" width="160" height="36" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="310" y="73" text-anchor="middle" font-size="13" fill="#1565C0">告警输入</text>
+
+  <!-- Automation: dedup + classify -->
+  <rect x="210" y="115" width="200" height="40" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="310" y="134" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Automation</text>
+  <text x="310" y="149" text-anchor="middle" font-size="11" fill="#E65100">告警去重 + 分级</text>
+  <line x1="310" y1="86" x2="310" y2="113" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Branch labels -->
+  <!-- Left branch: P4/P3 -->
+  <text x="120" y="175" text-anchor="middle" font-size="11" fill="#888">P4/P3 已知模式</text>
+  <line x1="250" y1="155" x2="120" y2="195" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Right branch: P2/P1 -->
+  <text x="500" y="175" text-anchor="middle" font-size="11" fill="#888">P2/P1 或未知模式</text>
+  <line x1="370" y1="155" x2="500" y2="195" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Left: Automation auto-fix -->
+  <rect x="40" y="198" width="160" height="40" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="120" y="217" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Automation</text>
+  <text x="120" y="232" text-anchor="middle" font-size="11" fill="#E65100">自动修复</text>
+
+  <!-- Left: Notify oncall -->
+  <rect x="40" y="270" width="160" height="36" rx="6" fill="#E8EAF6" stroke="#3F51B5" stroke-width="1.5"/>
+  <text x="120" y="293" text-anchor="middle" font-size="12" fill="#283593">通知 Oncall</text>
+  <line x1="120" y1="238" x2="120" y2="268" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Right: Agent root cause -->
+  <rect x="420" y="198" width="160" height="40" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="500" y="217" text-anchor="middle" font-size="12" font-weight="bold" fill="#6A1B9A">Agent</text>
+  <text x="500" y="232" text-anchor="middle" font-size="11" fill="#6A1B9A">根因分析</text>
+
+  <!-- Right branch: found root cause -->
+  <text x="370" y="275" text-anchor="middle" font-size="11" fill="#888">找到根因</text>
+  <line x1="460" y1="238" x2="370" y2="290" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Right: Automation fix -->
+  <rect x="290" y="295" width="160" height="40" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="370" y="314" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Automation</text>
+  <text x="370" y="329" text-anchor="middle" font-size="11" fill="#E65100">执行修复</text>
+
+  <!-- Right branch: cannot determine -->
+  <text x="555" y="275" text-anchor="middle" font-size="11" fill="#888">无法确定</text>
+  <line x1="540" y1="238" x2="555" y2="290" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Right: Escalate to human -->
+  <rect x="480" y="295" width="120" height="40" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
+  <text x="540" y="320" text-anchor="middle" font-size="12" fill="#B71C1C">升级到人工</text>
+</svg>

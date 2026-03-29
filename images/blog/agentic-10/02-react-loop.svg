@@ -1,0 +1,47 @@
+<svg viewBox="0 0 750 280" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="375" y="24" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">ReAct 循环</text>
+
+  <!-- User Question pill above Thought -->
+  <rect x="130" y="42" width="130" height="30" rx="15" fill="#f0f0f0" stroke="#999" stroke-width="1.5"/>
+  <text x="195" y="62" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">用户问题</text>
+
+  <!-- Arrow down from 用户问题 to Thought -->
+  <line x1="195" y1="72" x2="195" y2="94" stroke="#0066cc" stroke-width="2"/>
+  <polygon points="191,94 195,104 199,94" fill="#0066cc"/>
+
+  <!-- Thought Box -->
+  <rect x="125" y="100" width="140" height="65" rx="6" fill="#e8f4f8" stroke="#0066cc" stroke-width="2"/>
+  <text x="195" y="127" font-size="13" font-weight="bold" text-anchor="middle" fill="#0066cc">Thought</text>
+  <text x="195" y="147" font-size="11" text-anchor="middle" fill="#333">推理分析</text>
+
+  <!-- Horizontal arrow Thought → Action -->
+  <line x1="265" y1="132" x2="299" y2="132" stroke="#0066cc" stroke-width="2"/>
+  <polygon points="299,128 309,132 299,136" fill="#0066cc"/>
+
+  <!-- Action Box -->
+  <rect x="305" y="100" width="140" height="65" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="375" y="127" font-size="13" font-weight="bold" text-anchor="middle" fill="#ff9900">Action</text>
+  <text x="375" y="147" font-size="11" text-anchor="middle" fill="#333">调用工具</text>
+
+  <!-- Horizontal arrow Action → Observation -->
+  <line x1="445" y1="132" x2="479" y2="132" stroke="#ff9900" stroke-width="2"/>
+  <polygon points="479,128 489,132 479,136" fill="#ff9900"/>
+
+  <!-- Observation Box -->
+  <rect x="485" y="100" width="140" height="65" rx="6" fill="#f0e8f8" stroke="#9933cc" stroke-width="2"/>
+  <text x="555" y="127" font-size="13" font-weight="bold" text-anchor="middle" fill="#9933cc">Observation</text>
+  <text x="555" y="147" font-size="11" text-anchor="middle" fill="#333">观察结果</text>
+
+  <!-- Loop-back: down from Observation, left along bottom, up to Thought -->
+  <line x1="555" y1="165" x2="555" y2="210" stroke="#0066cc" stroke-width="2"/>
+  <line x1="555" y1="210" x2="195" y2="210" stroke="#0066cc" stroke-width="2"/>
+  <line x1="195" y1="210" x2="195" y2="171" stroke="#0066cc" stroke-width="2"/>
+  <polygon points="191,171 195,161 199,171" fill="#0066cc"/>
+
+  <!-- Loop label -->
+  <text x="375" y="228" font-size="10" fill="#0066cc" text-anchor="middle">循环直到完成任务或达到停止条件</text>
+
+  <!-- Final Answer note -->
+  <text x="375" y="192" font-size="10" fill="#00aa33" text-anchor="middle">或输出 Final Answer</text>
+</svg>

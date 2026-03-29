@@ -1,0 +1,65 @@
+<svg viewBox="0 0 660 340" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="330" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">一个"全能" Agent 的 Context 分配（~32K tokens）</text>
+
+  <!-- Pie chart center (200, 180), r=130 -->
+
+  <!-- Slice 1: System Prompt 2000 tokens (6.2%) -->
+  <path d="M200,180 L200,50 A130,130 0 0,1 249.7,59.9 Z" fill="#90CAF9" stroke="#fff" stroke-width="2"/>
+
+  <!-- Slice 2: Tool Schemas 6000 tokens (18.8%) -->
+  <path d="M200,180 L249.7,59.9 A130,130 0 0,1 330,180 Z" fill="#FFB74D" stroke="#fff" stroke-width="2"/>
+
+  <!-- Slice 3: 领域知识 4000 tokens (12.5%) -->
+  <path d="M200,180 L330,180 A130,130 0 0,1 291.9,271.9 Z" fill="#81C784" stroke="#fff" stroke-width="2"/>
+
+  <!-- Slice 4: 对话历史 8000 tokens (25%) -->
+  <path d="M200,180 L291.9,271.9 A130,130 0 0,1 108.1,271.9 Z" fill="#9575CD" stroke="#fff" stroke-width="2"/>
+
+  <!-- Slice 5: 当前任务 3000 tokens (9.4%) -->
+  <path d="M200,180 L108.1,271.9 A130,130 0 0,1 72.5,205.4 Z" fill="#4DD0E1" stroke="#fff" stroke-width="2"/>
+
+  <!-- Slice 6: 剩余可用空间 9000 tokens (28.1%) -->
+  <path d="M200,180 L72.5,205.4 A130,130 0 0,1 200,50 Z" fill="#EF9A9A" stroke="#fff" stroke-width="2"/>
+
+  <!-- Percentage labels on slices -->
+  <text x="216" y="101" font-size="9" text-anchor="middle" fill="#1565C0" font-weight="bold">6%</text>
+  <text x="270" y="137" font-size="10" text-anchor="middle" fill="#E65100" font-weight="bold">19%</text>
+  <text x="278" y="216" font-size="10" text-anchor="middle" fill="#2E7D32" font-weight="bold">13%</text>
+  <text x="200" y="268" font-size="10" text-anchor="middle" fill="#fff" font-weight="bold">25%</text>
+  <text x="126" y="224" font-size="9" text-anchor="middle" fill="#00695C" font-weight="bold">9%</text>
+  <text x="135" y="130" font-size="10" text-anchor="middle" fill="#C62828" font-weight="bold">28%</text>
+
+  <!-- Legend on the right side -->
+  <rect x="400" y="68" width="14" height="14" rx="2" fill="#90CAF9"/>
+  <text x="422" y="80" font-size="11" fill="#333">System Prompt</text>
+  <text x="630" y="80" font-size="10" text-anchor="end" fill="#666">~2,000</text>
+
+  <rect x="400" y="98" width="14" height="14" rx="2" fill="#FFB74D"/>
+  <text x="422" y="110" font-size="11" fill="#333">Tool Schemas（15 个工具）</text>
+  <text x="630" y="110" font-size="10" text-anchor="end" fill="#666">~6,000</text>
+
+  <rect x="400" y="128" width="14" height="14" rx="2" fill="#81C784"/>
+  <text x="422" y="140" font-size="11" fill="#333">领域知识（RAG）</text>
+  <text x="630" y="140" font-size="10" text-anchor="end" fill="#666">~4,000</text>
+
+  <rect x="400" y="158" width="14" height="14" rx="2" fill="#9575CD"/>
+  <text x="422" y="170" font-size="11" fill="#333">对话历史</text>
+  <text x="630" y="170" font-size="10" text-anchor="end" fill="#666">~8,000</text>
+
+  <rect x="400" y="188" width="14" height="14" rx="2" fill="#4DD0E1"/>
+  <text x="422" y="200" font-size="11" fill="#333">当前任务 + 中间状态</text>
+  <text x="630" y="200" font-size="10" text-anchor="end" fill="#666">~3,000</text>
+
+  <rect x="400" y="222" width="14" height="14" rx="2" fill="#EF9A9A" stroke="#C62828" stroke-width="1"/>
+  <text x="422" y="234" font-size="11" font-weight="bold" fill="#C62828">剩余可用空间</text>
+  <text x="630" y="234" font-size="10" text-anchor="end" fill="#C62828">~9,000</text>
+
+  <!-- Divider line -->
+  <line x1="400" y1="250" x2="630" y2="250" stroke="#eee" stroke-width="1"/>
+  <text x="422" y="268" font-size="10" fill="#999">固定开销合计</text>
+  <text x="630" y="268" font-size="10" text-anchor="end" fill="#666">~23,000 (72%)</text>
+
+  <!-- Bottom note -->
+  <text x="330" y="330" font-size="10" text-anchor="middle" fill="#999">72% 的 Context 已被固定开销占据，留给实际推理的空间不足 1/3</text>
+</svg>

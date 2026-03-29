@@ -1,0 +1,133 @@
+<svg viewBox="0 0 880 680" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="440" y="30" font-size="16" font-weight="bold" text-anchor="middle" fill="#0f172a">A/B 测试变量树</text>
+
+  <!-- Root -->
+  <rect x="315" y="50" width="250" height="45" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="440" y="78" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e40af">A/B Testing Variables</text>
+
+  <!-- T-split from root to 3 branches -->
+  <line x1="440" y1="95" x2="440" y2="115" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="140" y1="115" x2="740" y2="115" stroke="#3b82f6" stroke-width="1.5"/>
+
+  <!-- Branch 1 drop -->
+  <line x1="140" y1="115" x2="140" y2="135" stroke="#f97316" stroke-width="1.5"/>
+  <polygon points="136,135 140,145 144,135" fill="#f97316"/>
+  <!-- Branch 2 drop -->
+  <line x1="440" y1="115" x2="440" y2="135" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="436,135 440,145 444,135" fill="#22c55e"/>
+  <!-- Branch 3 drop -->
+  <line x1="740" y1="115" x2="740" y2="135" stroke="#f97316" stroke-width="1.5"/>
+  <polygon points="736,135 740,145 744,135" fill="#f97316"/>
+
+  <!-- Branch 1: Model Variables -->
+  <rect x="60" y="148" width="160" height="42" rx="6" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <text x="140" y="174" font-size="12" font-weight="bold" text-anchor="middle" fill="#7c2d12">Model Variables</text>
+
+  <!-- Model sub-branches T-split -->
+  <line x1="140" y1="190" x2="140" y2="205" stroke="#f97316" stroke-width="1.5"/>
+  <line x1="50" y1="205" x2="230" y2="205" stroke="#f97316" stroke-width="1"/>
+  <line x1="50" y1="205" x2="50" y2="218" stroke="#f97316" stroke-width="1"/>
+  <polygon points="46,218 50,228 54,218" fill="#f97316"/>
+  <line x1="140" y1="205" x2="140" y2="218" stroke="#f97316" stroke-width="1"/>
+  <polygon points="136,218 140,228 144,218" fill="#f97316"/>
+  <line x1="230" y1="205" x2="230" y2="218" stroke="#f97316" stroke-width="1"/>
+  <polygon points="226,218 230,228 234,218" fill="#f97316"/>
+
+  <rect x="10" y="232" width="80" height="42" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="50" y="249" font-size="10" text-anchor="middle" fill="#78350f">LLM 版本</text>
+  <text x="50" y="264" font-size="9" text-anchor="middle" fill="#92400e">(gpt-4/4o)</text>
+
+  <rect x="100" y="232" width="80" height="42" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="140" y="249" font-size="10" text-anchor="middle" fill="#78350f">Temperature</text>
+  <text x="140" y="264" font-size="9" text-anchor="middle" fill="#92400e">(0.0-1.0)</text>
+
+  <rect x="190" y="232" width="80" height="42" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="230" y="249" font-size="10" text-anchor="middle" fill="#78350f">Max Token</text>
+  <text x="230" y="264" font-size="9" text-anchor="middle" fill="#92400e">(256-4096)</text>
+
+  <!-- Branch 2: Prompt Variables -->
+  <rect x="360" y="148" width="160" height="42" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="440" y="174" font-size="12" font-weight="bold" text-anchor="middle" fill="#166534">Prompt Variables</text>
+
+  <!-- Prompt sub-branches T-split -->
+  <line x1="440" y1="190" x2="440" y2="205" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="350" y1="205" x2="530" y2="205" stroke="#22c55e" stroke-width="1"/>
+  <line x1="350" y1="205" x2="350" y2="218" stroke="#22c55e" stroke-width="1"/>
+  <polygon points="346,218 350,228 354,218" fill="#22c55e"/>
+  <line x1="440" y1="205" x2="440" y2="218" stroke="#22c55e" stroke-width="1"/>
+  <polygon points="436,218 440,228 444,218" fill="#22c55e"/>
+  <line x1="530" y1="205" x2="530" y2="218" stroke="#22c55e" stroke-width="1"/>
+  <polygon points="526,218 530,228 534,218" fill="#22c55e"/>
+
+  <rect x="310" y="232" width="80" height="42" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="350" y="249" font-size="10" text-anchor="middle" fill="#166534">System Prompt</text>
+  <text x="350" y="264" font-size="9" text-anchor="middle" fill="#14532d">(v1/v2/v3)</text>
+
+  <rect x="400" y="232" width="80" height="42" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="440" y="249" font-size="10" text-anchor="middle" fill="#166534">Few-shot</text>
+  <text x="440" y="264" font-size="9" text-anchor="middle" fill="#14532d">(0/5/10)</text>
+
+  <rect x="490" y="232" width="80" height="42" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="530" y="249" font-size="10" text-anchor="middle" fill="#166534">Instruction</text>
+  <text x="530" y="264" font-size="9" text-anchor="middle" fill="#14532d">Style</text>
+
+  <!-- Branch 3: Tool/Agent Variables -->
+  <rect x="660" y="148" width="160" height="42" rx="6" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <text x="740" y="174" font-size="12" font-weight="bold" text-anchor="middle" fill="#7c2d12">Tool/Agent Variables</text>
+
+  <!-- Tool sub-branches T-split -->
+  <line x1="740" y1="190" x2="740" y2="205" stroke="#f97316" stroke-width="1.5"/>
+  <line x1="650" y1="205" x2="830" y2="205" stroke="#f97316" stroke-width="1"/>
+  <line x1="650" y1="205" x2="650" y2="218" stroke="#f97316" stroke-width="1"/>
+  <polygon points="646,218 650,228 654,218" fill="#f97316"/>
+  <line x1="740" y1="205" x2="740" y2="218" stroke="#f97316" stroke-width="1"/>
+  <polygon points="736,218 740,228 744,218" fill="#f97316"/>
+  <line x1="830" y1="205" x2="830" y2="218" stroke="#f97316" stroke-width="1"/>
+  <polygon points="826,218 830,228 834,218" fill="#f97316"/>
+
+  <rect x="610" y="232" width="80" height="42" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="650" y="249" font-size="10" text-anchor="middle" fill="#78350f">Tool Set</text>
+  <text x="650" y="264" font-size="9" text-anchor="middle" fill="#92400e">(A/B tools)</text>
+
+  <rect x="700" y="232" width="80" height="42" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="740" y="249" font-size="10" text-anchor="middle" fill="#78350f">Max Iters</text>
+  <text x="740" y="264" font-size="9" text-anchor="middle" fill="#92400e">(5/10/15)</text>
+
+  <rect x="790" y="232" width="80" height="42" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="830" y="249" font-size="10" text-anchor="middle" fill="#78350f">Retry</text>
+  <text x="830" y="264" font-size="9" text-anchor="middle" fill="#92400e">(v1/v2)</text>
+
+  <!-- ===== Metric boxes at bottom ===== -->
+  <rect x="30" y="310" width="820" height="185" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="440" y="335" font-size="13" font-weight="bold" text-anchor="middle" fill="#92400e">测试指标与决策</text>
+
+  <!-- Metrics grid: 2x2 -->
+  <!-- Reliability -->
+  <text x="60" y="360" font-size="11" font-weight="bold" fill="#0f172a">可靠性指标:</text>
+  <text x="70" y="378" font-size="10" fill="#0f172a">task_success_rate (目标: ≥90%)</text>
+  <text x="70" y="395" font-size="10" fill="#0f172a">error_rate (目标: ≤5%)</text>
+
+  <!-- Efficiency -->
+  <text x="440" y="360" font-size="11" font-weight="bold" fill="#0f172a">效率指标:</text>
+  <text x="450" y="378" font-size="10" fill="#0f172a">avg_rounds_per_task (目标: ≤6)</text>
+  <text x="450" y="395" font-size="10" fill="#0f172a">avg_latency_ms (目标: ≤8000ms)</text>
+
+  <!-- Cost -->
+  <text x="60" y="420" font-size="11" font-weight="bold" fill="#0f172a">成本指标:</text>
+  <text x="70" y="438" font-size="10" fill="#0f172a">avg_tokens_per_task (目标: ≤5000)</text>
+  <text x="70" y="455" font-size="10" fill="#0f172a">cost_per_task (目标: ≤$0.05)</text>
+
+  <!-- Quality -->
+  <text x="440" y="420" font-size="11" font-weight="bold" fill="#0f172a">质量指标:</text>
+  <text x="450" y="438" font-size="10" fill="#0f172a">output_quality_score (0-1)</text>
+  <text x="450" y="455" font-size="10" fill="#0f172a">user_satisfaction (3.5+/5.0)</text>
+
+  <!-- ===== Decision rule section ===== -->
+  <rect x="30" y="520" width="820" height="130" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="440" y="548" font-size="12" font-weight="bold" text-anchor="middle" fill="#166534">A/B 测试决策规则</text>
+
+  <text x="60" y="575" font-size="11" fill="#0f172a">✓ 赢家判定: Variant B 在所有关键指标上都优于 Variant A (必须统计显著, p &lt; 0.05)</text>
+  <text x="60" y="598" font-size="11" fill="#0f172a">✓ 必须检查: 是否有某个指标恶化 (如成本上升 20%)</text>
+  <text x="60" y="621" font-size="11" fill="#0f172a">✓ 样本量: 至少 100-1000 样本，根据基础转化率而定 (一般测试 1-2 周)</text>
+</svg>

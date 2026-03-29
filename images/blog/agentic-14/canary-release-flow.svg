@@ -1,0 +1,60 @@
+<svg viewBox="0 0 680 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="340" y="20" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">v2.1.0 金丝雀发布流程</text>
+
+  <!-- Stage 1: Canary -->
+  <rect x="20" y="38" width="140" height="52" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="90" y="56" font-size="10" font-weight="bold" text-anchor="middle" fill="#E65100">阶段 1: Canary</text>
+  <text x="90" y="70" font-size="9" text-anchor="middle" fill="#666">1% 流量 · ~100 用户/h</text>
+  <text x="90" y="83" font-size="8" text-anchor="middle" fill="#999">2 小时</text>
+
+  <!-- Arrow -->
+  <line x1="160" y1="64" x2="179" y2="64" stroke="#666" stroke-width="1.5"/>
+  <polygon points="179,60 189,64 179,68" fill="#666"/>
+
+  <!-- Stage 2: Early Access -->
+  <rect x="185" y="38" width="140" height="52" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="1.5"/>
+  <text x="255" y="56" font-size="10" font-weight="bold" text-anchor="middle" fill="#ff9900">阶段 2: Early Access</text>
+  <text x="255" y="70" font-size="9" text-anchor="middle" fill="#666">10% 流量</text>
+  <text x="255" y="83" font-size="8" text-anchor="middle" fill="#999">6 小时</text>
+
+  <!-- Arrow -->
+  <line x1="325" y1="64" x2="344" y2="64" stroke="#666" stroke-width="1.5"/>
+  <polygon points="344,60 354,64 344,68" fill="#666"/>
+
+  <!-- Stage 3: Progressive -->
+  <rect x="350" y="38" width="140" height="52" rx="6" fill="#e8f4f8" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="420" y="56" font-size="10" font-weight="bold" text-anchor="middle" fill="#0066cc">阶段 3: Progressive</text>
+  <text x="420" y="70" font-size="9" text-anchor="middle" fill="#666">50% 流量</text>
+  <text x="420" y="83" font-size="8" text-anchor="middle" fill="#999">12 小时</text>
+
+  <!-- Arrow -->
+  <line x1="490" y1="64" x2="509" y2="64" stroke="#666" stroke-width="1.5"/>
+  <polygon points="509,60 519,64 509,68" fill="#666"/>
+
+  <!-- Stage 4: Stable -->
+  <rect x="515" y="38" width="140" height="52" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="2"/>
+  <text x="585" y="56" font-size="10" font-weight="bold" text-anchor="middle" fill="#00aa33">阶段 4: Stable</text>
+  <text x="585" y="70" font-size="9" text-anchor="middle" fill="#666">100% 流量</text>
+  <text x="585" y="83" font-size="8" text-anchor="middle" fill="#00aa33">全量上线</text>
+
+  <!-- Progress bar at bottom -->
+  <rect x="20" y="105" width="140" height="6" rx="3" fill="#E65100" opacity="0.3"/>
+  <rect x="20" y="105" width="2" height="6" rx="1" fill="#E65100"/>
+  <text x="90" y="125" font-size="8" text-anchor="middle" fill="#E65100">1%</text>
+
+  <rect x="185" y="105" width="140" height="6" rx="3" fill="#ff9900" opacity="0.3"/>
+  <rect x="185" y="105" width="14" height="6" rx="3" fill="#ff9900"/>
+  <text x="255" y="125" font-size="8" text-anchor="middle" fill="#ff9900">10%</text>
+
+  <rect x="350" y="105" width="140" height="6" rx="3" fill="#0066cc" opacity="0.3"/>
+  <rect x="350" y="105" width="70" height="6" rx="3" fill="#0066cc"/>
+  <text x="420" y="125" font-size="8" text-anchor="middle" fill="#0066cc">50%</text>
+
+  <rect x="515" y="105" width="140" height="6" rx="3" fill="#00aa33" opacity="0.3"/>
+  <rect x="515" y="105" width="140" height="6" rx="3" fill="#00aa33"/>
+  <text x="585" y="125" font-size="8" text-anchor="middle" fill="#00aa33">100%</text>
+
+  <!-- Rollback note -->
+  <text x="340" y="150" font-size="9" text-anchor="middle" fill="#C62828">回滚条件：错误率 > 5% 或 P99 延迟 > 15s → 自动回滚（60s 内完成）</text>
+</svg>

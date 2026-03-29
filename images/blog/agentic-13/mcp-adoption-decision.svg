@@ -1,0 +1,40 @@
+<svg viewBox="0 0 620 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="280" y="20" font-size="13" font-weight="bold" text-anchor="middle" fill="#333">MCP 采纳决策框架</text>
+
+  <!-- Row 1: 硬编码 (grey) -->
+  <rect x="20" y="34" width="500" height="34" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+  <rect x="20" y="34" width="6" height="34" rx="3" fill="#999"/>
+  <text x="40" y="55" font-size="10" fill="#333">工具少（&lt; 5）且团队单一</text>
+  <rect x="360" y="40" width="120" height="22" rx="11" fill="#f0f0f0" stroke="#999" stroke-width="1"/>
+  <text x="420" y="55" font-size="10" font-weight="bold" text-anchor="middle" fill="#666">直接硬编码</text>
+
+  <!-- Row 2: 收益显现 (light blue) -->
+  <rect x="20" y="76" width="500" height="34" rx="4" fill="#e8f4f8" stroke="#0066cc" stroke-width="1"/>
+  <rect x="20" y="76" width="6" height="34" rx="3" fill="#0066cc"/>
+  <text x="40" y="97" font-size="10" fill="#333">工具多（&gt; 10）且跨团队</text>
+  <rect x="360" y="82" width="120" height="22" rx="11" fill="#e8f4f8" stroke="#0066cc" stroke-width="1"/>
+  <text x="420" y="97" font-size="10" font-weight="bold" text-anchor="middle" fill="#0066cc">MCP 收益显现</text>
+
+  <!-- Row 3: 几乎必需 (light orange) -->
+  <rect x="20" y="118" width="500" height="34" rx="4" fill="#fff4e8" stroke="#ff9900" stroke-width="1"/>
+  <rect x="20" y="118" width="6" height="34" rx="3" fill="#ff9900"/>
+  <text x="40" y="139" font-size="10" fill="#333">工具需被多 Agent 共享</text>
+  <rect x="360" y="124" width="120" height="22" rx="11" fill="#fff4e8" stroke="#ff9900" stroke-width="1"/>
+  <text x="420" y="139" font-size="10" font-weight="bold" text-anchor="middle" fill="#ff9900">MCP 几乎必需</text>
+
+  <!-- Row 4: 最佳选择 (light green) -->
+  <rect x="20" y="160" width="500" height="34" rx="4" fill="#e8f8e8" stroke="#00aa33" stroke-width="1"/>
+  <rect x="20" y="160" width="6" height="34" rx="3" fill="#00aa33"/>
+  <text x="40" y="181" font-size="10" fill="#333">工具需独立部署和升级</text>
+  <rect x="360" y="166" width="120" height="22" rx="11" fill="#e8f8e8" stroke="#00aa33" stroke-width="1.5"/>
+  <text x="420" y="181" font-size="10" font-weight="bold" text-anchor="middle" fill="#00aa33">MCP 最佳选择</text>
+
+  <!-- Arrow on right (outside rows) -->
+  <line x1="560" y1="48" x2="560" y2="180" stroke="#999" stroke-width="1.5"/>
+  <polygon points="556,180 560,190 564,180" fill="#999"/>
+  <text x="590" y="82" font-size="8" fill="#999" text-anchor="middle">MCP</text>
+  <text x="590" y="92" font-size="8" fill="#999" text-anchor="middle">必要性</text>
+  <text x="590" y="55" font-size="8" fill="#ccc" text-anchor="middle">低</text>
+  <text x="590" y="180" font-size="8" fill="#00aa33" text-anchor="middle">高</text>
+</svg>

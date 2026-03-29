@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 380" width="750" height="380">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6Z" fill="#546E7A"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <!-- Title: Tool Call Failed -->
+  <rect x="265" y="15" width="220" height="40" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
+  <text x="375" y="40" text-anchor="middle" font-size="13" font-weight="bold" fill="#B71C1C">Tool Call 失败</text>
+
+  <line x1="375" y1="55" x2="375" y2="80" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Error type classification -->
+  <rect x="265" y="85" width="220" height="40" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="375" y="110" text-anchor="middle" font-size="13" font-weight="bold" fill="#0D47A1">错误类型判断</text>
+
+  <line x1="375" y1="125" x2="375" y2="150" stroke="#546E7A" stroke-width="1.5"/>
+
+  <!-- Three branches -->
+  <line x1="375" y1="150" x2="125" y2="150" stroke="#546E7A" stroke-width="1.5"/>
+  <line x1="375" y1="150" x2="625" y2="150" stroke="#546E7A" stroke-width="1.5"/>
+  <line x1="125" y1="150" x2="125" y2="175" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="375" y1="150" x2="375" y2="175" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="625" y1="150" x2="625" y2="175" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Branch 1: Retryable -->
+  <rect x="40" y="180" width="170" height="55" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="125" y="202" text-anchor="middle" font-size="12" font-weight="bold" fill="#1B5E20">可重试</text>
+  <text x="125" y="220" text-anchor="middle" font-size="10" fill="#4CAF50">(超时 / 限流)</text>
+
+  <!-- Branch 2: Param error -->
+  <rect x="290" y="180" width="170" height="55" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="375" y="202" text-anchor="middle" font-size="12" font-weight="bold" fill="#BF360C">参数错误</text>
+  <text x="375" y="220" text-anchor="middle" font-size="10" fill="#F57C00">(类型 / 格式)</text>
+
+  <!-- Branch 3: Unrecoverable -->
+  <rect x="540" y="180" width="170" height="55" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
+  <text x="625" y="202" text-anchor="middle" font-size="12" font-weight="bold" fill="#B71C1C">不可恢复</text>
+  <text x="625" y="220" text-anchor="middle" font-size="10" fill="#E53935">(权限 / 404)</text>
+
+  <!-- Arrows to actions -->
+  <line x1="125" y1="235" x2="125" y2="270" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="375" y1="235" x2="375" y2="270" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="625" y1="235" x2="625" y2="270" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Action 1 -->
+  <rect x="40" y="275" width="170" height="55" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1"/>
+  <text x="125" y="297" text-anchor="middle" font-size="11" font-weight="bold" fill="#1B5E20">Runtime 自动重试</text>
+  <text x="125" y="315" text-anchor="middle" font-size="10" fill="#4CAF50">(指数退避)</text>
+
+  <!-- Action 2 -->
+  <rect x="290" y="275" width="170" height="55" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="375" y="297" text-anchor="middle" font-size="11" font-weight="bold" fill="#BF360C">回传 LLM</text>
+  <text x="375" y="315" text-anchor="middle" font-size="10" fill="#F57C00">让它修正参数</text>
+
+  <!-- Action 3 -->
+  <rect x="540" y="275" width="170" height="55" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="1"/>
+  <text x="625" y="297" text-anchor="middle" font-size="11" font-weight="bold" fill="#B71C1C">回传 LLM</text>
+  <text x="625" y="315" text-anchor="middle" font-size="10" fill="#E53935">让它放弃或换方案</text>
+
+  <!-- Bottom summary -->
+  <text x="375" y="365" text-anchor="middle" font-size="11" fill="#78909C">可重试错误由 Runtime 处理，不可重试错误交给 LLM 决策</text>
+</svg>

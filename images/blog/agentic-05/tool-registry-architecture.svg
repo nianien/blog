@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6Z" fill="#546E7A"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <!-- Tool Registry box -->
+  <rect x="130" y="20" width="440" height="230" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="350" y="48" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">Tool Registry</text>
+
+  <!-- Tool boxes -->
+  <rect x="160" y="65" width="110" height="45" rx="6" fill="#FFFFFF" stroke="#42A5F5" stroke-width="1.5"/>
+  <text x="215" y="84" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">weather</text>
+  <text x="215" y="100" text-anchor="middle" font-size="10" fill="#64B5F6">tool</text>
+
+  <rect x="290" y="65" width="110" height="45" rx="6" fill="#FFFFFF" stroke="#42A5F5" stroke-width="1.5"/>
+  <text x="345" y="84" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">database</text>
+  <text x="345" y="100" text-anchor="middle" font-size="10" fill="#64B5F6">tool</text>
+
+  <rect x="420" y="65" width="110" height="45" rx="6" fill="#FFFFFF" stroke="#42A5F5" stroke-width="1.5"/>
+  <text x="475" y="84" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">email</text>
+  <text x="475" y="100" text-anchor="middle" font-size="10" fill="#64B5F6">tool</text>
+
+  <rect x="160" y="125" width="110" height="45" rx="6" fill="#FFFFFF" stroke="#42A5F5" stroke-width="1.5"/>
+  <text x="215" y="144" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">calc</text>
+  <text x="215" y="160" text-anchor="middle" font-size="10" fill="#64B5F6">tool</text>
+
+  <rect x="290" y="125" width="110" height="45" rx="6" fill="#FFFFFF" stroke="#42A5F5" stroke-width="1.5"/>
+  <text x="345" y="144" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">file</text>
+  <text x="345" y="160" text-anchor="middle" font-size="10" fill="#64B5F6">tool</text>
+
+  <!-- API methods -->
+  <text x="165" y="200" font-size="11" fill="#0D47A1" font-family="monospace">register(tool) / unregister(name)</text>
+  <text x="165" y="216" font-size="11" fill="#0D47A1" font-family="monospace">get_tools(filter?) → List[Tool]</text>
+  <text x="165" y="232" font-size="11" fill="#0D47A1" font-family="monospace">get_definitions() → List[Dict]</text>
+
+  <!-- Arrow down from registry -->
+  <line x1="350" y1="250" x2="350" y2="285" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="370" y="275" font-size="10" fill="#78909C">get_definitions()</text>
+
+  <!-- Runtime box -->
+  <rect x="140" y="290" width="150" height="44" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="215" y="316" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B5E20">Runtime</text>
+
+  <!-- Arrow from Runtime to LLM API -->
+  <line x1="290" y1="312" x2="400" y2="312" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="345" y="305" text-anchor="middle" font-size="10" fill="#78909C">tools=[...]</text>
+
+  <!-- LLM API box -->
+  <rect x="410" y="290" width="150" height="44" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="485" y="316" text-anchor="middle" font-size="13" font-weight="bold" fill="#BF360C">LLM API</text>
+</svg>

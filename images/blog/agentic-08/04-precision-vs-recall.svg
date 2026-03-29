@@ -1,0 +1,50 @@
+<svg width="900" height="320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="320" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="450" y="30" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
+    检索精度 vs 召回率的权衡
+  </text>
+
+  <!-- Left box: Precise Retrieval -->
+  <g>
+    <rect x="40" y="70" width="350" height="210" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="8" />
+    <text x="215" y="100" font-size="14" font-weight="bold" text-anchor="middle" fill="#1565C0">
+      精确检索 (top_k=1)
+    </text>
+
+    <rect x="60" y="120" width="310" height="40" fill="white" stroke="#1565C0" stroke-width="1" rx="4" />
+    <text x="70" y="140" font-size="12" fill="#333">命中：很准</text>
+
+    <rect x="60" y="167" width="310" height="40" fill="white" stroke="#1565C0" stroke-width="1" rx="4" />
+    <text x="70" y="187" font-size="12" fill="#333">遗漏：可能大</text>
+
+    <rect x="60" y="214" width="310" height="40" fill="white" stroke="#1565C0" stroke-width="1" rx="4" />
+    <text x="70" y="234" font-size="12" fill="#333">Token 消耗：少</text>
+
+  </g>
+
+  <!-- Right box: Fuzzy Retrieval -->
+  <g>
+    <rect x="510" y="70" width="350" height="210" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2" rx="8" />
+    <text x="685" y="100" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">
+      模糊检索 (top_k=10)
+    </text>
+
+    <rect x="530" y="120" width="310" height="40" fill="white" stroke="#2E7D32" stroke-width="1" rx="4" />
+    <text x="540" y="140" font-size="12" fill="#333">命中：可能包含</text>
+
+    <rect x="530" y="167" width="310" height="40" fill="white" stroke="#2E7D32" stroke-width="1" rx="4" />
+    <text x="540" y="187" font-size="12" fill="#333">遗漏：很少</text>
+
+    <rect x="530" y="214" width="310" height="40" fill="white" stroke="#2E7D32" stroke-width="1" rx="4" />
+    <text x="540" y="234" font-size="12" fill="#333">Token 消耗：多</text>
+
+  </g>
+
+  <!-- Note -->
+  <text x="450" y="310" font-size="11" text-anchor="middle" fill="#666">
+    Episodic Memory: top_k=3 | Semantic Memory: top_k=5
+  </text>
+</svg>

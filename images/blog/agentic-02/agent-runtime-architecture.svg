@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 390" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+
+  <!-- Agent Runtime outer box -->
+  <rect x="30" y="16" width="500" height="280" rx="10" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="1.5"/>
+  <text x="280" y="42" text-anchor="middle" font-size="14" font-weight="bold" fill="#555">Agent Runtime</text>
+
+  <!-- Memory -->
+  <rect x="60" y="65" width="120" height="55" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="120" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">Memory</text>
+  <text x="120" y="107" text-anchor="middle" font-size="9" fill="#1976D2">记忆存储</text>
+
+  <!-- LLM -->
+  <rect x="220" y="65" width="120" height="55" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="280" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#6A1B9A">LLM</text>
+  <text x="280" y="107" text-anchor="middle" font-size="9" fill="#7B1FA2">推理核心</text>
+
+  <!-- Planner -->
+  <rect x="380" y="65" width="120" height="55" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="440" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">Planner</text>
+  <text x="440" y="107" text-anchor="middle" font-size="9" fill="#F57C00">规划决策</text>
+
+  <!-- Memory ↔ LLM bidirectional arrows -->
+  <!-- Memory → LLM -->
+  <line x1="180" y1="85" x2="216" y2="85" stroke="#888" stroke-width="1.5"/>
+  <polygon points="213,81 222,85 213,89" fill="#888"/>
+  <!-- LLM → Memory -->
+  <line x1="220" y1="98" x2="184" y2="98" stroke="#888" stroke-width="1.5"/>
+  <polygon points="187,94 178,98 187,102" fill="#888"/>
+
+  <!-- LLM ↔ Planner bidirectional arrows -->
+  <!-- LLM → Planner -->
+  <line x1="340" y1="85" x2="376" y2="85" stroke="#888" stroke-width="1.5"/>
+  <polygon points="373,81 382,85 373,89" fill="#888"/>
+  <!-- Planner → LLM -->
+  <line x1="380" y1="98" x2="344" y2="98" stroke="#888" stroke-width="1.5"/>
+  <polygon points="347,94 338,98 347,102" fill="#888"/>
+
+  <!-- Tools -->
+  <rect x="205" y="170" width="150" height="55" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="280" y="195" text-anchor="middle" font-size="13" font-weight="bold" fill="#2E7D32">Tools</text>
+  <text x="280" y="212" text-anchor="middle" font-size="9" fill="#388E3C">外部交互能力</text>
+
+  <!-- LLM → Tools (down) -->
+  <line x1="280" y1="120" x2="280" y2="167" stroke="#666" stroke-width="1.5"/>
+  <polygon points="276,164 280,173 284,164" fill="#666"/>
+
+  <!-- Memory → Tools (down-right L-path) -->
+  <line x1="120" y1="120" x2="120" y2="197" stroke="#666" stroke-width="1.5"/>
+  <line x1="120" y1="197" x2="202" y2="197" stroke="#666" stroke-width="1.5"/>
+  <polygon points="199,193 208,197 199,201" fill="#666"/>
+
+  <!-- Planner → Tools (down-left L-path) -->
+  <line x1="440" y1="120" x2="440" y2="197" stroke="#666" stroke-width="1.5"/>
+  <line x1="440" y1="197" x2="358" y2="197" stroke="#666" stroke-width="1.5"/>
+  <polygon points="361,193 352,197 361,201" fill="#666"/>
+
+  <!-- Tools → External World (down, through Runtime border) -->
+  <line x1="280" y1="225" x2="280" y2="340" stroke="#666" stroke-width="1.5"/>
+  <polygon points="276,337 280,346 284,337" fill="#666"/>
+
+  <!-- Label -->
+  <text x="280" y="332" text-anchor="middle" font-size="9" fill="#999">APIs, DBs, Files, Users</text>
+
+  <!-- External World -->
+  <rect x="175" y="348" width="210" height="32" rx="8" fill="#ECEFF1" stroke="#90A4AE" stroke-width="1.5"/>
+  <text x="280" y="369" text-anchor="middle" font-size="12" fill="#455A64">External World</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="720" height="520" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="360" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">模式选型决策树</text>
+
+  <!-- Root question -->
+  <polygon points="360,55 460,90 360,125 260,90" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="360" y="87" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">结果需要 100%</text>
+  <text x="360" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">确定性吗？</text>
+
+  <!-- Left: Yes -->
+  <text x="200" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#4CAF50">Yes</text>
+  <line x1="260" y1="90" x2="180" y2="135" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Left result -->
+  <rect x="60" y="140" width="180" height="55" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="150" y="160" text-anchor="middle" font-size="11" fill="#2E7D32">先用规则处理能处理的部分</text>
+  <text x="150" y="177" text-anchor="middle" font-size="11" fill="#2E7D32">用 Agent 处理剩余</text>
+  <text x="150" y="192" text-anchor="middle" font-size="11" font-weight="bold" fill="#2E7D32">→ 混合架构</text>
+
+  <!-- Right: No -->
+  <text x="520" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#F44336">No</text>
+  <line x1="460" y1="90" x2="540" y2="135" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Right question: dependencies? -->
+  <polygon points="560,140 660,175 560,210 460,175" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="560" y="172" text-anchor="middle" font-size="11" font-weight="bold" fill="#6A1B9A">步骤之间有</text>
+  <text x="560" y="185" text-anchor="middle" font-size="11" font-weight="bold" fill="#6A1B9A">复杂依赖？</text>
+
+  <!-- Right-Left: Yes → Workflow -->
+  <text x="430" y="205" text-anchor="middle" font-size="12" font-weight="bold" fill="#4CAF50">Yes</text>
+  <line x1="460" y1="190" x2="400" y2="230" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="310" y="235" width="140" height="36" rx="6" fill="#E8EAF6" stroke="#3F51B5" stroke-width="1.5"/>
+  <text x="380" y="258" text-anchor="middle" font-size="13" font-weight="bold" fill="#283593">Workflow / DAG</text>
+
+  <!-- Right-Right: No → Automation -->
+  <text x="660" y="205" text-anchor="middle" font-size="12" font-weight="bold" fill="#F44336">No</text>
+  <line x1="660" y1="190" x2="660" y2="230" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="590" y="235" width="140" height="36" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="660" y="258" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">Automation</text>
+
+  <!-- Middle path: Agent consideration -->
+  <line x1="360" y1="125" x2="360" y2="285" stroke="#666" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Agent box -->
+  <rect x="270" y="290" width="180" height="36" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="360" y="313" text-anchor="middle" font-size="13" font-weight="bold" fill="#6A1B9A">Agent</text>
+
+  <!-- Cost/latency question -->
+  <polygon points="360,350 490,390 360,430 230,390" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="360" y="385" text-anchor="middle" font-size="10" font-weight="bold" fill="#BF360C">可以接受 $0.01-0.10/次</text>
+  <text x="360" y="398" text-anchor="middle" font-size="10" font-weight="bold" fill="#BF360C">和 2-10s 延迟吗？</text>
+  <line x1="360" y1="326" x2="360" y2="348" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Yes → Agent -->
+  <text x="180" y="418" text-anchor="middle" font-size="12" font-weight="bold" fill="#4CAF50">Yes</text>
+  <line x1="230" y1="400" x2="140" y2="440" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="60" y="445" width="120" height="36" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="120" y="468" text-anchor="middle" font-size="13" font-weight="bold" fill="#6A1B9A">Agent</text>
+
+  <!-- No → Hybrid -->
+  <text x="540" y="418" text-anchor="middle" font-size="12" font-weight="bold" fill="#F44336">No</text>
+  <line x1="490" y1="400" x2="560" y2="440" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="480" y="445" width="200" height="50" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="580" y="465" text-anchor="middle" font-size="11" fill="#2E7D32">重新审视需求：</text>
+  <text x="580" y="482" text-anchor="middle" font-size="11" fill="#2E7D32">拆分为确定性+模糊性 → 混合架构</text>
+</svg>

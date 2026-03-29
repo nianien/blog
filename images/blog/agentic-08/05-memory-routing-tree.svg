@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 740" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="410" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">记忆分层决策树</text>
+
+  <!-- Start: 信息 -->
+  <circle cx="410" cy="72" r="30" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <text x="410" y="77" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">信息</text>
+
+  <!-- Arrow down -->
+  <line x1="410" y1="102" x2="410" y2="128" stroke="#666" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ===== Decision 1: 是否为当前对话流的直接产物？ ===== -->
+  <rect x="260" y="130" width="300" height="36" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="410" y="153" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">是否为当前对话流的直接产物？</text>
+
+  <!-- 是 branch: left → L1 -->
+  <line x1="330" y1="166" x2="330" y2="182" stroke="#2E7D32" stroke-width="1.5"/>
+  <line x1="330" y1="182" x2="180" y2="182" stroke="#2E7D32" stroke-width="1.5"/>
+  <line x1="180" y1="182" x2="180" y2="202" stroke="#2E7D32" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="254" y="178" font-size="11" font-weight="bold" fill="#2E7D32">是</text>
+
+  <rect x="80" y="204" width="200" height="76" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+  <text x="180" y="226" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">Conversation Buffer (L1)</text>
+  <text x="180" y="246" text-anchor="middle" font-size="11" fill="#333">消息历史、对话上下文</text>
+  <text x="180" y="264" text-anchor="middle" font-size="10" fill="#666">用户输入、工具输出</text>
+
+  <!-- 否 branch: right → Decision 2 -->
+  <line x1="490" y1="166" x2="490" y2="182" stroke="#E65100" stroke-width="1.5"/>
+  <line x1="490" y1="182" x2="580" y2="182" stroke="#E65100" stroke-width="1.5"/>
+  <line x1="580" y1="182" x2="580" y2="202" stroke="#E65100" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="536" y="178" font-size="11" font-weight="bold" fill="#E65100">否</text>
+
+  <!-- ===== Decision 2: 是否为当前任务执行状态信息？ ===== -->
+  <rect x="420" y="204" width="320" height="36" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="580" y="227" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">是否为当前任务执行状态信息？</text>
+
+  <!-- 是 branch: left → L2 -->
+  <line x1="500" y1="240" x2="500" y2="256" stroke="#2E7D32" stroke-width="1.5"/>
+  <line x1="500" y1="256" x2="360" y2="256" stroke="#2E7D32" stroke-width="1.5"/>
+  <line x1="360" y1="256" x2="360" y2="276" stroke="#2E7D32" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="430" y="252" font-size="11" font-weight="bold" fill="#2E7D32">是</text>
+
+  <rect x="260" y="278" width="200" height="76" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <text x="360" y="300" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Working Memory (L2)</text>
+  <text x="360" y="320" text-anchor="middle" font-size="11" fill="#333">任务目标、执行计划、进度</text>
+  <text x="360" y="338" text-anchor="middle" font-size="10" fill="#666">Scratchpad、步骤结果</text>
+
+  <!-- 否 branch: right → Decision 3 -->
+  <line x1="660" y1="240" x2="660" y2="256" stroke="#E65100" stroke-width="1.5"/>
+  <line x1="660" y1="256" x2="660" y2="276" stroke="#E65100" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="674" y="252" font-size="11" font-weight="bold" fill="#E65100">否</text>
+
+  <!-- ===== Decision 3: 是否需要跨会话保留？ ===== -->
+  <rect x="530" y="278" width="260" height="36" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="660" y="301" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">是否需要跨会话保留？</text>
+
+  <!-- 否 branch: right → 不保留 -->
+  <line x1="730" y1="314" x2="730" y2="330" stroke="#999" stroke-width="1.5"/>
+  <line x1="730" y1="330" x2="730" y2="350" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="744" y="336" font-size="11" font-weight="bold" fill="#999">否</text>
+
+  <rect x="670" y="352" width="120" height="50" rx="6" fill="#EEEEEE" stroke="#999" stroke-width="1.5"/>
+  <text x="730" y="374" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">不保留</text>
+  <text x="730" y="392" text-anchor="middle" font-size="10" fill="#999">或临时缓存</text>
+
+  <!-- 是 branch: left → Decision 4 -->
+  <line x1="590" y1="314" x2="590" y2="330" stroke="#2E7D32" stroke-width="1.5"/>
+  <line x1="590" y1="330" x2="500" y2="330" stroke="#2E7D32" stroke-width="1.5"/>
+  <line x1="500" y1="330" x2="500" y2="422" stroke="#2E7D32" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="544" y="326" font-size="11" font-weight="bold" fill="#2E7D32">是</text>
+
+  <!-- ===== Decision 4: 是否可以泛化为结构化知识？ ===== -->
+  <rect x="330" y="424" width="340" height="36" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="500" y="447" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">是否可以泛化为结构化知识？</text>
+
+  <!-- 是 branch: left → L4 Semantic Memory -->
+  <line x1="420" y1="460" x2="420" y2="476" stroke="#7B1FA2" stroke-width="1.5"/>
+  <line x1="420" y1="476" x2="300" y2="476" stroke="#7B1FA2" stroke-width="1.5"/>
+  <line x1="300" y1="476" x2="300" y2="496" stroke="#7B1FA2" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="360" y="472" font-size="11" font-weight="bold" fill="#7B1FA2">是</text>
+
+  <rect x="180" y="498" width="240" height="76" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="300" y="520" text-anchor="middle" font-size="12" font-weight="bold" fill="#7B1FA2">Semantic Memory (L4)</text>
+  <text x="300" y="540" text-anchor="middle" font-size="11" fill="#333">知识库、规则、事实、政策</text>
+  <text x="300" y="558" text-anchor="middle" font-size="10" fill="#666">结构化知识表示</text>
+
+  <!-- 否 branch: right → L3 Episodic Memory -->
+  <line x1="580" y1="460" x2="580" y2="476" stroke="#1565C0" stroke-width="1.5"/>
+  <line x1="580" y1="476" x2="660" y2="476" stroke="#1565C0" stroke-width="1.5"/>
+  <line x1="660" y1="476" x2="660" y2="496" stroke="#1565C0" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="620" y="472" font-size="11" font-weight="bold" fill="#1565C0">否</text>
+
+  <rect x="540" y="498" width="240" height="76" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="660" y="520" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Episodic Memory (L3)</text>
+  <text x="660" y="540" text-anchor="middle" font-size="11" fill="#333">过去任务、用户偏好</text>
+  <text x="660" y="558" text-anchor="middle" font-size="10" fill="#666">错误案例、成功案例</text>
+
+  <!-- ===== Summary box ===== -->
+  <rect x="40" y="610" width="740" height="120" rx="6" fill="#FFFACD" stroke="#999" stroke-width="1"/>
+  <text x="410" y="636" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">决策框架流程</text>
+  <text x="60" y="658" font-size="11" fill="#333">• 第一道：是否为当前对话流的直接产物 → 是 ⟹ L1 Conversation Buffer</text>
+  <text x="60" y="676" font-size="11" fill="#333">• 第二道：是否为当前任务执行状态信息 → 是 ⟹ L2 Working Memory</text>
+  <text x="60" y="694" font-size="11" fill="#333">• 第三道：是否需要跨会话保留 → 否 ⟹ 不保留或临时缓存</text>
+  <text x="60" y="712" font-size="11" fill="#333">• 第四道：是否可以泛化为结构化知识 → 是 ⟹ L4 Semantic | 否 ⟹ L3 Episodic</text>
+</svg>
