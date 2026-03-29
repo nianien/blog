@@ -1495,6 +1495,16 @@ if self.cost.total_tokens > self.token_budget:
 
 整个系列的目标不是教你使用某个框架的 API，而是帮你建立**从第一性原理理解 Agentic 系统**的能力。框架会变，API 会变，但系统设计的基本原理不会变。
 
+### 11.1 推荐学习路径
+
+如果你刚接触 Agentic 系统，以下是一条按技术依赖关系递进的学习路径：
+
+1. **基础接口** — Python/JS 基础、HTTP/JSON、异步与并发。这是所有后续内容的前置条件。
+2. **LLM 能力** — Prompt Engineering、Function Calling / Tool Use、结构化输出（JSON Schema）。Function Calling 比大多数人以为的更值得深入——Agent 的可靠性有一半建立在"工具调用是否正确"上，花时间写好工具的 Schema 定义和参数描述，回报率远高于优化 Prompt。（对应本系列第 02、05、06 篇）
+3. **RAG 能力** — 文档分块与清洗、嵌入模型、向量数据库（pgvector / Milvus / Weaviate）、混合检索与重排。（对应第 08 篇）
+4. **编排能力** — 状态机 / DAG 设计、重试回退、超时熔断、人机协作断点。这是从 demo 到生产的关键一步。（对应第 03、04、09、10 篇）
+5. **评估与运维** — Agent 评估框架、日志与追踪（OpenTelemetry）、成本监控、安全（提示注入防护、RBAC、审计）。没有可靠的评估手段，就无法量化改进。（对应第 14 篇）
+
 ---
 
 > **系列导航**：本文是 Agentic 系列的第 01 篇。

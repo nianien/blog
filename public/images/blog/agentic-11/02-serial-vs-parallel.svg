@@ -3,88 +3,93 @@
   <text x="360" y="24" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Single-Agent 串行 vs Multi-Agent 并行</text>
 
   <!-- ===== Serial Section ===== -->
-  <!-- Background band -->
   <rect x="20" y="42" width="680" height="80" rx="8" fill="#fafafa" stroke="#e0e0e0" stroke-width="1"/>
   <text x="36" y="62" font-size="11" font-weight="600" fill="#666">串行执行</text>
 
   <!-- Timeline bar -->
   <rect x="36" y="76" width="580" height="6" rx="3" fill="#e0e0e0"/>
 
-  <!-- Step nodes on timeline -->
-  <rect x="36" y="68" width="70" height="22" rx="6" fill="#1976d2" stroke="none"/>
-  <text x="71" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Task</text>
+  <!-- Serial steps: equal spacing, total 580px from x=36 to x=616 -->
+  <!-- Task: 36→116 (80px) -->
+  <rect x="36" y="68" width="80" height="22" rx="6" fill="#1976D2"/>
+  <text x="76" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Task</text>
 
-  <rect x="126" y="68" width="100" height="22" rx="6" fill="#42A5F5" stroke="none"/>
-  <text x="176" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search A</text>
+  <!-- Search A: 126→246 (120px) -->
+  <rect x="126" y="68" width="120" height="22" rx="6" fill="#42A5F5"/>
+  <text x="186" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search A</text>
 
-  <rect x="246" y="68" width="100" height="22" rx="6" fill="#42A5F5" stroke="none"/>
-  <text x="296" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search B</text>
+  <!-- Search B: 256→376 (120px) -->
+  <rect x="256" y="68" width="120" height="22" rx="6" fill="#42A5F5"/>
+  <text x="316" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search B</text>
 
-  <rect x="366" y="68" width="100" height="22" rx="6" fill="#42A5F5" stroke="none"/>
-  <text x="416" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search C</text>
+  <!-- Search C: 386→506 (120px) -->
+  <rect x="386" y="68" width="120" height="22" rx="6" fill="#42A5F5"/>
+  <text x="446" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search C</text>
 
-  <rect x="486" y="68" width="130" height="22" rx="6" fill="#1565C0" stroke="none"/>
-  <text x="551" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Synthesize</text>
+  <!-- Synthesize: 516→616 (100px) -->
+  <rect x="516" y="68" width="100" height="22" rx="6" fill="#1565C0"/>
+  <text x="566" y="83" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Synthesize</text>
 
   <!-- Time label -->
-  <text x="655" y="83" font-size="13" font-weight="bold" fill="#d32f2f">~40s</text>
+  <text x="655" y="83" font-size="13" font-weight="bold" fill="#D32F2F">~40s</text>
 
   <!-- Time ticks -->
   <text x="36" y="106" font-size="9" fill="#999">0s</text>
-  <text x="226" y="106" font-size="9" text-anchor="middle" fill="#999">10s</text>
-  <text x="416" y="106" font-size="9" text-anchor="middle" fill="#999">20s</text>
+  <text x="186" y="106" font-size="9" text-anchor="middle" fill="#999">10s</text>
+  <text x="376" y="106" font-size="9" text-anchor="middle" fill="#999">20s</text>
   <text x="616" y="106" font-size="9" text-anchor="end" fill="#999">40s</text>
 
   <!-- ===== Parallel Section ===== -->
   <rect x="20" y="140" width="680" height="140" rx="8" fill="#fafafa" stroke="#e0e0e0" stroke-width="1"/>
   <text x="36" y="162" font-size="11" font-weight="600" fill="#666">并行执行</text>
 
-  <!-- Task node -->
-  <rect x="36" y="184" width="70" height="60" rx="6" fill="#1976d2" stroke="none"/>
+  <!-- Task node (centered vertically among 3 lanes) -->
+  <rect x="36" y="186" width="70" height="56" rx="6" fill="#1976D2"/>
   <text x="71" y="218" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Task</text>
 
-  <!-- Fork lines -->
-  <line x1="106" y1="196" x2="146" y2="196" stroke="#90CAF9" stroke-width="1.5"/>
-  <polygon points="142,192 152,196 142,200" fill="#90CAF9"/>
+  <!-- Fork arrows: from Task right edge (106) to Search left edge (156) -->
+  <!-- Top lane y=190 -->
+  <line x1="106" y1="196" x2="150" y2="190" stroke="#90CAF9" stroke-width="1.5"/>
+  <polygon points="147,186 156,190 147,194" fill="#90CAF9"/>
+  <!-- Mid lane y=214 -->
+  <line x1="106" y1="214" x2="150" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
+  <polygon points="147,210 156,214 147,218" fill="#90CAF9"/>
+  <!-- Bot lane y=238 -->
+  <line x1="106" y1="232" x2="150" y2="238" stroke="#90CAF9" stroke-width="1.5"/>
+  <polygon points="147,234 156,238 147,242" fill="#90CAF9"/>
 
-  <line x1="106" y1="214" x2="146" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
-  <polygon points="142,210 152,214 142,218" fill="#90CAF9"/>
+  <!-- Parallel Search lanes: all same width (150px), x=156→306 -->
+  <rect x="156" y="178" width="150" height="22" rx="6" fill="#42A5F5"/>
+  <text x="231" y="193" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search A</text>
 
-  <line x1="106" y1="232" x2="146" y2="232" stroke="#90CAF9" stroke-width="1.5"/>
-  <polygon points="142,228 152,232 142,236" fill="#90CAF9"/>
+  <rect x="156" y="203" width="150" height="22" rx="6" fill="#42A5F5"/>
+  <text x="231" y="218" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search B</text>
 
-  <!-- Parallel Search lanes -->
-  <rect x="152" y="182" width="160" height="22" rx="6" fill="#42A5F5" stroke="none"/>
-  <text x="232" y="197" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search A</text>
+  <rect x="156" y="228" width="150" height="22" rx="6" fill="#42A5F5"/>
+  <text x="231" y="243" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search C</text>
 
-  <rect x="152" y="210" width="130" height="22" rx="6" fill="#42A5F5" stroke="none"/>
-  <text x="217" y="225" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search B</text>
+  <!-- Join lines: from all Search right edges (306) to convergence point (336, 214) -->
+  <line x1="306" y1="189" x2="336" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
+  <line x1="306" y1="214" x2="336" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
+  <line x1="306" y1="239" x2="336" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
 
-  <rect x="152" y="238" width="140" height="22" rx="6" fill="#42A5F5" stroke="none"/>
-  <text x="222" y="253" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Search C</text>
-
-  <!-- Join lines -->
-  <line x1="312" y1="196" x2="340" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
-  <line x1="282" y1="221" x2="340" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
-  <line x1="292" y1="249" x2="340" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
-
-  <!-- Arrow to Synthesize -->
-  <line x1="340" y1="214" x2="358" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
-  <polygon points="354,210 364,214 354,218" fill="#90CAF9"/>
+  <!-- Arrow from convergence to Synthesize -->
+  <line x1="336" y1="214" x2="360" y2="214" stroke="#90CAF9" stroke-width="1.5"/>
+  <polygon points="357,210 366,214 357,218" fill="#90CAF9"/>
 
   <!-- Synthesize node -->
-  <rect x="364" y="200" width="130" height="28" rx="6" fill="#1565C0" stroke="none"/>
-  <text x="429" y="218" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Synthesize</text>
+  <rect x="366" y="200" width="130" height="28" rx="6" fill="#1565C0"/>
+  <text x="431" y="218" font-size="10" font-weight="500" text-anchor="middle" fill="#fff">Synthesize</text>
 
   <!-- Time label -->
-  <text x="520" y="218" font-size="13" font-weight="bold" fill="#2e7d32">~15s</text>
+  <text x="520" y="218" font-size="13" font-weight="bold" fill="#2E7D32">~15s</text>
 
   <!-- Speedup badge -->
-  <rect x="530" y="244" width="100" height="22" rx="11" fill="#E8F5E9" stroke="#2e7d32" stroke-width="1"/>
-  <text x="580" y="259" font-size="10" font-weight="bold" text-anchor="middle" fill="#2e7d32">2.7x 加速</text>
+  <rect x="540" y="244" width="100" height="22" rx="11" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1"/>
+  <text x="590" y="259" font-size="10" font-weight="bold" text-anchor="middle" fill="#2E7D32">2.7x 加速</text>
 
   <!-- Time ticks for parallel -->
   <text x="36" y="272" font-size="9" fill="#999">0s</text>
   <text x="306" y="272" font-size="9" text-anchor="middle" fill="#999">10s</text>
-  <text x="494" y="272" font-size="9" text-anchor="end" fill="#999">15s</text>
+  <text x="496" y="272" font-size="9" text-anchor="end" fill="#999">15s</text>
 </svg>
