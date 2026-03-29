@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 380">
+  <defs/>
+
+  <!-- Background -->
+  <rect width="650" height="380" fill="#ffffff"/>
+
+  <!-- Header row -->
+  <rect x="10" y="10" width="140" height="35" fill="#1e293b" rx="6"/>
+  <rect x="150" y="10" width="110" height="35" fill="#1e293b" rx="6"/>
+  <rect x="260" y="10" width="140" height="35" fill="#1e293b" rx="6"/>
+  <rect x="400" y="10" width="140" height="35" fill="#1e293b" rx="6"/>
+
+  <!-- Header text -->
+  <text x="80" y="32" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">数据类型</text>
+  <text x="205" y="32" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">访问模式</text>
+  <text x="330" y="32" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">推荐存储</text>
+  <text x="470" y="32" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">保留策略</text>
+
+  <!-- Row 1: 会话状态 -->
+  <rect x="10" y="45" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="45" width="110" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="45" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="45" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="65" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">会话状态</text>
+  <text x="205" y="65" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">高频读写</text>
+  <text x="330" y="65" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Redis</text>
+  <text x="470" y="65" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">会话生命周期</text>
+
+  <!-- Row 2: 对话历史 -->
+  <rect x="10" y="77" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="77" width="110" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="77" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="77" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="97" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">对话历史</text>
+  <text x="205" y="97" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">追加写/范围读</text>
+  <text x="330" y="97" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">PostgreSQL</text>
+  <text x="470" y="97" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">30-90 天</text>
+
+  <!-- Row 3: Agent 配置 -->
+  <rect x="10" y="109" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="109" width="110" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="109" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="109" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="129" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Agent 配置</text>
+  <text x="205" y="129" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">高频读/低频写</text>
+  <text x="330" y="129" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">etcd/PostgreSQL</text>
+  <text x="470" y="129" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">永久+版本化</text>
+
+  <!-- Row 4: 执行日志 -->
+  <rect x="10" y="141" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="141" width="110" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="141" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="141" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="161" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">执行日志</text>
+  <text x="205" y="161" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">追加写/条件查</text>
+  <text x="330" y="161" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">ClickHouse/ES</text>
+  <text x="470" y="161" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">7-30 天</text>
+
+  <!-- Row 5: 审计记录 -->
+  <rect x="10" y="173" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="173" width="110" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="173" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="173" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="193" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">审计记录</text>
+  <text x="205" y="193" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">追加写/低频查</text>
+  <text x="330" y="193" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">PostgreSQL/S3</text>
+  <text x="470" y="193" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">1-3 年</text>
+
+  <!-- Row 6: 向量索引 -->
+  <rect x="10" y="205" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="205" width="110" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="205" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="205" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="225" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">向量索引</text>
+  <text x="205" y="225" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">相似度检索</text>
+  <text x="330" y="225" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Milvus/Qdrant</text>
+  <text x="470" y="225" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">按需</text>
+
+  <!-- Row 7: Prompt 模板 -->
+  <rect x="10" y="237" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="237" width="110" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="237" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="237" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="257" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Prompt 模板</text>
+  <text x="205" y="257" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">高频读/低频写</text>
+  <text x="330" y="257" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">PostgreSQL+缓存</text>
+  <text x="470" y="257" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">永久+版本化</text>
+
+  <!-- Row 8: 用户记忆 -->
+  <rect x="10" y="269" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="269" width="110" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="269" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="269" width="140" height="32" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="289" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">用户记忆</text>
+  <text x="205" y="289" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">读写+检索</text>
+  <text x="330" y="289" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Redis+VectorDB</text>
+  <text x="470" y="289" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">按策略老化</text>
+
+  <!-- Row 9: 文件/附件 -->
+  <rect x="10" y="301" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="150" y="301" width="110" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="260" y="301" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="400" y="301" width="140" height="32" fill="#fafafa" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="80" y="321" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">文件/附件</text>
+  <text x="205" y="321" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">写入/下载</text>
+  <text x="330" y="321" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">S3/OSS</text>
+  <text x="470" y="321" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">30-180 天</text>
+</svg>

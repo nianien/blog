@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 230">
+  <!-- Timeline arrow -->
+  <line x1="91" y1="15" x2="595" y2="15" stroke="#cbd5e1" stroke-width="2"/>
+  <polygon points="592,11 600,15 592,19" fill="#cbd5e1"/>
+
+  <!-- Timeline dots -->
+  <circle cx="91" cy="15" r="6" fill="#6b7280"/>
+  <circle cx="259" cy="15" r="6" fill="#3b82f6"/>
+  <circle cx="427" cy="15" r="6" fill="#10b981"/>
+  <circle cx="595" cy="15" r="6" fill="#8b5cf6"/>
+
+  <!-- Dashed lines from dots to cards -->
+  <line x1="91" y1="21" x2="91" y2="33" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="259" y1="21" x2="259" y2="33" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="427" y1="21" x2="427" y2="33" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="595" y1="21" x2="595" y2="33" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- ===== Phase 0 Card ===== -->
+  <rect x="15" y="33" width="152" height="135" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5" rx="8"/>
+
+  <!-- Phase badge + timeline -->
+  <rect x="23" y="41" width="62" height="20" fill="#6b7280" rx="10"/>
+  <text x="54" y="55" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Phase 0</text>
+  <rect x="97" y="41" width="58" height="20" fill="#e5e7eb" rx="10"/>
+  <text x="126" y="55" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#374151" text-anchor="middle">2-4 周</text>
+
+  <!-- Goal -->
+  <text x="91" y="80" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#374151" text-anchor="middle">单 Agent 上线</text>
+
+  <!-- Divider -->
+  <line x1="25" y1="88" x2="157" y2="88" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Capabilities -->
+  <circle cx="33" cy="104" r="3" fill="#9ca3af"/>
+  <text x="42" y="108" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#4b5563">LLM Gateway（基础版）</text>
+
+  <circle cx="33" cy="122" r="3" fill="#9ca3af"/>
+  <text x="42" y="126" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#4b5563">基础日志和监控</text>
+
+  <circle cx="33" cy="140" r="3" fill="#9ca3af"/>
+  <text x="42" y="144" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#4b5563">简单的配置管理</text>
+
+  <!-- ===== Phase 1 Card ===== -->
+  <rect x="183" y="33" width="152" height="153" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" rx="8"/>
+
+  <!-- Phase badge + timeline -->
+  <rect x="191" y="41" width="62" height="20" fill="#3b82f6" rx="10"/>
+  <text x="222" y="55" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Phase 1</text>
+  <rect x="265" y="41" width="58" height="20" fill="#dbeafe" rx="10"/>
+  <text x="294" y="55" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#1d4ed8" text-anchor="middle">1-2 月</text>
+
+  <!-- Goal -->
+  <text x="259" y="80" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">多 Agent 共存</text>
+
+  <!-- Divider -->
+  <line x1="193" y1="88" x2="325" y2="88" stroke="#bfdbfe" stroke-width="1"/>
+
+  <!-- Capabilities -->
+  <circle cx="201" cy="104" r="3" fill="#60a5fa"/>
+  <text x="210" y="108" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#1e40af">Agent Registry</text>
+
+  <circle cx="201" cy="122" r="3" fill="#60a5fa"/>
+  <text x="210" y="126" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#1e40af">多租户基础隔离</text>
+
+  <circle cx="201" cy="140" r="3" fill="#60a5fa"/>
+  <text x="210" y="144" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#1e40af">结构化日志和 Trace</text>
+
+  <circle cx="201" cy="158" r="3" fill="#60a5fa"/>
+  <text x="210" y="162" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#1e40af">统一的 Tool Service</text>
+
+  <!-- ===== Phase 2 Card ===== -->
+  <rect x="351" y="33" width="152" height="189" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5" rx="8"/>
+
+  <!-- Phase badge + timeline -->
+  <rect x="359" y="41" width="62" height="20" fill="#10b981" rx="10"/>
+  <text x="390" y="55" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Phase 2</text>
+  <rect x="433" y="41" width="58" height="20" fill="#d1fae5" rx="10"/>
+  <text x="462" y="55" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#047857" text-anchor="middle">2-3 月</text>
+
+  <!-- Goal -->
+  <text x="427" y="80" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#047857" text-anchor="middle">平台化运营</text>
+
+  <!-- Divider -->
+  <line x1="361" y1="88" x2="493" y2="88" stroke="#a7f3d0" stroke-width="1"/>
+
+  <!-- Capabilities -->
+  <circle cx="369" cy="104" r="3" fill="#34d399"/>
+  <text x="378" y="108" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#047857">灰度发布</text>
+
+  <circle cx="369" cy="122" r="3" fill="#34d399"/>
+  <text x="378" y="126" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#047857">弹性伸缩</text>
+
+  <circle cx="369" cy="140" r="3" fill="#34d399"/>
+  <text x="378" y="144" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#047857">监控和告警体系</text>
+
+  <circle cx="369" cy="158" r="3" fill="#34d399"/>
+  <text x="378" y="162" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#047857">Prompt 版本化管理</text>
+
+  <circle cx="369" cy="176" r="3" fill="#34d399"/>
+  <text x="378" y="180" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#047857">评估集和回归测试</text>
+
+  <!-- ===== Phase 3 Card ===== -->
+  <rect x="519" y="33" width="152" height="153" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.5" rx="8"/>
+
+  <!-- Phase badge + timeline -->
+  <rect x="527" y="41" width="62" height="20" fill="#8b5cf6" rx="10"/>
+  <text x="558" y="55" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Phase 3</text>
+  <rect x="601" y="41" width="58" height="20" fill="#ede9fe" rx="10"/>
+  <text x="630" y="55" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#6d28d9" text-anchor="middle">3-6 月</text>
+
+  <!-- Goal -->
+  <text x="595" y="80" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#6d28d9" text-anchor="middle">规模化治理</text>
+
+  <!-- Divider -->
+  <line x1="529" y1="88" x2="661" y2="88" stroke="#ddd6fe" stroke-width="1"/>
+
+  <!-- Capabilities -->
+  <circle cx="537" cy="104" r="3" fill="#a78bfa"/>
+  <text x="546" y="108" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#5b21b6">成本工程（降级·缓存·预算）</text>
+
+  <circle cx="537" cy="122" r="3" fill="#a78bfa"/>
+  <text x="546" y="126" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#5b21b6">安全审计和合规</text>
+
+  <circle cx="537" cy="140" r="3" fill="#a78bfa"/>
+  <text x="546" y="144" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#5b21b6">多 Agent 协作·SLA 管理</text>
+</svg>

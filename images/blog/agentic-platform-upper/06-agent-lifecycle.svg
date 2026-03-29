@@ -1,0 +1,73 @@
+<svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="340" y="25" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="16" font-weight="bold" fill="#1F2937" text-anchor="middle">Agent 生命周期</text>
+
+  <!-- Top row: 创建 → 配置 → 测试 → 发布 → 运行 -->
+
+  <!-- 创建 -->
+  <rect x="30" y="60" width="90" height="50" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="75" y="90" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#1E40AF" text-anchor="middle">创建</text>
+
+  <!-- Arrow 创建 → 配置 -->
+  <line x1="120" y1="85" x2="160" y2="85" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="156,81 160,85 156,89" fill="#6B7280"/>
+
+  <!-- 配置 -->
+  <rect x="160" y="60" width="90" height="50" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="205" y="90" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#6D28D9" text-anchor="middle">配置</text>
+
+  <!-- Arrow 配置 → 测试 -->
+  <line x1="250" y1="85" x2="290" y2="85" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="286,81 290,85 286,89" fill="#6B7280"/>
+
+  <!-- 测试 -->
+  <rect x="290" y="60" width="90" height="50" rx="8" fill="#FCE7F3" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="335" y="90" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#BE185D" text-anchor="middle">测试</text>
+
+  <!-- Arrow 测试 → 发布 -->
+  <line x1="380" y1="85" x2="420" y2="85" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="416,81 420,85 416,89" fill="#6B7280"/>
+
+  <!-- 发布 -->
+  <rect x="420" y="60" width="90" height="50" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="465" y="90" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#D97706" text-anchor="middle">发布</text>
+
+  <!-- Arrow 发布 → 运行 -->
+  <line x1="510" y1="85" x2="550" y2="85" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="546,81 550,85 546,89" fill="#6B7280"/>
+
+  <!-- 运行 -->
+  <rect x="550" y="60" width="90" height="50" rx="8" fill="#CFFAFE" stroke="#06B6D4" stroke-width="1.5"/>
+  <text x="595" y="90" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#0891B2" text-anchor="middle">运行</text>
+
+  <!-- Arrow down from 运行 to 回滚 -->
+  <line x1="595" y1="110" x2="595" y2="145" stroke="#EF4444" stroke-width="1.5"/>
+  <polygon points="591,141 595,145 599,141" fill="#EF4444"/>
+
+  <!-- Bottom row: 下线 ← 回滚 ← (from 运行) -->
+
+  <!-- 回滚 -->
+  <rect x="550" y="145" width="90" height="50" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="595" y="175" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#DC2626" text-anchor="middle">回滚</text>
+
+  <!-- Arrow 回滚 → 下线 -->
+  <line x1="550" y1="170" x2="510" y2="170" stroke="#EF4444" stroke-width="1.5"/>
+  <polygon points="514,166 510,170 514,174" fill="#EF4444"/>
+
+  <!-- 下线 -->
+  <rect x="420" y="145" width="90" height="50" rx="8" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="465" y="175" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">下线</text>
+
+  <!-- Status badges/labels -->
+  <circle cx="75" cy="130" r="4" fill="#3B82F6"/>
+  <text x="85" y="135" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#3B82F6">初始</text>
+
+  <circle cx="595" cy="130" r="4" fill="#06B6D4"/>
+  <text x="605" y="135" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#06B6D4">活跃</text>
+
+  <circle cx="465" cy="210" r="4" fill="#EF4444"/>
+  <text x="475" y="215" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#EF4444">终止</text>
+
+  <!-- Flow notes -->
+  <text x="340" y="240" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#666" text-anchor="middle">正常流程：创建 → 配置 → 测试 → 发布 → 运行  |  异常流程：运行 → 回滚 → 下线</text>
+</svg>

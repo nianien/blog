@@ -1,0 +1,21 @@
+<svg viewBox="0 0 480 290" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer: 总执行超时 -->
+  <rect x="20" y="10" width="440" height="270" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+  <text x="40" y="35" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#DC2626">总执行超时（如 5 分钟）</text>
+
+  <!-- Middle: 单轮超时 -->
+  <rect x="40" y="48" width="400" height="160" rx="6" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <text x="60" y="72" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#EA580C">单轮超时（如 30 秒/轮）</text>
+
+  <!-- Inner 1: LLM 调用超时 -->
+  <rect x="60" y="85" width="360" height="46" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="240" y="114" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#92400E" text-anchor="middle">LLM 调用超时（如 15 秒）</text>
+
+  <!-- Inner 2: 工具执行超时 -->
+  <rect x="60" y="140" width="360" height="46" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="240" y="169" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">工具执行超时（如 10 秒）</text>
+
+  <!-- Bottom items INSIDE outer box -->
+  <text x="55" y="238" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#991B1B">最大轮次限制（如 10 轮）</text>
+  <text x="55" y="262" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#991B1B">Token 预算上限（如 50K tokens/次）</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 480 310" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="240" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">Context Window Token 预算分配（128K 模型）</text>
+
+  <!-- System Prompt: 8K, 6.25% -->
+  <rect x="40" y="38" width="400" height="40" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" rx="6"/>
+  <text x="55" y="63" font-size="12" font-weight="bold" fill="#1e40af" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">System Prompt</text>
+  <text x="425" y="63" font-size="12" fill="#1e40af" text-anchor="end" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">8K — 6.25%</text>
+
+  <!-- Tool Definitions: 12K, 9.4% -->
+  <rect x="40" y="84" width="400" height="40" fill="#F0FDFA" stroke="#14B8A6" stroke-width="1.5" rx="6"/>
+  <text x="55" y="109" font-size="12" font-weight="bold" fill="#0f766e" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">Tool Definitions</text>
+  <text x="425" y="109" font-size="12" fill="#0f766e" text-anchor="end" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">12K — 9.4%</text>
+
+  <!-- Conversation History: 80K, 62.5% (tallest section to hint at largest share) -->
+  <rect x="40" y="130" width="400" height="76" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5" rx="6"/>
+  <text x="55" y="152" font-size="12" font-weight="bold" fill="#92400e" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">Conversation History</text>
+  <text x="425" y="152" font-size="12" fill="#92400e" text-anchor="end" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">80K — 62.5%</text>
+  <text x="70" y="174" font-size="11" fill="#78716c" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">├── Summary of old turns</text>
+  <text x="70" y="194" font-size="11" fill="#78716c" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">└── Recent N turns (raw)</text>
+
+  <!-- Current Input: 8K, 6.25% -->
+  <rect x="40" y="212" width="400" height="40" fill="#FCE7F3" stroke="#EC4899" stroke-width="1.5" rx="6"/>
+  <text x="55" y="237" font-size="12" font-weight="bold" fill="#9d174d" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">Current Input</text>
+  <text x="425" y="237" font-size="12" fill="#9d174d" text-anchor="end" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">8K — 6.25%</text>
+
+  <!-- Reserved for Output: 20K, 15.6% -->
+  <rect x="40" y="258" width="400" height="40" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5" rx="6"/>
+  <text x="55" y="283" font-size="12" font-weight="bold" fill="#5b21b6" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">Reserved for Output</text>
+  <text x="425" y="283" font-size="12" fill="#5b21b6" text-anchor="end" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">20K — 15.6%</text>
+</svg>
