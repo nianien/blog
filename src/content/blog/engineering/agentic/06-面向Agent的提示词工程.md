@@ -286,7 +286,11 @@ execution result, determine whether the task has been completed successfully.
 
 ### 3.5 四种模式的协作
 
+前面我们分别介绍了 Router、Planner、Executor、Reflector 四种核心模式及其各自的职责。但在真实的 Agent 系统中，这四种模式并不是孤立存在的，而是紧密协作的一个完整流程。下图展示了它们如何与用户请求交互、如何根据请求的复杂度采用不同的执行路径、以及 Reflector 如何通过反馈循环驱动修正。
+
 ![四种模式的协作](/images/blog/agentic-06/four-pattern-collaboration.svg)
+
+这个协作框架的关键洞察是：**简单请求走快路，复杂请求有回流**。当 Reflector 发现结果不满足要求时，它不是简单地失败，而是提出具体的修正方案（重试单个步骤或重新规划），从而形成一个自我纠正的 Agent 系统。
 
 ---
 

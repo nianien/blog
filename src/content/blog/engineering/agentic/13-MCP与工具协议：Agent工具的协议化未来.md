@@ -1453,6 +1453,73 @@ result = await guard.call_tool_guarded(
 )
 ```
 
+### 12.5 隐私保护
+
+**威胁**：MCP 工具调用涉及大量数据流动。用户数据、API 请求、工具响应可能包含 PII（个人身份信息）、凭证、业务机密。如果日志、缓存或中间数据处理不当，敏感信息会被泄露。
+
+**防护方案**：实现**数据分类与隐私过滤**。
+
+```python
+from enum import Enum
+
+class DataClassification(Enum):
+    """数据分类等级"""
+    PUBLIC = "public"
+    INTERNAL = "internal"
+    CONFIDENTIAL = "confidential"
+    PII = "pii"  # 个人身份信息
+    CREDENTIALS = "credentials"  # 凭证
+
+class PrivacyFilter:
+    """隐私数据过滤"""
+
+    def classify_and_filter(self, data: dict, classification: DataClassification) -> dict:
+        """根据分类等级过滤数据"""
+        if classification == DataClassification.PII:
+            # 脱敏电子邮件、电话、身份证号等
+            return self._redact_pii_fields(data)
+        elif classification == DataClassification.CREDENTIALS:
+            # API 密钥、令牌、密码必须完全隐藏
+            return self._redact_all(data)
+        return data
+
+    def _redact_pii_fields(self, data: dict) -> dict:
+        """移除 PII 字段"""
+        sensitive_keys = {"email", "phone", "ssn", "id_number", "address"}
+        return {k: "[REDACTED]" if k in sensitive_keys else v for k, v in data.items()}
+
+    def _redact_all(self, data: dict) -> dict:
+        """完全脱敏"""
+        return {k: "[REDACTED]" for k in data.keys()}
+```
+
+### 12.6 审计与合规
+
+**需求**：在规约环境中，每次工具调用都需要完整的审计日志，用于：
+- 追踪谁在何时调用了哪个工具
+- 复现和调查安全事件
+- 满足 SOC2、HIPAA 等合规要求
+
+**防护方案**：记录完整的**审计链**。
+
+```python
+class AuditLogger:
+    """审计日志记录器"""
+
+    def log_tool_call(self, context: RequestContext, tool_name: str,
+                      arguments: dict, result: dict, status: str):
+        """记录工具调用全过程"""
+        # 记录：谁、何时、调用了什么、参数、结果状态、是否成功
+        audit_record = {
+            "timestamp": datetime.utcnow().isoformat(),
+            "user_id": context.user_id,
+            "tool_name": tool_name,
+            "request_id": context.request_id,
+            "status": status,  # "success" / "failure" / "denied"
+        }
+        self.store_immutable(audit_record)  # 写入不可修改的审计存储
+```
+
 ---
 
 ## 13. 大规模 MCP 部署的性能分析
@@ -2257,7 +2324,7 @@ class ToolMarketplacePlatform:
 
 ---
 
-## 16. 进一步思考
+## 15. 进一步思考
 
 MCP 正在快速演进，几个未解问题值得关注：
 
@@ -2273,7 +2340,7 @@ MCP 正在快速演进，几个未解问题值得关注：
 
 ---
 
-## 17. 总结
+## 16. 总结
 
 1. **当前工具集成不可持续**。标准化协议将 N x M 降为 N + M。
 2. **MCP 设计务实**。三大原语覆盖主要交互模式，JSON-RPC 2.0 成熟可靠，双传输层适配不同场景。

@@ -1102,9 +1102,6 @@ class ReplayableTeam(AgentTeam):
 
 ---
 
-
----
-
 ## 9. 多 Agent 协作的成本特征分析
 
 Multi-Agent 系统看起来功能更强，但成本结构也更复杂。本节量化对比四种协作模式的成本特征，帮助你在实际项目中做出经济合理的架构选择。
@@ -1236,11 +1233,130 @@ class P2PMessage:
 
 ### 10.2 轮次终止条件
 
-P2P 协作最大的风险是陷入无限循环。需要明确的终止条件。具体实现见前面的 P2PTerminationChecker 类。
+P2P 协作最大的风险是陷入无限循环——Agent A 和 Agent B 反复争论同一个观点，token 不断消耗却毫无进展。需要明确的终止条件：
+
+```python
+from dataclasses import dataclass
+
+
+@dataclass
+class TerminationConfig:
+    max_rounds: int = 5              # 最大轮数硬限制
+    consensus_threshold: float = 0.8 # 共识阈值：所有 Agent 信心 >= 此值
+    stale_rounds: int = 2            # 连续 N 轮无实质变化 → 停止
+    token_budget: int = 50000        # Token 预算硬限制
+
+
+class P2PTerminationChecker:
+    """P2P 协作的终止条件检测器"""
+
+    def __init__(self, config: TerminationConfig):
+        self.config = config
+        self.round_opinions: list[dict[str, str]] = []  # 每轮各 Agent 观点快照
+
+    def should_terminate(
+        self,
+        round_num: int,
+        agent_states: dict[str, dict],
+        total_tokens: int,
+    ) -> tuple[bool, str]:
+        """检查是否应该终止 P2P 协作"""
+
+        # 1. 硬限制：轮数上限
+        if round_num >= self.config.max_rounds:
+            return True, f"达到最大轮数 {self.config.max_rounds}"
+
+        # 2. 硬限制：Token 预算
+        if total_tokens >= self.config.token_budget:
+            return True, f"Token 预算耗尽 ({total_tokens}/{self.config.token_budget})"
+
+        # 3. 共识达成：所有 Agent 信心都超过阈值
+        confidences = [s.get("agreement_confidence", 0) for s in agent_states.values()]
+        if all(c >= self.config.consensus_threshold for c in confidences):
+            return True, f"达成共识（所有信心度 >= {self.config.consensus_threshold}）"
+
+        # 4. 停滞检测：连续 N 轮观点无变化
+        current_opinions = {
+            name: state.get("opinion", "")
+            for name, state in agent_states.items()
+        }
+        self.round_opinions.append(current_opinions)
+
+        if len(self.round_opinions) >= self.config.stale_rounds + 1:
+            recent = self.round_opinions[-self.config.stale_rounds:]
+            if all(r == recent[0] for r in recent):
+                return True, f"连续 {self.config.stale_rounds} 轮无实质变化"
+
+        return False, ""
+```
 
 ### 10.3 冲突解决机制
 
-当两个 Agent 无法达成共识时，需要冲突解决机制。具体实现见前面的 ConflictResolver 类。
+当两个 Agent 就某个观点持续分歧时，需要一个结构化的冲突解决策略：
+
+```python
+class ConflictResolver:
+    """P2P 协作中的冲突解决器"""
+
+    def __init__(self, strategy: str = "confidence_weighted"):
+        self.strategy = strategy
+
+    async def resolve(
+        self,
+        conflicting_opinions: dict[str, dict],
+        message_history: list,
+    ) -> dict:
+        """解决冲突，返回最终决策"""
+
+        if self.strategy == "confidence_weighted":
+            return self._confidence_weighted(conflicting_opinions)
+        elif self.strategy == "evidence_count":
+            return self._evidence_based(conflicting_opinions)
+        elif self.strategy == "majority_vote":
+            return self._majority_vote(conflicting_opinions)
+        else:
+            return self._confidence_weighted(conflicting_opinions)
+
+    def _confidence_weighted(self, opinions: dict[str, dict]) -> dict:
+        """按信心度加权选择"""
+        best_agent = max(
+            opinions.keys(),
+            key=lambda a: opinions[a].get("agreement_confidence", 0)
+        )
+        return {
+            "resolution": "confidence_weighted",
+            "winner": best_agent,
+            "opinion": opinions[best_agent].get("opinion", ""),
+            "confidence": opinions[best_agent].get("agreement_confidence", 0),
+        }
+
+    def _evidence_based(self, opinions: dict[str, dict]) -> dict:
+        """按证据数量选择"""
+        best_agent = max(
+            opinions.keys(),
+            key=lambda a: len(opinions[a].get("evidence", []))
+        )
+        return {
+            "resolution": "evidence_count",
+            "winner": best_agent,
+            "opinion": opinions[best_agent].get("opinion", ""),
+            "evidence_count": len(opinions[best_agent].get("evidence", [])),
+        }
+
+    def _majority_vote(self, opinions: dict[str, dict]) -> dict:
+        """多数投票——当 Agent 数量 >= 3 时有效"""
+        from collections import Counter
+        votes = Counter(o.get("opinion", "") for o in opinions.values())
+        winner_opinion, count = votes.most_common(1)[0]
+        return {
+            "resolution": "majority_vote",
+            "opinion": winner_opinion,
+            "vote_count": count,
+            "total_agents": len(opinions),
+        }
+```
+
+三种策略各有适用场景：**confidence_weighted** 适合信心度可靠的场景（如事实核查），**evidence_based** 适合有明确证据链的场景（如竞品分析），**majority_vote** 适合 Agent 数量较多、意见维度较均匀的场景。
 
 ### 10.4 完整的 PeerToPeerProtocol 类
 
