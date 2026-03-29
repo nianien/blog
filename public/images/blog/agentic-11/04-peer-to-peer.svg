@@ -1,0 +1,45 @@
+<svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="280" y="20" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Peer-to-Peer 协作模式</text>
+
+  <!-- Three agent nodes in triangle layout -->
+  <!-- Agent A - top left -->
+  <rect x="40" y="50" width="130" height="52" rx="10" fill="#7b1fa2" stroke="none"/>
+  <text x="105" y="73" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">Agent A</text>
+  <text x="105" y="90" font-size="9" text-anchor="middle" fill="rgba(255,255,255,0.8)">作者 · 写代码/文档</text>
+
+  <!-- Agent B - top right -->
+  <rect x="390" y="50" width="130" height="52" rx="10" fill="#7b1fa2" stroke="none"/>
+  <text x="455" y="73" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">Agent B</text>
+  <text x="455" y="90" font-size="9" text-anchor="middle" fill="rgba(255,255,255,0.8)">审稿人 · 质量审查</text>
+
+  <!-- Agent C - bottom center -->
+  <rect x="215" y="155" width="130" height="52" rx="10" fill="#7b1fa2" stroke="none"/>
+  <text x="280" y="178" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">Agent C</text>
+  <text x="280" y="195" font-size="9" text-anchor="middle" fill="rgba(255,255,255,0.8)">编辑 · 格式检查</text>
+
+  <!-- Connection lines (double-headed = bidirectional) -->
+  <!-- A ↔ B horizontal -->
+  <line x1="170" y1="70" x2="390" y2="70" stroke="#CE93D8" stroke-width="1.5"/>
+  <polygon points="386,66 396,70 386,74" fill="#CE93D8"/>
+  <polygon points="174,66 164,70 174,74" fill="#CE93D8"/>
+
+  <!-- A ↔ C diagonal -->
+  <line x1="120" y1="102" x2="240" y2="155" stroke="#CE93D8" stroke-width="1.5"/>
+  <polygon points="236,149 244,158 230,155" fill="#CE93D8"/>
+  <polygon points="124,108 116,99 130,102" fill="#CE93D8"/>
+
+  <!-- B ↔ C diagonal -->
+  <line x1="440" y1="102" x2="320" y2="155" stroke="#CE93D8" stroke-width="1.5"/>
+  <polygon points="324,149 316,158 330,155" fill="#CE93D8"/>
+  <polygon points="436,108 444,99 430,102" fill="#CE93D8"/>
+
+  <!-- "msg" labels -->
+  <text x="280" y="62" font-size="9" text-anchor="middle" fill="#AB47BC">msg</text>
+  <text x="160" y="140" font-size="9" text-anchor="middle" fill="#AB47BC">msg</text>
+  <text x="400" y="140" font-size="9" text-anchor="middle" fill="#AB47BC">msg</text>
+
+  <!-- Bottom note -->
+  <text x="280" y="232" font-size="10" text-anchor="middle" fill="#888">消息流双向，无固定上下级</text>
+  <text x="280" y="248" font-size="10" text-anchor="middle" fill="#888">每个 Agent 都可以发起对话、提出意见、做出决策</text>
+</svg>

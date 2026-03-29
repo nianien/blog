@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="520" height="320" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="260" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Context Window 组成</text>
+
+  <!-- Layer 1: System Prompt -->
+  <rect x="40" y="55" width="360" height="55" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="60" y="78" font-size="13" font-weight="bold" fill="#1565C0">System Prompt</text>
+  <text x="60" y="98" font-size="11" fill="#1976D2">角色定义 + 能力边界 + 输出格式要求</text>
+  <text x="430" y="85" font-size="11" fill="#999">固定不变</text>
+
+  <!-- Layer 2: Tool Definitions -->
+  <rect x="40" y="120" width="360" height="55" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="60" y="143" font-size="13" font-weight="bold" fill="#2E7D32">Tool Definitions</text>
+  <text x="60" y="163" font-size="11" fill="#388E3C">可用工具的 JSON Schema 定义</text>
+  <text x="430" y="150" font-size="11" fill="#999">固定不变</text>
+
+  <!-- Layer 3: Message History -->
+  <rect x="40" y="185" width="360" height="55" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="60" y="208" font-size="13" font-weight="bold" fill="#E65100">Message History</text>
+  <text x="60" y="228" font-size="11" fill="#F57C00">user → assistant → tool → assistant → ...</text>
+  <text x="430" y="215" font-size="11" fill="#FF9800">随轮次增长</text>
+
+  <!-- Layer 4: Current Turn Input -->
+  <rect x="40" y="250" width="360" height="55" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="60" y="273" font-size="13" font-weight="bold" fill="#6A1B9A">Current Turn Input</text>
+  <text x="60" y="293" font-size="11" fill="#7B1FA2">本轮 OBSERVE 阶段归一化的输入</text>
+  <text x="430" y="280" font-size="11" fill="#9C27B0">当前轮次</text>
+
+  <!-- Arrow indicating growth -->
+  <line x1="490" y1="80" x2="490" y2="275" stroke="#ccc" stroke-width="1.5"/>
+  <polygon points="490,275 485,260 495,260" fill="#ccc"/>
+  <text x="498" y="180" font-size="10" fill="#aaa" transform="rotate(90, 498, 180)">增长方向</text>
+</svg>

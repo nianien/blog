@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330">
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <!-- Title -->
+  <text x="400" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#263238">确定性执行 vs LLM 灵活性</text>
+
+  <!-- Left: Deterministic -->
+  <rect x="40" y="50" width="340" height="260" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="210" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#1B5E20">确定性</text>
+
+  <text x="70" y="108" font-size="12" fill="#37474F">硬编码工作流</text>
+  <text x="70" y="128" font-size="12" fill="#37474F">if/else 分支</text>
+  <text x="70" y="148" font-size="12" fill="#37474F">规则引擎</text>
+
+  <line x1="60" y1="165" x2="360" y2="165" stroke="#C8E6C9" stroke-width="1"/>
+
+  <text x="70" y="190" font-size="12" fill="#2E7D32">✅ 可预测</text>
+  <text x="70" y="210" font-size="12" fill="#2E7D32">✅ 可审计</text>
+  <text x="70" y="230" font-size="12" fill="#2E7D32">✅ 低延迟</text>
+
+  <line x1="60" y1="245" x2="360" y2="245" stroke="#C8E6C9" stroke-width="1"/>
+
+  <text x="70" y="268" font-size="12" fill="#C62828">❌ 不灵活</text>
+  <text x="70" y="288" font-size="12" fill="#C62828">❌ 维护成本高</text>
+
+  <!-- Right: Flexible -->
+  <rect x="420" y="50" width="340" height="260" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="590" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#0D47A1">灵活性</text>
+
+  <text x="450" y="108" font-size="12" fill="#37474F">Agent Tool Calling</text>
+  <text x="450" y="128" font-size="12" fill="#37474F">LLM 自由选择工具</text>
+  <text x="450" y="148" font-size="12" fill="#37474F">自动组合工具链</text>
+
+  <line x1="440" y1="165" x2="740" y2="165" stroke="#BBDEFB" stroke-width="1"/>
+
+  <text x="450" y="190" font-size="12" fill="#1565C0">✅ 处理模糊意图</text>
+  <text x="450" y="210" font-size="12" fill="#1565C0">✅ 适应新场景</text>
+  <text x="450" y="230" font-size="12" fill="#1565C0">✅ 用户体验自然</text>
+
+  <line x1="440" y1="245" x2="740" y2="245" stroke="#BBDEFB" stroke-width="1"/>
+
+  <text x="450" y="268" font-size="12" fill="#C62828">❌ 不可预测</text>
+  <text x="450" y="288" font-size="12" fill="#C62828">❌ 调试困难、成本高</text>
+
+  <!-- VS divider -->
+  <text x="400" y="185" text-anchor="middle" font-size="18" font-weight="bold" fill="#90A4AE">vs</text>
+</svg>

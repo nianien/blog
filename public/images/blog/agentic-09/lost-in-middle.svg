@@ -1,0 +1,91 @@
+<svg viewBox="0 0 900 370" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, sans-serif; }
+      .title { font-size: 14px; font-weight: bold; fill: #333; }
+      .label { font-size: 12px; fill: #333; }
+      .axis-label { font-size: 11px; fill: #666; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="370" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="450" y="30" class="title" text-anchor="middle">LLM 对不同位置信息的利用率 (示意)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="50" x2="80" y2="290" stroke="#333" stroke-width="2"/>
+  <line x1="80" y1="290" x2="850" y2="290" stroke="#333" stroke-width="2"/>
+
+  <!-- Y axis label -->
+  <text x="40" y="170" class="label" text-anchor="middle" transform="rotate(-90, 40, 170)">利用率</text>
+
+  <!-- X axis label -->
+  <text x="465" y="345" class="label" text-anchor="middle">位置</text>
+
+  <!-- Position labels -->
+  <text x="100" y="310" class="axis-label" text-anchor="middle">开头</text>
+  <text x="450" y="310" class="axis-label" text-anchor="middle">中间</text>
+  <text x="820" y="310" class="axis-label" text-anchor="middle">结尾</text>
+
+  <!-- Bar chart - Head section (high utilization) -->
+  <g id="head-bars">
+    <!-- Bar 1 -->
+    <rect x="95" y="260" width="15" height="30" fill="#4a90e2" rx="2"/>
+    <!-- Bar 2 -->
+    <rect x="115" y="250" width="15" height="40" fill="#4a90e2" rx="2"/>
+    <!-- Bar 3 -->
+    <rect x="135" y="240" width="15" height="50" fill="#4a90e2" rx="2"/>
+    <!-- Bar 4 -->
+    <rect x="155" y="230" width="15" height="60" fill="#4a90e2" rx="2"/>
+    <!-- Bar 5 -->
+    <rect x="175" y="220" width="15" height="70" fill="#4a90e2" rx="2"/>
+    <!-- Bar 6 -->
+    <rect x="195" y="210" width="15" height="80" fill="#4a90e2" rx="2"/>
+  </g>
+
+  <!-- Middle section (low utilization) -->
+  <g id="middle-bars">
+    <rect x="235" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="255" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="275" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="295" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="315" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="335" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="355" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="375" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="395" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+    <rect x="415" y="270" width="15" height="20" fill="#f39c12" rx="2"/>
+  </g>
+
+  <!-- Tail section (high utilization) -->
+  <g id="tail-bars">
+    <!-- Bar 1 -->
+    <rect x="535" y="210" width="15" height="80" fill="#4a90e2" rx="2"/>
+    <!-- Bar 2 -->
+    <rect x="555" y="220" width="15" height="70" fill="#4a90e2" rx="2"/>
+    <!-- Bar 3 -->
+    <rect x="575" y="230" width="15" height="60" fill="#4a90e2" rx="2"/>
+    <!-- Bar 4 -->
+    <rect x="595" y="240" width="15" height="50" fill="#4a90e2" rx="2"/>
+    <!-- Bar 5 -->
+    <rect x="615" y="250" width="15" height="40" fill="#4a90e2" rx="2"/>
+    <!-- Bar 6 -->
+    <rect x="635" y="260" width="15" height="30" fill="#4a90e2" rx="2"/>
+  </g>
+
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="700" y="80" width="160" height="90" fill="white" stroke="#ccc" stroke-width="1" rx="4"/>
+
+    <line x1="715" y1="100" x2="730" y2="100" stroke="#4a90e2" stroke-width="12"/>
+    <text x="740" y="105" class="label">高利用率</text>
+
+    <line x1="715" y1="130" x2="730" y2="130" stroke="#f39c12" stroke-width="12"/>
+    <text x="740" y="135" class="label">低利用率</text>
+
+    <text x="710" y="160" font-size="10" fill="#666">最相关的信息</text>
+    <text x="710" y="172" font-size="10" fill="#666">应放在头尾</text>
+  </g>
+</svg>

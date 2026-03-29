@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Main container -->
+  <rect x="20" y="20" width="860" height="460" rx="8" fill="#f0f4f8" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="450" y="50" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">AgentRuntime</text>
+  <text x="450" y="75" font-size="14" text-anchor="middle" fill="#555" font-style="italic">(Core Control Loop)</text>
+
+  <!-- Three component boxes (centered: total 140*3 + 50*2 = 520, start at 190) -->
+  <!-- LLMClient -->
+  <rect x="190" y="100" width="140" height="100" rx="6" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+  <text x="260" y="125" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">LLMClient</text>
+  <line x1="190" y1="135" x2="330" y2="135" stroke="#3498db" stroke-width="1"/>
+  <text x="260" y="155" font-size="12" text-anchor="middle" fill="#555">chat()</text>
+  <text x="260" y="173" font-size="12" text-anchor="middle" fill="#555">stream()</text>
+  <text x="260" y="191" font-size="12" text-anchor="middle" fill="#555">retry()</text>
+
+  <!-- MessageManager -->
+  <rect x="380" y="100" width="140" height="100" rx="6" fill="#e8f8f0" stroke="#27ae60" stroke-width="2"/>
+  <text x="450" y="125" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">MessageManager</text>
+  <line x1="380" y1="135" x2="520" y2="135" stroke="#27ae60" stroke-width="1"/>
+  <text x="450" y="155" font-size="12" text-anchor="middle" fill="#555">append()</text>
+  <text x="450" y="173" font-size="12" text-anchor="middle" fill="#555">compress()</text>
+  <text x="450" y="191" font-size="12" text-anchor="middle" fill="#555">count_tokens()</text>
+
+  <!-- StateStore -->
+  <rect x="570" y="100" width="140" height="100" rx="6" fill="#fef5e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="640" y="125" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">StateStore</text>
+  <line x1="570" y1="135" x2="710" y2="135" stroke="#f39c12" stroke-width="1"/>
+  <text x="640" y="155" font-size="12" text-anchor="middle" fill="#555">save()</text>
+  <text x="640" y="173" font-size="12" text-anchor="middle" fill="#555">load()</text>
+  <text x="640" y="191" font-size="12" text-anchor="middle" fill="#555">clear()</text>
+
+  <!-- Arrows from LLMClient and MessageManager down to Runtime Loop -->
+  <line x1="260" y1="200" x2="260" y2="230" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="450" y1="200" x2="450" y2="230" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Runtime Loop (centered: width 520, x = 190) -->
+  <rect x="190" y="232" width="520" height="140" rx="6" fill="#f9f9f9" stroke="#2c3e50" stroke-width="2"/>
+  <text x="450" y="257" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Runtime Loop</text>
+  <line x1="190" y1="267" x2="710" y2="267" stroke="#2c3e50" stroke-width="1"/>
+  <text x="450" y="292" font-size="12" text-anchor="middle" fill="#333">while not done and turns &lt; max:</text>
+  <text x="450" y="312" font-size="12" text-anchor="middle" fill="#333">response = llm.chat(messages)</text>
+  <text x="450" y="332" font-size="12" text-anchor="middle" fill="#333">if tool_calls:</text>
+  <text x="450" y="352" font-size="12" text-anchor="middle" fill="#333">results = executor.run()</text>
+  <text x="450" y="372" font-size="12" text-anchor="middle" fill="#333">else: done = True</text>
+
+  <!-- Arrows down to tool components -->
+  <line x1="310" y1="372" x2="310" y2="402" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="590" y1="372" x2="590" y2="402" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ToolRegistry (centered under left half of loop) -->
+  <rect x="240" y="404" width="140" height="60" rx="6" fill="#f0e8f8" stroke="#8e44ad" stroke-width="2"/>
+  <text x="310" y="429" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">ToolRegistry</text>
+  <text x="310" y="449" font-size="11" text-anchor="middle" fill="#555">register() schema()</text>
+
+  <!-- ToolExecutor (centered under right half of loop) -->
+  <rect x="520" y="404" width="140" height="60" rx="6" fill="#f8f0e8" stroke="#e67e22" stroke-width="2"/>
+  <text x="590" y="429" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">ToolExecutor</text>
+  <text x="590" y="449" font-size="11" text-anchor="middle" fill="#555">execute() parallel()</text>
+</svg>

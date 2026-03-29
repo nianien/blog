@@ -110,44 +110,7 @@ LangChain 的设计围绕四个核心抽象：
 
 这四个抽象之间的关系可以用下图表示：
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    LangChain Architecture                │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│   ┌──────────┐    ┌──────────┐    ┌──────────────────┐  │
-│   │  Chain   │    │  Agent   │    │  AgentExecutor   │  │
-│   │          │    │          │    │  (Control Loop)  │  │
-│   │ step1 →  │    │ LLM +   │    │                  │  │
-│   │ step2 →  │    │ Tools +  │    │  while not done: │  │
-│   │ step3    │    │ Prompt   │    │    plan()        │  │
-│   └────┬─────┘    └────┬─────┘    │    execute()     │  │
-│        │               │          │    observe()     │  │
-│        │               └──────────┤                  │  │
-│        │                          └────────┬─────────┘  │
-│        │                                   │            │
-│   ┌────▼───────────────────────────────────▼─────────┐  │
-│   │              LLM Abstraction Layer               │  │
-│   │  ChatOpenAI │ ChatAnthropic │ ChatOllama │ ...   │  │
-│   └────────────────────┬─────────────────────────────┘  │
-│                        │                                │
-│   ┌────────────────────▼─────────────────────────────┐  │
-│   │                  Memory                          │  │
-│   │  ConversationBufferMemory │ ConversationSummary  │  │
-│   │  VectorStoreMemory │ EntityMemory │ ...          │  │
-│   └──────────────────────────────────────────────────┘  │
-│                                                         │
-│   ┌──────────────────────────────────────────────────┐  │
-│   │                  Retriever                       │  │
-│   │  VectorStoreRetriever │ BM25 │ MultiQuery │ ... │  │
-│   └──────────────────────────────────────────────────┘  │
-│                                                         │
-│   ┌──────────────────────────────────────────────────┐  │
-│   │                  Tools                           │  │
-│   │  Search │ Calculator │ SQL │ FileSystem │ ...    │  │
-│   └──────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────┘
-```
+![LangChain Architecture](/images/blog/agentic-12/langchain-architecture.svg)
 
 ### 3.2 代码示例：用 LangChain 实现工具调用 Agent
 
@@ -308,23 +271,7 @@ LangChain 在快速迭代中经历了多次重大 API 变更：
 
 LangChain 的核心抽象是 "Chain"——链式调用。这个模型对于线性流水线（A → B → C）非常优雅，但现实中的 Agent 逻辑往往是非线性的：
 
-```
-线性 Chain 能表达的：
-
-    A ──→ B ──→ C ──→ D
-    (检索)  (摘要)  (格式化) (输出)
-
-
-现实中 Agent 需要的：
-
-    A ──→ B ──→ C ──→ D
-    │     │     ▲     │
-    │     ├─→ E ─┘     │     ← 条件分支
-    │     │             │
-    │     └─→ F ──→ G ──┘     ← 并行执行
-    │           │
-    └───────────┘              ← 循环重试
-```
+![Linear vs Complex Flow](/images/blog/agentic-12/linear-vs-complex-flow.svg)
 
 LangChain 的 LCEL 可以通过 `RunnableBranch` 和 `RunnableParallel` 实现一些分支和并行，但语法变得复杂且不直观。这正是 LangGraph 诞生的原因。
 
@@ -347,44 +294,7 @@ LangGraph 的设计围绕四个概念：
 
 核心思想：**Agent 的执行流程就是一个状态机。** 每个节点是一个处理函数，每条边是一个转移条件，整个图定义了 Agent 的所有可能执行路径。
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                   LangGraph State Machine                    │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│   ┌─────────────────────────────────────────────────────┐   │
-│   │                  Shared State                       │   │
-│   │  {messages: [...], tool_results: {...}, plan: [...]} │   │
-│   └────────────────────────┬────────────────────────────┘   │
-│                            │                                │
-│               ┌────────────▼────────────┐                   │
-│               │       START             │                   │
-│               └────────────┬────────────┘                   │
-│                            │                                │
-│               ┌────────────▼────────────┐                   │
-│               │      agent_node         │                   │
-│               │   (LLM Reasoning)       │                   │
-│               └────────────┬────────────┘                   │
-│                            │                                │
-│               ┌────────────▼────────────┐                   │
-│              ╱    should_continue?       ╲                   │
-│             ╱  (Conditional Edge)         ╲                  │
-│            ╱                               ╲                 │
-│      tool_calls?                      no tool_calls?        │
-│           │                                │                │
-│  ┌────────▼─────────┐          ┌──────────▼──────────┐     │
-│  │    tool_node      │          │       END            │     │
-│  │  (Execute Tools)  │          │   (Return Result)    │     │
-│  └────────┬──────────┘          └─────────────────────┘     │
-│           │                                                 │
-│           └──────────────────┐                              │
-│                              │ (feed tool results back)     │
-│               ┌──────────────▼──────────┐                   │
-│               │      agent_node         │ ← 回到推理节点    │
-│               └─────────────────────────┘                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+![LangGraph State Machine](/images/blog/agentic-12/langgraph-state-machine.svg)
 
 这个图可以清晰地表达：
 
@@ -548,23 +458,7 @@ result = graph.invoke({"messages": [HumanMessage(content="查天气")]}, config)
 
 上一篇我们讨论的 Supervisor/Worker 模式、并行 Agent 协作，在 LangGraph 中可以自然地表达为图结构：
 
-```
-                 ┌──────────────┐
-                 │  Supervisor  │
-                 └──────┬───────┘
-                        │
-              ┌─────────┼─────────┐
-              ▼         ▼         ▼
-        ┌──────────┐ ┌──────┐ ┌──────────┐
-        │ Researcher│ │Coder │ │ Reviewer │
-        └──────────┘ └──────┘ └──────────┘
-              │         │         │
-              └─────────┼─────────┘
-                        ▼
-                 ┌──────────────┐
-                 │  Supervisor  │ ← 回到 Supervisor 决定是否继续
-                 └──────────────┘
-```
+![Supervisor-Worker 多 Agent 架构](/images/blog/agentic-12/supervisor-worker-multi-agent.svg)
 
 ### 4.4 问题
 
@@ -654,33 +548,7 @@ result = crew.kickoff()
 
 ### 5.3 框架选型决策树
 
-```
-你的核心需求是什么？
-│
-├─── 快速原型 / PoC
-│    └─→ LangChain（生态最大，上手最快）
-│
-├─── 复杂 Agent 逻辑（分支/循环/并行）
-│    └─→ LangGraph（状态机模型天然适合）
-│
-├─── 多 Agent 协作
-│    ├─── 角色扮演式 → CrewAI
-│    ├─── 对话式协作 → AutoGen
-│    └─── 图编排式   → LangGraph
-│
-├─── RAG / 知识问答
-│    ├─── 需要灵活性  → LangChain + Retriever
-│    └─── 需要干净抽象 → Haystack
-│
-├─── 企业级集成（.NET / Azure）
-│    └─→ Semantic Kernel
-│
-├─── Prompt 自动优化
-│    └─→ DSPy
-│
-└─── 生产系统（需要精细控制）
-     └─→ 自研，或只使用框架的底层模块
-```
+![框架选型决策树](/images/blog/agentic-12/framework-selection-decision-tree.svg)
 
 ---
 
@@ -731,23 +599,7 @@ result = crew.kickoff()
 
 在实践中，最常见的成熟方案是**分层使用框架**：
 
-```
-┌─────────────────────────────────────────────────┐
-│              你的应用层代码                        │
-│         (业务逻辑、API 接口、用户交互)              │
-├─────────────────────────────────────────────────┤
-│              自研 Agent Runtime                    │
-│    (控制循环、状态管理、错误处理、可观测性)          │
-├───────────────┬─────────────────────────────────┤
-│  自研工具调度   │   框架的集成模块（可选使用）       │
-│  自研消息管理   │   LangChain Tool/Retriever       │
-│  自研状态存储   │   LangChain Document Loader      │
-│               │   LangChain Embedding 接口        │
-├───────────────┴─────────────────────────────────┤
-│              LLM Provider SDK                     │
-│         (openai, anthropic, etc.)                 │
-└─────────────────────────────────────────────────┘
-```
+![分层框架架构](/images/blog/agentic-12/layered-framework-architecture.svg)
 
 核心思路：
 
@@ -2294,49 +2146,9 @@ def reasoning_once(state):
 
 **历史的三个阶段**：
 
-**阶段 1：编排一切（LangChain Era）**
+![框架演进三阶段](/images/blog/agentic-12/framework-evolution-phases.svg)
 
-```
-框架的职责：
-├─ 推理（Reasoning）→ LLM 调用
-├─ 规划（Planning）→ 生成步骤
-├─ 决策（Decision）→ 选择工具
-├─ 行动（Action）→ 执行工具
-└─ 观察（Observation）→ 处理结果
-```
-
-框架很重，做了很多智能决策。问题：隐藏了太多复杂性。
-
-**阶段 2：编排控制流（LangGraph Era）**
-
-```
-框架的职责：
-├─ 定义控制流（Graph Structure）
-├─ 路由决策（Conditional Edges）
-├─ 状态管理（State）
-└─ 工具执行（Tool Calling）
-
-模型的职责：
-└─ 推理和决策（内容生成）
-```
-
-框架变轻，只管控制流。LLM 只负责推理。
-
-**阶段 3：编排行动（推理模型时代）**
-
-```
-模型的职责：
-├─ 深度推理（Native Thinking）
-├─ 规划（Multi-step Planning）
-├─ 决策（Tool Selection）
-└─ 反思（Self-Correction）
-
-框架的职责：
-├─ 工具执行（Execute What Model Decides）
-└─ 状态记录（Log Results）
-```
-
-框架极轻，变成了"工具执行器"。模型承担所有推理。
+三个阶段的核心变化：框架从"编排一切"（LangChain 时代，~330 行代码），到"编排控制流"（LangGraph 时代，~200 行），再到"编排行动"（推理模型时代，~80 行，简化 75%）。框架越来越轻，模型承担的推理职责越来越重。
 
 **代码示例：不同阶段框架的设计**
 
@@ -2471,6 +2283,6 @@ class ReasoningAgent:
 
 > **系列导航**：本文是 Agentic 系列的第 12 篇。
 >
-> - 上一篇：[11 | 多Agent协作：协作模式与架构设计](/engineering/agentic/11-多Agent协作：协作模式与架构设计)
-> - 下一篇：[13 | MCP与工具协议：Agent工具的协议化未来](/engineering/agentic/13-MCP与工具协议：Agent工具的协议化未来)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
+> - 上一篇：[11 | 多Agent协作：协作模式与架构设计](/blog/engineering/agentic/11-多Agent协作：协作模式与架构设计)
+> - 下一篇：[13 | MCP与工具协议：Agent工具的协议化未来](/blog/engineering/agentic/13-MCP与工具协议：Agent工具的协议化未来)
+> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

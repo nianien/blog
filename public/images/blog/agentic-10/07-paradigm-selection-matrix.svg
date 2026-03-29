@@ -1,0 +1,55 @@
+<svg viewBox="0 0 720 480" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+
+  <!-- Title -->
+  <text x="400" y="28" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Agent 范式选择矩阵</text>
+
+  <!-- ===== Quadrant cells (draw first so axes render on top) ===== -->
+
+  <!-- Quadrant I (top-left): Hierarchical + Reflection (多步骤 + 低确定性) -->
+  <rect x="115" y="60" width="255" height="130" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="1.5"/>
+  <text x="242" y="100" font-size="16" font-weight="bold" text-anchor="middle" fill="#00aa33">Hierarchical</text>
+  <text x="242" y="122" font-size="11" text-anchor="middle" fill="#333">+ Reflection</text>
+  <text x="242" y="152" font-size="10" text-anchor="middle" fill="#666">步骤多 + 需要探索 → 递归分解+反思</text>
+
+  <!-- Quadrant II (top-right): Plan-and-Execute (多步骤 + 高确定性) -->
+  <rect x="395" y="60" width="255" height="130" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="1.5"/>
+  <text x="522" y="105" font-size="16" font-weight="bold" text-anchor="middle" fill="#ff9900">Plan-and-Execute</text>
+  <text x="522" y="130" font-size="11" text-anchor="middle" fill="#333">先规划再逐步执行</text>
+  <text x="522" y="152" font-size="10" text-anchor="middle" fill="#666">步骤多 + 路径清晰 → 全局规划</text>
+
+  <!-- Quadrant III (bottom-left): Tree-of-Thought (少步骤 + 低确定性) -->
+  <rect x="115" y="215" width="255" height="130" rx="6" fill="#f0e8f8" stroke="#9933cc" stroke-width="1.5"/>
+  <text x="242" y="260" font-size="16" font-weight="bold" text-anchor="middle" fill="#9933cc">Tree-of-Thought</text>
+  <text x="242" y="285" font-size="11" text-anchor="middle" fill="#333">多路径搜索选优</text>
+  <text x="242" y="307" font-size="10" text-anchor="middle" fill="#666">步骤少但需要探索多种可能</text>
+
+  <!-- Quadrant IV (bottom-right): ReAct (少步骤 + 高确定性) -->
+  <rect x="395" y="215" width="255" height="130" rx="6" fill="#e8f4f8" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="522" y="260" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066cc">ReAct</text>
+  <text x="522" y="285" font-size="11" text-anchor="middle" fill="#333">甚至不需要 Agent</text>
+  <text x="522" y="307" font-size="10" text-anchor="middle" fill="#666">步骤少 + 路径清晰 → 简单循环足够</text>
+
+  <!-- ===== Axes (draw last) ===== -->
+
+  <!-- X-axis: horizontal, pointing right = 确定性程度 高 -->
+  <line x1="100" y1="355" x2="670" y2="355" stroke="#555" stroke-width="1.5"/>
+  <polygon points="670,351 680,355 670,359" fill="#555"/>
+  <text x="390" y="385" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">确定性程度</text>
+  <text x="242" y="375" font-size="10" text-anchor="middle" fill="#666">低（需要探索）</text>
+  <text x="522" y="375" font-size="10" text-anchor="middle" fill="#666">高（路径清晰）</text>
+
+  <!-- Y-axis: vertical, pointing up = 任务步骤 多 -->
+  <line x1="100" y1="355" x2="100" y2="48" stroke="#555" stroke-width="1.5"/>
+  <polygon points="96,48 100,38 104,48" fill="#555"/>
+  <text x="50" y="190" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">任</text>
+  <text x="50" y="208" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">务</text>
+  <text x="50" y="226" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">步</text>
+  <text x="50" y="244" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">骤</text>
+  <text x="80" y="285" font-size="10" text-anchor="end" fill="#666">少</text>
+  <text x="80" y="130" font-size="10" text-anchor="end" fill="#666">多</text>
+
+  <!-- ===== Recommendation box ===== -->
+  <rect x="100" y="420" width="580" height="46" rx="6" fill="#fffef0" stroke="#ccaa00" stroke-width="1.5"/>
+  <text x="120" y="440" font-size="10" font-weight="bold" fill="#333">关键原则：从 ReAct 开始，只有当它的局限性确实成为瓶颈时再升级</text>
+  <text x="120" y="456" font-size="9" fill="#666">常见组合：Hierarchical + Plan-Exec（复杂工程）、ReAct + Reflection（需要纠错的交互任务）</text>
+</svg>

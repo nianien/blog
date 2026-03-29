@@ -1,0 +1,93 @@
+<svg viewBox="0 0 780 440" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="390" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">N×M 集成问题 vs 协议层解决方案</text>
+
+  <!-- ===== LEFT: N×M Problem ===== -->
+  <text x="180" y="52" font-size="12" font-weight="bold" fill="#991b1b">当前：N×M 适配器</text>
+
+  <!-- Frameworks -->
+  <rect x="50" y="65" width="90" height="35" rx="4" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <text x="95" y="87" font-size="10" font-weight="bold" text-anchor="middle" fill="#7c2d12">LangChain</text>
+  <rect x="155" y="65" width="90" height="35" rx="4" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <text x="200" y="87" font-size="10" font-weight="bold" text-anchor="middle" fill="#7c2d12">LlamaIndex</text>
+  <rect x="260" y="65" width="90" height="35" rx="4" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <text x="305" y="87" font-size="10" font-weight="bold" text-anchor="middle" fill="#7c2d12">OpenAI</text>
+
+  <!-- Messy lines (representing N×M) -->
+  <line x1="80" y1="100" x2="60" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="95" y1="100" x2="140" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="110" y1="100" x2="220" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="125" y1="100" x2="300" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="185" y1="100" x2="60" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="100" x2="140" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="215" y1="100" x2="220" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="230" y1="100" x2="300" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="290" y1="100" x2="60" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="305" y1="100" x2="140" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="320" y1="100" x2="220" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+  <line x1="335" y1="100" x2="300" y2="140" stroke="#dc2626" stroke-width="1" opacity="0.5"/>
+
+  <!-- Tools -->
+  <rect x="25" y="142" width="70" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="60" y="163" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Jira</text>
+  <rect x="105" y="142" width="70" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="140" y="163" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e3a8a">GitHub</text>
+  <rect x="185" y="142" width="70" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="220" y="163" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Slack</text>
+  <rect x="265" y="142" width="70" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="300" y="163" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Database</text>
+
+  <!-- Problem label -->
+  <rect x="30" y="195" width="320" height="42" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+  <text x="190" y="214" font-size="10" font-weight="bold" text-anchor="middle" fill="#7f1d1d">12 个适配器 = 3 框架 × 4 工具</text>
+  <text x="190" y="230" font-size="9" text-anchor="middle" fill="#7f1d1d">新增工具 → 为每个框架写适配器</text>
+
+  <!-- ===== RIGHT: N+M Solution ===== -->
+  <text x="590" y="52" font-size="12" font-weight="bold" fill="#166534">期望：N+M（协议层）</text>
+
+  <!-- Frameworks -->
+  <rect x="440" y="65" width="90" height="35" rx="4" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <text x="485" y="87" font-size="10" font-weight="bold" text-anchor="middle" fill="#7c2d12">LangChain</text>
+  <rect x="545" y="65" width="90" height="35" rx="4" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <text x="590" y="87" font-size="10" font-weight="bold" text-anchor="middle" fill="#7c2d12">LlamaIndex</text>
+  <rect x="650" y="65" width="90" height="35" rx="4" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+  <text x="695" y="87" font-size="10" font-weight="bold" text-anchor="middle" fill="#7c2d12">OpenAI</text>
+
+  <!-- Clean lines down to protocol -->
+  <line x1="485" y1="100" x2="485" y2="118" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="590" y1="100" x2="590" y2="118" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="695" y1="100" x2="695" y2="118" stroke="#22c55e" stroke-width="1.5"/>
+
+  <!-- Protocol layer -->
+  <rect x="430" y="120" width="320" height="32" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="590" y="141" font-size="11" font-weight="bold" text-anchor="middle" fill="#166534">标准化协议层 (MCP)</text>
+
+  <!-- Clean lines down to tools -->
+  <line x1="470" y1="152" x2="470" y2="170" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="540" y1="152" x2="540" y2="170" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="640" y1="152" x2="640" y2="170" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="710" y1="152" x2="710" y2="170" stroke="#22c55e" stroke-width="1.5"/>
+
+  <!-- Tools -->
+  <rect x="435" y="172" width="70" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="470" y="193" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Jira</text>
+  <rect x="515" y="172" width="70" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="550" y="193" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e3a8a">GitHub</text>
+  <rect x="605" y="172" width="70" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="640" y="193" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Slack</text>
+  <rect x="680" y="172" width="70" height="32" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="715" y="193" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Database</text>
+
+  <!-- Solution label -->
+  <rect x="430" y="222" width="320" height="42" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="590" y="241" font-size="10" font-weight="bold" text-anchor="middle" fill="#166534">7 个实现 = 3 框架 + 4 工具</text>
+  <text x="590" y="257" font-size="9" text-anchor="middle" fill="#166534">新增工具 → 只需写一个 MCP Server</text>
+
+  <!-- ===== Bottom: Key advantages ===== -->
+  <rect x="50" y="290" width="680" height="130" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="390" y="315" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">MCP 的关键优势</text>
+  <text x="70" y="342" font-size="10" fill="#333">✓ 框架无关：任何 Agent 框架都可以使用同一个 MCP Server</text>
+  <text x="70" y="362" font-size="10" fill="#333">✓ 一次实现：工具提供者只需实现一次 MCP Server 协议</text>
+  <text x="70" y="382" font-size="10" fill="#333">✓ 版本兼容：旧 Client 可以使用新 Server（只是功能不全）</text>
+  <text x="70" y="402" font-size="10" fill="#333">✓ 生态复用：社区贡献的 MCP Server 可以直接使用</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#7B1FA2"/>
+    </marker>
+  </defs>
+
+  <rect width="520" height="280" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="260" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Agent 核心循环</text>
+
+  <!-- Top row: Observe → Think → Plan -->
+  <rect x="30" y="55" width="110" height="50" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="85" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">Observe</text>
+  <text x="85" y="95" text-anchor="middle" font-size="10" fill="#1976D2">感知</text>
+
+  <rect x="185" y="55" width="110" height="50" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="240" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#6A1B9A">Think</text>
+  <text x="240" y="95" text-anchor="middle" font-size="10" fill="#7B1FA2">思考</text>
+
+  <rect x="340" y="55" width="110" height="50" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="395" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">Plan</text>
+  <text x="395" y="95" text-anchor="middle" font-size="10" fill="#F57C00">规划</text>
+
+  <!-- Arrows top row -->
+  <line x1="140" y1="80" x2="183" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="295" y1="80" x2="338" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Bottom row: Update ← Reflect ← Act -->
+  <rect x="30" y="165" width="110" height="50" rx="8" fill="#ECEFF1" stroke="#607D8B" stroke-width="1.5"/>
+  <text x="85" y="188" text-anchor="middle" font-size="13" font-weight="bold" fill="#455A64">Update</text>
+  <text x="85" y="205" text-anchor="middle" font-size="10" fill="#607D8B">更新</text>
+
+  <rect x="185" y="165" width="110" height="50" rx="8" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.5"/>
+  <text x="240" y="188" text-anchor="middle" font-size="13" font-weight="bold" fill="#AD1457">Reflect</text>
+  <text x="240" y="205" text-anchor="middle" font-size="10" fill="#C2185B">反思</text>
+
+  <rect x="340" y="165" width="110" height="50" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="395" y="188" text-anchor="middle" font-size="13" font-weight="bold" fill="#2E7D32">Act</text>
+  <text x="395" y="205" text-anchor="middle" font-size="10" fill="#388E3C">执行</text>
+
+  <!-- Arrows bottom row (right to left) -->
+  <line x1="338" y1="190" x2="297" y2="190" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="183" y1="190" x2="142" y2="190" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Vertical connections -->
+  <line x1="395" y1="105" x2="395" y2="163" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="85" y1="165" x2="85" y2="107" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-purple)"/>
+
+  <!-- Loop label -->
+  <text x="260" y="252" text-anchor="middle" font-size="12" fill="#7B1FA2">循环执行，直到任务完成或达到终止条件</text>
+</svg>

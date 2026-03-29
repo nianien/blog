@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6Z" fill="#546E7A"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#263238">Episodic Memory 检索流程</text>
+
+  <!-- Query -->
+  <rect x="200" y="50" width="300" height="40" rx="6" fill="#E8EAF6" stroke="#3949AB" stroke-width="1.5"/>
+  <text x="350" y="75" text-anchor="middle" font-size="12" fill="#1A237E">Query: "用户要分析 Q3 销售数据"</text>
+
+  <!-- Arrow 1 -->
+  <line x1="350" y1="90" x2="350" y2="125" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Embedding Model -->
+  <rect x="225" y="130" width="250" height="44" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="350" y="157" text-anchor="middle" font-size="13" font-weight="bold" fill="#0D47A1">Embedding Model</text>
+
+  <!-- Arrow 2 -->
+  <line x1="350" y1="174" x2="350" y2="209" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="365" y="198" font-size="10" fill="#78909C">query_vector</text>
+
+  <!-- Vector Search -->
+  <rect x="225" y="214" width="250" height="44" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="350" y="237" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B5E20">Vector Search</text>
+  <text x="350" y="252" text-anchor="middle" font-size="10" fill="#2E7D32">(Top 10)</text>
+  <!-- annotation -->
+  <line x1="475" y1="236" x2="540" y2="236" stroke="#66BB6A" stroke-width="1" stroke-dasharray="4"/>
+  <text x="550" y="240" font-size="11" fill="#2E7D32">语义相似度 (0.5)</text>
+
+  <!-- Arrow 3 -->
+  <line x1="350" y1="258" x2="350" y2="293" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="365" y="282" font-size="10" fill="#78909C">candidates</text>
+
+  <!-- Scoring & Rank -->
+  <rect x="225" y="298" width="250" height="60" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="350" y="319" text-anchor="middle" font-size="13" font-weight="bold" fill="#BF360C">Scoring &amp; Rank</text>
+  <text x="280" y="339" font-size="11" fill="#E65100">├─ time_decay (0.3)</text>
+  <text x="280" y="353" font-size="11" fill="#E65100">└─ importance (0.2)</text>
+  <!-- annotations -->
+  <line x1="475" y1="335" x2="540" y2="335" stroke="#FFB74D" stroke-width="1" stroke-dasharray="4"/>
+  <text x="550" y="339" font-size="11" fill="#E65100">新消息 > 旧消息</text>
+  <line x1="475" y1="350" x2="540" y2="350" stroke="#FFB74D" stroke-width="1" stroke-dasharray="4"/>
+  <text x="550" y="354" font-size="11" fill="#E65100">成功经验 > 普通记录</text>
+
+  <!-- Arrow 4 -->
+  <line x1="350" y1="358" x2="350" y2="403" stroke="#546E7A" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="365" y="388" font-size="10" fill="#78909C">top_k</text>
+
+  <!-- Format & Inject -->
+  <rect x="225" y="408" width="250" height="44" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="350" y="431" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A148C">Format &amp; Inject</text>
+  <text x="350" y="446" text-anchor="middle" font-size="10" fill="#7B1FA2">into Prompt</text>
+  <!-- annotation -->
+  <line x1="475" y1="430" x2="540" y2="430" stroke="#BA68C8" stroke-width="1" stroke-dasharray="4"/>
+  <text x="550" y="434" font-size="11" fill="#7B1FA2">注入 Context Window</text>
+
+  <!-- Bottom label -->
+  <text x="350" y="490" text-anchor="middle" font-size="11" fill="#90A4AE">检索过程：Embedding → 向量搜索 → 多维评分 → 注入提示词</text>
+</svg>

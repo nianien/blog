@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="480" height="340" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="240" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">灵活性 vs 效率</text>
+
+  <!-- Y axis -->
+  <line x1="80" y1="50" x2="80" y2="280" stroke="#999" stroke-width="1.5" marker-start="url(#arrow)"/>
+  <text x="50" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#666" transform="rotate(-90, 50, 165)">灵活性</text>
+
+  <!-- X axis -->
+  <line x1="80" y1="280" x2="440" y2="280" stroke="#999" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="260" y="315" text-anchor="middle" font-size="13" font-weight="bold" fill="#666">效率（LLM 调用次数 ↓）</text>
+
+  <!-- ReAct dot -->
+  <circle cx="150" cy="90" r="28" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="150" y="87" text-anchor="middle" font-size="12" font-weight="bold" fill="#6A1B9A">ReAct</text>
+  <text x="150" y="102" text-anchor="middle" font-size="10" fill="#9C27B0">灵活</text>
+
+  <!-- Plan-then-Execute dot -->
+  <circle cx="350" cy="220" r="28" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="350" y="213" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">Plan-then</text>
+  <text x="350" y="226" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565C0">-Execute</text>
+
+  <!-- Hybrid dot -->
+  <circle cx="260" cy="150" r="32" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="260" y="147" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">Hybrid</text>
+  <text x="260" y="163" text-anchor="middle" font-size="10" fill="#388E3C">ReAct+Plan</text>
+
+  <!-- Dotted connection -->
+  <line x1="172" y1="110" x2="238" y2="135" stroke="#ccc" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="282" y1="168" x2="330" y2="200" stroke="#ccc" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>

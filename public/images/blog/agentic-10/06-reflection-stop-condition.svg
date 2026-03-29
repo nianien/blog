@@ -1,0 +1,96 @@
+<svg viewBox="0 0 750 580" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="375" y="24" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">反思循环的停止条件（多层安全网）</text>
+
+  <!-- Start -->
+  <rect x="305" y="44" width="120" height="30" rx="15" fill="#e8f4f8" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="365" y="64" font-size="11" font-weight="bold" text-anchor="middle" fill="#0066cc">反思完成</text>
+
+  <!-- Arrow down to Decision 1 -->
+  <line x1="365" y1="74" x2="365" y2="100" stroke="#333" stroke-width="1.5"/>
+  <polygon points="361,100 365,110 369,100" fill="#333"/>
+
+  <!-- Decision 1: 质量 >= 阈值？ -->
+  <polygon points="365,112 445,155 365,198 285,155" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="365" y="151" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff9900">质量 >=</text>
+  <text x="365" y="167" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff9900">阈值？</text>
+
+  <!-- D1 Yes: right -->
+  <line x1="445" y1="155" x2="530" y2="155" stroke="#00aa33" stroke-width="2"/>
+  <polygon points="530,151 540,155 530,159" fill="#00aa33"/>
+  <text x="490" y="148" font-size="10" font-weight="bold" fill="#00aa33">是</text>
+  <rect x="545" y="132" width="140" height="46" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="2"/>
+  <text x="615" y="152" font-size="11" font-weight="bold" text-anchor="middle" fill="#00aa33">返回结果</text>
+  <text x="615" y="168" font-size="9" text-anchor="middle" fill="#555">正常退出</text>
+
+  <!-- D1 No: down -->
+  <line x1="365" y1="198" x2="365" y2="228" stroke="#333" stroke-width="1.5"/>
+  <polygon points="361,228 365,238 369,228" fill="#333"/>
+  <text x="348" y="218" font-size="10" fill="#333">否</text>
+
+  <!-- Decision 2: 达到最大重试？ -->
+  <polygon points="365,240 445,283 365,326 285,283" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="365" y="279" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff9900">达到最大</text>
+  <text x="365" y="295" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff9900">重试？</text>
+
+  <!-- D2 Yes: right -->
+  <line x1="445" y1="283" x2="530" y2="283" stroke="#00aa33" stroke-width="2"/>
+  <polygon points="530,279 540,283 530,287" fill="#00aa33"/>
+  <text x="490" y="276" font-size="10" font-weight="bold" fill="#00aa33">是</text>
+  <rect x="545" y="260" width="140" height="46" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="2"/>
+  <text x="615" y="280" font-size="11" font-weight="bold" text-anchor="middle" fill="#00aa33">返回最好的</text>
+  <text x="615" y="296" font-size="9" text-anchor="middle" fill="#555">硬性保底</text>
+
+  <!-- D2 No: down -->
+  <line x1="365" y1="326" x2="365" y2="356" stroke="#333" stroke-width="1.5"/>
+  <polygon points="361,356 365,366 369,356" fill="#333"/>
+  <text x="348" y="346" font-size="10" fill="#333">否</text>
+
+  <!-- Decision 3: 改进幅度 < 阈值？ -->
+  <polygon points="365,368 445,411 365,454 285,411" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="365" y="407" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff9900">改进幅度</text>
+  <text x="365" y="423" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff9900">&lt; 阈值？</text>
+
+  <!-- D3 Yes: right -->
+  <line x1="445" y1="411" x2="530" y2="411" stroke="#cc6600" stroke-width="2"/>
+  <polygon points="530,407 540,411 530,415" fill="#cc6600"/>
+  <text x="490" y="404" font-size="10" font-weight="bold" fill="#cc6600">是</text>
+  <rect x="545" y="388" width="140" height="46" rx="6" fill="#fffce8" stroke="#ccaa00" stroke-width="2"/>
+  <text x="615" y="408" font-size="11" font-weight="bold" text-anchor="middle" fill="#cc6600">停止</text>
+  <text x="615" y="424" font-size="9" text-anchor="middle" fill="#555">聪明退出（再试也没用）</text>
+
+  <!-- D3 No: down -->
+  <line x1="365" y1="454" x2="365" y2="478" stroke="#333" stroke-width="1.5"/>
+  <polygon points="361,478 365,488 369,478" fill="#333"/>
+  <text x="348" y="472" font-size="10" fill="#333">否</text>
+
+  <!-- Decision 4: 成本超出预算？ -->
+  <polygon points="365,490 445,533 365,576 285,533" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="365" y="529" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff9900">成本超出</text>
+  <text x="365" y="545" font-size="11" font-weight="bold" text-anchor="middle" fill="#ff9900">预算？</text>
+
+  <!-- D4 Yes: right -->
+  <line x1="445" y1="533" x2="530" y2="533" stroke="#cc0000" stroke-width="2"/>
+  <polygon points="530,529 540,533 530,537" fill="#cc0000"/>
+  <text x="490" y="526" font-size="10" font-weight="bold" fill="#cc0000">是</text>
+  <rect x="545" y="510" width="140" height="46" rx="6" fill="#ffe8e8" stroke="#cc0000" stroke-width="2"/>
+  <text x="615" y="530" font-size="11" font-weight="bold" text-anchor="middle" fill="#cc0000">返回当前结果</text>
+  <text x="615" y="546" font-size="9" text-anchor="middle" fill="#555">硬性保底</text>
+
+  <!-- D4 No: loop back left then up to D1 -->
+  <line x1="285" y1="533" x2="120" y2="533" stroke="#0066cc" stroke-width="2"/>
+  <line x1="120" y1="533" x2="120" y2="155" stroke="#0066cc" stroke-width="2"/>
+  <line x1="120" y1="155" x2="283" y2="155" stroke="#0066cc" stroke-width="2"/>
+  <polygon points="283,151 293,155 283,159" fill="#0066cc"/>
+  <text x="108" y="400" font-size="10" font-weight="bold" text-anchor="end" fill="#0066cc">否</text>
+  <text x="108" y="416" font-size="10" text-anchor="end" fill="#0066cc">继续重试</text>
+
+  <!-- Legend -->
+  <rect x="30" y="44" width="230" height="60" rx="4" fill="#f5f5f5" stroke="#ddd" stroke-width="1"/>
+  <circle cx="48" cy="62" r="5" fill="#00aa33"/>
+  <text x="60" y="66" font-size="9" fill="#333">正常退出 (质量达标)</text>
+  <circle cx="48" cy="80" r="5" fill="#cc6600"/>
+  <text x="60" y="84" font-size="9" fill="#333">聪明退出 (改进幅度不足)</text>
+  <circle cx="48" cy="98" r="5" fill="#cc0000"/>
+  <text x="60" y="102" font-size="9" fill="#333">硬性保底 (重试/成本耗尽)</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="450" y="24" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Agent 推理范式演进</text>
+
+  <!-- Timeline bar -->
+  <line x1="60" y1="55" x2="840" y2="55" stroke="#ccc" stroke-width="2"/>
+  <!-- Dots -->
+  <circle cx="110" cy="55" r="5" fill="#0066cc"/>
+  <circle cx="300" cy="55" r="5" fill="#ff9900"/>
+  <circle cx="500" cy="55" r="5" fill="#9933cc"/>
+  <circle cx="690" cy="55" r="5" fill="#00aa33"/>
+  <!-- Year labels -->
+  <text x="110" y="45" font-size="10" text-anchor="middle" fill="#666">2022</text>
+  <text x="300" y="45" font-size="10" text-anchor="middle" fill="#666">2023 early</text>
+  <text x="500" y="45" font-size="10" text-anchor="middle" fill="#666">2023 mid</text>
+  <text x="690" y="45" font-size="10" text-anchor="middle" fill="#666">2023+</text>
+
+  <!-- Box 1: No Plan -->
+  <rect x="40" y="75" width="140" height="60" rx="6" fill="#e8f4f8" stroke="#0066cc" stroke-width="2"/>
+  <text x="110" y="100" font-size="13" font-weight="bold" text-anchor="middle" fill="#0066cc">No Plan</text>
+  <text x="110" y="118" font-size="11" text-anchor="middle" fill="#333">LLM 直接回答</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="180" y1="105" x2="224" y2="105" stroke="#0066cc" stroke-width="2"/>
+  <polygon points="224,101 234,105 224,109" fill="#0066cc"/>
+
+  <!-- Box 2: ReAct -->
+  <rect x="230" y="75" width="140" height="60" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <text x="300" y="97" font-size="13" font-weight="bold" text-anchor="middle" fill="#ff9900">ReAct</text>
+  <text x="300" y="118" font-size="10" text-anchor="middle" fill="#333">Thought-Act-Observe</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="370" y1="105" x2="424" y2="105" stroke="#ff9900" stroke-width="2"/>
+  <polygon points="424,101 434,105 424,109" fill="#ff9900"/>
+
+  <!-- Box 3: Plan-and-Execute -->
+  <rect x="430" y="75" width="140" height="60" rx="6" fill="#f0e8f8" stroke="#9933cc" stroke-width="2"/>
+  <text x="500" y="97" font-size="13" font-weight="bold" text-anchor="middle" fill="#9933cc">Plan-and-Exec</text>
+  <text x="500" y="118" font-size="10" text-anchor="middle" fill="#333">先规划再执行</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="570" y1="105" x2="614" y2="105" stroke="#9933cc" stroke-width="2"/>
+  <polygon points="614,101 624,105 614,109" fill="#9933cc"/>
+
+  <!-- Box 4: Hierarchical -->
+  <rect x="620" y="75" width="140" height="60" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="2"/>
+  <text x="690" y="97" font-size="13" font-weight="bold" text-anchor="middle" fill="#00aa33">Hierarchical</text>
+  <text x="690" y="118" font-size="10" text-anchor="middle" fill="#333">多层级递归分解</text>
+
+  <!-- Tree-of-Thought (side branch from ReAct) -->
+  <rect x="250" y="155" width="160" height="42" rx="6" fill="#fffce8" stroke="#ccaa00" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="330" y="175" font-size="11" font-weight="bold" text-anchor="middle" fill="#aa8800">Tree-of-Thought</text>
+  <text x="330" y="190" font-size="10" text-anchor="middle" fill="#666">多路径搜索选优</text>
+  <!-- Vertical from ReAct down, horizontal to ToT -->
+  <line x1="300" y1="135" x2="300" y2="145" stroke="#ccaa00" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="300" y1="145" x2="330" y2="145" stroke="#ccaa00" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="330" y1="145" x2="330" y2="155" stroke="#ccaa00" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Bottom annotation -->
+  <text x="450" y="215" font-size="11" text-anchor="middle" fill="#666">能力维度：单步回答 → 逐步推理 → 全局规划 → 多路径探索 → 递归分解</text>
+</svg>

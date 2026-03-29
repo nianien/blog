@@ -97,33 +97,7 @@ Agent 是 Stateful System —— 有状态、有副作用、有执行循环
 
 Agent 之所以能完成复杂任务，核心在于它运行一个**持续的控制循环**。这个循环可以抽象为六个阶段：
 
-```
-                    ┌──────────────────────────────────┐
-                    │         Agent Control Loop        │
-                    └──────────────────────────────────┘
-
-                           ┌─────────────┐
-                     ┌────▶│   Observe   │─────┐
-                     │     │ (感知输入)   │     │
-                     │     └─────────────┘     │
-                     │                          ▼
-              ┌──────┴──────┐           ┌─────────────┐
-              │    Update   │           │    Think    │
-              │ (更新状态)   │           │ (理解意图)   │
-              └──────┬──────┘           └──────┬──────┘
-                     ▲                          │
-                     │                          ▼
-              ┌──────┴──────┐           ┌─────────────┐
-              │   Reflect   │           │    Plan     │
-              │ (评估结果)   │◀──────────│ (制定计划)   │
-              └─────────────┘           └──────┬──────┘
-                                               │
-                                               ▼
-                                        ┌─────────────┐
-                                        │     Act     │
-                                        │ (执行动作)   │
-                                        └─────────────┘
-```
+![Agent Control Loop](/images/blog/agentic-01/agent-control-loop.svg)
 
 各阶段职责：
 
@@ -151,41 +125,7 @@ Agent 之所以能完成复杂任务，核心在于它运行一个**持续的控
 
 下面这张图展示了一个完整的 Agentic 系统的分层架构。它是整个系列 14 篇文章的"地图"：
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                     Production Layer                                │
-│  Observability │ Evaluation │ Security │ Cost Control │ Deployment  │
-├─────────────────────────────────────────────────────────────────────┤
-│                     Protocol Layer                                  │
-│         MCP (Model Context Protocol) │ Tool Registry               │
-│         Capability Declaration │ Permission Control                 │
-├─────────────────────────────────────────────────────────────────────┤
-│                     Multi-Agent Layer                               │
-│    Supervisor/Worker │ Peer-to-Peer │ Graph-based Orchestration    │
-│    Message Passing │ Shared State │ Agent Registry                  │
-├─────────────────────────────────────────────────────────────────────┤
-│                     Planner Layer                                   │
-│    ReAct │ Chain-of-Thought │ Tree-of-Thought │ Hierarchical Plan  │
-│    Task Decomposition │ Self-Evaluation │ Retry Budget              │
-├─────────────────────────────────────────────────────────────────────┤
-│                     Memory Layer                                    │
-│    Short-term: Conversation State │ Working Memory                  │
-│    Long-term: Vector DB │ Knowledge Graph │ User Profile            │
-│    RAG Pipeline: Chunk → Embed → Index → Retrieve → Rerank         │
-├─────────────────────────────────────────────────────────────────────┤
-│                     Tool Layer                                      │
-│    Function Calling │ JSON Schema │ Structured Output               │
-│    Tool Validation │ Sandbox Execution │ Error Handling             │
-├─────────────────────────────────────────────────────────────────────┤
-│                     Control Loop Layer                              │
-│    Observe → Think → Plan → Act → Reflect → Update                 │
-│    State Machine │ Execution Engine │ Interrupt & Resume            │
-├─────────────────────────────────────────────────────────────────────┤
-│                     LLM Runtime Layer                               │
-│    ChatCompletion API │ Streaming │ Token Management                │
-│    Model Router │ Fallback │ Rate Limiting │ Caching               │
-└─────────────────────────────────────────────────────────────────────┘
-```
+![Agentic 系统全景架构](/images/blog/agentic-01/agentic-architecture.svg)
 
 **架构解读**：
 
@@ -671,14 +611,7 @@ class Agent:
 
 ### 演进路径总结
 
-```
-Level 0   Level 1     Level 2        Level 3         Level 4         Level 5
- LLM ───→ +Tools ───→ +Loop ───→ +Memory ───→ +Planner ───→ +Production
-  │          │           │           │             │              │
-  │          │           │           │             │              │
-单次调用   一步行动    多步执行    有记忆的      有规划的      生产级
-无状态     无循环     有迭代       迭代执行      智能执行      完整系统
-```
+![从 LLM 到 Agent 的演进路径](/images/blog/agentic-01/evolution-path.svg)
 
 每一级都引入一个**新的能力维度**，也同时引入**新的复杂度和 trade-off**。不是所有场景都需要 Level 5。选择哪个级别，取决于你的任务复杂度和工程约束。
 
@@ -726,17 +659,7 @@ Agent 在以下场景中可能是错误的选择：
 
 ### 8.1 决策维度
 
-```
-                        任务特征评估
-                             │
-          ┌──────────────────┼──────────────────┐
-          │                  │                  │
-      确定性程度         延迟要求            成本承受力
-          │                  │                  │
-     ┌────┴────┐        ┌────┴────┐       ┌────┴────┐
-     高        低        <200ms    >2s      紧        充足
-     │         │          │        │       │         │
-```
+![选型决策维度](/images/blog/agentic-01/decision-dimensions.svg)
 
 ### 8.2 决策矩阵
 
@@ -752,33 +675,7 @@ Agent 在以下场景中可能是错误的选择：
 
 ### 8.3 快速判断流程
 
-```
-START
-  │
-  ├─ 任务流程能否用 flowchart 清晰表达？
-  │   ├─ 是 → 流程完全确定，步骤不变
-  │   │   └─ 是否需要 NLP 或多 API 聚合？
-  │   │       ├─ 否 → 用传统后端 + DB（不用 LLM）
-  │   │       └─ 是 → 用 ChatCompletion + prompt 工程
-  │   │
-  │   └─ 否 → 流程存在分支和不确定性
-  │       └─ 是否需要 <200ms 响应？
-  │           ├─ 是 → **不适合 Agent**，降级为 prompt + rule
-  │           └─ 否 → 是否能负担多次 API 调用？
-  │               ├─ 否 → **Workflow 引擎**（确定性 + 成本控制）
-  │               └─ 是 → **Agent**（自主规划 + 多步推理）
-  │
-  └─ 选择确定，评估 memory 需求
-      ├─ 需要跨会话持久化？
-      │   ├─ 是 → 加 RAG / Vector DB
-      │   └─ 否 → 会话内存足够
-      │
-      └─ 需要多 Agent 协作？
-          ├─ 是 → 设计 Multi-Agent 系统
-          └─ 否 → 单 Agent 足够
-
-END
-```
+![快速判断流程](/images/blog/agentic-01/decision-flowchart.svg)
 
 ### 8.4 具体场景举例
 
@@ -1614,5 +1511,5 @@ if self.cost.total_tokens > self.token_budget:
 
 > **系列导航**：本文是 Agentic 系列的第 01 篇。
 >
-> - 下一篇：[02 | 从Prompt到Agent：为什么LLM本身不是Agent](/engineering/agentic/02-从Prompt到Agent：为什么LLM本身不是Agent)
+> - 下一篇：[02 | 从Prompt到Agent：为什么LLM本身不是Agent](/blog/engineering/agentic/02-从Prompt到Agent：为什么LLM本身不是Agent)
 > - 完整目录见第 5 节

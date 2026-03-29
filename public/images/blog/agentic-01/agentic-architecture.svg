@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 680" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="layer-prod" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fef2f2"/><stop offset="100%" stop-color="#fee2e2"/>
+    </linearGradient>
+    <linearGradient id="layer-proto" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fefce8"/><stop offset="100%" stop-color="#fef9c3"/>
+    </linearGradient>
+    <linearGradient id="layer-multi" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#faf5ff"/><stop offset="100%" stop-color="#f3e8ff"/>
+    </linearGradient>
+    <linearGradient id="layer-plan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#eff6ff"/><stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="layer-mem" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ecfdf5"/><stop offset="100%" stop-color="#d1fae5"/>
+    </linearGradient>
+    <linearGradient id="layer-tool" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0fdfa"/><stop offset="100%" stop-color="#ccfbf1"/>
+    </linearGradient>
+    <linearGradient id="layer-ctrl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#eef2ff"/><stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="layer-llm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#0f172a" font-size="18" font-weight="700">Agentic 系统全景架构</text>
+  <text x="400" y="50" text-anchor="middle" fill="#64748b" font-size="12">自底向上：每一层为上一层提供能力</text>
+
+  <!-- Layer 1: Production Layer -->
+  <rect x="40" y="70" width="720" height="65" rx="10" fill="url(#layer-prod)" stroke="#fca5a5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="92" fill="#991b1b" font-size="14" font-weight="700">Production Layer</text>
+  <text x="60" y="120" fill="#b91c1c" font-size="11">Observability  ·  Evaluation  ·  Security  ·  Cost Control  ·  Deployment</text>
+  <rect x="690" y="78" width="55" height="20" rx="4" fill="#fecaca"/><text x="717" y="92" text-anchor="middle" fill="#991b1b" font-size="9" font-weight="600">第14篇</text>
+
+  <!-- Layer 2: Protocol Layer -->
+  <rect x="40" y="145" width="720" height="65" rx="10" fill="url(#layer-proto)" stroke="#fde68a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="167" fill="#92400e" font-size="14" font-weight="700">Protocol Layer</text>
+  <text x="60" y="195" fill="#a16207" font-size="11">MCP (Model Context Protocol)  ·  Tool Registry  ·  Capability Declaration  ·  Permission Control</text>
+  <rect x="690" y="153" width="55" height="20" rx="4" fill="#fef08a"/><text x="717" y="167" text-anchor="middle" fill="#92400e" font-size="9" font-weight="600">第13篇</text>
+
+  <!-- Layer 3: Multi-Agent Layer -->
+  <rect x="40" y="220" width="720" height="65" rx="10" fill="url(#layer-multi)" stroke="#d8b4fe" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="242" fill="#581c87" font-size="14" font-weight="700">Multi-Agent Layer</text>
+  <text x="60" y="270" fill="#7e22ce" font-size="11">Supervisor/Worker  ·  Peer-to-Peer  ·  Graph-based Orchestration  ·  Message Passing  ·  Agent Registry</text>
+  <rect x="690" y="228" width="55" height="20" rx="4" fill="#e9d5ff"/><text x="717" y="242" text-anchor="middle" fill="#581c87" font-size="9" font-weight="600">第11篇</text>
+
+  <!-- Layer 4: Planner Layer -->
+  <rect x="40" y="295" width="720" height="65" rx="10" fill="url(#layer-plan)" stroke="#93c5fd" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="317" fill="#1e3a8a" font-size="14" font-weight="700">Planner Layer</text>
+  <text x="60" y="345" fill="#1d4ed8" font-size="11">ReAct  ·  Chain-of-Thought  ·  Tree-of-Thought  ·  Hierarchical Plan  ·  Task Decomposition  ·  Self-Evaluation</text>
+  <rect x="690" y="303" width="55" height="20" rx="4" fill="#bfdbfe"/><text x="717" y="317" text-anchor="middle" fill="#1e3a8a" font-size="9" font-weight="600">第10篇</text>
+
+  <!-- Layer 5: Memory Layer -->
+  <rect x="40" y="370" width="720" height="75" rx="10" fill="url(#layer-mem)" stroke="#6ee7b7" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="392" fill="#065f46" font-size="14" font-weight="700">Memory Layer</text>
+  <text x="60" y="413" fill="#047857" font-size="11">Short-term: Conversation State · Working Memory</text>
+  <text x="60" y="432" fill="#047857" font-size="11">Long-term: Vector DB · Knowledge Graph · User Profile · RAG Pipeline</text>
+  <rect x="675" y="378" width="70" height="20" rx="4" fill="#a7f3d0"/><text x="710" y="392" text-anchor="middle" fill="#065f46" font-size="9" font-weight="600">第08-09篇</text>
+
+  <!-- Layer 6: Tool Layer -->
+  <rect x="40" y="455" width="720" height="65" rx="10" fill="url(#layer-tool)" stroke="#5eead4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="477" fill="#134e4a" font-size="14" font-weight="700">Tool Layer</text>
+  <text x="60" y="505" fill="#0f766e" font-size="11">Function Calling  ·  JSON Schema  ·  Structured Output  ·  Sandbox Execution  ·  Error Handling</text>
+  <rect x="690" y="463" width="55" height="20" rx="4" fill="#99f6e4"/><text x="717" y="477" text-anchor="middle" fill="#134e4a" font-size="9" font-weight="600">第05篇</text>
+
+  <!-- Layer 7: Control Loop Layer -->
+  <rect x="40" y="530" width="720" height="65" rx="10" fill="url(#layer-ctrl)" stroke="#a5b4fc" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="552" fill="#312e81" font-size="14" font-weight="700">Control Loop Layer</text>
+  <text x="60" y="580" fill="#4338ca" font-size="11">Observe → Think → Plan → Act → Reflect → Update  ·  State Machine  ·  Execution Engine  ·  Interrupt &amp; Resume</text>
+  <rect x="690" y="538" width="55" height="20" rx="4" fill="#c7d2fe"/><text x="717" y="552" text-anchor="middle" fill="#312e81" font-size="9" font-weight="600">第04篇</text>
+
+  <!-- Layer 8: LLM Runtime Layer -->
+  <rect x="40" y="605" width="720" height="65" rx="10" fill="url(#layer-llm)" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="627" fill="#0f172a" font-size="14" font-weight="700">LLM Runtime Layer</text>
+  <text x="60" y="655" fill="#334155" font-size="11">ChatCompletion API  ·  Streaming  ·  Token Management  ·  Model Router  ·  Fallback  ·  Rate Limiting  ·  Caching</text>
+  <rect x="690" y="613" width="55" height="20" rx="4" fill="#e2e8f0"/><text x="717" y="627" text-anchor="middle" fill="#334155" font-size="9" font-weight="600">第02篇</text>
+</svg>

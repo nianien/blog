@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 600" width="850" height="600">
+  <defs>
+    <style>
+      .outer-box { fill: #f0f4f8; stroke: #2c3e50; stroke-width: 2; }
+      .layer-box { fill: #e8f1f8; stroke: #3498db; stroke-width: 1.5; }
+      .layer-title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: bold; fill: #2c3e50; }
+      .layer-label { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #34495e; }
+      .layer-content { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #555; }
+      .divider { stroke: #bdc3c7; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Outer container -->
+  <rect class="outer-box" x="50" y="20" width="750" height="560" rx="5"/>
+
+  <!-- Title -->
+  <text class="layer-title" x="425" y="50" text-anchor="middle" font-size="16">Final Prompt</text>
+
+  <!-- Layer 1 -->
+  <rect class="layer-box" x="70" y="70" width="710" height="100" rx="3"/>
+  <text class="layer-title" x="80" y="90">Layer 1: System Prompt (静态)</text>
+  <line class="divider" x1="70" y1="100" x2="780" y2="100"/>
+  <text class="layer-content" x="85" y="115">- 身份定义（你是谁，你的职责是什么）</text>
+  <text class="layer-content" x="85" y="135">- 行为约束（必须做什么，禁止做什么）</text>
+  <text class="layer-content" x="85" y="155">- 输出格式规范（JSON Schema / XML 模板）</text>
+
+  <!-- Layer 2 -->
+  <rect class="layer-box" x="70" y="180" width="710" height="120" rx="3"/>
+  <text class="layer-title" x="80" y="200">Layer 2: Context Injection (动态)</text>
+  <line class="divider" x1="70" y1="210" x2="780" y2="210"/>
+  <text class="layer-content" x="85" y="225">- 可用工具列表及其描述</text>
+  <text class="layer-content" x="85" y="245">- 历史对话摘要 / 关键事实</text>
+  <text class="layer-content" x="85" y="265">- 当前系统状态（已完成步骤、中间结果）</text>
+  <text class="layer-content" x="85" y="285">- 检索到的外部知识（RAG 结果）</text>
+
+  <!-- Layer 3 -->
+  <rect class="layer-box" x="70" y="310" width="710" height="100" rx="3"/>
+  <text class="layer-title" x="80" y="330">Layer 3: User Input (外部)</text>
+  <line class="divider" x1="70" y1="340" x2="780" y2="340"/>
+  <text class="layer-content" x="85" y="355">- 用户的原始请求</text>
+  <text class="layer-content" x="85" y="375">- 或上一步 Agent 的输出（在 Multi-Agent 中）</text>
+
+  <!-- Layer 4 -->
+  <rect class="layer-box" x="70" y="420" width="710" height="130" rx="3"/>
+  <text class="layer-title" x="80" y="440">Layer 4: Constraints  Guardrails (静态+动态)</text>
+  <line class="divider" x1="70" y1="450" x2="780" y2="450"/>
+  <text class="layer-content" x="85" y="465">- 安全边界（禁止调用的工具、禁止访问的数据）</text>
+  <text class="layer-content" x="85" y="485">- 输出限制（最大步骤数、Token 预算）</text>
+  <text class="layer-content" x="85" y="505">- 当前 Turn 的特殊指令</text>
+</svg>

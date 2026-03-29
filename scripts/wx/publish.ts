@@ -8,13 +8,14 @@
  */
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
-import { resolve, dirname, extname, basename } from 'node:path'
+import { resolve, dirname, extname, basename, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { execFile } from 'node:child_process'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 import matter from 'gray-matter'
 import { Marked, type Tokens } from 'marked'
+import sharp from 'sharp'
 import { wxStyles, normalizeStyle } from './styles.js'
 import {
   uploadImage,
@@ -163,6 +164,13 @@ const marked = new Marked({
 
 let html = marked.parse(mdBody) as string
 
+// 微信不支持 SVG，自动替换为同名 PNG
+// PNG 会在后续步骤中由 SVG 自动转换生成到 wx_out/images/
+html = html.replace(
+  /(<img\s+src="[^"]+)\.svg(")/g,
+  '$1.png$2'
+)
+
 // 微信不允许外部链接，将 <a> 标签替换为纯文本
 html = html.replace(/<a\s[^>]*>(.*?)<\/a>/g, '$1')
 
@@ -259,15 +267,69 @@ async function getThumbMediaId(): Promise<string> {
   return media_id
 }
 
+// ─── SVG → PNG 转换 ───
+
+/**
+ * 扫描 HTML 中的 .png 图片引用，如果对应的 .svg 源文件存在，
+ * 就自动转换为 PNG 并保存到 wx_out/images/ 目录
+ */
+async function convertSvgToPng(html: string): Promise<string> {
+  const projectRoot = resolve(__dirname, '../..')
+  const outDir = resolve(projectRoot, 'wx_out')
+  const imgRegex = /<img\s+[^>]*src="([^"]+\.png)"/g
+  const matches = [...html.matchAll(imgRegex)]
+
+  for (const match of matches) {
+    const pngSrc = match[1]
+
+    // 只处理本地图片路径（以 / 开头的绝对路径）
+    if (!pngSrc.startsWith('/')) continue
+
+    // 检查对应的 SVG 源文件是否存在
+    const svgRelPath = pngSrc.replace(/\.png$/, '.svg')
+    const svgAbsPath = resolve(projectRoot, 'public', svgRelPath.slice(1))
+    if (!existsSync(svgAbsPath)) continue
+
+    // 生成 PNG 到 wx_out/images/blog/...（pngSrc 已含 /images/ 前缀）
+    const pngOutPath = resolve(outDir, pngSrc.slice(1))
+    mkdirSync(dirname(pngOutPath), { recursive: true })
+
+    const svgBuf = readFileSync(svgAbsPath)
+    await sharp(svgBuf, { density: 144 })
+      .flatten({ background: { r: 255, g: 255, b: 255 } })
+      .png()
+      .toFile(pngOutPath)
+
+    console.log(`  🖼️  SVG → PNG: ${basename(svgAbsPath)} → ${pngOutPath}`)
+
+    // 替换 HTML 中的路径为 wx_out 下的绝对路径
+    html = html.split(pngSrc).join(pngOutPath)
+  }
+
+  return html
+}
+
 // ─── 预览模式 ───
 
 if (previewMode) {
-  const outDir = resolve(__dirname, '../../wx_out')
-  mkdirSync(outDir, { recursive: true })
-  const outFileName = basename(absolutePath, '.md') + '.html'
-  const outPath = resolve(outDir, outFileName)
+  ;(async () => {
+    const outDir = resolve(__dirname, '../../wx_out')
+    mkdirSync(outDir, { recursive: true })
+    const outFileName = basename(absolutePath, '.md') + '.html'
+    const outPath = resolve(outDir, outFileName)
 
-  const previewHtml = `<!DOCTYPE html>
+    // 自动将 SVG 转为 PNG，保存到 wx_out/images/ 并更新 HTML 路径
+    html = await convertSvgToPng(html)
+
+    // 对于非 SVG 转换的本地图片，将路径指向 public/ 目录
+    // 只匹配项目相对路径（/images/...），跳过已被 convertSvgToPng 替换为系统绝对路径的
+    const projectRoot = resolve(__dirname, '../..')
+    html = html.replace(
+      /(<img\s+[^>]*src=")(\/(?!Users\/)(?!home\/)[^"]+)(")/g,
+      (_match, prefix, path, suffix) => `${prefix}${projectRoot}/public${path}${suffix}`
+    )
+
+    const previewHtml = `<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -307,19 +369,23 @@ if (previewMode) {
 </body>
 </html>`
 
-  writeFileSync(outPath, previewHtml, 'utf-8')
-  console.log(`\n✅ 预览文件已生成: ${outPath}`)
+    writeFileSync(outPath, previewHtml, 'utf-8')
+    console.log(`\n✅ 预览文件已生成: ${outPath}`)
 
-  // 自动用浏览器打开
-  const openCmd = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open'
-  execFile(openCmd, [outPath])
-  process.exit(0)
+    // 自动用浏览器打开
+    const openCmd = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open'
+    execFile(openCmd, [outPath])
+    process.exit(0)
+  })()
 }
 
 // ─── 发布模式 ───
 
 async function publish() {
-  // 处理文章中的图片
+  // 先将 SVG 转为 PNG（生成到 wx_out/images/），更新 HTML 中的路径
+  html = await convertSvgToPng(html)
+
+  // 处理文章中的图片（上传到微信 CDN）
   html = await processImages(html)
 
   // 获取封面图

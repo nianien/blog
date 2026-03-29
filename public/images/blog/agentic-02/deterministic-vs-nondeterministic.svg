@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="340" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- Left column: Deterministic -->
+  <text x="170" y="32" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565C0">确定性（代码）</text>
+  <rect x="40" y="48" width="260" height="230" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="170" y="78" text-anchor="middle" font-size="13" fill="#333">输入校验</text>
+  <text x="170" y="102" text-anchor="middle" font-size="13" fill="#333">工具调度</text>
+  <text x="170" y="126" text-anchor="middle" font-size="13" fill="#333">参数类型检查</text>
+  <text x="170" y="150" text-anchor="middle" font-size="13" fill="#333">权限控制</text>
+  <text x="170" y="174" text-anchor="middle" font-size="13" fill="#333">错误重试逻辑</text>
+  <text x="170" y="198" text-anchor="middle" font-size="13" fill="#333">速率限制</text>
+  <text x="170" y="222" text-anchor="middle" font-size="13" fill="#333">日志记录</text>
+  <text x="170" y="246" text-anchor="middle" font-size="13" fill="#333">状态持久化</text>
+
+  <!-- Left footer -->
+  <line x1="170" y1="280" x2="170" y2="300" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="170" y="322" text-anchor="middle" font-size="12" font-weight="bold" fill="#1976D2">可预测、可审计、可测试</text>
+
+  <!-- Right column: Non-deterministic -->
+  <text x="510" y="32" text-anchor="middle" font-size="15" font-weight="bold" fill="#6A1B9A">非确定性（LLM）</text>
+  <rect x="380" y="48" width="260" height="230" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="510" y="78" text-anchor="middle" font-size="13" fill="#333">意图理解</text>
+  <text x="510" y="102" text-anchor="middle" font-size="13" fill="#333">工具选择</text>
+  <text x="510" y="126" text-anchor="middle" font-size="13" fill="#333">参数填充</text>
+  <text x="510" y="150" text-anchor="middle" font-size="13" fill="#333">上下文摘要</text>
+  <text x="510" y="174" text-anchor="middle" font-size="13" fill="#333">结果解释</text>
+  <text x="510" y="198" text-anchor="middle" font-size="13" fill="#333">对话策略</text>
+  <text x="510" y="222" text-anchor="middle" font-size="13" fill="#333">异常情况判断</text>
+  <text x="510" y="246" text-anchor="middle" font-size="13" fill="#333">任务分解</text>
+
+  <!-- Right footer -->
+  <line x1="510" y1="280" x2="510" y2="300" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="510" y="322" text-anchor="middle" font-size="12" font-weight="bold" fill="#7B1FA2">灵活、自适应、但不可控</text>
+
+  <!-- Divider -->
+  <line x1="340" y1="48" x2="340" y2="278" stroke="#ddd" stroke-width="1.5" stroke-dasharray="6,4"/>
+</svg>

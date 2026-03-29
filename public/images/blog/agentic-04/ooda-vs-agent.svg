@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="620" height="300" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="310" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">OODA Loop vs Agent Control Loop</text>
+
+  <!-- Column headers -->
+  <text x="120" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#1976D2">OODA Loop</text>
+  <text x="420" y="62" text-anchor="middle" font-size="13" font-weight="bold" fill="#7B1FA2">Agent Control Loop</text>
+
+  <!-- Row 1: Observe -->
+  <rect x="40" y="78" width="160" height="36" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="120" y="101" text-anchor="middle" font-size="13" fill="#1565C0">Observe</text>
+  <rect x="340" y="78" width="160" height="36" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="420" y="101" text-anchor="middle" font-size="13" fill="#6A1B9A">OBSERVE</text>
+  <line x1="200" y1="96" x2="338" y2="96" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="540" y="101" font-size="11" fill="#888">感知环境</text>
+
+  <!-- Row 2: Orient + Decide → THINK -->
+  <rect x="40" y="128" width="160" height="36" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="120" y="151" text-anchor="middle" font-size="13" fill="#1565C0">Orient</text>
+  <rect x="40" y="172" width="160" height="36" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="120" y="195" text-anchor="middle" font-size="13" fill="#1565C0">Decide</text>
+  <rect x="340" y="138" width="160" height="60" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="420" y="165" text-anchor="middle" font-size="13" fill="#6A1B9A">THINK</text>
+  <text x="420" y="181" text-anchor="middle" font-size="10" fill="#9C27B0">Orient+Decide 合一</text>
+  <line x1="200" y1="146" x2="338" y2="158" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="200" y1="190" x2="338" y2="178" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="540" y="160" font-size="11" fill="#888">理解上下文</text>
+  <text x="540" y="176" font-size="11" fill="#888">形成判断</text>
+
+  <!-- Row 3: Act -->
+  <rect x="40" y="222" width="160" height="36" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="120" y="245" text-anchor="middle" font-size="13" fill="#1565C0">Act</text>
+  <rect x="340" y="212" width="160" height="36" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="420" y="235" text-anchor="middle" font-size="13" fill="#6A1B9A">ACT</text>
+  <line x1="200" y1="240" x2="338" y2="232" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="540" y="235" font-size="11" fill="#888">执行行动</text>
+
+  <!-- Row 4: REFLECT (OODA doesn't have) -->
+  <rect x="340" y="260" width="160" height="36" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="420" y="283" text-anchor="middle" font-size="13" fill="#6A1B9A">REFLECT</text>
+  <text x="540" y="280" font-size="11" fill="#888">OODA 中无</text>
+  <text x="540" y="294" font-size="11" fill="#888">显式反思阶段</text>
+</svg>

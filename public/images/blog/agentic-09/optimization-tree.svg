@@ -1,0 +1,103 @@
+<svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, sans-serif; }
+      .title { font-size: 14px; font-weight: bold; fill: #333; }
+      .node { font-size: 12px; fill: #333; }
+      .condition { font-size: 11px; font-weight: bold; fill: #e74c3c; }
+      .action { font-size: 10px; fill: #666; }
+      .decision { font-size: 10px; font-weight: bold; fill: #27ae60; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="650" fill="#fafafa" />
+
+  <!-- Title -->
+  <text x="450" y="30" class="title" text-anchor="middle">RAG 优化决策树</text>
+
+  <!-- Root node -->
+  <g id="root">
+    <rect x="350" y="50" width="200" height="50" fill="#f0f7ff" stroke="#3498db" stroke-width="2" rx="4"/>
+    <text x="450" y="82" text-anchor="middle" font-weight="bold" font-size="12">当前 Recall@10?</text>
+  </g>
+
+  <!-- Line down -->
+  <line x1="450" y1="100" x2="450" y2="130" stroke="#666" stroke-width="2"/>
+
+  <!-- Branch 1: < 0.65 -->
+  <g id="branch1">
+    <line x1="450" y1="130" x2="150" y2="160" stroke="#666" stroke-width="2"/>
+    <rect x="30" y="160" width="240" height="60" fill="#fce4ec" stroke="#e74c3c" stroke-width="2" rx="4"/>
+    <text x="150" y="180" text-anchor="middle" class="condition">&lt; 0.65</text>
+    <text x="150" y="200" text-anchor="middle" class="action">考虑从 BM25 升到 Hybrid</text>
+    <text x="150" y="215" text-anchor="middle" class="decision">成本增加：10 倍</text>
+  </g>
+
+  <!-- Branch 2: 0.65-0.75 -->
+  <g id="branch2">
+    <line x1="450" y1="130" x2="450" y2="160" stroke="#666" stroke-width="2"/>
+    <rect x="330" y="160" width="240" height="80" fill="#fff3cd" stroke="#f39c12" stroke-width="2" rx="4"/>
+    <text x="450" y="180" text-anchor="middle" class="condition">0.65 - 0.75</text>
+    <text x="450" y="200" text-anchor="middle" class="action">升到完整 Hybrid？</text>
+    <text x="450" y="218" text-anchor="middle" class="decision">额外成本：+0.0003/query</text>
+    <text x="450" y="232" text-anchor="middle" class="decision">若投诉率 &gt; 10%，升级值得</text>
+  </g>
+
+  <!-- Branch 3: 0.75-0.85 -->
+  <g id="branch3">
+    <line x1="450" y1="130" x2="750" y2="160" stroke="#666" stroke-width="2"/>
+    <rect x="630" y="160" width="240" height="100" fill="#e8f8f5" stroke="#27ae60" stroke-width="2" rx="4"/>
+    <text x="750" y="180" text-anchor="middle" class="condition">0.75 - 0.85</text>
+    <text x="750" y="200" text-anchor="middle" class="action">加 Reranker 还是</text>
+    <text x="750" y="215" text-anchor="middle" class="action">优化 Chunking?</text>
+    <text x="750" y="235" text-anchor="middle" class="decision">Reranker: 成本 +80%</text>
+    <text x="750" y="250" text-anchor="middle" class="decision">先优化 Chunking 更值得</text>
+  </g>
+
+  <!-- Additional details below Branch 1 -->
+  <g id="details1">
+    <line x1="150" y1="220" x2="150" y2="260" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="30" y="280" font-size="10" fill="#666">质量提升: +0.23 recall</text>
+    <text x="30" y="295" font-size="10" fill="#666">投资回报率: 2.3% per unit cost</text>
+    <text x="30" y="310" font-size="10" fill="#666">用户投诉率: &gt; 20%</text>
+    <text x="30" y="325" font-size="10" fill="#e74c3c" font-weight="bold">→ 必须升级</text>
+  </g>
+
+  <!-- Additional details below Branch 2 -->
+  <g id="details2">
+    <line x1="450" y1="240" x2="450" y2="280" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="330" y="300" font-size="10" fill="#666">质量提升: +0.10 recall</text>
+    <text x="330" y="315" font-size="10" fill="#666">用户投诉率: 10-20%</text>
+    <text x="330" y="330" font-size="10" fill="#f39c12" font-weight="bold">→ 强烈建议升级</text>
+  </g>
+
+  <!-- Additional details below Branch 3 -->
+  <g id="details3">
+    <line x1="750" y1="260" x2="750" y2="300" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="630" y="320" font-size="10" fill="#666">Reranker MRR +10 points</text>
+    <text x="630" y="335" font-size="10" fill="#666">Chunking 优化: 成本 0</text>
+    <text x="630" y="350" font-size="10" fill="#27ae60" font-weight="bold">→ 可选升级</text>
+  </g>
+
+  <!-- Branch 4: > 0.85 -->
+  <g id="branch4">
+    <rect x="330" y="380" width="240" height="80" fill="#f0f0f0" stroke="#666" stroke-width="2" rx="4"/>
+    <text x="450" y="400" text-anchor="middle" class="condition">&gt; 0.85</text>
+    <text x="450" y="420" text-anchor="middle" class="action">进入收益递减阶段</text>
+    <text x="450" y="438" text-anchor="middle" class="decision">关注点：延迟和成本</text>
+    <text x="450" y="453" text-anchor="middle" class="decision">优化：缓存、路由、聚类</text>
+  </g>
+
+  <line x1="450" y1="240" x2="450" y2="380" stroke="#999" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <!-- Summary at bottom -->
+  <g id="summary">
+    <rect x="50" y="500" width="800" height="120" fill="#f9f9f9" stroke="#ccc" stroke-width="1" rx="4"/>
+    <text x="70" y="525" font-weight="bold" font-size="11">关键阈值总结：</text>
+    <text x="70" y="545" font-size="10" fill="#333">• &lt; 0.60: 用户流失风险高 → 必须升级</text>
+    <text x="70" y="560" font-size="10" fill="#333">• 0.60-0.75: 投诉率 10-20% → 强烈建议升级</text>
+    <text x="70" y="575" font-size="10" fill="#333">• 0.75-0.85: 投诉率 &lt; 10% → 可选升级 (优化 Chunking 性价比更高)</text>
+    <text x="70" y="590" font-size="10" fill="#333">• &gt; 0.85: 投诉率 &lt; 5% → 关注成本效率，不必进一步升级</text>
+  </g>
+</svg>

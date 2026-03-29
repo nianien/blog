@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#475569"/>
+    </marker>
+    <marker id="arr-y" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#22c55e"/>
+    </marker>
+    <marker id="arr-n" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ef4444"/>
+    </marker>
+    <filter id="sh" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- START -->
+  <circle cx="400" cy="30" r="22" fill="#1e293b"/>
+  <text x="400" y="35" text-anchor="middle" fill="white" font-size="11" font-weight="600">START</text>
+  <line x1="400" y1="52" x2="400" y2="72" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Q1: flowchart? -->
+  <polygon points="400,75 540,120 400,165 260,120" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="400" y="116" text-anchor="middle" fill="#1e40af" font-size="11" font-weight="600">任务流程能否用</text>
+  <text x="400" y="132" text-anchor="middle" fill="#1e40af" font-size="11" font-weight="600">flowchart 清晰表达？</text>
+
+  <!-- ===== YES branch (left): 流程确定 ===== -->
+  <line x1="260" y1="120" x2="195" y2="120" stroke="#22c55e" stroke-width="2" marker-end="url(#arr-y)"/>
+  <text x="230" y="112" fill="#22c55e" font-size="10" font-weight="600">是</text>
+
+  <!-- Q2: 需要 NLP？ -->
+  <polygon points="130,85 195,120 130,155 65,120" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="130" y="116" text-anchor="middle" fill="#15803d" font-size="10" font-weight="600">需要 NLP 或</text>
+  <text x="130" y="130" text-anchor="middle" fill="#15803d" font-size="10" font-weight="600">多 API 聚合？</text>
+
+  <!-- Q2 No → 传统后端 -->
+  <line x1="130" y1="85" x2="130" y2="45" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr-n)"/>
+  <text x="140" y="68" fill="#ef4444" font-size="9" font-weight="600">否</text>
+  <rect x="70" y="10" width="120" height="35" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="130" y="32" text-anchor="middle" fill="#475569" font-size="11" font-weight="600">传统后端 + DB</text>
+
+  <!-- Q2 Yes → ChatCompletion -->
+  <line x1="130" y1="155" x2="130" y2="195" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arr-y)"/>
+  <text x="140" y="178" fill="#22c55e" font-size="9" font-weight="600">是</text>
+  <rect x="55" y="198" width="150" height="35" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="130" y="220" text-anchor="middle" fill="#1e40af" font-size="11" font-weight="600">ChatCompletion</text>
+
+  <!-- ===== NO branch (right): 流程不确定 ===== -->
+  <line x1="540" y1="120" x2="600" y2="120" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-n)"/>
+  <text x="565" y="112" fill="#ef4444" font-size="10" font-weight="600">否</text>
+
+  <!-- Q3: <200ms? -->
+  <polygon points="670,85 740,120 670,155 600,120" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="670" y="116" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="600">需要</text>
+  <text x="670" y="130" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="600">&lt;200ms 响应？</text>
+
+  <!-- Q3 Yes → 不适合 Agent -->
+  <line x1="740" y1="120" x2="775" y2="120" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arr-y)"/>
+  <text x="755" y="112" fill="#22c55e" font-size="9" font-weight="600">是</text>
+  <rect x="778" y="103" width="35" height="35" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="795" y="118" text-anchor="middle" fill="#991b1b" font-size="8" font-weight="600">不适合</text>
+  <text x="795" y="130" text-anchor="middle" fill="#991b1b" font-size="8" font-weight="600">Agent</text>
+
+  <!-- Q3 No → Q4 -->
+  <line x1="670" y1="155" x2="670" y2="195" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr-n)"/>
+  <text x="680" y="178" fill="#ef4444" font-size="9" font-weight="600">否</text>
+
+  <!-- Q4: 成本？ -->
+  <polygon points="670,198 750,235 670,272 590,235" fill="#fdf4ff" stroke="#a855f7" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="670" y="231" text-anchor="middle" fill="#7e22ce" font-size="10" font-weight="600">能负担多次</text>
+  <text x="670" y="245" text-anchor="middle" fill="#7e22ce" font-size="10" font-weight="600">API 调用？</text>
+
+  <!-- Q4 No → Workflow -->
+  <line x1="590" y1="235" x2="530" y2="235" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr-n)"/>
+  <text x="563" y="228" fill="#ef4444" font-size="9" font-weight="600">否</text>
+  <rect x="430" y="218" width="100" height="35" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="480" y="240" text-anchor="middle" fill="#a16207" font-size="11" font-weight="600">Workflow</text>
+
+  <!-- Q4 Yes → Agent -->
+  <line x1="750" y1="235" x2="775" y2="235" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arr-y)"/>
+  <text x="760" y="228" fill="#22c55e" font-size="9" font-weight="600">是</text>
+  <rect x="778" y="218" width="35" height="35" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1.5"/>
+  <text x="795" y="240" text-anchor="middle" fill="#15803d" font-size="10" font-weight="700">Agent</text>
+
+  <!-- ===== Bottom Section: Memory Assessment ===== -->
+  <line x1="400" y1="165" x2="400" y2="310" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="400" y="300" text-anchor="middle" fill="#64748b" font-size="10">选择确定后，评估 Memory 需求</text>
+  <line x1="400" y1="310" x2="400" y2="340" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Q5: 跨会话持久化？ -->
+  <polygon points="400,340 520,380 400,420 280,380" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="400" y="376" text-anchor="middle" fill="#065f46" font-size="11" font-weight="600">需要跨会话</text>
+  <text x="400" y="392" text-anchor="middle" fill="#065f46" font-size="11" font-weight="600">持久化？</text>
+
+  <!-- Q5 Yes → RAG -->
+  <line x1="280" y1="380" x2="215" y2="380" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arr-y)"/>
+  <text x="250" y="372" fill="#22c55e" font-size="9" font-weight="600">是</text>
+  <rect x="100" y="363" width="115" height="35" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="157" y="385" text-anchor="middle" fill="#065f46" font-size="11" font-weight="600">+ RAG / VectorDB</text>
+
+  <!-- Q5 No → 会话内存 -->
+  <line x1="520" y1="380" x2="585" y2="380" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr-n)"/>
+  <text x="550" y="372" fill="#ef4444" font-size="9" font-weight="600">否</text>
+  <rect x="588" y="363" width="110" height="35" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="643" y="385" text-anchor="middle" fill="#475569" font-size="11" font-weight="600">会话内存足够</text>
+
+  <!-- Q6: 多Agent？ -->
+  <line x1="400" y1="420" x2="400" y2="460" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <polygon points="400,460 520,500 400,540 280,500" fill="#faf5ff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="400" y="496" text-anchor="middle" fill="#5b21b6" font-size="11" font-weight="600">需要多 Agent</text>
+  <text x="400" y="512" text-anchor="middle" fill="#5b21b6" font-size="11" font-weight="600">协作？</text>
+
+  <!-- Q6 Yes → Multi-Agent -->
+  <line x1="280" y1="500" x2="215" y2="500" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arr-y)"/>
+  <text x="250" y="492" fill="#22c55e" font-size="9" font-weight="600">是</text>
+  <rect x="80" y="483" width="135" height="35" rx="8" fill="#e9d5ff" stroke="#8b5cf6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="147" y="505" text-anchor="middle" fill="#5b21b6" font-size="11" font-weight="600">Multi-Agent 系统</text>
+
+  <!-- Q6 No → Single Agent -->
+  <line x1="520" y1="500" x2="585" y2="500" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arr-n)"/>
+  <text x="550" y="492" fill="#ef4444" font-size="9" font-weight="600">否</text>
+  <rect x="588" y="483" width="110" height="35" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="643" y="505" text-anchor="middle" fill="#475569" font-size="11" font-weight="600">单 Agent 足够</text>
+
+  <!-- END -->
+  <line x1="400" y1="540" x2="400" y2="570" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <circle cx="400" cy="590" r="22" fill="#1e293b"/>
+  <text x="400" y="595" text-anchor="middle" fill="white" font-size="11" font-weight="600">END</text>
+</svg>

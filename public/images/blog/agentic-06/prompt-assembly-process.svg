@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="410" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Token Budget Distribution &amp; Prompt Assembly</text>
+
+  <!-- Budget Header -->
+  <rect x="260" y="46" width="300" height="44" rx="6" fill="#e8f1f8" stroke="#3498db" stroke-width="1.5"/>
+  <text x="410" y="65" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Token Budget: 8000</text>
+  <text x="410" y="80" text-anchor="middle" font-size="10" fill="#34495e">Total Context Window</text>
+
+  <!-- T-split: center down, then horizontal bar, then 3 vertical drops -->
+  <line x1="410" y1="90" x2="410" y2="108" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="140" y1="108" x2="680" y2="108" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="140" y1="108" x2="140" y2="128" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="410" y1="108" x2="410" y2="128" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="680" y1="108" x2="680" y2="128" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ===== Three budget blocks ===== -->
+  <!-- System Prompt -->
+  <rect x="50" y="130" width="180" height="90" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="140" y="152" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">System Prompt</text>
+  <text x="140" y="170" text-anchor="middle" font-size="11" fill="#34495e">(固定预算: 2000)</text>
+  <text x="140" y="190" text-anchor="middle" font-size="13" font-weight="bold" fill="#e74c3c">~25%</text>
+  <text x="140" y="208" text-anchor="middle" font-size="11" fill="#2c3e50">2000 tokens</text>
+
+  <!-- Context Injection -->
+  <rect x="300" y="130" width="220" height="90" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="410" y="152" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">Context Injection</text>
+  <text x="410" y="170" text-anchor="middle" font-size="11" fill="#34495e">(弹性预算: 4500)</text>
+  <text x="410" y="190" text-anchor="middle" font-size="13" font-weight="bold" fill="#e74c3c">~56%</text>
+  <text x="410" y="208" text-anchor="middle" font-size="11" fill="#2c3e50">4500 tokens</text>
+
+  <!-- User Input -->
+  <rect x="590" y="130" width="180" height="90" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="680" y="152" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c3e50">User Input</text>
+  <text x="680" y="170" text-anchor="middle" font-size="11" fill="#34495e">(固定预算: 1500)</text>
+  <text x="680" y="190" text-anchor="middle" font-size="13" font-weight="bold" fill="#e74c3c">~19%</text>
+  <text x="680" y="208" text-anchor="middle" font-size="11" fill="#2c3e50">1500 tokens</text>
+
+  <!-- Context Injection T-split to Tool Descs + History -->
+  <line x1="410" y1="220" x2="410" y2="238" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="340" y1="238" x2="480" y2="238" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="340" y1="238" x2="340" y2="258" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="480" y1="238" x2="480" y2="258" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Tool Descs -->
+  <rect x="270" y="260" width="140" height="80" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
+  <text x="340" y="282" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">Tool Descs</text>
+  <text x="340" y="300" text-anchor="middle" font-size="10" fill="#34495e">(max 1500)</text>
+  <text x="340" y="318" text-anchor="middle" font-size="12" font-weight="bold" fill="#e74c3c">~15%</text>
+  <text x="340" y="334" text-anchor="middle" font-size="10" fill="#2c3e50">1229 tokens</text>
+
+  <!-- History -->
+  <rect x="410" y="260" width="140" height="80" rx="6" fill="#fce4ec" stroke="#c2185b" stroke-width="1.5"/>
+  <text x="480" y="282" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">History</text>
+  <text x="480" y="300" text-anchor="middle" font-size="10" fill="#34495e">(max 3000)</text>
+  <text x="480" y="318" text-anchor="middle" font-size="12" font-weight="bold" fill="#e74c3c">~45%</text>
+  <text x="480" y="334" text-anchor="middle" font-size="10" fill="#2c3e50">3686 tokens</text>
+
+  <!-- Compression warning (between History and Assembler) -->
+  <line x1="480" y1="340" x2="480" y2="356" stroke="#2c3e50" stroke-width="1.5"/>
+  <rect x="400" y="356" width="160" height="40" rx="6" fill="#fff9e6" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="480" y="374" text-anchor="middle" font-size="11" font-weight="bold" fill="#e67e22">[若超预算]</text>
+  <text x="480" y="388" text-anchor="middle" font-size="10" fill="#34495e">→ 压缩 / 截断</text>
+
+  <!-- All 4 paths converge into Prompt Assembler -->
+  <!-- System Prompt down -->
+  <line x1="140" y1="220" x2="140" y2="440" stroke="#2c3e50" stroke-width="1.5"/>
+  <!-- Tool Descs down -->
+  <line x1="340" y1="340" x2="340" y2="440" stroke="#2c3e50" stroke-width="1.5"/>
+  <!-- Compression box down -->
+  <line x1="480" y1="396" x2="480" y2="440" stroke="#2c3e50" stroke-width="1.5"/>
+  <!-- User Input down -->
+  <line x1="680" y1="220" x2="680" y2="440" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- Horizontal bar merging all into Assembler -->
+  <line x1="140" y1="440" x2="680" y2="440" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="410" y1="440" x2="410" y2="458" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Prompt Assembler -->
+  <rect x="210" y="460" width="400" height="90" rx="6" fill="#e8f1f8" stroke="#3498db" stroke-width="1.5"/>
+  <text x="410" y="482" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Prompt Assembler</text>
+  <text x="225" y="502" font-size="11" fill="#34495e">1. 拼装各层</text>
+  <text x="225" y="519" font-size="11" fill="#34495e">2. 计算总 Token</text>
+  <text x="225" y="536" font-size="11" fill="#34495e">3. 若超预算 → 压缩 Context 层</text>
+  <text x="460" y="502" font-size="11" fill="#34495e">4. 注入 Constraints</text>
+  <text x="460" y="519" font-size="11" fill="#34495e">5. 输出最终 Prompt</text>
+
+  <!-- Arrow to Final Prompt -->
+  <line x1="410" y1="550" x2="410" y2="578" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Final output -->
+  <rect x="345" y="580" width="130" height="28" rx="14" fill="#27ae60" stroke="none"/>
+  <text x="410" y="599" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Final Prompt</text>
+</svg>

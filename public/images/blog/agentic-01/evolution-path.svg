@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+    <filter id="sh" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Level 0 -->
+  <rect x="20" y="40" width="120" height="80" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" filter="url(#sh)"/>
+  <text x="80" y="65" text-anchor="middle" fill="#334155" font-size="13" font-weight="700">Level 0</text>
+  <text x="80" y="82" text-anchor="middle" fill="#475569" font-size="11">LLM</text>
+  <text x="80" y="100" text-anchor="middle" fill="#94a3b8" font-size="10">单次调用 · 无状态</text>
+
+  <!-- Arrow 0→1 -->
+  <line x1="140" y1="80" x2="162" y2="80" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Level 1 -->
+  <rect x="165" y="40" width="120" height="80" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
+  <text x="225" y="65" text-anchor="middle" fill="#1e40af" font-size="13" font-weight="700">Level 1</text>
+  <text x="225" y="82" text-anchor="middle" fill="#1d4ed8" font-size="11">+ Tools</text>
+  <text x="225" y="100" text-anchor="middle" fill="#3b82f6" font-size="10">一步行动 · 无循环</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="285" y1="80" x2="307" y2="80" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Level 2 -->
+  <rect x="310" y="40" width="120" height="80" rx="10" fill="#e0e7ff" stroke="#6366f1" stroke-width="2" filter="url(#sh)"/>
+  <text x="370" y="65" text-anchor="middle" fill="#3730a3" font-size="13" font-weight="700">Level 2</text>
+  <text x="370" y="82" text-anchor="middle" fill="#4338ca" font-size="11">+ Loop</text>
+  <text x="370" y="100" text-anchor="middle" fill="#6366f1" font-size="10">多步执行 · 有迭代</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="430" y1="80" x2="452" y2="80" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Level 3 -->
+  <rect x="455" y="40" width="120" height="80" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2" filter="url(#sh)"/>
+  <text x="515" y="65" text-anchor="middle" fill="#15803d" font-size="13" font-weight="700">Level 3</text>
+  <text x="515" y="82" text-anchor="middle" fill="#16a34a" font-size="11">+ Memory</text>
+  <text x="515" y="100" text-anchor="middle" fill="#22c55e" font-size="10">有记忆的迭代执行</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="575" y1="80" x2="597" y2="80" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Level 4 -->
+  <rect x="600" y="40" width="120" height="80" rx="10" fill="#fae8ff" stroke="#a855f7" stroke-width="2" filter="url(#sh)"/>
+  <text x="660" y="65" text-anchor="middle" fill="#7e22ce" font-size="13" font-weight="700">Level 4</text>
+  <text x="660" y="82" text-anchor="middle" fill="#9333ea" font-size="11">+ Planner</text>
+  <text x="660" y="100" text-anchor="middle" fill="#a855f7" font-size="10">有规划的智能执行</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="720" y1="80" x2="742" y2="80" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Level 5 -->
+  <rect x="745" y="40" width="120" height="80" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2" filter="url(#sh)"/>
+  <text x="805" y="65" text-anchor="middle" fill="#991b1b" font-size="13" font-weight="700">Level 5</text>
+  <text x="805" y="82" text-anchor="middle" fill="#dc2626" font-size="11">+ Production</text>
+  <text x="805" y="100" text-anchor="middle" fill="#ef4444" font-size="10">生产级完整系统</text>
+
+  <!-- Bottom annotation -->
+  <text x="440" y="155" text-anchor="middle" fill="#64748b" font-size="12">每一级引入一个新的能力维度，也同时引入新的复杂度和 trade-off</text>
+  <text x="440" y="175" text-anchor="middle" fill="#94a3b8" font-size="11">不是所有场景都需要 Level 5 — 选择哪个级别，取决于任务复杂度和工程约束</text>
+</svg>

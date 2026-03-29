@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#7B1FA2"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="380" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="320" y="36" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Agent</text>
+
+  <!-- Input -->
+  <rect x="30" y="100" width="80" height="36" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="70" y="123" text-anchor="middle" font-size="13" fill="#1565C0">Input</text>
+
+  <!-- LLM Think 1 -->
+  <rect x="150" y="85" width="130" height="50" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="215" y="107" text-anchor="middle" font-size="12" font-weight="bold" fill="#6A1B9A">LLM</text>
+  <text x="215" y="123" text-anchor="middle" font-size="11" fill="#7B1FA2">观察 + 思考</text>
+  <line x1="110" y1="118" x2="148" y2="112" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Tool A -->
+  <rect x="340" y="70" width="90" height="36" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="385" y="93" text-anchor="middle" font-size="13" fill="#2E7D32">Tool A</text>
+  <line x1="280" y1="100" x2="338" y2="90" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Tool B -->
+  <rect x="340" y="130" width="90" height="36" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="385" y="153" text-anchor="middle" font-size="13" fill="#2E7D32">Tool B</text>
+
+  <!-- LLM Think 2 -->
+  <rect x="460" y="85" width="130" height="50" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="525" y="107" text-anchor="middle" font-size="12" font-weight="bold" fill="#6A1B9A">LLM</text>
+  <text x="525" y="123" text-anchor="middle" font-size="11" fill="#7B1FA2">观察 + 思考</text>
+  <line x1="430" y1="88" x2="458" y2="100" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="430" y1="148" x2="458" y2="120" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Tool C -->
+  <rect x="250" y="195" width="90" height="36" rx="6" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="295" y="218" text-anchor="middle" font-size="13" fill="#2E7D32">Tool C</text>
+
+  <!-- Arrow from LLM2 down to Tool C -->
+  <path d="M 490 135 L 490 213 L 342 213" fill="none" stroke="#7B1FA2" stroke-width="1.5" marker-end="url(#arrow-purple)"/>
+
+  <!-- Feedback arrow from Tool C back to LLM Think area -->
+  <path d="M 250 213 L 150 213 L 150 160 L 185 135" fill="none" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-purple)"/>
+
+  <!-- LLM Judge -->
+  <polygon points="390,260 470,290 390,320 310,290" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="390" y="287" text-anchor="middle" font-size="11" font-weight="bold" fill="#BF360C">LLM</text>
+  <text x="390" y="301" text-anchor="middle" font-size="11" font-weight="bold" fill="#BF360C">够了吗？</text>
+
+  <!-- Arrow from feedback loop to judge -->
+  <path d="M 295 231 L 295 260 L 350 280" fill="none" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Loop back arrow -->
+  <path d="M 310 280 L 215 250 L 215 135" fill="none" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-purple)"/>
+  <text x="230" y="242" font-size="10" fill="#7B1FA2">继续</text>
+
+  <!-- Output -->
+  <rect x="510" y="272" width="90" height="36" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="555" y="295" text-anchor="middle" font-size="13" fill="#1565C0">Output</text>
+  <line x1="470" y1="290" x2="508" y2="290" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Footer -->
+  <text x="320" y="355" text-anchor="middle" font-size="12" fill="#888">特征：路径在运行时动态生成，每一步由 LLM 决定</text>
+  <text x="320" y="372" text-anchor="middle" font-size="12" fill="#aaa">类比：出租车司机，根据实时路况随时调整路线</text>
+</svg>

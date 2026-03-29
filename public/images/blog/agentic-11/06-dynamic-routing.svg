@@ -1,0 +1,50 @@
+<svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Title -->
+  <text x="350" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Dynamic Routing 模式</text>
+
+  <!-- Router Agent -->
+  <rect x="230" y="40" width="240" height="55" rx="6" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+  <text x="350" y="62" font-size="13" font-weight="bold" text-anchor="middle" fill="#f57f17">Router Agent</text>
+  <text x="350" y="80" font-size="10" text-anchor="middle" fill="#666">意图识别 + 路由</text>
+
+  <!-- T-split from Router -->
+  <line x1="350" y1="95" x2="350" y2="115" stroke="#666" stroke-width="1.5"/>
+  <line x1="120" y1="115" x2="580" y2="115" stroke="#666" stroke-width="1.5"/>
+
+  <!-- Drop to Expert 1 -->
+  <line x1="120" y1="115" x2="120" y2="135" stroke="#666" stroke-width="1.5"/>
+  <polygon points="116,135 120,145 124,135" fill="#666"/>
+
+  <!-- Drop to Expert 2 -->
+  <line x1="350" y1="115" x2="350" y2="135" stroke="#666" stroke-width="1.5"/>
+  <polygon points="346,135 350,145 354,135" fill="#666"/>
+
+  <!-- Drop to Expert 3 -->
+  <line x1="580" y1="115" x2="580" y2="135" stroke="#666" stroke-width="1.5"/>
+  <polygon points="576,135 580,145 584,135" fill="#666"/>
+
+  <!-- Expert 1: Technical Support -->
+  <rect x="30" y="150" width="180" height="70" rx="6" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
+  <text x="120" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#00796b">技术支持 Agent</text>
+  <text x="120" y="195" font-size="10" text-anchor="middle" fill="#666">处理技术故障排查</text>
+
+  <!-- Expert 2: After-Sales -->
+  <rect x="260" y="150" width="180" height="70" rx="6" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
+  <text x="350" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#00796b">售后服务 Agent</text>
+  <text x="350" y="195" font-size="10" text-anchor="middle" fill="#666">处理退款、换货投诉</text>
+
+  <!-- Expert 3: Sales -->
+  <rect x="490" y="150" width="180" height="70" rx="6" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
+  <text x="580" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#00796b">销售咨询 Agent</text>
+  <text x="580" y="195" font-size="10" text-anchor="middle" fill="#666">处理购买、产品推荐</text>
+
+  <!-- Note section -->
+  <text x="350" y="260" font-size="10" font-weight="600" text-anchor="middle" fill="#666">路由依据：用户输入的意图分类</text>
+  <text x="350" y="278" font-size="10" text-anchor="middle" fill="#666">每个专家 Agent 有独立的 System Prompt、Tools、知识库</text>
+
+  <!-- Legend -->
+  <rect x="140" y="310" width="14" height="14" rx="2" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
+  <text x="160" y="322" font-size="10" fill="#666">轻量级路由决策</text>
+  <rect x="400" y="310" width="14" height="14" rx="2" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5"/>
+  <text x="420" y="322" font-size="10" fill="#666">专业化执行</text>
+</svg>

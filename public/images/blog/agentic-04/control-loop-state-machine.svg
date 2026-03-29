@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 480" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect width="620" height="480" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="310" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Agent 控制循环状态机</text>
+
+  <!-- Input -->
+  <rect x="30" y="75" width="80" height="32" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="70" y="96" text-anchor="middle" font-size="12" fill="#1565C0">Input</text>
+
+  <!-- OBSERVE -->
+  <rect x="170" y="70" width="120" height="42" rx="8" fill="#E8F5E9" stroke="#388E3C" stroke-width="2"/>
+  <text x="230" y="96" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">OBSERVE</text>
+  <line x1="110" y1="91" x2="168" y2="91" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- THINK -->
+  <rect x="170" y="175" width="120" height="42" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+  <text x="230" y="201" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">THINK</text>
+  <line x1="230" y1="112" x2="230" y2="173" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ACT -->
+  <rect x="400" y="175" width="120" height="42" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="2"/>
+  <text x="460" y="201" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">ACT</text>
+  <line x1="290" y1="196" x2="398" y2="196" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="345" y="190" text-anchor="middle" font-size="10" fill="#888">need_action</text>
+
+  <!-- REFLECT -->
+  <rect x="400" y="290" width="120" height="42" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="460" y="316" text-anchor="middle" font-size="14" font-weight="bold" fill="#6A1B9A">REFLECT</text>
+  <line x1="460" y1="217" x2="460" y2="288" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Loop back: REFLECT → OBSERVE (right-angle path) -->
+  <path d="M520,311 L565,311 L565,50 L230,50 L230,68" fill="none" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="575" y="180" font-size="10" fill="#7B1FA2" font-style="italic">continue</text>
+
+  <!-- DONE (L-shaped path from THINK left side) -->
+  <rect x="30" y="390" width="120" height="42" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+  <text x="90" y="416" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">DONE</text>
+  <!-- THINK left side → horizontal left → vertical down to DONE -->
+  <line x1="170" y1="196" x2="90" y2="196" stroke="#666" stroke-width="1.5"/>
+  <line x1="90" y1="196" x2="90" y2="388" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="60" y="300" font-size="10" fill="#888">has_answer</text>
+
+  <!-- ERROR -->
+  <rect x="370" y="390" width="140" height="42" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <text x="440" y="416" text-anchor="middle" font-size="14" font-weight="bold" fill="#C62828">ERROR</text>
+  <!-- REFLECT → down → ERROR: vertical connection -->
+  <line x1="460" y1="332" x2="460" y2="388" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="505" y="368" font-size="9" fill="#888">max_retries exceeded</text>
+  <text x="505" y="380" font-size="9" fill="#888">/ unrecoverable</text>
+</svg>
