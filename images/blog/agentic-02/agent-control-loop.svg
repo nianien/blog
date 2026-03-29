@@ -1,12 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
-    </marker>
-    <marker id="arrow-purple" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,3 L0,6 Z" fill="#7B1FA2"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
 
   <rect width="520" height="280" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
   <text x="260" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Agent 核心循环</text>
@@ -24,9 +16,12 @@
   <text x="395" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">Plan</text>
   <text x="395" y="95" text-anchor="middle" font-size="10" fill="#F57C00">规划</text>
 
-  <!-- Arrows top row -->
-  <line x1="140" y1="80" x2="183" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <line x1="295" y1="80" x2="338" y2="80" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Arrows top row: Observe→Think, Think→Plan -->
+  <line x1="140" y1="80" x2="179" y2="80" stroke="#666" stroke-width="1.5"/>
+  <polygon points="176,76 185,80 176,84" fill="#666"/>
+
+  <line x1="295" y1="80" x2="334" y2="80" stroke="#666" stroke-width="1.5"/>
+  <polygon points="331,76 340,80 331,84" fill="#666"/>
 
   <!-- Bottom row: Update ← Reflect ← Act -->
   <rect x="30" y="165" width="110" height="50" rx="8" fill="#ECEFF1" stroke="#607D8B" stroke-width="1.5"/>
@@ -41,13 +36,20 @@
   <text x="395" y="188" text-anchor="middle" font-size="13" font-weight="bold" fill="#2E7D32">Act</text>
   <text x="395" y="205" text-anchor="middle" font-size="10" fill="#388E3C">执行</text>
 
-  <!-- Arrows bottom row (right to left) -->
-  <line x1="338" y1="190" x2="297" y2="190" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <line x1="183" y1="190" x2="142" y2="190" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Arrows bottom row: Act→Reflect, Reflect→Update -->
+  <line x1="340" y1="190" x2="301" y2="190" stroke="#666" stroke-width="1.5"/>
+  <polygon points="304,186 295,190 304,194" fill="#666"/>
 
-  <!-- Vertical connections -->
-  <line x1="395" y1="105" x2="395" y2="163" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <line x1="85" y1="165" x2="85" y2="107" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow-purple)"/>
+  <line x1="185" y1="190" x2="146" y2="190" stroke="#666" stroke-width="1.5"/>
+  <polygon points="149,186 140,190 149,194" fill="#666"/>
+
+  <!-- Vertical: Plan→Act -->
+  <line x1="395" y1="105" x2="395" y2="159" stroke="#666" stroke-width="1.5"/>
+  <polygon points="391,156 395,165 399,156" fill="#666"/>
+
+  <!-- Vertical dashed: Update→Observe (loop back) -->
+  <line x1="85" y1="165" x2="85" y2="111" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="81,114 85,105 89,114" fill="#7B1FA2"/>
 
   <!-- Loop label -->
   <text x="260" y="252" text-anchor="middle" font-size="12" fill="#7B1FA2">循环执行，直到任务完成或达到终止条件</text>
