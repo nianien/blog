@@ -1,7 +1,7 @@
 ---
 title: "Mousika 规则引擎：让规则可编排、可执行、可解释"
 description: "本文基于 Mousika 规则引擎平台，系统解析其如何通过 DSL 编排与 JS 求值分层、四棵同构树贯穿全链路、万物皆 UDF 的统一抽象，实现规则从可视化配置到动态执行再到归因分析的完整闭环。适合对业务规则引擎、DSL 设计、动态规则平台感兴趣的工程师阅读。"
-pubDate: 2026-2-17
+pubDate: 2026-02-17
 tags: ["规则引擎", "DSL", "可视化编排"]
 ---
 
@@ -18,7 +18,7 @@ tags: ["规则引擎", "DSL", "可视化编排"]
 - **了解整体架构与设计理念**：阅读第 1–3 章（约 5 分钟）
 - **深入 AST 解析与执行引擎原理**：重点阅读第 4、5 章（约 20 分钟）
 - **UDF 扩展与事件驱动**：第 6、7 章（约 8 分钟）
-- **执行结果与可解释性**：第 8 章（约 5 分钟）
+- **执行结果与可解释性**：第 8 章（约 3 分钟）
 - **平台能力：可视化编排、动态调试与归因分析**：第 9 章（约 10 分钟）
 - **设计权衡与工程总结**：第 10 章（约 5 分钟）
 
@@ -40,20 +40,7 @@ tags: ["规则引擎", "DSL", "可视化编排"]
 
 规则引擎解决的本质问题是**规则与代码的解耦**：
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                       传统方式                                │
-│  业务规则 ──嵌入──→ 业务代码 ──编译──→ 发布 ──部署──→ 生效     │
-│                     (变更 = 发版)                             │
-└──────────────────────────────────────────────────────────────┘
-
-┌──────────────────────────────────────────────────────────────┐
-│                       规则引擎方式                             │
-│  业务规则 ──配置──→ 规则平台 ──推送──→ 引擎热加载 ──→ 秒级生效  │
-│  业务代码 ──调用──→ 引擎 SDK ──提交 Fact──→ 获取结果            │
-│                     (规则变更 ≠ 发版)                          │
-└──────────────────────────────────────────────────────────────┘
-```
+![传统方式 vs 规则引擎方式](/images/blog/mousika-rule-engine/01-traditional-vs-engine.svg)
 
 Mousika 在此基础上进一步解决了几个工程问题：
 - **如何表达复杂的规则编排逻辑**（条件分支、并行、串行、范围匹配）
@@ -89,37 +76,7 @@ mousika/
 
 从数据流视角，Mousika 的架构分为四层，每一层都有明确的职责边界：
 
-```
-┌─────────────────────────────────────────────────────┐
-│                   接入层（SDK / RPC）                  │
-│   业务方通过 SDK 提交 Fact 对象 + 场景 Key             │
-│   RPC 模式: gRPC/Krpc 远程调用                        │
-│   SDK 模式: 进程内直接调用                             │
-└──────────────────────┬──────────────────────────────┘
-                       │
-┌──────────────────────▼──────────────────────────────┐
-│                   编排层（Suite / Scene）               │
-│   RuleSuite: 全局单例，持有所有 Scene                   │
-│   RuleScene: 业务场景 → 活跃规则集 + 候选规则集（灰度）  │
-│   职责: 场景路由、规则集版本管理、灰度验证                │
-└──────────────────────┬──────────────────────────────┘
-                       │
-┌──────────────────────▼──────────────────────────────┐
-│                   执行层（Evaluator / AST）             │
-│   NodeBuilder: ANTLR4 解析规则表达式 → AST 节点树       │
-│   RuleEvaluator: Visitor 模式遍历 AST                  │
-│   RuleContextImpl: 执行上下文 + 缓存 + 事件分发          │
-│   职责: 规则编排逻辑的解释执行                           │
-└──────────────────────┬──────────────────────────────┘
-                       │
-┌──────────────────────▼──────────────────────────────┐
-│                   引擎层（RuleEngine / UDF）            │
-│   Nashorn ScriptEngine: 执行单条 JS 表达式              │
-│   UdfContainer: UDF 注册 + ByteBuddy 动态编译           │
-│   Bindings: $ = Fact, $$ = Context, UDF 函数           │
-│   职责: 单条规则的表达式求值                             │
-└─────────────────────────────────────────────────────┘
-```
+![四层架构](/images/blog/mousika-rule-engine/02-four-layer-architecture.svg)
 
 **为什么分四层而不是两层？** 关键的设计洞察在于：规则的"编排"和"求值"是两个不同性质的问题。编排（AST 层）处理的是节点之间的逻辑关系（与或非、条件分支、串并行），这是一个树遍历问题；求值（引擎层）处理的是单条规则表达式的计算，这是一个脚本执行问题。将两者分离，使得编排逻辑可以用类型安全的 Java AST 实现，而求值逻辑可以利用 JS 引擎的灵活性——各取所长。
 
@@ -151,26 +108,9 @@ Mousika 支持两种部署模式，业务方根据延迟敏感度和运维复杂
 | **UDF** | `@Udf` + `Functions.*` | 用户自定义函数，通过注解或动态 JAR 注册 |
 | **Fact** | 业务 POJO | 业务方提交的待匹配数据对象，在 JS 引擎中绑定为 `$` |
 
-它们之间的关系构成了两棵树——**配置树**和**执行树**：
+它们之间的关系构成了两棵树——**配置树**和**执行树**（加上运行时构建的 **EvalNode 执行追踪树** 和面向展示的 **RuleResult 结果树**，Mousika 全链路共有**四棵同构树**：UI Node → AST RuleNode → EvalNode → RuleResult，详见第 5.4 节和第 9.4 节）：
 
-```
-配置树（静态结构）                          执行树（运行时构建）
-
-RuleSuite (单例)                          NodeResult
-  ├── RuleEvaluator                         ├── expr: "1269->((1242||1243)?...)"
-  │     └── RuleEngine                      ├── matched: true/false
-  │           ├── sourceScripts             └── details: [RuleResult]
-  │           │   {ruleId → JS expr}              ├── RuleResult (1269)
-  │           ├── compiledScripts                 │     ├── matched: true
-  │           │   {expr → CompiledScript}         │     └── desc: "获取购票人详情"
-  │           └── UdfContainer                    └── RuleResult (1242||1243)
-  │                 {namespace → UDF tree}              ├── matched: true
-  └── scenes                                          └── subRules: [...]
-        {sceneKey → RuleScene}
-              ├── activeRule: RuleConfig
-              │     └── ruleNode: RuleNode (AST)
-              └── candidateRules: [RuleConfig]
-```
+![配置树 vs 执行树](/images/blog/mousika-rule-engine/03-config-vs-exec-tree.svg)
 
 ---
 
@@ -209,27 +149,7 @@ RuleSuite (单例)                          NodeResult
 
 解析分为四步：
 
-```
-                 ┌────────────────────────────────────────────────────────────┐
-                 │                   ANTLR4 解析流程                          │
-                 │                                                          │
-  输入字符串 ─────→  RuleLexer ──→ Token 流 ──→ RuleParser ──→ ParseTree     │
-  "1&&2?3:4"     │   (词法分析)     [ID, &&,    (语法分析)      (语法树)       │
-                 │                  ID, ?, ...]                             │
-                 └──────────────────────────────┬───────────────────────────┘
-                                                │
-                 ┌──────────────────────────────▼───────────────────────────┐
-                 │              DefaultRuleVisitor (ANTLR4 Visitor)         │
-                 │                                                          │
-                 │  visitOr()   → OrNode          visitPar()  → ParNode     │
-                 │  visitAnd()  → AndNode         visitSer()  → SerNode     │
-                 │  visitNot()  → NotNode         visitLimit()→ LimitNode   │
-                 │  visitIf()   → CaseNode        visitId()   → ExprNode    │
-                 └──────────────────────────────┬───────────────────────────┘
-                                                │
-                                                ▼
-                                        RuleNode AST (可执行)
-```
+![ANTLR4 解析流程](/images/blog/mousika-rule-engine/04-antlr4-parsing-flow.svg)
 
 `NodeBuilder` 对解析结果做了**缓存**（`ConcurrentHashMap`），同一表达式只解析一次：
 
@@ -239,10 +159,12 @@ public static RuleNode build(String expr) {
         long begin = System.currentTimeMillis();
         try {
             RuleNode node = Antlr4Parser.parse(ruleExpr, defaultGenerator);
+            long cost = System.currentTimeMillis() - begin;
             ListenerProvider.DEFAULT.onParse(
                 new RuleEvent(EventType.PARSE_SUCCEED, ruleExpr, node, cost));
             return node;
         } catch (Exception e) {
+            long cost = System.currentTimeMillis() - begin;
             ListenerProvider.DEFAULT.onParse(
                 new RuleEvent(EventType.PARSE_FAIL, ruleExpr, e, cost));
             throw new RuleParseException(ruleExpr, "rule parse failed:" + ruleExpr, e);
@@ -410,9 +332,11 @@ public EvalResult eval(RuleContext context) {
 ```java
 public EvalResult eval(RuleContext context) {
     int hit = 0;
+    EvalResult result = null;
     for (RuleNode node : nodes) {
-        EvalResult eval = node.eval(context);
-        if (eval.isMatched()) hit++;
+        EvalResult eval = context.visit(node);
+        if (result == null || !result.isMatched()) result = eval;
+        if (eval.isMatched()) { result = eval; hit++; }
         if (high > 0 && hit > high) break;  // 提前终止：已超上限
     }
     return new EvalResult(expr(), result.getResult(),
@@ -485,9 +409,12 @@ private Object doEval(CompiledScript script, Object root, Object context) {
 
 ```java
 public String evalRuleDesc(String ruleId, Boolean match, Object root, Object context) {
-    // 选择对应的描述模板
-    String originDesc = match ? explainPair.getRight() : explainPair.getLeft();
-
+    Pair<String, String> explainPair = this.descriptions.get(ruleId);
+    // 选择对应的描述模板（Left=未通过描述，Right=通过描述）
+    String originDesc = explainPair.getLeft();
+    if (match && StringUtils.isNotBlank(explainPair.getRight())) {
+        originDesc = explainPair.getRight();
+    }
     // 正则替换: {$.agentId} → "+$.agentId+"
     // 最终拼接为 JS 字符串表达式: "代理商【"+$.agentId+"】不允许跨开"
     originDesc = "\"" + originDesc.replaceAll("\\{(\\$+\\..+?)\\}", "\\\"+$1+\\\"") + "\"";
@@ -733,31 +660,11 @@ public class RuleEvent {
 
 规则热加载是 Mousika 的核心能力之一。变更通知通过 **RocketMQ 广播**推送：
 
-```
-BRMS 保存规则
-    │
-    ▼
-发布消息到 ad_infra_mousika_rule_info_notify_topic（广播模式）
-    │
-    ▼
-AbstractNotifyConsumer 接收通知
-    │  提取变更的 sceneKey，放入内部队列
-    ▼
-定时调度器批量处理队列中的变更
-    │
-    ▼
-RuleLoader.loadSuite()
-    │  从数据库 / 中心服务重新加载所有规则
-    ▼
-new RuleSuite(definitions, udfs, scenes)
-    │  构造新的 RuleSuite 实例
-    ▼
-RuleSuite.current = newSuite  (volatile 引用替换)
-```
+![规则变更热加载流程](/images/blog/mousika-rule-engine/05-hot-reload-flow.svg)
 
 热加载的线程安全依赖两个机制：
 
-1. **`volatile` 引用替换**：`RuleSuite.current` 是 `volatile` 的，新实例构造完成后直接替换引用。正在执行的请求仍持有旧实例的引用（Java GC 的引用计数保证旧实例不会被提前回收），新请求使用新实例。这是一种**无锁的 Copy-on-Write** 策略。
+1. **`volatile` 引用替换**：`RuleSuite.current` 是 `volatile` 的，新实例构造完成后直接替换引用。正在执行的请求仍持有旧实例的引用（旧实例在执行线程的栈帧中仍然可达，GC 不会回收），新请求使用新实例。这是一种**无锁的 Copy-on-Write** 策略。
 
 2. **双重保障**：MQ 通知实现秒级生效，`RuleSuiteRefreshTask` 每 5 分钟定时全量刷新作为兜底——防止 MQ 消息丢失或消费失败导致的规则不一致。
 
@@ -765,22 +672,7 @@ RuleSuite.current = newSuite  (volatile 引用替换)
 
 在中心化 RPC 模式下，每次规则执行的完整上下文会**异步写入 Kafka**（Topic: `ad_mousika_eval_info_topic`）。这条数据链支撑了三个下游场景：
 
-```
-规则执行
-    │
-    ├──→ Kafka (ad_mousika_eval_info_topic)
-    │         │
-    │         ├──→ EvalCompareService (灰度对比)
-    │         │    对比 activeRule 和 candidateRule 的执行结果差异
-    │         │    发现不一致时生成验证报告
-    │         │
-    │         └──→ 数据分析平台 (离线分析)
-    │
-    └──→ ElasticSearch (实时写入)
-              │
-              └──→ BRMS 在线调试
-                   输入 Fact JSON → 查看执行详情 → 定位规则问题
-```
+![执行审计数据流](/images/blog/mousika-rule-engine/06-audit-data-flow.svg)
 
 灰度验证的机制是：每个 `RuleScene` 除了 `activeRule`（线上生效的规则集），还可以挂载 `candidateRules`（候选规则集）。执行时，活跃规则集在主线程执行返回结果，候选规则集在独立线程池异步执行，两组结果写入 Kafka 后由 `EvalCompareService` 对比——这使得规则变更可以在不影响线上的前提下提前验证。
 
@@ -790,22 +682,27 @@ RuleSuite.current = newSuite  (volatile 引用替换)
 
 ### 8.1 结果类型层次
 
-规则引擎不仅要给出"通过/不通过"的结论，还要能解释**为什么**。Mousika 的结果体系是一棵与 AST 对应的结果树：
+规则引擎不仅要给出"通过/不通过"的结论，还要能解释**为什么**。Mousika 的结果体系是一棵与 AST 对应的结果树，由两层结构组成：
 
-```
-NodeResult                          -- 规则集执行结果
-  ├── expr: String                  -- 完整规则集表达式
-  ├── nodeType: NodeType            -- 根节点类型
-  ├── result: Object                -- 原始返回值
-  └── details: List<RuleResult>     -- 详细结果树
-        └── RuleResult              -- 单条规则结果
-              ├── expr: String      -- 规则 ID
-              ├── result: Object    -- JS 引擎返回的原始值
-              ├── matched: boolean  -- 匹配结果
-              ├── desc: String      -- 动态描述（如 "广告主 张三 行业不合规"）
-              ├── nodeType          -- 节点类型
-              └── subRules: List<RuleResult>  -- 子规则结果（递归）
-```
+**`NodeResult`——规则集执行结果（顶层）**
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `expr` | `String` | 完整规则集表达式 |
+| `nodeType` | `NodeType` | 根节点类型 |
+| `result` | `Object` | 原始返回值 |
+| `details` | `List<RuleResult>` | 详细结果树（递归结构） |
+
+**`RuleResult`——单条规则结果（递归节点）**
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `expr` | `String` | 规则 ID |
+| `result` | `Object` | JS 引擎返回的原始值 |
+| `matched` | `boolean` | 匹配结果 |
+| `desc` | `String` | 动态描述（如"广告主【张三】行业【游戏】不合规"），由 5.2 节的插值机制生成 |
+| `nodeType` | `NodeType` | 节点类型 |
+| `subRules` | `List<RuleResult>` | 子规则结果（递归） |
 
 ### 8.2 布尔类型转换策略
 
@@ -823,18 +720,6 @@ private boolean parseBoolean(Object res) {
 ```
 
 `UdfPredicate` 接口是一个扩展点——UDF 可以返回一个实现了 `UdfPredicate` 的对象，通过自定义的 `test()` 方法决定布尔语义。这允许 UDF 返回"富结果"（携带额外数据），同时仍能作为布尔条件参与 AST 的逻辑判断。
-
-### 8.3 描述动态插值的实现原理
-
-规则描述支持 `{$.field}` 语法引用 Fact 字段。`evalRuleDesc()` 通过正则替换将模板转换为 JS 字符串拼接表达式，然后复用 JS 引擎求值：
-
-```
-输入模板:  "代理商【{$.agentId}】不允许【{$.customerId}】跨开"
-正则替换:  "代理商【"+$.agentId+"】不允许【"+$.customerId+"】跨开"
-JS 求值:   "代理商【10086】不允许【20001】跨开"
-```
-
-这个设计复用了引擎已有的 JS 执行能力，零额外依赖。
 
 ---
 
@@ -870,21 +755,7 @@ public interface UiConfig {
 
 `GraphNodeV2` 是当前主力方案，它定义了 9 种语义化节点类型，每种节点对应一种 AST 结构：
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                   GraphNodeV2 节点类型体系                        │
-│                                                                  │
-│  start (EntryNode)          ── 流程入口，委托给子节点              │
-│  condition (ConditionNode)  ── 条件分支 → CaseNode               │
-│  action (ActionNode)        ── 动作执行 → ExprNode / SerNode     │
-│  and (LogicAndNode)         ── 逻辑与 → AndNode                  │
-│  or (LogicOrNode)           ── 逻辑或 → OrNode                   │
-│  serial (SerialGatewayNode) ── 串行网关 → SerNode                │
-│  parallel (ParallelGatewayNode) ── 并行网关 → ParNode            │
-│  exclusive (ExclusiveNode)  ── 排他网关 → 嵌套 CaseNode 链        │
-│  complexCondition (ComplexConditionNode) ── 复合条件（And/Or 组合）│
-└──────────────────────────────────────────────────────────────────┘
-```
+![GraphNodeV2 节点类型体系](/images/blog/mousika-rule-engine/07-graphnodev2-types.svg)
 
 每种 UI 节点通过 `toRule()` 方法递归生成对应的 AST 节点。以 `ConditionNode` 为例：
 
@@ -941,9 +812,9 @@ public interface Node {
 
 `GraphNodeV2` 还支持**草稿模式**（`isDraft = true`）：运营人员可以保存未完成的流程图配置而不触发 AST 转换和校验——这对于复杂规则集的渐进式编排至关重要。同时，`feUiConfig` 字段存储前端画布的布局信息（节点坐标、连线路径等），确保再次打开时视觉布局不丢失。
 
-#### v2.0 流程图：有向图 + 环检测
+#### 前代方案：v2.0 有向图 + 环检测
 
-`GraphNode`（v2.0）采用经典的有向图模型——节点列表 + 有向边列表：
+了解 v2.0 有助于理解 v3.0 做了哪些抽象升级。`GraphNode`（v2.0）采用经典的有向图模型——节点列表 + 有向边列表：
 
 ```java
 public class GraphNode implements UiConfig {
@@ -1118,19 +989,7 @@ public class ValidationDetail {
 
 其技术链路是：
 
-```
-Fact 数据 ──→ 引擎执行 ──→ EvalNode 执行树 ──→ NodeResult 结果树
-                                                    │
-    ┌───────────────────────────────────────────────┘
-    │
-    ▼
-前端流程图 ──→ 遍历结果树 ──→ 标记每个节点的状态（通过/未通过/未执行）
-              │
-              ├── 通过的节点：绿色高亮
-              ├── 未通过的节点：红色高亮
-              ├── 未执行的分支（NaResult）：灰色
-              └── 点击节点 → 展开规则描述 + 原始返回值
-```
+![执行路径渲染](/images/blog/mousika-rule-engine/08-execution-path-rendering.svg)
 
 关键是 `NaResult` 的设计价值在这里得到了充分体现：传统的 true/false 二态无法区分"规则执行结果为 false"和"规则因条件分支未被评估"。`CaseNode` 引入的三态返回使得前端可以精确地将未执行的分支渲染为灰色（Not Applicable），而非误导性地标记为"未通过"。
 
@@ -1138,24 +997,7 @@ Fact 数据 ──→ 引擎执行 ──→ EvalNode 执行树 ──→ NodeRe
 
 从数据写入到归因展示，完整的数据流形成了一个闭环：
 
-```
-┌────────────────────────────────────────────────────────────────────┐
-│                         数据流闭环                                  │
-│                                                                    │
-│  配置阶段:  画布编排 ──→ GraphNodeV2 JSON ──→ toRule() ──→ AST     │
-│                                                                    │
-│  执行阶段:  Fact + AST ──→ DefaultNodeVisitor ──→ EvalNode 执行树   │
-│            │                                       │               │
-│            └── evalCache（幂等缓存）                └── RuleResult  │
-│                                                         结果树     │
-│                                                         │          │
-│  展示阶段:  结果树 ──→ 叠加到流程图 ──→ 路径高亮 + 节点描述          │
-│            │                                                       │
-│            ├── 树形归因（递归展开完整决策路径）                       │
-│            ├── 列表归因（叶子节点扁平化）                            │
-│            └── 横向对比（多版本验证 + Excel 导出）                   │
-└────────────────────────────────────────────────────────────────────┘
-```
+![数据流闭环](/images/blog/mousika-rule-engine/09-data-flow-loop.svg)
 
 这个闭环的核心设计原则是**同构映射**：配置时的 UI 节点、执行时的 AST 节点、追踪时的 EvalNode、展示时的 RuleResult——四棵树结构一一对应。正是这种同构性，使得从"画规则"到"看结果"的全链路可以自然贯通，而不需要在任何环节做复杂的结构转换。
 
@@ -1189,3 +1031,5 @@ Fact 数据 ──→ 引擎执行 ──→ EvalNode 执行树 ──→ NodeRe
 5. **统一抽象**：决策表、复合规则、外部 RPC 调用——所有扩展功能都被归约到 UDF 机制，引擎内核始终只处理"JS 表达式求值"这一件事。
 
 这些模式共同构成了一个**稳定内核 + 灵活扩展**的架构——引擎核心代码量不大（`mousika-core` 约 30 个类），但通过 UDF、事件监听器、规则热加载的扩展点，支撑起了整个业务体系的规则管理需求。
+
+而贯穿全文的设计主线是**四棵同构树**：UI Node（可视化编排）→ AST RuleNode（解析执行）→ EvalNode（运行追踪）→ RuleResult（归因展示）。正是这种从配置到展示的结构一致性，使得 Mousika 在"可编排""可执行""可解释"三个维度上形成了完整闭环——规则引擎不只是一个执行器，而是一个让业务规则**全生命周期可管理**的平台。
