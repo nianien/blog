@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260">
+  <!-- Source: 规则执行 -->
+  <rect x="20" y="100" width="100" height="34" fill="#8b5cf6" stroke="#6d28d9" stroke-width="1.5" rx="6"/>
+  <text x="70" y="122" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">规则执行</text>
+
+  <!-- Arrow to Kafka -->
+  <line x1="120" y1="107" x2="175" y2="60" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="172,64 180,57 174,57" fill="#6b7280"/>
+
+  <!-- Arrow to ES -->
+  <line x1="120" y1="127" x2="175" y2="180" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="172,176 180,183 174,183" fill="#6b7280"/>
+
+  <!-- Kafka -->
+  <rect x="180" y="40" width="200" height="38" fill="#fef3c7" stroke="#fbbf24" stroke-width="1.5" rx="6"/>
+  <text x="280" y="56" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">Kafka</text>
+  <text x="280" y="71" font-family="'SF Mono', 'Menlo', monospace" font-size="8" fill="#b45309" text-anchor="middle">ad_mousika_eval_info_topic</text>
+
+  <!-- Kafka → EvalCompareService -->
+  <line x1="380" y1="50" x2="415" y2="30" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="412,34 420,27 414,27" fill="#f59e0b"/>
+
+  <rect x="420" y="10" width="165" height="52" fill="#fef3c7" stroke="#fbbf24" stroke-width="1.5" rx="6"/>
+  <text x="502" y="28" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">EvalCompareService</text>
+  <text x="502" y="42" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="8" fill="#b45309" text-anchor="middle">对比 activeRule 和 candidateRule</text>
+  <text x="502" y="54" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="8" fill="#b45309" text-anchor="middle">发现不一致时生成验证报告</text>
+
+  <!-- Kafka → 数据分析 -->
+  <line x1="380" y1="68" x2="415" y2="82" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="412,78 420,85 414,85" fill="#f59e0b"/>
+
+  <rect x="420" y="70" width="165" height="30" fill="#fef3c7" stroke="#fbbf24" stroke-width="1" rx="6"/>
+  <text x="502" y="90" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#92400e" text-anchor="middle">数据分析平台（离线分析）</text>
+
+  <!-- ElasticSearch -->
+  <rect x="180" y="168" width="200" height="30" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" rx="6"/>
+  <text x="280" y="188" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">ElasticSearch（实时写入）</text>
+
+  <!-- ES → BRMS 调试 -->
+  <line x1="380" y1="183" x2="415" y2="183" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="412,179 420,183 412,187" fill="#3b82f6"/>
+
+  <rect x="420" y="160" width="165" height="52" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" rx="6"/>
+  <text x="502" y="178" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">BRMS 在线调试</text>
+  <text x="502" y="194" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="8" fill="#3b82f6" text-anchor="middle">输入 Fact JSON → 查看执行详情</text>
+  <text x="502" y="206" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="8" fill="#3b82f6" text-anchor="middle">→ 定位规则问题</text>
+
+  <!-- Labels on arrows -->
+  <text x="145" y="78" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">灰度对比</text>
+  <text x="145" y="160" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">在线调试</text>
+</svg>

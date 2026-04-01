@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 248">
+  <!-- Outer frame -->
+  <rect x="10" y="10" width="680" height="228" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" rx="8"/>
+  <rect x="22" y="18" width="240" height="24" fill="#475569" rx="12"/>
+  <text x="142" y="35" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">GraphNodeV2 节点类型体系</text>
+
+  <!-- Col positions: left col 25-340, right col 355-675 -->
+  <!-- Text anchors within each cell: name@10, class@105, arrow@270 (left) / name@10, class@105, arrow@270 (right offset +330) -->
+
+  <!-- Row 1 -->
+  <rect x="25" y="52" width="320" height="26" fill="#dbeafe" stroke="#93c5fd" stroke-width="1" rx="4"/>
+  <text x="35" y="70" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#1e40af">start</text>
+  <text x="100" y="70" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#3b82f6">(EntryNode)</text>
+  <text x="330" y="70" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">流程入口</text>
+
+  <rect x="355" y="52" width="320" height="26" fill="#fef3c7" stroke="#fbbf24" stroke-width="1" rx="4"/>
+  <text x="365" y="70" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#92400e">condition</text>
+  <text x="450" y="70" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#b45309">(ConditionNode)</text>
+  <text x="660" y="70" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">→ CaseNode</text>
+
+  <!-- Row 2 -->
+  <rect x="25" y="84" width="320" height="26" fill="#dcfce7" stroke="#86efac" stroke-width="1" rx="4"/>
+  <text x="35" y="102" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#166534">action</text>
+  <text x="100" y="102" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#15803d">(ActionNode)</text>
+  <text x="330" y="102" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">→ ExprNode / SerNode</text>
+
+  <rect x="355" y="84" width="320" height="26" fill="#fce7f3" stroke="#f9a8d4" stroke-width="1" rx="4"/>
+  <text x="365" y="102" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#9d174d">and</text>
+  <text x="450" y="102" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#be185d">(LogicAndNode)</text>
+  <text x="660" y="102" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">→ AndNode</text>
+
+  <!-- Row 3 -->
+  <rect x="25" y="116" width="320" height="26" fill="#fce7f3" stroke="#f9a8d4" stroke-width="1" rx="4"/>
+  <text x="35" y="134" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#9d174d">or</text>
+  <text x="100" y="134" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#be185d">(LogicOrNode)</text>
+  <text x="330" y="134" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">→ OrNode</text>
+
+  <rect x="355" y="116" width="320" height="26" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1" rx="4"/>
+  <text x="365" y="134" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#047857">serial</text>
+  <text x="450" y="134" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#059669">(SerialGatewayNode)</text>
+  <text x="660" y="134" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">→ SerNode</text>
+
+  <!-- Row 4 -->
+  <rect x="25" y="148" width="320" height="26" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1" rx="4"/>
+  <text x="35" y="166" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#047857">parallel</text>
+  <text x="100" y="166" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#059669">(ParallelGatewayNode)</text>
+  <text x="330" y="166" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">→ ParNode</text>
+
+  <rect x="355" y="148" width="320" height="26" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1" rx="4"/>
+  <text x="365" y="166" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#6d28d9">exclusive</text>
+  <text x="450" y="166" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#7c3aed">(ExclusiveNode)</text>
+  <text x="660" y="166" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">→ CaseNode 链</text>
+
+  <!-- Row 5 (full width) -->
+  <rect x="25" y="180" width="650" height="26" fill="#fff7ed" stroke="#fdba74" stroke-width="1" rx="4"/>
+  <text x="35" y="198" font-family="'SF Mono', 'Menlo', monospace" font-size="10" font-weight="bold" fill="#c2410c">complexCondition</text>
+  <text x="190" y="198" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#ea580c">(ComplexConditionNode)</text>
+  <text x="660" y="198" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#475569" text-anchor="end">→ 复合条件（And/Or 组合）</text>
+
+  <!-- Footer -->
+  <text x="30" y="225" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#94a3b8">每种 UI 节点通过</text>
+  <text x="115" y="225" font-family="'SF Mono', 'Menlo', monospace" font-size="9" fill="#64748b" font-weight="bold">toRule()</text>
+  <text x="163" y="225" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#94a3b8">方法递归生成对应的 AST 节点，实现 UI 语义与执行语义的分离</text>
+</svg>
