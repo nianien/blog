@@ -5,8 +5,6 @@ pubDate: "2025-12-23"
 tags: ["Agentic", "AI Engineering", "Prompt Engineering"]
 ---
 
-# Prompt Engineering for Agents: 面向 Agent 的提示词工程
-
 > Agentic 系列第 06 篇。前文我们讨论了 Tool Calling 的设计哲学与工程实践，LLM 已经具备了"使用工具"的能力。但工具只是 Agent 的四肢，Prompt 才是 Agent 的大脑皮层——它定义了 Agent 如何感知、如何推理、如何决策、如何行动。
 >
 > 本文的核心观点：**Agent 的 Prompt 不是"聊天提示词"，而是"系统接口规范"。** Chatbot 的 Prompt 追求对话自然，Agent 的 Prompt 追求行为可控。这两者的设计哲学截然不同。

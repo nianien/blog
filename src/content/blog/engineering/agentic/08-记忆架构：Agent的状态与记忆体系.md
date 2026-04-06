@@ -5,8 +5,6 @@ pubDate: "2026-01-02"
 tags: ["Agentic", "AI Engineering", "Memory"]
 ---
 
-# Memory Architecture: Agent 的状态与记忆体系
-
 > LLM 是一个纯函数：给定相同的 prompt，产生相同的输出。它没有"昨天"，没有"上次"，没有"你之前说过"。
 >
 > 但一个合格的 Agent 必须记得：用户的偏好、上一步的结果、三天前那个失败的任务、以及从知识库中检索到的关键事实。

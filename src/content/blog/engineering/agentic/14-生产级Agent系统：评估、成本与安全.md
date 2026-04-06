@@ -5,8 +5,6 @@ description: "Agentic 系列终篇。从 Observability、Evaluation、Cost Engin
 tags: ["Agentic", "AI Engineering", "Production"]
 ---
 
-# Production-Grade Agent Systems: 评估、成本与安全
-
 > 让 Agent 跑起来只需要一个下午。让 Agent 稳定地、安全地、经济地在生产环境中运行，需要整个团队持续数月的工程投入。
 >
 > 这是 Agentic 系列的第 14 篇，也是终篇。前 13 篇我们讨论了"如何构建一个 Agent"，这一篇我们讨论"如何让 Agent 在真实世界中活下来"。

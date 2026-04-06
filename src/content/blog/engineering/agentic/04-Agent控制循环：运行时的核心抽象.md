@@ -5,8 +5,6 @@ description: "Agent 的本质不是一次函数调用，而是一个可中断的
 tags: ["Agentic", "AI Engineering", "Runtime"]
 ---
 
-# The Agent Control Loop: Agent 运行时的核心抽象
-
 > 如果说 LLM 是 Agent 的大脑，那么 Control Loop 就是 Agent 的心跳。
 >
 > 大多数教程在讲 Agent 时，上来就接框架、调 API、跑 demo。但如果你不理解 Agent 运行时的核心抽象——控制循环——你永远只是在用别人的黑盒。

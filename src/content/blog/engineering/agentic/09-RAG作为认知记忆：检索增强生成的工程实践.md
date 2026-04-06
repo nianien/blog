@@ -5,8 +5,6 @@ description: "RAG 不是搜索+拼接，而是 Agent 的认知记忆系统。本
 tags: ["Agentic", "AI Engineering", "RAG"]
 ---
 
-# RAG as Cognitive Memory: 检索增强生成的工程实践
-
 > 系列第 9 篇。上一篇我们讨论了 Agent 的记忆架构——会话状态、短期记忆与长期记忆。本篇聚焦长期记忆中最核心的工程问题：如何让 Agent 在海量知识中精准找到它需要的信息。
 >
 > 核心命题：**检索质量 > 模型大小。** 一个用 GPT-3.5 + 优秀 RAG 的系统，往往比 GPT-4 + 粗糙检索的系统表现更好。RAG 是工程问题，不是模型问题。

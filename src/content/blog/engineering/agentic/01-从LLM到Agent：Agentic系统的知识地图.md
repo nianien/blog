@@ -5,8 +5,6 @@ pubDate: "2025-12-01"
 tags: ["Agentic", "AI Engineering", "LLM"]
 ---
 
-# From LLM to Agent: Agentic 系统的知识地图
-
 > 大语言模型是一个令人惊叹的函数：Text In, Text Out。但函数不等于系统，生成不等于行动，回答不等于解决。
 >
 > 本文是 Agentic 系列 14 篇文章的开篇。我们将从"LLM 能做什么"出发，推导出"Agent 必须做什么"，然后为整个系列绘制一张完整的知识地图。

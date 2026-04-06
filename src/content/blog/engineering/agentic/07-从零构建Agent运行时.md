@@ -5,8 +5,6 @@ pubDate: "2025-12-28"
 tags: ["Agentic", "AI Engineering", "Runtime"]
 ---
 
-# Agent Runtime from Scratch: 不依赖框架构建 Agent
-
 > 框架是加速器，不是知识的替代品。
 >
 > 本文是 Agentic 系列第 07 篇，也是 Phase 2 的收官之作。我们将抛开所有框架，用纯 Python 从零构建一个功能完整的 Agent Runtime。这是系列中代码量最大的一篇——每一行代码都指向同一个目标：让你彻底理解 Agent 的运行本质。

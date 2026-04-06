@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="900" height="720" fill="#FAFAFA" rx="8"/>
+  <text x="450" y="36" text-anchor="middle" font-size="16" font-weight="bold" fill="#1E293B">信息流系统全景架构</text>
+
+  <!-- Layer 1: 内容生产层 -->
+  <rect x="40" y="56" width="820" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5" opacity="0.5"/>
+  <text x="60" y="76" font-size="13" font-weight="bold" fill="#92400E">��容生产层</text>
+  <rect x="60" y="86" width="100" height="38" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="110" y="109" text-anchor="middle" font-size="11" fill="#92400E">图文发布</text>
+  <rect x="172" y="86" width="100" height="38" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="222" y="109" text-anchor="middle" font-size="11" fill="#92400E">短视频发布</text>
+  <rect x="284" y="86" width="100" height="38" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="334" y="109" text-anchor="middle" font-size="11" fill="#92400E">内容审核</text>
+  <rect x="396" y="86" width="100" height="38" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="446" y="109" text-anchor="middle" font-size="11" fill="#92400E">转码处理</text>
+  <rect x="508" y="86" width="120" height="38" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="568" y="109" text-anchor="middle" font-size="11" fill="#92400E">特征提取 &amp; 入库</text>
+  <rect x="640" y="86" width="100" height="38" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="690" y="109" text-anchor="middle" font-size="11" fill="#92400E">AIGC 辅助</text>
+  <rect x="752" y="86" width="90" height="38" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="797" y="109" text-anchor="middle" font-size="11" fill="#92400E">互动系统</text>
+
+  <!-- Arrow down -->
+  <line x1="450" y1="136" x2="450" y2="156" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="450,164 445,156 455,156" fill="#94A3B8"/>
+
+  <!-- Layer 2: 内容理解层 -->
+  <rect x="40" y="166" width="820" height="80" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" opacity="0.5"/>
+  <text x="60" y="186" font-size="13" font-weight="bold" fill="#1E40AF">内容理解层</text>
+  <rect x="60" y="196" width="120" height="38" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="120" y="219" text-anchor="middle" font-size="11" fill="#1E40AF">NLP / LLM 理解</text>
+  <rect x="195" y="196" width="110" height="38" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="250" y="219" text-anchor="middle" font-size="11" fill="#1E40AF">CV 视觉理解</text>
+  <rect x="320" y="196" width="110" height="38" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="375" y="219" text-anchor="middle" font-size="11" fill="#1E40AF">用户画像</text>
+  <rect x="445" y="196" width="110" height="38" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="500" y="219" text-anchor="middle" font-size="11" fill="#1E40AF">Feature Store</text>
+  <rect x="570" y="196" width="140" height="38" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="640" y="219" text-anchor="middle" font-size="11" fill="#1E40AF">标签 / 类目 / 质量分</text>
+  <rect x="725" y="196" width="120" height="38" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="785" y="219" text-anchor="middle" font-size="11" fill="#1E40AF">Embedding 生成</text>
+
+  <!-- Arrow down -->
+  <line x1="450" y1="246" x2="450" y2="266" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="450,274 445,266 455,266" fill="#94A3B8"/>
+
+  <!-- Layer 3: 召回排序层 -->
+  <rect x="40" y="276" width="820" height="80" rx="8" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5" opacity="0.5"/>
+  <text x="60" y="296" font-size="13" font-weight="bold" fill="#065F46">召回排序层</text>
+  <rect x="60" y="306" width="100" height="38" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="110" y="329" text-anchor="middle" font-size="11" fill="#065F46">多路召回</text>
+  <rect x="172" y="306" width="80" height="38" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="212" y="329" text-anchor="middle" font-size="11" fill="#065F46">粗排</text>
+  <rect x="264" y="306" width="80" height="38" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="304" y="329" text-anchor="middle" font-size="11" fill="#065F46">精排</text>
+  <rect x="356" y="306" width="80" height="38" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="396" y="329" text-anchor="middle" font-size="11" fill="#065F46">��排</text>
+  <rect x="448" y="306" width="110" height="38" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="503" y="329" text-anchor="middle" font-size="11" fill="#065F46">AB 实验平台</text>
+  <rect x="570" y="306" width="100" height="38" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="620" y="329" text-anchor="middle" font-size="11" fill="#065F46">生态调控</text>
+  <rect x="682" y="306" width="160" height="38" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="762" y="329" text-anchor="middle" font-size="11" fill="#065F46">搜索召回 &amp; 排序</text>
+
+  <!-- Arrow down -->
+  <line x1="450" y1="356" x2="450" y2="376" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="450,384 445,376 455,376" fill="#94A3B8"/>
+
+  <!-- Layer 4: 分发渲染层 -->
+  <rect x="40" y="386" width="820" height="80" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5" opacity="0.5"/>
+  <text x="60" y="406" font-size="13" font-weight="bold" fill="#5B21B6">分发渲染层</text>
+  <rect x="60" y="416" width="100" height="38" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="110" y="439" text-anchor="middle" font-size="11" fill="#5B21B6">Feed 服务</text>
+  <rect x="172" y="416" width="90" height="38" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="217" y="439" text-anchor="middle" font-size="11" fill="#5B21B6">关注流</text>
+  <rect x="274" y="416" width="90" height="38" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="319" y="439" text-anchor="middle" font-size="11" fill="#5B21B6">推荐流</text>
+  <rect x="376" y="416" width="90" height="38" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="421" y="439" text-anchor="middle" font-size="11" fill="#5B21B6">短视频流</text>
+  <rect x="478" y="416" width="90" height="38" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="523" y="439" text-anchor="middle" font-size="11" fill="#5B21B6">搜索结果</text>
+  <rect x="580" y="416" width="100" height="38" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="630" y="439" text-anchor="middle" font-size="11" fill="#5B21B6">CDN 分发</text>
+  <rect x="692" y="416" width="80" height="38" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="732" y="439" text-anchor="middle" font-size="11" fill="#5B21B6">Push</text>
+  <rect x="784" y="416" width="60" height="38" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="814" y="439" text-anchor="middle" font-size="11" fill="#5B21B6">降级</text>
+
+  <!-- Arrow down -->
+  <line x1="450" y1="466" x2="450" y2="486" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="450,494 445,486 455,486" fill="#94A3B8"/>
+
+  <!-- Layer 5: 度量与治理层 -->
+  <rect x="40" y="496" width="820" height="80" rx="8" fill="#FCE7F3" stroke="#EC4899" stroke-width="1.5" opacity="0.5"/>
+  <text x="60" y="516" font-size="13" font-weight="bold" fill="#9D174D">度量与治理层</text>
+  <rect x="60" y="526" width="120" height="38" rx="6" fill="#FDF2F8" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="120" y="549" text-anchor="middle" font-size="11" fill="#9D174D">AB 实验指标</text>
+  <rect x="195" y="526" width="120" height="38" rx="6" fill="#FDF2F8" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="255" y="549" text-anchor="middle" font-size="11" fill="#9D174D">推荐 Trace</text>
+  <rect x="330" y="526" width="120" height="38" rx="6" fill="#FDF2F8" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="390" y="549" text-anchor="middle" font-size="11" fill="#9D174D">生态健康度</text>
+  <rect x="465" y="526" width="120" height="38" rx="6" fill="#FDF2F8" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="525" y="549" text-anchor="middle" font-size="11" fill="#9D174D">内容审核</text>
+  <rect x="600" y="526" width="120" height="38" rx="6" fill="#FDF2F8" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="660" y="549" text-anchor="middle" font-size="11" fill="#9D174D">行为风控</text>
+  <rect x="735" y="526" width="110" height="38" rx="6" fill="#FDF2F8" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="790" y="549" text-anchor="middle" font-size="11" fill="#9D174D">隐私合规</text>
+
+  <!-- Layer 6: 基础设施 -->
+  <rect x="40" y="600" width="820" height="100" rx="8" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5" opacity="0.5"/>
+  <text x="60" y="622" font-size="13" font-weight="bold" fill="#475569">基础设施层</text>
+  <rect x="60" y="636" width="85" height="28" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+  <text x="102" y="654" text-anchor="middle" font-size="11" fill="#475569">Kafka</text>
+  <rect x="155" y="636" width="85" height="28" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+  <text x="197" y="654" text-anchor="middle" font-size="11" fill="#475569">Redis</text>
+  <rect x="250" y="636" width="95" height="28" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+  <text x="297" y="654" text-anchor="middle" font-size="11" fill="#475569">MySQL/TiDB</text>
+  <rect x="355" y="636" width="105" height="28" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+  <text x="407" y="654" text-anchor="middle" font-size="11" fill="#475569">Elasticsearch</text>
+  <rect x="470" y="636" width="85" height="28" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+  <text x="512" y="654" text-anchor="middle" font-size="11" fill="#475569">Milvus</text>
+  <rect x="565" y="636" width="85" height="28" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+  <text x="607" y="654" text-anchor="middle" font-size="11" fill="#475569">Flink</text>
+  <rect x="660" y="636" width="85" height="28" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+  <text x="702" y="654" text-anchor="middle" font-size="11" fill="#475569">K8s / GPU</text>
+  <rect x="755" y="636" width="90" height="28" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1"/>
+  <text x="800" y="654" text-anchor="middle" font-size="11" fill="#475569">对象存储</text>
+
+  <!-- Arrow down to infra -->
+  <line x1="450" y1="576" x2="450" y2="600" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="450,600 445,592 455,592" fill="#94A3B8"/>
+</svg>

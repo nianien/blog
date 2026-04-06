@@ -5,8 +5,6 @@ description: "Agentic 系列第 10 篇。深入剖析 Agent 规划（Planning）
 tags: ["Agentic", "AI Engineering", "Planning"]
 ---
 
-# Planning and Reflection: 从 ReAct 到分层规划与自我纠错
-
 > LLM 的 next-token prediction 天生是"短视"的——它只看到当前 token 的概率分布，不会思考十步之后的结局。规划（Planning）让 Agent 具备"远视"能力，反思（Reflection）让 Agent 具备"纠错"能力。二者结合，是 Agent 从"工具调用器"进化为"问题解决者"的关键。
 >
 > 本文是 Agentic 系列的第 10 篇。我们将从规划范式的演进出发，深入分析 ReAct、Plan-and-Execute、Tree-of-Thought、Hierarchical Planning 四种规划模式，再系统探讨 Reflection 机制的设计与陷阱。

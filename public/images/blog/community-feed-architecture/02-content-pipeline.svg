@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="900" height="340" fill="#FAFAFA" rx="8"/>
+  <text x="450" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1E293B">内容生产 Pipeline</text>
+
+  <!-- Main flow -->
+  <rect x="30" y="70" width="100" height="50" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="80" y="99" text-anchor="middle" font-size="12" fill="#92400E">用户发布</text>
+
+  <line x1="130" y1="95" x2="160" y2="95" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="168,95 160,90 160,100" fill="#94A3B8"/>
+
+  <rect x="170" y="70" width="110" height="50" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="225" y="92" text-anchor="middle" font-size="12" fill="#991B1B">机器审核</text>
+  <text x="225" y="108" text-anchor="middle" font-size="10" fill="#DC2626">文本+图片+视频</text>
+
+  <line x1="280" y1="95" x2="310" y2="95" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="318,95 310,90 310,100" fill="#94A3B8"/>
+
+  <rect x="320" y="70" width="110" height="50" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="375" y="92" text-anchor="middle" font-size="12" fill="#1E40AF">内容理解</text>
+  <text x="375" y="108" text-anchor="middle" font-size="10" fill="#3B82F6">NLP / CV / LLM</text>
+
+  <line x1="430" y1="95" x2="460" y2="95" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="468,95 460,90 460,100" fill="#94A3B8"/>
+
+  <rect x="470" y="70" width="110" height="50" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="525" y="92" text-anchor="middle" font-size="12" fill="#065F46">特征提取</text>
+  <text x="525" y="108" text-anchor="middle" font-size="10" fill="#10B981">标签/质量分/Embedding</text>
+
+  <line x1="580" y1="95" x2="610" y2="95" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="618,95 610,90 610,100" fill="#94A3B8"/>
+
+  <rect x="620" y="70" width="110" height="50" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="675" y="92" text-anchor="middle" font-size="12" fill="#5B21B6">内容入库</text>
+  <text x="675" y="108" text-anchor="middle" font-size="10" fill="#8B5CF6">ES + DB + Milvus</text>
+
+  <line x1="730" y1="95" x2="760" y2="95" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="768,95 760,90 760,100" fill="#94A3B8"/>
+
+  <rect x="770" y="70" width="100" height="50" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="820" y="99" text-anchor="middle" font-size="12" font-weight="bold" fill="#065F46">可分发</text>
+
+  <!-- 短视频分支 -->
+  <text x="450" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#475569">短视频额外处理链路</text>
+
+  <rect x="80" y="180" width="120" height="50" rx="6" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <text x="140" y="202" text-anchor="middle" font-size="12" fill="#9A3412">视频上传</text>
+  <text x="140" y="218" text-anchor="middle" font-size="10" fill="#EA580C">分片上传</text>
+
+  <line x1="200" y1="205" x2="240" y2="205" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="248,205 240,200 240,210" fill="#94A3B8"/>
+
+  <rect x="250" y="180" width="120" height="50" rx="6" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <text x="310" y="202" text-anchor="middle" font-size="12" fill="#9A3412">转码</text>
+  <text x="310" y="218" text-anchor="middle" font-size="10" fill="#EA580C">多码率 H.264/H.265</text>
+
+  <line x1="370" y1="205" x2="410" y2="205" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="418,205 410,200 410,210" fill="#94A3B8"/>
+
+  <rect x="420" y="180" width="120" height="50" rx="6" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <text x="480" y="202" text-anchor="middle" font-size="12" fill="#9A3412">封面抽帧</text>
+  <text x="480" y="218" text-anchor="middle" font-size="10" fill="#EA580C">智能选帧 + 质量评估</text>
+
+  <line x1="540" y1="205" x2="580" y2="205" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="588,205 580,200 580,210" fill="#94A3B8"/>
+
+  <rect x="590" y="180" width="120" height="50" rx="6" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <text x="650" y="202" text-anchor="middle" font-size="12" fill="#9A3412">CDN 预热</text>
+  <text x="650" y="218" text-anchor="middle" font-size="10" fill="#EA580C">边缘节点分发</text>
+
+  <!-- SLA 指标 -->
+  <rect x="80" y="270" width="740" height="50" rx="6" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="450" y="292" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">核心 SLA</text>
+  <text x="450" y="308" text-anchor="middle" font-size="11" fill="#166534">图文：发布→可分发 &lt; 30s  |  短视频：上传→可播放 &lt; 3min  |  审核准确率 &gt; 99%  |  内容理解覆盖率 &gt; 95%</text>
+</svg>

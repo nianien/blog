@@ -5,8 +5,6 @@ pubDate: "2025-12-09"
 tags: ["Agentic", "AI Engineering", "Architecture"]
 ---
 
-# Agent vs Workflow vs Automation: 选对抽象才是关键
-
 > 系列第 03 篇。上一篇我们讲了"LLM 本身不是 Agent"，这一篇要回答一个更实际的问题：**你的问题，真的需要 Agent 吗？**
 
 ---

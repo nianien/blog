@@ -5,8 +5,6 @@ pubDate: "2025-12-18"
 tags: ["Agentic", "AI Engineering", "Tool Calling"]
 ---
 
-# Tool Calling Deep Dive: 让 LLM 成为可编程接口
-
 > 这是 Agentic 系列的第 05 篇。在前几篇中我们建立了 Agent 的概念模型、控制循环、以及 Agent 与 Workflow 的边界。本篇聚焦于 Agent 能力的核心支点——Tool Calling。
 >
 > Tool Calling 不是"让 AI 调 API"这么简单。它是 LLM 从 **Text-in/Text-out 的生成模型** 变成 **可编程接口** 的关键转折点。理解它的工作原理、设计约束和工程实践，是构建任何 Agentic 系统的前提。

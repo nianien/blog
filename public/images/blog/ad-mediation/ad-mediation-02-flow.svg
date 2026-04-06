@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
+  <defs>
+    <marker id="a2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#FF6B00"/></marker>
+    <filter id="s2"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/></filter>
+  </defs>
+  <rect width="960" height="380" rx="16" fill="#FAFBFC"/>
+
+  <!-- Timeline bar -->
+  <rect x="60" y="155" width="840" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="60" y="155" width="840" height="4" rx="2" fill="url(#tgrad)"/>
+  <linearGradient id="tgrad" x1="0" y1="0" x2="1" y2="0" xmlns="http://www.w3.org/2000/svg">
+    <stop offset="0%" stop-color="#FF6B00"/>
+    <stop offset="100%" stop-color="#4A90D9"/>
+  </linearGradient>
+
+  <!-- Step 1 -->
+  <circle cx="100" cy="157" r="28" fill="#FFF3E8" stroke="#FF6B00" stroke-width="2" filter="url(#s2)"/>
+  <text x="100" y="163" text-anchor="middle" font-size="20">📱</text>
+  <text x="100" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">用户触发</text>
+  <text x="100" y="228" text-anchor="middle" font-size="11" fill="#6B7280">打开 App</text>
+  <text x="100" y="244" text-anchor="middle" font-size="11" fill="#6B7280">触发广告位</text>
+  <rect x="72" y="96" width="56" height="22" rx="11" fill="#FF6B00"/>
+  <text x="100" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+0ms</text>
+
+  <!-- Step 2 -->
+  <circle cx="240" cy="157" r="28" fill="#F0EBFE" stroke="#8B5CF6" stroke-width="2" filter="url(#s2)"/>
+  <text x="240" y="163" text-anchor="middle" font-size="20">🔀</text>
+  <text x="240" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">流量路由</text>
+  <text x="240" y="228" text-anchor="middle" font-size="11" fill="#6B7280">Segment 匹配</text>
+  <text x="240" y="244" text-anchor="middle" font-size="11" fill="#6B7280">规则命中 &lt;5ms</text>
+  <rect x="212" y="96" width="56" height="22" rx="11" fill="#8B5CF6"/>
+  <text x="240" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+5ms</text>
+
+  <!-- Step 3 -->
+  <circle cx="380" cy="157" r="28" fill="#E8F0FE" stroke="#4A90D9" stroke-width="2" filter="url(#s2)"/>
+  <text x="380" y="163" text-anchor="middle" font-size="20">📡</text>
+  <text x="380" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">并发竞价</text>
+  <text x="380" y="228" text-anchor="middle" font-size="11" fill="#6B7280">Bidding SDK 出价</text>
+  <text x="380" y="244" text-anchor="middle" font-size="11" fill="#6B7280">超时窗口 ~150ms</text>
+  <rect x="339" y="96" width="82" height="22" rx="11" fill="#4A90D9"/>
+  <text x="380" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+5~155ms</text>
+
+  <!-- Step 4 -->
+  <circle cx="520" cy="157" r="28" fill="#E8F8EC" stroke="#34C759" stroke-width="2" filter="url(#s2)"/>
+  <text x="520" y="163" text-anchor="middle" font-size="20">⚖️</text>
+  <text x="520" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">混合排序</text>
+  <text x="520" y="228" text-anchor="middle" font-size="11" fill="#6B7280">Bidding + Waterfall</text>
+  <text x="520" y="244" text-anchor="middle" font-size="11" fill="#6B7280">统一价格维度排序</text>
+  <rect x="471" y="96" width="98" height="22" rx="11" fill="#34C759"/>
+  <text x="520" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+155~165ms</text>
+
+  <!-- Step 5 -->
+  <circle cx="660" cy="157" r="28" fill="#FFF3E8" stroke="#FF6B00" stroke-width="2" filter="url(#s2)"/>
+  <text x="660" y="163" text-anchor="middle" font-size="20">🏆</text>
+  <text x="660" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">胜出决策</text>
+  <text x="660" y="228" text-anchor="middle" font-size="11" fill="#6B7280">最高出价者胜出</text>
+  <text x="660" y="244" text-anchor="middle" font-size="11" fill="#6B7280">素材加载</text>
+  <rect x="611" y="96" width="98" height="22" rx="11" fill="#FF6B00"/>
+  <text x="660" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+165~200ms</text>
+
+  <!-- Step 6 -->
+  <circle cx="800" cy="157" r="28" fill="#E8F0FE" stroke="#4A90D9" stroke-width="2" filter="url(#s2)"/>
+  <text x="800" y="163" text-anchor="middle" font-size="20">🖼️</text>
+  <text x="800" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">渲染 & 上报</text>
+  <text x="800" y="228" text-anchor="middle" font-size="11" fill="#6B7280">广告展示</text>
+  <text x="800" y="244" text-anchor="middle" font-size="11" fill="#6B7280">曝光/点击追踪</text>
+  <rect x="751" y="96" width="98" height="22" rx="11" fill="#4A90D9"/>
+  <text x="800" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+200~500ms</text>
+
+  <!-- Bottom note -->
+  <rect x="200" y="290" width="560" height="60" rx="12" fill="#FFF3E8" stroke="#FFB366" stroke-width="1"/>
+  <text x="480" y="315" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B00">💡 智能预加载机制</text>
+  <text x="480" y="336" text-anchor="middle" font-size="11" fill="#6B7280">在用户即将触发广告位前提前完成竞价与素材缓存，让"展示时延"与"竞价耗时"解耦</text>
+
+  <!-- Title -->
+  <text x="480" y="40" text-anchor="middle" font-size="16" font-weight="800" fill="#1F2937">一次广告展示的完整链路（200-500ms）</text>
+  <text x="480" y="62" text-anchor="middle" font-size="12" fill="#6B7280">多系统并发协作 · 毫秒级决策</text>
+</svg>
