@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="900" height="480" fill="#FAFAFA" rx="8"/>
+  <text x="450" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1E293B">召回 → 排序 全链路</text>
+
+  <!-- 多路召回 -->
+  <rect x="30" y="55" width="200" height="310" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" opacity="0.4"/>
+  <text x="130" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E40AF">多路召回（万级）</text>
+
+  <rect x="50" y="92" width="160" height="34" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="130" y="113" text-anchor="middle" font-size="11" fill="#1E40AF">协同过滤（U2I / I2I）</text>
+
+  <rect x="50" y="136" width="160" height="34" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="130" y="157" text-anchor="middle" font-size="11" fill="#1E40AF">向量召回（ANN）</text>
+
+  <rect x="50" y="180" width="160" height="34" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="130" y="201" text-anchor="middle" font-size="11" fill="#1E40AF">热度召回</text>
+
+  <rect x="50" y="224" width="160" height="34" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="130" y="245" text-anchor="middle" font-size="11" fill="#1E40AF">关注流召回</text>
+
+  <rect x="50" y="268" width="160" height="34" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="130" y="289" text-anchor="middle" font-size="11" fill="#1E40AF">地域 / 标签召回</text>
+
+  <rect x="50" y="312" width="160" height="34" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="130" y="333" text-anchor="middle" font-size="11" fill="#1E40AF">探索性召回（冷启动）</text>
+
+  <!-- Arrow to 粗排 -->
+  <line x1="230" y1="210" x2="270" y2="210" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="278,210 270,205 270,215" fill="#94A3B8"/>
+
+  <!-- 粗排 -->
+  <rect x="280" y="150" width="150" height="120" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+  <text x="355" y="175" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">粗排（千级）</text>
+  <rect x="295" y="190" width="120" height="30" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="355" y="209" text-anchor="middle" font-size="11" fill="#92400E">双塔模型</text>
+  <rect x="295" y="228" width="120" height="30" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="355" y="247" text-anchor="middle" font-size="11" fill="#92400E">轻量打分排序</text>
+
+  <!-- Arrow to 精排 -->
+  <line x1="430" y1="210" x2="470" y2="210" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="478,210 470,205 470,215" fill="#94A3B8"/>
+
+  <!-- 精排 -->
+  <rect x="480" y="130" width="170" height="160" rx="8" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5" opacity="0.4"/>
+  <text x="565" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#065F46">精排（百级）</text>
+  <rect x="495" y="168" width="140" height="30" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="565" y="187" text-anchor="middle" font-size="11" fill="#065F46">DIN / DIEN 模型</text>
+  <rect x="495" y="206" width="140" height="30" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="565" y="225" text-anchor="middle" font-size="11" fill="#065F46">多目标 MTL</text>
+  <rect x="495" y="244" width="140" height="30" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="565" y="263" text-anchor="middle" font-size="11" fill="#065F46">CTR + 完播 + 互动</text>
+
+  <!-- Arrow to 重排 -->
+  <line x1="650" y1="210" x2="690" y2="210" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="698,210 690,205 690,215" fill="#94A3B8"/>
+
+  <!-- 重排 -->
+  <rect x="700" y="130" width="170" height="160" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5" opacity="0.4"/>
+  <text x="785" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#5B21B6">重排（展示级）</text>
+  <rect x="715" y="168" width="140" height="30" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="785" y="187" text-anchor="middle" font-size="11" fill="#5B21B6">多样性打散</text>
+  <rect x="715" y="206" width="140" height="30" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="785" y="225" text-anchor="middle" font-size="11" fill="#5B21B6">频控 &amp; 去重</text>
+  <rect x="715" y="244" width="140" height="30" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="785" y="263" text-anchor="middle" font-size="11" fill="#5B21B6">运营干预 &amp; 生态调控</text>
+
+  <!-- Bottom: 量级标注 -->
+  <rect x="30" y="400" width="840" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="450" y="422" text-anchor="middle" font-size="12" font-weight="bold" fill="#475569">漏斗量级</text>
+  <text x="130" y="445" text-anchor="middle" font-size="12" fill="#3B82F6">召回：10,000+</text>
+  <line x1="245" y1="432" x2="245" y2="450" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="355" y="445" text-anchor="middle" font-size="12" fill="#F59E0B">粗排：1,000~2,000</text>
+  <line x1="455" y1="432" x2="455" y2="450" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="565" y="445" text-anchor="middle" font-size="12" fill="#10B981">精排：100~300</text>
+  <line x1="660" y1="432" x2="660" y2="450" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="785" y="445" text-anchor="middle" font-size="12" fill="#8B5CF6">展示：20~50</text>
+</svg>

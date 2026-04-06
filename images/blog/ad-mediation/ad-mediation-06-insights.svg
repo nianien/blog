@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
+  <defs><filter id="s6"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/></filter></defs>
+  <rect width="960" height="400" rx="16" fill="#FAFBFC"/>
+
+  <text x="480" y="35" text-anchor="middle" font-size="16" font-weight="800" fill="#1F2937">四大产品设计洞察</text>
+
+  <!-- Card 1 -->
+  <rect x="30" y="60" width="215" height="320" rx="14" fill="white" stroke="#FF6B00" stroke-width="1.5" filter="url(#s6)"/>
+  <rect x="30" y="60" width="215" height="6" rx="3" fill="#FF6B00"/>
+  <text x="137" y="95" text-anchor="middle" font-size="36" font-weight="900" fill="#FF6B00" opacity="0.15">01</text>
+  <text x="137" y="120" text-anchor="middle" font-size="14" font-weight="800" fill="#FF6B00">中立性</text>
+  <text x="137" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="#1F2937">商业模式的基础</text>
+  <line x1="60" y1="155" x2="215" y2="155" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="50" y="178" font-size="11" fill="#6B7280"><tspan x="50" dy="0">聚合平台不持有广告库存</tspan><tspan x="50" dy="18">对所有 Network 一视同仁</tspan><tspan x="50" dy="18">100% 中立 · 数据透明</tspan><tspan x="50" dy="30">开发者信任 = 平台根基</tspan><tspan x="50" dy="18">一旦偏向即失去公信力</tspan></text>
+  <rect x="60" y="320" width="170" height="36" rx="8" fill="#FFF3E8"/>
+  <text x="145" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#FF6B00">不碰流量 = 公信力</text>
+
+  <!-- Card 2 -->
+  <rect x="263" y="60" width="215" height="320" rx="14" fill="white" stroke="#4A90D9" stroke-width="1.5" filter="url(#s6)"/>
+  <rect x="263" y="60" width="215" height="6" rx="3" fill="#4A90D9"/>
+  <text x="370" y="95" text-anchor="middle" font-size="36" font-weight="900" fill="#4A90D9" opacity="0.15">02</text>
+  <text x="370" y="120" text-anchor="middle" font-size="14" font-weight="800" fill="#4A90D9">预加载设计</text>
+  <text x="370" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="#1F2937">解决延迟矛盾</text>
+  <line x1="293" y1="155" x2="448" y2="155" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="283" y="178" font-size="11" fill="#6B7280"><tspan x="283" dy="0">竞价耗时 ~150ms</tspan><tspan x="283" dy="18">用户体验不能等待</tspan><tspan x="283" dy="30">价格优先：缓存高价广告</tspan><tspan x="283" dy="18">展示优先：缓存多个保填充</tspan><tspan x="283" dy="18">A/B 测试选择最优策略</tspan></text>
+  <rect x="293" y="320" width="170" height="36" rx="8" fill="#E8F0FE"/>
+  <text x="378" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#4A90D9">展示时延 ≠ 竞价耗时</text>
+
+  <!-- Card 3 -->
+  <rect x="496" y="60" width="215" height="320" rx="14" fill="white" stroke="#8B5CF6" stroke-width="1.5" filter="url(#s6)"/>
+  <rect x="496" y="60" width="215" height="6" rx="3" fill="#8B5CF6"/>
+  <text x="603" y="95" text-anchor="middle" font-size="36" font-weight="900" fill="#8B5CF6" opacity="0.15">03</text>
+  <text x="603" y="120" text-anchor="middle" font-size="14" font-weight="800" fill="#8B5CF6">用户级数据</text>
+  <text x="603" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="#1F2937">核心护城河</text>
+  <line x1="526" y1="155" x2="681" y2="155" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="516" y="178" font-size="11" fill="#6B7280"><tspan x="516" dy="0">UID/IDFA/GAID 级别</tspan><tspan x="516" dy="18">收益数据 + 归因数据打通</tspan><tspan x="516" dy="30">计算真实 ROAS</tspan><tspan x="516" dy="18">Channel→展示→用户粒度</tspan><tspan x="516" dy="18">SDK 无法提供的洞察</tspan></text>
+  <rect x="526" y="320" width="170" height="36" rx="8" fill="#F0EBFE"/>
+  <text x="611" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#8B5CF6">数据粒度 = 运营精度</text>
+
+  <!-- Card 4 -->
+  <rect x="729" y="60" width="215" height="320" rx="14" fill="white" stroke="#34C759" stroke-width="1.5" filter="url(#s6)"/>
+  <rect x="729" y="60" width="215" height="6" rx="3" fill="#34C759"/>
+  <text x="836" y="95" text-anchor="middle" font-size="36" font-weight="900" fill="#34C759" opacity="0.15">04</text>
+  <text x="836" y="120" text-anchor="middle" font-size="14" font-weight="800" fill="#34C759">私有化部署</text>
+  <text x="836" y="140" text-anchor="middle" font-size="12" font-weight="700" fill="#1F2937">大客户安全出口</text>
+  <line x1="759" y1="155" x2="914" y2="155" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="749" y="178" font-size="11" fill="#6B7280"><tspan x="749" dy="0">头部 App 数据极度敏感</tspan><tspan x="749" dy="18">不愿跑在共享云环境</tspan><tspan x="749" dy="30">自有基础设施运行聚合</tspan><tspan x="749" dy="18">数据物理隔离</tspan><tspan x="749" dy="18">SaaS 模式无法满足</tspan></text>
+  <rect x="759" y="320" width="170" height="36" rx="8" fill="#E8F8EC"/>
+  <text x="844" y="343" text-anchor="middle" font-size="11" font-weight="600" fill="#34C759">安全合规 = 大客户信任</text>
+</svg>
