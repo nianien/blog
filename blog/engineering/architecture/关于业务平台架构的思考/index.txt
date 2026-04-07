@@ -10,13 +10,16 @@ d:"$Sreact.suspense"
 f:I[7150,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/7f62681e243899a1.css","style"]
-0:{"P":null,"b":"eFT_yD51A5vXjb7yEdk46","p":"","c":["","blog","engineering","architecture","%E5%85%B3%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/architecture/%E5%85%B3%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7f62681e243899a1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/architecture/%E5%85%B3%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+0:{"P":null,"b":"WxQQdrfkBoIEhQXw3EhTp","p":"","c":["","blog","engineering","architecture","%E5%85%B3%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/architecture/%E5%85%B3%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7f62681e243899a1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/architecture/%E5%85%B3%E4%BA%8E%E4%B8%9A%E5%8A%A1%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
 10:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],""]
 11:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
-12:T6991,<blockquote>
+12:Tadb4,<blockquote>
 <p>业务平台是连接业务战略与技术实现的桥梁。好的业务平台架构，不仅要沉淀可复用的基础设施以降低成本，更要通过开放的架构能力支持业务的快速创新与差异化经营。本文从&quot;业务是什么&quot;这一基本问题出发，逐步展开对业务平台架构定位、能力建模、域划分以及架构构建方法的系统性思考。</p>
 </blockquote>
-<h2>从我们最熟悉的说起——业务是什么？</h2>
+<p>为了让抽象的方法论有具体的着力点，本文以<strong>电商交易平台</strong>作为贯穿全文的案例——它同时服务淘宝、天猫、1688 等多条业务线，是业务平台架构问题最典型的缩影。</p>
+<p>全文分为四个部分递进展开：第一<del>三章回答&quot;业务平台是什么、解决什么问题&quot;（定义与定位），第四</del>七章回答&quot;用什么方法论来思考&quot;（模型、域、能力的分析框架），第八<del>九章回答&quot;具体怎么设计&quot;（商业能力的划分与分层），第十</del>十三章回答&quot;落地时会遇到什么&quot;（反模式、组织关系、构建方法和演进路径）。</p>
+<hr>
+<h2>一、从我们最熟悉的说起——业务是什么？</h2>
 <p>不同来源对&quot;业务&quot;有着不同层次的解读：</p>
 <ol>
 <li>职业上的事务，统称为「业务」——辞海</li>
@@ -27,53 +30,56 @@ f:I[7150,[],""]
 <p><strong>业务</strong>：企业接受客户订购，并将商品或服务交付给客户的一系列活动的总和，称之为一个业务。</p>
 <p>业务的基本特征是<strong>产品+组织</strong>。当产品交付给客户时，面向不同客户、市场、行业，如何解决业务的差异性？答案是<strong>业务身份</strong>。</p>
 <p>业务身份是现实业务在系统中给予的唯一编码标识，是基于&quot;业务&quot;差异性划分而形成的系统 ID。业务身份的本质不是为了区分逻辑判断，而是区分需求来源以及规则的适用范围。因此，业务身份应该有全局的一致性。</p>
-<h2>业务平台架构的定位</h2>
-<h3>从业务内部看，要解决的主要问题</h3>
+<p><strong>案例</strong>：在电商交易平台中，淘宝 C2C、天猫 B2C、1688 B2B 就是三个不同的业务身份。同样是&quot;下单-支付-履约&quot;的交易流程，但淘宝允许议价、天猫价格固定、1688 支持批量采购和账期——这些差异不是通过 if/else 硬编码区分的，而是通过业务身份关联到不同的规则集。当新业务线（比如跨境电商）接入时，分配新的业务身份，挂载对应的规则集，而不需要修改核心交易流程。</p>
+<hr>
+<h2>二、业务平台架构的定位与价值</h2>
+<h3>业务平台要解决什么问题？</h3>
+<p>从业务内部看和从全局看，业务平台面对两组不同但相关的诉求：</p>
 <table>
 <thead>
 <tr>
+<th>视角</th>
 <th>维度</th>
 <th>目标</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><strong>业务内部</strong></td>
 <td>创新</td>
 <td>不断适应市场的业务策略</td>
 </tr>
 <tr>
+<td></td>
 <td>低成本</td>
 <td>实施成本低</td>
 </tr>
 <tr>
+<td></td>
 <td>快速响应</td>
 <td>能快速推进，快速试错</td>
 </tr>
 <tr>
+<td></td>
 <td>外部资源</td>
 <td>易于获得生态内足够的外部资源，如流量、供给、渠道</td>
 </tr>
-</tbody></table>
-<h3>从全局看，怎样支持业务快速发展？</h3>
-<table>
-<thead>
 <tr>
-<th>维度</th>
-<th>目标</th>
-</tr>
-</thead>
-<tbody><tr>
+<td><strong>全局</strong></td>
 <td>基础强大</td>
 <td>有强大的基础平台支撑，通用能力得到保证</td>
 </tr>
 <tr>
+<td></td>
 <td>组装灵活</td>
 <td>可以快速选择部分能力，构建适合自身需要的支撑体系</td>
 </tr>
 <tr>
+<td></td>
 <td>易于变化</td>
 <td>变化牵涉面小，可以快速定制</td>
 </tr>
 <tr>
+<td></td>
 <td>自主投入</td>
 <td>不受基础平台资源瓶颈限制</td>
 </tr>
@@ -86,8 +92,15 @@ f:I[7150,[],""]
 <li><strong>信息共享</strong>：概念一致、场景链接</li>
 <li><strong>沟通顺畅</strong>：共同的术语、对业务整体的一致认识</li>
 </ul>
+<h3>业务平台的核心价值</h3>
+<ul>
+<li><strong>降低成本</strong>：通过沉淀可复用的软件基础设施</li>
+<li><strong>支持创新</strong>：通过提供开放的基础架构能力，支持创新和差异化经营</li>
+<li><strong>全局管控</strong>：通过管理基础数据和基本流程节点，提供全局管控的手段和稳定性保障</li>
+</ul>
+<p><strong>案例</strong>：电商交易平台的价值体现——淘宝、天猫、1688 共享同一套交易引擎、支付系统、库存服务。如果每条业务线各建一套，三套系统的开发和维护成本是 3x；共享平台后，核心能力的成本降为 1x + 差异化定制的增量成本。同时，平台统一管理交易安全规则，一次升级全局生效。</p>
 <h3>被复用或信息共享的前提</h3>
-<p>从业务角度看，能够被复用或信息共享需要满足以下前提：</p>
+<p>能够被复用或信息共享需要满足以下前提：</p>
 <ul>
 <li>核心管理对象的一致性<ul>
 <li>概念一致：对象+关系</li>
@@ -101,34 +114,39 @@ f:I[7150,[],""]
 </li>
 </ul>
 <h3>软件复用的四种形式</h3>
-<p>从技术的角度，软件怎样被复用？</p>
 <table>
 <thead>
 <tr>
 <th>复用形式</th>
 <th>说明</th>
+<th>案例</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>功能复用</td>
 <td>一段功能被完整使用</td>
+<td>淘宝和天猫共用同一个&quot;创建订单&quot;服务</td>
 </tr>
 <tr>
 <td>接口复用</td>
 <td>输入输出定义复用，实现逻辑重写</td>
+<td>&quot;计算运费&quot;接口定义统一，但快递和物流的计算逻辑不同</td>
 </tr>
 <tr>
 <td>流程复用</td>
 <td>一段控制结构被复用，控制逻辑加上节点</td>
+<td>&quot;下单→支付→发货→确认收货&quot;流程骨架复用，各业务线在节点上扩展</td>
 </tr>
 <tr>
 <td>规则复用</td>
 <td>一段判断逻辑被复用</td>
+<td>&quot;库存扣减规则&quot;在所有业务线通用</td>
 </tr>
 </tbody></table>
 <blockquote>
 <p>复用的前提是业务实质的相似性。如果管理的核心对象存在较大差异，绝大部分情况下，以上复用都没可能。</p>
 </blockquote>
+<p>但满足复用前提并不意味着应该立即平台化——<strong>过早的抽象同样有害</strong>。复用是一种结果而非目标，具体的时机判断见第十章&quot;反模式一：过度平台化&quot;。</p>
 <h3>业务平台的能力取决于什么？</h3>
 <ul>
 <li>是否存在基础的具有共性的关键业务环节</li>
@@ -137,13 +155,59 @@ f:I[7150,[],""]
 <li>是否存在需要大范围执行的管控规则</li>
 <li>是否需要稳定性 SLA</li>
 </ul>
-<h3>业务平台的价值</h3>
+<hr>
+<h2>三、业务架构的现状与挑战</h2>
+<p>通常，企业架构包括<strong>业务架构、技术架构、应用架构、数据/信息架构</strong>，而业务平台最薄弱的环节往往在于业务架构：</p>
 <ul>
-<li><strong>降低成本</strong>：通过沉淀可复用的软件基础设施</li>
-<li><strong>支持创新</strong>：通过提供开放的基础架构能力，支持创新和差异化经营</li>
-<li><strong>全局管控</strong>：通过管理基础数据和基本流程节点，提供全局管控的手段和稳定性保障</li>
+<li>已经形成框架，但缺乏对关键概念的确切定义</li>
+<li>已经形成平台，但缺乏长期演进的规划指引</li>
+<li>已经形成对业务的基础性支撑，但基础能力没有明确的定义</li>
+<li>平台团队缺乏对业务的结构化思考框架指引，容易造成团队能力的瓶颈</li>
 </ul>
-<h2>业务架构模型分析</h2>
+<p>因此，我们首先需要健全业务架构体系。业务架构体系的构建关键在于先要建立<strong>业务视角</strong>。</p>
+<h3>什么是业务视角？</h3>
+<ul>
+<li>用业务发生的方式描述业务：围绕能力、流程与场景描述</li>
+<li>将业务现象背后的逻辑进行结构化呈现</li>
+<li>强调结果而非方法实现，屏蔽技术细节</li>
+</ul>
+<p><strong>案例</strong>：当我们说&quot;交易平台支持担保交易&quot;时，这是业务视角的描述——它说的是平台具备什么能力。而&quot;通过 RPC 调用支付中心的 escrow 接口实现资金冻结&quot;是技术视角。业务架构的文档中应该出现前者，而非后者。</p>
+<h3>如何建立业务视角？</h3>
+<ul>
+<li>首先要明确业务目标，理解业务含义，知道结构划分的依据</li>
+<li>要建立端到端的全流程视角，业务需求能够对应到系统功能</li>
+<li>在业务沟通中，统一使用达成共识的业务语言而非技术术语</li>
+<li>系统被业务感知的部分要有明确的业务语义以及清晰的边界</li>
+</ul>
+<h3>业务平台架构的层次结构</h3>
+<p>业务平台架构是一个<strong>以流程为基础，以能力为表达</strong>的层次结构：</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>目标</th>
+<th>案例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第一层</td>
+<td>明确语义和范围</td>
+<td>&quot;交易&quot;的边界是什么？从下单到确认收货，还是包含售后？</td>
+</tr>
+<tr>
+<td>第二层</td>
+<td>构建完备、正交的业务模型</td>
+<td>交易域、商品域、支付域、物流域的边界互不重叠</td>
+</tr>
+<tr>
+<td>第三层</td>
+<td>与交付形态相结合，提供服务 SLA</td>
+<td>交易核心链路 99.99% 可用，营销活动 99.9% 可用</td>
+</tr>
+</tbody></table>
+<p>无论从能力角度，还是从流程角度，都是对企业行为的一种描述方式。我们既可以通过满足的客户需求出发，构建能力的集合，也可以根据流程到企业能力的对应，建立起整体的能力框架或过程框架。</p>
+<hr>
+<h2>四、业务架构模型分析</h2>
 <p>业界对业务架构的描述方式有多种参考模型：</p>
 <table>
 <thead>
@@ -187,59 +251,40 @@ f:I[7150,[],""]
 </blockquote>
 </li>
 </ul>
+<p><strong>案例对照</strong>：以电商交易为例——</p>
+<table>
+<thead>
+<tr>
+<th>视角</th>
+<th>描述</th>
+<th>交易平台示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Capability（What）</td>
+<td>平台具备什么能力</td>
+<td>&quot;担保交易能力&quot;、&quot;分期支付能力&quot;</td>
+</tr>
+<tr>
+<td>Process（How）</td>
+<td>业务怎么执行</td>
+<td>&quot;下单→锁库存→支付→扣库存→发货→确认收货&quot;</td>
+</tr>
+<tr>
+<td>Value Stream（Why）</td>
+<td>为客户创造什么价值</td>
+<td>&quot;买家安全便捷地完成商品购买&quot;</td>
+</tr>
+</tbody></table>
 <h3>参考模型的共性</h3>
-<p>在推动企业 IT 服务能力的持续演进方面，业界已经有丰富的参考。分析前述参考模型可以看到：</p>
+<p>分析前述参考模型可以看到：</p>
 <ul>
 <li><strong>顶层视图一致</strong>：不论哪种描述方式，都是先从企业的管理范围做大的划分——基于价值链的分析形成顶级视图，以是否直接服务客户为基准划分不同分类</li>
 <li><strong>内容逻辑趋同</strong>：大多讨论都涉及组织、能力、过程的关系</li>
 <li><strong>目标一致</strong>：虽然在不同的时期、不同的视角强调的重点不同，但都是希望建立更易于为业务理解的视图，并成为构建 IT 系统的桥梁</li>
 </ul>
-<h2>业务架构的现状与挑战</h2>
-<p>通常，企业架构包括<strong>业务架构、技术架构、应用架构、数据/信息架构</strong>，而业务平台最薄弱的环节往往在于业务架构：</p>
-<ul>
-<li>已经形成框架，但缺乏对关键概念的确切定义</li>
-<li>已经形成平台，但缺乏长期演进的规划指引</li>
-<li>已经形成对业务的基础性支撑，但基础能力没有明确的定义</li>
-<li>平台团队缺乏对业务的结构化思考框架指引，容易造成团队能力的瓶颈</li>
-</ul>
-<p>因此，我们首先需要健全业务架构体系。业务架构体系的构建关键在于先要建立<strong>业务视角</strong>。</p>
-<h3>什么是业务视角？</h3>
-<ul>
-<li>用业务发生的方式描述业务：围绕能力、流程与场景描述</li>
-<li>将业务现象背后的逻辑进行结构化呈现</li>
-<li>强调结果而非方法实现，屏蔽技术细节</li>
-</ul>
-<h3>如何建立业务视角？</h3>
-<ul>
-<li>首先要明确业务目标，理解业务含义，知道结构划分的依据</li>
-<li>要建立端到端的全流程视角，业务需求能够对应到系统功能</li>
-<li>在业务沟通中，统一使用达成共识的业务语言而非技术术语</li>
-<li>系统被业务感知的部分要有明确的业务语义以及清晰的边界</li>
-</ul>
-<h3>业务平台架构的层次结构</h3>
-<p>业务平台架构是一个<strong>以流程为基础，以能力为表达</strong>的层次结构：</p>
-<table>
-<thead>
-<tr>
-<th>层次</th>
-<th>目标</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>第一层</td>
-<td>明确语义和范围</td>
-</tr>
-<tr>
-<td>第二层</td>
-<td>构建完备、正交的业务模型</td>
-</tr>
-<tr>
-<td>第三层</td>
-<td>与交付形态相结合，提供服务 SLA</td>
-</tr>
-</tbody></table>
-<p>无论从能力角度，还是从流程角度，都是对企业行为的一种描述方式。我们既可以通过满足的客户需求出发，构建能力的集合，也可以根据流程到企业能力的对应，建立起整体的能力框架或过程框架。</p>
-<h2>关于域（Domain）的思考</h2>
+<hr>
+<h2>五、关于域（Domain）的思考</h2>
 <p>域是一个广泛被使用的词，但定义也很宽泛。领域建模这个词很熟悉，但具体&quot;领域&quot;是什么，在实践中并没有可以判定的简单标准。域常常被理解为不同的场景：功能域、过程域、数据域。</p>
 <p>如果从 OO（面向对象）的核心思想出发，则可以将域做一个统一认知：</p>
 <ul>
@@ -247,9 +292,44 @@ f:I[7150,[],""]
 <li><strong>对象</strong>的行为和数据是不可分开的，过程是对象行为的执行过程</li>
 </ul>
 <p>基于以上认知，域的概念可以统一为**「信息域」**——数据是信息的载体，信息是对数据的语义解释。因此，<strong>领域建模就是找出问题范围内的对象及其关系，根据对象间关系的紧密程度，来确定是否属于一个域。</strong></p>
-<h3>价值链视角下的能力划分</h3>
-<p>价值链把企业的能力划分为<strong>核心能力</strong>以及<strong>辅助能力</strong>，实质是以客户为中心，区分客户与企业两个角色。根据 TMF-eTOM 的划分方式，在核心流程进一步细分基础设施和战略、运营，和生产不直接相关的活动都定义为企业管理。</p>
-<h2>能力的语义分析——5W1H 的逻辑</h2>
+<p><strong>案例</strong>：电商平台的域划分——</p>
+<table>
+<thead>
+<tr>
+<th>域</th>
+<th>核心对象</th>
+<th>为什么是一个域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>商品域</strong></td>
+<td>商品、SKU、类目、属性</td>
+<td>这些对象之间高度耦合，SKU 必须属于商品，属性必须挂在类目下</td>
+</tr>
+<tr>
+<td><strong>交易域</strong></td>
+<td>订单、订单项、交易状态</td>
+<td>订单和订单项不可分割，交易状态是订单的核心行为</td>
+</tr>
+<tr>
+<td><strong>支付域</strong></td>
+<td>支付单、退款单、支付渠道</td>
+<td>支付有独立的生命周期，与交易解耦（一笔交易可以多次支付）</td>
+</tr>
+<tr>
+<td><strong>物流域</strong></td>
+<td>物流单、运单、物流轨迹</td>
+<td>物流有独立的时间线和状态机，与交易异步运作</td>
+</tr>
+<tr>
+<td><strong>用户域</strong></td>
+<td>买家、卖家、账户</td>
+<td>用户身份跨所有业务线共享</td>
+</tr>
+</tbody></table>
+<p>为什么支付和交易是两个域而非一个？因为支付单有独立于订单的生命周期——订单取消后支付单可能仍在退款中，一笔订单可能对应多笔支付单（拆单支付）。<strong>对象间关系的紧密程度</strong>是判定域边界的核心依据。</p>
+<hr>
+<h2>六、能力的语义分析——5W1H 的逻辑</h2>
 <p>对能力进行语义分析，可以借助经典的 5W1H 框架：</p>
 <table>
 <thead>
@@ -309,26 +389,113 @@ f:I[7150,[],""]
 <li>找出关键的非功能性的特性</li>
 <li>把流程各个环节较为固定的组合找出来</li>
 </ol>
-<h2>能力分析 vs 流程分析</h2>
+<hr>
+<h2>七、能力、流程、域的关系</h2>
+<h3>能力分析 vs 流程分析</h3>
 <ul>
 <li><strong>能力</strong>：要达到一个目的，得到一个结果。如果是服务于客户，从客户的角度看，就是&quot;我&quot;帮客户完成了一件什么事情。</li>
 <li><strong>流程</strong>：我要干一件什么样的事情，其步骤是什么，体现的是做的过程。</li>
 </ul>
 <p>从划分的结果来看，能力划分和流程划分是一致的，但从思考的角度看是不同的。从划分的确定性看，因为角色有限，能力从结果和目标的角度出发，避开路径的复杂性，有更强的确定性。</p>
-<h2>业务建模 vs 业务架构</h2>
+<h3>三者的映射关系</h3>
+<p>第五章已经讨论了域的划分依据——按对象间关系的紧密程度聚合。这里将域与能力、流程放在一起做横向对比。三者的划分依据各有不同，但最终需要建立映射：</p>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>划分依据</th>
+<th>特点</th>
+<th>电商案例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>能力</td>
+<td>按照完成目标划分</td>
+<td>面向结果</td>
+<td>&quot;担保交易能力&quot;——帮买家安全完成购买</td>
+</tr>
+<tr>
+<td>流程</td>
+<td>按照执行过程划分</td>
+<td>面向步骤</td>
+<td>&quot;下单→支付→发货→收货&quot;——按步骤执行</td>
+</tr>
+<tr>
+<td>域</td>
+<td>按照实体聚合切分</td>
+<td>面向对象</td>
+<td>&quot;交易域&quot;——围绕订单对象聚合</td>
+</tr>
+</tbody></table>
+<p>业务流程是业务感知结果的流程，系统流程是执行步骤的划分。域内可以有流程，域的多项能力可能对应细分流程的多个步骤，不一定有必然的先后顺序，也可能是离散的能力组合。</p>
+<p>域和能力之间也需要在一定的粒度上建立映射关系，否则会造成在域和能力都有很多层次，并在多个层次间建立复杂的映射。</p>
+<h3>业务建模与业务架构的区别</h3>
 <p>在独立讲述流程建模或者能力建模的论述中，都强调用业务的语言，构建符合业务习惯的成果。业务建模只强调逻辑的完整性，但是在以 IT 实现为目标的前提下，业务建模和 IT 实现之间必须建立简单的对应关系。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>业务建模</th>
+<th>业务架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>关注点</td>
+<td>业务逻辑的完整性</td>
+<td>业务逻辑到 IT 实现的映射</td>
+</tr>
+<tr>
+<td>产出</td>
+<td>概念模型、流程图</td>
+<td>能力地图、域划分、服务定义</td>
+</tr>
+<tr>
+<td>约束</td>
+<td>只需逻辑自洽</td>
+<td>需要与技术实现建立对应关系</td>
+</tr>
+<tr>
+<td>受众</td>
+<td>业务方</td>
+<td>业务方 + 技术方</td>
+</tr>
+</tbody></table>
 <p>无论是能力建模或者过程建模，最终要与信息模型建立映射关系。在业务分散而平台支撑要统一的情况下，也可以看作是 IT 在寻找和业务的共同语言。</p>
-<h2>商业能力的划分</h2>
+<hr>
+<h2>八、商业能力的划分</h2>
+<p>第六章的 5W1H 框架解决的是&quot;单个能力怎么描述&quot;的问题，本章要解决的是&quot;一组能力怎么分类组织&quot;的问题——前者是微观语义，后者是宏观结构。</p>
 <h3>划分的核心原则</h3>
-<p>能力划分的核心是<strong>围绕客户，以是否与客户诉求直接相关作为基准</strong>。在顶层视图中，划分能力和流程的视角是一致的——无论流程视角还是能力视角，都要找出我们能为客户做什么。</p>
+<p>能力划分的理论基础来自<strong>价值链分析</strong>——价值链把企业的能力划分为核心能力和辅助能力，实质是以客户为中心，区分客户与企业两个角色。参考 TMF-eTOM 的划分方式，核心流程进一步细分为基础设施、战略、运营，与生产不直接相关的活动定义为企业管理。</p>
+<p>落到具体的划分原则上，核心是<strong>围绕客户，以是否与客户诉求直接相关作为基准</strong>。在顶层视图中，划分能力和流程的视角是一致的——无论流程视角还是能力视角，都要找出我们能为客户做什么。</p>
 <p>因此，我们可以区分<strong>三类能力</strong>：</p>
 <ol>
 <li><strong>客户销售与服务能力</strong>——直接面向客户</li>
 <li><strong>支撑能力</strong>——为前端能力提供基础保障</li>
 <li><strong>企业管理能力</strong>——支撑组织自身运转</li>
 </ol>
+<p><strong>案例</strong>：电商交易平台的能力分类——</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>能力举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>客户能力（前端）</strong></td>
+<td>商品浏览与搜索、下单购买、支付、退换货、评价</td>
+</tr>
+<tr>
+<td><strong>支撑能力（后端）</strong></td>
+<td>商品管理（PLM）、库存管理、物流调度、结算对账、风控</td>
+</tr>
+<tr>
+<td><strong>企业管理能力</strong></td>
+<td>人力资源、财务、法务、技术基础设施</td>
+</tr>
+</tbody></table>
 <h3>能力划分的逻辑</h3>
-<p>能力划分是自顶向下的逻辑分解过程。其出发点首先是<strong>角色分析</strong>，以满足角色的诉求为目的。因此，顶层的划分都是以角色的诉求为基础，本质是场景（或流程）的划分。</p>
+<p>能力划分是自顶向下的逻辑分解过程。其出发点首先是<strong>角色分析</strong>，以满足角色的诉求为目的。</p>
 <table>
 <thead>
 <tr>
@@ -359,63 +526,8 @@ f:I[7150,[],""]
 <li>企业管理暂不涉及</li>
 </ul>
 <p><img src="/images/blog/engineering/business-image_4_2.png" alt="能力划分全景图"></p>
-<h3>后端支撑能力与企业管理能力</h3>
-<p><strong>后端支撑能力：</strong></p>
-<ul>
-<li>客户管理</li>
-<li>产品管理（PLM）</li>
-<li>合作伙伴管理</li>
-<li>营销活动管理</li>
-<li>账单与收入管理</li>
-<li>资源管理</li>
-</ul>
-<p><strong>企业管理能力：</strong></p>
-<ul>
-<li>人力资源</li>
-<li>财务</li>
-<li>技术发展</li>
-<li>基础建设</li>
-<li>法务</li>
-<li>……</li>
-</ul>
-<h3>从概念性的能力到软件实现的层次</h3>
-<p><img src="/images/blog/engineering/business-image_4_3.png" alt="能力到软件实现的映射"></p>
-<p><strong>能力的表现形式：</strong></p>
-<ul>
-<li><strong>高层的能力</strong>：应该是逻辑的表达，对应于软件的整体或可独立交付的部分</li>
-<li><strong>低层的能力</strong>：应该和软件的外在存在形式关联，如分布式环境中的服务接口、SDK 中定义的接口</li>
-</ul>
-<p><strong>能力的划分原则：</strong></p>
-<p>能力是围绕以完成客户诉求为目标来划分的，完成一个能力可能需要多个领域对象的协作。能力的细分有横向和纵向的划分方式，未必代表软件实现的粒度细分，所以要建立能力和软件实现的映射关系。但在能力粒度上，一定需要和软件的交付物有一致并且明确的边界。</p>
-<h2>能力、流程、域的关系</h2>
-<p>三者的划分依据各有不同，但最终需要建立映射：</p>
-<table>
-<thead>
-<tr>
-<th>概念</th>
-<th>划分依据</th>
-<th>特点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>能力</td>
-<td>按照完成目标划分</td>
-<td>面向结果</td>
-</tr>
-<tr>
-<td>流程</td>
-<td>按照执行过程划分</td>
-<td>面向步骤</td>
-</tr>
-<tr>
-<td>域</td>
-<td>按照实体聚合切分</td>
-<td>面向对象</td>
-</tr>
-</tbody></table>
-<p>业务流程是业务感知结果的流程，系统流程是执行步骤的划分。域内可以有流程，域的多项能力可能对应细分流程的多个步骤，不一定有必然的先后顺序，也可能是离散的能力组合。</p>
-<p>域和能力之间也需要在一定的粒度上建立映射关系，否则会造成在域和能力都有很多层次，并在多个层次间建立复杂的映射。</p>
-<h2>商业能力层的设计</h2>
+<hr>
+<h2>九、商业能力层的设计</h2>
 <h3>商业能力层和域内的关系</h3>
 <p>商业能力是客户可直接感知的能力。越是面向客户直接交互的层次，在技术上越难以限制其差异性，可能会与需求直接映射；越是趋近技术实现的层次，越是需要更高的抽象，以间接满足需求。</p>
 <p>商业能力层提供流程性的封装，在顶层按照与客户的交互场景划分，并结合域的划分进行分解：</p>
@@ -427,6 +539,7 @@ f:I[7150,[],""]
 <p>商业能力团队应该首先是一个<strong>设计团队</strong>，其次才是一个实现团队。设计应该是和各域一起探讨的过程，商业能力要限制向下层过度延伸，也要迫使下层更注重域内抽象。</p>
 </blockquote>
 <p>在设计过程中，逻辑分解应该尽量形成在各域的独立逻辑，然后组合成对外的交互逻辑。最外层交互所依赖的服务都在商业能力层实现封装，应该以业务设计结果为准，而不是技术设计。对外的扩展点，都在商业能力层定义和体现。</p>
+<p><strong>案例</strong>：&quot;下单&quot;是一个商业能力。它的实现需要调用商品域（查商品信息）、库存域（扣库存）、交易域（创建订单）、营销域（计算优惠）。但对外暴露的是一个完整的&quot;下单&quot;接口，而不是让调用方自己去编排四个域的接口。</p>
 <h3>商业能力在软件结构上的分层</h3>
 <p>如果对外提供的就是商业能力，那么域和商业能力的边界到底在哪里？</p>
 <ul>
@@ -434,7 +547,6 @@ f:I[7150,[],""]
 <li>需要提供给外部使用或扩展的（这里不包含界面层对后端的调用，界面是软件的一部分）</li>
 </ul>
 <h3>如何界定&quot;内&quot;和&quot;外&quot;？</h3>
-<p>&quot;内&quot;与&quot;外&quot;的界定取决于商业能力的服务对象和组织边界：</p>
 <table>
 <thead>
 <tr>
@@ -459,8 +571,7 @@ f:I[7150,[],""]
 <td>客户</td>
 </tr>
 </tbody></table>
-<p>如果考虑放大到所有提供中台能力的都和业务平台同等的地位，那么整个中台就是内——但这样就要有整个中台的统一对外组织和架构标准。</p>
-<h3>商业能力和域的分层及域间关系</h3>
+<h3>域间调用规则</h3>
 <p>域间是否允许调用？调用规则如下：</p>
 <table>
 <thead>
@@ -468,35 +579,124 @@ f:I[7150,[],""]
 <th>调用类型</th>
 <th>是否允许</th>
 <th>说明</th>
+<th>案例</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>依赖另一个域的实体对象信息的查询调用</td>
 <td><strong>允许</strong></td>
 <td>不限制下层的信息查询</td>
+<td>交易域查询商品域的商品信息</td>
 </tr>
 <tr>
 <td>依赖另一个域的判断的调用</td>
 <td><strong>禁止</strong></td>
 <td>交给上层去集成</td>
+<td>交易域不应直接调用风控域判断是否拦截</td>
 </tr>
 <tr>
 <td>嵌入另一个域的处理环节的调用</td>
 <td><strong>禁止</strong></td>
 <td>限制下层的逻辑蔓延</td>
+<td>商品域不应嵌入交易域的下单流程</td>
 </tr>
 </tbody></table>
 <p>核心原则是：<strong>上层进行逻辑和控制结构的组装，不限制下层的信息查询，但限制下层的逻辑蔓延。</strong></p>
 <p>对于下层能够独立完成的判断逻辑或处理环节，鼓励下层去做。但对象必须有属主域，判断应该是本域的关键对象的行为判断，而不能是跨越边界。只有直接被认为是对象的直接属性的内容，才被认为是查询，所以对于一个域要有基本的概念模型。</p>
-<h3>商业能力的表达</h3>
-<p>对组织边界外的外部系统服务，都是商业能力封装；对于和客户直接交互的、提供给界面的，都是商业能力。</p>
-<p>商业能力本身可以分成两类：</p>
-<ol>
-<li><strong>领域内服务</strong>：单域完成的能力</li>
-<li><strong>跨域服务</strong>：可以作为独立的分类</li>
-</ol>
-<p>从上下级关系看，上级的逻辑必然覆盖下层的逻辑，建立能力树，是给用户导航的方式。</p>
-<h2>基于企业架构，构建业务架构</h2>
+<h3>从概念性的能力到软件实现的层次</h3>
+<p><img src="/images/blog/engineering/business-image_4_3.png" alt="能力到软件实现的映射"></p>
+<p><strong>能力的表现形式</strong>：</p>
+<ul>
+<li><strong>高层的能力</strong>：应该是逻辑的表达，对应于软件的整体或可独立交付的部分</li>
+<li><strong>低层的能力</strong>：应该和软件的外在存在形式关联，如分布式环境中的服务接口、SDK 中定义的接口</li>
+</ul>
+<p><strong>能力的划分原则</strong>：</p>
+<p>能力是围绕以完成客户诉求为目标来划分的，完成一个能力可能需要多个领域对象的协作。能力的细分有横向和纵向的划分方式，未必代表软件实现的粒度细分，所以要建立能力和软件实现的映射关系。但在能力粒度上，一定需要和软件的交付物有一致并且明确的边界。</p>
+<hr>
+<h2>十、常见反模式与误区</h2>
+<p>方法论容易讲得&quot;正确但无感&quot;。以下是在业务平台架构实践中反复出现的几个典型反模式，每一个都有巨大的隐性成本。</p>
+<h3>反模式一：过度平台化</h3>
+<p><strong>表现</strong>：什么都想沉淀为平台能力，每个业务需求都先问&quot;能不能做成通用的&quot;。</p>
+<p><strong>后果</strong>：平台变得臃肿，充满了&quot;为未来设计&quot;但从未被第二个业务线使用的通用抽象。业务方被迫适配平台的通用模型，而不是平台适配业务——本末倒置。</p>
+<p><strong>判断标准</strong>：一个能力如果只有一个业务方使用，且短期内看不到第二个使用方，就不应该沉淀到平台层。<strong>复用应该是被发现的，而不是被设计的</strong>——先让两三个业务线各自实现，再从中提取共性。</p>
+<p><strong>案例</strong>：交易平台曾试图为所有业务线统一&quot;优惠计算引擎&quot;。但淘宝的满减、天猫的品牌券、1688 的阶梯价差异极大，强行统一后引擎变得极度复杂，每次修改都要回归全量业务线。最终拆回各业务线自行实现优惠逻辑，平台只提供&quot;优惠接口规范&quot;。</p>
+<h3>反模式二：域划分过细或过粗</h3>
+<p><strong>过细的表现</strong>：每个实体都拆成独立的域（如&quot;地址域&quot;、&quot;发票域&quot;），导致一个简单的业务操作需要跨 5-6 个域协调。</p>
+<p><strong>过粗的表现</strong>：把商品、交易、支付都放在一个&quot;核心域&quot;里，域内耦合严重，改一处牵一片。</p>
+<p><strong>判断标准</strong>：域的粒度应该使得<strong>域内高内聚、域间低耦合</strong>。一个实用的检验方法是——如果两个候选域之间的调用频次远高于它们各自与其他域的调用频次，那它们可能应该合并；如果一个域内部存在两组对象，彼此之间几乎没有交互，那它们可能应该拆分。</p>
+<h3>反模式三：能力层和域层职责混淆</h3>
+<p><strong>表现一</strong>：商业能力层做了太多域内逻辑——能力层不仅编排流程，还实现了具体的业务规则（如库存扣减的并发控制），导致域层变成空壳。</p>
+<p><strong>表现二</strong>：域直接暴露了面向客户的接口——域的接口设计按照客户场景设计而非按照对象能力设计，导致域与域之间出现大量重叠的接口。</p>
+<p><strong>原则</strong>：能力层负责编排（&quot;先做什么后做什么&quot;），域层负责实现（&quot;怎么做&quot;）。能力层不应该知道库存是用乐观锁还是悲观锁扣减的，域层不应该知道当前请求来自淘宝还是天猫。</p>
+<h3>反模式四：概念模型缺失导致&quot;各说各话&quot;</h3>
+<p><strong>表现</strong>：不同团队对同一个业务对象的理解不一致——交易团队说的&quot;订单&quot;是买家视角的购买记录，物流团队说的&quot;订单&quot;是发货指令，财务团队说的&quot;订单&quot;是结算凭证。</p>
+<p><strong>后果</strong>：系统之间的数据传输需要大量的&quot;翻译层&quot;，Bug 频发且难以排查。</p>
+<p><strong>解法</strong>：建立全局一致的<strong>概念模型</strong>（Canonical Model），明确每个核心对象的定义、归属域、与其他对象的关系。概念模型不需要包含所有字段细节，但必须对&quot;这个词在我们公司是什么意思&quot;达成共识。</p>
+<hr>
+<h2>十一、组织与架构的关系</h2>
+<p>康威定律（Conway&#39;s Law）指出：系统的架构会趋向于反映组织的沟通结构。在业务平台架构中，这条定律的影响无处不在。</p>
+<h3>域的边界和团队边界</h3>
+<table>
+<thead>
+<tr>
+<th>关系模式</th>
+<th>说明</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>域 = 团队</strong></td>
+<td>一个域对应一个团队，团队完全拥有域内的代码和数据</td>
+<td>效率最高，责任最清晰</td>
+</tr>
+<tr>
+<td><strong>域 &gt; 团队</strong></td>
+<td>一个域由多个团队共同维护</td>
+<td>协调成本高，容易出现&quot;公地悲剧&quot;</td>
+</tr>
+<tr>
+<td><strong>域 &lt; 团队</strong></td>
+<td>一个团队维护多个域</td>
+<td>可行，但团队需要有清晰的域边界意识，否则域间耦合会被&quot;内部方便&quot;侵蚀</td>
+</tr>
+</tbody></table>
+<p><strong>实践建议</strong>：理想情况下，域的边界应该和团队边界对齐。如果做不到（早期团队小），至少要让每个域有一个明确的 Owner（即使 Owner 同时负责多个域）。</p>
+<h3>平台团队和业务团队的协作模式</h3>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>说明</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>共建</strong></td>
+<td>业务团队向平台提 PR，平台团队 Review 后合入</td>
+<td>平台能力演进快，业务方有技术能力</td>
+</tr>
+<tr>
+<td><strong>提工单</strong></td>
+<td>业务方提需求，平台团队排期实现</td>
+<td>平台稳定期，业务方无平台开发能力</td>
+</tr>
+<tr>
+<td><strong>自助</strong></td>
+<td>平台提供 SPI/扩展点，业务方自行实现差异化逻辑</td>
+<td>平台成熟，扩展点设计完备</td>
+</tr>
+</tbody></table>
+<p><strong>最终目标</strong>是走向&quot;自助&quot;模式——平台提供足够的扩展机制，业务方不需要等平台排期就能实现差异化需求。这要求平台的扩展点设计必须足够开放和稳定。</p>
+<h3>当组织结构和架构不匹配时</h3>
+<p>如果组织结构和架构不匹配，通常会出现以下症状：</p>
+<ul>
+<li><strong>跨团队联调频繁</strong>：一个简单的业务需求需要 3-4 个团队配合才能上线</li>
+<li><strong>变更连锁反应</strong>：A 团队的改动导致 B 团队被迫跟着改</li>
+<li><strong>责任模糊</strong>：出了问题找不到明确的负责人</li>
+</ul>
+<p>解法要么是<strong>调整架构适配组织</strong>（重新划分域的边界），要么是<strong>调整组织适配架构</strong>（重组团队）。前者短期成本低但可能引入技术债，后者短期成本高但长期效果好。</p>
+<hr>
+<h2>十二、基于企业架构，构建业务架构</h2>
 <p>要想构建业务平台架构，我们需要有一套行之有效的构建方法论。方法论的构成包括：<strong>原理过程 + 表示法 + 工具</strong>。</p>
 <p>能力地图代表业务架构，概念模型代表信息架构。对于多数业务平台，技术架构一般已经有较为明确的选择。所以，业务平台亟需构建的是除技术架构之外的泛&quot;业务架构&quot;。</p>
 <p>从企业管理维度上看，企业架构在业务平台通常可以解决的问题包括：</p>
@@ -505,264 +705,1424 @@ f:I[7150,[],""]
 <li><strong>架构演进的组织方法</strong></li>
 <li><strong>组织的职责划分</strong></li>
 </ul>
-<h3>构建架构体系：战略-模式-能力-过程</h3>
-<p>业务架构的边界来源于战略输入。从能力的角度，产品目录是业务架构的延续；从实现的角度，产品目录是应用架构的延续。在交互层面，通过合适的集成手段，实现应用功能面向用户的有效整合。</p>
-<p>应用架构的边界和域的边界有内在的关联，可以通过自顶向下的讨论以及循环迭代完成演进。</p>
+<h3>构建架构体系：战略→模式→能力→过程</h3>
+<p>业务架构不是凭空生长的，它的输入和输出构成一条从战略到落地的链路：</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>输入</th>
+<th>产出</th>
+<th>案例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>战略</strong></td>
+<td>公司业务方向、市场定位</td>
+<td>业务架构的边界和优先级</td>
+<td>&quot;未来一年重点做跨境电商&quot; → 跨境交易能力优先建设</td>
+</tr>
+<tr>
+<td><strong>模式</strong></td>
+<td>商业模式、运营模式</td>
+<td>能力组合的模式模板</td>
+<td>&quot;B2C 模式&quot;需要商品展示+购物车+支付的组合；&quot;B2B 模式&quot;需要批量采购+账期+合同的组合</td>
+</tr>
+<tr>
+<td><strong>能力</strong></td>
+<td>模式分解后的功能需求</td>
+<td>能力地图（第八章的三类能力划分）</td>
+<td>&quot;担保交易能力&quot;、&quot;分期支付能力&quot;</td>
+</tr>
+<tr>
+<td><strong>过程</strong></td>
+<td>能力的执行路径</td>
+<td>流程定义 + 域间协作关系</td>
+<td>&quot;下单→锁库存→支付→扣库存→发货&quot;</td>
+</tr>
+</tbody></table>
+<p>这条链路的关键约束是：<strong>上层决定下层的边界，下层反馈上层的可行性</strong>。战略说&quot;做跨境&quot;，能力层评估&quot;跨境支付能力缺失，需要 3 个月建设&quot;，这个反馈会影响战略的优先级排列——这是一个双向迭代过程，而非单向瀑布。</p>
+<p>从产品视角看，产品目录既是业务架构的延续（每个产品对应一组能力），也是应用架构的延续（每个产品对应一组技术组件）。应用架构的边界和域的边界有内在的关联，可以通过自顶向下的讨论以及循环迭代完成演进。</p>
 <h3>构建能力地图</h3>
-<ol>
-<li><strong>确定架构定义及结构描述</strong><ul>
-<li>分层划分的规则确定</li>
-</ul>
-</li>
-<li><strong>现状描述</strong><ul>
-<li>能力地图的草稿初建</li>
-</ul>
-</li>
-<li><strong>搜集关键场景，确定目标架构</strong><ul>
-<li>补充关键演进场景</li>
-</ul>
-</li>
-<li><strong>Gap 分析</strong></li>
-<li><strong>演进计划</strong></li>
-<li><strong>构建一个基础的完备正交集合</strong></li>
-<li><strong>构建不同场景的视图</strong><ul>
-<li>外部客户交付关键能力视图</li>
-<li>内部业务的热点关键能力视图</li>
-</ul>
-</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>内容</th>
+<th>产出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. 确定架构定义及结构描述</td>
+<td>明确分层规则：哪些是客户能力、支撑能力、企业管理能力</td>
+<td>能力分类标准文档</td>
+</tr>
+<tr>
+<td>2. 现状描述</td>
+<td>梳理现有系统已具备的能力，标注归属域和服务等级</td>
+<td>能力地图草稿（现状版）</td>
+</tr>
+<tr>
+<td>3. 搜集关键场景，确定目标架构</td>
+<td>收集业务规划中的关键新场景，识别需要新增或增强的能力</td>
+<td>能力地图（目标版）</td>
+</tr>
+<tr>
+<td>4. Gap 分析</td>
+<td>对比现状和目标，识别能力缺口和冗余</td>
+<td>Gap 清单</td>
+</tr>
+<tr>
+<td>5. 演进计划</td>
+<td>按业务优先级和技术依赖关系排列能力建设的时间线</td>
+<td>路线图（Roadmap）</td>
+</tr>
+<tr>
+<td>6. 构建基础完备正交集合</td>
+<td>确保能力之间不重叠（正交）、不遗漏（完备）</td>
+<td>能力地图（正式版）</td>
+</tr>
+<tr>
+<td>7. 构建不同场景的视图</td>
+<td>按不同受众生成子视图</td>
+<td>外部客户视图、内部热点视图</td>
+</tr>
+</tbody></table>
 <h3>构建概念模型</h3>
-<p><strong>现状搜集：</strong></p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>内容</th>
+<th>产出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>现状搜集</strong></td>
+<td>梳理已被广泛引用的概念和实体、已被广泛使用的术语、已被固化的流程节点、已广泛使用的场景</td>
+<td>概念清单 + 术语表</td>
+</tr>
+<tr>
+<td><strong>未来场景搜集</strong></td>
+<td>从战略输入和业务规划中识别新的概念和实体</td>
+<td>补充概念清单</td>
+</tr>
+<tr>
+<td><strong>建模</strong></td>
+<td>域划分（根据对象关系紧密程度）、模型定义（核心对象+关系+属性）、耦合验证（域间依赖是否合理）</td>
+<td>概念模型图 + 域划分文档</td>
+</tr>
+<tr>
+<td><strong>演进计划</strong></td>
+<td>识别概念模型和现有系统的差距，制定迁移计划</td>
+<td>数据迁移路线图</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>十三、演进路径</h2>
+<p>业务平台架构不是一蹴而就的，它有明确的阶段性特征。</p>
+<h3>三阶段演进</h3>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>特征</th>
+<th>架构重点</th>
+<th>典型信号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>单体期</strong></td>
+<td>1-2 条业务线，团队 &lt; 20 人</td>
+<td>快速交付，不需要平台化。核心是代码结构清晰，模块边界明确</td>
+<td>&quot;所有代码在一个仓库里，改起来很快&quot;</td>
+</tr>
+<tr>
+<td><strong>拆分期</strong></td>
+<td>3-5 条业务线，团队 30-50 人</td>
+<td>开始抽取共享服务（用户、支付、商品），域边界开始清晰</td>
+<td>&quot;两个团队改同一个模块频繁冲突&quot;</td>
+</tr>
+<tr>
+<td><strong>平台期</strong></td>
+<td>5+ 条业务线，团队 50+ 人</td>
+<td>商业能力层成型，扩展点机制完善，业务方可自助接入</td>
+<td>&quot;新业务线接入需要 3 个月以上&quot;</td>
+</tr>
+</tbody></table>
+<h3>什么信号表明&quot;该拆了&quot;</h3>
 <ul>
-<li>已经被广泛引用的概念、实体</li>
-<li>已经被广泛使用的术语</li>
-<li>已经被相对固化的流程节点</li>
-<li>已经广泛使用的场景</li>
+<li>两个业务线的需求频繁在同一个模块上冲突</li>
+<li>一个简单的功能改动需要多个团队联调</li>
+<li>新业务线接入时需要 fork 大量代码</li>
+<li>发布一个模块需要回归不相关的业务线</li>
 </ul>
-<p><strong>未来场景搜集：</strong></p>
+<h3>什么信号表明&quot;该合了&quot;</h3>
 <ul>
-<li>战略输入</li>
-<li>业务规划</li>
+<li>两个&quot;独立&quot;的服务之间每次变更都必须同步发布</li>
+<li>一个用户请求需要跨 5 个以上的服务才能完成</li>
+<li>服务间的调用延迟累积导致性能问题</li>
+<li>维护成本（监控、告警、部署）超过了拆分带来的收益</li>
 </ul>
-<p><strong>建模：</strong></p>
-<ul>
-<li>域划分</li>
-<li>模型定义</li>
-<li>耦合验证</li>
-</ul>
-<p><strong>演进计划</strong></p>
+<h3>新业务接入平台的标准流程</h3>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>内容</th>
+<th>产出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. 业务身份注册</td>
+<td>为新业务线分配全局唯一的业务身份</td>
+<td>业务身份 ID</td>
+</tr>
+<tr>
+<td>2. 能力评估</td>
+<td>评估新业务线需要哪些平台能力，哪些需要定制</td>
+<td>能力使用清单 + 定制需求清单</td>
+</tr>
+<tr>
+<td>3. 扩展点实现</td>
+<td>业务方基于平台的 SPI 实现差异化逻辑</td>
+<td>扩展点代码</td>
+</tr>
+<tr>
+<td>4. 规则配置</td>
+<td>将业务规则关联到新的业务身份上</td>
+<td>规则配置</td>
+</tr>
+<tr>
+<td>5. 联调与验证</td>
+<td>端到端验证新业务线的核心流程</td>
+<td>测试报告</td>
+</tr>
+<tr>
+<td>6. 灰度发布</td>
+<td>小流量验证后逐步放量</td>
+<td>上线</td>
+</tr>
+</tbody></table>
+<hr>
 <h2>总结</h2>
 <p>业务平台架构的构建是一个系统性工程，其核心在于找到业务与技术之间的共同语言。回顾全文，可以提炼出以下关键认知：</p>
 <ol>
-<li><strong>业务身份是差异性管理的基础</strong>——通过全局一致的业务身份，区分需求来源和规则适用范围</li>
+<li><strong>业务身份是差异性管理的基础</strong>——通过全局一致的业务身份，区分需求来源和规则适用范围，新业务线接入时&quot;挂载规则&quot;而非&quot;修改代码&quot;</li>
 <li><strong>能力、流程、域三位一体</strong>——能力面向结果，流程面向过程，域面向对象，三者需要在合适的粒度上建立映射</li>
 <li><strong>以客户为中心的划分逻辑</strong>——无论前端能力还是后端支撑，最终都服务于客户价值的交付</li>
 <li><strong>商业能力层是关键的架构抽象</strong>——它既要限制向下层的过度延伸，又要迫使下层注重域内抽象</li>
 <li><strong>域间调用的原则</strong>——允许信息查询，禁止逻辑蔓延，上层负责编排</li>
-<li><strong>业务架构需要持续演进</strong>——通过能力地图和概念模型的迭代构建，逐步完善架构体系</li>
+<li><strong>组织结构和架构必须匹配</strong>——康威定律决定了域的边界最终要和团队边界对齐，否则协调成本会吞噬架构的收益</li>
+<li><strong>复用应该被发现而非被设计</strong>——过度平台化比平台化不足更危险，先让业务跑起来，再从实践中提取共性</li>
+<li><strong>业务架构需要持续演进</strong>——通过能力地图和概念模型的迭代构建，配合明确的演进信号（&quot;该拆了&quot;还是&quot;该合了&quot;），逐步完善架构体系</li>
 </ol>
 <p>好的业务平台架构不是一蹴而就的，它需要在实践中不断验证和演进。关键是始终保持以业务视角为出发点，用结构化的方法将业务逻辑转化为可落地的技术架构。</p>
 5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L10",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/architecture/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"架构设计"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-04","children":"2024年03月04日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"关于业务平台架构的思考"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L10","业务架构",{"href":"/blog/tag/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"业务架构"}],["$","$L10","平台化",{"href":"/blog/tag/%E5%B9%B3%E5%8F%B0%E5%8C%96/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"平台化"}],["$","$L10","架构设计",{"href":"/blog/tag/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"架构设计"}],["$","$L10","领域建模",{"href":"/blog/tag/%E9%A2%86%E5%9F%9F%E5%BB%BA%E6%A8%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"领域建模"}],["$","$L10","企业架构",{"href":"/blog/tag/%E4%BC%81%E4%B8%9A%E6%9E%B6%E6%9E%84/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"企业架构"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L11",null,{"content":"$12"}]}],"$L13","$L14"]}]}]}]
 15:I[6249,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
 19:I[6929,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
-16:T508f,<p>　　账户体系是支付系统的基础，它的设计直接影响整个系统的特性。这里探讨如何针对电子商务系统的账户体系设计。我们从一些基本概念开始入手，了解怎么建模。</p>
-<h3>1 三户模型 <a href="#t1" id="t1"></a></h3>
-<p>　　三户模型最早是在增强型电信运营图（Enhanced Telecom Operations Map，eTOM）中提出，在电信行业中得到广泛使用。 三户指客户（Customer）、用户（User）和账户(Account)。eTOM 引入是电信行业营销模型转向“以客户为中心”的理念而产生的成果。围绕客户建立用户和账户，这三个是相互关联的实体。近年来，金融行业也逐步接受和采用了三户模型。</p>
+16:T7631,<blockquote>
+<p>用户系统看似简单——不就是注册、登录、个人信息？但当业务复杂到一定程度（多业务线、多角色、资金账户、企业客户），&quot;用户&quot;这个概念会分裂成多个不同的实体，如果在设计初期没有想清楚它们之间的关系，后续的每一次业务扩展都会变成数据迁移的噩梦。</p>
+</blockquote>
+<p>本文围绕两个核心模型展开：<strong>三户模型</strong>解决&quot;交易类系统中，客户、用户、账户怎么建模&quot;的问题；<strong>三层身份模型</strong>解决&quot;认证和社交场景中，身份标识怎么分层&quot;的问题。两者互补，共同构成用户体系的完整建模框架。</p>
+<hr>
+<h2>一、为什么需要系统化的用户体系建模</h2>
+<p>大多数系统在早期只有一张 <code>user</code> 表：ID、手机号、密码、昵称、头像。这在单一业务、单一角色的阶段足够用，但随着业务演进，问题逐步暴露：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>出现的问题</th>
+<th>根因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>引入支付</td>
+<td>用户表里硬塞了余额、银行卡字段，改一个字段要锁全表</td>
+<td>没有把&quot;资金账户&quot;从&quot;用户&quot;中分离</td>
+</tr>
+<tr>
+<td>引入企业客户</td>
+<td>企业和个人混在一张表，权限模型混乱</td>
+<td>没有区分&quot;客户&quot;和&quot;用户&quot;</td>
+</tr>
+<tr>
+<td>引入多业务线</td>
+<td>淘宝和天猫的用户数据互相打架，身份不统一</td>
+<td>没有全局客户标识</td>
+</tr>
+<tr>
+<td>引入第三方登录</td>
+<td>微信登录和手机号登录关联不上同一个人</td>
+<td>没有把&quot;登录凭证&quot;和&quot;账户标识&quot;分离</td>
+</tr>
+<tr>
+<td>引入社交功能</td>
+<td>昵称和登录账号耦合，改昵称影响登录</td>
+<td>没有把&quot;公开身份&quot;和&quot;登录身份&quot;分离</td>
+</tr>
+</tbody></table>
+<p><strong>三户模型和三层身份模型，分别从不同的角度解决了上述问题。</strong> 前者聚焦交易和资金场景，后者聚焦认证和社交场景。</p>
+<hr>
+<h2>二、三户模型</h2>
+<h3>2.1 起源与核心思想</h3>
+<p>三户模型最早在增强型电信运营图（Enhanced Telecom Operations Map，eTOM）中提出，是电信行业营销模型转向&quot;以客户为中心&quot;理念的产物。近年来，金融行业和互联网行业也逐步采用了这一模型。</p>
+<p>三户指三个相互关联但独立的实体，分别归属于不同的业务域：</p>
+<table>
+<thead>
+<tr>
+<th>实体</th>
+<th>定义</th>
+<th>归属域</th>
+<th>核心关注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>客户（Customer）</strong></td>
+<td>自然人或法人，现实世界中的主体</td>
+<td>社会域</td>
+<td>你是谁（身份）</td>
+</tr>
+<tr>
+<td><strong>用户（User）</strong></td>
+<td>客户在系统中的登录实体，使用业务的凭证</td>
+<td>业务域</td>
+<td>你能做什么（权限）</td>
+</tr>
+<tr>
+<td><strong>账户（Account）</strong></td>
+<td>客户的资金或资源账户，用于交易和结算</td>
+<td>资金域</td>
+<td>你有什么（资产）</td>
+</tr>
+</tbody></table>
+<p><strong>核心关系</strong>：一个客户可以有多个用户，一个客户可以有多个账户。用户和账户之间是多对多——一个账户可以被多个用户操作（企业场景），一个用户也可以操作多个账户（零钱账户 + 银行卡账户）。</p>
+<p><strong>以电信业务为例</strong>：张三（客户）办理了一个手机 SIM 卡和一个宽带业务（两个用户/产品实例），共用一个缴费账户（账户）。也可以为手机和宽带各开一个独立账户。</p>
+<p><strong>以电商为例</strong>：张三（客户）用手机号 A 注册了淘宝（用户 A），又用手机号 B 注册了天猫（用户 B），两个用户通过实名认证（身份证归并）归属于同一个客户。张三有一个零钱账户和一个绑定的银行卡账户（两个账户）。</p>
+<h3>2.2 为什么要拆成三个实体</h3>
+<p>不拆的代价是什么？</p>
+<table>
+<thead>
+<tr>
+<th>如果不拆</th>
+<th>后果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>把客户信息和用户信息混在一起</td>
+<td>一个人注册两个账号就产生两条&quot;客户&quot;记录，无法做客户级的统一分析</td>
+</tr>
+<tr>
+<td>把用户信息和账户信息混在一起</td>
+<td>余额字段和登录字段在同一张表，高频的登录操作和低频的资金操作互相影响</td>
+</tr>
+<tr>
+<td>把三者全混在一起</td>
+<td>企业客户的多人操作同一账户的场景无法建模</td>
+</tr>
+</tbody></table>
+<p><strong>拆分的核心价值是关注点分离</strong>：客户关注&quot;你是谁&quot;，这是法律和商业层面的实体；用户关注&quot;你能做什么&quot;，这是系统和权限层面的实体；账户关注&quot;你有什么&quot;，这是资金和资源层面的实体。三者的生命周期、变更频率、安全等级完全不同，放在一起必然互相掣肘。</p>
+<hr>
+<h2>三、客户（Customer）</h2>
+<h3>3.1 个人客户</h3>
+<p>在银行体系中，一般是先有客户再有用户——柜台人员面签后在系统中建立客户对象。而在互联网体系中，一般是<strong>先有用户再有客户</strong>——用户先注册（只有手机号和密码），后续逐步补充身份信息（实名认证）。</p>
+<p>客户的业务主键是<strong>证件号</strong>（身份证）。同一证件号在系统中只对应一个客户——当相同证件号从不同渠道进入系统时，需要执行<strong>客户归并</strong>：将多条记录合并到同一个客户 ID 下。归并是有风险的（万一证件号录入错误导致误合并），需要鉴权手段（如人脸识别、短信验证）来保障。</p>
+<p>互联网系统中常用手机号作为客户识别的主键，但手机号存在注销和更换的问题，需要额外的归并和解绑机制。</p>
+<p><strong>客户的生命周期</strong>：</p>
+<p><img src="/images/blog/engineering/business-image_3_1.png" alt="客户生命周期"></p>
+<p>上图展示了客户从注册到禁用的完整状态流转。几个关键设计决策：</p>
 <ul>
-<li><strong>客户</strong>，指自然人或者法人。法人一般被称之为企业客户。如无特指，一般客户指个人客户。</li>
-<li><strong>用户</strong>，指通过注册的方式进入系统，使用系统提供的服务的实体，也称为登录账户，即用户在系统中登录凭证和个人信息。对应的，法人客户在系统中注册后，被称之为商户。</li>
-<li><strong>账户</strong>，这里特指支付账户，指用户在支付系统中用于交易的资金所有者权益的凭证。</li>
+<li><strong>没有&quot;销户&quot;状态</strong>：为了支持历史业务的追溯，客户一般不做物理删除，只做逻辑禁用</li>
+<li><strong>支持&quot;冻结&quot;和&quot;止付&quot;</strong>：以司法协查为例，客户被协查时需要冻结其下所有资金账户</li>
+<li><strong>生命周期与账户联动</strong>：客户层面的状态变更会级联影响其下所有账户，因此客户的状态机设计要和账户的状态机保持一致</li>
 </ul>
-<h3>2 客户 <a href="#t2" id="t2"></a></h3>
-<h4>2.1 个人客户 <a href="#t3" id="t3"></a></h4>
-<p>　　在银行体系中，一般是先有客户，再有用户。早期个人客户通过柜台人员操作注册到银行体系中，柜台人员在处理时，先添加客户信息，再注册账户信息。而在互联网系统中， 一般是用户先注册，先有用户，然后补充客户身份信息。也就是客户身份信息是在运行过程中逐步完善的。在银行柜台，操作人员通过面签或实名方式在系统中建立客户对象。这个对象的业务主键是证件号（如，身份证，假设目前 18 位证件都不重号），所有相同证件我们都视为同一个客户，不论是不是同一个系统中。同一个证件号，不论在工行还是中行，开出来的客户，其实都对应着现实中的同一个人。</p>
-<p>　　在一个平台体系中，通过系统给客户分配的唯一 ID 号客户 ID 来标识客户对像。这里面就有一个关键业务，既然相同证件都会识别成一个客户，那么当相同的证件号进入系统时，系统是如何处理的？当然是合成一个了，这个过程叫做客户归并，即：<strong>将相同证件的客户合成同一个客户号的过程，我们称为归并</strong>。归并是有风险的，所以需要一些鉴权手段来处理。在互联网应用中，一个系统中客户的生命周期如下：</p>
-<p><img src="/images/blog/engineering/business-image_3_1.png" alt="image_3_1.png"></p>
-<p>注意在这个流程中没有销户的状态。这是为了支持历史业务的处理，客户一般不做销户。此外这个流程和支付账户的流程比较类似，这是为了方便在客户层面做账户控制。以司法协查为例，某个客户被协查以致账户冻结，需要冻结该客户下所有资金账户，这些账户都被止付。</p>
-<h4>2.2 企业客户 <a href="#t4" id="t4"></a></h4>
-<p>　　企业客户相对个人客户来说比较复杂点，但三户模型仍然适用。同个人客户一样，企业客户在银行或支付平台开设资金账户，资金账户归属于此客户。企业客户是一个组织，其账户必然是组织授权内部人员去操作。但是这个操作人，同个人客户一样，只是系统的使用者，即用户。企业的资金比较大，并且有严格的业务流程，所以在系统使用上，一般是多个用户操作一个或多个资金账户。这种关系本身来说，也是一种授权关系，企业授权相应的用户来操作特定的资金账户，只不过为了管理方便，可以引入角色管理机制来实现。对于支付公司来说，企业客户通常都是发展商户过程中产生的。企业客户的识别同个人客户识别也是一样的，通过企业证件来统一识别。相同的企业证件号归并到同一个企业客户下面。建立企业客户的好处在于：</p>
+<h3>3.2 企业客户</h3>
+<p>企业客户的三户模型同样适用，但更复杂：</p>
 <ul>
-<li>有些企业本身只开通了企业服务业务，而不开通商户服务；</li>
-<li>一个企业可以开通多个商户，企业客户是这些多个商户的统计口径。</li>
+<li>企业客户是一个<strong>组织</strong>，其账户由组织授权内部人员（用户）去操作</li>
+<li>一般是<strong>多个用户操作一个或多个资金账户</strong>，通过角色管理（RBAC，Role-Based Access Control）实现授权</li>
+<li>企业客户的识别通过<strong>企业证件</strong>（营业执照统一社会信用代码），相同证件号归并到同一企业客户</li>
+<li>一个企业可以开通多个<strong>商户</strong>（商户是企业客户在业务侧的投影），企业客户是多个商户的统计口径</li>
 </ul>
-<h4>2.3 客户模型 <a href="#t5" id="t5"></a></h4>
-<p>　　对客户的处理，在银行系统中是 CIF 系统或 ECIF 系统，而在互联网模式下，很多都是基于微服务的体系，如何划分微服务，这块要从客户系统对提供的业务主题来分。比如：对于个人客户，客户识别就是一个服务主题，对于一个客户有多种多样的识别方式，除了证件外，还包括生物识别，比如画像、指纹等。</p>
+<h3>3.3 客户模型的微服务拆分</h3>
+<p><img src="/images/blog/engineering/business-image_3_2.png" alt="客户模型"></p>
+<p>从客户系统对外提供的业务主题来划分微服务：</p>
+<table>
+<thead>
+<tr>
+<th>服务主题</th>
+<th>职责</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>客户识别</strong></td>
+<td>证件识别、生物识别（人脸、指纹）</td>
+<td>核心鉴权能力</td>
+</tr>
+<tr>
+<td><strong>基本信息</strong></td>
+<td>姓名、年龄、职业、联系方式</td>
+<td>自然属性</td>
+</tr>
+<tr>
+<td><strong>管理信息</strong></td>
+<td>客户评级、是否内部员工、信用等级</td>
+<td>运营属性</td>
+</tr>
+<tr>
+<td><strong>客户标签</strong></td>
+<td>多维度标记（活跃度、消费偏好、渠道来源）</td>
+<td>分析属性</td>
+</tr>
+<tr>
+<td><strong>协议管理</strong></td>
+<td>授权协议、委托协议、隐私协议</td>
+<td>合规属性</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、用户（User）与商户</h2>
+<h3>4.1 用户</h3>
+<p>用户是客户在系统中的操作实体。用户与资金账户之间是一种<strong>授权关系</strong>——凡是被授权的用户都可以操作对应的资金账户（包括客户自己的用户，也包括被授权的其他用户）。</p>
+<p><strong>用户的生命周期</strong>：</p>
+<p><img src="/images/blog/engineering/business-image_3_3.png" alt="用户生命周期"></p>
+<p>上图展示了用户从注册（预开户/正常）到销户的完整状态流转，包括冻结等管理状态。</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>预开户</strong></td>
+<td>简易注册，信息不完整，需进一步完善（如设置密保问题）</td>
+</tr>
+<tr>
+<td><strong>正常</strong></td>
+<td>标准注册完成，可正常使用业务</td>
+</tr>
+<tr>
+<td><strong>冻结</strong></td>
+<td>管理状态，暂停操作权限（本应放在账户层，但互联网场景为了体验放在用户层）</td>
+</tr>
+<tr>
+<td><strong>销户中</strong></td>
+<td>销户申请后，需要先确认所有关联账户是否可销，先销账户再销用户</td>
+</tr>
+<tr>
+<td><strong>已销户</strong></td>
+<td>销户完成，释放资源（如手机号）</td>
+</tr>
+</tbody></table>
+<p><strong>销户的关键流程</strong>：收到销户申请后不能直接销户——需要各业务系统确认该用户下所有账户是否可以销户（有无未结债务、有无冻结资金）。确认无问题后，先销资金账户，再销用户，最后释放占用的资源（如注册手机号）。</p>
+<p><strong>手机号更换</strong>：用户更换手机号时，新旧两个手机号都需要验证。如果手机号同时作为客户识别的主键，还需要更新客户 ID 的关联关系——这是互联网用户系统中最容易出 Bug 的环节之一。</p>
+<h3>4.2 商户</h3>
+<p>商户是企业客户在业务侧的投影——可以理解为资金账户分组的一种手段。一个企业可以开通多个商户，每个商户的业务资金进入各自的分类资金账户，但所有资金账户的归属关系不变，都属于企业客户这个实体。</p>
+<p>商户和用户的关系：商户不是用户，而是和用户平级的概念。用户是&quot;操作者&quot;，商户是&quot;资金归集单元&quot;。</p>
+<hr>
+<h2>五、账户（Account）</h2>
+<h3>5.1 基本概念</h3>
+<p>账户是用于交易和结算的资金或资源凭证。理解账户建模，需要先厘清几组关键概念：</p>
+<p><strong>支付账户 vs 登录账户</strong>：这是两个不同业务领域的概念。支付账户是资金所有者权益的凭证（零钱、储值卡），登录账户是系统登录的凭证（手机号+密码）。一个用户可以有多个支付账户，但支付账户不会在多个登录账户之间共用。</p>
+<p><strong>内部账户 vs 外部账户</strong>：内部账户是系统自建的（零钱账户、储值卡账户），可以知道全部明细和余额。外部账户是用户在第三方机构的账户（银行卡、支付宝），系统只能记录本系统内的交易明细，无法得知真实余额。</p>
+<p><strong>收款账户 vs 收单账户</strong>：对接银行或第三方支付时，需要在渠道侧开设收款账户。在电商侧建立对应的收单账号，用来记录通过该渠道的交易流水，支持对账。</p>
+<p><strong>会计科目</strong>：对交易进行分类的层级结构。一级科目的汇总称为总账，详细记录称为明细。电商系统中需要为商户、买家、渠道分别建立总账和明细账户。</p>
+<blockquote>
+<p>本文后续的账户建模（5.4 节和第九章）聚焦<strong>内部账户</strong>的设计。外部账户（银行卡、第三方支付）的建模主要是记录关联信息和本系统内的交易明细，收单账户的建模主要是支持对账，两者的详细设计不在本文展开范围内。</p>
+</blockquote>
+<h3>5.2 央行三类账户</h3>
+<p>央行对个人银行账户实施分类管理，这对支付系统的账户设计有直接影响：</p>
+<p><img src="/images/blog/engineering/business-image_3_4.png" alt="央行三类账户"></p>
+<p>上图展示了央行 I/II/III 类账户的功能范围和限额差异，以下是核心对比：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>开立方式</th>
+<th>功能范围</th>
+<th>限额</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>I 类户</strong></td>
+<td>面对面核实身份</td>
+<td>全功能（存取、转账、理财、支付）</td>
+<td>无限额</td>
+</tr>
+<tr>
+<td><strong>II 类户</strong></td>
+<td>电子渠道，绑定 I 类户验证 5 要素</td>
+<td>存取、转账、理财、限额支付</td>
+<td>日累计 1 万</td>
+</tr>
+<tr>
+<td><strong>III 类户</strong></td>
+<td>电子渠道，绑定验证 4 要素</td>
+<td>小额支付、缴费</td>
+<td>余额上限 2000，日累计 5000</td>
+</tr>
+</tbody></table>
+<p>同一人在同一银行只能开一个 I 类户。II/III 类户需绑定已有银行账户验证。</p>
+<h3>5.3 账户生命周期</h3>
+<p><img src="/images/blog/engineering/business-image_3_5.png" alt="账户生命周期"></p>
+<p>上图展示了账户从开户到销户的完整状态流转。核心状态流转：开户→正常→（冻结↔解冻）→止付→销户。与客户生命周期的状态机设计保持一致，方便在客户层面做级联控制。</p>
+<h3>5.4 账户建模</h3>
+<p>账户建模需要满足五大业务需求，按优先级排序：</p>
+<table>
+<thead>
+<tr>
+<th>需求</th>
+<th>说明</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>交易</strong></td>
+<td>检查账户状态（是否锁定、余额是否足够、是否有效）</td>
+<td>P0</td>
+</tr>
+<tr>
+<td><strong>记账</strong></td>
+<td>记录账户上的所有行为（支出、充值、转账）</td>
+<td>P0</td>
+</tr>
+<tr>
+<td><strong>对账</strong></td>
+<td>核对交易和余额是否正确（与渠道、商户、个人对账）</td>
+<td>P1</td>
+</tr>
+<tr>
+<td><strong>风控</strong></td>
+<td>反洗钱、反欺诈等，依赖账户数据</td>
+<td>P2</td>
+</tr>
+<tr>
+<td><strong>信用</strong></td>
+<td>用户和商户的信用评估，依赖账户历史数据</td>
+<td>P3</td>
+</tr>
+</tbody></table>
+<p><strong>常见账户类型</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>零钱账户</strong></td>
+<td>电商内部账户</td>
+<td>用户充值、商户结算</td>
+</tr>
+<tr>
+<td><strong>虚拟币账户</strong></td>
+<td>积分、金币等虚拟资产</td>
+<td>游戏、会员体系</td>
+</tr>
+<tr>
+<td><strong>代扣账户</strong></td>
+<td>定期自动扣款</td>
+<td>订阅服务</td>
+</tr>
+<tr>
+<td><strong>银行卡账户</strong></td>
+<td>关联用户的银行卡</td>
+<td>支付、提现</td>
+</tr>
+<tr>
+<td><strong>第三方支付账户</strong></td>
+<td>关联用户在支付宝/微信的账户</td>
+<td>支付</td>
+</tr>
+<tr>
+<td><strong>结算账户</strong></td>
+<td>与银行/支付机构结算</td>
+<td>商户结算</td>
+</tr>
+</tbody></table>
+<p><strong>账户的核心属性设计</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>属性分类</th>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>基本属性</strong></td>
+<td>账户 ID</td>
+<td>系统自动生成，编码规则需包含账户类型（如前 3 位表示类型）</td>
+</tr>
+<tr>
+<td></td>
+<td>账户名称</td>
+<td>用户自定义，显示用</td>
+</tr>
+<tr>
+<td></td>
+<td>货币类型</td>
+<td>多币种场景下，每个币种建立独立子账户</td>
+</tr>
+<tr>
+<td></td>
+<td>会计科目代码</td>
+<td>关联一级会计科目</td>
+</tr>
+<tr>
+<td><strong>控制属性</strong></td>
+<td>是否允许充值/提现/支付/转账/透支</td>
+<td>细粒度权限控制</td>
+</tr>
+<tr>
+<td></td>
+<td>是否激活/是否冻结</td>
+<td>生命周期状态</td>
+</tr>
+<tr>
+<td><strong>资金属性</strong></td>
+<td>当前余额</td>
+<td>= 可用余额 + 冻结余额</td>
+</tr>
+<tr>
+<td></td>
+<td>可用余额</td>
+<td>可即时使用的金额</td>
+</tr>
+<tr>
+<td></td>
+<td>冻结余额</td>
+<td>暂不可用（如支付时先冻结，出库后扣款）</td>
+</tr>
+<tr>
+<td><strong>第三方关联</strong></td>
+<td>第三方实体 ID、账号、app_id、失效日期</td>
+<td>关联外部账户</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>安全提醒：用户密码、信用卡 CV 号等敏感信息不能明文存储。密码需加密保存（甚至独立存表），可增加校验字段防止数据被篡改。</p>
+</blockquote>
+<hr>
+<h2>六、三层身份模型</h2>
+<p>三户模型主要面向交易和资金场景。但在社交、内容、SaaS 等非交易场景中，用户身份有另一套建模逻辑——<strong>三层身份模型（Tripartite Identity Pattern）</strong>。</p>
+<h3>6.1 三层结构</h3>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>名称</th>
+<th>性质</th>
+<th>可变性</th>
+<th>可见性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>第一层</strong></td>
+<td>账户标识符（DB Key）</td>
+<td>系统内部唯一 ID</td>
+<td>永久不变</td>
+<td>用户不可见</td>
+</tr>
+<tr>
+<td><strong>第二层</strong></td>
+<td>登录标识符（Session Auth）</td>
+<td>登录凭证</td>
+<td>可更换</td>
+<td>仅用户可见</td>
+</tr>
+<tr>
+<td><strong>第三层</strong></td>
+<td>公开标识符（Social Identity）</td>
+<td>昵称、头像等公开信息</td>
+<td>随时可改</td>
+<td>所有人可见</td>
+</tr>
+</tbody></table>
+<p><strong>第一层：账户标识符</strong>。系统自动生成的内部 ID，用于数据库关联和内部通信。它必须永久且唯一，不受用户控制，对用户不可见（或至少是惰性的）。<strong>关键原则：账户标识符不能是手机号、邮箱等可变信息</strong>——否则用户换手机号就会导致全量数据迁移。</p>
+<p><strong>第二层：登录标识符</strong>。创建会话时需要的凭证，通常是账号/密码对（手机号、邮箱或用户名 + 密码）。将登录标识符和账户标识符分离的核心价值是：</p>
 <ul>
-<li>基本信息也是一个服务主题：包括客户的最基本的信息，姓名、年令、职业等;</li>
-<li>管理信息也是一个服务主题：比如这个客户的评级、是否集团员工等；</li>
-<li>客户标签也是一个服务主题：所谓标签，就是从不同的维度来给客户做个标记，一个客户有多个标签，当然，前提是要对标签做好规划；</li>
-<li>协议管理也是客户的一个服务主题：这里面有授权协议、委托协议等。</li>
+<li>用户更换登录方式（从手机号改为邮箱）不影响任何业务数据</li>
+<li>可以为同一个账户绑定多个登录方式（手机号 + 微信 + Apple ID）</li>
+<li>通过 OAuth 授权登录时，第三方身份作为一种登录标识符挂载到已有账户上</li>
 </ul>
-<p>当然，客户还有其它的一些主题，这个要看公司的业务了。</p>
-<p><img src="/images/blog/engineering/business-image_3_2.png" alt="image_3_2.png"></p>
-<h3>3 用户和商户 <a href="#t6" id="t6"></a></h3>
-<h4>3.1 用户 <a href="#t7" id="t7"></a></h4>
-<p>　　用户是账户的操作实体，它是由客户来注册到系统中来的。虽然用户通过客户间接的拥有了资金账户，但这种关系并不是绝对的，比如，一个用户可以授权另一个用户进行账户的余额查询。所以，用户与资金账户之间我们可以抽象出一种授权关系，凡是授权用户，都可以操作资金账户，当然，这种授权包括客户自己的用户。用户的建立比较简单，一般自助注册后就可以生成用户实体了。用户的生命周期如下：</p>
-<p><img src="/images/blog/engineering/business-image_3_3.png" alt="image_3_3.png"></p>
-<p>　　如果用户通过简易注册方式生成，这种情况下生成的是个预开户状态的用户，用户需要进一步完善一些信息才能变成正常用户，比如有些平台，在用户第一次登录时要求设置密保问题及答案。如果用户采用标准注册方式注册 的，可以直接成正常状态用户，正常做业务了。</p>
-<p>　　如果用户想要销户，收到销户申请后，不能直接销户，前面我们说过了，客户是通过用户来进行资金账户的管理与操作的，没有用户，资金账户就有可能没法玩了（假设客户只授权自己的一个而且只有一个用户来操作资金账户），特别是一些账户还存在债务。所以，此时有个确认过程，要求各业务系统确认此用户下的所有账户是否可以销户，如果没有问题，先销资金账户，当用户下的所有资金账户都销户完毕，再销用户，用户销户完成后，会释放出此用户占用的资源，如注册手机号。</p>
-<p>　　用户除了生命周期状态外，还有一个管理状态，比如冻结，从现实模型中来说，这个是不应该放在用户层面的而是放在资金账户层面上的，但互联网模式下，一个用户有多个资金账户，为了用户体验，把这些放在了用户层面上了，就如同支付密码放在用户层面上一样。</p>
-<h4>3.2 商户 <a href="#t8" id="t8"></a></h4>
-<p>　　商户是企业客户的一个业务影子，或是看成资金账户分组的一个手段。商户是客户一个外围业务，如果把它看成用户平级层面也是可以的，即：此商户所有业务产生的资金进入到一个分类资金账户里。不论怎么说，一个企业不论开多少个商户，每个商户又开通多少个资金账户，都改变不了资金账户的归属关系，它是现实客户这个实体的。对客户的处理，在银行系统中是 CIF 系统或 ECIF 系统，而在互联网模式下，很多都是基于微服务的体系，如何划分微服务，这块要从客户系统对提供的业务主题来分。</p>
-<h3>4 账户 <a href="#t9" id="t9"></a></h3>
-<h4>4.1 基本概念 <a href="#t10" id="t10"></a></h4>
-<p>　　账户设置，一般是从交易开始的。交易的实现必须有账户的支持，账户是交易的基本构成元素。从支付系统的角度，交易中涉及到的资金流是资金从一个账户流向另一个账户。发起交易的一方，被称之为交易主体，他可以是个人，也可以是一个机构。资金从该主体所拥有的账户中流出。而接收交易的一方，被称为交易对手，他也可以是个人，或者机构。和第三方支付或者金融机构的交易不同，电商系统中，交易还会涉及到渠道。由于电商系统本身并无清结算的资质，所有资金从交易主体到交易对手的账户的流动，在大部分情况下，并没有经过电商系统，而是由电商系统调用支付渠道提供的接口，由它来完成真正的支付过程。当然，渠道也不是活雷锋，在这个过程中，渠道要收取费用。所以，在电商系统中，一次交易会涉及到三个账户： 交易主体账户、交易对手账户以及支付渠道账户。</p>
-<p><strong>支付账户和登录账户</strong></p>
-<p>　　账户体系设计首先要区分两个概念，支付账户和登录账户。这是两个不同业务领域的概念。<strong>支付账户</strong>指用户在支付系统中用于交易的资金所有者权益的凭证。<strong>登录账号</strong>指用户在系统中的登录的凭证和个人信息。一个用户可以有多个登录账户，一个登录账户可以有多个支付账户，比如零钱账户，储值卡账户等。 一般来说，支付账户不会在多个登录账户之间共用。如果没有特殊说明，下文中的账户，都默认指支付账户。</p>
-<p><strong>会计科目与账户</strong></p>
-<p>　　公司的会计需要对每一笔交易都要做详细的记录，即记账。公司每天都产生大量的交易行为，为了便于管理和统计，一个简单的方法是对交易进行分类，比如食品、带宽、办公用品等等。这个分类，按照公司的规模和业务复杂度，可以有一级、二级、三级或者更多级的结构，这被称之为<strong>会计科目</strong>。记账时，除了交易明细，还需要在每个级别上对交易额进行汇总。 一般来说，一级科目上汇总称为<strong>总帐科目</strong>，而详细记录称为<strong>明细科目</strong>。在电商系统中，由于涉及到的参与方较多，记账也相对复杂，但基本方法也是类似的。电商的参与者可以分为商户、买家和渠道，对这三类参与者，都需要分别建立总帐账户和明细账户。</p>
-<p><strong>内部账户和外部账户</strong></p>
-<p>　　当用户使用银行卡来支付时，电商支付系统需要和银行对接，从用户银行卡所代表的账户上扣除资金。对接了银行，第三方支付等机构的电商支付系统，它需要连接到用户在这些机构的账户来执行扣款或者充值操作，这些账户称为<strong>外部账户</strong>。对外部账户，支付系统只能记录账户在本系统的明细以及累计消费额，无法得知账户真正余额。不少电商在玩零钱的概念，也就是让用户充值到零钱，使用的时候就直接从零钱中扣除。这就需要零钱账户。这是电商系统中自己设立的账户，所以也叫<strong>内部账户</strong>，可以知道账户的全部消费明细和余额。当然，除了零钱账户，也可以有储值卡账户、信用账户等。那问题来了，什么时候需要建立账户，比如优惠券，需要账户吗？一次消费的储值卡和可以充值的储值卡，需要建立账户吗？这里先埋个雷。</p>
-<p><strong>收款账户和收单账户</strong></p>
-<p>　　当电商要对接银行时，往往都会被要求开设一个收款账户。用户通过这个银行来支付时，钱就被转到这个账户上。对第三方支付也是一样。收款账户是开设在银行或者第三方支付这边的，即渠道侧。一般来说，渠道每天都可以提供这个账户的交易流水供电商对账用。这样在电商这边，渠道就成为一个收单机构。所以在电商这边，建立这个收款账户对应的对账用的收单账号，用来记录通过这个渠道进行的各项交易流水。</p>
-<h4>4.2 三类账户 <a href="#t11" id="t11"></a></h4>
-<p>　　在设计支付账户系统时，合规是第一要求，和账户相关的法规，最重要的是近期央行发布的三个文件。 从 2013 年 3 月起，国家相继制定一系列“互联网+”计划，推动了移动互联网、大数据等与现代制造业、服务业相结合，引导企业转型，促进经济健康发展。在此背景下，央行相继发布了三个文件：</p>
+<p><strong>第三层：公开标识符</strong>。用户希望被其他用户感知的身份——昵称、头像、签名、年龄、性别等。它是一个复合对象，有时需要唯一（如微博的 @用户名），有时不需要（如微信的昵称可以重名）。</p>
+<h3>6.2 为什么要分三层</h3>
+<table>
+<thead>
+<tr>
+<th>如果不分</th>
+<th>后果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用 手机号 做数据库主键</td>
+<td>用户换手机号 → 全量数据迁移</td>
+</tr>
+<tr>
+<td>用 登录账号 做公开昵称</td>
+<td>泄露登录凭证，安全风险</td>
+</tr>
+<tr>
+<td>用 昵称 做登录账号</td>
+<td>改昵称 → 登录失败</td>
+</tr>
+<tr>
+<td>所有登录方式共用一个字段</td>
+<td>无法支持多端登录和第三方授权</td>
+</tr>
+</tbody></table>
+<p><strong>三层分离后</strong>：底层 ID 永远不变（数据稳定性），中间层可以灵活更换登录方式（用户体验），顶层可以随意修改公开信息（社交灵活性）。三层互不干扰。</p>
+<h3>6.3 多端登录与 OAuth 的设计</h3>
+<p>三层身份模型天然支持多种登录方式的聚合：</p>
+<table>
+<thead>
+<tr>
+<th>登录方式</th>
+<th>实现</th>
+<th>关联关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>手机号 + 密码</td>
+<td>内部认证</td>
+<td>登录标识符 → 账户标识符</td>
+</tr>
+<tr>
+<td>微信授权登录</td>
+<td>OAuth 2.0</td>
+<td>微信 OpenID 作为一种登录标识符</td>
+</tr>
+<tr>
+<td>Apple ID 登录</td>
+<td>Sign in with Apple</td>
+<td>Apple User ID 作为一种登录标识符</td>
+</tr>
+<tr>
+<td>邮箱 + 密码</td>
+<td>内部认证</td>
+<td>邮箱作为一种登录标识符</td>
+</tr>
+</tbody></table>
+<p><strong>多种登录标识符指向同一个账户标识符</strong>——用户无论从哪种方式登录，看到的都是同一份数据。首次通过新方式登录时，系统需要引导用户将新的登录标识符绑定到已有账户上（或创建新账户）。</p>
+<hr>
+<h2>七、三户模型与三层身份模型的关系</h2>
+<p>两个模型从不同角度切入用户体系建模，<strong>互补而非替代</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>三户模型</th>
+<th>三层身份模型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>解决的问题</strong></td>
+<td>交易类系统中客户、用户、账户怎么建模</td>
+<td>认证和社交场景中身份标识怎么分层</td>
+</tr>
+<tr>
+<td><strong>核心关注</strong></td>
+<td>资金流和权限控制</td>
+<td>身份识别和登录体验</td>
+</tr>
+<tr>
+<td><strong>典型场景</strong></td>
+<td>电商、支付、金融</td>
+<td>社交、内容、SaaS</td>
+</tr>
+<tr>
+<td><strong>切分依据</strong></td>
+<td>按业务域切分（社会域/业务域/资金域）</td>
+<td>按可见性和可变性切分</td>
+</tr>
+</tbody></table>
+<p><strong>在实际系统中两者可以叠加使用</strong>：</p>
 <ul>
-<li>「<strong>中国人民银行关于改进个人银行账户服务加强账户管理的通知</strong>」，银发〔2015〕392 号，2015 年 12 月 25 日发文，正式启动账户分类管理工作。</li>
-<li>「<strong>中国人民银行关于落实个人银行账户分类管理制度的通知</strong>」，银发〔2016〕302 号, 2016 年 11 月 25 日发文，明确了同一个人在同一个银行只能有一个<code>I</code>类账户的要求。</li>
-<li>「<strong>中国人民银行关于加强支付结算管理防范电信网络新型违法犯罪有关事项的通知</strong>」，银发〔2016〕261 号， 2016 年 9 月 20 日发文，调整并细化了账户分类及使用要求。</li>
+<li>三户模型中的&quot;用户&quot;对应三层身份模型中的&quot;账户标识符&quot;（系统内部 ID）</li>
+<li>三户模型中的&quot;用户登录信息&quot;对应三层身份模型中的&quot;登录标识符&quot;</li>
+<li>三层身份模型中的&quot;公开标识符&quot;在三户模型中没有直接对应——它是社交场景的特有需求</li>
 </ul>
-<p>在这些文件中，央行明确对账户实施分类管理的要求。 对这三类账户区别，总结如下：</p>
-<p><img src="/images/blog/engineering/business-image_3_4.png" alt="image_3_4.png"></p>
-<h4>4.3 生命周期 <a href="#t12" id="t12"></a></h4>
-<p><img src="/images/blog/engineering/business-image_3_5.png" alt="image_3_5.png"></p>
+<p>简单说：<strong>三户模型告诉你&quot;应该有几张表&quot;，三层身份模型告诉你&quot;用户这张表内部应该怎么分层&quot;。</strong></p>
+<hr>
+<h2>八、不同行业的适配</h2>
+<p>三户模型并非一成不变，不同行业对三户的侧重不同：</p>
+<table>
+<thead>
+<tr>
+<th>行业</th>
+<th>客户</th>
+<th>用户</th>
+<th>账户</th>
+<th>特殊需求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>电信</strong></td>
+<td>自然人/企业</td>
+<td>产品实例（SIM 卡、宽带）</td>
+<td>缴费账户</td>
+<td>一个账户为多个产品付费</td>
+</tr>
+<tr>
+<td><strong>银行</strong></td>
+<td>自然人/企业（面签建立）</td>
+<td>网银/手机银行登录实体</td>
+<td>I/II/III 类银行账户</td>
+<td>央行合规要求，面签 + 分类管理</td>
+</tr>
+<tr>
+<td><strong>电商</strong></td>
+<td>买家/卖家</td>
+<td>登录账号</td>
+<td>零钱、银行卡、结算账户</td>
+<td>买卖双方是不同类型的客户</td>
+</tr>
+<tr>
+<td><strong>SaaS</strong></td>
+<td>企业（租户）</td>
+<td>企业内部成员</td>
+<td>订阅账户、用量账户</td>
+<td>租户隔离，成员角色管理</td>
+</tr>
+<tr>
+<td><strong>社交</strong></td>
+<td>自然人</td>
+<td>登录实体（弱化）</td>
+<td>虚拟资产（金币、会员）</td>
+<td>公开标识符比账户更重要</td>
+</tr>
+<tr>
+<td><strong>游戏</strong></td>
+<td>自然人</td>
+<td>角色/账号</td>
+<td>虚拟货币、道具账户</td>
+<td>一个用户多个角色，角色也是&quot;用户&quot;</td>
+</tr>
+</tbody></table>
+<p><strong>适配的核心原则</strong>：不需要死板地套用三户，而是根据业务的核心实体来决定——<strong>谁在用系统（客户）、用系统做什么（用户）、用系统管什么资源（账户）</strong>。如果业务不涉及资金，账户可以弱化为&quot;资源账户&quot;（积分、额度、存储空间）；如果不涉及企业客户，客户和用户可以合并。</p>
+<hr>
+<h2>九、核心数据模型设计</h2>
+<p>将上述概念落到数据库设计上，以下是核心表的 ER 关系：</p>
+<h3>9.1 客户-用户-账户的关系</h3>
+<pre><code class="language-sql">-- 客户表（社会域）
+customer (
+    customer_id     BIGINT PRIMARY KEY,   -- 系统分配的客户 ID
+    customer_type   ENUM(&#39;personal&#39;, &#39;enterprise&#39;),
+    id_card_type    VARCHAR(20),          -- 证件类型
+    id_card_no      VARCHAR(50),          -- 证件号（业务主键，加密存储）
+    name            VARCHAR(100),
+    status          ENUM(&#39;normal&#39;, &#39;frozen&#39;, &#39;suspended&#39;),
+    created_at      TIMESTAMP
+)
+
+-- 用户表（业务域）
+-- 注意：登录凭证（手机号、邮箱等）不在此表，而在 login_credential 表
+user (
+    user_id         BIGINT PRIMARY KEY,   -- 系统分配的用户 ID（即三层身份模型中的账户标识符）
+    customer_id     BIGINT REFERENCES customer,  -- 归属客户
+    user_type       ENUM(&#39;personal&#39;, &#39;merchant_operator&#39;),  -- 个人用户 / 商户操作员
+    status          ENUM(&#39;pre_open&#39;, &#39;normal&#39;, &#39;frozen&#39;, &#39;closing&#39;, &#39;closed&#39;),
+    created_at      TIMESTAMP
+)
+
+-- 登录凭证表（三层身份模型的第二层，支持多种登录方式）
+login_credential (
+    credential_id   BIGINT PRIMARY KEY,
+    user_id         BIGINT REFERENCES user,      -- 归属用户
+    login_type      ENUM(&#39;phone&#39;, &#39;email&#39;, &#39;wechat&#39;, &#39;apple&#39;, &#39;username&#39;),
+    login_key       VARCHAR(200),         -- 手机号/邮箱/OpenID/用户名
+    login_secret    VARCHAR(200),         -- 密码 Hash（第三方登录为空）
+    status          ENUM(&#39;active&#39;, &#39;disabled&#39;),
+    created_at      TIMESTAMP
+)
+
+-- 账户表（资金域）
+account (
+    account_id      BIGINT PRIMARY KEY,   -- 账户 ID（编码规则含账户类型）
+    customer_id     BIGINT REFERENCES customer,  -- 归属客户
+    account_type    ENUM(&#39;cash&#39;, &#39;virtual_coin&#39;, &#39;bank_card&#39;, &#39;settlement&#39;),
+    currency        VARCHAR(10) DEFAULT &#39;CNY&#39;,
+    balance         DECIMAL(18,2),        -- 当前余额
+    available       DECIMAL(18,2),        -- 可用余额
+    frozen          DECIMAL(18,2),        -- 冻结余额
+    status          ENUM(&#39;normal&#39;, &#39;frozen&#39;, &#39;suspended&#39;, &#39;closed&#39;),  -- suspended = 止付
+    created_at      TIMESTAMP
+)
+
+-- 商户表（企业客户在业务侧的投影）
+merchant (
+    merchant_id     BIGINT PRIMARY KEY,   -- 商户 ID
+    customer_id     BIGINT REFERENCES customer,  -- 归属企业客户（一个企业可有多个商户）
+    merchant_name   VARCHAR(200),
+    business_type   VARCHAR(50),          -- 经营类型
+    status          ENUM(&#39;normal&#39;, &#39;frozen&#39;, &#39;closed&#39;),
+    created_at      TIMESTAMP
+)
+
+-- 用户-账户授权关系（多对多）
+user_account_auth (
+    user_id         BIGINT REFERENCES user,
+    account_id      BIGINT REFERENCES account,
+    permission      ENUM(&#39;query&#39;, &#39;operate&#39;, &#39;admin&#39;),  -- 授权级别
+    PRIMARY KEY (user_id, account_id)
+)
+
+-- 公开资料表（社交域，三层身份模型的第三层）
+user_profile (
+    user_id         BIGINT PRIMARY KEY REFERENCES user,
+    nickname        VARCHAR(100),
+    avatar_url      VARCHAR(500),
+    bio             VARCHAR(500),
+    gender          ENUM(&#39;male&#39;, &#39;female&#39;, &#39;unknown&#39;),
+    updated_at      TIMESTAMP
+)
+</code></pre>
+<h3>9.2 关键设计要点</h3>
+<table>
+<thead>
+<tr>
+<th>设计点</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>customer_id 和 user_id 分离</strong></td>
+<td>客户是自然人/法人（身份证唯一），用户是登录实体（可以有多个）</td>
+</tr>
+<tr>
+<td><strong>user 表不存手机号</strong></td>
+<td>登录凭证全部在 login_credential 表，user 表只有系统 ID，避免换手机号影响用户主键</td>
+</tr>
+<tr>
+<td><strong>login_credential 独立成表</strong></td>
+<td>支持多种登录方式，更换登录方式不影响 user_id</td>
+</tr>
+<tr>
+<td><strong>merchant 通过 customer_id 归属</strong></td>
+<td>商户是企业客户的业务投影，一个企业可开通多个商户</td>
+</tr>
+<tr>
+<td><strong>account 通过 customer_id 归属</strong></td>
+<td>账户属于客户而非用户，用户通过授权关系操作账户</td>
+</tr>
+<tr>
+<td><strong>user_account_auth 多对多</strong></td>
+<td>企业客户的多人操作同一账户场景</td>
+</tr>
+<tr>
+<td><strong>user_profile 独立成表</strong></td>
+<td>公开信息和登录信息分离，改昵称不影响认证</td>
+</tr>
+<tr>
+<td><strong>证件号加密存储</strong></td>
+<td>敏感信息加密，防止拖库泄露</td>
+</tr>
+<tr>
+<td><strong>余额拆分为三个字段</strong></td>
+<td>balance = available + frozen，支付时先冻结再扣款</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>总结</h2>
+<p>用户体系建模的核心问题不是&quot;怎么建 user 表&quot;，而是<strong>识别出业务中有几个本质不同的实体，以及它们之间的关系</strong>。</p>
+<p><strong>三户模型</strong>给出了交易场景的答案：客户（你是谁）、用户（你能做什么）、账户（你有什么）——三者分属社会域、业务域、资金域，各自有独立的生命周期和状态机。</p>
+<p><strong>三层身份模型</strong>给出了认证和社交场景的答案：账户标识符（永久不变的内部 ID）、登录标识符（可更换的凭证）、公开标识符（可随意修改的社交身份）——三层按可变性和可见性分离，互不干扰。</p>
+<p>两者不是二选一，而是从不同维度切入同一个问题。在实际系统中，三户模型决定了&quot;应该有几张核心表&quot;，三层身份模型决定了&quot;用户表内部应该怎么分层&quot;。把两者叠加使用，就是一套完整的用户体系建模框架。</p>
+17:T53af,<blockquote>
+<p>&quot;有分析，没结论&quot;是很多技术和数据从业者容易出现的问题。要想得出能落地的结论，必须先懂业务——但&quot;业务&quot;这个词在不同人嘴里含义完全不同。本文用三重视角框架，帮你建立从宏观商业模式到微观执行策略的完整认知。</p>
+</blockquote>
+<p>全文以<strong>在线教育公司</strong>为贯穿案例，从 CEO 的商业模式到运营专员的日常执行，逐层拆解三重视角在同一家公司中的落地形态。</p>
+<hr>
+<h2>一、到底什么叫&quot;业务&quot;？</h2>
+<p><strong>业务</strong>：输入特定的资源，能够给出具有商业价值的确定性输出的经营单元。</p>
+<p>这个定义的关键在于三个要素：<strong>输入</strong>（资源投入）、<strong>过程</strong>（经营活动）、<strong>输出</strong>（商业价值）。</p>
+<p>以一家在线教育公司为例，不同角色眼中的&quot;业务&quot;截然不同：</p>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>他眼中的&quot;业务&quot;</th>
+<th>输入</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CEO</td>
+<td>整个在线教育平台</td>
+<td>资金 + 人力</td>
+<td>利润</td>
+</tr>
+<tr>
+<td>运营总监</td>
+<td>用户增长与课程运营</td>
+<td>预算 + 流量</td>
+<td>付费学员、完课率</td>
+</tr>
+<tr>
+<td>渠道运营专员</td>
+<td>分销渠道管理</td>
+<td>人力 + 渠道关系</td>
+<td>分销带来的付费转化</td>
+</tr>
+</tbody></table>
+<p>同一家公司，三个层级的人说的&quot;业务&quot;完全不在一个粒度上。这说明<strong>业务是分层的</strong>——接下来的问题是：<strong>这些不同的粒度之间，有没有一个统一的结构？</strong></p>
+<hr>
+<h2>二、业务的三重视角</h2>
+<p>业务有三层视角，分别对应组织中的三个层级：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>视角</th>
+<th>关注点</th>
+<th>核心工具</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>高层</strong></td>
+<td>商业模式</td>
+<td>这个业务怎么赚钱？</td>
+<td>商业模式画布</td>
+</tr>
+<tr>
+<td><strong>中层</strong></td>
+<td>业务模型</td>
+<td>为了赚钱需要做哪些关键事情？</td>
+<td>SOP / 业务流程</td>
+</tr>
+<tr>
+<td><strong>基层</strong></td>
+<td>执行策略</td>
+<td>每件具体的事怎么做？</td>
+<td>方法论模型</td>
+</tr>
+</tbody></table>
+<p>三层之间是<strong>自上而下分解、自下而上反馈</strong>的关系：高层想清楚商业模式后，把关键业务分解给中层；中层设计业务模型（工作流程），把具体任务分配给基层；基层按照执行策略落地，执行数据逐层回传驱动上层决策调整。</p>
+<p>接下来逐层展开——第三章讲高层怎么看业务（商业模式），第四章讲中层怎么拆业务（业务模型），第五章讲基层怎么做业务（执行策略）。</p>
+<hr>
+<h2>三、高层视角：商业模式</h2>
+<h3>3.1 高层关心什么</h3>
+<p>高层思考的核心问题是：</p>
 <ul>
-<li><strong>账户开立与绑卡</strong>：同一个人在同一银行只能开立一个<code>Ⅰ</code>类户，<code>I</code>类户的设立需要面对面审核，电子渠道开立的<code>Ⅱ</code>类户和<code>Ⅲ</code>类户需绑定银行账户进行验证，不得绑定支付机构账户验证，<code>Ⅱ</code>类户需向绑定账户验证<code>5</code>要素（<code>4</code>要素：姓名、身份证号、手机号、银行卡号，额外增加账户等级），<code>Ⅲ</code>类户需验证<code>4</code>要素，银联支持支持<code>Ⅱ</code>、<code>Ⅲ</code>类账户跨行验证绑定账户信息。</li>
-<li><strong>资金互转</strong>：对非面对面开立的<code>Ⅱ</code>、<code>Ⅲ</code>类户，限制非绑定账户转入，允许<code>Ⅱ</code>、<code>Ⅲ</code>类户向绑定账户直接借记资金，银联支持<code>Ⅱ</code>、<code>Ⅲ</code>类账户与绑定账户间通过借记和贷记业务实现灵活便捷的资金划付。</li>
-<li><strong>账户使用</strong>：<code>I</code>类账户、对面核实身份的<code>Ⅱ</code>类户可以发行实体银行卡，其他账户不能使用实体银行卡，<code>Ⅱ</code>、<code>Ⅲ</code>类户可以通过云闪付、二维码等支付工具来完成支付，银联支持<code>Ⅱ</code>、<code>Ⅲ</code>类账户便捷生成基于安全芯片、主机卡模拟或二维码等技术的支付工具。</li>
+<li>这个业务面向哪些群体提供什么产品和服务？</li>
+<li>为了提供这些产品和服务，需要哪些资源和合作伙伴？</li>
+<li>需要做哪些事，才能保证产品和服务的稳定供给？</li>
+<li>如何找到目标用户？</li>
+<li>如何赚钱？</li>
 </ul>
-<h4>4.3 账户建模 <a href="#t13" id="t13"></a></h4>
-<p>在支付系统中，账户的建模，主要是从如下几个方面来考虑：</p>
+<p>这几件事合在一起，就是一个业务的<strong>商业模式</strong>。</p>
+<h3>3.2 商业模式画布</h3>
+<p>商业模式画布（Business Model Canvas）是理解商业模式最实用的工具，由 9 个构造块组成：</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>核心问题</th>
+<th>归属</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>价值主张</strong></td>
+<td>我怎么样帮助别人？提供什么产品或服务？</td>
+<td>核心（连接左右）</td>
+</tr>
+<tr>
+<td><strong>客户细分</strong></td>
+<td>我能帮助谁？目标群体是哪些人？</td>
+<td>收入侧（右）</td>
+</tr>
+<tr>
+<td><strong>渠道通路</strong></td>
+<td>怎样宣传产品？怎样向客户交付？</td>
+<td>收入侧（右）</td>
+</tr>
+<tr>
+<td><strong>客户关系</strong></td>
+<td>和目标群体建立什么样的关系？</td>
+<td>收入侧（右）</td>
+</tr>
+<tr>
+<td><strong>收入来源</strong></td>
+<td>怎样从价值主张中获得收入？</td>
+<td>收入侧（右）</td>
+</tr>
+<tr>
+<td><strong>核心资源</strong></td>
+<td>为了实现价值主张，需要掌握哪些资源？</td>
+<td>成本侧（左）</td>
+</tr>
+<tr>
+<td><strong>关键业务</strong></td>
+<td>为了维持业务运转，需要做哪些事？</td>
+<td>成本侧（左）</td>
+</tr>
+<tr>
+<td><strong>重要伙伴</strong></td>
+<td>谁可以帮我？</td>
+<td>成本侧（左）</td>
+</tr>
+<tr>
+<td><strong>成本结构</strong></td>
+<td>获取资源、维持业务、合作伙伴需要什么成本？</td>
+<td>成本侧（左）</td>
+</tr>
+</tbody></table>
+<p>理解画布的关键是把它分成<strong>左右两半</strong>：</p>
 <ul>
-<li><strong>交易的需求</strong>，比如检查账户是否被锁定、余额是否足够、是否有效等。</li>
-<li><strong>记账的需求</strong>，按照公司会计需求记录账户上的所有行为，包括支出、充值、转账等。</li>
-<li><strong>对账的需求</strong>，包括和支付渠道、商户、个人的对账需求，核对交易和账户余额是否正确。</li>
-<li><strong>风控的需求</strong>，如反洗钱、反欺诈等，都需要依赖于账户体系来提供核心数据。</li>
-<li><strong>信用的需求</strong>，对用户、资产、商户等主体进行信用评估时，也需要依赖账户体系来提供的核心数据。</li>
+<li><strong>右半边是收入侧</strong>：客户是谁、怎么触达、怎么赚钱</li>
+<li><strong>左半边是成本侧</strong>：需要什么资源、做什么事、和谁合作、花多少钱</li>
+<li><strong>中间的价值主张</strong>连接两侧：你为客户提供了什么价值</li>
 </ul>
-<p>这五个需求，按照其设计的优先级，也是从支付、记账、对账、风控来进行。 支付系统根据其发展所处的阶段，逐步将新增需求纳入设计中。说了这么多，目的是为了对账户建模。账户模型是和公司业务密切相关的，公司不同规模，发展的不同阶段需要不同的模型。从交易模型中可以衍生出针对各个角色的账户流水，即明细模型，用于支持对账。根据业务需要，可以设置多种账户，如支付账户、预付卡账户、代扣账户、零钱账户、结算账户等。从类别上来说，这里的账户，一般指总账账户。一般来说电商系统中涉及的账户类型有：</p>
+<p><strong>案例：在线教育公司的商业模式画布</strong></p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>在线教育公司的填法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>价值主张</strong></td>
+<td>提供高质量的职业技能课程，帮助学员提升就业竞争力</td>
+</tr>
+<tr>
+<td><strong>客户细分</strong></td>
+<td>22-35 岁的职场人群，有转行或技能提升需求</td>
+</tr>
+<tr>
+<td><strong>渠道通路</strong></td>
+<td>短视频平台投放（抖音、B站）、搜索引擎（百度）、分销合作</td>
+</tr>
+<tr>
+<td><strong>客户关系</strong></td>
+<td>社群运营 + 班主任 1 对 1 跟进</td>
+</tr>
+<tr>
+<td><strong>收入来源</strong></td>
+<td>课程售卖（单课 299-4999 元）+ 企业培训定制</td>
+</tr>
+<tr>
+<td><strong>核心资源</strong></td>
+<td>讲师团队、课程内容库、技术平台</td>
+</tr>
+<tr>
+<td><strong>关键业务</strong></td>
+<td>课程生产、销售获客、教学交付</td>
+</tr>
+<tr>
+<td><strong>重要伙伴</strong></td>
+<td>分销渠道商、云服务供应商、行业专家</td>
+</tr>
+<tr>
+<td><strong>成本结构</strong></td>
+<td>讲师薪酬、流量采购、平台研发、运营人力</td>
+</tr>
+</tbody></table>
+<p>填完这张表，高层就基本搞清楚了这家公司&quot;怎么赚钱&quot;。然后把&quot;关键业务&quot;（课程生产、销售获客、教学交付）拆分给中层——这就是下一章的内容。</p>
+<h3>3.3 常见的商业模式类型</h3>
+<p>虽然每家公司的商业模式都有所不同，但能跑通的模式并不多。以互联网公司为例，市面上大体有以下几种：</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>核心逻辑</th>
+<th>代表公司</th>
+<th>核心收入公式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>流量广告</strong></td>
+<td>免费产品吸引用户，卖流量给广告主</td>
+<td>抖音、百度</td>
+<td>收入 = 广告流量 * 转化率 * 单次点击价格</td>
+</tr>
+<tr>
+<td><strong>平台抽佣</strong></td>
+<td>撮合供需双方交易，抽取佣金</td>
+<td>美团、淘宝</td>
+<td>收入 = GMV（Gross Merchandise Volume，总交易额） * 抽佣率</td>
+</tr>
+<tr>
+<td><strong>产供销</strong></td>
+<td>自己生产并销售产品</td>
+<td>在线教育、自营电商</td>
+<td>收入 = 销量 * 单价</td>
+</tr>
+<tr>
+<td><strong>免费增值</strong></td>
+<td>基础免费，高级功能付费</td>
+<td>游戏、SaaS</td>
+<td>收入 = 付费用户数 * ARPU（Average Revenue Per User，用户平均收入）</td>
+</tr>
+</tbody></table>
+<p>一家公司可能有多种模式的组合——比如美团既有平台抽佣（外卖），也有产供销（自行车），还有流量广告（搜索推广）。上面案例中的在线教育公司属于典型的<strong>产供销模式</strong>：自己生产课程，通过自有平台和分销渠道销售。</p>
+<hr>
+<h2>四、中层视角：业务模型</h2>
+<h3>4.1 中层关心什么</h3>
+<p>高层想清楚商业模式后，会把关键业务分解给中层。回到案例——在线教育公司的关键业务是&quot;课程生产、销售获客、教学交付&quot;。中层拿到任务后，关心的问题是：</p>
 <ul>
-<li><strong>虚拟币账户</strong>：用户和使用虚拟币的商户都需要建立虚拟币账户；</li>
-<li><strong>代扣账户</strong>： 用来支持订阅类型的定期代扣；</li>
-<li><strong>零钱账户</strong>：电商的内部账号，用户、商户、清算单位需要建立零钱账户。</li>
-<li><strong>第三方支付账户</strong>：用户在第三方支付机构建立的账户。</li>
-<li><strong>银行卡账户</strong>：用户的银行卡信息，每个卡对应一个账户。</li>
-<li><strong>结算账户</strong>：用来支持和第三方支付公司、银行进行结算用，第三方支付需要为每个商户号建立结算账户；银行需要为借记卡、贷记卡分别建立结算账户，一般在银行卡直连时使用。</li>
-<li><strong>代扣代缴账户</strong>：用来支持代扣税款业务。</li>
+<li>需要保障的事项有哪些环节？比如&quot;销售获客&quot;需要渠道投放、落地页承接、试听转化、付费转化等环节。</li>
+<li>上述环节应该如何保障？比如需要专门的渠道专员负责定期投放。</li>
+<li>提高能力的核心因素是什么？比如提升获客效率的核心是落地页的试听转化率。</li>
+<li>如何驱动和改善这个核心因素？比如通过 A/B 测试优化落地页设计。</li>
 </ul>
-<p>对这些账户，需要设置如下属性，基本属性，包括：</p>
-<ul>
-<li><strong>账户号或称为账户 ID</strong>，一般是系统自动生成。特别注意的是，要事先约定好账户 ID 的规则，比如头三位用来表示账户类型，后几位用来表示账户编号等，务必保证根据账号号能够快速确定账户类型，并且保证账户号是不重复的。</li>
-<li><strong>账户名称</strong>，一般是由用户自己设置的，显示用。</li>
-<li><strong>账户使用的货币类型</strong>，注意虽然一张银行卡可以支持多个币种，实际在内部，还是针对每个币种建立独立的子账户。涉及到多币种的账户，也可以采用类似的建模方案。</li>
-<li><strong>会计科目代码</strong>，一般是一级会计科目的代码。</li>
-</ul>
-<p>账户控制相关：</p>
-<ul>
-<li>是否允许充值；</li>
-<li>是否允许提现；</li>
-<li>是否允许透支；</li>
-<li>是否允许支付；</li>
-<li>是否允许转账进入；</li>
-<li>是否允许转账转出；</li>
-<li>是否有安全保障；</li>
-<li>是否激活；</li>
-<li>是否冻结。</li>
-</ul>
-<p>资金相关：</p>
-<ul>
-<li>当前账户余额，等于可用余额+冻结余额；</li>
-<li>当前账户可用余额；</li>
-<li>当前账户冻结的余额，冻结余额指在账户上暂不能使用的额度。在支付的时候，往往是先冻结，商品出库后，再实际执行扣款。</li>
-</ul>
-<p>银行卡、第三方支付信息：</p>
-<ul>
-<li>第三方实体的 ID；</li>
-<li>第三方账号，如银行卡号或者在第三方支付的<code>open_id</code>等；</li>
-<li>第三方的<code>app_id</code>；</li>
-<li>账号的失效日期，该账号什么时候失效。</li>
-</ul>
-<p>注意，有些第三方信息是不能保存的，如用户的账号密码、信用卡的 CV 号等。为了避免账户信息被爬库或者数据库信息意外泄露，一般还需要对敏感字段，如密码等，进行加密保存，甚至保存到另外的表中。更进一步，为了避免账户信息被意外修改，还可以增加一个校验字段，在写入数据时设置该字段，在读取数据时做校验，一旦发现数据有问题，则关闭该账号。</p>
-17:T1dfa,<p>接业务知识的上一篇文章：商业模式。</p>
-<p>在上一篇文章中我们介绍了<strong>商业模式画布的九个模块</strong>。</p>
-<p>商业模式画布是商业运作的<strong>战略</strong>模型，它确定了整个商业的大方向。</p>
-<p>除了战略层面，<strong>为了使商业模式能够顺利运转，还需要战术层面的配合</strong>。关键业务就是商业模式中的一个重要模块，它包括我们日常需要做的一些事情来保证商业模式的正常运转。</p>
-<p>关键业务通常由中层管理人员负责，他们会对这些工作进行梳理，并建立起业务模型。</p>
-<p>今天，我们将讨论<strong>业务模型。</strong></p>
-<h2>01 关键业务的类型</h2>
-<p>商业模式画布中的关键业务可以分为生产、销售、交付以及其他配套的基础工具和系统。下面分别介绍这些业务类型：</p>
-<ul>
-<li><strong>生产制造业务</strong>：涉及到产品设计、原材料采购、生产制造、品质控制等方面，是制造企业的核心业务。例如，知识付费类的业务需要进行课程生产。</li>
-<li><strong>销售渠道业务</strong>：涉及到产品销售、渠道管理、售后服务等方面。</li>
-<li><strong>产品交付业务</strong>：涉及到订单管理、产品服务、服务履约等方面。</li>
-</ul>
-<p>除此之外，围绕着这三大种业务类型还会有配套的基础工具和系统，例如运营（人力、财务等）、研发、平台建设等，用以提高效率和提升业务水平。比如：</p>
-<ul>
-<li>**平台技术业务：**涉及到平台建设、技术开发、数据管理等方面，是互联网企业的核心业务。</li>
-<li>**运营管理业务：**涉及到人力资源、财务管理、法务合规等方面，是企业运营管理的核心业务。</li>
-<li>**研究开发业务：**涉及到技术研发、创新设计等方面，是科技型企业的核心业务。</li>
-</ul>
-<p>这些业务类型是商业模式画布中常见的关键业务类型，不同的企业根据自身特点和行业属性，可能会存在不同的关键业务类型。</p>
-<h2>02 业务模型</h2>
-<p>一般来说业务模型是一个SOP，SOP（Standard Operation Procedure）是标准作业程序的简称。</p>
-<p><strong>SOP有三个关键要素。</strong></p>
-<p>首先是<strong>标准</strong>，这就像一把衡量工作成果的尺子，告诉我们是达标还是不达标。每个人对事物的认知能力都是不同的，如果没有一个明确的标准，就会导致沟通不畅，影响工作效率。在一个公司中，员工是执行者，如果每个员工按照自己的标准来解决问题，客户的需求将无法得到满足，不利于公司管理。因此，制定SOP的第一个要素是明确的标准，这有助于规范员工行为，提高执行效率。</p>
-<p>其次是<strong>流程</strong>，这个过程从零到一，每一步都重要，顺序不可逆。如果流程出现偏差，即使销售人员的能力再强，也会影响到最终的结果。例如，建立信任是非常重要的一步，不应该在还不熟悉客户的情况下贸然报价。因此，制定SOP的第二个要素是流程，必须对每个步骤进行细化和量化，制定出标准，以便在推进业务进程时提高效率。</p>
-<p>第三个要素是<strong>可操作性</strong>，标准和流程必须在可操作的基础上进行。制定SOP的初衷是为了规范员工日常工作，提高工作效率，因此，SOP必须简单直观，任何员工都可以看懂且快速上手。SOP制定不应该过于复杂庞大，而应该以清晰为主，即使是新员工也可以凭借SOP对流程了解七八分，这才是成功的SOP。</p>
-<p>SOP就像是机器运行的规则，而一家公司的运转依赖于许多不同的SOP组合，以确保公司的正常运转。</p>
-<h2>03 常见的业务模型</h2>
-<h3>1、生产</h3>
-<p>一个企业的产品和服务需要生产，需要一个稳定的生产流程确保有稳定的产品或服务质量。</p>
-<p>以知识付费课程的生产为例，一般的<strong>课程生产SOP大致如下：</strong></p>
+<p>中层思考的这些问题，最终要形成一套<strong>业务模型</strong>——本质上是一组 SOP（Standard Operation Procedure，标准作业程序）。</p>
+<h3>4.2 SOP 的三个关键要素</h3>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>说明</th>
+<th>为什么重要</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>标准</strong></td>
+<td>衡量工作成果的尺子——达标还是不达标</td>
+<td>没有标准，每个人按自己的理解做事，结果不可控</td>
+</tr>
+<tr>
+<td><strong>流程</strong></td>
+<td>从零到一的步骤，顺序不可逆</td>
+<td>流程出偏差，能力再强也影响结果</td>
+</tr>
+<tr>
+<td><strong>可操作性</strong></td>
+<td>简单直观，新员工也能看懂且快速上手</td>
+<td>过于复杂的 SOP 没人执行</td>
+</tr>
+</tbody></table>
+<p>SOP 就像机器运行的规则。一家公司的运转依赖于许多不同的 SOP 组合。</p>
+<h3>4.3 关键业务的类型</h3>
+<p>商业模式画布中的关键业务可以分为三大类 + 配套辅助：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+<th>在线教育案例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>生产</strong></td>
+<td>产品和服务的创造过程</td>
+<td>课程策划→录制→审核→上线</td>
+</tr>
+<tr>
+<td><strong>销售</strong></td>
+<td>产品触达客户的过程</td>
+<td>渠道投放→试听引导→付费转化→分销管理</td>
+</tr>
+<tr>
+<td><strong>交付</strong></td>
+<td>销售完成后把产品给到用户</td>
+<td>课程开通→学习跟进→结业发证→售后</td>
+</tr>
+<tr>
+<td><strong>辅助</strong></td>
+<td>支撑上述三类业务的基础能力</td>
+<td>人力资源、财务、技术平台、数据分析</td>
+</tr>
+</tbody></table>
+<h3>4.4 核心 SOP 举例</h3>
+<p>以&quot;课程生产&quot;这个关键业务为例，完整的 SOP 如下：</p>
 <ol>
-<li>明确课程目标和范围。</li>
-<li>制定教学大纲和教学计划。</li>
-<li>编写教材和课件。</li>
-<li>录制课程视频。</li>
-<li>制作课程配套材料。</li>
-<li>进行内部审核和修改。</li>
-<li>进行试教和修改。</li>
-<li>上线发布和推广。</li>
-<li>进行售后服务和维护。</li>
-<li>进行课程评估和改进。</li>
+<li>明确课程目标和范围（目标学员画像、学完能做什么）</li>
+<li>制定教学大纲和教学计划</li>
+<li>编写教材和课件</li>
+<li>录制课程视频</li>
+<li>制作配套材料（练习题、案例、代码）</li>
+<li>内部审核和修改</li>
+<li>小范围试教和收集反馈</li>
+<li>上线发布和推广</li>
+<li>持续迭代和更新</li>
 </ol>
-<p>课程的制作是一个相对具有创造性的工作，但实际上仍需要遵循严格的流程管理。据说，像好莱坞电影这样的具有创意性的企业，在制作电影时也会按照严格的流水线制作方式来确保电影质量。</p>
-<h3>2、销售</h3>
-<p>企业的盈利离不开销售，销售的类型很多，有分销、直销、线上销售、线下零售、代理商渠道等等。</p>
-<p>不同的销售类型对应的销售流程也不一样。</p>
-<p>我们还是知识付费产品为例，<strong>分销渠道的SOP大致如下</strong>：</p>
+<p>每一步都有对应的达标标准——比如第 6 步&quot;内部审核&quot;的标准是：试听完播率 &gt; 60%、内部评审分 &gt; 4.0/5.0，不达标需返回第 4 步重新录制。<strong>标准让 SOP 不只是&quot;步骤清单&quot;，而是&quot;带验收条件的流程&quot;</strong>。</p>
+<p>生产 SOP 保证了&quot;课程质量可控、流程可复制&quot;。销售和交付也有各自的 SOP——销售 SOP 定义了从渠道投放到付费转化的每一步操作规范和达标标准；交付 SOP 定义了从课程开通到结业发证的全流程服务标准。三套 SOP 共同保障了公司的正常运转。</p>
+<h3>4.5 商业模式与业务模型的关系</h3>
+<p><strong>商业模式画布是战略，业务模型是战术。</strong> 业务模型实际上就是商业模式画布中&quot;关键业务&quot;这个模块的展开——高层在画布上写&quot;需要课程生产能力&quot;，中层就要把它拆解为具体的课程制作 SOP。</p>
+<p>中层设计完 SOP 后，就清楚了需要找什么样的人、组织什么样的团队，分别处理什么样的工作。然后把具体的任务安排给基层——比如&quot;负责抖音渠道的投放&quot;、&quot;负责落地页的设计和优化&quot;。</p>
+<hr>
+<h2>五、基层视角：执行策略</h2>
+<h3>5.1 基层关心什么</h3>
+<p>基层拿到中层安排的具体任务后，关心的问题是：</p>
+<ul>
+<li>操作流程是什么样的？</li>
+<li>什么样的做法效果更好？（渠道、文案、时间）</li>
+<li>为了完成目标，本周需要完成多少工作量？</li>
+<li>现有 SOP 还有什么可以改进的地方？</li>
+</ul>
+<p>基层的工作被中层下发的任务限定在某一个范围内。稍微有自由度的是<strong>交付的形式</strong>——文案怎么写、图片怎么设计、渠道怎么选。</p>
+<h3>5.2 执行层的方法论</h3>
+<p>基层有很多不同的业务模块，不同的工作对应不同的方法论模型：</p>
+<table>
+<thead>
+<tr>
+<th>领域</th>
+<th>常用模型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>营销</strong></td>
+<td>AIDMA、AISAS</td>
+<td>用户注意力→兴趣→欲望→记忆→行动</td>
+</tr>
+<tr>
+<td><strong>产品</strong></td>
+<td>用户体验五要素、MVP</td>
+<td>从战略层到表现层的逐层设计</td>
+</tr>
+<tr>
+<td><strong>增长</strong></td>
+<td>AARRR 海盗模型</td>
+<td>获取→激活→留存→收入→推荐</td>
+</tr>
+<tr>
+<td><strong>行为设计</strong></td>
+<td>Fogg 模型</td>
+<td>行为 = 动机 * 能力 * 触发</td>
+</tr>
+<tr>
+<td><strong>数据分析</strong></td>
+<td>OSM 模型、UJM 模型</td>
+<td>目标→策略→度量、用户旅程映射</td>
+</tr>
+</tbody></table>
+<p>这部分没有统一的框架——因为执行层的工作太多样化了。关键不是记住所有模型，而是知道<strong>你当前的工作处于三重视角的哪一层，应该用什么粒度的工具</strong>。</p>
+<h3>5.3 案例：用 AARRR 模型拆解在线教育的用户增长</h3>
+<p>回到在线教育的案例。中层把&quot;销售获客&quot;拆成了 SOP，基层的增长运营专员拿到的任务是&quot;提升试听到付费的转化率&quot;。他用 <strong>AARRR 海盗模型</strong>来分析整个用户漏斗：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>在线教育的落地</th>
+<th>关键指标</th>
+<th>优化动作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Acquisition（获取）</strong></td>
+<td>抖音信息流广告 → 落地页</td>
+<td>点击率、落地页访问量</td>
+<td>优化广告素材和定向人群</td>
+</tr>
+<tr>
+<td><strong>Activation（激活）</strong></td>
+<td>落地页注册 → 试听课</td>
+<td>注册转化率、试听完成率</td>
+<td>优化落地页文案、缩短注册流程</td>
+</tr>
+<tr>
+<td><strong>Retention（留存）</strong></td>
+<td>试听后持续学习</td>
+<td>7 日回访率</td>
+<td>社群运营、学习提醒推送</td>
+</tr>
+<tr>
+<td><strong>Revenue（收入）</strong></td>
+<td>试听 → 付费正价课</td>
+<td>付费转化率、客单价</td>
+<td>限时优惠、班主任 1v1 跟进</td>
+</tr>
+<tr>
+<td><strong>Referral（推荐）</strong></td>
+<td>老学员推荐新学员</td>
+<td>推荐率、裂变系数</td>
+<td>推荐返现、拼团优惠</td>
+</tr>
+</tbody></table>
+<p>通过这个模型，运营专员可以精确定位漏斗中的瓶颈——如果&quot;激活→留存&quot;环节流失严重，说明试听课内容或社群运营有问题；如果&quot;留存→收入&quot;环节卡住了，说明付费转化策略需要优化。</p>
+<p>注意三层是怎么衔接的：<strong>高层在画布上写&quot;需要销售获客能力&quot;→ 中层把它拆成获客 SOP → 基层用 AARRR 分析 SOP 中每一步的转化效率</strong>。三重视角不是割裂的，而是同一条链路的不同放大倍数。</p>
+<hr>
+<h2>六、三重视角的全景关系</h2>
+<h3>6.1 自上而下分解</h3>
+<p>三层视角之间是逐层细化的关系：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>输入</th>
+<th>产出</th>
+<th>向下传递</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>高层：商业模式</strong></td>
+<td>市场机会、资源禀赋</td>
+<td>商业模式画布（9 个模块）</td>
+<td>关键业务分配给中层</td>
+</tr>
+<tr>
+<td><strong>中层：业务模型</strong></td>
+<td>高层的关键业务任务</td>
+<td>SOP、业务流程、团队组织</td>
+<td>具体任务分配给基层</td>
+</tr>
+<tr>
+<td><strong>基层：执行策略</strong></td>
+<td>中层的具体任务</td>
+<td>执行成果（文案、投放、产品）</td>
+<td>成果数据反馈给上层</td>
+</tr>
+</tbody></table>
+<h3>6.2 自下而上反馈</h3>
+<p>分解只是一半，<strong>反馈回路</strong>才能让业务持续改进：</p>
+<table>
+<thead>
+<tr>
+<th>反馈方向</th>
+<th>数据内容</th>
+<th>驱动的决策</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>基层 → 中层</strong></td>
+<td>每个 SOP 步骤的执行数据（转化率、耗时、成本）</td>
+<td>中层优化 SOP——比如发现&quot;试听→付费&quot;转化率低，调整跟进策略</td>
+</tr>
+<tr>
+<td><strong>中层 → 高层</strong></td>
+<td>各关键业务的整体表现（获客成本、用户生命周期价值、毛利率）</td>
+<td>高层调整商业模式——比如发现&quot;渠道获客成本过高&quot;，决定加大自传播投入</td>
+</tr>
+<tr>
+<td><strong>高层 → 全局</strong></td>
+<td>市场反馈、竞争变化</td>
+<td>调整价值主张——比如发现&quot;职业技能培训&quot;赛道拥挤，转向&quot;企业内训&quot;方向</td>
+</tr>
+</tbody></table>
+<p><strong>案例</strong>：在线教育公司的运营专员发现抖音渠道的获客成本从 50 元涨到 120 元（基层数据）→ 运营总监判断抖音渠道 ROI 已经不划算，决定缩减抖音预算、加大分销和老带新的投入（中层决策）→ CEO 发现 To C 获客成本整体上升，决定开辟 To B 企业培训业务作为第二增长曲线（高层战略调整）。</p>
+<p>这就是&quot;自下而上反馈&quot;驱动&quot;自上而下决策&quot;的完整闭环。</p>
+<h3>6.3 三重视角的实际应用</h3>
+<p>理解了三重视角框架，在工作中有几个直接的应用场景：</p>
+<p><strong>制定指标体系</strong>。了解了商业模式，指标体系就不容易跑偏。产供销模式的核心指标是&quot;收入 = 销量 * 单价&quot;，流量广告模式的核心指标是&quot;收入 = 广告流量 * 转化率 * 单次点击价格&quot;——指标从商业模式自然推导出来。</p>
+<p><strong>提升汇报能力</strong>。向高层汇报时，如果只念数据（&quot;本月收入 300 万，环比增长 10%&quot;），高层 get 不到信息。但如果从商业模式画布的视角切入——&quot;客户细分：新价格策略导致低购买力用户流失&quot;、&quot;关键业务：课程供给节奏滞后于需求增长&quot;、&quot;渠道通路：分销渠道试点效果超预期&quot;——高层立刻能理解你的洞察在说什么。</p>
+<p><strong>评估职业机会</strong>。商业模式是一家公司能否活得好的决定性因素。诺基亚 CEO 曾说&quot;我们没有做错什么，但是我们输了&quot;——在落伍的商业模式下，再好的产品也改变不了结局。评估一家公司的商业模式，可以帮你做出更好的职业选择。</p>
+<p><strong>个人价值规划</strong>。把自己看作一家公司，用商业模式画布分析：你的核心资源是什么（技能、经验）、价值主张是什么（能为雇主解决什么问题）、目标客户是谁（目标岗位和行业）、渠道通路是什么（求职渠道和人脉）。</p>
+<h3>6.4 一个实用的自检</h3>
+<p>当你不确定自己&quot;懂不懂业务&quot;时，先搞清楚别人问的是哪一层——</p>
+<ul>
+<li>如果问的是&quot;你们公司怎么赚钱&quot;→ 考的是商业模式（高层视角）</li>
+<li>如果问的是&quot;你们部门的核心业务流程&quot;→ 考的是业务模型（中层视角）</li>
+<li>如果问的是&quot;你这个岗位日常怎么做&quot;→ 考的是执行策略（基层视角）</li>
+</ul>
+<p>知道问题在哪一层，就能用对应层级的框架去回答。</p>
+<hr>
+<h2>总结</h2>
+<p>&quot;业务&quot;这个概念一直含糊不清，但有了三重视角的框架后就清晰了：</p>
 <ol>
-<li>明确分销渠道的目标和范围。</li>
-<li>寻找合适的分销渠道伙伴。</li>
-<li>确定分销合作方式和细则。</li>
-<li>提供产品及相关资料。</li>
-<li>培训分销渠道伙伴。</li>
-<li>跟进分销渠道伙伴的销售情况。</li>
-<li>分成结算和售后服务。</li>
-<li>评估分销渠道伙伴的表现。</li>
+<li><strong>商业模式</strong>是战略——用商业模式画布的 9 个模块搞清楚&quot;怎么赚钱&quot;</li>
+<li><strong>业务模型</strong>是战术——用 SOP 把关键业务拆解为可执行的流程</li>
+<li><strong>执行策略</strong>是执行——用细分领域的方法论模型把具体任务做好</li>
 </ol>
-<h3>3、交付</h3>
-<p>交付是指销售之后，如何把产品交给用户。比如电商下单后，需要通过快递公司快递包裹给用户。销售不是购买力促恒的结束，交付才是一个购买流程的完结。</p>
-<p>知识付费产品的<strong>交付SOP</strong>大致如下：</p>
-<ol>
-<li>确认用户的支付信息。</li>
-<li>验证用户的身份信息。</li>
-<li>生成课程访问链接。</li>
-<li>提供课程资料及学习指导。</li>
-<li>确认课程交付。</li>
-<li>处理退款及退课请求。</li>
-<li>记录用户反馈和课程效果。</li>
-</ol>
-<h3>4、其他辅助业务</h3>
-<p>生产、销售、交付是最为基础并且关键的业务，没有这些业务的支持，企业将无法正常运转。这些流程的顺畅与否直接影响到企业的经济效益和发展。</p>
-<p>除了以上业务，还有其他一些业务是<strong>以上业务的辅助，分别是基础业务和效率提升业务。</strong></p>
-<p>基础业务是支撑整个流程的基础，如人力资源、财务、行政等。没有这些基础业务，企业的其他业务根本无法开展。</p>
-<p>另外，为了提高流程的效率，企业需要采取一些措施，如平台建设、数据分析等。比如建设中台，它可以为企业提供更高效的信息共享平台，提升其他业务的工作效率，提高企业的整体竞争力。</p>
-<p>因此，企业必须注意对基础流程和基础业务的管理和提升，才能更好地发展。</p>
-<h2>04 小结</h2>
-<p><strong>商业模式画布是商业运营的战略，而关键业务则是商业运营的战术。</strong></p>
-<p>许多从事职场工作的人，往往被琐碎的日常工作所束缚，只关注于自己所做的事情，而缺乏对整个业务的全貌认知。虽然他们知道产品的意义、运营的作用以及技术的功能，但是缺乏将这些知识融合起来的能力。</p>
-<p>通过最近一些业务知识的学习，我们可以了解到企业的战略和战术，从而有助于我们<strong>制定指标体系、寻找业务机会以及提高工作价值</strong>。</p>
+<p>三者是一脉相承的：商业模式决定了需要做哪些关键业务，业务模型把关键业务拆成流程，执行策略把流程中的每一步做到位。同时，执行数据自下而上反馈，驱动中层优化流程、高层调整战略——形成完整的闭环。</p>
+<p><strong>懂业务不是一个笼统的能力，而是在对应的层级上有对应的认知深度。</strong></p>
 18:T74e0,<h2>秒杀的本质问题</h2>
 <p>秒杀场景的技术特征可以用一句话概括：<strong>在一个极短的时间窗口内，大量请求争抢有限资源并完成交易。</strong></p>
 <p>这个特征决定了秒杀系统与常规业务系统的本质差异——常规系统面对的是持续稳定的流量，容量规划基于均值和百分位；而秒杀面对的是一条近乎垂直的脉冲曲线，峰值可达日常流量的数十倍甚至百倍，且持续时间往往不超过数秒。</p>
@@ -1211,10 +2571,10 @@ WHERE id = #{itemId}
 <p><strong>原则三：隔离是最有效的保护。</strong> 无论是系统隔离、数据隔离还是部署隔离，目的都是限制故障的爆炸半径。在一个足够大的分布式系统中，故障不是&quot;可能发生&quot;，而是&quot;一定发生&quot;。</p>
 <p><strong>原则四：可用性是一个组织问题，不仅是技术问题。</strong> 稳定性在平时不紧急、出了问题就致命。如果没有组织层面的保障——将稳定性指标纳入绩效、建立专项稳定性团队、定期进行攻防演练——再好的技术方案也会在业务压力下被逐步侵蚀。</p>
 <p>一个秒杀系统的设计，可以根据不同级别的流量，由简单到复杂构建出不同层次的架构。没有一种方案适用于所有场景，选择何种架构取决于业务规模、团队能力和成本约束。但无论规模大小，以上设计原则和思考维度是通用的——它们不仅适用于秒杀，也适用于任何需要应对极端工况的分布式系统。</p>
-13:["$","$d",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L15",null,{"globalNav":{"prev":{"slug":"engineering/domain/解析三户模型及建立账户模型","title":"解析三户模型及建立账户模型","description":"账户体系是支付系统的基础，它的设计直接影响整个系统的特性。这里探讨如何针对电子商务系统的账户体系设计。我们从一些基本概念开始入手，了解怎么建模。三户模型最早是在增强型电信运营图（Enhanced Telecom Operations Map，eTOM）中提出，在电信行业中得到广泛使用。","pubDate":"2024-03-03","tags":["业务架构","三户模型","账户体系"],"heroImage":"$undefined","content":"$16"},"next":{"slug":"engineering/domain/业务三重视角——业务模型","title":"业务三重视角——业务模型","description":"日常我们需要做一些事情来保证商业模式的正常运转，而关键业务就是商业模式中的一个重要模块。今天这篇文章将讨论业务模型，帮助你更好了解到企业的战略和战术，从而有助于制定指标体系、寻找业务机会以及提高工作价值。...","pubDate":"2024-03-05","tags":["业务架构","业务建模","领域分析"],"heroImage":"$undefined","content":"$17"}},"tagNav":{"业务架构":{"prev":"$13:props:children:props:globalNav:prev","next":"$13:props:children:props:globalNav:next"},"平台化":{"prev":null,"next":null},"架构设计":{"prev":null,"next":{"slug":"engineering/architecture/一个秒杀系统的设计思考","title":"一个秒杀系统的设计思考","description":"秒杀系统的核心挑战在于瞬时流量洪峰下的高性能、强一致与高可用三角平衡。从动静分离与多级缓存的读优化，到库存扣减的一致性保障，再到全生命周期的可用性工程——每一层设计决策背后，都是对系统容量、数据正确性与业务连续性的深度权衡。","pubDate":"2024-03-14","tags":["秒杀系统","高并发","架构设计","分布式系统"],"heroImage":"$undefined","content":"$18"}},"领域建模":{"prev":null,"next":null},"企业架构":{"prev":null,"next":null}}}]}]
+13:["$","$d",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L15",null,{"globalNav":{"prev":{"slug":"engineering/domain/用户体系建模：三户模型与三层身份模型","title":"用户体系建模：三户模型与三层身份模型","description":"用户系统是所有业务系统的基础。本文从电信行业的三户模型出发，系统拆解客户、用户、账户三个核心实体的建模方法，结合三层身份模型解决认证与社交身份问题，给出不同行业的适配方案和核心数据模型设计。","pubDate":"2024-03-03","tags":["业务架构","用户系统","三户模型","账户体系","领域建模"],"heroImage":"$undefined","content":"$16"},"next":{"slug":"engineering/domain/业务的三重视角：从商业模式到执行策略","title":"业务的三重视角：从商业模式到执行策略","description":"什么叫'懂业务'？不同层级的人看到的业务截然不同——高层看商业模式，中层看业务模型，基层看执行策略。本文以在线教育行业为贯穿案例，系统拆解这三重视角的核心框架，用商业模式画布、业务 SOP、执行方法论构建从战略到战术的完整认知体系。","pubDate":"2024-03-07","tags":["业务架构","商业模式","业务建模","方法论"],"heroImage":"$undefined","content":"$17"}},"tagNav":{"业务架构":{"prev":"$13:props:children:props:globalNav:prev","next":"$13:props:children:props:globalNav:next"},"平台化":{"prev":null,"next":null},"架构设计":{"prev":null,"next":{"slug":"engineering/architecture/一个秒杀系统的设计思考","title":"一个秒杀系统的设计思考","description":"秒杀系统的核心挑战在于瞬时流量洪峰下的高性能、强一致与高可用三角平衡。从动静分离与多级缓存的读优化，到库存扣减的一致性保障，再到全生命周期的可用性工程——每一层设计决策背后，都是对系统容量、数据正确性与业务连续性的深度权衡。","pubDate":"2024-03-14","tags":["秒杀系统","高并发","架构设计","分布式系统"],"heroImage":"$undefined","content":"$18"}},"领域建模":{"prev":"$13:props:children:props:globalNav:prev","next":null},"企业架构":{"prev":null,"next":null}}}]}]
 14:["$","$L19",null,{}]
 b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
 1a:I[622,[],"IconMark"]
-9:{"metadata":[["$","title","0",{"children":"关于业务平台架构的思考 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"从业务的本质出发，探讨业务平台架构的定位、能力建模方法、域的划分逻辑，以及如何基于企业架构思维构建可持续演进的业务架构体系。"}],["$","meta","2",{"property":"og:title","content":"关于业务平台架构的思考"}],["$","meta","3",{"property":"og:description","content":"从业务的本质出发，探讨业务平台架构的定位、能力建模方法、域的划分逻辑，以及如何基于企业架构思维构建可持续演进的业务架构体系。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-03-04"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"关于业务平台架构的思考"}],["$","meta","9",{"name":"twitter:description","content":"从业务的本质出发，探讨业务平台架构的定位、能力建模方法、域的划分逻辑，以及如何基于企业架构思维构建可持续演进的业务架构体系。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}],["$","$L1a","14",{}]],"error":null,"digest":"$undefined"}
+9:{"metadata":[["$","title","0",{"children":"关于业务平台架构的思考 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"从业务的本质出发，探讨业务平台架构的定位、能力建模方法、域的划分逻辑，以及如何基于企业架构思维构建可持续演进的业务架构体系。以电商交易平台为贯穿案例，结合常见反模式，给出可落地的思考框架。"}],["$","meta","2",{"property":"og:title","content":"关于业务平台架构的思考"}],["$","meta","3",{"property":"og:description","content":"从业务的本质出发，探讨业务平台架构的定位、能力建模方法、域的划分逻辑，以及如何基于企业架构思维构建可持续演进的业务架构体系。以电商交易平台为贯穿案例，结合常见反模式，给出可落地的思考框架。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-03-04"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"关于业务平台架构的思考"}],["$","meta","9",{"name":"twitter:description","content":"从业务的本质出发，探讨业务平台架构的定位、能力建模方法、域的划分逻辑，以及如何基于企业架构思维构建可持续演进的业务架构体系。以电商交易平台为贯穿案例，结合常见反模式，给出可落地的思考框架。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}],["$","$L1a","14",{}]],"error":null,"digest":"$undefined"}
 e:"$9:metadata"
