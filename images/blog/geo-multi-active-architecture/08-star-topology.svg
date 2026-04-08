@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1F2937">
+    星状同步架构
+  </text>
+
+  <!-- Center data center (中心机房) -->
+  <rect x="250" y="180" width="300" height="120" rx="8" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="400" y="210" text-anchor="middle" font-size="15" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1D4ED8">
+    中心机房
+  </text>
+  <rect x="270" y="225" width="260" height="60" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="400" y="250" text-anchor="middle" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1E40AF">
+    Master 数据库
+  </text>
+  <text x="400" y="273" text-anchor="middle" font-size="11" font-family="'SF Mono', 'Menlo', monospace" fill="#3B82F6">
+    Single Source of Truth
+  </text>
+
+  <!-- Unit A (单元机房 A) - Top -->
+  <rect x="75" y="80" width="220" height="100" rx="6" fill="#F3E8FF" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="185" y="110" text-anchor="middle" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6D28D9">
+    单元机房 A
+  </text>
+  <rect x="95" y="125" width="180" height="40" rx="6" fill="#E9D5FF" stroke="#C084FC" stroke-width="1.5"/>
+  <text x="185" y="151" text-anchor="middle" font-size="11" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B21A8">
+    从库 (Replica)
+  </text>
+
+  <!-- Unit B (单元机房 B) - Bottom Left -->
+  <rect x="75" y="340" width="220" height="100" rx="6" fill="#F3E8FF" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="185" y="370" text-anchor="middle" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6D28D9">
+    单元机房 B
+  </text>
+  <rect x="95" y="385" width="180" height="40" rx="6" fill="#E9D5FF" stroke="#C084FC" stroke-width="1.5"/>
+  <text x="185" y="411" text-anchor="middle" font-size="11" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B21A8">
+    从库 (Replica)
+  </text>
+
+  <!-- Unit C (单元机房 C) - Bottom Right -->
+  <rect x="505" y="340" width="220" height="100" rx="6" fill="#F3E8FF" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="615" y="370" text-anchor="middle" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6D28D9">
+    单元机房 C
+  </text>
+  <rect x="525" y="385" width="180" height="40" rx="6" fill="#E9D5FF" stroke="#C084FC" stroke-width="1.5"/>
+  <text x="615" y="411" text-anchor="middle" font-size="11" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B21A8">
+    从库 (Replica)
+  </text>
+
+  <!-- Sync line from center to A -->
+  <line x1="320" y1="220" x2="220" y2="145" stroke="#059669" stroke-width="1.5"/>
+  <polygon points="320,220 315,210 324,213" fill="#059669"/>
+
+  <!-- Sync label A -->
+  <text x="260" y="170" font-size="11" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#047857">
+    数据同步
+  </text>
+
+  <!-- Sync line from center to B -->
+  <line x1="300" y1="300" x2="220" y2="390" stroke="#059669" stroke-width="1.5"/>
+  <polygon points="300,300 305,310 296,307" fill="#059669"/>
+
+  <!-- Sync label B -->
+  <text x="245" y="355" font-size="11" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#047857">
+    数据同步
+  </text>
+
+  <!-- Sync line from center to C -->
+  <line x1="500" y1="300" x2="580" y2="390" stroke="#059669" stroke-width="1.5"/>
+  <polygon points="500,300 495,310 504,307" fill="#059669"/>
+
+  <!-- Sync label C -->
+  <text x="520" y="355" font-size="11" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#047857">
+    数据同步
+  </text>
+
+  <!-- Important note -->
+  <rect x="75" y="470" width="650" height="20" rx="4" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="400" y="483" text-anchor="middle" font-size="11" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#92400E">
+    ★ 单元间无直接连接，所有数据同步必须通过中心机房
+  </text>
+</svg>

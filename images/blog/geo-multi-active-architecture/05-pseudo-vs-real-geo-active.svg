@@ -1,0 +1,163 @@
+<svg viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="550" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="450" y="25" font-size="18" font-weight="bold" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1F2937">
+    伪异地双活 vs 真正异地双活
+  </text>
+
+  <!-- SEPARATOR LINE (horizontal dashed) -->
+  <line x1="50" y1="290" x2="850" y2="290" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- ========== TOP HALF: Pseudo Geo-Active ========== -->
+
+  <text x="450" y="60" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#DC2637">
+    伪异地双活（问题：跨机房访问延迟高）
+  </text>
+
+  <!-- LEFT: Beijing Datacenter -->
+  <rect x="80" y="90" width="280" height="160" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+  <text x="100" y="115" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#0369A1">
+    北京 A 机房
+  </text>
+
+  <!-- Beijing App -->
+  <rect x="100" y="130" width="240" height="45" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="220" y="157" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1E40AF">
+    应用服务
+  </text>
+
+  <!-- Arrow down -->
+  <line x1="220" y1="175" x2="220" y2="195" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="220,195 215,185 225,185" fill="#6B7280"/>
+
+  <!-- Beijing Master DB -->
+  <rect x="100" y="195" width="240" height="45" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="220" y="222" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#991B1B">
+    主库 (Master)
+  </text>
+
+  <!-- RIGHT: Shanghai Datacenter -->
+  <rect x="440" y="90" width="280" height="160" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="2"/>
+  <text x="460" y="115" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#166534">
+    上海 B 机房
+  </text>
+
+  <!-- Shanghai App -->
+  <rect x="460" y="130" width="240" height="45" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="580" y="157" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#15803D">
+    应用服务
+  </text>
+
+  <!-- Arrow down -->
+  <line x1="580" y1="175" x2="580" y2="195" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="580,195 575,185 585,185" fill="#6B7280"/>
+
+  <!-- Shanghai Slave DB -->
+  <rect x="460" y="195" width="240" height="45" rx="6" fill="#FCE7F3" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="580" y="222" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#BE185D">
+    从库 (Slave)
+  </text>
+
+  <!-- Horizontal sync line between datacenters -->
+  <line x1="320" y1="217" x2="440" y2="217" stroke="#8B5CF6" stroke-width="2"/>
+  <polygon points="440,217 428,212 428,222" fill="#8B5CF6"/>
+
+  <!-- Cross-city link label -->
+  <text x="380" y="205" font-size="10" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#7C3AED">
+    跨城专线 (30ms延迟)
+  </text>
+
+  <!-- Problem: Remote access cross-city -->
+  <path d="M 580 157 Q 450 120 220 217" stroke="#EF4444" stroke-width="2.5" fill="none" stroke-dasharray="4,4"/>
+  <polygon points="220,217 228,209 225,220" fill="#EF4444"/>
+
+  <!-- WARNING ICON: Red X -->
+  <g>
+    <circle cx="780" cy="135" r="25" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+    <line x1="765" y1="120" x2="795" y2="150" stroke="#DC2626" stroke-width="3"/>
+    <line x1="795" y1="120" x2="765" y2="150" stroke="#DC2626" stroke-width="3"/>
+  </g>
+
+  <text x="780" y="240" font-size="10" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#DC2626" font-weight="600">
+    跨机房访问延迟高
+  </text>
+
+  <!-- ========== BOTTOM HALF: Real Geo-Active ========== -->
+
+  <text x="450" y="330" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#16A34A">
+    真正异地双活（机房内闭环）
+  </text>
+
+  <!-- LEFT: Beijing Datacenter -->
+  <rect x="80" y="360" width="280" height="160" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+  <text x="100" y="385" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#0369A1">
+    北京 A 机房
+  </text>
+
+  <!-- Beijing App -->
+  <rect x="100" y="400" width="240" height="45" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="220" y="427" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1E40AF">
+    应用服务
+  </text>
+
+  <!-- Green arrow: local access (solid) -->
+  <line x1="220" y1="445" x2="220" y2="465" stroke="#10B981" stroke-width="2"/>
+  <polygon points="220,465 215,455 225,455" fill="#10B981"/>
+
+  <!-- Beijing Master DB -->
+  <rect x="100" y="465" width="240" height="45" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="220" y="492" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#991B1B">
+    主库 (Master)
+  </text>
+
+  <!-- RIGHT: Shanghai Datacenter -->
+  <rect x="440" y="360" width="280" height="160" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="2"/>
+  <text x="460" y="385" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#166534">
+    上海 B 机房
+  </text>
+
+  <!-- Shanghai App -->
+  <rect x="460" y="400" width="240" height="45" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="580" y="427" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#15803D">
+    应用服务
+  </text>
+
+  <!-- Green arrow: local access (solid) -->
+  <line x1="580" y1="445" x2="580" y2="465" stroke="#10B981" stroke-width="2"/>
+  <polygon points="580,465 575,455 585,455" fill="#10B981"/>
+
+  <!-- Shanghai Master DB -->
+  <rect x="460" y="465" width="240" height="45" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="580" y="492" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#15803D">
+    主库 (Master)
+  </text>
+
+  <!-- Data sync middleware line between datacenters -->
+  <line x1="320" y1="487" x2="440" y2="487" stroke="#8B5CF6" stroke-width="2"/>
+  <polygon points="440,487 428,482 428,492" fill="#8B5CF6"/>
+
+  <!-- Data sync middleware label -->
+  <text x="380" y="475" font-size="10" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#7C3AED">
+    数据同步中间件
+  </text>
+
+  <!-- SUCCESS ICON: Green checkmark -->
+  <g>
+    <circle cx="780" cy="405" r="25" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+    <path d="M 770 410 L 775 418 L 795 398" stroke="#16A34A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <text x="780" y="510" font-size="10" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#16A34A" font-weight="600">
+    机房内闭环
+  </text>
+
+  <!-- Local access indicators -->
+  <text x="220" y="340" font-size="9" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#059669">
+    ● 本地访问
+  </text>
+  <text x="580" y="340" font-size="9" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#059669">
+    ● 本地访问
+  </text>
+</svg>

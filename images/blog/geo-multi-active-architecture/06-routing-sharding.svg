@@ -1,0 +1,98 @@
+<svg viewBox="0 0 850 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="425" y="25" text-anchor="middle" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1F2937">
+    路由分片策略
+  </text>
+
+  <!-- 路由层 -->
+  <rect x="300" y="50" width="250" height="50" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="425" y="81" text-anchor="middle" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1E40AF">
+    路由层
+  </text>
+
+  <!-- Left arrow from routing -->
+  <line x1="350" y1="100" x2="250" y2="140" stroke="#6B7280" stroke-width="1.5"/>
+
+  <!-- Right arrow from routing -->
+  <line x1="500" y1="100" x2="600" y2="140" stroke="#6B7280" stroke-width="1.5"/>
+
+  <!-- Left strategy label -->
+  <text x="270" y="125" font-size="12" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#4B5563">
+    哈希分片
+  </text>
+  <text x="230" y="145" font-size="11" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B7280">
+    用户 0~700
+  </text>
+
+  <!-- Right strategy label -->
+  <text x="600" y="125" font-size="12" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#4B5563">
+    地理分片
+  </text>
+  <text x="570" y="145" font-size="11" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B7280">
+    上海/浙江/江苏
+  </text>
+
+  <!-- 北京机房 (Left) -->
+  <rect x="100" y="160" width="300" height="180" rx="6" fill="#F3E8FF" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="250" y="185" text-anchor="middle" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6D28D9">
+    北京机房
+  </text>
+
+  <!-- 北京 - App -->
+  <rect x="130" y="205" width="240" height="45" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="250" y="235" text-anchor="middle" font-size="13" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1E40AF">
+    应用服务
+  </text>
+
+  <!-- 北京 - DB -->
+  <rect x="130" y="270" width="240" height="60" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="250" y="295" text-anchor="middle" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#7F1D1D">
+    数据库 (Master)
+  </text>
+  <text x="250" y="318" text-anchor="middle" font-size="11" font-family="'SF Mono', 'Menlo', monospace" fill="#991B1B">
+    Master-1
+  </text>
+
+  <!-- 上海机房 (Right) -->
+  <rect x="450" y="160" width="300" height="180" rx="6" fill="#F3E8FF" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="600" y="185" text-anchor="middle" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6D28D9">
+    上海机房
+  </text>
+
+  <!-- 上海 - App -->
+  <rect x="480" y="205" width="240" height="45" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="600" y="235" text-anchor="middle" font-size="13" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1E40AF">
+    应用服务
+  </text>
+
+  <!-- 上海 - DB -->
+  <rect x="480" y="270" width="240" height="60" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="600" y="295" text-anchor="middle" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#7F1D1D">
+    数据库 (Master)
+  </text>
+  <text x="600" y="318" text-anchor="middle" font-size="11" font-family="'SF Mono', 'Menlo', monospace" fill="#991B1B">
+    Master-2
+  </text>
+
+  <!-- Bidirectional sync arrow -->
+  <line x1="400" y1="395" x2="450" y2="395" stroke="#059669" stroke-width="1.5"/>
+
+  <!-- Left arrow head -->
+  <polygon points="400,395 410,390 410,400" fill="#059669"/>
+
+  <!-- Right arrow head -->
+  <polygon points="450,395 440,390 440,400" fill="#059669"/>
+
+  <!-- Sync label -->
+  <text x="425" y="420" text-anchor="middle" font-size="12" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#047857">
+    数据双向同步
+  </text>
+
+  <!-- Bottom annotations -->
+  <text x="250" y="460" text-anchor="middle" font-size="11" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B7280">
+    每个机房都是完整主库
+  </text>
+  <text x="600" y="460" text-anchor="middle" font-size="11" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B7280">
+    流量按分片路由
+  </text>
+</svg>

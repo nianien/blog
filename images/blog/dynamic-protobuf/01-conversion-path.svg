@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="800" height="100" fill="#FAFAFA" rx="8"/>
+  <rect x="20" y="30" width="130" height="40" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="85" y="54" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">.proto file</text>
+  <line x1="150" y1="50" x2="190" y2="50" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="198,50 190,45 190,55" fill="#94A3B8"/>
+  <rect x="200" y="30" width="180" height="40" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="290" y="54" text-anchor="middle" font-size="12" font-weight="bold" fill="#1E40AF">FileDescriptorProto</text>
+  <text x="290" y="84" text-anchor="middle" font-size="10" fill="#6B7280">(serializable to JSON)</text>
+  <line x1="380" y1="50" x2="420" y2="50" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="428,50 420,45 420,55" fill="#94A3B8"/>
+  <rect x="430" y="30" width="150" height="40" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="505" y="54" text-anchor="middle" font-size="12" font-weight="bold" fill="#065F46">FileDescriptor</text>
+  <line x1="580" y1="50" x2="620" y2="50" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="628,50 620,45 620,55" fill="#94A3B8"/>
+  <rect x="630" y="30" width="150" height="40" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="705" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="#5B21B6">dynamicpb</text>
+  <text x="705" y="63" text-anchor="middle" font-size="12" font-weight="bold" fill="#5B21B6">.Message</text>
+</svg>

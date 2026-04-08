@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="400" y="25" font-size="18" font-weight="bold" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1F2937">
+    同城灾备（热备）
+  </text>
+
+  <!-- LEFT DATACENTER: A -->
+  <rect x="50" y="60" width="300" height="380" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+  <text x="75" y="85" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#0369A1">
+    A 机房（主）
+  </text>
+
+  <!-- Traffic entry A -->
+  <line x1="200" y1="30" x2="200" y2="110" stroke="#059669" stroke-width="2"/>
+  <polygon points="200,110 195,100 205,100" fill="#059669"/>
+
+  <!-- A: Access Layer -->
+  <rect x="80" y="110" width="240" height="50" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="200" y="140" font-size="13" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#047857">
+    接入层
+  </text>
+
+  <!-- Arrow -->
+  <line x1="200" y1="160" x2="200" y2="185" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="200,185 195,175 205,175" fill="#6B7280"/>
+
+  <!-- A: App -->
+  <rect x="80" y="185" width="240" height="50" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="200" y="215" font-size="13" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1E40AF">
+    业务应用
+  </text>
+
+  <!-- Arrow -->
+  <line x1="200" y1="235" x2="200" y2="260" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="200,260 195,250 205,250" fill="#6B7280"/>
+
+  <!-- A: Master DB -->
+  <rect x="80" y="260" width="240" height="60" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="200" y="295" font-size="13" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#991B1B">
+    主库 (Master)
+  </text>
+
+  <!-- RIGHT DATACENTER: B -->
+  <rect x="450" y="60" width="300" height="380" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+  <text x="475" y="85" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B7280">
+    B 机房（备）
+  </text>
+
+  <!-- Dashed arrow for failover -->
+  <line x1="600" y1="30" x2="600" y2="110" stroke="#DC2626" stroke-width="2" stroke-dasharray="5,5"/>
+  <polygon points="600,110 595,100 605,100" fill="#DC2626"/>
+  <text x="620" y="70" font-size="11" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#991B1B">
+    故障时切换
+  </text>
+
+  <!-- B: Access Layer (lighter/standby) -->
+  <rect x="480" y="110" width="240" height="50" rx="6" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="600" y="140" font-size="13" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B7280">
+    接入层
+  </text>
+
+  <!-- Arrow -->
+  <line x1="600" y1="160" x2="600" y2="185" stroke="#9CA3AF" stroke-width="1.5"/>
+  <polygon points="600,185 595,175 605,175" fill="#9CA3AF"/>
+
+  <!-- B: App (lighter/standby) -->
+  <rect x="480" y="185" width="240" height="50" rx="6" fill="#F3E8FF" stroke="#D8B4FE" stroke-width="1.5"/>
+  <text x="600" y="215" font-size="13" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#9333EA">
+    业务应用
+  </text>
+
+  <!-- Arrow -->
+  <line x1="600" y1="235" x2="600" y2="260" stroke="#9CA3AF" stroke-width="1.5"/>
+  <polygon points="600,260 595,250 605,250" fill="#9CA3AF"/>
+
+  <!-- B: Slave DB (lighter/standby) -->
+  <rect x="480" y="260" width="240" height="60" rx="6" fill="#FCE7F3" stroke="#EC4899" stroke-width="1.5"/>
+  <text x="600" y="295" font-size="13" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#BE185D">
+    从库 (Slave)
+  </text>
+
+  <!-- Data sync line from A Master to B Slave -->
+  <line x1="320" y1="290" x2="480" y2="290" stroke="#8B5CF6" stroke-width="2"/>
+  <polygon points="480,290 468,285 468,295" fill="#8B5CF6"/>
+
+  <!-- Sync label -->
+  <text x="400" y="275" font-size="11" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#7C3AED">
+    数据同步
+  </text>
+
+  <!-- Same-city link label -->
+  <text x="400" y="440" font-size="11" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6366F1">
+    ─────── 同城专线 ───────
+  </text>
+</svg>

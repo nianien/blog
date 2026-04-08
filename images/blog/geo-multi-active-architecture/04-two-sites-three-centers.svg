@@ -1,0 +1,142 @@
+<svg viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="450" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="450" y="25" font-size="18" font-weight="bold" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1F2937">
+    两地三中心
+  </text>
+
+  <!-- LEFT GROUP: BEIJING (两个机房 - 同城双活) -->
+  <text x="180" y="55" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1F2937">
+    北京（同城双活）
+  </text>
+
+  <!-- A DATACENTER -->
+  <rect x="30" y="80" width="240" height="330" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+  <text x="50" y="105" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#0369A1">
+    A 机房
+  </text>
+
+  <!-- Traffic -->
+  <line x1="150" y1="50" x2="150" y2="110" stroke="#059669" stroke-width="2"/>
+  <polygon points="150,110 145,100 155,100" fill="#059669"/>
+
+  <!-- A: Access Layer -->
+  <rect x="50" y="110" width="200" height="40" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="150" y="135" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#047857">
+    接入层
+  </text>
+
+  <!-- Arrow -->
+  <line x1="150" y1="150" x2="150" y2="170" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="150,170 145,160 155,160" fill="#6B7280"/>
+
+  <!-- A: App -->
+  <rect x="50" y="170" width="200" height="40" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="150" y="195" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1E40AF">
+    业务应用
+  </text>
+
+  <!-- Arrow -->
+  <line x1="150" y1="210" x2="150" y2="230" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="150,230 145,220 155,220" fill="#6B7280"/>
+
+  <!-- A: Master DB -->
+  <rect x="50" y="230" width="200" height="50" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="150" y="260" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#991B1B">
+    主库
+  </text>
+
+  <!-- B DATACENTER -->
+  <rect x="320" y="80" width="240" height="330" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="2"/>
+  <text x="340" y="105" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#166534">
+    B 机房
+  </text>
+
+  <!-- Traffic -->
+  <line x1="440" y1="50" x2="440" y2="110" stroke="#059669" stroke-width="2"/>
+  <polygon points="440,110 435,100 445,100" fill="#059669"/>
+
+  <!-- B: Access Layer -->
+  <rect x="340" y="110" width="200" height="40" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="440" y="135" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#047857">
+    接入层
+  </text>
+
+  <!-- Arrow -->
+  <line x1="440" y1="150" x2="440" y2="170" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="440,170 435,160 445,160" fill="#6B7280"/>
+
+  <!-- B: App -->
+  <rect x="340" y="170" width="200" height="40" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="440" y="195" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#15803D">
+    业务应用
+  </text>
+
+  <!-- Arrow -->
+  <line x1="440" y1="210" x2="440" y2="230" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="440,230 435,220 445,220" fill="#6B7280"/>
+
+  <!-- B: Slave DB -->
+  <rect x="340" y="230" width="200" height="50" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="440" y="260" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#15803D">
+    从库
+  </text>
+
+  <!-- Sync between A Master and B Slave -->
+  <line x1="250" y1="255" x2="340" y2="255" stroke="#8B5CF6" stroke-width="2"/>
+  <polygon points="340,255 328,250 328,260" fill="#8B5CF6"/>
+
+  <!-- Same-city link -->
+  <text x="295" y="240" font-size="10" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#7C3AED">
+    同城专线
+  </text>
+
+  <!-- RIGHT SIDE: SHANGHAI (灾备中心) -->
+  <text x="750" y="55" font-size="14" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1F2937">
+    上海（灾备）
+  </text>
+
+  <!-- C DATACENTER (Backup/Standby) -->
+  <rect x="650" y="80" width="240" height="330" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+  <text x="670" y="105" font-size="13" font-weight="600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B7280">
+    C 机房
+  </text>
+
+  <!-- C: Data Backup (light/inactive) -->
+  <rect x="670" y="140" width="200" height="200" rx="6" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.5"/>
+  <text x="770" y="230" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#6B7280">
+    数据备份
+  </text>
+  <text x="770" y="250" font-size="11" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#9CA3AF">
+    (冷备)
+  </text>
+
+  <!-- Cross-city sync line from A to C -->
+  <line x1="250" y1="180" x2="650" y2="180" stroke="#EF4444" stroke-width="2"/>
+  <polygon points="650,180 638,175 638,185" fill="#EF4444"/>
+
+  <!-- Cross-city sync line from B to C -->
+  <line x1="540" y1="200" x2="650" y2="200" stroke="#EF4444" stroke-width="2"/>
+  <polygon points="650,200 638,195 638,205" fill="#EF4444"/>
+
+  <!-- Cross-city link labels -->
+  <text x="450" y="170" font-size="10" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#DC2626">
+    跨城专线
+  </text>
+  <text x="595" y="190" font-size="10" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#DC2626">
+    数据灾备
+  </text>
+
+  <!-- Legend -->
+  <rect x="200" y="400" width="500" height="35" rx="4" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1"/>
+  <circle cx="215" cy="420" r="4" fill="#059669"/>
+  <text x="230" y="423" font-size="10" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#374151">
+    实时流量处理（AB机房）
+  </text>
+  <circle cx="430" cy="420" r="4" fill="#9CA3AF"/>
+  <text x="445" y="423" font-size="10" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#374151">
+    灾备冷备（C机房）
+  </text>
+</svg>
