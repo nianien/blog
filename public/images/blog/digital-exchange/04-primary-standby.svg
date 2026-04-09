@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Background -->
+  <rect width="680" height="400" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="340" y="32" text-anchor="middle" font-size="15" font-weight="600" fill="#1E293B">Primary-Standby Matching Engine</text>
+
+  <!-- Orders input -->
+  <rect x="30" y="80" width="100" height="40" rx="6" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="80" y="105" text-anchor="middle" font-size="11" font-weight="600" fill="#4338CA">Orders</text>
+
+  <!-- Arrow: Orders to Primary -->
+  <line x1="130" y1="100" x2="180" y2="100" stroke="#6366F1" stroke-width="1.5"/>
+  <polygon points="180,100 172,94 172,106" fill="#6366F1"/>
+
+  <!-- Primary Engine -->
+  <rect x="185" y="65" width="200" height="70" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="285" y="93" text-anchor="middle" font-size="13" font-weight="600" fill="#B45309">Primary Engine</text>
+  <text x="285" y="112" text-anchor="middle" font-size="10" fill="#D97706">Active, Single Thread</text>
+
+  <!-- Arrow: Primary to Events -->
+  <line x1="385" y1="100" x2="480" y2="100" stroke="#F59E0B" stroke-width="1.5"/>
+  <polygon points="480,100 472,94 472,106" fill="#F59E0B"/>
+
+  <!-- Events output -->
+  <rect x="490" y="80" width="100" height="40" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="540" y="105" text-anchor="middle" font-size="11" font-weight="600" fill="#15803D">Events</text>
+
+  <!-- Arrow: Primary down to Command Log -->
+  <line x1="285" y1="135" x2="285" y2="170" stroke="#6366F1" stroke-width="1.5"/>
+  <polygon points="285,170 279,162 291,162" fill="#6366F1"/>
+
+  <!-- "writes" label -->
+  <text x="300" y="157" font-size="10" fill="#64748B">writes</text>
+
+  <!-- Command Log -->
+  <rect x="185" y="175" width="200" height="45" rx="6" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="285" y="203" text-anchor="middle" font-size="12" font-weight="600" fill="#4338CA">Command Log</text>
+
+  <!-- Arrow: Command Log down to Standby -->
+  <line x1="285" y1="220" x2="285" y2="265" stroke="#6366F1" stroke-width="1.5"/>
+  <polygon points="285,265 279,257 291,257" fill="#6366F1"/>
+
+  <!-- "realtime sync" label -->
+  <text x="300" y="248" font-size="10" fill="#64748B">realtime sync</text>
+
+  <!-- Standby Engine -->
+  <rect x="185" y="270" width="200" height="70" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="285" y="298" text-anchor="middle" font-size="13" font-weight="600" fill="#1D4ED8">Standby Engine</text>
+  <text x="285" y="317" text-anchor="middle" font-size="10" fill="#3B82F6">Replays Log, Hot Standby</text>
+
+  <!-- Heartbeat indicator between Primary and Standby -->
+  <line x1="540" y1="135" x2="540" y2="270" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="515" y="195" font-size="10" fill="#64748B">Heartbeat</text>
+  <text x="515" y="210" font-size="10" fill="#64748B">Health Check</text>
+
+  <!-- Failover annotation -->
+  <rect x="440" y="280" width="200" height="50" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="540" y="301" text-anchor="middle" font-size="10" font-weight="600" fill="#DC2626">On Primary Failure:</text>
+  <text x="540" y="318" text-anchor="middle" font-size="10" fill="#DC2626">Standby promotes to Active</text>
+
+  <!-- Dashed arrow from failover box to Standby -->
+  <line x1="440" y1="305" x2="385" y2="305" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="385,305 393,299 393,311" fill="#EF4444"/>
+</svg>
