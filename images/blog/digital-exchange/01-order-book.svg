@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Background -->
+  <rect width="520" height="360" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="260" y="32" text-anchor="middle" font-size="15" font-weight="600" fill="#1E293B">Order Book</text>
+
+  <!-- Header -->
+  <text x="100" y="62" text-anchor="middle" font-size="12" font-weight="600" fill="#64748B">Price (USDT)</text>
+  <text x="280" y="62" text-anchor="middle" font-size="12" font-weight="600" fill="#64748B">Quantity</text>
+  <text x="430" y="62" text-anchor="middle" font-size="12" font-weight="600" fill="#64748B">Side</text>
+
+  <!-- Sell side (Ask) - red tones -->
+  <rect x="30" y="74" width="460" height="36" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="100" y="97" text-anchor="middle" font-size="13" fill="#DC2626">65,030</text>
+  <text x="280" y="97" text-anchor="middle" font-size="13" fill="#DC2626">1.2 BTC</text>
+  <text x="430" y="97" text-anchor="middle" font-size="11" fill="#DC2626">Ask</text>
+
+  <rect x="30" y="116" width="460" height="36" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="100" y="139" text-anchor="middle" font-size="13" fill="#DC2626">65,020</text>
+  <text x="280" y="139" text-anchor="middle" font-size="13" fill="#DC2626">0.8 BTC</text>
+  <text x="430" y="139" text-anchor="middle" font-size="11" fill="#DC2626">Ask</text>
+
+  <rect x="30" y="158" width="460" height="36" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="100" y="181" text-anchor="middle" font-size="13" font-weight="600" fill="#DC2626">65,010</text>
+  <text x="280" y="181" text-anchor="middle" font-size="13" font-weight="600" fill="#DC2626">2.5 BTC</text>
+  <text x="430" y="181" text-anchor="middle" font-size="11" font-weight="600" fill="#DC2626">Best Ask</text>
+
+  <!-- Spread indicator -->
+  <line x1="30" y1="204" x2="490" y2="204" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="260" y="218" text-anchor="middle" font-size="11" fill="#64748B">Spread = 20 USDT</text>
+
+  <!-- Buy side (Bid) - green tones -->
+  <rect x="30" y="228" width="460" height="36" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="100" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#16A34A">64,990</text>
+  <text x="280" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#16A34A">3.1 BTC</text>
+  <text x="430" y="251" text-anchor="middle" font-size="11" font-weight="600" fill="#16A34A">Best Bid</text>
+
+  <rect x="30" y="270" width="460" height="36" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="100" y="293" text-anchor="middle" font-size="13" fill="#16A34A">64,980</text>
+  <text x="280" y="293" text-anchor="middle" font-size="13" fill="#16A34A">1.7 BTC</text>
+  <text x="430" y="293" text-anchor="middle" font-size="11" fill="#16A34A">Bid</text>
+
+  <rect x="30" y="312" width="460" height="36" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="100" y="335" text-anchor="middle" font-size="13" fill="#16A34A">64,970</text>
+  <text x="280" y="335" text-anchor="middle" font-size="13" fill="#16A34A">0.9 BTC</text>
+  <text x="430" y="335" text-anchor="middle" font-size="11" fill="#16A34A">Bid</text>
+</svg>
