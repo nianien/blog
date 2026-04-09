@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 333" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="460" height="333" fill="#FAFAFA" rx="8"/>
+  <rect x="80" y="15" width="180" height="34" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="170.0" y="36.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400E">Load Checkpoint</text>
+  <text x="275" y="35" text-anchor="start" font-size="10" fill="#6B7280">← 基础 SD 模型</text>
+  <line x1="170" y1="49" x2="170" y2="54" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="166,54 170,59 174,54" fill="#94A3B8"/>
+  <rect x="80" y="59" width="180" height="34" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="170.0" y="80.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#1E40AF">Load LoRA</text>
+  <text x="275" y="79" text-anchor="start" font-size="10" fill="#6B7280">← 角色 LoRA (0.8-1.0)</text>
+  <line x1="170" y1="93" x2="170" y2="98" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="166,98 170,103 174,98" fill="#94A3B8"/>
+  <rect x="80" y="103" width="180" height="34" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="170.0" y="124.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#1E40AF">IP-Adapter</text>
+  <text x="275" y="123" text-anchor="start" font-size="10" fill="#6B7280">← 参考图 (0.5-0.7)</text>
+  <line x1="170" y1="137" x2="170" y2="142" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="166,142 170,147 174,142" fill="#94A3B8"/>
+  <rect x="80" y="147" width="180" height="34" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="170.0" y="168.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#1E40AF">ControlNet OpenPose</text>
+  <text x="275" y="167" text-anchor="start" font-size="10" fill="#6B7280">← 骨骼图 (0.6-0.8)</text>
+  <line x1="170" y1="181" x2="170" y2="186" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="166,186 170,191 174,186" fill="#94A3B8"/>
+  <rect x="80" y="191" width="180" height="34" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="170.0" y="212.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#1E40AF">ControlNet Depth</text>
+  <text x="275" y="211" text-anchor="start" font-size="10" fill="#6B7280">← 深度图 (0.4-0.6)</text>
+  <line x1="170" y1="225" x2="170" y2="230" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="166,230 170,235 174,230" fill="#94A3B8"/>
+  <rect x="80" y="235" width="180" height="34" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="170.0" y="256.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#5B21B6">KSampler</text>
+  <text x="275" y="255" text-anchor="start" font-size="10" fill="#6B7280">← 生成</text>
+  <line x1="170" y1="269" x2="170" y2="274" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="166,274 170,279 174,274" fill="#94A3B8"/>
+  <rect x="80" y="279" width="180" height="34" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="170.0" y="300.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#065F46">VAE Decode</text>
+  <text x="275" y="299" text-anchor="start" font-size="10" fill="#6B7280">← 输出图像</text>
+</svg>

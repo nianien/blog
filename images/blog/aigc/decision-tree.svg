@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 200" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="550" height="200" fill="#FAFAFA" rx="8"/>
+  <rect x="10" y="80" width="80" height="36" rx="6" fill="#F59E0B"/>
+  <text x="50.0" y="96.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">视频 A</text>
+  <text x="50.0" y="110.0" text-anchor="middle" font-size="9" fill="#FDE68A">开场</text>
+  <line x1="90" y1="88" x2="140" y2="50" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="90" y1="102" x2="140" y2="140" stroke="#94A3B8" stroke-width="1.5"/>
+  <rect x="145" y="35" width="90" height="28" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="190.0" y="53.0" text-anchor="middle" font-size="8" font-weight="bold" fill="#1E40AF">视频 B 产品介绍</text>
+  <rect x="145" y="127" width="90" height="28" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="190.0" y="145.0" text-anchor="middle" font-size="8" font-weight="bold" fill="#1E40AF">视频 C 需求分析</text>
+  <line x1="235" y1="42" x2="280" y2="20" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="235" y1="56" x2="280" y2="70" stroke="#94A3B8" stroke-width="1"/>
+  <rect x="285" y="8" width="90" height="24" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="330.0" y="24.0" text-anchor="middle" font-size="8" font-weight="bold" fill="#065F46">视频 D 价格</text>
+  <rect x="285" y="58" width="90" height="24" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="330.0" y="74.0" text-anchor="middle" font-size="8" font-weight="bold" fill="#065F46">视频 E 案例</text>
+  <line x1="235" y1="134" x2="280" y2="120" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="235" y1="148" x2="280" y2="165" stroke="#94A3B8" stroke-width="1"/>
+  <rect x="285" y="108" width="70" height="24" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="320.0" y="124.0" text-anchor="middle" font-size="8" font-weight="bold" fill="#065F46">视频 F</text>
+  <rect x="285" y="153" width="70" height="24" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="320.0" y="169.0" text-anchor="middle" font-size="8" font-weight="bold" fill="#065F46">视频 G</text>
+  <text x="430" y="50" text-anchor="start" font-size="10" fill="#6B7280">深度 5、每层 3 分支</text>
+  <text x="430" y="68" text-anchor="start" font-size="10" fill="#6B7280">= 243 条视频</text>
+</svg>

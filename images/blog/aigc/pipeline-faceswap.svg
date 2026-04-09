@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 289" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="420" height="289" fill="#FAFAFA" rx="8"/>
+  <rect x="40" y="15" width="340" height="32" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="210.0" y="35.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400E">视频模型输出 → 无声视频帧序列</text>
+  <line x1="210" y1="47" x2="210" y2="54" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="206,54 210,59 214,54" fill="#94A3B8"/>
+  <rect x="40" y="59" width="340" height="32" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="210.0" y="79.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E40AF">逐帧人脸检测（InsightFace）</text>
+  <line x1="210" y1="91" x2="210" y2="98" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="206,98 210,103 214,98" fill="#94A3B8"/>
+  <rect x="40" y="103" width="340" height="32" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="210.0" y="123.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E40AF">对比帧人脸与角色参考脸的相似度</text>
+  <line x1="210" y1="135" x2="210" y2="142" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="206,142 210,147 214,142" fill="#94A3B8"/>
+  <rect x="40" y="147" width="340" height="32" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="210.0" y="167.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#991B1B">相似度 &lt; 阈值 → FaceFusion 换脸</text>
+  <line x1="210" y1="179" x2="210" y2="186" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="206,186 210,191 214,186" fill="#94A3B8"/>
+  <rect x="40" y="191" width="340" height="32" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="210.0" y="211.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E40AF">边缘融合 + 色彩匹配</text>
+  <line x1="210" y1="223" x2="210" y2="230" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="206,230 210,235 214,230" fill="#94A3B8"/>
+  <rect x="40" y="235" width="340" height="32" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="210.0" y="255.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#065F46">输出：面部统一的视频帧</text>
+</svg>
