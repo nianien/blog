@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 330" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="500" height="330" fill="#FAFAFA" rx="8"/>
+  <rect x="130" y="10" width="240" height="32" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="250.0" y="30.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400E">用户输入（文本 / 语音 / 点击）</text>
+  <line x1="250" y1="42" x2="250" y2="55" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="246,55 250,60 254,55" fill="#94A3B8"/>
+  <rect x="70" y="60" width="360" height="46" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="250" y="79" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E40AF">意图理解层</text>
+  <text x="250" y="95" text-anchor="middle" font-size="10" fill="#6B7280">LLM + 意图识别 + 对话管理</text>
+  <line x1="250" y1="106" x2="250" y2="121" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="246,121 250,126 254,121" fill="#94A3B8"/>
+  <rect x="70" y="126" width="360" height="46" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="250" y="145" text-anchor="middle" font-size="13" font-weight="bold" fill="#5B21B6">剧情引擎层</text>
+  <text x="250" y="161" text-anchor="middle" font-size="10" fill="#6B7280">Story Engine + 状态机 + 世界状态管理</text>
+  <line x1="250" y1="172" x2="250" y2="187" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="246,187 250,192 254,187" fill="#94A3B8"/>
+  <rect x="70" y="192" width="360" height="46" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="250" y="211" text-anchor="middle" font-size="13" font-weight="bold" fill="#065F46">内容生成层</text>
+  <text x="250" y="227" text-anchor="middle" font-size="10" fill="#6B7280">视频生成 / 视频选择 / 数字人驱动 / TTS</text>
+  <line x1="250" y1="238" x2="250" y2="253" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="246,253 250,258 254,253" fill="#94A3B8"/>
+  <rect x="70" y="258" width="360" height="46" rx="6" fill="#F1F5F9" stroke="#475569" stroke-width="1.5"/>
+  <text x="250" y="277" text-anchor="middle" font-size="13" font-weight="bold" fill="#475569">播放控制层</text>
+  <text x="250" y="293" text-anchor="middle" font-size="10" fill="#6B7280">Web 播放器 + 流控制 + UI overlay</text>
+</svg>

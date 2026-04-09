@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" fill="none">
+  <rect width="800" height="580" rx="8" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="16" font-weight="bold" fill="#1E293B">AI 短剧工程实践 · 系列全景</text>
+
+  <!-- Row 1: 总纲 -->
+  <rect x="250" y="56" width="300" height="56" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="400" y="78" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#92400E">① 从剧本到成片的全流程</text>
+  <text x="400" y="98" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#92400E">总纲 · 端到端全景 · 工具链选型</text>
+
+  <!-- Arrow down from 总纲 -->
+  <line x1="400" y1="112" x2="400" y2="142" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="394,138 400,148 406,138" fill="#94A3B8"/>
+
+  <!-- Row 2 label -->
+  <text x="32" y="180" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#94A3B8" font-weight="bold">选型层</text>
+
+  <!-- Row 2: 2 articles side by side -->
+  <!-- 人物一致性 -->
+  <rect x="120" y="152" width="260" height="56" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="250" y="174" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#1E40AF">② 人物一致性与技术选型</text>
+  <text x="250" y="194" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#1E40AF">6 条技术路径 · 决策矩阵</text>
+
+  <!-- 视频生成模型 -->
+  <rect x="420" y="152" width="260" height="56" rx="8" fill="#CCFBF1" stroke="#14B8A6" stroke-width="1.5"/>
+  <text x="550" y="174" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#115E59">③ 视频生成模型选型与实战</text>
+  <text x="550" y="194" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#115E59">主流模型深度对比 · 混合策略</text>
+
+  <!-- Horizontal arrow between row 2 items -->
+  <line x1="380" y1="180" x2="420" y2="180" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="416,174 426,180 416,186" fill="#94A3B8"/>
+  <text x="400" y="173" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#94A3B8">互补</text>
+
+  <!-- Arrows down from row 2 to row 3 -->
+  <line x1="250" y1="208" x2="250" y2="248" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="244,244 250,254 256,244" fill="#94A3B8"/>
+  <line x1="550" y1="208" x2="550" y2="248" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="544,244 550,254 556,244" fill="#94A3B8"/>
+
+  <!-- Row 3 label -->
+  <text x="32" y="286" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#94A3B8" font-weight="bold">实现层</text>
+
+  <!-- Row 3: 3 articles side by side -->
+  <!-- 角色流水线 -->
+  <rect x="40" y="258" width="220" height="56" rx="8" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="150" y="280" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#065F46">④ 角色生产流水线</text>
+  <text x="150" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#065F46">视觉·表演·音频·对齐四层</text>
+
+  <!-- 角色引擎 -->
+  <rect x="290" y="258" width="220" height="56" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="400" y="280" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#5B21B6">⑤ 从视频生成到角色引擎</text>
+  <text x="400" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#5B21B6">实体注册 · 世界状态 · 调度</text>
+
+  <!-- 配音流水线 -->
+  <rect x="540" y="258" width="220" height="56" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="660" y="280" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#991B1B">⑥ 全自动配音流水线</text>
+  <text x="660" y="300" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#991B1B">ASR→翻译→TTS→混音</text>
+
+  <!-- Horizontal arrows between row 3 items -->
+  <line x1="260" y1="286" x2="290" y2="286" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="286,280 296,286 286,292" fill="#94A3B8"/>
+  <text x="275" y="279" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#94A3B8">落地 →</text>
+  <line x1="510" y1="286" x2="540" y2="286" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="536,280 546,286 536,292" fill="#94A3B8"/>
+
+  <!-- Arrow down from row 3 to row 4 -->
+  <line x1="400" y1="314" x2="400" y2="364" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="394,360 400,370 406,360" fill="#94A3B8"/>
+
+  <!-- Row 4 label -->
+  <text x="32" y="398" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#94A3B8" font-weight="bold">交互层</text>
+
+  <!-- Row 4: 交互视频 -->
+  <rect x="250" y="374" width="300" height="56" rx="8" fill="#F1F5F9" stroke="#475569" stroke-width="1.5"/>
+  <text x="400" y="396" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#475569">⑦ 实时交互式视频</text>
+  <text x="400" y="416" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#475569">从看视频到和视频对话</text>
+
+  <!-- Legend -->
+  <rect x="40" y="460" width="720" height="100" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="60" y="484" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" font-weight="bold">阅读路线：</text>
+  <text x="60" y="506" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B">快速了解 → 只读 ①</text>
+  <text x="260" y="506" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B">深入角色 → ① → ② → ④ → ⑤</text>
+  <text x="60" y="528" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B">视频制作 → ① → ③ → ④</text>
+  <text x="260" y="528" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B">出海配音 → ① → ⑥</text>
+  <text x="460" y="528" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B">前沿探索 → ① → ⑦</text>
+</svg>

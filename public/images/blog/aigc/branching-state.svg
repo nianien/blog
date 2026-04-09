@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 130" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="500" height="130" fill="#FAFAFA" rx="8"/>
+  <rect x="20" y="50" width="80" height="36" rx="6" fill="#F59E0B"/>
+  <text x="60.0" y="72.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">初始状态</text>
+  <line x1="100" y1="60" x2="160" y2="30" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="160,27 166,30 160,33" fill="#94A3B8"/>
+  <rect x="170" y="15" width="70" height="30" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="205.0" y="34.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E40AF">选择 A</text>
+  <line x1="240" y1="30" x2="262" y2="30" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="268,30 262,26 262,34" fill="#94A3B8"/>
+  <rect x="270" y="15" width="90" height="30" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="315.0" y="34.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#5B21B6">状态分支 A</text>
+  <line x1="360" y1="30" x2="382" y2="30" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="388,30 382,26 382,34" fill="#94A3B8"/>
+  <rect x="390" y="15" width="90" height="30" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="435.0" y="34.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#065F46">后续剧情 A</text>
+  <line x1="100" y1="76" x2="160" y2="100" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="160,97 166,100 160,103" fill="#94A3B8"/>
+  <rect x="170" y="85" width="70" height="30" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="205.0" y="104.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E40AF">选择 B</text>
+  <line x1="240" y1="100" x2="262" y2="100" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="268,100 262,96 262,104" fill="#94A3B8"/>
+  <rect x="270" y="85" width="90" height="30" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="315.0" y="104.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#5B21B6">状态分支 B</text>
+  <line x1="360" y1="100" x2="382" y2="100" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="388,100 382,96 382,104" fill="#94A3B8"/>
+  <rect x="390" y="85" width="90" height="30" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="435.0" y="104.0" text-anchor="middle" font-size="10" font-weight="bold" fill="#065F46">后续剧情 B</text>
+</svg>

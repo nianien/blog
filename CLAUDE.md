@@ -80,11 +80,19 @@ author: "skyfalling"              # 固定作者名
 ## 文章写作风格
 
 - 面向技术从业者时：包含代码片段、架构图（SVG）、技术栈对比表
-- 架构图、流程图等使用 **SVG 文件**而非 ASCII art，SVG 文件存放在 `public/images/blog/` 目录下，Markdown 中用 `![描述](/images/blog/xxx.svg)` 引用
+- 架构图、流程图、对比表格等使用 **SVG 文件**而非 ASCII art 或 Markdown 表格，SVG 存放规则见下方"SVG 图形规范"
+- Markdown 表格也可以转为 SVG 以获得更好的视觉效果，尤其是多列复杂对比表
 - 善用 Markdown 表格、代码块、引用块增强可读性
 - 每个大章节末尾用**一句话总结**收束
 - 使用"Normal vs Better"对比模式而非"Wrong vs Correct"
 - 中文为主，技术术语保留英文（如 Pipeline、State Management）
+
+## Markdown 格式注意事项
+
+- **加粗标记 `**` 内不要包含中文括号和引号**：`**口型同步（Lip Sync）**` 在部分渲染器中会失败，应写成 `**口型同步**（Lip Sync）`，把括号注释移到加粗外面
+- 同理 `**"粗生成 + Face Swap精修"**` 应写成 `"**粗生成 + Face Swap精修**"`，引号移到外面
+- 加粗内可以包含纯中文内容和英文，但避免混入 `（）""《》` 等全角标点
+- 如果加粗内容本身就是完整句子且包含括号（如 `**长镜头（>10秒）的质量急剧下降**`），括号是句意的一部分而非术语注释，可以保留
 
 ## 代码块使用规范
 
@@ -102,7 +110,12 @@ author: "skyfalling"              # 固定作者名
 
 ## SVG 图形规范
 
-SVG 文件存放在 `public/images/blog/{article-slug}/` 目录，命名格式 `{序号}-{描述}.svg`。
+SVG 文件有两种存放方式：
+
+- **文章同级 `assets/` 目录**（推荐）：存放在文章 `.md` 同级的 `assets/` 目录下，Markdown 中用 `![描述](./assets/xxx.svg)` 引用。适合文章专属的表格、流程图
+- **公共目录**：存放在 `public/images/blog/{article-slug}/` 目录，Markdown 中用 `![描述](/images/blog/{article-slug}/xxx.svg)` 引用。适合多篇文章共用的图
+
+命名格式 `{序号}-{描述}.svg` 或按内容命名如 `table-toolchain.svg`、`pipeline.svg`。
 
 SVG 绘制约定：
 
