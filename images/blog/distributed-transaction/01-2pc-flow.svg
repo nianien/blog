@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!--
+    Two-Phase Commit (2PC) Sequence Diagram
+
+    Actor timelines:
+      Participant A:  x=120,  box: x=55  w=130 y=80 h=36
+      Coordinator:    x=400,  box: x=330 w=140 y=80 h=36
+      Participant B:  x=680,  box: x=615 w=130 y=80 h=36
+
+    Arrow convention (14×16):
+      Left-pointing  at tipX: points="tipX,y tipX+14,y-8 tipX+14,y+8"
+      Right-pointing at tipX: points="tipX,y tipX-14,y-8 tipX-14,y+8"
+  -->
+
+  <!-- ===== Title ===== -->
+  <text x="400" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">两阶段提交 (2PC) 流程</text>
+
+  <!-- ===== Phase labels ===== -->
+  <rect x="15" y="44" width="380" height="26" rx="6" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="205" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c5282">Phase 1: Prepare（投票阶段）</text>
+  <rect x="410" y="44" width="375" height="26" rx="6" fill="#fef3e2" stroke="#d4a04a" stroke-width="1.5"/>
+  <text x="598" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#7b5b2a">Phase 2: Commit / Rollback</text>
+
+  <!-- ===== Actor boxes ===== -->
+  <rect x="55" y="80" width="130" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="120" y="103" text-anchor="middle" font-size="13" fill="#2c5282">Participant A</text>
+
+  <rect x="330" y="80" width="140" height="36" rx="8" fill="#4a90d9" stroke="#2c5282" stroke-width="1.5"/>
+  <text x="400" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">Coordinator</text>
+
+  <rect x="615" y="80" width="130" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="680" y="103" text-anchor="middle" font-size="13" fill="#2c5282">Participant B</text>
+
+  <!-- ===== Timelines ===== -->
+  <line x1="120" y1="116" x2="120" y2="430" stroke="#a0c4e8" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="400" y1="116" x2="400" y2="430" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="680" y1="116" x2="680" y2="430" stroke="#a0c4e8" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ========== PHASE 1: PREPARE ========== -->
+
+  <!-- 1. Coordinator → Participant A: Prepare -->
+  <line x1="400" y1="145" x2="120" y2="145" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="120,145 134,137 134,153" fill="#4a90d9"/>
+  <text x="260" y="138" text-anchor="middle" font-size="11" fill="#4a90d9" font-weight="bold">Prepare</text>
+
+  <!-- 2. Coordinator → Participant B: Prepare -->
+  <line x1="400" y1="163" x2="680" y2="163" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="680,163 666,155 666,171" fill="#4a90d9"/>
+  <text x="540" y="156" text-anchor="middle" font-size="11" fill="#4a90d9" font-weight="bold">Prepare</text>
+
+  <!-- Execution notes -->
+  <rect x="22" y="178" width="196" height="36" rx="4" fill="#f0f7ff" stroke="#a0c4e8" stroke-width="0.5"/>
+  <text x="120" y="193" text-anchor="middle" font-size="10" fill="#4a6fa5">execute local tx</text>
+  <text x="120" y="207" text-anchor="middle" font-size="10" fill="#4a6fa5">write redo / undo log</text>
+
+  <rect x="582" y="178" width="196" height="36" rx="4" fill="#f0f7ff" stroke="#a0c4e8" stroke-width="0.5"/>
+  <text x="680" y="193" text-anchor="middle" font-size="10" fill="#4a6fa5">execute local tx</text>
+  <text x="680" y="207" text-anchor="middle" font-size="10" fill="#4a6fa5">write redo / undo log</text>
+
+  <!-- 3. Participant A → Coordinator: Vote -->
+  <line x1="120" y1="230" x2="400" y2="230" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="400,230 386,222 386,238" fill="#27ae60"/>
+  <text x="260" y="223" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">Vote: Yes / No</text>
+
+  <!-- 4. Participant B → Coordinator: Vote -->
+  <line x1="680" y1="248" x2="400" y2="248" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="400,248 414,240 414,256" fill="#27ae60"/>
+  <text x="540" y="241" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">Vote: Yes / No</text>
+
+  <!-- ========== PHASE 2: COMMIT ========== -->
+
+  <!-- Decision point on Coordinator -->
+  <rect x="240" y="272" width="150" height="22" rx="4" fill="#fff8e1" stroke="#f5a623" stroke-width="1"/>
+  <text x="315" y="287" text-anchor="middle" font-size="10" font-weight="bold" fill="#8b6914">All Yes → Commit</text>
+  <rect x="410" y="272" width="180" height="22" rx="4" fill="#fef2f2" stroke="#e74c3c" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="500" y="287" text-anchor="middle" font-size="10" fill="#c0392b">Any No → Rollback</text>
+
+  <!-- 5. Coordinator → Participant A: Commit -->
+  <line x1="400" y1="308" x2="120" y2="308" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="120,308 134,300 134,316" fill="#27ae60"/>
+  <text x="260" y="301" text-anchor="middle" font-size="11" fill="#1e7e45" font-weight="bold">Commit</text>
+
+  <!-- 6. Coordinator → Participant B: Commit -->
+  <line x1="400" y1="326" x2="680" y2="326" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="680,326 666,318 666,334" fill="#27ae60"/>
+  <text x="540" y="319" text-anchor="middle" font-size="11" fill="#1e7e45" font-weight="bold">Commit</text>
+
+  <!-- Commit execution notes -->
+  <rect x="22" y="340" width="196" height="24" rx="4" fill="#e8f8ef" stroke="#68c690" stroke-width="0.5"/>
+  <text x="120" y="356" text-anchor="middle" font-size="10" fill="#1e7e45">commit tx, release locks</text>
+
+  <rect x="582" y="340" width="196" height="24" rx="4" fill="#e8f8ef" stroke="#68c690" stroke-width="0.5"/>
+  <text x="680" y="356" text-anchor="middle" font-size="10" fill="#1e7e45">commit tx, release locks</text>
+
+  <!-- 7. Participant A → Coordinator: ACK -->
+  <line x1="120" y1="380" x2="400" y2="380" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <polygon points="400,380 386,372 386,388" fill="#888"/>
+  <text x="260" y="373" text-anchor="middle" font-size="10" fill="#888">ACK</text>
+
+  <!-- 8. Participant B → Coordinator: ACK -->
+  <line x1="680" y1="398" x2="400" y2="398" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <polygon points="400,398 414,390 414,406" fill="#888"/>
+  <text x="540" y="391" text-anchor="middle" font-size="10" fill="#888">ACK</text>
+
+  <!-- Complete -->
+  <rect x="355" y="414" width="90" height="22" rx="6" fill="#27ae60" stroke="#1e7e45" stroke-width="1"/>
+  <text x="400" y="429" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">Complete</text>
+
+</svg>

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 530" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!--
+    Three-Phase Commit (3PC) Sequence Diagram
+
+    Actor timelines (same positions as 2PC for consistency):
+      Participant A:  x=120,  box: x=55  w=130 y=80 h=36
+      Coordinator:    x=400,  box: x=330 w=140 y=80 h=36
+      Participant B:  x=680,  box: x=615 w=130 y=80 h=36
+
+    Arrow convention (14×16):
+      Left-pointing  at tipX: points="tipX,y tipX+14,y-8 tipX+14,y+8"
+      Right-pointing at tipX: points="tipX,y tipX-14,y-8 tipX-14,y+8"
+  -->
+
+  <!-- ===== Title ===== -->
+  <text x="400" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">三阶段提交 (3PC) 流程</text>
+
+  <!-- ===== Phase labels ===== -->
+  <rect x="15" y="44" width="245" height="26" rx="6" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="138" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c5282">Phase 1: CanCommit</text>
+  <rect x="275" y="44" width="250" height="26" rx="6" fill="#fef3e2" stroke="#d4a04a" stroke-width="1.5"/>
+  <text x="400" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#7b5b2a">Phase 2: PreCommit</text>
+  <rect x="540" y="44" width="245" height="26" rx="6" fill="#e8f8ef" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="663" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e7e45">Phase 3: DoCommit</text>
+
+  <!-- ===== Phase separators ===== -->
+  <line x1="268" y1="44" x2="268" y2="500" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="533" y1="44" x2="533" y2="500" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- ===== Actor boxes ===== -->
+  <rect x="55" y="80" width="130" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="120" y="103" text-anchor="middle" font-size="13" fill="#2c5282">Participant A</text>
+
+  <rect x="330" y="80" width="140" height="36" rx="8" fill="#4a90d9" stroke="#2c5282" stroke-width="1.5"/>
+  <text x="400" y="103" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">Coordinator</text>
+
+  <rect x="615" y="80" width="130" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="680" y="103" text-anchor="middle" font-size="13" fill="#2c5282">Participant B</text>
+
+  <!-- ===== Timelines ===== -->
+  <line x1="120" y1="116" x2="120" y2="500" stroke="#a0c4e8" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="400" y1="116" x2="400" y2="500" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="680" y1="116" x2="680" y2="500" stroke="#a0c4e8" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ========== PHASE 1: CanCommit ========== -->
+  <!-- Key: only CHECK resources, NO transaction execution -->
+
+  <!-- 1. Coordinator → A: CanCommit? -->
+  <line x1="400" y1="140" x2="120" y2="140" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="120,140 134,132 134,148" fill="#4a90d9"/>
+  <text x="260" y="133" text-anchor="middle" font-size="11" fill="#4a90d9" font-weight="bold">CanCommit?</text>
+
+  <!-- 2. Coordinator → B: CanCommit? -->
+  <line x1="400" y1="158" x2="680" y2="158" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="680,158 666,150 666,166" fill="#4a90d9"/>
+  <text x="540" y="151" text-anchor="middle" font-size="11" fill="#4a90d9" font-weight="bold">CanCommit?</text>
+
+  <!-- Check note (no execution!) -->
+  <rect x="22" y="170" width="196" height="24" rx="4" fill="#f8f9fa" stroke="#ccc" stroke-width="0.5"/>
+  <text x="120" y="186" text-anchor="middle" font-size="10" fill="#666">check resources only, NO execution</text>
+
+  <!-- 3. A → Coordinator: Yes -->
+  <line x1="120" y1="208" x2="400" y2="208" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="400,208 386,200 386,216" fill="#27ae60"/>
+  <text x="260" y="201" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">Yes</text>
+
+  <!-- 4. B → Coordinator: Yes -->
+  <line x1="680" y1="226" x2="400" y2="226" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="400,226 414,218 414,234" fill="#27ae60"/>
+  <text x="540" y="219" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">Yes</text>
+
+  <!-- ========== PHASE 2: PreCommit ========== -->
+  <!-- Key: NOW execute transaction, hold locks -->
+
+  <!-- 5. Coordinator → A: PreCommit -->
+  <line x1="400" y1="260" x2="120" y2="260" stroke="#d4a04a" stroke-width="1.5"/>
+  <polygon points="120,260 134,252 134,268" fill="#d4a04a"/>
+  <text x="260" y="253" text-anchor="middle" font-size="11" fill="#7b5b2a" font-weight="bold">PreCommit</text>
+
+  <!-- 6. Coordinator → B: PreCommit -->
+  <line x1="400" y1="278" x2="680" y2="278" stroke="#d4a04a" stroke-width="1.5"/>
+  <polygon points="680,278 666,270 666,286" fill="#d4a04a"/>
+  <text x="540" y="271" text-anchor="middle" font-size="11" fill="#7b5b2a" font-weight="bold">PreCommit</text>
+
+  <!-- Execution notes -->
+  <rect x="22" y="292" width="196" height="24" rx="4" fill="#fef8ea" stroke="#d4a04a" stroke-width="0.5"/>
+  <text x="120" y="308" text-anchor="middle" font-size="10" fill="#7b5b2a">execute tx, write redo/undo, hold locks</text>
+
+  <rect x="582" y="292" width="196" height="24" rx="4" fill="#fef8ea" stroke="#d4a04a" stroke-width="0.5"/>
+  <text x="680" y="308" text-anchor="middle" font-size="10" fill="#7b5b2a">execute tx, write redo/undo, hold locks</text>
+
+  <!-- 7. A → Coordinator: ACK -->
+  <line x1="120" y1="330" x2="400" y2="330" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="400,330 386,322 386,338" fill="#27ae60"/>
+  <text x="260" y="323" text-anchor="middle" font-size="11" fill="#27ae60">ACK</text>
+
+  <!-- 8. B → Coordinator: ACK -->
+  <line x1="680" y1="348" x2="400" y2="348" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="400,348 414,340 414,356" fill="#27ae60"/>
+  <text x="540" y="341" text-anchor="middle" font-size="11" fill="#27ae60">ACK</text>
+
+  <!-- ========== PHASE 3: DoCommit ========== -->
+
+  <!-- 9. Coordinator → A: DoCommit -->
+  <line x1="400" y1="380" x2="120" y2="380" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="120,380 134,372 134,388" fill="#27ae60"/>
+  <text x="260" y="373" text-anchor="middle" font-size="11" fill="#1e7e45" font-weight="bold">DoCommit</text>
+
+  <!-- 10. Coordinator → B: DoCommit -->
+  <line x1="400" y1="398" x2="680" y2="398" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="680,398 666,390 666,406" fill="#27ae60"/>
+  <text x="540" y="391" text-anchor="middle" font-size="11" fill="#1e7e45" font-weight="bold">DoCommit</text>
+
+  <!-- Commit notes -->
+  <rect x="22" y="412" width="196" height="24" rx="4" fill="#e8f8ef" stroke="#68c690" stroke-width="0.5"/>
+  <text x="120" y="428" text-anchor="middle" font-size="10" fill="#1e7e45">commit tx, release locks</text>
+
+  <rect x="582" y="412" width="196" height="24" rx="4" fill="#e8f8ef" stroke="#68c690" stroke-width="0.5"/>
+  <text x="680" y="428" text-anchor="middle" font-size="10" fill="#1e7e45">commit tx, release locks</text>
+
+  <!-- 11. A → Coordinator: ACK -->
+  <line x1="120" y1="450" x2="400" y2="450" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <polygon points="400,450 386,442 386,458" fill="#888"/>
+  <text x="260" y="443" text-anchor="middle" font-size="10" fill="#888">ACK</text>
+
+  <!-- 12. B → Coordinator: ACK -->
+  <line x1="680" y1="468" x2="400" y2="468" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <polygon points="400,468 414,460 414,476" fill="#888"/>
+  <text x="540" y="461" text-anchor="middle" font-size="10" fill="#888">ACK</text>
+
+  <!-- ===== Timeout note (3PC key feature) ===== -->
+  <rect x="555" y="480" width="230" height="42" rx="6" fill="#fff8e1" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="670" y="497" text-anchor="middle" font-size="10" fill="#8b6914" font-weight="bold">Phase 3 Timeout = 默认 COMMIT</text>
+  <text x="670" y="513" text-anchor="middle" font-size="10" fill="#8b6914">参与者超时未收到指令 → 自动提交</text>
+</svg>

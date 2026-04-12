@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" fill="none">
+  <rect width="800" height="360" rx="8" fill="#FAFBFC"/>
+  <text x="400" y="30" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#1E293B">缓存分层与回源合并（Request Collapsing）</text>
+
+  <!-- Request flow -->
+  <!-- Multiple concurrent requests -->
+  <rect x="30" y="55" width="100" height="30" rx="6" fill="#FFEDD5" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="80" y="75" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#9A3412">请求 A</text>
+
+  <rect x="30" y="95" width="100" height="30" rx="6" fill="#FFEDD5" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="80" y="115" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#9A3412">请求 B</text>
+
+  <rect x="30" y="135" width="100" height="30" rx="6" fill="#FFEDD5" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="80" y="155" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#9A3412">请求 C</text>
+
+  <text x="80" y="185" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#9CA3AF">同一资源的并发请求</text>
+
+  <!-- Edge node -->
+  <rect x="190" y="60" width="170" height="130" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="275" y="82" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#1D4ED8">L1 边缘节点</text>
+  <line x1="205" y1="90" x2="345" y2="90" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="275" y="110" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#2563EB">内存缓存 (Hot)</text>
+  <text x="275" y="130" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#2563EB">SSD 缓存 (Warm)</text>
+  <rect x="210" y="145" width="140" height="30" rx="4" fill="#DBEAFE" stroke="#60A5FA" stroke-width="1"/>
+  <text x="280" y="165" text-anchor="middle" font-family="'SF Mono', 'Menlo', monospace" font-size="10" fill="#1E40AF">Request Collapsing</text>
+
+  <!-- Arrows from requests to edge -->
+  <line x1="130" y1="70" x2="185" y2="100" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="183,95 183,105 190,100" fill="#6B7280"/>
+  <line x1="130" y1="110" x2="185" y2="110" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="183,105 183,115 190,110" fill="#6B7280"/>
+  <line x1="130" y1="150" x2="185" y2="120" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="183,115 183,125 190,120" fill="#6B7280"/>
+
+  <!-- Mid tier -->
+  <rect x="420" y="75" width="170" height="100" rx="8" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="505" y="97" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#6D28D9">L2 中间层</text>
+  <line x1="435" y1="105" x2="575" y2="105" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="505" y="125" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#7C3AED">大容量 SSD 缓存</text>
+  <rect x="440" y="140" width="140" height="25" rx="4" fill="#EDE9FE" stroke="#A78BFA" stroke-width="1"/>
+  <text x="510" y="157" text-anchor="middle" font-family="'SF Mono', 'Menlo', monospace" font-size="10" fill="#5B21B6">Request Collapsing</text>
+
+  <!-- Arrow edge to mid (single) -->
+  <line x1="360" y1="125" x2="415" y2="125" stroke="#6B7280" stroke-width="2"/>
+  <polygon points="413,120 413,130 420,125" fill="#6B7280"/>
+  <text x="388" y="118" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="600" fill="#DC2626">仅 1 次</text>
+  <text x="388" y="140" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#6B7280">MISS</text>
+
+  <!-- Origin -->
+  <rect x="650" y="90" width="120" height="70" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="710" y="117" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#DC2626">源站</text>
+  <text x="710" y="140" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#EF4444">Origin Server</text>
+
+  <!-- Arrow mid to origin (single) -->
+  <line x1="590" y1="125" x2="645" y2="125" stroke="#6B7280" stroke-width="2"/>
+  <polygon points="643,120 643,130 650,125" fill="#6B7280"/>
+  <text x="618" y="118" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="600" fill="#DC2626">仅 1 次</text>
+  <text x="618" y="140" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#6B7280">MISS</text>
+
+  <!-- Benefit box -->
+  <rect x="30" y="220" width="740" height="120" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="400" y="245" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#15803D">Request Collapsing 效果</text>
+
+  <text x="60" y="275" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#166534">无 Collapsing：3 个请求 → 3 次回源 → 源站压力 3x</text>
+  <line x1="60" y1="285" x2="740" y2="285" stroke="#BBF7D0" stroke-width="1"/>
+  <text x="60" y="305" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#166534">有 Collapsing：3 个请求 → 1 次回源 → 源站压力 1x，其余请求等待后共享响应</text>
+
+  <text x="60" y="330" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#6B7280">热点资源突发访问场景下，可将回源 QPS 降低 90%+ ，是保护源站的关键机制</text>
+</svg>

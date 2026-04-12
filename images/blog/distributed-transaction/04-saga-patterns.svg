@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!--
+    Saga: Choreography vs Orchestration — Clean redesign
+
+    Left (x=0-420): Choreography with zigzag event flow
+    Right (x=440-860): Orchestration with paired horizontal arrows
+
+    Key fixes:
+    - Choreography: simple horizontal arrows, clear zigzag publish/consume flow
+    - Orchestration: NO overlapping vertical lines, each step is a clean horizontal pair
+  -->
+
+  <!-- ===== Title ===== -->
+  <text x="430" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Saga: Choreography vs Orchestration</text>
+
+  <!-- ===== Divider ===== -->
+  <line x1="430" y1="48" x2="430" y2="430" stroke="#ddd" stroke-width="1.5" stroke-dasharray="8,4"/>
+
+  <!-- ============================================ -->
+  <!-- LEFT: Choreography (Event-driven)            -->
+  <!-- ============================================ -->
+
+  <rect x="15" y="48" width="400" height="28" rx="6" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="215" y="67" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c5282">Choreography（事件驱动）</text>
+
+  <!-- Service boxes -->
+  <rect x="30" y="100" width="140" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="100" y="123" text-anchor="middle" font-size="12" fill="#2c5282">Order Service</text>
+
+  <rect x="30" y="200" width="140" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="100" y="223" text-anchor="middle" font-size="12" fill="#2c5282">Inventory Service</text>
+
+  <rect x="30" y="300" width="140" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="100" y="323" text-anchor="middle" font-size="12" fill="#2c5282">Payment Service</text>
+
+  <!-- Event Bus -->
+  <rect x="250" y="94" width="155" height="254" rx="8" fill="#fff8e1" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="328" y="114" text-anchor="middle" font-size="12" font-weight="bold" fill="#8b6914">Event Bus / MQ</text>
+
+  <!--
+    Choreography arrows: all purely horizontal
+    Service right edge = x=170, Event Bus left edge = x=250
+    Each service has publish (→ right) and consume (← left) at offset y from center
+    Order center_y=118, Inventory center_y=218, Payment center_y=318
+  -->
+
+  <!-- 1. Order → Event Bus: publish "OrderCreated" -->
+  <line x1="170" y1="112" x2="250" y2="112" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="250,112 236,104 236,120" fill="#4a90d9"/>
+  <text x="210" y="106" text-anchor="middle" font-size="9" fill="#4a90d9">publish</text>
+  <text x="268" y="128" font-size="10" fill="#666">OrderCreated</text>
+
+  <!-- 2. Event Bus → Inventory: consume -->
+  <line x1="250" y1="212" x2="170" y2="212" stroke="#d4a04a" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="170,212 184,204 184,220" fill="#d4a04a"/>
+  <text x="210" y="206" text-anchor="middle" font-size="9" fill="#d4a04a">consume</text>
+
+  <!-- 3. Inventory → Event Bus: publish "StockDeducted" -->
+  <line x1="170" y1="224" x2="250" y2="224" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="250,224 236,216 236,232" fill="#4a90d9"/>
+  <text x="210" y="237" text-anchor="middle" font-size="9" fill="#4a90d9">publish</text>
+  <text x="268" y="248" font-size="10" fill="#666">StockDeducted</text>
+
+  <!-- 4. Event Bus → Payment: consume -->
+  <line x1="250" y1="312" x2="170" y2="312" stroke="#d4a04a" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="170,312 184,304 184,320" fill="#d4a04a"/>
+  <text x="210" y="306" text-anchor="middle" font-size="9" fill="#d4a04a">consume</text>
+
+  <!-- 5. Payment → Event Bus: publish "PaymentDone" -->
+  <line x1="170" y1="324" x2="250" y2="324" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="250,324 236,316 236,332" fill="#4a90d9"/>
+  <text x="210" y="338" text-anchor="middle" font-size="9" fill="#4a90d9">publish</text>
+  <text x="268" y="340" font-size="10" fill="#666">PaymentDone</text>
+
+  <!-- Choreography note -->
+  <rect x="20" y="365" width="395" height="55" rx="6" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="218" y="383" text-anchor="middle" font-size="10" fill="#555">每个服务发布事件，下游服务订阅并处理</text>
+  <text x="218" y="397" text-anchor="middle" font-size="10" fill="#555">无中心协调者，链路难追踪</text>
+  <text x="218" y="411" text-anchor="middle" font-size="10" fill="#e74c3c">失败时：逆序发布补偿事件 (C3 → C2 → C1)</text>
+
+  <!-- ============================================ -->
+  <!-- RIGHT: Orchestration (Central coordinator)   -->
+  <!-- ============================================ -->
+
+  <rect x="445" y="48" width="400" height="28" rx="6" fill="#e8f8ef" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="645" y="67" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e7e45">Orchestration（中心编排）</text>
+
+  <!-- Orchestrator box -->
+  <rect x="620" y="94" width="140" height="40" rx="8" fill="#27ae60" stroke="#1e7e45" stroke-width="1.5"/>
+  <text x="690" y="114" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Saga Orchestrator</text>
+  <text x="690" y="128" text-anchor="middle" font-size="10" fill="#e8f8ef">(state machine)</text>
+
+  <!-- Orchestrator timeline -->
+  <line x1="690" y1="134" x2="690" y2="348" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Service boxes -->
+  <rect x="470" y="160" width="120" height="32" rx="6" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="530" y="181" text-anchor="middle" font-size="11" fill="#2c5282">Order Svc</text>
+
+  <rect x="470" y="228" width="120" height="32" rx="6" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="530" y="249" text-anchor="middle" font-size="11" fill="#2c5282">Inventory Svc</text>
+
+  <rect x="470" y="296" width="120" height="32" rx="6" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="530" y="317" text-anchor="middle" font-size="11" fill="#2c5282">Payment Svc</text>
+
+  <!-- Step 1: Orchestrator → Order Svc (command) -->
+  <line x1="690" y1="168" x2="590" y2="168" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="590,168 604,160 604,176" fill="#27ae60"/>
+  <text x="640" y="162" text-anchor="middle" font-size="10" fill="#1e7e45" font-weight="bold">1. create</text>
+
+  <!-- Step 1: Order Svc → Orchestrator (response) -->
+  <line x1="590" y1="184" x2="690" y2="184" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <polygon points="690,184 676,176 676,192" fill="#888"/>
+  <text x="640" y="196" text-anchor="middle" font-size="9" fill="#888">done</text>
+
+  <!-- Step 2: Orchestrator → Inventory Svc -->
+  <line x1="690" y1="236" x2="590" y2="236" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="590,236 604,228 604,244" fill="#27ae60"/>
+  <text x="640" y="230" text-anchor="middle" font-size="10" fill="#1e7e45" font-weight="bold">2. deduct</text>
+
+  <!-- Step 2: Inventory Svc → Orchestrator (response) -->
+  <line x1="590" y1="252" x2="690" y2="252" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <polygon points="690,252 676,244 676,260" fill="#888"/>
+  <text x="640" y="264" text-anchor="middle" font-size="9" fill="#888">done</text>
+
+  <!-- Step 3: Orchestrator → Payment Svc -->
+  <line x1="690" y1="304" x2="590" y2="304" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="590,304 604,296 604,312" fill="#27ae60"/>
+  <text x="640" y="298" text-anchor="middle" font-size="10" fill="#1e7e45" font-weight="bold">3. charge</text>
+
+  <!-- Step 3: Payment Svc → Orchestrator (response) -->
+  <line x1="590" y1="320" x2="690" y2="320" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <polygon points="690,320 676,312 676,328" fill="#888"/>
+  <text x="640" y="332" text-anchor="middle" font-size="9" fill="#888">done</text>
+
+  <!-- State Log -->
+  <rect x="740" y="155" width="100" height="190" rx="6" fill="#f8f9fa" stroke="#ccc" stroke-width="1"/>
+  <text x="790" y="175" text-anchor="middle" font-size="10" font-weight="bold" fill="#555">State Log</text>
+  <text x="790" y="195" text-anchor="middle" font-size="9" fill="#27ae60">STARTED</text>
+  <text x="790" y="213" text-anchor="middle" font-size="9" fill="#27ae60">ORDER_CREATED</text>
+  <text x="790" y="231" text-anchor="middle" font-size="9" fill="#27ae60">STOCK_DEDUCTED</text>
+  <text x="790" y="249" text-anchor="middle" font-size="9" fill="#27ae60">PAYMENT_DONE</text>
+  <text x="790" y="267" text-anchor="middle" font-size="9" fill="#27ae60">COMPLETED</text>
+  <text x="790" y="300" text-anchor="middle" font-size="9" fill="#e74c3c">or: COMPENSATING</text>
+  <text x="790" y="318" text-anchor="middle" font-size="9" fill="#e74c3c">COMPENSATED</text>
+
+  <!-- Orchestration note -->
+  <rect x="450" y="365" width="395" height="55" rx="6" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="648" y="383" text-anchor="middle" font-size="10" fill="#555">中心编排器控制每步执行顺序</text>
+  <text x="648" y="397" text-anchor="middle" font-size="10" fill="#555">流程可视、易监控、易调试</text>
+  <text x="648" y="411" text-anchor="middle" font-size="10" fill="#27ae60">失败时：编排器逆序调用补偿操作</text>
+
+  <!-- ===== Comparison footer ===== -->
+  <rect x="80" y="435" width="700" height="30" rx="6" fill="#1a1a2e" stroke="none"/>
+  <text x="430" y="455" text-anchor="middle" font-size="11" fill="#fff">Choreography：解耦但难追踪 | Orchestration：集中但有单点逻辑</text>
+</svg>

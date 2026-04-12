@@ -9,11 +9,11 @@ c:I[4431,[],"MetadataBoundary"]
 d:"$Sreact.suspense"
 f:I[7150,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/css/2eaa5f29d6390645.css","style"]
-0:{"P":null,"b":"sKp2reh97E7hzL_FioVmE","p":"","c":["","blog","engineering","architecture","%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BB%8E%E6%BC%94%E8%BF%9B%E5%88%B0%E5%85%A8%E6%99%AF",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BB%8E%E6%BC%94%E8%BF%9B%E5%88%B0%E5%85%A8%E6%99%AF","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2eaa5f29d6390645.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BB%8E%E6%BC%94%E8%BF%9B%E5%88%B0%E5%85%A8%E6%99%AF","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
-10:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],""]
-11:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
-12:T74c7,<h2>一、传统单体系统</h2>
+:HL["/_next/static/css/bd27d35e90c84eb9.css","style"]
+0:{"P":null,"b":"-uYZu65MnpDw4Qys6e12e","p":"","c":["","blog","engineering","architecture","%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BB%8E%E6%BC%94%E8%BF%9B%E5%88%B0%E5%85%A8%E6%99%AF",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BB%8E%E6%BC%94%E8%BF%9B%E5%88%B0%E5%85%A8%E6%99%AF","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bd27d35e90c84eb9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BB%8E%E6%BC%94%E8%BF%9B%E5%88%B0%E5%85%A8%E6%99%AF","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+10:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],""]
+11:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],"default"]
+12:T7153,<h2>一、传统单体系统</h2>
 <p>在很多项目的业务初期阶段，高速迭代上线是首要考虑的事情，对后期的容量预估、可扩展性和系统健壮性、高可用一般没有那么重视。但随着业务的发展，用户量、请求量的暴增，发现原来的单体系统已经远远不满足需求了，特别是随着互联网整体的高速发展，对系统的要求越来越高。</p>
 <p>但是物理服务器的CPU、内存、存储器、连接数等资源有限，单体系统能够承受的QPS也是有限的，某个时段大量连接同时执行操作，会导致web服务和数据库服务在处理上遇到性能瓶颈。</p>
 <p>为了解决这个问题，前辈们发扬了分而治之的思想，对大数据库、大表进行分割，以便实施更好的控制和管理。同时创建多个服务实例，使用多台服务机进行CPU、内存、存储的分摊，提供更好的性能。</p>
@@ -359,20 +359,11 @@ f:I[7150,[],""]
 <p><img src="/images/blog/engineering/microservice-image_2_1.png" alt="image_2_1.png"></p>
 <p>微服务架构提倡将单一应用程序划分成一组松散耦合的细粒度小型服务，辅助轻量级的协议，互相协调、互相配合，实现高效的应用价值。从单体系统到微服务框架，再到 Service Mesh，架构演进的核心趋势是将通信治理能力不断下沉，最终与业务逻辑彻底解耦。</p>
 <p>围绕微服务的核心模块 -- 服务注册与发现、API 网关服务、分布式配置中心、服务通信、服务治理、分布式服务追踪与监控等，从原理到实践，构成了完整的微服务全景图。</p>
-<hr>
-<blockquote>
-<p><strong>系列导航</strong></p>
-<ul>
-<li><strong>微服务系列（一）：从演进到全景</strong></li>
-<li><a href="/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%8B%86%E5%88%86%E7%AD%96%E7%95%A5%E4%B8%8E%E5%AE%9E%E8%B7%B5">微服务系列（二）：拆分策略与实践</a></li>
-<li><a href="/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0">微服务系列（三）：服务注册与发现</a></li>
-<li><a href="/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E6%9E%B6%E6%9E%84%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97">微服务系列（四）：架构落地指南</a></li>
-</ul>
-</blockquote>
-5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L10",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/architecture/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"架构设计"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-19","children":"2024年03月19日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"微服务系列（一）：从演进到全景"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L10","微服务",{"href":"/blog/tag/%E5%BE%AE%E6%9C%8D%E5%8A%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"微服务"}],["$","$L10","架构演进",{"href":"/blog/tag/%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"架构演进"}],["$","$L10","分布式系统",{"href":"/blog/tag/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"分布式系统"}],["$","$L10","全景架构",{"href":"/blog/tag/%E5%85%A8%E6%99%AF%E6%9E%B6%E6%9E%84/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"全景架构"}],["$","$L10","Service Mesh",{"href":"/blog/tag/Service%20Mesh/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Service Mesh"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":["$","$L11",null,{"content":"$12"}]}],"$L13","$L14"]}]}]}]
-15:I[6249,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
-1b:I[6929,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-2bc9e5a09dbaa80d.js"],"default"]
-16:T8913,<p>架构设计文档的价值不在于文档本身，而在于写文档的过程——它迫使我们在动手之前系统性地思考。一份好的设计文档能回答三个问题：<strong>为什么要做、怎么做、做到什么程度算完</strong>。</p>
+5:["$","article",null,{"className":"min-h-screen","children":["$","div",null,{"className":"mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12","children":[["$","header",null,{"className":"mb-8","children":[["$","nav",null,{"className":"flex items-center gap-1 text-sm mb-4","children":[["$","$L10",null,{"href":"/blog/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"博客"}],["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/page/1","className":"text-gray-500 hover:text-blue-600 transition-colors","children":"技术"}],[["$","span",null,{"className":"text-gray-300","children":"/"}],["$","$L10",null,{"href":"/blog/category/engineering/architecture/page/1","className":"text-blue-600 hover:text-blue-700 transition-colors","children":"架构设计"}]]]}],["$","div",null,{"className":"flex items-center mb-6","children":["$","div",null,{"className":"inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal","children":[["$","svg",null,{"className":"w-4 h-4 mr-2 text-gray-400","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"}]}],["$","time",null,{"dateTime":"2024-03-19","children":"2024年03月19日"}]]}]}],["$","h1",null,{"className":"text-4xl font-bold text-gray-900 mb-6 text-center","children":"微服务系列（一）：从演进到全景"}],["$","div",null,{"className":"flex flex-wrap gap-2 mb-6 justify-center","children":[["$","$L10","微服务",{"href":"/blog/tag/%E5%BE%AE%E6%9C%8D%E5%8A%A1/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"微服务"}],["$","$L10","架构演进",{"href":"/blog/tag/%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"架构演进"}],["$","$L10","分布式系统",{"href":"/blog/tag/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"分布式系统"}],["$","$L10","全景架构",{"href":"/blog/tag/%E5%85%A8%E6%99%AF%E6%9E%B6%E6%9E%84/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"全景架构"}],["$","$L10","Service Mesh",{"href":"/blog/tag/Service%20Mesh/page/1/","className":"inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors","children":"Service Mesh"}]]}]]}],["$","div",null,{"className":"max-w-5xl mx-auto","children":[["$","$L11",null,{"content":"$12"}],"$L13"]}],"$L14","$L15"]}]}]}]
+16:I[6249,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],"default"]
+1c:I[6929,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],"default"]
+13:["$","nav",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":["$","div",null,{"className":"bg-gray-50 rounded-lg p-6","children":[["$","h3",null,{"className":"text-base font-semibold text-gray-900 mb-1","children":"微服务系列"}],["$","p",null,{"className":"text-sm text-gray-500 mb-4","children":"从演进到全景，从拆分到落地"}],["$","ul",null,{"className":"space-y-2","children":[["$","li","engineering/architecture/微服务系列（一）：从演进到全景",{"children":["$","span",null,{"className":"inline-flex items-center text-sm font-semibold text-gray-900","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-blue-600 rounded-full mr-3 flex-shrink-0"}],"微服务系列（一）：从演进到全景"]}]}],["$","li","engineering/architecture/微服务系列（二）：拆分策略与实践",{"children":["$","$L10",null,{"href":"/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E6%8B%86%E5%88%86%E7%AD%96%E7%95%A5%E4%B8%8E%E5%AE%9E%E8%B7%B5","className":"inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-gray-300 rounded-full mr-3 flex-shrink-0"}],"微服务系列（二）：拆分策略与实践"]}]}],["$","li","engineering/architecture/微服务系列（三）：服务注册与发现",{"children":["$","$L10",null,{"href":"/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0","className":"inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-gray-300 rounded-full mr-3 flex-shrink-0"}],"微服务系列（三）：服务注册与发现"]}]}],["$","li","engineering/architecture/微服务系列（四）：架构落地指南",{"children":["$","$L10",null,{"href":"/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E6%9E%B6%E6%9E%84%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97","className":"inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-gray-300 rounded-full mr-3 flex-shrink-0"}],"微服务系列（四）：架构落地指南"]}]}]]}]]}]}]
+17:T8913,<p>架构设计文档的价值不在于文档本身，而在于写文档的过程——它迫使我们在动手之前系统性地思考。一份好的设计文档能回答三个问题：<strong>为什么要做、怎么做、做到什么程度算完</strong>。</p>
 <p>然而实际工作中，设计文档常见两类问题：要么太空——通篇架构图但缺乏落地细节；要么有遗漏——上线后才发现没考虑容灾、没定义回滚方案。根本原因是缺少一个结构化的思考框架。</p>
 <p>本文提供一套经过实践验证的架构设计模板，包含 11 个维度。它的设计思路遵循一条主线：</p>
 <blockquote>
@@ -1193,7 +1184,7 @@ f:I[7150,[],""]
 <td>初稿</td>
 </tr>
 </tbody></table>
-17:T44d1,<p>前面我们学习了微服务的全景架构，了解到相对于传统单体架构，微服务的优势，以及系统服务化的发展趋势。</p>
+18:T4166,<p>前面我们学习了微服务的全景架构，了解到相对于传统单体架构，微服务的优势，以及系统服务化的发展趋势。</p>
 <p>对于新启动的项目，我们在权衡之后可以大方的使用微服务架构。但其实大部分情况下，我们还要去维护一些以前研发的单体系统，这些系统可能因为访问流量的膨胀、功能的扩张而显得非常臃肿不堪，急需要向微服务架构迁移。</p>
 <h2>微服务迁移准备</h2>
 <p><strong>1、代码重构和标准化</strong><br>在启动拆分之前，需要先对现有代码进行梳理和标准化。这包括统一编码规范、消除重复代码、理清模块间的依赖关系。如果代码本身混乱不堪，贸然拆分只会把混乱从一个单体扩散到多个服务中。</p>
@@ -1288,17 +1279,7 @@ f:I[7150,[],""]
 <li>数据库先行拆分，数据模型能否彻底分开决定了微服务边界是否划清</li>
 <li>迁移模式选择：大型遗留系统推荐绞杀者模式，局部重构推荐修缮者模式</li>
 </ul>
-<hr>
-<blockquote>
-<p><strong>系列导航</strong></p>
-<ul>
-<li><a href="/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BB%8E%E6%BC%94%E8%BF%9B%E5%88%B0%E5%85%A8%E6%99%AF">微服务系列（一）：从演进到全景</a></li>
-<li><strong>微服务系列（二）：拆分策略与实践</strong></li>
-<li><a href="/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0">微服务系列（三）：服务注册与发现</a></li>
-<li><a href="/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E6%9E%B6%E6%9E%84%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97">微服务系列（四）：架构落地指南</a></li>
-</ul>
-</blockquote>
-18:T48fa,<h1>gRPC工程实践：拦截器机制与错误处理设计</h1>
+19:T48fa,<h1>gRPC工程实践：拦截器机制与错误处理设计</h1>
 <blockquote>
 <p>gRPC 的核心优势在于强类型契约（Protobuf）和高效的二进制传输（HTTP/2）。但在工程落地中，两个问题往往决定了系统的可维护性：<strong>如何统一处理横切关注点（日志、认证、指标）<strong>和</strong>如何设计清晰的错误传递机制</strong>。本文聚焦这两个核心问题。</p>
 </blockquote>
@@ -1799,7 +1780,7 @@ Server 端执行顺序（FIFO）：
 <blockquote>
 <p>gRPC 的 API 设计精简但抽象程度高。在生产环境中，拦截器和错误处理的模式化实现，比每个服务的逐一处理更可靠、更可维护。</p>
 </blockquote>
-19:T74e0,<h2>秒杀的本质问题</h2>
+1a:T74e0,<h2>秒杀的本质问题</h2>
 <p>秒杀场景的技术特征可以用一句话概括：<strong>在一个极短的时间窗口内，大量请求争抢有限资源并完成交易。</strong></p>
 <p>这个特征决定了秒杀系统与常规业务系统的本质差异——常规系统面对的是持续稳定的流量，容量规划基于均值和百分位；而秒杀面对的是一条近乎垂直的脉冲曲线，峰值可达日常流量的数十倍甚至百倍，且持续时间往往不超过数秒。</p>
 <p>将秒杀场景产生的问题按干系方进行拆解，可以清晰看到其对系统设计的三重要求：</p>
@@ -2247,131 +2228,25 @@ WHERE id = #{itemId}
 <p><strong>原则三：隔离是最有效的保护。</strong> 无论是系统隔离、数据隔离还是部署隔离，目的都是限制故障的爆炸半径。在一个足够大的分布式系统中，故障不是&quot;可能发生&quot;，而是&quot;一定发生&quot;。</p>
 <p><strong>原则四：可用性是一个组织问题，不仅是技术问题。</strong> 稳定性在平时不紧急、出了问题就致命。如果没有组织层面的保障——将稳定性指标纳入绩效、建立专项稳定性团队、定期进行攻防演练——再好的技术方案也会在业务压力下被逐步侵蚀。</p>
 <p>一个秒杀系统的设计，可以根据不同级别的流量，由简单到复杂构建出不同层次的架构。没有一种方案适用于所有场景，选择何种架构取决于业务规模、团队能力和成本约束。但无论规模大小，以上设计原则和思考维度是通用的——它们不仅适用于秒杀，也适用于任何需要应对极端工况的分布式系统。</p>
-1a:Tda76,<h1>分布式系统与事务：从基础到实践</h1>
-<blockquote>
-<p>当一个操作需要跨越多个服务、多个数据库才能完成时，如何保证&quot;要么全部成功，要么全部回滚&quot;？这就是分布式事务要解决的核心问题。</p>
-<p>本文从分布式系统的基本概念出发，逐步深入到一致性理论和事务解决方案，力求构建一个完整的知识框架：<strong>为什么需要分布式 → 分布式带来了什么问题 → 理论上如何权衡 → 工程上如何解决</strong>。</p>
-</blockquote>
-<h3>阅读指南</h3>
-<ul>
-<li><strong>建立基础概念</strong>：第 1–2 章（约 5 分钟）</li>
-<li><strong>理解理论框架</strong>：第 3–4 章（约 10 分钟）</li>
-<li><strong>掌握事务方案</strong>：第 5–8 章（约 25 分钟）</li>
-<li><strong>方案选型参考</strong>：第 9 章（约 5 分钟）</li>
-</ul>
+1b:Tb9e0,<p>一个电商下单操作要同时扣库存、扣余额、核销优惠券——任何一步失败，已执行的步骤都应该回滚。单机数据库用一个事务就搞定了，但当这三个操作分别在三个服务、三个数据库里执行时，问题就来了：本地事务的边界无法跨越网络。</p>
+<p>这篇文章围绕一个贯穿始终的电商下单场景，从理论到六种工程方案再到生产级的对账机制，把分布式事务这件事从头理一遍。</p>
 <hr>
-<h2>1. 从集中式到分布式</h2>
-<h3>1.1 集中式系统</h3>
-<p>集中式系统的特点是：<strong>一个主机承担所有计算和存储</strong>，终端仅负责数据的输入和输出。早期的银行系统、大型企业的核心业务系统大多采用这种架构——从 IBM、HP 等厂商购买昂贵的大型主机，所有业务逻辑集中部署。</p>
-<p>优点是部署简单，无需考虑节点间协调。但问题也很明显：</p>
+<h2>从集中式到分布式</h2>
+<p>集中式系统的特点是一台主机承担所有计算和存储。早期银行系统、大型企业核心业务大多采用这种架构。优点是部署简单、无需考虑节点间协调，但单点故障意味着整个系统瘫痪，纵向扩展（加 CPU / 内存）有物理上限且成本指数增长。</p>
+<p>分布式系统用多台普通计算机通过网络协作，对外表现得像一台机器。机器越多，资源越多，能处理的并发就越大。但分布式在解决容量问题的同时，也引入了几个根本性的新问题：</p>
 <ul>
-<li><strong>单点故障</strong>：主机宕机 = 整个系统瘫痪</li>
-<li><strong>扩展性差</strong>：纵向扩展（加 CPU/内存）有物理上限，且成本指数增长</li>
-<li><strong>维护困难</strong>：系统越来越大，所有逻辑耦合在一起</li>
-</ul>
-<h3>1.2 分布式系统</h3>
-<p>《分布式系统概念与设计》中的定义：</p>
-<blockquote>
-<p>分布式系统是一个硬件或软件组件分布在不同的网络计算机上，彼此之间仅仅通过消息传递进行通信和协调的系统。</p>
-</blockquote>
-<p>简单说就是：<strong>多台普通计算机通过网络协作，对外表现得像一台计算机</strong>。分布式意味着可以采用更多的普通计算机（相对于昂贵的大型主机）组成集群对外提供服务。计算机越多，CPU、内存、存储资源也就越多，能够处理的并发访问量也就越大。</p>
-<p>分布式系统的四个基本特征：</p>
-<table>
-<thead>
-<tr>
-<th>特征</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>分布性</strong></td>
-<td>多台计算机在空间上可以随意分布——同一机柜、不同机房甚至不同城市。系统中没有控制整个系统的主机，也没有受控的从机</td>
-</tr>
-<tr>
-<td><strong>透明性</strong></td>
-<td>系统资源被所有计算机共享，每台计算机的用户不仅可以使用本机的资源，还可以使用系统中其他计算机的资源（包括 CPU、文件、存储等）。用户感知不到背后有多少台机器在提供服务</td>
-</tr>
-<tr>
-<td><strong>协同性</strong></td>
-<td>多台计算机可以互相协作来完成一个共同的任务，一个程序可以分布在几台计算机上并行运行</td>
-</tr>
-<tr>
-<td><strong>通信性</strong></td>
-<td>系统中任意两台计算机都可以通过网络通信来交换信息</td>
-</tr>
-</tbody></table>
-<h3>1.3 常见的分布式方案</h3>
-<p>分布式不是一种单一的技术，而是一种架构理念。在实际应用中，分布式思想体现在多个层面：</p>
-<table>
-<thead>
-<tr>
-<th>分布式方案</th>
-<th>说明</th>
-<th>典型技术</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>分布式应用和服务</strong></td>
-<td>将应用进行分层和分割，各模块独立部署。提高并发能力，减少资源竞争，使业务易于扩展</td>
-<td>微服务架构、Spring Cloud、Dubbo</td>
-</tr>
-<tr>
-<td><strong>分布式静态资源</strong></td>
-<td>将 JS、CSS、图片等静态资源分布式部署，减轻应用服务器负载</td>
-<td>CDN、对象存储（OSS/S3）</td>
-</tr>
-<tr>
-<td><strong>分布式数据和存储</strong></td>
-<td>海量数据单机无法容纳，分布到多台机器存储</td>
-<td>分库分表（ShardingSphere）、HBase、Cassandra</td>
-</tr>
-<tr>
-<td><strong>分布式计算</strong></td>
-<td>将大型计算任务拆分为多个子任务，分配给多台机器并行处理</td>
-<td>MapReduce、Spark、Flink</td>
-</tr>
-<tr>
-<td><strong>分布式锁</strong></td>
-<td>跨进程的互斥访问控制</td>
-<td>Redis（RedLock）、ZooKeeper、etcd</td>
-</tr>
-<tr>
-<td><strong>分布式缓存</strong></td>
-<td>数据缓存分布在多个节点上，提高读取性能</td>
-<td>Redis Cluster、Memcached</td>
-</tr>
-</tbody></table>
-<h3>1.4 分布式 vs 集群</h3>
-<p>这两个概念经常混淆，区别其实很简单：</p>
-<pre><code>分布式（Distributed）：不同的服务器部署不同的服务模块，协作对外提供服务
-    ┌──────────┐   ┌──────────┐   ┌──────────┐
-    │ 用户服务  │   │ 订单服务  │   │ 支付服务  │
-    └──────────┘   └──────────┘   └──────────┘
-
-集群（Cluster）：不同的服务器部署相同的服务，通过负载均衡对外提供服务
-    ┌──────────┐   ┌──────────┐   ┌──────────┐
-    │ 订单服务A │   │ 订单服务B │   │ 订单服务C │
-    └──────────┘   └──────────┘   └──────────┘
-          │              │              │
-          └──────────────┼──────────────┘
-                   负载均衡器
-</code></pre>
-<p>实际系统往往是两者结合：每个分布式服务都以集群方式部署。</p>
-<h3>1.5 分布式带来的新问题</h3>
-<p>和集中式系统相比，分布式系统的性价比更高、处理能力更强、可靠性更高、也有更好的扩展性。但是，分布式在解决高并发问题的同时也带来了一些其他问题：</p>
-<ul>
-<li><strong>网络不可靠</strong>：分布式的必要条件是网络。延迟、丢包、分区随时可能发生，这对性能甚至服务能力都会造成影响</li>
-<li><strong>时钟不同步</strong>：不同机器的系统时钟存在偏差（时钟漂移），无法依赖本地时间戳判定分布式事件的全局先后顺序</li>
-<li><strong>节点故障</strong>：集群中的服务器数量越多，某台服务器宕机的概率也就越大</li>
-<li><strong>数据一致性</strong>：由于服务分布式部署，用户的请求只会落到其中一台机器上。一旦处理不好就很容易产生数据一致性问题。这是分布式系统中最核心也最困难的问题</li>
+<li><strong>网络不可靠</strong>：延迟、丢包、分区随时可能发生</li>
+<li><strong>时钟不同步</strong>：不同机器的系统时钟存在偏差，无法依赖本地时间戳判定分布式事件的全局顺序</li>
+<li><strong>节点故障</strong>：集群越大，某台机器宕机的概率越高</li>
+<li><strong>数据一致性</strong>：请求只会落到其中一台机器上，处理不好就会产生不一致</li>
 </ul>
 <blockquote>
-<p>Leslie Lamport（Paxos 算法发明者，2013 年图灵奖得主）对分布式系统有一个著名的定义：&quot;A distributed system is one in which the failure of a computer you didn&#39;t even know existed can render your own computer unusable.&quot;——<strong>在分布式系统中，一台你甚至不知道其存在的计算机的故障，就可能让你自己的计算机变得不可用。</strong> 这句话精确地概括了分布式系统的根本复杂性。</p>
+<p>Leslie Lamport（Paxos 发明者，2013 图灵奖得主）说过：&quot;A distributed system is one in which the failure of a computer you didn&#39;t even know existed can render your own computer unusable.&quot; —— 一台你甚至不知道其存在的机器的故障，就可能让你的机器不可用。</p>
 </blockquote>
 <hr>
-<h2>2. 数据一致性问题</h2>
-<h3>2.1 从 ACID 说起</h3>
-<p>在理解分布式一致性之前，先回顾单机数据库是如何保证一致性的。数据库通过<strong>事务</strong>（Transaction）机制来保证数据的 ACID 特性：</p>
+<h2>一致性问题与理论基础</h2>
+<h3>从 ACID 到分布式</h3>
+<p>单机数据库通过事务机制保证 ACID：</p>
 <table>
 <thead>
 <tr>
@@ -2381,408 +2256,289 @@ WHERE id = #{itemId}
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>A</strong>tomicity（原子性）</td>
-<td>事务中的操作要么全部成功，要么全部回滚</td>
+<td><strong>A</strong>tomicity</td>
+<td>操作要么全部成功，要么全部回滚</td>
 <td>undo log</td>
 </tr>
 <tr>
-<td><strong>C</strong>onsistency（一致性）</td>
-<td>事务执行前后，数据从一个一致状态转到另一个一致状态</td>
+<td><strong>C</strong>onsistency</td>
+<td>数据从一个合法状态转到另一个合法状态</td>
 <td>由 A、I、D 共同保证</td>
 </tr>
 <tr>
-<td><strong>I</strong>solation（隔离性）</td>
-<td>并发事务之间互不干扰</td>
+<td><strong>I</strong>solation</td>
+<td>并发事务互不干扰</td>
 <td>锁 + MVCC</td>
 </tr>
 <tr>
-<td><strong>D</strong>urability（持久性）</td>
-<td>事务提交后数据不会丢失</td>
+<td><strong>D</strong>urability</td>
+<td>事务提交后数据不丢</td>
 <td>redo log + WAL</td>
 </tr>
 </tbody></table>
-<p>在集中式系统中，所有数据在一台机器上，一个数据库事务就能保证多个操作的原子性。但在分布式系统中，数据分散在多台机器上，<strong>本地事务的边界无法跨越网络</strong>——这就是分布式一致性问题的根源。</p>
-<h3>2.2 分布式中的两种一致性</h3>
-<p>在分布式系统中，&quot;一致性&quot;有两层含义，对应两类不同的问题：</p>
-<p><strong>副本一致性</strong>（Replica Consistency）：同一份数据的多个副本之间是否相同。例如数据库主从复制中，主库写入后从库是否能立即读到最新值。再如配置中心的配置信息如何保证所有节点保持同步。</p>
-<p><strong>事务一致性</strong>（Transactional Consistency）：一个跨多个服务的业务操作，所有步骤要么全部成功，要么全部回滚。例如电商下单需要同时扣库存、扣红包、扣优惠券——任何一步失败，已执行的步骤都应该回滚。</p>
-<h3>2.3 为什么会出现一致性问题</h3>
-<p>分布式系统的数据复制需求主要来源于两个原因：</p>
-<p><strong>可用性</strong>：将数据复制到多台机器上，可以消除单点故障。当某台机器宕机时，其他机器上的副本仍然可以提供服务。</p>
-<p><strong>性能</strong>：通过负载均衡技术，让分布在不同地方的数据副本都对外提供读服务，有效提高系统的吞吐量和响应速度。</p>
-<p>但数据复制面临的主要难题就是<strong>如何保证多个副本之间的数据一致性</strong>。在引入复制机制后，不同数据节点之间由于网络延迟、节点故障等原因很容易产生数据不一致。</p>
-<p>根源在于<strong>数据复制</strong>和<strong>服务拆分</strong>两个场景：</p>
-<pre><code>场景一：数据副本同步延迟
-
-  客户端写入 → 主库（成功）→ 同步 → 从库（延迟）
-  客户端读取 → 从库 → 读到旧数据 ❌
-
-场景二：跨服务调用部分失败
-
-  下单服务
-    ├── 调用库存服务：扣减库存 ✅
-    ├── 调用红包服务：扣减红包 ✅
-    └── 调用优惠券服务：扣减优惠券 ❌（超时）
-
-  此时库存和红包已扣减，但优惠券未知 → 数据不一致
-</code></pre>
-<p>用一个具体的代码场景说明：</p>
-<pre><code class="language-java">// 电商下单伪代码 —— 跨三个服务的操作
+<p>在分布式系统中，数据分散在多台机器上，一个数据库事务无法覆盖跨网络的多个操作。用一段代码来说明问题的本质：</p>
+<pre><code class="language-java">// 电商下单 —— 跨三个服务的操作
 public OrderResult createOrder(OrderRequest request) {
-    // 步骤1：扣减库存（调用库存服务）
+    // 步骤1：扣减库存（库存服务）
     inventoryService.deduct(request.getSkuId(), request.getQuantity());
 
-    // 步骤2：扣减红包（调用营销服务）
-    couponService.deduct(request.getUserId(), request.getCouponId());
+    // 步骤2：扣减余额（账户服务）
+    accountService.deduct(request.getUserId(), request.getAmount());
 
     // 步骤3：创建订单（本地数据库）
     orderDao.insert(request.toOrder());
 
     return OrderResult.success();
 }
+// 如果步骤2成功但步骤3失败 —— 钱扣了但没生成订单
 </code></pre>
-<p>如果步骤 2 执行成功但步骤 3 失败了怎么办？库存和红包已经扣了，但订单没有创建——用户扣了钱却看不到订单。这就是分布式事务要解决的问题。</p>
-<hr>
-<h2>3. 理论基础：CAP 与 BASE</h2>
-<h3>3.1 CAP 定理</h3>
-<p>2000 年，Eric Brewer 在 ACM PODC 会议上提出了 CAP 猜想，2002 年由 Seth Gilbert 和 Nancy Lynch 正式证明为定理：<strong>一个分布式系统最多只能同时满足以下三项中的两项</strong>——</p>
+<h3>CAP 定理</h3>
+<p>2000 年 Eric Brewer 提出 CAP 猜想，2002 年被正式证明：<strong>一个分布式系统最多同时满足以下三项中的两项</strong>。</p>
 <table>
 <thead>
 <tr>
 <th>属性</th>
 <th>含义</th>
-<th>举例</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>C</strong>onsistency（一致性）</td>
-<td>所有节点在同一时刻看到相同的数据。更准确地说，对于任何读操作，要么返回最近一次写操作的结果，要么返回错误</td>
-<td>写入主库后，所有从库立即可读到新值</td>
+<td><strong>C</strong>onsistency</td>
+<td>所有节点在同一时刻看到相同数据</td>
 </tr>
 <tr>
-<td><strong>A</strong>vailability（可用性）</td>
-<td>每个请求都能在合理时间内收到<strong>非错误</strong>响应（注意：不保证是最新数据）</td>
-<td>任意时刻发送请求，系统都能正常响应</td>
+<td><strong>A</strong>vailability</td>
+<td>每个请求都能在合理时间内收到非错误响应</td>
 </tr>
 <tr>
-<td><strong>P</strong>artition tolerance（分区容错性）</td>
-<td>网络分区（节点之间的通信中断或延迟）发生时，系统仍能继续运作</td>
-<td>机房之间的网络断了，各机房仍能独立提供服务</td>
+<td><strong>P</strong>artition tolerance</td>
+<td>网络分区发生时系统仍能运作</td>
 </tr>
 </tbody></table>
-<h4>为什么 P 不可放弃</h4>
-<p>在实际的分布式系统中，网络分区（P）是不可避免的——网络硬件会故障、光纤会被挖断、交换机会宕机。你不能假设网络永远不会出问题。正如 2012 年 Coda Hale 在其文章中论证的：&quot;you cannot choose CA&quot;——一旦系统部署在多台机器上，网络分区就是物理现实而非可选项。</p>
-<p>因此，<strong>CAP 的核心不是&quot;三选二&quot;，而是在发生网络分区时，你选择一致性还是可用性</strong>：</p>
-<pre><code>                        CAP 三角
-                          C
-                         / \
-                        /   \
-                       /     \
-                   CP /       \ CA（理论上存在，
-                     /         \   实际不可行，
-                    /           \  因为 P 不可避免）
-                   P ─────────── A
-                        AP
-</code></pre>
-<h4>CP 与 AP 的工程实践</h4>
+<p>网络分区（P）是物理现实——光纤会被挖断、交换机会宕机。因此 CAP 的核心不是&quot;三选二&quot;，而是<strong>在发生网络分区时，选一致性还是可用性</strong>：</p>
 <table>
 <thead>
 <tr>
 <th>策略</th>
 <th>取舍</th>
 <th>典型系统</th>
-<th>工程表现</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><strong>CP</strong></td>
-<td>保证一致性，牺牲部分可用性</td>
+<td>保一致性，牺牲部分可用性</td>
 <td>ZooKeeper、etcd、HBase</td>
-<td>网络分区时，少数派节点拒绝服务（返回错误），直到分区恢复后才重新提供服务。适用于对数据正确性要求极高的场景：分布式锁、配置管理、leader 选举</td>
 </tr>
 <tr>
 <td><strong>AP</strong></td>
-<td>保证可用性，允许短暂不一致</td>
-<td>Cassandra、DynamoDB、DNS、Eureka</td>
-<td>网络分区时，所有节点继续提供服务，但不同节点可能返回不同版本的数据。分区恢复后通过反熵协议（anti-entropy）或读修复（read repair）等机制达到一致。适用于对可用性要求极高的场景：用户信息缓存、社交动态</td>
+<td>保可用性，允许短暂不一致</td>
+<td>Cassandra、DynamoDB、Eureka</td>
 </tr>
 </tbody></table>
-<blockquote>
-<p><strong>重要澄清</strong>：CAP 中的&quot;放弃一致性&quot;不是说数据可以永远不一致，而是放弃<strong>强一致性</strong>，允许数据在短时间内不一致，但最终会达到一致。分布式系统无论在 CAP 三者之间如何权衡，都<strong>无法彻底放弃一致性</strong>——如果真的放弃一致性，系统中的数据就不可信，那么这个系统也就没有任何价值可言。所以，我们常说的&quot;放弃一致性&quot;实际指的是放弃<strong>强一致性</strong>，而不是完全不保证一致性。这就引出了 BASE 理论。</p>
-</blockquote>
-<h3>3.2 BASE 理论</h3>
-<p>BASE 是对 CAP 中 AP 策略的延伸，它的核心思想是：<strong>即使无法做到强一致性，也可以通过适当的方式达到最终一致性</strong>。</p>
+<h3>BASE 理论</h3>
+<p>BASE 是 CAP 中 AP 策略的工程延伸：即使无法做到强一致性，也可以通过适当方式达到最终一致性。</p>
 <table>
 <thead>
 <tr>
 <th>缩写</th>
-<th>全称</th>
 <th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>BA</strong></td>
-<td>Basically Available</td>
-<td>基本可用——出现故障时允许损失<strong>部分非核心功能</strong>（如降级、限流），但核心功能可用</td>
+<td><strong>BA</strong> (Basically Available)</td>
+<td>出现故障时允许损失部分非核心功能，核心功能可用</td>
 </tr>
 <tr>
-<td><strong>S</strong></td>
-<td>Soft State</td>
-<td>软状态——允许系统中的数据存在中间状态，即允许不同节点之间的数据副本在同步过程中暂时不一致</td>
+<td><strong>S</strong> (Soft State)</td>
+<td>允许数据存在中间状态，不同节点的副本暂时不一致</td>
 </tr>
 <tr>
-<td><strong>E</strong></td>
-<td>Eventually Consistent</td>
-<td>最终一致——软状态不会一直持续，经过一段时间后，所有副本最终会达到一致状态</td>
+<td><strong>E</strong> (Eventually Consistent)</td>
+<td>经过一段时间后，所有副本最终达到一致</td>
 </tr>
 </tbody></table>
-<h4>&quot;基本可用&quot;的两种典型表现</h4>
-<ul>
-<li><strong>响应时间上的损失</strong>：正常情况下搜索引擎在 0.5 秒内返回结果，故障时可以延长到 1-2 秒</li>
-<li><strong>功能上的损失</strong>：电商大促时，为了保护核心的购买流程，暂时关闭评论、推荐等非核心功能</li>
-</ul>
-<h4>BASE vs ACID</h4>
-<p>BASE 理论是对 ACID 的妥协和补充。ACID 追求强一致性模型，BASE 追求的则是通过牺牲强一致性来获得可用性：</p>
-<pre><code>ACID（强一致性，悲观策略）      BASE（最终一致性，乐观策略）
-──────────────────────        ──────────────────────────
-Atomicity   原子性             Basically Available  基本可用
-Consistency 一致性             Soft State           软状态
-Isolation   隔离性             Eventually Consistent 最终一致
-Durability  持久性
-
-ACID 适用于：银行转账、库存扣减等对一致性要求极高的场景
-BASE 适用于：社交动态、搜索索引等可以容忍短暂不一致的场景
-</code></pre>
-<p>在实际系统中，ACID 和 BASE 不是非此即彼的选择，很多系统会<strong>混合使用</strong>——核心链路用 ACID，非核心链路用 BASE。</p>
-<hr>
-<h2>4. 一致性模型</h2>
-<p>一致性模型定义了&quot;数据写入后，读取方能看到什么&quot;的约定。不同的模型在<strong>一致性强度</strong>和<strong>系统性能</strong>之间做出不同的取舍。如何能既保证数据一致性，又保证系统的性能，是每一个分布式系统都需要重点考虑和权衡的。一致性模型可以在做这些权衡的时候给我们很多借鉴和思考。</p>
-<h3>4.1 强一致性（Linearizability）</h3>
-<p>当更新操作完成之后，任何多个后续进程或线程的访问都会返回最新的更新过的值。这种是对用户最友好的——用户上一次写什么，下一次就保证能读到什么。</p>
-<pre><code>时间线 →
-
-Writer:     Write(x=1) ──── 完成
-Reader A:                         Read(x) → 1 ✅
-Reader B:                         Read(x) → 1 ✅
-</code></pre>
-<p>但这种实现对性能影响较大，因为这意味着<strong>只要上次的操作没有处理完，就不能让用户读取数据</strong>。所有读取都必须等待写入完成并同步到所有副本。单机数据库的事务就是强一致性的典型实现；在分布式环境中，Raft/Paxos 等共识算法可以实现强一致性，但代价是更高的延迟和更低的吞吐量。</p>
-<h3>4.2 弱一致性</h3>
-<p>系统并不保证后续进程或线程的访问都会返回最新的更新过的值。系统在数据写入成功之后，<strong>不承诺立即可以读到最新写入的值，也不会具体地承诺多久之后可以读到</strong>。但会尽可能保证在某个时间级别（比如秒级别）之后，可以让数据达到一致性状态。</p>
-<p>从写入到最终所有读取都能看到新值的这段时间，被称为**&quot;不一致窗口&quot;（inconsistency window）**。弱一致性不对这个窗口的大小做任何承诺。</p>
-<h3>4.3 最终一致性</h3>
-<p>弱一致性的特定形式。系统保证：<strong>在没有后续更新的前提下，系统最终返回上一次更新操作的值</strong>。在没有故障发生的前提下，不一致窗口的时间主要受<strong>通信延迟</strong>、<strong>系统负载</strong>和<strong>复制副本的个数</strong>影响。</p>
-<p>DNS 是最典型的最终一致性系统——你修改了域名解析记录，全球各地的 DNS 服务器不会立即更新，但经过 TTL 时间后，所有节点都会拿到新值。</p>
-<h3>4.4 最终一致性的变体</h3>
-<p>最终一致性有几种重要的变体，它们在&quot;最终一致&quot;的基础上提供了更具体的保证：</p>
-<p><strong>因果一致性（Causal Consistency）</strong></p>
-<p>如果进程 A 在更新之后通知了进程 B，那么进程 B 的后续访问将返回更新后的值。与进程 A 没有因果关系的进程 C，则遵循最终一致性的规则。例如：A 发了一条微博，B 对该微博进行了评论。其他用户看到 B 的评论时，一定能看到 A 的原始微博——因为评论和原微博之间存在因果关系。</p>
-<p><strong>读己所写一致性（Read-your-writes Consistency）</strong></p>
-<p>因果一致性的特定形式。一个进程总可以读到自己更新的数据。例如：用户更新了头像后刷新页面，一定能看到新头像——即使这个更新还没有同步到所有从库。</p>
-<p><strong>会话一致性（Session Consistency）</strong></p>
-<p>读己所写一致性的特定形式。进程在访问存储系统的同一个会话内，系统保证该进程读己之所写。会话结束后，新的会话可能读到旧值。实现方式通常是将同一会话的读写请求路由到同一个节点（session stickiness）。</p>
-<p><strong>单调读一致性（Monotonic Read Consistency）</strong></p>
-<p>如果一个进程已经读取到一个特定值，那么该进程不会再读取到该值以前的任何值。也就是说，读到的数据版本只会前进，不会后退。例如：用户刷新页面看到了 10 条评论，再次刷新不应该看到只有 8 条——这在请求被负载均衡到不同从库时容易出现。</p>
-<p><strong>单调写一致性（Monotonic Write Consistency）</strong></p>
-<p>系统保证来自同一个进程的写操作被串行化执行。例如：用户先修改了用户名，再修改了头像，系统不会出现头像先于用户名更新的情况。</p>
-<h4>变体的组合</h4>
-<p>上述最终一致性的不同变体可以进行<strong>组合</strong>使用。从实践的角度来看，<strong>读己所写 + 单调读</strong>的组合是最实用的——用户总能读取到自己更新的数据，并且一旦读取到最新的版本就不会再读取到旧版本。这个组合对于分布式架构上的程序开发来说，会减少很多额外的复杂性。大部分互联网应用的最终一致性方案都在追求这个组合。</p>
-<pre><code>一致性模型强度排序（由强到弱）：
-
-强一致性 &gt; 因果一致性 &gt; 读己所写 &gt; 会话一致性 &gt; 单调读/单调写 &gt; 最终一致性 &gt; 弱一致性
-   ↑                                                                    ↑
-   │                                                                    │
- 性能最差，一致性最强                                            性能最好，一致性最弱
-</code></pre>
-<hr>
-<h2>5. 分布式事务：2PC</h2>
+<p>在实际系统中，ACID 和 BASE 不是非此即彼——核心链路（资金）用 ACID，非核心链路（通知、积分）用 BASE。</p>
 <blockquote>
-<p><strong>从理论到工程的桥梁</strong>：上一章介绍的一致性模型回答了&quot;数据可以不一致到什么程度&quot;，接下来的事务方案则回答&quot;工程上如何逼近我们选择的一致性级别&quot;。本质上，2PC/3PC 在追求强一致性，而 TCC、Saga、本地消息表、事务消息都是<strong>用不同的工程手段逼近最终一致性</strong>——它们的区别在于：在一致性、性能和实现复杂度之间各自做了什么取舍。</p>
+<p><strong>从理论到工程</strong>：CAP/BASE 回答了&quot;数据可以不一致到什么程度&quot;，接下来的事务方案回答&quot;工程上如何逼近我们选择的一致性级别&quot;。2PC/3PC 追求强一致性，TCC、Saga、本地消息表、事务消息都是用不同手段逼近最终一致性——区别在于一致性、性能和实现复杂度之间各自做了什么取舍。</p>
 </blockquote>
-<h3>5.1 什么是分布式事务</h3>
-<p>分布式事务是将单库事务的概念扩展到多库/多服务——<strong>跨越多个独立节点的操作，要么全部提交，要么全部回滚</strong>。</p>
-<p>核心困难在于：每个节点只知道自己的事务执行结果，不知道其他节点的情况。因此需要引入一个**协调者（Coordinator）**来统一决策。</p>
-<h3>5.2 XA 规范</h3>
-<p>X/Open 组织定义的分布式事务处理模型（DTP），包含四个角色：</p>
-<pre><code>┌──────────────────────────────────────────────────────┐
-│                    应用程序（AP）                       │
-│                  发起全局事务                           │
-└──────────┬───────────────────────────┬───────────────┘
-           │                           │
-           ▼                           ▼
-┌──────────────────┐        ┌──────────────────┐
-│  事务管理器（TM）  │        │ 通信资源管理器(CRM)│
-│  协调全局事务      │        │  消息中间件        │
-│  （交易中间件）    │        │                   │
-└────────┬─────────┘        └──────────────────┘
-         │
-    ┌────┴────┐
-    ▼         ▼
-┌───────┐ ┌───────┐
-│RM（DB1）│ │RM（DB2）│
-│资源管理器│ │资源管理器│
-└───────┘ └───────┘
-</code></pre>
-<p>XA 是 TM 与 RM 之间的接口规范——定义了 <code>xa_start</code>、<code>xa_end</code>、<code>xa_prepare</code>、<code>xa_commit</code>、<code>xa_rollback</code> 等接口函数，由数据库厂商实现。<strong>2PC 和 3PC 就是基于 XA 规范的具体协议实现</strong>。</p>
-<h3>5.3 两阶段提交（2PC）</h3>
-<p>2PC 是最经典的分布式事务协议，核心思想：<strong>先投票，再执行</strong>。</p>
-<h4>第一阶段：准备（Prepare / Vote）</h4>
-<pre><code>          协调者（TM）
-            │
-    ┌───────┼───────┐
-    │ Prepare       │ Prepare
-    ▼               ▼
- 参与者A          参与者B
- 执行本地事务      执行本地事务
- 写 redo/undo     写 redo/undo
- 但不提交         但不提交
-    │               │
-    │  Yes/No       │  Yes/No
-    └───────┬───────┘
-            ▼
-          协调者
-</code></pre>
-<p>每个参与者执行本地事务，写入 redo 和 undo 日志，但<strong>不提交</strong>，然后向协调者报告&quot;我准备好了（Yes）&quot;或&quot;我执行失败了（No）&quot;。</p>
-<h4>第二阶段：提交 / 回滚（Commit / Rollback）</h4>
-<p><strong>情况一：所有参与者都返回 Yes → 提交</strong></p>
-<pre><code>          协调者
-            │
-    ┌───────┼───────┐
-    │ Commit        │ Commit
-    ▼               ▼
- 参与者A          参与者B
- 正式提交事务      正式提交事务
- 释放锁资源        释放锁资源
-    │               │
-    │  ACK          │  ACK
-    └───────┬───────┘
-            ▼
-       事务完成 ✅
-</code></pre>
-<p><strong>情况二：任一参与者返回 No 或超时 → 回滚</strong></p>
-<pre><code>          协调者
-            │
-    ┌───────┼───────┐
-    │ Rollback      │ Rollback
-    ▼               ▼
- 参与者A          参与者B
- 利用 undo 回滚   利用 undo 回滚
- 释放锁资源        释放锁资源
-    │               │
-    │  ACK          │  ACK
-    └───────┬───────┘
-            ▼
-       事务回滚 ❌
-</code></pre>
-<h4>Java 中的 XA 事务示例</h4>
-<pre><code class="language-java">// 使用 JTA（Java Transaction API）实现 2PC
-import javax.transaction.UserTransaction;
-import javax.sql.XADataSource;
+<hr>
+<h2>刚性事务：2PC</h2>
+<h3>两阶段提交原理</h3>
+<p>2PC（Two-Phase Commit）是最经典的分布式事务协议，核心思想是<strong>先投票，再执行</strong>。它引入一个协调者（Coordinator）来统一决策，每个参与者只知道自己的事务结果，协调者负责汇总并做出全局决定。</p>
+<p><img src="/images/blog/distributed-transaction/01-2pc-flow.svg" alt="2PC 两阶段流程"></p>
+<p><strong>第一阶段：Prepare</strong>（投票） —— 协调者向所有参与者发送 Prepare 请求。每个参与者执行本地事务，写入 redo/undo 日志，但<strong>不提交</strong>，然后向协调者报告 Yes 或 No。</p>
+<p><strong>第二阶段：Commit / Rollback</strong> —— 如果所有参与者都返回 Yes，协调者发送 Commit，各参与者正式提交事务并释放锁；如果任一参与者返回 No 或超时，协调者发送 Rollback，各参与者利用 undo 日志回滚。</p>
+<h3>XA 规范与 Java 实现</h3>
+<p>X/Open 组织定义的 DTP 模型是 2PC 的工业标准实现，XA 是事务管理器（TM）与资源管理器（RM）之间的接口规范，定义了 <code>xa_start</code>、<code>xa_end</code>、<code>xa_prepare</code>、<code>xa_commit</code>、<code>xa_rollback</code> 等接口。</p>
+<pre><code class="language-java">// 使用 JTA 实现 2PC —— 跨两个数据库的转账
+public class XATransferService {
 
-public class XATransactionExample {
+    public void transfer(long userId, BigDecimal amount) throws Exception {
+        UserTransaction utx = (UserTransaction)
+            ctx.lookup(&quot;java:comp/UserTransaction&quot;);
 
-    public void transfer(BigDecimal amount) throws Exception {
-        UserTransaction utx = (UserTransaction) ctx.lookup(&quot;java:comp/UserTransaction&quot;);
-
-        // XA 数据源（两个不同的数据库）
-        Connection connA = xaDataSourceA.getConnection();  // 账户库
-        Connection connB = xaDataSourceB.getConnection();  // 积分库
+        // XA 数据源：两个独立的数据库
+        Connection connAccount = xaDataSourceA.getConnection(); // 账户库
+        Connection connPoints  = xaDataSourceB.getConnection(); // 积分库
 
         try {
-            utx.begin();  // 开启全局事务
+            utx.begin(); // 开启全局事务（TM 开始协调）
 
-            // 操作数据库 A：扣减账户余额
-            PreparedStatement psA = connA.prepareStatement(
+            // 操作 DB-A：扣减账户余额
+            PreparedStatement psA = connAccount.prepareStatement(
                 &quot;UPDATE account SET balance = balance - ? WHERE user_id = ?&quot;);
             psA.setBigDecimal(1, amount);
             psA.setLong(2, userId);
             psA.executeUpdate();
 
-            // 操作数据库 B：增加积分
-            PreparedStatement psB = connB.prepareStatement(
+            // 操作 DB-B：增加积分
+            PreparedStatement psB = connPoints.prepareStatement(
                 &quot;UPDATE points SET total = total + ? WHERE user_id = ?&quot;);
             psB.setInt(1, amount.intValue());
             psB.setLong(2, userId);
             psB.executeUpdate();
 
-            utx.commit();  // 两阶段提交：TM 协调两个 RM 一起提交
+            // 两阶段提交：TM 先向两个 RM 发 Prepare，
+            // 都返回 Yes 后再发 Commit
+            utx.commit();
         } catch (Exception e) {
-            utx.rollback();  // 两个数据库一起回滚
+            utx.rollback(); // 两个数据库一起回滚
             throw e;
         }
     }
 }
 </code></pre>
-<h4>2PC 的问题</h4>
-<p>二阶段提交看起来确实能够提供原子性的操作，但不幸的是，它存在几个严重的缺陷：</p>
-<p><strong>问题一：同步阻塞</strong></p>
-<p>执行过程中，所有参与节点都是事务阻塞型的。当参与者占有公共资源时，其他第三方节点访问这些公共资源将不得不处于阻塞状态。从准备阶段开始，参与者就持有了锁资源（写入了 redo/undo 日志，锁定了相关行），这些锁一直要到提交阶段完成才能释放。在高并发场景下，这种长时间持锁会严重影响系统吞吐量。</p>
-<p><strong>问题二：单点故障</strong></p>
-<p>由于协调者的重要性，一旦协调者发生故障，参与者会一直阻塞下去。尤其在第二阶段，如果协调者发生故障，那么所有的参与者还都处于锁定事务资源的状态中，而无法继续完成事务操作。虽然可以通过选举协议重新选出一个协调者，但这<strong>无法解决因为协调者宕机导致的参与者已经处于阻塞状态的问题</strong>——新协调者并不知道上一个协调者在宕机前做出了什么决定。</p>
-<p><strong>问题三：数据不一致</strong></p>
-<p>在二阶段提交的第二阶段中，当协调者向参与者发送 Commit 请求之后，发生了局部网络异常，或者在发送 Commit 请求过程中协调者发生了故障，这会导致<strong>只有一部分参与者接收到了 Commit 请求</strong>。收到 Commit 请求的参与者会执行提交操作，而其他未收到的参与者则无法执行事务提交。于是整个分布式系统便出现了数据不一致的现象。</p>
-<pre><code>协调者发送 Commit 后宕机：
-
-协调者 ──→ Commit ──→ 参与者A（收到，执行提交 ✅）
-       ──→ Commit ──✗  参与者B（未收到，仍在等待 ⏳）
-       ──→ Commit ──✗  参与者C（未收到，仍在等待 ⏳）
-
-结果：A 已提交，B 和 C 仍在阻塞 → 数据不一致
-</code></pre>
-<p><strong>问题四：二阶段无法解决的问题</strong></p>
-<p>协调者在发出 Commit 消息之后宕机，而<strong>唯一接收到这条消息的参与者同时也宕机了</strong>。那么即使通过选举协议产生了新的协调者，这条事务的状态也是不确定的——没有人知道事务是否已经被提交。新协调者无法从其他存活的参与者那里获取足够信息来做出正确的决定。</p>
+<h3>2PC 的问题</h3>
+<p><strong>同步阻塞</strong>：从 Prepare 阶段开始，参与者就持有锁资源，一直到 Commit 阶段完成才释放。在高并发场景下，这种长时间持锁严重影响吞吐量。</p>
+<p><strong>单点故障</strong>：协调者宕机后，参与者会一直阻塞。尤其在第二阶段，如果协调者发故障，所有参与者都处于锁定状态。新选举的协调者不知道上一个协调者宕机前做了什么决定。</p>
+<p><strong>数据不一致</strong>：协调者发 Commit 过程中发生局部网络异常或自身宕机，导致只有部分参与者收到 Commit 并提交，其余参与者仍在等待——数据不一致。</p>
+<p><strong>极端场景无解</strong>：协调者发出 Commit 后宕机，且唯一收到 Commit 的参与者也宕机。即使选出新协调者，这条事务的状态也无法确定。</p>
 <hr>
-<h2>6. 分布式事务：3PC</h2>
-<h3>6.1 3PC 对 2PC 的改进</h3>
-<p>由于二阶段提交存在着同步阻塞、单点故障、数据不一致等缺陷，研究者们在二阶段提交的基础上做了改进，提出了三阶段提交。与两阶段提交不同的是，三阶段提交有两个核心改动：</p>
+<h2>刚性事务：3PC</h2>
+<h3>3PC 对 2PC 的改进</h3>
+<p>3PC 针对 2PC 的阻塞问题做了两个核心改动：</p>
 <ol>
-<li><strong>引入超时机制</strong>：同时在协调者和参与者中都引入超时机制。2PC 中只有协调者有超时机制，参与者在等待协调者指令时会无限阻塞。3PC 的参与者在超时后可以自行做出决定，避免了无限阻塞</li>
-<li><strong>增加预提交阶段</strong>：在第一阶段和第二阶段之间插入一个准备阶段（将 2PC 的准备阶段一分为二），保证了在最后提交阶段之前各参与节点的状态是一致的</li>
+<li><strong>参与者也引入超时机制</strong>：2PC 中只有协调者有超时，参与者等待协调者指令时会无限阻塞。3PC 的参与者在超时后可以自行决定，避免无限阻塞。</li>
+<li><strong>增加 CanCommit 阶段</strong>：在 Prepare 和 Commit 之间插入一个轻量级询问阶段，保证进入最终提交阶段之前各节点状态一致。</li>
 </ol>
-<h3>6.2 三个阶段</h3>
-<pre><code>阶段1: CanCommit         阶段2: PreCommit         阶段3: DoCommit
-(轻量级询问)             (预执行 + 写日志)         (正式提交)
+<p><img src="/images/blog/distributed-transaction/02-3pc-flow.svg" alt="3PC 三阶段流程"></p>
+<h3>三个阶段详解</h3>
+<p><strong>阶段一：CanCommit</strong>（轻量询问） —— 协调者问参与者&quot;能提交吗？&quot;。参与者检查资源、权限等条件，返回 Yes 或 No。<strong>注意：此阶段不执行任何事务操作</strong>，这是与 2PC 准备阶段的关键区别。</p>
+<p><strong>阶段二：PreCommit</strong>（预执行） —— 所有参与者返回 Yes 后，协调者发送 PreCommit。参与者执行事务操作，写入 redo/undo 日志，但不提交。如果任一参与者返回 No 或超时，协调者发送 Abort。</p>
+<p><strong>阶段三：DoCommit</strong>（正式提交） —— 协调者收到所有 ACK 后，发送 DoCommit。参与者正式提交事务并释放锁。</p>
+<h3>3PC 协调者与参与者伪代码</h3>
+<pre><code class="language-java">// 3PC 协调者伪代码
+public class ThreePhaseCoordinator {
 
-  协调者 ──→ 参与者       协调者 ──→ 参与者        协调者 ──→ 参与者
-  &quot;能提交吗?&quot;            &quot;预提交&quot;                 &quot;正式提交&quot;
-  参与者 ──→ 协调者       参与者 ──→ 协调者        参与者 ──→ 协调者
-  &quot;Yes / No&quot;            &quot;ACK&quot;(执行事务,写日志)    &quot;ACK&quot;(提交,释放锁)
+    private List&lt;Participant&gt; participants;
+    private static final long TIMEOUT_MS = 5000;
+
+    public boolean execute() {
+        // ===== Phase 1: CanCommit =====
+        // 轻量询问，参与者不执行任何事务操作
+        for (Participant p : participants) {
+            CompletableFuture&lt;Boolean&gt; vote = p.canCommit();
+            Boolean result = vote.get(TIMEOUT_MS, TimeUnit.MILLISECONDS);
+            if (result == null || !result) {
+                abortAll();
+                return false;
+            }
+        }
+
+        // ===== Phase 2: PreCommit =====
+        // 参与者执行事务但不提交，写入 redo/undo 日志
+        for (Participant p : participants) {
+            CompletableFuture&lt;Boolean&gt; ack = p.preCommit();
+            Boolean result = ack.get(TIMEOUT_MS, TimeUnit.MILLISECONDS);
+            if (result == null || !result) {
+                abortAll(); // 通知所有参与者中断
+                return false;
+            }
+        }
+
+        // ===== Phase 3: DoCommit =====
+        // 正式提交
+        for (Participant p : participants) {
+            try {
+                p.doCommit().get(TIMEOUT_MS, TimeUnit.MILLISECONDS);
+            } catch (TimeoutException e) {
+                // 参与者超时 —— 参与者端会默认提交
+                log.warn(&quot;participant {} doCommit timeout, &quot;
+                    + &quot;participant will auto-commit&quot;, p.getId());
+            }
+        }
+        return true;
+    }
+
+    private void abortAll() {
+        for (Participant p : participants) {
+            try { p.abort(); } catch (Exception ignored) {}
+        }
+    }
+}
 </code></pre>
-<h4>阶段一：CanCommit（询问）</h4>
-<p>协调者向参与者发送 CanCommit 请求，询问是否可以执行事务提交操作，然后开始等待参与者的响应。参与者接到请求后，评估自身能否顺利执行事务（检查资源、权限等），如果认为可以则返回 Yes 响应并进入预备状态，否则返回 No。</p>
-<p><strong>注意：此阶段参与者不执行任何事务操作</strong>——这是与 2PC 准备阶段的关键区别。2PC 的第一阶段参与者就要执行事务并持有锁，而 3PC 的 CanCommit 只是一个轻量级的&quot;询问&quot;，不占用任何资源。</p>
-<h4>阶段二：PreCommit（预执行）</h4>
-<p>协调者根据参与者的反应来决定是否可以进行事务的预执行。根据响应情况，有两种可能：</p>
-<p><strong>所有参与者返回 Yes → 预执行事务</strong></p>
-<ol>
-<li>协调者向参与者发送 PreCommit 请求，并进入 Prepared 阶段</li>
-<li>参与者接收到 PreCommit 请求后，执行事务操作，将 undo 和 redo 信息记录到事务日志中（但不提交）</li>
-<li>如果参与者成功执行了事务操作，则返回 ACK 响应，同时开始等待最终指令</li>
-</ol>
-<p><strong>任一参与者返回 No 或超时 → 中断事务</strong></p>
-<ol>
-<li>协调者向所有参与者发送 Abort 请求</li>
-<li>参与者收到 Abort 请求之后（或超时之后仍未收到协调者请求），执行事务中断</li>
-</ol>
-<h4>阶段三：DoCommit（正式提交）</h4>
-<p>该阶段进行真正的事务提交，同样分为两种情况：</p>
-<p><strong>正常提交</strong></p>
-<ol>
-<li>协调者接收到所有参与者发送的 ACK 响应，从预提交状态进入提交状态，向所有参与者发送 DoCommit 请求</li>
-<li>参与者接收到 DoCommit 请求后，执行正式的事务提交，并在完成后释放所有事务资源</li>
-<li>参与者向协调者发送 ACK 响应</li>
-<li>协调者接收到所有参与者的 ACK 后，完成事务</li>
-</ol>
-<p><strong>中断事务</strong></p>
-<ol>
-<li>协调者没有接收到参与者发送的 ACK 响应（可能参与者发送的不是 ACK，也可能响应超时），向所有参与者发送 Abort 请求</li>
-<li>参与者接收到 Abort 请求后，利用阶段二记录的 undo 信息执行事务回滚，并在完成后释放所有事务资源</li>
-<li>参与者完成回滚后，向协调者发送 ACK 消息</li>
-<li>协调者接收到参与者反馈的 ACK 消息后，中断事务</li>
-</ol>
-<h4>超时默认提交的设计推理</h4>
-<p><strong>关键设计</strong>：如果参与者在阶段三等待超时（没收到 DoCommit 也没收到 Abort），它会<strong>默认提交</strong>。</p>
-<p>这个设计是基于概率推理的：当进入第三阶段时，说明参与者在第二阶段已经收到了 PreCommit 请求。而协调者产生 PreCommit 请求的前提条件是——它在第二阶段开始之前，收到了<strong>所有参与者</strong>的 CanCommit 响应都是 Yes。换句话说，<strong>一旦参与者收到了 PreCommit，就意味着它知道大家其实都同意修改了</strong>。所以，当进入第三阶段时，虽然参与者由于网络超时没有收到 Commit 或 Abort 响应，但它有理由相信：成功提交的概率远大于需要回滚的概率。</p>
-<h3>6.3 2PC vs 3PC 对比</h3>
+<pre><code class="language-java">// 3PC 参与者伪代码
+public class ThreePhaseParticipant {
+
+    private static final long TIMEOUT_MS = 5000;
+    private TransactionState state = TransactionState.INIT;
+
+    // Phase 1: 只做资源检查，不执行事务
+    public boolean canCommit() {
+        boolean resourceReady = checkDiskSpace()
+            &amp;&amp; checkConnectionPool()
+            &amp;&amp; checkBusinessConstraints();
+        state = resourceReady
+            ? TransactionState.CAN_COMMIT_YES
+            : TransactionState.ABORTED;
+        return resourceReady;
+    }
+
+    // Phase 2: 执行事务但不提交
+    public boolean preCommit() {
+        try {
+            beginLocalTransaction();
+            executeBusinessLogic(); // 写入 redo/undo 日志
+            state = TransactionState.PRE_COMMITTED;
+            return true;
+        } catch (Exception e) {
+            rollbackLocalTransaction();
+            state = TransactionState.ABORTED;
+            return false;
+        }
+    }
+
+    // Phase 3: 正式提交
+    public void doCommit() {
+        commitLocalTransaction();
+        releaseResources();
+        state = TransactionState.COMMITTED;
+    }
+
+    // 超时处理 —— 这是 3PC 的关键设计
+    public void onPhase3Timeout() {
+        if (state == TransactionState.PRE_COMMITTED) {
+            // 超时默认提交：因为能进入 Phase 3，
+            // 说明 Phase 1 所有人都投了 Yes，大概率应该提交
+            doCommit();
+            log.warn(&quot;Phase 3 timeout, auto-committed based on &quot;
+                + &quot;probability reasoning&quot;);
+        }
+    }
+
+    public void abort() {
+        if (state == TransactionState.PRE_COMMITTED) {
+            rollbackLocalTransaction();
+        }
+        releaseResources();
+        state = TransactionState.ABORTED;
+    }
+}
+</code></pre>
+<h3>超时默认提交的推理</h3>
+<p>3PC 最关键的设计决策是：参与者在第三阶段等待超时后，<strong>默认提交而非回滚</strong>。</p>
+<p>推理逻辑：当参与者进入第三阶段，说明它在第二阶段收到了 PreCommit 请求。协调者产生 PreCommit 的前提是——第一阶段所有参与者都返回了 Yes。换句话说，一旦参与者收到了 PreCommit，就意味着它知道所有参与者都同意了。所以当第三阶段超时时，成功提交的概率远大于需要回滚的概率。</p>
+<p>这是一个基于概率的工程妥协，而不是一个保证正确的协议设计。</p>
+<h3>2PC vs 3PC 对比</h3>
 <table>
 <thead>
 <tr>
@@ -2793,223 +2549,239 @@ public class XATransactionExample {
 </thead>
 <tbody><tr>
 <td>阶段数</td>
-<td>2（准备 + 提交）</td>
-<td>3（询问 + 预提交 + 提交）</td>
+<td>2（Prepare + Commit）</td>
+<td>3（CanCommit + PreCommit + DoCommit）</td>
 </tr>
 <tr>
 <td>超时机制</td>
-<td>仅协调者有</td>
+<td>仅协调者</td>
 <td>协调者和参与者都有</td>
 </tr>
 <tr>
 <td>阻塞风险</td>
-<td>高（协调者宕机 → 参与者永久阻塞）</td>
+<td>高（协调者宕机导致参与者永久阻塞）</td>
 <td>低（参与者超时后默认提交）</td>
+</tr>
+<tr>
+<td>第一阶段开销</td>
+<td>重（参与者执行事务并持锁）</td>
+<td>轻（仅检查资源条件，不持锁）</td>
 </tr>
 <tr>
 <td>一致性</td>
 <td>可能不一致（部分提交）</td>
-<td>仍可能不一致（见下文）</td>
+<td>仍可能不一致（超时默认提交）</td>
 </tr>
 <tr>
 <td>网络开销</td>
-<td>较低</td>
-<td>多一轮通信</td>
+<td>2 轮通信</td>
+<td>3 轮通信</td>
+</tr>
+<tr>
+<td>工程使用</td>
+<td>广泛（XA 规范）</td>
+<td>理论意义大于实践，直接使用极少</td>
 </tr>
 </tbody></table>
-<p>相对于 2PC，3PC 主要解决的是单点故障问题，并减少了阻塞——因为一旦参与者无法及时收到来自协调者的信息之后，它会默认执行 Commit，而不会一直持有事务资源并处于阻塞状态。</p>
-<p>但是这种机制也会导致数据一致性问题：由于网络原因，协调者发送的 Abort 响应没有及时被参与者接收到，那么参与者在等待超时之后执行了 Commit 操作。这样就和其他接到 Abort 命令并执行了回滚的参与者之间存在数据不一致。</p>
 <blockquote>
-<p>无论 2PC 还是 3PC 都无法彻底解决分布式一致性问题。Google Chubby 的作者 Mike Burrows 说过：&quot;there is only one consensus protocol, and that&#39;s Paxos&quot; — all other approaches are just broken versions of Paxos. 意即<strong>世上只有一种一致性算法，那就是 Paxos</strong>，所有其他一致性算法都是 Paxos 算法的不完整版。但在工程实践中，我们更多使用的是下面介绍的几种<strong>柔性事务</strong>方案。</p>
+<p>无论 2PC 还是 3PC 都无法彻底解决分布式一致性问题。Google Chubby 的作者 Mike Burrows 说过：&quot;there is only one consensus protocol, and that&#39;s Paxos&quot;。但在工程实践中，我们更多使用的是下面的<strong>柔性事务</strong>方案。</p>
 </blockquote>
 <hr>
-<h2>7. 柔性事务方案</h2>
-<p>2PC/3PC 是<strong>刚性事务</strong>——追求强一致性，代价是性能和可用性。在互联网业务中，更常用的是<strong>柔性事务</strong>——基于 BASE 理论，接受短暂的不一致，保证最终一致性。</p>
-<h3>7.1 TCC（Try-Confirm-Cancel）</h3>
-<p>TCC 将每个业务操作拆分为三个步骤：</p>
+<h2>柔性事务：TCC</h2>
+<h3>原理</h3>
+<p>TCC（Try-Confirm-Cancel）将每个业务操作拆分为三步：</p>
 <table>
 <thead>
 <tr>
 <th>阶段</th>
 <th>职责</th>
-<th>说明</th>
+<th>电商场景示例</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><strong>Try</strong></td>
 <td>资源预留</td>
-<td>冻结库存、冻结余额，但不真正扣减</td>
+<td>冻结 10 件库存、冻结 100 元余额</td>
 </tr>
 <tr>
 <td><strong>Confirm</strong></td>
-<td>确认执行</td>
-<td>将冻结的资源正式扣减（幂等）</td>
+<td>确认执行（幂等）</td>
+<td>将冻结的库存正式扣减</td>
 </tr>
 <tr>
 <td><strong>Cancel</strong></td>
-<td>取消释放</td>
-<td>将冻结的资源释放回去（幂等）</td>
+<td>取消释放（幂等）</td>
+<td>将冻结的库存释放回去</td>
 </tr>
 </tbody></table>
-<pre><code>┌─────────────────────────────────────────────────────────┐
-│                    TCC 执行流程                           │
-│                                                          │
-│  业务发起方                                               │
-│    │                                                     │
-│    ├── Try(库存服务): 冻结 10 件库存                       │
-│    ├── Try(余额服务): 冻结 100 元                          │
-│    ├── Try(优惠券服务): 冻结优惠券                          │
-│    │                                                     │
-│    ├─ 全部 Try 成功 ──→ Confirm 所有服务 ──→ 事务完成 ✅    │
-│    │                                                     │
-│    └─ 任一 Try 失败 ──→ Cancel 已 Try 的服务 ──→ 事务回滚 ❌│
-└─────────────────────────────────────────────────────────┘
-</code></pre>
-<h4>代码示例</h4>
-<pre><code class="language-java">// 库存服务的 TCC 实现
+<p>所有服务的 Try 都成功后，统一执行 Confirm；任一 Try 失败，统一执行 Cancel 回滚已预留的资源。</p>
+<p><img src="/images/blog/distributed-transaction/03-tcc-flow.svg" alt="TCC Try-Confirm-Cancel 流程"></p>
+<h3>代码实现</h3>
+<pre><code class="language-java">// 库存服务的 TCC 实现 —— 注意字段设计：available + frozen
 public class InventoryTccService {
 
-    // Try：冻结库存（不真正扣减）
-    public boolean tryDeduct(String skuId, int quantity) {
+    // Try：冻结库存，不真正扣减
+    public boolean tryDeduct(String txId, String skuId, int quantity) {
+        // 幂等检查：同一事务 ID 不重复冻结
+        if (txLogDao.exists(txId, &quot;TRY&quot;)) return true;
+
         int updated = jdbcTemplate.update(
-            &quot;UPDATE inventory SET available = available - ?, frozen = frozen + ? &quot; +
-            &quot;WHERE sku_id = ? AND available &gt;= ?&quot;,
+            &quot;UPDATE inventory SET available = available - ?, &quot;
+            + &quot;frozen = frozen + ? &quot;
+            + &quot;WHERE sku_id = ? AND available &gt;= ?&quot;,
             quantity, quantity, skuId, quantity);
+
+        if (updated &gt; 0) {
+            txLogDao.insert(txId, &quot;TRY&quot;, skuId, quantity);
+        }
         return updated &gt; 0;
     }
 
-    // Confirm：将冻结的库存正式扣减
-    public boolean confirm(String skuId, int quantity) {
+    // Confirm：将冻结的库存正式扣减（幂等）
+    public boolean confirm(String txId, String skuId, int quantity) {
+        if (txLogDao.exists(txId, &quot;CONFIRM&quot;)) return true; // 幂等
+
         jdbcTemplate.update(
-            &quot;UPDATE inventory SET frozen = frozen - ? WHERE sku_id = ? AND frozen &gt;= ?&quot;,
+            &quot;UPDATE inventory SET frozen = frozen - ? &quot;
+            + &quot;WHERE sku_id = ? AND frozen &gt;= ?&quot;,
             quantity, skuId, quantity);
+
+        txLogDao.insert(txId, &quot;CONFIRM&quot;, skuId, quantity);
         return true;
     }
 
-    // Cancel：释放冻结的库存
-    public boolean cancel(String skuId, int quantity) {
+    // Cancel：释放冻结的库存（幂等）
+    public boolean cancel(String txId, String skuId, int quantity) {
+        if (txLogDao.exists(txId, &quot;CANCEL&quot;)) return true; // 幂等
+
+        // 空回滚检查：如果 Try 没有执行过，直接返回
+        if (!txLogDao.exists(txId, &quot;TRY&quot;)) {
+            txLogDao.insert(txId, &quot;CANCEL&quot;, skuId, 0);
+            return true;
+        }
+
         jdbcTemplate.update(
-            &quot;UPDATE inventory SET available = available + ?, frozen = frozen - ? &quot; +
-            &quot;WHERE sku_id = ? AND frozen &gt;= ?&quot;,
+            &quot;UPDATE inventory SET available = available + ?, &quot;
+            + &quot;frozen = frozen - ? &quot;
+            + &quot;WHERE sku_id = ? AND frozen &gt;= ?&quot;,
             quantity, quantity, skuId, quantity);
+
+        txLogDao.insert(txId, &quot;CANCEL&quot;, skuId, quantity);
         return true;
     }
 }
 </code></pre>
-<h4>TCC 的关键要求</h4>
-<ul>
-<li><strong>Confirm 和 Cancel 必须幂等</strong>：网络重试可能导致重复调用</li>
-<li><strong>Cancel 必须能处理 Try 未执行的情况</strong>（空回滚）：如果 Try 因为超时未到达，TCC 框架可能直接调 Cancel</li>
-<li><strong>防悬挂</strong>：Cancel 执行后，迟到的 Try 不能再执行</li>
-</ul>
-<h4>适用场景</h4>
-<p>适合对一致性要求较高、资源可以预留的场景：资金转账、库存预扣、票务预订等。</p>
-<h3>7.2 Saga 模式</h3>
-<p>Saga 将一个长事务拆分为一系列<strong>本地事务</strong>，每个本地事务都有对应的<strong>补偿操作</strong>。如果某个步骤失败，按反方向依次执行补偿操作。</p>
-<pre><code>正向执行：T1 → T2 → T3 → T4 → 完成 ✅
-
-异常回滚：T1 → T2 → T3(失败) → C2 → C1 → 回滚完成 ❌
-                                 ↑补偿T2  ↑补偿T1
-</code></pre>
+<h3>幂等性设计要点</h3>
+<p>TCC 的三个核心难题都体现在上面的代码中：</p>
+<p><strong>幂等性</strong>：网络重试可能导致 Confirm / Cancel 被重复调用。通过事务日志表（txId + phase）去重，同一事务的同一阶段只执行一次。</p>
+<p><strong>空回滚</strong>：Try 因网络超时未到达参与者，TCC 框架可能直接调 Cancel。Cancel 需要检查 Try 是否执行过，如果没有则记录日志后直接返回。</p>
+<p><strong>防悬挂</strong>：Cancel 执行后，迟到的 Try 不能再执行。Try 执行前应检查 Cancel 日志是否已存在，如果存在则拒绝执行。</p>
+<hr>
+<h2>柔性事务：Saga</h2>
+<h3>原理</h3>
+<p>Saga 将一个长事务拆分为一系列本地事务，每个本地事务都有对应的补偿操作。正向执行 T1 -&gt; T2 -&gt; T3，如果 T3 失败，反向执行补偿 C2 -&gt; C1。</p>
 <p>Saga 有两种实现方式：</p>
-<p><strong>编排式（Choreography）</strong>：每个服务完成本地事务后发布事件，下游服务监听事件执行自己的操作。去中心化，但流程难以追踪。</p>
-<pre><code>订单服务         库存服务         支付服务
-  │                │                │
-  ├─ 创建订单 ────→│                │
-  │  发布事件       ├─ 扣减库存 ────→│
-  │               │  发布事件       ├─ 执行支付
-  │               │               │  发布事件
-  │←───────────── │←───────────── │
-  │  （如果失败，反向发布补偿事件）     │
-</code></pre>
-<p><strong>协调式（Orchestration）</strong>：引入一个 Saga 协调器，集中控制每个步骤的执行和补偿。流程清晰，便于监控。</p>
-<pre><code class="language-java">// Saga 协调器伪代码
+<p><img src="/images/blog/distributed-transaction/04-saga-patterns.svg" alt="Saga 编排 vs 协调对比"></p>
+<p><strong>编排式</strong>（Choreography）：每个服务完成本地事务后发布事件，下游服务监听事件执行自己的操作。去中心化，服务之间松耦合，但流程难以追踪，跨服务的事务状态散落在各处。</p>
+<p><strong>协调式</strong>（Orchestration）：引入一个 Saga 协调器（通常基于状态机），集中控制每个步骤的执行和补偿。流程清晰，便于监控和调试，但协调器是单点逻辑。</p>
+<h3>协调式 Saga 代码实现</h3>
+<pre><code class="language-java">// Saga 协调器 —— 基于状态机的实现
 public class OrderSagaOrchestrator {
 
-    public void execute(OrderRequest request) {
-        SagaContext context = new SagaContext(request);
+    private final List&lt;SagaStep&gt; steps = new ArrayList&lt;&gt;();
 
-        try {
-            // 正向执行
-            context.execute(&quot;创建订单&quot;,
-                () -&gt; orderService.create(request),
-                () -&gt; orderService.cancel(request));       // 补偿操作
+    public OrderSagaOrchestrator() {
+        // 定义每个步骤的正向操作和补偿操作
+        steps.add(new SagaStep(&quot;创建订单&quot;,
+            req -&gt; orderService.create(req),
+            req -&gt; orderService.cancel(req)));
+        steps.add(new SagaStep(&quot;扣减库存&quot;,
+            req -&gt; inventoryService.deduct(req),
+            req -&gt; inventoryService.restore(req)));
+        steps.add(new SagaStep(&quot;执行支付&quot;,
+            req -&gt; paymentService.charge(req),
+            req -&gt; paymentService.refund(req)));
+    }
 
-            context.execute(&quot;扣减库存&quot;,
-                () -&gt; inventoryService.deduct(request),
-                () -&gt; inventoryService.restore(request));   // 补偿操作
+    public SagaResult execute(OrderRequest request) {
+        List&lt;SagaStep&gt; completedSteps = new ArrayList&lt;&gt;();
 
-            context.execute(&quot;执行支付&quot;,
-                () -&gt; paymentService.charge(request),
-                () -&gt; paymentService.refund(request));      // 补偿操作
+        for (SagaStep step : steps) {
+            try {
+                step.forward(request);
+                completedSteps.add(step);
+                // 持久化状态，便于宕机恢复
+                sagaLog.record(request.getSagaId(),
+                    step.getName(), StepStatus.COMPLETED);
+            } catch (Exception e) {
+                sagaLog.record(request.getSagaId(),
+                    step.getName(), StepStatus.FAILED);
+                // 反向补偿已完成的步骤
+                compensate(completedSteps, request);
+                return SagaResult.rollback(step.getName(), e);
+            }
+        }
+        return SagaResult.success();
+    }
 
-        } catch (Exception e) {
-            // 任一步骤失败 → 反向执行已完成步骤的补偿操作
-            context.compensate();
+    private void compensate(List&lt;SagaStep&gt; completed,
+                            OrderRequest request) {
+        // 从后往前补偿
+        Collections.reverse(completed);
+        for (SagaStep step : completed) {
+            try {
+                step.compensate(request);
+                sagaLog.record(request.getSagaId(),
+                    step.getName(), StepStatus.COMPENSATED);
+            } catch (Exception e) {
+                // 补偿失败 —— 记录日志，交给对账或人工处理
+                sagaLog.record(request.getSagaId(),
+                    step.getName(), StepStatus.COMPENSATE_FAILED);
+                log.error(&quot;compensation failed for step: {}&quot;,
+                    step.getName(), e);
+            }
         }
     }
 }
 </code></pre>
-<h4>TCC vs Saga 对比</h4>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>TCC</th>
-<th>Saga</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>隔离性</td>
-<td>较强（Try 阶段锁定资源）</td>
-<td>较弱（无资源预留，中间状态可见）</td>
-</tr>
-<tr>
-<td>业务侵入</td>
-<td>高（需实现 Try/Confirm/Cancel 三个接口）</td>
-<td>中（需实现业务操作 + 补偿操作）</td>
-</tr>
-<tr>
-<td>适用场景</td>
-<td>短事务、需要资源预留</td>
-<td>长事务、跨多个服务的业务流程</td>
-</tr>
-<tr>
-<td>实现复杂度</td>
-<td>高（空回滚、悬挂、幂等）</td>
-<td>中等（补偿逻辑、幂等）</td>
-</tr>
-</tbody></table>
-<h3>7.3 本地消息表</h3>
-<p>通过<strong>本地数据库事务</strong>保证业务操作和消息写入的原子性，再通过<strong>异步消息</strong>驱动下游操作，最终达到一致。</p>
-<pre><code>┌────────────────────────────────────────────────────────────┐
-│                    本地消息表流程                             │
-│                                                             │
-│  上游服务（同一个数据库事务内）                                │
-│    ├── 执行业务操作（如创建订单）                              │
-│    └── 写入消息表（status = PENDING）                        │
-│         │                                                   │
-│  定时任务 ──→ 扫描 PENDING 消息 ──→ 发送到 MQ               │
-│         │                                                   │
-│  发送成功 ──→ 更新 status = SENT                            │
-│         │                                                   │
-│  下游服务 ←── 消费 MQ 消息 ──→ 执行业务操作（幂等）           │
-│         │                                                   │
-│  消费成功 ──→ 回调上游 ──→ 更新 status = DONE               │
-└────────────────────────────────────────────────────────────┘
-</code></pre>
-<h4>代码示例</h4>
-<pre><code class="language-java">// 上游服务：业务操作 + 消息写入在同一个本地事务中
+<h3>补偿事务设计原则</h3>
+<ol>
+<li><strong>补偿操作必须幂等</strong>：和 TCC 的 Cancel 一样，网络重试可能导致重复调用</li>
+<li><strong>补偿是&quot;语义回滚&quot;而非&quot;物理撤销&quot;</strong>：比如订单已创建，补偿不是 DELETE，而是将状态改为 CANCELLED</li>
+<li><strong>补偿可能失败</strong>：需要有重试机制和最终的人工兜底</li>
+<li><strong>Saga 没有隔离性</strong>：中间状态对外可见。用户可能看到订单状态短暂变为&quot;已创建&quot;然后变为&quot;已取消&quot;</li>
+</ol>
+<hr>
+<h2>柔性事务：本地消息表</h2>
+<h3>原理与架构</h3>
+<p>通过本地数据库事务保证&quot;业务操作&quot;和&quot;消息写入&quot;的原子性，再通过异步消息驱动下游操作，最终达到一致。</p>
+<p><img src="/images/blog/distributed-transaction/05-local-message-table.svg" alt="本地消息表 + 轮询架构"></p>
+<p>核心思路：业务表和消息表在同一个数据库里，用一个本地事务同时写入。然后定时任务扫描消息表中未发送的消息，投递到 MQ。下游消费并执行业务操作后回调确认。</p>
+<h3>代码实现</h3>
+<pre><code class="language-java">// 消息表 DDL
+// CREATE TABLE local_message (
+//     id          BIGINT AUTO_INCREMENT PRIMARY KEY,
+//     msg_id      VARCHAR(64)  UNIQUE NOT NULL,
+//     topic       VARCHAR(128) NOT NULL,
+//     body        TEXT         NOT NULL,
+//     status      VARCHAR(16)  NOT NULL DEFAULT &#39;PENDING&#39;,
+//     retry_count INT          NOT NULL DEFAULT 0,
+//     created_at  DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+//     updated_at  DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP
+// );
+
+// 上游服务：业务操作 + 消息写入在同一个本地事务中
 @Transactional
 public void createOrder(OrderRequest request) {
     // 1. 执行业务操作
-    orderDao.insert(request.toOrder());
+    Order order = request.toOrder();
+    orderDao.insert(order);
 
     // 2. 写入消息表（同一个数据库，同一个事务）
     localMessageDao.insert(new LocalMessage(
         UUID.randomUUID().toString(),
         &quot;ORDER_CREATED&quot;,
-        JsonUtils.toJson(request),
+        JsonUtils.toJson(order),
         &quot;PENDING&quot;
     ));
     // 事务提交后，两条记录要么都写入，要么都不写入
@@ -3018,61 +2790,113 @@ public void createOrder(OrderRequest request) {
 // 定时任务：扫描并发送未处理的消息
 @Scheduled(fixedDelay = 5000)
 public void sendPendingMessages() {
-    List&lt;LocalMessage&gt; messages = localMessageDao.queryByStatus(&quot;PENDING&quot;);
+    List&lt;LocalMessage&gt; messages =
+        localMessageDao.queryByStatus(&quot;PENDING&quot;, 100);
+
     for (LocalMessage msg : messages) {
         try {
             mqProducer.send(msg.getTopic(), msg.getBody());
             localMessageDao.updateStatus(msg.getId(), &quot;SENT&quot;);
         } catch (Exception e) {
-            // 发送失败不更新状态，下次定时任务重试
-            log.warn(&quot;send message failed, will retry: {}&quot;, msg.getId());
+            // 递增重试计数，超过阈值标记为 FAILED 等待人工处理
+            int retryCount = msg.getRetryCount() + 1;
+            if (retryCount &gt; MAX_RETRY) {
+                localMessageDao.updateStatus(msg.getId(), &quot;FAILED&quot;);
+            } else {
+                localMessageDao.incrementRetry(msg.getId());
+            }
         }
     }
 }
+
+// 下游消费者：幂等执行
+@RocketMQMessageListener(topic = &quot;ORDER_CREATED&quot;)
+public void onMessage(MessageExt message) {
+    String msgId = message.getMsgId();
+    // 幂等检查
+    if (consumeLogDao.exists(msgId)) return;
+
+    Order order = JsonUtils.fromJson(
+        new String(message.getBody()), Order.class);
+    // 执行下游业务（如通知仓储发货）
+    warehouseService.prepareShipment(order);
+
+    consumeLogDao.insert(msgId);
+}
 </code></pre>
-<p>优点是实现简单、不依赖特殊中间件。缺点是需要定时轮询，实时性取决于轮询间隔。</p>
-<h3>7.4 事务消息（RocketMQ）</h3>
-<p>RocketMQ 原生支持事务消息，相当于<strong>中间件级别的本地消息表</strong>——将&quot;本地事务 + 消息发送&quot;的原子性保证从应用层下沉到了消息中间件。</p>
-<pre><code>┌──────────────────────────────────────────────────────────┐
-│                  RocketMQ 事务消息流程                      │
-│                                                           │
-│  Producer                  RocketMQ               Consumer│
-│    │                          │                       │   │
-│    ├── 1.发送半消息(Half) ────→│                       │   │
-│    │                          ├── 半消息对消费者不可见   │   │
-│    │←── 2.半消息发送成功 ──────┤                       │   │
-│    │                          │                       │   │
-│    ├── 3.执行本地事务          │                       │   │
-│    │    (如写数据库)           │                       │   │
-│    │                          │                       │   │
-│    ├── 4a.本地事务成功         │                       │   │
-│    │   发送 Commit ──────────→├── 消息对消费者可见 ───→│   │
-│    │                          │                       │   │
-│    ├── 4b.本地事务失败         │                       │   │
-│    │   发送 Rollback ────────→├── 删除半消息           │   │
-│    │                          │                       │   │
-│    │── 4c.超时未响应           │                       │   │
-│    │                          ├── 5.回查本地事务状态    │   │
-│    │←─────────────────────────┤                       │   │
-│    ├── 返回 Commit/Rollback ─→│                       │   │
-└──────────────────────────────────────────────────────────┘
-</code></pre>
-<h4>代码示例</h4>
+<h3>本地消息表与 Saga 的本质关系</h3>
+<p>很多人把本地消息表和 Saga 当作两个平级的方案来比较，但实际上它们的关系是：</p>
+<p><strong>本地消息表是 Saga 编排模式的一种具体实现技术。</strong>（Choreography） 两者的对应关系如下：</p>
+<table>
+<thead>
+<tr>
+<th>概念层次</th>
+<th>Saga (模式)</th>
+<th>本地消息表 (技术)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>定位</td>
+<td>设计模式/架构模式</td>
+<td>实现技术/工程手段</td>
+</tr>
+<tr>
+<td>核心思想</td>
+<td>将长事务拆分为多个本地事务 + 补偿</td>
+<td>用本地事务保证&quot;业务 + 消息&quot;原子性</td>
+</tr>
+<tr>
+<td>服务间通信</td>
+<td>事件/消息 (choreography) 或指令 (orchestration)</td>
+<td>事件/消息 (通过消息表 + MQ)</td>
+</tr>
+<tr>
+<td>事件日志</td>
+<td>Saga 需要某种事件日志来追踪进度</td>
+<td>消息表本身就是事件日志</td>
+</tr>
+<tr>
+<td>实现方式</td>
+<td>可以用编排或协调</td>
+<td>本质上是编排模式的一种实现</td>
+</tr>
+</tbody></table>
+<p>Saga 是一个模式（Pattern），它告诉你&quot;把长事务拆成多步，每步配一个补偿操作&quot;。但 Saga 没有告诉你事件怎么可靠传递。本地消息表解决的正是这个问题——通过数据库事务保证事件（消息）一定被记录，再通过轮询保证事件一定被发送。</p>
+<p>换个角度说：如果你用本地消息表实现了多个服务之间的事件驱动协作，并且每个服务都有对应的补偿逻辑，那你其实就是在实现一个 Saga。</p>
+<hr>
+<h2>柔性事务：事务消息</h2>
+<h3>RocketMQ 半消息机制</h3>
+<p>RocketMQ 原生支持事务消息，相当于将本地消息表的能力下沉到消息中间件——不再需要自己维护消息表和定时轮询。</p>
+<p><img src="/images/blog/distributed-transaction/06-transaction-message.svg" alt="RocketMQ 事务消息半消息流程"></p>
+<p>核心流程：</p>
+<ol>
+<li>Producer 发送半消息（Half Message）到 RocketMQ，此时消息对 Consumer 不可见</li>
+<li>RocketMQ 返回半消息发送成功</li>
+<li>Producer 执行本地事务（如写数据库）</li>
+<li>根据本地事务结果：成功发 Commit（消息变为可见），失败发 Rollback（删除半消息）</li>
+<li>如果 RocketMQ 迟迟没收到 Commit/Rollback，会主动回查 Producer 的本地事务状态</li>
+</ol>
+<h3>代码实现</h3>
 <pre><code class="language-java">// RocketMQ 事务消息 Producer
 public class OrderTransactionProducer {
 
     private TransactionMQProducer producer;
 
     public void sendOrderMessage(OrderRequest request) {
-        Message msg = new Message(&quot;ORDER_TOPIC&quot;, JsonUtils.toJson(request).getBytes());
+        Message msg = new Message(
+            &quot;ORDER_TOPIC&quot;,
+            JsonUtils.toJson(request).getBytes());
+        // 设置业务 key，便于回查
+        msg.setKeys(request.getOrderId());
 
-        // 发送事务消息
-        producer.sendMessageInTransaction(msg, new TransactionListener() {
+        producer.sendMessageInTransaction(msg,
+            new TransactionListener() {
 
             @Override
-            public LocalTransactionState executeLocalTransaction(Message msg, Object arg) {
+            public LocalTransactionState executeLocalTransaction(
+                    Message msg, Object arg) {
                 try {
-                    // 执行本地事务（如写数据库）
+                    // 执行本地事务
                     orderService.createOrder(request);
                     return LocalTransactionState.COMMIT_MESSAGE;
                 } catch (Exception e) {
@@ -3081,67 +2905,316 @@ public class OrderTransactionProducer {
             }
 
             @Override
-            public LocalTransactionState checkLocalTransaction(MessageExt msg) {
+            public LocalTransactionState checkLocalTransaction(
+                    MessageExt msg) {
                 // 回查：检查本地事务是否已执行成功
-                Order order = orderDao.queryByOrderId(request.getOrderId());
+                Order order = orderDao.queryByOrderId(
+                    request.getOrderId());
                 if (order != null) {
                     return LocalTransactionState.COMMIT_MESSAGE;
                 }
-                return LocalTransactionState.UNKNOW;  // 继续等待回查
+                // 返回 UNKNOW，RocketMQ 会稍后再次回查
+                return LocalTransactionState.UNKNOW;
             }
         }, null);
     }
 }
 </code></pre>
-<p>事务消息的优势在于：<strong>半消息 + 回查机制</strong>天然解决了&quot;本地事务成功但消息发送失败&quot;和&quot;消息发送成功但本地事务失败&quot;两种不一致场景。</p>
-<hr>
-<h2>8. 最大努力通知</h2>
-<p>最大努力通知是最简单的最终一致性方案：上游系统<strong>尽最大努力</strong>通知下游系统，如果通知失败则重试若干次，最终仍然失败则需要人工介入或下游主动查询。</p>
-<pre><code>上游系统 ──→ 通知下游（第1次）──→ 失败
-         ──→ 通知下游（第2次）──→ 失败（间隔递增）
-         ──→ 通知下游（第3次）──→ 成功 ✅
-         ──→ ...
-         ──→ 通知下游（第N次）──→ 仍然失败 → 放弃，记录日志，等待人工处理
-                                              或下游主动查询上游接口
+<h3>消息中间件对比：RocketMQ vs Kafka vs Pulsar</h3>
+<p>事务消息不是只有 RocketMQ 能做。但三种主流消息中间件的实现路径截然不同：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>RocketMQ</th>
+<th>Kafka</th>
+<th>Pulsar</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>事务消息支持</strong></td>
+<td>原生半消息 + 回查机制</td>
+<td>Kafka Transactions（不是半消息）</td>
+<td>原生事务消息（类似 Kafka）</td>
+</tr>
+<tr>
+<td><strong>实现原理</strong></td>
+<td>半消息暂存在内部 Topic，Commit 后转移到目标 Topic</td>
+<td>原子写入多个 Topic/Partition，配合 exactly-once 语义</td>
+<td>事务日志 + 原子批量提交</td>
+</tr>
+<tr>
+<td><strong>本地事务协调</strong></td>
+<td>内置：回查机制自动探测本地事务状态</td>
+<td>不内置：需要配合 Outbox Pattern 或 CDC 自行保证</td>
+<td>不内置：需要应用层自行保证</td>
+</tr>
+<tr>
+<td><strong>适用模式</strong></td>
+<td>直接替代本地消息表</td>
+<td>Producer 端 exactly-once + Outbox Pattern</td>
+<td>Producer 端 exactly-once + Outbox Pattern</td>
+</tr>
+<tr>
+<td><strong>回查能力</strong></td>
+<td>有：Broker 主动回查 Producer</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td><strong>消费端语义</strong></td>
+<td>at-least-once（需消费者幂等）</td>
+<td>exactly-once（配合 consume-transform-produce）</td>
+<td>effectively-once（配合去重）</td>
+</tr>
+</tbody></table>
+<p><strong>为什么 RocketMQ 的半消息机制是独特的？</strong></p>
+<p>RocketMQ 是唯一在 Broker 层面内置了&quot;本地事务 + 消息发送&quot;原子性保证的消息中间件。它的半消息对 Consumer 不可见，Broker 会主动回查 Producer 的事务状态——这意味着应用层不需要维护消息表、不需要写定时任务，中间件替你做了。</p>
+<p><strong>什么时候 Kafka 的方案更好？</strong></p>
+<p>Kafka Transactions 解决的是另一个问题：<strong>消息链路内部的 exactly-once</strong>（consume-transform-produce）。如果你的场景是流处理管道（读 Topic A -&gt; 处理 -&gt; 写 Topic B），Kafka Transactions 是更自然的选择。但如果你要保证&quot;数据库写入 + 消息发送&quot;的原子性，Kafka 本身不提供半消息机制，需要配合 Outbox Pattern：</p>
+<pre><code class="language-java">// Kafka + Outbox Pattern 伪代码
+@Transactional
+public void createOrderWithOutbox(OrderRequest request) {
+    // 同一个本地事务
+    orderDao.insert(request.toOrder());
+    outboxDao.insert(new OutboxEvent(
+        &quot;ORDER_CREATED&quot;, JsonUtils.toJson(request)));
+}
+
+// Debezium CDC 监听 outbox 表的变更，自动发送到 Kafka
+// 或者用定时任务轮询 outbox 表（和本地消息表一样）
 </code></pre>
-<p>典型应用场景：<strong>支付回调</strong>。支付宝、微信支付完成扣款后，会多次回调商户的通知地址。如果商户系统一直没有返回成功，支付平台会按递增间隔重试（如 1s、5s、30s、5min、30min），超过最大次数后停止。商户可以通过主动调用支付查询接口来获取最终结果。</p>
+<p><strong>选择建议</strong>：如果团队已经在用 RocketMQ，直接用事务消息最省事。如果用 Kafka，走 Outbox + CDC（Debezium）是成熟路径。Pulsar 在事务消息方面还相对年轻，生产案例较少。</p>
 <hr>
-<h2>9. 方案选型</h2>
+<h2>最大努力通知</h2>
+<p>最大努力通知是最简单的最终一致性方案：上游系统尽最大努力通知下游，失败则按递增间隔重试，超过最大次数后放弃，记录日志等待人工处理或下游主动查询。</p>
+<p>典型场景是<strong>支付回调</strong>。支付宝、微信支付完成扣款后，会多次回调商户通知地址。如果商户系统一直没有返回成功，支付平台按递增间隔重试（1s、5s、30s、5min、30min），超过最大次数后停止。商户可以主动调用支付查询接口获取最终结果。</p>
+<p>最大努力通知和事务消息的区别在于：事务消息保证上游事务和消息发送的原子性，最大努力通知不保证——它只负责&quot;尽力通知&quot;，一致性的最终兜底依赖下游的主动查询。</p>
+<hr>
+<h2>对账机制</h2>
+<p>前面介绍的所有方案都在努力保证一致性，但在生产环境中，没有任何方案能做到 100% 不出问题。网络抖动、服务重启、消息丢失、Bug——总有意外发生。对账（Reconciliation）就是最后一道防线：<strong>定期比对多方数据，发现并修复不一致</strong>。</p>
+<h3>为什么需要对账</h3>
+<p>用电商下单场景来说：</p>
+<ul>
+<li>订单服务记录&quot;订单已创建，金额 100 元&quot;</li>
+<li>支付服务记录&quot;已扣款 100 元&quot;</li>
+<li>第三方支付渠道（支付宝/微信）记录&quot;已收款 100 元&quot;</li>
+</ul>
+<p>这三方的数据理论上应该完全一致。但如果中间环节出了问题（比如支付回调丢失、消息消费失败），就会出现不一致。对账就是把三方数据拿出来比一比，找出差异。</p>
+<h3>对账架构</h3>
+<p><img src="/images/blog/distributed-transaction/07-reconciliation.svg" alt="对账架构 - 三方对账"></p>
+<h3>三种对账策略</h3>
+<p><strong>定时快照对账</strong>（T+1）：每天凌晨，各系统导出前一天的数据快照（通常是 CSV/Parquet 文件），对账系统逐条比对。这是最常见也最成熟的方案，适合对实时性要求不高的场景。</p>
+<p><strong>事件驱动实时对账</strong>：每笔交易完成后，相关服务发送对账事件到对账系统。对账系统在收到所有参与方的事件后进行比对。延迟低（秒级），但实现复杂度高。</p>
+<p><strong>三方交叉对账</strong>：不仅比对内部系统之间的数据，还和外部第三方（支付渠道、银行）的清算文件比对。这是资金类业务的标准做法。</p>
+<h3>对账代码实现</h3>
+<pre><code class="language-java">// 对账引擎核心逻辑
+public class ReconciliationEngine {
+
+    // T+1 定时对账：比对订单和支付记录
+    @Scheduled(cron = &quot;0 30 1 * * ?&quot;) // 每天凌晨 1:30
+    public void dailyReconciliation() {
+        LocalDate yesterday = LocalDate.now().minusDays(1);
+
+        // 1. 拉取各方数据
+        Map&lt;String, OrderRecord&gt; orderRecords =
+            orderService.getRecordsByDate(yesterday)
+                .stream()
+                .collect(Collectors.toMap(
+                    OrderRecord::getOrderId, r -&gt; r));
+
+        Map&lt;String, PaymentRecord&gt; paymentRecords =
+            paymentService.getRecordsByDate(yesterday)
+                .stream()
+                .collect(Collectors.toMap(
+                    PaymentRecord::getOrderId, r -&gt; r));
+
+        // 第三方渠道的清算文件（通常是 SFTP 下载 CSV）
+        Map&lt;String, ChannelRecord&gt; channelRecords =
+            channelFileParser.parse(yesterday);
+
+        // 2. 三方交叉比对
+        Set&lt;String&gt; allOrderIds = new HashSet&lt;&gt;();
+        allOrderIds.addAll(orderRecords.keySet());
+        allOrderIds.addAll(paymentRecords.keySet());
+        allOrderIds.addAll(channelRecords.keySet());
+
+        List&lt;DiscrepancyRecord&gt; discrepancies = new ArrayList&lt;&gt;();
+
+        for (String orderId : allOrderIds) {
+            OrderRecord  order   = orderRecords.get(orderId);
+            PaymentRecord payment = paymentRecords.get(orderId);
+            ChannelRecord channel = channelRecords.get(orderId);
+
+            // 检查各种不一致情况
+            if (order != null &amp;&amp; payment == null) {
+                discrepancies.add(new DiscrepancyRecord(
+                    orderId, DiscrepancyType.PAYMENT_MISSING,
+                    &quot;订单存在但无支付记录&quot;));
+            } else if (order == null &amp;&amp; payment != null) {
+                discrepancies.add(new DiscrepancyRecord(
+                    orderId, DiscrepancyType.ORDER_MISSING,
+                    &quot;支付存在但无订单记录&quot;));
+            } else if (order != null &amp;&amp; payment != null
+                    &amp;&amp; order.getAmount()
+                        .compareTo(payment.getAmount()) != 0) {
+                discrepancies.add(new DiscrepancyRecord(
+                    orderId, DiscrepancyType.AMOUNT_MISMATCH,
+                    String.format(&quot;订单金额 %s，支付金额 %s&quot;,
+                        order.getAmount(),
+                        payment.getAmount())));
+            }
+
+            // 和第三方渠道比对
+            if (payment != null &amp;&amp; channel == null) {
+                discrepancies.add(new DiscrepancyRecord(
+                    orderId, DiscrepancyType.CHANNEL_MISSING,
+                    &quot;内部有支付记录但渠道无记录&quot;));
+            }
+        }
+
+        // 3. 处理差异
+        handleDiscrepancies(discrepancies);
+    }
+
+    private void handleDiscrepancies(
+            List&lt;DiscrepancyRecord&gt; discrepancies) {
+        for (DiscrepancyRecord d : discrepancies) {
+            // 持久化差异记录
+            discrepancyDao.insert(d);
+
+            switch (d.getType()) {
+                case PAYMENT_MISSING:
+                    // 自动补偿：查询支付渠道确认实际状态
+                    autoCompensate(d);
+                    break;
+                case AMOUNT_MISMATCH:
+                case CHANNEL_MISSING:
+                    // 金额不一致或渠道缺失 —— 告警，等人工处理
+                    alertService.sendAlert(d);
+                    break;
+                default:
+                    log.warn(&quot;unhandled discrepancy: {}&quot;, d);
+            }
+        }
+    }
+
+    // 自动补偿：查询真实状态并修复
+    private void autoCompensate(DiscrepancyRecord d) {
+        // 主动查询支付渠道的实际结果
+        ChannelQueryResult result =
+            channelClient.query(d.getOrderId());
+
+        if (result.isPaid()) {
+            // 渠道确认已支付 —— 补录支付记录
+            paymentService.createFromChannelResult(result);
+            d.setResolution(&quot;auto_fixed: payment record created&quot;);
+        } else {
+            // 渠道确认未支付 —— 关闭订单
+            orderService.close(d.getOrderId(),
+                &quot;reconciliation: payment not confirmed&quot;);
+            d.setResolution(&quot;auto_fixed: order closed&quot;);
+        }
+        discrepancyDao.update(d);
+    }
+}
+</code></pre>
+<h3>实时对账的事件驱动实现</h3>
+<pre><code class="language-java">// 事件驱动对账：收到交易事件后实时比对
+public class RealtimeReconciliationService {
+
+    // 对账窗口：等待所有参与方的事件到齐
+    private final Cache&lt;String, ReconciliationWindow&gt; windows =
+        CacheBuilder.newBuilder()
+            .expireAfterWrite(5, TimeUnit.MINUTES)
+            .removalListener(this::onWindowExpired)
+            .build();
+
+    // 收到订单事件
+    public void onOrderEvent(OrderEvent event) {
+        ReconciliationWindow window =
+            getOrCreateWindow(event.getOrderId());
+        window.setOrderEvent(event);
+        checkAndReconcile(window);
+    }
+
+    // 收到支付事件
+    public void onPaymentEvent(PaymentEvent event) {
+        ReconciliationWindow window =
+            getOrCreateWindow(event.getOrderId());
+        window.setPaymentEvent(event);
+        checkAndReconcile(window);
+    }
+
+    private void checkAndReconcile(ReconciliationWindow window) {
+        if (!window.isComplete()) return; // 还有事件没到齐
+
+        // 所有事件都到了，进行比对
+        if (window.isConsistent()) {
+            // 一致，记录对账成功
+            reconciliationLog.recordSuccess(window.getOrderId());
+        } else {
+            // 不一致，立即告警
+            alertService.sendRealtimeAlert(
+                window.getOrderId(), window.getDiscrepancy());
+        }
+    }
+
+    // 窗口超时：有些事件没有到齐
+    private void onWindowExpired(
+            RemovalNotification&lt;String, ReconciliationWindow&gt; n) {
+        ReconciliationWindow window = n.getValue();
+        if (!window.isComplete()) {
+            // 超时未到齐 = 疑似不一致，记录并告警
+            alertService.sendTimeoutAlert(
+                window.getOrderId(), window.getMissingEvents());
+        }
+    }
+}
+</code></pre>
+<hr>
+<h2>方案选型</h2>
+<h3>全面对比</h3>
 <table>
 <thead>
 <tr>
 <th>方案</th>
-<th>一致性</th>
-<th>性能</th>
-<th>复杂度</th>
+<th>一致性级别</th>
+<th>性能影响</th>
+<th>实现复杂度</th>
+<th>业务侵入</th>
 <th>适用场景</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><strong>2PC/XA</strong></td>
 <td>强一致</td>
-<td>低（同步阻塞）</td>
-<td>低（数据库/中间件原生支持）</td>
-<td>数据库层面的跨库事务，对一致性要求极高的场景</td>
+<td>高（同步阻塞、长持锁）</td>
+<td>低（数据库原生支持）</td>
+<td>低</td>
+<td>跨库事务，一致性要求极高</td>
 </tr>
 <tr>
 <td><strong>3PC</strong></td>
 <td>强一致（仍有缺陷）</td>
-<td>低（多一轮通信）</td>
+<td>高（多一轮通信）</td>
 <td>中</td>
-<td>理论意义大于实践，工程中较少直接使用</td>
+<td>低</td>
+<td>理论研究，工程中极少直接使用</td>
 </tr>
 <tr>
 <td><strong>TCC</strong></td>
 <td>最终一致</td>
+<td>低</td>
+<td>高（三接口 + 幂等 + 空回滚 + 防悬挂）</td>
 <td>高</td>
-<td>高（三个接口 + 幂等 + 空回滚 + 防悬挂）</td>
-<td>资金交易、库存预扣等需要资源预留的场景</td>
+<td>资金交易、库存预扣、票务预订</td>
 </tr>
 <tr>
 <td><strong>Saga</strong></td>
 <td>最终一致</td>
-<td>高</td>
+<td>低</td>
+<td>中</td>
 <td>中</td>
 <td>长事务、跨多服务的业务编排</td>
 </tr>
@@ -3150,45 +3223,100 @@ public class OrderTransactionProducer {
 <td>最终一致</td>
 <td>中（依赖轮询间隔）</td>
 <td>低</td>
-<td>对实时性要求不高的异步场景</td>
+<td>低</td>
+<td>实时性要求不高的异步场景</td>
 </tr>
 <tr>
 <td><strong>事务消息</strong></td>
 <td>最终一致</td>
-<td>高</td>
+<td>低</td>
 <td>低（中间件原生支持）</td>
-<td>基于消息驱动的异步业务，如订单 → 物流 → 通知</td>
+<td>低</td>
+<td>消息驱动的异步业务</td>
 </tr>
 <tr>
 <td><strong>最大努力通知</strong></td>
 <td>最终一致（弱保证）</td>
-<td>高</td>
+<td>低</td>
 <td>最低</td>
-<td>跨平台/跨企业的通知场景，如支付回调</td>
+<td>最低</td>
+<td>跨平台通知，如支付回调</td>
 </tr>
 </tbody></table>
-<h3>选型建议</h3>
-<pre><code>                    一致性要求高？
-                    ┌── 是 ──→ 能接受性能损失？
-                    │          ├── 是 ──→ 2PC/XA
-                    │          └── 否 ──→ TCC
-                    │
-                    └── 否 ──→ 涉及多步骤编排？
-                               ├── 是 ──→ Saga
-                               └── 否 ──→ 事务消息 / 本地消息表
-</code></pre>
-<p>实际项目中的经验法则：</p>
+<h3>决策路径</h3>
+<p>面对一个具体的分布式事务需求，可以沿着这个路径做选择：</p>
+<ol>
+<li><p><strong>能用单库事务解决吗？</strong> 如果能，就不要用分布式事务。分布式事务的复杂度远超想象。</p>
+</li>
+<li><p><strong>一致性要求多高？</strong></p>
 <ul>
-<li><strong>能用单库事务解决就不要用分布式事务</strong>——分布式事务的复杂度远超想象</li>
-<li><strong>大部分互联网业务用最终一致性就够了</strong>——用户能接受几秒的延迟</li>
-<li><strong>资金相关用 TCC</strong>，<strong>业务流程编排用 Saga</strong>，<strong>异步通知用事务消息</strong></li>
-<li><strong>如果团队没有分布式事务经验，优先选本地消息表而不是 TCC</strong>——TCC 的空回滚、防悬挂、幂等三件事加在一起，对实现团队的要求很高。现实中很多&quot;用了 TCC 但出了问题&quot;的案例，根源是实现不完整而不是方案本身有缺陷</li>
-<li>无论哪种方案，<strong>幂等性设计</strong>都是基础——网络重试无处不在</li>
+<li>强一致性 + 能接受性能损失 -&gt; <strong>2PC/XA</strong></li>
+<li>强一致性 + 不能接受长阻塞 -&gt; <strong>TCC</strong>（虽然是最终一致，但 Try 阶段的资源预留提供了类似强一致的隔离性）</li>
 </ul>
-13:["$","$d",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L15",null,{"globalNav":{"prev":{"slug":"engineering/practice/架构设计文档实战手册","title":"架构设计文档实战手册：11 个维度，按需裁剪","description":"不是所有项目都需要 11 个维度——一张裁剪表帮你决定该写哪些，每个维度附最小可交付版本和常见错误，文末附可直接复用的 Markdown 模板。","pubDate":"2024-03-16","tags":["架构设计","设计模板","方法论"],"heroImage":"$undefined","content":"$16"},"next":{"slug":"engineering/architecture/微服务系列（二）：拆分策略与实践","title":"微服务系列（二）：拆分策略与实践","description":"系统梳理微服务拆分的完整方法论：从迁移准备、AKF 扩展立方体的理论框架，到基于业务逻辑、可扩展性、可靠性和性能需求的四大拆分策略，再到绞杀者模式与修缮者模式的落地路径，帮助团队在单体向微服务演进过程中做出合理的拆分决策。","pubDate":"2024-03-21","tags":["微服务","服务拆分","架构设计","领域驱动"],"heroImage":"$undefined","content":"$17"}},"tagNav":{"微服务":{"prev":{"slug":"engineering/middleware/gRPC工程实践：拦截器机制与错误处理设计","title":"gRPC工程实践：拦截器机制与错误处理设计","description":"深入解析gRPC Java的两个核心工程问题：拦截器的双向调用链路与错误处理的两种模型。涵盖Client/Server拦截器的执行流程、io.grpc.Status与google.rpc.Status的设计差异，以及流式RPC的错误传递策略。","pubDate":"2023-03-20","tags":["gRPC","Java","微服务","RPC","错误处理"],"heroImage":"$undefined","content":"$18"},"next":"$13:props:children:props:globalNav:next"},"架构演进":{"prev":null,"next":null},"分布式系统":{"prev":{"slug":"engineering/practice/一个秒杀系统的设计思考","title":"一个秒杀系统的设计思考","description":"秒杀系统的核心挑战在于瞬时流量洪峰下的高性能、强一致与高可用三角平衡。从动静分离与多级缓存的读优化，到库存扣减的一致性保障，再到全生命周期的可用性工程——每一层设计决策背后，都是对系统容量、数据正确性与业务连续性的深度权衡。","pubDate":"2024-03-14","tags":["秒杀系统","高并发","架构设计","分布式系统"],"heroImage":"$undefined","content":"$19"},"next":{"slug":"engineering/middleware/分布式系统与事务：从基础到实践","title":"分布式系统与事务：从基础到实践","description":"本文系统梳理分布式系统的核心问题与解决方案：从集中式到分布式的演进动机，CAP/BASE 理论的工程权衡，一致性模型的层次划分，到 2PC、3PC、TCC、Saga、本地消息表、事务消息等分布式事务方案的原理、流程与代码示例。适合希望建立分布式事务知识体系的工程师阅读。","pubDate":"2025-07-23","tags":["分布式事务","一致性","分布式系统"],"heroImage":"$undefined","content":"$1a"}},"全景架构":{"prev":null,"next":null},"Service Mesh":{"prev":null,"next":null}}}]}]
-14:["$","$L1b",null,{}]
+</li>
+<li><p><strong>涉及多步骤编排吗？</strong></p>
+<ul>
+<li>是，且步骤多、流程长 -&gt; <strong>Saga</strong>（协调式）</li>
+<li>是，且服务间已有事件驱动架构 -&gt; <strong>Saga</strong>（编排式 / 本地消息表）</li>
+</ul>
+</li>
+<li><p><strong>是异步通知场景吗？</strong></p>
+<ul>
+<li>上游事务 + 异步通知下游 -&gt; <strong>事务消息</strong>（RocketMQ）或 <strong>本地消息表</strong></li>
+<li>跨企业/跨平台通知 -&gt; <strong>最大努力通知</strong></li>
+</ul>
+</li>
+</ol>
+<h3>场景推荐</h3>
+<table>
+<thead>
+<tr>
+<th>业务场景</th>
+<th>推荐方案</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>跨库转账（同一公司内部）</td>
+<td>2PC/XA</td>
+<td>金额一致性要求最高，且在数据库层面可控</td>
+</tr>
+<tr>
+<td>电商下单（扣库存 + 扣余额）</td>
+<td>TCC</td>
+<td>资源可预留（冻结），需要较高的隔离性</td>
+</tr>
+<tr>
+<td>订单流程（创建 -&gt; 支付 -&gt; 发货 -&gt; 通知）</td>
+<td>Saga（协调式）</td>
+<td>步骤多、流程长，需要清晰的状态机</td>
+</tr>
+<tr>
+<td>订单创建后异步通知仓储</td>
+<td>事务消息 / 本地消息表</td>
+<td>异步场景，保证消息可靠投递即可</td>
+</tr>
+<tr>
+<td>接入第三方支付回调</td>
+<td>最大努力通知</td>
+<td>跨企业场景，通知方不保证送达</td>
+</tr>
+</tbody></table>
+<h3>一条经验法则</h3>
+<p>无论选择哪种方案，有两件事是必须做的：</p>
+<ol>
+<li><p><strong>幂等性设计</strong>：网络重试无处不在，任何操作都可能被重复调用。用唯一业务 ID + 去重表是最可靠的做法。</p>
+</li>
+<li><p><strong>对账兜底</strong>：不要相信任何方案能 100% 保证一致性。日终对账是生产系统的标配，它不是&quot;可选项&quot;，而是&quot;必选项&quot;。</p>
+</li>
+</ol>
+<blockquote>
+<p>如果团队没有分布式事务经验，优先选本地消息表而不是 TCC。TCC 的空回滚、防悬挂、幂等三件事加在一起，对实现质量的要求很高。现实中很多&quot;用了 TCC 但出了问题&quot;的案例，根源是实现不完整而不是方案本身有缺陷。</p>
+</blockquote>
+14:["$","$d",null,{"fallback":["$","div",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":"加载导航中..."}],"children":["$","$L16",null,{"globalNav":{"prev":{"slug":"engineering/practice/架构设计文档实战手册","title":"架构设计文档实战手册：11 个维度，按需裁剪","description":"不是所有项目都需要 11 个维度——一张裁剪表帮你决定该写哪些，每个维度附最小可交付版本和常见错误，文末附可直接复用的 Markdown 模板。","pubDate":"2024-03-16","tags":["架构设计","设计模板","方法论"],"heroImage":"$undefined","series":"$undefined","content":"$17"},"next":{"slug":"engineering/architecture/微服务系列（二）：拆分策略与实践","title":"微服务系列（二）：拆分策略与实践","description":"系统梳理微服务拆分的完整方法论：从迁移准备、AKF 扩展立方体的理论框架，到基于业务逻辑、可扩展性、可靠性和性能需求的四大拆分策略，再到绞杀者模式与修缮者模式的落地路径，帮助团队在单体向微服务演进过程中做出合理的拆分决策。","pubDate":"2024-03-21","tags":["微服务","服务拆分","架构设计","领域驱动"],"heroImage":"$undefined","series":{"key":"microservice","order":2},"content":"$18"}},"tagNav":{"微服务":{"prev":{"slug":"engineering/middleware/gRPC工程实践：拦截器机制与错误处理设计","title":"gRPC工程实践：拦截器机制与错误处理设计","description":"深入解析gRPC Java的两个核心工程问题：拦截器的双向调用链路与错误处理的两种模型。涵盖Client/Server拦截器的执行流程、io.grpc.Status与google.rpc.Status的设计差异，以及流式RPC的错误传递策略。","pubDate":"2023-03-20","tags":["gRPC","Java","微服务","RPC","错误处理"],"heroImage":"$undefined","series":"$undefined","content":"$19"},"next":"$14:props:children:props:globalNav:next"},"架构演进":{"prev":null,"next":null},"分布式系统":{"prev":{"slug":"engineering/practice/一个秒杀系统的设计思考","title":"一个秒杀系统的设计思考","description":"秒杀系统的核心挑战在于瞬时流量洪峰下的高性能、强一致与高可用三角平衡。从动静分离与多级缓存的读优化，到库存扣减的一致性保障，再到全生命周期的可用性工程——每一层设计决策背后，都是对系统容量、数据正确性与业务连续性的深度权衡。","pubDate":"2024-03-14","tags":["秒杀系统","高并发","架构设计","分布式系统"],"heroImage":"$undefined","series":"$undefined","content":"$1a"},"next":{"slug":"engineering/middleware/分布式事务：方案选型与工程实践","title":"分布式事务：方案选型与工程实践","description":"跨服务操作要么全部成功要么全部回滚——这个在单机数据库里靠 ACID 就能解决的问题，到了分布式环境就变成了一个没有完美解的工程权衡。本文从 CAP/BASE 理论出发，逐一拆解 2PC、3PC、TCC、Saga、本地消息表、事务消息六种方案的原理、代码和适用边界，补充生产环境必不可少的对账机制，给出基于业务场景的选型框架。","pubDate":"2025-07-23","tags":["分布式事务","一致性","分布式系统","Saga","TCC"],"heroImage":"$undefined","series":"$undefined","content":"$1b"}},"全景架构":{"prev":null,"next":null},"Service Mesh":{"prev":null,"next":null}}}]}]
+15:["$","$L1c",null,{}]
 b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:null
-1c:I[622,[],"IconMark"]
-9:{"metadata":[["$","title","0",{"children":"微服务系列（一）：从演进到全景 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"从单体系统的痛点出发，梳理微服务架构的演进脉络（从简单通信到 Service Mesh），再全面拆解微服务全景架构中的核心组件：服务注册与发现、API 网关、配置中心、服务通信、服务治理、监控与追踪。"}],["$","meta","2",{"property":"og:title","content":"微服务系列（一）：从演进到全景"}],["$","meta","3",{"property":"og:description","content":"从单体系统的痛点出发，梳理微服务架构的演进脉络（从简单通信到 Service Mesh），再全面拆解微服务全景架构中的核心组件：服务注册与发现、API 网关、配置中心、服务通信、服务治理、监控与追踪。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-03-19"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"微服务系列（一）：从演进到全景"}],["$","meta","9",{"name":"twitter:description","content":"从单体系统的痛点出发，梳理微服务架构的演进脉络（从简单通信到 Service Mesh），再全面拆解微服务全景架构中的核心组件：服务注册与发现、API 网关、配置中心、服务通信、服务治理、监控与追踪。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}],["$","$L1c","14",{}]],"error":null,"digest":"$undefined"}
+1d:I[622,[],"IconMark"]
+9:{"metadata":[["$","title","0",{"children":"微服务系列（一）：从演进到全景 - Skyfalling Blog"}],["$","meta","1",{"name":"description","content":"从单体系统的痛点出发，梳理微服务架构的演进脉络（从简单通信到 Service Mesh），再全面拆解微服务全景架构中的核心组件：服务注册与发现、API 网关、配置中心、服务通信、服务治理、监控与追踪。"}],["$","meta","2",{"property":"og:title","content":"微服务系列（一）：从演进到全景"}],["$","meta","3",{"property":"og:description","content":"从单体系统的痛点出发，梳理微服务架构的演进脉络（从简单通信到 Service Mesh），再全面拆解微服务全景架构中的核心组件：服务注册与发现、API 网关、配置中心、服务通信、服务治理、监控与追踪。"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2024-03-19"}],["$","meta","6",{"property":"article:author","content":"Skyfalling"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"微服务系列（一）：从演进到全景"}],["$","meta","9",{"name":"twitter:description","content":"从单体系统的痛点出发，梳理微服务架构的演进脉络（从简单通信到 Service Mesh），再全面拆解微服务全景架构中的核心组件：服务注册与发现、API 网关、配置中心、服务通信、服务治理、监控与追踪。"}],["$","link","10",{"rel":"shortcut icon","href":"/favicon.png"}],["$","link","11",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","12",{"rel":"icon","href":"/favicon.png"}],["$","link","13",{"rel":"apple-touch-icon","href":"/favicon.png"}],["$","$L1d","14",{}]],"error":null,"digest":"$undefined"}
 e:"$9:metadata"
