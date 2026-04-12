@@ -2,10 +2,11 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
 import { zhCN } from 'date-fns/locale';
-import { getPostWithNavigation, getCategoryFromSlug } from '@/lib/blog';
+import { getPostWithNavigation, getCategoryFromSlug, getSeriesMeta, getSeriesNavItems } from '@/lib/blog';
 import { CATEGORY_META } from '@/lib/categories';
 import SyntaxHighlightedContent from '@/components/SyntaxHighlightedContent';
 import BlogPostNavigation from '@/components/BlogPostNavigation';
+import SeriesNav from '@/components/SeriesNav';
 import GiscusComments from '@/components/GiscusComments';
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
@@ -142,6 +143,15 @@ export default async function BlogPostPage({
           {/* 文章内容 */}
           <div className="max-w-5xl mx-auto">
             <SyntaxHighlightedContent content={post.content} />
+
+            {/* 系列导航（自动渲染，无需手写） */}
+            {post.series?.key && (() => {
+              const seriesMeta = getSeriesMeta(post.series!.key);
+              const seriesItems = getSeriesNavItems(post.series!.key, post.slug);
+              return seriesMeta && seriesItems.length > 1 ? (
+                <SeriesNav meta={seriesMeta} items={seriesItems} />
+              ) : null;
+            })()}
           </div>
 
           {/* 文章导航 */}

@@ -1,0 +1,42 @@
+{
+  "microservice": {
+    "name": "微服务系列",
+    "description": "从演进到全景，从拆分到落地"
+  },
+  "ad-tech": {
+    "name": "广告技术系列",
+    "description": "从商业逻辑到聚合平台"
+  },
+  "agentic": {
+    "name": "Agentic 系列",
+    "description": "从 LLM 到 Agent 的系统化知识体系"
+  },
+  "agentic-platform": {
+    "name": "Agent 基础架构平台",
+    "description": "从全景架构到规模化运营"
+  },
+  "community-feed": {
+    "name": "内容社区信息流",
+    "description": "技术架构与运营体系"
+  },
+  "risk-control": {
+    "name": "风控体系",
+    "description": "从风险识别到内容安全"
+  },
+  "java-core": {
+    "name": "Java 核心技术",
+    "description": "JVM、并发、IO、字节码"
+  },
+  "mysql-core": {
+    "name": "MySQL 核心技术",
+    "description": "索引原理与事务锁机制"
+  },
+  "ai-short-drama": {
+    "name": "AI 短剧工程实践",
+    "description": "从制作全流程到配音流水线"
+  },
+  "digital-exchange": {
+    "name": "数字资产交易所",
+    "description": "业务全景与技术架构"
+  }
+}

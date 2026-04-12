@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 480" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!--
+    TCC (Try-Confirm-Cancel) Flow — Clean redesign
+
+    Key layout decisions:
+    - Top: TCC Manager → three services via bus (Try phase)
+    - Middle: Decision diamond
+    - Bottom: diamond exits LEFT → Confirm section, RIGHT → Cancel section
+    - Confirm and Cancel are COMPLETELY SEPARATE areas, no overlap
+  -->
+
+  <!-- ===== Title ===== -->
+  <text x="390" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">TCC (Try-Confirm-Cancel) 流程</text>
+
+  <!-- ===== TCC Transaction Manager ===== -->
+  <rect x="290" y="48" width="200" height="40" rx="8" fill="#4a90d9" stroke="#2c5282" stroke-width="1.5"/>
+  <text x="390" y="73" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">TCC Transaction Manager</text>
+
+  <!-- ===== Try arrows: TM → 3 services via bus at y=108 ===== -->
+  <!-- TM bottom = y=88 -->
+
+  <!-- Left: TM → Inventory (center=110) -->
+  <line x1="340" y1="88" x2="340" y2="108" stroke="#4a90d9" stroke-width="1.5"/>
+  <line x1="340" y1="108" x2="110" y2="108" stroke="#4a90d9" stroke-width="1.5"/>
+  <line x1="110" y1="108" x2="110" y2="130" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="110,130 102,116 118,116" fill="#4a90d9"/>
+  <text x="210" y="102" font-size="11" fill="#4a90d9" font-weight="bold">Try</text>
+
+  <!-- Center: TM → Balance (center=390, straight down) -->
+  <line x1="390" y1="88" x2="390" y2="130" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="390,130 382,116 398,116" fill="#4a90d9"/>
+  <text x="408" y="112" font-size="11" fill="#4a90d9" font-weight="bold">Try</text>
+
+  <!-- Right: TM → Coupon (center=670) -->
+  <line x1="440" y1="88" x2="440" y2="108" stroke="#4a90d9" stroke-width="1.5"/>
+  <line x1="440" y1="108" x2="670" y2="108" stroke="#4a90d9" stroke-width="1.5"/>
+  <line x1="670" y1="108" x2="670" y2="130" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="670,130 662,116 678,116" fill="#4a90d9"/>
+  <text x="565" y="102" font-size="11" fill="#4a90d9" font-weight="bold">Try</text>
+
+  <!-- ===== Service boxes ===== -->
+  <rect x="40" y="130" width="140" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="110" y="153" text-anchor="middle" font-size="12" fill="#2c5282">Inventory Service</text>
+
+  <rect x="320" y="130" width="140" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="390" y="153" text-anchor="middle" font-size="12" fill="#2c5282">Balance Service</text>
+
+  <rect x="600" y="130" width="140" height="36" rx="8" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="670" y="153" text-anchor="middle" font-size="12" fill="#2c5282">Coupon Service</text>
+
+  <!-- ===== Phase 1 label ===== -->
+  <rect x="15" y="178" width="750" height="22" rx="4" fill="#e8f0fe" stroke="none"/>
+  <text x="390" y="194" text-anchor="middle" font-size="12" font-weight="bold" fill="#4a90d9">Phase 1: Try（预留资源，不真正执行）</text>
+
+  <!-- ===== Freeze details ===== -->
+  <rect x="35" y="210" width="150" height="24" rx="4" fill="#f0f7ff" stroke="#a0c4e8" stroke-width="1"/>
+  <text x="110" y="226" text-anchor="middle" font-size="10" fill="#4a6fa5">freeze 10 items</text>
+
+  <rect x="315" y="210" width="150" height="24" rx="4" fill="#f0f7ff" stroke="#a0c4e8" stroke-width="1"/>
+  <text x="390" y="226" text-anchor="middle" font-size="10" fill="#4a6fa5">freeze 100 yuan</text>
+
+  <rect x="595" y="210" width="150" height="24" rx="4" fill="#f0f7ff" stroke="#a0c4e8" stroke-width="1"/>
+  <text x="670" y="226" text-anchor="middle" font-size="10" fill="#4a6fa5">freeze coupon</text>
+
+  <!-- ===== Decision diamond ===== -->
+  <!-- Center=(390,280), left point=(340,280), right point=(440,280) -->
+  <polygon points="390,252 440,280 390,308 340,280" fill="#fff8e1" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="390" y="284" text-anchor="middle" font-size="11" font-weight="bold" fill="#8b6914">all ok?</text>
+
+  <!-- ===== LEFT EXIT: Confirm path ===== -->
+  <!-- L-shape: diamond left → horizontal → vertical down into banner -->
+  <line x1="340" y1="280" x2="192" y2="280" stroke="#27ae60" stroke-width="2"/>
+  <line x1="192" y1="280" x2="192" y2="320" stroke="#27ae60" stroke-width="2"/>
+  <polygon points="192,320 184,306 200,306" fill="#27ae60"/>
+  <text x="265" y="273" text-anchor="middle" font-size="11" fill="#1e7e45" font-weight="bold">Yes</text>
+
+  <!-- Confirm section banner -->
+  <rect x="15" y="320" width="355" height="26" rx="4" fill="#e8f8ef" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="192" y="338" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e7e45">All Success → Confirm（确认提交）</text>
+
+  <!-- Confirm action boxes: 3 boxes in a row under banner -->
+  <rect x="15" y="360" width="110" height="32" rx="4" fill="#e8f8ef" stroke="#68c690" stroke-width="1"/>
+  <text x="70" y="380" text-anchor="middle" font-size="10" fill="#1e7e45">deduct stock</text>
+
+  <rect x="137" y="360" width="110" height="32" rx="4" fill="#e8f8ef" stroke="#68c690" stroke-width="1"/>
+  <text x="192" y="380" text-anchor="middle" font-size="10" fill="#1e7e45">deduct balance</text>
+
+  <rect x="260" y="360" width="110" height="32" rx="4" fill="#e8f8ef" stroke="#68c690" stroke-width="1"/>
+  <text x="315" y="380" text-anchor="middle" font-size="10" fill="#1e7e45">consume coupon</text>
+
+  <!-- ===== RIGHT EXIT: Cancel path ===== -->
+  <!-- L-shape: diamond right → horizontal → vertical down into banner -->
+  <line x1="440" y1="280" x2="588" y2="280" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="588" y1="280" x2="588" y2="320" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="588,320 580,306 596,306" fill="#e74c3c"/>
+  <text x="510" y="273" text-anchor="middle" font-size="11" fill="#e74c3c" font-weight="bold">No</text>
+
+  <!-- Cancel section banner -->
+  <rect x="410" y="320" width="355" height="26" rx="4" fill="#fef2f2" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="588" y="338" text-anchor="middle" font-size="12" font-weight="bold" fill="#e74c3c">Any Fail → Cancel（回滚释放）</text>
+
+  <!-- Cancel action boxes: 3 boxes in a row under banner -->
+  <rect x="410" y="360" width="110" height="32" rx="4" fill="#fef2f2" stroke="#f5a0a0" stroke-width="1"/>
+  <text x="465" y="380" text-anchor="middle" font-size="10" fill="#c0392b">release stock</text>
+
+  <rect x="533" y="360" width="110" height="32" rx="4" fill="#fef2f2" stroke="#f5a0a0" stroke-width="1"/>
+  <text x="588" y="380" text-anchor="middle" font-size="10" fill="#c0392b">release balance</text>
+
+  <rect x="655" y="360" width="110" height="32" rx="4" fill="#fef2f2" stroke="#f5a0a0" stroke-width="1"/>
+  <text x="710" y="380" text-anchor="middle" font-size="10" fill="#c0392b">release coupon</text>
+
+  <!-- ===== Bottom notes ===== -->
+  <!-- Arrows from banner to action boxes -->
+  <line x1="70" y1="346" x2="70" y2="360" stroke="#27ae60" stroke-width="1"/>
+  <line x1="192" y1="346" x2="192" y2="360" stroke="#27ae60" stroke-width="1"/>
+  <line x1="315" y1="346" x2="315" y2="360" stroke="#27ae60" stroke-width="1"/>
+  <line x1="465" y1="346" x2="465" y2="360" stroke="#e74c3c" stroke-width="1"/>
+  <line x1="588" y1="346" x2="588" y2="360" stroke="#e74c3c" stroke-width="1"/>
+  <line x1="710" y1="346" x2="710" y2="360" stroke="#e74c3c" stroke-width="1"/>
+
+  <!-- Idempotent note -->
+  <rect x="190" y="420" width="400" height="28" rx="6" fill="#fff8e1" stroke="#f5a623" stroke-width="1"/>
+  <text x="390" y="439" text-anchor="middle" font-size="11" fill="#8b6914">Confirm &amp; Cancel 必须幂等（idempotent）</text>
+
+  <!-- TCC characteristic note -->
+  <rect x="190" y="456" width="400" height="22" rx="6" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="390" y="471" text-anchor="middle" font-size="10" fill="#666">每个服务需实现 Try / Confirm / Cancel 三个接口</text>
+</svg>

@@ -3,6 +3,8 @@ title: "Java 核心技术：字节码增强实战"
 pubDate: "2022-10-25"
 description: "全面解析Java字节码增强技术体系，对比ASM、Javassist、cglib、ByteBuddy四大工具的定位与取舍，深入ByteBuddy的核心API——类创建、方法拦截、注解驱动委托，并结合Java Agent与cglib迁移等工程场景展开实战。"
 tags: ["Java", "ByteBuddy", "字节码", "动态代理", "Java Agent"]
+series:
+  key: "java-core"
 ---
 
 # Java字节码增强实战：从原理到ByteBuddy工程应用
@@ -411,13 +413,3 @@ MyAnnotation annotation = (MyAnnotation) Proxy.newProxyInstance(
 4. **工程层面**：生产环境务必使用 `TypeCache` 缓存代理类；优先考虑编译时增强以消除运行时开销
 
 > 字节码增强不是"黑魔法"，而是 Java 类型系统的合理扩展。理解它，是从"使用框架"到"理解框架"的关键一步。
-
----
-
-> **Java 核心技术专栏**
->
-> - [深入理解 JVM](/blog/engineering/middleware/Java核心技术：深入理解JVM)
-> - [并发编程](/blog/engineering/middleware/Java核心技术：并发编程)
-> - [深入理解 AQS](/blog/engineering/middleware/Java核心技术：深入理解AQS)
-> - [IO 模型演进](/blog/engineering/middleware/Java核心技术：IO模型演进)
-> - **字节码增强实战**

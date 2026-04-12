@@ -3,6 +3,9 @@ title: "MCP与工具协议：Agent工具的协议化未来"
 pubDate: "2026-01-27"
 description: "当前 Agent 工具集成面临 N×M 问题：每个框架、每个应用都在重复造轮子。MCP（Model Context Protocol）正在尝试成为 Agent 工具世界的 HTTP——一个标准化的通信协议。本文深入剖析 MCP 的架构设计、通信机制与安全模型，探讨工具协议化的趋势、trade-off 与未来走向。"
 tags: ["Agentic", "AI Engineering", "MCP"]
+series:
+  key: "agentic"
+  order: 13
 ---
 
 > 每一次技术生态的成熟，都伴随着协议的诞生。Web 有 HTTP，邮件有 SMTP，实时通信有 WebSocket。当 Agent 从实验走向生产，工具调用也必然需要自己的协议层。
@@ -2347,9 +2350,3 @@ MCP 正在快速演进，几个未解问题值得关注：
 5. **保持务实的乐观**。MCP 目前最有前途，但要做好业务逻辑与协议层的解耦。
 
 工具协议化是 Agent 生态从"手工作坊"走向"工业化"的关键一步。
-
-> **系列导航**：本文是 Agentic 系列的第 13 篇。
->
-> - 上一篇：[12 | LangChain与LangGraph：框架的价值与边界](/blog/engineering/agentic/12-LangChain与LangGraph：框架的价值与边界)
-> - 下一篇：[14 | 生产级Agent系统：评估、成本与安全](/blog/engineering/agentic/14-生产级Agent系统：评估、成本与安全)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

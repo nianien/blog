@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 530" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+
+  <!-- ===== Title ===== -->
+  <text x="420" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">对账架构（Three-Way Check）</text>
+
+  <!-- ============================================ -->
+  <!-- Three Data Sources — unified blue palette    -->
+  <!-- ============================================ -->
+  <!-- Order Service DB (Source A) — center x=135 -->
+  <rect x="40" y="60" width="190" height="52" rx="8" fill="#4a90d9" stroke="#2c5282" stroke-width="1.5"/>
+  <text x="135" y="82" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#fff">Order Service DB</text>
+  <text x="135" y="100" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#cce0f5">(Source A)</text>
+
+  <!-- Payment Service DB (Source B) — center x=420 -->
+  <rect x="325" y="60" width="190" height="52" rx="8" fill="#5b7bb5" stroke="#3a5a8c" stroke-width="1.5"/>
+  <text x="420" y="82" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#fff">Payment Service DB</text>
+  <text x="420" y="100" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#c8d8ec">(Source B)</text>
+
+  <!-- 3rd-Party Payment (Source C) — center x=705 -->
+  <rect x="610" y="60" width="190" height="52" rx="8" fill="#6e8cba" stroke="#4a6a92" stroke-width="1.5"/>
+  <text x="705" y="82" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#fff">3rd-Party Payment</text>
+  <text x="705" y="100" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#c8d8ec">(Source C)</text>
+
+  <!-- ============================================ -->
+  <!-- Arrows: Sources → Engine (straight down)     -->
+  <!-- All use same blue tone                       -->
+  <!-- ============================================ -->
+  <!-- Source A → Engine -->
+  <line x1="135" y1="112" x2="135" y2="195" stroke="#4a90d9" stroke-width="1.5"/>
+  <polygon points="135,195 127,181 143,181" fill="#4a90d9"/>
+  <text x="145" y="155" dominant-baseline="central" font-size="9" fill="#4a6a92">snapshot / events</text>
+
+  <!-- Source B → Engine -->
+  <line x1="420" y1="112" x2="420" y2="195" stroke="#5b7bb5" stroke-width="1.5"/>
+  <polygon points="420,195 412,181 428,181" fill="#5b7bb5"/>
+  <text x="430" y="155" dominant-baseline="central" font-size="9" fill="#4a6a92">snapshot / events</text>
+
+  <!-- Source C → Engine -->
+  <line x1="705" y1="112" x2="705" y2="195" stroke="#6e8cba" stroke-width="1.5"/>
+  <polygon points="705,195 697,181 713,181" fill="#6e8cba"/>
+  <text x="715" y="155" dominant-baseline="central" font-size="9" fill="#4a6a92">settlement file / API</text>
+
+  <!-- ============================================ -->
+  <!-- Reconciliation Engine                        -->
+  <!-- ============================================ -->
+  <rect x="100" y="195" width="640" height="72" rx="8" fill="#eef2f7" stroke="#4a6a92" stroke-width="1.5"/>
+  <text x="420" y="224" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="bold" fill="#2c3e50">Reconciliation Engine</text>
+  <text x="420" y="248" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#5a7a9a">compare A vs B vs C | cron (T+1) or event-driven (real-time)</text>
+
+  <!-- ============================================ -->
+  <!-- Branching: Engine → Three Results            -->
+  <!-- ============================================ -->
+  <!-- Center vertical -->
+  <line x1="420" y1="267" x2="420" y2="300" stroke="#7a8a9a" stroke-width="1.5"/>
+  <!-- Horizontal branch line -->
+  <line x1="135" y1="300" x2="705" y2="300" stroke="#7a8a9a" stroke-width="1.5"/>
+
+  <!-- Drop to Match -->
+  <line x1="135" y1="300" x2="135" y2="330" stroke="#7a8a9a" stroke-width="1.5"/>
+  <polygon points="135,330 127,316 143,316" fill="#7a8a9a"/>
+
+  <!-- Drop to Mismatch -->
+  <line x1="420" y1="300" x2="420" y2="330" stroke="#7a8a9a" stroke-width="1.5"/>
+  <polygon points="420,330 412,316 428,316" fill="#7a8a9a"/>
+
+  <!-- Drop to One-sided -->
+  <line x1="705" y1="300" x2="705" y2="330" stroke="#7a8a9a" stroke-width="1.5"/>
+  <polygon points="705,330 697,316 713,316" fill="#7a8a9a"/>
+
+  <!-- ============================================ -->
+  <!-- Three Result Boxes                           -->
+  <!-- ============================================ -->
+  <!-- Match — green -->
+  <rect x="50" y="330" width="170" height="42" rx="6" fill="#e8f8ef" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="135" y="345" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#1e7e45">Match</text>
+  <text x="135" y="362" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#27ae60">无需处理</text>
+
+  <!-- Mismatch — amber -->
+  <rect x="335" y="330" width="170" height="42" rx="6" fill="#fef3e2" stroke="#d4a04a" stroke-width="1.5"/>
+  <text x="420" y="345" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#7b5b2a">Mismatch</text>
+  <text x="420" y="362" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#8b6914">金额 / 状态 / 缺失</text>
+
+  <!-- One-sided Record — red -->
+  <rect x="610" y="330" width="190" height="42" rx="6" fill="#fef2f2" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="705" y="345" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#c0392b">One-sided Record</text>
+  <text x="705" y="362" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#c0392b">A 有但 B/C 无</text>
+
+  <!-- ============================================ -->
+  <!-- Arrows: Results → Actions                    -->
+  <!-- ============================================ -->
+  <line x1="420" y1="372" x2="420" y2="408" stroke="#d4a04a" stroke-width="1.5"/>
+  <polygon points="420,408 412,394 428,394" fill="#d4a04a"/>
+
+  <line x1="705" y1="372" x2="705" y2="408" stroke="#e74c3c" stroke-width="1.5"/>
+  <polygon points="705,408 697,394 713,394" fill="#e74c3c"/>
+
+  <!-- ============================================ -->
+  <!-- Action Boxes                                 -->
+  <!-- ============================================ -->
+  <!-- Auto Correction — amber -->
+  <rect x="310" y="408" width="220" height="58" rx="6" fill="#fef8ea" stroke="#d4a04a" stroke-width="1"/>
+  <text x="420" y="425" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#7b5b2a">Auto Correction</text>
+  <text x="420" y="442" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#8b6914">重试失败操作</text>
+  <text x="420" y="456" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#8b6914">补偿不一致记录</text>
+
+  <!-- Alert + Manual Review — red -->
+  <rect x="600" y="408" width="210" height="58" rx="6" fill="#fef2f2" stroke="#e74c3c" stroke-width="1"/>
+  <text x="705" y="425" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="bold" fill="#c0392b">Alert + Manual Review</text>
+  <text x="705" y="442" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#c0392b">推送运营 Dashboard</text>
+  <text x="705" y="456" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#c0392b">创建工单跟进</text>
+
+  <!-- ============================================ -->
+  <!-- Footer: Strategies                           -->
+  <!-- ============================================ -->
+  <rect x="50" y="486" width="740" height="36" rx="8" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+  <text x="420" y="504" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#666">Periodic Snapshot (T+1) | Event-driven Real-time | Three-way Cross-check (A vs B vs C)</text>
+
+</svg>

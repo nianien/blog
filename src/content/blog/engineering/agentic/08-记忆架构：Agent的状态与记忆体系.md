@@ -3,6 +3,9 @@ title: "记忆架构：Agent的状态与记忆体系"
 description: "LLM 是无状态的，但 Agent 必须有状态。本文系统拆解 Agent 记忆的四层架构——Conversation Buffer、Working Memory、Episodic Memory、Semantic Memory，从认知科学类比出发，深入每一层的设计原理、存储方案、读写策略与 Context Window 管理，附完整 Python 实现。"
 pubDate: "2026-01-02"
 tags: ["Agentic", "AI Engineering", "Memory"]
+series:
+  key: "agentic"
+  order: 8
 ---
 
 > LLM 是一个纯函数：给定相同的 prompt，产生相同的输出。它没有"昨天"，没有"上次"，没有"你之前说过"。
@@ -2524,11 +2527,3 @@ class MultiTenantMemoryStore:
 3. **Memory as Skill**：能否让 Agent 从记忆中"学会"新技能，而非仅仅"记住"过去的经验？比如从 10 次类似任务的记录中归纳出一个通用策略。
 4. **Privacy-Aware Memory**：用户说"忘记我刚才说的"，记忆系统能否真正做到选择性遗忘？在向量数据库中，删除一条记录是否真的消除了它对其他向量的影响？
 5. **Memory Hallucination**：当 Episodic Memory 中存储了不准确的信息（比如一次错误的推理结论），它会不会在后续检索中"污染"Agent 的决策？如何设计记忆的"自校正"机制？
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 08 篇。
->
-> - 上一篇：[07 | 从零构建Agent运行时](/blog/engineering/agentic/07-从零构建Agent运行时)
-> - 下一篇：[09 | RAG作为认知记忆：检索增强生成的工程实践](/blog/engineering/agentic/09-RAG作为认知记忆：检索增强生成的工程实践)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

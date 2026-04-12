@@ -3,6 +3,9 @@ title: "多Agent协作：协作模式与架构设计"
 pubDate: "2026-01-17"
 description: "单个 Agent 的能力有天花板——Context Window 有限、专业化受限、单点故障、串行瓶颈。本文系统拆解多 Agent 协作的四种核心模式（Supervisor-Worker、Peer-to-Peer、Pipeline、Dynamic Routing），深入 Agent 间通信机制、状态管理、错误处理与成本控制，并用 Python 从零实现一个 Supervisor-Worker 协作框架。"
 tags: ["Agentic", "AI Engineering", "Multi-Agent"]
+series:
+  key: "agentic"
+  order: 11
 ---
 
 > 一个人可以走得很快，但一群人才能走得很远。Agent 也是如此。
@@ -1650,11 +1653,3 @@ Phase 3 知识路线：
 **关于 Agent 的涌现行为**：当多个 Agent 协作时，是否会出现超越单个 Agent 能力的"涌现行为"？还是说 Multi-Agent 的上限永远被最强的那个 Agent 决定？这个问题在学术界尚无定论，但从实践角度看，好的协作架构确实能产出超越任何单个 Agent 的结果——正如一个好的工程团队能完成任何个人都无法独自完成的项目。
 
 **关于 Human-in-the-Loop**：本文讨论的全是 Agent-to-Agent 的协作。但在生产环境中，最重要的"Agent"可能是人类。如何设计一个 Multi-Agent 系统，让人类能在关键节点介入、审核和纠正？Human-Agent 协作可能比 Agent-Agent 协作更有实用价值，也更有挑战性。
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 11 篇。
->
-> - 上一篇：[10 | 规划与反思：从ReAct到分层规划与自我纠错](/blog/engineering/agentic/10-规划与反思：从ReAct到分层规划与自我纠错)
-> - 下一篇：[12 | LangChain与LangGraph：框架的价值与边界](/blog/engineering/agentic/12-LangChain与LangGraph：框架的价值与边界)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

@@ -3,6 +3,9 @@ title: "从零构建Agent运行时"
 description: "不依赖 LangChain 等框架，从零实现一个功能完整的 Agent Runtime。逐模块构建 LLMClient、ToolRegistry、ToolExecutor、MessageManager 和核心控制循环，包含并行工具调用、Streaming、超时控制、死循环检测等高级特性，附完整可运行代码。"
 pubDate: "2025-12-28"
 tags: ["Agentic", "AI Engineering", "Runtime"]
+series:
+  key: "agentic"
+  order: 7
 ---
 
 > 框架是加速器，不是知识的替代品。
@@ -1800,11 +1803,3 @@ class AgentRuntime:
 - **第 11 篇**：Multi-Agent Collaboration — 多 Agent 协作
 
 Phase 2 给了你造一把锤子的能力。Phase 3 将教你如何造一个工具箱。
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 07 篇。
->
-> - 上一篇：[06 | 面向Agent的提示词工程](/blog/engineering/agentic/06-面向Agent的提示词工程)
-> - 下一篇：[08 | 记忆架构：Agent的状态与记忆体系](/blog/engineering/agentic/08-记忆架构：Agent的状态与记忆体系)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

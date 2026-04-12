@@ -3,6 +3,8 @@ title: "Java 核心技术：IO 模型演进"
 pubDate: "2022-04-18"
 description: "系统梳理Java I/O体系的演进脉络，从传统BIO的流式模型到NIO的缓冲区+通道+多路复用模型，深入分析Channel、Buffer、Selector的设计原理与协作机制，理解I/O模型变革背后的系统级思考。"
 tags: ["Java", "NIO", "I/O", "Netty", "网络编程"]
+series:
+  key: "java-core"
 ---
 
 # Java I/O模型演进：从BIO到NIO的范式变革
@@ -394,13 +396,3 @@ Java I/O 体系的演进反映了一个核心的架构思想：**从同步阻塞
 3. **生产环境不要裸写 NIO**。直接使用 NIO API 编程极其复杂（半包处理、空轮询 bug、线程模型），应使用 Netty 等成熟框架
 
 > I/O 模型的选择不取决于哪个"更先进"，而取决于业务的连接模式和数据特征。理解底层模型的差异，才能做出正确的技术选型。
-
----
-
-> **Java 核心技术专栏**
->
-> - [深入理解 JVM](/blog/engineering/middleware/Java核心技术：深入理解JVM)
-> - [并发编程](/blog/engineering/middleware/Java核心技术：并发编程)
-> - [深入理解 AQS](/blog/engineering/middleware/Java核心技术：深入理解AQS)
-> - **IO 模型演进**
-> - [字节码增强实战](/blog/engineering/middleware/Java核心技术：字节码增强实战)

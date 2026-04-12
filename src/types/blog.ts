@@ -1,3 +1,20 @@
+export interface SeriesInfo {
+  key: string;
+  order?: number;
+}
+
+export interface SeriesMeta {
+  name: string;
+  description?: string;
+}
+
+export interface SeriesNavItem {
+  slug: string;
+  title: string;
+  order?: number;
+  isCurrent: boolean;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -5,6 +22,7 @@ export interface BlogPost {
   pubDate: string;
   tags?: string[];
   heroImage?: string;
+  series?: SeriesInfo;
   content: string;
 }
 
@@ -14,6 +32,7 @@ export interface BlogMeta {
   pubDate: string;
   tags?: string[];
   heroImage?: string;
+  series?: SeriesInfo;
 }
 
 export interface NavigationInfo {

@@ -3,6 +3,8 @@ title: "Java 核心技术：深入理解 AQS"
 pubDate: "2025-12-28"
 description: "系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。"
 tags: ["Java", "并发编程", "AQS", "ReentrantLock", "JUC"]
+series:
+  key: "java-core"
 ---
 
 [《Java 核心技术：并发编程》](/blog/engineering/middleware/Java核心技术：并发编程)介绍了 JMM、锁机制和 JUC 工具类的使用。本文在此基础上深入一层，拆解这些工具类共同依赖的底层框架——AQS。
@@ -492,13 +494,3 @@ AQS 的设计精髓可以归纳为以下几点：
 5. **从后向前遍历保证正确性**：在非原子入队操作和 CANCELLED 节点处理中，始终保证能遍历到所有有效节点
 
 > AQS 是 Doug Lea 在并发编程领域的杰作。理解了 AQS，就理解了 JUC 包中绝大部分同步工具的底层运作方式。它不仅是面试的高频考点，更是我们在实际工程中设计自定义同步器时可以直接借鉴的框架。
-
----
-
-> **Java 核心技术专栏**
->
-> - [深入理解 JVM](/blog/engineering/middleware/Java核心技术：深入理解JVM)
-> - [并发编程](/blog/engineering/middleware/Java核心技术：并发编程)
-> - **深入理解 AQS**
-> - [IO 模型演进](/blog/engineering/middleware/Java核心技术：IO模型演进)
-> - [字节码增强实战](/blog/engineering/middleware/Java核心技术：字节码增强实战)

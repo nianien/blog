@@ -110,10 +110,10 @@ author: "skyfalling"              # 固定作者名
 
 ## SVG 图形规范
 
-SVG 文件有两种存放方式：
+SVG 文件统一存放在 `public/images/blog/{article-slug}/` 目录下，Markdown 中用 `![描述](/images/blog/{article-slug}/xxx.svg)` 引用。
 
-- **文章同级 `assets/` 目录**（推荐）：存放在文章 `.md` 同级的 `assets/` 目录下，Markdown 中用 `![描述](./assets/xxx.svg)` 引用。适合文章专属的表格、流程图
-- **公共目录**：存放在 `public/images/blog/{article-slug}/` 目录，Markdown 中用 `![描述](/images/blog/{article-slug}/xxx.svg)` 引用。适合多篇文章共用的图
+- `{article-slug}` 使用文章主题的英文短横线命名（如 `cdn-technology`、`mousika-rule-engine`）
+- **不要**在 `src/content/blog/` 下创建 `assets/` 目录，项目中所有现有文章均使用 `public/images/blog/` 路径
 
 命名格式 `{序号}-{描述}.svg` 或按内容命名如 `table-toolchain.svg`、`pipeline.svg`。
 

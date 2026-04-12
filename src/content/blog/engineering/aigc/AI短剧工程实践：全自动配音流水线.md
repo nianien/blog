@@ -4,6 +4,8 @@ description: "短剧出海的配音成本扛不住人工——单集利润几毛
 pubDate: 2026-03-01
 tags: ["AI配音", "TTS", "视频本地化"]
 author: "skyfalling"
+series:
+  key: "ai-short-drama"
 ---
 
 > **本文是「AI 短剧工程实践」系列的第 6 篇：**
@@ -722,15 +724,3 @@ if reference_audio and os.path.exists(reference_audio):
 - **增量执行优于全量重跑**：基于内容指纹判断"什么需要重算"，在成本敏感的 AI 系统中尤其关键
 - **人机协作 ≠ 人工兜底**：设计明确的 Gate 点和 Bless 机制，让人的介入不破坏系统的自动化逻辑
 - **时间轴不可修改**：在音视频场景中，一旦修改了时间骨架，所有下游都会雪崩——这是用血泪换来的教训
-
----
-
-> **AI 短剧工程实践专栏**
->
-> - [从剧本到成片的全流程](/blog/engineering/aigc/AI短剧工程实践：从剧本到成片的全流程)
-> - [人物一致性与技术选型](/blog/engineering/aigc/AI短剧工程实践：人物一致性与技术选型)
-> - [视频生成模型选型与实战](/blog/engineering/aigc/AI短剧工程实践：视频生成模型选型与实战)
-> - [角色生产流水线](/blog/engineering/aigc/AI短剧工程实践：角色生产流水线)
-> - [从视频生成到角色引擎](/blog/engineering/aigc/AI短剧工程实践：从视频生成到角色引擎)
-> - **全自动配音流水线**
-> - [实时交互式视频](/blog/engineering/aigc/AI实时交互式视频：从看视频到和视频对话)

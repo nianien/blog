@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="250" fill="#fafbfc" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a2e">上传分片流程</text>
+
+  <!-- Client box -->
+  <rect x="20" y="50" width="150" height="160" rx="8" fill="#e8f4fd" stroke="#3498db" stroke-width="1.5"/>
+  <text x="95" y="72" text-anchor="middle" font-size="12" font-weight="600" fill="#2471a3">客户端</text>
+
+  <!-- File icon -->
+  <rect x="40" y="82" width="110" height="36" rx="6" fill="#d4e6f1" stroke="#5dade2" stroke-width="1"/>
+  <text x="95" y="104" text-anchor="middle" font-size="10" fill="#2e86c1">文件分片 + MD5</text>
+
+  <!-- Chunk indicators inside client -->
+  <rect x="40" y="126" width="50" height="22" rx="4" fill="#aed6f1" stroke="#5dade2" stroke-width="1"/>
+  <text x="65" y="141" text-anchor="middle" font-size="9" fill="#1a5276">Chunk 1</text>
+
+  <rect x="100" y="126" width="50" height="22" rx="4" fill="#aed6f1" stroke="#5dade2" stroke-width="1"/>
+  <text x="125" y="141" text-anchor="middle" font-size="9" fill="#1a5276">Chunk 2</text>
+
+  <rect x="40" y="154" width="50" height="22" rx="4" fill="#aed6f1" stroke="#5dade2" stroke-width="1"/>
+  <text x="65" y="169" text-anchor="middle" font-size="9" fill="#1a5276">Chunk 3</text>
+
+  <rect x="100" y="154" width="50" height="22" rx="4" fill="#aed6f1" stroke="#5dade2" stroke-width="1"/>
+  <text x="125" y="169" text-anchor="middle" font-size="9" fill="#1a5276">Chunk N</text>
+
+  <!-- Parallel upload arrows -->
+  <line x1="170" y1="100" x2="268" y2="78" stroke="#f39c12" stroke-width="1.5"/>
+  <polygon points="264,74 274,78 266,82" fill="#f39c12"/>
+
+  <line x1="170" y1="120" x2="268" y2="110" stroke="#f39c12" stroke-width="1.5"/>
+  <polygon points="264,106 274,110 266,114" fill="#f39c12"/>
+
+  <line x1="170" y1="140" x2="268" y2="142" stroke="#f39c12" stroke-width="1.5"/>
+  <polygon points="264,138 274,142 266,146" fill="#f39c12"/>
+
+  <line x1="170" y1="160" x2="268" y2="172" stroke="#f39c12" stroke-width="1.5"/>
+  <polygon points="264,168 274,172 266,176" fill="#f39c12"/>
+
+  <!-- Concurrent label -->
+  <text x="220" y="210" text-anchor="middle" font-size="10" font-weight="600" fill="#e67e22">并发上传</text>
+  <text x="220" y="224" text-anchor="middle" font-size="9" fill="#b7950b">3-6 connections</text>
+
+  <!-- Server receive box -->
+  <rect x="280" y="50" width="150" height="160" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="355" y="72" text-anchor="middle" font-size="12" font-weight="600" fill="#b7950b">服务端</text>
+
+  <rect x="296" y="82" width="118" height="30" rx="6" fill="#fdebd0" stroke="#f5b041" stroke-width="1"/>
+  <text x="355" y="101" text-anchor="middle" font-size="10" fill="#b7950b">分片接收</text>
+
+  <rect x="296" y="118" width="118" height="30" rx="6" fill="#fdebd0" stroke="#f5b041" stroke-width="1"/>
+  <text x="355" y="137" text-anchor="middle" font-size="10" fill="#b7950b">MD5 校验</text>
+
+  <rect x="296" y="154" width="118" height="30" rx="6" fill="#fdebd0" stroke="#f5b041" stroke-width="1"/>
+  <text x="355" y="173" text-anchor="middle" font-size="10" fill="#b7950b">分片状态记录</text>
+
+  <!-- Arrow server → merge -->
+  <line x1="430" y1="130" x2="468" y2="130" stroke="#7f8c8d" stroke-width="1.5"/>
+  <polygon points="468,126 478,130 468,134" fill="#7f8c8d"/>
+
+  <!-- Merge box -->
+  <rect x="480" y="80" width="130" height="100" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="545" y="105" text-anchor="middle" font-size="12" font-weight="600" fill="#1e8449">合并校验</text>
+
+  <rect x="494" y="114" width="102" height="24" rx="6" fill="#d5f5e3" stroke="#58d68d" stroke-width="1"/>
+  <text x="545" y="130" text-anchor="middle" font-size="10" fill="#1e8449">分片排序合并</text>
+
+  <rect x="494" y="144" width="102" height="24" rx="6" fill="#d5f5e3" stroke="#58d68d" stroke-width="1"/>
+  <text x="545" y="160" text-anchor="middle" font-size="10" fill="#1e8449">SHA-256 完整性</text>
+
+  <!-- Arrow merge → storage -->
+  <line x1="610" y1="130" x2="648" y2="130" stroke="#7f8c8d" stroke-width="1.5"/>
+  <polygon points="648,126 658,130 648,134" fill="#7f8c8d"/>
+
+  <!-- Object storage -->
+  <rect x="660" y="85" width="120" height="90" rx="8" fill="#f5eef8" stroke="#8e44ad" stroke-width="1.5"/>
+  <text x="720" y="118" text-anchor="middle" font-size="12" font-weight="600" fill="#6c3483">对象存储</text>
+  <text x="720" y="138" text-anchor="middle" font-size="10" fill="#9b59b6">S3 / OSS / COS</text>
+  <text x="720" y="156" text-anchor="middle" font-size="9" fill="#af7ac5">原始文件归档</text>
+</svg>

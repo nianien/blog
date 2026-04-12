@@ -2,8 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
-import { BlogPost, NavigationInfo, BlogPostWithNavigation, Category } from '@/types/blog';
+import { BlogPost, NavigationInfo, BlogPostWithNavigation, Category, SeriesNavItem, SeriesMeta } from '@/types/blog';
 import { CATEGORY_META } from '@/lib/categories';
+import seriesConfig from '@/config/series.json';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/blog');
 
@@ -81,6 +82,7 @@ export function getAllPosts(): BlogPost[] {
       pubDate: typeof data.pubDate === 'string' ? data.pubDate : data.pubDate?.toISOString?.()?.split('T')[0] || '2024-01-01',
       tags: data.tags || [],
       heroImage: data.heroImage,
+      series: data.series || undefined,
       content: processMarkdownContent(content),
     };
   });
@@ -114,6 +116,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       pubDate: typeof data.pubDate === 'string' ? data.pubDate : data.pubDate?.toISOString?.()?.split('T')[0] || '2024-01-01',
       tags: data.tags || [],
       heroImage: data.heroImage,
+      series: data.series || undefined,
       content: processMarkdownContent(content),
     };
   } catch (error) {
@@ -246,4 +249,31 @@ export function getAdjacentPosts(slug: string): {
     previous: result.globalNav.prev,
     next: result.globalNav.next,
   };
-} 
+}
+
+// 获取系列元信息
+export function getSeriesMeta(key: string): SeriesMeta | null {
+  const config = seriesConfig as Record<string, SeriesMeta>;
+  return config[key] || null;
+}
+
+// 获取同系列的所有文章（用于导航）
+export function getSeriesNavItems(seriesKey: string, currentSlug: string): SeriesNavItem[] {
+  const allPosts = getAllPosts();
+  const seriesPosts = allPosts.filter(p => p.series?.key === seriesKey);
+
+  // 按 order 排序（有 order 的按 order，没有的按 pubDate）
+  seriesPosts.sort((a, b) => {
+    const orderA = a.series?.order ?? Infinity;
+    const orderB = b.series?.order ?? Infinity;
+    if (orderA !== orderB) return orderA - orderB;
+    return new Date(a.pubDate).getTime() - new Date(b.pubDate).getTime();
+  });
+
+  return seriesPosts.map(p => ({
+    slug: p.slug,
+    title: p.title,
+    order: p.series?.order,
+    isCurrent: p.slug === currentSlug,
+  }));
+}

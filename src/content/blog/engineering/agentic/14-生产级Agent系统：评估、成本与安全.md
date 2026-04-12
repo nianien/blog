@@ -3,6 +3,9 @@ title: "生产级Agent系统：评估、成本与安全"
 pubDate: "2026-02-01"
 description: "Agentic 系列终篇。从 Observability、Evaluation、Cost Engineering、Security 四个维度，系统性地讨论 Agent 从实验室走向生产环境所面临的核心挑战与工程实践。包含完整的 Trace 设计、评估框架、成本模型、安全防护方案，以及一张整合前 13 篇所有概念的生产架构全景图。"
 tags: ["Agentic", "AI Engineering", "Production"]
+series:
+  key: "agentic"
+  order: 14
 ---
 
 > 让 Agent 跑起来只需要一个下午。让 Agent 稳定地、安全地、经济地在生产环境中运行，需要整个团队持续数月的工程投入。
@@ -1874,12 +1877,3 @@ Agent 领域最大的鸿沟不是"能不能做出 Demo"，而是"能不能在生
 **3. 保持对基础能力的投资**
 
 Agent 系统的质量上限由三件事决定：模型的推理能力、Prompt 的设计质量、工程的执行水平。前两者取决于你对 LLM 的理解深度，后者取决于你的软件工程功底。不要因为追逐 Agent 的新概念而忽视了这些基础能力。
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 14 篇（终篇）。
->
-> - 上一篇：[13 | MCP与工具协议：Agent工具的协议化未来](/blog/engineering/agentic/13-MCP与工具协议：Agent工具的协议化未来)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
->
-> 感谢你读完整个系列。Agent 技术仍在快速演进中，但系统设计的基本原理——分层抽象、关注点分离、可观测性、安全纵深防御——这些不会过时。带着这些原理，去构建真正有价值的 Agent 系统吧。

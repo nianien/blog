@@ -3,6 +3,9 @@ title: "Agent控制循环：运行时的核心抽象"
 pubDate: "2025-12-14"
 description: "Agent 的本质不是一次函数调用，而是一个可中断的控制循环。本文从状态机模型出发，深入剖析 Agent Control Loop 的每个阶段——OBSERVE、THINK、ACT、REFLECT，对比 ReAct 与 Plan-then-Execute 两种主流模式，讨论状态管理、错误处理与性能优化策略，并给出一个不依赖任何框架的完整 Python 实现。"
 tags: ["Agentic", "AI Engineering", "Runtime"]
+series:
+  key: "agentic"
+  order: 4
 ---
 
 > 如果说 LLM 是 Agent 的大脑，那么 Control Loop 就是 Agent 的心跳。
@@ -2060,11 +2063,3 @@ class EventSourcedAgent:
 2. **人机协作中的循环**：如何在 Control Loop 中优雅地插入人类审批节点？这和 Stateful Agent 的 checkpoint 机制有什么关系？
 3. **流式输出与控制循环**：当 Agent 需要边思考边输出（streaming）时，状态机模型还适用吗？需要做哪些调整？
 4. **多模态输入的归一化**：当 OBSERVE 阶段接收的不只是文本，还有图片、音频、视频时，输入归一化策略如何演化？
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 04 篇。
->
-> - 上一篇：[03 | Agent、Workflow与Automation：选对抽象才是关键](/blog/engineering/agentic/03-Agent、Workflow与Automation：选对抽象才是关键)
-> - 下一篇：[05 | 工具调用深度解析：让LLM成为可编程接口](/blog/engineering/agentic/05-工具调用深度解析：让LLM成为可编程接口)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

@@ -3,6 +3,9 @@ title: "工具调用深度解析：让LLM成为可编程接口"
 description: "Tool Calling 是 LLM 从「对话机器」变成「可编程接口」的关键转折点。本文从底层原理出发，系统拆解 Tool Calling 的工作机制、JSON Schema 契约设计、工具注册与发现策略、错误处理、安全性考量及关键 Trade-off，附带完整可运行代码。"
 pubDate: "2025-12-18"
 tags: ["Agentic", "AI Engineering", "Tool Calling"]
+series:
+  key: "agentic"
+  order: 5
 ---
 
 > 这是 Agentic 系列的第 05 篇。在前几篇中我们建立了 Agent 的概念模型、控制循环、以及 Agent 与 Workflow 的边界。本篇聚焦于 Agent 能力的核心支点——Tool Calling。
@@ -1913,11 +1916,3 @@ Tool Calling 的本质是一个精心设计的 **协议**：
 理解了这个架构，你就能在任何框架（LangChain、LlamaIndex、Semantic Kernel，或者自己写的 Runtime）上实现 Tool Calling，因为底层原理是相同的。
 
 但 Tool Calling 只是让 Agent 有了"手"。要让 Agent 真正好用，还需要精心设计的 Prompt 来引导 LLM 的决策——什么时候该调工具、什么时候该直接回答、遇到错误该怎么处理、多个工具之间如何协调。这就是下一篇 **Prompt Engineering for Agents** 要深入讨论的主题。
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 05 篇。
->
-> - 上一篇：[04 | Agent控制循环：运行时的核心抽象](/blog/engineering/agentic/04-Agent控制循环：运行时的核心抽象)
-> - 下一篇：[06 | 面向Agent的提示词工程](/blog/engineering/agentic/06-面向Agent的提示词工程)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

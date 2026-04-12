@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" fill="none">
+  <rect width="860" height="480" rx="8" fill="#FAFBFC"/>
+  <text x="430" y="30" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#1E293B">CDN DNS 调度流程</text>
+
+  <!-- ==================== Row 1: DNS Resolution Chain ==================== -->
+  <!-- Step 1: User Browser -->
+  <rect x="30" y="60" width="140" height="50" rx="6" fill="#FFEDD5" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="100" y="82" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#9A3412">用户浏览器</text>
+  <text x="100" y="98" text-anchor="middle" font-family="'SF Mono', 'Menlo', monospace" font-size="10" fill="#C2410C">cdn.example.com</text>
+
+  <!-- Arrow ① -->
+  <line x1="170" y1="85" x2="225" y2="85" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="223,80 223,90 230,85" fill="#6B7280"/>
+  <text x="198" y="78" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#6B7280">①</text>
+
+  <!-- Step 2: Local DNS -->
+  <rect x="230" y="60" width="140" height="50" rx="6" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="300" y="82" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#15803D">Local DNS</text>
+  <text x="300" y="98" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#16A34A">运营商递归解析</text>
+
+  <!-- Arrow ② -->
+  <line x1="370" y1="85" x2="425" y2="85" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="423,80 423,90 430,85" fill="#6B7280"/>
+  <text x="398" y="78" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#6B7280">②</text>
+
+  <!-- Step 3: Authoritative DNS -->
+  <rect x="430" y="60" width="160" height="50" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="510" y="82" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#1D4ED8">权威 DNS</text>
+  <text x="510" y="98" text-anchor="middle" font-family="'SF Mono', 'Menlo', monospace" font-size="10" fill="#2563EB">CNAME → cdn.provider.net</text>
+
+  <!-- Arrow ③ -->
+  <line x1="590" y1="85" x2="645" y2="85" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="643,80 643,90 650,85" fill="#6B7280"/>
+  <text x="618" y="78" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" fill="#6B7280">③</text>
+
+  <!-- Step 4: CDN GSLB -->
+  <rect x="650" y="60" width="180" height="50" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="740" y="82" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#6D28D9">CDN GSLB 调度系统</text>
+  <text x="740" y="98" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#7C3AED">多维度智能选优</text>
+
+  <!-- ==================== GSLB → Decision Factors ==================== -->
+  <line x1="740" y1="110" x2="740" y2="130" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4 2"/>
+
+  <rect x="640" y="130" width="200" height="120" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="740" y="150" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="600" fill="#5B21B6">调度决策因子</text>
+  <line x1="655" y1="158" x2="825" y2="158" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="660" y="175" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#6D28D9">• 用户 IP 地理位置</text>
+  <text x="660" y="193" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#6D28D9">• 节点实时负载</text>
+  <text x="660" y="211" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#6D28D9">• 网络延迟探测</text>
+  <text x="660" y="229" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#6D28D9">• 节点健康状态</text>
+  <text x="660" y="247" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#6D28D9">• 运营商匹配</text>
+
+  <!-- ==================== ④ Return IP: GSLB → User Browser ==================== -->
+  <!-- Vertical down from decision factors box -->
+  <line x1="740" y1="250" x2="740" y2="290" stroke="#3B82F6" stroke-width="1.5"/>
+  <!-- Horizontal left to user browser center (x=100) -->
+  <line x1="740" y1="290" x2="100" y2="290" stroke="#3B82F6" stroke-width="1.5"/>
+  <!-- Vertical down into user browser copy -->
+  <line x1="100" y1="290" x2="100" y2="310" stroke="#3B82F6" stroke-width="1.5"/>
+  <polygon points="95,308 105,308 100,315" fill="#3B82F6"/>
+  <!-- Label on horizontal segment -->
+  <text x="420" y="283" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="600" fill="#3B82F6">④ 返回最优边缘节点 IP</text>
+
+  <!-- User Browser (resolved state) -->
+  <rect x="30" y="315" width="140" height="40" rx="6" fill="#FFEDD5" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="100" y="333" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="600" fill="#9A3412">用户浏览器</text>
+  <text x="100" y="348" text-anchor="middle" font-family="'SF Mono', 'Menlo', monospace" font-size="10" fill="#C2410C">已获得 IP: 1.2.3.4</text>
+
+  <!-- ==================== ⑤ User → Edge Node ==================== -->
+  <!-- Vertical down from user browser to edge node -->
+  <line x1="100" y1="355" x2="100" y2="385" stroke="#22C55E" stroke-width="1.5"/>
+  <polygon points="95,383 105,383 100,390" fill="#22C55E"/>
+  <text x="140" y="375" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" font-weight="600" fill="#22C55E">⑤ 直连</text>
+
+  <!-- ==================== Edge Nodes Row ==================== -->
+  <!-- Selected: 上海边缘节点 -->
+  <rect x="30" y="390" width="140" height="50" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="100" y="412" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="600" fill="#1D4ED8">上海边缘节点</text>
+  <text x="100" y="428" text-anchor="middle" font-family="'SF Mono', 'Menlo', monospace" font-size="10" fill="#2563EB">1.2.3.4</text>
+  <!-- Selected badge -->
+  <rect x="140" y="390" width="30" height="16" rx="3" fill="#22C55E"/>
+  <text x="155" y="401" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="9" font-weight="600" fill="white">选中</text>
+
+  <!-- Backup nodes -->
+  <rect x="210" y="390" width="140" height="50" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="280" y="412" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#94A3B8">广州边缘节点</text>
+  <text x="280" y="428" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#94A3B8">备选</text>
+
+  <rect x="390" y="390" width="140" height="50" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="460" y="412" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#94A3B8">北京边缘节点</text>
+  <text x="460" y="428" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#94A3B8">备选</text>
+
+  <rect x="570" y="390" width="140" height="50" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="640" y="412" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#94A3B8">成都边缘节点</text>
+  <text x="640" y="428" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#94A3B8">备选</text>
+
+  <!-- ==================== Summary ==================== -->
+  <rect x="30" y="456" width="800" height="18" rx="4" fill="#F8FAFC"/>
+  <text x="430" y="469" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#94A3B8">① DNS 请求 → ② 递归解析 → ③ CNAME 转到 GSLB → ④ 返回最优 IP → ⑤ 直连边缘节点</text>
+</svg>

@@ -3,6 +3,9 @@ title: "LangChain与LangGraph：框架的价值与边界"
 pubDate: "2026-01-22"
 description: "Agentic 系列第 12 篇。客观审视 AI Agent 框架的价值与局限。深入分析 LangChain 的抽象模型与陷阱、LangGraph 的状态机优势与学习曲线，横向对比 CrewAI、AutoGen、Semantic Kernel 等框架，最终给出框架 vs 自研的决策矩阵。核心立场：理解原理再用框架，框架是加速器而非必需品。"
 tags: ["Agentic", "AI Engineering", "Framework"]
+series:
+  key: "agentic"
+  order: 12
 ---
 
 > 框架是加速器，不是必需品。它替你做了决策——有些决策是好的，有些会在深夜的生产事故中反噬你。
@@ -2276,11 +2279,3 @@ class ReasoningAgent:
 **关于生态锁定**：选择一个框架意味着接受它的抽象、它的生态、它的更新节奏、它的设计理念。当框架的方向与你的需求分叉时，迁移的成本有多高？这个成本是否在你的决策时被低估了？
 
 这些问题没有标准答案。但作为 AI 工程师，能够清晰地提出这些问题，本身就是一种重要的能力。
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 12 篇。
->
-> - 上一篇：[11 | 多Agent协作：协作模式与架构设计](/blog/engineering/agentic/11-多Agent协作：协作模式与架构设计)
-> - 下一篇：[13 | MCP与工具协议：Agent工具的协议化未来](/blog/engineering/agentic/13-MCP与工具协议：Agent工具的协议化未来)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

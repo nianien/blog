@@ -3,6 +3,9 @@ title: "从Prompt到Agent：为什么LLM本身不是Agent"
 pubDate: "2025-12-05"
 description: "LLM 是一个无状态的文本函数，Agent 是一个有状态的推理系统。本文从 LLM 的五大局限出发，精确定义 Agent 的组件模型与控制循环，并沿 Chatbot → Agent 的光谱逐级拆解，帮助你建立从 Prompt 到 Agent 的完整认知框架。"
 tags: ["Agentic", "AI Engineering", "LLM"]
+series:
+  key: "agentic"
+  order: 2
 ---
 
 > 当我们说"让 AI 帮我完成这件事"时，我们期望的不是一次文本生成，而是一次**有目标、有规划、有执行、有反馈**的任务完成过程。这正是 LLM 和 Agent 的根本区别。
@@ -678,11 +681,3 @@ Agent 的最佳应用场景是：**任务需要多步推理、工具组合使用
 **关于成本和延迟**：Agent 的每一轮循环都包含至少一次 LLM 调用。如果一个任务需要 5 轮循环，每轮 3 次 LLM 调用（Think + Plan + Reflect），就是 15 次调用。这个成本和延迟在生产环境中是否可接受？如何在 Agent 的灵活性和系统的性能之间找到平衡点？
 
 这些问题没有标准答案，但它们定义了 Agentic 系统设计的核心张力。
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 02 篇。
->
-> - 上一篇：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
-> - 下一篇：[03 | Agent、Workflow与Automation：选对抽象才是关键](/blog/engineering/agentic/03-Agent、Workflow与Automation：选对抽象才是关键)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)

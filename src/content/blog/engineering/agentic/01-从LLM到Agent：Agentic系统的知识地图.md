@@ -3,6 +3,9 @@ title: "从LLM到Agent：Agentic系统的知识地图"
 description: "Agentic 系列开篇。从 LLM 的局限出发，定义 Agent 的核心组成，绘制 Agentic 系统全景架构图，并通过代码演示从 ChatCompletion 到完整 Agent 的演进路径。本文是整个系列 14 篇文章的精神锚点与导航地图。"
 pubDate: "2025-12-01"
 tags: ["Agentic", "AI Engineering", "LLM"]
+series:
+  key: "agentic"
+  order: 1
 ---
 
 > 大语言模型是一个令人惊叹的函数：Text In, Text Out。但函数不等于系统，生成不等于行动，回答不等于解决。
@@ -1502,9 +1505,3 @@ if self.cost.total_tokens > self.token_budget:
 3. **RAG 能力** — 文档分块与清洗、嵌入模型、向量数据库（pgvector / Milvus / Weaviate）、混合检索与重排。（对应第 08 篇）
 4. **编排能力** — 状态机 / DAG 设计、重试回退、超时熔断、人机协作断点。这是从 demo 到生产的关键一步。（对应第 03、04、09、10 篇）
 5. **评估与运维** — Agent 评估框架、日志与追踪（OpenTelemetry）、成本监控、安全（提示注入防护、RBAC、审计）。没有可靠的评估手段，就无法量化改进。（对应第 14 篇）
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 01 篇。
->
-> - 下一篇：[02 | 从Prompt到Agent：为什么LLM本身不是Agent](/blog/engineering/agentic/02-从Prompt到Agent：为什么LLM本身不是Agent)

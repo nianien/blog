@@ -3,6 +3,8 @@ title: "Java 核心技术：并发编程"
 pubDate: "2021-11-20"
 description: "从CPU缓存一致性协议到Java内存模型，从volatile的硬件级实现到Lock/Condition的协作机制，从JUC并发工具类到线程池的高级用法，系统构建Java并发编程的知识体系。"
 tags: ["Java", "并发编程", "JMM", "JUC", "线程池"]
+series:
+  key: "java-core"
 ---
 
 # Java并发编程：从内存模型到并发工具的设计哲学
@@ -434,13 +436,3 @@ Java 并发编程的知识体系可以沿着三个层次理解：
 > 并发工具的选择不在于功能的强大，而在于语义的匹配。`synchronized` 足以解决大多数问题；`BlockingQueue` 比手动的 wait/notify 更安全；标准 `ThreadPoolExecutor` 比自定义线程管理更可靠。优先选择高层抽象，只在确有需要时才下沉到底层机制。
 
 本文介绍的 JUC 工具类（ReentrantLock、CountDownLatch、Semaphore 等）底层都依赖同一个框架——AbstractQueuedSynchronizer（AQS）。如果想深入理解这些工具"为什么这样工作"，推荐阅读 [《Java 核心技术：深入理解 AQS》](/blog/engineering/middleware/Java核心技术：深入理解AQS)。
-
----
-
-> **Java 核心技术专栏**
->
-> - [深入理解 JVM](/blog/engineering/middleware/Java核心技术：深入理解JVM)
-> - **并发编程**
-> - [深入理解 AQS](/blog/engineering/middleware/Java核心技术：深入理解AQS)
-> - [IO 模型演进](/blog/engineering/middleware/Java核心技术：IO模型演进)
-> - [字节码增强实战](/blog/engineering/middleware/Java核心技术：字节码增强实战)

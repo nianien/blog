@@ -3,6 +3,8 @@ title: "MySQL 核心技术：事务与锁机制"
 pubDate: "2025-11-25"
 description: "事务的四个隔离级别不是教科书上的枯燥定义，而是对读写冲突这个核心矛盾的四种不同权衡。Read Uncommitted 用最小代价换最大并发，Serializable 用最大代价换绝对正确。中间两档的差异藏在锁持有多久和锁住什么范围的细节里。理解这些细节，才能看懂 InnoDB 的加锁行为，才能在死锁发生时快速定位根因。"
 tags: ["MySQL", "事务", "锁机制", "死锁"]
+series:
+  key: "mysql-core"
 ---
 
 ## 一、事务的核心问题：并发读写的五种冲突
@@ -572,11 +574,4 @@ COMMIT;
 - 运行时有兜底机制（捕获死锁异常、自动重试）
 - 事后能排查根因（开启 `innodb_print_all_deadlocks`、定期分析 `SHOW ENGINE INNODB STATUS`）
 
-> 关于分布式场景下的事务方案（2PC、TCC、Saga、本地消息表等），参见[《分布式系统与事务：从基础到实践》](/engineering/middleware/分布式系统与事务：从基础到实践)。
-
----
-
-> **MySQL 核心技术专栏**
->
-> - [索引原理与查询优化](/blog/engineering/middleware/MySQL核心技术：索引原理与查询优化)
-> - **事务与锁机制**
+> 关于分布式场景下的事务方案（2PC、TCC、Saga、本地消息表等），参见[《分布式事务：方案选型与工程实践》](/blog/engineering/middleware/分布式事务：方案选型与工程实践)。

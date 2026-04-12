@@ -3,6 +3,9 @@ title: "规划与反思：从ReAct到分层规划与自我纠错"
 pubDate: "2026-01-12"
 description: "Agentic 系列第 10 篇。深入剖析 Agent 规划（Planning）与反思（Reflection）的核心机制——从 ReAct 的交替推理、Plan-and-Execute 的全局视野、Tree-of-Thought 的多路径搜索，到分层规划的递归分解，再到结构化反思与自我纠错。包含完整 Python 实现、决策分析与 trade-off 讨论。"
 tags: ["Agentic", "AI Engineering", "Planning"]
+series:
+  key: "agentic"
+  order: 10
 ---
 
 > LLM 的 next-token prediction 天生是"短视"的——它只看到当前 token 的概率分布，不会思考十步之后的结局。规划（Planning）让 Agent 具备"远视"能力，反思（Reflection）让 Agent 具备"纠错"能力。二者结合，是 Agent 从"工具调用器"进化为"问题解决者"的关键。
@@ -694,11 +697,3 @@ def needs_reflection(task: str, result: str) -> bool:
 > 2. "LLM 评估 LLM" 的反思机制在多大程度上可靠？是否能引入外部验证信号（代码测试、人类反馈）来补强？
 > 3. Tree-of-Thought 的搜索空间是指数级的。能否借鉴 AlphaGo 的 MCTS 来更高效搜索？Reasoning model（如 o1、o3）是否已在内部做了类似的事情？
 > 4. 规划和反思的 token 成本显著。能否缓存和复用已有的计划，为相似任务跳过规划阶段？
-
----
-
-> **系列导航**：本文是 Agentic 系列的第 10 篇。
->
-> - 上一篇：[09 | RAG作为认知记忆：检索增强生成的工程实践](/blog/engineering/agentic/09-RAG作为认知记忆：检索增强生成的工程实践)
-> - 下一篇：[11 | 多Agent协作：协作模式与架构设计](/blog/engineering/agentic/11-多Agent协作：协作模式与架构设计)
-> - 完整目录：[01 | 从LLM到Agent：Agentic系统的知识地图](/blog/engineering/agentic/01-从LLM到Agent：Agentic系统的知识地图)
