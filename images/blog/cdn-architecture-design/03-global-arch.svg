@@ -1,0 +1,102 @@
+<svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="820" height="360" fill="#F8FAFC" rx="8"/>
+  <text x="410" y="26" text-anchor="middle" font-size="14" font-weight="600" fill="#1E293B">全球化分发架构：双 CDN + 多地域源站</text>
+
+  <!-- User groups (top) -->
+  <rect x="30" y="48" width="110" height="48" rx="6" fill="#FEF9C3" stroke="#EAB308" stroke-width="1.5"/>
+  <text x="85" y="69" text-anchor="middle" font-size="11" font-weight="600" fill="#713F12">中国大陆用户</text>
+  <text x="85" y="85" text-anchor="middle" font-size="9" fill="#92400E">ICP 备案节点要求</text>
+
+  <rect x="170" y="48" width="110" height="48" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="225" y="69" text-anchor="middle" font-size="11" font-weight="600" fill="#1E40AF">东南亚用户</text>
+  <text x="225" y="85" text-anchor="middle" font-size="9" fill="#1E3A8A">部分数据主权要求</text>
+
+  <rect x="310" y="48" width="110" height="48" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="365" y="69" text-anchor="middle" font-size="11" font-weight="600" fill="#065F46">欧洲用户</text>
+  <text x="365" y="85" text-anchor="middle" font-size="9" fill="#064E3B">GDPR 数据不出境</text>
+
+  <rect x="450" y="48" width="110" height="48" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="505" y="69" text-anchor="middle" font-size="11" font-weight="600" fill="#4C1D95">北美用户</text>
+  <text x="505" y="85" text-anchor="middle" font-size="9" fill="#3B0764">无特殊限制</text>
+
+  <rect x="590" y="48" width="110" height="48" rx="6" fill="#FFF7ED" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="645" y="69" text-anchor="middle" font-size="11" font-weight="600" fill="#7C2D12">其他地区</text>
+  <text x="645" y="85" text-anchor="middle" font-size="9" fill="#9A3412">按需覆盖</text>
+
+  <!-- GeoDNS -->
+  <rect x="280" y="145" width="260" height="48" rx="6" fill="#F0F9FF" stroke="#0284C7" stroke-width="2"/>
+  <text x="410" y="166" text-anchor="middle" font-size="12" font-weight="600" fill="#0C4A6E">GeoDNS / 智能 DNS</text>
+  <text x="410" y="183" text-anchor="middle" font-size="10" fill="#075985">按用户 IP 地区 → 路由到对应 CDN 节点</text>
+
+  <!-- Arrows from users to GeoDNS -->
+  <line x1="85" y1="96" x2="290" y2="155" stroke="#94A3B8" stroke-width="1.2"/>
+  <polygon points="290,155 284,145 296,147" fill="#94A3B8"/>
+  <line x1="225" y1="96" x2="330" y2="155" stroke="#94A3B8" stroke-width="1.2"/>
+  <polygon points="330,155 325,145 337,147" fill="#94A3B8"/>
+  <line x1="365" y1="96" x2="390" y2="145" stroke="#94A3B8" stroke-width="1.2"/>
+  <polygon points="390,145 385,135 396,137" fill="#94A3B8"/>
+  <line x1="505" y1="96" x2="460" y2="145" stroke="#94A3B8" stroke-width="1.2"/>
+  <polygon points="460,145 461,135 471,138" fill="#94A3B8"/>
+  <line x1="645" y1="96" x2="530" y2="155" stroke="#94A3B8" stroke-width="1.2"/>
+  <polygon points="530,155 527,145 537,147" fill="#94A3B8"/>
+
+  <!-- CDN China -->
+  <rect x="30" y="228" width="160" height="58" rx="6" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+  <text x="110" y="250" text-anchor="middle" font-size="12" font-weight="600" fill="#7C2D12">国内 CDN</text>
+  <text x="110" y="266" text-anchor="middle" font-size="10" fill="#9A3412">阿里云 / 腾讯云</text>
+  <text x="110" y="278" text-anchor="middle" font-size="9" fill="#9A3412">ICP 备案 · 三网覆盖</text>
+
+  <!-- CDN Global -->
+  <rect x="220" y="228" width="160" height="58" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="300" y="250" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95">海外 CDN</text>
+  <text x="300" y="266" text-anchor="middle" font-size="10" fill="#3B0764">Cloudflare / CloudFront</text>
+  <text x="300" y="278" text-anchor="middle" font-size="9" fill="#3B0764">全球 Anycast · 免 ICP</text>
+
+  <!-- CDN EU specific -->
+  <rect x="410" y="228" width="160" height="58" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="490" y="250" text-anchor="middle" font-size="12" font-weight="600" fill="#065F46">欧盟节点</text>
+  <text x="490" y="266" text-anchor="middle" font-size="10" fill="#064E3B">Cloudflare EU / Fastly EU</text>
+  <text x="490" y="278" text-anchor="middle" font-size="9" fill="#064E3B">数据不出 EU · GDPR 合规</text>
+
+  <!-- Arrows from GeoDNS to CDNs -->
+  <line x1="320" y1="193" x2="160" y2="228" stroke="#F59E0B" stroke-width="1.5"/>
+  <polygon points="160,228 158,218 169,222" fill="#F59E0B"/>
+  <text x="230" y="208" text-anchor="middle" font-size="9" fill="#92400E">CN 流量</text>
+
+  <line x1="380" y1="193" x2="300" y2="228" stroke="#8B5CF6" stroke-width="1.5"/>
+  <polygon points="300,228 296,218 307,220" fill="#8B5CF6"/>
+
+  <line x1="440" y1="193" x2="490" y2="228" stroke="#10B981" stroke-width="1.5"/>
+  <polygon points="490,228 482,218 493,219" fill="#10B981"/>
+  <text x="478" y="210" text-anchor="middle" font-size="9" fill="#065F46">EU 流量</text>
+
+  <!-- Multi-region origins -->
+  <rect x="30" y="320" width="140" height="30" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1"/>
+  <text x="100" y="340" text-anchor="middle" font-size="10" fill="#334155">源站（国内）</text>
+
+  <rect x="200" y="320" width="140" height="30" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1"/>
+  <text x="270" y="340" text-anchor="middle" font-size="10" fill="#334155">源站（北美/亚太）</text>
+
+  <rect x="370" y="320" width="140" height="30" rx="6" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1"/>
+  <text x="440" y="340" text-anchor="middle" font-size="10" fill="#334155">源站（欧洲）</text>
+
+  <!-- Arrows CDN to origins (dashed = 回源) -->
+  <line x1="110" y1="286" x2="100" y2="320" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <polygon points="100,320 95,310 105,310" fill="#CBD5E1"/>
+  <line x1="300" y1="286" x2="270" y2="320" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <polygon points="270,320 265,310 275,310" fill="#CBD5E1"/>
+  <line x1="490" y1="286" x2="440" y2="320" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <polygon points="440,320 436,310 447,311" fill="#CBD5E1"/>
+
+  <!-- Legend -->
+  <line x1="560" y1="248" x2="580" y2="248" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="585" y="252" font-size="9" fill="#64748B">用户请求路径</text>
+  <line x1="560" y1="268" x2="580" y2="268" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <text x="585" y="272" font-size="9" fill="#64748B">CDN 回源（缓存 MISS）</text>
+
+  <!-- Key constraints box -->
+  <rect x="555" y="295" width="250" height="55" rx="6" fill="#FFFBEB" stroke="#FCD34D" stroke-width="1"/>
+  <text x="680" y="314" text-anchor="middle" font-size="10" font-weight="600" fill="#92400E">关键约束</text>
+  <text x="680" y="330" text-anchor="middle" font-size="9" fill="#78350F">· CN 节点必须 ICP 备案</text>
+  <text x="680" y="344" text-anchor="middle" font-size="9" fill="#78350F">· EU 用户数据不可存储在美国节点</text>
+</svg>

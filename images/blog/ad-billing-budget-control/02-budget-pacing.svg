@@ -1,0 +1,76 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+
+  <rect width="760" height="300" fill="#F8FAFC" rx="8"/>
+  <text x="380" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#1E293B">预算消耗控速策略对比</text>
+
+  <!-- LEFT CHART: 匀速消耗 -->
+  <text x="175" y="55" text-anchor="middle" font-size="13" font-weight="600" fill="#1E293B">匀速消耗（Standard Pacing）</text>
+
+  <!-- axes -->
+  <line x1="50" y1="240" x2="300" y2="240" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="50" y1="70" x2="50" y2="240" stroke="#94A3B8" stroke-width="1.5"/>
+  <!-- y-axis labels -->
+  <text x="42" y="74" text-anchor="end" font-size="10" fill="#94A3B8">100%</text>
+  <text x="42" y="155" text-anchor="end" font-size="10" fill="#94A3B8">50%</text>
+  <text x="42" y="244" text-anchor="end" font-size="10" fill="#94A3B8">0%</text>
+  <!-- x-axis labels -->
+  <text x="50" y="256" text-anchor="middle" font-size="10" fill="#94A3B8">0h</text>
+  <text x="175" y="256" text-anchor="middle" font-size="10" fill="#94A3B8">12h</text>
+  <text x="300" y="256" text-anchor="middle" font-size="10" fill="#94A3B8">24h</text>
+  <text x="175" y="270" text-anchor="middle" font-size="11" fill="#64748B">时间（一天）</text>
+  <!-- y-axis title -->
+  <text x="20" y="160" text-anchor="middle" font-size="11" fill="#64748B" transform="rotate(-90 20 160)">已消耗预算比例</text>
+
+  <!-- ideal reference line (diagonal, dashed) -->
+  <line x1="50" y1="240" x2="300" y2="70" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Standard pacing curve - smooth near-linear -->
+  <polyline points="50,240 80,220 110,202 140,184 170,163 200,143 230,120 260,97 300,70"
+            fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+
+  <!-- Fill area under curve -->
+  <polygon points="50,240 80,220 110,202 140,184 170,163 200,143 230,120 260,97 300,70 300,240"
+           fill="#DBEAFE" fill-opacity="0.5"/>
+
+  <text x="175" y="95" text-anchor="middle" font-size="11" fill="#1D4ED8">均匀分布，全天覆盖</text>
+  <text x="175" y="110" text-anchor="middle" font-size="11" fill="#1D4ED8">流量低谷不超投</text>
+
+  <!-- RIGHT CHART: 加速消耗 -->
+  <text x="565" y="55" text-anchor="middle" font-size="13" font-weight="600" fill="#1E293B">加速消耗（Accelerated Pacing）</text>
+
+  <!-- axes -->
+  <line x1="440" y1="240" x2="690" y2="240" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="440" y1="70" x2="440" y2="240" stroke="#94A3B8" stroke-width="1.5"/>
+  <!-- y-axis labels -->
+  <text x="432" y="74" text-anchor="end" font-size="10" fill="#94A3B8">100%</text>
+  <text x="432" y="155" text-anchor="end" font-size="10" fill="#94A3B8">50%</text>
+  <text x="432" y="244" text-anchor="end" font-size="10" fill="#94A3B8">0%</text>
+  <!-- x-axis labels -->
+  <text x="440" y="256" text-anchor="middle" font-size="10" fill="#94A3B8">0h</text>
+  <text x="565" y="256" text-anchor="middle" font-size="10" fill="#94A3B8">12h</text>
+  <text x="690" y="256" text-anchor="middle" font-size="10" fill="#94A3B8">24h</text>
+  <text x="565" y="270" text-anchor="middle" font-size="11" fill="#64748B">时间（一天）</text>
+
+  <!-- ideal reference line (dashed) -->
+  <line x1="440" y1="240" x2="690" y2="70" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Accelerated curve: steep early then flat at 100% -->
+  <polyline points="440,240 460,210 480,177 510,138 540,100 565,75 600,70 640,70 690,70"
+            fill="none" stroke="#EF4444" stroke-width="2.5"/>
+
+  <!-- Fill area -->
+  <polygon points="440,240 460,210 480,177 510,138 540,100 565,75 600,70 640,70 690,70 690,240"
+           fill="#FEE2E2" fill-opacity="0.5"/>
+
+  <!-- Budget exhausted marker -->
+  <line x1="565" y1="70" x2="565" y2="240" stroke="#EF4444" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="567" y="130" text-anchor="start" font-size="10" fill="#EF4444">预算耗尽</text>
+  <text x="567" y="143" text-anchor="start" font-size="10" fill="#EF4444">~12h 停止</text>
+
+  <text x="510" y="92" text-anchor="middle" font-size="11" fill="#B91C1C">前期集中投放</text>
+  <text x="510" y="107" text-anchor="middle" font-size="11" fill="#B91C1C">下午流量全部错过</text>
+
+  <!-- Legend -->
+  <line x1="340" y1="152" x2="360" y2="152" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="5,4"/>
+  <text x="365" y="156" text-anchor="start" font-size="10" fill="#94A3B8">理想匀速</text>
+</svg>
