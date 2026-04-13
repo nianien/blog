@@ -1,0 +1,83 @@
+<svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="720" height="420" fill="#F8FAFC" rx="8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="14" font-weight="600" fill="#1E293B">内容分发策略矩阵</text>
+
+  <!-- Axis labels -->
+  <text x="360" y="395" text-anchor="middle" font-size="12" font-weight="600" fill="#475569">内容更新频率</text>
+  <text x="36" y="220" text-anchor="middle" font-size="12" font-weight="600" fill="#475569" transform="rotate(-90 36 220)">个性化程度</text>
+
+  <!-- X-axis -->
+  <line x1="80" y1="360" x2="660" y2="360" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="660,360 650,354 650,366" fill="#94A3B8"/>
+  <text x="90" y="378" text-anchor="middle" font-size="10" fill="#64748B">极低（月/年更新）</text>
+  <text x="360" y="378" text-anchor="middle" font-size="10" fill="#64748B">中等（日/小时）</text>
+  <text x="635" y="378" text-anchor="middle" font-size="10" fill="#64748B">极高（实时）</text>
+
+  <!-- Y-axis -->
+  <line x1="80" y1="360" x2="80" y2="48" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="80,48 74,58 86,58" fill="#94A3B8"/>
+  <text x="62" y="356" text-anchor="end" font-size="10" fill="#64748B">无</text>
+  <text x="62" y="220" text-anchor="end" font-size="10" fill="#64748B">中</text>
+  <text x="62" y="68" text-anchor="end" font-size="10" fill="#64748B">全</text>
+
+  <!-- Grid dividers -->
+  <line x1="80" y1="210" x2="660" y2="210" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="290" y1="48" x2="290" y2="360" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="500" y1="48" x2="500" y2="360" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Cell 1: 低更新 × 无个性化 → 长期缓存 (最优) -->
+  <rect x="85" y="215" width="200" height="140" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="185" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#14532D">长期缓存</text>
+  <text x="185" y="268" text-anchor="middle" font-size="10" fill="#166534">max-age=1年 + immutable</text>
+  <text x="185" y="284" text-anchor="middle" font-size="10" fill="#166534">版本化 URL（hash 嵌文件名）</text>
+  <text x="185" y="300" text-anchor="middle" font-size="10" fill="#166534">CDN 命中率 > 98%</text>
+  <text x="185" y="318" text-anchor="middle" font-size="9" fill="#15803D">典型：JS/CSS/字体/图标</text>
+  <text x="185" y="332" text-anchor="middle" font-size="9" fill="#15803D">安装包/固件/视频点播</text>
+  <text x="185" y="348" text-anchor="middle" font-size="9" fill="#15803D" font-style="italic">无需 Purge，零运维成本</text>
+
+  <!-- Cell 2: 中等更新 × 无个性化 → Purge 策略 -->
+  <rect x="295" y="215" width="200" height="140" rx="6" fill="#FEF9C3" stroke="#EAB308" stroke-width="1.5"/>
+  <text x="395" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#713F12">发布触发 Purge</text>
+  <text x="395" y="268" text-anchor="middle" font-size="10" fill="#78350F">短 TTL + CI/CD 自动 Purge</text>
+  <text x="395" y="284" text-anchor="middle" font-size="10" fill="#78350F">s-maxage 分离 CDN/浏览器缓存</text>
+  <text x="395" y="300" text-anchor="middle" font-size="10" fill="#78350F">CDN 命中率 目标 > 90%</text>
+  <text x="395" y="318" text-anchor="middle" font-size="9" fill="#854D0E">典型：HTML 页面/营销页</text>
+  <text x="395" y="332" text-anchor="middle" font-size="9" fill="#854D0E">图片资源/配置文件</text>
+  <text x="395" y="348" text-anchor="middle" font-size="9" fill="#854D0E" font-style="italic">Purge 必须集成到发布流程</text>
+
+  <!-- Cell 3: 高频更新 × 无个性化 → 短TTL+SWR -->
+  <rect x="505" y="215" width="150" height="140" rx="6" fill="#FFF7ED" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="580" y="250" text-anchor="middle" font-size="12" font-weight="700" fill="#7C2D12">短 TTL + SWR</text>
+  <text x="580" y="268" text-anchor="middle" font-size="10" fill="#9A3412">TTL 10s~5min</text>
+  <text x="580" y="284" text-anchor="middle" font-size="10" fill="#9A3412">stale-while-revalidate</text>
+  <text x="580" y="300" text-anchor="middle" font-size="10" fill="#9A3412">降低回源，容忍短暂旧数据</text>
+  <text x="580" y="318" text-anchor="middle" font-size="9" fill="#9A3412">典型：非个性化 API</text>
+  <text x="580" y="332" text-anchor="middle" font-size="9" fill="#9A3412">汇率/排行榜/公告</text>
+
+  <!-- Cell 4: 低更新 × 中个性化 → 分段缓存 -->
+  <rect x="85" y="120" width="200" height="88" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+  <text x="185" y="148" text-anchor="middle" font-size="12" font-weight="700" fill="#0C4A6E">分片缓存</text>
+  <text x="185" y="165" text-anchor="middle" font-size="10" fill="#075985">按用户维度缓存不同版本</text>
+  <text x="185" y="181" text-anchor="middle" font-size="10" fill="#075985">Vary: Accept-Language 等</text>
+  <text x="185" y="197" text-anchor="middle" font-size="9" fill="#0369A1">典型：多语言/多货币页面</text>
+
+  <!-- Cell 5: 中更新 × 中个性化 → 边缘个性化 -->
+  <rect x="295" y="120" width="200" height="88" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="395" y="148" text-anchor="middle" font-size="12" font-weight="700" fill="#4C1D95">边缘个性化</text>
+  <text x="395" y="165" text-anchor="middle" font-size="10" fill="#5B21B6">缓存结构 + 边缘组装</text>
+  <text x="395" y="181" text-anchor="middle" font-size="10" fill="#5B21B6">ESI / Edge Workers 渲染</text>
+  <text x="395" y="197" text-anchor="middle" font-size="9" fill="#6D28D9">典型：登录状态差异化页面</text>
+
+  <!-- Cell 6: 高频 × 中个性化 → 动态加速 -->
+  <rect x="505" y="120" width="150" height="88" rx="6" fill="#FFF1F2" stroke="#F43F5E" stroke-width="1.5"/>
+  <text x="580" y="148" text-anchor="middle" font-size="12" font-weight="700" fill="#881337">动态加速</text>
+  <text x="580" y="165" text-anchor="middle" font-size="10" fill="#9F1239">不缓存，优化路由</text>
+  <text x="580" y="181" text-anchor="middle" font-size="10" fill="#9F1239">CDN 专线 + TCP 调优</text>
+  <text x="580" y="197" text-anchor="middle" font-size="9" fill="#BE123C">评估费用是否值得</text>
+
+  <!-- Cell 7: 全个性化 → 绕过CDN -->
+  <rect x="85" y="55" width="570" height="58" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="370" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#475569">绕过 CDN 缓存（可选：动态加速）</text>
+  <text x="370" y="96" text-anchor="middle" font-size="10" fill="#64748B">Cache-Control: no-store · 个性化内容不可缓存 · 用户维度数据/推荐流/购物车/消息</text>
+  <text x="370" y="110" text-anchor="middle" font-size="9" fill="#94A3B8">跨地域用户 + API 延迟敏感 → 评估动态加速价值；同地域 → 直连源站即可</text>
+</svg>

@@ -1,0 +1,122 @@
+<svg viewBox="0 0 860 340" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="860" height="340" fill="#F8FAFC" rx="8"/>
+  <text x="430" y="26" text-anchor="middle" font-size="14" font-weight="600" fill="#1E293B">CDN 在流量架构中的层次定位</text>
+
+  <!-- Layer backgrounds -->
+  <rect x="12" y="40" width="836" height="64" rx="6" fill="#FEF9C3" fill-opacity="0.6"/>
+  <rect x="12" y="114" width="836" height="64" rx="6" fill="#DBEAFE" fill-opacity="0.6"/>
+  <rect x="12" y="188" width="836" height="64" rx="6" fill="#D1FAE5" fill-opacity="0.6"/>
+  <rect x="12" y="262" width="836" height="64" rx="6" fill="#EDE9FE" fill-opacity="0.6"/>
+
+  <!-- Layer labels (left) -->
+  <text x="28" y="66" font-size="10" font-weight="600" fill="#92400E">DNS 层</text>
+  <text x="28" y="80" font-size="9" fill="#A16207">路由决策</text>
+  <text x="28" y="140" font-size="10" font-weight="600" fill="#1E40AF">CDN 层</text>
+  <text x="28" y="154" font-size="9" fill="#1D4ED8">缓存 · 加速 · 边缘</text>
+  <text x="28" y="214" font-size="10" font-weight="600" fill="#065F46">安全 · 接入层</text>
+  <text x="28" y="228" font-size="9" fill="#047857">WAF · LB</text>
+  <text x="28" y="288" font-size="10" font-weight="600" fill="#4C1D95">源站层</text>
+  <text x="28" y="302" font-size="9" fill="#5B21B6">应用 · 存储</text>
+
+  <!-- DNS layer nodes -->
+  <rect x="115" y="48" width="130" height="48" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="180" y="69" text-anchor="middle" font-size="11" font-weight="600" fill="#92400E">GeoDNS / GSLB</text>
+  <text x="180" y="85" text-anchor="middle" font-size="9" fill="#78350F">按地区路由到最优 CDN 节点</text>
+
+  <rect x="285" y="48" width="130" height="48" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="350" y="69" text-anchor="middle" font-size="11" font-weight="600" fill="#92400E">DDoS 清洗</text>
+  <text x="350" y="85" text-anchor="middle" font-size="9" fill="#78350F">超大体积攻击流量过滤</text>
+
+  <rect x="455" y="48" width="130" height="48" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="520" y="69" text-anchor="middle" font-size="11" font-weight="600" fill="#92400E">健康检测</text>
+  <text x="520" y="85" text-anchor="middle" font-size="9" fill="#78350F">节点存活探测 · 故障切换</text>
+
+  <!-- CDN layer nodes -->
+  <rect x="115" y="122" width="130" height="48" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="180" y="143" text-anchor="middle" font-size="11" font-weight="600" fill="#1E40AF">边缘节点缓存</text>
+  <text x="180" y="159" text-anchor="middle" font-size="9" fill="#1E3A8A">静态/半动态内容分发</text>
+
+  <rect x="285" y="122" width="130" height="48" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="350" y="143" text-anchor="middle" font-size="11" font-weight="600" fill="#1E40AF">动态加速</text>
+  <text x="350" y="159" text-anchor="middle" font-size="9" fill="#1E3A8A">专线路由优化 · TCP 调优</text>
+
+  <rect x="455" y="122" width="130" height="48" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="520" y="143" text-anchor="middle" font-size="11" font-weight="600" fill="#1E40AF">边缘计算</text>
+  <text x="520" y="159" text-anchor="middle" font-size="9" fill="#1E3A8A">Workers / Lambda@Edge</text>
+
+  <rect x="625" y="122" width="130" height="48" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="690" y="143" text-anchor="middle" font-size="11" font-weight="600" fill="#1E40AF">SSL 终止 · Bot 防护</text>
+  <text x="690" y="159" text-anchor="middle" font-size="9" fill="#1E3A8A">基础 WAF · 防盗链</text>
+
+  <!-- Security/Ingress layer -->
+  <rect x="115" y="196" width="130" height="48" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="180" y="217" text-anchor="middle" font-size="11" font-weight="600" fill="#065F46">WAF / API 网关</text>
+  <text x="180" y="233" text-anchor="middle" font-size="9" fill="#064E3B">精细规则 · 业务防护</text>
+
+  <rect x="285" y="196" width="130" height="48" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="350" y="217" text-anchor="middle" font-size="11" font-weight="600" fill="#065F46">负载均衡</text>
+  <text x="350" y="233" text-anchor="middle" font-size="9" fill="#064E3B">流量分发 · 健康检查</text>
+
+  <rect x="455" y="196" width="130" height="48" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="520" y="217" text-anchor="middle" font-size="11" font-weight="600" fill="#065F46">Origin Shield</text>
+  <text x="520" y="233" text-anchor="middle" font-size="9" fill="#064E3B">回源聚合 · 源站保护</text>
+
+  <!-- Origin layer -->
+  <rect x="180" y="270" width="130" height="48" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="245" y="291" text-anchor="middle" font-size="11" font-weight="600" fill="#4C1D95">应用服务器</text>
+  <text x="245" y="307" text-anchor="middle" font-size="9" fill="#3B0764">动态内容生成</text>
+
+  <rect x="360" y="270" width="130" height="48" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="425" y="291" text-anchor="middle" font-size="11" font-weight="600" fill="#4C1D95">对象存储</text>
+  <text x="425" y="307" text-anchor="middle" font-size="9" fill="#3B0764">静态资源权威源</text>
+
+  <rect x="540" y="270" width="130" height="48" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="605" y="291" text-anchor="middle" font-size="11" font-weight="600" fill="#4C1D95">数据库 / 服务</text>
+  <text x="605" y="307" text-anchor="middle" font-size="9" fill="#3B0764">业务逻辑</text>
+
+  <!-- Vertical flow arrows between layers -->
+  <line x1="180" y1="96" x2="180" y2="122" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="180,122 174,112 186,112" fill="#CBD5E1"/>
+  <line x1="350" y1="96" x2="350" y2="122" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="350,122 344,112 356,112" fill="#CBD5E1"/>
+  <line x1="520" y1="96" x2="520" y2="122" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="520,122 514,112 526,112" fill="#CBD5E1"/>
+
+  <line x1="250" y1="170" x2="250" y2="184" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="250" y1="184" x2="180" y2="184" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="180" y1="184" x2="180" y2="196" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="180,196 174,186 186,186" fill="#CBD5E1"/>
+
+  <line x1="350" y1="170" x2="350" y2="196" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="350,196 344,186 356,186" fill="#CBD5E1"/>
+
+  <line x1="350" y1="244" x2="350" y2="258" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="245" y1="258" x2="605" y2="258" stroke="#CBD5E1" stroke-width="1.5"/>
+  <line x1="245" y1="258" x2="245" y2="270" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="245,270 239,260 251,260" fill="#CBD5E1"/>
+  <line x1="425" y1="258" x2="425" y2="270" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="425,270 419,260 431,260" fill="#CBD5E1"/>
+  <line x1="605" y1="258" x2="605" y2="270" stroke="#CBD5E1" stroke-width="1.5"/>
+  <polygon points="605,270 599,260 611,260" fill="#CBD5E1"/>
+
+  <!-- Decision annotation (right side) -->
+  <rect x="768" y="48" width="78" height="48" rx="4" fill="#FFFBEB" stroke="#FCD34D" stroke-width="1"/>
+  <text x="807" y="67" text-anchor="middle" font-size="9" fill="#92400E">决策点</text>
+  <text x="807" y="80" text-anchor="middle" font-size="8" fill="#78350F">GeoDNS 路由策略</text>
+  <text x="807" y="91" text-anchor="middle" font-size="8" fill="#78350F">多 CDN 分流比例</text>
+
+  <rect x="768" y="122" width="78" height="48" rx="4" fill="#FFFBEB" stroke="#FCD34D" stroke-width="1"/>
+  <text x="807" y="141" text-anchor="middle" font-size="9" fill="#92400E">决策点</text>
+  <text x="807" y="154" text-anchor="middle" font-size="8" fill="#78350F">缓存策略体系</text>
+  <text x="807" y="165" text-anchor="middle" font-size="8" fill="#78350F">动态加速边界</text>
+
+  <rect x="768" y="196" width="78" height="48" rx="4" fill="#FFFBEB" stroke="#FCD34D" stroke-width="1"/>
+  <text x="807" y="215" text-anchor="middle" font-size="9" fill="#92400E">决策点</text>
+  <text x="807" y="228" text-anchor="middle" font-size="8" fill="#78350F">Origin Shield</text>
+  <text x="807" y="239" text-anchor="middle" font-size="8" fill="#78350F">是否需要</text>
+
+  <rect x="768" y="270" width="78" height="48" rx="4" fill="#FFFBEB" stroke="#FCD34D" stroke-width="1"/>
+  <text x="807" y="289" text-anchor="middle" font-size="9" fill="#92400E">决策点</text>
+  <text x="807" y="302" text-anchor="middle" font-size="8" fill="#78350F">源站部署模式</text>
+  <text x="807" y="313" text-anchor="middle" font-size="8" fill="#78350F">多地域 vs 单地域</text>
+</svg>
