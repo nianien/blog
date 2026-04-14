@@ -6,16 +6,6 @@ tags: ["AIGC", "视频生成", "AI短剧", "模型选型", "Wan2.1", "Sora", "Kl
 author: "skyfalling"
 ---
 
-> **本文是「AI 短剧工程实践」系列的视频生成专题篇：**
->
-> 1. [从剧本到成片的全流程](/blog/engineering/aigc/AI短剧工程实践：从剧本到成片的全流程) — 端到端全景概览
-> 2. [人物一致性与技术选型](/blog/engineering/aigc/AI短剧工程实践：人物一致性与技术选型) — 六条路径 + 决策矩阵
-> 3. **视频生成模型选型与实战** ← 本篇
-> 4. [角色生产流水线](/blog/engineering/aigc/AI短剧工程实践：角色生产流水线) — 四层 Pipeline 实战
-> 5. [从视频生成到角色引擎](/blog/engineering/aigc/AI短剧工程实践：从视频生成到角色引擎) — 应用层架构设计
-> 6. [全自动配音流水线](/blog/engineering/aigc/AI短剧工程实践：全自动配音流水线) — 出海配音工程
-> 7. [实时交互式视频](/blog/engineering/aigc/AI实时交互式视频：从看视频到和视频对话) — 前瞻探索
-
 视频生成是AI短剧Pipeline中迭代最快、选型最难的环节。2025年下半年到2026年初，Sora 2、Wan2.2、Kling 3.0、Runway Gen-4.5先后发布，格局再次洗牌。
 
 本文从工程实战角度回答三个问题：该用哪个模型？图生视频还是文生视频？怎么集成到生产Pipeline里？

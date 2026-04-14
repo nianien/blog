@@ -262,11 +262,8 @@ export function getSeriesNavItems(seriesKey: string, currentSlug: string): Serie
   const allPosts = getAllPosts();
   const seriesPosts = allPosts.filter(p => p.series?.key === seriesKey);
 
-  // 按 order 排序（有 order 的按 order，没有的按 pubDate）
+  // 按 pubDate 升序排列
   seriesPosts.sort((a, b) => {
-    const orderA = a.series?.order ?? Infinity;
-    const orderB = b.series?.order ?? Infinity;
-    if (orderA !== orderB) return orderA - orderB;
     return new Date(a.pubDate).getTime() - new Date(b.pubDate).getTime();
   });
 
