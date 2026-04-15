@@ -10,7 +10,7 @@ d:"$Sreact.suspense"
 f:I[7150,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/bd27d35e90c84eb9.css","style"]
-0:{"P":null,"b":"rIIjVZz4YEalzueL5CL0G","p":"","c":["","blog","engineering","practice","%E4%B8%80%E4%B8%AA%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/practice/%E4%B8%80%E4%B8%AA%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bd27d35e90c84eb9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/practice/%E4%B8%80%E4%B8%AA%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+0:{"P":null,"b":"XPvFtPHLB_byKAg0i8Azk","p":"","c":["","blog","engineering","practice","%E4%B8%80%E4%B8%AA%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/practice/%E4%B8%80%E4%B8%AA%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bd27d35e90c84eb9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/practice/%E4%B8%80%E4%B8%AA%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
 10:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],""]
 11:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],"default"]
 12:T74e0,<h2>秒杀的本质问题</h2>
@@ -1000,7 +1000,7 @@ WHERE id = #{itemId}
 <p>也许未来的答案既不是纯粹的「天生」也不是纯粹的「学习」，而是一种我们现在还无法精确描述的中间状态——大脑的架构确实为语言学习提供了独特的先验优势，但这种优势不是一套具体的语法规则，而是一组让语言学习异常高效的计算原则。</p>
 <p>就像 Transformer 架构本身不包含语言知识，但注意力机制让它天然适合处理语言——人脑可能也是如此。不是预装了答案，而是预装了特别擅长找到答案的搜索策略。</p>
 <p>这个区分听起来微妙，但含义完全不同。前者意味着答案已经确定，学习只是查表；后者意味着答案是开放的，学习是真正的探索。我倾向于相信后者——不只是因为证据指向那个方向，也因为它描绘了一个更有趣的关于人类心智的故事。</p>
-18:Tc95f,<blockquote>
+18:Tccb7,<blockquote>
 <p>让一个 Agent 跑通 demo 是下午茶的事；让一百个 Agent 在生产环境中稳定、安全、经济地运行，是一个平台工程问题。本文不讨论 Agent 怎么写，而是讨论 Agent 在什么上面跑。</p>
 </blockquote>
 <hr>
@@ -1067,7 +1067,34 @@ WHERE id = #{itemId}
 <h3>3.1 协议选择与流式响应架构</h3>
 <p>Agent 的交互模式与传统 REST API 有本质不同。用户发送一条消息后，Agent 的响应不是瞬时返回的——它需要经过多轮 LLM 推理和工具调用，整个过程可能耗时数十秒。如果用传统的 HTTP 请求-响应模式，用户会面对一个漫长的空白等待。</p>
 <p>因此，Agent 平台几乎都采用流式响应架构。主流有三种协议选择：</p>
-<p><img src="/images/blog/agentic-platform/02-protocol-comparison.svg" alt="协议对比"></p>
+<table>
+<thead>
+<tr>
+<th>协议</th>
+<th>方向</th>
+<th>连接模式</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>HTTP + SSE</td>
+<td>单向推送</td>
+<td>长连接</td>
+<td>大多数 Agent API</td>
+</tr>
+<tr>
+<td>WebSocket</td>
+<td>双向通信</td>
+<td>长连接</td>
+<td>交互式会话</td>
+</tr>
+<tr>
+<td>gRPC Stream</td>
+<td>双向流</td>
+<td>长连接</td>
+<td>内部服务间通信</td>
+</tr>
+</tbody></table>
 <p>SSE（Server-Sent Events）是目前最常见的选择：客户端发起 HTTP 请求，服务端通过 SSE 逐步推送 Agent 的输出——包括 LLM 的流式文本、工具调用的中间状态和最终结果。SSE 的优势在于基于标准 HTTP，与现有基础设施（CDN、API Gateway、负载均衡器）兼容性好。</p>
 <p>WebSocket 适合需要双向实时交互的场景，比如用户需要在 Agent 执行过程中随时中断或提供额外输入。但 WebSocket 与很多 API Gateway 和 CDN 的兼容性较差，运维成本更高。</p>
 <p>流式响应架构需要处理几个关键问题：</p>
@@ -1167,7 +1194,43 @@ agent:
 <h3>4.2 多租户隔离</h3>
 <p>当平台同时服务于多个业务方时，租户间的隔离是刚性需求。隔离需要在多个层面实施：</p>
 <p><strong>资源隔离</strong>：每个租户分配独立的资源配额——最大并发会话数、每分钟 Token 上限、每月 Token 总额、可用 Agent 列表。配额的设计需要区分硬限制（不可突破）和软限制（可临时超出但触发告警）。</p>
-<p><img src="/images/blog/agentic-platform/05-resource-quota-model.svg" alt="资源配额模型"></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>硬上限</th>
+<th>软上限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>并发会话数</td>
+<td>200</td>
+<td>150（触发告警）</td>
+</tr>
+<tr>
+<td>TPM</td>
+<td>500K tokens</td>
+<td>400K（触发限速）</td>
+</tr>
+<tr>
+<td>月度 Token</td>
+<td>50M tokens</td>
+<td>40M（通知管理员）</td>
+</tr>
+<tr>
+<td>单次执行</td>
+<td>100K tokens</td>
+<td>50K（触发审查）</td>
+</tr>
+<tr>
+<td>工具调用/分</td>
+<td>100 次</td>
+<td>80 次</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>硬上限：触发系统拒绝 | 软上限：触发告警/限速/审查</p>
+</blockquote>
 <p><strong>数据隔离</strong>：不同租户的对话数据、日志、向量索引必须严格隔离。实现方式有两种——逻辑隔离（共享存储，通过 tenant_id 字段过滤）和物理隔离（独立数据库/命名空间）。对于安全要求高的租户，应提供物理隔离选项。</p>
 <p><strong>模型隔离</strong>：不同租户可能使用不同的模型和模型配额。某个租户的请求不应该因为占满了模型供应商的速率限制而影响其他租户。这要求 LLM Gateway 层能够实现租户级别的请求排队和速率控制。</p>
 <h3>4.3 Agent 生命周期管理</h3>
