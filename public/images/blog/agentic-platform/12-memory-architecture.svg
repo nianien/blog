@@ -1,6 +1,6 @@
 <svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
   <!-- Agent Runtime container -->
-  <rect x="50" y="10" width="400" height="120" fill="#F3F4F6" stroke="#4B5563" stroke-width="1.5" rx="8"/>
+  <rect x="50" y="10" width="380" height="120" fill="#F3F4F6" stroke="#4B5563" stroke-width="1.5" rx="8"/>
 
   <!-- Runtime title -->
   <text x="70" y="38" font-size="14" font-weight="700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">Agent Runtime</text>
@@ -22,7 +22,7 @@
   <polygon points="366,166 370,174 374,166" fill="#666"/>
 
   <!-- Working Memory -->
-  <rect x="70" y="175" width="120" height="120" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" rx="8"/>
+  <rect x="70" y="175" width="115" height="120" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" rx="8"/>
   <text x="130" y="202" font-size="13" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1e40af">Working</text>
   <text x="130" y="220" font-size="13" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#1e40af">Memory</text>
   <line x1="82" y1="232" x2="178" y2="232" stroke="#93C5FD" stroke-width="1"/>
@@ -30,7 +30,7 @@
   <text x="130" y="275" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#334155">State</text>
 
   <!-- Short-term Memory -->
-  <rect x="190" y="175" width="120" height="120" fill="#FEF9C3" stroke="#F59E0B" stroke-width="1.5" rx="8"/>
+  <rect x="190" y="175" width="115" height="120" fill="#FEF9C3" stroke="#F59E0B" stroke-width="1.5" rx="8"/>
   <text x="250" y="202" font-size="13" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#92400e">Short-term</text>
   <text x="250" y="220" font-size="13" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#92400e">Memory</text>
   <line x1="202" y1="232" x2="298" y2="232" stroke="#FCD34D" stroke-width="1"/>
@@ -38,7 +38,7 @@
   <text x="250" y="275" font-size="12" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#334155">w/ TTL</text>
 
   <!-- Long-term Memory -->
-  <rect x="310" y="175" width="120" height="120" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5" rx="8"/>
+  <rect x="310" y="175" width="115" height="120" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5" rx="8"/>
   <text x="370" y="202" font-size="13" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#5b21b6">Long-term</text>
   <text x="370" y="220" font-size="13" font-weight="700" text-anchor="middle" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" fill="#5b21b6">Memory</text>
   <line x1="322" y1="232" x2="418" y2="232" stroke="#C4B5FD" stroke-width="1"/>

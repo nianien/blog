@@ -8,7 +8,7 @@ export const CATEGORY_META: Record<string, { name: string; description: string }
   // 二级 — Engineering
   'engineering/agentic':      { name: 'Agentic 系统', description: 'AI Agent 系统设计与实现' },
   'engineering/architecture': { name: '架构设计',     description: '系统架构与微服务' },
-  'engineering/domain':       { name: '领域建模',     description: '业务架构与领域驱动设计' },
+  'engineering/domain':       { name: '业务系统',     description: '业务系统设计与实现' },
   'engineering/middleware':   { name: '中间件',       description: '消息队列、分布式事务等' },
   'engineering/practice':     { name: '工程实践',     description: 'DevOps、CI/CD 与工程化' },
   'engineering/algorithm':    { name: '算法与数据结构',         description: '算法设计与问题求解' },
