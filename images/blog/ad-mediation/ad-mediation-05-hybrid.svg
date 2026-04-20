@@ -1,50 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 440" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
   <defs>
     <filter id="s5"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/></filter>
-    <marker id="a5" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#FF6B00"/></marker>
   </defs>
-  <rect width="960" height="360" rx="16" fill="#FAFBFC"/>
+  <rect width="1080" height="440" rx="16" fill="#FAFBFC"/>
 
-  <text x="480" y="35" text-anchor="middle" font-size="16" font-weight="800" fill="#1F2937">混合智能排序流程</text>
+  <text x="540" y="35" text-anchor="middle" font-size="16" font-weight="800" fill="#1F2937">混合智能排序流程</text>
 
-  <!-- Bidding column -->
-  <rect x="40" y="60" width="250" height="240" rx="12" fill="#E8F0FE" stroke="#4A90D9" stroke-width="1.5" filter="url(#s5)"/>
-  <text x="165" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#4A90D9">In-App Bidding 并发竞价</text>
-  <rect x="65" y="105" width="200" height="34" rx="6" fill="#34C759"/><text x="165" y="127" text-anchor="middle" font-size="12" font-weight="700" fill="white">广告源 A  ¥10 ✓ 胜出</text>
-  <rect x="65" y="148" width="200" height="34" rx="6" fill="#FEE8E7"/><text x="165" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#FF3B30">广告源 B  ¥9  ✗</text>
-  <rect x="65" y="191" width="200" height="34" rx="6" fill="#FEE8E7"/><text x="165" y="213" text-anchor="middle" font-size="12" font-weight="600" fill="#FF3B30">广告源 C  ¥8  ✗</text>
-  <text x="165" y="260" text-anchor="middle" font-size="11" fill="#6B7280">实时出价 · 公平竞争</text>
-  <text x="165" y="280" text-anchor="middle" font-size="11" fill="#4A90D9" font-weight="600">Bidding 胜出: ¥10</text>
+  <!-- Bidding column (top-left) -->
+  <rect x="30" y="55" width="300" height="165" rx="12" fill="#E8F0FE" stroke="#4A90D9" stroke-width="1.5" filter="url(#s5)"/>
+  <text x="180" y="82" text-anchor="middle" font-size="13" font-weight="700" fill="#4A90D9">In-App Bidding 并发竞价</text>
+  <rect x="55" y="98" width="250" height="30" rx="6" fill="#34C759"/><text x="180" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="white">广告源 A  ¥10 ✓ 胜出</text>
+  <rect x="55" y="136" width="250" height="30" rx="6" fill="#FEE8E7"/><text x="180" y="156" text-anchor="middle" font-size="12" font-weight="600" fill="#FF3B30">广告源 B  ¥9  ✗</text>
+  <rect x="55" y="174" width="250" height="30" rx="6" fill="#FEE8E7"/><text x="180" y="194" text-anchor="middle" font-size="12" font-weight="600" fill="#FF3B30">广告源 C  ¥8  ✗</text>
 
-  <!-- Arrow -->
-  <line x1="292" y1="180" x2="348" y2="180" stroke="#FF6B00" stroke-width="2" marker-end="url(#a5)"/>
+  <!-- Waterfall column (bottom-left) -->
+  <rect x="30" y="245" width="300" height="155" rx="12" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1.5" filter="url(#s5)"/>
+  <text x="180" y="272" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">Waterfall 历史排序</text>
+  <rect x="55" y="290" width="250" height="28" rx="6" fill="#FFB366"/><text x="180" y="309" text-anchor="middle" font-size="12" font-weight="700" fill="white">广告源 E  ¥9 (Floor)</text>
+  <rect x="55" y="325" width="250" height="28" rx="6" fill="#D1D5DB"/><text x="180" y="344" text-anchor="middle" font-size="12" font-weight="700" fill="white">广告源 F  ¥8 (Floor)</text>
+  <rect x="55" y="360" width="250" height="28" rx="6" fill="#D1D5DB"/><text x="180" y="379" text-anchor="middle" font-size="12" font-weight="600" fill="white">广告源 G  ¥7 (Floor)</text>
 
-  <!-- Merge column -->
-  <rect x="350" y="60" width="260" height="240" rx="12" fill="#FFF3E8" stroke="#FF6B00" stroke-width="2" filter="url(#s5)"/>
-  <text x="480" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#FF6B00">混合竞价排序（统一价格维度）</text>
-  <rect x="375" y="105" width="210" height="30" rx="6" fill="#FF6B00"/><text x="480" y="125" text-anchor="middle" font-size="11" font-weight="700" fill="white">1. 广告源 A  ¥10  (Bidding) 🏆</text>
-  <rect x="375" y="143" width="210" height="30" rx="6" fill="#FFB366"/><text x="480" y="163" text-anchor="middle" font-size="11" font-weight="700" fill="white">2. 广告源 E  ¥9  (Waterfall)</text>
-  <rect x="375" y="181" width="210" height="30" rx="6" fill="#93C5FD"/><text x="480" y="201" text-anchor="middle" font-size="11" font-weight="700" fill="white">3. 广告源 F  ¥8  (Waterfall)</text>
-  <rect x="375" y="219" width="210" height="30" rx="6" fill="#D1D5DB"/><text x="480" y="239" text-anchor="middle" font-size="11" font-weight="700" fill="white">4. 广告源 G  ¥7  (Waterfall)</text>
-  <text x="480" y="280" text-anchor="middle" font-size="11" fill="#FF6B00" font-weight="600">按统一价格从高到低排序</text>
+  <!-- Arrow: Bidding -> Merge (horizontal, right-angle) -->
+  <polyline points="330,137 360,137 360,200 395,200" stroke="#4A90D9" stroke-width="2" fill="none"/>
+  <polygon points="395,200 385,196 385,204" fill="#4A90D9"/>
 
-  <!-- Arrow 2 -->
-  <line x1="612" y1="180" x2="668" y2="180" stroke="#FF6B00" stroke-width="2" marker-end="url(#a5)"/>
+  <!-- Arrow: Waterfall -> Merge (horizontal, right-angle) -->
+  <polyline points="330,322 360,322 360,260 395,260" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  <polygon points="395,260 385,256 385,264" fill="#9CA3AF"/>
 
-  <!-- Waterfall column (input) -->
-  <rect x="40" y="310" width="250" height="40" rx="8" fill="#F3F4F6"/>
-  <text x="165" y="335" text-anchor="middle" font-size="12" font-weight="600" fill="#6B7280">Waterfall: 广告源E ¥9 → F ¥8 → G ¥7</text>
+  <!-- Merge column (center) -->
+  <rect x="397" y="80" width="270" height="280" rx="12" fill="#FFF3E8" stroke="#FF6B00" stroke-width="2" filter="url(#s5)"/>
+  <text x="532" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#FF6B00">混合竞价排序（统一价格维度）</text>
 
-  <line x1="165" y1="300" x2="165" y2="310" stroke="#6B7280" stroke-width="1.5"/>
-  <line x1="165" y1="310" x2="348" y2="230" stroke="#6B7280" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#a5)"/>
+  <rect x="422" y="130" width="220" height="36" rx="6" fill="#FF6B00"/><text x="532" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="white">1. 广告源 A  ¥10 (Bidding) 🏆</text>
+  <rect x="422" y="175" width="220" height="36" rx="6" fill="#FFB366"/><text x="532" y="198" text-anchor="middle" font-size="12" font-weight="700" fill="white">2. 广告源 E  ¥9 (Waterfall)</text>
+  <rect x="422" y="220" width="220" height="36" rx="6" fill="#93C5FD"/><text x="532" y="243" text-anchor="middle" font-size="12" font-weight="700" fill="white">3. 广告源 F  ¥8 (Waterfall)</text>
+  <rect x="422" y="265" width="220" height="36" rx="6" fill="#D1D5DB"/><text x="532" y="288" text-anchor="middle" font-size="12" font-weight="700" fill="white">4. 广告源 G  ¥7 (Waterfall)</text>
+
+  <text x="532" y="335" text-anchor="middle" font-size="11" fill="#FF6B00" font-weight="600">按统一价格从高到低排序</text>
+
+  <!-- Arrow: Merge -> Result (horizontal) -->
+  <line x1="669" y1="220" x2="735" y2="220" stroke="#FF6B00" stroke-width="2"/>
+  <polygon points="735,220 725,216 725,224" fill="#FF6B00"/>
 
   <!-- Result -->
-  <rect x="670" y="90" width="260" height="180" rx="12" fill="white" stroke="#34C759" stroke-width="2" filter="url(#s5)"/>
-  <text x="800" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#34C759">最终展示</text>
-  <rect x="700" y="140" width="200" height="60" rx="10" fill="#E8F8EC"/>
-  <text x="800" y="168" text-anchor="middle" font-size="14" font-weight="800" fill="#34C759">广告源 A · ¥10</text>
-  <text x="800" y="188" text-anchor="middle" font-size="11" fill="#6B7280">Bidding 胜出者</text>
-  <text x="800" y="225" text-anchor="middle" font-size="11" fill="#6B7280">兼顾公平性与填充率</text>
-  <text x="800" y="245" text-anchor="middle" font-size="11" fill="#6B7280">Waterfall 作为保底</text>
-  <text x="800" y="260" text-anchor="middle" font-size="11" fill="#34C759" font-weight="600">收益最大化</text>
+  <rect x="737" y="100" width="310" height="240" rx="12" fill="white" stroke="#34C759" stroke-width="2" filter="url(#s5)"/>
+  <text x="892" y="135" text-anchor="middle" font-size="14" font-weight="700" fill="#34C759">最终展示</text>
+  <rect x="772" y="155" width="240" height="60" rx="10" fill="#E8F8EC"/>
+  <text x="892" y="183" text-anchor="middle" font-size="16" font-weight="800" fill="#34C759">广告源 A · ¥10</text>
+  <text x="892" y="203" text-anchor="middle" font-size="11" fill="#6B7280">Bidding 胜出者</text>
+  <text x="892" y="248" text-anchor="middle" font-size="11" fill="#6B7280">兼顾公平性与填充率</text>
+  <text x="892" y="268" text-anchor="middle" font-size="11" fill="#6B7280">Waterfall 作为保底</text>
+  <text x="892" y="298" text-anchor="middle" font-size="13" fill="#34C759" font-weight="700">收益最大化</text>
 </svg>
