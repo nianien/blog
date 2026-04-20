@@ -1,0 +1,42 @@
+<svg viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="210" y="28" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="16" font-weight="bold" fill="#1F2937" text-anchor="middle">人才画像四象限</text>
+
+  <!-- Axes -->
+  <line x1="210" y1="60" x2="210" y2="320" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="50" y1="190" x2="370" y2="190" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- Axis arrows -->
+  <polygon points="210,60 206,70 214,70" fill="#94A3B8"/>
+  <polygon points="370,190 360,186 360,194" fill="#94A3B8"/>
+
+  <!-- Axis labels -->
+  <text x="210" y="52" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#64748B" text-anchor="middle">高意愿</text>
+  <text x="210" y="340" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#64748B" text-anchor="middle">低意愿</text>
+  <text x="385" y="195" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#64748B">高能力</text>
+  <text x="30" y="195" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#64748B">低能力</text>
+
+  <!-- Q1: 明星 (高能力 + 高意愿) - top right -->
+  <rect x="225" y="75" width="130" height="100" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="290" y="110" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="15" font-weight="bold" fill="#1E40AF" text-anchor="middle">明星</text>
+  <text x="290" y="135" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#3B82F6" text-anchor="middle">策略：授权</text>
+  <text x="290" y="158" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" text-anchor="middle">给空间、给挑战、给信任</text>
+
+  <!-- Q2: 潜力股 (低能力 + 高意愿) - top left -->
+  <rect x="65" y="75" width="130" height="100" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="130" y="110" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="15" font-weight="bold" fill="#166534" text-anchor="middle">潜力股</text>
+  <text x="130" y="135" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#22C55E" text-anchor="middle">策略：培养</text>
+  <text x="130" y="158" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" text-anchor="middle">给方向、给资源、给耐心</text>
+
+  <!-- Q3: 老油条 (高能力 + 低意愿) - bottom right -->
+  <rect x="225" y="205" width="130" height="100" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="290" y="240" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="15" font-weight="bold" fill="#92400E" text-anchor="middle">老油条</text>
+  <text x="290" y="265" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#F59E0B" text-anchor="middle">策略：激活</text>
+  <text x="290" y="288" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" text-anchor="middle">找原因、给刺激、设底线</text>
+
+  <!-- Q4: 待观察 (低能力 + 低意愿) - bottom left -->
+  <rect x="65" y="205" width="130" height="100" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="130" y="240" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="15" font-weight="bold" fill="#991B1B" text-anchor="middle">待观察</text>
+  <text x="130" y="265" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#EF4444" text-anchor="middle">策略：决断</text>
+  <text x="130" y="288" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" text-anchor="middle">给期限、给标准、果断汰换</text>
+</svg>

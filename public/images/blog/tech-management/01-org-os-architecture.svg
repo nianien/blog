@@ -1,0 +1,38 @@
+<svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="280" y="30" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="16" font-weight="bold" fill="#1F2937" text-anchor="middle">组织操作系统的三层架构</text>
+
+  <!-- Layer 1: 运行逻辑层 -->
+  <rect x="40" y="52" width="480" height="70" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="60" y="82" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="14" font-weight="bold" fill="#1E40AF">运行逻辑层</text>
+  <text x="60" y="104" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#3B82F6">目标 · 绩效 · 沟通</text>
+  <text x="500" y="93" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" text-anchor="end">系统的动力，驱动组织持续运转</text>
+
+  <!-- Arrow 1→2: line + triangle -->
+  <line x1="280" y1="122" x2="280" y2="142" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="275,140 280,150 285,140" fill="#94A3B8"/>
+
+  <!-- Layer 2: 基础设施层 -->
+  <rect x="40" y="154" width="480" height="70" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="60" y="184" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="14" font-weight="bold" fill="#166534">基础设施层</text>
+  <text x="60" y="206" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#16A34A">人才 · 培养 · 文化 · 制度</text>
+  <text x="500" y="195" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" text-anchor="end">系统的基石，决定组织的上限</text>
+
+  <!-- Arrow 2→3: line + triangle -->
+  <line x1="280" y1="224" x2="280" y2="244" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="275,242 280,252 285,242" fill="#94A3B8"/>
+
+  <!-- Layer 3: 执行保障层 -->
+  <rect x="40" y="256" width="480" height="70" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="60" y="286" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="14" font-weight="bold" fill="#92400E">执行保障层</text>
+  <text x="60" y="308" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" fill="#B45309">项目管理 · 棘手问题</text>
+  <text x="500" y="297" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" text-anchor="end">系统的维护，处理日常和异常</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="346" x2="520" y2="346" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- Cross-cutting: 跨层关注点 -->
+  <rect x="40" y="362" width="480" height="30" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="60" y="383" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#5B21B6">跨层关注点：规模跃迁</text>
+  <text x="500" y="383" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" fill="#7C3AED" text-anchor="end">组织操作系统的版本升级</text>
+</svg>

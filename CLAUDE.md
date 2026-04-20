@@ -81,8 +81,8 @@ author: "skyfalling"              # 固定作者名
 ## 文章写作风格
 
 - 面向技术从业者时：包含代码片段、架构图（SVG）、技术栈对比表
-- 架构图、流程图、对比表格等使用 **SVG 文件**而非 ASCII art 或 Markdown 表格，SVG 存放规则见下方"SVG 图形规范"
-- Markdown 表格也可以转为 SVG 以获得更好的视觉效果，尤其是多列复杂对比表
+- 架构图、流程图等使用 **SVG 文件**而非 ASCII art，SVG 存放规则见下方"SVG 图形规范"
+- **表格一律使用 Markdown 表格**，不要用 SVG 画表格
 - 善用 Markdown 表格、代码块、引用块增强可读性
 - 每个大章节末尾用**一句话总结**收束
 - 使用"Normal vs Better"对比模式而非"Wrong vs Correct"
