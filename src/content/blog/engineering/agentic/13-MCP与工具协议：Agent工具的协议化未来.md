@@ -1,20 +1,17 @@
 ---
 title: "MCP与工具协议：Agent工具的协议化未来"
 pubDate: "2026-01-27"
-description: "当前 Agent 工具集成面临 N×M 问题：每个框架、每个应用都在重复造轮子。MCP（Model Context Protocol）正在尝试成为 Agent 工具世界的 HTTP——一个标准化的通信协议。本文深入剖析 MCP 的架构设计、通信机制与安全模型，探讨工具协议化的趋势、trade-off 与未来走向。"
-tags: ["Agentic", "AI Engineering", "MCP"]
+description: "当前 Agent 工具集成面临 N×M 问题：每个框架、每个应用都在重复造轮子。MCP 正在成为 Agent 工具世界的 HTTP。本文深入剖析 MCP 的架构设计、Streamable HTTP 传输演进、OAuth 2.1 授权层与安全模型，并系统介绍 A2A（Agent-to-Agent）协议——解决跨系统 Agent 互操作的协议层。MCP 管 Agent 与工具的通信，A2A 管 Agent 与 Agent 的通信，二者互补。"
+tags: ["Agentic", "AI Engineering", "MCP", "A2A"]
 series:
   key: "agentic"
   order: 13
+author: "skyfalling"
 ---
-
-> 每一次技术生态的成熟，都伴随着协议的诞生。Web 有 HTTP，邮件有 SMTP，实时通信有 WebSocket。当 Agent 从实验走向生产，工具调用也必然需要自己的协议层。
->
-> 本文是 Agentic 系列第 13 篇。我们将从当前工具集成的痛点出发，深入分析 MCP（Model Context Protocol）的设计哲学与技术细节，探讨工具协议化对 Agent 生态的深远影响。
 
 ---
 
-## 1. 开篇：重复造轮子的困境
+## 1. 重复造轮子的困境
 
 假设你正在构建一个 Agent，需要它能够：查询 Jira 工单、读取 GitHub PR、搜索 Confluence 文档、发送 Slack 消息。
 
@@ -74,8 +71,51 @@ MCP 定义了三种核心原语，覆盖 Agent 与外部世界交互的主要模
 
 ### 4.1 传输层
 
-**stdio**：本地进程间通信。零网络开销、简单可靠，但仅限同一台机器。
-**HTTP + SSE**：远程服务通信。Client 通过 HTTP POST 发请求，Server 通过 SSE 推响应。2025 年的 Streamable HTTP 更新进一步统一了远程传输层。
+MCP 定义了两种传输层，适配不同的部署场景：
+
+**stdio**：本地进程间通信。Client 以子进程方式启动 MCP Server，通过 stdin/stdout 交换 JSON-RPC 消息。零网络开销、零配置、简单可靠，但仅限同一台机器。典型场景：IDE 插件连接本地工具（文件系统、Git、数据库）。
+
+**Streamable HTTP**（2025-03 规范引入，取代早期 HTTP+SSE）：远程服务通信。这是 MCP 走向生产的关键演进。
+
+早期的 HTTP+SSE 传输有明显的工程缺陷：SSE 要求长连接，与负载均衡器和 CDN 兼容性差；Client 和 Server 需要分别维护两个通道（POST 发请求、SSE 收响应），复杂度高。Streamable HTTP 用一个端点解决了所有问题：
+
+- **单端点设计**：Client 通过 POST 发送请求，Server 可以直接返回 JSON 响应（简单调用），也可以升级为 SSE 流式返回（长时间任务）
+- **无状态友好**：每个请求独立，天然兼容负载均衡、Serverless、CDN
+- **可选会话**：通过 `Mcp-Session-Id` Header 实现有状态交互，但不强制要求——无状态模式下每个请求自包含
+
+```
+# Streamable HTTP：单端点，灵活响应
+
+POST /mcp
+Content-Type: application/json
+
+{"jsonrpc":"2.0","id":1,"method":"tools/call",
+ "params":{"name":"query_db","arguments":{"sql":"SELECT ..."}}}
+
+# 简单响应：直接返回 JSON
+200 OK
+Content-Type: application/json
+{"jsonrpc":"2.0","id":1,"result":{...}}
+
+# 流式响应：升级为 SSE
+200 OK
+Content-Type: text/event-stream
+data: {"jsonrpc":"2.0","id":1,"result":{...}}
+```
+
+这个设计让 Remote MCP 真正可以部署在生产环境——放在 Cloudflare Workers 后面、跑在 Kubernetes 集群里、通过 API Gateway 统一管理，都没有问题。
+
+**HTTP+SSE 已被标记为 deprecated**，计划 2026 年中完全移除。如果你正在搭建新的 MCP Server，直接用 Streamable HTTP。
+
+### 4.1.1 OAuth 2.1 授权层
+
+Remote MCP 面向公网部署时，授权是硬性需求。2025 年 6 月的规范更新将 OAuth 2.1 集成进了协议层：
+
+- **PKCE（Proof Key for Code Exchange）**：防止授权码劫持，所有 Client 必须支持
+- **动态客户端注册**（RFC 7591）：MCP Client 首次连接 Server 时自动注册，无需人工配置
+- **Resource Indicators**（RFC 8707）：Token 中绑定目标 Server 地址，防止 Token 在多个 Server 间被滥用——这修补了一个关键安全漏洞：恶意 MCP Server 可能诱导 Client 发送本应发给其他 Server 的 Token
+
+这套授权框架让企业可以将 MCP Server 暴露给外部 Agent，同时保持细粒度的访问控制。
 
 ### 4.2 消息格式：JSON-RPC 2.0
 
@@ -536,9 +576,13 @@ def _is_permanent_error(e: Exception) -> bool:
 
 ![MCP 采纳决策框架](/images/blog/agentic-13/mcp-adoption-decision.svg)
 
-### 9.3 生态依赖
+### 9.3 生态依赖与治理演进
 
-MCP 由 Anthropic 主导——缓解策略：MIT 开源可 fork、Server 是独立进程（最坏只需换 Client）、核心业务逻辑应与协议层分离。**投入合理，但要做好隔离。**
+MCP 最初由 Anthropic 主导，这引发了合理的"厂商控制"担忧。但 2025 年 12 月的一个关键转折改变了局面：**Anthropic 将 MCP 捐赠给 Linux Foundation 旗下的 Agentic AI Foundation（AAIF）**，OpenAI 和 Block 作为联合创始成员加入，AWS、Google、Microsoft、Cloudflare、Bloomberg 等为支持成员。
+
+这意味着 MCP 不再是"Anthropic 的协议"，而是行业共治的开放标准。缓解策略也从"做好隔离以防厂商变卦"变成了"参与社区影响协议演进方向"。
+
+当然，中性治理不等于风险消失。规范迭代速度很快（2025 年内发了两个大版本），生产系统需要做好版本兼容——能力协商机制在这里发挥了关键作用。
 
 ### 9.4 性能
 
@@ -2325,28 +2369,97 @@ class ToolMarketplacePlatform:
 
 ---
 
-## 15. 进一步思考
+## 15. A2A：Agent 间互操作的协议层
 
-MCP 正在快速演进，几个未解问题值得关注：
+MCP 解决了"Agent 如何与工具通信"的问题。但还有一个平行问题没有解决：**不同系统中的 Agent 如何互相协作？**
 
-**工具组合**：工具 A 输出作为工具 B 输入时，由 LLM 串联（灵活但低效）还是协议层支持工具链（高效但复杂）？
+设想一个场景：企业 A 的采购 Agent 需要向企业 B 的供应链 Agent 询价。两个 Agent 运行在不同框架上（一个用 LangGraph，一个用 Claude Agent SDK），由不同团队维护。MCP 管不了这个——它定义的是 Agent 与工具的关系，不是 Agent 与 Agent 的关系。
 
-**有状态交互**：当前每次调用独立。但数据库事务、多步操作需要跨调用的状态。如何在协议层表达？
+Google 在 2025 年 4 月提出了 **A2A（Agent-to-Agent）协议**来填补这个空白。
 
-**工具质量评估**：Agent 如何判断 MCP Server 的描述是否准确、响应是否可靠？需要"工具信誉系统"。
+### 15.1 A2A 核心概念
 
-**多模态工具**：MCP 已支持 `ImageContent`，但多模态生态仍在早期。
+A2A 协议建立在几个关键抽象之上：
 
-长远来看，工具协议化的终局可能是一个**去中心化的 Agent 工具市场**——发布 MCP Server 如同发布 npm 包，Agent 在运行时动态发现、评估、连接、使用工具。协议保证互操作性，市场机制保证质量。
+**Agent Card**：每个 Agent 发布一个 JSON 格式的"名片"（通常放在 `/.well-known/agent.json`），声明自己的能力、支持的交互模式、认证要求。其他 Agent 通过读取 Agent Card 来发现和理解对方能做什么——类似 MCP 的工具发现机制，但发现对象是 Agent 而非 Tool。
+
+```json
+{
+  "name": "供应链询价 Agent",
+  "description": "处理物料询价、库存查询和交付时间估算",
+  "url": "https://supply.example.com/agent",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": true
+  },
+  "skills": [
+    {
+      "id": "price_inquiry",
+      "name": "物料询价",
+      "description": "根据物料编码和数量返回报价"
+    }
+  ],
+  "authentication": {
+    "schemes": ["oauth2"]
+  }
+}
+```
+
+**Task**：A2A 中的核心交互单元。一个 Agent 向另一个 Agent 发起 Task（本质上是一个请求），Task 有明确的生命周期状态：`submitted → working → input-required → completed / failed / canceled`。这比简单的 Request-Response 更适合 Agent 场景——很多任务需要多轮交互、中间确认、异步完成。
+
+**Message 与 Part**：Agent 间通过 Message 交换信息，每条 Message 包含一或多个 Part（TextPart、FilePart、DataPart）。这种多模态设计让 Agent 可以传递文本、文件、结构化数据。
+
+### 15.2 MCP vs A2A：互补而非竞争
+
+| 维度 | MCP | A2A |
+|------|-----|-----|
+| **解决的问题** | Agent ↔ Tool（工具调用） | Agent ↔ Agent（跨系统协作） |
+| **交互模式** | 请求-响应（同步为主） | Task 生命周期（支持异步、多轮） |
+| **发现机制** | `tools/list`（工具列表） | Agent Card（能力名片） |
+| **典型场景** | Agent 查数据库、调 API、读文件 | Agent 委托另一个 Agent 执行复杂任务 |
+| **透明度** | 工具实现对 Agent 透明 | Agent 内部实现对调用方不透明（opaque） |
+| **通信协议** | JSON-RPC 2.0 over stdio/HTTP | JSON-RPC 2.0 over HTTP(S) |
+| **治理** | Linux Foundation AAIF | Linux Foundation A2A Project |
+
+**A2A 的"不透明"设计是关键差异**。MCP 要求工具暴露输入输出 Schema，调用方精确控制参数。A2A 则假设对方是一个"黑箱"——你只知道它能做什么（通过 Agent Card），不需要知道它怎么做。这更符合 Agent 间协作的现实：你委托一个供应链 Agent 询价，你不需要知道它内部是查数据库还是调 ERP 系统。
+
+### 15.3 生态状态与采用建议
+
+A2A 在 2025 年 6 月捐赠给 Linux Foundation，v1.0 于 2026 年初发布，截至 2026 年 4 月已有 150+ 组织参与。主要支持者包括 Google、Salesforce、SAP、ServiceNow 等企业软件厂商——这符合 A2A 的主要场景（企业间 Agent 互操作）。
+
+**现阶段的采用建议**：
+
+- 如果你的 Agent 只在内部系统间协作（同一个团队、同一个代码库），**不需要 A2A**——用 Multi-Agent 框架（LangGraph、OpenAI Handoff）或简单的函数调用更直接
+- 如果你需要让 Agent 跨组织边界协作（接入合作伙伴的 Agent、发布 Agent 服务给外部调用），**关注 A2A**——它提供了标准化的发现、认证和任务管理
+- 无论哪种场景，**MCP 仍然是基础层**——每个 Agent 内部都需要工具调用，A2A 解决的是 Agent 之间的上层通信
+
+一句话：**MCP 是 Agent 的"手"（操作工具），A2A 是 Agent 的"嘴"（与其他 Agent 对话）。** 一个完整的 Agent 生态需要两者。
 
 ---
 
-## 16. 总结
+## 16. 进一步思考
+
+MCP 和 A2A 都在快速演进，几个未解问题值得关注：
+
+**工具组合**：工具 A 输出作为工具 B 输入时，由 LLM 串联（灵活但低效）还是协议层支持工具链（高效但复杂）？MCP 2026 路线图中的"Agent-to-MCP Server 委派"正在尝试解决这个问题。
+
+**有状态交互**：当前 MCP 每次调用独立。但数据库事务、多步操作需要跨调用的状态。Streamable HTTP 的可选 Session 机制是第一步，但距离完善还有距离。
+
+**工具质量评估**：Agent 如何判断 MCP Server 的描述是否准确、响应是否可靠？同理，如何判断一个 A2A Agent 的能力声明是否属实？需要"工具/Agent 信誉系统"。
+
+**协议收敛**：MCP 和 A2A 目前分别由 AAIF 和 Linux Foundation A2A Project 治理，都用 JSON-RPC 2.0，都在 Linux Foundation 体系下。长期来看是否会合并为统一的"Agentic 通信协议"？
+
+长远来看，工具协议化和 Agent 互操作协议化的终局可能是一个**去中心化的 Agent 生态**——发布 MCP Server 如同发布 npm 包，发布 A2A Agent 如同发布 API 服务。协议保证互操作性，市场机制保证质量。
+
+---
+
+## 17. 总结
 
 1. **当前工具集成不可持续**。标准化协议将 N x M 降为 N + M。
-2. **MCP 设计务实**。三大原语覆盖主要交互模式，JSON-RPC 2.0 成熟可靠，双传输层适配不同场景。
-3. **安全不是事后补丁**。ACL、参数约束、Human-in-the-Loop、审计日志需在架构设计阶段考虑。
-4. **协议化成本可控**。性能可忽略，规模增长时收益迅速超过成本。
-5. **保持务实的乐观**。MCP 目前最有前途，但要做好业务逻辑与协议层的解耦。
+2. **MCP 设计务实且演进迅速**。Streamable HTTP 替代 SSE 让 Remote MCP 走向生产，OAuth 2.1 补齐了安全层，AAIF 治理消除了厂商锁定顾虑。
+3. **安全不是事后补丁**。ACL、参数约束、Human-in-the-Loop、OAuth 2.1 授权需在架构设计阶段考虑。
+4. **A2A 补全了 Agent 互操作的拼图**。MCP 解决 Agent-Tool 通信，A2A 解决 Agent-Agent 通信，二者互补。
+5. **协议化成本可控**。性能可忽略，规模增长时收益迅速超过成本。
+6. **保持务实的乐观**。MCP 已从"Anthropic 的协议"变成行业标准，A2A 的生态也在快速形成。做好业务逻辑与协议层的解耦，随时可以跟上演进。
 
-工具协议化是 Agent 生态从"手工作坊"走向"工业化"的关键一步。
+工具协议化和 Agent 互操作协议化，是 Agent 生态从"手工作坊"走向"工业化"的两块基石。

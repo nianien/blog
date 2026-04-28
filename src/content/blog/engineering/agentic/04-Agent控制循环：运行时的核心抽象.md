@@ -6,13 +6,8 @@ tags: ["Agentic", "AI Engineering", "Runtime"]
 series:
   key: "agentic"
   order: 4
+author: "skyfalling"
 ---
-
-> 如果说 LLM 是 Agent 的大脑，那么 Control Loop 就是 Agent 的心跳。
->
-> 大多数教程在讲 Agent 时，上来就接框架、调 API、跑 demo。但如果你不理解 Agent 运行时的核心抽象——控制循环——你永远只是在用别人的黑盒。
->
-> 本文是 Agentic 系列第 04 篇，整个系列的技术基石。我们会从状态机模型出发，逐层拆解 Agent Control Loop 的每一个阶段，给出完整的 Python 实现，并深入分析实际工程中的 trade-off。
 
 ---
 
@@ -82,6 +77,17 @@ Agent Control Loop 并不是凭空发明的，它和军事决策理论中的 **O
 ![OODA Loop vs Agent Control Loop](/images/blog/agentic-04/ooda-vs-agent.svg)
 
 关键区别在于 **REFLECT 阶段**。传统 OODA Loop 假设决策者能实时感知行动效果并自然融入下一轮 Observe。但 LLM Agent 不具备这种连续感知能力——它需要一个显式的反思步骤来评估工具返回值、判断是否需要修正。这是 Agent Control Loop 相对于经典决策循环的重要改进。
+
+### 2.4 四阶段 vs 六阶段：抽象粒度的选择
+
+本系列第 01 篇用**六阶段**描述控制循环：Observe → Think → Plan → Act → Reflect → Update。那和本文的四状态（OBSERVE、THINK、ACT、REFLECT）矛盾吗？
+
+不矛盾——两者是不同抽象粒度下的同一个循环：
+
+- **PLAN 被吸收进 THINK**：在状态机实现中，LLM 在 THINK 阶段同时完成"理解当前状况"和"决定下一步行动"两件事。当任务复杂到需要显式规划时（比如 Plan-and-Execute 模式），PLAN 可以从 THINK 中分离成独立状态——但对于大多数 ReAct 型 Agent，合并在一起更简洁。
+- **UPDATE 被吸收进 REFLECT → OBSERVE 的转移**：REFLECT 完成后将工具输出注入消息列表，下一轮 OBSERVE 自然拿到更新后的上下文。UPDATE 作为独立阶段适合需要写入外部存储（长期记忆、数据库）的场景。
+
+用四状态建模的好处是状态机更紧凑、代码实现更简洁。如果你的 Agent 需要显式规划或外部记忆写入，把 PLAN 和 UPDATE 拆出来独立处理即可——本文第 5 节的 ReAct vs Plan-then-Execute 对比会展示这两种选择的工程差异。
 
 ---
 
@@ -2053,9 +2059,7 @@ class EventSourcedAgent:
 
 我们对比了 ReAct 和 Plan-then-Execute 两种主流模式，分析了 Stateless 与 Stateful 两种状态管理策略，并实现了一个不依赖任何框架的完整 Control Loop。
 
-但控制循环只是 Agent 运行时的骨架。它的灵魂在于 **Tool Calling**——正是工具让 Agent 从"能说会道的语言模型"变成"能做事的智能体"。
-
-在下一篇 **《Tool Calling Deep Dive: 让 LLM 成为可编程接口》** 中，我们会深入工具调用的设计哲学：JSON Schema 作为契约、Tool Registry 的实现、参数校验、错误传播，以及 Structured Output 为什么优于自由文本。
+但控制循环只是 Agent 运行时的骨架。它的灵魂在于 Tool Calling——正是工具让 Agent 从"能说会道的语言模型"变成"能做事的智能体"。
 
 留几个值得进一步思考的问题：
 

@@ -1,20 +1,17 @@
 ---
-title: "LangChain与LangGraph：框架的价值与边界"
+title: "Agent框架与SDK：从LangChain到模型厂商原生SDK"
 pubDate: "2026-01-22"
-description: "Agentic 系列第 12 篇。客观审视 AI Agent 框架的价值与局限。深入分析 LangChain 的抽象模型与陷阱、LangGraph 的状态机优势与学习曲线，横向对比 CrewAI、AutoGen、Semantic Kernel 等框架，最终给出框架 vs 自研的决策矩阵。核心立场：理解原理再用框架，框架是加速器而非必需品。"
+description: "客观审视 AI Agent 框架的价值与局限。深入分析 LangChain/LangGraph 的优势与陷阱，横向对比 CrewAI、AutoGen 等第三方框架，并系统剖析 2025-2026 年崛起的模型厂商原生 SDK——Claude Agent SDK、OpenAI Agents SDK、Google ADK、AWS Strands——框架与模型深度绑定的新路线。理解原理再用框架，框架是加速器而非必需品。"
 tags: ["Agentic", "AI Engineering", "Framework"]
 series:
   key: "agentic"
   order: 12
+author: "skyfalling"
 ---
-
-> 框架是加速器，不是必需品。它替你做了决策——有些决策是好的，有些会在深夜的生产事故中反噬你。
->
-> 本文是 Agentic 系列第 12 篇。前面 11 篇我们从零构建了 Agent 的每一个组件——控制循环、工具调用、记忆、规划、多 Agent 协作。现在是时候回过头来，以工程师的视角冷静审视：框架提供了什么，隐藏了什么，限制了什么。
 
 ---
 
-## 1. 开篇：你真的需要框架吗？
+## 1. 你真的需要框架吗？
 
 这个问题的答案不是"需要"或"不需要"，而是"取决于"。
 
@@ -522,6 +519,10 @@ while True:
 | **Semantic Kernel** | Microsoft | Kernel + Plugin + Planner | 企业级 AI 编排 | 企业应用集成、.NET 生态 |
 | **Haystack** | deepset | Pipeline + Component | RAG 专用 | 文档检索、知识问答 |
 | **DSPy** | Stanford NLP | Module + Signature + Optimizer | Prompt 优化 | 需要自动调优 Prompt 的系统 |
+| **Claude Agent SDK** | Anthropic | Agent Loop + MCP Tools | 模型原生 Agent | Claude 生态、代码/通用 Agent |
+| **OpenAI Agents SDK** | OpenAI | Agent + Handoff + Guardrail | 多 Agent 编排 | GPT 生态、客服/业务流程 |
+| **Google ADK** | Google | Agent + Tool + Session | 全栈 Agent 开发 | Gemini 生态、企业级 Agent |
+| **Strands** | AWS | Model-driven Agent Loop | 模型驱动 Agent | Bedrock 生态、多模型 Agent |
 
 ### 5.2 简要点评
 
@@ -2250,11 +2251,209 @@ class ReasoningAgent:
 
 ---
 
-## 13. 结语与进一步思考
+## 13. 模型厂商 Agent SDK：框架生态的第二极
 
-### 核心立场回顾
+2025 年下半年到 2026 年，Agent 框架生态发生了一个结构性变化：**模型厂商开始推出自己的 Agent SDK**。Anthropic 推出 Claude Agent SDK，OpenAI 推出 Agents SDK，Google 推出 Agent Development Kit（ADK），AWS 推出 Strands。这不是巧合——当模型厂商对自家模型的能力边界最了解时，由他们定义 Agent 抽象是一个自然的演进方向。
 
-本文的核心立场可以用三句话概括：
+这些 SDK 和前文讨论的第三方框架（LangChain/LangGraph/CrewAI）走的是完全不同的路线。理解这两极的差异，对框架选型至关重要。
+
+### 13.1 四大厂商 SDK 速览
+
+**Claude Agent SDK**（Anthropic）
+
+Claude Agent SDK 的设计哲学是**极简 Agent Loop**。核心概念只有三个：Agent（带 system prompt 和 tools 的 Claude 模型）、Tool（包括 MCP Server 可提供的工具）、Agent Loop（感知-思考-行动的循环）。
+
+```python
+from anthropic.agent import Agent, ToolResult
+import anthropic
+
+# Claude Agent SDK：极简设计
+client = anthropic.Anthropic()
+
+agent = Agent(
+    client=client,
+    model="claude-sonnet-4-6",
+    system="你是一个代码审查助手。",
+    tools=[
+        # MCP Server 提供的工具自动注册
+        "mcp:github",
+        "mcp:linear",
+        # 自定义工具
+        code_analysis_tool,
+    ],
+    # 支持 Extended Thinking
+    thinking={"type": "enabled", "budget_tokens": 10000},
+)
+
+# 运行 Agent
+result = agent.run("审查 PR #234 的安全性")
+```
+
+关键特性：与 MCP 协议原生集成（Anthropic 是 MCP 的发起者）、Extended Thinking 开箱即用（模型的推理过程可观测）、子 Agent 可以作为工具被父 Agent 调用、Managed Agents 提供托管运行环境（沙箱化、流式输出、无需自己管理容器）。
+
+**OpenAI Agents SDK**
+
+OpenAI 的核心创新是 **Handoff（交接）机制**——Agent 之间通过显式的 Handoff 传递控制权和上下文。
+
+```python
+from openai_agents import Agent, handoff, Runner
+
+# Handoff：Agent 间的显式控制转移
+triage_agent = Agent(
+    name="Triage",
+    instructions="判断用户意图，转交给对应的专业 Agent。",
+    handoffs=[
+        handoff(billing_agent),      # 转交给计费 Agent
+        handoff(technical_agent),    # 转交给技术支持 Agent
+        handoff(account_agent),      # 转交给账户管理 Agent
+    ],
+)
+
+billing_agent = Agent(
+    name="Billing",
+    instructions="处理计费相关问题。",
+    tools=[query_invoice, process_refund],
+)
+
+# Handoff 在 LLM 视角是一个 tool call
+# 例如 transfer_to_billing，携带完整对话历史
+result = Runner.run(triage_agent, "我上个月的账单有个异常收费")
+```
+
+Handoff 本质上是把 Agent 间的控制转移建模为 Tool Call——对 LLM 来说，"转交给 Billing Agent"和"调用查询工具"没有区别。这个设计比 LangGraph 的条件边更直观，也比 CrewAI 的角色委派更灵活。另一个亮点是内置的 **Guardrail** 机制，在 Agent 输入/输出两侧设置校验规则，拦截不合规的请求或回答。
+
+**Google ADK**
+
+Google ADK 的定位是**全栈 Agent 开发框架**，从开发到部署一站式覆盖。
+
+```python
+from google.adk import Agent, Tool, Runner
+from google.adk.tools import google_search, code_execution
+
+# Google ADK：全栈集成
+agent = Agent(
+    model="gemini-2.0-flash",
+    name="research_agent",
+    instruction="你是一个研究助手。",
+    tools=[
+        google_search,           # 内置 Google 搜索
+        code_execution,          # 内置代码执行沙箱
+        # MCP 工具也可以接入
+    ],
+    # 支持 sub-agent 作为工具
+    sub_agents=[summarizer_agent],
+)
+
+# 内置 Session 管理（对话状态持久化）
+session = runner.session_service.create_session(
+    app_name="research",
+    user_id="user_123",
+)
+```
+
+特色能力：支持 Python、TypeScript、Go、Java 四种语言、内置 Session Service 管理对话状态、与 Google Cloud 一键部署（Cloud Run、GKE、Agent Runtime）、原生支持 MCP 工具和第三方框架工具（LangChain Tool 可直接接入）、Interactions API 提供有状态多轮对话的统一网关。
+
+**AWS Strands**
+
+Strands 走的是**模型驱动（Model-First）** 路线——框架的核心假设是"模型足够聪明，框架应该尽量少干预"。
+
+```python
+from strands import Agent
+from strands.tools import tool
+
+@tool
+def search_docs(query: str) -> str:
+    """搜索内部文档库"""
+    return doc_store.search(query)
+
+# Strands：极简的模型驱动设计
+agent = Agent(
+    model="us.anthropic.claude-sonnet-4-6-v1:0",  # Bedrock 模型
+    tools=[search_docs],
+    system_prompt="你是一个文档助手。",
+)
+
+response = agent("查找关于部署流程的文档")
+```
+
+核心理念：Agent 只需几行代码、模型做所有推理决策、框架只负责工具执行和结果反馈。Strands 与 Amazon Bedrock AgentCore 深度集成，提供身份认证、Memory、可观测性、安全运行时等生产级基础设施。2025 年 7 月的 v1.0 还引入了 A2A 协议支持，用于多 Agent 跨系统协作。
+
+### 13.2 两极路线对比：第三方框架 vs 厂商 SDK
+
+| 维度 | 第三方框架（LangChain/CrewAI） | 模型厂商 SDK |
+|------|---------------------------|------------|
+| **模型绑定** | 多模型抽象层（可换模型） | 深度优化自家模型（换模型体验下降） |
+| **抽象层次** | 厚——提供链/图/角色等高层抽象 | 薄——Agent Loop + Tools，抽象极少 |
+| **核心优势** | 生态广、模型无关、社区大 | 模型能力最大化、延迟最低、官方维护 |
+| **核心风险** | 抽象泄漏、版本不稳定、性能损耗 | 厂商锁定、跨模型困难 |
+| **学习曲线** | 中-高（概念多、API 变动频繁） | 低（API 少、概念简单） |
+| **生产就绪** | 成熟（大量生产案例） | 快速成熟中（2025-2026 密集迭代） |
+| **多 Agent** | 各有方案（Graph/Crew/Conversation） | Handoff（OpenAI）/ Sub-Agent（其他） |
+| **部署** | 自己管理基础设施 | 托管选项（Managed Agents / AgentCore） |
+
+**核心趋势**：当模型能力足够强时，框架需要做的"编排"越来越少，厂商 SDK 的"薄抽象"路线就越有优势。但当你需要跨模型切换、或者需要复杂的状态机编排时，第三方框架的"厚抽象"仍然有价值。
+
+### 13.3 Handoff vs Graph vs Crew：多 Agent 编排范式对比
+
+三种主流的多 Agent 编排方式，代表了不同的设计哲学：
+
+```python
+# === OpenAI Agents SDK: Handoff（显式控制转移）===
+# Agent 像客服转接电话——"这个问题我处理不了，转给 Billing"
+triage = Agent(handoffs=[billing, tech_support])
+# LLM 自己决定什么时候转交、转交给谁
+
+# === LangGraph: 条件边（状态机编排）===
+# 开发者定义所有可能的路径和转移条件
+graph.add_conditional_edges("triage", route_fn, {
+    "billing": "billing_node",
+    "tech": "tech_node",
+})
+# 开发者控制流程，LLM 只在节点内执行
+
+# === CrewAI: 角色委派（团队协作）===
+# 定义角色和任务，框架自动编排执行顺序
+crew = Crew(
+    agents=[researcher, writer],
+    tasks=[research_task, writing_task],
+    process=Process.sequential
+)
+# 框架控制流程，Agent 在角色约束内自主执行
+```
+
+| | Handoff（OpenAI） | Graph（LangGraph） | Crew（CrewAI） |
+|--|-----------------|-------------------|---------------|
+| **控制权** | LLM 决定转交 | 开发者定义路径 | 框架自动编排 |
+| **灵活性** | 高（动态路由） | 中（预定义路径） | 低（固定流程） |
+| **可预测性** | 低（依赖 LLM 判断） | 高（确定性状态机） | 中 |
+| **适用场景** | 客服、意图路由 | 复杂工作流、审批 | 内容生产、研究 |
+| **调试难度** | 中（跟踪 Handoff 链） | 低（可视化状态图） | 高（角色交互黑箱） |
+
+### 13.4 选型决策：什么时候用厂商 SDK
+
+**用厂商 SDK 的场景**：
+
+- 你的系统只用一家模型（短期内不会切换）
+- 你想最大化利用模型的原生能力（Extended Thinking、Computer Use 等）
+- 你需要托管运行环境（不想自己管容器和沙箱）
+- 你的 Agent 逻辑相对简单（不需要复杂状态机）
+
+**继续用第三方框架的场景**：
+
+- 你需要跨多个模型（生产用 Claude、降级用 GPT-4o-mini）
+- 你需要复杂的状态机编排（审批流、多阶段 pipeline）
+- 你的团队已经在框架上有大量投入（迁移成本高）
+- 你需要框架的生态（社区 Tool、Retriever、教程）
+
+**混合方案（推荐）**：
+
+很多团队最终会走向混合架构——用厂商 SDK 的 Agent Loop 做核心推理，用 MCP 做工具集成（跨框架通用），用 LangSmith/Langfuse 做可观测性。框架的各层可以独立选择，不必全盘接受一个方案。
+
+---
+
+## 14. 结语与进一步思考
+
+回到最开始的问题——框架选还是不选？四条原则：
 
 1. **框架是加速器，不是必需品。** 它加速了开发，但也隐藏了复杂性。当隐藏的复杂性成为你的瓶颈时，框架就从加速器变成了减速器。
 
@@ -2262,20 +2461,14 @@ class ReasoningAgent:
 
 3. **最好的架构是"框架可替换"的架构。** 把框架当作可插拔的实现层，而不是系统的骨架。你的业务逻辑应该依赖自己定义的接口，而不是某个框架的 API。
 
+4. **厂商 SDK 代表了框架演进的新方向。** 当模型厂商开始定义 Agent 抽象时，"框架"和"模型"的边界变得模糊。未来的 Agent 开发可能不再是"选一个框架"，而是"选一个模型生态"。
+
 ### 框架解决了"怎么写"，协议解决"怎么连接"
 
 框架帮你解决了一个 Agent 内部的组件编排问题：如何组织 LLM 调用、工具执行、状态管理。但当你有多个 Agent、多个工具提供者、多个模型时，一个更根本的问题浮现出来：
 
 > 这些组件之间用什么协议通信？工具如何被发现和注册？能力如何被声明和协商？
 
-这不是框架能解决的问题——这需要**协议（Protocol）**。下一篇我们将讨论 MCP（Model Context Protocol），看看 Agent 工具生态的协议化未来。
+这不是框架能解决的问题——这需要**协议（Protocol）**。下一篇我们将讨论 MCP（Model Context Protocol）和 A2A（Agent-to-Agent），看看 Agent 工具和 Agent 互操作的协议化未来。
 
-### 留给读者的思考
-
-**关于框架的未来**：LLM 本身的能力在快速增强。当模型原生支持复杂的多步推理（如 o1/o3 的 chain-of-thought）、原生支持长对话记忆（如 Gemini 的长上下文窗口）、原生支持工具调用时，框架的价值会被压缩还是放大？换句话说——当 LLM 足够强时，我们还需要框架在中间做多少事？
-
-**关于抽象的代价**：每一层抽象都在隐藏复杂性。隐藏复杂性是好事（让你专注于业务逻辑），但也是坏事（让你在出问题时无法理解系统行为）。在 Agent 这样本身就充满不确定性的系统中，你能接受多少"隐藏的复杂性"？
-
-**关于生态锁定**：选择一个框架意味着接受它的抽象、它的生态、它的更新节奏、它的设计理念。当框架的方向与你的需求分叉时，迁移的成本有多高？这个成本是否在你的决策时被低估了？
-
-这些问题没有标准答案。但作为 AI 工程师，能够清晰地提出这些问题，本身就是一种重要的能力。
+还有几个值得琢磨的问题。LLM 本身的能力在快速增强——当模型原生支持复杂推理、长对话记忆、工具调用时，框架在中间需要做的事会越来越少还是越来越多？每一层抽象都在隐藏复杂性，Agent 系统本身就充满不确定性，你能接受多少"隐藏的复杂性"？选了一个框架就等于接受了它的抽象、生态、更新节奏和设计理念——当框架方向和你的需求分叉时，迁移成本往往比预期高得多。

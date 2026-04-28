@@ -6,11 +6,8 @@ tags: ["Agentic", "AI Engineering", "Multi-Agent"]
 series:
   key: "agentic"
   order: 11
+author: "skyfalling"
 ---
-
-> 一个人可以走得很快，但一群人才能走得很远。Agent 也是如此。
->
-> 本文是 Agentic 系列第 11 篇。前 10 篇我们一直在讨论单个 Agent 如何更聪明——更好的记忆、更强的工具、更深的规划。这一篇，我们把视角从"个体智能"拉升到"集体智能"：当一个 Agent 不够用时，多个 Agent 如何协作？
 
 ---
 
@@ -893,6 +890,59 @@ class DeadlockError(Exception):
     pass
 ```
 
+### 6.4 Pipeline 链路中断恢复
+
+Pipeline 模式（A → B → C → D）有一个特殊挑战：如果 B 失败了，A 的结果还在，C 和 D 还没开始。与 Supervisor-Worker 模式不同，Pipeline 的中间节点失败会阻断整条链路。
+
+三种恢复策略：
+
+| 策略 | 做法 | 适用场景 |
+|------|------|---------|
+| **重试当前节点** | 用相同输入重新执行 B | B 的失败是瞬时的（超时、API 限流） |
+| **跳过 + 降级** | 跳过 B，用 A 的原始输出直接传给 C | B 是可选的增强步骤（如翻译、润色） |
+| **从 Checkpoint 回退** | 缓存每个节点的输入输出，从 B 重新开始 | 链路长、前面步骤成本高 |
+
+```python
+class ResilientPipeline:
+    """带故障恢复的 Pipeline 执行器"""
+
+    def __init__(self, agents: list, max_retries: int = 2):
+        self.agents = agents  # 按顺序排列的 Agent 列表
+        self.max_retries = max_retries
+        self.checkpoints: dict[int, Any] = {}  # stage_index -> output
+
+    async def run(self, initial_input: str) -> str:
+        current_input = initial_input
+
+        for i, agent in enumerate(self.agents):
+            # 保存当前阶段的输入作为 checkpoint
+            self.checkpoints[i] = current_input
+
+            success = False
+            for attempt in range(self.max_retries + 1):
+                try:
+                    result = await agent.run(current_input)
+                    current_input = result
+                    success = True
+                    break
+                except Exception as e:
+                    if attempt < self.max_retries:
+                        continue  # 重试
+                    # 重试耗尽，判断是否可跳过
+                    if getattr(agent, "skippable", False):
+                        break  # 跳过该节点，保持 current_input 不变
+                    raise PipelineError(
+                        f"Stage {i} ({agent.name}) failed after "
+                        f"{self.max_retries + 1} attempts: {e}",
+                        completed_stages=i,
+                        last_checkpoint=self.checkpoints[i],
+                    )
+
+        return current_input
+```
+
+关键设计：每个 Agent 可以标记 `skippable=True` 表示它是可选的增强步骤。这样 Pipeline 在必要时可以降级运行——跳过翻译、跳过格式优化，但不能跳过核心处理步骤。Checkpoint 机制确保长链路不会因为最后一步失败而从头重来。
+
 ---
 
 ## 7. Multi-Agent 的成本问题
@@ -1638,13 +1688,7 @@ Phase 3 知识路线：
   第 11 篇 Multi-Agent  → Agent 有了"团队协作"（本文）
 ```
 
-至此，我们已经拥有构建一个"聪明的" Agent 系统所需的全部核心概念。但"聪明"不等于"可用"。一个在本地跑通 demo 的 Multi-Agent 系统，距离生产环境还有巨大的鸿沟——框架选型、协议标准化、可观测性、安全性、成本控制、评估体系。
-
-这正是 Phase 4（How to Ship Agents to Production）要解决的问题：
-
-- **下一篇（12）**：LangChain vs LangGraph —— 你应该用框架还是自己写？框架的价值边界在哪里？我们会从 Chain 和 Graph 两种抽象出发，讨论框架在什么时候是加速器，什么时候是束缚。
-- **第 13 篇**：MCP and Tool Protocol —— Agent 的工具需要标准化。MCP 协议如何让不同 Agent 共享工具？工具的发现、声明、权限控制。
-- **第 14 篇**：Production-Grade Agent Systems —— 最后一篇，打通最后一公里：评估、安全、成本、灰度、监控。
+至此，构建一个"聪明的" Agent 系统所需的核心概念已经齐了。但"聪明"不等于"可用"——一个在本地跑通 demo 的 Multi-Agent 系统，距离生产环境还有巨大的鸿沟：框架选型、协议标准化、可观测性、安全性、成本控制、评估体系。这些是后续文章要解决的问题。
 
 ### 进一步思考
 
