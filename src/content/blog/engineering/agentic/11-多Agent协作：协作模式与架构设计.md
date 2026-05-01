@@ -1679,14 +1679,12 @@ class SpecializationEvaluator:
 
 本文是 Phase 3（How to Scale Agent Intelligence）的最后一篇。在 Phase 3 的四篇文章中，我们从单个 Agent 的四个维度进行了升级：
 
-```
-Phase 3 知识路线：
-
-  第 08 篇 Memory       → Agent 有了"记忆"
-  第 09 篇 RAG          → Agent 有了"外部知识"
-  第 10 篇 Planning     → Agent 有了"规划和反思"
-  第 11 篇 Multi-Agent  → Agent 有了"团队协作"（本文）
-```
+| 文章 | 能力升级 |
+|------|---------|
+| 第 08 篇 Memory | Agent 有了"记忆" |
+| 第 09 篇 RAG | Agent 有了"外部知识" |
+| 第 10 篇 Planning | Agent 有了"规划和反思" |
+| 第 11 篇 Multi-Agent | Agent 有了"团队协作"（本文） |
 
 至此，构建一个"聪明的" Agent 系统所需的核心概念已经齐了。但"聪明"不等于"可用"——一个在本地跑通 demo 的 Multi-Agent 系统，距离生产环境还有巨大的鸿沟：框架选型、协议标准化、可观测性、安全性、成本控制、评估体系。这些是后续文章要解决的问题。
 

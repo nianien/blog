@@ -1054,7 +1054,7 @@ def llm_summarize(messages: list[dict], llm_client) -> str:
     return llm_client.complete(prompt)
 ```
 
-**方案 B：规则压缩（零成本）**
+**方案 B：规则压缩**（零成本）
 
 ```python
 def rule_based_compress(messages: list[dict]) -> list[dict]:
@@ -1266,103 +1266,110 @@ class TieredCompression:
 
 **示例 1：用户输入 "把上次的数据改成蓝色"**
 
+Step 1: 是否为当前对话流的直接产物？ → 是 → **Conversation Buffer (L1)**
+
+存储：
+
+```json
+{
+  "role": "user",
+  "content": "把上次的数据改成蓝色",
+  "timestamp": "2024-03-20T10:15:00Z"
+}
 ```
-Step 1: 是否为当前对话流的直接产物？ → 是
-  └─> Conversation Buffer (L1)
 
-  存储：{
-    "role": "user",
-    "content": "把上次的数据改成蓝色",
-    "timestamp": "2024-03-20T10:15:00Z"
-  }
+同时，Agent 需要在 Working Memory 中记录：
 
-  同时，Agent 需要在 Working Memory 中记录：
-  {
-    "task": "修改数据可视化颜色",
-    "reference": "上次生成的图表",
-    "action": "pending"
-  }
+```json
+{
+  "task": "修改数据可视化颜色",
+  "reference": "上次生成的图表",
+  "action": "pending"
+}
 ```
 
 **示例 2：执行过程中发现"数据有 15% 的缺失值"**
 
-```
-Step 1: 是否为当前任务执行状态信息？ → 是
-  └─> Working Memory (L2)
+Step 1: 是否为当前任务执行状态信息？ → 是 → **Working Memory (L2)**
 
-  存储到 Scratchpad：{
-    "data_quality": {
-      "missing_percentage": 0.15,
-      "affected_columns": ["sales", "region"],
-      "handling_strategy": "forward_fill"
-    }
+存储到 Scratchpad：
+
+```json
+{
+  "data_quality": {
+    "missing_percentage": 0.15,
+    "affected_columns": ["sales", "region"],
+    "handling_strategy": "forward_fill"
   }
-
-  同时注入到当前 prompt 中，让 Agent 在后续决策时考虑这一发现
+}
 ```
+
+同时注入到当前 prompt 中，让 Agent 在后续决策时考虑这一发现。
 
 **示例 3：任务完成，提取"我需要先清理缺失值再做聚合"这一教训**
 
-```
 Step 1: 是否为当前任务执行状态信息？ → 否
 Step 2: 是否需要跨会话保留？ → 是
-Step 3: 是否可以泛化为结构化知识？ → 是
+Step 3: 是否可以泛化为结构化知识？ → 是 → **Semantic Memory (L4) 知识库**
 
-  └─> Semantic Memory (L4) 知识库
+存储：
 
-  存储：{
-    "rule_id": "data_prep_order",
-    "title": "数据处理的执行顺序",
-    "content": "清理缺失值必须在聚合操作之前，否则会导致统计不准",
-    "applicable_scenarios": ["数据分析", "ETL流程"],
-    "confidence": 0.95
-  }
+```json
+{
+  "rule_id": "data_prep_order",
+  "title": "数据处理的执行顺序",
+  "content": "清理缺失值必须在聚合操作之前，否则会导致统计不准",
+  "applicable_scenarios": ["数据分析", "ETL流程"],
+  "confidence": 0.95
+}
 ```
 
 **示例 4：用户说 "我发现你上次的方法不对，应该用另一种方式"**
 
-```
 Step 1: 是否为当前任务执行状态信息？ → 否
 Step 2: 是否需要跨会话保留？ → 是
-Step 3: 是否可以泛化为结构化知识？ → 否
+Step 3: 是否可以泛化为结构化知识？ → 否 → **Episodic Memory (L3)**
 
-  └─> Episodic Memory (L3)
+存储：
 
-  存储：{
-    "episode_id": "ep_2024_03_20_001",
-    "task_description": "处理销售数据分析",
-    "previous_approach": "使用线性回归预测",
-    "corrected_approach": "应使用时间序列模型（ARIMA）",
-    "user_feedback": "线性回归忽略了季节性",
-    "lesson": "销售数据具有明显季节性，不能用简单线性模型",
-    "importance": 0.85
-  }
+```json
+{
+  "episode_id": "ep_2024_03_20_001",
+  "task_description": "处理销售数据分析",
+  "previous_approach": "使用线性回归预测",
+  "corrected_approach": "应使用时间序列模型（ARIMA）",
+  "user_feedback": "线性回归忽略了季节性",
+  "lesson": "销售数据具有明显季节性，不能用简单线性模型",
+  "importance": 0.85
+}
 ```
 
-**示例 5：Agent 自动生成的中间结果（如 API 调用返回值）**
+**示例 5：Agent 自动生成的中间结果**（如 API 调用返回值）
 
-```
 Step 1: 是否为当前对话流的直接产物？ → 是
-Step 2: 是当前任务执行状态信息？ → 是
+Step 2: 是当前任务执行状态信息？ → 是 → **Working Memory (L2) + Conversation Buffer (L1)**
 
-  └─> Working Memory (L2) + Conversation Buffer (L1)
+在 L2 中作为"已执行步骤的输出"：
 
-  在 L2 中作为"已执行步骤的输出"：
-  {
-    "step_id": 2,
-    "action": "fetch_data",
-    "result": {
-      "rows": 50000,
-      "columns": 12,
-      "date_range": "2024-01 to 2024-12"
-    }
+```json
+{
+  "step_id": 2,
+  "action": "fetch_data",
+  "result": {
+    "rows": 50000,
+    "columns": 12,
+    "date_range": "2024-01 to 2024-12"
   }
+}
+```
 
-  在 L1 中作为"对话历史"的一部分：
-  {
-    "role": "tool",
-    "content": "Successfully fetched data: 50000 rows, 12 columns"
-  }
+在 L1 中作为"对话历史"的一部分：
+
+```json
+{
+  "role": "tool",
+  "content": "Successfully fetched data: 50000 rows, 12 columns"
+}
 ```
 
 ### 决策树实现
@@ -1805,28 +1812,12 @@ class ForgettingManager:
 假设你有一个 Episodic Memory 库，包含 10,000 条过去的交互记录。每条记录平均 200 tokens。
 
 **全量 Embedding 的成本**：
-```
-10,000 条 × 200 tokens = 2,000,000 tokens
 
-假设 Embedding API 的价格是 $0.02 per 1M tokens（如 OpenAI text-embedding-3-small）：
-成本 = 2,000,000 × $0.02 / 1,000,000 = $0.04
-
-看起来不贵。但问题是：
-1. 如果每天新增 100 条记忆，每周需要重新 Embedding？
-2. 如果记忆库增长到 100,000 条？
-3. 如果你运行多个 Agent 实例？
-```
+10,000 条 × 200 tokens = 2,000,000 tokens。假设 Embedding API 价格 $0.02/1M tokens（如 text-embedding-3-small），成本仅 $0.04。看起来不贵，但问题是：如果每天新增 100 条记忆、每周需要全量重新 Embedding？如果记忆库增长到 100,000 条？如果运行多个 Agent 实例？
 
 **实际成本考虑**：
 
-```
-周场景：
-- 每周全量 Embedding: 10,000 条 × 200 tokens × 52 周 = 104M tokens/年
-- 年成本: ~$2,080/年（单个库）
-
-如果有 10 个 Agent 实例，每个都维护自己的记忆库：
-- 年成本: $20,800/年
-```
+每周全量 Embedding 10,000 条 × 200 tokens × 52 周 = 104M tokens/年，年成本约 $2,080（单个库）。如果有 10 个 Agent 实例各自维护记忆库，年成本将达到 $20,800。
 
 ### 策略 1: 增量 vs 全量
 
@@ -1918,10 +1909,9 @@ class IncrementalEmbeddingStrategy:
 
 **成本对比**：
 
-```
 假设每天新增 50 条记忆（200 tokens/条）：
-- 增量 Embedding (每天): 50 × 200 = 10K tokens/天 = $0.0002/天
-- 全量 Embedding (每周): 2M tokens/周 = $0.04/周 = $2.08/年
+- 增量 Embedding（每天）: 50 × 200 = 10K tokens/天 = $0.0002/天
+- 全量 Embedding（每周）: 2M tokens/周 = $0.04/周 = $2.08/年
 
 ![Re-embedding 成本对比](/images/blog/agentic-08/08-re-embedding-cost.svg)
 

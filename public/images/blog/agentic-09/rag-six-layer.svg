@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="l6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FEF2F2"/><stop offset="100%" stop-color="#FEE2E2"/>
+    </linearGradient>
+    <linearGradient id="l5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="l4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F0FDFA"/><stop offset="100%" stop-color="#CCFBF1"/>
+    </linearGradient>
+    <linearGradient id="l3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FAF5FF"/><stop offset="100%" stop-color="#F3E8FF"/>
+    </linearGradient>
+    <linearGradient id="l2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FEFCE8"/><stop offset="100%" stop-color="#FEF9C3"/>
+    </linearGradient>
+    <linearGradient id="l1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ECFDF5"/><stop offset="100%" stop-color="#D1FAE5"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Layer 6 -->
+  <rect x="30" y="10" width="660" height="55" rx="8" fill="url(#l6)" stroke="#FCA5A5" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="50" y="32" fill="#991B1B" font-size="13" font-weight="700">第六层：反馈闭环</text>
+  <text x="50" y="50" fill="#B91C1C" font-size="11">用户反馈 · Bad Case · 评测 · 知识回写</text>
+
+  <!-- Layer 5 -->
+  <rect x="30" y="75" width="660" height="55" rx="8" fill="url(#l5)" stroke="#93C5FD" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="50" y="97" fill="#1E3A8A" font-size="13" font-weight="700">第五层：检索与生成</text>
+  <text x="50" y="115" fill="#1D4ED8" font-size="11">查询改写 · 多路检索 · 重排 · Prompt · LLM · 意图路由 · 多轮管理 · Tool Calling</text>
+
+  <!-- Layer 4 -->
+  <rect x="30" y="140" width="660" height="55" rx="8" fill="url(#l4)" stroke="#5EEAD4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="50" y="162" fill="#134E4A" font-size="13" font-weight="700">第四层：存储</text>
+  <text x="50" y="180" fill="#0F766E" font-size="11">向量库 · 原文库 · 结构化库 · 图谱库 · 多模态索引</text>
+
+  <!-- Layer 3 -->
+  <rect x="30" y="205" width="660" height="55" rx="8" fill="url(#l3)" stroke="#D8B4FE" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="50" y="227" fill="#581C87" font-size="13" font-weight="700">第三层：知识提炼</text>
+  <text x="50" y="245" fill="#7E22CE" font-size="11">文本切块 · 摘要 · 实体抽取 · 关系提取 · 图表描述生成</text>
+
+  <!-- Layer 2 -->
+  <rect x="30" y="270" width="660" height="55" rx="8" fill="url(#l2)" stroke="#FDE68A" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="50" y="292" fill="#92400E" font-size="13" font-weight="700">第二层：数据清洗</text>
+  <text x="50" y="310" fill="#A16207" font-size="11">格式解析 · 布局分析 · 去噪 · 去重 · 脱敏 · 元数据</text>
+
+  <!-- Layer 1 -->
+  <rect x="30" y="335" width="660" height="55" rx="8" fill="url(#l1)" stroke="#6EE7B7" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="50" y="357" fill="#065F46" font-size="13" font-weight="700">第一层：数据源</text>
+  <text x="50" y="375" fill="#047857" font-size="11">文档 · IM · Git · 会议 · 工单 · 数据库 · 图片</text>
+
+  <!-- Arrow on the right -->
+  <text x="700" y="205" fill="#64748B" font-size="11" text-anchor="middle" transform="rotate(-90, 700, 205)">自底向上构建</text>
+</svg>

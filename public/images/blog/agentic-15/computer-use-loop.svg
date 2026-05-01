@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg-step" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#EFF6FF"/><stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="bg-action" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F0FDFA"/><stop offset="100%" stop-color="#CCFBF1"/>
+    </linearGradient>
+    <linearGradient id="bg-decide" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FEFCE8"/><stop offset="100%" stop-color="#FEF9C3"/>
+    </linearGradient>
+    <filter id="s">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" fill="#0F172A" font-size="16" font-weight="700">Computer Use Agent 主循环</text>
+
+  <!-- Step 1: Screenshot -->
+  <rect x="30" y="50" width="280" height="50" rx="8" fill="url(#bg-step)" stroke="#93C5FD" stroke-width="1.5" filter="url(#s)"/>
+  <text x="45" y="70" fill="#1E3A8A" font-size="13" font-weight="700">① 截取屏幕截图</text>
+  <text x="45" y="88" fill="#3B82F6" font-size="11">获取当前桌面/浏览器画面</text>
+
+  <!-- Arrow down -->
+  <polygon points="170,100 164,112 176,112" fill="#93C5FD"/>
+
+  <!-- Step 2: Analyze -->
+  <rect x="30" y="118" width="280" height="70" rx="8" fill="url(#bg-step)" stroke="#93C5FD" stroke-width="1.5" filter="url(#s)"/>
+  <text x="45" y="138" fill="#1E3A8A" font-size="13" font-weight="700">② 多模态 LLM 分析截图</text>
+  <text x="45" y="156" fill="#3B82F6" font-size="11">识别 UI 元素（按钮、输入框、菜单…）</text>
+  <text x="45" y="172" fill="#3B82F6" font-size="11">理解当前状态，判断下一步操作</text>
+
+  <!-- Arrow down -->
+  <polygon points="170,188 164,200 176,200" fill="#93C5FD"/>
+
+  <!-- Step 3: Execute -->
+  <rect x="30" y="206" width="280" height="70" rx="8" fill="url(#bg-action)" stroke="#5EEAD4" stroke-width="1.5" filter="url(#s)"/>
+  <text x="45" y="226" fill="#134E4A" font-size="13" font-weight="700">③ 执行动作</text>
+  <text x="45" y="244" fill="#0F766E" font-size="11">鼠标移动到 (x, y) · 点击/双击/右键</text>
+  <text x="45" y="260" fill="#0F766E" font-size="11">键盘输入 · 快捷键组合（Ctrl+C, Cmd+S…）</text>
+
+  <!-- Arrow down -->
+  <polygon points="170,276 164,288 176,288" fill="#5EEAD4"/>
+
+  <!-- Step 4: Wait -->
+  <rect x="30" y="294" width="280" height="50" rx="8" fill="url(#bg-step)" stroke="#93C5FD" stroke-width="1.5" filter="url(#s)"/>
+  <text x="45" y="314" fill="#1E3A8A" font-size="13" font-weight="700">④ 等待 UI 响应</text>
+  <text x="45" y="332" fill="#3B82F6" font-size="11">等待页面加载、动画完成</text>
+
+  <!-- Arrow down -->
+  <polygon points="170,344 164,356 176,356" fill="#93C5FD"/>
+
+  <!-- Step 5: Evaluate -->
+  <rect x="30" y="362" width="280" height="50" rx="8" fill="url(#bg-step)" stroke="#93C5FD" stroke-width="1.5" filter="url(#s)"/>
+  <text x="45" y="382" fill="#1E3A8A" font-size="13" font-weight="700">⑤ 截取新截图，评估操作结果</text>
+  <text x="45" y="400" fill="#3B82F6" font-size="11">对比前后截图，确认操作是否生效</text>
+
+  <!-- Arrow down -->
+  <polygon points="170,412 164,424 176,424" fill="#93C5FD"/>
+
+  <!-- Step 6: Decision -->
+  <rect x="30" y="430" width="280" height="40" rx="8" fill="url(#bg-decide)" stroke="#FDE68A" stroke-width="1.5" filter="url(#s)"/>
+  <text x="45" y="455" fill="#92400E" font-size="13" font-weight="700">⑥ 判断任务是否完成</text>
+
+  <!-- Right side: decision outcomes -->
+  <rect x="380" y="140" width="260" height="42" rx="8" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="1.5" filter="url(#s)"/>
+  <text x="395" y="165" fill="#065F46" font-size="12" font-weight="600">完成 → 返回结果</text>
+
+  <rect x="380" y="200" width="260" height="42" rx="8" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.5" filter="url(#s)"/>
+  <text x="395" y="225" fill="#1E3A8A" font-size="12" font-weight="600">未完成 → 继续循环（回到 ①）</text>
+
+  <rect x="380" y="260" width="260" height="42" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5" filter="url(#s)"/>
+  <text x="395" y="285" fill="#991B1B" font-size="12" font-weight="600">出错 → 自我纠正（回退、重试）</text>
+
+  <!-- Connection lines from decision to outcomes -->
+  <line x1="310" y1="450" x2="340" y2="450" stroke="#A16207" stroke-width="1.5"/>
+  <line x1="340" y1="161" x2="340" y2="450" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="340" y1="161" x2="380" y2="161" stroke="#6EE7B7" stroke-width="1.5"/>
+  <line x1="340" y1="221" x2="380" y2="221" stroke="#93C5FD" stroke-width="1.5"/>
+  <line x1="340" y1="281" x2="380" y2="281" stroke="#FCA5A5" stroke-width="1.5"/>
+
+  <!-- Loop-back arrow from "continue" to step 1 -->
+  <line x1="640" y1="221" x2="660" y2="221" stroke="#93C5FD" stroke-width="1.5"/>
+  <line x1="660" y1="75" x2="660" y2="221" stroke="#93C5FD" stroke-width="1.5"/>
+  <line x1="310" y1="75" x2="660" y2="75" stroke="#93C5FD" stroke-width="1.5"/>
+  <polygon points="310,75 322,69 322,81" fill="#93C5FD"/>
+</svg>

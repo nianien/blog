@@ -1218,7 +1218,7 @@ results = executor.execute_with_dependencies(tool_calls, dependencies)
 
 ## 9. 断点续传与检查点恢复
 
-长时间运行的 Agent 可能因网络中断、内存溢出、进程崩溃而被迫中止。**检查点（Checkpoint）机制** 允许 Agent 从上次中断点恢复，而不是重新开始。
+长时间运行的 Agent 可能因网络中断、内存溢出、进程崩溃而被迫中止。**检查点机制**（Checkpoint） 允许 Agent 从上次中断点恢复，而不是重新开始。
 
 ```python
 # checkpoint_manager.py
@@ -1447,7 +1447,7 @@ class AgentRuntime:
 
 ## 10. 完整的可观测性模块
 
-**可观测性（Observability）** 是生产系统的必需品。需要记录：每步的 Token 消耗、延迟、工具成功率、总成本，并且格式要标准化，便于接入监控系统。
+**可观测性**（Observability） 是生产系统的必需品。需要记录：每步的 Token 消耗、延迟、工具成功率、总成本，并且格式要标准化，便于接入监控系统。
 
 ```python
 # observability.py
@@ -1782,7 +1782,7 @@ class AgentRuntime:
 - **第 04 篇**：理解控制循环 — Observe → Think → Act → Reflect
 - **第 05 篇**：深入 Tool Calling — JSON Schema、Function Calling、Structured Output
 - **第 06 篇**：Prompt Engineering — System Prompt 设计、工具选择引导、Reflection Prompt
-- **第 07 篇（本篇）**：把以上所有知识组装成可运行的 Agent Runtime
+- **第 07 篇**（本篇）：把以上所有知识组装成可运行的 Agent Runtime
 
 此刻你有能力**不依赖任何框架，从零构建功能完整的 Agent 系统**。
 
