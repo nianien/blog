@@ -1,33 +1,22 @@
-<svg viewBox="0 0 900 370" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      text { font-family: system-ui, -apple-system, sans-serif; }
-      .title { font-size: 14px; font-weight: bold; fill: #333; }
-      .label { font-size: 12px; fill: #333; }
-      .axis-label { font-size: 11px; fill: #666; }
-    </style>
-  </defs>
-
-  <!-- Background -->
-  <rect width="900" height="370" fill="#fafafa" />
-
-  <!-- Title -->
-  <text x="450" y="30" class="title" text-anchor="middle">LLM 对不同位置信息的利用率 (示意)</text>
+<svg viewBox="0 0 900 370" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<!-- Background -->
+<!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">LLM 对不同位置信息的利用率 (示意)</text>
 
   <!-- Axes -->
-  <line x1="80" y1="50" x2="80" y2="290" stroke="#333" stroke-width="2"/>
-  <line x1="80" y1="290" x2="850" y2="290" stroke="#333" stroke-width="2"/>
+  <line x1="80" y1="50" x2="80" y2="290" stroke="#333" stroke-width="1.5"/>
+  <line x1="80" y1="290" x2="850" y2="290" stroke="#333" stroke-width="1.5"/>
 
   <!-- Y axis label -->
-  <text x="40" y="170" class="label" text-anchor="middle" transform="rotate(-90, 40, 170)">利用率</text>
+  <text x="40" y="170" text-anchor="middle" transform="rotate(-90, 40, 170)" font-size="12" fill="#333">利用率</text>
 
   <!-- X axis label -->
-  <text x="465" y="345" class="label" text-anchor="middle">位置</text>
+  <text x="465" y="345" text-anchor="middle" font-size="12" fill="#333">位置</text>
 
   <!-- Position labels -->
-  <text x="100" y="310" class="axis-label" text-anchor="middle">开头</text>
-  <text x="450" y="310" class="axis-label" text-anchor="middle">中间</text>
-  <text x="820" y="310" class="axis-label" text-anchor="middle">结尾</text>
+  <text x="100" y="310" text-anchor="middle" font-size="11" fill="#666">开头</text>
+  <text x="450" y="310" text-anchor="middle" font-size="11" fill="#666">中间</text>
+  <text x="820" y="310" text-anchor="middle" font-size="11" fill="#666">结尾</text>
 
   <!-- Bar chart - Head section (high utilization) -->
   <g id="head-bars">
@@ -77,13 +66,13 @@
 
   <!-- Legend -->
   <g id="legend">
-    <rect x="700" y="80" width="160" height="90" fill="white" stroke="#ccc" stroke-width="1" rx="4"/>
+    <rect x="700" y="80" width="160" height="90" fill="white" stroke="#ccc" stroke-width="1" rx="6"/>
 
     <line x1="715" y1="100" x2="730" y2="100" stroke="#4a90e2" stroke-width="12"/>
-    <text x="740" y="105" class="label">高利用率</text>
+    <text x="740" y="105" font-size="12" fill="#333">高利用率</text>
 
     <line x1="715" y1="130" x2="730" y2="130" stroke="#f39c12" stroke-width="12"/>
-    <text x="740" y="135" class="label">低利用率</text>
+    <text x="740" y="135" font-size="12" fill="#333">低利用率</text>
 
     <text x="710" y="160" font-size="10" fill="#666">最相关的信息</text>
     <text x="710" y="172" font-size="10" fill="#666">应放在头尾</text>

@@ -11,7 +11,7 @@
   <text x="590" y="78" font-size="14" font-weight="bold" text-anchor="middle" fill="#166534">Production 阶段</text>
 
   <!-- Arrow between columns -->
-  <line x1="380" y1="225" x2="408" y2="225" stroke="#6b7280" stroke-width="2"/>
+  <line x1="380" y1="225" x2="408" y2="225" stroke="#6b7280" stroke-width="1.5"/>
   <polygon points="408,220 420,225 408,230" fill="#6b7280"/>
 
   <!-- Row 1: Happy Path vs Edge Cases -->

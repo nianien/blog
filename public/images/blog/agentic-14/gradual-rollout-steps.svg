@@ -50,7 +50,7 @@
   <polygon points="156,233 160,243 164,233" fill="#666"/>
 
   <!-- Step 4 -->
-  <rect x="20" y="239" width="280" height="48" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="2"/>
+  <rect x="20" y="239" width="280" height="48" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="1.5"/>
   <circle cx="42" cy="263" r="12" fill="#00aa33"/>
   <text x="42" y="267" font-size="10" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
   <text x="62" y="257" font-size="10" font-weight="bold" fill="#00aa33">全量发布（100%）</text>

@@ -33,7 +33,7 @@
   <polygon points="509,60 519,64 509,68" fill="#666"/>
 
   <!-- Stage 4: Stable -->
-  <rect x="515" y="38" width="140" height="52" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="2"/>
+  <rect x="515" y="38" width="140" height="52" rx="6" fill="#e8f8e8" stroke="#00aa33" stroke-width="1.5"/>
   <text x="585" y="56" font-size="10" font-weight="bold" text-anchor="middle" fill="#00aa33">阶段 4: Stable</text>
   <text x="585" y="70" font-size="9" text-anchor="middle" fill="#666">100% 流量</text>
   <text x="585" y="83" font-size="8" text-anchor="middle" fill="#00aa33">全量上线</text>

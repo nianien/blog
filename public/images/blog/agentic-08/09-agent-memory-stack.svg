@@ -1,6 +1,6 @@
-<svg width="700" height="350" xmlns="http://www.w3.org/2000/svg">
+<svg width="700" height="350" viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
   <!-- Background -->
-  <rect width="700" height="350" fill="#fafafa" />
+  <rect width="700" height="350" viewBox="0 0 700 350" fill="#fafafa" />
 
   <!-- Title -->
   <text x="350" y="30" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">

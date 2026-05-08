@@ -5,22 +5,22 @@
   <!-- Pie chart center (200, 180), r=130 -->
 
   <!-- Slice 1: System Prompt 2000 tokens (6.2%) -->
-  <path d="M200,180 L200,50 A130,130 0 0,1 249.7,59.9 Z" fill="#90CAF9" stroke="#fff" stroke-width="2"/>
+  <path d="M200,180 L200,50 A130,130 0 0,1 249.7,59.9 Z" fill="#90CAF9" stroke="#fff" stroke-width="1.5"/>
 
   <!-- Slice 2: Tool Schemas 6000 tokens (18.8%) -->
-  <path d="M200,180 L249.7,59.9 A130,130 0 0,1 330,180 Z" fill="#FFB74D" stroke="#fff" stroke-width="2"/>
+  <path d="M200,180 L249.7,59.9 A130,130 0 0,1 330,180 Z" fill="#FFB74D" stroke="#fff" stroke-width="1.5"/>
 
   <!-- Slice 3: 领域知识 4000 tokens (12.5%) -->
-  <path d="M200,180 L330,180 A130,130 0 0,1 291.9,271.9 Z" fill="#81C784" stroke="#fff" stroke-width="2"/>
+  <path d="M200,180 L330,180 A130,130 0 0,1 291.9,271.9 Z" fill="#81C784" stroke="#fff" stroke-width="1.5"/>
 
   <!-- Slice 4: 对话历史 8000 tokens (25%) -->
-  <path d="M200,180 L291.9,271.9 A130,130 0 0,1 108.1,271.9 Z" fill="#9575CD" stroke="#fff" stroke-width="2"/>
+  <path d="M200,180 L291.9,271.9 A130,130 0 0,1 108.1,271.9 Z" fill="#9575CD" stroke="#fff" stroke-width="1.5"/>
 
   <!-- Slice 5: 当前任务 3000 tokens (9.4%) -->
-  <path d="M200,180 L108.1,271.9 A130,130 0 0,1 72.5,205.4 Z" fill="#4DD0E1" stroke="#fff" stroke-width="2"/>
+  <path d="M200,180 L108.1,271.9 A130,130 0 0,1 72.5,205.4 Z" fill="#4DD0E1" stroke="#fff" stroke-width="1.5"/>
 
   <!-- Slice 6: 剩余可用空间 9000 tokens (28.1%) -->
-  <path d="M200,180 L72.5,205.4 A130,130 0 0,1 200,50 Z" fill="#EF9A9A" stroke="#fff" stroke-width="2"/>
+  <path d="M200,180 L72.5,205.4 A130,130 0 0,1 200,50 Z" fill="#EF9A9A" stroke="#fff" stroke-width="1.5"/>
 
   <!-- Percentage labels on slices -->
   <text x="216" y="101" font-size="9" text-anchor="middle" fill="#1565C0" font-weight="bold">6%</text>

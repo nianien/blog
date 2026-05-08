@@ -2,7 +2,7 @@
 name: write-article
 description: 根据参考材料或主题撰写技术博客文章。当用户要求写文章、生成博文、或提供了参考材料要求整理成文章时使用。
 argument-hint: "[主题或material/目录下的文件名]"
-allowed-tools: Read Glob Grep Write Edit Agent
+allowed-tools: Read Glob Grep Write Edit Agent Skill
 effort: max
 ---
 
@@ -113,6 +113,10 @@ author: "skyfalling"
 - 不使用 CSS `<style>` 块，所有样式用内联属性
 - 所有元素必须在 `viewBox` 范围内
 - 连接线使用直线（水平/垂直），避免对角线
+
+## SVG 质量检查
+
+文章包含 SVG 图形时，保存后执行 `/svg-check {article-slug}` 进行审计和修复，确保全部通过后再结束。
 
 ## 质量红线
 

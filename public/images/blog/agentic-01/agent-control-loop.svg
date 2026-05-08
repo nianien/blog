@@ -5,27 +5,27 @@
   <text x="350" y="41" text-anchor="middle" fill="white" font-size="16" font-weight="600">Agent Control Loop</text>
 
   <!-- === Nodes === -->
-  <rect x="270" y="80" width="160" height="60" rx="12" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="270" y="80" width="160" height="60" rx="12" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
   <text x="350" y="105" text-anchor="middle" fill="#1e40af" font-size="15" font-weight="600">Observe</text>
   <text x="350" y="125" text-anchor="middle" fill="#1e40af" font-size="12">感知输入</text>
 
-  <rect x="490" y="175" width="160" height="60" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <rect x="490" y="175" width="160" height="60" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="1.5"/>
   <text x="570" y="200" text-anchor="middle" fill="#3730a3" font-size="15" font-weight="600">Think</text>
   <text x="570" y="220" text-anchor="middle" fill="#3730a3" font-size="12">理解意图</text>
 
-  <rect x="490" y="280" width="160" height="60" rx="12" fill="#fae8ff" stroke="#a855f7" stroke-width="2"/>
+  <rect x="490" y="280" width="160" height="60" rx="12" fill="#fae8ff" stroke="#a855f7" stroke-width="1.5"/>
   <text x="570" y="305" text-anchor="middle" fill="#7e22ce" font-size="15" font-weight="600">Plan</text>
   <text x="570" y="325" text-anchor="middle" fill="#7e22ce" font-size="12">制定计划</text>
 
-  <rect x="270" y="380" width="160" height="60" rx="12" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <rect x="270" y="380" width="160" height="60" rx="12" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
   <text x="350" y="405" text-anchor="middle" fill="#15803d" font-size="15" font-weight="600">Act</text>
   <text x="350" y="425" text-anchor="middle" fill="#15803d" font-size="12">执行动作</text>
 
-  <rect x="50" y="280" width="160" height="60" rx="12" fill="#fef9c3" stroke="#eab308" stroke-width="2"/>
+  <rect x="50" y="280" width="160" height="60" rx="12" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
   <text x="130" y="305" text-anchor="middle" fill="#a16207" font-size="15" font-weight="600">Reflect</text>
   <text x="130" y="325" text-anchor="middle" fill="#a16207" font-size="12">评估结果</text>
 
-  <rect x="50" y="175" width="160" height="60" rx="12" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <rect x="50" y="175" width="160" height="60" rx="12" fill="#ffedd5" stroke="#f97316" stroke-width="1.5"/>
   <text x="130" y="200" text-anchor="middle" fill="#c2410c" font-size="15" font-weight="600">Update</text>
   <text x="130" y="220" text-anchor="middle" fill="#c2410c" font-size="12">更新状态</text>
 

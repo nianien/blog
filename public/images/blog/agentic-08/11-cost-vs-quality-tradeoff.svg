@@ -1,16 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400">
-  <style>
-    text { font-family: system-ui, -apple-system, sans-serif; }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" viewBox="0 0 700 400" width="700" height="400">
+  
 
   <!-- Title -->
   <text x="350" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#263238">记忆注入量：Token 成本 vs 上下文质量</text>
 
   <!-- Axes -->
   <!-- Y axis -->
-  <line x1="120" y1="60" x2="120" y2="340" stroke="#455A64" stroke-width="2"/>
+  <line x1="120" y1="60" x2="120" y2="340" stroke="#455A64" stroke-width="1.5"/>
   <!-- X axis -->
-  <line x1="120" y1="340" x2="600" y2="340" stroke="#455A64" stroke-width="2"/>
+  <line x1="120" y1="340" x2="600" y2="340" stroke="#455A64" stroke-width="1.5"/>
 
   <!-- Y axis label -->
   <text x="60" y="200" text-anchor="middle" font-size="12" fill="#455A64" transform="rotate(-90, 60, 200)">记忆注入量</text>

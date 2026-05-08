@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" viewBox="0 0 480 400">
   <!-- 用户输入 -->
   <rect x="120" y="10" width="160" height="35" fill="#3B82F6" stroke="#1E40AF" stroke-width="1.5" rx="6"/>
   <text x="200" y="33" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">用户输入</text>

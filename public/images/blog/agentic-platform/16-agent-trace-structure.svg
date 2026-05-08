@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 420">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" viewBox="0 0 580 420">
   <!-- ===== 传统微服务 Trace — Waterfall ===== -->
   <text x="20" y="20" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="bold" fill="#1e293b">传统微服务 Trace</text>
   <text x="200" y="20" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="10" fill="#94a3b8">总耗时 ~120ms，链路确定，Span 数量固定</text>

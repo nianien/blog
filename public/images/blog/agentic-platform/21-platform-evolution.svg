@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 230">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" viewBox="0 0 690 230">
   <!-- Timeline arrow -->
-  <line x1="91" y1="15" x2="595" y2="15" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="91" y1="15" x2="595" y2="15" stroke="#cbd5e1" stroke-width="1.5"/>
   <polygon points="592,11 600,15 592,19" fill="#cbd5e1"/>
 
   <!-- Timeline dots -->
