@@ -1,61 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <text x="320" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F2937">AIOps 混合架构</text>
 
-  <rect width="620" height="420" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
-  <text x="310" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">AIOps 混合架构</text>
+  <!-- 告警输入 -->
+  <rect x="220" y="48" width="200" height="40" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="320" y="73" text-anchor="middle" font-size="13" fill="#1E40AF">告警输入</text>
 
-  <!-- Alert input -->
-  <rect x="230" y="50" width="160" height="36" rx="6" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
-  <text x="310" y="73" text-anchor="middle" font-size="13" fill="#1565C0">告警输入</text>
+  <!-- Arrow: 告警 → Automation -->
+  <line x1="320" y1="88" x2="320" y2="118" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="316,116 320,122 324,116" fill="#64748B"/>
 
-  <!-- Automation: dedup + classify -->
-  <rect x="210" y="115" width="200" height="40" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
-  <text x="310" y="134" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Automation</text>
-  <text x="310" y="149" text-anchor="middle" font-size="11" fill="#E65100">告警去重 + 分级</text>
-  <line x1="310" y1="86" x2="310" y2="113" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Automation 去重+分级 -->
+  <rect x="200" y="124" width="240" height="48" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="320" y="146" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">Automation</text>
+  <text x="320" y="163" text-anchor="middle" font-size="12" fill="#B45309">告警去重 + 分级</text>
 
-  <!-- Branch labels -->
-  <!-- Left branch: P4/P3 -->
-  <text x="120" y="175" text-anchor="middle" font-size="11" fill="#888">P4/P3 已知模式</text>
-  <line x1="250" y1="155" x2="120" y2="195" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Left branch: P4/P3 已知模式 -->
+  <line x1="260" y1="172" x2="260" y2="190" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="260" y1="190" x2="130" y2="190" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="130" y1="190" x2="130" y2="216" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="126,214 130,220 134,214" fill="#64748B"/>
+  <text x="195" y="184" text-anchor="middle" font-size="11" fill="#94A3B8">P4/P3 已知模式</text>
 
-  <!-- Right branch: P2/P1 -->
-  <text x="500" y="175" text-anchor="middle" font-size="11" fill="#888">P2/P1 或未知模式</text>
-  <line x1="370" y1="155" x2="500" y2="195" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Right branch: P2/P1 或未知模式 -->
+  <line x1="380" y1="172" x2="380" y2="190" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="380" y1="190" x2="500" y2="190" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="500" y1="190" x2="500" y2="216" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="496,214 500,220 504,214" fill="#64748B"/>
+  <text x="445" y="184" text-anchor="middle" font-size="11" fill="#94A3B8">P2/P1 或未知模式</text>
 
-  <!-- Left: Automation auto-fix -->
-  <rect x="40" y="198" width="160" height="40" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
-  <text x="120" y="217" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Automation</text>
-  <text x="120" y="232" text-anchor="middle" font-size="11" fill="#E65100">自动修复</text>
+  <!-- Left: Automation 自动修复 -->
+  <rect x="40" y="222" width="180" height="48" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="130" y="244" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">Automation</text>
+  <text x="130" y="261" text-anchor="middle" font-size="12" fill="#B45309">自动修复</text>
 
-  <!-- Left: Notify oncall -->
-  <rect x="40" y="270" width="160" height="36" rx="6" fill="#E8EAF6" stroke="#3F51B5" stroke-width="1.5"/>
-  <text x="120" y="293" text-anchor="middle" font-size="12" fill="#283593">通知 Oncall</text>
-  <line x1="120" y1="238" x2="120" y2="268" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Arrow: 自动修复 → 通知 Oncall -->
+  <line x1="130" y1="270" x2="130" y2="316" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="126,314 130,320 134,314" fill="#64748B"/>
 
-  <!-- Right: Agent root cause -->
-  <rect x="420" y="198" width="160" height="40" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
-  <text x="500" y="217" text-anchor="middle" font-size="12" font-weight="bold" fill="#6A1B9A">Agent</text>
-  <text x="500" y="232" text-anchor="middle" font-size="11" fill="#6A1B9A">根因分析</text>
+  <!-- 通知 Oncall -->
+  <rect x="40" y="322" width="180" height="48" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="130" y="351" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E40AF">通知 Oncall</text>
 
-  <!-- Right branch: found root cause -->
-  <text x="370" y="275" text-anchor="middle" font-size="11" fill="#888">找到根因</text>
-  <line x1="460" y1="238" x2="370" y2="290" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Right: Agent 根因分析 -->
+  <rect x="410" y="222" width="180" height="48" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="500" y="244" text-anchor="middle" font-size="13" font-weight="bold" fill="#6D28D9">Agent</text>
+  <text x="500" y="261" text-anchor="middle" font-size="12" fill="#7C3AED">根因分析</text>
 
-  <!-- Right: Automation fix -->
-  <rect x="290" y="295" width="160" height="40" rx="6" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
-  <text x="370" y="314" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Automation</text>
-  <text x="370" y="329" text-anchor="middle" font-size="11" fill="#E65100">执行修复</text>
+  <!-- Agent left sub-branch: 找到根因 -->
+  <line x1="460" y1="270" x2="460" y2="290" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="460" y1="290" x2="360" y2="290" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="360" y1="290" x2="360" y2="316" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="356,314 360,320 364,314" fill="#64748B"/>
+  <text x="410" y="284" text-anchor="middle" font-size="11" fill="#94A3B8">找到根因</text>
 
-  <!-- Right branch: cannot determine -->
-  <text x="555" y="275" text-anchor="middle" font-size="11" fill="#888">无法确定</text>
-  <line x1="540" y1="238" x2="555" y2="290" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Agent right sub-branch: 无法确定 -->
+  <line x1="540" y1="270" x2="540" y2="290" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="540" y1="290" x2="555" y2="290" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="555" y1="290" x2="555" y2="316" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="551,314 555,320 559,314" fill="#64748B"/>
+  <text x="548" y="284" text-anchor="middle" font-size="11" fill="#94A3B8">无法确定</text>
 
-  <!-- Right: Escalate to human -->
-  <rect x="480" y="295" width="120" height="40" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
-  <text x="540" y="320" text-anchor="middle" font-size="12" fill="#B71C1C">升级到人工</text>
+  <!-- Automation 执行修复 -->
+  <rect x="270" y="322" width="180" height="48" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="360" y="344" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400E">Automation</text>
+  <text x="360" y="361" text-anchor="middle" font-size="12" fill="#B45309">执行修复</text>
+
+  <!-- 升级到人工 -->
+  <rect x="480" y="322" width="150" height="48" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="555" y="351" text-anchor="middle" font-size="13" font-weight="bold" fill="#991B1B">升级到人工</text>
 </svg>

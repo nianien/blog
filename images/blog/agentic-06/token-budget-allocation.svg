@@ -1,11 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <defs>
-    <marker id="arr" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,3 L0,6 Z" fill="#2c3e50"/>
-    </marker>
-  </defs>
-
-  <!-- Title -->
+<!-- Title -->
   <text x="410" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Context Window Token Budget Allocation</text>
 
   <!-- Main header -->
@@ -14,7 +8,7 @@
   <text x="410" y="82" text-anchor="middle" font-size="10" fill="#34495e">完整的 Prompt 预算分配</text>
 
   <!-- Arrow down -->
-  <line x1="410" y1="94" x2="410" y2="120" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="410" y1="94" x2="410" y2="120" stroke="#2c3e50" stroke-width="1.5"/>
 
   <!-- ===== Three main sections ===== -->
   <!-- System Prompt -->
@@ -39,8 +33,8 @@
   <text x="680" y="194" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">(1,229)</text>
 
   <!-- Arrows down from System Prompt and Working Area -->
-  <line x1="140" y1="210" x2="140" y2="238" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="410" y1="210" x2="410" y2="238" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="140" y1="210" x2="140" y2="238" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="410" y1="210" x2="410" y2="238" stroke="#2c3e50" stroke-width="1.5"/>
 
   <!-- ===== System Prompt breakdown ===== -->
   <rect x="50" y="240" width="180" height="100" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
@@ -58,8 +52,8 @@
   <!-- Horizontal split -->
   <line x1="330" y1="278" x2="490" y2="278" stroke="#2c3e50" stroke-width="1.5"/>
   <!-- Vertical drops -->
-  <line x1="330" y1="278" x2="330" y2="298" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="490" y1="278" x2="490" y2="298" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="330" y1="278" x2="330" y2="298" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="490" y1="278" x2="490" y2="298" stroke="#2c3e50" stroke-width="1.5"/>
 
   <!-- Tool Descriptions -->
   <rect x="270" y="300" width="120" height="80" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
@@ -82,4 +76,9 @@
   <text x="68" y="462" font-size="11" fill="#34495e">• Output Reserved 不能省（防止输出截断）</text>
   <text x="400" y="462" font-size="11" fill="#34495e">• System Prompt 预算固定（行为约束不能删）</text>
   <text x="68" y="480" font-size="11" fill="#34495e">• History 是最大压缩空间（优先压缩此处）</text>
+  <polygon points="410,120 407,112 413,112" fill="#2c3e50"/>
+  <polygon points="140,238 137,230 143,230" fill="#2c3e50"/>
+  <polygon points="410,238 407,230 413,230" fill="#2c3e50"/>
+  <polygon points="330,298 327,290 333,290" fill="#2c3e50"/>
+  <polygon points="490,298 487,290 493,290" fill="#2c3e50"/>
 </svg>

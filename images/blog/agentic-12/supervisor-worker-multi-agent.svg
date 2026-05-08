@@ -3,7 +3,7 @@
   <text x="290" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Supervisor-Worker 多 Agent 架构</text>
 
   <!-- Top Supervisor (centered at x=290) -->
-  <rect x="200" y="40" width="180" height="45" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <rect x="200" y="40" width="180" height="45" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
   <text x="290" y="68" font-size="13" font-weight="bold" text-anchor="middle" fill="#0d47a1">Supervisor</text>
 
   <!-- Vertical trunk from Supervisor bottom center -->
@@ -39,7 +39,7 @@
   <polygon points="286,225 290,235 294,225" fill="#666"/>
 
   <!-- Bottom Supervisor (centered at x=290) -->
-  <rect x="200" y="238" width="180" height="45" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <rect x="200" y="238" width="180" height="45" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
   <text x="290" y="266" font-size="13" font-weight="bold" text-anchor="middle" fill="#0d47a1">Supervisor</text>
 
   <!-- Loop-back dashed: bottom Supervisor → top Supervisor -->

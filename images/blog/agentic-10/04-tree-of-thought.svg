@@ -3,27 +3,27 @@
   <text x="430" y="24" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Tree-of-Thought 搜索树</text>
 
   <!-- Root -->
-  <rect x="370" y="45" width="120" height="40" rx="20" fill="#e8f4f8" stroke="#0066cc" stroke-width="2"/>
+  <rect x="370" y="45" width="120" height="40" rx="20" fill="#e8f4f8" stroke="#0066cc" stroke-width="1.5"/>
   <text x="430" y="70" font-size="12" font-weight="bold" text-anchor="middle" fill="#0066cc">问题 (Root)</text>
 
   <!-- T-split: vertical down from root, horizontal bar, then 3 verticals down -->
-  <line x1="430" y1="85" x2="430" y2="105" stroke="#ff9900" stroke-width="2"/>
-  <line x1="150" y1="105" x2="710" y2="105" stroke="#ff9900" stroke-width="2"/>
-  <line x1="150" y1="105" x2="150" y2="124" stroke="#ff9900" stroke-width="2"/>
+  <line x1="430" y1="85" x2="430" y2="105" stroke="#ff9900" stroke-width="1.5"/>
+  <line x1="150" y1="105" x2="710" y2="105" stroke="#ff9900" stroke-width="1.5"/>
+  <line x1="150" y1="105" x2="150" y2="124" stroke="#ff9900" stroke-width="1.5"/>
   <polygon points="146,124 150,134 154,124" fill="#ff9900"/>
-  <line x1="430" y1="105" x2="430" y2="124" stroke="#ff9900" stroke-width="2"/>
+  <line x1="430" y1="105" x2="430" y2="124" stroke="#ff9900" stroke-width="1.5"/>
   <polygon points="426,124 430,134 434,124" fill="#ff9900"/>
-  <line x1="710" y1="105" x2="710" y2="124" stroke="#ff9900" stroke-width="2"/>
+  <line x1="710" y1="105" x2="710" y2="124" stroke="#ff9900" stroke-width="1.5"/>
   <polygon points="706,124 710,134 714,124" fill="#ff9900"/>
 
   <!-- Level 1 nodes -->
-  <rect x="95" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <rect x="95" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="1.5"/>
   <text x="150" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9900">Thought 1</text>
 
-  <rect x="375" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <rect x="375" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="1.5"/>
   <text x="430" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9900">Thought 2</text>
 
-  <rect x="655" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="2"/>
+  <rect x="655" y="130" width="110" height="40" rx="6" fill="#fff4e8" stroke="#ff9900" stroke-width="1.5"/>
   <text x="710" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff9900">Thought 3</text>
 
   <!-- Level 1 scores -->

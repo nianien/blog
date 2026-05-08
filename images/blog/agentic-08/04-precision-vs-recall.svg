@@ -1,6 +1,6 @@
-<svg width="900" height="320" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="320" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
   <!-- Background -->
-  <rect width="900" height="320" fill="#fafafa" />
+  <rect width="900" height="320" viewBox="0 0 900 320" fill="#fafafa" />
 
   <!-- Title -->
   <text x="450" y="30" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">
@@ -9,7 +9,7 @@
 
   <!-- Left box: Precise Retrieval -->
   <g>
-    <rect x="40" y="70" width="350" height="210" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="8" />
+    <rect x="40" y="70" width="350" height="210" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5" rx="8" />
     <text x="215" y="100" font-size="14" font-weight="bold" text-anchor="middle" fill="#1565C0">
       精确检索 (top_k=1)
     </text>
@@ -27,7 +27,7 @@
 
   <!-- Right box: Fuzzy Retrieval -->
   <g>
-    <rect x="510" y="70" width="350" height="210" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2" rx="8" />
+    <rect x="510" y="70" width="350" height="210" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" rx="8" />
     <text x="685" y="100" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">
       模糊检索 (top_k=10)
     </text>

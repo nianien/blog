@@ -1,11 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
-    </marker>
-  </defs>
-
-  <rect width="560" height="380" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+<rect width="560" height="380" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
   <text x="280" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Plan-then-Execute Loop</text>
 
   <!-- Planning Phase -->
@@ -15,7 +9,7 @@
   <text x="280" y="120" text-anchor="middle" font-size="11" fill="#90CAF9">一次性生成完整计划</text>
 
   <!-- Arrow down -->
-  <line x1="280" y1="135" x2="280" y2="158" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="280" y1="135" x2="280" y2="158" stroke="#666" stroke-width="1.5"/>
 
   <!-- Execution Phase -->
   <rect x="50" y="160" width="460" height="100" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
@@ -34,7 +28,7 @@
   <text x="280" y="248" text-anchor="middle" font-size="11" fill="#FF9800">按计划逐步执行</text>
 
   <!-- Arrow down -->
-  <line x1="280" y1="260" x2="280" y2="283" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="280" y1="260" x2="280" y2="283" stroke="#666" stroke-width="1.5"/>
 
   <!-- Replan Phase -->
   <rect x="50" y="285" width="460" height="70" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3"/>
@@ -43,5 +37,8 @@
   <text x="280" y="347" text-anchor="middle" font-size="11" fill="#CE93D8">执行结果偏离预期时重新规划</text>
 
   <!-- Replan loop arrow back -->
-  <path d="M 510 320 L 530 320 L 530 90 L 512 90" fill="none" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <path d="M 510 320 L 530 320 L 530 90 L 512 90" fill="none" stroke="#7B1FA2" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="280,158 277,150 283,150" fill="#666"/>
+  <polygon points="280,283 277,275 283,275" fill="#666"/>
+  <polygon points="512,90 520,87 520,93" fill="#666"/>
 </svg>

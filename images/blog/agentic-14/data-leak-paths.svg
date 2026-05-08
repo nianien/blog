@@ -30,7 +30,7 @@
   <rect x="431" y="72" width="80" height="30" rx="6" fill="#e8f4f8" stroke="#0066cc" stroke-width="1"/>
   <text x="471" y="91" font-size="9" text-anchor="middle" fill="#0066cc">Agent</text>
 
-  <line x1="511" y1="87" x2="535" y2="87" stroke="#C62828" stroke-width="2"/>
+  <line x1="511" y1="87" x2="535" y2="87" stroke="#C62828" stroke-width="1.5"/>
   <polygon points="535,83 545,87 535,91" fill="#C62828"/>
 
   <rect x="543" y="72" width="80" height="30" rx="6" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
@@ -68,7 +68,7 @@
   <rect x="431" y="197" width="80" height="30" rx="6" fill="#e8f4f8" stroke="#0066cc" stroke-width="1"/>
   <text x="471" y="216" font-size="9" text-anchor="middle" fill="#0066cc">Agent</text>
 
-  <line x1="511" y1="212" x2="535" y2="212" stroke="#E65100" stroke-width="2"/>
+  <line x1="511" y1="212" x2="535" y2="212" stroke="#E65100" stroke-width="1.5"/>
   <polygon points="535,208 545,212 535,216" fill="#E65100"/>
 
   <rect x="543" y="197" width="80" height="30" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
@@ -95,7 +95,7 @@
   <rect x="197" y="322" width="80" height="30" rx="6" fill="#e8f4f8" stroke="#0066cc" stroke-width="1"/>
   <text x="237" y="341" font-size="9" text-anchor="middle" fill="#0066cc">Agent</text>
 
-  <line x1="277" y1="337" x2="301" y2="337" stroke="#7B1FA2" stroke-width="2"/>
+  <line x1="277" y1="337" x2="301" y2="337" stroke="#7B1FA2" stroke-width="1.5"/>
   <polygon points="301,333 311,337 301,341" fill="#7B1FA2"/>
 
   <rect x="309" y="322" width="130" height="30" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>

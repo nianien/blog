@@ -1,11 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <defs>
-    <marker id="arr" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,3 L0,6 Z" fill="#2c3e50"/>
-    </marker>
-  </defs>
-
-  <!-- Title -->
+<!-- Title -->
   <text x="410" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Token Budget Distribution &amp; Prompt Assembly</text>
 
   <!-- Budget Header -->
@@ -16,9 +10,9 @@
   <!-- T-split: center down, then horizontal bar, then 3 vertical drops -->
   <line x1="410" y1="90" x2="410" y2="108" stroke="#2c3e50" stroke-width="1.5"/>
   <line x1="140" y1="108" x2="680" y2="108" stroke="#2c3e50" stroke-width="1.5"/>
-  <line x1="140" y1="108" x2="140" y2="128" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="410" y1="108" x2="410" y2="128" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="680" y1="108" x2="680" y2="128" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="140" y1="108" x2="140" y2="128" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="410" y1="108" x2="410" y2="128" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="680" y1="108" x2="680" y2="128" stroke="#2c3e50" stroke-width="1.5"/>
 
   <!-- ===== Three budget blocks ===== -->
   <!-- System Prompt -->
@@ -45,8 +39,8 @@
   <!-- Context Injection T-split to Tool Descs + History -->
   <line x1="410" y1="220" x2="410" y2="238" stroke="#2c3e50" stroke-width="1.5"/>
   <line x1="340" y1="238" x2="480" y2="238" stroke="#2c3e50" stroke-width="1.5"/>
-  <line x1="340" y1="238" x2="340" y2="258" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="480" y1="238" x2="480" y2="258" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="340" y1="238" x2="340" y2="258" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="480" y1="238" x2="480" y2="258" stroke="#2c3e50" stroke-width="1.5"/>
 
   <!-- Tool Descs -->
   <rect x="270" y="260" width="140" height="80" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
@@ -80,7 +74,7 @@
 
   <!-- Horizontal bar merging all into Assembler -->
   <line x1="140" y1="440" x2="680" y2="440" stroke="#2c3e50" stroke-width="1.5"/>
-  <line x1="410" y1="440" x2="410" y2="458" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="410" y1="440" x2="410" y2="458" stroke="#2c3e50" stroke-width="1.5"/>
 
   <!-- Prompt Assembler -->
   <rect x="210" y="460" width="400" height="90" rx="6" fill="#e8f1f8" stroke="#3498db" stroke-width="1.5"/>
@@ -92,9 +86,16 @@
   <text x="460" y="519" font-size="11" fill="#34495e">5. 输出最终 Prompt</text>
 
   <!-- Arrow to Final Prompt -->
-  <line x1="410" y1="550" x2="410" y2="578" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="410" y1="550" x2="410" y2="578" stroke="#2c3e50" stroke-width="1.5"/>
 
   <!-- Final output -->
   <rect x="345" y="580" width="130" height="28" rx="14" fill="#27ae60" stroke="none"/>
   <text x="410" y="599" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Final Prompt</text>
+  <polygon points="140,128 137,120 143,120" fill="#2c3e50"/>
+  <polygon points="410,128 407,120 413,120" fill="#2c3e50"/>
+  <polygon points="680,128 677,120 683,120" fill="#2c3e50"/>
+  <polygon points="340,258 337,250 343,250" fill="#2c3e50"/>
+  <polygon points="480,258 477,250 483,250" fill="#2c3e50"/>
+  <polygon points="410,458 407,450 413,450" fill="#2c3e50"/>
+  <polygon points="410,578 407,570 413,570" fill="#2c3e50"/>
 </svg>

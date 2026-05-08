@@ -1,11 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" font-family="-apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="10" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,3 L0,6 Z" fill="#666"/>
-    </marker>
-  </defs>
-
-  <rect width="700" height="280" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+<rect width="700" height="280" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
   <text x="350" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">LLM 的五大局限</text>
 
   <!-- 5 boxes -->
@@ -51,9 +45,10 @@
   </g>
 
   <!-- Arrow down -->
-  <line x1="350" y1="168" x2="350" y2="210" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="350" y1="168" x2="350" y2="210" stroke="#666" stroke-width="1.5"/>
 
   <!-- Footer -->
   <text x="350" y="235" text-anchor="middle" font-size="13" fill="#555">LLM 需要一个"外壳"来弥补这些局限</text>
   <text x="350" y="258" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">这个外壳，就是 Agent Runtime</text>
+  <polygon points="350,210 347,202 353,202" fill="#666"/>
 </svg>

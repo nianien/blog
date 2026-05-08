@@ -6,10 +6,10 @@
   <line x1="40" y1="48" x2="40" y2="470" stroke="#b0bec5" stroke-width="1.5"/>
 
   <!-- Root node (vertically centered) -->
-  <rect x="50" y="232" width="90" height="48" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <rect x="50" y="232" width="90" height="48" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
   <text x="95" y="252" font-size="11" font-weight="bold" text-anchor="middle" fill="#0d47a1">你的核心</text>
   <text x="95" y="268" font-size="11" font-weight="bold" text-anchor="middle" fill="#0d47a1">需求是？</text>
-  <line x1="40" y1="256" x2="50" y2="256" stroke="#1565c0" stroke-width="2"/>
+  <line x1="40" y1="256" x2="50" y2="256" stroke="#1565c0" stroke-width="1.5"/>
 
   <!-- All branch horizontal lines go from trunk (x=40) to x=60 -->
   <!-- All arrow connectors aligned at x=310→350, pills at x=355 -->

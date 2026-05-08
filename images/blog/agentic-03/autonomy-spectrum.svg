@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <text x="400" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F2937">Agent 自主性光谱</text>
+
+  <!-- 渐变背景条 -->
+  <defs>
+    <linearGradient id="spectrumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#DBEAFE;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#E0E7FF;stop-opacity:1" />
+      <stop offset="66%" style="stop-color:#EDE9FE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FEE2E2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="60" y="50" width="680" height="8" rx="4" fill="url(#spectrumGrad)"/>
+
+  <!-- 箭头：低自主性 → 高自主性 -->
+  <text x="60" y="78" font-size="11" fill="#94A3B8">低自主性</text>
+  <text x="740" y="78" text-anchor="end" font-size="11" fill="#94A3B8">高自主性</text>
+  <line x1="60" y1="54" x2="740" y2="54" stroke="#CBD5E1" stroke-width="1"/>
+  <polygon points="740,54 732,50 732,58" fill="#CBD5E1"/>
+
+  <!-- L1: 单次推理 -->
+  <line x1="145" y1="50" x2="145" y2="96" stroke="#3B82F6" stroke-width="1.5"/>
+  <circle cx="145" cy="54" r="5" fill="#3B82F6"/>
+  <rect x="60" y="100" width="170" height="110" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="145" y="122" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E40AF">L1 单次推理</text>
+  <text x="145" y="142" text-anchor="middle" font-size="11" fill="#3B82F6">一次 LLM 调用</text>
+  <text x="145" y="160" text-anchor="middle" font-size="10" fill="#64748B">分类 · 路由 · 翻译</text>
+  <text x="145" y="178" text-anchor="middle" font-size="10" fill="#64748B">情感分析 · 内容审核</text>
+  <text x="145" y="198" text-anchor="middle" font-size="10" font-weight="bold" fill="#1E40AF">~$0.001-0.01/次</text>
+
+  <!-- L2: 工具增强 -->
+  <line x1="318" y1="50" x2="318" y2="96" stroke="#6366F1" stroke-width="1.5"/>
+  <circle cx="318" cy="54" r="5" fill="#6366F1"/>
+  <rect x="233" y="100" width="170" height="110" rx="8" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="318" y="122" text-anchor="middle" font-size="13" font-weight="bold" fill="#4338CA">L2 工具增强</text>
+  <text x="318" y="142" text-anchor="middle" font-size="11" fill="#6366F1">LLM + 工具, 1-3 轮</text>
+  <text x="318" y="160" text-anchor="middle" font-size="10" fill="#64748B">搜索问答 · 数据查询</text>
+  <text x="318" y="178" text-anchor="middle" font-size="10" fill="#64748B">代码执行 · 文件分析</text>
+  <text x="318" y="198" text-anchor="middle" font-size="10" font-weight="bold" fill="#4338CA">~$0.01-0.05/次</text>
+
+  <!-- L3: 任务驱动 -->
+  <line x1="490" y1="50" x2="490" y2="96" stroke="#8B5CF6" stroke-width="1.5"/>
+  <circle cx="490" cy="54" r="5" fill="#8B5CF6"/>
+  <rect x="405" y="100" width="170" height="110" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="490" y="122" text-anchor="middle" font-size="13" font-weight="bold" fill="#6D28D9">L3 任务驱动</text>
+  <text x="490" y="142" text-anchor="middle" font-size="11" fill="#8B5CF6">多步自主执行</text>
+  <text x="490" y="160" text-anchor="middle" font-size="10" fill="#64748B">编程 Agent · 数据分析</text>
+  <text x="490" y="178" text-anchor="middle" font-size="10" fill="#64748B">运维诊断 · 报告生成</text>
+  <text x="490" y="198" text-anchor="middle" font-size="10" font-weight="bold" fill="#6D28D9">~$0.05-0.50/次</text>
+
+  <!-- L4: 自主系统 -->
+  <line x1="663" y1="50" x2="663" y2="96" stroke="#EF4444" stroke-width="1.5"/>
+  <circle cx="663" cy="54" r="5" fill="#EF4444"/>
+  <rect x="578" y="100" width="170" height="110" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="663" y="122" text-anchor="middle" font-size="13" font-weight="bold" fill="#991B1B">L4 自主系统</text>
+  <text x="663" y="142" text-anchor="middle" font-size="11" fill="#EF4444">长期运行, 自设目标</text>
+  <text x="663" y="160" text-anchor="middle" font-size="10" fill="#64748B">AutoGPT · Devin</text>
+  <text x="663" y="178" text-anchor="middle" font-size="10" fill="#64748B">研究型 Agent</text>
+  <text x="663" y="198" text-anchor="middle" font-size="10" font-weight="bold" fill="#991B1B">~$0.50-50+/次</text>
+
+  <!-- 底部标注 -->
+  <line x1="60" y1="240" x2="740" y2="240" stroke="#E2E8F0" stroke-width="1"/>
+
+  <text x="145" y="264" text-anchor="middle" font-size="10" fill="#22C55E" font-weight="bold">生产就绪 ✓</text>
+  <text x="318" y="264" text-anchor="middle" font-size="10" fill="#22C55E" font-weight="bold">生产就绪 ✓</text>
+  <text x="490" y="264" text-anchor="middle" font-size="10" fill="#F59E0B" font-weight="bold">需要 Guardrail</text>
+  <text x="663" y="264" text-anchor="middle" font-size="10" fill="#EF4444" font-weight="bold">尚不成熟</text>
+
+  <!-- 控制力标注 -->
+  <text x="400" y="296" text-anchor="middle" font-size="12" fill="#64748B">能力 ↑ 可控性 ↓</text>
+
+  <!-- 产品示例 -->
+  <text x="145" y="322" text-anchor="middle" font-size="10" fill="#94A3B8">GPT 分类器</text>
+  <text x="318" y="322" text-anchor="middle" font-size="10" fill="#94A3B8">Perplexity · ChatGPT</text>
+  <text x="490" y="322" text-anchor="middle" font-size="10" fill="#94A3B8">Cursor · Claude Code</text>
+  <text x="663" y="322" text-anchor="middle" font-size="10" fill="#94A3B8">AutoGPT · Devin</text>
+</svg>

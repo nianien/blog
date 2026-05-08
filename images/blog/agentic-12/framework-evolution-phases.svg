@@ -97,8 +97,8 @@
   <text x="745" y="448" font-size="9" text-anchor="middle" fill="#78909C">~80 行框架代码 (↓75%)</text>
 
   <!-- Evolution arrows between phases -->
-  <line x1="295" y1="255" x2="305" y2="255" stroke="#546E7A" stroke-width="2"/>
+  <line x1="295" y1="255" x2="305" y2="255" stroke="#546E7A" stroke-width="1.5"/>
   <polygon points="305,250 315,255 305,260" fill="#546E7A"/>
-  <line x1="590" y1="255" x2="600" y2="255" stroke="#546E7A" stroke-width="2"/>
+  <line x1="590" y1="255" x2="600" y2="255" stroke="#546E7A" stroke-width="1.5"/>
   <polygon points="600,250 610,255 600,260" fill="#546E7A"/>
 </svg>

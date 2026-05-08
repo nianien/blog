@@ -9,8 +9,8 @@ c:I[4431,[],"MetadataBoundary"]
 d:"$Sreact.suspense"
 f:I[7150,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/css/bd27d35e90c84eb9.css","style"]
-0:{"P":null,"b":"uv60aI9gf_tvEr4HYL7qh","p":"","c":["","blog","engineering","middleware","Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/bd27d35e90c84eb9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+:HL["/_next/static/css/6e4749fea2da0fc0.css","style"]
+0:{"P":null,"b":"_b3AafMCxq1FoDw3vsjBw","p":"","c":["","blog","engineering","middleware","Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6e4749fea2da0fc0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling"]}]}]}]]}]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
 10:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],""]
 11:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],"default"]
 12:T59b5,<p><a href="/blog/engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B">《Java 核心技术：并发编程》</a>介绍了 JMM、锁机制和 JUC 工具类的使用。本文在此基础上深入一层，拆解这些工具类共同依赖的底层框架——AQS。</p>
@@ -627,11 +627,7 @@ ReadWriteLock:       state = [高16位:读锁次数][低16位:写锁次数]
 16:I[6249,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],"default"]
 1b:I[6929,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],"default"]
 13:["$","nav",null,{"className":"mt-12 pt-8 border-t border-gray-200","children":["$","div",null,{"className":"bg-gray-50 rounded-lg p-6","children":[["$","h3",null,{"className":"text-base font-semibold text-gray-900 mb-1","children":"Java 核心技术"}],["$","p",null,{"className":"text-sm text-gray-500 mb-4","children":"JVM、并发、IO、字节码"}],["$","ul",null,{"className":"space-y-2","children":[["$","li","engineering/middleware/Java核心技术：深入理解JVM",{"children":["$","$L10",null,{"href":"/blog/engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM","className":"inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-gray-300 rounded-full mr-3 flex-shrink-0"}],"Java 核心技术：深入理解 JVM"]}]}],["$","li","engineering/middleware/Java核心技术：并发编程",{"children":["$","$L10",null,{"href":"/blog/engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B","className":"inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-gray-300 rounded-full mr-3 flex-shrink-0"}],"Java 核心技术：并发编程"]}]}],["$","li","engineering/middleware/Java核心技术：IO模型演进",{"children":["$","$L10",null,{"href":"/blog/engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9AIO%E6%A8%A1%E5%9E%8B%E6%BC%94%E8%BF%9B","className":"inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-gray-300 rounded-full mr-3 flex-shrink-0"}],"Java 核心技术：IO 模型演进"]}]}],["$","li","engineering/middleware/Java核心技术：字节码增强实战",{"children":["$","$L10",null,{"href":"/blog/engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E5%AD%97%E8%8A%82%E7%A0%81%E5%A2%9E%E5%BC%BA%E5%AE%9E%E6%88%98","className":"inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-gray-300 rounded-full mr-3 flex-shrink-0"}],"Java 核心技术：字节码增强实战"]}]}],["$","li","engineering/middleware/Java核心技术：深入理解AQS",{"children":["$","span",null,{"className":"inline-flex items-center text-sm font-semibold text-gray-900","children":[["$","span",null,{"className":"w-1.5 h-1.5 bg-blue-600 rounded-full mr-3 flex-shrink-0"}],"Java 核心技术：深入理解 AQS"]}]}]]}]]}]}]
-17:T13301,<blockquote>
-<p>框架是加速器，不是知识的替代品。</p>
-<p>本文是 Agentic 系列第 07 篇，也是 Phase 2 的收官之作。我们将抛开所有框架，用纯 Python 从零构建一个功能完整的 Agent Runtime。这是系列中代码量最大的一篇——每一行代码都指向同一个目标：让你彻底理解 Agent 的运行本质。</p>
-</blockquote>
-<hr>
+17:T13180,<hr>
 <h2>1. 为什么要自己写 Agent Runtime？</h2>
 <p>前几篇我们理解了控制循环（第 04 篇）、Tool Calling（第 05 篇）、Prompt 工程（第 06 篇）。但这些还停留在概念层面。现在的问题是：<strong>不用 LangChain、不用 LangGraph——你能写出一个 Agent 吗？</strong></p>
 <p>自建 Runtime 的价值：</p>
@@ -1779,7 +1775,7 @@ results = executor.execute_with_dependencies(tool_calls, dependencies)
 </ul>
 <hr>
 <h2>9. 断点续传与检查点恢复</h2>
-<p>长时间运行的 Agent 可能因网络中断、内存溢出、进程崩溃而被迫中止。<strong>检查点（Checkpoint）机制</strong> 允许 Agent 从上次中断点恢复，而不是重新开始。</p>
+<p>长时间运行的 Agent 可能因网络中断、内存溢出、进程崩溃而被迫中止。<strong>检查点机制</strong>（Checkpoint） 允许 Agent 从上次中断点恢复，而不是重新开始。</p>
 <pre><code class="language-python"># checkpoint_manager.py
 import json, time, logging
 from dataclasses import dataclass, asdict
@@ -2000,7 +1996,7 @@ class AgentRuntime:
 </ul>
 <hr>
 <h2>10. 完整的可观测性模块</h2>
-<p><strong>可观测性（Observability）</strong> 是生产系统的必需品。需要记录：每步的 Token 消耗、延迟、工具成功率、总成本，并且格式要标准化，便于接入监控系统。</p>
+<p><strong>可观测性</strong>（Observability） 是生产系统的必需品。需要记录：每步的 Token 消耗、延迟、工具成功率、总成本，并且格式要标准化，便于接入监控系统。</p>
 <pre><code class="language-python"># observability.py
 import json, time, logging
 from dataclasses import dataclass, field, asdict
@@ -2358,7 +2354,7 @@ class AgentRuntime:
 <li><strong>第 04 篇</strong>：理解控制循环 — Observe → Think → Act → Reflect</li>
 <li><strong>第 05 篇</strong>：深入 Tool Calling — JSON Schema、Function Calling、Structured Output</li>
 <li><strong>第 06 篇</strong>：Prompt Engineering — System Prompt 设计、工具选择引导、Reflection Prompt</li>
-<li><strong>第 07 篇（本篇）</strong>：把以上所有知识组装成可运行的 Agent Runtime</li>
+<li><strong>第 07 篇</strong>（本篇）：把以上所有知识组装成可运行的 Agent Runtime</li>
 </ul>
 <p>此刻你有能力<strong>不依赖任何框架，从零构建功能完整的 Agent 系统</strong>。</p>
 <p>但如果你运行过这个 Agent，会很快发现几个问题：</p>
@@ -2375,12 +2371,7 @@ class AgentRuntime:
 <li><strong>第 11 篇</strong>：Multi-Agent Collaboration — 多 Agent 协作</li>
 </ul>
 <p>Phase 2 给了你造一把锤子的能力。Phase 3 将教你如何造一个工具箱。</p>
-18:T1857c,<blockquote>
-<p>LLM 是一个纯函数：给定相同的 prompt，产生相同的输出。它没有&quot;昨天&quot;，没有&quot;上次&quot;，没有&quot;你之前说过&quot;。</p>
-<p>但一个合格的 Agent 必须记得：用户的偏好、上一步的结果、三天前那个失败的任务、以及从知识库中检索到的关键事实。</p>
-<p>记忆，是 Agent 从&quot;单轮工具&quot;变成&quot;持续助手&quot;的分水岭。本文是 Agentic 系列第 08 篇，将系统拆解 Agent 记忆的四层架构，从认知科学类比到工程实现，给出完整的设计方案。</p>
-</blockquote>
-<hr>
+18:T19e64,<hr>
 <h2>1. 为什么 Agent 需要记忆</h2>
 <p>LLM 的本质是一个 <strong>stateless function</strong>：<code>response = llm(prompt)</code>。每次调用都是一个全新的开始，模型不知道上一次调用发生了什么。</p>
 <p>这在单轮问答场景下没有问题。但当我们把 LLM 嵌入 Agent 系统后，<strong>无状态</strong>就成了致命缺陷：</p>
@@ -2391,7 +2382,7 @@ class AgentRuntime:
 <li><strong>个性化服务</strong>：Agent 需要记住用户偏好（&quot;我喜欢简洁的回答&quot;、&quot;输出用 Markdown 表格&quot;）</li>
 </ul>
 <p>没有记忆的 Agent，每次对话都是一个&quot;失忆症患者&quot;——它可能很聪明，但永远无法建立连续的工作关系。</p>
-<p><strong>核心命题：如何为一个 stateless 的 LLM 构建一套 stateful 的记忆体系，使 Agent 在有限的 Context Window 内，获得&quot;无限&quot;的记忆能力？</strong></p>
+<p>问题就变成了：怎么为一个 stateless 的 LLM 构建一套 stateful 的记忆体系，让 Agent 在有限的 Context Window 内获得&quot;无限&quot;的记忆能力？</p>
 <hr>
 <h2>2. 从认知科学看 Agent 记忆</h2>
 <p>在设计 Agent 记忆架构之前，先看看人类大脑是怎么处理记忆的。认知心理学中 Atkinson-Shiffrin 模型把人类记忆分为多个层级，这个分层对 Agent 设计有极强的指导意义。</p>
@@ -3401,7 +3392,7 @@ class MemoryManager:
     )
     return llm_client.complete(prompt)
 </code></pre>
-<p><strong>方案 B：规则压缩（零成本）</strong></p>
+<p><strong>方案 B：规则压缩</strong>（零成本）</p>
 <pre><code class="language-python">def rule_based_compress(messages: list[dict]) -&gt; list[dict]:
     &quot;&quot;&quot;基于规则的消息压缩，不需要额外 LLM 调用&quot;&quot;&quot;
     compressed = []
@@ -3456,6 +3447,152 @@ class MemoryManager:
 </tr>
 </tbody></table>
 <p><strong>实践建议</strong>：先用规则压缩兜底（保证不超 budget），当压缩比 &gt; 50% 时再触发 LLM 摘要。两种方案可以组合使用：先规则裁剪，再 LLM 摘要。</p>
+<h3>记忆压缩方法全景</h3>
+<p>上面两种方案只是消息级别的压缩。如果把视角拉高到整个记忆系统，Agent 的记忆压缩可以归纳为五类方法，每类解决不同层级的问题：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>压缩对象</th>
+<th>核心思路</th>
+<th>压缩比</th>
+<th>信息损失</th>
+<th>额外成本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>滑动窗口截断</strong></td>
+<td>对话历史</td>
+<td>只保留最近 N 轮，丢弃更早的消息</td>
+<td>高</td>
+<td>高（丢失早期上下文）</td>
+<td>零</td>
+</tr>
+<tr>
+<td><strong>摘要压缩</strong></td>
+<td>对话历史 / Episodic Memory</td>
+<td>用 LLM 把多轮对话压缩成一段摘要</td>
+<td>高（10:1 以上）</td>
+<td>低（语义保留）</td>
+<td>一次 LLM 调用</td>
+</tr>
+<tr>
+<td><strong>实体提取</strong></td>
+<td>对话历史</td>
+<td>从对话中提取关键实体和关系，丢弃原文</td>
+<td>高</td>
+<td>中（丢失语气、细节）</td>
+<td>一次 LLM 调用</td>
+</tr>
+<tr>
+<td><strong>Token-aware 裁剪</strong></td>
+<td>单条消息</td>
+<td>按 token 预算截断工具输出、长回复</td>
+<td>可控</td>
+<td>中</td>
+<td>零</td>
+</tr>
+<tr>
+<td><strong>分层压缩</strong></td>
+<td>全部记忆</td>
+<td>近期保留原文，中期摘要化，远期只留实体</td>
+<td>渐进式</td>
+<td>渐进式</td>
+<td>周期性 LLM 调用</td>
+</tr>
+</tbody></table>
+<p><strong>方法 1：滑动窗口截断</strong> — 最简单的压缩，直接丢弃最早的对话记录。缺点明显：如果用户在第 3 轮说了一个关键约束，到第 20 轮这个约束就丢了。适合闲聊型场景，不适合长任务。</p>
+<p><strong>方法 2：摘要压缩</strong> — 前面已经详细展示了 <code>llm_summarize</code> 的实现。关键技巧是<strong>渐进式摘要</strong>：不是等对话很长了一次性压缩，而是每积累 N 轮就把之前的摘要和新对话合并成一份更新的摘要。</p>
+<pre><code class="language-python">class IncrementalSummarizer:
+    &quot;&quot;&quot;渐进式摘要：每 N 轮对话自动压缩一次&quot;&quot;&quot;
+
+    def __init__(self, llm_client, trigger_interval: int = 10):
+        self.llm = llm_client
+        self.trigger_interval = trigger_interval
+        self.running_summary: str = &quot;&quot;
+        self.recent_messages: list[dict] = []
+
+    def add_message(self, message: dict):
+        self.recent_messages.append(message)
+        if len(self.recent_messages) &gt;= self.trigger_interval:
+            self._compress()
+
+    def _compress(self):
+        &quot;&quot;&quot;将当前摘要 + 新消息合并为新摘要&quot;&quot;&quot;
+        new_text = &quot;\n&quot;.join(
+            f&quot;{m[&#39;role&#39;]}: {m[&#39;content&#39;][:300]}&quot;
+            for m in self.recent_messages
+        )
+        prompt = (
+            f&quot;Existing summary:\n{self.running_summary}\n\n&quot;
+            f&quot;New messages:\n{new_text}\n\n&quot;
+            &quot;Produce an updated summary that merges both. &quot;
+            &quot;Preserve all key facts, decisions, and user preferences. &quot;
+            &quot;Drop redundant or superseded information.&quot;
+        )
+        self.running_summary = self.llm.complete(prompt)
+        self.recent_messages = []
+
+    def get_context(self) -&gt; list[dict]:
+        &quot;&quot;&quot;返回压缩后的上下文：摘要 + 最近未压缩的消息&quot;&quot;&quot;
+        context = []
+        if self.running_summary:
+            context.append({
+                &quot;role&quot;: &quot;system&quot;,
+                &quot;content&quot;: f&quot;Conversation summary so far:\n{self.running_summary}&quot;
+            })
+        context.extend(self.recent_messages)
+        return context
+</code></pre>
+<p><strong>方法 3：实体提取</strong> — 比摘要更结构化。从对话中抽取 <code>(实体, 属性, 值)</code> 三元组，用结构化数据替代自然语言。压缩比极高，但会丢失语气和上下文细微之处。</p>
+<pre><code class="language-python">ENTITY_EXTRACTION_PROMPT = &quot;&quot;&quot;Extract key entities and facts from this conversation.
+Output JSON: {&quot;entities&quot;: [{&quot;name&quot;: &quot;...&quot;, &quot;type&quot;: &quot;...&quot;, &quot;attributes&quot;: {&quot;key&quot;: &quot;value&quot;}}]}
+
+Rules:
+- Only extract facts that would be useful in future turns
+- Include user preferences, task parameters, intermediate results
+- Skip greetings, acknowledgments, filler content&quot;&quot;&quot;
+
+def extract_entities(messages: list[dict], llm_client) -&gt; dict:
+    &quot;&quot;&quot;从对话中提取结构化实体&quot;&quot;&quot;
+    text = &quot;\n&quot;.join(f&quot;{m[&#39;role&#39;]}: {m[&#39;content&#39;][:400]}&quot; for m in messages)
+    result = llm_client.complete(
+        ENTITY_EXTRACTION_PROMPT + f&quot;\n\nConversation:\n{text}&quot;,
+        response_format={&quot;type&quot;: &quot;json_object&quot;},
+    )
+    return json.loads(result)
+</code></pre>
+<p><strong>方法 4：Token-aware 裁剪</strong> — 前面的 <code>rule_based_compress</code> 就是这类方法的典型。更精细的做法是用 tokenizer 精确计算每条消息的 token 数，然后按优先级裁剪：工具输出优先截断，用户消息最后裁剪。</p>
+<p><strong>方法 5：分层压缩</strong> — 实际上是前四种方法的组合策略，按时间衰减逐级压缩：</p>
+<pre><code class="language-python">class TieredCompression:
+    &quot;&quot;&quot;分层压缩：越旧的记忆，压缩粒度越粗&quot;&quot;&quot;
+
+    def compress(self, messages: list[dict], current_turn: int) -&gt; list[dict]:
+        result = []
+        for i, msg in enumerate(messages):
+            age = current_turn - i  # 消息&quot;年龄&quot;
+
+            if age &lt;= 5:
+                # 近期（5 轮内）：保留原文
+                result.append(msg)
+            elif age &lt;= 20:
+                # 中期（5-20 轮）：截断到 200 token
+                result.append(self._truncate(msg, max_tokens=200))
+            else:
+                # 远期（&gt;20 轮）：只保留实体
+                # 由外层的 IncrementalSummarizer 处理
+                pass
+
+        return result
+
+    def _truncate(self, msg: dict, max_tokens: int) -&gt; dict:
+        content = msg[&quot;content&quot;]
+        # 简化实现：按字符估算 token
+        if len(content) &gt; max_tokens * 3:
+            content = content[:max_tokens * 3] + &quot;...[truncated]&quot;
+        return {**msg, &quot;content&quot;: content}
+</code></pre>
+<p>该选哪种方法？简单场景从滑动窗口开始；需要保留语义时上摘要压缩；实体密集型任务（比如客户画像）用实体提取；生产环境通常用分层压缩把这些方法组合起来。本文第 10 节的遗忘机制和这里的压缩方法是互补的：<strong>压缩决定&quot;怎么瘦身&quot;，遗忘决定&quot;该不该丢&quot;</strong>。</p>
 <hr>
 <h2>8. Trade-off 分析</h2>
 <p>记忆系统的设计充满权衡。没有银弹，只有适合你场景的平衡点。</p>
@@ -3531,90 +3668,75 @@ class MemoryManager:
 <p><img src="/images/blog/agentic-08/05-memory-routing-tree.svg" alt="记忆分层决策树"></p>
 <h3>具体示例</h3>
 <p><strong>示例 1：用户输入 &quot;把上次的数据改成蓝色&quot;</strong></p>
-<pre><code>Step 1: 是否为当前对话流的直接产物？ → 是
-  └─&gt; Conversation Buffer (L1)
-
-  存储：{
-    &quot;role&quot;: &quot;user&quot;,
-    &quot;content&quot;: &quot;把上次的数据改成蓝色&quot;,
-    &quot;timestamp&quot;: &quot;2024-03-20T10:15:00Z&quot;
-  }
-
-  同时，Agent 需要在 Working Memory 中记录：
-  {
-    &quot;task&quot;: &quot;修改数据可视化颜色&quot;,
-    &quot;reference&quot;: &quot;上次生成的图表&quot;,
-    &quot;action&quot;: &quot;pending&quot;
-  }
+<p>Step 1: 是否为当前对话流的直接产物？ → 是 → <strong>Conversation Buffer (L1)</strong></p>
+<p>存储：</p>
+<pre><code class="language-json">{
+  &quot;role&quot;: &quot;user&quot;,
+  &quot;content&quot;: &quot;把上次的数据改成蓝色&quot;,
+  &quot;timestamp&quot;: &quot;2024-03-20T10:15:00Z&quot;
+}
+</code></pre>
+<p>同时，Agent 需要在 Working Memory 中记录：</p>
+<pre><code class="language-json">{
+  &quot;task&quot;: &quot;修改数据可视化颜色&quot;,
+  &quot;reference&quot;: &quot;上次生成的图表&quot;,
+  &quot;action&quot;: &quot;pending&quot;
+}
 </code></pre>
 <p><strong>示例 2：执行过程中发现&quot;数据有 15% 的缺失值&quot;</strong></p>
-<pre><code>Step 1: 是否为当前任务执行状态信息？ → 是
-  └─&gt; Working Memory (L2)
-
-  存储到 Scratchpad：{
-    &quot;data_quality&quot;: {
-      &quot;missing_percentage&quot;: 0.15,
-      &quot;affected_columns&quot;: [&quot;sales&quot;, &quot;region&quot;],
-      &quot;handling_strategy&quot;: &quot;forward_fill&quot;
-    }
+<p>Step 1: 是否为当前任务执行状态信息？ → 是 → <strong>Working Memory (L2)</strong></p>
+<p>存储到 Scratchpad：</p>
+<pre><code class="language-json">{
+  &quot;data_quality&quot;: {
+    &quot;missing_percentage&quot;: 0.15,
+    &quot;affected_columns&quot;: [&quot;sales&quot;, &quot;region&quot;],
+    &quot;handling_strategy&quot;: &quot;forward_fill&quot;
   }
-
-  同时注入到当前 prompt 中，让 Agent 在后续决策时考虑这一发现
+}
 </code></pre>
+<p>同时注入到当前 prompt 中，让 Agent 在后续决策时考虑这一发现。</p>
 <p><strong>示例 3：任务完成，提取&quot;我需要先清理缺失值再做聚合&quot;这一教训</strong></p>
-<pre><code>Step 1: 是否为当前任务执行状态信息？ → 否
-Step 2: 是否需要跨会话保留？ → 是
-Step 3: 是否可以泛化为结构化知识？ → 是
-
-  └─&gt; Semantic Memory (L4) 知识库
-
-  存储：{
-    &quot;rule_id&quot;: &quot;data_prep_order&quot;,
-    &quot;title&quot;: &quot;数据处理的执行顺序&quot;,
-    &quot;content&quot;: &quot;清理缺失值必须在聚合操作之前，否则会导致统计不准&quot;,
-    &quot;applicable_scenarios&quot;: [&quot;数据分析&quot;, &quot;ETL流程&quot;],
-    &quot;confidence&quot;: 0.95
-  }
+<p>Step 1: 是否为当前任务执行状态信息？ → 否<br>Step 2: 是否需要跨会话保留？ → 是<br>Step 3: 是否可以泛化为结构化知识？ → 是 → <strong>Semantic Memory (L4) 知识库</strong></p>
+<p>存储：</p>
+<pre><code class="language-json">{
+  &quot;rule_id&quot;: &quot;data_prep_order&quot;,
+  &quot;title&quot;: &quot;数据处理的执行顺序&quot;,
+  &quot;content&quot;: &quot;清理缺失值必须在聚合操作之前，否则会导致统计不准&quot;,
+  &quot;applicable_scenarios&quot;: [&quot;数据分析&quot;, &quot;ETL流程&quot;],
+  &quot;confidence&quot;: 0.95
+}
 </code></pre>
 <p><strong>示例 4：用户说 &quot;我发现你上次的方法不对，应该用另一种方式&quot;</strong></p>
-<pre><code>Step 1: 是否为当前任务执行状态信息？ → 否
-Step 2: 是否需要跨会话保留？ → 是
-Step 3: 是否可以泛化为结构化知识？ → 否
-
-  └─&gt; Episodic Memory (L3)
-
-  存储：{
-    &quot;episode_id&quot;: &quot;ep_2024_03_20_001&quot;,
-    &quot;task_description&quot;: &quot;处理销售数据分析&quot;,
-    &quot;previous_approach&quot;: &quot;使用线性回归预测&quot;,
-    &quot;corrected_approach&quot;: &quot;应使用时间序列模型（ARIMA）&quot;,
-    &quot;user_feedback&quot;: &quot;线性回归忽略了季节性&quot;,
-    &quot;lesson&quot;: &quot;销售数据具有明显季节性，不能用简单线性模型&quot;,
-    &quot;importance&quot;: 0.85
-  }
+<p>Step 1: 是否为当前任务执行状态信息？ → 否<br>Step 2: 是否需要跨会话保留？ → 是<br>Step 3: 是否可以泛化为结构化知识？ → 否 → <strong>Episodic Memory (L3)</strong></p>
+<p>存储：</p>
+<pre><code class="language-json">{
+  &quot;episode_id&quot;: &quot;ep_2024_03_20_001&quot;,
+  &quot;task_description&quot;: &quot;处理销售数据分析&quot;,
+  &quot;previous_approach&quot;: &quot;使用线性回归预测&quot;,
+  &quot;corrected_approach&quot;: &quot;应使用时间序列模型（ARIMA）&quot;,
+  &quot;user_feedback&quot;: &quot;线性回归忽略了季节性&quot;,
+  &quot;lesson&quot;: &quot;销售数据具有明显季节性，不能用简单线性模型&quot;,
+  &quot;importance&quot;: 0.85
+}
 </code></pre>
-<p><strong>示例 5：Agent 自动生成的中间结果（如 API 调用返回值）</strong></p>
-<pre><code>Step 1: 是否为当前对话流的直接产物？ → 是
-Step 2: 是当前任务执行状态信息？ → 是
-
-  └─&gt; Working Memory (L2) + Conversation Buffer (L1)
-
-  在 L2 中作为&quot;已执行步骤的输出&quot;：
-  {
-    &quot;step_id&quot;: 2,
-    &quot;action&quot;: &quot;fetch_data&quot;,
-    &quot;result&quot;: {
-      &quot;rows&quot;: 50000,
-      &quot;columns&quot;: 12,
-      &quot;date_range&quot;: &quot;2024-01 to 2024-12&quot;
-    }
+<p><strong>示例 5：Agent 自动生成的中间结果</strong>（如 API 调用返回值）</p>
+<p>Step 1: 是否为当前对话流的直接产物？ → 是<br>Step 2: 是当前任务执行状态信息？ → 是 → <strong>Working Memory (L2) + Conversation Buffer (L1)</strong></p>
+<p>在 L2 中作为&quot;已执行步骤的输出&quot;：</p>
+<pre><code class="language-json">{
+  &quot;step_id&quot;: 2,
+  &quot;action&quot;: &quot;fetch_data&quot;,
+  &quot;result&quot;: {
+    &quot;rows&quot;: 50000,
+    &quot;columns&quot;: 12,
+    &quot;date_range&quot;: &quot;2024-01 to 2024-12&quot;
   }
-
-  在 L1 中作为&quot;对话历史&quot;的一部分：
-  {
-    &quot;role&quot;: &quot;tool&quot;,
-    &quot;content&quot;: &quot;Successfully fetched data: 50000 rows, 12 columns&quot;
-  }
+}
+</code></pre>
+<p>在 L1 中作为&quot;对话历史&quot;的一部分：</p>
+<pre><code class="language-json">{
+  &quot;role&quot;: &quot;tool&quot;,
+  &quot;content&quot;: &quot;Successfully fetched data: 50000 rows, 12 columns&quot;
+}
 </code></pre>
 <h3>决策树实现</h3>
 <pre><code class="language-python">from enum import Enum
@@ -4036,24 +4158,9 @@ class ForgettingManager:
 <h3>问题分析</h3>
 <p>假设你有一个 Episodic Memory 库，包含 10,000 条过去的交互记录。每条记录平均 200 tokens。</p>
 <p><strong>全量 Embedding 的成本</strong>：</p>
-<pre><code>10,000 条 × 200 tokens = 2,000,000 tokens
-
-假设 Embedding API 的价格是 $0.02 per 1M tokens（如 OpenAI text-embedding-3-small）：
-成本 = 2,000,000 × $0.02 / 1,000,000 = $0.04
-
-看起来不贵。但问题是：
-1. 如果每天新增 100 条记忆，每周需要重新 Embedding？
-2. 如果记忆库增长到 100,000 条？
-3. 如果你运行多个 Agent 实例？
-</code></pre>
+<p>10,000 条 × 200 tokens = 2,000,000 tokens。假设 Embedding API 价格 $0.02/1M tokens（如 text-embedding-3-small），成本仅 $0.04。看起来不贵，但问题是：如果每天新增 100 条记忆、每周需要全量重新 Embedding？如果记忆库增长到 100,000 条？如果运行多个 Agent 实例？</p>
 <p><strong>实际成本考虑</strong>：</p>
-<pre><code>周场景：
-- 每周全量 Embedding: 10,000 条 × 200 tokens × 52 周 = 104M tokens/年
-- 年成本: ~$2,080/年（单个库）
-
-如果有 10 个 Agent 实例，每个都维护自己的记忆库：
-- 年成本: $20,800/年
-</code></pre>
+<p>每周全量 Embedding 10,000 条 × 200 tokens × 52 周 = 104M tokens/年，年成本约 $2,080（单个库）。如果有 10 个 Agent 实例各自维护记忆库，年成本将达到 $20,800。</p>
 <h3>策略 1: 增量 vs 全量</h3>
 <p>最直接的优化：只 Embedding 新增或修改的记忆，而不是全量重新计算。</p>
 <pre><code class="language-python">from datetime import datetime, timedelta
@@ -4139,18 +4246,15 @@ class IncrementalEmbeddingStrategy:
         return tokens / 1_000_000 * price_per_1m
 </code></pre>
 <p><strong>成本对比</strong>：</p>
-<pre><code>假设每天新增 50 条记忆（200 tokens/条）：
-- 增量 Embedding (每天): 50 × 200 = 10K tokens/天 = $0.0002/天
-- 全量 Embedding (每周): 2M tokens/周 = $0.04/周 = $2.08/年
-
-![Re-embedding 成本对比](/images/blog/agentic-08/08-re-embedding-cost.svg)
-
-### 策略 2: 哈希缓存（内容不变则跳过重新 Embedding）
-
-问题：有些记忆的内容可能被修改（如重要性评分改变，但文本内容不变）。此时重新 Embedding 是浪费。
-
-```python
-import hashlib
+<p>假设每天新增 50 条记忆（200 tokens/条）：</p>
+<ul>
+<li>增量 Embedding（每天）: 50 × 200 = 10K tokens/天 = $0.0002/天</li>
+<li>全量 Embedding（每周）: 2M tokens/周 = $0.04/周 = $2.08/年</li>
+</ul>
+<p><img src="/images/blog/agentic-08/08-re-embedding-cost.svg" alt="Re-embedding 成本对比"></p>
+<h3>策略 2: 哈希缓存（内容不变则跳过重新 Embedding）</h3>
+<p>问题：有些记忆的内容可能被修改（如重要性评分改变，但文本内容不变）。此时重新 Embedding 是浪费。</p>
+<pre><code class="language-python">import hashlib
 
 class EmbeddingCacheWithHashVerification:
     &quot;&quot;&quot;使用内容哈希缓存 Embedding 结果&quot;&quot;&quot;
@@ -4808,8 +4912,7 @@ class MultiTenantMemoryStore:
 <p><strong>第 10 章 - 系统化遗忘机制</strong>：超越时间衰减的简单模型，介绍了三种高级策略：基于重要性的遗忘、基于查询热度的衰减、以及结合三维因素（时间 × 重要性 × 热度）的混合遗忘。给出了完整的 <code>ForgettingManager</code> 类实现。</p>
 <p><strong>第 11 章 - Embedding 成本优化</strong>：向量化的隐性成本往往被忽视。本章讨论增量 vs 全量 Embedding、哈希缓存（跳过内容未变的重新计算）、以及批量处理的吞吐优化，可以削减 40-60% 的 Embedding 成本。给出了 <code>EmbeddingCostOptimizer</code> 的完整实现。</p>
 <p><strong>第 12 章 - 多租户隔离与并发控制</strong>：当 Agent 服务多用户时，记忆隔离和并发一致性变成必需品。本章介绍了命名空间隔离、乐观锁 + 版本号的并发控制、以及租户级配额管理，给出了 <code>MultiTenantMemoryStore</code> 的框架代码。</p>
-<p>在四层记忆中，Layer 4 Semantic Memory 的&quot;读取&quot;操作——即如何从大规模知识库中高效检索相关信息——是一个足够深的话题。它涉及 Ingestion、Chunking、Embedding、Hybrid Retrieval、Reranking 等一系列工程决策。</p>
-<p>这正是下一篇文章的主题：<strong>RAG as Cognitive Memory: 检索增强生成的工程实践</strong>。我们将深入 RAG 管线的每一个环节，探讨如何为 Agent 构建高质量的&quot;外部大脑&quot;。</p>
+<p>在四层记忆中，Layer 4 Semantic Memory 的&quot;读取&quot;操作——即如何从大规模知识库中高效检索相关信息——是一个足够深的话题。它涉及 Ingestion、Chunking、Embedding、Hybrid Retrieval、Reranking 等一系列工程决策，值得单独展开。</p>
 <hr>
 <h2>进一步思考</h2>
 <ol>
