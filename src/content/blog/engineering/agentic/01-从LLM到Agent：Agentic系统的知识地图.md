@@ -1,6 +1,6 @@
 ---
 title: "从LLM到Agent：Agentic系统的知识地图"
-description: "从 LLM 的局限出发，定义 Agent 的核心组成，绘制 Agentic 系统全景架构图，并通过代码演示从 ChatCompletion 到完整 Agent 的演进路径。"
+description: "从 LLM 的函数本质出发，定义 Agent 的组件模型与控制循环，绘制十三篇文章的依赖关系，并给出 Agent 不该用的清晰判据。"
 pubDate: "2025-12-01"
 tags: ["Agentic", "AI Engineering", "LLM"]
 series:
@@ -9,336 +9,251 @@ series:
 author: "skyfalling"
 ---
 
----
-
-## 1. 为什么需要从 LLM 走向 Agent
-
-### 1.1 LLM 是一个了不起的函数
-
-2022 年底以来，以 GPT-4、Claude、Gemini 为代表的大语言模型展示了令人印象深刻的能力：理解自然语言、生成结构化文本、进行多步推理、甚至通过各类考试。但如果我们冷静地回到工程视角，LLM 本质上是一个**无状态的文本映射函数**：
-
-```
-f(prompt: str, context: str) → response: str
-```
-
-它接收一段文本，返回一段文本。仅此而已。
-
-### 1.2 LLM 的五个结构性局限
-
-当你试图用 LLM 解决真实世界的任务时，会迅速撞上以下墙壁：
-
-| 局限 | 本质原因 | 后果 |
-|------|---------|------|
-| **知识静态** | 训练数据有截止日期 | 无法回答实时问题，产生幻觉 |
-| **无法行动** | 输出是文本，不是可执行指令 | 不能查数据库、调 API、操作文件 |
-| **记忆易失** | 上下文窗口有限且无持久状态 | 长对话丢失信息，跨会话失忆 |
-| **单步思维** | 一次 completion 只做一次推理 | 复杂任务无法分解、无法迭代 |
-| **不会反思** | 不检查自己的输出质量 | 错误会被自信地传递下去 |
-
-这五个局限不是"模型不够大"能解决的问题——它们是**架构层面的缺失**。更大的模型只是让函数 `f` 更强，但不会让函数变成系统。
-
-### 1.3 从函数到系统的必然性
-
-真实世界的任务天然具有以下特征：
-
-- **需要多步执行**：完成一次数据分析需要查询 → 清洗 → 计算 → 可视化
-- **需要外部交互**：查实时数据、调第三方 API、读写文件
-- **需要持久记忆**：记住用户偏好、历史决策、领域知识
-- **需要自我纠错**：发现错误后能回退、重试、换策略
-- **需要可靠执行**：有超时、有重试、有降级、有审计
-
-当这些需求叠加在一起，你需要的不再是一个"更好的 prompt"，而是一个**围绕 LLM 构建的系统**。这个系统，就是 Agent。
+**LLM 是函数，Agent 是系统**——前者强大但孤立，后者用一组组件围绕 LLM 构建出可执行的执行环境。这两者之间的差距不靠"模型变大"自动消解，而是要逐项填上一系列架构层面的缺失。本文从 LLM 的数学本质出发，导出五个无法回避的局限，对应到必须配齐的五件套组件，再到组件之上的控制循环；最后落到一组工程判断——什么时候该用 Agent、什么时候坚决不该用、Agent 工程里哪两件事的投入回报率被最严重低估。读完它，你应该能判断一个 Agent 项目"靠不靠谱"，并知道把劲花在哪里最划算。
 
 ---
 
-## 2. 定义 Agent
+## 1. LLM 是函数，Agent 是系统
 
-### 2.1 一个精确的定义
+把所有复杂性剥离，LLM 的数学本质极其简洁：
+
+```text
+f(prompt: str) → response: str
+```
+
+它接收文本、返回文本。仅此而已。无论你把这个函数包装成对话框、API 还是 IDE 插件，它在底层始终是这个形态：一个无状态的文本到文本的映射。
+
+但当你试图用它解决真实任务时——客服回答工单、代码助手调试 bug、研究助手做行业调研、运维 Agent 排查事故——会迅速撞上五堵墙：**无记忆**（跨调用不保留任何信息）、**无工具**（输出只是 token，无法产生副作用）、**无规划**（自回归生成不能回头修改）、**无状态**（不知道执行到第几步）、**无反思**（confidence 不等于 correctness）。
+
+![LLM 的五个局限](/images/blog/agentic/llm-five-limitations.svg)
+
+这五堵墙都不是模型能力变强能撞穿的——它们是架构层面的缺失。GPT-5 比 GPT-3 强很多，但它依然没有记忆、没有工具、没有结构化的状态、不会自我纠错。**模型替换能解决推理质量问题，但解决不了系统设计问题**。
+
+当真实任务需要多步执行、外部交互、持久记忆、自我纠错时，你需要的不再是"更好的 prompt"或"更强的模型"，而是**围绕 LLM 构建的系统**。这就是 Agent。
+
+---
+
+## 2. 五个局限对应五个组件
 
 **Agent = LLM + Memory + Tools + Planner + Runtime**
 
-这不是随意的拼凑，而是对上一节五个局限的逐一回应：
+这不是隐喻或营销话术，而是对五个局限的逐一回应——每个组件对应一个被填补的能力缺口：
 
-![LLM 五大局限与 Agent 组件的对应关系](/images/blog/agentic-01/llm-limitations-solutions.svg)
+| 组件 | 解决哪个局限 | 职责 |
+|------|------------|------|
+| LLM | — | 语义理解、推理、生成（核心推理引擎） |
+| Memory | 无记忆、无状态 | 短期对话窗口 + 长期知识库 + 任务执行状态 |
+| Tools | 无工具 | 与外部世界的接口（搜索、查库、调 API、执行代码） |
+| Planner | 无规划 | 将复杂任务分解为可执行子步骤、处理分支与回溯 |
+| Runtime | 无反思 | 控制循环、错误处理、状态管理、超时控制、退出判定 |
 
-每个组件都有明确的职责：
+这套分解的价值不在于"组件清单本身"，而在于它对应着五种独立的失败模式——出问题时能快速定位是哪一个组件的责任：跨轮失忆是 Memory 问题、调用工具失败是 Tools 描述/参数问题、执行混乱是 Planner/循环问题、反复犯同样错是 Runtime 的反思/退出条件缺失，最后才是 LLM 推理本身。**Agent 设计的核心，是承认 LLM 是系统里最不可靠的部分，然后用其他组件围绕它构建可控的执行环境**。
 
-- **LLM**：核心推理引擎。理解意图、生成计划、选择工具、产出结果。它是"大脑"，但不是全部。
-- **Memory**：分为短期记忆（当前对话上下文、工作区状态）和长期记忆（向量数据库中的文档、用户画像、历史经验）。短期记忆保证连贯性，长期记忆突破知识边界。
-- **Tools**：Agent 与外部世界的接口。一个 Tool 就是一个带有 JSON Schema 描述的可调用函数。搜索引擎、数据库查询、代码执行器、API 网关——都是 Tool。
-- **Planner**：将复杂任务分解为可执行的子步骤。从简单的 ReAct（交替推理和行动）到复杂的分层规划（Hierarchical Planning），Planner 决定了 Agent 的"智商上限"。
-- **Runtime**：Agent 的执行环境。负责控制循环的调度、工具调用的执行、错误处理、超时控制、状态持久化。没有 Runtime，前面四个组件只是散落的零件。
+至于每个组件具体怎么工作、L1 到 L4 不同自主性等级如何切分、成本结构里 token 为什么是小头——这是另一个独立话题的范围，不在这张地图里展开。
 
-### 2.2 Agent 与 LLM 的本质差异
+### 最小可用 Agent 的代码骨架
 
-用一个类比来强化理解：
+把这套理解落到代码，一个**最小可用 Agent**大约长这样——这就是后续 12 篇要逐一深化的"原型"：
 
-![LLM vs Agent 类比](/images/blog/agentic-01/llm-vs-agent-analogy.svg)
+```python
+def minimal_agent(goal: str, tools: list, max_steps: int = 10) -> str:
+    memory = []                                       # Memory：累积对话状态
+    messages = [system_msg(), user_msg(goal)]
 
-这个区分极其重要。很多团队把 LLM 当 Agent 用（期望一次 prompt 解决所有问题），或者把 Agent 当 LLM 用（忽略控制循环和状态管理），都会走进死胡同。
+    for step in range(max_steps):                    # Runtime：控制循环 + 退出条件
+        response = llm.complete(messages, tools=tools)  # LLM：核心推理
+
+        if not response.tool_calls:                   # Planner（隐式）：决定继续还是结束
+            return response.text
+
+        for tool_call in response.tool_calls:         # Tools：与外部世界交互
+            try:
+                result = invoke(tool_call)
+            except ToolError as e:
+                result = f"Tool failed: {e}"          # Reflect：错误回传让 LLM 自我纠错
+            messages.append(tool_msg(tool_call.id, result))
+            memory.append((tool_call, result))
+
+    return safe_terminate("max_steps reached")        # Runtime 兜底：防止无限循环
+```
+
+这 14 行里塞了五个组件——LLM 是 `llm.complete`、Memory 是 `messages` + `memory`、Tools 是 `invoke(tool_call)`、Planner 是 LLM 隐式做的"调工具还是给答案"判断、Runtime 是整个 for 循环 + 错误捕获 + 上限。**整个系列就是把这 14 行的每一层都拆开、深挖、给出生产级实现**。
 
 ---
 
-## 3. Agent 的核心控制循环
+## 3. Observe-Think-Plan-Act-Reflect-Update：循环让 Agent 区别于 Chain
 
-Agent 之所以能完成复杂任务，核心在于它运行一个**持续的控制循环**。这个循环可以抽象为六个阶段：
+Agent 之所以能完成复杂任务，核心在于它运行一个**持续的控制循环**：
 
-![Agent Control Loop](/images/blog/agentic-01/agent-control-loop.svg)
+**Observe → Think → Plan → Act → Reflect → Update**
 
-各阶段职责：
+![Agent 控制循环](/images/blog/agentic/agent-control-loop.svg)
 
-1. **Observe**（感知）：接收用户输入或环境变化。不仅是文本——可能是工具返回的结果、系统事件、定时触发。
-2. **Think**（思考）：LLM 理解当前状态和目标。这一步对应 prompt 中的 System Message 和上下文组装。
-3. **Plan**（规划）：决定下一步做什么。可能是调用工具、请求更多信息、或直接回答。ReAct 框架在此步生成 Thought + Action。
-4. **Act**（执行）：真正执行动作。调用 API、查询数据库、运行代码、生成文件。这一步有**副作用**。
-5. **Reflect**（反思）：检查执行结果是否符合预期。结果有错误？重试。结果不完整？补充。任务完成？退出循环。
-6. **Update**（更新）：将本轮的观察、决策、结果写入记忆。更新会话上下文，可能也写入长期记忆。
+这是 Agent 与 Chain（LangChain 早期的核心抽象）最关键的区别。Chain 是 DAG——节点之间的连接在设计时确定。Agent 是循环——每一步执行后，下一步执行什么由 LLM 在运行时决定。这让 Agent 能处理设计阶段无法预见的分支，但也带来了 Chain 没有的所有难题：会不会绕圈？会不会忘了目标？什么时候停？
 
-**关键设计决策：何时退出循环？**
+每个阶段都有独立的设计权衡：
 
-这是 Agent 设计中最容易被忽视的问题。常见策略：
+| 阶段 | 关键问题 | 常见失败 |
+|------|---------|---------|
+| Observe | 哪些信息进入 LLM 上下文？context 是稀缺资源 | 把所有历史塞进 prompt，前几轮的关键信息被噪声淹没 |
+| Think | 理解当前状态和目标 | 没有结构化状态，LLM 每轮都要"重新理解"任务 |
+| Plan | 决定下一步——调工具、追问、还是直接回答 | 过早跳到 Act 而没规划；或规划过深导致延迟 |
+| Act | 真正执行动作。有副作用 | 工具调用参数错误、网络抖动、权限不足 |
+| Reflect | 检查结果是否符合预期。重试？补充？退出？ | 没有 Reflect 步，错误结果被当作有效输入传给下一轮 |
+| Update | 将本轮观察、决策、结果写入记忆 | 全量写入导致记忆膨胀；不写入导致循环失忆 |
 
-- **Max Iterations**：硬性限制最大循环次数（防止无限循环和 token 爆炸）
-- **Goal Completion**：LLM 判断任务已完成（但 LLM 判断可能不准）
-- **Confidence Threshold**：当 Reflect 阶段的置信度低于阈值时，请求人类介入
-- **Token Budget**：累计 token 消耗达到上限时强制退出
+**Reflect 这一步在工程实践中被严重低估**。很多 Agent 教程把循环画成 Observe → Act → Observe，省掉了 Reflect，本质上是把 Reflect 隐式塞进了 LLM 的下一轮推理。这在简单任务里能跑，但在复杂任务里几乎一定翻车——LLM 没有被显式提示"评估上一步结果"，它会默认上一步是成功的，把错误的中间结果当作事实继续推理。
 
-在生产系统中，通常需要**组合多种策略**，以 Max Iterations 作为保底。
+**Update 不是简单地把所有内容写进 Memory**。一个常见的错误是把每轮的完整观察、推理、动作全部追加到对话历史，几轮之后 prompt 就被噪声淹没了。好的 Update 策略要做摘要、要分层（短期 working memory vs 长期 episodic memory）、要剔除已被后续步骤覆盖的中间结果。
 
----
+**关键设计决策：何时退出循环**——这是最容易被忽视的问题。Agent 的循环本质上是"信任 LLM 来决定何时停"，而 LLM 并不可靠。生产中通常组合多种策略：
 
-## 4. Agentic 系统的全景架构
+| 退出条件 | 触发逻辑 | 适用场景 |
+|---------|---------|---------|
+| max_iterations | 步数硬上限 | 防止失控的最低保障，必须有 |
+| goal_completion | LLM 显式声明任务完成 | 主退出条件，但需要校验 |
+| token_budget | 累计 token 超过预算 | 成本兜底，常被忽视但很关键 |
+| loop_detection | 检测到重复行为或无进展 | 防止 Agent 在错误状态里打转 |
+| human_intervention | 用户主动叫停 | 长时间运行的 Agent 必须暴露 |
 
-下面这张图展示了一个完整的 Agentic 系统的分层架构。它是整个系列 15 篇文章的"地图"：
-
-![Agentic 系统全景架构](/images/blog/agentic-01/agentic-architecture.svg)
-
-**架构解读**：
-
-- **自底向上**：每一层为上一层提供能力。LLM Runtime 提供推理能力，Control Loop 提供执行循环，Tool 提供行动能力，Memory 提供持久化，Planner 提供智能规划，Multi-Agent 提供协作，Protocol 提供互操作性，Production 提供生产级保障。
-- **耦合方向**：上层依赖下层，但下层不应感知上层。Tool Layer 不需要知道自己被 Multi-Agent 调用还是 Single-Agent 调用。
-- **灵活组合**：不是每个系统都需要所有层。一个简单的 RAG 聊天机器人可能只需要 LLM Runtime + Memory Layer。一个自动化运维 Agent 可能需要 Control Loop + Tool + Planner。架构图是上界，不是下界。
+实践中往往是这些条件的"或"——任一触发就退出。**只设 max_iterations 不够**，因为它无法区分"成功完成"和"打转了 10 圈"。只设 goal_completion 也不够，因为 LLM 可能永远不主动声明完成。
 
 ---
 
-## 5. 15 篇文章导航地图
+## 4. 一个调研任务里 Agent 比 LLM 多做了什么
 
-以下是整个系列的文章列表，以及每篇文章对应全景图中的位置：
+让一个 Agent 完成："调研 2026 年主流的 Agent 框架，写一份 1000 字技术选型报告"。
 
-### Phase 1: What Is an Agent?
+纯 LLM（没有 Agent 能力）会直接从训练数据中生成——内容可能过时、引用可能编造、无法保证数据准确，但它会以同样自信的语气输出一份"看起来不错"的报告。这种"以高置信度输出过时或错误信息"的特性，正是 LLM 单独使用时最大的风险。
 
-| # | 文章 | 聚焦层 |
-|---|------|--------|
-| **01** | **From LLM to Agent: Agentic 系统的知识地图** ← 本文 | 全景总览 |
-| 02 | From Prompt to Agent: 为什么 LLM 本身不是 Agent | LLM Runtime → Control Loop |
-| 03 | Agent 的形态与边界：从 Copilot 到自主系统 | 形态 · 边界 · 定位 |
+Agent 会这样工作：
 
-### Phase 2: How to Program an Agent?
+| 轮 | 动作 | 体现的能力 |
+|---|------|----------|
+| 1 | 理解任务，拆为三步：搜索主流框架 → 调研各自特性 → 撰写报告 | Planner |
+| 2 | 调用搜索工具，发现 LangGraph、CrewAI、OpenAI Agents SDK 等 | Tools |
+| 3 | 分别调用搜索查询每个框架的版本、star 数、特性，调网页抓取拿文档 | Tools + 多步执行 |
+| 4 | 发现 Mastra 信息不充分，追加一轮搜索补充 | Reflect + 重新规划 |
+| 5 | 综合所有信息撰写报告 | Memory（跨轮整合） |
+| 6 | 反思质量——是否覆盖所有框架、数据是否矛盾、字数是否达标。发现缺性能对比，补充一段 | Reflect + 迭代优化 |
+| 7 | 输出最终报告 | 退出循环 |
 
-| # | 文章 | 聚焦层 |
-|---|------|--------|
-| 04 | The Agent Control Loop: Agent 运行时的核心抽象 | Control Loop Layer |
-| 05 | Tool Calling Deep Dive: 让 LLM 成为可编程接口 | Tool Layer |
-| 06 | Prompt Engineering for Agents: 面向 Agent 的提示词工程 | LLM Runtime + Planner |
-| 07 | Agent Runtime from Scratch: 不依赖框架构建 Agent | Control Loop + Tool + Memory |
+Agent 做了 LLM 做不到的四件事：**主动搜索实时信息、在多步骤间传递上下文、把大任务拆成小步骤、发现不足后主动补充**——分别对应工具调用、记忆、规划、反思。这四件事每一件背后都不是"模型变强了"，而是系统层面的设计：搜索工具是被注册到 Agent 的 ToolRegistry 里的、跨轮上下文是被 Memory 模块持续累积和摘要的、任务拆分是 Planner 在第 1 轮就完成的、补充搜索是 Reflect 在第 6 轮主动触发的。
 
-### Phase 3: How to Scale Agent Intelligence?
+值得注意的是失败模式：
 
-| # | 文章 | 聚焦层 |
-|---|------|--------|
-| 08 | Memory Architecture: Agent 的状态与记忆体系 | Memory Layer |
-| 09 | RAG as Cognitive Memory: 检索增强生成的工程实践 | Memory Layer (RAG) |
-| 10 | Planning and Reflection: 从 ReAct 到分层规划 | Planner Layer |
-| 11 | Multi-Agent Collaboration: 多 Agent 协作模式 | Multi-Agent Layer |
+- 如果工具调用失败而没有 Reflect，第 5 步的"综合"会基于残缺数据写出错误结论
+- 如果 Memory 设计不当，第 5 步看不到第 3 步的搜索结果
+- 如果没有 max_iterations，第 6 步的"质量反思"可能反复触发"继续优化"，永远不出报告
+- 如果工具描述不清，第 2 步可能调用错误的工具或参数
 
-### Phase 4: How to Ship Agents to Production?
-
-| # | 文章 | 聚焦层 |
-|---|------|--------|
-| 12 | Agent 框架与 SDK：从 LangChain 到模型厂商原生 SDK | 框架 · SDK · 选型 |
-| 13 | MCP 与工具协议 + A2A：Agent 的协议化未来 | Protocol Layer |
-| 14 | Production-Grade Agent Systems: 评估、成本与安全 | Production Layer |
-| 15 | Computer Use 与 GUI Agent：超越 API 的交互范式 | Tool Layer (GUI) |
-
-每篇文章都可以独立阅读，但按顺序阅读可以获得最连贯的知识构建过程。
+**这些失败都不是 LLM 的错，而是系统设计的错**。这就是为什么 Agent 工程的重心常常不在"用什么模型"，而在"循环怎么设计、工具怎么定义、记忆怎么管理、何时退出"。
 
 ---
 
-## 6. 从 ChatCompletion 到 Agent 的演进路径
+## 5. Agent、Chain、Workflow 之辨
 
-理解 Agent 的最好方式，是看它如何从最简单的 API 调用一步步演进而来。下面用代码勾勒每一级的**核心跃迁**——完整实现将在后续文章中展开。
+社区对这几个概念的边界一直模糊，但工程上的区别清晰且重要：
 
-### Level 0 → 1: 从"能说"到"能做"（+ Tool Calling）
+| 抽象 | 控制流由谁决定 | 适用 | 局限 |
+|------|--------------|------|------|
+| Workflow | 设计时由开发者用 DAG/状态机定义 | 步骤固定的业务流程 | 无法处理设计时未预见的分支 |
+| Chain | 设计时定义节点连接，节点内可能调 LLM | LLM 作为步骤之一的固定流程 | 节点顺序是死的，遇到异常只能回退 |
+| Agent | 运行时由 LLM 决定下一步 | 探索性、分支多、需要试错的任务 | 不可预测、调试困难、成本高 |
 
-单次 ChatCompletion 只是一个文本映射函数。加入 Tool Calling 后，LLM 可以输出结构化的函数调用请求，由运行时执行并将结果反馈——这是 Agent 的第一个跃迁。
-
-```python
-# Level 0: 纯文本映射，一问一答
-response = client.chat.completions.create(
-    model="gpt-4o",
-    messages=[{"role": "user", "content": user_message}],
-)
-
-# Level 1: + Tool Calling —— LLM 决定"调哪个函数、传什么参数"
-response = client.chat.completions.create(
-    model="gpt-4o",
-    messages=messages,
-    tools=tools,  # JSON Schema 描述的函数列表
-)
-if response.choices[0].message.tool_calls:
-    # 执行工具 → 将结果追加到 messages → 再次调用 LLM 生成最终回答
-    ...
-```
-
-**局限**：只能做一步。如果任务需要"先查天气、再查航班、最后订酒店"，这个结构无法处理。
-
-> 深入阅读：第 05 篇《工具调用深度解析》
-
-### Level 1 → 2: 从"一步"到"多步"（+ Control Loop）
-
-引入循环，让 Agent 能持续执行直到任务完成或达到退出条件。
+判断该选哪种的伪代码：
 
 ```python
-for i in range(MAX_ITERATIONS):
-    response = client.chat.completions.create(
-        model="gpt-4o", messages=messages, tools=tools
-    )
-    msg = response.choices[0].message
-    messages.append(msg)
+def choose_abstraction(task: TaskSpec) -> str:
+    """三个判断维度，决定 Workflow / Chain / Agent"""
+    # 维度 1：路径数量
+    if task.path_count == 1:
+        return "Chain"          # 路径唯一，Chain 最直接
 
-    if not msg.tool_calls:      # 退出条件：LLM 认为任务完成
-        return msg.content
+    # 维度 2：路径是否可枚举
+    if task.path_count <= 20 and task.paths_are_enumerable:
+        return "Workflow"        # 路径有限可画 DAG，Workflow 引擎跑
 
-    for tool_call in msg.tool_calls:
-        result = execute_tool(tool_call)
-        messages.append({"role": "tool", "tool_call_id": tool_call.id, "content": result})
+    # 维度 3：是否需要根据中间结果决定下一步
+    if task.requires_intermediate_decisions:
+        return "Agent"           # 路径取决于运行时观察，必须 Agent
+
+    # 默认：从最简单的开始
+    return "Chain"
 ```
 
-**局限**：没有记忆——每次对话从零开始；没有规划——走一步看一步。
+实践中真正好用的系统往往是**混合形态**：外层用 Workflow 定义大流程（接收任务 → 路由 → 执行 → 汇总 → 输出），内层在"执行"这一步嵌入 Agent；或者反过来，外层是 Agent，内层把固定流程封装成单个 Tool。
 
-> 深入阅读：第 04 篇《Agent 控制循环》
+错配的代价很高：用 Workflow 做开放式探索，会发现 DAG 上画出十几个分支也覆盖不全用户的实际问法；用 Agent 做确定性流程，会发现稳定运行十次有一次莫名跑偏。**选择抽象的关键是判断任务的不确定性来自哪里**——是来自输入的多样性（Workflow 够用），还是来自路径的多样性（必须 Agent）。
 
-### Level 2 → 3: 从"无状态"到"有记忆"（+ Memory）
+---
 
-加入短期记忆（会话上下文管理）和长期记忆（跨会话持久化），让 Agent 能积累信息和经验。
+## 6. Agentic 系统的概念分层
 
-```python
-@dataclass
-class AgentMemory:
-    conversation: list[dict]          # 短期：当前会话消息历史
-    working: dict[str, Any]           # 工作记忆：当前任务的中间状态
-    long_term: list[dict]             # 长期：跨会话持久化（向量数据库）
+一个完整的 Agentic 系统是分层的——每一层处理一类独立的工程问题，层与层之间通过明确接口耦合。理解了这套分层，就理解了 Agent 工程的全部工作面。
 
-    def get_context_window(self, max_messages=20):
-        """组装上下文：长期记忆摘要 + 最近对话"""
-        ...
-```
+![Agentic 系统全景架构](/images/blog/agentic/agentic-architecture.svg)
 
-> 深入阅读：第 08 篇《记忆架构》、第 09 篇《RAG 工程实践》
+| 层 | 解决的核心问题 | 关键判断 |
+|---|------------|---------|
+| **模型层** | 哪个 LLM 在跑——选型、采样参数、推理模式 | 模型能力是天花板，但绝大多数项目卡在系统设计而非模型上 |
+| **运行时层** | 控制循环怎么跑、工具怎么调、提示词怎么组装 | 80% 的生产 bug 来自这一层——状态机不显式、JSON Schema 不严、Prompt 没版本 |
+| **认知层** | Agent 怎么记得住、规划得清、反思得了 | 四层记忆 + RAG 流水线 + 规划/推理/反思的外部脚手架 |
+| **编排层** | 单步执行如何组装成多步工作流，单 Agent 不够时如何拆成多 Agent | 工作流编排让步骤拓扑显式化；多 Agent 是用乘法效应换专业化 |
+| **生态层** | 用什么框架构建、用什么协议互通 | 厚抽象框架 vs 厂商薄抽象 SDK；MCP 与 A2A 把 N×M 集成降为 N+M |
+| **生产层** | 上线后怎么活下去 | 可观测、评估、成本、安全四件事的工程契约——任一缺失都不该上生产 |
+| **可信层** | 概率性输出遇上不可逆操作怎么办 | Guardrails 在系统层加确定性过滤，HITL 在关键决策点接入人类判断 |
+| **进阶交互层** | 目标系统没有 API 时怎么办；Agent 怎么从经验中改进自己 | Computer Use 是兜底而非替代；学习的三层时间尺度对应三套基础设施 |
+| **平台层** | 多 Agent 在同一组织里跑起来需要什么 | Token 是新货币、Session 是新单位、非确定性是新常态——不是微服务复刻 |
 
-### Level 3 → 4: 从"reactive"到"proactive"（+ Planner）
-
-加入规划能力，Agent 先将目标分解为子步骤，再逐步执行，执行后反思结果质量。
-
-```python
-# Plan → Execute → Reflect
-plan = planner.decompose(goal)          # 将目标分解为子步骤
-for step in plan.steps:
-    result = agent.execute(step)        # 逐步执行
-    evaluation = reflector.evaluate(    # 反思：完成了吗？需要调整吗？
-        goal, executed_steps, result
-    )
-    if evaluation.needs_replan:
-        plan = planner.replan(evaluation.feedback)
-```
-
-> 深入阅读：第 10 篇《规划与反思》
-
-### Level 4 → 5: 从"能跑"到"能上线"（+ Production Runtime）
-
-生产级 Agent 需要补齐工程保障：错误重试、token 预算控制、结构化追踪、模型降级、安全审计。
-
-```python
-class Agent:
-    def __init__(self, config: AgentConfig):
-        self.memory = AgentMemory()
-        self.tools = ToolRegistry()
-        self.planner = Planner(config)
-        self.observer = Observer()       # 可观测性（trace / log / metrics）
-
-    def run(self, user_input: str) -> str:
-        context = self._observe(user_input)           # 感知：组装上下文
-        plan = self.planner.create_plan(context)      # 规划：分解任务
-        result = self._execute_loop(context, plan)    # 执行：控制循环
-        result = self._reflect_and_refine(result)     # 反思：质量评估
-        self.memory.commit_to_long_term(summary)      # 更新：写入记忆
-        return result
-```
-
-> 深入阅读：第 07 篇《不依赖框架构建 Agent》、第 14 篇《生产级 Agent 系统》
-
-### 演进路径总结
-
-![从 LLM 到 Agent 的演进路径](/images/blog/agentic-01/evolution-path.svg)
-
-每一级引入一个新的能力维度，也同时引入新的复杂度。不是所有场景都需要 Level 5——选择哪个级别，取决于任务复杂度和工程约束。
+这套分层不是先有架构再有问题，是反过来——每一层都是真实工程问题倒推出来的边界。模型层往下是 LLM 厂商的舞台；模型层往上每一层都是 Agent 工程师的战场。一个项目的工程质量，差不多就是它在这每一层上下功夫的总和。
 
 ---
 
 ## 7. Agent 不是银弹
 
-### 7.1 适用场景
+Agent 处理的是"输入是模糊的、路径是不确定的"任务——探索性研究、多工具协作、需要迭代优化、半结构化流程。一旦任务不包含这种模糊性——能用 DAG 画完、要求 100% 确定性、延迟必须秒内、单次价值低于 token 成本——上 Agent 就是用更高代价换更差结果。详细的判断维度（含可枚举/路径/工具选择/容错率五个信号）属于 Agent 选型话题的范畴，本篇地图层只给原则。
 
-Agent 擅长处理以下类型的任务：
+地图层值得突出的是**关键 Trade-off**——升级到 Agent 换来什么、付出什么：
 
-- **探索性任务**：不确定最终需要几步、用什么工具才能完成。例：研究某个技术方案的可行性。
-- **多工具协作**：需要组合多个 API/数据源的信息。例：跨平台数据聚合分析。
-- **需要迭代优化**：初版结果不够好，需要反思和改进。例：代码生成 + 自动测试 + 修复。
-- **半结构化流程**：有大致方向但细节灵活。例：客户支持中的问题诊断。
+| 维度 | 升级到 Agent 换来 | 付出的代价 |
+|------|----------|------|
+| 自主性 | 减少人工干预 | 不可预测，调试困难 |
+| 复杂度 | 能处理更复杂任务 | 系统复杂度指数增长（监控、调试、回归测试、prompt 维护） |
+| 成本 | 多步推理 | token 消耗超线性，月账单可能数十万 |
+| 延迟 | 多步迭代 | 从毫秒级到分钟级 |
+| 可靠性 | 反思和重试机制 | 但每步都可能出错，串联会乘法效应 |
 
-### 7.2 不适用场景
+最容易被低估的是**复杂度的指数增长**。一个调 2 个工具的 Agent 看起来比直接 API 调用复杂 2 倍，但实际工程复杂度可能高出 10 倍——demo 阶段看起来 ROI 很高，跑半年后维护成本可能反超收益。
 
-Agent 在以下场景中可能是错误的选择：
-
-- **确定性流程**：如果你能用 DAG 或状态机画出完整流程，用 Workflow 引擎比 Agent 更可靠、更可预测、更便宜。Agent 的价值在于处理"不确定性"——如果没有不确定性，你不需要 Agent。
-- **低延迟要求**：Agent 的控制循环意味着多次 LLM 调用，延迟以秒计。对于需要毫秒级响应的场景，Agent 不合适。
-- **高精度要求 + 零容错**：金融交易、医疗诊断等场景。LLM 的概率性本质意味着 Agent 不能保证 100% 正确。它可以辅助决策，但不应成为最终决策者。
-- **简单的问答**：如果用户只是问"1+1等于几"，一次 ChatCompletion 足矣，不需要 Agent 的全部架构。
-
-### 7.3 关键 Trade-off
-
-| 维度 | 更多 Agent 能力 | 代价 |
-|------|----------------|------|
-| 自主性 | Agent 自主决策，减少人工干预 | 不可预测行为，调试困难 |
-| 复杂度 | 能处理更复杂的任务 | 系统复杂度指数增长 |
-| 成本 | 每个任务消耗更多 token | 月度 API 账单可能惊人 |
-| 延迟 | 多步推理产出更好结果 | 用户等待时间更长 |
-| 可靠性 | 有反思和重试机制 | 但每一步都可能出错，错误会累积 |
-
-**核心决策原则**：
-
-> 用最简单的抽象解决问题。如果 prompt engineering 够用，不要上 Agent。如果 Agent 够用，不要上 Multi-Agent。每增加一层抽象，都要问自己：这层抽象带来的能力提升，是否值得它引入的复杂度？
+**核心决策原则**：**用最简单的抽象解决问题**。如果 prompt engineering 够用，不要上 Agent；如果 Agent 够用，不要上 Multi-Agent；如果 Multi-Agent 够用，不要上平台。每增加一层抽象，都要问自己：这层抽象带来的能力提升，是否值得它引入的复杂度？这不是保守，而是清醒——大多数失败的 Agent 项目败在"用力过猛"而不是"用力不足"。
 
 ---
 
+## 8. 工程上最容易被低估的两件事
 
-## 8. 结语与后续预告
+每一层都重要，但工程实践中有两件事的投入回报率显著高于其他——大多数团队在这两件事上的投入都严重不足。
 
-本文作为系列开篇，建立了三个关键认知：
+### 8.1 Tool Calling 的工程深度
 
-1. **LLM 是函数，Agent 是系统**。从函数到系统，需要补齐 Memory、Tools、Planner、Runtime 四个维度。
-2. **Agent 的核心是控制循环**。Observe → Think → Plan → Act → Reflect → Update。循环赋予了 Agent 迭代解决问题的能力。
-3. **Agent 不是银弹**。选择 Agent 是一个架构决策，需要在能力与复杂度之间做出权衡。
+**Agent 的可靠性有一半建立在工具调用是否正确上**。这听起来像是个简单问题——把函数注册成工具、让 LLM 输出调用、运行时执行——但生产里翻车的细节多得吓人：工具描述写得像内部 API 文档，LLM 看不懂何时该用；参数 Schema 没用 `pattern`/`enum` 约束，LLM 经常生成不合法值；错误返回是 stack trace，LLM 完全没办法据此自我纠错；多个工具语义重叠（`search` vs `query` vs `find`），LLM 选择困难；工具数量超过 30 个时 attention 显著下降，选错率飙升。
 
-这个系列的目标不是教你使用某个框架的 API，而是帮你建立从第一性原理理解 Agentic 系统的能力。框架会变，API 会变，但系统设计的基本原理不会变。
+修这些每一项的回报都比"把主 Prompt 写得再漂亮"高一个数量级。**花时间打磨工具描述、参数 Schema、错误返回的结构化格式，是被严重低估的高杠杆工作**。一个简单的判断：如果你的工具描述长度还赶不上工具实现代码的注释，多半就投入不够。
 
-### 8.1 推荐学习路径
+### 8.2 评估体系的早期建设
 
-如果你刚接触 Agentic 系统，以下是一条按技术依赖关系递进的学习路径：
+**没有评估就没有改进**。你说不出"今天比昨天好"，就只能凭感觉迭代——而凭感觉迭代的代价在 Agent 项目里特别高，因为 Agent 的输出是开放的、路径是不确定的、单次成本是不均匀的。改完一版 prompt 后，没有评估你不知道任务完成率涨了还是跌了、平均轮数是变多了还是变少了、工具调用精度和召回有什么变化、单次成本中位数是降了还是升了、安全维度有没有出现新的退化。这五个维度任一关键退化都该回滚，但没有评估系统时你根本看不到。
 
-1. **基础接口** — Python/JS 基础、HTTP/JSON、异步与并发。这是所有后续内容的前置条件。
-2. **LLM 能力** — Prompt Engineering、Function Calling / Tool Use、结构化输出（JSON Schema）。Function Calling 比大多数人以为的更值得深入——Agent 的可靠性有一半建立在"工具调用是否正确"上，花时间写好工具的 Schema 定义和参数描述，回报率远高于优化 Prompt。（对应本系列第 02、05、06 篇）
-3. **RAG 能力** — 文档分块与清洗、嵌入模型、向量数据库（pgvector / Milvus / Weaviate）、混合检索与重排。（对应第 08、09 篇）
-4. **编排能力** — 状态机 / DAG 设计、重试回退、超时熔断、人机协作断点。这是从 demo 到生产的关键一步。（对应第 03、04、10、11 篇）
-5. **评估与运维** — Agent 评估框架、日志与追踪（OpenTelemetry）、成本监控、安全（提示注入防护、RBAC、审计）。没有可靠的评估手段，就无法量化改进。（对应第 14 篇）
+Agent 评估比传统软件难得多——开放输出、非确定路径、多维度指标——但越难越值得早建。**EvalSet 50 条 + 自动化跑批 + 多维度 quality gate**，这一套基础设施在 demo 阶段就该上，不是"以后再说"。
 
+工具描述与评估体系——这两件事都不性感、都不像"模型能力"那样直接亮眼，但都是 Agent 工程能不能从 demo 走到生产的硬门槛。
+
+---
+
+## 9. 从函数到系统的代价
+
+**LLM 是推理能力的来源，Agent 是把推理能力转化为行动能力的系统**。从函数到系统的五件套（LLM + Memory + Tools + Planner + Runtime）缺一不可——以 LLM 为核心推理引擎，Memory、Tools、Planner、Runtime 四件围绕它补齐架构缺失，再跑一个循环。也要接受随之而来的代价：每次推理至少 2-3 倍 token 消耗、调试需要看完整 trace 而不是单点日志、回归测试不能只覆盖输入输出还要覆盖路径、prompt 修改等同于代码修改要走完整发布流程。
+
+这些代价不是缺陷，是把"概率性的推理引擎"工程化成"可生产的系统"必须支付的工程税。理解这一点，才能避免两类常见错误：一是低估代价的"用 Agent 解决一切"，二是回避代价的"Agent 没法生产化"。真正成熟的工程师走的是中间路线——只在必要时才动用 Agent，动用时把代价算清楚。
+
+LLM 是函数、Agent 是系统——这个判断的全部含义是：构建 Agent 不是写 prompt 也不是调模型，是设计系统。框架会变、API 会变、模型会变，但"哪些局限需要被补上、用什么结构补、付出什么代价"这套设计原理，比任何具体技术栈活得久得多。

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="720" height="280" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="360" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">学习不可越过的三条红线</text>
+
+  <!-- Red Line 1 -->
+  <rect x="30" y="60" width="210" height="170" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <text x="135" y="92" text-anchor="middle" font-size="13" font-weight="bold" fill="#B71C1C">安全策略</text>
+  <text x="135" y="112" text-anchor="middle" font-size="13" font-weight="bold" fill="#B71C1C">不可学习</text>
+  <line x1="50" y1="125" x2="220" y2="125" stroke="#EF9A9A" stroke-width="1"/>
+  <text x="135" y="150" text-anchor="middle" font-size="11" fill="#666">安全规则必须</text>
+  <text x="135" y="168" text-anchor="middle" font-size="11" fill="#666">硬编码在 Prompt</text>
+  <text x="135" y="186" text-anchor="middle" font-size="11" fill="#666">约束部分</text>
+  <text x="135" y="212" text-anchor="middle" font-size="10" fill="#999" font-style="italic">优化器不能修改</text>
+
+  <!-- Red Line 2 -->
+  <rect x="255" y="60" width="210" height="170" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <text x="360" y="92" text-anchor="middle" font-size="13" font-weight="bold" fill="#B71C1C">权限</text>
+  <text x="360" y="112" text-anchor="middle" font-size="13" font-weight="bold" fill="#B71C1C">不可升级</text>
+  <line x1="275" y1="125" x2="445" y2="125" stroke="#EF9A9A" stroke-width="1"/>
+  <text x="360" y="150" text-anchor="middle" font-size="11" fill="#666">即使发现"绕过</text>
+  <text x="360" y="168" text-anchor="middle" font-size="11" fill="#666">权限检查能更快</text>
+  <text x="360" y="186" text-anchor="middle" font-size="11" fill="#666">完成任务"</text>
+  <text x="360" y="212" text-anchor="middle" font-size="10" fill="#999" font-style="italic">也不能记为"经验"</text>
+
+  <!-- Red Line 3 -->
+  <rect x="480" y="60" width="210" height="170" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+  <text x="585" y="92" text-anchor="middle" font-size="13" font-weight="bold" fill="#B71C1C">行为空间</text>
+  <text x="585" y="112" text-anchor="middle" font-size="13" font-weight="bold" fill="#B71C1C">不可扩展</text>
+  <line x1="500" y1="125" x2="670" y2="125" stroke="#EF9A9A" stroke-width="1"/>
+  <text x="585" y="150" text-anchor="middle" font-size="11" fill="#666">可调用的工具集</text>
+  <text x="585" y="168" text-anchor="middle" font-size="11" fill="#666">可访问的数据范围</text>
+  <text x="585" y="186" text-anchor="middle" font-size="11" fill="#666">部署时确定</text>
+  <text x="585" y="212" text-anchor="middle" font-size="10" fill="#999" font-style="italic">学习只能优化空间内</text>
+
+  <!-- Bottom -->
+  <text x="360" y="260" text-anchor="middle" font-size="12" font-weight="bold" fill="#C62828">宁可学得慢，不可学得危险</text>
+</svg>

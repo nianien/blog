@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="760" height="300" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="380" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">视觉理解的三层挑战</text>
+  <text x="380" y="52" text-anchor="middle" font-size="11" fill="#666">从像素到语义状态</text>
+
+  <!-- Layer 1: 元素检测 -->
+  <rect x="30" y="70" width="220" height="190" rx="8" fill="#E3F2FD" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="140" y="98" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">L1 元素检测</text>
+  <line x1="50" y1="110" x2="230" y2="110" stroke="#90CAF9" stroke-width="1"/>
+  <text x="140" y="138" text-anchor="middle" font-size="11" fill="#666">屏幕上有什么</text>
+  <text x="140" y="156" text-anchor="middle" font-size="11" fill="#666">可交互元素？</text>
+  <text x="140" y="190" text-anchor="middle" font-size="10" font-weight="600" fill="#333">代表方案</text>
+  <text x="140" y="210" text-anchor="middle" font-size="10" fill="#666">OmniParser</text>
+  <text x="140" y="226" text-anchor="middle" font-size="10" fill="#666">(YOLOv8 + Florence-2)</text>
+  <text x="140" y="248" text-anchor="middle" font-size="10" font-style="italic" fill="#999">检测可点击区域</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="250" y1="165" x2="265" y2="165" stroke="#666" stroke-width="1.5"/>
+  <polygon points="270,165 263,161 263,169" fill="#666"/>
+
+  <!-- Layer 2: 元素定位 -->
+  <rect x="270" y="70" width="220" height="190" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="1.5"/>
+  <text x="380" y="98" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">L2 元素定位</text>
+  <line x1="290" y1="110" x2="470" y2="110" stroke="#FFB74D" stroke-width="1"/>
+  <text x="380" y="138" text-anchor="middle" font-size="11" fill="#666">该点哪里？</text>
+  <text x="380" y="170" text-anchor="middle" font-size="10" font-weight="600" fill="#333">两条路线</text>
+  <text x="380" y="192" text-anchor="middle" font-size="10" fill="#666">纯坐标预测</text>
+  <text x="380" y="208" text-anchor="middle" font-size="9" fill="#999">Anthropic / OpenAI</text>
+  <text x="380" y="232" text-anchor="middle" font-size="10" fill="#666">Set-of-Mark</text>
+  <text x="380" y="248" text-anchor="middle" font-size="9" fill="#999">SAM + 编号叠加</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="490" y1="165" x2="505" y2="165" stroke="#666" stroke-width="1.5"/>
+  <polygon points="510,165 503,161 503,169" fill="#666"/>
+
+  <!-- Layer 3: 上下文理解 -->
+  <rect x="510" y="70" width="220" height="190" rx="8" fill="#F3E5F5" stroke="#8E24AA" stroke-width="1.5"/>
+  <text x="620" y="98" text-anchor="middle" font-size="14" font-weight="bold" fill="#6A1B9A">L3 上下文理解</text>
+  <line x1="530" y1="110" x2="710" y2="110" stroke="#CE93D8" stroke-width="1"/>
+  <text x="620" y="138" text-anchor="middle" font-size="11" fill="#666">当前界面的</text>
+  <text x="620" y="156" text-anchor="middle" font-size="11" fill="#666">语义状态？</text>
+  <text x="620" y="190" text-anchor="middle" font-size="10" font-weight="600" fill="#333">代表方案</text>
+  <text x="620" y="210" text-anchor="middle" font-size="10" fill="#666">多模态模型</text>
+  <text x="620" y="226" text-anchor="middle" font-size="10" fill="#666">+ Chain-of-Thought</text>
+  <text x="620" y="248" text-anchor="middle" font-size="10" font-style="italic" fill="#999">操作前深度推理</text>
+
+  <text x="380" y="285" text-anchor="middle" font-size="11" fill="#666">每层精度提升直接转化为任务成功率提升</text>
+</svg>
