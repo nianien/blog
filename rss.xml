@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Skyfalling</title>
+  <link>https://www.skyfalling.cn</link>
+  <atom:link href="https://www.skyfalling.cn/rss.xml" rel="self" type="application/rss+xml"/>
+  <description>分享技术、生活和思考的个人博客</description>
+  <language>zh-CN</language>
+  <lastBuildDate>Tue, 19 May 2026 00:00:00 GMT</lastBuildDate>
+  <item>
+    <title>学习与自进化</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/learning-and-self-improvement/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/learning-and-self-improvement/</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+    <description>静态 Agent 的天花板是重复犯错。本文给出运行时学习的三个层次（L1 会话内适应、L2 跨会话经验沉淀、L3 行为策略进化）的具体 schema、经验回放与 Prompt 自优化的伪代码、动态 Few-shot 的检索逻辑，以及一条不可越过的红线——学习不能突破安全策略、不能升级权限、不能扩展行为空间。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Learning</category>
+    <category>Self-Improvement</category>
+  </item>
+  <item>
+    <title>Computer Use与GUI Agent</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/computer-use-gui-agents/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/computer-use-gui-agents/</guid>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
+    <description>当 Agent 像人类一样看屏幕、点鼠标、敲键盘，一种新的交互范式出现了。本文给出 Computer Use 的视觉-动作循环伪代码、action schema、定位策略（坐标 vs Set-of-Mark）、Tool Calling 与 Computer Use 的混合路由，以及为什么 OSWorld 72% 距离生产可用仍有 1-2 个数量级的差距。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Computer Use</category>
+    <category>GUI Agent</category>
+  </item>
+  <item>
+    <title>CDN 接入与运营实战</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/CDN%20%E6%8E%A5%E5%85%A5%E4%B8%8E%E8%BF%90%E8%90%A5%E5%AE%9E%E6%88%98/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/CDN%20%E6%8E%A5%E5%85%A5%E4%B8%8E%E8%BF%90%E8%90%A5%E5%AE%9E%E6%88%98/</guid>
+    <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
+    <description>CDN 技术系列实战篇：覆盖内容分类与缓存策略选择、国内外供应商选型、全球化双 CDN 接入配置、缓存 Purge 操作规范、监控指标体系与成本优化，以及常见故障的快速归因方法，适合负责 CDN 接入落地和日常运营的工程师。</description>
+    <category>CDN</category>
+    <category>工程实践</category>
+    <category>性能优化</category>
+    <category>缓存策略</category>
+    <category>运营</category>
+  </item>
+  <item>
+    <title>内容分发体系设计：CDN 架构决策与全球化落地</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%E4%BD%93%E7%B3%BB%E8%AE%BE%E8%AE%A1%EF%BC%9ACDN%20%E6%9E%B6%E6%9E%84%E5%86%B3%E7%AD%96%E4%B8%8E%E5%85%A8%E7%90%83%E5%8C%96%E8%90%BD%E5%9C%B0/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%E4%BD%93%E7%B3%BB%E8%AE%BE%E8%AE%A1%EF%BC%9ACDN%20%E6%9E%B6%E6%9E%84%E5%86%B3%E7%AD%96%E4%B8%8E%E5%85%A8%E7%90%83%E5%8C%96%E8%90%BD%E5%9C%B0/</guid>
+    <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从业务目标出发，系统化构建 CDN 决策框架：流量特征分析→架构定位→内容分发体系设计→全球化分治架构→供应商选型体系→TCO 建模→可观测性设计，覆盖中国大陆特殊约束、GDPR 合规架构与多 CDN 战略，为有全球化需求的产品提供完整的内容分发架构决策路径。</description>
+    <category>CDN</category>
+    <category>系统架构</category>
+    <category>全球化</category>
+    <category>性能优化</category>
+    <category>架构设计</category>
+  </item>
+  <item>
+    <title>广告技术系列（六）：计费与预算控制</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E5%B9%BF%E5%91%8A%E6%8A%80%E6%9C%AF%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E8%AE%A1%E8%B4%B9%E4%B8%8E%E9%A2%84%E7%AE%97%E6%8E%A7%E5%88%B6/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E5%B9%BF%E5%91%8A%E6%8A%80%E6%9C%AF%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E8%AE%A1%E8%B4%B9%E4%B8%8E%E9%A2%84%E7%AE%97%E6%8E%A7%E5%88%B6/</guid>
+    <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
+    <description>系统性拆解广告计费的核心机制——从 CPT 到 oCPX 的计费模型演进、实时扣费与预算控速的工程实现、智能出价策略的算法逻辑，到结算对账与反欺诈的完整闭环，揭示广告系统钱怎么算、怎么花、怎么结的底层逻辑。</description>
+    <category>广告技术</category>
+    <category>计费系统</category>
+    <category>预算控制</category>
+    <category>出价策略</category>
+    <category>系统架构</category>
+  </item>
+  <item>
+    <title>CDN 技术体系：从分发原理到工程落地</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/CDN%E6%8A%80%E6%9C%AF%E4%BD%93%E7%B3%BB%EF%BC%9A%E4%BB%8E%E5%88%86%E5%8F%91%E5%8E%9F%E7%90%86%E5%88%B0%E5%B7%A5%E7%A8%8B%E8%90%BD%E5%9C%B0/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/CDN%E6%8A%80%E6%9C%AF%E4%BD%93%E7%B3%BB%EF%BC%9A%E4%BB%8E%E5%88%86%E5%8F%91%E5%8E%9F%E7%90%86%E5%88%B0%E5%B7%A5%E7%A8%8B%E8%90%BD%E5%9C%B0/</guid>
+    <pubDate>Sat, 11 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从网络延迟的物理极限出发，系统拆解 CDN 的三层架构、DNS 智能调度、分层缓存策略、回源容灾、动态加速与安全防护，深入分析缓存一致性、长尾冷启动、大文件分发等核心技术难点，给出可落地的选型框架、监控体系与成本优化方案。</description>
+    <category>CDN</category>
+    <category>分布式系统</category>
+    <category>缓存</category>
+    <category>网络优化</category>
+    <category>系统架构</category>
+    <category>性能优化</category>
+  </item>
+  <item>
+    <title>视频分片技术全解：从上传到播放的全链路架构</title>
+    <link>https://www.skyfalling.cn/blog/engineering/architecture/%E8%A7%86%E9%A2%91%E5%88%86%E7%89%87%E6%8A%80%E6%9C%AF%E5%85%A8%E8%A7%A3%EF%BC%9A%E4%BB%8E%E4%B8%8A%E4%BC%A0%E5%88%B0%E6%92%AD%E6%94%BE%E7%9A%84%E5%85%A8%E9%93%BE%E8%B7%AF%E6%9E%B6%E6%9E%84/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/architecture/%E8%A7%86%E9%A2%91%E5%88%86%E7%89%87%E6%8A%80%E6%9C%AF%E5%85%A8%E8%A7%A3%EF%BC%9A%E4%BB%8E%E4%B8%8A%E4%BC%A0%E5%88%B0%E6%92%AD%E6%94%BE%E7%9A%84%E5%85%A8%E9%93%BE%E8%B7%AF%E6%9E%B6%E6%9E%84/</guid>
+    <pubDate>Fri, 10 Apr 2026 00:00:00 GMT</pubDate>
+    <description>视频文件从用户手机到观众屏幕，每一步都离不开分片——上传要分片断点续传，转码要分片并行加速，封装要分片流式传输，分发要分片边缘缓存，播放要分片自适应码率。本文沿着视频数据流的完整链路，拆解每个环节的分片策略、协议选型和工程难点。</description>
+    <category>视频技术</category>
+    <category>流媒体</category>
+    <category>HLS</category>
+    <category>CDN</category>
+    <category>系统架构</category>
+  </item>
+  <item>
+    <title>数字资产交易所（上）：业务全景与核心机制</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E6%95%B0%E5%AD%97%E8%B5%84%E4%BA%A7%E4%BA%A4%E6%98%93%E6%89%80%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E4%B8%9A%E5%8A%A1%E5%85%A8%E6%99%AF%E4%B8%8E%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E6%95%B0%E5%AD%97%E8%B5%84%E4%BA%A7%E4%BA%A4%E6%98%93%E6%89%80%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E4%B8%9A%E5%8A%A1%E5%85%A8%E6%99%AF%E4%B8%8E%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6/</guid>
+    <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从现货到合约，从订单簿到清算结算，系统拆解数字资产交易所的完整业务链路。涵盖交易对、订单类型、撮合规则、永续合约机制、保证金与强平、做市与流动性、风控体系、清算账务和合规监管——为技术人建立交易所业务的完整认知框架。</description>
+    <category>交易所</category>
+    <category>数字资产</category>
+    <category>业务架构</category>
+    <category>合约交易</category>
+    <category>风控</category>
+  </item>
+  <item>
+    <title>数字资产交易所（下）：技术架构与系统设计</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E6%95%B0%E5%AD%97%E8%B5%84%E4%BA%A7%E4%BA%A4%E6%98%93%E6%89%80%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E6%95%B0%E5%AD%97%E8%B5%84%E4%BA%A7%E4%BA%A4%E6%98%93%E6%89%80%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
+    <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从撮合引擎的单线程设计到钱包的冷热分离，从 Order Book 的数据结构到链上充提的工程实现，系统拆解数字资产交易所的核心技术架构。涵盖接入层、撮合引擎、风控引擎、行情系统、账务清算、钱包与链上交互、高可用灾备和安全体系——为架构师提供交易所系统设计的完整技术参考。</description>
+    <category>交易所</category>
+    <category>撮合引擎</category>
+    <category>系统架构</category>
+    <category>区块链</category>
+    <category>高可用</category>
+  </item>
+  <item>
+    <title>异地多活架构：跨地域高可用系统的设计与演进</title>
+    <link>https://www.skyfalling.cn/blog/engineering/architecture/%E5%BC%82%E5%9C%B0%E5%A4%9A%E6%B4%BB%E6%9E%B6%E6%9E%84%EF%BC%9A%E8%B7%A8%E5%9C%B0%E5%9F%9F%E9%AB%98%E5%8F%AF%E7%94%A8%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E6%BC%94%E8%BF%9B/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/architecture/%E5%BC%82%E5%9C%B0%E5%A4%9A%E6%B4%BB%E6%9E%B6%E6%9E%84%EF%BC%9A%E8%B7%A8%E5%9C%B0%E5%9F%9F%E9%AB%98%E5%8F%AF%E7%94%A8%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E6%BC%94%E8%BF%9B/</guid>
+    <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从单机架构到异地多活，系统性梳理多机房部署架构的演进历程。深入剖析同城灾备、同城双活、异地双活、异地多活的核心原理与技术挑战，并结合阿里单元化方案解析工业级落地实践。</description>
+    <category>架构设计</category>
+    <category>异地多活</category>
+    <category>高可用</category>
+    <category>容灾</category>
+    <category>单元化</category>
+  </item>
+  <item>
+    <title>权限系统设计：从访问控制理论到工程落地</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E4%BB%8E%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA%E5%88%B0%E5%B7%A5%E7%A8%8B%E8%90%BD%E5%9C%B0/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E4%BB%8E%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA%E5%88%B0%E5%B7%A5%E7%A8%8B%E8%90%BD%E5%9C%B0/</guid>
+    <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从访问控制三元组和 AAA 模型出发，系统梳理 DAC/MAC/RBAC/ABAC 四大模型的理论脉络与演进逻辑，深入 NIST RBAC 标准和 XACML 架构，结合功能权限与数据权限的分层设计、权限校验的性能优化、微服务架构下的鉴权方案，给出可落地的工程实践指南。</description>
+    <category>权限系统</category>
+    <category>RBAC</category>
+    <category>ABAC</category>
+    <category>访问控制</category>
+    <category>系统设计</category>
+    <category>微服务</category>
+  </item>
+  <item>
+    <title>高并发系统设计：从理论模型到工程实践</title>
+    <link>https://www.skyfalling.cn/blog/engineering/architecture/%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E4%BB%8E%E7%90%86%E8%AE%BA%E6%A8%A1%E5%9E%8B%E5%88%B0%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/architecture/%E9%AB%98%E5%B9%B6%E5%8F%91%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%EF%BC%9A%E4%BB%8E%E7%90%86%E8%AE%BA%E6%A8%A1%E5%9E%8B%E5%88%B0%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+    <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从 Amdahl&apos;s Law、USL、Little&apos;s Law 等理论模型出发，系统拆解计算层、数据层、流量层、容错层的高并发策略，结合代码实现、分布式事务、可观测性与秒杀案例，构建可落地的高并发设计知识体系。</description>
+    <category>高并发</category>
+    <category>系统架构</category>
+    <category>性能优化</category>
+    <category>分布式系统</category>
+    <category>容错设计</category>
+  </item>
+  <item>
+    <title>广告技术系列（五）：聚合平台的运作原理</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E5%B9%BF%E5%91%8A%E6%8A%80%E6%9C%AF%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9A%E8%81%9A%E5%90%88%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%BF%90%E4%BD%9C%E5%8E%9F%E7%90%86/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E5%B9%BF%E5%91%8A%E6%8A%80%E6%9C%AF%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9A%E8%81%9A%E5%90%88%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%BF%90%E4%BD%9C%E5%8E%9F%E7%90%86/</guid>
+    <pubDate>Mon, 06 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从角色关系到竞价机制，从五层架构到反作弊与隐私合规，系统性拆解广告聚合平台如何在 200ms 内协调多方利益、完成一次最优广告决策。</description>
+    <category>广告技术</category>
+    <category>系统架构</category>
+    <category>广告聚合</category>
+    <category>Header Bidding</category>
+    <category>变现优化</category>
+  </item>
+  <item>
+    <title>百万级内容社区信息流（上）：技术架构全解</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E7%99%BE%E4%B8%87%E7%BA%A7%E5%86%85%E5%AE%B9%E7%A4%BE%E5%8C%BA%E4%BF%A1%E6%81%AF%E6%B5%81%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%85%A8%E8%A7%A3/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E7%99%BE%E4%B8%87%E7%BA%A7%E5%86%85%E5%AE%B9%E7%A4%BE%E5%8C%BA%E4%BF%A1%E6%81%AF%E6%B5%81%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%85%A8%E8%A7%A3/</guid>
+    <pubDate>Mon, 06 Apr 2026 00:00:00 GMT</pubDate>
+    <description>系统拆解内容社区信息流的全链路技术架构——从内容生产、内容理解、召回排序到 Feed 分发，结合抖音、小红书、B站的工程实践，给出百万级用户规模下的选型方案与工程落地细节。</description>
+    <category>Architecture</category>
+    <category>Feed</category>
+    <category>Recommendation</category>
+    <category>Content Community</category>
+    <category>Search</category>
+  </item>
+  <item>
+    <title>百万级内容社区信息流（下）：运营体系与商业化</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E7%99%BE%E4%B8%87%E7%BA%A7%E5%86%85%E5%AE%B9%E7%A4%BE%E5%8C%BA%E4%BF%A1%E6%81%AF%E6%B5%81%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E8%BF%90%E8%90%A5%E4%BD%93%E7%B3%BB%E4%B8%8E%E5%95%86%E4%B8%9A%E5%8C%96/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E7%99%BE%E4%B8%87%E7%BA%A7%E5%86%85%E5%AE%B9%E7%A4%BE%E5%8C%BA%E4%BF%A1%E6%81%AF%E6%B5%81%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E8%BF%90%E8%90%A5%E4%BD%93%E7%B3%BB%E4%B8%8E%E5%95%86%E4%B8%9A%E5%8C%96/</guid>
+    <pubDate>Mon, 06 Apr 2026 00:00:00 GMT</pubDate>
+    <description>从运营模式、商业化路径、隐私合规到技术创新与团队建设，系统拆解内容社区信息流的&apos;软实力&apos;——技术架构解决&apos;能不能&apos;，本文解决&apos;好不好&apos;和&apos;怎么赚&apos;。</description>
+    <category>Architecture</category>
+    <category>Content Community</category>
+    <category>Monetization</category>
+    <category>Operations</category>
+    <category>Feed</category>
+  </item>
+  <item>
+    <title>Agent基础架构平台</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/agent-platform-infrastructure/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/agent-platform-infrastructure/</guid>
+    <pubDate>Fri, 27 Mar 2026 00:00:00 GMT</pubDate>
+    <description>当组织需要运行多个 Agent、服务多业务方、对接多租户时，需要的不是更多 Agent 代码，是一整套基础架构平台。本文给出平台的五层架构、与传统微服务平台的四个本质差异、Token 配额与预扣结算的代码、LLM Gateway 的路由与 fallback 链，以及平台演进四阶段的避坑路径。</description>
+    <category>Agent</category>
+    <category>系统架构</category>
+    <category>基础设施</category>
+    <category>平台工程</category>
+  </item>
+  <item>
+    <title>AI 实时交互式视频：从看视频到和视频对话</title>
+    <link>https://www.skyfalling.cn/blog/engineering/aigc/AI%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%A7%86%E9%A2%91%EF%BC%9A%E4%BB%8E%E7%9C%8B%E8%A7%86%E9%A2%91%E5%88%B0%E5%92%8C%E8%A7%86%E9%A2%91%E5%AF%B9%E8%AF%9D/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/aigc/AI%E5%AE%9E%E6%97%B6%E4%BA%A4%E4%BA%92%E5%BC%8F%E8%A7%86%E9%A2%91%EF%BC%9A%E4%BB%8E%E7%9C%8B%E8%A7%86%E9%A2%91%E5%88%B0%E5%92%8C%E8%A7%86%E9%A2%91%E5%AF%B9%E8%AF%9D/</guid>
+    <pubDate>Wed, 25 Mar 2026 00:00:00 GMT</pubDate>
+    <description>视频正在从播放媒介变成交互界面。本文从技术架构、工程实践和商业闭环三个维度，系统拆解AI交互式视频的核心Pipeline、四条技术路线、六大技术难点、商业模式与落地路径，并正视监管风险与历史教训。</description>
+    <category>AIGC</category>
+    <category>AI互动视频</category>
+    <category>视频生成</category>
+    <category>交互式媒体</category>
+    <category>系统架构</category>
+    <category>数字人</category>
+  </item>
+  <item>
+    <title>技术管理者最难的认知升级：不是学会管人，而是放下做事</title>
+    <link>https://www.skyfalling.cn/blog/life/growth/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86%E8%80%85%E6%9C%80%E9%9A%BE%E7%9A%84%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/life/growth/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86%E8%80%85%E6%9C%80%E9%9A%BE%E7%9A%84%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7/</guid>
+    <pubDate>Wed, 25 Mar 2026 00:00:00 GMT</pubDate>
+    <description>多数技术管理者的困境不是「不会管」，而是「用做技术的方式管人」。技术管理不是项目管理加人事管理，而是一套组织操作系统的设计——涵盖目标、人才、绩效、制度、文化的系统工程。</description>
+    <category>技术管理</category>
+    <category>团队建设</category>
+    <category>领导力</category>
+    <category>组织设计</category>
+  </item>
+  <item>
+    <title>九大ASR模型方言场景实战横评</title>
+    <link>https://www.skyfalling.cn/blog/engineering/practice/%E4%B9%9D%E5%A4%A7ASR%E6%A8%A1%E5%9E%8B%E6%96%B9%E8%A8%80%E5%9C%BA%E6%99%AF%E5%AE%9E%E6%88%98%E6%A8%AA%E8%AF%84/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/practice/%E4%B9%9D%E5%A4%A7ASR%E6%A8%A1%E5%9E%8B%E6%96%B9%E8%A8%80%E5%9C%BA%E6%99%AF%E5%AE%9E%E6%88%98%E6%A8%AA%E8%AF%84/</guid>
+    <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+    <description>以128秒四川方言剧集音频为测试素材，从识别准确率、说话人分离、情感识别等维度横评豆包、Fish Audio、FunASR、Gemini、OpenAI、Paraformer、Qwen、腾讯云、讯飞九大ASR模型，并探索多模型融合策略</description>
+    <category>ASR</category>
+    <category>语音识别</category>
+    <category>模型评测</category>
+    <category>方言识别</category>
+    <category>Speaker Diarization</category>
+  </item>
+  <item>
+    <title>AI 短剧工程实践：全自动配音流水线</title>
+    <link>https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E5%85%A8%E8%87%AA%E5%8A%A8%E9%85%8D%E9%9F%B3%E6%B5%81%E6%B0%B4%E7%BA%BF/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E5%85%A8%E8%87%AA%E5%8A%A8%E9%85%8D%E9%9F%B3%E6%B5%81%E6%B0%B4%E7%BA%BF/</guid>
+    <pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
+    <description>短剧出海的配音成本扛不住人工——单集利润几毛钱，人工配音要几千块。本文记录一套实际跑通的全自动配音流水线：ASR→说话人分离→翻译→TTS→混音，单集成本 ¥0.3-0.5，支持批量生产。从 SSOT 驱动的架构设计到增量执行的成本控制，从 Voice Casting UI 到行业趋势判断，完整拆解 AI 配音从技术选型到规模化生产的工程路径。</description>
+    <category>AI配音</category>
+    <category>TTS</category>
+    <category>视频本地化</category>
+  </item>
+  <item>
+    <title>AI 短剧工程实践：从视频生成到角色引擎</title>
+    <link>https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BB%8E%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90%E5%88%B0%E8%A7%92%E8%89%B2%E5%BC%95%E6%93%8E/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BB%8E%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90%E5%88%B0%E8%A7%92%E8%89%B2%E5%BC%95%E6%93%8E/</guid>
+    <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+    <description>大模型只是渲染器，真正决定AI短剧产品质量的是应用层工程。本文从架构设计出发，拆解角色实体注册表、世界状态管理、结构化剧本中间件和多模态任务调度系统的设计方案。</description>
+    <category>AIGC</category>
+    <category>AI短剧</category>
+    <category>系统架构</category>
+    <category>内容编排</category>
+    <category>角色引擎</category>
+  </item>
+  <item>
+    <title>AI 短剧工程实践：角色生产流水线</title>
+    <link>https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E8%A7%92%E8%89%B2%E7%94%9F%E4%BA%A7%E6%B5%81%E6%B0%B4%E7%BA%BF/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E8%A7%92%E8%89%B2%E7%94%9F%E4%BA%A7%E6%B5%81%E6%B0%B4%E7%BA%BF/</guid>
+    <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
+    <description>一条能跑的AI短剧角色Pipeline长什么样？本文从工程实践出发，逐层拆解视觉层（LoRA+IP-Adapter+ControlNet）、表演层（LivePortrait）、音频层（声纹克隆+TTS）、对齐层（Lip-sync）的构建方法，给出完整的技术栈选择和成本估算。</description>
+    <category>AIGC</category>
+    <category>AI短剧</category>
+    <category>Pipeline</category>
+    <category>LoRA</category>
+    <category>Lip-sync</category>
+    <category>TTS</category>
+  </item>
+  <item>
+    <title>从瓦特到比特：AI时代的能源出口革命</title>
+    <link>https://www.skyfalling.cn/blog/insights/technology/%E4%BB%8E%E7%93%A6%E7%89%B9%E5%88%B0%E6%AF%94%E7%89%B9%EF%BC%9AAI%E6%97%B6%E4%BB%A3%E7%9A%84%E8%83%BD%E6%BA%90%E5%87%BA%E5%8F%A3%E9%9D%A9%E5%91%BD/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/insights/technology/%E4%BB%8E%E7%93%A6%E7%89%B9%E5%88%B0%E6%AF%94%E7%89%B9%EF%BC%9AAI%E6%97%B6%E4%BB%A3%E7%9A%84%E8%83%BD%E6%BA%90%E5%87%BA%E5%8F%A3%E9%9D%A9%E5%91%BD/</guid>
+    <pubDate>Fri, 13 Mar 2026 00:00:00 GMT</pubDate>
+    <description>每个时代都有自己的核心战略资源。工业时代是石油，金融时代是美元，AI时代最可能的核心战略资源是算力。算力的物理本质是电力×芯片效率，而AI时代的能源战略就是：把电力转化为算力出口。</description>
+    <category>人工智能</category>
+    <category>能源战略</category>
+    <category>地缘政治</category>
+    <category>算力</category>
+  </item>
+  <item>
+    <title>AI 短剧工程实践：视频生成模型选型与实战</title>
+    <link>https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B%E9%80%89%E5%9E%8B%E4%B8%8E%E5%AE%9E%E6%88%98/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B%E9%80%89%E5%9E%8B%E4%B8%8E%E5%AE%9E%E6%88%98/</guid>
+    <pubDate>Mon, 09 Mar 2026 00:00:00 GMT</pubDate>
+    <description>视频生成是AI短剧Pipeline中变化最快的环节。本文深度对比2026年主流模型（Wan2.2、Sora 2、Kling 3.0、Runway Gen-4.5、HunyuanVideo、Seedance 2.0）在画质、运镜、角色一致性、长镜头稳定性和成本五个维度的表现，给出面向短剧场景的选型策略和工程集成方案。</description>
+    <category>AIGC</category>
+    <category>视频生成</category>
+    <category>AI短剧</category>
+    <category>模型选型</category>
+    <category>Wan2.1</category>
+    <category>Sora</category>
+    <category>Kling</category>
+  </item>
+  <item>
+    <title>AI 短剧工程实践：人物一致性与技术选型</title>
+    <link>https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BA%BA%E7%89%A9%E4%B8%80%E8%87%B4%E6%80%A7%E4%B8%8E%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BA%BA%E7%89%A9%E4%B8%80%E8%87%B4%E6%80%A7%E4%B8%8E%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/</guid>
+    <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
+    <description>AI短剧的核心工程难题是人物一致性。本文从工程实践出发，拆解六种技术路径的原理与适用场景，分析DiT与U-Net架构的选型影响，并给出面向AI短剧场景的决策矩阵。</description>
+    <category>AIGC</category>
+    <category>人物一致性</category>
+    <category>AI短剧</category>
+    <category>Stable Diffusion</category>
+    <category>技术选型</category>
+  </item>
+  <item>
+    <title>AI 短剧工程实践：从剧本到成片的全流程</title>
+    <link>https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BB%8E%E5%89%A7%E6%9C%AC%E5%88%B0%E6%88%90%E7%89%87%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/aigc/AI%E7%9F%AD%E5%89%A7%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BB%8E%E5%89%A7%E6%9C%AC%E5%88%B0%E6%88%90%E7%89%87%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B/</guid>
+    <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+    <description>一个人能不能做出一部AI短剧？能。本文面向有技术背景但没有影视经验的研发人员，从剧本构思到最终成片，拆解AIGC短剧制作的完整流程、工具链选型和实战踩坑经验。</description>
+    <category>AIGC</category>
+    <category>AI短剧</category>
+    <category>视频生成</category>
+    <category>一人剧组</category>
+    <category>全流程</category>
+    <category>实战指南</category>
+  </item>
+  <item>
+    <title>旗舰是一种纪律：OPPO 产品线困局的品牌架构解读</title>
+    <link>https://www.skyfalling.cn/blog/insights/business/%E6%97%97%E8%88%B0%E6%98%AF%E4%B8%80%E7%A7%8D%E7%BA%AA%E5%BE%8B%EF%BC%9AOPPO%20%E4%BA%A7%E5%93%81%E7%BA%BF%E5%9B%B0%E5%B1%80%E7%9A%84%E5%93%81%E7%89%8C%E6%9E%B6%E6%9E%84%E8%A7%A3%E8%AF%BB/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/insights/business/%E6%97%97%E8%88%B0%E6%98%AF%E4%B8%80%E7%A7%8D%E7%BA%AA%E5%BE%8B%EF%BC%9AOPPO%20%E4%BA%A7%E5%93%81%E7%BA%BF%E5%9B%B0%E5%B1%80%E7%9A%84%E5%93%81%E7%89%8C%E6%9E%B6%E6%9E%84%E8%A7%A3%E8%AF%BB/</guid>
+    <pubDate>Wed, 18 Feb 2026 00:00:00 GMT</pubDate>
+    <description>OPPO 不缺技术、不缺供应链、不缺渠道，但在高端市场始终没有建立起「唯一旗舰」的心智。问题的根源不在产品力，而在品牌架构——产品线互相踩线、组织激励错位、旗舰叙事断裂。</description>
+    <category>品牌战略</category>
+    <category>手机行业</category>
+    <category>产品架构</category>
+    <category>竞争分析</category>
+  </item>
+  <item>
+    <title>Mousika 规则引擎：让规则可编排、可执行、可解释</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/Mousika%E8%A7%84%E5%88%99%E5%BC%95%E6%93%8E%EF%BC%9A%E8%AE%A9%E8%A7%84%E5%88%99%E5%8F%AF%E7%BC%96%E6%8E%92%E3%80%81%E5%8F%AF%E6%89%A7%E8%A1%8C%E3%80%81%E5%8F%AF%E8%A7%A3%E9%87%8A/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/Mousika%E8%A7%84%E5%88%99%E5%BC%95%E6%93%8E%EF%BC%9A%E8%AE%A9%E8%A7%84%E5%88%99%E5%8F%AF%E7%BC%96%E6%8E%92%E3%80%81%E5%8F%AF%E6%89%A7%E8%A1%8C%E3%80%81%E5%8F%AF%E8%A7%A3%E9%87%8A/</guid>
+    <pubDate>Tue, 17 Feb 2026 00:00:00 GMT</pubDate>
+    <description>基于 Mousika 规则引擎的实际代码和生产数据，解析 DSL 编排与 JS 求值的分层设计、四棵同构树如何贯穿从可视化配置到归因分析的全链路、万物皆 UDF 的统一扩展机制，以及性能优化、安全机制和高可用保障的工程实践。</description>
+    <category>规则引擎</category>
+    <category>DSL</category>
+    <category>可视化编排</category>
+  </item>
+  <item>
+    <title>AI 编程的生产落地：从代码生成到安全发布的工程实践</title>
+    <link>https://www.skyfalling.cn/blog/engineering/practice/AI%E7%BC%96%E7%A8%8B%E7%9A%84%E7%94%9F%E4%BA%A7%E8%90%BD%E5%9C%B0%EF%BC%9A%E4%BB%8E%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%88%B0%E5%AE%89%E5%85%A8%E5%8F%91%E5%B8%83%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/practice/AI%E7%BC%96%E7%A8%8B%E7%9A%84%E7%94%9F%E4%BA%A7%E8%90%BD%E5%9C%B0%EF%BC%9A%E4%BB%8E%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%88%B0%E5%AE%89%E5%85%A8%E5%8F%91%E5%B8%83%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+    <pubDate>Sat, 14 Feb 2026 16:00:00 GMT</pubDate>
+    <description>本文面向工程团队负责人与一线开发者，系统梳理 AI 辅助编程从提示词设计、代码生成、质量门禁到生产发布的全链路管控方案。核心命题是：如何建立一套工程机制，让 AI 生成的代码能够安全、可控地跑在生产环境中。</description>
+    <category>AI编程</category>
+    <category>工程实践</category>
+    <category>DevOps</category>
+  </item>
+  <item>
+    <title>生产级Agent：可观测、评估、成本、安全</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/production-grade-agents/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/production-grade-agents/</guid>
+    <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+    <description>Demo 到生产之间隔着四件事——可观测性（Agent 不确定性下唯一的排障手段）、评估（Agent 评估远比 LLM 评估复杂）、成本工程（Token 是新的货币）、安全（Prompt 注入是全新攻击面）。本文给出四件事各自的核心 schema、关键伪代码与最容易踩的坑。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Production</category>
+  </item>
+  <item>
+    <title>框架与协议：从SDK选型到MCP</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/agent-frameworks-and-mcp/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/agent-frameworks-and-mcp/</guid>
+    <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+    <description>Agent 生态正在走向两极分化——一极是 LangChain/LangGraph 的厚抽象，另一极是 Claude Agent SDK / OpenAI Agents SDK 的薄抽象 + MCP 协议化。本文给出框架选型的八维决策框架、LangGraph 状态机的最小代码、MCP Server/Client 的核心实现，以及 N×M 集成问题的协议化解法。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Framework</category>
+    <category>MCP</category>
+  </item>
+  <item>
+    <title>多 Agent 协作</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/multi-agent-collaboration/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/multi-agent-collaboration/</guid>
+    <pubDate>Sat, 17 Jan 2026 00:00:00 GMT</pubDate>
+    <description>单 Agent 有四个天花板——context、专业性、可靠性、并行度。多 Agent 协作不是把 Agent 串起来，而是用架构换可靠性。本文给出四种协作模式的核心伪代码、通信机制的 schema 选型、失败传播的处理路径，以及最常被低估的乘法效应数学。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Multi-Agent</category>
+  </item>
+  <item>
+    <title>基于DDD构建微服务：从战略设计到落地实践</title>
+    <link>https://www.skyfalling.cn/blog/engineering/domain/%E5%9F%BA%E4%BA%8EDDD%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%9A%E4%BB%8E%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1%E5%88%B0%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/domain/%E5%9F%BA%E4%BA%8EDDD%E6%9E%84%E5%BB%BA%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%9A%E4%BB%8E%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1%E5%88%B0%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5/</guid>
+    <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+    <description>从子域划分、事件风暴、上下文映射八种模式到聚合设计原则，再到 Entity/Value Object/Domain Service 等战术构件的 Java 落地，系统性地拆解 DDD 如何指导微服务的边界划定与内部建模，并覆盖 Outbox、Saga、CQRS 等分布式一致性方案和常见反模式。</description>
+    <category>DDD</category>
+    <category>微服务</category>
+    <category>领域驱动设计</category>
+    <category>架构设计</category>
+    <category>事件驱动</category>
+    <category>聚合设计</category>
+    <category>战术设计</category>
+  </item>
+  <item>
+    <title>规划、推理与反思</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/planning-reasoning-reflection/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/planning-reasoning-reflection/</guid>
+    <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
+    <description>LLM 的 next-token prediction 天然缺乏前瞻和回溯。规划补前瞻、推理补深度、反思补回溯。本文给出 ReAct、Plan-and-Execute、Tree-of-Thought、Hierarchical 四种范式的核心伪代码与适用边界，反思机制的 schema 与终止条件，以及推理时扩展（test-time compute scaling）对 Agent 架构的影响。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Planning</category>
+    <category>Reasoning</category>
+  </item>
+  <item>
+    <title>记忆与RAG：Agent的认知存储</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/agent-memory-and-rag/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/agent-memory-and-rag/</guid>
+    <pubDate>Fri, 02 Jan 2026 00:00:00 GMT</pubDate>
+    <description>LLM 是无状态函数，Agent 必须有状态。本文给出 Agent 记忆的四层结构、各层的读写删伪代码、Chunking 到 Reranking 的完整 RAG 流水线，以及为什么 80% 的 RAG 质量问题在检索侧而非生成侧。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Memory</category>
+    <category>RAG</category>
+  </item>
+  <item>
+    <title>Java 核心技术：深入理解 AQS</title>
+    <link>https://www.skyfalling.cn/blog/engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/middleware/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3AQS/</guid>
+    <pubDate>Sun, 28 Dec 2025 00:00:00 GMT</pubDate>
+    <description>系统性剖析 AbstractQueuedSynchronizer（AQS）的设计思想、核心数据结构、加锁解锁流程，并通过 ReentrantLock 源码深入理解其工作原理，最后梳理 AQS 在 JUC 中的典型应用场景。</description>
+    <category>Java</category>
+    <category>并发编程</category>
+    <category>AQS</category>
+    <category>ReentrantLock</category>
+    <category>JUC</category>
+  </item>
+  <item>
+    <title>可信 Agent：Guardrails 与 Human-in-the-Loop</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/trustworthy-agents-guardrails/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/trustworthy-agents-guardrails/</guid>
+    <pubDate>Sun, 21 Dec 2025 00:00:00 GMT</pubDate>
+    <description>Agent 系统越自主越需要边界。Guardrails 在系统层加入安全护栏：输入侧拦截恶意提示、输出侧过滤危险内容、工具侧约束破坏性操作。Human-in-the-Loop 把人类判断接入关键决策点：不确定性升级、不可逆操作审批、反馈回路。这一篇展开两种模式各自的实现与协同。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Safety</category>
+    <category>HITL</category>
+  </item>
+  <item>
+    <title>架构师的认知升级：从技术深度到系统决策能力</title>
+    <link>https://www.skyfalling.cn/blog/engineering/architecture/%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%EF%BC%9A%E4%BB%8E%E6%8A%80%E6%9C%AF%E6%B7%B1%E5%BA%A6%E5%88%B0%E7%B3%BB%E7%BB%9F%E5%86%B3%E7%AD%96%E8%83%BD%E5%8A%9B/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/architecture/%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%EF%BC%9A%E4%BB%8E%E6%8A%80%E6%9C%AF%E6%B7%B1%E5%BA%A6%E5%88%B0%E7%B3%BB%E7%BB%9F%E5%86%B3%E7%AD%96%E8%83%BD%E5%8A%9B/</guid>
+    <pubDate>Sat, 20 Dec 2025 00:00:00 GMT</pubDate>
+    <description>系统梳理架构师的核心能力模型、知识体系全景与成长路径，从架构定义到设计方法论，从分布式理论到架构演进，帮助技术人建立完整的架构认知框架。</description>
+    <category>架构设计</category>
+    <category>架构师</category>
+    <category>技术成长</category>
+    <category>分布式系统</category>
+    <category>架构方法论</category>
+  </item>
+  <item>
+    <title>工作流编排：Routing 与 Parallelization</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/workflow-orchestration/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/workflow-orchestration/</guid>
+    <pubDate>Wed, 17 Dec 2025 00:00:00 GMT</pubDate>
+    <description>Agent 不是只靠一个大循环跑到底。复杂任务通常需要把多步组装成工作流：根据输入选择不同路径（Routing）、把可独立的步骤并行（Parallelization）、把多个步骤链成顺序流水（Chaining）。本文从契约和实现两个角度展开这三种工作流模式，给出何时用、怎么用、容易踩什么坑。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Workflow</category>
+  </item>
+  <item>
+    <title>Agent运行时：循环、工具与提示词</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/agent-runtime-loop/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/agent-runtime-loop/</guid>
+    <pubDate>Sun, 14 Dec 2025 00:00:00 GMT</pubDate>
+    <description>Agent 运行时由三个机制构成：控制循环驱动执行节奏、工具调用打通外部世界、提示词约束 LLM 行为。本文从契约角度展开三者的设计与协作，给出每个机制的核心伪代码、关键 Schema 与生产工程的陷阱清单。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>Runtime</category>
+  </item>
+  <item>
+    <title>微服务系列（四）：架构落地指南</title>
+    <link>https://www.skyfalling.cn/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E6%9E%B6%E6%9E%84%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/architecture/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E6%9E%B6%E6%9E%84%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97/</guid>
+    <pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate>
+    <description>系统性地探讨微服务架构设计的核心关注点，包括服务注册发现、API 网关、服务容错、基础设施选型、CI/CD 流水线和可观测性体系，帮助你从 0 到 1 构建一套完整的微服务技术栈。</description>
+    <category>架构设计</category>
+    <category>微服务</category>
+    <category>分布式系统</category>
+    <category>技术选型</category>
+  </item>
+  <item>
+    <title>Agent的本质：局限、组件模型与形态</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/agent-essence-and-forms/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/agent-essence-and-forms/</guid>
+    <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
+    <description>Agent 不是更大的 LLM，而是补齐 LLM 五大局限的系统。本文给出 Agent 的组件分解、Observe-Think-Plan-Act-Reflect-Update 循环的最小落地、自主性 L1-L4 的关键机制差异，以及为什么成本驱动是人工介入率而不是 token 的工程账。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>LLM</category>
+  </item>
+  <item>
+    <title>SET化架构：从单元化原理到大规模落地实践</title>
+    <link>https://www.skyfalling.cn/blog/engineering/architecture/SET%E5%8C%96%E6%9E%B6%E6%9E%84%EF%BC%9A%E4%BB%8E%E5%8D%95%E5%85%83%E5%8C%96%E5%8E%9F%E7%90%86%E5%88%B0%E5%A4%A7%E8%A7%84%E6%A8%A1%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/architecture/SET%E5%8C%96%E6%9E%B6%E6%9E%84%EF%BC%9A%E4%BB%8E%E5%8D%95%E5%85%83%E5%8C%96%E5%8E%9F%E7%90%86%E5%88%B0%E5%A4%A7%E8%A7%84%E6%A8%A1%E8%90%BD%E5%9C%B0%E5%AE%9E%E8%B7%B5/</guid>
+    <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
+    <description>深入剖析SET化（单元化）架构的核心原理与设计实践，涵盖流量路由、数据分片、全局服务、故障隔离等关键环节，结合美团、阿里等大厂实践经验，构建可水平扩展的弹性架构体系。</description>
+    <category>架构设计</category>
+    <category>SET化架构</category>
+    <category>单元化</category>
+    <category>异地多活</category>
+    <category>高可用</category>
+  </item>
+  <item>
+    <title>从LLM到Agent：Agentic系统的知识地图</title>
+    <link>https://www.skyfalling.cn/blog/engineering/agentic/from-llm-to-agent/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/agentic/from-llm-to-agent/</guid>
+    <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+    <description>从 LLM 的函数本质出发，定义 Agent 的组件模型与控制循环，绘制十三篇文章的依赖关系，并给出 Agent 不该用的清晰判据。</description>
+    <category>Agentic</category>
+    <category>AI Engineering</category>
+    <category>LLM</category>
+  </item>
+  <item>
+    <title>MySQL 核心技术：事务与锁机制</title>
+    <link>https://www.skyfalling.cn/blog/engineering/middleware/MySQL%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E4%BA%8B%E5%8A%A1%E4%B8%8E%E9%94%81%E6%9C%BA%E5%88%B6/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/middleware/MySQL%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E4%BA%8B%E5%8A%A1%E4%B8%8E%E9%94%81%E6%9C%BA%E5%88%B6/</guid>
+    <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+    <description>事务的四个隔离级别不是教科书上的枯燥定义，而是对读写冲突这个核心矛盾的四种不同权衡。Read Uncommitted 用最小代价换最大并发，Serializable 用最大代价换绝对正确。中间两档的差异藏在锁持有多久和锁住什么范围的细节里。理解这些细节，才能看懂 InnoDB 的加锁行为，才能在死锁发生时快速定位根因。</description>
+    <category>MySQL</category>
+    <category>事务</category>
+    <category>锁机制</category>
+    <category>死锁</category>
+  </item>
+  <item>
+    <title>MySQL 核心技术：索引原理与查询优化</title>
+    <link>https://www.skyfalling.cn/blog/engineering/middleware/MySQL%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/middleware/MySQL%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%EF%BC%9A%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96/</guid>
+    <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+    <description>索引不是加了就快的魔法，而是一套需要理解底层数据结构、遵循匹配规则、结合业务场景做判断的工程实践。从磁盘 I/O 的物理约束理解 B+Tree 的设计动机，从最左前缀匹配理解复合索引的使用规则，从 EXPLAIN 的输出理解优化器的真实决策——每一步都是在缩小扫描行数与实际需要行数之间的差距。</description>
+    <category>MySQL</category>
+    <category>索引优化</category>
+    <category>慢查询</category>
+    <category>数据库</category>
+  </item>
+  <item>
+    <title>Redis 核心机制与工程实践：从数据结构选型到持久化的设计权衡</title>
+    <link>https://www.skyfalling.cn/blog/engineering/middleware/Redis%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BB%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%80%89%E5%9E%8B%E5%88%B0%E6%8C%81%E4%B9%85%E5%8C%96%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%9D%83%E8%A1%A1/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/middleware/Redis%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BB%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%80%89%E5%9E%8B%E5%88%B0%E6%8C%81%E4%B9%85%E5%8C%96%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%9D%83%E8%A1%A1/</guid>
+    <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+    <description>Redis 的快不是因为内存数据库四个字就能解释的，而是单线程模型、精心设计的数据结构、惰性过期策略和高效持久化机制共同作用的结果。从五种数据类型的内部编码理解选型依据，从 RDB 和 AOF 的写入管线理解持久化保障，从 Sentinel 的故障检测理解高可用设计——每一个工程决策都在性能、安全和复杂度之间寻找平衡点。</description>
+    <category>Redis</category>
+    <category>缓存</category>
+    <category>持久化</category>
+    <category>高可用</category>
+  </item>
+  <item>
+    <title>限流的本质：从限流算法到分布式流控的架构思考</title>
+    <link>https://www.skyfalling.cn/blog/engineering/architecture/%E9%99%90%E6%B5%81%E7%9A%84%E6%9C%AC%E8%B4%A8%EF%BC%9A%E4%BB%8E%E9%99%90%E6%B5%81%E7%AE%97%E6%B3%95%E5%88%B0%E5%88%86%E5%B8%83%E5%BC%8F%E6%B5%81%E6%8E%A7%E7%9A%84%E6%9E%B6%E6%9E%84%E6%80%9D%E8%80%83/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/architecture/%E9%99%90%E6%B5%81%E7%9A%84%E6%9C%AC%E8%B4%A8%EF%BC%9A%E4%BB%8E%E9%99%90%E6%B5%81%E7%AE%97%E6%B3%95%E5%88%B0%E5%88%86%E5%B8%83%E5%BC%8F%E6%B5%81%E6%8E%A7%E7%9A%84%E6%9E%B6%E6%9E%84%E6%80%9D%E8%80%83/</guid>
+    <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+    <description>限流不是一个算法问题，而是一个系统设计问题。从速率控制到并发保护，从单机令牌桶到分布式 Redis 计数器，从 Nginx 接入层到业务层精细化流控——每一层的限流策略背后，都是对系统容量、业务优先级和降级策略的深度思考。</description>
+    <category>限流</category>
+    <category>分布式系统</category>
+    <category>系统架构</category>
+    <category>高可用</category>
+  </item>
+  <item>
+    <title>AWS多泳道自动化持续交付实践</title>
+    <link>https://www.skyfalling.cn/blog/engineering/practice/AWS%E5%A4%9A%E6%B3%B3%E9%81%93%E8%87%AA%E5%8A%A8%E5%8C%96%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E5%AE%9E%E8%B7%B5/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/practice/AWS%E5%A4%9A%E6%B3%B3%E9%81%93%E8%87%AA%E5%8A%A8%E5%8C%96%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E5%AE%9E%E8%B7%B5/</guid>
+    <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
+    <description>本文面向 DevOps 架构师与云原生工程师，介绍如何基于 AWS CodePipeline + CloudFormation 构建一套支持多泳道（Multi-Lane）并行部署的 ECS 持续交付体系。该方案不仅解决并发部署的资源锁冲突问题，还实现模板集中治理与业务仓库完全解耦。</description>
+    <category>AWS</category>
+    <category>DevOps</category>
+    <category>泳道部署</category>
+  </item>
+  <item>
+    <title>AI下半场：中国AI的三极竞争——阿里、腾讯与美团</title>
+    <link>https://www.skyfalling.cn/blog/insights/technology/%E4%B8%AD%E5%9B%BDAI%E7%9A%84%E4%B8%89%E6%9E%81%E7%AB%9E%E4%BA%89/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/insights/technology/%E4%B8%AD%E5%9B%BDAI%E7%9A%84%E4%B8%89%E6%9E%81%E7%AB%9E%E4%BA%89/</guid>
+    <pubDate>Tue, 28 Oct 2025 00:00:00 GMT</pubDate>
+    <description>AI上半场比拼算法与算力，下半场则比拼数据与场景。阿里、腾讯、美团分别代表基础层、生态层与场景层，构成中国AI的现实格局。</description>
+    <category>人工智能</category>
+    <category>产业竞争</category>
+    <category>互联网巨头</category>
+  </item>
+</channel>
+</rss>
