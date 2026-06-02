@@ -68,6 +68,10 @@ Thumbs.db
 tmp/
 temp/
 
+# Claude Code 本地运行时状态
+.claude/scheduled_tasks.lock
+.claude/settings.local.json
+
 # Package files
 *.tgz
 
