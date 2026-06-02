@@ -1,6 +1,7 @@
 import { getPostsByTag, getAllTags } from '@/lib/blog';
 import BlogCard from '@/components/BlogCard';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
 const POSTS_PER_PAGE = 18;
 
@@ -21,6 +22,24 @@ export async function generateStaticParams() {
   }
 
   return params;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ tag: string; page: string }>;
+}): Promise<Metadata> {
+  const { tag, page } = await params;
+  const decodedTag = decodeURIComponent(tag);
+  const pageNum = parseInt(page) || 1;
+  const pageSuffix = pageNum > 1 ? `（第 ${pageNum} 页）` : '';
+  return {
+    title: `标签：${decodedTag}${pageSuffix}`,
+    description: `所有带 "${decodedTag}" 标签的文章`,
+    alternates: {
+      canonical: `/blog/tag/${encodeURIComponent(decodedTag)}/page/${pageNum}/`,
+    },
+  };
 }
 
 export default async function TagPageWithPagination({

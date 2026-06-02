@@ -2,6 +2,7 @@ import { getAllPosts } from '@/lib/blog';
 import BlogCard from '@/components/BlogCard';
 import CategoryNav from '@/components/CategoryNav';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
 const POSTS_PER_PAGE = 18;
 
@@ -9,6 +10,23 @@ export async function generateStaticParams() {
   const allPosts = getAllPosts();
   const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
   return Array.from({ length: totalPages }, (_, i) => ({ page: String(i + 1) }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ page: string }>;
+}): Promise<Metadata> {
+  const { page } = await params;
+  const pageNum = parseInt(page) || 1;
+  const pageSuffix = pageNum > 1 ? `（第 ${pageNum} 页）` : '';
+  return {
+    title: `全部文章${pageSuffix}`,
+    description: '所有博客文章列表',
+    alternates: {
+      canonical: `/blog/page/${pageNum}/`,
+    },
+  };
 }
 
 export default async function BlogPage({ params }: { params: Promise<{ page: string }> }) {

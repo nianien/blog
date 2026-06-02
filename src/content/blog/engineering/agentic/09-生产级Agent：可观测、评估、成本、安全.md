@@ -3,6 +3,7 @@ title: "生产级Agent：可观测、评估、成本、安全"
 pubDate: "2026-02-01"
 description: "Demo 到生产之间隔着四件事——可观测性（Agent 不确定性下唯一的排障手段）、评估（Agent 评估远比 LLM 评估复杂）、成本工程（Token 是新的货币）、安全（Prompt 注入是全新攻击面）。本文给出四件事各自的核心 schema、关键伪代码与最容易踩的坑。"
 tags: ["Agentic", "AI Engineering", "Production"]
+slug: "production-grade-agents"
 series:
   key: "agentic"
   order: 9

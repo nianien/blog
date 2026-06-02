@@ -60,12 +60,23 @@ export async function generateMetadata({
   const { slug } = await params;
   const parsed = parseSlug(slug);
   const categoryPath = parsed?.categoryPath || slug.join('/');
+  const page = parsed?.page || 1;
   const meta = CATEGORY_META[categoryPath];
   const name = meta?.name || categoryPath;
+  const pageSuffix = page > 1 ? `（第 ${page} 页）` : '';
 
   return {
-    title: `${name} - Skyfalling Blog`,
+    title: `${name}${pageSuffix}`,
     description: meta?.description || `${name}分类下的文章`,
+    alternates: {
+      canonical: `/blog/category/${categoryPath}/page/${page}/`,
+    },
+    openGraph: {
+      title: `${name}${pageSuffix}`,
+      description: meta?.description || `${name}分类下的文章`,
+      type: 'website',
+      url: `/blog/category/${categoryPath}/page/${page}/`,
+    },
   };
 }
 

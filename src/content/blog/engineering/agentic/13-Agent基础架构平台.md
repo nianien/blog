@@ -3,6 +3,7 @@ title: "Agent基础架构平台"
 pubDate: "2026-03-27"
 description: "当组织需要运行多个 Agent、服务多业务方、对接多租户时，需要的不是更多 Agent 代码，是一整套基础架构平台。本文给出平台的五层架构、与传统微服务平台的四个本质差异、Token 配额与预扣结算的代码、LLM Gateway 的路由与 fallback 链，以及平台演进四阶段的避坑路径。"
 tags: ["Agent", "系统架构", "基础设施", "平台工程"]
+slug: "agent-platform-infrastructure"
 author: "skyfalling"
 series:
   key: "agentic"

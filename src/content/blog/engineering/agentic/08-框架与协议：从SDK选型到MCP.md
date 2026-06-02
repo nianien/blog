@@ -3,6 +3,7 @@ title: "框架与协议：从SDK选型到MCP"
 pubDate: "2026-01-22"
 description: "Agent 生态正在走向两极分化——一极是 LangChain/LangGraph 的厚抽象，另一极是 Claude Agent SDK / OpenAI Agents SDK 的薄抽象 + MCP 协议化。本文给出框架选型的八维决策框架、LangGraph 状态机的最小代码、MCP Server/Client 的核心实现，以及 N×M 集成问题的协议化解法。"
 tags: ["Agentic", "AI Engineering", "Framework", "MCP"]
+slug: "agent-frameworks-and-mcp"
 series:
   key: "agentic"
   order: 8

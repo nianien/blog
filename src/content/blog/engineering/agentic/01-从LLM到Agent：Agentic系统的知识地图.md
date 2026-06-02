@@ -3,6 +3,7 @@ title: "从LLM到Agent：Agentic系统的知识地图"
 description: "从 LLM 的函数本质出发，定义 Agent 的组件模型与控制循环，绘制十三篇文章的依赖关系，并给出 Agent 不该用的清晰判据。"
 pubDate: "2025-12-01"
 tags: ["Agentic", "AI Engineering", "LLM"]
+slug: "from-llm-to-agent"
 series:
   key: "agentic"
   order: 1

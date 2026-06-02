@@ -3,6 +3,7 @@ title: "Agent运行时：循环、工具与提示词"
 pubDate: "2025-12-14"
 description: "Agent 运行时由三个机制构成：控制循环驱动执行节奏、工具调用打通外部世界、提示词约束 LLM 行为。本文从契约角度展开三者的设计与协作，给出每个机制的核心伪代码、关键 Schema 与生产工程的陷阱清单。"
 tags: ["Agentic", "AI Engineering", "Runtime"]
+slug: "agent-runtime-loop"
 series:
   key: "agentic"
   order: 3

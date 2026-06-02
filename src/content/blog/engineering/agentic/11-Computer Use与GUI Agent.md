@@ -3,6 +3,7 @@ title: "Computer Use与GUI Agent"
 pubDate: "2026-04-28"
 description: "当 Agent 像人类一样看屏幕、点鼠标、敲键盘，一种新的交互范式出现了。本文给出 Computer Use 的视觉-动作循环伪代码、action schema、定位策略（坐标 vs Set-of-Mark）、Tool Calling 与 Computer Use 的混合路由，以及为什么 OSWorld 72% 距离生产可用仍有 1-2 个数量级的差距。"
 tags: ["Agentic", "AI Engineering", "Computer Use", "GUI Agent"]
+slug: "computer-use-gui-agents"
 series:
   key: "agentic"
   order: 11

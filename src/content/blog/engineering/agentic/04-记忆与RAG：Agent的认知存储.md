@@ -3,6 +3,7 @@ title: "记忆与RAG：Agent的认知存储"
 pubDate: "2026-01-02"
 description: "LLM 是无状态函数，Agent 必须有状态。本文给出 Agent 记忆的四层结构、各层的读写删伪代码、Chunking 到 Reranking 的完整 RAG 流水线，以及为什么 80% 的 RAG 质量问题在检索侧而非生成侧。"
 tags: ["Agentic", "AI Engineering", "Memory", "RAG"]
+slug: "agent-memory-and-rag"
 series:
   key: "agentic"
   order: 4

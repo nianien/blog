@@ -3,6 +3,7 @@ title: "多 Agent 协作"
 pubDate: "2026-01-17"
 description: "单 Agent 有四个天花板——context、专业性、可靠性、并行度。多 Agent 协作不是把 Agent 串起来，而是用架构换可靠性。本文给出四种协作模式的核心伪代码、通信机制的 schema 选型、失败传播的处理路径，以及最常被低估的乘法效应数学。"
 tags: ["Agentic", "AI Engineering", "Multi-Agent"]
+slug: "multi-agent-collaboration"
 series:
   key: "agentic"
   order: 7

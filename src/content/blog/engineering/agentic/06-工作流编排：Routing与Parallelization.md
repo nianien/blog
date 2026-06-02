@@ -3,6 +3,7 @@ title: "工作流编排：Routing 与 Parallelization"
 pubDate: "2025-12-17"
 description: "Agent 不是只靠一个大循环跑到底。复杂任务通常需要把多步组装成工作流：根据输入选择不同路径（Routing）、把可独立的步骤并行（Parallelization）、把多个步骤链成顺序流水（Chaining）。本文从契约和实现两个角度展开这三种工作流模式，给出何时用、怎么用、容易踩什么坑。"
 tags: ["Agentic", "AI Engineering", "Workflow"]
+slug: "workflow-orchestration"
 series:
   key: "agentic"
   order: 6

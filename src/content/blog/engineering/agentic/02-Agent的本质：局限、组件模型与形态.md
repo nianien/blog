@@ -3,6 +3,7 @@ title: "Agent的本质：局限、组件模型与形态"
 pubDate: "2025-12-05"
 description: "Agent 不是更大的 LLM，而是补齐 LLM 五大局限的系统。本文给出 Agent 的组件分解、Observe-Think-Plan-Act-Reflect-Update 循环的最小落地、自主性 L1-L4 的关键机制差异，以及为什么成本驱动是人工介入率而不是 token 的工程账。"
 tags: ["Agentic", "AI Engineering", "LLM"]
+slug: "agent-essence-and-forms"
 series:
   key: "agentic"
   order: 2

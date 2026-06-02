@@ -4,6 +4,7 @@ import { format } from 'date-fns';
 import { zhCN } from 'date-fns/locale';
 import { getPostWithNavigation, getCategoryFromSlug, getSeriesMeta, getSeriesNavItems } from '@/lib/blog';
 import { CATEGORY_META } from '@/lib/categories';
+import { SITE, absoluteUrl } from '@/lib/site';
 import SyntaxHighlightedContent from '@/components/SyntaxHighlightedContent';
 import BlogPostNavigation from '@/components/BlogPostNavigation';
 import SeriesNav from '@/components/SeriesNav';
@@ -44,16 +45,35 @@ export async function generateMetadata({
   }
 
   const { post } = postData;
+  const canonicalPath = `/blog/${post.slug}/`;
+  const canonicalUrl = absoluteUrl(canonicalPath);
+  const ogImage = post.heroImage || SITE.defaultOgImage;
 
   return {
-    title: `${post.title} - Skyfalling Blog`,
+    title: post.title,
     description: post.description || post.title,
+    keywords: post.tags,
+    alternates: {
+      canonical: canonicalPath,
+    },
     openGraph: {
       title: post.title,
       description: post.description || post.title,
       type: 'article',
+      url: canonicalUrl,
+      siteName: SITE.name,
+      locale: SITE.locale,
       publishedTime: post.pubDate,
-      authors: ['Skyfalling'],
+      modifiedTime: post.pubDate,
+      authors: [SITE.author],
+      tags: post.tags,
+      images: [{ url: ogImage }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description || post.title,
+      images: [ogImage],
     },
   };
 }
@@ -80,8 +100,44 @@ export default async function BlogPostPage({
   const mainMeta = CATEGORY_META[mainCategory];
   const subMeta = CATEGORY_META[categoryPath];
 
+  const canonicalUrl = absoluteUrl(`/blog/${post.slug}/`);
+  const ogImage = post.heroImage || SITE.defaultOgImage;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description || post.title,
+    datePublished: post.pubDate,
+    dateModified: post.pubDate,
+    inLanguage: SITE.locale,
+    keywords: post.tags?.join(', '),
+    author: {
+      '@type': 'Person',
+      name: SITE.author,
+      url: SITE.url,
+    },
+    publisher: {
+      '@type': 'Person',
+      name: SITE.author,
+      url: SITE.url,
+    },
+    image: absoluteUrl(ogImage),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': canonicalUrl,
+    },
+    url: canonicalUrl,
+    articleSection: mainMeta?.name || mainCategory,
+  };
+
   return (
     <article className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
         <div className="rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12">
           {/* 文章头部信息 */}

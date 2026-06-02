@@ -3,6 +3,7 @@ title: "可信 Agent：Guardrails 与 Human-in-the-Loop"
 pubDate: "2025-12-21"
 description: "Agent 系统越自主越需要边界。Guardrails 在系统层加入安全护栏：输入侧拦截恶意提示、输出侧过滤危险内容、工具侧约束破坏性操作。Human-in-the-Loop 把人类判断接入关键决策点：不确定性升级、不可逆操作审批、反馈回路。这一篇展开两种模式各自的实现与协同。"
 tags: ["Agentic", "AI Engineering", "Safety", "HITL"]
+slug: "trustworthy-agents-guardrails"
 series:
   key: "agentic"
   order: 10

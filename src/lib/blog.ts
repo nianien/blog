@@ -68,15 +68,30 @@ function sortByDateAndTitle(a: BlogPost, b: BlogPost): number {
   return a.title.localeCompare(b.title);
 }
 
+// 把文件路径和 frontmatter 中可选的 slug 合成最终的路由 slug。
+// fileSlug 形如 "engineering/agentic/12-学习与自进化"
+// 若 frontmatter 提供 slug（如 "learning-self-improvement"），保留目录前缀，仅替换文件名段。
+function computeRouteSlug(fileSlug: string, frontmatterSlug?: unknown): string {
+  if (typeof frontmatterSlug === 'string' && frontmatterSlug.trim().length > 0) {
+    const cleanSlug = frontmatterSlug.trim();
+    const parts = fileSlug.split('/');
+    if (parts.length > 1) {
+      return [...parts.slice(0, -1), cleanSlug].join('/');
+    }
+    return cleanSlug;
+  }
+  return fileSlug;
+}
+
 export function getAllPosts(): BlogPost[] {
   const markdownFiles = getAllMarkdownFiles(postsDirectory);
-  
-  const allPostsData = markdownFiles.map(({ filePath, slug }) => {
+
+  const allPostsData = markdownFiles.map(({ filePath, slug: fileSlug }) => {
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const { data, content } = matter(fileContents);
 
     return {
-      slug,
+      slug: computeRouteSlug(fileSlug, data.slug),
       title: data.title,
       description: data.description,
       pubDate: typeof data.pubDate === 'string' ? data.pubDate : data.pubDate?.toISOString?.()?.split('T')[0] || '2024-01-01',
@@ -93,32 +108,8 @@ export function getAllPosts(): BlogPost[] {
 
 export function getPostBySlug(slug: string): BlogPost | null {
   try {
-    // 解码URL，处理中文路径
     const decodedSlug = decodeURIComponent(slug);
-    
-    // 直接搜索所有markdown文件
-    const markdownFiles = getAllMarkdownFiles(postsDirectory);
-    
-    // 尝试精确匹配
-    const foundFile = markdownFiles.find(file => file.slug === decodedSlug);
-    
-    if (!foundFile) {
-      return null;
-    }
-    
-    const fileContents = fs.readFileSync(foundFile.filePath, 'utf8');
-    const { data, content } = matter(fileContents);
-
-    return {
-      slug: decodedSlug,
-      title: data.title,
-      description: data.description,
-      pubDate: typeof data.pubDate === 'string' ? data.pubDate : data.pubDate?.toISOString?.()?.split('T')[0] || '2024-01-01',
-      tags: data.tags || [],
-      heroImage: data.heroImage,
-      series: data.series || undefined,
-      content: processMarkdownContent(content),
-    };
+    return getAllPosts().find((p) => p.slug === decodedSlug) || null;
   } catch (error) {
     console.error(`Error reading post ${slug}:`, error);
     return null;
