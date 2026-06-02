@@ -65,7 +65,7 @@ cmd_deploy() {
   check_env
   cmd_build
   touch out/.nojekyll
-  echo 'skyfalling.cn' > out/CNAME
+  echo 'www.skyfalling.cn' > out/CNAME
 
   echo "🌐 部署到 GitHub Pages..."
   npm run deploy
