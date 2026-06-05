@@ -6,7 +6,20 @@
   <atom:link href="https://www.skyfalling.cn/rss.xml" rel="self" type="application/rss+xml"/>
   <description>分享技术、生活和思考的个人博客</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 19 May 2026 00:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 05 Jun 2026 00:00:00 GMT</lastBuildDate>
+  <item>
+    <title>打造面向出海的全链路营销 AIOS：业务规划与演进路径</title>
+    <link>https://www.skyfalling.cn/blog/insights/business/overseas-marketing-aios/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/insights/business/overseas-marketing-aios/</guid>
+    <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+    <description>出海数字营销的终局不是更多工具，而是一个统一入口的全链路 AIOS。本文拆解业务分层（建站/内容运营/营销传播是三件事）、数据飞轮的工程主线、从场景到平台的四阶段演进，以及配套商业模式与业界对照的风险应对方案。</description>
+    <category>出海</category>
+    <category>数字营销</category>
+    <category>AIOS</category>
+    <category>Agent</category>
+    <category>数据飞轮</category>
+    <category>业务规划</category>
+  </item>
   <item>
     <title>学习与自进化</title>
     <link>https://www.skyfalling.cn/blog/engineering/agentic/learning-and-self-improvement/</link>
@@ -568,16 +581,6 @@
     <category>AWS</category>
     <category>DevOps</category>
     <category>泳道部署</category>
-  </item>
-  <item>
-    <title>AI下半场：中国AI的三极竞争——阿里、腾讯与美团</title>
-    <link>https://www.skyfalling.cn/blog/insights/technology/%E4%B8%AD%E5%9B%BDAI%E7%9A%84%E4%B8%89%E6%9E%81%E7%AB%9E%E4%BA%89/</link>
-    <guid isPermaLink="true">https://www.skyfalling.cn/blog/insights/technology/%E4%B8%AD%E5%9B%BDAI%E7%9A%84%E4%B8%89%E6%9E%81%E7%AB%9E%E4%BA%89/</guid>
-    <pubDate>Tue, 28 Oct 2025 00:00:00 GMT</pubDate>
-    <description>AI上半场比拼算法与算力，下半场则比拼数据与场景。阿里、腾讯、美团分别代表基础层、生态层与场景层，构成中国AI的现实格局。</description>
-    <category>人工智能</category>
-    <category>产业竞争</category>
-    <category>互联网巨头</category>
   </item>
 </channel>
 </rss>
