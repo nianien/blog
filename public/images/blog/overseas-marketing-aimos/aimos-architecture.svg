@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <text x="450" y="36" text-anchor="middle" font-size="18" font-weight="600" fill="#1F2937">全链路营销 AIMOS 四层架构：契约系统、双入口接入</text>
+
+  <!-- Layer 1: 交互层（增高、含两个入口子区） -->
+  <rect x="100" y="70" width="700" height="115" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="160" y="118" font-size="14" font-weight="600" fill="#1E3A8A">交互层</text>
+  <text x="160" y="138" font-size="12" fill="#1E3A8A">Agent</text>
+
+  <!-- Row 1 - 自有 Agent UI 子模块 -->
+  <rect x="280" y="80" width="135" height="42" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="347" y="106" text-anchor="middle" font-size="12" fill="#1E3A8A">意图理解</text>
+  <rect x="425" y="80" width="135" height="42" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="492" y="106" text-anchor="middle" font-size="12" fill="#1E3A8A">对话编排</text>
+  <rect x="570" y="80" width="135" height="42" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1.2"/>
+  <text x="637" y="106" text-anchor="middle" font-size="12" fill="#1E3A8A">长期记忆</text>
+  <text x="715" y="106" font-size="10" fill="#6B7280" font-style="italic">↑ 客户人</text>
+
+  <!-- Row 2 - 外部接入 MCP / API 网关 -->
+  <rect x="280" y="132" width="425" height="42" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="492" y="158" text-anchor="middle" font-size="12" font-weight="600" fill="#1E3A8A">MCP Server / OpenAPI Gateway</text>
+  <text x="715" y="158" font-size="10" fill="#6B7280" font-style="italic">↑ 客户 Agent / 脚本</text>
+
+  <!-- Layer 2: 工具层 -->
+  <rect x="100" y="205" width="700" height="100" rx="8" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="160" y="240" font-size="14" font-weight="600" fill="#14532D">工具层</text>
+  <text x="160" y="260" font-size="12" fill="#14532D">能力即工具</text>
+
+  <rect x="280" y="220" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="330" y="243" text-anchor="middle" font-size="11" fill="#14532D">建站引擎</text>
+  <rect x="390" y="220" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="440" y="243" text-anchor="middle" font-size="11" fill="#14532D">内容引擎</text>
+  <rect x="500" y="220" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="550" y="243" text-anchor="middle" font-size="11" fill="#14532D">SEO · GEO</text>
+  <rect x="610" y="220" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="660" y="243" text-anchor="middle" font-size="11" fill="#14532D">发布适配</text>
+
+  <rect x="280" y="265" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="330" y="288" text-anchor="middle" font-size="11" fill="#14532D">数据查询</text>
+  <rect x="390" y="265" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="440" y="288" text-anchor="middle" font-size="11" fill="#14532D">AI 客服</text>
+  <rect x="500" y="265" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="550" y="288" text-anchor="middle" font-size="11" fill="#14532D">AI SDR</text>
+  <rect x="610" y="265" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="660" y="288" text-anchor="middle" font-size="11" fill="#14532D">CRM 操作</text>
+
+  <!-- Layer 3: 知识与记忆 -->
+  <rect x="100" y="325" width="700" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="160" y="360" font-size="14" font-weight="600" fill="#78350F">知识与记忆</text>
+  <text x="160" y="380" font-size="12" fill="#78350F">RAG</text>
+
+  <rect x="280" y="340" width="150" height="50" rx="6" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="355" y="363" text-anchor="middle" font-size="12" fill="#78350F">企业层</text>
+  <text x="355" y="381" text-anchor="middle" font-size="10" fill="#78350F">品牌 / 产品 / 合规</text>
+  <rect x="450" y="340" width="150" height="50" rx="6" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="525" y="363" text-anchor="middle" font-size="12" fill="#78350F">行业品类层</text>
+  <text x="525" y="381" text-anchor="middle" font-size="10" fill="#78350F">市场 / 平台 / 本地化</text>
+  <rect x="620" y="340" width="150" height="50" rx="6" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="695" y="363" text-anchor="middle" font-size="12" fill="#78350F">效果知识库</text>
+  <text x="695" y="381" text-anchor="middle" font-size="10" fill="#78350F">飞轮回写</text>
+
+  <!-- Layer 4: 评测与护栏 -->
+  <rect x="100" y="425" width="700" height="80" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="160" y="460" font-size="14" font-weight="600" fill="#7F1D1D">评测与护栏</text>
+  <text x="160" y="480" font-size="12" fill="#7F1D1D">Eval + Guardrail</text>
+
+  <rect x="280" y="440" width="150" height="50" rx="6" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.2"/>
+  <text x="355" y="463" text-anchor="middle" font-size="12" fill="#7F1D1D">离线评测</text>
+  <text x="355" y="481" text-anchor="middle" font-size="10" fill="#7F1D1D">质量 / 合规</text>
+  <rect x="450" y="440" width="150" height="50" rx="6" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.2"/>
+  <text x="525" y="463" text-anchor="middle" font-size="12" fill="#7F1D1D">在线 A/B</text>
+  <text x="525" y="481" text-anchor="middle" font-size="10" fill="#7F1D1D">效果裁决</text>
+  <rect x="620" y="440" width="150" height="50" rx="6" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.2"/>
+  <text x="695" y="463" text-anchor="middle" font-size="12" fill="#7F1D1D">权限护栏</text>
+  <text x="695" y="481" text-anchor="middle" font-size="10" fill="#7F1D1D">审批 / 可回滚</text>
+
+  <!-- Bottom note -->
+  <text x="450" y="545" text-anchor="middle" font-size="13" fill="#1F2937" font-weight="500">自底向上构建 + 双入口接入：能力为 Agent 服务，Agent 既可自有也可外部</text>
+  <text x="450" y="572" text-anchor="middle" font-size="12" fill="#6B7280" font-style="italic">入口民主化、复利集中化——把入口让出去、把飞轮攥在手里</text>
+</svg>
