@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <text x="460" y="36" text-anchor="middle" font-size="18" font-weight="600" fill="#1F2937">P0 / P1 / P2 三步走转型路径</text>
+
+  <!-- P0 -->
+  <rect x="60" y="90" width="240" height="200" rx="10" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="180" y="120" text-anchor="middle" font-size="16" font-weight="700" fill="#78350F">P0 · 筑基</text>
+  <line x1="80" y1="135" x2="280" y2="135" stroke="#F59E0B" stroke-width="1"/>
+  <text x="180" y="158" text-anchor="middle" font-size="12" font-weight="600" fill="#78350F">客户统一</text>
+  <text x="180" y="178" text-anchor="middle" font-size="11" fill="#78350F">3-5 家交集样板试点</text>
+  <text x="180" y="205" text-anchor="middle" font-size="12" font-weight="600" fill="#78350F">后端承接</text>
+  <text x="180" y="225" text-anchor="middle" font-size="11" fill="#78350F">身份打通 + 散人聚成一家</text>
+  <text x="180" y="252" text-anchor="middle" font-size="12" font-weight="600" fill="#78350F">联通验证</text>
+  <text x="180" y="272" text-anchor="middle" font-size="11" fill="#78350F">最小可行飞轮 MVF</text>
+
+  <!-- P1 -->
+  <rect x="340" y="90" width="240" height="200" rx="10" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="460" y="120" text-anchor="middle" font-size="16" font-weight="700" fill="#14532D">P1 · 演进</text>
+  <line x1="360" y1="135" x2="560" y2="135" stroke="#22C55E" stroke-width="1"/>
+  <text x="460" y="158" text-anchor="middle" font-size="12" font-weight="600" fill="#14532D">建站产品化</text>
+  <text x="460" y="178" text-anchor="middle" font-size="11" fill="#14532D">项目制 → 供给侧 SaaS 化</text>
+  <text x="460" y="205" text-anchor="middle" font-size="12" font-weight="600" fill="#14532D">能力沉淀共享</text>
+  <text x="460" y="225" text-anchor="middle" font-size="11" fill="#14532D">内容 / RAG / 测评 / CRM</text>
+  <text x="460" y="252" text-anchor="middle" font-size="12" font-weight="600" fill="#14532D">三方向接入</text>
+  <text x="460" y="272" text-anchor="middle" font-size="11" fill="#14532D">同一条数据主线</text>
+
+  <!-- P2 -->
+  <rect x="620" y="90" width="240" height="200" rx="10" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="740" y="120" text-anchor="middle" font-size="16" font-weight="700" fill="#4C1D95">P2 · 互通</text>
+  <line x1="640" y1="135" x2="840" y2="135" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="740" y="158" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95">能力全面打通</text>
+  <text x="740" y="178" text-anchor="middle" font-size="11" fill="#4C1D95">乐高式订阅 + 数据复利</text>
+  <text x="740" y="205" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95">演进为 AIMOS</text>
+  <text x="740" y="225" text-anchor="middle" font-size="11" fill="#4C1D95">客户面向一个 Agent</text>
+  <text x="740" y="252" text-anchor="middle" font-size="12" font-weight="600" fill="#4C1D95">RaaS 占比稳定上升</text>
+  <text x="740" y="272" text-anchor="middle" font-size="11" fill="#4C1D95">飞轮复利成型</text>
+
+  <!-- 箭头 -->
+  <line x1="300" y1="190" x2="335" y2="190" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="342,190 330,184 330,196" fill="#6B7280"/>
+  <line x1="580" y1="190" x2="615" y2="190" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="622,190 610,184 610,196" fill="#6B7280"/>
+
+  <!-- 底部：复用度递进 -->
+  <line x1="60" y1="335" x2="860" y2="335" stroke="#9CA3AF" stroke-width="1.5"/>
+  <polygon points="868,335 856,329 856,341" fill="#9CA3AF"/>
+  <text x="60" y="358" font-size="11" fill="#6B7280">复用度 · 自动化 · 飞轮复利</text>
+  <text x="855" y="358" text-anchor="end" font-size="11" fill="#6B7280">递进 →</text>
+
+  <text x="460" y="385" text-anchor="middle" font-size="11" fill="#6B7280" font-style="italic">每一步的成功不在「上了一个新系统」，在客户主键 / 数据主线 / 飞轮复利是否真转起来</text>
+</svg>

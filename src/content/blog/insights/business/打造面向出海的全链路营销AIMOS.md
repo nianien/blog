@@ -281,27 +281,29 @@ author: "skyfalling"
 
 > 这条主线是飞轮的"血管"——只要任一条断了，"哪条内容、经哪个渠道、带来了哪笔成交"就回答不了。主线断在哪，闭环就断在哪。
 
-### 4.3 Privacy-first：2026 的数据基础设施已被打穿一半
+但 2026 的现实是：**这条血管本身已经被打穿了一半**。
 
-**Cookie 取消、iOS ATT、EU AI Act 把 2020 年的归因链路彻底改写——server-side tracking、first-party data、clean rooms 不是高级选项，是新底座。** 三条数据主线在 2020 年靠浏览器 cookie + UTM 就能拼出来，2026 年这条路被堵了大半：
+### 4.3 Privacy-first：当数据主线遇上隐私监管
 
-- **Chrome 第三方 Cookie 2026 年加速退场**（Safari/Firefox 早已默认拦截），跨站点行为打通基础消失
-- **iOS 17/18 的 App Tracking Transparency**：iOS 用户的 ATT opt-in 率长期低于 25%（AppsFlyer 等多家归因平台数据），移动端归因信号损失过半
-- **EU DMA + GDPR + AI Act**：在欧盟运营的营销系统必须有合规的 consent 链路、可解释 AI 决策
+数据主线在 2020 年靠"浏览器 cookie + UTM"就能拼通——浏览器记录用户行为、跨站点跟踪、把成交归因到最后一次点击（last-click）。但 2024-2026 三件事彻底改写了这条链路：
 
-业界已有的 2026 工程模板：
+- **第三方 Cookie 退场**：Chrome 2026 年加速退场（Safari、Firefox 早已默认拦截），跨站点用户行为追踪的技术基础消失
+- **iOS ATT 弹窗机制**（App Tracking Transparency，苹果 2021 起强制 App 弹窗征求用户追踪同意）：opt-in 率长期低于 25%（AppsFlyer 等归因平台数据），移动端归因信号损失过半
+- **欧盟监管三件套**（GDPR 个人数据保护、AI Act AI 决策可解释、DMA 数字市场法）：在欧盟运营的营销系统必须有合规的用户同意链路、可解释的 AI 决策
 
-| 工具 | 做什么 | 业界对照 |
+业界已经长出了一套替代方案——目的都是一个：**在用户隐私不被侵犯的前提下，把成交归因回到内容/渠道**。
+
+| 工具 | 一句话解释 | 业界对照 |
 |---|---|---|
-| **Server-side tracking** | 把追踪从浏览器搬到服务端，绕过浏览器隐私拦截 | Meta CAPI、Google Server-side GTM、Snowplow |
-| **First-party data 战略** | 把客户身份、行为、订单数据收口在自己的 CDP（Customer Data Platform，客户数据平台）/ 数仓 | mParticle、Segment Twilio、Treasure Data |
-| **Clean Rooms** | 与广告平台/品牌方做加密数据匹配，不暴露原始数据 | Meta Advanced Analytics、Google Ads Data Hub、AWS Clean Rooms、Snowflake Data Clean Room |
-| **Consent Management Platform** | 统一管理用户授权与撤回 | OneTrust、Didomi、Usercentrics |
-| **MMM 复兴** | last-click 不可用时回到统计学归因 | Meta Robyn、Google Lightweight MMM、Recast |
+| **服务端追踪**（Server-side tracking） | 把追踪代码从浏览器搬到服务器，绕过浏览器拦截 | Meta CAPI（Conversion API）、Google 服务端 GTM、Snowplow |
+| **第一方数据战略**（First-party data） | 把客户身份 / 行为 / 订单收口在自己的 CDP（客户数据平台）或数仓，不依赖第三方 | mParticle、Segment、Treasure Data |
+| **数据净室**（Clean Rooms） | 与广告平台、品牌方做加密数据匹配，双方都看不到对方的原始数据 | Meta Advanced Analytics、Google Ads Data Hub、AWS Clean Rooms |
+| **同意管理平台**（Consent Management Platform） | 统一管理用户授权、可撤回、可审计——欧盟合规底线 | OneTrust、Didomi、Usercentrics |
+| **MMM 复兴**（Marketing Mix Modeling，营销组合建模） | 用回归模型把成交归因到各渠道投入，绕过 last-click 失效 | Meta Robyn、Google Lightweight MMM |
 
-> **2026 的事实是**：MMM 现在火不是因为它"高级"，是因为传统 last-click + cookie 归因被打穿了。AIMOS 的归因架构必须从 day 1 就 privacy-first，否则一年后整个数据层要重做——而到时候竞品已经领先一个版本。
+> MMM 在 2024-2026 突然"复兴"，不是因为它高级，而是因为传统 last-click + cookie 归因被打穿了——回归模型成了在低信号数据下推断"哪个渠道带来增量"的少数可行选项。AIMOS 的归因架构必须从 day 1 就按 privacy-first 设计，否则一年后整个数据层要重做。
 
-即便用足全套 server-side + first-party + MMM 工具箱，**归因清晰度也很难恢复到 2018 年 100% 的水平**——业界经验通常恢复 60-75%。飞轮被迫在更低 SNR 的数据下学习，评测要求更长的统计窗口，判优要更稳健的因果方法：贝叶斯 MMM、Difference-in-Differences、合成对照。last-click 时代的简单归因，2026 已经回不去了。
+即便用足上面整套工具箱，**归因清晰度也很难恢复到 2018 年 100% 的水平**——业界经验通常恢复 60-75%。飞轮被迫在"信号更弱"的数据下学习，意味着评测要求更长的统计窗口、判优要更稳健的因果推断方法。last-click 时代的简单归因，2026 已经回不去了。
 
 ### 4.4 现状骨架差的"中间三步"
 

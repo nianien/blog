@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <text x="450" y="36" text-anchor="middle" font-size="18" font-weight="600" fill="#1F2937">从三方向各自运行到中立平台收敛</text>
+
+  <!-- 上方：现状（三方向并行） -->
+  <text x="40" y="78" font-size="13" font-weight="600" fill="#6B7280">现状</text>
+  <text x="40" y="96" font-size="11" fill="#9CA3AF">三方向各自运行 · 客户画像割裂</text>
+
+  <!-- 建站 silo -->
+  <rect x="120" y="80" width="200" height="120" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="220" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="#1E3A8A">建站</text>
+  <text x="220" y="135" text-anchor="middle" font-size="11" fill="#1E3A8A">项目制定制</text>
+  <text x="220" y="155" text-anchor="middle" font-size="11" fill="#1E3A8A">对接: 制造业老板</text>
+  <text x="220" y="180" text-anchor="middle" font-size="10" fill="#7F1D1D">客户主键: —</text>
+
+  <!-- 社媒 silo -->
+  <rect x="350" y="80" width="200" height="120" rx="8" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="450" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="#14532D">社媒代运营</text>
+  <text x="450" y="135" text-anchor="middle" font-size="11" fill="#14532D">一键发布 + 互动回收</text>
+  <text x="450" y="155" text-anchor="middle" font-size="11" fill="#14532D">对接: 运营负责人</text>
+  <text x="450" y="180" text-anchor="middle" font-size="10" fill="#7F1D1D">客户主键: —</text>
+
+  <!-- SEO/GEO silo -->
+  <rect x="580" y="80" width="200" height="120" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="680" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="#78350F">SEO / GEO</text>
+  <text x="680" y="135" text-anchor="middle" font-size="11" fill="#78350F">独立内容与结构化</text>
+  <text x="680" y="155" text-anchor="middle" font-size="11" fill="#78350F">对接: 市场负责人</text>
+  <text x="680" y="180" text-anchor="middle" font-size="10" fill="#7F1D1D">客户主键: —</text>
+
+  <!-- 数据不通标识（红色虚线断点） -->
+  <line x1="320" y1="140" x2="350" y2="140" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="335" y="132" text-anchor="middle" font-size="10" fill="#EF4444">×</text>
+  <line x1="550" y1="140" x2="580" y2="140" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="565" y="132" text-anchor="middle" font-size="10" fill="#EF4444">×</text>
+
+  <!-- 三个垂直收敛箭头（与下方 AIMOS 模块对齐）-->
+  <line x1="220" y1="210" x2="220" y2="290" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="220,298 214,288 226,288" fill="#6B7280"/>
+
+  <line x1="450" y1="210" x2="450" y2="290" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="450,298 444,288 456,288" fill="#6B7280"/>
+
+  <line x1="680" y1="210" x2="680" y2="290" stroke="#6B7280" stroke-width="1.5"/>
+  <polygon points="680,298 674,288 686,288" fill="#6B7280"/>
+
+  <!-- 收敛标注（放在右侧空白处，不打断箭头）-->
+  <text x="800" y="245" text-anchor="middle" font-size="12" font-weight="500" fill="#1F2937">收敛</text>
+  <text x="800" y="263" text-anchor="middle" font-size="10" fill="#6B7280">业务重组</text>
+  <text x="800" y="278" text-anchor="middle" font-size="10" fill="#6B7280">先于技术重组</text>
+
+  <!-- 下方：终局（中立平台） -->
+  <text x="40" y="332" font-size="13" font-weight="600" fill="#6B7280">终局</text>
+  <text x="40" y="350" font-size="11" fill="#9CA3AF">收敛到中立平台 · 统一客户主键</text>
+
+  <rect x="120" y="305" width="660" height="180" rx="10" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.8"/>
+  <text x="450" y="335" text-anchor="middle" font-size="15" font-weight="600" fill="#4C1D95">AIMOS · 全链路营销 AI 操作系统</text>
+
+  <!-- 三个能力模块 -->
+  <rect x="145" y="350" width="120" height="40" rx="6" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.2"/>
+  <text x="205" y="375" text-anchor="middle" font-size="11" fill="#4C1D95">建站模块</text>
+
+  <rect x="290" y="350" width="120" height="40" rx="6" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.2"/>
+  <text x="350" y="375" text-anchor="middle" font-size="11" fill="#4C1D95">内容 / 社媒</text>
+
+  <rect x="435" y="350" width="120" height="40" rx="6" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.2"/>
+  <text x="495" y="375" text-anchor="middle" font-size="11" fill="#4C1D95">SEO / GEO</text>
+
+  <rect x="580" y="350" width="120" height="40" rx="6" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.2"/>
+  <text x="640" y="375" text-anchor="middle" font-size="11" fill="#4C1D95">CRM / 承接</text>
+
+  <!-- 共享底座 -->
+  <rect x="145" y="405" width="555" height="35" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.2"/>
+  <text x="422" y="427" text-anchor="middle" font-size="12" font-weight="500" fill="#4C1D95">共享底座 · 内容引擎 · RAG · 语义化 · 测评 · 数据飞轮</text>
+
+  <!-- 统一 Customer ID -->
+  <text x="450" y="465" text-anchor="middle" font-size="12" font-weight="600" fill="#10B981">✓ 统一 Customer ID · 数据闭环 · 飞轮复利</text>
+
+  <!-- 底部注释 -->
+  <text x="450" y="510" text-anchor="middle" font-size="11" fill="#6B7280" font-style="italic">客户不统一，飞轮必死；客户统一，满盘皆活</text>
+</svg>
