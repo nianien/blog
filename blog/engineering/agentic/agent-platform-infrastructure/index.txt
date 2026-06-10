@@ -11,7 +11,7 @@ e:"$Sreact.suspense"
 10:I[7150,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/c7e8b2d4cd1c6d1c.css","style"]
-0:{"P":null,"b":"okDuExx5MZDwmD1D63h6O","p":"","c":["","blog","engineering","agentic","agent-platform-infrastructure",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/agent-platform-infrastructure","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c7e8b2d4cd1c6d1c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":[["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling",["$","span",null,{"className":"mx-2 text-gray-300","children":"·"}],["$","a",null,{"href":"/rss.xml","className":"hover:text-gray-600 transition-colors","aria-label":"RSS Feed","children":"RSS"}]]}]}]}]]}],["$","$L5",null,{"id":"baidu-push","strategy":"afterInteractive","src":"https://zz.bdstatic.com/linksubmit/push.js"}]]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/agent-platform-infrastructure","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+0:{"P":null,"b":"ZCm12jiMjN9lQ4avOIl1S","p":"","c":["","blog","engineering","agentic","agent-platform-infrastructure",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","engineering/agentic/agent-platform-infrastructure","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c7e8b2d4cd1c6d1c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"__className_f367f3","children":[["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"bg-[var(--background)]","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-12 lg:px-8","children":["$","p",null,{"className":"text-center text-xs leading-5 text-gray-400","children":["© ",2026," Skyfalling",["$","span",null,{"className":"mx-2 text-gray-300","children":"·"}],["$","a",null,{"href":"/rss.xml","className":"hover:text-gray-600 transition-colors","aria-label":"RSS Feed","children":"RSS"}]]}]}]}]]}],["$","$L5",null,{"id":"baidu-push","strategy":"afterInteractive","src":"https://zz.bdstatic.com/linksubmit/push.js"}]]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","engineering/agentic/agent-platform-infrastructure","c"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
 11:I[2619,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],""]
 12:I[2526,["2619","static/chunks/2619-6352ef9022ea9a44.js","4901","static/chunks/4901-1626d75be99918ee.js","6909","static/chunks/app/blog/%5B...slug%5D/page-1c88d09df0495146.js"],"default"]
 13:T9dfa,<p>当一个组织开始同时运行几十上百个 Agent——服务多业务方、对接多租户、调多家模型、用多套工具，需要的不是更多 Agent 代码，是一整套基础架构平台。它和传统微服务平台表面相似——都有网关、注册、调度、可观测——但底层约束完全不同：<strong>Token 是新货币</strong>（成本以 token 计而非 CPU 时间）、<strong>Session 是新单位</strong>（一次&quot;请求&quot;是几分钟的循环而非毫秒级 API 调用）、<strong>非确定性是新常态</strong>（同输入路径不同、资源消耗不同）。这三个差异让每一层都需要重新设计，不是把微服务平台模式照搬过来。下面展开五层架构、Token 配额与租户隔离的代码骨架、LLM Gateway 的路由与 Fallback 链，以及四阶段演进的避坑路径。</p>
@@ -2486,7 +2486,7 @@ agent.run(&quot;&quot;&quot;
 <li><strong>度量驱动优化</strong>。没有 AB 实验和全链路 Trace，就不要谈推荐优化。先建度量体系，再谈模型迭代</li>
 <li><strong>创新选对环节</strong>。LLM 用在内容理解和交互、在线学习用在排序、端智能用在体验——在正确的环节引入正确的技术，才是真正的技术判断力</li>
 </ol>
-1e:T1399c,<h2>核心判断</h2>
+1e:T13afb,<h2>核心判断</h2>
 <p>出海数字营销的下一阶段不再是&quot;更多 SaaS 工具&quot;，而是一个面向客户的统一 Agent 入口——<strong>全链路营销 AIMOS</strong>：建站、内容运营、SEO/GEO、社媒、承接、CRM 都作为能力被同一个 Agent 编排，客户用对话完成增长闭环。这背后有四个硬判断：</p>
 <ul>
 <li><strong>业务必须分层</strong>：建站是造房子，内容运营是持续装修，营销传播是修路引流——三件事必须分层，混在一起卖就是灾难。</li>
@@ -2921,7 +2921,7 @@ agent.run(&quot;&quot;&quot;
 <li><strong>测评判优</strong>：以 <strong>内容 ID × UTM × 客户 ID</strong> 三元组为聚合 key，离线（质量/合规）+ 在线 A/B + 语义判优 → 算出&quot;什么有效&quot;</li>
 <li>（反哺）效果加权回写 RAG、更新生成偏好/Prompt → 下一轮更优内容</li>
 </ol>
-<p><strong>三 ID 不是事后归并、是过程中强制注入</strong>——内容生成时不打 ID、分发时不带 UTM、承接时不绑客户 ID，到环节 6 测评判优时再&quot;找回归属&quot;就晚了。这也是为什么 4.2 节把三 ID 称为飞轮的&quot;血管&quot;——它必须在每个心跳里就跑通，而不是在终点抽血回查。</p>
+<p><strong>三 ID 不是事后归并、是过程中强制注入</strong>——内容生成时不打 ID、分发时不带 UTM、承接时不绑客户 ID，到环节 6 测评判优时再&quot;找回归属&quot;就晚了。三 ID 是飞轮的血管：必须在每个心跳里就跑通，不能在终点抽血回查。</p>
 <p>闭合的判据很硬：<strong>基于回流数据迭代后，下一轮高价值互动 / 成交指标可见提升</strong>。如果回流了一年数据但下一轮没有任何指标提升，那叫&quot;数据墓地&quot;而不是飞轮。</p>
 <h3>4.2 三条数据主线：内容 ID × UTM × 客户 ID</h3>
 <p>飞轮能闭合的工程前提，是三个 ID 系统贯穿全链路：</p>
@@ -2931,52 +2931,53 @@ agent.run(&quot;&quot;&quot;
 <blockquote>
 <p>这条主线是飞轮的&quot;血管&quot;——只要任一条断了，&quot;哪条内容、经哪个渠道、带来了哪笔成交&quot;就回答不了。主线断在哪，闭环就断在哪。</p>
 </blockquote>
-<h3>4.3 Privacy-first：2026 的数据基础设施已被打穿一半</h3>
-<p><strong>Cookie 取消、iOS ATT、EU AI Act 把 2020 年的归因链路彻底改写——server-side tracking、first-party data、clean rooms 不是高级选项，是新底座。</strong> 三条数据主线在 2020 年靠浏览器 cookie + UTM 就能拼出来，2026 年这条路被堵了大半：</p>
+<p>但 2026 的现实是：<strong>这条血管本身已经被打穿了一半</strong>。</p>
+<h3>4.3 Privacy-first：当数据主线遇上隐私监管</h3>
+<p>数据主线在 2020 年靠&quot;浏览器 cookie + UTM&quot;就能拼通——浏览器记录用户行为、跨站点跟踪、把成交归因到最后一次点击（last-click）。但 2024-2026 三件事彻底改写了这条链路：</p>
 <ul>
-<li><strong>Chrome 第三方 Cookie 2026 年加速退场</strong>（Safari/Firefox 早已默认拦截），跨站点行为打通基础消失</li>
-<li><strong>iOS 17/18 的 App Tracking Transparency</strong>：iOS 用户的 ATT opt-in 率长期低于 25%（AppsFlyer 等多家归因平台数据），移动端归因信号损失过半</li>
-<li><strong>EU DMA + GDPR + AI Act</strong>：在欧盟运营的营销系统必须有合规的 consent 链路、可解释 AI 决策</li>
+<li><strong>第三方 Cookie 退场</strong>：Chrome 2026 年加速退场（Safari、Firefox 早已默认拦截），跨站点用户行为追踪的技术基础消失</li>
+<li><strong>iOS ATT 弹窗机制</strong>（App Tracking Transparency，苹果 2021 起强制 App 弹窗征求用户追踪同意）：opt-in 率长期低于 25%（AppsFlyer 等归因平台数据），移动端归因信号损失过半</li>
+<li><strong>欧盟监管三件套</strong>（GDPR 个人数据保护、AI Act AI 决策可解释、DMA 数字市场法）：在欧盟运营的营销系统必须有合规的用户同意链路、可解释的 AI 决策</li>
 </ul>
-<p>业界已有的 2026 工程模板：</p>
+<p>业界已经长出了一套替代方案——目的都是一个：<strong>在用户隐私不被侵犯的前提下，把成交归因回到内容/渠道</strong>。</p>
 <table>
 <thead>
 <tr>
 <th>工具</th>
-<th>做什么</th>
+<th>一句话解释</th>
 <th>业界对照</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Server-side tracking</strong></td>
-<td>把追踪从浏览器搬到服务端，绕过浏览器隐私拦截</td>
-<td>Meta CAPI、Google Server-side GTM、Snowplow</td>
+<td><strong>服务端追踪</strong>（Server-side tracking）</td>
+<td>把追踪代码从浏览器搬到服务器，绕过浏览器拦截</td>
+<td>Meta CAPI（Conversion API）、Google 服务端 GTM、Snowplow</td>
 </tr>
 <tr>
-<td><strong>First-party data 战略</strong></td>
-<td>把客户身份、行为、订单数据收口在自己的 CDP（Customer Data Platform，客户数据平台）/ 数仓</td>
-<td>mParticle、Segment Twilio、Treasure Data</td>
+<td><strong>第一方数据战略</strong>（First-party data）</td>
+<td>把客户身份 / 行为 / 订单收口在自己的 CDP（客户数据平台）或数仓，不依赖第三方</td>
+<td>mParticle、Segment、Treasure Data</td>
 </tr>
 <tr>
-<td><strong>Clean Rooms</strong></td>
-<td>与广告平台/品牌方做加密数据匹配，不暴露原始数据</td>
-<td>Meta Advanced Analytics、Google Ads Data Hub、AWS Clean Rooms、Snowflake Data Clean Room</td>
+<td><strong>数据净室</strong>（Clean Rooms）</td>
+<td>与广告平台、品牌方做加密数据匹配，双方都看不到对方的原始数据</td>
+<td>Meta Advanced Analytics、Google Ads Data Hub、AWS Clean Rooms</td>
 </tr>
 <tr>
-<td><strong>Consent Management Platform</strong></td>
-<td>统一管理用户授权与撤回</td>
+<td><strong>同意管理平台</strong>（Consent Management Platform）</td>
+<td>统一管理用户授权、可撤回、可审计——欧盟合规底线</td>
 <td>OneTrust、Didomi、Usercentrics</td>
 </tr>
 <tr>
-<td><strong>MMM 复兴</strong></td>
-<td>last-click 不可用时回到统计学归因</td>
-<td>Meta Robyn、Google Lightweight MMM、Recast</td>
+<td><strong>MMM 复兴</strong>（Marketing Mix Modeling，营销组合建模）</td>
+<td>用回归模型把成交归因到各渠道投入，绕过 last-click 失效</td>
+<td>Meta Robyn、Google Lightweight MMM</td>
 </tr>
 </tbody></table>
 <blockquote>
-<p><strong>2026 的事实是</strong>：MMM 现在火不是因为它&quot;高级&quot;，是因为传统 last-click + cookie 归因被打穿了。AIMOS 的归因架构必须从 day 1 就 privacy-first，否则一年后整个数据层要重做——而到时候竞品已经领先一个版本。</p>
+<p>MMM 在 2024-2026 突然&quot;复兴&quot;，不是因为它高级，而是因为传统 last-click + cookie 归因被打穿了——回归模型成了在低信号数据下推断&quot;哪个渠道带来增量&quot;的少数可行选项。AIMOS 的归因架构必须从 day 1 就按 privacy-first 设计，否则一年后整个数据层要重做。</p>
 </blockquote>
-<p>即便用足全套 server-side + first-party + MMM 工具箱，<strong>归因清晰度也很难恢复到 2018 年 100% 的水平</strong>——业界经验通常恢复 60-75%。飞轮被迫在更低 SNR 的数据下学习，评测要求更长的统计窗口，判优要更稳健的因果方法：贝叶斯 MMM、Difference-in-Differences、合成对照。last-click 时代的简单归因，2026 已经回不去了。</p>
+<p>即便用足上面整套工具箱，<strong>归因清晰度也很难恢复到 2018 年 100% 的水平</strong>——业界经验通常恢复 60-75%。飞轮被迫在&quot;信号更弱&quot;的数据下学习，意味着评测要求更长的统计窗口、判优要更稳健的因果推断方法。last-click 时代的简单归因，2026 已经回不去了。</p>
 <h3>4.4 现状骨架差的&quot;中间三步&quot;</h3>
 <p>大多数出海客户的现状是单向流水线——制作 → 一键多平台发布 → API 回收点赞/评论 → 线索跟进/评论回复。骨架已经有了，<strong>最难的发布与采集已现成</strong>；差的是&quot;回收&quot;之后的三步：</p>
 <table>
@@ -3033,7 +3034,7 @@ agent.run(&quot;&quot;&quot;
 </tbody></table>
 <p>成交回流不是工程小问题，是 B2B RaaS 能不能跑通的前置——这也是为什么 RaaS 在 DTC 比在 B2B 更先长出来（成交天然在线、不用补回流）。</p>
 <h3>4.6 飞轮的真实失败模式：除了悬空，还有三种&quot;死法&quot;</h3>
-<p>成交回流缺失（4.5 讲的飞轮悬空）只是失败模式之一。还有三种容易忽视的&quot;死法&quot;：</p>
+<p>飞轮悬空（成交回流缺失）只是失败模式之一。还有三种容易忽视的&quot;死法&quot;：</p>
 <table>
 <thead>
 <tr>
@@ -3070,7 +3071,7 @@ agent.run(&quot;&quot;&quot;
 <h3>5.2 阶段二：能力沉淀（共享服务）</h3>
 <p>当 2-3 个场景开始重复用到同一能力（内容引擎、RAG、语义化、测评），把它从场景里抽取为独立的共享服务，统一接口、统一维护，停止重复造轮子。</p>
 <p><strong>抽取判据</strong>：同一能力被 2-3 个场景复用、且接口趋于稳定。</p>
-<p><strong>业界对照</strong>：HubSpot 在 Marketing Hub 成型之前，先把 form / list / workflow / analytics 抽为共享 service，然后才有 Sales Hub / Service Hub 复用；Salesforce 把 Sales Cloud 的对象模型沉淀为 Platform，才支撑后续 Service / Marketing Cloud。<strong>共享服务是先重构、再扩张的工程动作</strong>——晚做会带来重写成本，但太早做（5.5 第一反模式）会陷入&quot;为平台而平台&quot;。</p>
+<p><strong>业界对照</strong>：HubSpot 在 Marketing Hub 成型之前，先把 form / list / workflow / analytics 抽为共享 service，然后才有 Sales Hub / Service Hub 复用；Salesforce 把 Sales Cloud 的对象模型沉淀为 Platform，才支撑后续 Service / Marketing Cloud。<strong>共享服务是先重构、再扩张的工程动作</strong>——晚做会带来重写成本，太早做会陷入&quot;为平台而平台&quot;。</p>
 <h3>5.3 阶段三：中台平台化</h3>
 <p>把共享服务收敛为统一的 AI 能力层——加上治理与接入层（鉴权 / 版本 / 监控 / Eval / 安全），对所有业务线开放。数据飞轮跨场景复利，边际成本随规模摊薄。</p>
 <p>从工程视角看，中台该沉淀哪些可复用能力：</p>
@@ -3203,7 +3204,7 @@ agent.run(&quot;&quot;&quot;
 <h2>六、AIMOS 的护城河：为什么不是通用 Agent</h2>
 <p><strong>Agent 是壳，垂直数据飞轮才是芯——没有飞轮，你的 AIMOS 与通用 Agent 没区别。</strong> 这是 AIMOS 的护城河命题——同样是&quot;对话交互&quot;，为什么客户不直接用 Manus、Coze、ChatGPT，而要用你的 AIMOS？</p>
 <h3>6.1 四层架构</h3>
-<p><strong>AIMOS 是契约系统、不是黑盒</strong>——四层架构的设计原则是把每一层都暴露成&quot;可被上下层调用、可被外部 Agent 调用&quot;的清晰契约。这条原则决定了护城河（6.3-6.4）、形态分工（6.5）、生态合作（6.6）的所有讨论。</p>
+<p><strong>AIMOS 是契约系统、不是黑盒</strong>——四层架构的设计原则是把每一层都暴露成&quot;可被上下层调用、可被外部 Agent 调用&quot;的清晰契约。这条原则贯穿本章对护城河、形态分工、生态合作的讨论。</p>
 <p><img src="/images/blog/overseas-marketing-aimos/aimos-architecture.svg" alt="AIMOS 四层架构：交互层 Agent + MCP 网关、工具层能力、知识与记忆 RAG、评测与护栏"></p>
 <table>
 <thead>
@@ -3240,7 +3241,7 @@ agent.run(&quot;&quot;&quot;
 </tr>
 </tbody></table>
 <p><strong>自底向上构建</strong>是硬约束——Agent 的上限 = 其工具的上限。先有规范、可靠、可组合的能力（平台），Agent 才有得调；Agent-first 而无扎实工具 = 会崩的 demo。</p>
-<p><strong>最顶层并列挂 MCP Server 不是未来再做、是 day 1 就要做</strong>——因为它决定了 6.4 节&quot;客户的 Agent 反向调用 AIMOS&quot;的可能性。架构上预留这个口子的工程代价极低（一个工具协议适配器），不预留的代价是日后整条交互层要重做。</p>
+<p><strong>最顶层并列挂 MCP Server 不是未来再做、是 day 1 就要做</strong>——因为它决定了&quot;客户的 Agent 反向调用 AIMOS&quot;的可能性。架构上预留这个口子的工程代价极低（一个工具协议适配器），不预留的代价是日后整条交互层要重做。</p>
 <h3>6.2 自动化分级：从 copilot 到 autopilot</h3>
 <p>今天的 Agent 不足以无人值守地做高风险、不可逆的操作（对外发布、花钱投放、回复客户）；必须按可逆性分级、从 copilot 渐进到 autopilot：</p>
 <table>
@@ -3664,7 +3665,7 @@ agent.run(&quot;&quot;&quot;
 </ul>
 <p>谈判桌上的真问题不是&quot;用哪种归因方法&quot;，是&quot;我们和客户对&#39;增量&#39;的定义能不能对齐&quot;——归因方法只是实现工具、对齐定义才是商业前提。</p>
 <h3>8.5 入口客户质量</h3>
-<p>建站作为漏斗入口（见 7.1），可能引来爬不上阶梯的低质客户——做了建站就不续费、不升单。</p>
+<p>建站作为漏斗入口，可能引来爬不上阶梯的低质客户——做了建站就不续费、不升单。</p>
 <ul>
 <li><strong>入口筛选</strong>：建站环节用客群画像（行业 / 规模 / 出海市场 / 过往营销投入）筛选，不匹配的引导到自助路径或合作伙伴</li>
 <li><strong>Freemium 漏斗</strong>：参考 Notion、Figma 的策略——小微低价 / 免费建站，只对达到一定标准（流量 / 活跃 / 付费意愿）的客户开放升层服务</li>

@@ -6,7 +6,19 @@
   <atom:link href="https://www.skyfalling.cn/rss.xml" rel="self" type="application/rss+xml"/>
   <description>分享技术、生活和思考的个人博客</description>
   <language>zh-CN</language>
-  <lastBuildDate>Fri, 05 Jun 2026 00:00:00 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 09 Jun 2026 00:00:00 GMT</lastBuildDate>
+  <item>
+    <title>破局与终局：传统营销服务商的 AI 转型之路</title>
+    <link>https://www.skyfalling.cn/blog/insights/business/marketing-service-ai-transformation/</link>
+    <guid isPermaLink="true">https://www.skyfalling.cn/blog/insights/business/marketing-service-ai-transformation/</guid>
+    <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+    <description>出海营销服务商的 AI 转型，最深的死穴不是数据不通、是客户根本没有统一——三方向（建站/社媒/SEO）各自运行的工具性模式已经走不远。从客户统一到 AIMOS 的三步走路径、建站作为身份锚定点的隐藏价值、SaaS 内核 + 服务外壳的过渡定位，构成完整解法。</description>
+    <category>出海</category>
+    <category>AI 转型</category>
+    <category>数字营销</category>
+    <category>SaaS</category>
+    <category>AIMOS</category>
+  </item>
   <item>
     <title>打造面向出海的全链路营销 AIMOS：业务规划与演进路径</title>
     <link>https://www.skyfalling.cn/blog/insights/business/overseas-marketing-aimos/</link>
@@ -571,16 +583,6 @@
     <category>分布式系统</category>
     <category>系统架构</category>
     <category>高可用</category>
-  </item>
-  <item>
-    <title>AWS多泳道自动化持续交付实践</title>
-    <link>https://www.skyfalling.cn/blog/engineering/practice/AWS%E5%A4%9A%E6%B3%B3%E9%81%93%E8%87%AA%E5%8A%A8%E5%8C%96%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E5%AE%9E%E8%B7%B5/</link>
-    <guid isPermaLink="true">https://www.skyfalling.cn/blog/engineering/practice/AWS%E5%A4%9A%E6%B3%B3%E9%81%93%E8%87%AA%E5%8A%A8%E5%8C%96%E6%8C%81%E7%BB%AD%E4%BA%A4%E4%BB%98%E5%AE%9E%E8%B7%B5/</guid>
-    <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
-    <description>本文面向 DevOps 架构师与云原生工程师，介绍如何基于 AWS CodePipeline + CloudFormation 构建一套支持多泳道（Multi-Lane）并行部署的 ECS 持续交付体系。该方案不仅解决并发部署的资源锁冲突问题，还实现模板集中治理与业务仓库完全解耦。</description>
-    <category>AWS</category>
-    <category>DevOps</category>
-    <category>泳道部署</category>
   </item>
 </channel>
 </rss>
