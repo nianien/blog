@@ -5,6 +5,9 @@ const nextConfig = {
   // 静态导出
   ...(isExport && { output: 'export' }),
 
+  // 单页生成超时（秒）。页面多、构建机器较弱时（如 CF Pages）默认 60s 易超时
+  staticPageGenerationTimeout: 300,
+
   // 保留 / 结尾（静态站必须）
   trailingSlash: true,
 
