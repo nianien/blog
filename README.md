@@ -403,7 +403,10 @@ npm run build
 npm run preview
 
 # 部署到 GitHub Pages
-./scripts/deploy.sh
+./scripts/cli.sh deploy
+
+# 部署到 Cloudflare Pages（本地直传）
+npm run deploy:cf
 
 # 代码检查
 npm run lint
@@ -422,11 +425,27 @@ npm run help
 
 ## 部署
 
+当前同时保留 GitHub Pages 与 Cloudflare Pages 两套部署（观察期）。
+
 ### GitHub Pages
 
 ```bash
-./scripts/deploy.sh
+./scripts/cli.sh deploy
 ```
+
+### Cloudflare Pages
+
+两种方式，产物一致，二选一：
+
+```bash
+# 方式一：本地构建后直传（约 1 分钟，需先 npx wrangler login 一次）
+npm run deploy:cf
+
+# 方式二：git push 自动触发 CF 在线构建（约 4 分钟，无需本地操作）
+git push origin master
+```
+
+CF Pages 项目名 `blog`，在线构建配置：Build command `npm run build:export`、输出目录 `out`、环境变量 `NODE_VERSION=20`。站点页面数较多（700+），`next.config.js` 已将 `staticPageGenerationTimeout` 提到 300s，避免 CF 构建机超时。
 
 ### Vercel
 
