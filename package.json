@@ -18,6 +18,7 @@
     "export": "NEXT_EXPORT=true next build",
     "preview": "./scripts/cli.sh preview",
     "deploy": "gh-pages -d out",
+    "deploy:cf": "./scripts/cli.sh deploy:cf",
     "help": "./scripts/cli.sh help"
   },
   "dependencies": {

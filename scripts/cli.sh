@@ -72,6 +72,15 @@ cmd_deploy() {
   echo "🎉 部署完成 https://www.skyfalling.cn"
 }
 
+cmd_deploy_cf() {
+  check_env
+  cmd_build
+
+  echo "☁️  部署到 Cloudflare Pages..."
+  npx wrangler pages deploy out --project-name=blog --branch=master --commit-dirty=true
+  echo "🎉 部署完成 https://www.skyfalling.cn"
+}
+
 cmd_clean() {
   echo "🧹 清理缓存..."
   rm -rf .next out .turbo
@@ -117,6 +126,7 @@ cmd_help() {
 
 部署:
   deploy           构建并部署到 GitHub Pages
+  deploy:cf        构建并部署到 Cloudflare Pages（本地直传）
 
 微信公众号:
   wx:build         构建云函数 zip 包
@@ -138,6 +148,7 @@ case "${1:-help}" in
   build)      cmd_build ;;
   preview)    cmd_preview ;;
   deploy)     cmd_deploy ;;
+  deploy:cf)  cmd_deploy_cf ;;
   clean)      cmd_clean ;;
   wx:build)   cmd_wx_build ;;
   wx:preview) cmd_wx_preview "$2" ;;
