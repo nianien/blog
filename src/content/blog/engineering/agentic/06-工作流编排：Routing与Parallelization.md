@@ -1,7 +1,7 @@
 ---
-title: "工作流编排：Routing 与 Parallelization"
-pubDate: "2025-12-17"
-description: "Agent 不是只靠一个大循环跑到底。复杂任务通常需要把多步组装成工作流：根据输入选择不同路径（Routing）、把可独立的步骤并行（Parallelization）、把多个步骤链成顺序流水（Chaining）。本文从契约和实现两个角度展开这三种工作流模式，给出何时用、怎么用、容易踩什么坑。"
+title: "工作流编排：Chaining、Routing 与 Parallelization"
+pubDate: "2026-01-14"
+description: "Agent 不是只靠一个大循环跑到底。复杂任务通常需要把多步组装成工作流：把多个步骤链成顺序流水（Chaining）、根据输入选择不同路径（Routing）、把可独立的步骤并行（Parallelization）。本文从契约和实现两个角度展开这三种工作流模式，给出何时用、怎么用、容易踩什么坑。"
 tags: ["Agentic", "AI Engineering", "Workflow"]
 slug: "workflow-orchestration"
 series:
@@ -9,6 +9,8 @@ series:
   order: 6
 author: "skyfalling"
 ---
+
+上一篇讨论 Agent 如何产生计划、深入推理和回溯纠错；本篇把计划从 LLM 的临时文本提升为代码可见、可测试、可恢复的执行拓扑。
 
 生产级 Agent 任务很少只是一个 ReAct 循环跑到底。它通常是一个**工作流**——根据输入选择不同执行路径、把可独立的子任务并行起来、把若干阶段串成有序流水。把"步骤拓扑"从 LLM 的隐性决策提到代码层显式化，是 Agent 工程从个例 demo 走到批量生产的分水岭。下面拆开工作流编排里最基础也最高频的三个模式：**Chaining、Routing、Parallelization**——它们是 Agent 系统组装多步执行的积木，掌握了这三个，多 Agent 协作就只是把同一套积木从"单 Agent 内"扩展到"多 Agent 间"。
 
@@ -442,3 +444,5 @@ async def bounded_task(task, input_data):
 Routing 和 Parallelization 各自解决一个真问题。Routing 解决"成本和质量的路径选择"——所有请求走最重路径是 Agent 成本爆炸最常见的原因，三层组合（规则、分类器、LLM 路由）能把流量精准分到对应成本档位；设计要点是 confidence 阈值和 unsupported 兜底，宁可承认"我不知道"，不要硬猜路径。Parallelization 解决"延迟的并行化"——但并行不是免费的，N 个并行 LLM 调用就是 N 倍 token 成本，决策时要同时盯延迟和账单。
 
 生产 Agent 几乎都是 Chain + Routing + Parallelization 的组合，纯 ReAct 只是工作流节点内部的局部实现。多 Agent 协作很大程度上就是把这套模式从"单 Agent 内"放大到"多 Agent 间"——Supervisor 本质是 Router、Peer-to-Peer 本质是 Fan-out。把工作流当骨架、节点内当肌肉，比"一个大循环跑到底"鲁棒得多。
+
+当某些节点需要独立上下文、独立工具集和专业角色时，工作流节点才会升级成 Agent；下一篇讨论这种升级是否值得，以及协作可靠性如何不被乘法效应拖垮。

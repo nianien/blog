@@ -1,8 +1,8 @@
 ---
 title: "Agent基础架构平台"
-pubDate: "2026-03-27"
+pubDate: "2026-05-26"
 description: "当组织需要运行多个 Agent、服务多业务方、对接多租户时，需要的不是更多 Agent 代码，是一整套基础架构平台。本文给出平台的五层架构、与传统微服务平台的四个本质差异、Token 配额与预扣结算的代码、LLM Gateway 的路由与 fallback 链，以及平台演进四阶段的避坑路径。"
-tags: ["Agent", "系统架构", "基础设施", "平台工程"]
+tags: ["Agentic", "AI Engineering", "Infrastructure", "Platform Engineering"]
 slug: "agent-platform-infrastructure"
 author: "skyfalling"
 series:
@@ -11,6 +11,8 @@ series:
 ---
 
 当一个组织开始同时运行几十上百个 Agent——服务多业务方、对接多租户、调多家模型、用多套工具，需要的不是更多 Agent 代码，是一整套基础架构平台。它和传统微服务平台表面相似——都有网关、注册、调度、可观测——但底层约束完全不同：**Token 是新货币**（成本以 token 计而非 CPU 时间）、**Session 是新单位**（一次"请求"是几分钟的循环而非毫秒级 API 调用）、**非确定性是新常态**（同输入路径不同、资源消耗不同）。这三个差异让每一层都需要重新设计，不是把微服务平台模式照搬过来。下面展开五层架构、Token 配额与租户隔离的代码骨架、LLM Gateway 的路由与 Fallback 链，以及四阶段演进的避坑路径。
+
+前面十二篇分别讲了单 Agent 的运行时、记忆、规划、工作流、多 Agent、框架协议、生产可信、GUI 交互和学习机制。本篇收束到组织层：当这些能力不再服务一个 Agent，而是要被几十上百个 Agent 共享、治理和计费时，它们就必须沉淀为平台能力。
 
 ---
 
