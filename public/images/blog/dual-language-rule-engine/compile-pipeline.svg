@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="900" height="300" fill="#FFFFFF"/>
+  <text x="450" y="40" font-size="17" font-weight="bold" fill="#1E293B" text-anchor="middle">UI 树 → RuleNode → DSL 单向编译</text>
+
+  <!-- 四个阶段 -->
+  <rect x="30" y="90" width="180" height="90" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="120" y="120" font-size="14" font-weight="bold" fill="#1E3A8A" text-anchor="middle">UI TreeNode JSON</text>
+  <text x="120" y="144" font-size="11" fill="#3B82F6" text-anchor="middle">编辑 / 持久化</text>
+  <text x="120" y="162" font-size="11" fill="#3B82F6" text-anchor="middle">唯一事实来源</text>
+
+  <rect x="255" y="90" width="180" height="90" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="345" y="120" font-size="14" font-weight="bold" fill="#5B21B6" text-anchor="middle">TreeNode</text>
+  <text x="345" y="144" font-size="11" fill="#7C3AED" text-anchor="middle">validateSize</text>
+  <text x="345" y="162" font-size="11" fill="#7C3AED" text-anchor="middle">深度 128 / 节点 2000</text>
+
+  <rect x="480" y="90" width="180" height="90" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+  <text x="570" y="120" font-size="14" font-weight="bold" fill="#065F46" text-anchor="middle">RuleNode</text>
+  <text x="570" y="144" font-size="11" fill="#059669" text-anchor="middle">UINodeAdapter</text>
+  <text x="570" y="162" font-size="11" fill="#059669" text-anchor="middle">.toRule()</text>
+
+  <rect x="705" y="90" width="165" height="90" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="787" y="120" font-size="14" font-weight="bold" fill="#92400E" text-anchor="middle">RuleSuite</text>
+  <text x="787" y="144" font-size="11" fill="#B45309" text-anchor="middle">ruleType=2</text>
+  <text x="787" y="162" font-size="11" fill="#B45309" text-anchor="middle">DSL + 规范化 JSON</text>
+
+  <!-- 箭头 -->
+  <line x1="210" y1="135" x2="248" y2="135" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="248,130 248,140 256,135" fill="#475569"/>
+  <line x1="435" y1="135" x2="473" y2="135" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="473,130 473,140 481,135" fill="#475569"/>
+  <line x1="660" y1="135" x2="698" y2="135" stroke="#475569" stroke-width="1.8"/>
+  <polygon points="698,130 698,140 706,135" fill="#475569"/>
+
+  <!-- 单向标注 -->
+  <rect x="230" y="215" width="440" height="52" rx="6" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="450" y="238" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">只有 toRule()，没有 fromRule()</text>
+  <text x="450" y="257" font-size="11" fill="#DC2626" text-anchor="middle">丢弃 name / 坐标 / 折叠状态 · 执行树不能反推 UI 布局</text>
+  <line x1="450" y1="180" x2="450" y2="215" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+</svg>

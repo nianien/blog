@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="880" height="460" fill="#FFFFFF"/>
+  <text x="440" y="38" font-size="17" font-weight="bold" fill="#1E293B" text-anchor="middle">计算引擎耦合收敛到一个包</text>
+
+  <!-- 不感知区 -->
+  <rect x="30" y="60" width="510" height="360" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+  <text x="55" y="88" font-size="15" font-weight="bold" fill="#065F46">完全不感知 JS 引擎</text>
+
+  <rect x="55" y="105" width="220" height="80" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="165" y="132" font-size="13" font-weight="bold" fill="#065F46" text-anchor="middle">eval/</text>
+  <text x="165" y="152" font-size="11" fill="#047857" text-anchor="middle">RuleNode · RuleVisitor</text>
+  <text x="165" y="169" font-size="11" fill="#047857" text-anchor="middle">EvalCacheScope</text>
+
+  <rect x="295" y="105" width="220" height="80" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="405" y="132" font-size="13" font-weight="bold" fill="#065F46" text-anchor="middle">suite/</text>
+  <text x="405" y="152" font-size="11" fill="#047857" text-anchor="middle">RuleSuite 装配</text>
+  <text x="405" y="169" font-size="11" fill="#047857" text-anchor="middle">生命周期隔离</text>
+
+  <rect x="55" y="205" width="460" height="80" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="285" y="232" font-size="13" font-weight="bold" fill="#065F46" text-anchor="middle">udf/ UdfContainer</text>
+  <text x="285" y="252" font-size="11" fill="#047857" text-anchor="middle">compile() 产物是纯 POJO 对象图</text>
+  <text x="285" y="269" font-size="11" fill="#047857" text-anchor="middle">不引用任何 Rhino 类型</text>
+
+  <rect x="55" y="305" width="460" height="95" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="285" y="332" font-size="13" font-weight="bold" fill="#92400E" text-anchor="middle">engine/RuleEngine</text>
+  <text x="285" y="354" font-size="11" fill="#B45309" text-anchor="middle">只持 Object 化的 script / scope</text>
+  <text x="285" y="374" font-size="11" fill="#B45309" text-anchor="middle" font-family="'SF Mono','Menlo',monospace">RhinoEngine.evaluate(script, scope, ...)</text>
+  <text x="285" y="391" font-size="11" fill="#B45309" text-anchor="middle">经工具类调用，不见 Rhino 具体类型</text>
+
+  <!-- 唯一耦合区 -->
+  <rect x="565" y="60" width="285" height="360" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="590" y="88" font-size="15" font-weight="bold" fill="#991B1B">唯一耦合 · 4 文件</text>
+  <text x="590" y="108" font-size="11" fill="#DC2626">engine/ 与 engine/rhino/ 包</text>
+
+  <rect x="590" y="130" width="235" height="55" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="707" y="154" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">RhinoEngine</text>
+  <text x="707" y="173" font-size="11" fill="#B91C1C" text-anchor="middle">Context / Script / Scriptable</text>
+
+  <rect x="590" y="200" width="235" height="50" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="707" y="230" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">JsUdf</text>
+
+  <rect x="590" y="265" width="235" height="50" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="707" y="295" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">JavaUdfFunction</text>
+
+  <rect x="590" y="335" width="235" height="65" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="707" y="360" font-size="12" font-weight="bold" fill="#991B1B" text-anchor="middle">切换 GraalJS / QuickJS</text>
+  <text x="707" y="380" font-size="11" fill="#B91C1C" text-anchor="middle">只重写这个包 + 改几处调用</text>
+  <text x="707" y="394" font-size="11" fill="#B91C1C" text-anchor="middle">左侧全部不动</text>
+
+  <!-- 连接 RuleEngine -> Rhino -->
+  <line x1="515" y1="352" x2="590" y2="352" stroke="#94A3B8" stroke-width="1.8"/>
+  <polygon points="590,347 590,357 598,352" fill="#94A3B8"/>
+</svg>

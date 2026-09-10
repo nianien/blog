@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="860" height="500" fill="#FFFFFF"/>
+
+  <!-- 上层：结构层 DSL -->
+  <rect x="40" y="40" width="780" height="150" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="60" y="70" font-size="17" font-weight="bold" fill="#1E3A8A">上层 · 结构层 DSL（编排）</text>
+  <text x="60" y="92" font-size="13" fill="#3B82F6">负责：执行哪些规则、如何串 / 并 / 分 / 循</text>
+
+  <rect x="60" y="108" width="150" height="60" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="135" y="134" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">SerNode 串行</text>
+  <text x="135" y="154" font-size="12" fill="#1E40AF" text-anchor="middle">a-&gt;b-&gt;c</text>
+
+  <rect x="230" y="108" width="150" height="60" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="305" y="134" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">ParNode 并行</text>
+  <text x="305" y="154" font-size="12" fill="#1E40AF" text-anchor="middle">a=&gt;b</text>
+
+  <rect x="400" y="108" width="150" height="60" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="475" y="134" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">CaseNode 分支</text>
+  <text x="475" y="154" font-size="12" fill="#1E40AF" text-anchor="middle">a?b:c</text>
+
+  <rect x="570" y="108" width="150" height="60" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="645" y="134" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">LoopNode 循环</text>
+  <text x="645" y="154" font-size="12" fill="#1E40AF" text-anchor="middle">loop(3,c,a)</text>
+
+  <!-- 接缝 -->
+  <rect x="40" y="215" width="780" height="80" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="60" y="243" font-size="16" font-weight="bold" fill="#92400E">接缝 · 契约与执行环境</text>
+  <rect x="330" y="228" width="150" height="50" rx="6" fill="#FDE68A" stroke="#D97706" stroke-width="1.5"/>
+  <text x="405" y="249" font-size="13" font-weight="bold" fill="#92400E" text-anchor="middle">matched / result</text>
+  <text x="405" y="268" font-size="11" fill="#92400E" text-anchor="middle">控制状态 / 业务值</text>
+  <rect x="500" y="228" width="220" height="50" rx="6" fill="#FDE68A" stroke="#D97706" stroke-width="1.5"/>
+  <text x="610" y="249" font-size="13" font-weight="bold" fill="#92400E" text-anchor="middle">$ / $$ / $args</text>
+  <text x="610" y="268" font-size="11" fill="#92400E" text-anchor="middle">输入 / 共享上下文 / 节点参数</text>
+  <text x="180" y="258" font-size="13" fill="#92400E" text-anchor="middle">ruleId 稳定引用</text>
+
+  <!-- 下层：计算层 JS -->
+  <rect x="40" y="320" width="780" height="150" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+  <text x="60" y="350" font-size="17" font-weight="bold" fill="#065F46">下层 · 计算层 JavaScript（计算）</text>
+  <text x="60" y="372" font-size="13" fill="#059669">负责：读业务对象、调 UDF、算数值并返回业务值</text>
+
+  <rect x="60" y="388" width="340" height="62" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="230" y="412" font-size="13" font-weight="bold" fill="#065F46" text-anchor="middle">原子规则 JS 表达式</text>
+  <text x="230" y="434" font-size="12" fill="#047857" text-anchor="middle" font-family="'SF Mono','Menlo',monospace">$.input &gt; $args.limit</text>
+
+  <rect x="420" y="388" width="300" height="62" rx="6" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <text x="570" y="412" font-size="13" font-weight="bold" fill="#065F46" text-anchor="middle">UDF（Java / JS）</text>
+  <text x="570" y="434" font-size="12" fill="#047857" text-anchor="middle" font-family="'SF Mono','Menlo',monospace">sys.num.divide(a,b,2)</text>
+
+  <!-- 连接箭头 上->接缝 -->
+  <line x1="430" y1="190" x2="430" y2="215" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="425,215 435,215 430,222" fill="#94A3B8"/>
+  <!-- 接缝->下 -->
+  <line x1="430" y1="295" x2="430" y2="320" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="425,320 435,320 430,327" fill="#94A3B8"/>
+</svg>
