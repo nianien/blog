@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="600" height="240" fill="#FFFFFF"/>
+  <path d="M 74 120 C 158 120, 186 42, 274 42" fill="none" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="266,36 280,42 266,48" fill="#475569"/>
+  <path d="M 74 120 C 158 120, 186 198, 274 198" fill="none" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="266,192 280,198 266,204" fill="#475569"/>
+  <path d="M 324 42 C 412 42, 438 120, 524 120" fill="none" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 324 198 C 412 198, 438 120, 524 120" fill="none" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="516,114 530,120 516,126" fill="#475569"/>
+  <text x="165" y="71" font-size="18" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">Y</text>
+  <text x="165" y="184" font-size="18" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">N</text>
+  <circle cx="50" cy="120" r="22" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <circle cx="300" cy="42" r="22" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <circle cx="300" cy="198" r="22" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <circle cx="550" cy="120" r="22" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <text x="50" y="120" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="300" y="42" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">b</text>
+  <text x="300" y="198" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">c</text>
+  <text x="550" y="120" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">d</text>
+</svg>

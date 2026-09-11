@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 190" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="640" height="190" fill="#FFFFFF"/>
+  <line x1="236" y1="122" x2="392" y2="122" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="392,116 404,122 392,128" fill="#475569"/>
+  <path d="M 412 102 C 372 58, 268 58, 228 102" fill="none" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="228,102 240,97 232,88" fill="#475569"/>
+  <text x="320" y="104" font-size="18" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">命中</text>
+  <text x="320" y="48" font-size="18" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">轮次 &lt; 3</text>
+  <circle cx="210" cy="122" r="26" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <circle cx="430" cy="122" r="26" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <text x="210" y="123" font-size="22" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">c</text>
+  <text x="430" y="123" font-size="22" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+</svg>

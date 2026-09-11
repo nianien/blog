@@ -26,13 +26,19 @@
   <text x="220" y="374" font-size="13" fill="#991B1B" text-anchor="middle">e</text>
 
   <!-- DAG 连线 a->b,c,d -->
-  <line x1="220" y1="133" x2="115" y2="175" stroke="#DC2626" stroke-width="1.5"/>
-  <line x1="220" y1="133" x2="220" y2="175" stroke="#DC2626" stroke-width="1.5"/>
-  <line x1="220" y1="133" x2="325" y2="175" stroke="#DC2626" stroke-width="1.5"/>
+  <line x1="220" y1="133" x2="120" y2="171" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="113,166 128,172 118,178" fill="#DC2626"/>
+  <line x1="220" y1="133" x2="220" y2="171" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="214,171 226,171 220,178" fill="#DC2626"/>
+  <line x1="220" y1="133" x2="320" y2="171" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="322,166 307,172 317,178" fill="#DC2626"/>
   <!-- b,c,d -> join -->
-  <line x1="115" y1="213" x2="200" y2="265" stroke="#DC2626" stroke-width="1.5"/>
-  <line x1="220" y1="213" x2="220" y2="265" stroke="#DC2626" stroke-width="1.5"/>
-  <line x1="325" y1="213" x2="240" y2="265" stroke="#DC2626" stroke-width="1.5"/>
+  <line x1="115" y1="213" x2="196" y2="262" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="199,257 189,269 185,258" fill="#DC2626"/>
+  <line x1="220" y1="213" x2="220" y2="261" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="214,261 226,261 220,268" fill="#DC2626"/>
+  <line x1="325" y1="213" x2="244" y2="262" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="241,257 251,258 255,269" fill="#DC2626"/>
   <!-- join -> e -->
   <line x1="220" y1="307" x2="220" y2="350" stroke="#DC2626" stroke-width="1.5"/>
   <polygon points="215,350 225,350 220,357" fill="#DC2626"/>

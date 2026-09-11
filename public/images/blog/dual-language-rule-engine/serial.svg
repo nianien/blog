@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 104" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="600" height="104" fill="#FFFFFF"/>
+  <line x1="74" y1="52" x2="176" y2="52" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="176,46 188,52 176,58" fill="#475569"/>
+  <line x1="234" y1="52" x2="336" y2="52" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="336,46 348,52 336,58" fill="#475569"/>
+  <line x1="394" y1="52" x2="496" y2="52" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="496,46 508,52 496,58" fill="#475569"/>
+  <circle cx="50" cy="52" r="22" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <circle cx="210" cy="52" r="22" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <circle cx="370" cy="52" r="22" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <circle cx="530" cy="52" r="22" fill="#F0FDFA" stroke="#14B8A6" stroke-width="3"/>
+  <text x="50" y="52" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="210" y="52" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">b</text>
+  <text x="370" y="52" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">c</text>
+  <text x="530" y="52" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">d</text>
+</svg>
