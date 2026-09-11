@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 720" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="1120" height="720" fill="#FFFFFF"/>
+
+  <!-- Panel 1 串行 -->
+  <rect x="20" y="30" width="520" height="200" rx="8" fill="#FAFAFA" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="40" y="58" font-size="15" font-weight="bold" fill="#334155">串行　a-&gt;b-&gt;c-&gt;d</text>
+  <line x1="115" y1="150" x2="210" y2="150" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="212,145 224,150 212,155" fill="#475569"/>
+  <line x1="255" y1="150" x2="350" y2="150" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="352,145 364,150 352,155" fill="#475569"/>
+  <line x1="395" y1="150" x2="450" y2="150" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="452,145 464,150 452,155" fill="#475569"/>
+  <circle cx="100" cy="150" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="240" cy="150" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="380" cy="150" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="480" cy="150" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <text x="100" y="150" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="240" y="150" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">b</text>
+  <text x="380" y="150" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">c</text>
+  <text x="480" y="150" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">d</text>
+
+  <!-- Panel 2 并行 -->
+  <rect x="580" y="30" width="520" height="200" rx="8" fill="#FAFAFA" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="600" y="58" font-size="15" font-weight="bold" fill="#334155">并行　a=&gt;b、c 汇合到 d</text>
+  <line x1="662" y1="145" x2="818" y2="112" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="812,104 826,110 816,118" fill="#475569"/>
+  <line x1="662" y1="155" x2="818" y2="188" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="812,196 826,190 816,182" fill="#475569"/>
+  <line x1="862" y1="112" x2="1018" y2="145" stroke="#475569" stroke-width="2.5"/>
+  <line x1="862" y1="188" x2="1018" y2="155" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="1016,142 1030,150 1016,158" fill="#475569"/>
+  <circle cx="645" cy="150" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="840" cy="110" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="840" cy="190" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="1035" cy="150" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <text x="645" y="150" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="840" y="110" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">b</text>
+  <text x="840" y="190" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">c</text>
+  <text x="1035" y="150" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">d</text>
+
+  <!-- Panel 3 完整条件 -->
+  <rect x="20" y="260" width="520" height="200" rx="8" fill="#FAFAFA" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="40" y="288" font-size="15" font-weight="bold" fill="#334155">完整条件　a?b:c</text>
+  <line x1="112" y1="375" x2="268" y2="342" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="262,334 276,340 266,348" fill="#475569"/>
+  <line x1="112" y1="385" x2="268" y2="418" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="262,426 276,420 266,412" fill="#475569"/>
+  <line x1="312" y1="342" x2="468" y2="375" stroke="#475569" stroke-width="2.5"/>
+  <line x1="312" y1="418" x2="468" y2="385" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="466,372 480,380 466,388" fill="#475569"/>
+  <text x="180" y="345" font-size="14" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FAFAFA" stroke-width="4" stroke-linejoin="round">Y</text>
+  <text x="180" y="418" font-size="14" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FAFAFA" stroke-width="4" stroke-linejoin="round">N</text>
+  <circle cx="95" cy="380" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="290" cy="340" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="290" cy="420" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="485" cy="380" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <text x="95" y="380" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="290" y="340" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">b</text>
+  <text x="290" y="420" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">c</text>
+  <text x="485" y="380" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">d</text>
+
+  <!-- Panel 4 半条件 -->
+  <rect x="580" y="260" width="520" height="200" rx="8" fill="#FAFAFA" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="600" y="288" font-size="15" font-weight="bold" fill="#334155">半条件　a?(b-&gt;d)</text>
+  <line x1="672" y1="378" x2="828" y2="345" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="822,337 836,343 826,351" fill="#475569"/>
+  <line x1="862" y1="345" x2="1028" y2="378" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="1026,375 1040,383 1026,391" fill="#475569"/>
+  <text x="742" y="348" font-size="14" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FAFAFA" stroke-width="4" stroke-linejoin="round">Y</text>
+  <circle cx="655" cy="383" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="840" cy="343" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="1045" cy="383" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <text x="655" y="383" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="840" y="343" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">b</text>
+  <text x="1045" y="383" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">d</text>
+
+  <!-- Panel 5 有序多分支 -->
+  <rect x="20" y="490" width="520" height="200" rx="8" fill="#FAFAFA" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="40" y="518" font-size="15" font-weight="bold" fill="#334155">有序多分支　a?b:(c?d:e)</text>
+  <line x1="97" y1="602" x2="222" y2="567" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="216,559 230,565 220,573" fill="#475569"/>
+  <line x1="97" y1="610" x2="214" y2="610" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="214,605 226,610 214,615" fill="#475569"/>
+  <line x1="97" y1="618" x2="222" y2="653" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="216,661 230,655 220,647" fill="#475569"/>
+  <line x1="257" y1="565" x2="422" y2="565" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="422,560 434,565 422,570" fill="#475569"/>
+  <line x1="257" y1="610" x2="422" y2="610" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="422,605 434,610 422,615" fill="#475569"/>
+  <text x="165" y="558" font-size="13" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FAFAFA" stroke-width="4" stroke-linejoin="round">命中</text>
+  <text x="165" y="662" font-size="13" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FAFAFA" stroke-width="4" stroke-linejoin="round">默认</text>
+  <circle cx="80" cy="610" r="16" fill="#ECFEFF" stroke="#0891B2" stroke-width="2.5"/>
+  <circle cx="240" cy="565" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="440" cy="565" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="240" cy="610" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="440" cy="610" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="240" cy="655" r="16" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <text x="80" y="610" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">分</text>
+  <text x="240" y="565" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+  <text x="440" y="565" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">b</text>
+  <text x="240" y="610" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">c</text>
+  <text x="440" y="610" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">d</text>
+  <text x="240" y="655" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">e</text>
+
+  <!-- Panel 6 有界循环 -->
+  <rect x="580" y="490" width="520" height="200" rx="8" fill="#FAFAFA" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="600" y="518" font-size="15" font-weight="bold" fill="#334155">有界循环　loop(3, c, a)</text>
+  <line x1="742" y1="600" x2="898" y2="600" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="898,595 910,600 898,605" fill="#475569"/>
+  <path d="M 912 582 C 878 548, 764 548, 730 582" fill="none" stroke="#475569" stroke-width="2.5"/>
+  <polygon points="730,582 742,578 736,569" fill="#475569"/>
+  <text x="820" y="584" font-size="13" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FAFAFA" stroke-width="4" stroke-linejoin="round">命中</text>
+  <text x="820" y="540" font-size="13" font-weight="bold" fill="#0F766E" text-anchor="middle" paint-order="stroke" stroke="#FAFAFA" stroke-width="4" stroke-linejoin="round">轮次 &lt; 3</text>
+  <circle cx="720" cy="600" r="18" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <circle cx="920" cy="600" r="18" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2.5"/>
+  <text x="720" y="600" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">c</text>
+  <text x="920" y="600" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle" dominant-baseline="central">a</text>
+</svg>
