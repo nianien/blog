@@ -1,45 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <rect x="0" y="0" width="900" height="500" fill="#FFFFFF"/>
-  <text x="450" y="36" font-size="17" font-weight="bold" fill="#1E293B" text-anchor="middle">所有求值收敛到 RuleEngine.doEval</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#FFFFFF"/>
+  <text x="450" y="34" font-size="17" font-weight="bold" fill="#1E293B" text-anchor="middle">所有求值收敛到 RuleEngine.doEval</text>
 
-  <!-- 结构层入口 -->
-  <rect x="40" y="70" width="820" height="76" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
-  <text x="60" y="95" font-size="13" font-weight="bold" fill="#065F46">结构层 · 完全不感知引擎</text>
-  <text x="60" y="115" font-size="12" fill="#047857">RuleNode / RuleVisitor / EvalCacheScope 只调 context.eval(this)</text>
-  <text x="60" y="134" font-size="12" fill="#047857">节点类型里从不出现 Rhino 具体类型，脚本以 Object 传递</text>
+  <!-- 结构层 -->
+  <rect x="40" y="56" width="820" height="70" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+  <text x="60" y="80" font-size="13" font-weight="bold" fill="#065F46">结构层 · 完全不感知引擎</text>
+  <text x="60" y="102" font-size="12" fill="#047857">RuleNode / RuleVisitor / EvalCacheScope 只调 context.eval(this)，脚本以 Object 传递</text>
 
-  <!-- 三个求值入口 -->
-  <rect x="70" y="180" width="230" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="185" y="204" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalRule</text>
-  <text x="185" y="224" font-size="11" fill="#1E40AF" text-anchor="middle">原子规则求值</text>
-  <rect x="335" y="180" width="230" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="450" y="204" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalExpr</text>
-  <text x="450" y="224" font-size="11" fill="#1E40AF" text-anchor="middle">临时表达式求值</text>
-  <rect x="600" y="180" width="230" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="715" y="204" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalRuleDesc</text>
-  <text x="715" y="224" font-size="11" fill="#1E40AF" text-anchor="middle">动态描述求值</text>
+  <!-- 结构层 -> 总线 -> 三入口 -->
+  <line x1="450" y1="126" x2="450" y2="146" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="180" y1="146" x2="720" y2="146" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="180" y1="146" x2="180" y2="170" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="174,170 186,170 180,177" fill="#94A3B8"/>
+  <line x1="450" y1="146" x2="450" y2="170" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="444,170 456,170 450,177" fill="#94A3B8"/>
+  <line x1="720" y1="146" x2="720" y2="170" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="714,170 726,170 720,177" fill="#94A3B8"/>
 
-  <!-- 收敛箭头 -->
-  <line x1="185" y1="238" x2="380" y2="288" stroke="#94A3B8" stroke-width="1.5"/>
-  <line x1="450" y1="238" x2="450" y2="288" stroke="#94A3B8" stroke-width="1.5"/>
-  <line x1="715" y1="238" x2="520" y2="288" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="444,288 456,288 450,296" fill="#94A3B8"/>
+  <!-- RuleEngine 三个求值入口 -->
+  <rect x="70" y="178" width="220" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="180" y="201" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalRule</text>
+  <text x="180" y="221" font-size="11" fill="#1E40AF" text-anchor="middle">原子规则求值</text>
+  <rect x="340" y="178" width="220" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="450" y="201" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalExpr</text>
+  <text x="450" y="221" font-size="11" fill="#1E40AF" text-anchor="middle">临时表达式求值</text>
+  <rect x="610" y="178" width="220" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="720" y="201" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalRuleDesc</text>
+  <text x="720" y="221" font-size="11" fill="#1E40AF" text-anchor="middle">动态描述求值</text>
+  <text x="450" y="256" font-size="11" fill="#64748B" text-anchor="middle">RuleEngine 的三个公开求值方法</text>
 
-  <!-- 收敛点 doEval -->
-  <rect x="250" y="296" width="400" height="66" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
-  <text x="450" y="322" font-size="14" font-weight="bold" fill="#92400E" text-anchor="middle">RuleEngine.doEval(script, scope, root, ctx, args)</text>
-  <text x="450" y="344" font-size="11" fill="#B45309" text-anchor="middle">唯一求值收敛点 · 引擎相关调用全部在此委托出去</text>
+  <!-- 三入口 -> doEval 收敛 -->
+  <line x1="180" y1="236" x2="410" y2="296" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="450" y1="266" x2="450" y2="296" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="720" y1="236" x2="490" y2="296" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="444,296 456,296 450,303" fill="#94A3B8"/>
 
-  <!-- doEval -> 引擎实现 -->
-  <line x1="450" y1="362" x2="450" y2="398" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="444,398 456,398 450,406" fill="#94A3B8"/>
+  <!-- doEval 收敛点 -->
+  <rect x="250" y="304" width="400" height="66" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="450" y="330" font-size="14" font-weight="bold" fill="#92400E" text-anchor="middle">RuleEngine.doEval(script, scope, root, ctx, args)</text>
+  <text x="450" y="352" font-size="11" fill="#B45309" text-anchor="middle">唯一求值收敛点 · 引擎相关调用全部在此委托出去</text>
+
+  <line x1="450" y1="370" x2="450" y2="404" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="444,404 456,404 450,411" fill="#94A3B8"/>
 
   <!-- 引擎实现层 -->
-  <rect x="120" y="406" width="660" height="74" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="450" y="428" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">引擎实现层 · 当前是 RhinoEngine（唯一可替换处）</text>
-  <text x="255" y="452" font-size="12" fill="#B91C1C" text-anchor="middle">compile</text>
-  <text x="385" y="452" font-size="12" fill="#B91C1C" text-anchor="middle">evaluate</text>
-  <text x="515" y="452" font-size="12" fill="#B91C1C" text-anchor="middle">inContext</text>
-  <text x="650" y="452" font-size="12" fill="#B91C1C" text-anchor="middle">sharedScope</text>
-  <text x="450" y="470" font-size="11" fill="#991B1B" text-anchor="middle">换 GraalJS / QuickJS = 只替换这四个入口，doEval 以上全部不动</text>
+  <rect x="120" y="412" width="660" height="76" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="450" y="436" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">引擎实现层 · 当前是 RhinoEngine（唯一可替换处）</text>
+  <text x="250" y="460" font-size="12" fill="#B91C1C" text-anchor="middle">compile</text>
+  <text x="383" y="460" font-size="12" fill="#B91C1C" text-anchor="middle">evaluate</text>
+  <text x="515" y="460" font-size="12" fill="#B91C1C" text-anchor="middle">inContext</text>
+  <text x="650" y="460" font-size="12" fill="#B91C1C" text-anchor="middle">sharedScope</text>
+  <text x="450" y="479" font-size="11" fill="#991B1B" text-anchor="middle">换 GraalJS / QuickJS = 只替换这四个入口，doEval 以上全部不动</text>
 </svg>

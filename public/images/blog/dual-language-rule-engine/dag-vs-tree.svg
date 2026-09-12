@@ -1,93 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <rect x="0" y="0" width="900" height="520" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect x="0" y="0" width="900" height="540" fill="#FFFFFF"/>
 
   <!-- 左：DAG -->
-  <rect x="20" y="20" width="420" height="480" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="230" y="52" font-size="17" font-weight="bold" fill="#991B1B" text-anchor="middle">自由连线 DAG</text>
-  <text x="230" y="74" font-size="12" fill="#DC2626" text-anchor="middle">汇合点与循环体边界需要额外设计</text>
+  <rect x="20" y="20" width="410" height="500" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="225" y="50" font-size="16" font-weight="bold" fill="#991B1B" text-anchor="middle">自由连线 DAG</text>
+  <text x="225" y="72" font-size="12" fill="#DC2626" text-anchor="middle">汇合点与循环体边界需要额外设计</text>
 
-  <!-- DAG 节点 -->
-  <rect x="185" y="95" width="70" height="38" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="220" y="119" font-size="13" fill="#991B1B" text-anchor="middle">a</text>
+  <rect x="190" y="95" width="70" height="36" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="225" y="113" font-size="13" fill="#991B1B" text-anchor="middle" dominant-baseline="central">a</text>
+  <rect x="70" y="180" width="70" height="36" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="105" y="198" font-size="13" fill="#991B1B" text-anchor="middle" dominant-baseline="central">b</text>
+  <rect x="190" y="180" width="70" height="36" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="225" y="198" font-size="13" fill="#991B1B" text-anchor="middle" dominant-baseline="central">c</text>
+  <rect x="310" y="180" width="70" height="36" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="345" y="198" font-size="13" fill="#991B1B" text-anchor="middle" dominant-baseline="central">d</text>
 
-  <rect x="80" y="175" width="70" height="38" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="115" y="199" font-size="13" fill="#991B1B" text-anchor="middle">b</text>
-  <rect x="185" y="175" width="70" height="38" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="220" y="199" font-size="13" fill="#991B1B" text-anchor="middle">c</text>
-  <rect x="290" y="175" width="70" height="38" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="325" y="199" font-size="13" fill="#991B1B" text-anchor="middle">d</text>
+  <!-- a -> b,c,d -->
+  <line x1="215" y1="131" x2="120" y2="175" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="112,171 127,174 118,182" fill="#DC2626"/>
+  <line x1="225" y1="131" x2="225" y2="175" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="219,175 231,175 225,182" fill="#DC2626"/>
+  <line x1="235" y1="131" x2="330" y2="175" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="333,171 322,182 318,174" fill="#DC2626"/>
 
   <!-- 汇合点 -->
-  <rect x="170" y="265" width="100" height="42" rx="6" fill="#FCA5A5" stroke="#B91C1C" stroke-width="1.5"/>
-  <text x="220" y="285" font-size="12" font-weight="bold" fill="#7F1D1D" text-anchor="middle">汇合点 join</text>
-  <text x="220" y="300" font-size="10" fill="#7F1D1D" text-anchor="middle">手工连线 + 引擎识别</text>
+  <rect x="165" y="270" width="120" height="46" rx="6" fill="#FCA5A5" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="225" y="289" font-size="12" font-weight="bold" fill="#7F1D1D" text-anchor="middle">汇合点 join</text>
+  <text x="225" y="305" font-size="10" fill="#7F1D1D" text-anchor="middle">手工连线 + 引擎识别</text>
 
-  <rect x="185" y="350" width="70" height="38" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="220" y="374" font-size="13" fill="#991B1B" text-anchor="middle">e</text>
-
-  <!-- DAG 连线 a->b,c,d -->
-  <line x1="220" y1="133" x2="120" y2="171" stroke="#DC2626" stroke-width="1.5"/>
-  <polygon points="113,166 128,172 118,178" fill="#DC2626"/>
-  <line x1="220" y1="133" x2="220" y2="171" stroke="#DC2626" stroke-width="1.5"/>
-  <polygon points="214,171 226,171 220,178" fill="#DC2626"/>
-  <line x1="220" y1="133" x2="320" y2="171" stroke="#DC2626" stroke-width="1.5"/>
-  <polygon points="322,166 307,172 317,178" fill="#DC2626"/>
   <!-- b,c,d -> join -->
-  <line x1="115" y1="213" x2="196" y2="262" stroke="#DC2626" stroke-width="1.5"/>
-  <polygon points="199,257 189,269 185,258" fill="#DC2626"/>
-  <line x1="220" y1="213" x2="220" y2="261" stroke="#DC2626" stroke-width="1.5"/>
-  <polygon points="214,261 226,261 220,268" fill="#DC2626"/>
-  <line x1="325" y1="213" x2="244" y2="262" stroke="#DC2626" stroke-width="1.5"/>
-  <polygon points="241,257 251,258 255,269" fill="#DC2626"/>
-  <!-- join -> e -->
-  <line x1="220" y1="307" x2="220" y2="350" stroke="#DC2626" stroke-width="1.5"/>
-  <polygon points="215,350 225,350 220,357" fill="#DC2626"/>
+  <line x1="105" y1="216" x2="188" y2="268" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="191,263 181,274 177,263" fill="#DC2626"/>
+  <line x1="225" y1="216" x2="225" y2="268" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="219,268 231,268 225,275" fill="#DC2626"/>
+  <line x1="345" y1="216" x2="262" y2="268" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="259,263 273,263 263,274" fill="#DC2626"/>
 
-  <!-- 循环回边 -->
-  <path d="M 255 369 C 400 369 400 114 255 114" fill="none" stroke="#B91C1C" stroke-width="1.5" stroke-dasharray="5,4"/>
-  <polygon points="255,109 255,119 248,114" fill="#B91C1C"/>
-  <text x="395" y="245" font-size="11" fill="#B91C1C" text-anchor="middle">回边</text>
-  <text x="360" y="458" font-size="12" fill="#991B1B" text-anchor="middle">循环体边界</text>
-  <text x="360" y="474" font-size="12" fill="#991B1B" text-anchor="middle">需单独定义语义</text>
+  <!-- join -> e -->
+  <rect x="190" y="370" width="70" height="36" rx="6" fill="#FECACA" stroke="#DC2626" stroke-width="1.5"/>
+  <text x="225" y="388" font-size="13" fill="#991B1B" text-anchor="middle" dominant-baseline="central">e</text>
+  <line x1="225" y1="316" x2="225" y2="365" stroke="#DC2626" stroke-width="1.5"/>
+  <polygon points="219,365 231,365 225,372" fill="#DC2626"/>
+
+  <!-- 回边 e -> a -->
+  <path d="M 260 388 C 380 388 380 113 262 113" fill="none" stroke="#B91C1C" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <polygon points="262,113 274,108 274,118" fill="#B91C1C"/>
+  <text x="372" y="252" font-size="11" fill="#B91C1C" text-anchor="middle">回边</text>
+  <text x="225" y="448" font-size="12" fill="#991B1B" text-anchor="middle">循环体边界需单独定义语义</text>
 
   <!-- 右：递归树 -->
-  <rect x="460" y="20" width="420" height="480" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="670" y="52" font-size="17" font-weight="bold" fill="#1E3A8A" text-anchor="middle">递归树</text>
-  <text x="670" y="74" font-size="12" fill="#3B82F6" text-anchor="middle">子树作用域天然消解两类边界</text>
+  <rect x="470" y="20" width="410" height="500" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="675" y="50" font-size="16" font-weight="bold" fill="#1E3A8A" text-anchor="middle">递归树</text>
+  <text x="675" y="72" font-size="12" fill="#2563EB" text-anchor="middle">子树作用域天然消解两类边界</text>
 
-  <!-- 根 SerNode -->
-  <rect x="600" y="95" width="140" height="42" rx="6" fill="#BFDBFE" stroke="#2563EB" stroke-width="1.5"/>
-  <text x="670" y="121" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">SerNode 串行</text>
+  <!-- SerNode 根 -->
+  <rect x="590" y="95" width="170" height="40" rx="6" fill="#BFDBFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="675" y="115" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle" dominant-baseline="central">SerNode 串行</text>
 
-  <!-- ParNode -->
-  <rect x="530" y="185" width="140" height="42" rx="6" fill="#BFDBFE" stroke="#2563EB" stroke-width="1.5"/>
-  <text x="600" y="211" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">ParNode 并行</text>
-  <!-- e 动作 -->
-  <rect x="700" y="185" width="70" height="42" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="735" y="211" font-size="13" fill="#1E40AF" text-anchor="middle">e</text>
+  <!-- 两个子节点 ParNode / LoopNode -->
+  <rect x="505" y="190" width="150" height="40" rx="6" fill="#BFDBFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="580" y="210" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle" dominant-baseline="central">ParNode 并行</text>
+  <rect x="690" y="190" width="170" height="40" rx="6" fill="#BFDBFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="775" y="210" font-size="12" font-weight="bold" fill="#1E3A8A" text-anchor="middle" dominant-baseline="central">LoopNode 循环</text>
 
-  <!-- ParNode children b c d -->
-  <rect x="505" y="275" width="52" height="38" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="531" y="299" font-size="13" fill="#1E40AF" text-anchor="middle">b</text>
-  <rect x="574" y="275" width="52" height="38" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="600" y="299" font-size="13" fill="#1E40AF" text-anchor="middle">c</text>
-  <rect x="643" y="275" width="52" height="38" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="669" y="299" font-size="13" fill="#1E40AF" text-anchor="middle">d</text>
+  <line x1="640" y1="135" x2="590" y2="188" stroke="#2563EB" stroke-width="1.5"/>
+  <line x1="710" y1="135" x2="760" y2="188" stroke="#2563EB" stroke-width="1.5"/>
 
-  <!-- LoopNode -->
-  <rect x="560" y="360" width="220" height="42" rx="6" fill="#BFDBFE" stroke="#2563EB" stroke-width="1.5"/>
-  <text x="670" y="386" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">LoopNode(max, cond, next)</text>
-  <rect x="600" y="425" width="140" height="38" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="670" y="449" font-size="12" fill="#1E40AF" text-anchor="middle">next 子树 = 循环体</text>
+  <!-- ParNode 子节点 b c d -->
+  <rect x="510" y="285" width="42" height="34" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="531" y="302" font-size="13" fill="#1E40AF" text-anchor="middle" dominant-baseline="central">b</text>
+  <rect x="559" y="285" width="42" height="34" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="580" y="302" font-size="13" fill="#1E40AF" text-anchor="middle" dominant-baseline="central">c</text>
+  <rect x="608" y="285" width="42" height="34" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="629" y="302" font-size="13" fill="#1E40AF" text-anchor="middle" dominant-baseline="central">d</text>
+  <line x1="580" y1="230" x2="531" y2="283" stroke="#3B82F6" stroke-width="1.5"/>
+  <line x1="580" y1="230" x2="580" y2="283" stroke="#3B82F6" stroke-width="1.5"/>
+  <line x1="580" y1="230" x2="629" y2="283" stroke="#3B82F6" stroke-width="1.5"/>
 
-  <!-- tree edges -->
-  <line x1="670" y1="137" x2="600" y2="185" stroke="#2563EB" stroke-width="1.5"/>
-  <line x1="670" y1="137" x2="735" y2="185" stroke="#2563EB" stroke-width="1.5"/>
-  <line x1="600" y1="227" x2="531" y2="275" stroke="#3B82F6" stroke-width="1.5"/>
-  <line x1="600" y1="227" x2="600" y2="275" stroke="#3B82F6" stroke-width="1.5"/>
-  <line x1="600" y1="227" x2="669" y2="275" stroke="#3B82F6" stroke-width="1.5"/>
-  <line x1="735" y1="227" x2="670" y2="360" stroke="#2563EB" stroke-width="1.5"/>
-  <line x1="670" y1="402" x2="670" y2="425" stroke="#3B82F6" stroke-width="1.5"/>
+  <!-- LoopNode 子节点 next 子树 -->
+  <rect x="680" y="285" width="180" height="40" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="770" y="305" font-size="12" fill="#1E40AF" text-anchor="middle" dominant-baseline="central">next 子树 = 循环体</text>
+  <line x1="775" y1="230" x2="770" y2="283" stroke="#3B82F6" stroke-width="1.5"/>
 
-  <text x="670" y="487" font-size="12" fill="#1E3A8A" text-anchor="middle">并行子树跑完即汇合 · 循环体即 next 子树，单根自带边界</text>
+  <text x="675" y="410" font-size="12" fill="#1E3A8A" text-anchor="middle">并行子树跑完即汇合</text>
+  <text x="675" y="432" font-size="12" fill="#1E3A8A" text-anchor="middle">循环体即 next 子树，单根自带边界</text>
 </svg>
