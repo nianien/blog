@@ -139,7 +139,7 @@ export default async function BlogPostPage({
         }}
       />
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
-        <div className="rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-8 sm:p-12">
+        <div className="rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-4 sm:p-12">
           {/* 文章头部信息 */}
           <header className="mb-8">
             {/* 分类面包屑 */}

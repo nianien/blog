@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="842" viewBox="0 0 480 842" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <title>条件与有序分支</title>
+  <desc>Y 表示条件命中，N 表示未命中；多分支按顺序判断 a 再判断 c</desc>
+  <text x="240" y="34" font-size="24" fill="#0F172A" text-anchor="middle" font-weight="600">条件与有序分支</text>
+  <rect x="20" y="60" width="440" height="211" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="240" y="94" font-size="22" fill="#0F172A" text-anchor="middle" font-weight="600">完整条件  (a?b:c)-&gt;d</text>
+  <rect x="36" y="157" width="54" height="44" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="63" y="186" font-size="20" fill="#92400E" text-anchor="middle" font-weight="600">a</text>
+  <rect x="210" y="119" width="60" height="44" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="240" y="148" font-size="20" fill="#1E3A8A" text-anchor="middle" font-weight="600">b</text>
+  <rect x="210" y="203" width="60" height="44" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="240" y="232" font-size="20" fill="#1E3A8A" text-anchor="middle" font-weight="600">c</text>
+  <rect x="390" y="157" width="54" height="44" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="417" y="186" font-size="20" fill="#1E3A8A" text-anchor="middle" font-weight="600">d</text>
+  <line x1="90" y1="179" x2="142" y2="179" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="142" y1="141" x2="142" y2="225" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="142" y1="141" x2="202" y2="141" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="202,136 202,146 210,141" fill="#64748B"/>
+  <line x1="142" y1="225" x2="202" y2="225" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="202,220 202,230 210,225" fill="#64748B"/>
+  <text x="169" y="130" font-size="18" fill="#334155" text-anchor="middle">Y</text>
+  <text x="169" y="214" font-size="18" fill="#334155" text-anchor="middle">N</text>
+  <line x1="270" y1="141" x2="334" y2="141" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="270" y1="225" x2="334" y2="225" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="334" y1="141" x2="334" y2="225" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="334" y1="179" x2="382" y2="179" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="382,174 382,184 390,179" fill="#64748B"/>
+  <rect x="20" y="294" width="440" height="210" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="240" y="329" font-size="22" fill="#0F172A" text-anchor="middle" font-weight="600">半条件  a?(b-&gt;d)</text>
+  <rect x="36" y="382" width="54" height="44" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="63" y="411" font-size="20" fill="#92400E" text-anchor="middle" font-weight="600">a</text>
+  <rect x="210" y="353" width="60" height="44" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="240" y="382" font-size="20" fill="#1E3A8A" text-anchor="middle" font-weight="600">b</text>
+  <rect x="390" y="353" width="54" height="44" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="417" y="382" font-size="20" fill="#1E3A8A" text-anchor="middle" font-weight="600">d</text>
+  <rect x="205" y="437" width="80" height="44" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="245" y="466" font-size="20" fill="#334155" text-anchor="middle" font-weight="600">结束</text>
+  <line x1="90" y1="404" x2="142" y2="404" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="142" y1="375" x2="142" y2="459" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="142" y1="375" x2="202" y2="375" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="202,370 202,380 210,375" fill="#64748B"/>
+  <line x1="142" y1="459" x2="197" y2="459" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="197,454 197,464 205,459" fill="#64748B"/>
+  <line x1="270" y1="375" x2="382" y2="375" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="382,370 382,380 390,375" fill="#64748B"/>
+  <text x="169" y="364" font-size="18" fill="#334155" text-anchor="middle">Y</text>
+  <text x="169" y="448" font-size="18" fill="#334155" text-anchor="middle">N</text>
+  <rect x="20" y="528" width="440" height="290" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="240" y="563" font-size="22" fill="#0F172A" text-anchor="middle" font-weight="600">有序分支  a?b:(c?d:e)</text>
+  <rect x="78" y="588" width="70" height="44" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="113" y="617" font-size="20" fill="#92400E" text-anchor="middle" font-weight="600">a</text>
+  <rect x="338" y="588" width="70" height="44" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="373" y="617" font-size="20" fill="#1E3A8A" text-anchor="middle" font-weight="600">b</text>
+  <line x1="148" y1="610" x2="330" y2="610" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="330,605 330,615 338,610" fill="#64748B"/>
+  <text x="240" y="598" font-size="18" fill="#334155" text-anchor="middle">Y</text>
+  <rect x="78" y="670" width="70" height="44" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="113" y="699" font-size="20" fill="#92400E" text-anchor="middle" font-weight="600">c</text>
+  <rect x="338" y="670" width="70" height="44" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="373" y="699" font-size="20" fill="#1E3A8A" text-anchor="middle" font-weight="600">d</text>
+  <line x1="148" y1="692" x2="330" y2="692" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="330,687 330,697 338,692" fill="#64748B"/>
+  <text x="240" y="680" font-size="18" fill="#334155" text-anchor="middle">Y</text>
+  <line x1="113" y1="632" x2="113" y2="662" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="108,662 118,662 113,670" fill="#64748B"/>
+  <text x="139" y="659" font-size="18" fill="#334155" text-anchor="middle">N</text>
+  <rect x="78" y="752" width="70" height="44" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="113" y="781" font-size="20" fill="#1E3A8A" text-anchor="middle" font-weight="600">e</text>
+  <line x1="113" y1="714" x2="113" y2="744" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="108,744 118,744 113,752" fill="#64748B"/>
+  <text x="139" y="741" font-size="18" fill="#334155" text-anchor="middle">N</text>
+  <text x="306" y="773" font-size="19" fill="#334155" text-anchor="middle">仅在 a 未命中时</text>
+  <text x="306" y="798" font-size="19" fill="#334155" text-anchor="middle">继续判断 c</text>
+</svg>

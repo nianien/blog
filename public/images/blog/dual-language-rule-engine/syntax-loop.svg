@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="676" viewBox="0 0 480 676" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <title>有界循环  loop(3,c,a)</title>
+  <desc>每轮先检查上限再求值条件 c，命中后执行 a；轮数达到 3 或条件未命中时退出</desc>
+  <text x="240" y="34" font-size="24" fill="#0F172A" text-anchor="middle" font-weight="600">有界循环  loop(3,c,a)</text>
+  <text x="240" y="80" font-size="21" fill="#334155" text-anchor="middle">i = 0</text>
+  <line x1="240" y1="90" x2="240" y2="104" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="235,104 245,104 240,112" fill="#64748B"/>
+  <rect x="130" y="112" width="220" height="52" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="240" y="145" font-size="20" fill="#92400E" text-anchor="middle" font-weight="600">i &lt; 3 ?</text>
+  <line x1="240" y1="164" x2="240" y2="230" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="235,230 245,230 240,238" fill="#64748B"/>
+  <text x="268" y="210" font-size="18" fill="#334155" text-anchor="middle">Y</text>
+  <rect x="130" y="238" width="220" height="52" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="240" y="271" font-size="20" fill="#92400E" text-anchor="middle" font-weight="600">条件 c 命中？</text>
+  <line x1="240" y1="290" x2="240" y2="356" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="235,356 245,356 240,364" fill="#64748B"/>
+  <text x="268" y="336" font-size="18" fill="#334155" text-anchor="middle">Y</text>
+  <rect x="130" y="364" width="220" height="52" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+  <text x="240" y="397" font-size="20" fill="#065F46" text-anchor="middle" font-weight="600">执行动作 a</text>
+  <line x1="240" y1="416" x2="240" y2="462" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="235,462 245,462 240,470" fill="#64748B"/>
+  <rect x="130" y="470" width="220" height="52" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="240" y="503" font-size="20" fill="#334155" text-anchor="middle" font-weight="600">i++</text>
+  <line x1="130" y1="496" x2="54" y2="496" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="54" y1="496" x2="54" y2="138" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="54" y1="138" x2="122" y2="138" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="122,133 122,143 130,138" fill="#64748B"/>
+  <line x1="350" y1="138" x2="420" y2="138" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="350" y1="264" x2="420" y2="264" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="420" y1="138" x2="420" y2="584" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="420" y1="584" x2="358" y2="584" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="358,579 358,589 350,584" fill="#64748B"/>
+  <text x="379" y="126" font-size="18" fill="#334155" text-anchor="middle">N</text>
+  <text x="379" y="252" font-size="18" fill="#334155" text-anchor="middle">N</text>
+  <rect x="130" y="558" width="220" height="52" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="240" y="591" font-size="20" fill="#334155" text-anchor="middle" font-weight="600">退出循环</text>
+  <text x="240" y="647" font-size="20" fill="#334155" text-anchor="middle">达到上限后，不再额外判断 c</text>
+</svg>

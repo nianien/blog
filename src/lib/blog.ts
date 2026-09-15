@@ -48,6 +48,11 @@ function processMarkdownContent(content: string): string {
   const result = marked(content);
   let html = typeof result === 'string' ? result : String(result);
 
+  html = html.replace(
+    /<table>([\s\S]*?)<\/table>/g,
+    '<div class="table-scroll" role="region" aria-label="可横向滚动的表格" tabindex="0"><table>$1</table></div>'
+  );
+
   // 若配置了 basePath（如部署在子路径），给文章内绝对路径的图片加上前缀，否则请求会 404
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   if (basePath) {

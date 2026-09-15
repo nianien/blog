@@ -1,54 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <rect x="0" y="0" width="900" height="560" fill="#FFFFFF"/>
-  <text x="450" y="34" font-size="17" font-weight="bold" fill="#1E293B" text-anchor="middle">所有求值收敛到 RuleEngine.doEval</text>
-
-  <!-- 结构层 -->
-  <rect x="40" y="56" width="820" height="70" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
-  <text x="60" y="80" font-size="13" font-weight="bold" fill="#065F46">结构层 · 完全不感知引擎</text>
-  <text x="60" y="102" font-size="12" fill="#047857">RuleNode / RuleVisitor / EvalCacheScope 只调 context.eval(this)，脚本以 Object 传递</text>
-
-  <!-- 结构层 -> 总线 -> 三入口 -->
-  <line x1="450" y1="126" x2="450" y2="146" stroke="#94A3B8" stroke-width="1.5"/>
-  <line x1="180" y1="146" x2="720" y2="146" stroke="#94A3B8" stroke-width="1.5"/>
-  <line x1="180" y1="146" x2="180" y2="170" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="174,170 186,170 180,177" fill="#94A3B8"/>
-  <line x1="450" y1="146" x2="450" y2="170" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="444,170 456,170 450,177" fill="#94A3B8"/>
-  <line x1="720" y1="146" x2="720" y2="170" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="714,170 726,170 720,177" fill="#94A3B8"/>
-
-  <!-- RuleEngine 三个求值入口 -->
-  <rect x="70" y="178" width="220" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="180" y="201" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalRule</text>
-  <text x="180" y="221" font-size="11" fill="#1E40AF" text-anchor="middle">原子规则求值</text>
-  <rect x="340" y="178" width="220" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="450" y="201" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalExpr</text>
-  <text x="450" y="221" font-size="11" fill="#1E40AF" text-anchor="middle">临时表达式求值</text>
-  <rect x="610" y="178" width="220" height="58" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="720" y="201" font-size="13" font-weight="bold" fill="#1E3A8A" text-anchor="middle">evalRuleDesc</text>
-  <text x="720" y="221" font-size="11" fill="#1E40AF" text-anchor="middle">动态描述求值</text>
-  <text x="450" y="256" font-size="11" fill="#64748B" text-anchor="middle">RuleEngine 的三个公开求值方法</text>
-
-  <!-- 三入口 -> doEval 收敛 -->
-  <line x1="180" y1="236" x2="410" y2="296" stroke="#94A3B8" stroke-width="1.5"/>
-  <line x1="450" y1="266" x2="450" y2="296" stroke="#94A3B8" stroke-width="1.5"/>
-  <line x1="720" y1="236" x2="490" y2="296" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="444,296 456,296 450,303" fill="#94A3B8"/>
-
-  <!-- doEval 收敛点 -->
-  <rect x="250" y="304" width="400" height="66" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
-  <text x="450" y="330" font-size="14" font-weight="bold" fill="#92400E" text-anchor="middle">RuleEngine.doEval(script, scope, root, ctx, args)</text>
-  <text x="450" y="352" font-size="11" fill="#B45309" text-anchor="middle">唯一求值收敛点 · 引擎相关调用全部在此委托出去</text>
-
-  <line x1="450" y1="370" x2="450" y2="404" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="444,404 456,404 450,411" fill="#94A3B8"/>
-
-  <!-- 引擎实现层 -->
-  <rect x="120" y="412" width="660" height="76" rx="8" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="450" y="436" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">引擎实现层 · 当前是 RhinoEngine（唯一可替换处）</text>
-  <text x="250" y="460" font-size="12" fill="#B91C1C" text-anchor="middle">compile</text>
-  <text x="383" y="460" font-size="12" fill="#B91C1C" text-anchor="middle">evaluate</text>
-  <text x="515" y="460" font-size="12" fill="#B91C1C" text-anchor="middle">inContext</text>
-  <text x="650" y="460" font-size="12" fill="#B91C1C" text-anchor="middle">sharedScope</text>
-  <text x="450" y="479" font-size="11" fill="#991B1B" text-anchor="middle">换 GraalJS / QuickJS = 只替换这四个入口，doEval 以上全部不动</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="778" viewBox="0 0 480 778" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <title>引擎依赖的四个入口</title>
+  <desc>RuleEngine 的求值汇聚到 doEval 后调用 evaluate；编译、线程上下文和 UDF 初始化独立调用引擎</desc>
+  <text x="240" y="34" font-size="24" fill="#0F172A" text-anchor="middle" font-weight="600">引擎依赖的四个入口</text>
+  <rect x="20" y="62" width="440" height="64" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+  <text x="240" y="101" font-size="22" fill="#065F46" text-anchor="middle" font-weight="600">结构层不直接引用 Rhino 类型</text>
+  <text x="240" y="159" font-size="22" fill="#0F172A" text-anchor="middle" font-weight="600">RuleEngine → RhinoEngine</text>
+  <rect x="20" y="180" width="440" height="158" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="44" y="210" font-size="21" fill="#1E3A8A" text-anchor="start" font-weight="600">求值</text>
+  <text x="240" y="240" font-size="20" fill="#334155" text-anchor="middle">evalRule / evalExpr / evalRuleDesc</text>
+  <text x="240" y="275" font-size="20" fill="#334155" text-anchor="middle">doEval(script, root, ctx, args)</text>
+  <line x1="240" y1="285" x2="240" y2="297" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="235,297 245,297 240,305" fill="#64748B"/>
+  <text x="240" y="328" font-size="22" fill="#1E3A8A" text-anchor="middle" font-weight="600">evaluate</text>
+  <rect x="20" y="366" width="440" height="96" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="396" font-size="21" fill="#334155" text-anchor="start" font-weight="600">脚本编译</text>
+  <text x="117" y="437" font-size="20" fill="#334155" text-anchor="middle">doCompile</text>
+  <text x="354" y="437" font-size="20" fill="#1E3A8A" text-anchor="middle">compile</text>
+  <line x1="192" y1="430" x2="269" y2="430" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="269,425 269,435 277,430" fill="#64748B"/>
+  <rect x="20" y="486" width="440" height="96" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="516" font-size="21" fill="#334155" text-anchor="start" font-weight="600">线程上下文</text>
+  <text x="117" y="557" font-size="20" fill="#334155" text-anchor="middle">inContext</text>
+  <text x="354" y="557" font-size="20" fill="#1E3A8A" text-anchor="middle">inContext</text>
+  <line x1="192" y1="550" x2="269" y2="550" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="269,545 269,555 277,550" fill="#64748B"/>
+  <rect x="20" y="606" width="440" height="96" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="44" y="636" font-size="21" fill="#334155" text-anchor="start" font-weight="600">UDF 初始化</text>
+  <text x="117" y="677" font-size="20" fill="#334155" text-anchor="middle">构造器</text>
+  <text x="354" y="677" font-size="20" fill="#1E3A8A" text-anchor="middle">sharedScope</text>
+  <line x1="192" y1="670" x2="269" y2="670" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="269,665 269,675 277,670" fill="#64748B"/>
+  <text x="240" y="748" font-size="20" fill="#334155" text-anchor="middle">编排保持独立，计算引擎按需替换</text>
 </svg>

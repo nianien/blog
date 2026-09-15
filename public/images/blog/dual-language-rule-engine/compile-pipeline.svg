@@ -1,39 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <rect x="0" y="0" width="900" height="300" fill="#FFFFFF"/>
-  <text x="450" y="40" font-size="17" font-weight="bold" fill="#1E293B" text-anchor="middle">UI 树 → RuleNode → DSL 单向编译</text>
-
-  <!-- 四个阶段 -->
-  <rect x="30" y="90" width="180" height="90" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="120" y="120" font-size="14" font-weight="bold" fill="#1E3A8A" text-anchor="middle">UI TreeNode JSON</text>
-  <text x="120" y="144" font-size="11" fill="#3B82F6" text-anchor="middle">编辑 / 持久化</text>
-  <text x="120" y="162" font-size="11" fill="#3B82F6" text-anchor="middle">唯一事实来源</text>
-
-  <rect x="255" y="90" width="180" height="90" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
-  <text x="345" y="120" font-size="14" font-weight="bold" fill="#5B21B6" text-anchor="middle">TreeNode</text>
-  <text x="345" y="144" font-size="11" fill="#7C3AED" text-anchor="middle">validateSize</text>
-  <text x="345" y="162" font-size="11" fill="#7C3AED" text-anchor="middle">深度 128 / 节点 2000</text>
-
-  <rect x="480" y="90" width="180" height="90" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
-  <text x="570" y="120" font-size="14" font-weight="bold" fill="#065F46" text-anchor="middle">RuleNode</text>
-  <text x="570" y="144" font-size="11" fill="#059669" text-anchor="middle">UINodeAdapter</text>
-  <text x="570" y="162" font-size="11" fill="#059669" text-anchor="middle">.toRule()</text>
-
-  <rect x="705" y="90" width="165" height="90" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
-  <text x="787" y="120" font-size="14" font-weight="bold" fill="#92400E" text-anchor="middle">RuleSuite</text>
-  <text x="787" y="144" font-size="11" fill="#B45309" text-anchor="middle">ruleType=2</text>
-  <text x="787" y="162" font-size="11" fill="#B45309" text-anchor="middle">DSL + 规范化 JSON</text>
-
-  <!-- 箭头 -->
-  <line x1="210" y1="135" x2="248" y2="135" stroke="#475569" stroke-width="1.8"/>
-  <polygon points="248,130 248,140 256,135" fill="#475569"/>
-  <line x1="435" y1="135" x2="473" y2="135" stroke="#475569" stroke-width="1.8"/>
-  <polygon points="473,130 473,140 481,135" fill="#475569"/>
-  <line x1="660" y1="135" x2="698" y2="135" stroke="#475569" stroke-width="1.8"/>
-  <polygon points="698,130 698,140 706,135" fill="#475569"/>
-
-  <!-- 单向标注 -->
-  <rect x="230" y="215" width="440" height="52" rx="6" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5"/>
-  <text x="450" y="238" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">只有 toRule()，没有 fromRule()</text>
-  <text x="450" y="257" font-size="11" fill="#DC2626" text-anchor="middle">丢弃 name / 坐标 / 折叠状态 · 执行树不能反推 UI 布局</text>
-  <line x1="450" y1="180" x2="450" y2="215" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="794" viewBox="0 0 480 794" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <title>从编辑模型到执行模型</title>
+  <desc>UI JSON 转成 TreeNode，规范化 JSON 留在产品层持久化，内核接收规则定义和 DSL</desc>
+  <text x="240" y="34" font-size="24" fill="#0F172A" text-anchor="middle" font-weight="600">从编辑模型到执行模型</text>
+  <rect x="30" y="66" width="420" height="72" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="240" y="109" font-size="23" fill="#1E3A8A" text-anchor="middle" font-weight="600">UI TreeNode JSON</text>
+  <line x1="150" y1="138" x2="150" y2="186" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="145,186 155,186 150,194" fill="#64748B"/>
+  <text x="269" y="173" font-size="18" fill="#334155" text-anchor="middle">反序列化与校验</text>
+  <rect x="30" y="194" width="240" height="112" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="150" y="229" font-size="23" fill="#1E3A8A" text-anchor="middle" font-weight="600">TreeNode</text>
+  <text x="150" y="261" font-size="20" fill="#334155" text-anchor="middle">深度 ≤ 128</text>
+  <text x="150" y="290" font-size="20" fill="#334155" text-anchor="middle">节点 ≤ 2000</text>
+  <rect x="316" y="194" width="134" height="112" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="383" y="229" font-size="21" fill="#334155" text-anchor="middle" font-weight="600">产品层</text>
+  <text x="383" y="261" font-size="18" fill="#334155" text-anchor="middle">保存规范化</text>
+  <text x="383" y="289" font-size="20" fill="#334155" text-anchor="middle">UI JSON</text>
+  <line x1="270" y1="250" x2="308" y2="250" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="308,245 308,255 316,250" fill="#64748B"/>
+  <line x1="150" y1="306" x2="150" y2="370" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="145,370 155,370 150,378" fill="#64748B"/>
+  <text x="274" y="342" font-size="18" fill="#334155" text-anchor="middle">UINodeAdapter</text>
+  <text x="274" y="366" font-size="18" fill="#334155" text-anchor="middle">.toRule()</text>
+  <rect x="30" y="378" width="240" height="70" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+  <text x="150" y="420" font-size="23" fill="#065F46" text-anchor="middle" font-weight="600">RuleNode</text>
+  <text x="366" y="405" font-size="20" fill="#334155" text-anchor="middle">只保留</text>
+  <text x="366" y="433" font-size="20" fill="#334155" text-anchor="middle">执行语义</text>
+  <line x1="150" y1="448" x2="150" y2="480" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="150" y1="480" x2="240" y2="480" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="240" y1="480" x2="240" y2="510" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="235,510 245,510 240,518" fill="#64748B"/>
+  <text x="340" y="485" font-size="19" fill="#334155" text-anchor="middle">.expr() → DSL</text>
+  <rect x="30" y="518" width="420" height="86" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+  <text x="240" y="552" font-size="23" fill="#92400E" text-anchor="middle" font-weight="600">RuleDefinition</text>
+  <text x="240" y="586" font-size="20" fill="#334155" text-anchor="middle">ruleType=2 · expression=DSL</text>
+  <line x1="240" y1="604" x2="240" y2="646" stroke="#64748B" stroke-width="1.5"/>
+  <polygon points="235,646 245,646 240,654" fill="#64748B"/>
+  <rect x="30" y="654" width="420" height="70" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="1.5"/>
+  <text x="240" y="696" font-size="23" fill="#065F46" text-anchor="middle" font-weight="600">RuleSuite 装配与执行</text>
+  <text x="240" y="765" font-size="20" fill="#334155" text-anchor="middle">执行树不反向重建 UI AST</text>
 </svg>

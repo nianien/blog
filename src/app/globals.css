@@ -233,6 +233,28 @@ body {
   border: 1px solid #e5e7eb;
 }
 
+.prose .table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.prose .table-scroll:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.prose .table-scroll table {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .prose .table-scroll table {
+    min-width: 36rem;
+  }
+}
+
 .prose table {
   width: 100%;
   border-collapse: collapse;
