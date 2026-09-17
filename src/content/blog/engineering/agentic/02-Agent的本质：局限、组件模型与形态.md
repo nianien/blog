@@ -1,7 +1,7 @@
 ---
 title: "Agent的本质：局限、组件模型与形态"
 pubDate: "2025-12-05"
-description: "Agent 不是更大的 LLM，而是补齐 LLM 五大局限的系统。本文给出 Agent 的组件分解、Observe-Think-Plan-Act-Reflect-Update 循环的最小落地、自主性 A1-A4 的关键机制差异，以及为什么业务 ROI 的成本驱动常是人工介入率而不是 token 的工程账。"
+description: "从职责配置、决策校验和自主性边界理解 Agent，用订单异常调查贯穿成本测算、串联可靠性与业务执行设计，区分模型能力、运行时责任和实际交付。"
 tags: ["Agentic", "AI Engineering", "LLM"]
 slug: "agent-essence-and-forms"
 series:
@@ -10,388 +10,208 @@ series:
 author: "skyfalling"
 ---
 
-Agent 这个词被用得太宽——从一行 prompt 包装的 chatbot 到能自主跑十几步任务的系统，都被叫 Agent。要让这个词在工程上有意义，必须严格回答三件事：LLM 究竟差在哪、Agent 拿什么来补、不同自主性等级之间隔着什么。本篇承接知识地图给出的五件套，不再停留在定义层，而是把五个局限、组件配置、A1-A4 分级各自的工程细节抠到底——抠到代码层、成本曲线和"乘法效应"这种数学约束。这里的 `A` 只表示 Autonomy，避免与后续记忆层和学习时间尺度混淆。
+Agent 的自主性，体现在它能在多大范围内自行选择动作、如何处理反馈，以及何时把控制权交回。模型能力是其中一个因素；权限、任务状态、执行时限与恢复机制同样决定系统能承担什么工作。
 
----
+[上一篇](/blog/engineering/agentic/from-llm-to-agent/)建立了五类职责与阅读地图。本文继续使用“调查订单异常”的场景，把职责落到配置、自主性边界、成本和业务执行上。文中的 A1–A4 是本系列的讨论框架，不是产品评级或行业标准。
 
-## 1. 五个局限的工程含义
+## 1. 五类工程问题不等于模型的五种绝对缺陷
 
-LLM 是无状态的条件概率采样器：给定 token 序列预测下一个 token 的分布，按某种策略采样直到停止。这个最小机制带来五个无法回避的局限：
+原始模型推理与完整产品需要分开看。常规推理不会因为一轮对话自动更新模型权重，但上下文、推理缓存和服务端会话都可能保存信息。模型能提出计划、修订答案和表达不确定性，只是这些输出不能自动成为可靠的业务状态。
 
-| 局限 | 本质 | 工程后果 |
-|------|------|---------|
-| **无记忆** | 权重在推理时冻结，跨调用不保留信息 | context 持续膨胀；token 线性增长；持久化必须外置 |
-| **无工具** | 输出只是文本，无法发 HTTP、查库、读文件 | "已为您创建仓库"是幻觉；意图必须靠外部 Tool 落地 |
-| **无规划** | 自回归生成单向，没有回溯 | 不能在第 50 个 token 时回头改第 10 个；规划是模式匹配不是搜索 |
-| **无状态** | 单次推理内没有结构化的执行状态 | 不知道"第 2 步已完成、第 3 步失败"；必须 Runtime 维护 |
-| **无反思** | confidence 不等于 correctness | 错误以高置信度传递；必须外部信号打断 |
+[![任务记忆、真实执行和外部核验共同支撑模型决策](/images/blog/agentic/llm-five-limitations.svg)](/images/blog/agentic/llm-five-limitations.svg)
 
-![LLM 的局限](/images/blog/agentic/llm-five-limitations.svg)
+| 工程问题 | 模型能提供什么 | 系统仍需负责什么 |
+| --- | --- | --- |
+| 跨轮保留信息 | 根据提供的历史继续理解 | 决定保存、检索、更新和删除哪些信息 |
+| 影响外部环境 | 提出工具名称与参数 | 授权、调用、接收结果与控制副作用 |
+| 规划与调整 | 分解任务，随新信息改计划 | 表达依赖、记录进度、执行及恢复 |
+| 维护执行事实 | 阅读状态并解释其含义 | 以实际事件维护权威状态 |
+| 评估结果 | 提出批评与修正建议 | 提供测试、业务校验或人工反馈等证据 |
 
-下面五段把这五个局限的工程含义抠到底——它们各自的代价、为什么"模型变强"救不了、对应的 Agent 组件如何回应。
+“模型说已完成”与“系统确认已完成”之间，需要一条证据链。在订单调查里，模型可以解释支付记录，但付款是否成功应来自支付系统；如果查询超时，只能记录结果未知。
 
-**无记忆**的代价不仅是"得重发历史"，而是 token 成本随对话长度线性增长、context window 终将耗尽。5 轮对话每轮 1000 token 输入，最后一轮模型看到 5000 token 的累积历史。"长对话遗忘前文"问题永远存在——不是模型变健忘，而是早期内容被挤出窗口或被淹没在噪声中。Memory 工程的核心难题就是在有限窗口里保留最相关的历史。
+同样，模型的自报置信度不是校准后的成功概率。它可以作为待验证的信号，不能直接替代权限检查或决定高影响操作。
 
-**无工具**是 LLM 与真实世界之间唯一的鸿沟。模型看过无数 stripe API 文档，知道"调用 `stripe.Customer.create` 能创建客户"，但它无法真正执行——它能做的只是生成一段"看起来像是调用了"的文本（往往还附带一个编造的 customer_id）。这是最经典的幻觉来源。Tool Calling 的工程价值就是把"生成调用文本"和"实际执行调用"对接起来。
+## 2. 把职责写成可执行的配置契约
 
-**无规划**最容易被误解。LLM 输出"第一步...第二步..."看起来像规划，但这只是语言模式——它没有在内部维护任务树、没有评估各分支的代价、没有做搜索。真正的规划需要回溯（发现错就改）、看代价（贵的分支后做）、持久化（中途中断能恢复）。LLM 单独做不到，必须 Planner 承担。
-
-**无状态**和无记忆有重叠但不等价。无记忆是"跨调用不保留信息"，无状态是"单次推理内没有结构化的执行状态"。即使把全部历史都塞进 prompt，LLM 也无法回答"我现在执行到第几步、哪些步成功了、哪些待重试"——除非这些状态被显式编码到 prompt 里。状态机不是 LLM 内部能力，必须由 Runtime 维护。
-
-**无反思**是最危险的一个。LLM 错的时候不会沉默或表达犹豫，它会以相同语气和置信度输出错误答案。"幻觉"问题本质上就是这个局限的体现——模型没有"我不知道"这个内部状态，只能在分布上采样。Reflect 机制不是给 LLM 加上"自我怀疑"，而是用外部信号（执行结果、校验失败、用户反馈）打断它的自信。
-
----
-
-## 2. Agent 五件套的可配置形态
-
-Agent = LLM + Memory + Tools + Planner + Runtime——每个组件对应一个被填补的局限。要把这套抽象落到生产，关键不是再画一张组件图，而是把它写成可配置的代码 spec：
-
-```python
-AgentSpec = {
-    "name": str,
-    "role": str,                      # System Prompt 中的角色定义
-    "model": {
-        "provider": str,              # "openai" | "anthropic" | "vendor"
-        "name": str,                  # "gpt-4o" | "claude-sonnet-4-5"
-        "temperature": float,
-    },
-    "memory": {                       # l1-l4 用数字而非语义命名，是为了显式表达层次和读写代价递增
-        "l1_max_turns": int,          # 对话缓冲滑动窗口（秒级、内存级）
-        "l2_enabled": bool,           # 工作记忆（分钟级、单任务）
-        "l3_vector_store": str,       # 情景记忆 backend（天级、向量检索）
-        "l4_knowledge_base": str,     # 语义记忆 / RAG 索引（月年级、持久化）
-    },
-    "tools": list[ToolSpec],          # 可用工具列表
-    "planner": {
-        "mode": str,                  # "react" | "plan_execute" | "hierarchical"
-        "max_steps": int,
-    },
-    "runtime": {
-        "max_iterations": int,        # 控制循环硬上限
-        "token_budget": int,
-        "consecutive_error_limit": int,
-        "loop_detection": bool,
-    },
-}
-```
-
-这个 schema 的字段每一个都对应一个组件的关键决策。**任何 Agent 项目的争吵基本都集中在这几个字段上**——记忆深度多少、用什么模型、配什么工具、规划模式选哪个、循环上限设多少。把它们写明在一个 schema 里，争吵就从"感觉不对"变成"该改哪个字段"。
-
-整套 spec 里最关键的设计变量是 `planner.mode`——它决定了 Planner 与 LLM 的边界：
-
-| 模式 | 优势 | 代价 |
-|------|------|------|
-| `react` LLM 驱动 | 灵活，能处理设计时未预见的分支 | 不可控，可能跑偏；调试困难；成本高 |
-| 状态机驱动（不在此 spec） | 可控，行为可预测；易于回放和调试 | 不灵活，分支必须预先定义；遇到边缘情况只能失败 |
-| `plan_execute` / `hierarchical` 混合 | 大框架固定，小决策交给 LLM | 设计复杂，边界需要仔细划分 |
-
-生产级系统几乎都是混合模式——外层用状态机定义大流程的转换规则，把"语义判断"的局部决策交给 LLM。
-
----
-
-## 3. 控制循环的 Plan Schema 与三个不可少的决策
-
-Agent 控制循环（Observe→Think→Plan→Act→Reflect→Update）的六个阶段在地图层已经画过；本节只展开三个**做不好就直接翻车**的设计点：
-
-**Plan 必须用 Structured Output**——把 LLM 的非确定性输出转化为可解析的确定性指令：
+下面是说明性的应用配置，不对应某家 SDK。字段要由运行时真正读取并执行；写在配置文件中并不会自动生效。
 
 ```json
 {
-  "name": "agent_decision",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "thought": {
-        "type": "string",
-        "description": "对当前状态的简短分析（< 50 字）"
-      },
-      "next_action": {
-        "type": "string",
-        "enum": ["call_tool", "answer", "ask_user", "give_up"]
-      },
-      "tool_call": {
-        "type": "object",
-        "description": "next_action == call_tool 时填写",
-        "properties": {
-          "name": {"type": "string"},
-          "arguments": {"type": "object"}
-        }
-      },
-      "answer": {
-        "type": "string",
-        "description": "next_action == answer 时填写"
-      },
-      "confidence": {"type": "number", "minimum": 0, "maximum": 1}
-    },
-    "required": ["thought", "next_action", "confidence"]
+  "name": "order-investigator",
+  "model_profile": "reasoning-default",
+  "memory": {
+    "conversation_enabled": true,
+    "task_state_enabled": true,
+    "cross_task_memory_enabled": false
+  },
+  "tools": [
+    "query_order",
+    "query_payment_status",
+    "query_order_events"
+  ],
+  "planner": {
+    "mode": "react"
+  },
+  "runtime": {
+    "max_model_steps": 12,
+    "max_tool_calls": 20,
+    "deadline_seconds": 120,
+    "token_budget": 30000,
+    "consecutive_error_limit": 3
+  },
+  "policy": {
+    "action_scope": "read_only",
+    "identity_source": "authenticated_session"
   }
 }
 ```
 
-下游消费 Plan 的代码无法 try/except 一个自由文本。Structured Output 还有一个隐藏价值：它强迫 LLM 把决策"写明白"，而不是用模糊的自然语言糊弄过去——`next_action` 是 enum，没有"或许试试看"这种含糊选项。
+这些数字只是配置示例，需要根据任务长度与评估结果调整。把工具调用数和模型步数分开，是因为一次模型响应可能包含多个调用。
 
-**错误作为输入回传，不抛异常**——工具失败时，把错误信息当作下一轮的 observation 给 LLM。这让 Agent 有机会自我修正（看到错误后换一种调用方式），而不是让外层 try/catch 直接中止整个任务。这一条违反了传统软件工程的直觉，但在 Agent 里至关重要。
+这个 Agent 只能调查，不能退款。身份来自已认证会话，不能由模型自由指定另一个用户；读取支付记录也必须经过服务端授权。后续如果新增处理能力，应单独定义业务操作与审批范围，而不是把只读配置改成“允许所有工具”。
 
-**max_iterations 必须存在**——LLM 的 Reflect 判断可能错。没有硬上限，一次错误的"我没完成、继续重试"就能烧光预算。max_iterations 不是"防 bug"，而是承认"LLM 的退出判断不可靠"这个事实。
+五类职责可以由一个进程实现。Memory 不必一开始就接向量库，Planner 不必独立部署，Runtime 也不等于一个完整平台。
 
----
+## 3. 决策输出可解析，还要可验证
 
-## 4. Agent 的自主性分级（A1-A4）
+程序需要明确知道模型是在请求工具、回答用户，还是等待补充信息。可以使用供应商原生工具调用，也可以定义应用层决策结构。下面是后者的一次实例：
 
-同样使用 LLM 的系统，自主性差几个数量级。**这种差异不是连续的，而是阶梯式的**——每一级引入了下一级没有的关键机制：
-
-| 级别 | 形态 | 关键机制 | 单次成本 | 典型产品 |
-|------|------|---------|---------|---------|
-| **A1 单次推理** | 一次调用，无循环、无工具 | — | $0.001-0.01 | 文本分类、意图识别、情感分析 |
-| **A2 工具增强** | 1-3 轮工具调用，人在回路 | Tool Calling | $0.01-0.05 | Perplexity、ChatGPT 联网搜索 |
-| **A3 任务驱动** | 自主多步执行 | 控制循环 + 反思 | $0.05-0.50 | Cursor、Claude Code、Data Analysis Agent |
-| **A4 自主系统** | 长期运行，自设子目标 | 持久记忆 + 自我反思 | $0.50-50+ | AutoGPT、Devin（多为研究形态） |
-
-### 四级的最小代码骨架对比
-
-把四个等级写成代码骨架，差异最直观：
-
-```python
-# A1：一次调用，没有循环
-def l1_classify(text: str) -> str:
-    return llm.complete(f"将以下文本分类：{text}", schema=category_schema)
-
-# A2：工具增强，最多 1-3 轮
-def l2_with_tool(query: str) -> str:
-    response = llm.complete(query, tools=[search_tool])
-    if response.tool_calls:
-        result = search_tool.invoke(response.tool_calls[0])
-        return llm.complete(query + result)  # 一次工具 + 一次综合
-    return response.text
-
-# A3：自主多步循环，有反思与退出条件
-def l3_agent(goal: str) -> str:
-    messages = [system_msg(), user_msg(goal)]
-    for step in range(MAX_STEPS):
-        response = llm.complete(messages, tools=all_tools)
-        if not response.tool_calls:
-            return response.text                              # 任务完成
-        for tc in response.tool_calls:
-            messages.append(tool_msg(tc.id, invoke(tc)))
-        if exceeds_budget() or detect_loop(messages):
-            return escalate()                                 # 退出守卫
-    return safe_terminate()
-
-# A4：长期运行 + 自设子目标 + 持久记忆
-def l4_autonomous():
-    while True:                                               # 没有用户触发的循环
-        goal = self_set_goal(observe_environment())
-        plan = decompose(goal)
-        for sub in plan:
-            result = l3_agent(sub.description)
-            update_persistent_memory(sub, result)
-            if should_replan(result):
-                plan = decompose(self_set_goal(observe_environment()))
-                break
-        sleep(check_interval)
+```json
+{
+  "action": "call_tool",
+  "tool": "query_payment_status",
+  "arguments": {
+    "order_id": "O202512050001"
+  },
+  "reason_summary": "订单未确认，需要核对已有支付请求的最终状态"
+}
 ```
 
-每一级的边界不是清晰的——同一个 Agent 在简单任务时表现像 A2、在复杂任务时像 A3。但**关键机制**是清晰的：
+`reason_summary` 是简短决策说明，不是模型内部推理的完整记录，更不是动作正确性的证明。
 
-- **A1 → A2** 的跃迁是引入了 Tools。Agent 第一次能影响外部世界。
-- **A2 → A3** 的跃迁是引入了控制循环。Agent 第一次能跨多步执行、自主决定何时停。
-- **A3 → A4** 的跃迁是引入了持久化的自我目标和长期记忆。Agent 第一次能在没有用户输入的情况下持续运行。
+校验需要分层进行：
 
-每一级的跃迁不是"模型变强了"，而是"系统层引入了新机制"。这也是为什么"GPT-5 出来后，Agent 不就过时了"是错误的判断——A1 到 A2 不是模型能力问题，是有没有 Tool 注册系统的问题；A2 到 A3 不是模型能力问题，是有没有循环和状态管理的问题。
+1. 解析与结构检查：动作类型是否合法，必填字段是否存在，是否出现多余字段
+2. 动作匹配：请求工具时必须有工具名和参数，回答时必须有回答内容
+3. 工具契约：工具是否已注册，参数是否满足该工具的 Schema
+4. 授权与业务条件：当前主体能否查看这笔订单，该操作是否仍然允许
+5. 结果判定：收到的是成功、拒绝、待处理还是未知状态
 
-**关于 L4 的一个澄清**：目前公开产品中真正稳定运行的 L4 系统几乎不存在。具体看几个有代表性的尝试：AutoGPT（2023 早期开源）尝试用循环自主目标拆解，但缺乏退出条件检测、token 预算守卫、不可逆操作护栏，公开使用中频繁出现"为了完成不重要的子目标烧光预算"；Devin（Cognition，2024）演示效果很好，但落地企业版后退化为"L3 强化版"——任务仍由人发起，长期运行时把控制权部分交回人；BabyAGI 类项目则在"自设新目标"层卡住，新目标的质量随循环次数下降。三个失败方向高度一致：**长期自主运行 + 不可逆副作用 = 风险叠加的乘法效应**，工程上还没有共识级的解法。**L4 在工程上还是研究阶段，不是部署阶段**。这并不意味着 L4 没有价值，而是说在 2026 年的当下，把 L3 做扎实比追求 L4 更现实。
+结构化输出减少格式歧义，不保证事实正确或业务合法。Schema 中写一段“调用工具时填写参数”的描述，也不能代替实际的条件校验。
 
-### Token 累积的数学
+## 4. A1–A4 描述控制权，不代表成熟度
 
-**最容易被低估的代价是 token 累积**：L3 Agent 每一步都重发完整对话历史。N 步任务的总输入 token 量不是 N×T，而是约 N(N+1)/2 × T——三角数累积：
+| 形态 | 控制权边界 | 订单场景中的例子 |
+| --- | --- | --- |
+| A1 单次推理 | 应用调用模型一次，消费其结果 | 将一条咨询归类为订单异常 |
+| A2 受限工具增强 | 应用控制有限步骤，模型完成局部选择 | 查询已指定订单，再解释状态 |
+| A3 任务驱动循环 | 模型随反馈选择后续步骤，运行时约束范围 | 自主补查订单、支付与事件记录 |
+| A4 持续任务系统 | 在长期授权范围内由事件或调度持续推进 | 监测待处理订单并创建调查任务 |
 
-```python
-def cumulative_input_tokens(steps: int, per_step_new: int = 1000) -> int:
-    """N 步 Agent 的累计输入 token 数"""
-    # 第 1 步看 1 段、第 2 步看 1+2 段、... 第 N 步看 1+2+...+N 段
-    return sum(i * per_step_new for i in range(1, steps + 1))
+A1 是用于比较的基线，未必会被所有定义称为 Agent。A2 与 A3 也没有固定的“3 轮”分界，同一产品可以同时提供不同形态。
 
-# 例：5 步任务每步新增 1000 token
-# 累计输入 = 1000 + 2000 + 3000 + 4000 + 5000 = 15,000 token
-# 而不是 5,000 token——是 3 倍
+A4 不意味着系统可以自行扩大业务目标或权限。持续运行需要任务归属、调度、持久化、取消、预算与恢复；新增子目标仍应服务于已经授权的目标。长期自动化也不要求每次都调用模型。
+
+因此，不能把某个产品永久归为某一级，再据此断言它的成本或可靠性。应描述具体功能、版本与部署方式。模型改进可能让同一架构完成更多任务；架构改进也可能让同一模型更稳定地执行。
+
+## 5. 何时值得增加动态决策
+
+选择 Agent 前，先建立一个能比较的简单基线。订单状态查询通常可以由固定流程完成；异常调查如果经常需要根据新证据选择不同查询，才更可能从动态决策中获益。
+
+| 判断问题 | 支持增加 Agent 能力的证据 |
+| --- | --- |
+| 固定流程遗漏了什么？ | 实际任务存在难以预先枚举的证据获取路径 |
+| 模型决定下一步是否更好？ | 同一测试集上完成率或人工处理时间改善 |
+| 能否验证结果？ | 关键结论能关联查询记录、测试或业务状态 |
+| 出错能否控制？ | 有明确权限、预算、停止与恢复方式 |
+| 收益是否覆盖投入？ | 包含人工、工具、模型、维护及失败成本的比较成立 |
+
+输入需要语义理解，不等于整个任务都要交给 Agent。反过来，一个有确定状态机的业务，也可能包含值得使用 Agent 的解释、调查或方案生成环节。
+
+规则引擎和普通代码也有开发、运行与维护成本，不能称为“零成本、100% 无错”。它们的优势是把已知规则明确执行，便于测试和审计。
+
+## 6. 成本要按完整任务计算
+
+全量重发历史时，输入 token 会累积。假设每轮有固定前缀 S，且第 i 轮的动态历史恰好是 i×T，则 N 轮输入为：
+
+```text
+总输入 token = N×S + T×N×(N+1)/2
 ```
 
-以 GPT-4o 定价（input $2.5/1M token），一个 5 步 L3 Agent 单次约 $0.03-0.05，日调用 10 万次月成本 $90,000-$150,000。这个数字会让"在所有功能里都用 L3 Agent"的方案从财务上就站不住脚。
+例如 S=2000、T=1000、N=5，合计 25000 输入 token。这个算例只描述特定上下文策略，不是所有 Agent 的成本规律；摘要、检索、固定窗口和缓存会改变计量或收费，输出 token、工具与基础设施还要另算。
 
----
+业务 ROI 则需要更完整的账：
 
-## 5. 何时不用 Agent
-
-Agent 处理"输入是模糊的、路径是不确定的"任务。当任务不包含模糊性时，Agent 就是错的工具。
-
-三个清晰的不该用 Agent 的信号：
-
-| 信号 | 原因 | 正确方案 |
-|------|------|---------|
-| 输入输出可枚举 | 规则引擎成本接近零、100% 可预测 | `if/else` 或状态机 |
-| 步骤固定，只是顺序问题 | Agent 在这里只是用 LLM 重新发现已知的步骤顺序 | Workflow 引擎（Airflow、Temporal） |
-| 要求 100% 确定性 | LLM 的概率本质不可消除——你无法消除"用户的钱没了但订单没更新"的可能 | 代码 + 强制人工审批 |
-
-**真实生产系统中 LLM 推理通常只占 20% 的工作量**——客服系统 70% 用 FAQ 匹配解决、20% 用模板查询，剩下 10% 才是 Agent 推理。Agent 是系统的一个节点，不是整个系统。最常见的架构错误是让 Agent 控制整个流程；正确做法是确定性代码定义骨架，Agent 只在需要语义理解的环节出现。
-
-### 判断流程的伪代码
-
-```python
-def should_use_agent(task: TaskSpec) -> Decision:
-    """五维判断：任意维度不满足都倾向不用 Agent"""
-    score = 0
-    score += 1 if task.input_needs_semantic_parsing else 0
-    score += 1 if task.path_depends_on_intermediate_results else 0
-    score += 1 if task.requires_dynamic_tool_selection else 0
-    score += 1 if not task.can_be_drawn_as_complete_dag else 0
-    score += 1 if task.tolerable_error_rate >= 0.05 else 0
-
-    if score >= 4:
-        return Decision(use_agent=True, level="L3")
-    if score == 3:
-        return Decision(use_agent=True, level="L2",   # 退而求其次：受限 Agent
-                        note="先用受限 Tool Calling，跑稳再升级")
-    return Decision(use_agent=False, note="用 Workflow / 规则引擎")
+```text
+每任务期望成本
+= 模型费用 + 工具及基础设施费用
++ 人工介入概率 × 单次介入成本
++ 失败损失的期望值
++ 分摊的建设与维护成本
 ```
 
-四个以上"偏向 Agent"才考虑 Agent；两个以下就老老实实用 Workflow 或规则。
+为了展示敏感性，假设两个方案质量与失败损失相同，人工每次处理成本为 5 元：
 
----
+| 假设方案 | 模型与工具费用/任务 | 人工介入率 | 人工费用/任务 | 小计 |
+| --- | --- | --- | --- | --- |
+| 固定查询辅助 | 0.05 元 | 40% | 2.00 元 | 2.05 元 |
+| 动态调查辅助 | 0.20 元 | 15% | 0.75 元 | 0.95 元 |
 
-## 6. 成本结构：业务 ROI 里人工常是大头
+这组数字不是实测，也不是产品定价。它说明：在这个假设下，增加 0.15 元机器费用，换取减少 1.25 元人工费用，才产生 1.10 元差额。真实项目必须验证介入率是否下降、处理质量是否相当，以及节省的时间能否转化为业务收益。
 
-具体场景：客服退货流程——查订单、判断退货期、确认退款方式、执行退款，涉及 4 个工具。三种方案对比：
+没有统一的“介入率低于 20% 就不值得做”阈值。低频但高价值任务、已高度自动化的海量任务，成本结构可能完全不同。
 
-| 指标 | Pure LLM | Tool Calling | ReAct Agent |
-|------|---------|-------------|-------------|
-| LLM 调用次数 | 1 | 2-3 | 4-6 |
-| 累计 token | 350 | 1300-2000 | 3600-7500 |
-| 平均延迟 | 1-2s | 3-5s | 5-10s |
-| 任务成功率 | ~20% | ~60% | ~95% |
-| **人工介入率** | **80%** | **40%** | **5%** |
+## 7. 多步成功率需要明确概率条件
 
-按 GPT-4o 定价 + 人工成本 5¥/次介入（5 分钟 × 1¥/分钟）：
+如果三个必要步骤独立、每步成功率均为 90%，且没有恢复机制，全部成功的概率是：
 
-| 成本项 | Pure LLM | Tool Calling | ReAct Agent |
-|------|---------|-------------|-----------|
-| LLM token 成本 | 0.014¥ | 0.05¥ | 0.10¥ |
-| API 调用 | 0¥ | 0.015¥ | 0.035¥ |
-| 人工成本 | 4¥ | 2¥ | 0.25¥ |
-| **总成本/次** | **4.01¥** | **2.07¥** | **0.39¥** |
-| **年成本** 百万次 | **400万¥** | **207万¥** | **39万¥** |
+```text
+0.9 × 0.9 × 0.9 = 0.729
+```
 
-在这个高人工介入的客服场景里，**LLM token 成本差异是小头**（最大 0.10¥），**真正的成本驱动是人工介入率**——从 80% 降到 5%，总成本下降约 90%。这个结论回答的是业务 ROI，不等于所有 Agent 的运行成本都由人工主导：当流程已高度自动化、流量放大到平台规模时，Token 会成为主要可变成本和容量计量单位。
+独立性不成立时，应使用条件概率：
 
-### 单次成本计算的最小公式
+```text
+P(全部成功)
+= P(S1) × P(S2 | S1) × P(S3 | S1, S2)
+```
+
+实际系统的错误常相关：错误订单号会影响后续每一步，错误知识也可能同时误导执行者与评估者。不能把单独测出的节点成功率直接相乘，声称得到端到端可靠性。
+
+重试、核验与回退能改变路径及成功条件，但不会自动“打破概率规律”。核验器也有漏检与误报，必须通过端到端任务测量实际改善。
+
+## 8. 业务执行需要稳定的操作身份
+
+订单调查结束后，如果用户请求退款，系统可以让模型提取意图，再交给业务服务执行。关键不是禁止工具执行退款，而是不能绕过业务授权与状态约束。
+
+下面是教学伪代码，展示职责顺序：
 
 ```python
-def per_request_cost(
-    llm_tokens: int,
-    llm_unit_price: float,        # ¥ / 1k token
-    tool_calls: int,
-    tool_unit_price: float,       # ¥ / call
-    intervention_rate: float,     # 0-1
-    intervention_cost: float,     # ¥ / intervention
-) -> float:
-    return (
-        llm_tokens / 1000 * llm_unit_price
-        + tool_calls * tool_unit_price
-        + intervention_rate * intervention_cost
+def submit_refund(intent, principal, request_id):
+    order = orders.load_for_update(intent.order_id)
+    require_can_refund(principal, order)
+    amount = validate_refund_amount(intent.amount, order)
+    require_approval_if_needed(principal, order, amount)
+
+    operation = refunds.create_or_get(
+        tenant_id=principal.tenant_id,
+        request_id=request_id,
+        order_id=order.id,
+        amount=amount,
+        currency=order.currency,
     )
-
-# 三种方案的 sensitivity：人工成本是 token 成本的 100-300 倍
-# 这就是为什么"省 token"是次要优化，"降介入率"才是主优化
+    return refunds.submit_or_query(operation)
 ```
 
-工程含义：评估 Agent 投入产出比时，算的是减少了多少人工介入，不是省了多少 token。介入率从 80% 降到 70% 价值有限，降到 10% 以下才有质变。这个比例的可降空间决定了项目值不值得做。
+`create_or_get` 需要由数据库唯一约束或等价原子机制保证，并检查同一请求 ID 的参数一致性。不能用“先查是否存在，再执行”的两个普通操作代替。
 
-**衍生的判断标准**：如果一个业务流程目前的人工介入率本来就低（比如 < 20%），那么上 Agent 的边际收益不大——能节省的人力本来就少。Agent 的价值集中在"目前严重依赖人工"的环节，而不是"现在已经自动化得不错"的环节。
+请求 ID 由应用为同一业务操作生成并持久化；模型重新生成 tool call ID 时，仍要关联原操作。仅用“订单号+金额”也不够，因为同一订单可能存在合法的多次部分退款。授权判断应抛出明确错误，不能依赖可能被关闭的 Python `assert`。
 
----
+支付接口超时后，先查已有操作的结果。稳定的幂等键、状态查询与对账共同保证恢复；一条审计日志本身不能防止重复退款。
 
-## 7. 概率性输出的乘法效应
+## 9. 让自主性服务于交付
 
-升级到更高 L 级别带来的不只是成本上升，还有质的工程代价：
+Agent 的能力不由组件数量、循环轮数或自主性标签决定。应先明确任务与授权范围，再用证据判断它能否更好地交付。
 
-| 维度 | A1 | A2 | A3 |
-|------|----|----|----|
-| Token 成本 | 固定，可预算 | 近似固定 | 超线性增长，难预算 |
-| 延迟 | 1-3s | 3-10s | 10s-分钟级 |
-| 可预测性 | 高 | 较高 | **低**——相同输入可能走不同路径 |
-| 调试难度 | 低 | 中 | **高**——需要完整 trace |
-| 失败影响 | 单次结果不准 | 单次结果不准 | **多步偏离，可能产生不可逆副作用** |
-
-### 串联可靠性的数学
-
-L3 升 L4 的最危险代价不是延迟和成本，是**乘法效应**——多步执行的端到端成功率是每步成功率的连乘。这个数学约束在单 Agent 内的多轮循环上就开始体现：3 轮 ReAct 每轮成功率 90% 意味着端到端只剩 73%。这套数学在多 Agent 系统中放大成主导问题（详细的 `required_per_step` 公式、Worker 链路设计、98.3% 单节点门槛的推论在多 Agent 协作的专题里展开）。本节只指出工程后果：
-
-- **不要为了显得更智能而拆多 Agent / 多轮循环**——每多一步就乘一次成功率
-- **关键操作必须放在确定性代码里**——退款、下单、删数据这类不可逆操作不能让 Agent 决定执行，必须代码兜底
-- **端到端高可靠的要求必须从串联拓扑里抽身**——要么让步骤可重试且幂等、要么引入独立校验环节打破乘法链
-
----
-
-## 8. 围绕不可靠组件的设计原则
-
-**LLM 是推理引擎，不是整个系统**。
-
-工程上的具体含义：让 LLM 做它擅长的（语义理解、推理、决策），用确定性代码处理其余。
-
-| 决策 | 选什么 |
-|------|------|
-| 逻辑可以穷举 | 代码（业务规则不需要 LLM 判断） |
-| 需要理解自然语言 | LLM |
-| 错误代价高 | 代码兜底——即使 LLM 给了答案，关键操作（如金额校验）也必须代码确认 |
-| 输入空间开放 | LLM 处理多样性 |
-
-![确定性 vs 非确定性](/images/blog/agentic/deterministic-vs-nondeterministic.svg)
-
-### 一个典型的"LLM 决策 + 代码执行"分工
-
-```python
-# 反模式：让 LLM 直接执行业务操作
-llm_output = llm.complete("退款 ¥1000 给用户 U12345")
-execute_refund(amount=llm_output.amount, user=llm_output.user)  # ⚠ 危险
-
-# 正确：LLM 负责语义理解，代码负责验证 + 执行
-intent = llm.parse_intent(user_message, schema=refund_intent_schema)
-
-# 代码层做硬约束
-assert intent.amount <= max_refund_per_request
-assert intent.user_id == current_user.id    # 防止跨用户
-assert order_eligible_for_refund(intent.order_id)
-
-# 幂等 key 防重复扣款——LLM 可能重试或 Agent 可能循环到这里两次
-idempotency_key = f"refund:{intent.order_id}:{intent.amount}"
-if already_executed(idempotency_key):
-    return get_previous_result(idempotency_key)
-
-audit_log.record(intent, key=idempotency_key)   # 审计留痕，按 key 去重
-execute_refund(intent, idempotency_key)          # 才到执行
-```
-
-这个原则的推论是：**Agent 系统的代码量不应该全是 LLM 调用**。一个健康的 Agent 项目，LLM 相关代码（prompt、工具定义、循环控制）通常只占 20%-30%，其余是数据预处理、状态管理、错误处理、监控、评估、运维——这些都是"非 LLM"的工程。如果你的 Agent 项目 80% 代码都在调 LLM，要么任务还不够复杂、要么工程化还不到位。
-
----
-
-## 9. 上 Agent 时容易掉进的五个坑
-
-1. **因为想用 AI 而选 L3**——技术选型应从问题出发。典型场景：某团队的客服系统其实 80% 流量是几个固定问题，FAQ + 路由就能解决，但管理层"想要 AI Agent"，结果上了 L3 Agent，月账单暴涨 30 倍、首响延迟从 200ms 涨到 6 秒，最后只能开关切回 FAQ。"想用 AI"不是技术理由，是市场理由。
-2. **跳过 L1/L2 直接上 L3**——90% 的请求可能一次 LLM 调用就够。典型场景：用 L3 Agent 做"判断用户邮件意图分类"——明明是 L1 单次分类任务，强行上 ReAct 循环只是用 5 倍成本换更差的稳定性。从最简形态开始，遇到真实瓶颈再升级。
-3. **让 Agent 同时负责无约束的决策和执行**——Agent 可以决定"需要退款"并请求调用退款工具，但金额校验、订单归属、权限检查、幂等、审计和必要的人审必须由确定性代码完成。危险的不是把退款 API 包装成工具，而是把未经业务校验和审批的原始退款 API 直接暴露给 LLM。
-4. **忽视失败模式**——Agent 会幻觉、循环、选错工具、超时。典型踩坑：客户反馈"Agent 把订单状态弄乱了"，但日志只记了 LLM 输入输出没记中间状态，根本无法复现和回滚。生产系统必须回答：失败了怎么办？有 Fallback 吗？中间步骤的副作用怎么回滚？这些问题在 demo 阶段不暴露，但上线一周后会全部冒出来。
-5. **用 Agent 替代状态机**——订单流转、审批流程的状态和转换规则完全确定。用 Agent 在这里是用更高成本得到更差的可靠性。判断标准：**如果业务方能在白板上画出完整状态机，就不该用 Agent**。
-
-### 五个坑共同的诊断信号
-
-这五个坑表面是不同问题，但共同的诊断信号是**Agent 在做它本不该做的事**：决策不该 Agent 决的（坑 1、坑 5）、执行不该 Agent 执的（坑 3）、路径不该 Agent 探的（坑 2）、失败不该 Agent 兜的（坑 4）。一个健康的 Agent 应该被严格限制在"语义理解 + 决策"这个角色里，其余职责由确定性代码承担。一旦你的 Agent 出现"什么都自己来"的倾向，多半是落进了这些坑里。
-
----
-
-## 10. Agent 五件套：每件都源于一个局限
-
-回顾全文：LLM 的五个局限——无记忆、无工具、无规划、无状态、无反思——决定了四类外围组件：Memory 补无记忆，Tools 补无工具，Planner 补无规划，Runtime 维护状态并调度 Reflect/Evaluator 完成外部校验。加上作为推理引擎的 LLM，合起来才叫"Agent 五件套"。五个局限与四类外围组件不是机械的一一对应：Runtime 同时承载状态推进和反思反馈。
-
-四类外围组件之上是一个 Observe→Think→Plan→Act→Reflect→Update 循环，循环之上是 A1 到 A4 的自主性递增。自主性每升一级，token 消耗、延迟、不可预测性都会显著上升——成本曲线的最大变量不是 token 单价，而是人工介入率从 80% 降到 5% 这种量级的转变。
-
-这套理解的工程价值是：当 Agent 项目出问题时，能精确定位是哪一个组件失效——是 Memory 设计不对、Tools 描述不清、Planner 规划过深、Runtime 退出条件缺失，还是模型推理本身的局限。把"Agent 表现不好"这种模糊判断，分解成五个可独立优化的工程目标。
+对于订单异常调查，一个有效的系统应能找到正确对象、补齐关键证据、保留未知状态，并把处理建议与实际操作分开。这些结果比“用了几个 Agent”更有意义。下一篇讨论如何把这些约束落实到运行时、工具契约和提示词组装。

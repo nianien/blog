@@ -1,78 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="-apple-system,BlinkMacSystemFont,PingFang SC,Microsoft YaHei,sans-serif">
-  <defs>
-    <marker id="a2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#FF6B00"/></marker>
-    <filter id="s2"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/></filter>
-  </defs>
-  <rect width="960" height="380" rx="16" fill="#FAFBFC"/>
-
-  <!-- Timeline bar -->
-  <rect x="60" y="155" width="840" height="4" rx="2" fill="#E5E7EB"/>
-  <rect x="60" y="155" width="840" height="4" rx="2" fill="url(#tgrad)"/>
-  <linearGradient id="tgrad" x1="0" y1="0" x2="1" y2="0" xmlns="http://www.w3.org/2000/svg">
-    <stop offset="0%" stop-color="#FF6B00"/>
-    <stop offset="100%" stop-color="#4A90D9"/>
-  </linearGradient>
-
-  <!-- Step 1 -->
-  <circle cx="100" cy="157" r="28" fill="#FFF3E8" stroke="#FF6B00" stroke-width="2" filter="url(#s2)"/>
-  <text x="100" y="163" text-anchor="middle" font-size="20">📱</text>
-  <text x="100" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">用户触发</text>
-  <text x="100" y="228" text-anchor="middle" font-size="11" fill="#6B7280">打开 App</text>
-  <text x="100" y="244" text-anchor="middle" font-size="11" fill="#6B7280">触发广告位</text>
-  <rect x="72" y="96" width="56" height="22" rx="11" fill="#FF6B00"/>
-  <text x="100" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+0ms</text>
-
-  <!-- Step 2 -->
-  <circle cx="240" cy="157" r="28" fill="#F0EBFE" stroke="#8B5CF6" stroke-width="2" filter="url(#s2)"/>
-  <text x="240" y="163" text-anchor="middle" font-size="20">🔀</text>
-  <text x="240" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">流量路由</text>
-  <text x="240" y="228" text-anchor="middle" font-size="11" fill="#6B7280">Segment 匹配</text>
-  <text x="240" y="244" text-anchor="middle" font-size="11" fill="#6B7280">规则命中 &lt;5ms</text>
-  <rect x="212" y="96" width="56" height="22" rx="11" fill="#8B5CF6"/>
-  <text x="240" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+5ms</text>
-
-  <!-- Step 3 -->
-  <circle cx="380" cy="157" r="28" fill="#E8F0FE" stroke="#4A90D9" stroke-width="2" filter="url(#s2)"/>
-  <text x="380" y="163" text-anchor="middle" font-size="20">📡</text>
-  <text x="380" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">并发竞价</text>
-  <text x="380" y="228" text-anchor="middle" font-size="11" fill="#6B7280">Bidding SDK 出价</text>
-  <text x="380" y="244" text-anchor="middle" font-size="11" fill="#6B7280">超时窗口 ~150ms</text>
-  <rect x="339" y="96" width="82" height="22" rx="11" fill="#4A90D9"/>
-  <text x="380" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+5~155ms</text>
-
-  <!-- Step 4 -->
-  <circle cx="520" cy="157" r="28" fill="#E8F8EC" stroke="#34C759" stroke-width="2" filter="url(#s2)"/>
-  <text x="520" y="163" text-anchor="middle" font-size="20">⚖️</text>
-  <text x="520" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">混合排序</text>
-  <text x="520" y="228" text-anchor="middle" font-size="11" fill="#6B7280">Bidding + Waterfall</text>
-  <text x="520" y="244" text-anchor="middle" font-size="11" fill="#6B7280">统一价格维度排序</text>
-  <rect x="471" y="96" width="98" height="22" rx="11" fill="#34C759"/>
-  <text x="520" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+155~165ms</text>
-
-  <!-- Step 5 -->
-  <circle cx="660" cy="157" r="28" fill="#FFF3E8" stroke="#FF6B00" stroke-width="2" filter="url(#s2)"/>
-  <text x="660" y="163" text-anchor="middle" font-size="20">🏆</text>
-  <text x="660" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">胜出决策</text>
-  <text x="660" y="228" text-anchor="middle" font-size="11" fill="#6B7280">最高出价者胜出</text>
-  <text x="660" y="244" text-anchor="middle" font-size="11" fill="#6B7280">素材加载</text>
-  <rect x="611" y="96" width="98" height="22" rx="11" fill="#FF6B00"/>
-  <text x="660" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+165~200ms</text>
-
-  <!-- Step 6 -->
-  <circle cx="800" cy="157" r="28" fill="#E8F0FE" stroke="#4A90D9" stroke-width="2" filter="url(#s2)"/>
-  <text x="800" y="163" text-anchor="middle" font-size="20">🖼️</text>
-  <text x="800" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">渲染 &amp; 上报</text>
-  <text x="800" y="228" text-anchor="middle" font-size="11" fill="#6B7280">广告展示</text>
-  <text x="800" y="244" text-anchor="middle" font-size="11" fill="#6B7280">曝光/点击追踪</text>
-  <rect x="751" y="96" width="98" height="22" rx="11" fill="#4A90D9"/>
-  <text x="800" y="111" text-anchor="middle" font-size="10" font-weight="700" fill="white">T+200~500ms</text>
-
-  <!-- Bottom note -->
-  <rect x="200" y="290" width="560" height="60" rx="12" fill="#FFF3E8" stroke="#FFB366" stroke-width="1"/>
-  <text x="480" y="315" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B00">💡 智能预加载机制</text>
-  <text x="480" y="336" text-anchor="middle" font-size="11" fill="#6B7280">在用户即将触发广告位前提前完成竞价与素材缓存，让"展示时延"与"竞价耗时"解耦</text>
-
-  <!-- Title -->
-  <text x="480" y="40" text-anchor="middle" font-size="16" font-weight="800" fill="#1F2937">一次广告展示的完整链路（200-500ms）</text>
-  <text x="480" y="62" text-anchor="middle" font-size="12" fill="#6B7280">多系统并发协作 · 毫秒级决策</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="900" viewBox="0 0 620 900" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="900" rx="8" fill="#f8fafc"/>
+<text x="310" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#172033">从加载请求到实际交付</text>
+<path d="M310 165V202" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,210 305,201 315,201" fill="#475569"/>
+<path d="M310 315V352" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,360 305,351 315,351" fill="#475569"/>
+<path d="M310 465V502" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,510 305,501 315,501" fill="#475569"/>
+<path d="M310 615V652" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,660 305,651 315,651" fill="#475569"/>
+<path d="M310 735V767" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,775 305,766 315,766" fill="#475569"/>
+<rect x="65" y="70" width="490" height="95" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="310.0" y="110.5" text-anchor="middle" font-size="22" fill="#172033">创建请求 · 固定配置版本</text>
+<text x="310.0" y="140.5" text-anchor="middle" font-size="22" fill="#172033">核对使用条件，设置总截止时间</text>
+<rect x="65" y="210" width="490" height="105" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="310.0" y="255.5" text-anchor="middle" font-size="22" fill="#172033">并发收集有效竞价结果</text>
+<text x="310.0" y="285.5" text-anchor="middle" font-size="22" fill="#172033">在截止前收集；迟到结果不改决策</text>
+<rect x="65" y="360" width="490" height="105" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="310.0" y="405.5" text-anchor="middle" font-size="22" fill="#172033">构造序列并尝试合格候选</text>
+<text x="310.0" y="435.5" text-anchor="middle" font-size="22" fill="#172033">校验价格、资格和剩余加载时间</text>
+<rect x="65" y="510" width="490" height="105" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="310.0" y="555.5" text-anchor="middle" font-size="22" fill="#172033">已加载，等待实际展示</text>
+<text x="310.0" y="585.5" text-anchor="middle" font-size="22" fill="#172033">再次检查有效期、页面与对象状态</text>
+<rect x="65" y="660" width="490" height="75" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="310.0" y="705.5" text-anchor="middle" font-size="22" fill="#172033">实际展示 · 记录对应事件</text>
+<rect x="65" y="775" width="490" height="75" rx="8" fill="#fff7ed" stroke="#a56b49" stroke-width="1.5"/>
+<text x="310.0" y="820.5" text-anchor="middle" font-size="22" fill="#172033">收益核算与奖励发放分别处理</text>
+<text x="310" y="882" text-anchor="middle" font-size="19" fill="#475569">任一步可结束为无广告；竞价成功不等于已展示</text>
 </svg>

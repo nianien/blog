@@ -1,84 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <!-- Background -->
-  <rect width="760" height="300" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
-
-  <!-- Title -->
-  <text x="380" y="30" text-anchor="middle" font-size="15" font-weight="600" fill="#1E293B">Disruptor Ring Buffer Architecture</text>
-
-  <!-- === Left: API Threads (Multi-Producer) === -->
-  <rect x="25" y="65" width="95" height="30" rx="6" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
-  <text x="72" y="85" text-anchor="middle" font-size="10" fill="#4338CA">API Thread 1</text>
-
-  <rect x="25" y="103" width="95" height="30" rx="6" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
-  <text x="72" y="123" text-anchor="middle" font-size="10" fill="#4338CA">API Thread 2</text>
-
-  <rect x="25" y="141" width="95" height="30" rx="6" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
-  <text x="72" y="161" text-anchor="middle" font-size="10" fill="#4338CA">API Thread 3</text>
-
-  <rect x="25" y="179" width="95" height="30" rx="6" fill="#E0E7FF" stroke="#6366F1" stroke-width="1.5"/>
-  <text x="72" y="199" text-anchor="middle" font-size="10" fill="#4338CA">API Thread N</text>
-
-  <text x="72" y="227" text-anchor="middle" font-size="9" fill="#94A3B8">Multi-Producer</text>
-
-  <!-- Arrows: API Threads → Bus Line → Ring Buffer Input -->
-  <!-- Horizontal lines from each thread to bus -->
-  <line x1="120" y1="80" x2="140" y2="80" stroke="#6366F1" stroke-width="1.5"/>
-  <line x1="120" y1="118" x2="140" y2="118" stroke="#6366F1" stroke-width="1.5"/>
-  <line x1="120" y1="156" x2="140" y2="156" stroke="#6366F1" stroke-width="1.5"/>
-  <line x1="120" y1="194" x2="140" y2="194" stroke="#6366F1" stroke-width="1.5"/>
-  <!-- Vertical bus line -->
-  <line x1="140" y1="80" x2="140" y2="194" stroke="#6366F1" stroke-width="1.5"/>
-  <!-- Single arrow from bus to Ring Buffer -->
-  <line x1="140" y1="128" x2="158" y2="128" stroke="#6366F1" stroke-width="1.5"/>
-  <polygon points="158,128 150,122 150,134" fill="#6366F1"/>
-
-  <!-- Ring Buffer (Order Input) -->
-  <rect x="162" y="98" width="125" height="60" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="224" y="124" text-anchor="middle" font-size="12" font-weight="600" fill="#1D4ED8">Ring Buffer</text>
-  <text x="224" y="142" text-anchor="middle" font-size="10" fill="#3B82F6">(Order Input)</text>
-
-  <!-- Arrow: Input → Matching Engine -->
-  <line x1="287" y1="128" x2="315" y2="128" stroke="#3B82F6" stroke-width="1.5"/>
-  <polygon points="315,128 307,122 307,134" fill="#3B82F6"/>
-
-  <!-- Matching Engine -->
-  <rect x="319" y="96" width="125" height="64" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
-  <text x="381" y="121" text-anchor="middle" font-size="12" font-weight="600" fill="#B45309">Matching</text>
-  <text x="381" y="138" text-anchor="middle" font-size="12" font-weight="600" fill="#B45309">Engine</text>
-  <text x="381" y="153" text-anchor="middle" font-size="9" fill="#D97706">Single Thread</text>
-
-  <!-- Arrow: Matching Engine → Output -->
-  <line x1="444" y1="128" x2="472" y2="128" stroke="#F59E0B" stroke-width="1.5"/>
-  <polygon points="472,128 464,122 464,134" fill="#F59E0B"/>
-
-  <!-- Ring Buffer (Event Output) -->
-  <rect x="476" y="98" width="125" height="60" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="538" y="124" text-anchor="middle" font-size="12" font-weight="600" fill="#1D4ED8">Ring Buffer</text>
-  <text x="538" y="142" text-anchor="middle" font-size="10" fill="#3B82F6">(Event Output)</text>
-
-  <!-- === Fan-out: Output → 3 Consumers === -->
-  <line x1="538" y1="158" x2="538" y2="190" stroke="#3B82F6" stroke-width="1.5"/>
-  <line x1="390" y1="190" x2="690" y2="190" stroke="#3B82F6" stroke-width="1.5"/>
-
-  <!-- Vertical arrows down -->
-  <line x1="390" y1="190" x2="390" y2="222" stroke="#3B82F6" stroke-width="1.5"/>
-  <polygon points="390,222 384,214 396,214" fill="#3B82F6"/>
-
-  <line x1="538" y1="190" x2="538" y2="222" stroke="#3B82F6" stroke-width="1.5"/>
-  <polygon points="538,222 532,214 544,214" fill="#3B82F6"/>
-
-  <line x1="690" y1="190" x2="690" y2="222" stroke="#3B82F6" stroke-width="1.5"/>
-  <polygon points="690,222 684,214 696,214" fill="#3B82F6"/>
-
-  <!-- Consumer boxes -->
-  <rect x="330" y="225" width="120" height="38" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
-  <text x="390" y="249" text-anchor="middle" font-size="11" font-weight="600" fill="#15803D">Clearing</text>
-
-  <rect x="478" y="225" width="120" height="38" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
-  <text x="538" y="249" text-anchor="middle" font-size="11" font-weight="600" fill="#15803D">Persistence</text>
-
-  <rect x="630" y="225" width="120" height="38" rx="6" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
-  <text x="690" y="249" text-anchor="middle" font-size="11" font-weight="600" fill="#15803D">Market Data</text>
-
-  <text x="538" y="282" text-anchor="middle" font-size="9" fill="#94A3B8">Multi-Consumer (Parallel)</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="820" viewBox="0 0 620 820" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="820" rx="8" fill="#f8fafc"/>
+<text x="310" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#172033">订单承诺的提交边界</text>
+<path d="M310 165V207" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,215 305,206 315,206" fill="#475569"/>
+<path d="M310 305V347" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,355 305,346 315,346" fill="#475569"/>
+<path d="M310 445V487" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,495 305,486 315,486" fill="#475569"/>
+<path d="M310 585V627" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,635 305,626 315,626" fill="#475569"/>
+<rect x="70" y="75" width="480" height="90" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="310.0" y="113.0" text-anchor="middle" font-size="22" fill="#172033">接入校验与资金预留</text>
+<text x="310.0" y="143.0" text-anchor="middle" font-size="22" fill="#172033">保存订单 ID 和投递状态</text>
+<rect x="70" y="215" width="480" height="90" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="310.0" y="253.0" text-anchor="middle" font-size="22" fill="#172033">命令排序与日志追加</text>
+<text x="310.0" y="283.0" text-anchor="middle" font-size="22" fill="#172033">固定输入、规则版本与序列</text>
+<rect x="70" y="355" width="480" height="90" rx="8" fill="#fff7ed" stroke="#a56b49" stroke-width="1.5"/>
+<text x="310.0" y="393.0" text-anchor="middle" font-size="22" fill="#172033">等待提交条件满足</text>
+<text x="310.0" y="423.0" text-anchor="middle" font-size="22" fill="#172033">按约定完成持久化与复制</text>
+<rect x="70" y="495" width="480" height="90" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="310.0" y="533.0" text-anchor="middle" font-size="22" fill="#172033">串行应用撮合状态</text>
+<text x="310.0" y="563.0" text-anchor="middle" font-size="22" fill="#172033">价格与时间规则决定结果</text>
+<rect x="70" y="635" width="480" height="90" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="310.0" y="673.0" text-anchor="middle" font-size="22" fill="#172033">输出已确认事件</text>
+<text x="310.0" y="703.0" text-anchor="middle" font-size="22" fill="#172033">稳定 ID 支持下游去重</text>
+<text x="310" y="780" text-anchor="middle" font-size="20" fill="#475569">Ring Buffer 只协调进程内阶段</text>
 </svg>

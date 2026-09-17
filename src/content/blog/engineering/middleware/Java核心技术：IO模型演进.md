@@ -7,392 +7,109 @@ series:
   key: "java-core"
 ---
 
-# Java I/O模型演进：从BIO到NIO的范式变革
+阻塞 API、非阻塞 API 和异步 API，首先改变的是程序如何等待 I/O。它们并不直接决定业务吞吐：连接数量、单次处理成本、线程模型和背压机制共同决定系统能走多远。
 
-> Java I/O 体系经历了从 BIO 到 NIO 再到 AIO 的演进。这不仅仅是 API 的更替，更是从"流式阻塞"到"缓冲区+事件驱动"的编程范式变革。理解这一变革的底层逻辑，是构建高性能网络应用的基础。
+本文先解释传统流与 NIO 的协作方式，再说明怎样把一次就绪通知转成正确的协议处理。主体使用平台线程语境；文末补充 JDK 21 虚拟线程带来的选择变化。
 
-## 一、传统 I/O（BIO）
+## 流模型：简单，但要明确谁在等待
 
-### 1.1 流模型
-
-Java 传统 I/O 基于**流（Stream）**的抽象。数据像水流一样，从源端流向目的端，一次处理一个字节或一个字符。
-
-流的分类体系：
-
-| 维度 | 分类 | 说明 |
-|------|------|------|
-| 方向 | InputStream / OutputStream | 输入流 / 输出流 |
-| 数据单位 | 字节流 / 字符流 | 二进制数据用字节流，文本数据用字符流 |
-| 处理层级 | 节点流 / 处理流 | 节点流直连数据源，处理流包装节点流增加功能 |
-
-四个基础抽象类：
-
-```
-字节流：InputStream  → FileInputStream, ByteArrayInputStream, ...
-       OutputStream → FileOutputStream, ByteArrayOutputStream, ...
-
-字符流：Reader → FileReader, InputStreamReader, BufferedReader, ...
-       Writer → FileWriter, OutputStreamWriter, BufferedWriter, ...
-```
-
-### 1.2 装饰器模式
-
-Java I/O 的设计大量使用**装饰器模式（Decorator Pattern）**——通过包装已有流来增加功能，而非通过继承。
+InputStream/OutputStream 面向字节，Reader/Writer 面向字符。它们既能逐个读取，也能批量处理数组；“面向流”不等于每次只能处理一个字节。InputStreamReader 负责解码，BufferedReader 在此基础上提供缓冲和按行读取：
 
 ```java
-// 裸的文件字节流 → 加缓冲 → 转字符流 → 加行读取
-InputStream fis = new FileInputStream("data.txt");         // 节点流
-InputStream bis = new BufferedInputStream(fis);             // +缓冲
-Reader isr = new InputStreamReader(bis, "UTF-8");           // +字节→字符转换
-BufferedReader br = new BufferedReader(isr);                // +行读取
-
-String line;
-while ((line = br.readLine()) != null) {
-    process(line);
-}
-```
-
-`InputStreamReader` 和 `OutputStreamWriter` 是字节流与字符流之间的**桥接类**，负责字符编码的转换。
-
-### 1.3 BIO 的网络模型
-
-BIO 的网络编程采用**一连接一线程**模型：
-
-```java
-ServerSocket serverSocket = new ServerSocket(8080);
-while (true) {
-    Socket socket = serverSocket.accept();  // 阻塞等待连接
-    new Thread(() -> {
-        InputStream in = socket.getInputStream();
-        int data = in.read();  // 阻塞等待数据
-        // 处理数据...
-    }).start();
-}
-```
-
-```
-客户端 1 ──→ 线程 1（阻塞读取）
-客户端 2 ──→ 线程 2（阻塞读取）
-客户端 3 ──→ 线程 3（阻塞读取）
-...
-客户端 N ──→ 线程 N（阻塞读取）
-```
-
-**BIO 的瓶颈**：
-
-| 问题 | 说明 |
-|------|------|
-| 线程资源浪费 | 每个连接占用一个线程，大量连接 = 大量线程 |
-| 线程上下文切换 | 线程数过多时，CPU 花费大量时间在线程切换上 |
-| 不可扩展 | 受限于 OS 线程数上限，无法支撑万级连接 |
-| 阻塞等待 | 线程在 `read()` 时阻塞，即使没有数据也占用线程 |
-
-当连接数达到数千级别时，BIO 模型基本无法满足性能要求。
-
-## 二、NIO 核心模型
-
-Java NIO（New I/O，JDK 1.4 引入）从根本上改变了 I/O 编程模型。其核心变革是：
-
-| 维度 | BIO | NIO |
-|------|-----|-----|
-| 数据操作对象 | Stream（流） | Buffer（缓冲区） |
-| 数据读写方式 | 面向流，单向 | 面向缓冲区，通过 Channel 双向 |
-| 阻塞模式 | 阻塞 | 支持非阻塞 |
-| 多路复用 | 无 | Selector（一个线程管理多个 Channel） |
-
-### 2.1 Buffer（缓冲区）
-
-Buffer 是 NIO 的数据容器。所有数据的读写都通过 Buffer 进行——Channel 读数据写入 Buffer，Channel 写数据从 Buffer 读取。
-
-**核心属性**：
-
-| 属性 | 含义 | 约束关系 |
-|------|------|----------|
-| **capacity** | 缓冲区总容量 | 创建后不可变 |
-| **position** | 当前读/写位置 | 0 ≤ position ≤ limit |
-| **limit** | 可读/写的上限 | position ≤ limit ≤ capacity |
-| **mark** | 标记位置，供 reset 回退 | mark ≤ position |
-
-**读写模式切换**：
-
-```
-写模式（初始状态）：
-  position = 写入位置
-  limit = capacity
-
-    ┌─────────────────────────────────────┐
-    │ data data data |                     │
-    └─────────────────────────────────────┘
-    0              pos                   cap/lim
-
-调用 flip() 切换到读模式：
-  limit = position（写了多少就能读多少）
-  position = 0
-
-    ┌─────────────────────────────────────┐
-    │ data data data |                     │
-    └─────────────────────────────────────┘
-    0/pos          lim                   cap
-```
-
-**关键操作**：
-
-| 方法 | 作用 | position | limit |
-|------|------|----------|-------|
-| `flip()` | 写模式 → 读模式 | → 0 | → 原 position |
-| `clear()` | 清空缓冲区（不擦数据） | → 0 | → capacity |
-| `compact()` | 压缩：未读数据移到头部 | → 剩余数据之后 | → capacity |
-| `rewind()` | 重新读取 | → 0 | 不变 |
-| `mark()` / `reset()` | 标记 / 回退到标记位 | reset 时 → mark | 不变 |
-
-### 2.2 Channel（通道）
-
-Channel 是 NIO 中数据传输的通道。与 Stream 的区别：
-
-| 特性 | Stream | Channel |
-|------|--------|---------|
-| 方向 | 单向（InputStream 或 OutputStream） | 双向（可读可写） |
-| 阻塞 | 始终阻塞 | 支持非阻塞模式 |
-| 数据交互 | 直接读写字节/字符 | 必须通过 Buffer |
-| 零拷贝 | 不支持 | `transferTo()`/`transferFrom()` |
-
-**主要实现类**：
-
-| Channel | 用途 | 支持非阻塞 |
-|---------|------|-----------|
-| `FileChannel` | 文件读写 | 否（文件 I/O 不支持非阻塞） |
-| `SocketChannel` | TCP 客户端 | 是 |
-| `ServerSocketChannel` | TCP 服务端 | 是 |
-| `DatagramChannel` | UDP | 是 |
-
-**Channel 间直接传输**：
-
-```java
-// 零拷贝：数据不经过用户空间，直接在内核中从源 Channel 传到目标 Channel
-FileChannel source = new FileInputStream("source.dat").getChannel();
-FileChannel target = new FileOutputStream("target.dat").getChannel();
-source.transferTo(0, source.size(), target);
-```
-
-### 2.3 Scatter / Gather
-
-NIO 支持将数据分散读取到多个 Buffer（Scatter）或从多个 Buffer 聚集写入一个 Channel（Gather）：
-
-```java
-// Scatter Read：一次读取分散到多个 Buffer
-ByteBuffer header = ByteBuffer.allocate(128);
-ByteBuffer body   = ByteBuffer.allocate(1024);
-channel.read(new ByteBuffer[]{header, body});
-// 先填满 header，再填 body
-
-// Gather Write：多个 Buffer 的数据聚集写入一个 Channel
-channel.write(new ByteBuffer[]{header, body});
-// 先写 header 中 position~limit 的数据，再写 body
-```
-
-适用场景：协议解析中 header 和 body 分开处理的场景。
-
-### 2.4 Selector（多路复用器）
-
-Selector 是 NIO 实现高并发的关键。它允许**单个线程监控多个 Channel 的 I/O 事件**，只有当 Channel 上有就绪事件时才进行处理。
-
-**事件类型**：
-
-| 事件 | SelectionKey 常量 | 说明 |
-|------|-------------------|------|
-| 连接就绪 | `OP_CONNECT` | SocketChannel 完成连接 |
-| 接收就绪 | `OP_ACCEPT` | ServerSocketChannel 有新连接 |
-| 读就绪 | `OP_READ` | Channel 有数据可读 |
-| 写就绪 | `OP_WRITE` | Channel 可以写数据 |
-
-**Selector 工作流程**：
-
-```java
-Selector selector = Selector.open();
-
-// 1. 注册 Channel 到 Selector
-ServerSocketChannel serverChannel = ServerSocketChannel.open();
-serverChannel.configureBlocking(false);
-serverChannel.bind(new InetSocketAddress(8080));
-serverChannel.register(selector, SelectionKey.OP_ACCEPT);
-
-// 2. 事件循环
-while (true) {
-    selector.select();  // 阻塞直到有就绪事件
-    Set<SelectionKey> selectedKeys = selector.selectedKeys();
-    Iterator<SelectionKey> iter = selectedKeys.iterator();
-
-    while (iter.hasNext()) {
-        SelectionKey key = iter.next();
-
-        if (key.isAcceptable()) {
-            // 处理新连接
-            SocketChannel client = serverChannel.accept();
-            client.configureBlocking(false);
-            client.register(selector, SelectionKey.OP_READ);
-        } else if (key.isReadable()) {
-            // 处理可读事件
-            SocketChannel client = (SocketChannel) key.channel();
-            ByteBuffer buffer = ByteBuffer.allocate(1024);
-            client.read(buffer);
-            // 处理数据...
-        }
-
-        iter.remove();  // 必须手动移除已处理的 key
+try (BufferedReader reader = Files.newBufferedReader(
+        Path.of("data.txt"), StandardCharsets.UTF_8)) {
+    String line;
+    while ((line = reader.readLine()) != null) {
+        System.out.println(line);
     }
 }
 ```
 
-**Selector 的本质**：
+这段方法体示例需要 java.io、java.nio.file 和 java.nio.charset 中的对应导入，并由调用者处理 IOException。最外层资源关闭时会关闭其包装的底层资源。
 
-在 Linux 上，`Selector.select()` 底层调用的是 `epoll`。epoll 是 Linux 内核提供的高性能 I/O 多路复用机制：
+阻塞式 Socket 读写让控制流保持直线。经典服务器为每个连接安排一个平台线程：连接没数据时，读操作等待，业务代码不必显式保存执行位置。但大量空闲连接会占用线程栈和调度资源。实际容量取决于内存、连接活跃度和处理时长，不能统一断言“数千连接必然失效”。
 
-| 多路复用实现 | 时间复杂度 | 连接数限制 | 说明 |
-|-------------|-----------|-----------|------|
-| `select` | O(n) | 1024（FD_SETSIZE） | 每次调用需拷贝全部 fd 集合 |
-| `poll` | O(n) | 无限制 | 与 select 类似，但无 fd 数量限制 |
-| `epoll` | O(1) | 无限制 | 事件驱动，仅返回就绪的 fd |
+## Buffer 与 Channel：显式管理数据的位置
 
-epoll 的高效源于**事件回调机制**：不再遍历所有 fd，而是内核在 fd 就绪时主动通知。
+NIO 引入 Buffer、Channel 和 Selector 三个协作对象，但不是每个 Channel 都可双向读写、非阻塞或注册到 Selector。FileChannel 支持文件定位读写，不能注册到 Selector；SocketChannel 才是 TCP 非阻塞通信的主要入口。
 
-## 三、NIO 网络模型 vs BIO 网络模型
+Buffer 的读写位置需要由调用者管理：
 
-```
-BIO 模型（一连接一线程）：
+| 属性或操作 | 含义 |
+| --- | --- |
+| capacity | 固定容量 |
+| position | 下一次读写的位置 |
+| limit | 本次操作的边界，不超过 capacity |
+| mark/reset | 保存与恢复位置；没有有效标记时 reset 会失败 |
+| flip | 将 limit 设为原 position，再将 position 归零，以读取刚写入的数据 |
+| clear | 将位置恢复到可写状态，不擦除底层字节 |
+| compact | 将未消费的数据移到开头，随后继续写入 |
+| rewind | position 归零、limit 不变，用于重新读取现有范围 |
 
-  客户端 1 ──→ [线程 1] ──→ read() 阻塞等待
-  客户端 2 ──→ [线程 2] ──→ read() 阻塞等待
-  客户端 N ──→ [线程 N] ──→ read() 阻塞等待
+例如，容量 8 的缓冲区写入 3 个字节后，position=3、limit=8；flip 后变成 position=0、limit=3。消费 2 个字节再 compact，剩余字节移到开头，position=1、limit=8。这个状态变化比记住“读前 flip”更重要：只有知道数据来自哪里、哪些已经消费，才知道该保留什么。
 
-  线程数 = 连接数（线性增长）
+Scatter/Gather 可以把一次读取分散到多个 Buffer，或把多个 Buffer 中的剩余内容聚集写出。它们仍可能只处理部分数据；从网络读到 header 的一部分时，不能立即把 body 当成完整消息。读取后还要正确设置各 Buffer 的读边界。
 
+## 就绪通知不是完成通知
 
-NIO 模型（Reactor / 多路复用）：
+Selector 让少量事件循环监控大量连接。它报告的是当前可尝试的操作，程序仍须实际调用 accept/read/write 并检查结果。
 
-  客户端 1 ─┐
-  客户端 2 ─┼─→ [Selector] ─→ [线程] ─→ 处理就绪事件
-  客户端 N ─┘
+| 事件 | 必须继续处理的状态 |
+| --- | --- |
+| OP_ACCEPT | accept 可能返回 null；新连接要设为非阻塞再注册 |
+| OP_CONNECT | 调用 finishConnect 确认连接是否完成或失败 |
+| OP_READ | read 大于 0 表示读到字节，0 表示暂无进展，-1 表示对端输出结束 |
+| OP_WRITE | write 可能只写出部分内容，也可能返回 0 |
 
-  线程数 = 常量（1 个或少量线程处理所有连接）
-```
+选出的 key 要从 selectedKeys 集合移除；失效连接要注销并关闭；缓冲区与协议解析状态要跨事件保存。若每次收到 OP_READ 都新建 Buffer 并丢弃未解析字节，半条消息就会消失。[Selector API](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/Selector.html)
 
-| 维度 | BIO | NIO |
-|------|-----|-----|
-| 线程模型 | 一连接一线程 | 一线程管理多连接 |
-| 并发能力 | 受限于线程数（通常数千） | 轻松支撑万级连接 |
-| CPU 利用率 | 线程大量时间在等待 | 仅在有事件时才处理 |
-| 编程复杂度 | 简单直观 | 较高（状态机、Buffer 管理） |
-| 适用场景 | 连接数少、每个连接数据量大 | 连接数多、每个连接数据量小 |
-
-## 四、Reactor 模式
-
-NIO 的 Selector 机制是 Reactor 模式的基础。Reactor 模式有三种经典变体：
-
-### 4.1 单 Reactor 单线程
-
-```
-所有 I/O 操作和业务处理在一个线程中完成：
-
-  [Reactor 线程]
-    → accept 新连接
-    → read 数据
-    → 处理业务
-    → write 响应
-```
-
-优点：无线程切换开销。
-缺点：无法利用多核，业务处理阻塞会导致其他连接无法响应。
-
-### 4.2 单 Reactor 多线程
-
-```
-Reactor 线程负责 I/O，业务处理分发到线程池：
-
-  [Reactor 线程] → accept / read / write
-        ↓ 分发
-  [线程池] → 业务处理
-```
-
-优点：业务处理与 I/O 解耦。
-缺点：单 Reactor 线程处理所有 I/O，高并发下可能成为瓶颈。
-
-### 4.3 主从 Reactor（Netty 采用的模型）
-
-```
-mainReactor 负责 accept，subReactor 负责 read/write：
-
-  [mainReactor] → accept 新连接 → 分配给 subReactor
-  [subReactor 1] → read / write（管理一部分连接）
-  [subReactor 2] → read / write（管理一部分连接）
-        ↓ 分发
-  [业务线程池] → 业务处理
-```
-
-优点：accept 和 I/O 分离，多个 subReactor 可以利用多核，是高性能网络框架的标准模型。
-
-Netty 的线程模型正是主从 Reactor 的实现：
-
-| Netty 概念 | 对应角色 |
-|-----------|----------|
-| `BossGroup` | mainReactor（处理 accept） |
-| `WorkerGroup` | subReactor（处理 read/write） |
-| `ChannelPipeline` | I/O 事件的处理链 |
-| `EventLoop` | 绑定到单线程的事件循环 |
-
-## 五、NIO 的工程实践要点
-
-### 5.1 Buffer 使用陷阱
-
-| 问题 | 说明 | 解决方案 |
-|------|------|----------|
-| 忘记 `flip()` | 写完数据后直接读，position 在末尾导致读不到数据 | 读之前必须调用 `flip()` |
-| `clear()` vs `compact()` | `clear()` 丢弃所有数据，`compact()` 保留未读数据 | 有未读数据时用 `compact()` |
-| 半包/粘包 | TCP 是流协议，一次读取可能不完整或包含多条消息 | 基于长度或分隔符的协议解析 |
-
-### 5.2 Direct Buffer vs Heap Buffer
-
-| 类型 | 分配位置 | 分配速度 | I/O 性能 | GC 影响 |
-|------|----------|----------|----------|---------|
-| Heap Buffer | JVM 堆 | 快 | 需要一次额外拷贝 | 受 GC 管理 |
-| Direct Buffer | 本地内存 | 慢 | 直接 I/O，减少拷贝 | 不受 GC 直接管理 |
-
-**使用建议**：
-
-- 频繁分配/释放的小 Buffer → Heap Buffer
-- 长期存活、用于 I/O 操作的大 Buffer → Direct Buffer
-- 生产环境中使用 Direct Buffer 时需要注意内存泄漏（手动管理或使用池化机制）
-
-### 5.3 Pipe：线程间通信
-
-NIO 提供了 `Pipe` 用于同一 JVM 内线程间的数据传输：
+下面是读事件处理的局部示例：每个连接事先在 attachment 中保存一个 Buffer，consumeCompleteFrames 解析完整帧并推进 position，保留不完整帧。其帧格式由具体协议定义，因此这不是完整服务器代码。
 
 ```java
-Pipe pipe = Pipe.open();
-
-// 写线程
-Pipe.SinkChannel sink = pipe.sink();
-ByteBuffer buf = ByteBuffer.wrap("data".getBytes());
-sink.write(buf);
-
-// 读线程
-Pipe.SourceChannel source = pipe.source();
-ByteBuffer readBuf = ByteBuffer.allocate(1024);
-source.read(readBuf);
+SocketChannel client = (SocketChannel) key.channel();
+ByteBuffer buffer = (ByteBuffer) key.attachment();
+int count = client.read(buffer);
+if (count < 0) {
+    key.cancel();
+    client.close();
+} else if (count > 0) {
+    buffer.flip();
+    consumeCompleteFrames(buffer);
+    buffer.compact();
+    if (!buffer.hasRemaining()) {
+        // 教学示例选择关闭超过缓冲区容量的帧，实际协议应明确定义长度上限
+        key.cancel();
+        client.close();
+    }
+}
 ```
 
-## 总结
+写路径也需要队列：有尚未发送的数据时关注 OP_WRITE，写完后取消该兴趣，避免可写事件持续触发形成空转。对慢客户端必须限制待发送字节数，否则事件循环虽然没有被阻塞，内存仍会被耗尽。
 
-Java I/O 体系的演进反映了一个核心的架构思想：**从同步阻塞到事件驱动，从资源换并发到复用换并发**。
+Linux 上的常见 OpenJDK 实现使用 epoll。它避免每次遍历完整的监听集合，但调用和处理成本仍与注册操作、就绪事件数等有关，不能写成整个 I/O 系统 O(1)。select 的 fd 集合有表示上限，poll/epoll 则仍受文件描述符配额和系统资源约束。
 
-| 模型 | 核心抽象 | 线程模型 | 适用场景 |
-|------|----------|----------|----------|
-| **BIO** | Stream | 一连接一线程 | 连接数少、数据量大（文件传输） |
-| **NIO** | Channel + Buffer + Selector | 多路复用 | 连接数多、数据量小（即时通讯、API 网关） |
+## Reactor 如何分工
 
-关键认知：
+| 模型 | I/O 与业务的分工 | 需要解决的问题 |
+| --- | --- | --- |
+| 单事件循环 | 同一线程接收、读取、处理和写出 | 长任务会拖慢所有连接 |
+| 一个 I/O 循环加业务线程池 | 事件循环读写，工作线程计算 | 跨线程传递、响应顺序和队列容量 |
+| 多个 I/O 循环 | 接收连接后分配给不同循环 | 连接归属与各循环的负载平衡 |
 
-1. **NIO 不是比 BIO 快**。在单连接大数据量传输场景下，BIO 的简单模型可能更高效
-2. **NIO 的优势在于可扩展性**。它能用极少的线程管理大量连接，这是 BIO 无法做到的
-3. **生产环境不要裸写 NIO**。直接使用 NIO API 编程极其复杂（半包处理、空轮询 bug、线程模型），应使用 Netty 等成熟框架
+Netty 的典型服务端配置使用 boss group 接收连接、worker group 处理连接 I/O。ChannelPipeline 是事件处理链，**业务 Handler 默认仍可能在 I/O EventLoop 上运行**，并不会因为使用 Netty 自动转移到独立业务池。数据库阻塞调用、长时间计算和无界排队，都需要在实际配置中处理。
 
-> I/O 模型的选择不取决于哪个"更先进"，而取决于业务的连接模式和数据特征。理解底层模型的差异，才能做出正确的技术选型。
+事件循环减少了等待连接占用的平台线程，却增加了状态管理责任。成熟框架的价值包括缓冲区、协议拆帧、写队列和生命周期管理，而不只是封装一个 Selector。
+
+## 文件传输和 Direct Buffer 的收益有条件
+
+FileChannel.transferTo/transferFrom 允许实现采用更高效的传输路径，但不保证所有系统、目标通道和传输大小都走零拷贝，也不保证一次传完。调用者必须累计实际传输量，遇到零进展时采取等待、退避或有边界的回退，不能无条件忙循环。[FileChannel API](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/channels/FileChannel.html)
+
+Direct ByteBuffer 的数据位于堆外，可减少部分 I/O 路径中的中间复制；它不等于磁盘 O_DIRECT，也不意味着绕过内核缓冲。其 Java 包装对象仍与 GC 生命周期有关，底层存储的释放时机和池化策略取决于实现。大量短命直接缓冲区可能增加分配与回收负担，是否池化应通过实际负载衡量。
+
+## 异步与虚拟线程增加了选择
+
+NIO.2 的 AsynchronousSocketChannel 等 API 通过 Future 或 CompletionHandler 报告操作完成。它与 Selector 的“就绪后自己执行”是不同的应用编程模型，底层如何借助系统设施和线程则依平台实现而定。
+
+**后续版本补充：**JDK 21 正式提供虚拟线程，让大量等待网络 I/O 的任务能够继续使用直线式阻塞代码，同时复用较少的平台线程。这改变了“一连接一线程必然消耗一个 OS 线程”的前提，但不会增加 CPU 算力，也不会解除数据库连接数等资源限制。[JEP 444](https://openjdk.org/jeps/444)
+
+选型因此要回到两个问题：等待时占用什么资源，恢复后由谁保存和推进状态。已有事件驱动协议栈可以继续采用 NIO；阻塞式业务可以评估虚拟线程；文件操作和异步 API 则应按具体传输与完成语义验证。最终要测的是目标负载下的吞吐、尾延迟、内存和过载行为。

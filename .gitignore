@@ -1,4 +1,4 @@
-q# Dependencies
+# Dependencies
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -96,3 +96,10 @@ wx_out/
 
 # 写作参考材料（含企业内部信息，不公开）
 references/
+
+# 可公开的技能参考说明随技能提交
+!.agents/skills/*/references/
+
+# Python skill tooling
+__pycache__/
+*.py[cod]

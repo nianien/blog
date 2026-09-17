@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="690" viewBox="0 0 620 690" role="img" aria-label="切换同时迁移数据与写入权限" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect width="620" height="690" rx="8" fill="#f8fafc"/>
+<text x="310" y="40" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">切换同时迁移数据与写入权限</text>
+<rect x="45" y="70" width="530" height="78" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="116.0" text-anchor="middle" font-size="22" fill="#1e293b">1 · 核对影响范围与目标数据水位</text>
+<path d="M310 148 V168" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,168 310,178 315,168" fill="#475569"/>
+<rect x="45" y="178" width="530" height="78" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="224.0" text-anchor="middle" font-size="22" fill="#1e293b">2 · 隔离旧写入方（fencing）</text>
+<path d="M310 256 V276" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,276 310,286 315,276" fill="#475569"/>
+<rect x="45" y="286" width="530" height="78" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="332.0" text-anchor="middle" font-size="22" fill="#1e293b">3 · 授权新归属，校验容量与依赖</text>
+<path d="M310 364 V384" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,384 310,394 315,384" fill="#475569"/>
+<rect x="45" y="394" width="530" height="78" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="440.0" text-anchor="middle" font-size="22" fill="#1e293b">4 · 转移流量，处理在途与未知结果</text>
+<path d="M310 472 V492" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,492 310,502 315,492" fill="#475569"/>
+<rect x="45" y="502" width="530" height="78" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="548.0" text-anchor="middle" font-size="22" fill="#1e293b">5 · 对账、恢复冗余，再评估回迁</text>
+<text x="310" y="623" text-anchor="middle" font-size="20" fill="#475569">网络失联不等于旧站点已停止写入</text>
+<text x="310" y="658" text-anchor="middle" font-size="20" fill="#475569">不能满足数据与隔离约束时暂停相关写入</text>
+</svg>

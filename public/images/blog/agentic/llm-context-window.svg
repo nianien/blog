@@ -1,93 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-<!-- Title -->
-  <text x="440" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">四层记忆架构注入 LLM Context Window</text>
-
-  <!-- ===== Left: User Input ===== -->
-  <rect x="20" y="178" width="120" height="64" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
-  <text x="80" y="204" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">User Input</text>
-  <text x="80" y="222" text-anchor="middle" font-size="10" fill="#666">Tool Output</text>
-
-  <!-- Arrow: User Input → Context Window -->
-  <line x1="140" y1="210" x2="178" y2="210" stroke="#666" stroke-width="1.5"/>
-
-  <!-- ===== Center: LLM Context Window ===== -->
-  <rect x="180" y="50" width="340" height="370" rx="8" fill="white" stroke="#999" stroke-width="1.5"/>
-  <text x="350" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">LLM Context Window</text>
-
-  <!-- Section 1: System Prompt (no external inject) -->
-  <rect x="200" y="92" width="300" height="50" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1"/>
-  <text x="350" y="114" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">System Prompt</text>
-  <text x="350" y="130" text-anchor="middle" font-size="10" fill="#666">角色定义、指令集、输出格式</text>
-
-  <!-- Section 2: Memory Injection ◄── Layer 3 -->
-  <rect x="200" y="152" width="300" height="50" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1"/>
-  <text x="350" y="174" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">Memory Injection</text>
-  <text x="350" y="190" text-anchor="middle" font-size="10" fill="#666">Episodic + Semantic Recall</text>
-
-  <!-- Section 3: Working Memory ◄── Layer 2 -->
-  <rect x="200" y="212" width="300" height="50" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
-  <text x="350" y="234" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Working Memory</text>
-  <text x="350" y="250" text-anchor="middle" font-size="10" fill="#666">任务状态 / Scratchpad</text>
-
-  <!-- Section 4: Conversation History ◄── Layer 1 -->
-  <rect x="200" y="272" width="300" height="50" rx="6" fill="#FCE4EC" stroke="#C2185B" stroke-width="1"/>
-  <text x="350" y="294" text-anchor="middle" font-size="12" font-weight="bold" fill="#C2185B">Conversation History</text>
-  <text x="350" y="310" text-anchor="middle" font-size="10" fill="#666">消息历史 / 滑动窗口 + 摘要</text>
-
-  <!-- Section 5: Tool Schemas (no external inject) -->
-  <rect x="200" y="332" width="300" height="50" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1"/>
-  <text x="350" y="354" text-anchor="middle" font-size="12" font-weight="bold" fill="#7B1FA2">Tool Schemas + Reserve</text>
-  <text x="350" y="370" text-anchor="middle" font-size="10" fill="#666">工具定义 / Response 预留空间</text>
-
-  <!-- ===== Right: Memory Layers ===== -->
-
-  <!-- Layer 3: Episodic Memory → Memory Injection -->
-  <rect x="600" y="132" width="250" height="50" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
-  <text x="725" y="153" text-anchor="middle" font-size="11" font-weight="bold" fill="#2E7D32">Layer 3: Episodic Memory</text>
-  <text x="725" y="170" text-anchor="middle" font-size="10" fill="#666">向量数据库 / 关系数据库</text>
-  <!-- Arrow -->
-  <line x1="600" y1="157" x2="502" y2="157" stroke="#2E7D32" stroke-width="1.5"/>
-  <text x="548" y="150" text-anchor="middle" font-size="9" fill="#2E7D32">inject</text>
-
-  <!-- Layer 2: Working Memory → Working Memory -->
-  <rect x="600" y="202" width="250" height="50" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
-  <text x="725" y="223" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">Layer 2: Working Memory</text>
-  <text x="725" y="240" text-anchor="middle" font-size="10" fill="#666">任务状态 / Scratchpad</text>
-  <!-- Arrow -->
-  <line x1="600" y1="227" x2="502" y2="227" stroke="#E65100" stroke-width="1.5"/>
-  <text x="548" y="220" text-anchor="middle" font-size="9" fill="#E65100">inject</text>
-
-  <!-- Layer 1: Conversation Buffer → Conversation History -->
-  <rect x="600" y="272" width="250" height="50" rx="6" fill="#FCE4EC" stroke="#C2185B" stroke-width="1.5"/>
-  <text x="725" y="293" text-anchor="middle" font-size="11" font-weight="bold" fill="#C2185B">Layer 1: Conversation Buffer</text>
-  <text x="725" y="310" text-anchor="middle" font-size="10" fill="#666">消息历史 / 滑动窗口</text>
-  <!-- Arrow -->
-  <line x1="600" y1="297" x2="502" y2="297" stroke="#C2185B" stroke-width="1.5"/>
-  <text x="548" y="290" text-anchor="middle" font-size="9" fill="#C2185B">inject</text>
-
-  <!-- Layer 4: Semantic Memory → LLM Response (bottom) -->
-  <rect x="600" y="370" width="250" height="50" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
-  <text x="725" y="391" text-anchor="middle" font-size="11" font-weight="bold" fill="#7B1FA2">Layer 4: Semantic Memory</text>
-  <text x="725" y="408" text-anchor="middle" font-size="10" fill="#666">知识库 / RAG</text>
-
-  <!-- ===== Bottom: LLM Response ===== -->
-  <!-- Arrow: Context Window → LLM Response -->
-  <line x1="350" y1="420" x2="350" y2="458" stroke="#666" stroke-width="1.5"/>
-
-  <rect x="280" y="460" width="140" height="40" rx="6" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.5"/>
-  <text x="350" y="485" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">LLM Response</text>
-
-  <!-- Arrow: Layer 4 Semantic Memory → LLM Response -->
-  <line x1="725" y1="420" x2="725" y2="480" stroke="#7B1FA2" stroke-width="1.5"/>
-  <line x1="725" y1="480" x2="422" y2="480" stroke="#7B1FA2" stroke-width="1.5"/>
-  <text x="570" y="473" text-anchor="middle" font-size="9" fill="#7B1FA2">inject</text>
-
-  <!-- Note -->
-  <text x="440" y="530" text-anchor="middle" font-size="10" fill="#999">* 百分比为建议配置，需根据任务特性调整</text>
-  <polygon points="178,210 170,213 170,207" fill="#666"/>
-  <polygon points="502,157 510,154 510,160" fill="#666"/>
-  <polygon points="502,227 510,224 510,230" fill="#666"/>
-  <polygon points="502,297 510,294 510,300" fill="#666"/>
-  <polygon points="350,458 347,450 353,450" fill="#666"/>
-  <polygon points="422,480 430,477 430,483" fill="#666"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="700" viewBox="0 0 620 700" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="700" rx="8" fill="#f8fafc"/>
+<text x="310" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#172033">四类信息，按范围与预算进入上下文</text>
+<path d="M165 175V210H455V175" fill="none" stroke="#475569" stroke-width="1.5"/>
+<path d="M165 330V370H455V330" fill="none" stroke="#475569" stroke-width="1.5"/>
+<path d="M310 210V410" fill="none" stroke="#475569" stroke-width="1.5"/>
+<path d="M310 370V402" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,410 305,401 315,401" fill="#475569"/>
+<rect x="35" y="70" width="260" height="105" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="165.0" y="115.5" text-anchor="middle" font-size="22" fill="#172033">M1 对话记录</text>
+<text x="165.0" y="145.5" text-anchor="middle" font-size="22" fill="#172033">消息与调用关系</text>
+<rect x="325" y="70" width="260" height="105" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="455.0" y="115.5" text-anchor="middle" font-size="22" fill="#172033">M2 任务状态</text>
+<text x="455.0" y="145.5" text-anchor="middle" font-size="22" fill="#172033">已确认事实与待办</text>
+<rect x="35" y="250" width="260" height="80" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="165.0" y="283.0" text-anchor="middle" font-size="22" fill="#172033">M3 历史经验</text>
+<text x="165.0" y="313.0" text-anchor="middle" font-size="22" fill="#172033">来源与适用条件</text>
+<rect x="325" y="250" width="260" height="80" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="455.0" y="283.0" text-anchor="middle" font-size="22" fill="#172033">M4 领域知识</text>
+<text x="455.0" y="313.0" text-anchor="middle" font-size="22" fill="#172033">文档、版本与权限</text>
+<rect x="80" y="410" width="460" height="85" rx="8" fill="#fff7ed" stroke="#a56b49" stroke-width="1.5"/>
+<text x="310.0" y="445.5" text-anchor="middle" font-size="22" fill="#172033">授权、相关性与版本筛选</text>
+<text x="310.0" y="475.5" text-anchor="middle" font-size="22" fill="#172033">区分证据和指令，控制预算</text>
+<path d="M310 495V542" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,550 305,541 315,541" fill="#475569"/>
+<rect x="80" y="550" width="460" height="85" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="310.0" y="585.5" text-anchor="middle" font-size="22" fill="#172033">本轮上下文</text>
+<text x="310.0" y="615.5" text-anchor="middle" font-size="22" fill="#172033">结合任务指令与当前输入</text>
+<text x="310" y="677" text-anchor="middle" font-size="20" fill="#475569">所有被选中的知识先进入上下文，再参与生成</text>
 </svg>

@@ -7,9 +7,9 @@ series:
   key: "java-core"
 ---
 
-# Java字节码增强实战：从原理到ByteBuddy工程应用
-
 > 字节码增强是 Java 生态中一项"隐藏"的核心技术。Spring AOP、Hibernate 延迟加载、Mockito 测试框架、SkyWalking 链路追踪——这些工具的底层都依赖字节码操作。理解这项技术，就理解了 Java 动态能力的基石。
+
+本文的代码片段在修订时统一采用 Byte Buddy 1.15.11 的 API；这不是原发布日期的版本。除完整示例外，Foo、TargetService 等是由调用方提供的示例类，片段需要对应的导入、依赖和异常处理。
 
 ## 一、字节码增强技术全景
 
@@ -27,18 +27,20 @@ Java 源码经过 `javac` 编译后生成 `.class` 字节码文件。字节码�
 
 ### 1.2 技术选型对比
 
-| 工具 | 抽象层级 | 性能 | 学习成本 | 维护状态 | 适用场景 |
-|------|----------|------|----------|----------|----------|
-| **ASM** | 指令级（直接操作 JVM 指令） | 最高 | 高（需了解字节码指令集） | 活跃 | 极致性能要求、底层框架开发 |
-| **Javassist** | 源码级（用字符串写 Java 代码） | 中 | 低 | 维护中 | 快速原型、简单场景 |
-| **cglib** | API 级（基于 ASM 封装） | 高 | 中 | **停止维护** | 历史遗留项目 |
-| **ByteBuddy** | API 级（类型安全的 DSL） | 高 | 中 | **活跃** | 新项目首选 |
+| 工具 | 主要操作方式 | 评估重点 |
+| --- | --- | --- |
+| ASM | 访问并生成字节码指令 | 精细控制能力与实现复杂度 |
+| Javassist | 源码片段和字节码 API | 表达能力、生成代码与目标 JDK 兼容性 |
+| cglib | 以子类生成等 API 包装字节码操作 | 独立版本与框架内嵌版本应分别检查 |
+| Byte Buddy | 类型描述、匹配和拦截 DSL | 生成方式、绑定语义与类加载策略 |
+
+生成耗时、类加载耗时和增强后调用耗时是不同指标，没有同一环境下的基准就不排列“最快”。
 
 **关键决策因素**：
 
-- **Java 17+ 兼容性**：Java 17 引入强封装（Strong Encapsulation），cglib 依赖的 `sun.misc.Unsafe` 和内部 API 被限制访问，导致 cglib 在现代 JDK 上**无法正常工作**
-- **ByteBuddy 是 cglib 的官方替代方案**：Spring Framework 6 / Spring Boot 3 已将底层代理从 cglib 切换为 ByteBuddy
-- **ASM 适合框架开发者**：如果你在开发 APM 工具或编译器插件，ASM 的指令级控制是必要的；否则 ByteBuddy 的高层 API 更高效
+- **Java 17+ 兼容性**：强封装会影响依赖受限反射访问的类定义路径；是否能工作取决于库版本、框架适配和模块配置，不能只按工具名称判断
+- **区分独立库与框架内嵌版本**：Byte Buddy 是可选的替代工具，不是 cglib 的“官方接班者”。Spring AOP 仍支持 JDK 动态代理和重新打包在 spring-core 中的 CGLIB，不能写成已整体切换到 Byte Buddy。[Spring 代理机制](https://docs.spring.io/spring-framework/reference/core/aop/proxying.html)
+- **ASM 适合框架开发者**：如果你在开发 APM 工具或编译器插件，可以评估是否需要 ASM 的指令级控制；否则 ByteBuddy 的高层 API 更高效
 
 ### 1.3 动态代理的两种路径
 
@@ -47,7 +49,9 @@ Java 标准库提供的 `java.lang.reflect.Proxy` 只能代理接口。对于类
 | 方式 | 原理 | 限制 |
 |------|------|------|
 | JDK 动态代理 | 运行时生成接口的实现类 | 只能代理接口 |
-| 字节码增强代理 | 运行时生成目标类的子类 | 无法代理 `final` 类/方法 |
+| 子类代理 | 运行时生成目标类的子类 | 无法继承 final 类或覆盖 final/private 方法 |
+
+这个限制针对子类代理。通过 Agent 直接修改方法体是另一条路径，不能将它与继承限制混在一起。
 
 ## 二、ByteBuddy 核心概念
 
@@ -86,7 +90,7 @@ new ByteBuddy()
 
 **Rebase vs Redefine 的关键区别**：
 
-Rebase 会将原方法重命名为一个 private synthetic 方法（如 `bar$original$xxx`），拦截器中可以通过 `@SuperCall` 调用原始逻辑。Redefine 则彻底丢弃原方法实现。
+Rebase 会将原方法重命名为一个 private synthetic 方法（如 `bar$original$xxx`），拦截器中可以通过 `@SuperCall` 调用原始逻辑。Redefine 在替换方法时不另行保存旧方法体。make 仅生成字节码，并不表示已替换 JVM 中加载的类；对已加载类的重定义还受 Instrumentation 和 JVM 的结构变更限制。[Byte Buddy 教程](https://bytebuddy.net/partial/tutorial.partial.html)
 
 ### 2.2 DynamicType 生命周期
 
@@ -131,7 +135,7 @@ returns(TypeDescription.VOID)
 
 // 按修饰符
 isPublic()
-isAnnotatedWith(Override.class)
+isAnnotatedWith(Deprecated.class)
 
 // 组合匹配
 named("execute").and(returns(void.class))
@@ -198,8 +202,8 @@ new ByteBuddy()
 | `@RuntimeType` | 允许运行时类型转换 | 标注在方法上，支持泛型返回值 |
 | `@FieldValue("name")` | 指定字段的值 | 读取被代理对象的字段 |
 | `@Morph` | 可修改参数的原方法调用 | 比 `@SuperCall` 更灵活 |
-| `@Empty` | 返回类型的默认值 | 数值返回 0，对象返回 null |
-| `@StubValue` | 桩值 | 类似 `@Empty` |
+| `@Empty` | 拦截器参数类型的默认值 | 绑定到被注解的参数，不按目标方法返回类型计算 |
+| `@StubValue` | 被拦截方法返回类型的默认值 | 通常绑定 Object 参数，基本类型使用装箱后的默认值，void 对应 null |
 
 **`@Morph` 的使用场景**——需要修改参数再调用原方法时：
 
@@ -209,18 +213,27 @@ public class MorphInterceptor {
     public static Object intercept(
             @Morph MorphCallable zuper,
             @AllArguments Object[] args
-    ) {
-        args[0] = ((String) args[0]).toUpperCase();  // 修改参数
+    ) throws Throwable {
+        args[0] = ((String) args[0]).toUpperCase(java.util.Locale.ROOT);  // 修改参数
         return zuper.call(args);  // 用修改后的参数调用原方法
     }
 }
 ```
 
-使用 `@Morph` 时需要安装绑定：
+MorphCallable 必须是 public 接口，其唯一抽象方法接受 Object[] 并返回 Object；例如：
 
 ```java
-MethodDelegation.to(MorphInterceptor.class)
-    .appendParameterBinder(Morph.Binder.install(MorphCallable.class))
+public interface MorphCallable {
+    Object call(Object[] args) throws Throwable;
+}
+```
+
+此示例还要求匹配的方法第一个参数是非 null String，并存在可调用的父类实现。使用 `@Morph` 时需要安装绑定：
+
+```java
+MethodDelegation.withDefaultConfiguration()
+    .withBinders(Morph.Binder.install(MorphCallable.class))
+    .to(MorphInterceptor.class)
 ```
 
 ### 3.4 构造函数拦截
@@ -269,14 +282,15 @@ Can-Retransform-Classes: true
 
 ### 4.2 代理类缓存
 
-ByteBuddy 每次调用 `make()` 都会生成一个新类。在高频创建代理的场景下，应使用 `TypeCache` 缓存已生成的类：
+ByteBuddy 每次调用 `make()` 都生成一份类型字节码描述；只有加载后才成为 JVM 中的类。在高频创建代理的场景下，应使用 `TypeCache` 缓存已生成的类：
 
 ```java
-TypeCache<Class<?>> cache = new TypeCache<>(TypeCache.Sort.SOFT);
+record ProxyKey(Class<?> targetType, String interceptorConfigId) {}
+TypeCache<ProxyKey> cache = new TypeCache<>(TypeCache.Sort.SOFT);
 
 Class<?> proxyClass = cache.findOrInsert(
     classLoader,
-    targetClass,
+    new ProxyKey(targetClass, interceptorConfigId),
     () -> new ByteBuddy()
         .subclass(targetClass)
         .method(isPublic())
@@ -287,15 +301,17 @@ Class<?> proxyClass = cache.findOrInsert(
 );
 ```
 
+这里的 `interceptorConfigId` 必须唯一标识本次匹配规则、委托对象及其不可变配置。同一目标类使用不同委托时不能复用旧键；委托带实例状态时应隔离缓存，或让生成类按实例持有状态。缓存生命周期还应与加载器和委托生命周期对应。
+
 ### 4.3 从 cglib 迁移到 ByteBuddy
 
-Java 17 的强封装机制导致 cglib 无法正常工作。以下是常见的迁移对照：
+需要迁移时，先确定现有调用语义、类加载器、模块访问和回调状态。下面只是能力映射，不是逐 API 替换保证：
 
 | cglib 用法 | ByteBuddy 等价方案 |
 |------------|-------------------|
 | `Enhancer` + `MethodInterceptor` | `subclass()` + `MethodDelegation` |
-| `BeanGenerator` | `subclass(Object.class)` + `defineField()` |
-| `BeanCopier` | `subclass()` + 自定义 copy 方法 |
+| `BeanGenerator` | 定义字段，并显式生成需要的 getter/setter |
+| `BeanCopier` | 自行实现属性映射与类型转换，不能只用 subclass 代替 |
 | `FixedValue` | `FixedValue.value()` |
 
 **cglib 的代理创建**：
@@ -343,36 +359,11 @@ public class GeneralInterceptor {
 }
 ```
 
-### 4.4 运行时创建 Annotation 实例
+### 4.4 注解实例必须满足相等性契约
 
-某些场景需要在运行时动态创建注解实例（如框架中需要将注解加入集合进行比较）。注解在 Java 中本质是接口，可以通过匿名类实现：
+注解虽然表现为接口，但只实现 value 和 annotationType 并不足以构造可用于集合比较的注解对象。equals/hashCode 必须按 Annotation 契约处理所有成员，数组成员还涉及内容相等和防御性复制；通用 Proxy 也不会自动补齐这些语义。
 
-```java
-MyAnnotation annotation = new MyAnnotation() {
-    @Override
-    public String value() { return "dynamic"; }
-
-    @Override
-    public Class<? extends Annotation> annotationType() {
-        return MyAnnotation.class;
-    }
-};
-```
-
-更健壮的方案是使用 `Proxy` 动态代理：
-
-```java
-MyAnnotation annotation = (MyAnnotation) Proxy.newProxyInstance(
-    MyAnnotation.class.getClassLoader(),
-    new Class[]{MyAnnotation.class},
-    (proxy, method, args) -> {
-        if ("value".equals(method.getName())) return "dynamic";
-        if ("annotationType".equals(method.getName())) return MyAnnotation.class;
-        // equals/hashCode 需按 Annotation 规范实现
-        throw new UnsupportedOperationException(method.getName());
-    }
-);
-```
+需要给生成的字节码添加注解时，优先使用 Byte Buddy 的 AnnotationDescription 构造注解描述。它与给已经加载的 Class 任意追加可见注解不是同一件事。需要运行时实例时，应使用有明确契约支持的实现，并测试与反射读取的真实注解相等。
 
 ## 五、编译时增强：Build Plugin
 
@@ -399,17 +390,17 @@ MyAnnotation annotation = (MyAnnotation) Proxy.newProxyInstance(
 
 编译时增强的优势：
 
-- **无运行时开销**：类在编译时已被修改，运行时无需生成子类
+- **提前完成转换**：可省去运行时生成或转换字节码的步骤；插入的拦截逻辑仍有运行成本
 - **可以修改 final 类/方法**：因为是直接修改 .class 文件，不受子类化限制
-- **启动速度更快**：省去了运行时字节码生成的耗时
+- **调整成本发生时机**：生成工作移到构建期，实际启动收益需连同类加载和依赖开销测量
 
 ## 总结
 
 字节码增强技术是 Java 生态中"不可见但无处不在"的基础能力。核心要点：
 
-1. **工具选型**：新项目首选 ByteBuddy，它是 cglib 的官方替代方案，与现代 JDK 完全兼容
+1. **工具选型**：Byte Buddy 提供较高层的生成 API，兼容性仍要核对库版本、class 文件版本和运行环境
 2. **三种模式**：`subclass` 用于代理，`rebase` 用于保留原逻辑的增强，`redefine` 用于完全替换
 3. **注解驱动的委托机制**是 ByteBuddy 的核心设计——通过 `@This`、`@Origin`、`@SuperCall` 等注解声明式地绑定拦截器参数
-4. **工程层面**：生产环境务必使用 `TypeCache` 缓存代理类；优先考虑编译时增强以消除运行时开销
+4. **工程层面**：高频生成场景评估缓存；缓存键要覆盖拦截配置，避免错误复用或保留加载器；构建期增强减少转换成本，不消除增强逻辑的执行成本
 
 > 字节码增强不是"黑魔法"，而是 Java 类型系统的合理扩展。理解它，是从"使用框架"到"理解框架"的关键一步。

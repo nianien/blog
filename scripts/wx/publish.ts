@@ -5,17 +5,17 @@
  * 用法：
  *   npx tsx scripts/wx/publish.ts <md文件路径>              # 发布到草稿箱
  *   npx tsx scripts/wx/publish.ts --preview <md文件路径>     # 仅生成预览 HTML
+ *   npx tsx scripts/wx/publish.ts --preview --serve <md文件路径> # 本机网页预览
  */
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
-import { resolve, dirname, extname, basename, relative } from 'node:path'
+import { resolve, dirname, extname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { execFile } from 'node:child_process'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 import matter from 'gray-matter'
 import { Marked, type Tokens } from 'marked'
-import sharp from 'sharp'
 import { wxStyles, normalizeStyle } from './styles.js'
 import {
   uploadImage,
@@ -23,15 +23,21 @@ import {
   createDraft,
 } from './api.js'
 import { generateCover } from './cover.js'
+import { articleRouteSlug, articlePathname, mapImageSources } from '../../src/lib/content-paths.js'
+import { SITE } from '../../src/lib/site.js'
+import { prepareArticleImages, prepareLocalImage, previewImages } from './images.js'
+import { startPreviewServer } from './preview-server.js'
+
+const projectRoot = resolve(__dirname, '../..')
 
 // ─── CLI 参数解析 ───
 
 const args = process.argv.slice(2)
-const previewMode = args.includes('--preview')
+const previewMode = args.includes('--preview') || args.includes('--serve')
 const filePath = args.filter(a => !a.startsWith('--'))[0]
 
 if (!filePath) {
-  console.error('用法: npx tsx scripts/wx/publish.ts [--preview] <md文件路径>')
+  console.error('用法: npx tsx scripts/wx/publish.ts [--preview [--no-open] | --serve [--no-open]] <md文件路径>')
   process.exit(1)
 }
 
@@ -41,11 +47,6 @@ if (!existsSync(absolutePath)) {
   process.exit(1)
 }
 
-// 从文件路径推算博客 URL：src/content/blog/a/b/title.md → /blog/a/b/title
-const blogContentDir = resolve(__dirname, '../../src/content/blog')
-const blogSlug = absolutePath.replace(blogContentDir + '/', '').replace(/\.md$/, '')
-const articleUrl = `https://www.skyfalling.cn/blog/${encodeURI(blogSlug)}`
-
 // ─── 解析 Markdown ───
 
 const raw = readFileSync(absolutePath, 'utf-8')
@@ -54,7 +55,11 @@ const { data: frontmatter, content: mdContent } = matter(raw)
 const title = frontmatter.title || basename(absolutePath, '.md')
 const author = frontmatter.author || 'skyfalling'
 const description = frontmatter.description || ''
-const cover = frontmatter.cover as string | undefined
+const cover = (frontmatter.cover || frontmatter.heroImage) as string | undefined
+const articleUrl = SITE.url + articlePathname(
+  articleRouteSlug(projectRoot, absolutePath, frontmatter.slug),
+  process.env.NEXT_PUBLIC_BASE_PATH
+)
 
 // 去掉正文开头的一级标题（已从 frontmatter 中获取，避免重复）
 const mdBody = mdContent.replace(/^\s*#\s+.+\n+/, '')
@@ -164,13 +169,6 @@ const marked = new Marked({
 
 let html = marked.parse(mdBody) as string
 
-// 微信不支持 SVG，自动替换为同名 PNG
-// PNG 会在后续步骤中由 SVG 自动转换生成到 wx_out/images/
-html = html.replace(
-  /(<img\s+src="[^"]+)\.svg(")/g,
-  '$1.png$2'
-)
-
 // 微信不允许外部链接，将 <a> 标签替换为纯文本
 html = html.replace(/<a\s[^>]*>(.*?)<\/a>/g, '$1')
 
@@ -189,68 +187,43 @@ html = `<section style="${s('wrapper')}">${html}${footerHtml}</section>`
 
 // ─── 图片处理 ───
 
-async function processImages(html: string): Promise<string> {
-  const imgRegex = /<img\s+src="([^"]+)"/g
-  const matches = [...html.matchAll(imgRegex)]
-
-  if (matches.length === 0) {
-    console.log('📷 无图片需要处理')
-    return html
-  }
-
-  console.log(`📷 发现 ${matches.length} 张图片，开始处理...`)
-
-  for (const match of matches) {
-    const originalSrc = match[1]
-
-    // 已经是微信 CDN 的图片跳过
-    if (originalSrc.includes('mmbiz.qpic.cn')) continue
-
+async function processImages(html: string, files: Map<string, string>): Promise<string> {
+  const sources = new Set<string>()
+  mapImageSources(html, source => { sources.add(source); return source })
+  const uploaded = new Map<string, string>()
+  for (const source of sources) {
+    const file = files.get(source)
+    const remoteUrl = source.startsWith('//') ? 'https:' + source : source
+    if (!file && /^https?:/i.test(remoteUrl) && new URL(remoteUrl).hostname === 'mmbiz.qpic.cn') continue
     let imageBuffer: Buffer
     let fileName: string
-
-    if (originalSrc.startsWith('http://') || originalSrc.startsWith('https://')) {
-      // 外部图片：下载
-      console.log(`  ⬇️  下载: ${originalSrc}`)
-      const res = await fetch(originalSrc)
-      if (!res.ok) {
-        console.warn(`  ⚠️  下载失败: ${originalSrc}`)
-        continue
-      }
-      imageBuffer = Buffer.from(await res.arrayBuffer())
-      fileName = basename(new URL(originalSrc).pathname) || 'image.png'
+    if (file) {
+      imageBuffer = readFileSync(file)
+      fileName = basename(file)
     } else {
-      // 本地图片：相对于 md 文件或项目根目录
-      const imgPath = resolve(dirname(absolutePath), originalSrc)
-      if (!existsSync(imgPath)) {
-        console.warn(`  ⚠️  本地图片不存在: ${imgPath}`)
-        continue
+      const res = await fetch(remoteUrl)
+      if (!res.ok) throw new Error(`图片下载失败: ${source} (HTTP ${res.status})`)
+      imageBuffer = Buffer.from(await res.arrayBuffer())
+      fileName = basename(new URL(remoteUrl).pathname) || 'image.png'
+      if (res.headers.get('content-type')?.includes('image/svg+xml') || /\.svg$/i.test(fileName)) {
+        const { default: sharp } = await import('sharp')
+        imageBuffer = await sharp(imageBuffer, { density: 144 }).flatten({ background: '#fff' }).png().toBuffer()
+        fileName = fileName.replace(/\.svg$/i, '') + '.png'
       }
-      imageBuffer = Buffer.from(readFileSync(imgPath))
-      fileName = basename(imgPath)
     }
-
-    // 确保文件名有扩展名
     if (!extname(fileName)) fileName += '.png'
-
     console.log(`  ⬆️  上传: ${fileName}`)
-    const wxUrl = await uploadContentImage(imageBuffer, fileName)
-    html = html.split(originalSrc).join(wxUrl)
-    console.log(`  ✅ 替换完成`)
+    uploaded.set(source, await uploadContentImage(imageBuffer, fileName))
   }
-
-  return html
+  return mapImageSources(html, source => uploaded.get(source) || source)
 }
 
 // ─── 封面图处理 ───
 
 async function getThumbMediaId(): Promise<string> {
   if (cover) {
-    // frontmatter 中指定了封面图
-    const coverPath = resolve(dirname(absolutePath), cover)
-    if (!existsSync(coverPath)) {
-      throw new Error(`封面图不存在: ${coverPath}`)
-    }
+    const coverPath = await prepareLocalImage(cover, absolutePath, projectRoot)
+    if (!coverPath) throw new Error('封面请使用 public 内的本地图片')
     console.log(`🖼️  上传封面图: ${cover}`)
     const { media_id } = await uploadImage(coverPath)
     return media_id
@@ -267,48 +240,6 @@ async function getThumbMediaId(): Promise<string> {
   return media_id
 }
 
-// ─── SVG → PNG 转换 ───
-
-/**
- * 扫描 HTML 中的 .png 图片引用，如果对应的 .svg 源文件存在，
- * 就自动转换为 PNG 并保存到 wx_out/images/ 目录
- */
-async function convertSvgToPng(html: string): Promise<string> {
-  const projectRoot = resolve(__dirname, '../..')
-  const outDir = resolve(projectRoot, 'wx_out')
-  const imgRegex = /<img\s+[^>]*src="([^"]+\.png)"/g
-  const matches = [...html.matchAll(imgRegex)]
-
-  for (const match of matches) {
-    const pngSrc = match[1]
-
-    // 只处理本地图片路径（以 / 开头的绝对路径）
-    if (!pngSrc.startsWith('/')) continue
-
-    // 检查对应的 SVG 源文件是否存在
-    const svgRelPath = pngSrc.replace(/\.png$/, '.svg')
-    const svgAbsPath = resolve(projectRoot, 'public', svgRelPath.slice(1))
-    if (!existsSync(svgAbsPath)) continue
-
-    // 生成 PNG 到 wx_out/images/blog/...（pngSrc 已含 /images/ 前缀）
-    const pngOutPath = resolve(outDir, pngSrc.slice(1))
-    mkdirSync(dirname(pngOutPath), { recursive: true })
-
-    const svgBuf = readFileSync(svgAbsPath)
-    await sharp(svgBuf, { density: 144 })
-      .flatten({ background: { r: 255, g: 255, b: 255 } })
-      .png()
-      .toFile(pngOutPath)
-
-    console.log(`  🖼️  SVG → PNG: ${basename(svgAbsPath)} → ${pngOutPath}`)
-
-    // 替换 HTML 中的路径为 wx_out 下的绝对路径
-    html = html.split(pngSrc).join(pngOutPath)
-  }
-
-  return html
-}
-
 // ─── 预览模式 ───
 
 if (previewMode) {
@@ -318,16 +249,9 @@ if (previewMode) {
     const outFileName = basename(absolutePath, '.md') + '.html'
     const outPath = resolve(outDir, outFileName)
 
-    // 自动将 SVG 转为 PNG，保存到 wx_out/images/ 并更新 HTML 路径
-    html = await convertSvgToPng(html)
-
-    // 对于非 SVG 转换的本地图片，将路径指向 public/ 目录
-    // 只匹配项目相对路径（/images/...），跳过已被 convertSvgToPng 替换为系统绝对路径的
-    const projectRoot = resolve(__dirname, '../..')
-    html = html.replace(
-      /(<img\s+[^>]*src=")(\/(?!Users\/)(?!home\/)[^"]+)(")/g,
-      (_match, prefix, path, suffix) => `${prefix}${projectRoot}/public${path}${suffix}`
-    )
+    const files = await prepareArticleImages(html, absolutePath, projectRoot)
+    const servePreview = args.includes('--serve')
+    if (!servePreview) html = previewImages(html, files)
 
     const previewHtml = `<!DOCTYPE html>
 <html>
@@ -369,24 +293,36 @@ if (previewMode) {
 </body>
 </html>`
 
+    if (servePreview) {
+      const { url } = await startPreviewServer(previewHtml, files)
+      console.log(`\n✅ 微信网页预览: ${url}`)
+      console.log('仅监听本机，按 Ctrl+C 结束')
+      if (!args.includes('--no-open')) {
+        const openCmd = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open'
+        execFile(openCmd, [url])
+      }
+      return
+    }
+
     writeFileSync(outPath, previewHtml, 'utf-8')
     console.log(`\n✅ 预览文件已生成: ${outPath}`)
 
     // 自动用浏览器打开
     const openCmd = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open'
-    execFile(openCmd, [outPath])
+    if (!args.includes('--no-open')) execFile(openCmd, [outPath])
     process.exit(0)
-  })()
+  })().catch(err => {
+    console.error('\n❌ 预览失败:', err.message)
+    process.exit(1)
+  })
 }
 
 // ─── 发布模式 ───
 
 async function publish() {
-  // 先将 SVG 转为 PNG（生成到 wx_out/images/），更新 HTML 中的路径
-  html = await convertSvgToPng(html)
-
-  // 处理文章中的图片（上传到微信 CDN）
-  html = await processImages(html)
+  // 先解析并检查全部本地图片，再上传到微信 CDN
+  const files = await prepareArticleImages(html, absolutePath, projectRoot)
+  html = await processImages(html, files)
 
   // 获取封面图
   const thumbMediaId = await getThumbMediaId()
@@ -406,7 +342,9 @@ async function publish() {
   console.log('   请前往微信公众号后台「草稿箱」查看')
 }
 
-publish().catch(err => {
-  console.error('\n❌ 发布失败:', err.message)
-  process.exit(1)
-})
+if (!previewMode) {
+  publish().catch(err => {
+    console.error('\n❌ 发布失败:', err.message)
+    process.exit(1)
+  })
+}

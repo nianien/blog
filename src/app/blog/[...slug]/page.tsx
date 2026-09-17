@@ -1,3 +1,4 @@
+import { articlePathname } from '@/lib/content-paths';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
@@ -45,7 +46,7 @@ export async function generateMetadata({
   }
 
   const { post } = postData;
-  const canonicalPath = `/blog/${post.slug}/`;
+  const canonicalPath = articlePathname(post.slug, process.env.NEXT_PUBLIC_BASE_PATH);
   const canonicalUrl = absoluteUrl(canonicalPath);
   const ogImage = post.heroImage || SITE.defaultOgImage;
 
@@ -100,7 +101,7 @@ export default async function BlogPostPage({
   const mainMeta = CATEGORY_META[mainCategory];
   const subMeta = CATEGORY_META[categoryPath];
 
-  const canonicalUrl = absoluteUrl(`/blog/${post.slug}/`);
+  const canonicalUrl = absoluteUrl(articlePathname(post.slug, process.env.NEXT_PUBLIC_BASE_PATH));
   const ogImage = post.heroImage || SITE.defaultOgImage;
   const jsonLd = {
     '@context': 'https://schema.org',

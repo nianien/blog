@@ -11,13 +11,15 @@ series:
 
 > Java 中的大部分同步工具（ReentrantLock、Semaphore、CountDownLatch、ReentrantReadWriteLock 等）都基于 AbstractQueuedSynchronizer（AQS）实现。理解 AQS，就等于掌握了 Java 并发编程的底层脉络。本文从设计思想出发，逐层深入 AQS 的数据结构、核心流程和源码实现，并通过 ReentrantLock 串联全局，最后梳理 AQS 在 JUC 中的应用全景。
 
+本文的内部字段和源码片段以 **OpenJDK 8u** 为范围，片段省略了类声明等上下文，不是独立程序。后续 JDK 的队列实现已变化，阅读现代版本时应核对对应源码；状态、排队与获取策略的职责划分仍可作为理解入口。[OpenJDK 8u AQS 源码](https://github.com/openjdk/jdk8u/blob/master/jdk/src/share/classes/java/util/concurrent/locks/AbstractQueuedSynchronizer.java)
+
 ## AQS 是什么？
 
 AQS（AbstractQueuedSynchronizer）是 `java.util.concurrent.locks` 包中的一个**抽象类**，是构建锁和同步器的基础框架。Doug Lea 设计 AQS 的核心目标是：
 
 - 降低构建锁和同步器的工作量
 - 避免在多个位置处理竞争问题
-- 在基于 AQS 的同步器中，阻塞只可能在一个时刻发生，降低上下文切换开销，提高吞吐量
+- 将等待队列、阻塞与唤醒集中到框架中，避免每个同步器重复实现这些协议
 
 AQS 支持两种工作模式：
 
@@ -30,7 +32,7 @@ AQS 支持两种工作模式：
 
 ## AQS 的整体架构
 
-AQS 框架共分为**五层**，自上而下由浅入深：
+为了阅读源码，可以将 AQS 的职责整理为五层；这是本文的讲解划分：
 
 | 层次 | 内容 | 说明 |
 |------|------|------|
@@ -67,7 +69,7 @@ AQS 提供三个方法操作 state，均为 `final` 修饰，子类不可重写�
 
 ### CLH 变体队列与 Node 节点
 
-AQS 的核心思想是：如果请求的共享资源空闲，就将当前线程设置为有效的工作线程，并将资源设置为锁定状态；**如果资源被占用，就通过一个 CLH 变体的 FIFO 双向队列来管理等待线程**。
+AQS 的核心思想是：由子类判断当前状态能否满足请求；**如果资源被占用，就通过一个 CLH 变体的 FIFO 双向队列来管理等待线程**。
 
 > CLH 队列以其发明者 Craig、Landin 和 Hagersten 命名，原始 CLH 是单向链表。AQS 中的变体是虚拟双向队列，通过将每条请求线程封装成 Node 节点来实现锁的分配。
 
@@ -93,8 +95,8 @@ Node 节点的关键属性：
 
 AQS 内部还维护了**两种队列**：
 
-- **同步队列（Sync Queue）**：获取资源失败的线程进入此队列自旋等待，当前驱节点是头节点时尝试获取资源
-- **条件队列（Condition Queue）**：基于 `Condition` 实现，调用 `await()` 时线程进入条件队列，调用 `signal()` 时转移到同步队列
+- **同步队列（Sync Queue）**：获取资源失败的线程进入此队列，通过重试和挂起等待，当前驱节点是头节点时尝试获取资源
+- **条件队列（Condition Queue）**：基于 `Condition` 实现，持锁调用 `await()` 时释放锁并进入条件等待；`signal()` 将符合条件的等待节点转到同步队列，等待线程重新获得锁后才能继续
 
 > 注意：双向链表的**头节点是一个虚节点**（不存储实际线程信息），真正的第一个有效节点从第二个开始。
 
@@ -105,8 +107,8 @@ AQS 采用**模板方法模式**，自定义同步器只需根据需要重写以
 | 方法 | 模式 | 说明 |
 |------|------|------|
 | `tryAcquire(int)` | 独占 | 尝试获取资源，成功返回 true |
-| `tryRelease(int)` | 独占 | 尝试释放资源，成功返回 true |
-| `tryAcquireShared(int)` | 共享 | 尝试获取资源，负数=失败，0=成功但无剩余，正数=成功且有剩余 |
+| `tryRelease(int)` | 独占 | 尝试释放资源，完全释放独占状态时返回 true |
+| `tryAcquireShared(int)` | 共享 | 尝试获取资源，负数=失败；0=成功且后续共享获取不能成功；正数=成功且后续共享获取可能成功 |
 | `tryReleaseShared(int)` | 共享 | 尝试释放资源，如果释放后允许唤醒后续节点返回 true |
 | `isHeldExclusively()` | 独占 | 当前线程是否独占资源，用到 Condition 时需实现 |
 
@@ -149,7 +151,7 @@ tryAcquire → addWaiter → acquireQueued → selfInterrupt
 
 1. **tryAcquire**：尝试获取锁（由子类实现）
 2. **addWaiter**：获取失败，将当前线程封装为 Node 加入队列尾部
-3. **acquireQueued**：在队列中自旋等待，直到获取到锁
+3. **acquireQueued**：在队列中重试，必要时挂起，直到获取到锁
 4. **selfInterrupt**：如果等待过程中被中断过，补上中断
 
 ### 第三步：tryAcquire（公平 vs 非公平）
@@ -237,7 +239,7 @@ private Node enq(final Node node) {
 线程1获取锁成功 → 线程2申请锁失败 → 线程2入队等待 → 线程3申请失败 → 线程3排在线程2后面 → ...
 ```
 
-### 第五步：acquireQueued — 自旋获取锁
+### 第五步：acquireQueued — 重试与挂起
 
 ```java
 final boolean acquireQueued(final Node node, int arg) {
@@ -263,7 +265,7 @@ final boolean acquireQueued(final Node node, int arg) {
 }
 ```
 
-核心逻辑：**只有前驱节点是头节点的线程才有资格尝试获取锁**。获取失败后，通过 `shouldParkAfterFailedAcquire` 判断是否需要挂起（将前驱节点的 waitStatus 设为 SIGNAL），然后通过 `LockSupport.park()` 挂起线程，避免空转浪费 CPU。
+核心逻辑：**在这段已入队的独占获取循环中，前驱为头节点时才调用 `tryAcquire`**；未入队线程仍可能走非公平快速路径。获取失败后，通过 `shouldParkAfterFailedAcquire` 判断是否需要挂起（将前驱节点的 waitStatus 设为 SIGNAL），然后通过 `LockSupport.park()` 挂起线程，避免空转浪费 CPU。
 
 ### shouldParkAfterFailedAcquire 的三种情况
 
@@ -353,9 +355,7 @@ private void unparkSuccessor(Node node) {
 }
 ```
 
-> **为什么要从后向前遍历？** 两个原因：
-> 1. `addWaiter` 中节点入队不是原子操作——`node.prev = pred` 和 `compareAndSetTail` 完成后，`pred.next = node` 可能还未执行。此时从前向后遍历会断链。
-> 2. `cancelAcquire` 产生 CANCELLED 节点时，先断开的是 next 指针，prev 指针未断开。因此从后向前遍历才能保证遍历完整。
+> **为什么从尾部回查？** 入队先设置 `prev` 并 CAS 更新 `tail`，随后才连接前驱的 `next`。因此前向链接可能暂未补齐，取消节点也可能使直接后继不可用。尾部回查为寻找待唤醒节点提供了后备路径；它不是一份不再变化的队列快照。
 
 ## CANCELLED 节点的处理
 
@@ -367,11 +367,11 @@ private void unparkSuccessor(Node node) {
 | 头节点的后继 | 唤醒当前节点的后继线程（unparkSuccessor） |
 | 中间节点 | 将前驱的 next 指向当前节点的后继，跳过当前节点 |
 
-> `cancelAcquire` 只操作 next 指针，不操作 prev 指针。因为执行 cancel 时前驱可能已经出队，修改 prev 不安全。prev 指针的清理留给 `shouldParkAfterFailedAcquire`——此方法在获取锁失败时执行，此时共享资源已被占用，前方节点不会变化，修改 prev 是安全的。
+> 取消过程中会沿 `prev` 跳过已取消的前驱，也会尝试修补 `next` 或唤醒后继。队列仍在并发变化，不能以“前方节点不会变化”解释其正确性。超时、可中断获取被中断，以及获取过程异常，都可能触发取消。
 
 ## 中断处理机制
 
-AQS 的 `acquire` 方法是**不可中断**的——线程在等待过程中不会响应中断，而是记录中断状态，等获取到锁后再"补上"中断：
+AQS 的 `acquire` 方法是**不可中断获取**——线程不会因为中断而放弃获取，而是记录中断状态，等获取到锁后再"补上"中断：
 
 ```java
 public final void acquire(int arg) {
@@ -396,7 +396,7 @@ AQS 中线程的阻塞和唤醒通过 `LockSupport` 实现：
 | `LockSupport.park(this)` | 阻塞当前线程 |
 | `LockSupport.unpark(thread)` | 唤醒指定线程 |
 
-它们的底层实现是通过 `Unsafe` 类调用 CPU 原语。相比 `Object.wait/notify`，park/unpark 的优势在于：
+在 HotSpot 中，这些操作经 JVM 实现与操作系统同步设施协作；不能将线程挂起等同于一条 CPU 原语。`park()` 还可能因中断或虚假唤醒而返回，调用者必须重新检查等待条件。许可最多累计一个，多次 `unpark` 不会累加成信号量。相比 `Object.wait/notify`，park/unpark 的优势在于：
 
 - 不需要在同步块中使用
 - `unpark` 可以先于 `park` 调用（基于许可机制）
@@ -406,7 +406,7 @@ AQS 中线程的阻塞和唤醒通过 `LockSupport` 实现：
 
 ## AQS 在 JUC 中的应用场景
 
-AQS 是 JUC 包的基石，几乎所有同步工具都构建在它之上：
+AQS 支撑了多种 JUC 同步器，但并非全部；例如 Phaser、StampedLock 有各自的实现。典型使用者如下：
 
 | 同步工具 | 如何使用 AQS |
 |---------|------------|
@@ -427,26 +427,36 @@ ReadWriteLock:       state = [高16位:读锁次数][低16位:写锁次数]
 
 ## 自定义同步器示例
 
-理解 AQS 后，我们可以用极少的代码实现一个简单的互斥锁：
+下面的教学互斥锁不可重入，并检查解锁线程是否为持有者。它只暴露 `lock/unlock`，不提供完整 `Lock` 接口的超时、中断和条件等待能力：
 
 ```java
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
+
 public class SimpleLock {
 
     private static class Sync extends AbstractQueuedSynchronizer {
         @Override
         protected boolean tryAcquire(int arg) {
-            return compareAndSetState(0, 1);
+            if (compareAndSetState(0, 1)) {
+                setExclusiveOwnerThread(Thread.currentThread());
+                return true;
+            }
+            return false;
         }
 
         @Override
         protected boolean tryRelease(int arg) {
+            if (!isHeldExclusively()) {
+                throw new IllegalMonitorStateException();
+            }
+            setExclusiveOwnerThread(null);
             setState(0);
             return true;
         }
 
         @Override
         protected boolean isHeldExclusively() {
-            return getState() == 1;
+            return getState() == 1 && getExclusiveOwnerThread() == Thread.currentThread();
         }
     }
 
@@ -488,9 +498,9 @@ public static void main(String[] args) throws InterruptedException {
 AQS 的设计精髓可以归纳为以下几点：
 
 1. **一个 state 变量统一抽象**：不同的同步器通过赋予 state 不同的语义（重入次数、许可数、计数器等），复用同一套框架
-2. **CLH 变体双向队列管理等待线程**：通过 FIFO 队列保证公平性，通过 CAS + 自旋保证入队的线程安全
+2. **CLH 变体双向队列管理等待线程**：FIFO 等待队列提供排队基础，是否允许插队由获取策略决定；AQS 不自动保证公平性
 3. **模板方法模式降低接入成本**：自定义同步器只需实现 tryAcquire/tryRelease 等少量方法，框架处理全部排队和唤醒逻辑
 4. **park/unpark 精确控制线程状态**：避免自旋空转浪费 CPU，同时支持精确唤醒
-5. **从后向前遍历保证正确性**：在非原子入队操作和 CANCELLED 节点处理中，始终保证能遍历到所有有效节点
+5. **从后向前遍历保证正确性**：在非原子入队操作和 CANCELLED 节点处理中，为前向链接暂未建立或后继取消提供查找路径
 
 > AQS 是 Doug Lea 在并发编程领域的杰作。理解了 AQS，就理解了 JUC 包中绝大部分同步工具的底层运作方式。它不仅是面试的高频考点，更是我们在实际工程中设计自定义同步器时可以直接借鉴的框架。

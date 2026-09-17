@@ -1,83 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <rect width="900" height="400" fill="#FAFAFA" rx="8"/>
-  <text x="450" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1E293B">Feed 分发架构：Push vs Pull vs 混合</text>
-
-  <!-- Push 模式 -->
-  <rect x="30" y="55" width="260" height="320" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5" opacity="0.3"/>
-  <text x="160" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E40AF">Push（写扩散）</text>
-  <text x="160" y="98" text-anchor="middle" font-size="11" fill="#3B82F6">关注流 / 小 V</text>
-
-  <rect x="110" y="115" width="100" height="36" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="160" y="137" text-anchor="middle" font-size="11" fill="#1E40AF">用户发布</text>
-
-  <line x1="160" y1="151" x2="160" y2="170" stroke="#3B82F6" stroke-width="1.5"/>
-  <polygon points="160,178 155,170 165,170" fill="#3B82F6"/>
-
-  <rect x="80" y="180" width="160" height="36" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="160" y="202" text-anchor="middle" font-size="11" fill="#1E40AF">写入粉丝 Inbox</text>
-
-  <line x1="160" y1="216" x2="160" y2="235" stroke="#3B82F6" stroke-width="1.5"/>
-  <polygon points="160,243 155,235 165,235" fill="#3B82F6"/>
-
-  <rect x="55" y="245" width="80" height="36" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="95" y="267" text-anchor="middle" font-size="10" fill="#1E40AF">粉丝 A</text>
-  <rect x="145" y="245" width="80" height="36" rx="6" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1.5"/>
-  <text x="185" y="267" text-anchor="middle" font-size="10" fill="#1E40AF">粉丝 B</text>
-
-  <text x="160" y="310" text-anchor="middle" font-size="11" fill="#1E40AF">写入量 = 粉丝数</text>
-  <text x="160" y="328" text-anchor="middle" font-size="11" fill="#1E40AF">读取快，写入慢</text>
-  <text x="160" y="346" text-anchor="middle" font-size="11" fill="#10B981">适合：粉丝 &lt; 1 万</text>
-
-  <!-- Pull 模式 -->
-  <rect x="320" y="55" width="260" height="320" rx="8" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5" opacity="0.3"/>
-  <text x="450" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#065F46">Pull（读扩散）</text>
-  <text x="450" y="98" text-anchor="middle" font-size="11" fill="#10B981">推荐流</text>
-
-  <rect x="400" y="115" width="100" height="36" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
-  <text x="450" y="137" text-anchor="middle" font-size="11" fill="#065F46">用户请求</text>
-
-  <line x1="450" y1="151" x2="450" y2="170" stroke="#10B981" stroke-width="1.5"/>
-  <polygon points="450,178 445,170 455,170" fill="#10B981"/>
-
-  <rect x="370" y="180" width="160" height="36" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
-  <text x="450" y="202" text-anchor="middle" font-size="11" fill="#065F46">实时召回 + 排序</text>
-
-  <line x1="450" y1="216" x2="450" y2="235" stroke="#10B981" stroke-width="1.5"/>
-  <polygon points="450,243 445,235 455,235" fill="#10B981"/>
-
-  <rect x="370" y="245" width="160" height="36" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
-  <text x="450" y="267" text-anchor="middle" font-size="11" fill="#065F46">返回个性化 Feed</text>
-
-  <text x="450" y="310" text-anchor="middle" font-size="11" fill="#065F46">读取量 = 请求数</text>
-  <text x="450" y="328" text-anchor="middle" font-size="11" fill="#065F46">写入快，读取有延迟</text>
-  <text x="450" y="346" text-anchor="middle" font-size="11" fill="#10B981">适合：推荐流、发现页</text>
-
-  <!-- 混合模式 -->
-  <rect x="610" y="55" width="260" height="320" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5" opacity="0.3"/>
-  <text x="740" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#5B21B6">混合模式</text>
-  <text x="740" y="98" text-anchor="middle" font-size="11" fill="#8B5CF6">大 V / 热点</text>
-
-  <rect x="690" y="115" width="100" height="36" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
-  <text x="740" y="137" text-anchor="middle" font-size="11" fill="#5B21B6">大 V 发布</text>
-
-  <line x1="740" y1="151" x2="740" y2="170" stroke="#8B5CF6" stroke-width="1.5"/>
-  <polygon points="740,178 735,170 745,170" fill="#8B5CF6"/>
-
-  <rect x="630" y="180" width="100" height="36" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
-  <text x="680" y="195" text-anchor="middle" font-size="10" fill="#5B21B6">Push 活跃</text>
-  <text x="680" y="209" text-anchor="middle" font-size="10" fill="#5B21B6">粉丝</text>
-
-  <rect x="750" y="180" width="100" height="36" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
-  <text x="800" y="195" text-anchor="middle" font-size="10" fill="#5B21B6">Pull 非活跃</text>
-  <text x="800" y="209" text-anchor="middle" font-size="10" fill="#5B21B6">粉丝</text>
-
-  <line x1="740" y1="216" x2="740" y2="245" stroke="#8B5CF6" stroke-width="1.5"/>
-  <polygon points="740,253 735,245 745,245" fill="#8B5CF6"/>
-
-  <rect x="670" y="255" width="140" height="36" rx="6" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1.5"/>
-  <text x="740" y="277" text-anchor="middle" font-size="11" fill="#5B21B6">合并排序返回</text>
-
-  <text x="740" y="316" text-anchor="middle" font-size="11" fill="#5B21B6">平衡读写开销</text>
-  <text x="740" y="334" text-anchor="middle" font-size="11" fill="#5B21B6">按活跃度分层</text>
-  <text x="740" y="352" text-anchor="middle" font-size="11" fill="#10B981">适合：粉丝 &gt; 10 万</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="665" viewBox="0 0 620 665" role="img" aria-label="候选来源不同，交付门禁一致" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="665" rx="8" fill="#f8fafc"/>
+<text x="310" y="40" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">候选来源不同，交付门禁一致</text>
+<path d="M110 195 V245 H310" fill="none" stroke="#475569" stroke-width="2"/>
+<path d="M310 195 V245 H310" fill="none" stroke="#475569" stroke-width="2"/>
+<path d="M510 195 V245 H310" fill="none" stroke="#475569" stroke-width="2"/>
+<path d="M310 245 V280" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,280 310,290 315,280" fill="#475569"/>
+<path d="M310 375 V410" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,410 310,420 315,410" fill="#475569"/>
+<path d="M310 505 V540" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,540 310,550 315,540" fill="#475569"/>
+<rect x="30" y="75" width="160" height="120" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="110.0" y="112.0" text-anchor="middle" font-size="22" fill="#1e293b">关注流</text>
+<text x="110.0" y="142.0" text-anchor="middle" font-size="22" fill="#1e293b">写时扇出</text>
+<text x="110.0" y="172.0" text-anchor="middle" font-size="22" fill="#1e293b">读收件箱</text>
+<rect x="230" y="75" width="160" height="120" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="112.0" text-anchor="middle" font-size="22" fill="#1e293b">关注流</text>
+<text x="310.0" y="142.0" text-anchor="middle" font-size="22" fill="#1e293b">读时合并</text>
+<text x="310.0" y="172.0" text-anchor="middle" font-size="22" fill="#1e293b">作者发件箱</text>
+<rect x="430" y="75" width="160" height="120" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="510.0" y="112.0" text-anchor="middle" font-size="22" fill="#1e293b">推荐流</text>
+<text x="510.0" y="142.0" text-anchor="middle" font-size="22" fill="#1e293b">实时或缓存</text>
+<text x="510.0" y="172.0" text-anchor="middle" font-size="22" fill="#1e293b">推荐候选</text>
+<rect x="60" y="290" width="500" height="85" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="324.5" text-anchor="middle" font-size="22" fill="#1e293b">形成当前列表</text>
+<text x="310.0" y="354.5" text-anchor="middle" font-size="22" fill="#1e293b">排序、游标与已看策略</text>
+<rect x="60" y="420" width="500" height="85" rx="8" fill="#fff7ed" stroke="#c2410c" stroke-width="1.5"/>
+<text x="310.0" y="454.5" text-anchor="middle" font-size="22" fill="#1e293b">校验当前可见性</text>
+<text x="310.0" y="484.5" text-anchor="middle" font-size="22" fill="#1e293b">删除、权限、审核与用户控制</text>
+<rect x="60" y="550" width="500" height="65" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+<text x="310.0" y="589.5" text-anchor="middle" font-size="22" fill="#1e293b">返回可交付内容</text>
+<text x="310" y="649" text-anchor="middle" font-size="20" fill="#475569">无安全候选时，明确返回空状态或暂不可用</text>
 </svg>

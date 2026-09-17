@@ -1,88 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <!-- Title -->
-  <text x="400" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">RocketMQ Transaction Message (Half-Message Flow)</text>
-
-  <!-- Actor boxes -->
-  <rect x="40" y="55" width="140" height="40" rx="8" fill="#4a90d9" stroke="#2c5282" stroke-width="1.5"/>
-  <text x="110" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">Producer</text>
-
-  <rect x="330" y="55" width="140" height="40" rx="8" fill="#f5a623" stroke="#d4870e" stroke-width="1.5"/>
-  <text x="400" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">RocketMQ</text>
-
-  <rect x="620" y="55" width="140" height="40" rx="8" fill="#27ae60" stroke="#1e7e45" stroke-width="1.5"/>
-  <text x="690" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">Consumer</text>
-
-  <!-- Timelines -->
-  <line x1="110" y1="95" x2="110" y2="480" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="400" y1="95" x2="400" y2="480" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4,4"/>
-  <line x1="690" y1="95" x2="690" y2="480" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4,4"/>
-
-  <!-- Step 1: Send half message -->
-  <circle cx="110" cy="125" r="12" fill="#4a90d9" stroke="none"/>
-  <text x="110" y="129" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">1</text>
-  <line x1="120" y1="125" x2="388" y2="125" stroke="#4a90d9" stroke-width="1.5"/>
-  <polygon points="388,125 374,117 374,133" fill="#4a90d9"/>
-  <text x="255" y="118" font-size="11" fill="#4a90d9" font-weight="bold">Send Half Message</text>
-
-  <!-- Half message note -->
-  <rect x="420" y="112" width="170" height="28" rx="4" fill="#fff8e1" stroke="#f5a623" stroke-width="1"/>
-  <text x="505" y="130" text-anchor="middle" font-size="10" fill="#8b6914">invisible to consumers</text>
-
-  <!-- Step 2: Half message OK -->
-  <circle cx="110" cy="165" r="12" fill="#4a90d9" stroke="none"/>
-  <text x="110" y="169" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">2</text>
-  <line x1="388" y1="165" x2="120" y2="165" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <polygon points="120,165 134,157 134,173" fill="#f5a623"/>
-  <text x="255" y="158" font-size="11" fill="#f5a623">Half Message OK</text>
-
-  <!-- Step 3: Execute local transaction -->
-  <circle cx="110" cy="210" r="12" fill="#4a90d9" stroke="none"/>
-  <text x="110" y="214" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">3</text>
-  <rect x="75" y="195" width="180" height="32" rx="6" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1"/>
-  <text x="165" y="216" text-anchor="middle" font-size="11" fill="#2c5282">Execute Local Transaction</text>
-  <text x="165" y="230" text-anchor="middle" font-size="9" fill="#4a6fa5">(insert order to DB)</text>
-
-  <!-- Step 4a: Commit -->
-  <circle cx="110" cy="270" r="12" fill="#27ae60" stroke="none"/>
-  <text x="110" y="274" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">4a</text>
-  <line x1="120" y1="270" x2="388" y2="270" stroke="#27ae60" stroke-width="1.5"/>
-  <polygon points="388,270 374,262 374,278" fill="#27ae60"/>
-  <text x="255" y="263" font-size="11" fill="#27ae60" font-weight="bold">Commit (tx success)</text>
-
-  <!-- Message becomes visible -->
-  <line x1="412" y1="290" x2="678" y2="290" stroke="#27ae60" stroke-width="1.5"/>
-  <polygon points="678,290 664,282 664,298" fill="#27ae60"/>
-  <text x="545" y="284" font-size="11" fill="#27ae60">deliver message</text>
-
-  <!-- Step 4b: Rollback -->
-  <circle cx="110" cy="330" r="12" fill="#e74c3c" stroke="none"/>
-  <text x="110" y="334" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">4b</text>
-  <line x1="120" y1="330" x2="388" y2="330" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <polygon points="388,330 374,322 374,338" fill="#e74c3c"/>
-  <text x="255" y="323" font-size="11" fill="#e74c3c">Rollback (tx failed)</text>
-
-  <rect x="420" y="320" width="140" height="24" rx="4" fill="#fef2f2" stroke="#f5a0a0" stroke-width="1"/>
-  <text x="490" y="336" text-anchor="middle" font-size="10" fill="#c0392b">discard half message</text>
-
-  <!-- Step 5: Check back -->
-  <circle cx="110" cy="390" r="12" fill="#8e44ad" stroke="none"/>
-  <text x="110" y="394" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">5</text>
-  <line x1="388" y1="390" x2="120" y2="390" stroke="#8e44ad" stroke-width="1.5"/>
-  <polygon points="120,390 134,382 134,398" fill="#8e44ad"/>
-  <text x="255" y="383" font-size="11" fill="#8e44ad" font-weight="bold">Check Local TX Status</text>
-  <text x="255" y="403" font-size="9" fill="#8e44ad">(if no commit/rollback received after timeout)</text>
-
-  <!-- Step 5 response -->
-  <line x1="120" y1="420" x2="388" y2="420" stroke="#8e44ad" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <polygon points="388,420 374,412 374,428" fill="#8e44ad"/>
-  <text x="255" y="438" font-size="10" fill="#8e44ad">return COMMIT / ROLLBACK / UNKNOWN</text>
-
-  <!-- Consumer processes -->
-  <rect x="640" y="310" width="140" height="50" rx="6" fill="#e8f8ef" stroke="#27ae60" stroke-width="1"/>
-  <text x="710" y="330" text-anchor="middle" font-size="10" fill="#1e7e45" font-weight="bold">Consumer processes</text>
-  <text x="710" y="348" text-anchor="middle" font-size="10" fill="#1e7e45">(idempotent execution)</text>
-
-  <!-- Key insight -->
-  <rect x="140" y="460" width="520" height="30" rx="6" fill="#1a1a2e" stroke="none"/>
-  <text x="400" y="480" text-anchor="middle" font-size="11" fill="#fff">Half message + check-back = atomic guarantee between local TX and message delivery</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="910" viewBox="0 0 620 910" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="910" rx="8" fill="#f8fafc"/>
+<text x="310" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#172033">事务消息：回查依赖持久业务结果</text>
+<path d="M310 160V197" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,205 305,196 315,196" fill="#475569"/>
+<path d="M310 305V342" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,350 305,341 315,341" fill="#475569"/>
+<path d="M310 450V480H165V527M310 480H455V527" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="165,535 160,526 170,526" fill="#475569"/>
+<polygon points="455,535 450,526 460,526" fill="#475569"/>
+<rect x="55" y="65" width="510" height="95" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="310.0" y="105.5" text-anchor="middle" font-size="22" fill="#172033">Producer 发送半消息</text>
+<text x="310.0" y="135.5" text-anchor="middle" font-size="22" fill="#172033">Broker 保存，消费者暂不可见</text>
+<rect x="55" y="205" width="510" height="100" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="310.0" y="248.0" text-anchor="middle" font-size="22" fill="#172033">Producer 执行本地事务</text>
+<text x="310.0" y="278.0" text-anchor="middle" font-size="22" fill="#172033">使用稳定业务键记录可查询结果</text>
+<rect x="55" y="350" width="510" height="100" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="310.0" y="393.0" text-anchor="middle" font-size="22" fill="#172033">报告 Commit / Rollback / Unknown</text>
+<text x="310.0" y="423.0" text-anchor="middle" font-size="22" fill="#172033">响应丢失时也可能没有确定结果</text>
+<text x="165" y="475" text-anchor="middle" font-size="20" fill="#475569">结果确定</text>
+<text x="455" y="475" text-anchor="middle" font-size="20" fill="#475569">结果未知或无响应</text>
+<rect x="35" y="535" width="260" height="140" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="165.0" y="583.0" text-anchor="middle" font-size="22" fill="#172033">Commit：消息可见</text>
+<text x="165.0" y="613.0" text-anchor="middle" font-size="22" fill="#172033">Rollback：消息丢弃</text>
+<text x="165.0" y="643.0" text-anchor="middle" font-size="22" fill="#172033">消费仍需要幂等</text>
+<rect x="325" y="535" width="260" height="140" rx="8" fill="#fff7ed" stroke="#a56b49" stroke-width="1.5"/>
+<text x="455.0" y="583.0" text-anchor="middle" font-size="22" fill="#172033">Broker 发起回查</text>
+<text x="455.0" y="613.0" text-anchor="middle" font-size="22" fill="#172033">实例查询持久结果</text>
+<text x="455.0" y="643.0" text-anchor="middle" font-size="22" fill="#172033">按协议再次报告</text>
+<rect x="55" y="725" width="510" height="100" rx="8" fill="#fff7ed" stroke="#a56b49" stroke-width="1.5"/>
+<text x="310.0" y="753.0" text-anchor="middle" font-size="22" fill="#172033">未知状态按版本配置继续处理</text>
+<text x="310.0" y="783.0" text-anchor="middle" font-size="22" fill="#172033">回查次数、超时与最终处置必须明确</text>
+<text x="310.0" y="813.0" text-anchor="middle" font-size="22" fill="#172033">不能把记录暂不存在直接等同于失败</text>
+<text x="310" y="870" text-anchor="middle" font-size="20" fill="#475569">消息提交不等于下游业务已经完成</text>
 </svg>

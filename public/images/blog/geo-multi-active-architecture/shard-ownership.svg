@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="610" viewBox="0 0 620 610" role="img" aria-label="不同分片分处写入，同一分片单写" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect width="620" height="610" rx="8" fill="#f8fafc"/>
+<text x="310" y="40" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">不同分片分处写入，同一分片单写</text>
+<rect x="60" y="70" width="500" height="86" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="105.0" text-anchor="middle" font-size="22" fill="#1e293b">可信接入：身份 → 逻辑桶</text>
+<text x="310.0" y="135.0" text-anchor="middle" font-size="22" fill="#1e293b">权威路由：桶归属 + 版本</text>
+<path d="M310 156 V185 H172.5 V216" stroke="#475569" stroke-width="2" fill="none"/>
+<polygon points="167.5,216 172.5,226 177.5,216" fill="#475569"/>
+<path d="M310 156 V185 H447.5 V216" stroke="#475569" stroke-width="2" fill="none"/>
+<polygon points="442.5,216 447.5,226 452.5,216" fill="#475569"/>
+<rect x="55" y="226" width="235" height="100" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="172.5" y="268.0" text-anchor="middle" font-size="22" fill="#1e293b">站点 A</text>
+<text x="172.5" y="298.0" text-anchor="middle" font-size="22" fill="#1e293b">写入桶 0—511</text>
+<rect x="330" y="226" width="235" height="100" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="447.5" y="268.0" text-anchor="middle" font-size="22" fill="#1e293b">站点 B</text>
+<text x="447.5" y="298.0" text-anchor="middle" font-size="22" fill="#1e293b">写入桶 512—1023</text>
+<path d="M172.5 326 V360" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="167.5,360 172.5,370 177.5,360" fill="#475569"/>
+<path d="M447.5 326 V360" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="442.5,360 447.5,370 452.5,360" fill="#475569"/>
+<rect x="55" y="370" width="235" height="94" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+<text x="172.5" y="409.0" text-anchor="middle" font-size="22" fill="#1e293b">A 负责的数据</text>
+<text x="172.5" y="439.0" text-anchor="middle" font-size="22" fill="#1e293b">与必要恢复副本</text>
+<rect x="330" y="370" width="235" height="94" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+<text x="447.5" y="409.0" text-anchor="middle" font-size="22" fill="#1e293b">B 负责的数据</text>
+<text x="447.5" y="439.0" text-anchor="middle" font-size="22" fill="#1e293b">与必要恢复副本</text>
+<text x="310" y="512" text-anchor="middle" font-size="20" fill="#475569">复制链路按恢复策略配置，图中省略</text>
+<text x="310" y="548" text-anchor="middle" font-size="20" fill="#475569">应用同时活跃 ≠ 同一记录任意多地写</text>
+<text x="310" y="582" text-anchor="middle" font-size="20" fill="#475569">共享库存等跨分片操作需单独协调</text>
+</svg>

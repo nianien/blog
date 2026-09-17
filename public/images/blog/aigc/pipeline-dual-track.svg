@@ -1,48 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 200" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <rect width="830" height="200" fill="#FAFAFA" rx="8"/>
-  <rect x="20" y="80" width="120" height="50" rx="6" fill="#F59E0B"/>
-  <text x="80.0" y="109.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">剧本 + 角色设定</text>
-  <line x1="140" y1="105" x2="174" y2="105" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="180,105 174,101 174,109" fill="#94A3B8"/>
-  <rect x="185" y="20" width="370" height="70" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
-  <text x="195" y="40" fill="#1E40AF" font-weight="bold" font-size="11">视觉支线</text>
-  <rect x="200" y="48" width="60" height="28" rx="4" fill="#fff" stroke="#93C5FD" stroke-width="1"/>
-  <text x="230" y="66" text-anchor="middle" fill="#1E40AF" font-size="9">LoRA</text>
-  <text x="264" y="66" fill="#94A3B8" font-size="10">→</text>
-  <rect x="268" y="48" width="60" height="28" rx="4" fill="#fff" stroke="#93C5FD" stroke-width="1"/>
-  <text x="298" y="66" text-anchor="middle" fill="#1E40AF" font-size="9">IP-Adapter</text>
-  <text x="332" y="66" fill="#94A3B8" font-size="10">→</text>
-  <rect x="336" y="48" width="60" height="28" rx="4" fill="#fff" stroke="#93C5FD" stroke-width="1"/>
-  <text x="366" y="66" text-anchor="middle" fill="#1E40AF" font-size="9">ControlNet</text>
-  <text x="400" y="66" fill="#94A3B8" font-size="10">→</text>
-  <rect x="404" y="48" width="60" height="28" rx="4" fill="#fff" stroke="#93C5FD" stroke-width="1"/>
-  <text x="434" y="66" text-anchor="middle" fill="#1E40AF" font-size="9">视频模型</text>
-  <text x="468" y="66" fill="#94A3B8" font-size="10">→</text>
-  <rect x="472" y="48" width="60" height="28" rx="4" fill="#fff" stroke="#93C5FD" stroke-width="1"/>
-  <text x="502" y="66" text-anchor="middle" fill="#1E40AF" font-size="9">Face Swap</text>
-  <rect x="185" y="105" width="370" height="70" rx="8" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="1"/>
-  <text x="195" y="125" fill="#5B21B6" font-weight="bold" font-size="11">音频支线</text>
-  <rect x="200" y="133" width="105" height="28" rx="4" fill="#fff" stroke="#C4B5FD" stroke-width="1"/>
-  <text x="252" y="151" text-anchor="middle" fill="#5B21B6" font-size="9">声纹克隆</text>
-  <text x="310" y="151" fill="#94A3B8" font-size="10">→</text>
-  <rect x="320" y="133" width="105" height="28" rx="4" fill="#fff" stroke="#C4B5FD" stroke-width="1"/>
-  <text x="372" y="151" text-anchor="middle" fill="#5B21B6" font-size="9">TTS</text>
-  <text x="430" y="151" fill="#94A3B8" font-size="10">→</text>
-  <rect x="440" y="133" width="105" height="28" rx="4" fill="#fff" stroke="#C4B5FD" stroke-width="1"/>
-  <text x="492" y="151" text-anchor="middle" fill="#5B21B6" font-size="9">带情感的音频</text>
-  <line x1="555" y1="55" x2="585" y2="55" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="585,52 590,55 585,58" fill="#94A3B8"/>
-  <line x1="555" y1="140" x2="585" y2="140" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="585,137 590,140 585,143" fill="#94A3B8"/>
-  <rect x="595" y="70" width="80" height="50" rx="6" fill="#10B981"/>
-  <text x="635.0" y="93.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">对齐层</text>
-  <text x="635.0" y="107.0" text-anchor="middle" font-size="10" fill="#A7F3D0">Lip-sync</text>
-  <line x1="675" y1="95" x2="704" y2="95" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="710,95 704,91 704,99" fill="#94A3B8"/>
-  <rect x="715" y="70" width="50" height="50" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/>
-  <text x="740.0" y="99.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#991B1B">QA</text>
-  <line x1="765" y1="95" x2="784" y2="95" stroke="#94A3B8" stroke-width="1.5"/>
-  <polygon points="790,95 784,91 784,99" fill="#94A3B8"/>
-  <rect x="790" y="78" width="30" height="34" rx="6" fill="#475569"/>
-  <text x="805.0" y="99.0" text-anchor="middle" font-size="9" font-weight="bold" fill="#fff">成片</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="840" viewBox="0 0 620 840" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="840" rx="8" fill="#f8fafc"/>
+<text x="310" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#172033">一个角色镜头：视听素材共享输入版本</text>
+<rect x="65" y="65" width="490" height="90" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="310.0" y="103.0" text-anchor="middle" font-size="22" fill="#172033">镜号、角色与场景版本</text>
+<text x="310.0" y="133.0" text-anchor="middle" font-size="22" fill="#172033">台词、表达意图与目标时长</text>
+<path d="M310 155V185H160V211M310 185H460V211" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="160,220 155,210 165,210" fill="#475569"/>
+<polygon points="460,220 455,210 465,210" fill="#475569"/>
+<rect x="30" y="220" width="260" height="90" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="160.0" y="258.0" text-anchor="middle" font-size="22" fill="#172033">视觉候选</text>
+<text x="160.0" y="288.0" text-anchor="middle" font-size="22" fill="#172033">参考与动作条件</text>
+<rect x="330" y="220" width="260" height="90" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="460.0" y="258.0" text-anchor="middle" font-size="22" fill="#172033">TTS 音频</text>
+<text x="460.0" y="288.0" text-anchor="middle" font-size="22" fill="#172033">声音版本与台词</text>
+<path d="M160 310V350H310M460 310V350H310" fill="none" stroke="#475569" stroke-width="1.5"/>
+<path d="M310 350V382" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,390 305,381 315,381" fill="#475569"/>
+<rect x="65" y="390" width="490" height="90" rx="8" fill="#fff7ed" stroke="#a56b49" stroke-width="1.5"/>
+<text x="310.0" y="428.0" text-anchor="middle" font-size="22" fill="#172033">检查输入版本、实际时长与起始位置</text>
+<text x="310.0" y="458.0" text-anchor="middle" font-size="22" fill="#172033">需要时修改台词或镜头长度</text>
+<path d="M310 480V517" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,525 305,516 315,516" fill="#475569"/>
+<rect x="65" y="525" width="490" height="80" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="310.0" y="573.0" text-anchor="middle" font-size="22" fill="#172033">按镜头需要做口型与后处理</text>
+<path d="M310 605V642" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="310,650 305,641 315,641" fill="#475569"/>
+<rect x="65" y="650" width="490" height="80" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="310.0" y="683.0" text-anchor="middle" font-size="22" fill="#172033">QA 与人工视听复核</text>
+<text x="310.0" y="713.0" text-anchor="middle" font-size="22" fill="#172033">通过后归档选中版本</text>
+<text x="310" y="779" text-anchor="middle" font-size="18" fill="#475569">音频驱动视频或时长依赖台词时：先音频，后视觉</text>
+<text x="310" y="814" text-anchor="middle" font-size="20" fill="#475569">失败返回对应环节，不默认整条重跑</text>
 </svg>

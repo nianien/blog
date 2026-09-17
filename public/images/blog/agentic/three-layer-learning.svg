@@ -1,26 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 744 340" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <rect width="700" height="340" rx="12" fill="#fafafa" stroke="#e0e0e0" stroke-width="1.5"/>
-  <text x="350" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">三层学习：按时间尺度划分</text>
-  <text x="350" y="52" text-anchor="middle" font-size="11" fill="#666">越上层持久性越强、风险越高</text>
-
-  <!-- L1 -->
-  <rect x="40" y="80" width="620" height="70" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
-  <text x="60" y="108" font-size="14" font-weight="bold" fill="#1B5E20">L1 会话级适应</text>
-  <text x="60" y="130" font-size="11" fill="#2E7D32">In-context Learning · 会话结束即消失 · 免费、无需基础设施</text>
-  <text x="640" y="108" text-anchor="end" font-size="12" font-weight="bold" fill="#2E7D32">秒级</text>
-  <text x="640" y="130" text-anchor="end" font-size="10" fill="#2E7D32">风险：低</text>
-
-  <!-- L2 -->
-  <rect x="40" y="160" width="620" height="70" rx="8" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
-  <text x="60" y="188" font-size="14" font-weight="bold" fill="#BF360C">L2 跨会话记忆沉淀</text>
-  <text x="60" y="210" font-size="11" fill="#E65100">经验存储与检索 · 持久化存储 · 需要质量控制</text>
-  <text x="640" y="188" text-anchor="end" font-size="12" font-weight="bold" fill="#E65100">天级</text>
-  <text x="640" y="210" text-anchor="end" font-size="10" fill="#E65100">风险：中</text>
-
-  <!-- L3 -->
-  <rect x="40" y="240" width="620" height="70" rx="8" fill="#FFEBEE" stroke="#C62828" stroke-width="1.5"/>
-  <text x="60" y="268" font-size="14" font-weight="bold" fill="#B71C1C">L3 行为策略进化</text>
-  <text x="60" y="290" font-size="11" fill="#C62828">Prompt/策略自动优化 · 写入系统配置 · 必须有评估体系兜底</text>
-  <text x="640" y="268" text-anchor="end" font-size="12" font-weight="bold" fill="#C62828">周/月级</text>
-  <text x="640" y="290" text-anchor="end" font-size="10" fill="#C62828">风险：高</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="795" viewBox="0 0 620 795" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="795" rx="8" fill="#f8fafc"/>
+<text x="310" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#172033">三个时间尺度：证据决定改进范围</text>
+<path d="M235 170V185M235 225V252" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="235,260 230,251 240,251" fill="#475569"/>
+<path d="M235 390V415M235 455V482" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="235,490 230,481 240,481" fill="#475569"/>
+<rect x="40" y="75" width="390" height="95" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="235.0" y="115.5" text-anchor="middle" font-size="22" fill="#172033">T1 会话内适应</text>
+<text x="235.0" y="145.5" text-anchor="middle" font-size="22" fill="#172033">根据当前反馈更新上下文</text>
+<rect x="40" y="260" width="390" height="130" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="235.0" y="303.0" text-anchor="middle" font-size="22" fill="#172033">T2 跨会话经验</text>
+<text x="235.0" y="333.0" text-anchor="middle" font-size="22" fill="#172033">核验来源、条件与作用范围</text>
+<text x="235.0" y="363.0" text-anchor="middle" font-size="22" fill="#172033">保存可检索的版本</text>
+<rect x="40" y="490" width="390" height="130" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="235.0" y="533.0" text-anchor="middle" font-size="22" fill="#172033">T3 跨版本策略改进</text>
+<text x="235.0" y="563.0" text-anchor="middle" font-size="22" fill="#172033">候选生成、独立评测与发布</text>
+<text x="235.0" y="593.0" text-anchor="middle" font-size="22" fill="#172033">固定生效范围并持续观察</text>
+<text x="235" y="214" text-anchor="middle" font-size="20" fill="#475569">提炼候选，核验后入库</text>
+<text x="235" y="443" text-anchor="middle" font-size="20" fill="#475569">经验提供候选依据</text>
+<path d="M430 550H585V120H439" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="430,120 440,115 440,125" fill="#475569"/>
+<text x="505" y="285" text-anchor="middle" font-size="20" fill="#475569">新版本</text>
+<text x="505" y="317" text-anchor="middle" font-size="20" fill="#475569">影响后续</text>
+<text x="505" y="349" text-anchor="middle" font-size="20" fill="#475569">任务运行</text>
+<text x="310" y="687" text-anchor="middle" font-size="20" fill="#475569">上下文是否持久化由应用决定</text>
+<text x="310" y="725" text-anchor="middle" font-size="20" fill="#475569">候选与经验不会自动获得执行权限</text>
+<text x="310" y="765" text-anchor="middle" font-size="20" fill="#475569">T1–T3 是本文分类，不是必须部署的三个服务</text>
 </svg>

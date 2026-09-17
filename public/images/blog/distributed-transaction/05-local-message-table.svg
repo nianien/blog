@@ -1,104 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-
-  <!-- ===== Title ===== -->
-  <text x="410" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">本地消息表 + 轮询架构</text>
-
-  <!-- ============================================ -->
-  <!-- Upstream Service Container                   -->
-  <!-- ============================================ -->
-  <rect x="20" y="50" width="295" height="310" rx="8" fill="#f8fbff" stroke="#4a90d9" stroke-width="1.5"/>
-  <text x="167" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c5282">Upstream Service</text>
-
-  <!-- Business DB -->
-  <rect x="35" y="88" width="125" height="34" rx="6" fill="#e8f4fd" stroke="#4a90d9" stroke-width="1.5"/>
-  <text x="97" y="105" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2c5282">Business DB</text>
-
-  <!-- Message Table -->
-  <rect x="175" y="88" width="130" height="34" rx="6" fill="#fef3e2" stroke="#d4a04a" stroke-width="1.5"/>
-  <text x="240" y="105" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#7b5b2a">Message Table</text>
-
-  <!-- Local TX bracket -->
-  <rect x="30" y="130" width="278" height="26" rx="4" fill="#e8f8ef" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="6,3"/>
-  <text x="169" y="143" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="bold" fill="#1e7e45">同一本地事务 (ACID)</text>
-
-  <!-- Scheduler -->
-  <rect x="35" y="215" width="270" height="38" rx="6" fill="#fff8e1" stroke="#f5a623" stroke-width="1.5"/>
-  <text x="170" y="234" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#8b6914">Scheduler（轮询 PENDING 消息）</text>
-
-  <!-- ============================================ -->
-  <!-- Message Queue                                -->
-  <!-- ============================================ -->
-  <rect x="365" y="215" width="120" height="38" rx="8" fill="#4a90d9" stroke="#2c5282" stroke-width="1.5"/>
-  <text x="425" y="234" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#fff">MQ</text>
-
-  <!-- ============================================ -->
-  <!-- Downstream Service Container                 -->
-  <!-- ============================================ -->
-  <rect x="535" y="50" width="265" height="310" rx="8" fill="#fef8f0" stroke="#d4a04a" stroke-width="1.5"/>
-  <text x="667" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#7b5b2a">Downstream Service</text>
-
-  <!-- Consume Message -->
-  <rect x="555" y="88" width="230" height="34" rx="6" fill="#fef3e2" stroke="#d4a04a" stroke-width="1"/>
-  <text x="670" y="105" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#7b5b2a">Consume Message</text>
-
-  <!-- Execute Business Logic -->
-  <rect x="555" y="138" width="230" height="40" rx="6" fill="#e8f8ef" stroke="#68c690" stroke-width="1"/>
-  <text x="670" y="154" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#1e7e45">Execute Business Logic</text>
-  <text x="670" y="170" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#1e7e45">（幂等 + msgId 去重）</text>
-
-  <!-- ============================================ -->
-  <!-- STEP ① — 本地事务写入                         -->
-  <!-- ============================================ -->
-  <circle cx="40" cy="176" r="14" fill="#4a90d9" stroke="#fff" stroke-width="2"/>
-  <text x="40" y="176" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#fff">1</text>
-  <text x="62" y="176" dominant-baseline="central" font-size="11" fill="#333" font-weight="bold">写入订单 + 写入消息（PENDING）</text>
-
-  <!-- ============================================ -->
-  <!-- STEP ② — Scheduler 轮询投递到 MQ              -->
-  <!-- ============================================ -->
-  <!-- Arrow: Scheduler right (305) → MQ left (365) -->
-  <line x1="305" y1="234" x2="365" y2="234" stroke="#f5a623" stroke-width="2"/>
-  <polygon points="365,234 351,226 351,242" fill="#f5a623"/>
-
-  <!-- Step badge above arrow -->
-  <circle cx="335" cy="206" r="14" fill="#f5a623" stroke="#fff" stroke-width="2"/>
-  <text x="335" y="206" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#fff">2</text>
-  <text x="335" y="188" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#8b6914">投递消息</text>
-
-  <!-- ============================================ -->
-  <!-- STEP ③ — MQ 投递到下游消费                     -->
-  <!-- ============================================ -->
-  <!-- Arrow: MQ right (485) → go right to x=510, up to y=105, right to Consume (555) -->
-  <line x1="485" y1="234" x2="510" y2="234" stroke="#d4a04a" stroke-width="2"/>
-  <line x1="510" y1="234" x2="510" y2="105" stroke="#d4a04a" stroke-width="2"/>
-  <line x1="510" y1="105" x2="555" y2="105" stroke="#d4a04a" stroke-width="2"/>
-  <polygon points="555,105 541,97 541,113" fill="#d4a04a"/>
-
-  <!-- Step badge at the corner -->
-  <circle cx="510" cy="175" r="14" fill="#d4a04a" stroke="#fff" stroke-width="2"/>
-  <text x="510" y="175" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#fff">3</text>
-  <text x="490" y="157" dominant-baseline="central" font-size="9" fill="#7b5b2a">下游消费</text>
-
-  <!-- ============================================ -->
-  <!-- STEP ④ — 回调确认，更新消息状态                 -->
-  <!-- ============================================ -->
-  <!-- Arrow: Downstream (535, 310) → Upstream (315, 310) -->
-  <line x1="535" y1="310" x2="315" y2="310" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,3"/>
-  <polygon points="315,310 329,302 329,318" fill="#e74c3c"/>
-
-  <!-- Step badge above arrow -->
-  <circle cx="425" cy="290" r="14" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
-  <text x="425" y="290" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="bold" fill="#fff">4</text>
-  <text x="425" y="272" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#c0392b">回调确认</text>
-
-  <!-- "Update DONE" label at the arrow endpoint -->
-  <text x="260" y="328" text-anchor="middle" font-size="10" fill="#c0392b">更新消息状态 → DONE</text>
-
-  <!-- ============================================ -->
-  <!-- BOTTOM: Reliability notes                    -->
-  <!-- ============================================ -->
-  <rect x="100" y="380" width="620" height="50" rx="8" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
-  <text x="410" y="400" text-anchor="middle" font-size="11" font-weight="bold" fill="#555">可靠性保证</text>
-  <text x="410" y="416" text-anchor="middle" font-size="10" fill="#666">① 本地事务保证原子性 ② Scheduler 重试保证投递 ③ 幂等 + msgId 去重防重复消费</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="955" viewBox="0 0 620 955" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="955" rx="8" fill="#f8fafc"/>
+<text x="310" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#172033">Outbox：提交意图，再可靠投递</text>
+<path d="M270 160V197" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="270,205 265,196 275,196" fill="#475569"/>
+<path d="M270 305V342" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="270,350 265,341 275,341" fill="#475569"/>
+<path d="M270 445V482" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="270,490 265,481 275,481" fill="#475569"/>
+<path d="M270 590V627" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="270,635 265,626 275,626" fill="#475569"/>
+<rect x="45" y="65" width="450" height="95" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="270.0" y="105.5" text-anchor="middle" font-size="22" fill="#172033">上游同一本地事务</text>
+<text x="270.0" y="135.5" text-anchor="middle" font-size="22" fill="#172033">业务变更 + Outbox(event_id)</text>
+<rect x="45" y="205" width="450" height="100" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="270.0" y="248.0" text-anchor="middle" font-size="22" fill="#172033">投递器发送稳定 event_id</text>
+<text x="270.0" y="278.0" text-anchor="middle" font-size="22" fill="#172033">Broker 确认后记录 SENT</text>
+<rect x="45" y="350" width="450" height="95" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="270.0" y="390.5" text-anchor="middle" font-size="22" fill="#172033">Broker 投递，可能重复</text>
+<text x="270.0" y="420.5" text-anchor="middle" font-size="22" fill="#172033">ACK 不是下游业务完成</text>
+<rect x="45" y="490" width="450" height="100" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="270.0" y="533.0" text-anchor="middle" font-size="22" fill="#172033">下游同一本地事务</text>
+<text x="270.0" y="563.0" text-anchor="middle" font-size="22" fill="#172033">唯一 Inbox + 业务更新一起提交</text>
+<rect x="45" y="635" width="450" height="110" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="270.0" y="668.0" text-anchor="middle" font-size="22" fill="#172033">提交后确认消费</text>
+<text x="270.0" y="698.0" text-anchor="middle" font-size="22" fill="#172033">需要跟踪完成时，可靠发送业务回执</text>
+<text x="270.0" y="728.0" text-anchor="middle" font-size="22" fill="#172033">回执也需重试和去重</text>
+<path d="M270 745V782" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="270,790 265,781 275,781" fill="#475569"/>
+<rect x="45" y="790" width="450" height="95" rx="8" fill="#fff7ed" stroke="#a56b49" stroke-width="1.5"/>
+<text x="270.0" y="830.5" text-anchor="middle" font-size="22" fill="#172033">上游接收业务回执后记录 DONE</text>
+<text x="270.0" y="860.5" text-anchor="middle" font-size="22" fill="#172033">发送与记录之间崩溃，仍可能重发</text>
+<text x="310" y="928" text-anchor="middle" font-size="20" fill="#475569">外部付款等副作用不在下游本地事务内</text>
 </svg>

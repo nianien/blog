@@ -1,7 +1,7 @@
 ---
 title: "框架与协议：从SDK选型到MCP"
 pubDate: "2026-01-22"
-description: "Agent 生态正在走向两极分化——一极是 LangChain/LangGraph 的厚抽象，另一极是 Claude Agent SDK / OpenAI Agents SDK 的薄抽象 + MCP 协议化。本文给出框架选型的八维决策框架、LangGraph 状态机的最小代码、MCP Server/Client 的核心实现，以及 N×M 集成问题的协议化解法。"
+description: "框架组织执行，协议约定交互。本文以订单调查说明 SDK 选型、状态恢复、业务适配与 MCP 接入，给出版本明确的本地示例，并解释 MCP 与 A2A 的职责和授权边界。"
 tags: ["Agentic", "AI Engineering", "Framework", "MCP"]
 slug: "agent-frameworks-and-mcp"
 series:
@@ -10,534 +10,206 @@ series:
 author: "skyfalling"
 ---
 
-上一篇给出了多 Agent 的协作拓扑；本篇讨论如何用框架实现这些拓扑、用协议连接工具和其他 Agent。这里先建立候选技术栈，最终选型仍要受后续生产约束和可信要求支配，不能只按开发体验决定。
+订单调查已经有了控制循环、记忆与协作方式，接下来要决定哪些能力交给框架，哪些接口用协议连接。**框架组织应用内部的执行，协议约定组件之间的交互；二者可以分别选择。** 这比先问“哪个框架最好”更接近工程问题。
 
-Agent 生态在 2025 走向两极分化：一极是 LangChain/LangGraph 这种厚抽象框架——给 Chain、Graph、Memory 等高层概念；另一极是 Claude Agent SDK / OpenAI Agents SDK 这种厂商薄抽象——只给 Agent Loop + Tools，把复杂度让回给模型本身。同时一个更根本的层在浮现：**协议**——MCP 把工具集成的 N×M 降为 N+M，A2A 把 Agent 间协作做了同样的事。框架解决"开发效率"，协议解决"生态互通"——两层共同支撑 Agent 工程从手工作坊走向工业化。
+本文按 2026 年 9 月核对的官方文档讨论职责，MCP 协议说明以 2025-11-25 版本为基准。不同 SDK 的版本与协议版本并不是同一个编号，落地时需要分别锁定和验证。
 
----
+## 1. 选框架，是选择由谁维护运行时能力
 
-## 1. 你需要框架吗
+一个 while 循环可以演示工具调用，但生产系统还要维护消息关联、取消、预算、状态恢复、权限与观测。自研只是把这些工作交给团队，并不会让它们消失；使用框架则需要理解框架提供了什么、哪里允许扩展。
 
-读完前几篇你已具备从零构建 Agent 的能力——Tool Calling 的 JSON Schema 契约、控制循环的状态机、Memory 分层、Planner 模式。这时面临三条路：
+| 要解决的问题 | 应检查的能力 |
+| --- | --- |
+| 接入多种模型 | 消息、工具调用、结构化输出与流式事件如何映射 |
+| 长任务恢复 | 检查点保存什么，崩溃后哪些代码会重跑 |
+| 人工审批 | 怎样暂停、绑定审批对象并可靠恢复 |
+| 并行与协作 | 如何限制并发、汇聚结果、传播失败和取消 |
+| 业务扩展 | 能否在动作前后插入校验，是否需要侵入内部实现 |
+| 调试与维护 | 能否导出完整事件，依赖升级能否回归 |
+| 部署与数据 | 状态、凭据与日志放在哪里，谁负责隔离与运维 |
+| 成本与效果 | 同一批任务下的完成率、延迟和单位成功任务成本 |
 
-- A 自己实现所有组件
-- B 用框架快速启动
-- C 理解框架后选择性借鉴
+团队人数、上线周期和代码行数不能直接决定选型。一个小团队可能需要框架提供成熟的恢复能力，一个简单但长期运行的服务也可能只需要原生 SDK 与少量应用代码。
 
-大多数成熟团队走 C。但前提是理解框架在做什么。
+## 2. LangChain 与 LangGraph：高层组合和底层编排
 
-框架解决的核心问题：
+按当前文档，LangChain 提供模型集成和可配置的 Agent 构建接口，其 Agent 建立在 LangGraph 之上；LangGraph 则提供更底层的状态与执行编排。两者不能简单写成“只能顺序执行的 Chain”和“支持分支的 Graph”的替代关系。[LangChain 概览](https://docs.langchain.com/oss/python/langchain/overview)、[LangGraph 概览](https://docs.langchain.com/oss/python/langgraph/overview)
 
-| 价值 | 具体内容 |
-|------|---------|
-| 减少样板 | 工具注册调度、消息格式管理、LLM API 差异屏蔽、状态序列化 |
-| 集成生态 | 70+ LLM、50+ 向量库、100+ 预置工具 |
-| 最佳实践 | ReAct、RAG pipeline、记忆管理已编码为默认行为 |
-| 快速原型 | 10 行代码跑通工具调用 Agent |
+在订单调查中，高层接口适合快速组织查询工具与模型；需要明确控制“查询 → 等待审批 → 执行 → 核验”的状态变化时，可以使用更显式的图。
 
-**框架的甜蜜点是 PoC**——5 分钟跑通一个搜索 Agent。生产部署后这些"便利"开始变成负担。
+图中的节点处理状态，边或路由决定后续调度。共享状态通常还有更新合并规则。TypedDict 等类型声明帮助开发与静态检查，不能替代运行时的业务校验。
 
----
+有循环的图可能产生无限多条执行轨迹；数据状态也不一定有限。因此，“拓扑已定义”不等于“编译时能枚举所有路径”，更不等于模型输出可预测。图让允许的控制关系更容易检查，实际行为仍取决于路由、节点实现和执行边界。
 
-## 2. LangChain：生态最大、争议最多
+### 暂停与恢复要区分调试和审批
 
-LangChain 围绕四个抽象设计：
+LangGraph 的动态 interrupt 可以暂停执行，通过相同 thread_id 和 Command(resume=...) 恢复。恢复时，发生 interrupt 的节点会从头重新执行，位于 interrupt 之前的代码可能再次运行。[Interrupts 文档](https://docs.langchain.com/oss/python/langgraph/interrupts)
 
-![LangChain 架构](/images/blog/agentic/langchain-architecture.svg)
+据此设计审批节点时，应先准备可审阅的候选操作，再暂停。恢复后的服务端检查至少绑定操作标识、参数版本、审批身份与有效期，然后才允许写入。只有布尔值 true，而没有绑定具体操作的审批记录，不足以防止审批后参数变化。
 
-| 抽象 | 本质 | 职责 |
-|------|------|------|
-| Chain | 链式调用 | 把多步骤串联为顺序管道 |
-| Agent | 工具选择 + 循环 | LLM 自主决定调哪个工具，循环到完成 |
-| Memory | 对话状态管理 | 滑动窗口、摘要压缩等策略 |
-| Retriever | 知识检索 | 从向量库或其他数据源检索文档 |
+静态断点可以辅助调试，但暂停本身不会建立审批权限。历史检查点回放也不会撤销已经发出的邮件或退款；再次执行仍可能产生副作用，需要业务幂等与隔离环境。
 
-### 2.1 优点
+## 3. 不按厂商给 SDK 划分“厚”和“薄”
 
-- **生态最大**：截至 2025 年是 AI Agent 框架领域最大集成生态
-- **社区活跃**：StackOverflow 和 GitHub Issues 都能找到答案
-- **上手快**：PoC 阶段从零到一只需几小时
+SDK 的抽象范围应看具体能力，不能从维护者身份推导。以下是职责示例，不是性能排行：
 
-### 2.2 生产中暴露的问题
+| 项目 | 官方文档描述的侧重点 | 选型时继续核对 |
+| --- | --- | --- |
+| OpenAI Agents SDK | 在应用中组织 Agent、工具、handoff 与运行过程 | 模型提供方适配、状态保存与工具策略 |
+| Claude Agent SDK | 复用 Claude Code 的工具、Agent 循环与上下文管理 | 运行环境、权限控制与会话生命周期 |
+| Google ADK | Agent 开发、编排与相关工具能力 | 所选语言版本、模型和部署方式的具体支持 |
 
-| 问题 | 具体表现 |
-|------|---------|
-| **过度抽象** | 调 LLM 拿 JSON——OpenAI SDK 3 行直白代码，LangChain 要理解 ChatPromptTemplate、JsonOutputParser、LCEL 管道操作符等多个新概念 |
-| **调试困难** | 错误堆栈 20-30 层深，涉及 `RunnableSequence`、`RunnableParallel` 等内部抽象。生产 3AM 报警时这种调试体验是痛苦的 |
-| **版本混乱** | API 频繁变更，老代码常常因为依赖升级跑不通 |
-| **Chain 思维局限** | Chain 是线性管道，现实 Agent 逻辑往往非线性——分支、循环、并行 |
+来源：[OpenAI Agents SDK](https://developers.openai.com/api/docs/guides/agents/sdk)、[Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview)、[ADK](https://adk.dev/)。
 
-"版本混乱"具体到时间线上更扎心。截至 2026 年初，LangChain 在两年内的几次关键变更：
+例如 OpenAI Agents SDK 提供模型与提供方接入机制，不能概括成“只能用自家模型”。跨模型时仍须核对工具、流式、结构化输出等能力映射，而不是只替换模型名称。[模型与提供方](https://developers.openai.com/api/docs/guides/agents/models)
 
-| 时间 | 变更 | 升级代价 |
-|------|------|--------|
-| 2024-01 | 包拆分：`langchain` → `langchain-core` + `langchain-community` + `langchain-openai` | 几乎所有 import 路径要改 |
-| 2024-03 | LCEL 成为默认范式，旧 `LLMChain` 弃用 | Chain 的写法整套重学 |
-| 2024-08 | `initialize_agent()` 弃用，要求迁移到 `create_*_agent` 工厂 | Agent 创建方式整套换 |
-| 2025-02 | LangGraph 与 LangChain 部分能力重合，社区资料一半推 LangGraph 一半推 LCEL Agent | 决策疲劳 |
+Handoff 表达控制权交接，Graph 表达调度关系，角色委派表达任务分工。这些设计可以组合，不能单靠名字给它们贴上“灵活性高”“可预测性低”的固定等级。
 
-不是说这些变更没必要——很多是真实演进。但如果你团队的 Agent 项目要长期维护，这些升级代价是真实成本。一个降低这种成本的工程实践：**业务代码不直接 import LangChain，通过自己定义的抽象层间接调用**（见后面的 6.3 节）。第 4 个问题（Chain 思维局限）则导致了 LangGraph 的诞生。
+## 4. 把需要稳定的业务契约留在应用边界
 
----
+订单查询应该返回业务上明确的状态、版本和来源，不应把某个框架的消息对象传播到全部业务代码中。模型适配层也应显式处理差异：
 
-## 3. LangGraph：从 Chain 到 Graph
+| 边界 | 应明确的契约 |
+| --- | --- |
+| 模型请求 | 消息角色、工具定义、输出要求、预算与取消 |
+| 模型响应 | 文本、工具调用 ID、结束原因、用量与错误 |
+| 工具执行 | 身份、资源范围、参数、业务请求 ID 与结果 |
+| 状态存储 | 运行版本、检查点、原子更新和恢复语义 |
 
-LangGraph 用**有向图**替代**链**作为基础抽象。核心思想：**Agent 的执行流程就是一个状态机**。
+仅把两个 SDK 的返回值都转换成 dict，不代表它们已经兼容。不同字段、消息语义和错误行为仍可能泄漏到业务层。
 
-| 抽象 | 状态机对应 |
-|------|----------|
-| State | 共享状态对象（明确声明结构） |
-| Node | 状态处理函数 |
-| Edge | 状态转移条件 |
-| Graph | 整个有限状态机 |
+适配层应围绕实际需要建立，避免提前复制整个框架。验证替换能力时，用同一组契约测试覆盖工具调用关联、空结果、取消、超时和未知写入状态；接口签名相同只是起点。
 
-![LangGraph 状态机](/images/blog/agentic/langgraph-state-machine.svg)
+## 5. MCP 减少重复接入，保留业务适配
 
-### 3.1 LangGraph 的最小代码骨架
+假设 N 个应用要接入 M 套工具系统，逐对编写连接器，最坏需要 N×M 份接入工作。若各应用和工具方都实现兼容的共同协议，协议侧接入可以接近 N+M。
 
-```python
-# 1. 定义状态结构（强类型）
-class AgentState(TypedDict):
-    messages: list[Message]
-    next_action: str
-    tool_results: dict
-    iteration: int
+这是接口复用的理想模型，不是总成本公式。身份映射、权限、版本兼容和业务语义仍可能需要逐项集成测试。HTTP 与 CGI 本来处于不同职责层，也不适合拿“从 CGI 到 HTTP”比喻协议替换。
 
-# 2. 定义节点——每个节点是一个状态转换函数
-def think_node(state: AgentState) -> AgentState:
-    """LLM 推理，决定下一步"""
-    decision = llm.complete(state["messages"], tools=TOOLS, schema=DECISION_SCHEMA)
-    return {
-        **state,
-        "next_action": decision.action,
-        "messages": state["messages"] + [assistant_msg(decision)],
-    }
+MCP 的 Host 管理模型、上下文和权限策略；Host 内的 Client 维护与某个 Server 的连接；Server 暴露工具、资源与提示模板。一个 Host 可以管理多个 Client。[MCP 架构规范](https://modelcontextprotocol.io/specification/2025-11-25/architecture)
 
-def act_node(state: AgentState) -> AgentState:
-    """执行工具"""
-    tool_call = state["messages"][-1].tool_calls[0]
-    result = invoke_tool(tool_call)
-    return {
-        **state,
-        "messages": state["messages"] + [tool_msg(tool_call.id, result)],
-        "tool_results": {**state["tool_results"], tool_call.id: result},
-        "iteration": state["iteration"] + 1,
-    }
+[![模型提出订单查询，Host 校验后通过 MCP Client 调用 Server，Server 查询业务服务并返回结果](/images/blog/agentic/mcp-architecture.svg)](/images/blog/agentic/mcp-architecture.svg)
 
-# 3. 定义条件路由
-def should_continue(state: AgentState) -> str:
-    if state["iteration"] >= MAX_STEPS:
-        return "end"
-    if state["next_action"] == "call_tool":
-        return "act"
-    return "end"
+| 原语 | 典型控制方式 | 订单调查示例 |
+| --- | --- | --- |
+| Tools | 模型提出调用，Host 按策略执行 | 查询订单状态 |
+| Resources | 应用决定如何读取和放入上下文 | 读取订单状态说明文档 |
+| Prompts | 用户选择可复用模板 | 启动一份异常调查模板 |
 
-# 4. 编译图
-graph = StateGraph(AgentState)
-graph.add_node("think", think_node)
-graph.add_node("act", act_node)
-graph.set_entry_point("think")
-graph.add_conditional_edges("think", should_continue, {"act": "act", "end": END})
-graph.add_edge("act", "think")  # 工具执行完回到 think
+这些控制方式帮助划分职责，不是自动生效的授权机制。模型提出调用后，Host 仍要检查是否允许发送，Server 仍要验证访问身份与资源范围。
 
-app = graph.compile(checkpointer=PostgresSaver(...))
-```
+## 6. 一个能独立核验的 MCP 接入示例
 
-这段代码揭示了 LangGraph 与 LangChain 的本质区别：**节点和边在编译时就被静态声明**，运行时只是按 LLM 输出在边上走。整张图的可能路径在编译时就能枚举出来——这就是它"可预测"的来源。
+用固定订单数据演示协议，可以先排除模型质量、外部接口和凭据配置的影响。下面是官方 Python SDK v1 API 风格的示例，核验环境使用 Python 3.14.3、mcp 1.27.1；它是版本明确的教学示例，不表示该依赖是当前最新版本。新项目应按目标版本的[官方文档](https://github.com/modelcontextprotocol/python-sdk)评估依赖与迁移。
 
-### 3.2 关键设计哲学：确定性 + 非确定性
-
-| 确定性（代码定义） | 非确定性（LLM 决定） |
-|------------------|-------------------|
-| 有哪些节点 | 每个节点内部的推理 |
-| 节点间如何连接 | 工具选择和参数 |
-| 条件路由的判断逻辑 | 是否继续循环 |
-| 状态的数据结构 | 最终输出内容 |
-
-**图的拓扑是确定性的，但每一步走哪条路径是 LLM 运行时决定的**——编译时就知道所有可能路径，运行时由 LLM 选择实际走的那一条。这是 LangGraph 比 LangChain 强的根本——可预测的系统行为与灵活的智能决策的平衡。
-
-### 3.3 Checkpoint：暂停、恢复、Time-Travel
-
-LangGraph 内置状态检查点，意味着：
-
-- **暂停**：`interrupt_before=["tool_node"]` 在工具执行前暂停，等人类审批
-- **恢复**：再次 invoke 同一个 thread_id 从中断点继续
-- **Time-Travel**：回滚到任意 checkpoint 重新执行
+保存为 server.py：
 
 ```python
-# 暂停模式：高风险操作前等人审
-app = graph.compile(checkpointer=PostgresSaver(...), interrupt_before=["act"])
-# 运行到 act 前会暂停，状态持久化
-result = app.invoke({...}, config={"configurable": {"thread_id": "abc"}})
+from mcp.server.fastmcp import FastMCP
+from pydantic import BaseModel
 
-# 人审通过后恢复
-app.invoke(None, config={"configurable": {"thread_id": "abc"}})
+mcp = FastMCP("order-demo")
 
-# 回滚到任意历史 state
-history = list(app.get_state_history({"configurable": {"thread_id": "abc"}}))
-app.invoke(None, config={"configurable": {
-    "thread_id": "abc",
-    "checkpoint_id": history[3].config["configurable"]["checkpoint_id"],
-}})
-```
+class OrderResult(BaseModel):
+    found: bool
+    order_id: str
+    status: str | None = None
+    version: int | None = None
+    source: str = "in-memory-demo"
 
-这在 Human-in-the-Loop 场景极其有价值——Agent 在执行敏感操作前暂停，等人类确认。Checkpoint 让"等审批"这件事不需要保持整个进程在内存里挂着，状态可以彻底持久化下来。
+@mcp.tool()
+def get_demo_order(order_id: str) -> OrderResult:
+    """查询固定演示订单，仅用于协议接入验证"""
+    if order_id != "demo-001":
+        return OrderResult(found=False, order_id=order_id)
+    return OrderResult(
+        found=True, order_id=order_id, status="paid", version=1
+    )
 
-### 3.4 何时不该选 LangGraph
-
-- **学习曲线**：要理解状态机、有向图、条件路由。习惯了"调用函数就跑"的开发者需要适应
-- **简单任务**：调 LLM → 可能调工具 → 返回结果。用 LangGraph 定义 State/Node/Edge 是大炮打蚊子。原生 Python 一个 while 循环就够
-
----
-
-## 4. 厂商 SDK：薄抽象的第二极
-
-2025-2026 出现一个结构性变化：**模型厂商自己推出 Agent SDK**。Anthropic Claude Agent SDK、OpenAI Agents SDK、Google ADK、AWS Strands。
-
-不是巧合——**当厂商最了解自家模型的能力边界时，由他们定义 Agent 抽象是自然演进**。
-
-| SDK | 厂商 | 核心理念 |
-|-----|------|---------|
-| **Claude Agent SDK** | Anthropic | 极简 Agent Loop——Agent + Tool + 循环，原生支持 MCP 和 Extended Thinking |
-| **OpenAI Agents SDK** | OpenAI | **Handoff 机制**——Agent 间通过显式交接传递控制权，本质是把 Agent 间转移建模为 Tool Call |
-| **Google ADK** | Google | 全栈框架——四语言（Python/TS/Go/Java）、与 GCP 一键部署 |
-| **AWS Strands** | AWS | 模型驱动（Model-First）——假设模型足够聪明，框架尽量少干预 |
-
-### 两极对比
-
-| 维度 | 第三方框架（LangChain/CrewAI） | 模型厂商 SDK |
-|------|---------------------------|------------|
-| 模型绑定 | 多模型抽象层 | 深度优化自家模型 |
-| 抽象层次 | 厚——提供 Chain/Graph/角色等高层抽象 | 薄——Agent Loop + Tools |
-| 核心优势 | 生态广、模型无关、社区大 | 模型能力最大化、延迟最低、官方维护 |
-| 核心风险 | 抽象泄漏、版本不稳定、性能损耗 | 厂商锁定、跨模型困难 |
-| 多 Agent | 各家方案（Graph/Crew/Conversation） | Handoff / Sub-Agent |
-| **何时选** | 跨模型 A/B 测试 / 多 LLM 厂商共存 / 内嵌大量第三方工具集成 | 团队已绑定单一模型厂商 / 需要利用厂商专属特性（Extended Thinking、Computer Use 等）/ 对延迟敏感 |
-
-**核心趋势**：模型能力越强，框架"编排"的价值越低，厂商 SDK 的"薄抽象"路线越有优势。但当需要跨模型切换或复杂状态机编排时，第三方框架的"厚抽象"仍有价值。
-
-### 多 Agent 编排范式对比
-
-三种主流方式代表不同的设计哲学：
-
-| 范式 | 代表 | 控制权 | 灵活性 | 可预测性 | 适用 |
-|------|------|------|-------|---------|------|
-| Handoff（显式交接） | OpenAI | LLM 决定转交对象 | 高（动态路由） | 低（依赖 LLM 判断） | 客服、意图路由 |
-| Graph（状态机） | LangGraph | 开发者定义路径 | 中（预定义路径） | 高（确定性状态机） | 复杂工作流、审批 |
-| Crew（角色委派） | CrewAI | 框架自动编排 | 低（固定流程） | 中 | 内容生产、研究 |
-
----
-
-## 5. 用框架还是自己写：八个维度
-
-| 考量 | 倾向框架 | 倾向自研 |
-|------|---------|---------|
-| 项目阶段 | 原型、MVP | 生产系统、长期维护 |
-| 团队规模 | 1-3 人小团队 | 5+ 人专职 AI 团队 |
-| 定制化程度 | 标准 ReAct/RAG | 有独特的控制流或状态管理需求 |
-| 调试要求 | 能接受黑盒 | 需要完全可观测、可追踪 |
-| 性能要求 | 对 latency 不敏感 | 需要极致优化每一毫秒 |
-| 依赖容忍度 | 能接受版本变化 | 需要完全掌控依赖 |
-| 上线时间 | 2 周内 | 3 个月以上 |
-
-### 实际最常见的方案：分层使用
-
-| 层 | 做法 |
-|---|------|
-| 控制循环 | **自研**——Agent 最核心的逻辑，40-60 行 Python 就够 |
-| LLM 调用 | **原生 SDK**——OpenAI/Anthropic SDK 已经很好用，不需要再包一层 |
-| 工具集成 | **借用框架生态**——`pip install langchain-community` 只用它的 Tool 集成 |
-| 状态管理 | **自研**——根据持久化需求（Redis、PostgreSQL）定制 |
-
-你在最关键的层（控制流）保留掌控力，在最不需要掌控的层（第三方服务集成）借用生态。
-
----
-
-## 6. 用框架不被框架绑死
-
-### 6.1 理解原理再用框架
-
-**不理解原理用框架**：框架 = 黑魔法（出错时手足无措）
-**理解原理后用框架**：框架 = 已知原理的一种实现（出错时知道去哪里找原因）
-
-- LangChain `AgentExecutor` 出错——它内部在跑控制循环，可以猜哪个阶段出问题
-- LangGraph 状态转移异常——本质是状态机的转移条件判断错误
-- 框架的 Memory 不符合需求——你知道自己需要什么样的记忆架构，可以替换或扩展
-
-### 6.2 反模式：为了适配框架扭曲业务逻辑
-
-```python
-# 反模式：业务需要 Agent 在两个工具结果之间做比较，
-# 但框架不直接支持，于是"发明"一个假工具来绕过
-
-@tool
-def compare_results(result_a, result_b):
-    # 这不应该是 Tool，是 Agent 内部的推理逻辑
-    return llm.invoke(f"Compare: {result_a} vs {result_b}")
-```
-
-**正确做法**：框架不支持的逻辑用原生代码实现，插入到框架流程中。
-
-### 6.3 框架可替换架构
-
-健康的架构应该允许在不重写业务逻辑的情况下替换底层框架。实现方式是**依赖倒置**——业务代码依赖自己定义的接口，框架是接口的具体实现：
-
-```python
-class BaseLLM(ABC):
-    @abstractmethod
-    def chat(self, messages, tools=None) -> dict: ...
-
-class LangChainLLM(BaseLLM):  # 框架实现，可替换
-    def chat(self, messages, tools=None):
-        from langchain.chat_models import ChatOpenAI
-        return ChatOpenAI().invoke(messages, tools=tools).dict()
-
-class NativeLLM(BaseLLM):     # 原生 SDK 实现，可替换
-    def chat(self, messages, tools=None):
-        from openai import OpenAI
-        return OpenAI().chat.completions.create(
-            model="gpt-4o", messages=messages, tools=tools,
-        ).model_dump()
-
-class MyAgent:  # 业务代码只依赖 BaseLLM 接口
-    def __init__(self, llm: BaseLLM, ...):
-        self.llm = llm
-```
-
-这是**依赖倒置原则**在 Agent 架构中的直接应用。当框架发生 breaking change（LangChain 几乎每季度都有）时，只需修改适配层，业务代码无需动。同样的思路也适用于 Tool 接口——定义自己的 `BaseTool` 抽象，框架的 Tool 是其中一种实现，原生 OpenAI Function Calling 是另一种。
-
----
-
-## 7. N×M 集成问题：协议为什么出现
-
-框架解决了"怎么写一个 Agent"。但当你有多个 Agent、多个工具提供者、多个模型时，一个更根本的问题浮现：**这些组件之间用什么协议通信**？
-
-今天的现状：同一个工具能力（比如查询 Jira），在 LangChain 里要写一个 Tool wrapper，OpenAI 要按 Function Calling 格式再来一遍，Claude Agent SDK 又得重写。**同样的能力被实现了三遍**。
-
-这是经典的 **N×M 集成问题**：N 个 Agent 框架 × M 个工具系统 = N×M 个集成。
-
-![N×M 问题](/images/blog/agentic/n-x-m-problem.svg)
-
-把 N×M 降为 N+M——这正是 MCP 试图解决的核心问题。Web 演进史上完全一样的模式：**从 CGI 到 HTTP**。
-
----
-
-## 8. MCP：Agent 工具的标准协议
-
-**MCP**（Model Context Protocol）是 Anthropic 2024 年末提出的开放协议。USB-C 之于硬件外设，正如 MCP 之于 Agent 工具——**一个协议连接所有工具**。
-
-### 8.1 三层架构
-
-![MCP 架构](/images/blog/agentic/mcp-architecture.svg)
-
-| 层 | 角色 |
-|---|------|
-| Host | 用户面对的应用（Claude Desktop、Cursor），创建和管理 Client 实例 |
-| Client | 协议客户端，与 Server 一对一连接，负责能力协商和请求路由 |
-| Server | 工具/数据提供者，暴露 Tools、Resources、Prompts |
-
-### 8.2 三大原语
-
-![MCP 三大原语](/images/blog/agentic/mcp-primitives.svg)
-
-| 原语 | 谁触发 | 用途 |
-|------|------|------|
-| **Tools** | LLM 触发（自动调用） | Agent 的"手"——查询、操作 |
-| **Resources** | Host 触发（应用决定） | Agent 的"眼"——文件、文档、数据库 |
-| **Prompts** | 用户触发（用户选择） | Agent 的"工作手册"——预定义的提示模板 |
-
-**分层控制是关键设计**——避免"一切交给 LLM"的风险，保留人类最终控制权。
-
-### 8.3 MCP Server 的最小实现
-
-一个暴露"查 Jira issue"工具的 Server，骨架如下：
-
-```python
-# server.py - 用官方 mcp SDK
-from mcp.server import Server
-from mcp.types import Tool, TextContent
-
-server = Server("jira-mcp")
-
-@server.list_tools()
-async def list_tools() -> list[Tool]:
-    return [
-        Tool(
-            name="search_jira_issues",
-            description="在 Jira 中搜索 issue。支持 JQL。返回匹配的 issue 列表。",
-            inputSchema={
-                "type": "object",
-                "properties": {
-                    "jql": {
-                        "type": "string",
-                        "description": "JQL 查询，例如 'project = BACKEND AND status = Open'"
-                    },
-                    "limit": {"type": "integer", "default": 10, "maximum": 50},
-                },
-                "required": ["jql"],
-            },
-        )
-    ]
-
-@server.call_tool()
-async def call_tool(name: str, arguments: dict) -> list[TextContent]:
-    if name == "search_jira_issues":
-        results = jira_client.search(arguments["jql"], limit=arguments.get("limit", 10))
-        return [TextContent(type="text", text=json.dumps(results))]
-    raise ValueError(f"unknown tool: {name}")
-
-# stdio 模式启动（本地用）
 if __name__ == "__main__":
-    import asyncio
-    asyncio.run(server.run_stdio())
+    mcp.run(transport="stdio")
 ```
 
-这个 Server 现在可以被任何 MCP 兼容的 Host（Claude Desktop、Cursor、自研 Agent）使用，**完全不需要为每个 Host 单独适配**。这就是 MCP 把 N×M 降为 N+M 的具体体现——Server 写一遍，所有 Host 都能用。
-
-### 8.4 MCP Client 的接入
-
-Host 这边连 Server 的最小代码：
+同目录的 client.py 启动该子进程、协商能力、发现工具并调用：
 
 ```python
-# client.py
+import asyncio
+import sys
+from pathlib import Path
+from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
-from mcp.client.session import ClientSession
 
-async def use_mcp_server():
-    # 启动 Server 子进程，stdin/stdout 通信
-    async with stdio_client(["python", "server.py"]) as (read, write):
+async def main():
+    params = StdioServerParameters(
+        command=sys.executable,
+        args=[str(Path(__file__).with_name("server.py"))],
+    )
+    async with stdio_client(params) as (read, write):
         async with ClientSession(read, write) as session:
             await session.initialize()
-
-            # 发现可用工具
-            tools = await session.list_tools()
-            # tools = [Tool(name="search_jira_issues", inputSchema={...}, ...)]
-
-            # 调工具
+            listed = await session.list_tools()
+            if "get_demo_order" not in {t.name for t in listed.tools}:
+                raise RuntimeError("expected tool is missing")
             result = await session.call_tool(
-                "search_jira_issues",
-                arguments={"jql": "status = Open AND assignee = currentUser()"}
+                "get_demo_order",
+                arguments={"order_id": "demo-001"},
             )
-            return result.content
+            if result.isError:
+                raise RuntimeError("tool execution failed")
+            print(result.structuredContent)
+
+if __name__ == "__main__":
+    asyncio.run(main())
 ```
 
-### 8.5 一个完整的工具调用流程
+在已安装对应依赖的隔离环境执行 python client.py，应得到 found 为 true、status 为 paid、source 为 in-memory-demo 的结构化结果。它没有连接真实订单库，也没有调用模型；固定数据只用于验证发现、参数传递和结果返回。
 
-| 步 | 谁触发 | 内容 |
-|---|------|------|
-| 1 | User | 向 Host 发起请求 |
-| 2 | Host → LLM | 把消息 + 可用工具列表送给 LLM |
-| 3 | LLM → Host | 输出 tool_use 决策（"我想调 search_jira_issues"） |
-| 4 | Host → MCP Client → Server | 实际发起工具调用 |
-| 5 | Server → Client → Host | 返回工具结果 |
-| 6 | Host → LLM | 注入工具结果，继续推理 |
-| 7 | LLM → Host → User | 生成最终回答 |
+真实服务需把数据来源替换为受控业务接口，增加身份校验、资源范围、超时与审计。工具的输入 Schema 描述参数，不会自动赋予权限；default 也不能保证调用方补齐值，默认行为仍需实现。
 
-**关键设计**：**LLM 不直接与 MCP Server 通信**。LLM 只表达"我想调某工具"，Host 运行时执行实际 MCP 调用。这层间接性让 Host 可以在调用前做权限检查、参数验证、用户确认。
+## 7. 传输、工具映射与授权分别处理
 
-### 8.6 传输层：从 SSE 到 Streamable HTTP
+### stdio 与 Streamable HTTP
 
-| 模式 | 适用 |
-|------|------|
-| **stdio** | 本地——Client 以子进程启动 Server，stdin/stdout 交换 JSON-RPC。零网络开销，IDE 插件首选 |
-| **Streamable HTTP** | 远程——2025-03 规范引入，取代早期 HTTP+SSE |
+stdio 通过子进程标准输入输出传递协议消息；日志应写 stderr，不能混入协议 stdout。子进程是进程边界，**并不天然隔离文件、网络或凭据权限**。不可信工具需要按实际威胁选择沙箱、最小权限和网络策略。
 
-**Streamable HTTP 的工程意义**：单端点设计、无状态友好、可选会话。让 Remote MCP 真正可部署在生产环境——Cloudflare Workers 后面、K8s 集群里、API Gateway 统一管理都没问题。
+Streamable HTTP 使用 HTTP 端点，可按需要通过 SSE 传递消息，不能理解成“已经不使用 SSE”。远程部署还需处理认证、Origin 校验、代理流式行为、超时和会话；单端点并不自动保证任意平台上的生产可用性。[传输规范](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports)
 
-**为什么 stdio 在 IDE 插件场景成为默认**？三个真实原因：
+### 多个 Server 的工具名不能直接拼接后反拆
 
-1. **进程隔离天然存在**——Client 把 Server 作为子进程启动，每次会话独立、崩溃影响范围小、不需要额外的容器化
-2. **无需网络配置**——不用考虑端口冲突、证书、防火墙；用户安装即用
-3. **跨平台一致性**——Windows/macOS/Linux 都能跑 stdin/stdout
+如果 Server ID 或工具名本身包含分隔符，简单的 server_id__tool_name 再 split 会产生歧义。Host 可以生成符合目标模型命名约束的唯一别名，并保存显式映射：
 
-代价是**单机部署、不支持跨网络共享**——这正好和 IDE 插件的部署形态匹配。Remote 场景（企业内的多 Agent 共享一套 MCP Server）才用 Streamable HTTP。
-
-### 8.7 OAuth 2.1 授权层
-
-2025-06 规范更新把 OAuth 2.1 集成进协议：
-
-- **PKCE**：防止授权码劫持
-- **动态客户端注册**（RFC 7591）：Client 首次连接 Server 自动注册，无需人工配置
-- **Resource Indicators**（RFC 8707）：Token 绑定目标 Server 地址，防止 Token 被恶意 Server 滥用
-
-让企业可以把 MCP Server 暴露给外部 Agent 同时保持细粒度访问控制。
-
----
-
-## 9. MCP 落地踩过的几个坑
-
-### 9.1 工具描述的工程价值
-
-工具描述质量直接决定 Agent 选对工具的概率。**这是给 LLM 看的接口文档，不是给人类看的注释**：
-
-| 差 | 好 |
-|---|----|
-| `name: "search", description: "Search for things"` | `name: "search_jira_issues", description: "在 Jira 中搜索 issue。适用：用户查找 bug、需求、任务。支持 JQL 语法。不适用于搜索 Confluence 或代码。返回匹配的 issue 列表"` |
-| `q: string` | `jql: string, "Jira Query Language 查询语句，例如: 'project = BACKEND AND status = Open'"` |
-
-### 9.2 名字空间冲突
-
-接入多个 MCP Server 时，工具名容易撞车——两个 Server 都有 `search` 工具。Host 层必须做命名空间隔离：
-
-```python
-def namespaced_tools(servers: dict[str, MCPSession]) -> list[Tool]:
-    """把每个 Server 的工具加上 server_id 前缀"""
-    tools = []
-    for server_id, session in servers.items():
-        for tool in await session.list_tools():
-            namespaced = tool.copy()
-            namespaced.name = f"{server_id}__{tool.name}"
-            tools.append(namespaced)
-    return tools
-
-def route_tool_call(name: str, args: dict, servers: dict[str, MCPSession]):
-    """按前缀路由回对应的 Server"""
-    server_id, raw_name = name.split("__", 1)
-    return servers[server_id].call_tool(raw_name, args)
+```json
+{
+  "order_query_01": {
+    "connection_id": "order-service",
+    "remote_tool_name": "get_demo_order",
+    "schema_version": 1
+  }
+}
 ```
 
-### 9.3 安全的多层防护
+调用时只接受当前已注册的别名，从映射取出连接与真实工具名，再做参数和权限检查。工具列表分页、重新连接和能力变更也要按协商结果处理，不能把一次发现结果永久当作事实。
 
-| 层 | 防什么 |
-|---|------|
-| 工具级 ACL | Host 层白名单/黑名单——哪些 Agent 可调哪些工具 |
-| 参数级约束 | 即使允许调用也限制参数范围（SQL 工具只允许 SELECT） |
-| Human-in-the-Loop | 高风险操作（写入、删除、发消息）必须用户显式确认 |
-| 执行沙箱 | stdio 模式天然进程隔离；不可信代码必须容器隔离 |
+### 认证不等于全部业务授权
 
-Server 是不可信输入源——一个恶意的 MCP Server 可能在工具描述里藏提示注入指令、在返回数据里藏指令。Host 必须把 MCP Server 当外部输入处理，所有内容过 Guardrail，和处理用户输入同等小心。
+以 MCP 2025-11-25 规范为例，HTTP 授权涉及 OAuth、资源元数据和目标资源校验；动态客户端注册是可选机制，不是每个 Server 必须支持的自动步骤。stdio 场景也不能机械套用同一套 HTTP 授权流程。[授权规范](https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization)
 
----
+Token 必须面向正确资源并由服务端校验；完成认证后仍要检查租户、订单与操作权限。“只允许 SELECT”不能替代数据库只读权限、参数化查询和数据范围限制，容器也不能代替凭据隔离。
 
-## 10. A2A：Agent 之间怎么对话
+工具描述与返回结果是外部输入，不能因走了 MCP 就提升为可信系统指令。保留来源和信任边界，执行前依照应用策略检查，比只依赖模型判断更可控。
 
-MCP 解决了"Agent 如何与工具通信"。还有一个平行问题：**不同系统中的 Agent 如何互相协作**？
+## 8. A2A 表达跨系统任务协作
 
-设想：企业 A 的采购 Agent 需要向企业 B 的供应链 Agent 询价。两个 Agent 跑在不同框架上、由不同团队维护。MCP 管不了这个——它定义的是 Agent 与工具的关系，不是 Agent 与 Agent 的关系。
+如果履约调查由另一团队的 Agent 服务承担，调用方可能需要委派目标、接收中间状态、补充输入并取得产物。A2A 为这类交互提供 Agent Card、消息、任务与产物等协议概念。
 
-Google 在 2025-04 提出 **A2A**（Agent-to-Agent）协议填补这个空白。
+按核对时的规范，常见发现地址是 /.well-known/agent-card.json，也可以通过目录或直接配置发现。读取名片只得到能力与连接信息，并不会自动完成信任建立、认证或业务契约对齐。[A2A 规范](https://a2a-protocol.org/latest/specification/)
 
-A2A 的核心抽象：**Agent Card**（放在 `/.well-known/agent.json` 的 JSON 名片，声明能力、交互模式、认证要求）、**Task**（带完整生命周期 `submitted → working → input-required → completed/failed/canceled` 的核心交互单元）、**Message + Part**（支持多模态）。跨组织 Agent 协作的发现机制就是"读对方的 Agent Card"——无需事先约定接口、无需人工配置。
+| 关注点 | MCP 的典型用途 | A2A 的典型用途 |
+| --- | --- | --- |
+| 接入对象 | 工具、资源与提示模板 | 提供任务能力的 Agent 服务 |
+| 调用方关注 | 调什么能力、传什么参数、取得什么结果 | 委派什么任务、当前状态、需要什么补充及产物 |
+| 实现透明度 | 无需知道工具内部如何实现 | 无需知道远端 Agent 内部如何编排 |
 
-| 维度 | MCP | A2A |
-|------|-----|-----|
-| 解决的问题 | Agent ↔ Tool | Agent ↔ Agent |
-| 交互模式 | 请求-响应（同步为主） | Task 生命周期（异步、多轮）|
-| 发现机制 | `tools/list` | Agent Card |
-| 透明度 | 工具实现对 Agent 透明 | Agent 内部对调用方**不透明** |
+两者的能力并非完全互斥：工具背后也可以运行 Agent，MCP 也不能被永久概括成“只有同步请求”。选择应看双方需要的交互语义与支持版本，不必为了内部函数调用额外引入远程协议。
 
-**A2A 的不透明性是关键差异**：MCP 要求工具暴露输入输出 Schema、调用方精确控制参数；A2A 假设对方是黑箱——你只知道它能做什么（通过 Agent Card），不需要知道它怎么做。这符合 Agent 间协作的现实：委托供应链 Agent 询价，不需要知道它内部查数据库还是调 ERP。
-
-**采用建议**：Agent 只在内部系统协作 → 不需要 A2A，用 Multi-Agent 框架或函数调用更直接；需要跨组织边界协作 → 关注 A2A；任何场景 → MCP 仍是基础层。截至 2026 年初，A2A 还在早期采用阶段，生产级部署案例稀少——可以关注、不必早投入，把它当"明年可能成熟"的事观察就好。**MCP 是 Agent 的手，A2A 是 Agent 的嘴**——前者操作工具，后者与其他 Agent 对话。
-
----
-
-## 11. 框架解决开发效率，协议解决生态问题
-
-框架和协议解决的不是同一个问题。框架在 Agent 内部——回答"控制循环、状态、工具、Memory 怎么组织"。协议在 Agent 之间——回答"我的工具被谁调用、我的 Agent 跟谁对话"。这两件事在工程上是垂直方向上的两层：你可以用 LangGraph + MCP、也可以用厂商原生 SDK + MCP，框架和协议各自演进。
-
-关于框架选型，最实用的判断是别陷入"哪个框架最好"的争论——没有最好，只有最适合当下规模。学习期用 LangChain 拿到生态，规模化后核心控制循环自研、外围工具集成借框架生态、模型调用直用原生 SDK。这种"分层使用"在两年内的实战中已经被验证是最稳的姿势——把可控性集中在你想控的层，把生态借力在你不想重复造的层。
-
-关于协议，MCP 把工具集成从 N×M 降为 N+M，A2A 在 Agent 协作的尺度上做同样的事——一个负责"Agent 的手"、一个负责"Agent 的嘴"。今天 MCP 已经从"新概念"进入"标配"阶段，A2A 还在早期但方向明确。Agent 生态从手工作坊走向工业化的基石，正是这两个协议层。
-
-框架和协议能降低实现与集成成本，却不会自动提供质量、可观测、安全和回滚能力。下一篇把视角从"怎么开发"切到"怎么上线并长期运行"。
+框架、MCP 与 A2A 的共同价值是让职责和交接契约更明确。订单调查可以先在本地验证工具和工作流，再按复用与跨系统需求接入协议；每一步保留相同的业务验收条件。下一篇讨论如何持续观察和评估这些运行中的系统。

@@ -1,12 +1,17 @@
 ---
 title: "Java构件发布到中央仓库"
 pubDate: "2024-04-04"
-description: "Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过..."
+description: "记录 Java 构件通过 OSSRH 发布的历史流程，解释命名空间验证、GPG 签名与 Maven 配置，并补充 OSSRH 关闭后迁移到 Central Publisher Portal 的入口与发布检查。"
 tags: ["Maven", "Java", "开源发布"]
 ---
 
->
->_首先强调一下，Maven中央仓库并不支持直接发布jar包。我们需要将jar包发布到一些指定的第三方Maven仓库，然后该仓库再将jar包同步到Maven中央仓库。其中，最”简单”的方式是通过_[Sonatype OSSRH](https://central.sonatype.org/pages/ossrh-guide.html)_仓库来发布jar包。所以，接下来主要介绍如何将jar包发布到Sonatype OSSRH。_
+## 先区分历史流程与当前入口
+
+本文保留作者通过 OSSRH 发布构件的操作记录和截图。OSSRH 已于 **2025 年 6 月 30 日关闭**，命名空间迁移至 Central Publisher Portal；下文的 Jira 工单、旧仓库地址和 Nexus Staging 配置用于理解历史过程，不能照搬为当前发布教程。[Sonatype 关闭与迁移说明](https://central.sonatype.org/pages/ossrh-eol/)
+
+新项目在 Central Portal 验证命名空间、生成发布 token，再按 [官方 Maven 发布指南](https://central.sonatype.org/publish/publish-portal-maven/) 配置 `central-publishing-maven-plugin`。旧项目也可按官方文档使用兼容的 Staging API。发布插件不会自动补齐 sources、Javadoc、签名和必填 POM 元数据，构建时仍需生成并检查这些产物。上传、校验通过、正式发布和搜索可见是不同阶段。
+
+## 历史记录：通过 OSSRH 发布
 
 首先，先说一下大体的步骤：
 
@@ -37,11 +42,11 @@ tags: ["Maven", "Java", "开源发布"]
 
 #### 2.2、验证域名 <a href="#snbg0" id="snbg0"></a>
 
-我们需要使用域名作为Group Id，如果你拥有域&#x540D;_&#x65;xample.com，则能够使用com.example开头作为Group Id，例如：com.example.myproject。其他一些栗子如下：_
+Group ID 通常以已经验证的域名反写命名空间开头。例如拥有 example.com，可以申请 com.example，再发布 com.example.myproject。对应关系例如：
 
 * _example.com -> com.example.domain_
 * [www.springframework.org](http://www.springframework.org/) -> org.springframework
-* subdomain.example.com -> example.com
+* subdomain.example.com -> com.example.subdomain
 * github.com/yourusername -> io.github.yourusername
 * my-domain.com -> com.my-domain
 
@@ -71,7 +76,7 @@ tags: ["Maven", "Java", "开源发布"]
 
 #### 3、安装GPG，创建密钥 <a href="#dcxco" id="dcxco"></a>
 
-安装GPG的方式有多种，这里推荐图形化安装，因为通过命令行安装，由于找不到合适的密钥服务器，发布密钥时会失败。这里给出Mac版本的下载地址：[https://releases.gpgtools.org/GPG\_Suite-2022.1.dmg](https://releases.gpgtools.org/GPG_Suite-2022.1.dmg)
+GPG 可以通过命令行或图形界面安装；能否发布公钥取决于密钥服务器和网络配置，与是否使用命令行没有必然关系。下面保留当时图形界面的操作记录。私钥留在受控环境，只发布公钥。
 
 * 创建密钥
 
@@ -94,22 +99,18 @@ tags: ["Maven", "Java", "开源发布"]
 * 第一步，配置setting.xml文件，添加server节点：
 
 ```xml
-<servers>
-<server>
+<settings>
+  <servers>
+  <server>
     <id>ossrh</id>
-    <username>sonatype账户名</username>
-    <password>sonatype账户密码</password>
-</server>
-</servers>
-<profile>
-  <id>ossrh</id>
-  <properties>
-    <gpg.executable>gpg</gpg.executable>
-    <gpg.passphrase>创建密钥时使用的密码</gpg.passphrase>
-    <gpg.homedir>/Users/yourname/.gnupg</gpg.homedir>
-   </properties>
-</profile>
+    <username>${env.OSSRH_TOKEN_USERNAME}</username>
+    <password>${env.OSSRH_TOKEN_PASSWORD}</password>
+  </server>
+  </servers>
+</settings>
 ```
+
+以上保留历史服务器 ID；当前 Portal 使用其插件对应的服务器 ID 和 Portal token。GPG 口令通过 gpg-agent / pinentry 或构建环境的受控凭据机制提供，不写进项目 POM 或提交到 Git。
 
 * 第二步，配置pom.xml文件，添加必填项
 
@@ -142,8 +143,8 @@ tags: ["Maven", "Java", "开源发布"]
         </developer>
     </developers><!--必填-->
     <scm>
-        <connection>https://github.com/nianien/cudrania.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:nianien/cudrania.git
+        <connection>scm:git:https://github.com/nianien/cudrania.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/nianien/cudrania.git
         </developerConnection>
         <url>https://github.com/nianien/cudrania</url>
     </scm>
@@ -264,7 +265,7 @@ tags: ["Maven", "Java", "开源发布"]
 </project>
 ```
 
-上面已经是最精简的pom配置了，我已经把必选项标注好了。这里主要包含两部分内容，一部分是snoatype要求的必备信息，包括：证书、开发者信息、仓库地址和发布地址；另一部分是deploy需要的maven插件列表，大家可以根据实际情况酌情修改。
+上面是当时使用的 POM 示例，包含项目坐标、许可证、开发者信息、源码地址，以及构建和发布插件。当前迁移时保留适用的项目元数据，并替换旧发布插件和地址。
 
 需要说明的是，为了不用默认打包冲突，专门定义了用于发布中央仓库的profile：ossrh，这里只需要添加额外的两个插件：nexus-staging-maven-plugin和maven-gpg-plugin，前者用于jar上传，后者用于密钥签名。
 

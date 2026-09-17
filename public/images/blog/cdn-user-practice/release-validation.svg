@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="690" viewBox="0 0 620 690" role="img" aria-label="发布顺序决定新旧版本能否共存" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="690" rx="8" fill="#f8fafc"/>
+<text x="310" y="40" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">发布顺序决定新旧版本能否共存</text>
+<rect x="55" y="65" width="510" height="82" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="98.0" text-anchor="middle" font-size="22" fill="#1e293b">1 · 构建与清单</text>
+<text x="310.0" y="128.0" text-anchor="middle" font-size="22" fill="#1e293b">记录入口版本和资源摘要</text>
+<path d="M310 147 V165" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,165 310,175 315,165" fill="#475569"/>
+<rect x="55" y="175" width="510" height="82" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="208.0" text-anchor="middle" font-size="22" fill="#1e293b">2 · 上传不可变资源</text>
+<text x="310.0" y="238.0" text-anchor="middle" font-size="22" fill="#1e293b">验证引用对象已可获取</text>
+<path d="M310 257 V275" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,275 310,285 315,275" fill="#475569"/>
+<rect x="55" y="285" width="510" height="82" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="318.0" text-anchor="middle" font-size="22" fill="#1e293b">3 · 更新入口</text>
+<text x="310.0" y="348.0" text-anchor="middle" font-size="22" fill="#1e293b">按策略对可变 URL 精确失效</text>
+<path d="M310 367 V385" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,385 310,395 315,385" fill="#475569"/>
+<rect x="55" y="395" width="510" height="82" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="428.0" text-anchor="middle" font-size="22" fill="#1e293b">4 · 检查用户链路</text>
+<text x="310.0" y="458.0" text-anchor="middle" font-size="22" fill="#1e293b">正文版本、资源和目标地区</text>
+<path d="M310 477 V495" fill="none" stroke="#475569" stroke-width="2"/>
+<polygon points="305,495 310,505 315,495" fill="#475569"/>
+<rect x="55" y="505" width="510" height="82" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="310.0" y="538.0" text-anchor="middle" font-size="22" fill="#1e293b">5 · 保留回退条件</text>
+<text x="310.0" y="568.0" text-anchor="middle" font-size="22" fill="#1e293b">旧资源按保留策略清理</text>
+<text x="310" y="632" text-anchor="middle" font-size="20" fill="#475569">Purge 提交成功 ≠ 用户已获得新版本</text>
+<text x="310" y="669" text-anchor="middle" font-size="20" fill="#475569">CDN 失效通常不能清除浏览器旧缓存</text>
+</svg>

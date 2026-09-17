@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import { computeRouteSlug, mapImageSources, resolveArticleImage } from './content-paths';
 import { BlogPost, NavigationInfo, BlogPostWithNavigation, Category, SeriesNavItem, SeriesMeta } from '@/types/blog';
 import { CATEGORY_META } from '@/lib/categories';
 import seriesConfig from '@/config/series.json';
@@ -38,7 +39,7 @@ function getAllMarkdownFiles(dir: string, baseDir: string = dir): Array<{ filePa
 }
 
 // 处理 Markdown 内容
-function processMarkdownContent(content: string): string {
+function processMarkdownContent(content: string, articleFile: string): string {
   // 使用 marked 将 Markdown 转换为 HTML
   marked.setOptions({
     breaks: true,
@@ -53,11 +54,9 @@ function processMarkdownContent(content: string): string {
     '<div class="table-scroll" role="region" aria-label="可横向滚动的表格" tabindex="0"><table>$1</table></div>'
   );
 
-  // 若配置了 basePath（如部署在子路径），给文章内绝对路径的图片加上前缀，否则请求会 404
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  if (basePath) {
-    html = html.replace(/<img([^>]*)\ssrc="\/([^"]*)"/g, `<img$1 src="${basePath.replace(/\/$/, '')}/$2"`);
-  }
+  html = mapImageSources(html, source =>
+    resolveArticleImage(source, articleFile, process.cwd(), process.env.NEXT_PUBLIC_BASE_PATH).url
+  );
 
   return html;
 }
@@ -73,21 +72,6 @@ function sortByDateAndTitle(a: BlogPost, b: BlogPost): number {
   return a.title.localeCompare(b.title);
 }
 
-// 把文件路径和 frontmatter 中可选的 slug 合成最终的路由 slug。
-// fileSlug 形如 "engineering/agentic/12-学习与自进化"
-// 若 frontmatter 提供 slug（如 "learning-self-improvement"），保留目录前缀，仅替换文件名段。
-function computeRouteSlug(fileSlug: string, frontmatterSlug?: unknown): string {
-  if (typeof frontmatterSlug === 'string' && frontmatterSlug.trim().length > 0) {
-    const cleanSlug = frontmatterSlug.trim();
-    const parts = fileSlug.split('/');
-    if (parts.length > 1) {
-      return [...parts.slice(0, -1), cleanSlug].join('/');
-    }
-    return cleanSlug;
-  }
-  return fileSlug;
-}
-
 export function getAllPosts(): BlogPost[] {
   const markdownFiles = getAllMarkdownFiles(postsDirectory);
 
@@ -101,9 +85,9 @@ export function getAllPosts(): BlogPost[] {
       description: data.description,
       pubDate: typeof data.pubDate === 'string' ? data.pubDate : data.pubDate?.toISOString?.()?.split('T')[0] || '2024-01-01',
       tags: data.tags || [],
-      heroImage: data.heroImage,
+      heroImage: data.heroImage ? resolveArticleImage(data.heroImage, filePath, process.cwd(), process.env.NEXT_PUBLIC_BASE_PATH).url : undefined,
       series: data.series || undefined,
-      content: processMarkdownContent(content),
+      content: processMarkdownContent(content, filePath),
     };
   });
 

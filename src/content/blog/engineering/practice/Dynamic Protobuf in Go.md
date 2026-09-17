@@ -1,7 +1,7 @@
 ---
 title: "Dynamic Protobuf in Go: Runtime Schema Hot-Reload via Custom protoc Plugin"
 pubDate: "2025-07-29"
-description: "This article explores how to dynamically compile and manipulate Protocol Buffers messages at runtime in Go — without relying on pre-generated code. It walks through the full path from .proto file to runtime proto.Message via FileDescriptorProto, and presents a practical protoc plugin solution for hot-reloadable schema management."
+description: "This article separates offline Protocol Buffers schema compilation from runtime message handling in Go, without relying on pre-generated message structs. It walks through the full path from .proto file to runtime proto.Message via FileDescriptorProto, and presents a practical protoc plugin solution for hot-reloadable schema management."
 tags: ["Golang", "Protobuf", "DynamicPb"]
 ---
 
@@ -28,7 +28,7 @@ These properties make Protobuf the de facto choice for gRPC services, inter-proc
 
 ### 2.1 How Static Compilation Works
 
-The standard Protobuf workflow: define message types in `.proto` files, run `protoc` with a language-specific plugin (e.g., `protoc-gen-go`), get type-safe structs with built-in `Marshal` / `Unmarshal` methods. `.proto file → protoc → generated Go code → compiled binary`.
+The standard Protobuf workflow: define message types in `.proto` files, run `protoc` with a language-specific plugin (e.g., `protoc-gen-go`), get type-safe structs implementing `proto.Message`, used with `proto.Marshal` and `proto.Unmarshal`. `.proto file → protoc → generated Go code → compiled binary`.
 
 ### 2.2 Where Static Compilation Falls Short
 
@@ -77,11 +77,11 @@ In some cases, you need to extract schema metadata from `.proto` files programma
 
 ### 4.1 The Core Challenge
 
-In languages like Java, dynamic class loading makes runtime Protobuf relatively straightforward. **Go doesn't support dynamic class loading.** So we need a different approach.
+Dynamic Protobuf does not require loading generated classes, in Java or Go. Go's `dynamicpb` builds messages from descriptors; the application uses reflection rather than generating new Go struct types.
 
 The key insight comes from analyzing the Protobuf library's internals. The conversion path from a `.proto` file to a usable `proto.Message`:
 
-![Conversion Path](/images/blog/dynamic-protobuf/01-conversion-path.svg)
+[![Compile the schema offline, resolve descriptors, select a message type and create a dynamic message](/images/blog/dynamic-protobuf/01-conversion-path.svg)](/images/blog/dynamic-protobuf/01-conversion-path.svg)
 
 This gives us two concrete questions to solve:
 
@@ -104,7 +104,7 @@ func NewMessages(fd protoreflect.FileDescriptor, msgName string) proto.Message {
 
 #### Question 1: Obtaining FileDescriptor at Runtime
 
-This is the harder problem. You can't get a `FileDescriptor` directly from a `.proto` text file in Go. But analyzing the source code in `google.golang.org/protobuf`, we find that `FileDescriptor` is created from `FileDescriptorProto`:
+The `google.golang.org/protobuf` runtime does not include a `.proto` source compiler. A separate compiler can process source at runtime, but this design deliberately compiles offline, then creates a `FileDescriptor` from `FileDescriptorProto`:
 
 ```go
 fdp := new(descriptorpb.FileDescriptorProto)
@@ -116,10 +116,10 @@ The refined conversion path is the same as the diagram above — with one critic
 
 ### 4.2 How protoc Plugins Work
 
-The `protoc` plugin architecture solves this. When `protoc` invokes a plugin, it sends a `CodeGeneratorRequest` via stdin containing the compiled `FileDescriptorProto` objects. Here's the relevant source code from `google.golang.org/protobuf/compiler/protogen`:
+The `protoc` plugin architecture solves this. When `protoc` invokes a plugin, it sends a `CodeGeneratorRequest` via stdin containing the compiled `FileDescriptorProto` objects. Here is the relevant source code from the Protobuf Go `protogen` package:
 
 ```go
-// protoc invokes the plugin and streams a CodeGeneratorRequest via stdin.
+// Simplified plugin protocol, not a complete copy of protogen implementation
 func run(opts Options, f func(*Plugin) error) error {
     if len(os.Args) > 1 {
         return fmt.Errorf("unknown argument %q (this program should be run by protoc, not directly)", os.Args[1])
@@ -180,11 +180,12 @@ package main
 import (
     "google.golang.org/protobuf/compiler/protogen"
     "google.golang.org/protobuf/encoding/protojson"
+    "google.golang.org/protobuf/types/pluginpb"
 )
 
 func main() {
     protogen.Options{}.Run(func(gen *protogen.Plugin) error {
-        gen.SupportedFeatures = SupportedFeatures
+        gen.SupportedFeatures = uint64(pluginpb.CodeGeneratorResponse_FEATURE_PROTO3_OPTIONAL)
         for _, file := range gen.Files {
             if !file.Generate {
                 continue
@@ -234,7 +235,7 @@ message TnsDemo {
 }
 ```
 
-The plugin produces:
+For this dependency-free example, the plugin produces a descriptor encoded as JSON, not a JSON Schema validation document:
 
 ```json
 {
@@ -314,19 +315,17 @@ Build the plugin and run it alongside `protoc`:
 ```bash
 SRC_DIR=$(pwd)
 
-# Build the custom plugin
-go build -o $SRC_DIR/protoc-gen-ext
+# Build the custom plugin after initializing its module and dependencies
+go build -o "$SRC_DIR/protoc-gen-ext"
 
-# Run protoc with both the standard Go plugin and our custom plugin
-protoc --proto_path=$SRC_DIR \
-  --plugin=protoc-gen-go=$(which protoc-gen-go) \
-  --go_out=$SRC_DIR/protobuf \
-  --plugin=protoc-gen-ext=$SRC_DIR/protoc-gen-ext \
-  --ext_out=$SRC_DIR/protobuf \
-  $SRC_DIR/protobuf/*.proto
+# Run the descriptor plugin; the output directory must already exist
+protoc --proto_path="$SRC_DIR" \
+  --plugin=protoc-gen-ext="$SRC_DIR/protoc-gen-ext" \
+  --ext_out="$SRC_DIR/protobuf" \
+  "$SRC_DIR"/protobuf/*.proto
 ```
 
-This produces both the standard Go generated code **and** the JSON schema files side by side. Store the JSON in your configuration center for runtime access.
+This exports JSON descriptors without generating static Go code. Add `--go_out` only when another consumer needs it. Store versioned descriptors in the configuration center for runtime access.
 
 ### 4.5 Using Dynamic Schema at Runtime
 
@@ -336,6 +335,7 @@ With the JSON schema available (e.g., from a config center, database, or file), 
 package main
 
 import (
+    "fmt"
     "google.golang.org/protobuf/encoding/protojson"
     "google.golang.org/protobuf/reflect/protodesc"
     "google.golang.org/protobuf/reflect/protoreflect"
@@ -371,30 +371,48 @@ Once you have the `dynamicpb.Message`, you can use it like any other `proto.Mess
 
 ```go
 // Unmarshal binary Protobuf data into the dynamic message
-msg, _ := LoadDynamicMessage(jsonSchema, "TnsDemo")
+msg, err := LoadDynamicMessage(jsonSchema, "TnsDemo")
+if err != nil {
+    log.Fatal(err)
+}
 if err := proto.Unmarshal(binaryData, msg); err != nil {
     log.Fatal(err)
 }
 
 // Access fields via reflection
 idField := msg.Descriptor().Fields().ByName("id")
+if idField == nil || idField.Kind() != protoreflect.Int64Kind {
+    log.Fatal("schema must define int64 id")
+}
 fmt.Println("id:", msg.Get(idField).Int())
 
 // Marshal back to binary or JSON
-jsonBytes, _ := protojson.Marshal(msg)
+jsonBytes, err := protojson.Marshal(msg)
+if err != nil {
+    log.Fatal(err)
+}
 fmt.Println(string(jsonBytes))
 ```
 
+The loader accepts a top-level message name in a dependency-free file. `protodesc.NewFile(fdp, nil)` cannot resolve imports. For a complete registry, export transitive dependencies, load the `FileDescriptorSet` using `protodesc.NewFiles`, and look up messages by fully qualified name. `dynamicpb.NewTypes` supplies message and extension resolution for `Any` and extension-aware decoding. Keep a published registry immutable while requests use it. See the [descriptor API](https://pkg.go.dev/google.golang.org/protobuf/reflect/protodesc) and [dynamic type registry](https://pkg.go.dev/google.golang.org/protobuf/types/dynamicpb).
+
+A custom plugin is useful for JSON packaging or additional metadata. To export binary descriptors alone, `protoc --descriptor_set_out=schema.pb --include_imports` already provides a descriptor set.
+
 ### 4.6 Hot-Reload Architecture
 
-The complete runtime architecture for schema hot-reload:
+The following diagram shows the intended distribution path; the sample loader does not itself implement a watcher, version store, or atomic publication:
 
-![Hot-Reload Architecture](/images/blog/dynamic-protobuf/02-hot-reload-arch.svg)
+[![Offline export and runtime validation precede atomic publication; in-flight requests retain their registry version](/images/blog/dynamic-protobuf/02-hot-reload-arch.svg)](/images/blog/dynamic-protobuf/02-hot-reload-arch.svg)
 
 When the `.proto` schema changes:
 1. Re-run `protoc` with the custom plugin (offline)
 2. Update the JSON in your config center
-3. The application detects the change and reloads the schema — **no redeployment required**
+3. Validate dependencies and compatibility, construct a new registry, and atomically publish it for new requests
+4. Let in-flight requests retain their original registry; reject invalid updates and keep the last working version
+
+Field descriptors belong to their descriptor graph. Do not cache a `FieldDescriptor` from an old registry and use it with a message constructed from a newly loaded registry; resolve fields against the message's own descriptor or keep the entire version together.
+
+Schema loading does not implement new business behavior. Preserve field-number compatibility and never reuse deleted tags; changes to application logic still require their own release. See the [Protobuf evolution rules](https://protobuf.dev/programming-guides/proto3/#updating).
 
 ---
 
@@ -408,7 +426,7 @@ Dynamic Protobuf is powerful but comes with trade-offs you should be aware of:
 | **Performance** | Direct struct access | Reflection overhead |
 | **Developer experience** | IDE autocomplete, type hints | Generic field access by name |
 | **Schema evolution** | Requires re-compilation | Hot-reload via config update |
-| **Deployment** | Redeploy on schema change | No redeploy needed |
+| **Deployment** | Regenerate when code needs new fields | Generic schema handling can update independently; business changes may still require deployment |
 
 **When to use dynamic Protobuf:**
 - Schema changes frequently and redeployment is costly
@@ -424,4 +442,4 @@ Dynamic Protobuf is powerful but comes with trade-offs you should be aware of:
 
 ## 6. Conclusion
 
-Go doesn't have Java-style dynamic class loading, but the Protobuf library's internal pipeline gives us everything we need. The conversion path `.proto → FileDescriptorProto → FileDescriptor → dynamicpb.Message` is the backbone. A lightweight protoc plugin that exports `FileDescriptorProto` as JSON bridges offline schema compilation and runtime message handling. Pair it with a config center for distribution, and you get **schema hot-reload without redeployment** — essential for multi-tenant platforms, plugin architectures, and fast-moving APIs.
+The useful separation is offline schema compilation versus runtime message handling: `.proto → FileDescriptorProto → FileDescriptor → dynamicpb.Message`. A custom plugin can export JSON descriptors, while standard protoc options can export a binary descriptor set. Combined with dependency validation, versioned registries and atomic publication, this allows generic schema handling to evolve without rebuilding the application for every compatible field change. Business logic still needs its own release process.

@@ -1,3 +1,4 @@
+import { articlePathname } from '@/lib/content-paths';
 import { getAllPosts } from '@/lib/blog';
 import { SITE } from '@/lib/site';
 
@@ -15,7 +16,7 @@ function escapeXml(s: string): string {
 }
 
 function postUrl(slug: string): string {
-  return `${SITE.url}/blog/${encodeURI(slug)}/`;
+  return SITE.url + articlePathname(slug, process.env.NEXT_PUBLIC_BASE_PATH);
 }
 
 export async function GET(): Promise<Response> {

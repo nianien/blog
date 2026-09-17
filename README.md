@@ -1,472 +1,106 @@
 # Skyfalling Blog
 
-一个基于 Next.js 和 Tailwind CSS 构建的现代化个人博客网站。
+基于 Next.js App Router、React、Tailwind CSS 和本地 Markdown 的个人博客。依赖版本以 `package.json` 和锁文件为准。
 
-## ✨ 特性
+## 工程结构
 
-- 🚀 **Next.js 15** - 使用最新的 App Router 和 Turbopack
-- 🎨 **Tailwind CSS 4** - 现代化的 CSS 框架
-- 📝 **Markdown 支持** - 使用 gray-matter 解析 frontmatter
-- 📱 **响应式设计** - 完美适配移动端和桌面端
-- 🔍 **SEO 优化** - 内置 SEO 友好的结构
-- ⚡ **静态生成** - 使用 SSG 提升性能
-- 🎯 **TypeScript** - 完整的类型支持
-- 💬 **评论系统** - 集成 Giscus 评论
+| 位置 | 职责 |
+| --- | --- |
+| `src/content/blog/` | 按大类/子类存放文章，YAML frontmatter 加 Markdown 正文 |
+| `src/lib/blog.ts` | 读取文章、解析 frontmatter 与 Markdown、生成路由、分类/标签/系列导航 |
+| `src/lib/content-paths.ts` | 网站与微信共用的文章路由、public 图片解析与 img src 改写 |
+| `src/lib/categories.ts` | 物理目录对应的分类名称与主分类列表 |
+| `src/lib/site.ts` | 站点地址、作者、SEO 默认值 |
+| `src/config/series.json` | 系列名称与说明 |
+| `src/app/` | 文章、列表、分类、标签页面，以及 sitemap、RSS、robots |
+| `src/components/SyntaxHighlightedContent.tsx` | 客户端代码高亮与历史 Mermaid 内容渲染 |
+| `public/images/blog/` | 文章 SVG 与真实界面截图 |
+| `scripts/cli.sh` | 开发、构建、静态预览、部署与微信工具入口 |
+| `scripts/wx/` | 独立的微信公众号 HTML/图片转换与草稿发布链路 |
 
-## 🛠️ 技术栈
+网站链路：Markdown → gray-matter → marked → Next.js 页面 → 客户端高亮。配置 `NEXT_EXPORT=true` 时导出到 `out/`，否则使用标准 Next.js 构建。
 
-- **框架**: Next.js 15.3.5
-- **样式**: Tailwind CSS 4
-- **语言**: TypeScript 5
-- **内容**: Markdown
-- **图标**: Heroicons
-- **日期**: date-fns
-- **评论**: Giscus
+微信链路独立转换样式、图片与链接；网站上显示正常不能代替微信预览验收。
 
-## 📁 项目结构
+## 开发与验证
 
-```
-src/
-├── app/                    # Next.js App Router
-│   ├── blog/              # 博客相关页面
-│   │   ├── page/[page]/   # 博客列表（分页）
-│   │   ├── category/      # 分类筛选页
-│   │   ├── tag/           # 标签筛选页
-│   │   └── [...slug]/     # 文章详情页
-│   ├── about/             # 关于页面
-│   ├── contact/           # 联系页面
-│   └── layout.tsx         # 根布局
-├── components/            # React 组件
-│   ├── Header.tsx         # 网站头部
-│   ├── Footer.tsx         # 网站底部
-│   ├── BlogCard.tsx       # 博客卡片
-│   ├── CategoryNav.tsx    # 分类导航组件
-│   └── GiscusComments.tsx # 评论组件
-├── content/blog/          # 博客内容（Markdown 文章）
-│   ├── engineering/       # Engineering 分类
-│   ├── insights/          # Industry / Science 分类（虚拟映射）
-│   └── life/              # Life 分类
-├── lib/                   # 工具函数
-│   ├── blog.ts            # 博客处理 & 分类工具函数
-│   ├── categories.ts      # 分类元数据 & 目录映射配置
-│   └── github-api.ts      # GitHub API
-└── types/                 # TypeScript 类型定义
-    └── blog.ts            # 博客 & 分类相关类型
-```
-
-## 🚀 快速开始
-
-### 环境要求
-
-- Node.js >= 18.0.0
-- npm >= 8.0.0
-
-### 安装和启动
+本项目本地与部署建议使用 Node.js 20。首次安装使用 npm：
 
 ```bash
-# 完整安装（推荐首次使用）
-./scripts/install.sh
-
-# 启动开发服务器
-./scripts/restart.sh
+npm ci
+npm run dev
 ```
 
-访问 [http://localhost:3000](http://localhost:3000) 查看网站。
+打开 http://localhost:3000。已有服务优先复用；若需重启先确认进程属于当前项目。
 
-### 其他命令
+| 命令 | 作用 |
+| --- | --- |
+| `npm run dev` | 开发预览，Markdown 修改后刷新页面检查 |
+| `npm run type-check` | TypeScript 检查；当前 tsconfig 排除了 scripts，因此不覆盖发布脚本 |
+| `npm run lint` | 当前 Next.js lint 入口；本地版本提示未来需要迁移 ESLint CLI |
+| `npm run build` | 标准 Next.js 生产构建，产物在 .next |
+| `npm start` | 启动标准生产构建 |
+| `npm run build:export` | 静态导出到 out |
+| `npm run preview` | 预览现有 out；只有 out 缺失/为空时自动构建 |
+| `npm run help` | 查看统一 CLI 命令 |
 
-```bash
-# 构建生产版本
-npm run build
+静态预览默认端口 8000。修改文章后要先重新导出，不能用已有 out 判断修改是否生效。`cli.sh dev/preview` 会检查监听进程的工作目录与命令，复用当前工程的对应服务；端口被其他服务占用时退出，不结束进程。
 
-# 启动生产服务器
-npm start
+## 文章与路由
 
-# 代码检查
-npm run lint
+写作规范统一见 [AGENTS.md](AGENTS.md)。文章使用两级物理目录，分类配置以 `src/lib/categories.ts` 为准；当前主分类为 engineering、insights、science、life，不存在额外的 Industry 虚拟映射。
 
-# 类型检查
-npm run type-check
-
-# 清理缓存
-npm run clean
-```
-
-## 📋 脚本说明
-
-### 🛠️ 安装脚本
-
-#### `install.sh` - 完整安装
-**用途**: 首次安装和设置项目环境
-
-**功能**:
-- 检查 Node.js 和 npm 环境
-- 显示环境信息（版本号）
-- 清理所有旧文件和缓存
-- 安装所有依赖包
-- 验证安装（运行构建测试）
-
-**使用方法**:
-```bash
-./scripts/install.sh
-```
-
-### 🔄 开发脚本
-
-#### `restart.sh` - 启动/重启开发服务器
-**用途**: 启动或重启开发服务器，确保显示最新内容
-
-**功能**:
-- 检查 Node.js 和 npm 环境
-- 智能依赖检查（自动安装缺失依赖）
-- 强制停止所有相关进程
-- 全面清理缓存（.next, out, node_modules/.cache, .turbo）
-- 显示环境信息
-- 启动开发服务器
-
-**使用方法**:
-```bash
-./scripts/restart.sh
-```
-
-### 🌐 部署脚本
-
-#### `deploy.sh` - GitHub Pages 部署
-**用途**: 构建并部署到 GitHub Pages
-
-#### `preview.sh` - 本地预览
-**用途**: 预览生产版本
-
----
-
-## 站点维护指南
-
-### 信息架构
-
-博客采用「导航 + 标签」双层模式：
-
-- **分类导航**（一级入口）：基于目录结构，分为四个板块
-- **标签**（二级辅助）：文章级别的交叉索引，用于跨分类关联
-
-#### 四板块分类
-
-| 板块 | 含义 | 物理目录 |
-|------|------|----------|
-| **Engineering** | 系统构建与工程实践 | `engineering/*` |
-| **Industry** | 产业洞察与商业博弈 | `insights/technology`, `insights/business`, `insights/finance` |
-| **Science** | 科学原理与第一性思考 | `insights/science` |
-| **Life** | 个体成长与生活实践 | `life/*` |
-
-物理目录和导航板块之间通过 `src/lib/categories.ts` 中的 `DIR_TO_VIRTUAL` 映射关联，文件不需要移动。
-
-#### 当前子分类
-
-```
-Engineering
-├── Agentic 系统      engineering/agentic
-├── 架构设计          engineering/architecture
-├── 领域建模          engineering/domain
-├── 中间件            engineering/middleware
-├── 工程实践          engineering/practice
-├── 开发工具          engineering/tooling
-└── 数据工程          engineering/data
-
-Industry
-├── 技术洞察          insights/technology
-├── 商业思考          insights/business
-└── 金融分析          insights/finance
-
-Science
-└── 科学探索          insights/science
-
-Life
-└── 数字生活          life/digital
-```
-
----
-
-### 写文章
-
-#### 1. 确定分类
-
-选择文章所属的子分类目录。如果没有合适的，可以新建（见下方「新增子分类」）。
-
-#### 2. 创建 Markdown 文件
-
-在对应目录下创建 `.md` 文件，文件名即为 URL slug：
-
-```bash
-# 示例：在 Engineering > Agentic 系统 下新建文章
-touch src/content/blog/engineering/agentic/我的新文章.md
-```
-
-#### 3. 编写 Frontmatter
-
-每篇文章开头必须包含 YAML frontmatter：
-
-```markdown
+```yaml
 ---
 title: "文章标题"
-description: "一句话描述，会显示在卡片和 SEO 中"
-pubDate: "2026-02-20"
-tags: ["标签1", "标签2", "标签3"]
+description: "填写概括真实结论的摘要，长度与写作要求见 AGENTS.md"
+pubDate: 2026-09-16
+tags: ["规则引擎", "JavaScript", "业务编排"]
+slug: "dual-language-rule-engine"
+author: "skyfalling"
 ---
-
-正文内容，支持标准 Markdown 和 GFM 语法...
 ```
 
-| 字段 | 必填 | 说明 |
-|------|------|------|
-| `title` | 是 | 文章标题 |
-| `description` | 是 | 摘要描述，显示在列表卡片和 SEO meta 中 |
-| `pubDate` | 是 | 发布日期，格式 `YYYY-MM-DD`，决定排序 |
-| `tags` | 否 | 标签数组，用于交叉索引 |
-| `heroImage` | 否 | 封面图路径 |
+网站 canonical、RSS、sitemap 与微信原文链接共用 `src/lib/content-paths.ts` 的路由规则。新文章提供英文 slug；旧文未提供时回退到文件名。目录前缀保留，例如 `engineering/domain/example.md` 使用 `slug: "rule-engine-design"`，路由为 `/blog/engineering/domain/rule-engine-design/`。
 
-#### 4. 标签使用原则
+- 文章列表：`/blog/page/1/`
+- 分类：`/blog/category/engineering/domain/page/1/`
+- 标签：`/blog/tag/规则引擎/page/1/`
+- 文章图片：`/images/blog/{article-slug}/{filename}`
+- 系列：frontmatter 的 `series.key` 对应 `src/config/series.json`；当前系列导航按发布日期排序
 
-标签是跨分类的交叉索引，不是分类的替代：
+新增子分类时创建物理目录并在 `CATEGORY_META` 注册显示信息；新增主分类还需更新 `MAIN_CATEGORIES`。不要仅按旧文档中的不存在变量修改代码。
 
-- **用于**：具体技术名词（`RAG`, `Kafka`, `微服务`）、方法论（`DDD`, `DevOps`）、主题（`AI`, `投资`）
-- **不要**：用标签重复分类信息（文章在 `engineering/agentic` 目录下，不需要加 `工程` 标签）
-- **数量**：每篇 2-5 个标签，不宜过多
-- **复用**：优先使用已有标签，保持一致性。运行 `npm run build` 后在输出中可以看到所有标签页
+## 代理规范与技能
 
-#### 5. 预览和发布
+- `AGENTS.md`：唯一公共规范
+- `CLAUDE.md`：加载公共规范的入口
+- `.agents/skills/`：write-article、review-article、svg-check 的共享实现
+- `.claude/skills/`：Claude 发现入口与兼容脚本，不复制实现
+
+SVG 审计示例：
 
 ```bash
-# 本地预览
-./scripts/restart.sh
-# 浏览器打开 http://localhost:3000
-
-# 构建验证
-npm run build
-
-# 部署
-./scripts/deploy.sh
+python3 .agents/skills/svg-check/svg-audit.py dual-language-rule-engine
 ```
 
----
-
-### 新增子分类
-
-当需要新增一个子分类时，需要改动两个地方：
-
-#### 步骤 1：创建物理目录
-
-```bash
-mkdir -p src/content/blog/<主目录>/<子目录>
-# 示例：
-mkdir -p src/content/blog/life/career
-```
-
-#### 步骤 2：注册分类映射
-
-编辑 `src/lib/categories.ts`：
-
-```typescript
-// 1. 在 DIR_TO_VIRTUAL 中添加物理目录 → 虚拟路径映射
-export const DIR_TO_VIRTUAL: Record<string, string> = {
-  // ... 已有映射
-  'life/career': 'life/career',        // ← 新增
-};
-
-// 2. 在 CATEGORY_META 中添加显示名称和描述
-export const CATEGORY_META: Record<string, { name: string; description: string }> = {
-  // ... 已有配置
-  'life/career': { name: '职业成长', description: '职业路径与能力建设' },  // ← 新增
-};
-```
-
-完成后放入文章，运行 `npm run build` 即可。导航组件会自动读取新分类。
-
----
-
-### 新增一级板块
-
-一般不需要。如确实需要：
-
-1. 在 `src/lib/categories.ts` 的 `MAIN_CATEGORIES` 数组中添加新板块 key
-2. 在 `CATEGORY_META` 中添加该 key 的名称和描述
-3. 创建对应的物理目录和 `DIR_TO_VIRTUAL` 映射
-
----
-
-### 目录结构说明
-
-```
-src/content/blog/              ← 所有文章根目录
-├── engineering/               ← Engineering 板块
-│   ├── agentic/              ← 子分类：Agentic 系统
-│   │   ├── 文章A.md
-│   │   └── 文章B.md
-│   ├── architecture/         ← 子分类：架构设计
-│   └── ...
-├── insights/                  ← Industry + Science 板块的物理目录
-│   ├── technology/           ← 虚拟映射到 Industry
-│   ├── business/             ← 虚拟映射到 Industry
-│   ├── finance/              ← 虚拟映射到 Industry
-│   └── science/              ← 虚拟映射到 Science
-└── life/                      ← Life 板块
-    └── digital/              ← 子分类：数字生活
-```
-
-> **为什么 `insights/` 目录映射到多个板块？**
->
-> 物理目录结构是历史遗留的，通过 `DIR_TO_VIRTUAL` 虚拟映射可以在不移动文件的情况下重新组织导航。
-> 如果未来需要，也可以物理迁移文件并更新映射。
-
----
-
-### URL 结构
-
-| 页面 | URL | 说明 |
-|------|-----|------|
-| 博客首页 | `/blog/page/1` | 全部文章，分页 |
-| 一级分类 | `/blog/category/engineering/page/1` | 某板块全部文章 |
-| 二级分类 | `/blog/category/engineering/agentic/page/1` | 某子分类文章 |
-| 标签页 | `/blog/tag/微服务/page/1` | 某标签下的文章 |
-| 文章详情 | `/blog/engineering/agentic/文章名` | slug = 物理路径 |
-
----
-
-### 微信公众号发布
-
-一键将 Markdown 文章发布到微信公众号草稿箱。
-
-#### 使用
-
-```bash
-# 预览排版（生成 HTML 并打开浏览器）
-./scripts/cli.sh wx:preview src/content/blog/xxx.md
-
-# 发布到草稿箱
-./scripts/cli.sh wx:publish src/content/blog/xxx.md
-```
-
-#### 架构
-
-```
-本地脚本                     微信云托管                      微信 API
-┌──────────────┐  POST JSON  ┌──────────────────┐  内网调用  ┌──────────────┐
-│ publish.ts   │ ──────────→ │ wx-proxy (Docker) │ ────────→ │ api.weixin.  │
-│ api.ts       │ ← response  │ 免鉴权，无需token │ ← response│ qq.com       │
-└──────────────┘              └──────────────────┘            └──────────────┘
-```
-
-- **本地** (`scripts/wx/`): Markdown → 微信排版 HTML，图片 base64 编码，调用云端代理
-- **云端** (`scripts/wx/scf/`): Express 服务部署在微信云托管，通过「开放接口服务」免鉴权调用微信 API
-- 不需要 access_token、不需要 IP 白名单
-
-#### 本地配置
-
-`.env.wx`：
-
-```
-WX_PROXY_URL=https://你的云托管公网域名/wx-proxy
-```
-
-#### 云端配置（微信云托管控制台）
-
-1. **云调用 → 开放接口服务 → 开启**
-2. **云调用权限配置**，添加白名单：
-   ```
-   /cgi-bin/material/add_material
-   /cgi-bin/media/uploadimg
-   /cgi-bin/draft/add
-   ```
-3. 上传 `scripts/wx/scf/` 下的代码部署 Docker 服务
-4. **开启开关后必须重新创建版本才生效**
-
-#### 注意事项
-
-- 微信公众号摘要（digest）限制约 40 字符，发布时自动截断并加省略号
-- 微信不支持文章内外部链接，发布时自动去除 `<a>` 标签保留文字
-- 封面图未指定时自动根据标题和标签生成
-- 云托管最小实例数设为 0 可省钱，冷启动约 1-2 秒
-
----
-
-### 常用操作速查
-
-```bash
-# 首次安装
-./scripts/install.sh
-
-# 启动开发服务器（自动清缓存）
-./scripts/restart.sh
-
-# 构建生产版本
-npm run build
-
-# 静态文件预览
-npm run preview
-
-# 部署到 GitHub Pages
-./scripts/cli.sh deploy
-
-# 部署到 Cloudflare Pages（本地直传）
-npm run deploy:cf
-
-# 代码检查
-npm run lint
-
-# 类型检查
-npm run type-check
-
-# 清理缓存
-npm run clean
-
-# 交互式帮助
-npm run help
-```
-
----
+静态检查之外，还需核对图意与浏览器实际显示；具体要求见公共规范及 SVG 技能。
 
 ## 部署
 
-当前同时保留 GitHub Pages 与 Cloudflare Pages 两套部署（观察期）。
+| 命令 | 作用 |
+| --- | --- |
+| `./scripts/cli.sh deploy` | 重新导出并推送 GitHub Pages |
+| `npm run deploy` | 仅发布现有 out，不会先构建 |
+| `npm run deploy:cf` | 重新导出并直传 Cloudflare Pages 的 blog 项目 |
 
-### GitHub Pages
+仓库文档约定的 Cloudflare 在线构建为 `npm run build:export`、输出 `out`、Node.js 20。是否配置了 Git 推送自动部署，需要以平台实际配置为准，本地脚本不能证明线上状态。
 
-```bash
-./scripts/cli.sh deploy
-```
-
-### Cloudflare Pages
-
-两种方式，产物一致，二选一：
+## 微信工具
 
 ```bash
-# 方式一：本地构建后直传（约 1 分钟，需先 npx wrangler login 一次）
-npm run deploy:cf
-
-# 方式二：git push 自动触发 CF 在线构建（约 4 分钟，无需本地操作）
-git push origin master
+./scripts/cli.sh wx:preview src/content/blog/engineering/domain/example.md
+./scripts/cli.sh wx:publish src/content/blog/engineering/domain/example.md
 ```
 
-CF Pages 项目名 `blog`，在线构建配置：Build command `npm run build:export`、输出目录 `out`、环境变量 `NODE_VERSION=20`。站点页面数较多（700+），`next.config.js` 已将 `staticPageGenerationTimeout` 提到 300s，避免 CF 构建机超时。
-
-### Vercel
-
-1. 将代码推送到 GitHub
-2. 在 Vercel 中导入项目
-3. 自动部署完成
-
----
-
-## 故障排除
-
-| 问题 | 解决方法 |
-|------|----------|
-| 脚本权限错误 | `chmod +x scripts/*.sh` |
-| 端口被占用 | `./scripts/restart.sh` 会自动释放端口 |
-| 依赖安装失败 | `./scripts/install.sh` |
-| 构建失败 | `npm run clean && npm run build` |
-| dev 缓存异常 | `./scripts/restart.sh`（会清理 `.next` 缓存）|
-
----
-
-## 许可证
-
-MIT License
+`wx:preview` 只生成本地 `wx_out/` 内容；`wx:publish` 上传图片并创建公众号草稿。详细配置和已知实现边界见 [scripts/README.md](scripts/README.md)。发布需要用户明确授权。

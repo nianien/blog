@@ -1,520 +1,138 @@
 ---
 title: "AWS多泳道自动化持续交付实践"
-description: "本文面向 DevOps 架构师与云原生工程师，介绍如何基于 AWS CodePipeline + CloudFormation 构建一套支持多泳道（Multi-Lane）并行部署的 ECS 持续交付体系。该方案不仅解决并发部署的资源锁冲突问题，还实现模板集中治理与业务仓库完全解耦。"
+description: "本文面向 DevOps 架构师与云原生工程师，介绍如何基于 AWS CodePipeline + CloudFormation 构建一套支持多泳道（Multi-Lane）并行部署的 ECS 持续交付体系。重点解释资源归属、并发边界、镜像晋级与恢复，使模板治理和业务交付能够分别演进。"
 pubDate: 2025-10-29
 tags: ["AWS", "DevOps", "泳道部署"]
 ---
 
+## 多泳道交付要隔离哪些变化
 
-> 本文面向 DevOps 架构师与云原生工程师，介绍如何基于 **AWS CodePipeline + CloudFormation** 构建一套支持多泳道（Multi-Lane）并行部署的**ECS 持续交付体系**。  
-> 该方案不仅解决并发部署的资源锁冲突问题，还实现模板集中治理与业务仓库完全解耦。
+当多个服务或版本更新同一个 CloudFormation 栈时，部署会争用同一栈的更新入口。拆分栈可以缩小串行范围，但不能让共享资源上的冲突自动消失。本文采用“双仓模板治理、三层资源归属、泳道独立部署”的方案，重点说明哪些更新可以并行，哪些仍需协调。
 
-## 一、背景与痛点：当 DevOps 模板失控
+作者此前遇到过多个部署共享栈、发布排队的情况。这里将设计收敛为一个明确示例：**同一服务的多个泳道共享 ALB 和 Listener，每个泳道独立管理 ECS Service、TargetGroup 与 ListenerRule**。若多个服务还要共用同一个 ALB，应把 ALB 放在环境接入栈，不能同时由各服务 Boot 栈创建。
 
-在多数微服务项目中，随着服务数量增加、环境层次复杂化，CI/CD 模板往往会失控：
+## 双仓与三层：分别管理模板、资源和版本
 
-- 各服务仓库内各自维护一份 buildspec、pipeline、CFN 模板；
-- 模板更新无法统一发布；
-- 资源命名与导出不一致；
-- 多泳道部署（如灰度、蓝绿）存在栈级锁冲突；
-- 模板合规性无法集中审计。
+Infra Repo 保存 buildspec、CloudFormation 模板和发布脚本；App Repo 保存业务代码与 Dockerfile。发布记录同时固定两个仓库的提交，避免模板更新后无法复现旧构建。业务团队仍需遵守构建产物、参数和健康检查契约，双仓减少模板复制，不等于没有依赖。
 
-**问题本质：** DevOps 模板分散，难以统一演进与治理。
+| 层级 | 示例栈名 | 资源归属 | 更新与协调 |
+| --- | --- | --- | --- |
+| 环境 Infra | infra-dev | VPC、子网、ECS Cluster、Cloud Map Namespace | 低频变更，先核对下游依赖 |
+| 服务 Boot | boot-user-api-dev | 该服务共享的 ALB、Listener、LogGroup | 同一服务共享设施统一更新 |
+| 泳道 App | app-user-api-dev-gray | TaskDefinition、ECS Service、TargetGroup、ListenerRule | 不同泳道可并行，同一泳道串行 |
 
-### 从两层到三层的演化
+Pipeline 是交付控制器，Stack 是资源所有权边界，二者不必一一对应。可以用一条参数化 Bootstrap Pipeline 创建不同服务的 Boot 栈；是否真的并发，还取决于 Pipeline 的执行模式与动作配置。不能只传入不同 SERVICE 变量就宣布没有互斥。[CodePipeline 执行模式](https://docs.aws.amazon.com/codepipeline/latest/userguide/execution-modes.html)
 
-最初我们只有两层——infra 栈管网络，app 栈管一切服务资源。第一次并发部署冲突发生在两个服务同时更新 ALB ListenerRule 时：它们共享同一个 boot 栈，CloudFormation 的栈级锁让第二个部署排队等待，高峰期 pipeline 排队长达十几分钟。
+跨栈引用使用 Outputs 与 ImportValue。导出被其他栈使用后，不能直接改掉被引用值或删除导出栈；资源替换需要迁移引用，而不是“底层更新完上层自然安全”。传统 Export/ImportValue 的范围也限于同一账号、同一区域。[跨栈引用限制](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-importvalue.html)
 
-第一个直觉是”把 ALB 拆到每个服务自己的栈里”，但这意味着每个服务独占一个 ALB——成本不可接受。真正的解法是把 **ALB 的创建（低频）** 和 **ListenerRule 的变更（高频）** 拆开：ALB 放在 boot 栈（按服务隔离，低频变更），ListenerRule 放在 app 栈（按泳道隔离，高频变更）。这就是三层架构的由来——**不是设计出来的，是被并发冲突逼出来的**。
+## 泳道隔离部署生命周期，共享设施仍有约束
 
-在这种背景下，最终形成了一个具备”集中模板治理 + 并发部署能力”的体系：
-**双仓 + 三层 Pipeline + Lane 栈隔离**，下图展示了多泳道 CI/CD 的分层架构设计。
+每个泳道运行一个独立 ECS Service，允许灰度版本与默认版本分别发布和回滚。这是为了给实验环境独立的生命周期；ECS 单一 Service 本身也可在滚动更新中同时运行新旧任务，不能把泳道方案建立在“ECS 不支持多版本”的前提上。
 
-```mermaid
-flowchart TB
-  subgraph InfraRepo["Infra Repo（DevOps 模板仓）"]
-    A1[buildspec.yaml]
-    A2[pipeline.yaml]
-    A3[service-stack.yaml]
-  end
+入口为请求选择泳道，例如使用自定义 HTTP Header `X-Deployment-Lane: gray`。可信入口应删除外部伪造的内部路由标记，再按实验或测试规则注入。跨服务调用需传播路由上下文；只有入口 ALB 分流，还不能保证整个调用链都进入同一泳道。异步消息、定时任务、数据库写入和外部副作用也要分别设计隔离策略。
 
-  subgraph AppRepo["App Repo（业务代码仓）"]
-    B1["src/"]
-    B2[Dockerfile]
-  end
+共享 Listener 上的规则优先级必须统一分配。给所有泳道都写 `Priority: 1000` 会发生冲突，即使它们属于不同栈。可以通过受控配置为每个服务/泳道分配唯一优先级；同一个资源不能同时由两个栈管理。
 
-  A1 -->|双源输入| P1["AWS CodePipeline"]
-  B1 -->|双源输入| P1
-  B2 --> P1
-
-  subgraph PipelineLayer["Pipeline 层"]
-    direction TB
-    P2["Infra Pipeline (infra-{env})"]
-    P3["Bootstrap Pipeline (bootstrap-{env})"]
-    P4["App Pipeline ({service}-{env}-{lane})"]
-  end
-
-  P1 --> P2 --> P3 --> P4
-
-  subgraph ResourceLayer["CloudFormation 栈层"]
-    direction LR
-    C1["Infra Stack\n(VPC, Subnets, Namespace)"]
-    C2["Boot Stack\n(ALB, LogGroup, Cloud Map Service)"]
-    C3["App Lane Stack\n(TaskDef, ECS Service, TG, ListenerRule)"]
-  end
-
-  P4 -->|ImportValue| C3
-  P3 -->|导出共享资源| C2
-  P2 -->|导出共享资源| C1
-
-  subgraph Traffic["智能流量路由"]
-    direction TB
-    T1["ALB ListenerRule"]
-    T2["TargetGroup (lane=gray)"]
-    T3["TargetGroup (lane=blue)"]
-    T4["TargetGroup (default)"]
-  end
-  C3 --> T1 --> T2 & T3 & T4
-
-  classDef repo fill:#E6F0FF,stroke:#6D8FFF;
-  classDef pipe fill:#FFF6E1,stroke:#FFB200;
-  classDef res fill:#E8FFE8,stroke:#40C057;
-  classDef traf fill:#FBE9E7,stroke:#E57373;
-
-  class InfraRepo,AppRepo repo;
-  class P1,P2,P3,P4 pipe;
-  class C1,C2,C3 res;
-  class T1,T2,T3,T4 traf;
-```
-
-## 二、核心理念：双仓 + 三层 + Lane 栈
-
-整个体系的设计核心是三个关键词：**双仓、分层、泳道（Lane）**。
-
-### 双仓架构：逻辑分治
-
-| 仓库类型       | 内容职责                                 | 示例                                                     |
-|------------|--------------------------------------|--------------------------------------------------------|
-| Infra Repo | 统一的 DevOps 模板、buildspec、CFN 栈模板、脚本工具 | ci/buildspec.yaml, ci/app/templates/service-stack.yaml |
-| App Repo   | 业务代码与配置、Dockerfile、服务逻辑              | src/, Dockerfile                                       |
-
-实现机制：**双源输入（Dual-Source Inputs）**
-
-在 Pipeline 的 Source 阶段输出两个 Artifact：
-
-- Name: InfraSource → OutputArtifacts: [InfraOut]
-- Name: AppSource → OutputArtifacts: [AppOut]
-
-Build 阶段以 InfraOut 为主输入（含统一 buildspec），AppOut 为副输入（含业务代码）。  
-CodeBuild 会自动挂载环境变量：
-
-- `$CODEBUILD_SRC_DIR` → InfraOut
-- `$CODEBUILD_SRC_DIR_AppOut` → AppOut
-
-这样，所有服务共用一套 CI/CD 模板，DevOps 团队统一维护，App 团队只关注业务逻辑。
-
-### 三层 Pipeline 架构：职责分层 + 无锁部署
-
-整个系统通过 **三层 Pipeline 架构** 实现部署解耦与并行化：
-
-- **infra 层**：负责环境通用基础设施（VPC、子网、ECS Cluster、Cloud Map 命名空间）。
-- **boot 层**：统一管理负载均衡、日志、注册发现等**服务接入设施**。
-- **app 层**：负责具体服务的泳道级部署（TaskDefinition、ECS Service、ListenerRule）。
-
-| 层级  | Pipeline 命名     | 管理资源                                        | Pipeline 变量                          | 更新频率  | 并发特性  |
-|-----|-----------------|---------------------------------------------|--------------------------------------|-------|-------|
-| 环境级 | infra-{env}     | VPC、Subnets、ECS Cluster、Cloud Map Namespace | `ENV=dev`                            | 几乎不变  | 独立运行  |
-| 服务级 | boot-{env}      | ALB、LogGroup、Cloud Map Service              | `ENV=dev,SERVICE=user-api`           | 新服务接入 | 按服务并行 |
-| 应用级 | {service}-{env} | TaskDefinition、ECS Service、TG、ListenerRule  | `ENV=dev,SERVICE=user-api,LANE=gray` | 高频发布  | 按泳道并行 |
-
-其中，`bootstrap-{env}` 是**按环境聚合的通用服务层**，而非按服务拆分。它本身不绑定单一服务，而是通过 **Pipeline 变量 `SERVICE`**动态生成服务相关资源。
-
-系统分层设计的最大优势在于：**部署互不加锁、并发天然安全。**
-
-### 栈级并行与 Lane 架构：高并发部署的核心
-
-#### 1. 栈级并行的核心逻辑
-
-CloudFormation 的锁粒度是 **Stack 级别**。  
-系统通过“**分层 + 多栈 + 命名隔离**”实现了既能并行部署、又无资源冲突的持续交付能力。
-
-- **同层可并行**  
-  每个环境（infra）、服务（boot）、泳道（app-lane）都对应独立 Stack，资源命名与写集完全隔离，可同时执行更新、互不加锁。  
-  例如多个泳道（gray、blue、default）可在同一服务下并行部署。
-
-- **跨层有序**  
-  上层 Pipeline 仅读取下层导出值（Outputs/ImportValue），不修改下层资源。  
-  `infra` 栈创建网络 → `boot` 栈创建接入资源 → `app` 栈完成版本发布。  
-  依赖有序但无写冲突，下层更新完即可被上层安全引用。
-
-- **整体效果：并行 + 无锁 + 可控依赖**  
-  同层可并发，跨层有序执行，形成从网络到业务的高并发、零锁冲突交付体系。
-
-> **简而言之：** 同层多栈并行，跨层只读依赖。  
-> 这是实现高并发、零冲突持续交付的核心机制。
-
-
-#### 2. Lane 栈：多版本共存的关键
-
-在传统 ECS 模型中，一个服务通常只对应一个 **ECS Service**，意味着任意时刻只能存在一个活动版本。这种设计的局限是显而易见的：
-- 无法同时维护多个版本（灰度 / 蓝绿 / A/B 测试不具备原生支持）；
-- 每次更新都需锁定整个 Service，阻塞并发发布；
-- 流量切换、回滚、实验策略往往依赖外部网关或人工操作。
-
-为解决这些痛点，系统引入了 **Lane（泳道）栈模型**，其设计核心：Lane = 独立生命周期的版本栈。
-
-**Lane（泳道）栈模型** 为每个版本创建独立 Stack，每个 Lane 拥有自己的 ECS Service、TargetGroup、ListenerRule，并通过请求 Header（如 `tracestate=ctx=lane:gray`）实现智能路由与流量隔离。
-
-Lane 栈具有四大特性：
-
-1. **完全隔离**：每个 Lane 拥有独立资源，更新与回滚互不影响。
-2. **天然并发**：栈级锁粒度允许多个 Lane 同时部署，无互斥冲突。
-3. **动态扩展**：新增泳道无需改动主栈，删除 Lane 自动清理资源。
-4. **架构原生灰度**：灰度、蓝绿、A/B 测试由架构层原生支持，无需业务侵入。
-
-
-#### 3. Lane 驱动的交付模式
-
-| 模式                        | 描述                      |
-|---------------------------|-------------------------|
-| **灰度发布（Gray Release）**    | 在新版本泳道 gray 中发布小流量验证稳定性 |
-| **蓝绿发布（Blue/Green）**      | 两个版本并行，流量平滑切换           |
-| **A/B 测试（Traffic Split）** | 按 Header、Cookie 或用户维度分流 |
-
-
-Lane 机制让**部署、流量与回滚逻辑全部架构化**，实现：
-- 高并发发布（无锁冲突）
-- 多版本共存（灰度、蓝绿、A/B）
-- 一键清理与回滚
-- 模板级治理与可审计性
-
-> **一句话概括：**  
-> Lane 栈通过“多栈并行 + 独立路由 + 参数化部署”，实现真正意义上的高并发、零冲突持续交付体系。
-
-## 三、技术实现：从模板到执行
-
-### BuildSpec：统一入口，逻辑外移
-
-所有服务共用统一构建描述文件 `ci/buildspec.yaml`：
+下面是 App 模板中的规则片段，参数和 TargetGroup 由同一模板其他部分定义：
 
 ```yaml
-version: 0.2
-env:
-  shell: bash
-  variables:
-    MODULE_PATH: "."                  # 相对"应用仓根目录"（AppOut）
-  # 跨 phase 变量传递
-  exported-variables:
-    - ECR_REPO_URI
-    - IMAGE_TAG_URI
-
-phases:
-  install:
-    runtime-versions:
-      java: corretto21
-    commands:
-      - chmod +x ci/*.sh
-  pre_build:
-    commands:
-      - '. ci/build.sh; prebuild'
-  build:
-    commands:
-      - '. ci/build.sh; build'
-  post_build:
-    commands:
-      - '. ci/build.sh; postbuild'
-artifacts:
-  files:
-    - cfn-params.json   # 从主输入根目录打包
-```
-
-实际逻辑集中在 `ci/build.sh`：
-
-```bash
-prebuild() {
-  aws ecr get-login-password | docker login ...
-}
-build() {
-  docker build -t $SERVICE_NAME .
-  docker push $ECR_URI/$SERVICE_NAME:$IMAGE_TAG
-}
-postbuild() {
-  echo "{"Parameters":{"ImageUri":"$ECR_URI/$SERVICE_NAME:$IMAGE_TAG"}}" > cfn-params.json
-}
-```
-
-这种“轻 buildspec + 重脚本”的结构极大增强了模板复用性与可审计性。
-
-### 栈设计：Infra → Boot → App
-
-#### Infra 栈（环境级共享）
-
-```yaml
-Parameters:
-  CreateNetwork:
-    Type: String
-    Default: 'true'
-
-Conditions:
-  CreateNetworkCond: !Equals [ !Ref CreateNetwork, 'true' ]
-
 Resources:
-  VPC:
-    Type: AWS::EC2::VPC
-    Condition: CreateNetworkCond
-
-  Namespace:
-    Type: AWS::ServiceDiscovery::PrivateDnsNamespace
-
-Outputs:
-  VpcId:
-    Value: !Ref VPC
-    Export:
-      Name: !Sub 'infra-environment-${Env}-VpcId'
+  LaneRule:
+    Type: AWS::ElasticLoadBalancingV2::ListenerRule
+    Properties:
+      ListenerArn:
+        Fn::ImportValue:
+          Fn::Sub: 'boot-${ServiceName}-${Env}-HttpListenerArn'
+      Priority: !Ref LaneRulePriority
+      Conditions:
+        - Field: http-header
+          HttpHeaderConfig:
+            HttpHeaderName: X-Deployment-Lane
+            Values: [!Ref Lane]
+      Actions:
+        - Type: forward
+          TargetGroupArn: !Ref LaneTargetGroup
 ```
 
-若已存在网络，可设置 `CreateNetwork=false` 进入 Wrap 模式：仅包装已有 VPC/Subnets 并导出 ID。
+本文约定 Boot 栈的 Listener 默认动作返回固定响应；App 的 default 泳道通过低优先级的兜底规则把业务路径转入 default TargetGroup，带泳道标记的规则优先匹配。这样默认业务 TargetGroup 也由 App 栈持有，避免 Boot 与 App 同时管理默认动作。新环境须先部署 default 泳道才对外接流量。[ALB 规则求值顺序](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-rules.html)
 
-#### Boot 栈（服务级）
+Header 路由适合定向测试；按百分比灰度、用户稳定分组和 A/B 实验还需要明确分流算法与指标口径。它们不是创建多个 Stack 后自动获得的功能。
 
-负责创建：
+## 构建一次，记录产物，再晋级
 
-- ALB + 默认 TargetGroup + Listener；
-- LogGroup；
-- Cloud Map Service。
+CodePipeline Source 阶段输出 InfraOut 和 AppOut 两份 Artifact，CodeBuild 将 InfraOut 配为主输入。此时主目录是 `CODEBUILD_SRC_DIR`，业务源码目录是与输入标识对应的 `CODEBUILD_SRC_DIR_AppOut`。Docker 构建必须使用业务目录，不能误在模板仓目录执行。
 
-导出值：
-
-```
-boot-user-api-dev-LoadBalancerArn
-boot-user-api-dev-HttpListenerArn
-boot-user-api-dev-LogGroupName
-boot-user-api-dev-user-api-service-arn
-```
-
-#### App 栈（泳道级）
-
-创建：
-
-- TaskDefinition；
-- ECS Service；
-- TargetGroup；
-- ListenerRule（Header 匹配 lane）。
-
-```yaml
-Conditions:
-  IsGray: !Equals [ !Ref Lane, 'gray' ]
-LaneRule:
-  Type: AWS::ElasticLoadBalancingV2::ListenerRule
-  Properties:
-    ListenerArn: !ImportValue boot-${ServiceName}-${Env}-HttpListenerArn
-    Priority: 1000
-    Conditions:
-      - Field: http-header
-        HttpHeaderConfig:
-          HttpHeaderName: tracestate
-          Values: [ !Sub 'ctx=lane:${Lane}' ]
-    Actions:
-      - Type: forward
-        TargetGroupArn: !Ref LaneTargetGroup
-```
-
-## 四、参数与权限：闭环与最小授权
-
-### 参数闭环
+以下为脚本主体，假设 CodeBuild 镜像已提供 AWS CLI、Docker 和 jq，构建环境允许所需 Docker 操作，ECR 仓库已创建，相关环境变量已校验：
 
 ```bash
-# Pipeline 触发变量
-LANE=gray BRANCH=release/1.2.3
+set -euo pipefail
 
-# CodeBuild 环境变量
-SERVICE_NAME=user-api APP_ENV=dev
+: "${AWS_REGION:?}"
+: "${ECR_REGISTRY:?}"
+: "${ECR_REPO_URI:?}"
+: "${IMAGE_TAG:?}"
+: "${SERVICE_NAME:?}"
+: "${APP_ENV:?}"
+: "${LANE:?}"
+: "${CODEBUILD_SRC_DIR:?}"
+: "${CODEBUILD_SRC_DIR_AppOut:?}"
 
-# 输出参数文件
-{
-  "Parameters": {
-    "ServiceName": "user-api",
-    "Env": "dev",
-    "Lane": "gray",
-    "ImageUri": "xxx.dkr.ecr.ap-southeast-2.amazonaws.com/user-api:sha-abc123"
-  }
-}
+IMAGE_TAG_URI="$ECR_REPO_URI:$IMAGE_TAG"
+aws ecr get-login-password --region "$AWS_REGION" |
+  docker login --username AWS --password-stdin "$ECR_REGISTRY"
+
+docker build -t "$IMAGE_TAG_URI" "$CODEBUILD_SRC_DIR_AppOut"
+docker push "$IMAGE_TAG_URI"
+
+jq -n \
+  --arg service "$SERVICE_NAME" \
+  --arg env "$APP_ENV" \
+  --arg lane "$LANE" \
+  --arg image "$IMAGE_TAG_URI" \
+  '{Parameters: {ServiceName: $service, Env: $env, Lane: $lane, ImageUri: $image}}' \
+  > "$CODEBUILD_SRC_DIR/cfn-params.json"
 ```
 
-### 权限边界
+这里的 JSON 是 CodePipeline CloudFormation 动作使用的模板配置格式，不应与 AWS CLI 的参数文件格式混用。BuildSpec 将 `cfn-params.json` 作为产物输出，Deploy 动作显式引用它；Pipeline 变量也必须显式映射到 CodeBuild 和 CloudFormation。
 
-App Pipeline 的 IAM 策略：
+镜像标签应不可变，发布记录保存实际 digest。灰度通过后把**同一 digest**晋级到 default，避免按同一分支重新构建出另一份镜像。BRANCH 只是自定义变量，除非 Source 动作已经配置相应关联，否则传变量不会自动切换代码来源。[Pipeline 的源修订与执行](https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-how-it-works.html)
 
-```json
-[
-  {
-    "Effect": "Allow",
-    "Action": "cloudformation:*",
-    "Resource": "arn:aws:cloudformation:*:*:stack/app-*/*"
-  },
-  {
-    "Effect": "Deny",
-    "Action": "cloudformation:*",
-    "Resource": [
-      "arn:aws:cloudformation:*:*:stack/boot-*/*",
-      "arn:aws:cloudformation:*:*:stack/infra-environment-*/*"
-    ]
-  }
-]
-```
+## 参数化部署要与资源契约一起设计
 
-Stack Policy 保护：
+模板应明确网络是新建还是复用。若提供 `CreateNetwork=false`，就必须同时定义 ExistingVpcId、已有子网参数，并用条件表达式选择输出；仅给 VPC 加 Condition、仍在 Output 中无条件 Ref 它，并不能实现复用模式。
 
-- 禁止修改 Boot 栈 Listener、证书；
-- 禁止删除 Infra 栈网络资源。
+每次发布至少记录：
 
-## 五、流量路由与灰度策略
+| 信息 | 用途 |
+| --- | --- |
+| 环境、服务、泳道 | 确定目标栈与资源边界 |
+| 应用提交、模板提交 | 复现构建和部署行为 |
+| 镜像 digest | 保证测试与晋级使用同一产物 |
+| 参数版本、变更集 | 审核资源变化，识别替换和删除 |
+| 前一成功版本 | 确定恢复目标 |
 
-### Trace Context 驱动的智能路由
+账号、区域、模板角色、ECR 和日志资源需要明确授权。只允许修改 `app-*` 栈并不构成完整的最小权限：CloudFormation 执行角色可能仍有广泛的底层权限，还需限制 `iam:PassRole`、执行角色权限及部署来源。
 
-系统遵循 W3C Trace Context 标准，在 tracestate 中注入 lane 信息：
+Stack Policy 主要保护栈更新中的资源操作；防止整栈删除应另用终止保护和 IAM 等措施。资源需要保留时配置 DeletionPolicy。三者的作用不同，不能用一句“栈策略禁止删除网络”代替完整设计。
 
-```
-tracestate: ctx=lane:gray
-```
+## 晋级、回滚和删除泳道
 
-ALB 按 Header 匹配：
+一个可核对的流程是：
 
-- 命中 → 转发到对应 TG；
-- 未命中 → 回退至 default TG。
+1. 为 gray 分配独立栈名、规则优先级和配置，部署固定镜像 digest
+2. 从可信入口导入测试流量，确认入口及后续调用的泳道一致
+3. 检查业务结果、错误率、延迟和共享数据兼容性
+4. 将同一 digest 部署到 default，保留上一成功版本记录
+5. 稳定后停止向 gray 导流，等待连接排空与任务退出，再删除其栈
 
-### 典型灰度流程
+gray 与 default 若都运行新版本，保留 gray 并不能当作旧版本回滚通道。恢复需指向已记录的旧镜像及兼容配置，同时核对数据库变更和新版本已产生的业务数据。
 
-1. 触发新 Lane：`LANE=gray`，发布 `app-user-api-dev-gray`
-2. 小流量验证：请求带 `tracestate: ctx=lane:gray` Header 导入 gray
-3. 验证通过后，以相同 `BRANCH` 和镜像 Tag 重新触发 pipeline，将 `LANE` 参数改为 `default` 即可完成正式发布
-4. default 栈更新完成，全量流量自动走 default TG（不带 Header 的请求回落至 default）
-5. 删除 gray Lane 栈：`aws cloudformation delete-stack --stack-name app-user-api-dev-gray`
+ECS 的 Deployment Circuit Breaker 需要显式启用回滚，并存在可回退的成功部署；它也不能代替业务指标监控。应用已通过启动检查但业务错误率上升时，需要相应告警和发布控制逻辑。[ECS 部署断路器](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-circuit-breaker.html)
 
-> **注意**："升级"不是栈迁移——gray 和 default 是两个完全独立的栈，共用同一套模板与参数机制。所谓"升级"就是用同一个镜像重新跑一次 pipeline，只是 LANE 参数不同。gray 栈在 default 发布期间可保留作为快速回滚通道，确认稳定后再删除。
+监控也应保留量纲：ALB 的 5XX Count 是数量，若要告警“错误率超过 1%”，需要用同周期请求数计算比率，并设最小样本量。TargetGroup 健康主机数和 ECS 实际任务数用于发现容量不足，不能直接证明业务功能正确。
 
-整个流程无须改 ALB 或共享层，完全自动化。
+## 这套方案带来的改变
 
-## 六、可观测性与回滚机制
+双仓把模板变更集中管理，三层资源边界降低跨团队发布的相互影响，独立泳道把版本生命周期从共享栈中分离出来。其价值可以通过发布等待时间、恢复耗时、模板升级覆盖率和变更失败率来检验。
 
-### 日志聚合
-
-每个服务在 Boot 栈创建 `/ecs/{env}/{service}` LogGroup；  
-每 Lane 使用独立 `stream-prefix={lane}`，实现多维检索。
-
-### 自动回滚
-
-ECS Deployment Circuit Breaker 自动检测：
-
-- 部署失败时回滚至上个 TaskRevision；
-- 发布脚本支持一键重发上个镜像标签。
-
-### 监控指标
-
-| 类别  | 指标                          | 告警条件   |
-|-----|-----------------------------|--------|
-| ALB | HTTPCode_Target_5XX_Count   | > 1%   |
-| ECS | RunningCount < DesiredCount | 连续 3 次 |
-| TG  | HealthyHostCount            | < 1    |
-
-## 七、实施与价值
-
-下面展示如何基于 AWS CloudFormation 和 CodePipeline 部署多层持续交付体系， 并通过 JSON 文件定义模板参数，实现模板集中治理与参数可审计。
-
-### 部署 pipeline（一次性）
-
-```bash
-# 环境级（一次性部署）
-aws cloudformation deploy \
-  --template-file ci/infra/pipeline.yaml \
-  --stack-name infra-dev \
-  --parameter-overrides file://params/infra-dev.json
-
-# 服务接入层 boot（一次性部署，通用 pipeline）
-aws cloudformation deploy \
-  --template-file ci/boot/pipeline.yaml \
-  --stack-name bootstrap-dev \
-  --parameter-overrides file://params/bootstrap-dev.json
-
-# 应用层 app（每个服务独立一条 pipeline）
-aws cloudformation deploy \
-  --template-file ci/app/pipeline.yaml \
-  --stack-name user-api-dev \
-  --parameter-overrides file://params/user-api-dev.json
-```
-
-### 参数文件
-
-每个阶段都在 params/ 目录下定义独立 JSON 参数文件，按规范区分环境、服务与泳道：
-
-| 层级  | 参数文件                   | 示例                  | 用途                                                        |
-|-----|------------------------|---------------------|-----------------------------------------------------------|
-| 环境级 | `infra-{env}.json`     | `infra-dev.json`    | 基础设施参数，定义基础网络、VPC、Subnet、Cluster、Namespace 等通用资源。         |
-| 服务级 | `boot-{env}.json`      | `boot-dev.json`     | 服务引导参数，通过运行时变量 `SERVICE` 来动态创建各服务的 ALB、LogGroup、Cloud Map |
-| 应用级 | `{service}-{env}.json` | `user-api-dev.json` | 应用层参数，每个服务一份独立参数文件，支持通过SERVICE、LANE、BRANCH 变量控制泳道部署与镜像版本。 |
-
-> 这种命名约定便于版本化与审计，也可在 CodePipeline 中动态选择。所有参数文件统一存放在 `params/` 目录中，并纳入 Git 版本管理，
-> 便于在不同环境间复用、审计、回滚与自动化生成。
-
-### 服务引导（服务级共享资源）
-
-在部署 **应用层 pipeline**（如 `user-api-dev`）之前，必须先触发一次**boot 层通用 pipeline（boot-{env}）**，以创建该服务的共享接入资源：
-
-- ALB TargetGroup
-- Cloud Map Service
-- LogGroup
-- 默认 ListenerRule
-
-这些资源由 boot 层集中管理，所有应用层泳道（如 gray、blue、default）都会复用，因此必须保证该阶段先于 **app pipeline** 执行。
-
-```bash
-# 使用 bootstrap-dev pipeline，通过 SERVICE 参数创建服务接入资源
-aws codepipeline start-pipeline-execution \
-  --name boot-dev \
-  --variables name=SERVICE,value=user-api
-```
-
-### 发布与泳道管理（app 层）
-
-```bash
-# 发布到 gray 泳道
-aws codepipeline start-pipeline-execution \
-  --name user-api-dev \
-  --variables name=SERVICE,value=user-api \
-              name=LANE,value=gray \
-              name=BRANCH,value=release/1.2.3
-
-# 删除 gray 泳道（自动回收 TG/ListenerRule/ECS Service）
-aws cloudformation delete-stack \
-  --stack-name app-user-api-dev-gray
-```
-
-### 价值总结
-
-- 使用 `params/` 目录集中存放模板参数，配合 Git 版本管理。
-- 参数文件与模板解耦，方便在不同环境间复用相同模板。
-- 通过 CodePipeline 的变量参数（如 `SERVICE`、`LANE`、`BRANCH`）控制发布粒度。
-- 删除泳道时只需删除对应 Stack，系统会自动回收资源。
-- 在多泳道部署中保持命名一致性与参数规范，确保各层之间可审计、可追溯。
-
-| 维度     | 成果                          |
-|--------|-----------------------------|
-| **技术** | 无锁并发部署、模板集中治理、智能流量路由        |
-| **运维** | 零人工泳道切换、标准化监控与自动回滚          |
-| **业务** | 快速灰度 / 蓝绿 / A/B 测试，显著缩短发布周期 |
-| **治理** | 模板合规集中、权限最小化、栈保护机制，支持统一审计   |
-
-> ✅ 通过以上实践，整个 CI/CD 体系实现了模板化、参数化、自动化、可治理化，  
-> 让“多泳道高并发交付”成为一种工程标准，而非复杂特例。
-
-## 结语：从流程到体系
-
-该架构的核心思想是“让 CI/CD 自治，而非依赖人治”，通过：
-
-- 模板集中治理（Infra Repo）
-- 业务仓独立演进（App Repo）
-- Pipeline 分层解耦
-- Lane 栈级并发隔离
-
-我们不仅在工程上解决了并发冲突和灰度复杂度， 更在组织层面建立了 DevOps 模板的统一“基建层”。
-**DevOps 模板不再是脚本集合，而是服务化的基础设施。**
+多栈并行成立的前提是资源归属清楚、共享标识没有冲突、同一泳道的更新有序。把这些条件落实到模板和发布记录中，才能让并发交付成为可重复的工程能力。

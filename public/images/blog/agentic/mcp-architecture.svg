@@ -1,73 +1,34 @@
-<svg viewBox="0 0 750 530" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
-  <!-- Title -->
-  <text x="375" y="22" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">MCP Three-Tier Architecture</text>
-
-  <!-- ===== Host Layer ===== -->
-  <rect x="50" y="42" width="650" height="70" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="375" y="64" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">Host（Claude Desktop / IDE / 自定义 Agent）</text>
-  <text x="375" y="82" font-size="10" text-anchor="middle" fill="#78350f">MCP Client 创建与管理 | 能力协商 | 请求路由 | 结果汇聚</text>
-
-  <!-- T-split down from Host to 3 Clients -->
-  <line x1="375" y1="112" x2="375" y2="128" stroke="#666" stroke-width="1.5"/>
-  <line x1="145" y1="128" x2="605" y2="128" stroke="#666" stroke-width="1.5"/>
-
-  <line x1="145" y1="128" x2="145" y2="148" stroke="#666" stroke-width="1.5"/>
-  <polygon points="141,148 145,158 149,148" fill="#666"/>
-  <line x1="375" y1="128" x2="375" y2="148" stroke="#666" stroke-width="1.5"/>
-  <polygon points="371,148 375,158 379,148" fill="#666"/>
-  <line x1="605" y1="128" x2="605" y2="148" stroke="#666" stroke-width="1.5"/>
-  <polygon points="601,148 605,158 609,148" fill="#666"/>
-
-  <!-- ===== Client Layer ===== -->
-  <rect x="50" y="162" width="190" height="90" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="145" y="182" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e40af">MCP Client</text>
-  <text x="145" y="198" font-size="10" text-anchor="middle" fill="#1e3a8a">目标: GitHub</text>
-  <text x="65" y="218" font-size="9" fill="#555">协议: stdio</text>
-  <text x="65" y="233" font-size="9" fill="#555">能力: list_tools, call_tool</text>
-
-  <rect x="280" y="162" width="190" height="90" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="375" y="182" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e40af">MCP Client</text>
-  <text x="375" y="198" font-size="10" text-anchor="middle" fill="#1e3a8a">目标: Slack</text>
-  <text x="295" y="218" font-size="9" fill="#555">协议: stdio</text>
-  <text x="295" y="233" font-size="9" fill="#555">能力: list_resources, read</text>
-
-  <rect x="510" y="162" width="190" height="90" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="605" y="182" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e40af">MCP Client</text>
-  <text x="605" y="198" font-size="10" text-anchor="middle" fill="#1e3a8a">目标: Database</text>
-  <text x="525" y="218" font-size="9" fill="#555">协议: HTTP (SSE)</text>
-  <text x="525" y="233" font-size="9" fill="#555">能力: list_tools, call_tool</text>
-
-  <!-- Arrows down to Servers -->
-  <line x1="145" y1="252" x2="145" y2="278" stroke="#666" stroke-width="1.5"/>
-  <polygon points="141,278 145,288 149,278" fill="#666"/>
-  <line x1="375" y1="252" x2="375" y2="278" stroke="#666" stroke-width="1.5"/>
-  <polygon points="371,278 375,288 379,278" fill="#666"/>
-  <line x1="605" y1="252" x2="605" y2="278" stroke="#666" stroke-width="1.5"/>
-  <polygon points="601,278 605,288 609,278" fill="#666"/>
-
-  <!-- ===== Server Layer ===== -->
-  <rect x="50" y="292" width="190" height="105" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="145" y="312" font-size="11" font-weight="bold" text-anchor="middle" fill="#166534">MCP Server (GitHub)</text>
-  <text x="65" y="332" font-size="9" fill="#555">Tools:</text>
-  <text x="80" y="347" font-size="9" fill="#555">search_repo, create_pr</text>
-  <text x="80" y="362" font-size="9" fill="#555">comment_issue</text>
-  <text x="65" y="382" font-size="9" fill="#888">独立进程或服务</text>
-
-  <rect x="280" y="292" width="190" height="105" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="375" y="312" font-size="11" font-weight="bold" text-anchor="middle" fill="#166534">MCP Server (Slack)</text>
-  <text x="295" y="332" font-size="9" fill="#555">Resources: channels, members</text>
-  <text x="295" y="347" font-size="9" fill="#555">Tools: send_message</text>
-  <text x="295" y="382" font-size="9" fill="#888">独立进程或服务</text>
-
-  <rect x="510" y="292" width="190" height="105" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="605" y="312" font-size="11" font-weight="bold" text-anchor="middle" fill="#166534">MCP Server (PostgreSQL)</text>
-  <text x="525" y="332" font-size="9" fill="#555">Tools: query, insert, update</text>
-  <text x="525" y="382" font-size="9" fill="#888">独立进程或服务</text>
-
-  <!-- Design principles box -->
-  <rect x="50" y="420" width="650" height="90" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="375" y="442" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">设计原则</text>
-  <text x="70" y="464" font-size="10" fill="#333">1:1 关系 — 一个 Client 连接一个 Server（不是 1 对多）</text>
-  <text x="70" y="484" font-size="10" fill="#333">松耦合 — Server 不需知道 Client 的实现细节，反之亦然</text>
-  <text x="70" y="504" font-size="10" fill="#333">安全边界 — Host 控制 Client 的权限范围，Server 验证请求合法性</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="805" viewBox="0 0 620 805" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+<rect x="0" y="0" width="620" height="805" rx="8" fill="#f8fafc"/>
+<text x="310" y="38" text-anchor="middle" font-size="25" font-weight="700" fill="#172033">订单工具接入：Host 控制实际调用</text>
+<path d="M220 145V187" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="220,195 215,186 225,186" fill="#475569"/>
+<path d="M220 300V347" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="220,355 215,346 225,346" fill="#475569"/>
+<path d="M220 435V482" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="220,490 215,481 225,481" fill="#475569"/>
+<path d="M220 585V632" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="220,640 215,631 225,631" fill="#475569"/>
+<rect x="45" y="70" width="350" height="75" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="220.0" y="115.5" text-anchor="middle" font-size="22" fill="#172033">模型：提出订单查询</text>
+<rect x="45" y="195" width="350" height="105" rx="8" fill="#fff7ed" stroke="#a56b49" stroke-width="1.5"/>
+<text x="220.0" y="240.5" text-anchor="middle" font-size="22" fill="#172033">Host：解析工具请求</text>
+<text x="220.0" y="270.5" text-anchor="middle" font-size="22" fill="#172033">校验权限、参数与预算</text>
+<rect x="45" y="355" width="350" height="80" rx="8" fill="#eff6ff" stroke="#5276bf" stroke-width="1.5"/>
+<text x="220.0" y="388.0" text-anchor="middle" font-size="22" fill="#172033">MCP Client</text>
+<text x="220.0" y="418.0" text-anchor="middle" font-size="22" fill="#172033">维护连接与协议协商</text>
+<rect x="45" y="490" width="350" height="95" rx="8" fill="#f0fdf4" stroke="#548878" stroke-width="1.5"/>
+<text x="220.0" y="530.5" text-anchor="middle" font-size="22" fill="#172033">MCP Server</text>
+<text x="220.0" y="560.5" text-anchor="middle" font-size="22" fill="#172033">校验身份与资源范围</text>
+<rect x="45" y="640" width="350" height="80" rx="8" fill="#f5f3ff" stroke="#8060ba" stroke-width="1.5"/>
+<text x="220.0" y="673.0" text-anchor="middle" font-size="22" fill="#172033">订单业务服务</text>
+<text x="220.0" y="703.0" text-anchor="middle" font-size="22" fill="#172033">返回状态、版本与来源</text>
+<path d="M395 680H565V250H404" fill="none" stroke="#475569" stroke-width="1.5"/>
+<polygon points="395,250 405,245 405,255" fill="#475569"/>
+<text x="480" y="345" text-anchor="middle" font-size="20" fill="#475569">结果逐层</text>
+<text x="480" y="377" text-anchor="middle" font-size="20" fill="#475569">返回 Host</text>
+<text x="480" y="430" text-anchor="middle" font-size="20" fill="#475569">Host 保存</text>
+<text x="480" y="462" text-anchor="middle" font-size="20" fill="#475569">工具结果</text>
+<text x="480" y="515" text-anchor="middle" font-size="20" fill="#475569">再送模型</text>
+<text x="310" y="768" text-anchor="middle" font-size="20" fill="#475569">左侧为调用方向；右侧概括返回路径</text>
 </svg>

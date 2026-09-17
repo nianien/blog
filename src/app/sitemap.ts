@@ -1,3 +1,4 @@
+import { articlePathname } from '@/lib/content-paths';
 import type { MetadataRoute } from 'next';
 import {
   getAllPosts,
@@ -35,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // 文章页（最新 pubDate 当作 lastModified）
   const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: url(`/blog/${encodeURI(post.slug)}/`),
+    url: url(articlePathname(post.slug, process.env.NEXT_PUBLIC_BASE_PATH)),
     lastModified: new Date(post.pubDate),
     changeFrequency: 'monthly',
     priority: 0.8,

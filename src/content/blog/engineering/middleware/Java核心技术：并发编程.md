@@ -7,8 +7,6 @@ series:
   key: "java-core"
 ---
 
-# Java并发编程：从内存模型到并发工具的设计哲学
-
 > 并发编程的核心挑战不在于"如何让多个线程同时跑"，而在于"如何让多个线程正确地协作"。理解 Java 内存模型和并发工具的设计原理，是写出正确并发代码的前提。
 
 并发编程是 Java 工程师的核心能力之一。它涉及从硬件层面的缓存一致性，到语言层面的内存模型，再到 JUC 工具类的 API 设计，是一个纵深很大的知识领域。
@@ -19,39 +17,30 @@ series:
 
 ### 1.1 为什么需要缓存
 
-现代 CPU 的运算速度远超主内存的读写速度（差距约 100 倍）。为了弥补这一差距，CPU 引入了多级缓存（L1/L2/L3 Cache）。每个核心拥有独立的 L1/L2 缓存，L3 缓存为所有核心共享。
+主内存访问通常比寄存器和近端缓存慢得多，具体延迟取决于硬件和访问方式。多级缓存减少了访问主内存的频率；私有 L1/L2、共享末级缓存是一种常见组织，实际拓扑随处理器而异。
 
-```
-CPU Core 0          CPU Core 1
-┌─────────┐        ┌─────────┐
-│ L1 Cache│        │ L1 Cache│
-│ L2 Cache│        │ L2 Cache│
-└────┬────┘        └────┬────┘
-     └────────┬─────────┘
-         L3 Cache（共享）
-              │
-         主内存（RAM）
-```
+可以将一种常见拓扑理解为：每个核心有自己的近端缓存，多个核心共享末级缓存，再访问主内存。共享范围和缓存一致性域需要结合具体机器确认。
 
 缓存的引入解决了性能问题，但带来了新问题：**当多个核心各自缓存了同一块数据的副本，其中一个核心修改了数据，如何保证其他核心看到的是最新值？**
 
 ### 1.2 MESI 缓存一致性协议
 
-MESI 是最广泛采用的缓存一致性协议，每个缓存行处于四种状态之一：
+MESI 是理解缓存一致性的一个经典模型；实际处理器也使用其扩展或其他协议。模型中，每个缓存行处于四种状态之一：
 
 | 状态 | 含义 | 对主内存 |
 |------|------|----------|
 | **M（Modified）** | 当前核心修改了数据，与主内存不一致 | 需要写回 |
 | **E（Exclusive）** | 当前核心独占数据，与主内存一致 | 无需写回 |
 | **S（Shared）** | 多个核心共享数据，与主内存一致 | 无需写回 |
-| **I（Invalid）** | 缓存行无效 | 需从主内存重新加载 |
+| **I（Invalid）** | 缓存行无效 | 需重新取得有效数据，可能来自其他缓存或内存 |
 
 当 Core 0 修改了处于 S 状态的缓存行时：
 
-1. Core 0 将缓存行状态改为 M
-2. 通过总线嗅探（Bus Snooping）通知其他核心
-3. 其他核心将对应缓存行标记为 I
-4. 其他核心下次读取该数据时，从 Core 0 的缓存或主内存重新加载
+1. Core 0 请求独占写权限，使其他共享副本失效
+2. 一致性协议完成必要的协调后，Core 0 可以修改并持有 M 状态
+3. 其他核心后续读取时重新取得有效数据
+
+这是协议层的简化说明；具体系统可能采用嗅探或目录等机制，不能将其理解为先任意修改、再异步通知所有核心。
 
 ### 1.3 缓存行伪共享（False Sharing）
 
@@ -73,12 +62,14 @@ class PaddedAtomicReference<T> extends AtomicReference<T> {
     Object p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, pa, pb, pc, pd, pe;
 }
 
-// JDK 8+ 可以使用 @Contended 注解
+// JDK 8 内部注解示意，普通应用使用还受 JVM 参数限制
 @sun.misc.Contended
 class QueueNode {
     volatile long value;
 }
 ```
+
+`@Contended` 是内部 API，JDK 9 后包名和模块访问方式不同，不能把上述 JDK 8 写法当成跨版本可编译示例。
 
 ## 二、Java 内存模型（JMM）
 
@@ -86,51 +77,30 @@ class QueueNode {
 
 Java 内存模型（Java Memory Model）定义了**多线程如何通过共享内存进行通信**的规则。它并不描述具体的硬件实现，而是提供了一组抽象的可见性和有序性保证。
 
-```
-线程 A 工作内存          线程 B 工作内存
-┌──────────────┐      ┌──────────────┐
-│  变量副本      │      │  变量副本      │
-└──────┬───────┘      └──────┬───────┘
-       │    save/load         │
-       └──────────┬───────────┘
-              主内存
-         ┌──────────────┐
-         │  共享变量      │
-         └──────────────┘
-```
+例如线程 A 发布数据、线程 B 读取数据，关键是两次访问之间是否存在同步关系，而非肉眼看起来谁先执行。
 
-JMM 定义了 8 种内存交互操作：lock、unlock、read、load、use、assign、store、write。这些操作的组合规则保证了多线程程序的语义正确性。
+理解现代 JMM 应以读写动作、同步顺序和 happens-before 关系为准。“每线程工作内存”是教学抽象，不是线程独占一份 CPU 缓存；规范也不会自动让存在数据竞争的程序正确。[JLS 第 17 章](https://docs.oracle.com/javase/specs/jls/se21/html/jls-17.html)
 
 ### 2.2 三大并发问题
 
 | 问题 | 描述 | 根源 |
 |------|------|------|
-| **可见性** | 一个线程修改了变量，其他线程看不到最新值 | CPU 缓存导致各线程工作内存不一致 |
-| **原子性** | 一组操作被中断导致中间状态暴露 | 线程切换导致复合操作被打断 |
+| **可见性** | 一个线程修改了变量，其他线程看不到最新值 | 缺少建立可见性关系的同步，也涉及编译器优化 |
+| **原子性** | 一组操作被中断导致中间状态暴露 | 多个线程的读改写交错，或在不同核心上同时执行 |
 | **有序性** | 代码执行顺序与编写顺序不一致 | 编译器优化、CPU 指令重排序 |
 
 ### 2.3 volatile 的语义与实现
 
-`volatile` 是 Java 中最轻量的同步机制，它提供两个保证：
+`volatile` 为单个变量的访问提供同步语义：
 
-1. **可见性**：对 volatile 变量的写操作对所有线程立即可见
-2. **有序性**：禁止指令重排序（通过内存屏障实现）
+1. **可见性**：对某个 volatile 变量的写 happens-before 后续对同一变量的读；这也约束写前与读后的相关普通访问
+2. **有序性**：禁止破坏其内存语义的重排序，并非禁止程序中的所有重排序
 
-**但不保证原子性**：`volatile int count; count++` 并不是线程安全的，因为 `count++` 是读-改-写三步操作。
+**单次 volatile 读写有原子性，但复合操作没有**：`volatile int count; count++` 并不是线程安全的，因为 `count++` 是读-改-写三步操作。
 
-**硬件级实现**：
+**硬件实现不能替代语言语义**：
 
-在 x86 架构上，对 volatile 变量的写操作会生成一条带 **LOCK 前缀**的指令。LOCK 前缀的作用：
-
-1. 将当前处理器缓存行的数据写回主内存
-2. 使其他处理器中缓存该地址的缓存行失效（通过 MESI 协议）
-
-```
-// JIT 编译后的汇编（x86）
-0x01a3de24: lock addl $0x0,(%esp)  // LOCK 前缀指令
-```
-
-在 P6 及更新的处理器上，LOCK 不再锁总线，而是**锁缓存行**（Cache Locking），性能开销远小于总线锁。
+HotSpot 会结合 JIT 优化和目标架构生成满足这些约束的指令。某些 x86 路径可用带 LOCK 前缀的操作实现屏障，但这不意味着每次 volatile 写都立即把目标数据刷到 DRAM，也不意味着所有平台生成同一条指令。缓存一致性与内存排序承担不同职责。
 
 ### 2.4 happens-before 规则
 
@@ -139,7 +109,7 @@ JMM 通过 **happens-before** 关系定义了操作间的可见性保证。如�
 | 规则 | 说明 |
 |------|------|
 | 程序顺序规则 | 同一线程中的操作，前面的 happens-before 后面的 |
-| volatile 规则 | volatile 写 happens-before 后续的 volatile 读 |
+| volatile 规则 | 某变量的 volatile 写 happens-before 后续对同一变量的 volatile 读 |
 | 锁规则 | unlock happens-before 后续对同一锁的 lock |
 | 传递性 | 如果 A hb B，B hb C，则 A hb C |
 | 线程启动规则 | `Thread.start()` happens-before 该线程的每个动作 |
@@ -153,7 +123,7 @@ Java 提供两种锁机制：内置锁（`synchronized`）和显式锁（`java.u
 
 | 维度 | synchronized | Lock |
 |------|-------------|------|
-| 实现层面 | JVM 内置（monitorenter/monitorexit） | Java API 层（基于 AQS） |
+| 实现层面 | 同步块使用 monitor 指令，同步方法有对应访问标记 | Lock 是接口；ReentrantLock 基于 AQS |
 | 锁获取 | 阻塞式，不可中断 | 支持非阻塞 `tryLock()`、可中断 `lockInterruptibly()` |
 | 锁释放 | 自动释放（退出同步块） | 必须在 `finally` 中手动 `unlock()` |
 | 条件等待 | `Object.wait()/notify()` | `Condition.await()/signal()`，支持多条件队列 |
@@ -186,7 +156,7 @@ class BoundedBuffer<E> {
     int putIndex, takeIndex, count;
 
     public void put(E e) throws InterruptedException {
-        lock.lock();
+        lock.lockInterruptibly();
         try {
             while (count == items.length)
                 notFull.await();      // 缓冲区满，生产者等待
@@ -200,11 +170,12 @@ class BoundedBuffer<E> {
     }
 
     public E take() throws InterruptedException {
-        lock.lock();
+        lock.lockInterruptibly();
         try {
             while (count == 0)
                 notEmpty.await();     // 缓冲区空，消费者等待
             E e = (E) items[takeIndex];
+            items[takeIndex] = null;
             if (++takeIndex == items.length) takeIndex = 0;
             --count;
             notFull.signal();         // 通知生产者
@@ -222,6 +193,8 @@ class BoundedBuffer<E> {
 
 当读操作远多于写操作时，使用排他锁会严重限制并发度。`ReadWriteLock` 允许多个线程同时持有读锁，但写锁是排他的。
 
+下表讨论其他线程的请求；持有写锁的线程可以重入写锁，也可以获得读锁。
+
 | 锁状态 | 读锁请求 | 写锁请求 |
 |--------|----------|----------|
 | 无锁 | 允许 | 允许 |
@@ -232,7 +205,7 @@ class BoundedBuffer<E> {
 
 - **写锁可降级为读锁**：持有写锁的线程可以再获取读锁，然后释放写锁
 - **读锁不可升级为写锁**：防止死锁（多个读线程同时尝试升级会互相等待）
-- **支持公平/非公平模式**：非公平模式下，读锁可能"插队"导致写线程饥饿
+- **支持公平/非公平模式**：非公平模式不保证等待顺序，读写线程都可能长期等待；不能简化成所有新读者都可无限插队
 
 ## 四、JUC 并发工具类
 
@@ -245,15 +218,20 @@ class BoundedBuffer<E> {
 ```java
 CountDownLatch latch = new CountDownLatch(3);  // 计数器初始值 3
 
-// 工作线程
-executor.submit(() -> {
-    doTask();
-    latch.countDown();  // 计数器 -1
-});
+// executor 应有足够的执行能力；doTask 是业务方法
+for (int i = 0; i < 3; i++) {
+    executor.submit(() -> {
+        try {
+            doTask();
+        } finally {
+            latch.countDown();
+        }
+    });
+}
 
 // 等待线程
 latch.await();  // 阻塞直到计数器归零
-// 所有任务完成，继续执行
+// 所有已提交任务结束；是否成功须另收集 Future 或错误结果
 ```
 
 **核心特征**：
@@ -272,20 +250,24 @@ CyclicBarrier barrier = new CyclicBarrier(3, () -> {
     System.out.println("所有线程到齐，开始下一阶段");  // barrierAction
 });
 
-// 每个工作线程
-executor.submit(() -> {
-    doPhase1();
-    barrier.await();  // 等待其他线程
-    doPhase2();
-    barrier.await();  // 可以重复使用
-});
+// 以下片段使用 Callable，允许抛出受检异常
+// executor 至少可同时运行 3 个参与者；调用方还需观察 Future 中的失败
+for (int i = 0; i < 3; i++) {
+    executor.submit(() -> {
+        doPhase1();
+        barrier.await();
+        doPhase2();
+        barrier.await();
+        return null;
+    });
+}
 ```
 
 **核心特征**：
 
 - **可重用**：所有线程通过屏障后，计数器自动重置
 - 支持 **barrierAction**：所有线程到齐时执行的回调
-- 如果某个线程等待超时或被中断，屏障进入 **Broken** 状态，所有等待线程收到 `BrokenBarrierException`
+- 如果某个线程等待超时或被中断，屏障进入 **Broken** 状态，其他等待线程收到 `BrokenBarrierException`；触发者可能收到 InterruptedException 或 TimeoutException
 
 ### 4.3 Semaphore：信号量
 
@@ -301,8 +283,11 @@ executor.submit(() -> {
     } finally {
         semaphore.release();  // 释放许可（可用许可 +1）
     }
+    return null;
 });
 ```
+
+该片段提交 Callable，由 Future 传递获取许可时的中断或业务异常。
 
 **核心特征**：
 
@@ -314,8 +299,8 @@ executor.submit(() -> {
 
 | 工具 | 核心语义 | 是否可重用 | 计数方向 | 典型场景 |
 |------|----------|-----------|----------|----------|
-| **CountDownLatch** | 一个线程等待 N 个线程 | 否 | 递减至 0 | 主线程等待子任务完成 |
-| **CyclicBarrier** | N 个线程互相等待 | 是 | 递增至 N | 多阶段并行计算 |
+| **CountDownLatch** | 一个或多个线程等待计数归零 | 否 | 递减至 0 | 主线程等待子任务完成 |
+| **CyclicBarrier** | N 个参与者互相等待 | 是 | 内部剩余计数递减至 0 | 多阶段并行计算 |
 | **Semaphore** | 控制并发访问数量 | - | 许可的获取与释放 | 限流、资源池 |
 
 ## 五、生产者-消费者模式
@@ -349,8 +334,8 @@ Task task = queue.take();  // 队列空时自动阻塞
 | 实现类 | 底层结构 | 是否有界 | 锁策略 | 适用场景 |
 |--------|----------|----------|--------|----------|
 | `ArrayBlockingQueue` | 数组 | 有界 | 单锁 | 通用场景 |
-| `LinkedBlockingQueue` | 链表 | 可选有界 | 读写分离锁 | 吞吐量要求高 |
-| `SynchronousQueue` | 无容量 | 无 | CAS | 直接传递（线程池默认） |
+| `LinkedBlockingQueue` | 链表 | 可选有界 | 入队与出队使用不同锁 | 吞吐量要求高 |
+| `SynchronousQueue` | 无容量 | 无 | CAS | 直接交接（如 cached thread pool） |
 | `PriorityBlockingQueue` | 堆 | 无界 | 单锁 | 优先级调度 |
 
 ## 六、线程池
@@ -371,57 +356,41 @@ new ThreadPoolExecutor(
 
 **任务提交流程**：
 
-```
-提交任务
-  → 当前线程数 < corePoolSize？        → 创建核心线程执行
-  → 任务队列未满？                      → 入队等待
-  → 当前线程数 < maximumPoolSize？      → 创建非核心线程执行
-  → 以上都不满足                        → 执行拒绝策略
-```
+1. 工作线程数未达核心数时，尝试新建线程
+2. 否则尝试入队，并复核线程池状态
+3. 入队失败时尝试扩容至最大线程数
+4. 无法接纳或线程池已关闭时执行拒绝策略
 
 ### 6.2 拒绝策略
 
 | 策略 | 行为 | 适用场景 |
 |------|------|----------|
 | **AbortPolicy** | 抛出 `RejectedExecutionException` | 默认策略，适合需要感知过载的场景 |
-| **CallerRunsPolicy** | 由提交线程自己执行任务 | 反压效果，但可能导致提交线程阻塞 |
+| **CallerRunsPolicy** | 未关闭时由提交线程执行；关闭后丢弃 | 反压效果，但可能导致提交线程阻塞 |
 | **DiscardPolicy** | 静默丢弃任务 | 允许丢失的场景（如日志） |
-| **DiscardOldestPolicy** | 丢弃队列中最旧的任务 | 实时性要求高、可接受旧数据丢失 |
+| **DiscardOldestPolicy** | 丢弃队头任务后重试，优先队列的队头未必最旧 | 实时性要求高、可接受旧数据丢失 |
 
 ### 6.3 生产阻塞型线程池
 
-标准 `ThreadPoolExecutor` 使用 `BlockingQueue.offer()`（非阻塞）入队。队列满时不会阻塞提交线程，而是触发拒绝策略。
+标准 `ThreadPoolExecutor` 使用 `BlockingQueue.offer()`（非阻塞）入队。队列满时先尝试扩容到 maximumPoolSize，不能再创建工作线程时才触发拒绝策略；线程池关闭也会拒绝任务。
 
-在某些场景下（如需要严格的背压机制），需要让提交线程在队列满时**阻塞等待**而非被拒绝。可通过自定义拒绝策略实现：
+不能简单在拒绝回调中调用 `pool.getQueue().put(task)`：线程池关闭后可能无人消费，工作线程递归提交任务时也可能全部阻塞，直接放入队列还绕过了 execute 的生命周期检查。
 
-```java
-ThreadPoolExecutor executor = new ThreadPoolExecutor(
-    coreSize, maxSize, 60, TimeUnit.SECONDS,
-    new LinkedBlockingQueue<>(capacity),
-    (runnable, pool) -> {
-        try {
-            // 队列满时，put() 会阻塞提交线程
-            pool.getQueue().put(runnable);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
-    }
-);
-```
+需要背压时，应在提交前控制准入数量，并明确超时、中断和拒绝的结果。例如在独立入口层限制“运行中 + 排队中”的请求数，容量不足就返回可识别的过载结果。任务被拒绝、取消或结束时，都要按对应生命周期释放准入配额；不能只在任务正文的 finally 中释放，因为取消的任务可能从未开始。
 
-这种方式的优势在于：复用 `ThreadPoolExecutor` 的线程管理能力，同时实现了生产者阻塞语义，避免了手工管理线程的复杂性。
+CallerRunsPolicy 可用于允许调用方同步执行的场景，但要确认提交线程能承担这项工作，并单独处理关闭后的任务语义。[ThreadPoolExecutor API](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html)
 
 ### 6.4 线程池配置最佳实践
 
 | 任务类型 | 核心线程数建议 | 队列选择 |
 |----------|--------------|----------|
-| **CPU 密集型** | `N_cpu + 1` | 小容量有界队列 |
-| **I/O 密集型** | `N_cpu × 2` 或更高 | 较大容量有界队列 |
+| **CPU 密集型** | 从可用 CPU 核数附近起测，并考虑容器配额 | 小容量有界队列 |
+| **I/O 密集型** | 按等待比例、下游容量和延迟目标测定 | 较大容量有界队列 |
 | **混合型** | 拆分为 CPU 池和 I/O 池 | 各自独立配置 |
 
 关键原则：
 
-- **永远不要使用无界队列**：`Executors.newFixedThreadPool()` 默认使用无界的 `LinkedBlockingQueue`，可能导致 OOM
+- **明确排队上限或独立的准入上限**：`Executors.newFixedThreadPool()` 默认使用无界的 `LinkedBlockingQueue`，可能导致 OOM
 - **为线程池命名**：自定义 `ThreadFactory`，给线程添加有意义的名称前缀，便于排查问题
 - **监控队列深度**：线程池队列持续增长是系统过载的信号
 
@@ -429,9 +398,9 @@ ThreadPoolExecutor executor = new ThreadPoolExecutor(
 
 Java 并发编程的知识体系可以沿着三个层次理解：
 
-1. **硬件层**：CPU 缓存、MESI 协议、缓存行伪共享——这是并发问题的物理根源
+1. **硬件层**：CPU 缓存、MESI 协议、缓存行伪共享——解释硬件可见性与共享写入成本
 2. **模型层**：JMM、happens-before、volatile/synchronized 语义——这是 Java 对硬件差异的抽象屏蔽
-3. **工具层**：Lock/Condition、CountDownLatch/CyclicBarrier/Semaphore、BlockingQueue、ThreadPoolExecutor——这是面向工程的并发编程基础设施
+3. **工具层**：Lock 与 Condition、CountDownLatch、CyclicBarrier、Semaphore、BlockingQueue、ThreadPoolExecutor——这是面向工程的并发编程基础设施
 
 > 并发工具的选择不在于功能的强大，而在于语义的匹配。`synchronized` 足以解决大多数问题；`BlockingQueue` 比手动的 wait/notify 更安全；标准 `ThreadPoolExecutor` 比自定义线程管理更可靠。优先选择高层抽象，只在确有需要时才下沉到底层机制。
 
