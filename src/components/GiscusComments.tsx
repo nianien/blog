@@ -6,7 +6,7 @@ export default function GiscusComments() {
   return (
     <div className="mt-16 border-t border-gray-200 pt-8">
       <div className="mx-auto max-w-3xl">
-        <h3 className="text-2xl font-bold text-gray-900 mb-8">评论</h3>
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">评论</h2>
         <Giscus
           id="comments"
           repo="nianien/blog"
@@ -18,7 +18,7 @@ export default function GiscusComments() {
           reactionsEnabled="1"
           emitMetadata="0"
           inputPosition="bottom"
-          theme="preferred_color_scheme"
+          theme="light"
           lang="zh-CN"
           loading="lazy"
         />

@@ -4,6 +4,7 @@ description: "以 OPPO 产品矩阵为例，讨论旗舰定位如何通过产品
 pubDate: "2026-02-18"
 tags: ["品牌战略", "手机行业", "产品架构", "竞争分析"]
 author: "skyfalling"
+featured: true
 ---
 
 ## 旗舰需要让用户记住什么

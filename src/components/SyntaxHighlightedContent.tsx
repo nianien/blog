@@ -80,7 +80,7 @@ const SyntaxHighlightedContent: React.FC<SyntaxHighlightedContentProps> = ({ con
       
       // 使用 ReactDOM 渲染
       const wrapper = document.createElement('div');
-      wrapper.className = 'my-6';
+      wrapper.className = 'code-block my-6';
       
       // 使用 createRoot 渲染组件
       const root = createRoot(wrapper);

@@ -30,8 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 站点静态页
   const staticEntries: MetadataRoute.Sitemap = [
     { url: url('/'), lastModified: now, changeFrequency: 'daily', priority: 1.0 },
+    { url: url('/featured/'), lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: url('/about/'), lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: url('/contact/'), lastModified: now, changeFrequency: 'monthly', priority: 0.3 },
+    { url: url('/blog/tags/'), lastModified: now, changeFrequency: 'weekly', priority: 0.5 },
   ];
 
   // 文章页（最新 pubDate 当作 lastModified）

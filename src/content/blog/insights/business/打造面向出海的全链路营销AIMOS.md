@@ -5,6 +5,7 @@ pubDate: 2026-06-05
 tags: ["出海", "数字营销", "AIMOS", "Agent", "数据飞轮", "业务规划"]
 slug: "overseas-marketing-aimos"
 author: "skyfalling"
+featured: true
 ---
 
 出海营销服务商经常同时提供建站、内容、社媒、搜索优化和客户跟进。客户需要这些环节协作，但采购了更多工具，并不意味着内容、线索与成交已经连起来。

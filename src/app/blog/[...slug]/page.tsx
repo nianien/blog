@@ -11,6 +11,7 @@ import BlogPostNavigation from '@/components/BlogPostNavigation';
 import SeriesNav from '@/components/SeriesNav';
 import GiscusComments from '@/components/GiscusComments';
 import { Suspense } from 'react';
+import { buildArticleOutline } from '@/lib/article-outline';
 import type { Metadata } from 'next';
 
 export async function generateStaticParams() {
@@ -131,98 +132,41 @@ export default async function BlogPostPage({
     articleSection: mainMeta?.name || mainCategory,
   };
 
+  const outline = buildArticleOutline(post.content);
+  const seriesMeta = post.series?.key ? getSeriesMeta(post.series.key) : null;
+  const seriesItems = post.series?.key ? getSeriesNavItems(post.series.key, post.slug) : [];
+  const hasSeries = seriesMeta && seriesItems.length > 1;
+
   return (
-    <article className="min-h-screen">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
-        }}
-      />
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
-        <div className="rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-300 p-4 sm:p-12">
-          {/* 文章头部信息 */}
-          <header className="mb-8">
-            {/* 分类面包屑 */}
-            <nav className="flex items-center gap-1 text-sm mb-4">
-              <Link href="/blog/page/1" className="text-gray-500 hover:text-blue-600 transition-colors">
-                博客
-              </Link>
-              <span className="text-gray-300">/</span>
-              <Link
-                href={`/blog/category/${mainCategory}/page/1`}
-                className="text-gray-500 hover:text-blue-600 transition-colors"
-              >
-                {mainMeta?.name || mainCategory}
-              </Link>
-              {categoryParts.length > 1 && subMeta && (
-                <>
-                  <span className="text-gray-300">/</span>
-                  <Link
-                    href={`/blog/category/${categoryPath}/page/1`}
-                    className="text-blue-600 hover:text-blue-700 transition-colors"
-                  >
-                    {subMeta.name}
-                  </Link>
-                </>
-              )}
-            </nav>
-            <div className="flex items-center mb-6">
-              <div className="inline-flex items-center px-3 py-1.5 bg-gray-50 text-gray-600 rounded-md text-sm font-normal">
-                <svg className="w-4 h-4 mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <time dateTime={post.pubDate}>
-                  {format(new Date(post.pubDate), 'yyyy年MM月dd日', { locale: zhCN })}
-                </time>
-              </div>
-            </div>
-            
-            <h1 className="text-4xl font-bold text-gray-900 mb-6 text-center">
-              {post.title}
-            </h1>
-            
-            {post.tags && post.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2 mb-6 justify-center">
-                {post.tags.map((tag) => (
-                  <Link
-                    key={tag}
-                    href={`/blog/tag/${encodeURIComponent(tag)}/page/1/`}
-                    className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800 hover:bg-gray-300 hover:text-gray-900 transition-colors"
-                  >
-                    {tag}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </header>
-
-          {/* 文章内容 */}
-          <div className="max-w-5xl mx-auto">
-            <SyntaxHighlightedContent content={post.content} />
-
-            {/* 系列导航（自动渲染，无需手写） */}
-            {post.series?.key && (() => {
-              const seriesMeta = getSeriesMeta(post.series!.key);
-              const seriesItems = getSeriesNavItems(post.series!.key, post.slug);
-              return seriesMeta && seriesItems.length > 1 ? (
-                <SeriesNav meta={seriesMeta} items={seriesItems} />
-              ) : null;
-            })()}
-          </div>
-
-          {/* 文章导航 */}
-          <Suspense fallback={<div className="mt-12 pt-8 border-t border-gray-200">加载导航中...</div>}>
-            <BlogPostNavigation 
-              globalNav={globalNav}
-              tagNav={tagNav}
-            />
-          </Suspense>
-
-          {/* 评论区域 */}
-          <GiscusComments />
+    <article className="article-shell page-space">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
+      <header className="article-header">
+        <nav className="breadcrumbs" aria-label="文章位置">
+          <Link href="/blog/page/1">博客</Link><span aria-hidden="true">/</span>
+          <Link href={`/blog/category/${mainCategory}/page/1`}>{mainMeta?.name || mainCategory}</Link>
+          {categoryParts.length > 1 && subMeta && <><span aria-hidden="true">/</span><Link href={`/blog/category/${categoryPath}/page/1`}>{subMeta.name}</Link></>}
+        </nav>
+        <h1>{post.title}</h1>
+        <div className="article-meta">
+          <time dateTime={post.pubDate}>{format(new Date(post.pubDate), 'yyyy年MM月dd日', { locale: zhCN })}</time>
+          {hasSeries && <a href="#article-series">{seriesMeta.name}</a>}
         </div>
+        {post.tags && post.tags.length > 0 && <nav className="article-tags" aria-label="文章标签">
+          {post.tags.map(tag => <Link key={tag} href={`/blog/tag/${encodeURIComponent(tag)}/page/1/`}>{tag}</Link>)}
+        </nav>}
+      </header>
+      {outline.items.length >= 4 && (
+        <details className="article-outline">
+          <summary>目录</summary>
+          <nav aria-label="文章目录"><ol>{outline.items.map(item => <li key={item.id}><a href={`#${encodeURIComponent(item.id)}`}>{item.title}</a></li>)}</ol></nav>
+        </details>
+      )}
+      <div className="article-content"><SyntaxHighlightedContent content={outline.content} /></div>
+      <div className="article-ending">
+        {hasSeries && <div id="article-series"><SeriesNav meta={seriesMeta} items={seriesItems} /></div>}
+        <Suspense fallback={null}><BlogPostNavigation globalNav={globalNav} tagNav={tagNav} /></Suspense>
+        <GiscusComments />
       </div>
     </article>
   );
-} 
+}

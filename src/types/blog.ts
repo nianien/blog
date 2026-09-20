@@ -20,6 +20,7 @@ export interface BlogPost {
   title: string;
   description: string;
   pubDate: string;
+  featured?: boolean;
   tags?: string[];
   heroImage?: string;
   series?: SeriesInfo;
@@ -30,6 +31,7 @@ export interface BlogMeta {
   title: string;
   description: string;
   pubDate: string;
+  featured?: boolean;
   tags?: string[];
   heroImage?: string;
   series?: SeriesInfo;

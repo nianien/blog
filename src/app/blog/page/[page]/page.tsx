@@ -1,7 +1,7 @@
 import { getAllPosts } from '@/lib/blog';
 import BlogCard from '@/components/BlogCard';
-import CategoryNav from '@/components/CategoryNav';
-import Link from 'next/link';
+import ListingLayout from '@/components/ListingLayout';
+import Pagination from '@/components/Pagination';
 import type { Metadata } from 'next';
 
 const POSTS_PER_PAGE = 18;
@@ -40,58 +40,13 @@ export default async function BlogPage({ params }: { params: Promise<{ page: str
   const posts = allPosts.slice(startIndex, endIndex);
 
   return (
-    <div className="bg-[var(--background)] pt-8 pb-24 sm:pt-12 sm:pb-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Category Navigation */}
-        <CategoryNav />
-        {/* Posts grid */}
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts.map((post) => (
-            <BlogCard key={post.slug} post={post} />
-          ))}
-        </div>
-        {/* Pagination */}
-        {totalPages > 1 && (
-          <div className="mx-auto mt-16 max-w-4xl">
-            <div className="flex items-center justify-center space-x-2">
-              {/* Previous page */}
-              {currentPage > 1 && (
-                <Link
-                  href={`/blog/page/${currentPage - 1}`}
-                  className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                >
-                  上一页
-                </Link>
-              )}
-              {/* Page numbers */}
-              <div className="flex space-x-1">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-                  <Link
-                    key={pageNum}
-                    href={`/blog/page/${pageNum}`}
-                    className={`rounded-md px-3 py-2 text-sm font-semibold ${
-                      pageNum === currentPage
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-white text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
-                    }`}
-                  >
-                    {pageNum}
-                  </Link>
-                ))}
-              </div>
-              {/* Next page */}
-              {currentPage < totalPages && (
-                <Link
-                  href={`/blog/page/${currentPage + 1}`}
-                  className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-                >
-                  下一页
-                </Link>
-              )}
-            </div>
-          </div>
-        )}
+    <ListingLayout currentView="all" header={
+      <header className="listing-heading"><h1 className="page-title">全部文章</h1></header>
+      }>
+      <div className="post-list">
+        {posts.map(post => <BlogCard key={post.slug} post={post} />)}
       </div>
-    </div>
+      <Pagination currentPage={currentPage} totalPages={totalPages} basePath="/blog/page" />
+    </ListingLayout>
   );
 }

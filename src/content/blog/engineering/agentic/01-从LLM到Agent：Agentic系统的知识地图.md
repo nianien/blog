@@ -8,6 +8,7 @@ series:
   key: "agentic"
   order: 1
 author: "skyfalling"
+featured: true
 ---
 
 **LLM 提供理解与生成能力，Agent 把这些能力组织成可执行的任务系统。** 设计 Agent 的关键，是明确哪些决策交给模型，哪些事实由环境提供，哪些边界由程序保证。

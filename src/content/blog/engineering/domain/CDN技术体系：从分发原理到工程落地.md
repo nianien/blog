@@ -7,6 +7,7 @@ author: "skyfalling"
 series:
   key: "cdn"
   order: 1
+featured: true
 ---
 
 本文是 CDN 系列的原理篇，关注请求如何被调度、响应何时可以复用，以及未命中和故障如何传播。架构取舍见《内容分发体系设计：CDN 架构决策与全球化落地》，接入操作见《CDN 接入与运营实战》。

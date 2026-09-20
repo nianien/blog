@@ -4,6 +4,7 @@ description: "围绕一段四川方言剧集音频，核对九组 ASR 输出的�
 pubDate: 2026-03-22
 tags: ["ASR", "语音识别", "模型评测", "方言识别", "Speaker Diarization"]
 author: "skyfalling"
+featured: true
 ---
 
 ## 方言字幕需要分别验证文本、时间和说话人

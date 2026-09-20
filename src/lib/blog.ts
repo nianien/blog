@@ -84,6 +84,7 @@ export function getAllPosts(): BlogPost[] {
       title: data.title,
       description: data.description,
       pubDate: typeof data.pubDate === 'string' ? data.pubDate : data.pubDate?.toISOString?.()?.split('T')[0] || '2024-01-01',
+      featured: data.featured === true,
       tags: data.tags || [],
       heroImage: data.heroImage ? resolveArticleImage(data.heroImage, filePath, process.cwd(), process.env.NEXT_PUBLIC_BASE_PATH).url : undefined,
       series: data.series || undefined,
@@ -111,9 +112,36 @@ export function getAllTags(): string[] {
   return [...new Set(tags)];
 }
 
+export function getTagCounts(): { tag: string; count: number }[] {
+  const counts = new Map<string, number>();
+  for (const post of getAllPosts()) {
+    for (const tag of new Set(post.tags || [])) {
+      counts.set(tag, (counts.get(tag) || 0) + 1);
+    }
+  }
+  return [...counts].map(([tag, count]) => ({ tag, count }))
+    .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag, 'zh-CN'));
+}
+
 export function getPostsByTag(tag: string): BlogPost[] {
   const posts = getAllPosts();
   return posts.filter((post) => post.tags?.includes(tag));
+}
+
+export function getFeaturedPosts(posts: BlogPost[] = getAllPosts()): BlogPost[] {
+  return posts.filter((post) => post.featured);
+}
+
+export function getLatestPosts(posts: BlogPost[] = getAllPosts()): BlogPost[] {
+  if (posts.length === 0) {
+    return [];
+  }
+
+  const latestDate = new Date(posts[0].pubDate);
+  const cutoffDate = new Date(latestDate);
+  cutoffDate.setUTCMonth(cutoffDate.getUTCMonth() - 6);
+
+  return posts.filter((post) => new Date(post.pubDate) >= cutoffDate);
 }
 
 // 计算标签上下文感知的导航
