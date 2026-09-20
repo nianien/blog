@@ -108,6 +108,7 @@ export default async function CategoryPage({
     <ListingLayout currentCategory={categoryPath} header={
       <header className="listing-heading">
         <h1 className="page-title">{CATEGORY_META[categoryPath]?.name || categoryPath}</h1>
+        <span>{totalPosts} 篇</span>
       </header>
       }>
       <div className="post-list">

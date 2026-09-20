@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <ListingLayout currentView="latest" header={
-      <header className="listing-heading"><h1 className="page-title">最新文章</h1></header>
+      <header className="listing-heading"><h1 className="page-title">最新文章</h1><span>{latestPosts.length} 篇</span></header>
     }>
       <div className="post-list">
         {latestPosts.map(post => <BlogCard key={post.slug} post={post} />)}

@@ -15,7 +15,7 @@ export default function FeaturedPage() {
 
   return (
     <ListingLayout currentView="featured" header={
-      <header className="listing-heading"><h1 className="page-title">精选文章</h1></header>
+      <header className="listing-heading"><h1 className="page-title">精选文章</h1><span>{featuredPosts.length} 篇</span></header>
     }>
       <div className="post-list">
         {featuredPosts.map(post => <BlogCard key={post.slug} post={post} />)}

@@ -41,7 +41,7 @@ export default async function BlogPage({ params }: { params: Promise<{ page: str
 
   return (
     <ListingLayout currentView="all" header={
-      <header className="listing-heading"><h1 className="page-title">全部文章</h1></header>
+      <header className="listing-heading"><h1 className="page-title">全部文章</h1><span>{totalPosts} 篇</span></header>
       }>
       <div className="post-list">
         {posts.map(post => <BlogCard key={post.slug} post={post} />)}
